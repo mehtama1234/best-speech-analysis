@@ -24,26 +24,26 @@ Visual results currently describe face detection and geometry only. They do not 
 
 | Video | Sampled frames | Frames with detected face | Detection fraction | Mean face area | Smile candidates |
 |---|---:|---:|---:|---:|---:|
-| `2fWJh-_UG5s` | 47 | 36 | 0.76596 | 0.03069 | 0 |
-| `2m_lqGnLtWA` | 6 | 1 | 0.16667 | 0.26694 | 0 |
-| `3AIoHLr8nTI` | 34 | 31 | 0.91176 | 0.01573 | 0 |
-| `5i0u4jFmE78` | 6 | 3 | 0.5 | 0.06155 | 0 |
-| `9fEurt2OZ0I` | 5 | 4 | 0.8 | 0.04101 | 0 |
-| `JDfP3thQYrM` | 20 | 16 | 0.8 | 0.04708 | 0 |
-| `S43F1BZfQKY` | 16 | 7 | 0.4375 | 0.02271 | 0 |
-| `W-mgdUdOjhs` | 10 | 3 | 0.3 | 0.12907 | 0 |
-| `ZwMVMbmQBug` | 8 | 3 | 0.375 | 0.0264 | 0 |
-| `aHXxveJTJoE` | 9 | 2 | 0.22222 | 0.0173 | 0 |
-| `aXmM0VZv810` | 54 | 35 | 0.64815 | 0.03858 | 0 |
-| `fBnAMUkNM2k` | 80 | 44 | 0.55 | 0.05591 | 0 |
-| `hZ0YhrgYejI` | 6 | 4 | 0.66667 | 0.02713 | 0 |
-| `jxY2-YgAgm0` | 13 | 11 | 0.84615 | 0.02118 | 0 |
-| `lcj1wMZRitI` | 19 | 10 | 0.52632 | 0.04866 | 0 |
-| `m92yvNscIAo` | 6 | 2 | 0.33333 | 0.04125 | 0 |
-| `qOwYULOPuPs` | 31 | 26 | 0.83871 | 0.03889 | 0 |
-| `r2kP2Pqdx6w` | 35 | 33 | 0.94286 | 0.0093 | 0 |
-| `u1gg_L-syCw` | 6 | 3 | 0.5 | 0.038 | 0 |
-| `xRiwgtdyjQk` | 20 | 15 | 0.75 | 0.01657 | 0 |
+| `2fWJh-_UG5s` | 139 | 105 | 0.7554 | 0.03017 | 0 |
+| `2m_lqGnLtWA` | 17 | 3 | 0.17647 | 0.24514 | 0 |
+| `3AIoHLr8nTI` | 102 | 95 | 0.93137 | 0.01637 | 0 |
+| `5i0u4jFmE78` | 16 | 9 | 0.5625 | 0.0626 | 0 |
+| `9fEurt2OZ0I` | 13 | 10 | 0.76923 | 0.04928 | 0 |
+| `JDfP3thQYrM` | 59 | 44 | 0.74576 | 0.04451 | 1 |
+| `S43F1BZfQKY` | 47 | 23 | 0.48936 | 0.03699 | 2 |
+| `W-mgdUdOjhs` | 28 | 10 | 0.35714 | 0.11947 | 0 |
+| `ZwMVMbmQBug` | 23 | 13 | 0.56522 | 0.03118 | 0 |
+| `aHXxveJTJoE` | 25 | 4 | 0.16 | 0.03782 | 0 |
+| `aXmM0VZv810` | 162 | 107 | 0.66049 | 0.04026 | 0 |
+| `fBnAMUkNM2k` | 238 | 139 | 0.58403 | 0.05382 | 0 |
+| `hZ0YhrgYejI` | 17 | 5 | 0.29412 | 0.02615 | 0 |
+| `jxY2-YgAgm0` | 39 | 34 | 0.87179 | 0.02117 | 0 |
+| `lcj1wMZRitI` | 55 | 36 | 0.65455 | 0.04981 | 0 |
+| `m92yvNscIAo` | 16 | 6 | 0.375 | 0.03101 | 0 |
+| `qOwYULOPuPs` | 93 | 72 | 0.77419 | 0.03875 | 0 |
+| `r2kP2Pqdx6w` | 103 | 99 | 0.96117 | 0.00933 | 0 |
+| `u1gg_L-syCw` | 18 | 8 | 0.44444 | 0.02543 | 0 |
+| `xRiwgtdyjQk` | 59 | 49 | 0.83051 | 0.01611 | 0 |
 
 ## Interpretation boundary
 
