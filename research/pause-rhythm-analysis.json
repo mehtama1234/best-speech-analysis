@@ -1,0 +1,839 @@
+{
+  "schema_version": "0.1",
+  "measurement_policy": "Pause is a contiguous run of one-second windows below the acoustic activity threshold; transcript gaps are not treated as silence.",
+  "patterns": {
+    "call_to_action": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count": 6,
+      "segment_count": 33,
+      "video_weighted_metrics": {
+        "pause_before_seconds": {
+          "video_count": 6,
+          "mean": 0.0694,
+          "median": 0.0,
+          "stddev": 0.1701
+        },
+        "pause_after_seconds": {
+          "video_count": 6,
+          "mean": 0.0306,
+          "median": 0.0,
+          "stddev": 0.0476
+        },
+        "caption_word_rate_per_second": {
+          "video_count": 6,
+          "mean": 1.1005,
+          "median": 1.1244,
+          "stddev": 0.2928
+        },
+        "mean_rms_db": {
+          "video_count": 6,
+          "mean": -23.3006,
+          "median": -21.635,
+          "stddev": 8.255
+        }
+      },
+      "examples": [
+        {
+          "evidence_id": "2fWJh-_UG5s:00052",
+          "text": "victims we we need to recognize that",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.9021739130434747,
+          "mean_rms_db": -18.216
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00400",
+          "text": "we need to invest in mental health care",
+          "pause_before_seconds": 1.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.666666666666643,
+          "mean_rms_db": -32.578
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00401",
+          "text": "we need to save for schools",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.470588235294144,
+          "mean_rms_db": -28.763
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00402",
+          "text": "we need to restrain sensationalized",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 0.9767532721234562,
+          "mean_rms_db": -28.254
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00404",
+          "text": "we need to restore our family values",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.4110058455956747,
+          "mean_rms_db": -22.854
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00405",
+          "text": "we need to restore",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 1.0,
+          "caption_word_rate_per_second": 0.7936507936507994,
+          "mean_rms_db": -22.501
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00411",
+          "text": "we need to raise the minimum age to",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.6663195167673246,
+          "mean_rms_db": -16.602
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00471",
+          "text": "let's come to the common table that",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 2.5000000000000404,
+          "mean_rms_db": -20.99
+        }
+      ]
+    },
+    "conclusion_or_summary": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count": 3,
+      "segment_count": 6,
+      "video_weighted_metrics": {
+        "pause_before_seconds": {
+          "video_count": 3,
+          "mean": 0.0,
+          "median": 0.0,
+          "stddev": 0.0
+        },
+        "pause_after_seconds": {
+          "video_count": 3,
+          "mean": 0.0,
+          "median": 0.0,
+          "stddev": 0.0
+        },
+        "caption_word_rate_per_second": {
+          "video_count": 3,
+          "mean": 1.1964,
+          "median": 1.2348,
+          "stddev": 0.2952
+        },
+        "mean_rms_db": {
+          "video_count": 3,
+          "mean": -18.8979,
+          "median": -19.439,
+          "stddev": 2.2617
+        }
+      },
+      "examples": [
+        {
+          "evidence_id": "3AIoHLr8nTI:00003",
+          "text": "possibilities. And therefore, you have enormous responsibility, too. So today, I’d like to talk",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.470588235294117,
+          "mean_rms_db": -19.439
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00132",
+          "text": "therefore it's part of infrastructure.",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 0.8561643835616475,
+          "mean_rms_db": -16.189
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00159",
+          "text": "circumstance and and so therefore it",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.0565240359218222,
+          "mean_rms_db": -17.823
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00171",
+          "text": "sensible and and therefore intelligent.",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.0082677959265975,
+          "mean_rms_db": -15.883
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00483",
+          "text": "overwhelmingly what matters",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 0.6147540983606706,
+          "mean_rms_db": -15.764
+        },
+        {
+          "evidence_id": "qOwYULOPuPs:00124",
+          "text": "In short, they were asking far too much",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.2347584503781477,
+          "mean_rms_db": -20.84
+        }
+      ]
+    },
+    "contrast_or_disagreement": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count": 17,
+      "segment_count": 155,
+      "video_weighted_metrics": {
+        "pause_before_seconds": {
+          "video_count": 17,
+          "mean": 0.1218,
+          "median": 0.0,
+          "stddev": 0.2138
+        },
+        "pause_after_seconds": {
+          "video_count": 17,
+          "mean": 0.2212,
+          "median": 0.0,
+          "stddev": 0.5211
+        },
+        "caption_word_rate_per_second": {
+          "video_count": 17,
+          "mean": 1.7318,
+          "median": 1.544,
+          "stddev": 0.5694
+        },
+        "mean_rms_db": {
+          "video_count": 17,
+          "mean": -23.4727,
+          "median": -22.5422,
+          "stddev": 8.2691
+        }
+      },
+      "examples": [
+        {
+          "evidence_id": "2fWJh-_UG5s:00013",
+          "text": "you may know matthew as an actor but",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.6125781092521652,
+          "mean_rms_db": -19.101
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00026",
+          "text": "but without further ado",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 0.7936507936507927,
+          "mean_rms_db": -22.935
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00173",
+          "text": "about heaven before but somehow she knew",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.4115749142972365,
+          "mean_rms_db": -26.999
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00197",
+          "text": "but you could see he didn't get suppose",
+          "pause_before_seconds": 4.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 2.0,
+          "mean_rms_db": -33.691
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00234",
+          "text": "help someone accomplish her dream but",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.2711864406779587,
+          "mean_rms_db": -15.492
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00270",
+          "text": "was born catholic but had been going to",
+          "pause_before_seconds": 1.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 2.083333333333316,
+          "mean_rms_db": -17.225
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00288",
+          "text": "but she never got to read it",
+          "pause_before_seconds": 3.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 2.2435897435897405,
+          "mean_rms_db": -41.68
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00359",
+          "text": "but hollow",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 0.781249999999982,
+          "mean_rms_db": -38.292
+        }
+      ]
+    },
+    "definition": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count": 4,
+      "segment_count": 5,
+      "video_weighted_metrics": {
+        "pause_before_seconds": {
+          "video_count": 4,
+          "mean": 0.25,
+          "median": 0.0,
+          "stddev": 0.5
+        },
+        "pause_after_seconds": {
+          "video_count": 4,
+          "mean": 0.375,
+          "median": 0.25,
+          "stddev": 0.4787
+        },
+        "caption_word_rate_per_second": {
+          "video_count": 4,
+          "mean": 1.1042,
+          "median": 1.2083,
+          "stddev": 0.649
+        },
+        "mean_rms_db": {
+          "video_count": 4,
+          "mean": -32.0212,
+          "median": -30.6865,
+          "stddev": 12.8131
+        }
+      },
+      "examples": [
+        {
+          "evidence_id": "3AIoHLr8nTI:00046",
+          "text": "Think about it: Saying “I tolerate you” actually means something like, “Ok, I grudgingly admit that",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.6666666666666725,
+          "mean_rms_db": -19.159
+        },
+        {
+          "evidence_id": "W-mgdUdOjhs:00012",
+          "text": "means",
+          "pause_before_seconds": 1.0,
+          "pause_after_seconds": 1.0,
+          "caption_word_rate_per_second": 0.3333333333333333,
+          "mean_rms_db": -47.553
+        },
+        {
+          "evidence_id": "fBnAMUkNM2k:00068",
+          "text": "cry, that means you are healing.",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 0.6444683136412458,
+          "mean_rms_db": -40.996
+        },
+        {
+          "evidence_id": "fBnAMUkNM2k:00374",
+          "text": "Bijli means electricity.",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 1.0,
+          "caption_word_rate_per_second": 2.5862068965515417,
+          "mean_rms_db": -33.206
+        },
+        {
+          "evidence_id": "qOwYULOPuPs:00279",
+          "text": "Because controlling our energy means",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 0.8012820512820501,
+          "mean_rms_db": -24.272
+        }
+      ]
+    },
+    "example": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count": 6,
+      "segment_count": 11,
+      "video_weighted_metrics": {
+        "pause_before_seconds": {
+          "video_count": 6,
+          "mean": 0.6667,
+          "median": 0.0,
+          "stddev": 1.2111
+        },
+        "pause_after_seconds": {
+          "video_count": 6,
+          "mean": 0.1667,
+          "median": 0.0,
+          "stddev": 0.4082
+        },
+        "caption_word_rate_per_second": {
+          "video_count": 6,
+          "mean": 1.1636,
+          "median": 1.1516,
+          "stddev": 0.5448
+        },
+        "mean_rms_db": {
+          "video_count": 6,
+          "mean": -22.7863,
+          "median": -20.2103,
+          "stddev": 10.2694
+        }
+      },
+      "examples": [
+        {
+          "evidence_id": "S43F1BZfQKY:00018",
+          "text": "Then he showed me the most beautiful wig youcould ever imagine.",
+          "pause_before_seconds": 1.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.80921052631579,
+          "mean_rms_db": -24.687
+        },
+        {
+          "evidence_id": "aHXxveJTJoE:00044",
+          "text": "Max, for instance.",
+          "pause_before_seconds": 3.0,
+          "pause_after_seconds": 1.0,
+          "caption_word_rate_per_second": 0.9259259259259274,
+          "mean_rms_db": -41.708
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00274",
+          "text": "this earlier radiology for example has",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 0.9493670886075875,
+          "mean_rms_db": -15.101
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00391",
+          "text": "you imagine a startup company",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 0.8563110121596249,
+          "mean_rms_db": -15.282
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00529",
+          "text": ">> Just imagine how tiny that little",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 2.1334958854008255,
+          "mean_rms_db": -15.29
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00596",
+          "text": "some over 20 years. Let me give you one",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.6791044776119717,
+          "mean_rms_db": -18.201
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00651",
+          "text": "such as Elon and Jensen to serve",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.2683457148034052,
+          "mean_rms_db": -18.574
+        },
+        {
+          "evidence_id": "jxY2-YgAgm0:00087",
+          "text": "such as Daily Beast, James Carville, and",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 0.9113396693138934,
+          "mean_rms_db": -23.931
+        }
+      ]
+    },
+    "question": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count": 18,
+      "segment_count": 471,
+      "video_weighted_metrics": {
+        "pause_before_seconds": {
+          "video_count": 18,
+          "mean": 0.0864,
+          "median": 0.0,
+          "stddev": 0.1663
+        },
+        "pause_after_seconds": {
+          "video_count": 18,
+          "mean": 0.1133,
+          "median": 0.0,
+          "stddev": 0.249
+        },
+        "caption_word_rate_per_second": {
+          "video_count": 18,
+          "mean": 1.7872,
+          "median": 1.5088,
+          "stddev": 0.8808
+        },
+        "mean_rms_db": {
+          "video_count": 18,
+          "mean": -23.549,
+          "median": -21.7374,
+          "stddev": 8.871
+        }
+      },
+      "examples": [
+        {
+          "evidence_id": "2fWJh-_UG5s:00005",
+          "text": "how about that",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 0.9146341463414636,
+          "mean_rms_db": -18.445
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00027",
+          "text": "i would like to bring up matthew",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.1513157894736845,
+          "mean_rms_db": -31.761
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00045",
+          "text": "how can these families continue to honor",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.5628488501897748,
+          "mean_rms_db": -21.095
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00049",
+          "text": "again how can a loss of these lives",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.388888888888891,
+          "mean_rms_db": -26.803
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00061",
+          "text": "a path that can bring us closer together",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 2.2720817949446084,
+          "mean_rms_db": -26.163
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00063",
+          "text": "that can actually",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 0.5514705882352944,
+          "mean_rms_db": -30.935
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00081",
+          "text": "in the hopes of applying what energy",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 2.034883720930234,
+          "mean_rms_db": -16.035
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00089",
+          "text": "a window where it seems like real change",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.4705882352941182,
+          "mean_rms_db": -30.537
+        }
+      ]
+    },
+    "story_or_personal_experience": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count": 10,
+      "segment_count": 30,
+      "video_weighted_metrics": {
+        "pause_before_seconds": {
+          "video_count": 10,
+          "mean": 0.3083,
+          "median": 0.0,
+          "stddev": 0.6359
+        },
+        "pause_after_seconds": {
+          "video_count": 10,
+          "mean": 0.3083,
+          "median": 0.0,
+          "stddev": 0.9461
+        },
+        "caption_word_rate_per_second": {
+          "video_count": 10,
+          "mean": 1.7304,
+          "median": 1.5791,
+          "stddev": 0.606
+        },
+        "mean_rms_db": {
+          "video_count": 10,
+          "mean": -24.8472,
+          "median": -22.7602,
+          "stddev": 7.7618
+        }
+      },
+      "examples": [
+        {
+          "evidence_id": "2fWJh-_UG5s:00155",
+          "text": "paris and one day share her art with the",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 2.2959183673469625,
+          "mean_rms_db": -22.981
+        },
+        {
+          "evidence_id": "3AIoHLr8nTI:00009",
+          "text": "valuable and important thing. When I graduated in the early 1990s, I went on a trip around the world",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.9467213114754087,
+          "mean_rms_db": -21.049
+        },
+        {
+          "evidence_id": "3AIoHLr8nTI:00069",
+          "text": "one day awake to the realization that it’s not up to someone else to fix",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 2.8409090909091055,
+          "mean_rms_db": -19.032
+        },
+        {
+          "evidence_id": "9fEurt2OZ0I:00008",
+          "text": "I went for a police they said no you're",
+          "pause_before_seconds": 1.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.5845070422535212,
+          "mean_rms_db": -22.085
+        },
+        {
+          "evidence_id": "9fEurt2OZ0I:00009",
+          "text": "not good I went to even the uh KFC when",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.6129032258064508,
+          "mean_rms_db": -22.994
+        },
+        {
+          "evidence_id": "S43F1BZfQKY:00002",
+          "text": "I remember that day.",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 2.1265284423179156,
+          "mean_rms_db": -24.076
+        },
+        {
+          "evidence_id": "S43F1BZfQKY:00011",
+          "text": "Then one day, my boyfriend turns to me andsays maybe you should get a wig.",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 0.8441193021947097,
+          "mean_rms_db": -39.485
+        },
+        {
+          "evidence_id": "S43F1BZfQKY:00036",
+          "text": "So, I went for it and f*cking shaved my head.",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 0.5254860746190225,
+          "mean_rms_db": -20.403
+        }
+      ]
+    },
+    "uncertainty_or_qualification": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count": 14,
+      "segment_count": 92,
+      "video_weighted_metrics": {
+        "pause_before_seconds": {
+          "video_count": 14,
+          "mean": 0.049,
+          "median": 0.0,
+          "stddev": 0.1247
+        },
+        "pause_after_seconds": {
+          "video_count": 14,
+          "mean": 0.0329,
+          "median": 0.0,
+          "stddev": 0.0873
+        },
+        "caption_word_rate_per_second": {
+          "video_count": 14,
+          "mean": 1.5137,
+          "median": 1.4907,
+          "stddev": 0.446
+        },
+        "mean_rms_db": {
+          "video_count": 14,
+          "mean": -23.3476,
+          "median": -23.9885,
+          "stddev": 7.6455
+        }
+      },
+      "examples": [
+        {
+          "evidence_id": "2fWJh-_UG5s:00054",
+          "text": "it seems that something is different",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.4150943396226385,
+          "mean_rms_db": -25.508
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00055",
+          "text": "there is a sense that perhaps there's a",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.818181818181816,
+          "mean_rms_db": -23.315
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00089",
+          "text": "a window where it seems like real change",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.4705882352941182,
+          "mean_rms_db": -30.537
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00125",
+          "text": "you could you could feel the shock",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.8617021276595789,
+          "mean_rms_db": -23.227
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00127",
+          "text": "you you could feel the pain",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.0714285714285672,
+          "mean_rms_db": -24.715
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00159",
+          "text": "could share it that somehow",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.1574074074074092,
+          "mean_rms_db": -18.043
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00160",
+          "text": "maybe that would make",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 0.8333333333333413,
+          "mean_rms_db": -20.493
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00197",
+          "text": "but you could see he didn't get suppose",
+          "pause_before_seconds": 4.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 2.0,
+          "mean_rms_db": -33.691
+        }
+      ]
+    },
+    "unclassified": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count": 18,
+      "segment_count": 2756,
+      "video_weighted_metrics": {
+        "pause_before_seconds": {
+          "video_count": 18,
+          "mean": 0.1994,
+          "median": 0.102,
+          "stddev": 0.2649
+        },
+        "pause_after_seconds": {
+          "video_count": 18,
+          "mean": 0.1526,
+          "median": 0.0248,
+          "stddev": 0.2378
+        },
+        "caption_word_rate_per_second": {
+          "video_count": 18,
+          "mean": 1.5245,
+          "median": 1.2516,
+          "stddev": 0.6978
+        },
+        "mean_rms_db": {
+          "video_count": 18,
+          "mean": -23.938,
+          "median": -22.773,
+          "stddev": 8.5212
+        }
+      },
+      "examples": [
+        {
+          "evidence_id": "2fWJh-_UG5s:00000",
+          "text": "their ten-year-old daughter",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 0.5280760429501848,
+          "mean_rms_db": -28.022
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00001",
+          "text": "alithea",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 0.37878787878787884,
+          "mean_rms_db": -31.822
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00002",
+          "text": "she was one of the 19 children that were",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 3.879310344827587,
+          "mean_rms_db": -20.367
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00003",
+          "text": "killed",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 0.27173913043478265,
+          "mean_rms_db": -22.358
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00004",
+          "text": "the day before",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.1029411764705879,
+          "mean_rms_db": -22.748
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00006",
+          "text": "um",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 2.0,
+          "caption_word_rate_per_second": 0.2118644067796609,
+          "mean_rms_db": -29.833
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00007",
+          "text": "good afternoon everyone",
+          "pause_before_seconds": 0.0,
+          "pause_after_seconds": 2.0,
+          "caption_word_rate_per_second": 0.9377930603313531,
+          "mean_rms_db": -35.187
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00008",
+          "text": "so um i'd like to welcome matthew and",
+          "pause_before_seconds": 4.0,
+          "pause_after_seconds": 0.0,
+          "caption_word_rate_per_second": 1.3333333333333333,
+          "mean_rms_db": -17.681
+        }
+      ]
+    }
+  }
+}
