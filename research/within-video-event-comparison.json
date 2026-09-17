@@ -1,0 +1,357 @@
+{
+  "schema_version": "0.1",
+  "comparison": "within_video_labeled_segment_mean_minus_all_segment_mean",
+  "patterns": {
+    "call_to_action": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count_by_segment_presence": 6,
+      "segment_count": 33,
+      "metric_deltas": {
+        "mean_rms_db": {
+          "video_count": 6,
+          "mean_delta": -3.83359,
+          "median_delta": -1.48576,
+          "stddev": 6.77844,
+          "minimum": -16.57325,
+          "maximum": 1.29134
+        },
+        "speech_activity_fraction": {
+          "video_count": 6,
+          "mean_delta": -0.08268,
+          "median_delta": 8e-05,
+          "stddev": 0.19026,
+          "minimum": -0.46449,
+          "maximum": 0.02282
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 6,
+          "mean_delta": -0.01559,
+          "median_delta": -0.01199,
+          "stddev": 0.01702,
+          "minimum": -0.04514,
+          "maximum": 0.00067
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 6,
+          "mean_delta": -43.21248,
+          "median_delta": -52.75712,
+          "stddev": 68.11962,
+          "minimum": -115.0258,
+          "maximum": 48.78607
+        }
+      }
+    },
+    "conclusion_or_summary": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count_by_segment_presence": 3,
+      "segment_count": 6,
+      "metric_deltas": {
+        "mean_rms_db": {
+          "video_count": 3,
+          "mean_delta": -1.36769,
+          "median_delta": 0.13297,
+          "stddev": 2.85371,
+          "minimum": -4.65863,
+          "maximum": 0.42258
+        },
+        "speech_activity_fraction": {
+          "video_count": 3,
+          "mean_delta": -0.03148,
+          "median_delta": 0.00673,
+          "stddev": 0.06678,
+          "minimum": -0.10858,
+          "maximum": 0.00742
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 3,
+          "mean_delta": 0.02089,
+          "median_delta": 0.03044,
+          "stddev": 0.02466,
+          "minimum": -0.00712,
+          "maximum": 0.03934
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 3,
+          "mean_delta": 114.90092,
+          "median_delta": 126.36271,
+          "stddev": 128.37653,
+          "minimum": -18.82219,
+          "maximum": 237.16223
+        }
+      }
+    },
+    "contrast_or_disagreement": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count_by_segment_presence": 17,
+      "segment_count": 155,
+      "metric_deltas": {
+        "mean_rms_db": {
+          "video_count": 17,
+          "mean_delta": 0.34655,
+          "median_delta": -0.00843,
+          "stddev": 1.54408,
+          "minimum": -2.13021,
+          "maximum": 4.10519
+        },
+        "speech_activity_fraction": {
+          "video_count": 17,
+          "mean_delta": 0.02275,
+          "median_delta": 0.00673,
+          "stddev": 0.05839,
+          "minimum": -0.06529,
+          "maximum": 0.19915
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 17,
+          "mean_delta": 0.00065,
+          "median_delta": -0.00391,
+          "stddev": 0.01162,
+          "minimum": -0.01379,
+          "maximum": 0.02949
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 17,
+          "mean_delta": -28.3633,
+          "median_delta": -19.75891,
+          "stddev": 82.14957,
+          "minimum": -246.12322,
+          "maximum": 144.22563
+        }
+      }
+    },
+    "definition": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count_by_segment_presence": 4,
+      "segment_count": 5,
+      "metric_deltas": {
+        "mean_rms_db": {
+          "video_count": 4,
+          "mean_delta": -4.30882,
+          "median_delta": -4.77881,
+          "stddev": 3.83803,
+          "minimum": -8.09063,
+          "maximum": 0.41297
+        },
+        "speech_activity_fraction": {
+          "video_count": 4,
+          "mean_delta": -0.14655,
+          "median_delta": -0.14361,
+          "stddev": 0.13132,
+          "minimum": -0.30642,
+          "maximum": 0.00742
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 4,
+          "mean_delta": 0.02204,
+          "median_delta": 0.02343,
+          "stddev": 0.0207,
+          "minimum": -0.00331,
+          "maximum": 0.04459
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 4,
+          "mean_delta": 246.82767,
+          "median_delta": 212.76187,
+          "stddev": 227.29239,
+          "minimum": 7.28081,
+          "maximum": 554.50611
+        }
+      }
+    },
+    "example": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count_by_segment_presence": 6,
+      "segment_count": 11,
+      "metric_deltas": {
+        "mean_rms_db": {
+          "video_count": 6,
+          "mean_delta": -2.10535,
+          "median_delta": -0.71376,
+          "stddev": 4.23287,
+          "minimum": -8.9469,
+          "maximum": 2.20987
+        },
+        "speech_activity_fraction": {
+          "video_count": 6,
+          "mean_delta": -0.08723,
+          "median_delta": 0.00386,
+          "stddev": 0.2342,
+          "minimum": -0.55085,
+          "maximum": 0.09151
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 6,
+          "mean_delta": -0.00407,
+          "median_delta": -0.00378,
+          "stddev": 0.01398,
+          "minimum": -0.02738,
+          "maximum": 0.01182
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 6,
+          "mean_delta": 0.83092,
+          "median_delta": -5.94449,
+          "stddev": 107.26309,
+          "minimum": -158.45915,
+          "maximum": 143.6372
+        }
+      }
+    },
+    "question": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count_by_segment_presence": 18,
+      "segment_count": 471,
+      "metric_deltas": {
+        "mean_rms_db": {
+          "video_count": 18,
+          "mean_delta": 0.3907,
+          "median_delta": 0.30602,
+          "stddev": 1.38217,
+          "minimum": -3.58571,
+          "maximum": 2.33135
+        },
+        "speech_activity_fraction": {
+          "video_count": 18,
+          "mean_delta": 0.00873,
+          "median_delta": 0.00448,
+          "stddev": 0.03078,
+          "minimum": -0.08094,
+          "maximum": 0.06348
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 18,
+          "mean_delta": -0.00017,
+          "median_delta": -0.00095,
+          "stddev": 0.00938,
+          "minimum": -0.01519,
+          "maximum": 0.02889
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 18,
+          "mean_delta": -13.97319,
+          "median_delta": -13.90374,
+          "stddev": 60.26249,
+          "minimum": -86.55897,
+          "maximum": 172.63905
+        }
+      }
+    },
+    "story_or_personal_experience": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count_by_segment_presence": 10,
+      "segment_count": 30,
+      "metric_deltas": {
+        "mean_rms_db": {
+          "video_count": 10,
+          "mean_delta": -0.87667,
+          "median_delta": -0.5741,
+          "stddev": 1.86197,
+          "minimum": -4.49643,
+          "maximum": 1.33373
+        },
+        "speech_activity_fraction": {
+          "video_count": 10,
+          "mean_delta": -0.0191,
+          "median_delta": -0.01747,
+          "stddev": 0.0363,
+          "minimum": -0.076,
+          "maximum": 0.03507
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 10,
+          "mean_delta": 0.00519,
+          "median_delta": 0.00241,
+          "stddev": 0.01737,
+          "minimum": -0.01341,
+          "maximum": 0.04966
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 10,
+          "mean_delta": 15.8084,
+          "median_delta": 39.95781,
+          "stddev": 146.75899,
+          "minimum": -290.23889,
+          "maximum": 225.4883
+        }
+      }
+    },
+    "uncertainty_or_qualification": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count_by_segment_presence": 14,
+      "segment_count": 92,
+      "metric_deltas": {
+        "mean_rms_db": {
+          "video_count": 14,
+          "mean_delta": -0.66022,
+          "median_delta": -0.61803,
+          "stddev": 3.22767,
+          "minimum": -7.07375,
+          "maximum": 6.78914
+        },
+        "speech_activity_fraction": {
+          "video_count": 14,
+          "mean_delta": 0.01753,
+          "median_delta": 0.00271,
+          "stddev": 0.10879,
+          "minimum": -0.18649,
+          "maximum": 0.27658
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 14,
+          "mean_delta": -9e-05,
+          "median_delta": -0.00089,
+          "stddev": 0.01527,
+          "minimum": -0.02724,
+          "maximum": 0.03172
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 14,
+          "mean_delta": 15.50033,
+          "median_delta": 4.40658,
+          "stddev": 78.33166,
+          "minimum": -120.21089,
+          "maximum": 133.81855
+        }
+      }
+    },
+    "unclassified": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count_by_segment_presence": 18,
+      "segment_count": 2756,
+      "metric_deltas": {
+        "mean_rms_db": {
+          "video_count": 18,
+          "mean_delta": 0.00174,
+          "median_delta": -0.01443,
+          "stddev": 0.22782,
+          "minimum": -0.45535,
+          "maximum": 0.64322
+        },
+        "speech_activity_fraction": {
+          "video_count": 18,
+          "mean_delta": -0.00186,
+          "median_delta": -0.00032,
+          "stddev": 0.00434,
+          "minimum": -0.01163,
+          "maximum": 0.00468
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 18,
+          "mean_delta": 0.00041,
+          "median_delta": 0.00028,
+          "stddev": 0.00207,
+          "minimum": -0.00269,
+          "maximum": 0.00711
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 18,
+          "mean_delta": 1.73366,
+          "median_delta": 2.0239,
+          "stddev": 13.14049,
+          "minimum": -22.13125,
+          "maximum": 36.93217
+        }
+      }
+    }
+  }
+}
