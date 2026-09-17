@@ -4,15 +4,15 @@ For each candidate label, this compares the mean measurement of matching transcr
 
 | Candidate label | Videos | Segments | RMS delta dB | Activity delta | ZCR delta | Spectral centroid delta Hz |
 |---|---:|---:|---:|---:|---:|---:|
-| `call_to_action` | 6 | 33 | -3.83359 | -0.08268 | -0.01559 | -43.21248 |
-| `conclusion_or_summary` | 2 | 2 | -1.79265 | -0.05092 | 0.02792 | 87.7721 |
-| `contrast_or_disagreement` | 8 | 19 | -0.55492 | -0.02461 | 0.00532 | 47.78407 |
-| `definition` | 4 | 5 | -4.30882 | -0.14655 | 0.02204 | 246.82767 |
-| `example` | 6 | 11 | -2.10535 | -0.08723 | -0.00407 | 0.83092 |
-| `question` | 16 | 182 | -0.24371 | -0.01407 | -0.0053 | -7.64871 |
-| `story_or_personal_experience` | 10 | 30 | -0.87667 | -0.0191 | 0.00519 | 15.8084 |
-| `uncertainty_or_qualification` | 14 | 92 | -0.66022 | 0.01753 | -9e-05 | 15.50033 |
-| `unclassified` | 18 | 3118 | 0.075 | 0.00196 | -0.0001 | -3.86791 |
+| `call_to_action` | 11 | 40 | -3.10058 | -0.05223 | -0.01438 | -39.71444 |
+| `conclusion_or_summary` | 3 | 3 | 0.36422 | -0.02843 | 0.03182 | 92.19269 |
+| `contrast_or_disagreement` | 14 | 31 | 0.57181 | 0.02697 | 0.00289 | 19.52533 |
+| `definition` | 8 | 9 | -1.40504 | -0.08243 | 0.01172 | 175.81785 |
+| `example` | 8 | 18 | -0.95339 | -0.02682 | -0.00344 | -15.52082 |
+| `question` | 25 | 251 | -0.09818 | -0.00398 | -0.00198 | 3.68196 |
+| `story_or_personal_experience` | 15 | 44 | -0.76047 | -0.00936 | 0.00285 | -11.07625 |
+| `uncertainty_or_qualification` | 20 | 134 | -0.65669 | 0.00162 | 0.00069 | 41.91664 |
+| `unclassified` | 30 | 4547 | 0.04099 | 0.0008 | -0.00013 | -2.77926 |
 
 ## Reading the table
 

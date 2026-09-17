@@ -2,6 +2,11 @@
   "schema_version": "0.1",
   "measurement_policy": "Face geometry and scene-pixel changes only; no emotion or intent inference.",
   "video_summary": {
+    "1crhwQPKr7w": {
+      "sampled_frame_count": 17,
+      "face_present_frames": 7,
+      "movement_pairs": 16
+    },
     "2fWJh-_UG5s": {
       "sampled_frame_count": 139,
       "face_present_frames": 105,
@@ -27,15 +32,50 @@
       "face_present_frames": 10,
       "movement_pairs": 12
     },
+    "AwA0Jnfj3ao": {
+      "sampled_frame_count": 107,
+      "face_present_frames": 75,
+      "movement_pairs": 106
+    },
+    "C8-twwwTETE": {
+      "sampled_frame_count": 63,
+      "face_present_frames": 40,
+      "movement_pairs": 62
+    },
     "JDfP3thQYrM": {
       "sampled_frame_count": 59,
       "face_present_frames": 44,
       "movement_pairs": 58
     },
+    "JdUq2opPY-Q": {
+      "sampled_frame_count": 12,
+      "face_present_frames": 4,
+      "movement_pairs": 11
+    },
+    "KieuXXue2Ag": {
+      "sampled_frame_count": 37,
+      "face_present_frames": 26,
+      "movement_pairs": 36
+    },
+    "OfwfTN1mEyM": {
+      "sampled_frame_count": 50,
+      "face_present_frames": 41,
+      "movement_pairs": 49
+    },
+    "RCxgqHqakXc": {
+      "sampled_frame_count": 13,
+      "face_present_frames": 4,
+      "movement_pairs": 12
+    },
     "S43F1BZfQKY": {
       "sampled_frame_count": 47,
       "face_present_frames": 23,
       "movement_pairs": 46
+    },
+    "UtJDpOUIEd8": {
+      "sampled_frame_count": 41,
+      "face_present_frames": 32,
+      "movement_pairs": 40
     },
     "W-mgdUdOjhs": {
       "sampled_frame_count": 28,
@@ -47,6 +87,11 @@
       "face_present_frames": 13,
       "movement_pairs": 22
     },
+    "_Mb1-CN3wZs": {
+      "sampled_frame_count": 25,
+      "face_present_frames": 9,
+      "movement_pairs": 24
+    },
     "aHXxveJTJoE": {
       "sampled_frame_count": 25,
       "face_present_frames": 4,
@@ -57,10 +102,25 @@
       "face_present_frames": 107,
       "movement_pairs": 161
     },
+    "bR4tDSa3O10": {
+      "sampled_frame_count": 107,
+      "face_present_frames": 101,
+      "movement_pairs": 106
+    },
+    "dPi40lQetew": {
+      "sampled_frame_count": 17,
+      "face_present_frames": 12,
+      "movement_pairs": 16
+    },
     "fBnAMUkNM2k": {
       "sampled_frame_count": 238,
       "face_present_frames": 139,
       "movement_pairs": 237
+    },
+    "gDadfh0ZdBM": {
+      "sampled_frame_count": 29,
+      "face_present_frames": 19,
+      "movement_pairs": 28
     },
     "hZ0YhrgYejI": {
       "sampled_frame_count": 17,
@@ -82,6 +142,21 @@
       "face_present_frames": 6,
       "movement_pairs": 15
     },
+    "njmzcD4eY94": {
+      "sampled_frame_count": 27,
+      "face_present_frames": 17,
+      "movement_pairs": 26
+    },
+    "pmAL79dnvu0": {
+      "sampled_frame_count": 51,
+      "face_present_frames": 23,
+      "movement_pairs": 50
+    },
+    "qM-gZintWDc": {
+      "sampled_frame_count": 29,
+      "face_present_frames": 10,
+      "movement_pairs": 28
+    },
     "qOwYULOPuPs": {
       "sampled_frame_count": 93,
       "face_present_frames": 72,
@@ -101,12 +176,17 @@
       "sampled_frame_count": 59,
       "face_present_frames": 49,
       "movement_pairs": 58
+    },
+    "zKCjmtxgyNg": {
+      "sampled_frame_count": 46,
+      "face_present_frames": 40,
+      "movement_pairs": 45
     }
   },
   "patterns": {
     "call_to_action": {
       "label_status": "heuristic_retrieval_aid_requires_manual_review",
-      "video_count": 5,
+      "video_count": 8,
       "video_weighted_metrics": {
         "face_center_movement": {
           "video_count": 4,
@@ -119,46 +199,72 @@
           "stddev": 0.00063
         },
         "scene_luminance_change": {
-          "video_count": 5,
-          "mean": 5.41721,
-          "stddev": 2.44725
+          "video_count": 8,
+          "mean": 9.82982,
+          "stddev": 8.69076
         },
         "face_presence_transition": {
-          "video_count": 5,
-          "mean": 0.29524,
-          "stddev": 0.41704
+          "video_count": 8,
+          "mean": 0.43452,
+          "stddev": 0.48122
+        }
+      }
+    },
+    "conclusion_or_summary": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count": 1,
+      "video_weighted_metrics": {
+        "face_center_movement": {
+          "video_count": 0,
+          "mean": null,
+          "stddev": null
+        },
+        "face_area_change": {
+          "video_count": 0,
+          "mean": null,
+          "stddev": null
+        },
+        "scene_luminance_change": {
+          "video_count": 1,
+          "mean": 2.193,
+          "stddev": 0.0
+        },
+        "face_presence_transition": {
+          "video_count": 1,
+          "mean": 1,
+          "stddev": 0.0
         }
       }
     },
     "contrast_or_disagreement": {
       "label_status": "heuristic_retrieval_aid_requires_manual_review",
-      "video_count": 4,
+      "video_count": 5,
       "video_weighted_metrics": {
         "face_center_movement": {
-          "video_count": 3,
-          "mean": 0.08604,
-          "stddev": 0.10127
+          "video_count": 4,
+          "mean": 0.08264,
+          "stddev": 0.08297
         },
         "face_area_change": {
-          "video_count": 3,
-          "mean": 0.0021,
-          "stddev": 0.00203
+          "video_count": 4,
+          "mean": 0.00223,
+          "stddev": 0.00168
         },
         "scene_luminance_change": {
-          "video_count": 4,
-          "mean": 8.68683,
-          "stddev": 7.69862
+          "video_count": 5,
+          "mean": 7.37347,
+          "stddev": 7.28534
         },
         "face_presence_transition": {
-          "video_count": 4,
-          "mean": 0.375,
-          "stddev": 0.47871
+          "video_count": 5,
+          "mean": 0.36667,
+          "stddev": 0.415
         }
       }
     },
     "definition": {
       "label_status": "heuristic_retrieval_aid_requires_manual_review",
-      "video_count": 2,
+      "video_count": 3,
       "video_weighted_metrics": {
         "face_center_movement": {
           "video_count": 1,
@@ -171,20 +277,20 @@
           "stddev": 0.0
         },
         "scene_luminance_change": {
-          "video_count": 2,
-          "mean": 61.349,
-          "stddev": 63.17292
+          "video_count": 3,
+          "mean": 50.41233,
+          "stddev": 48.52052
         },
         "face_presence_transition": {
-          "video_count": 2,
-          "mean": 0.5,
-          "stddev": 0.70711
+          "video_count": 3,
+          "mean": 0.66667,
+          "stddev": 0.57735
         }
       }
     },
     "example": {
       "label_status": "heuristic_retrieval_aid_requires_manual_review",
-      "video_count": 4,
+      "video_count": 5,
       "video_weighted_metrics": {
         "face_center_movement": {
           "video_count": 3,
@@ -197,118 +303,118 @@
           "stddev": 0.01012
         },
         "scene_luminance_change": {
-          "video_count": 4,
-          "mean": 24.634,
-          "stddev": 39.54696
+          "video_count": 5,
+          "mean": 20.22107,
+          "stddev": 35.64185
         },
         "face_presence_transition": {
-          "video_count": 4,
-          "mean": 0.25,
-          "stddev": 0.5
+          "video_count": 5,
+          "mean": 0.26667,
+          "stddev": 0.43461
         }
       }
     },
     "question": {
       "label_status": "heuristic_retrieval_aid_requires_manual_review",
-      "video_count": 12,
+      "video_count": 18,
       "video_weighted_metrics": {
         "face_center_movement": {
-          "video_count": 9,
-          "mean": 0.07432,
-          "stddev": 0.05074
+          "video_count": 14,
+          "mean": 0.0987,
+          "stddev": 0.08992
         },
         "face_area_change": {
-          "video_count": 9,
-          "mean": 0.00488,
-          "stddev": 0.00367
+          "video_count": 14,
+          "mean": 0.00538,
+          "stddev": 0.00422
         },
         "scene_luminance_change": {
-          "video_count": 12,
-          "mean": 11.09217,
-          "stddev": 9.54954
+          "video_count": 18,
+          "mean": 10.61028,
+          "stddev": 8.66888
         },
         "face_presence_transition": {
-          "video_count": 12,
-          "mean": 0.27969,
-          "stddev": 0.25342
+          "video_count": 18,
+          "mean": 0.26146,
+          "stddev": 0.23353
         }
       }
     },
     "story_or_personal_experience": {
       "label_status": "heuristic_retrieval_aid_requires_manual_review",
-      "video_count": 5,
+      "video_count": 9,
       "video_weighted_metrics": {
         "face_center_movement": {
-          "video_count": 3,
-          "mean": 0.1125,
-          "stddev": 0.16183
+          "video_count": 5,
+          "mean": 0.14301,
+          "stddev": 0.15946
         },
         "face_area_change": {
-          "video_count": 3,
-          "mean": 0.02417,
-          "stddev": 0.03373
+          "video_count": 5,
+          "mean": 0.02108,
+          "stddev": 0.02604
         },
         "scene_luminance_change": {
-          "video_count": 5,
-          "mean": 10.22305,
-          "stddev": 8.23918
+          "video_count": 9,
+          "mean": 10.56075,
+          "stddev": 8.00162
         },
         "face_presence_transition": {
-          "video_count": 5,
-          "mean": 0.2,
-          "stddev": 0.44721
+          "video_count": 9,
+          "mean": 0.22222,
+          "stddev": 0.44096
         }
       }
     },
     "uncertainty_or_qualification": {
       "label_status": "heuristic_retrieval_aid_requires_manual_review",
-      "video_count": 12,
+      "video_count": 18,
       "video_weighted_metrics": {
         "face_center_movement": {
-          "video_count": 9,
-          "mean": 0.18263,
-          "stddev": 0.15929
+          "video_count": 14,
+          "mean": 0.17824,
+          "stddev": 0.16566
         },
         "face_area_change": {
-          "video_count": 9,
-          "mean": 0.01603,
-          "stddev": 0.02462
+          "video_count": 14,
+          "mean": 0.02434,
+          "stddev": 0.04962
         },
         "scene_luminance_change": {
-          "video_count": 12,
-          "mean": 7.90555,
-          "stddev": 6.20911
+          "video_count": 18,
+          "mean": 7.50527,
+          "stddev": 5.17287
         },
         "face_presence_transition": {
-          "video_count": 12,
-          "mean": 0.38353,
-          "stddev": 0.36723
+          "video_count": 18,
+          "mean": 0.28347,
+          "stddev": 0.34745
         }
       }
     },
     "unclassified": {
       "label_status": "heuristic_retrieval_aid_requires_manual_review",
-      "video_count": 20,
+      "video_count": 36,
       "video_weighted_metrics": {
         "face_center_movement": {
-          "video_count": 19,
-          "mean": 0.11026,
-          "stddev": 0.07226
+          "video_count": 34,
+          "mean": 0.13829,
+          "stddev": 0.08602
         },
         "face_area_change": {
-          "video_count": 19,
-          "mean": 0.01612,
-          "stddev": 0.01692
+          "video_count": 34,
+          "mean": 0.01733,
+          "stddev": 0.01641
         },
         "scene_luminance_change": {
-          "video_count": 20,
-          "mean": 11.81714,
-          "stddev": 6.5785
+          "video_count": 36,
+          "mean": 12.88509,
+          "stddev": 6.69368
         },
         "face_presence_transition": {
-          "video_count": 20,
-          "mean": 0.31855,
-          "stddev": 0.17459
+          "video_count": 36,
+          "mean": 0.31029,
+          "stddev": 0.17166
         }
       }
     }

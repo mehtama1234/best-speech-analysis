@@ -4,14 +4,15 @@ This report measures changes in detected face geometry and scene luminance betwe
 
 | Candidate label | Videos | Face-center movement | Face-area change | Scene luminance change | Face-presence transitions |
 |---|---:|---:|---:|---:|---:|
-| `call_to_action` | 5 | 0.18225 | 0.00224 | 5.41721 | 0.29524 |
-| `contrast_or_disagreement` | 4 | 0.08604 | 0.0021 | 8.68683 | 0.375 |
-| `definition` | 2 | 0.04388 | 0.0025 | 61.349 | 0.5 |
-| `example` | 4 | 0.167 | 0.01214 | 24.634 | 0.25 |
-| `question` | 12 | 0.07432 | 0.00488 | 11.09217 | 0.27969 |
-| `story_or_personal_experience` | 5 | 0.1125 | 0.02417 | 10.22305 | 0.2 |
-| `uncertainty_or_qualification` | 12 | 0.18263 | 0.01603 | 7.90555 | 0.38353 |
-| `unclassified` | 20 | 0.11026 | 0.01612 | 11.81714 | 0.31855 |
+| `call_to_action` | 8 | 0.18225 | 0.00224 | 9.82982 | 0.43452 |
+| `conclusion_or_summary` | 1 | None | None | 2.193 | 1 |
+| `contrast_or_disagreement` | 5 | 0.08264 | 0.00223 | 7.37347 | 0.36667 |
+| `definition` | 3 | 0.04388 | 0.0025 | 50.41233 | 0.66667 |
+| `example` | 5 | 0.167 | 0.01214 | 20.22107 | 0.26667 |
+| `question` | 18 | 0.0987 | 0.00538 | 10.61028 | 0.26146 |
+| `story_or_personal_experience` | 9 | 0.14301 | 0.02108 | 10.56075 | 0.22222 |
+| `uncertainty_or_qualification` | 18 | 0.17824 | 0.02434 | 7.50527 | 0.28347 |
+| `unclassified` | 36 | 0.13829 | 0.01733 | 12.88509 | 0.31029 |
 
 ## Limits
 

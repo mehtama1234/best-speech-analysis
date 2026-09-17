@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""Choose a deterministic, stratified pilot for audio/video measurements."""
+"""Choose a deterministic, stratified sample for audio/video measurements."""
 
 from __future__ import annotations
 
 import hashlib
 import json
+import argparse
 from collections import defaultdict
 from pathlib import Path
 
@@ -24,6 +25,26 @@ def rank(video: dict) -> str:
 
 
 def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--per-bucket",
+        type=int,
+        default=4,
+        help="Maximum deterministic selections per duration bucket per playlist.",
+    )
+    parser.add_argument(
+        "--output",
+        default="data/metadata/multimodal-pilot.json",
+        help="Manifest path to write.",
+    )
+    parser.add_argument(
+        "--media-status",
+        default="data/media-status.jsonl",
+        help="Optional existing media status file to merge into the manifest.",
+    )
+    args = parser.parse_args()
+    if args.per_bucket < 1:
+        parser.error("--per-bucket must be at least 1")
     root = Path(__file__).resolve().parents[1]
     videos = [json.loads(line) for line in (root / "data/metadata/video-registry.jsonl").read_text().splitlines() if line.strip()]
     transcript_status = {}
@@ -40,7 +61,7 @@ def main() -> int:
         if video["video_id"] in seed_ids:
             selected[video["video_id"]] = {"video": video, "selection_reasons": ["user_seed"]}
 
-    # Select up to four videos per duration bucket per playlist. Overlaps are
+    # Select up to N videos per duration bucket per playlist. Overlaps are
     # intentionally deduplicated while retaining all playlist memberships.
     for source_id in source_ids:
         candidates = [video for video in videos if any(m["source_id"] == source_id for m in video.get("playlist_memberships", []))]
@@ -48,11 +69,21 @@ def main() -> int:
         for video in candidates:
             bins[bucket(video.get("duration_seconds"))].append(video)
         for duration_bucket, members in sorted(bins.items()):
-            for video in sorted(members, key=rank)[:4]:
+            for video in sorted(members, key=rank)[:args.per_bucket]:
                 row = selected.setdefault(video["video_id"], {"video": video, "selection_reasons": []})
                 row["selection_reasons"].append(f"{source_id}:{duration_bucket}")
 
-    output = root / "data/metadata/multimodal-pilot.json"
+    media_status = {}
+    media_status_path = root / args.media_status
+    if media_status_path.exists():
+        media_status = {
+            row["video_id"]: row
+            for line in media_status_path.read_text().splitlines()
+            if line.strip()
+            for row in [json.loads(line)]
+        }
+
+    output = root / args.output
     rows = []
     for video_id in sorted(selected):
         video = selected[video_id]["video"]
@@ -68,11 +99,14 @@ def main() -> int:
             "transcript_status": status.get("status", "not_requested"),
             "transcript_segments": status.get("segments", 0),
             "selection_reasons": sorted(set(selected[video_id]["selection_reasons"])),
-            "media_status": "not_requested",
+            "media_status": media_status.get(video["video_id"], {}).get("status", "not_requested"),
+            "video_status": media_status.get(video["video_id"], {}).get("video_status", "not_requested"),
+            "audio_status": media_status.get(video["video_id"], {}).get("audio_status", "not_requested"),
         })
     report = {
         "schema_version": "0.1",
-        "selection_policy": "User seeds plus deterministic stratified selection: up to four videos per duration bucket per playlist, deduplicated by video ID.",
+        "selection_policy": f"User seeds plus deterministic stratified selection: up to {args.per_bucket} videos per duration bucket per playlist, deduplicated by video ID.",
+        "selection_parameters": {"per_bucket": args.per_bucket},
         "video_count": len(rows),
         "videos": rows,
     }
@@ -83,4 +117,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
