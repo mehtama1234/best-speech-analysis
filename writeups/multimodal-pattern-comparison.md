@@ -6,17 +6,17 @@ Pilot videos: **36**
 
 ## Acoustic comparison
 
-| Candidate label | Videos | Segments | Mean RMS dB | Speech activity | Zero-crossing rate | Spectral centroid Hz |
-|---|---:|---:|---:|---:|---:|---:|
-| `call_to_action` | 11 | 40 | -24.57549 | 0.90673 | 0.1317 | 783.2814 |
-| `conclusion_or_summary` | 3 | 3 | -18.20367 | 0.95833 | 0.18258 | 792.802 |
-| `contrast_or_disagreement` | 14 | 31 | -23.51113 | 0.93856 | 0.14862 | 858.45485 |
-| `definition` | 8 | 9 | -25.37425 | 0.83125 | 0.16958 | 1097.67169 |
-| `example` | 8 | 18 | -24.27966 | 0.8495 | 0.12875 | 745.14035 |
-| `question` | 25 | 251 | -23.89411 | 0.90703 | 0.13625 | 822.18969 |
-| `story_or_personal_experience` | 15 | 44 | -23.89175 | 0.92494 | 0.15134 | 860.83102 |
-| `uncertainty_or_qualification` | 20 | 134 | -24.81215 | 0.89983 | 0.13672 | 833.28902 |
-| `unclassified` | 30 | 4547 | -25.33196 | 0.89578 | 0.13933 | 818.17669 |
+| Candidate label | Videos | Segments | Mean RMS dB | Speech activity | Zero-crossing rate | Spectral centroid Hz | Pitch proxy Hz | Pitch confidence |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| `call_to_action` | 11 | 40 | -24.57549 | 0.90673 | 0.1317 | 783.2814 | 217.97205 | 0.18737 |
+| `conclusion_or_summary` | 3 | 3 | -18.20367 | 0.95833 | 0.18258 | 792.802 | 209.75933 | 0.18895 |
+| `contrast_or_disagreement` | 14 | 31 | -23.51113 | 0.93856 | 0.14862 | 858.45485 | 252.29909 | 0.16999 |
+| `definition` | 8 | 9 | -25.37425 | 0.83125 | 0.16958 | 1097.67169 | 293.99125 | 0.1576 |
+| `example` | 8 | 18 | -24.27966 | 0.8495 | 0.12875 | 745.14035 | 231.47074 | 0.15699 |
+| `question` | 25 | 251 | -23.89411 | 0.90703 | 0.13625 | 822.18969 | 265.22757 | 0.17814 |
+| `story_or_personal_experience` | 15 | 44 | -23.89175 | 0.92494 | 0.15134 | 860.83102 | 273.80487 | 0.15628 |
+| `uncertainty_or_qualification` | 20 | 134 | -24.81215 | 0.89983 | 0.13672 | 833.28902 | 265.36704 | 0.16972 |
+| `unclassified` | 30 | 4547 | -25.33196 | 0.89578 | 0.13933 | 818.17669 | 256.4432 | 0.17199 |
 
 ## Visual coverage
 

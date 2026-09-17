@@ -12,7 +12,14 @@ from statistics import mean, stdev
 from build_segment_registry import candidate_functions
 
 
-METRICS = ["mean_rms_db", "speech_activity_fraction", "mean_zero_crossing_rate", "mean_spectral_centroid_hz"]
+METRICS = [
+    "mean_rms_db",
+    "speech_activity_fraction",
+    "mean_zero_crossing_rate",
+    "mean_spectral_centroid_hz",
+    "mean_pitch_hz_proxy",
+    "mean_pitch_confidence_proxy",
+]
 
 
 def summary(values: list[float]) -> dict:
@@ -72,7 +79,7 @@ def main() -> int:
     output.write_text(json.dumps({
         "schema_version": "0.1",
         "pilot_video_count": len(visual_values),
-        "measurement_policy": "Video-weighted summaries; heuristic labels are retrieval aids, not verified speech-function annotations.",
+        "measurement_policy": "Video-weighted summaries; heuristic labels are retrieval aids, not verified speech-function annotations. Pitch is a coarse spectral proxy, not a validated fundamental-frequency estimate.",
         "patterns": patterns,
         "visual_video_level": visual_values,
     }, ensure_ascii=False, indent=2) + "\n")
@@ -86,15 +93,17 @@ def main() -> int:
         "",
         "## Acoustic comparison",
         "",
-        "| Candidate label | Videos | Segments | Mean RMS dB | Speech activity | Zero-crossing rate | Spectral centroid Hz |",
-        "|---|---:|---:|---:|---:|---:|---:|",
+        "| Candidate label | Videos | Segments | Mean RMS dB | Speech activity | Zero-crossing rate | Spectral centroid Hz | Pitch proxy Hz | Pitch confidence |",
+        "|---|---:|---:|---:|---:|---:|---:|---:|---:|",
     ]
     for label, item in patterns.items():
         rms = item["video_weighted_metrics"]["mean_rms_db"]["mean"]
         activity = item["video_weighted_metrics"]["speech_activity_fraction"]["mean"]
         zcr = item["video_weighted_metrics"]["mean_zero_crossing_rate"]["mean"]
         centroid = item["video_weighted_metrics"]["mean_spectral_centroid_hz"]["mean"]
-        markdown.append(f"| `{label}` | {item['video_count']} | {item['segment_count']} | {rms} | {activity} | {zcr} | {centroid} |")
+        pitch = item["video_weighted_metrics"]["mean_pitch_hz_proxy"]["mean"]
+        pitch_confidence = item["video_weighted_metrics"]["mean_pitch_confidence_proxy"]["mean"]
+        markdown.append(f"| `{label}` | {item['video_count']} | {item['segment_count']} | {rms} | {activity} | {zcr} | {centroid} | {pitch} | {pitch_confidence} |")
     markdown += [
         "",
         "## Visual coverage",
@@ -122,4 +131,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

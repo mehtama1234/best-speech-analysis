@@ -48,7 +48,7 @@ The transcript corpus supports large-scale discovery of explanations, definition
 
 For a representative and progressively expanding subset, obtain permitted audio/video and align it with transcript timestamps. Measure observable delivery features such as speaking rate, pause duration and placement, pitch movement, loudness, rhythm, breath, laughter, disfluency, restarts, corrections, gaze, facial movement, head movement, hand gesture, posture, movement, slide interaction, edits, music, captions, and audience reaction.
 
-The project should use the complete transcript corpus for language-level discovery, then use stratified audio/video samples to test delivery and visual hypotheses. It must not pretend every measurement has equal reliability.
+The project should use the complete transcript corpus for language-level discovery, then use stratified audio/video samples to test delivery and visual hypotheses. It must not pretend every measurement has equal reliability. Coarse spectral pitch and transcript-derived timing are useful screening measurements, but they must not be presented as validated pitch tracking, exact spoken-word timing, or evidence of internal state.
 
 ### 4. Explain speech in context
 

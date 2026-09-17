@@ -15,7 +15,7 @@ Interpretation: The speaker is beginning a personal anecdote.
 
 Limitation: One caption is not enough to establish the full story boundary.
 
-Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; overlapping audio windows None.
+Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; pitch proxy None Hz; words/second proxy None; transcript gap before None seconds; transcript gap after None seconds; overlapping audio windows None.
 
 ## review-002: `personal_story_transition`
 
@@ -30,7 +30,7 @@ Interpretation: The speaker is narrating a decision or turning point.
 
 Limitation: The contrast marker does not by itself indicate disagreement.
 
-Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; overlapping audio windows None.
+Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; pitch proxy None Hz; words/second proxy None; transcript gap before None seconds; transcript gap after None seconds; overlapping audio windows None.
 
 ## review-003: `rhetorical_question`
 
@@ -45,7 +45,7 @@ Interpretation: The question appears to transition from another person's example
 
 Limitation: The transcript does not establish audience response.
 
-Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; overlapping audio windows None.
+Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; pitch proxy None Hz; words/second proxy None; transcript gap before None seconds; transcript gap after None seconds; overlapping audio windows None.
 
 ## review-004: `emotional_opening`
 
@@ -60,7 +60,7 @@ Interpretation: The question keyword heuristic is a false positive here.
 
 Limitation: Caption punctuation and segmentation may be incomplete.
 
-Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; overlapping audio windows None.
+Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; pitch proxy None Hz; words/second proxy None; transcript gap before None seconds; transcript gap after None seconds; overlapping audio windows None.
 
 ## review-005: `conclusion_or_charge`
 
@@ -75,7 +75,7 @@ Interpretation: The speaker is foregrounding a conclusion or charge to the audie
 
 Limitation: The surrounding paragraph is needed to distinguish summary from a new claim.
 
-Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; overlapping audio windows None.
+Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; pitch proxy None Hz; words/second proxy None; transcript gap before None seconds; transcript gap after None seconds; overlapping audio windows None.
 
 ## review-006: `definition_or_reformulation`
 
@@ -90,7 +90,7 @@ Interpretation: The speaker is likely reformulating or defining the preceding id
 
 Limitation: The caption is fragmented; preceding context is required.
 
-Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; overlapping audio windows None.
+Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; pitch proxy None Hz; words/second proxy None; transcript gap before None seconds; transcript gap after None seconds; overlapping audio windows None.
 
 ## review-007: `example_introduction`
 
@@ -105,7 +105,7 @@ Interpretation: The speaker is moving from a general issue to examples.
 
 Limitation: This is an example marker, not evidence that the example improved comprehension.
 
-Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; overlapping audio windows None.
+Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; pitch proxy None Hz; words/second proxy None; transcript gap before None seconds; transcript gap after None seconds; overlapping audio windows None.
 
 ## review-008: `institutional_call_to_action`
 
@@ -120,7 +120,7 @@ Interpretation: The speaker is presenting a collective action or policy recommen
 
 Limitation: The transcript does not reveal whether the audience accepted it.
 
-Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; overlapping audio windows None.
+Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; pitch proxy None Hz; words/second proxy None; transcript gap before None seconds; transcript gap after None seconds; overlapping audio windows None.
 
 ## review-009: `collective_appeal`
 
@@ -135,7 +135,7 @@ Interpretation: The speaker is closing or intensifying an appeal.
 
 Limitation: The caption is a fragment and should be reviewed with adjacent captions.
 
-Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; overlapping audio windows None.
+Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; pitch proxy None Hz; words/second proxy None; transcript gap before None seconds; transcript gap after None seconds; overlapping audio windows None.
 
 ## review-010: `summary_transition`
 
@@ -150,7 +150,7 @@ Interpretation: The speaker is summarizing a preceding idea.
 
 Limitation: The summary's effectiveness cannot be inferred from the phrase alone.
 
-Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; overlapping audio windows None.
+Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; pitch proxy None Hz; words/second proxy None; transcript gap before None seconds; transcript gap after None seconds; overlapping audio windows None.
 
 ## review-011: `urgent_collective_call`
 
@@ -165,7 +165,7 @@ Interpretation: The speaker is escalating toward a call to action.
 
 Limitation: The historical and rhetorical context matters; this is not a general best practice.
 
-Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; overlapping audio windows None.
+Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; pitch proxy None Hz; words/second proxy None; transcript gap before None seconds; transcript gap after None seconds; overlapping audio windows None.
 
 ## review-012: `qualification_or_contrast`
 
@@ -180,7 +180,7 @@ Interpretation: The speaker is introducing a personal reconsideration.
 
 Limitation: Contrast markers should not automatically be treated as disagreement.
 
-Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; overlapping audio windows None.
+Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; pitch proxy None Hz; words/second proxy None; transcript gap before None seconds; transcript gap after None seconds; overlapping audio windows None.
 
 ## review-013: `story_recall`
 
@@ -195,7 +195,7 @@ Interpretation: The speaker is opening a personal story.
 
 Limitation: A story label does not imply emotional state.
 
-Delivery measurements: RMS -24.076; speech-activity proxy 1.0; zero-crossing rate 0.11111; spectral centroid 466.09 Hz; overlapping audio windows 3.
+Delivery measurements: RMS -24.076; speech-activity proxy 1.0; zero-crossing rate 0.11111; spectral centroid 466.09 Hz; pitch proxy 210.938 Hz; words/second proxy 2.127; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 3.
 
 ## review-014: `story_event_with_embedded_advice`
 
@@ -210,7 +210,7 @@ Interpretation: The story marker is supported; the call-to-action heuristic is a
 
 Limitation: Speaker attribution within quoted dialogue requires broader context.
 
-Delivery measurements: RMS -39.485; speech-activity proxy 0.444; zero-crossing rate 0.0955; spectral centroid 434.722 Hz; overlapping audio windows 18.
+Delivery measurements: RMS -39.485; speech-activity proxy 0.444; zero-crossing rate 0.0955; spectral centroid 434.722 Hz; pitch proxy 173.828 Hz; words/second proxy 0.844; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 18.
 
 ## review-015: `story_action`
 
@@ -225,7 +225,7 @@ Interpretation: The speaker is advancing a personal narrative.
 
 Limitation: Caption-level boundaries may split one narrative unit.
 
-Delivery measurements: RMS -20.403; speech-activity proxy 1.0; zero-crossing rate 0.16655; spectral centroid 1136.106 Hz; overlapping audio windows 20.
+Delivery measurements: RMS -20.403; speech-activity proxy 1.0; zero-crossing rate 0.16655; spectral centroid 1136.106 Hz; pitch proxy 179.688 Hz; words/second proxy 0.525; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 20.
 
 ## review-016: `causal_transition`
 
@@ -240,7 +240,7 @@ Interpretation: The conclusion keyword heuristic is a false positive for this tr
 
 Limitation: The surrounding speech may establish a larger conclusion.
 
-Delivery measurements: RMS -19.439; speech-activity proxy 1.0; zero-crossing rate 0.11621; spectral centroid 673.143 Hz; overlapping audio windows 10.
+Delivery measurements: RMS -19.439; speech-activity proxy 1.0; zero-crossing rate 0.11621; spectral centroid 673.143 Hz; pitch proxy 233.594 Hz; words/second proxy 1.471; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 10.
 
 ## review-017: `conclusion_marker`
 
@@ -255,7 +255,7 @@ Interpretation: The speaker is emphasizing a concluding or prioritizing point.
 
 Limitation: The segment is short and should be read with neighboring captions.
 
-Delivery measurements: RMS -15.764; speech-activity proxy 1.0; zero-crossing rate 0.17077; spectral centroid 638.521 Hz; overlapping audio windows 6.
+Delivery measurements: RMS -15.764; speech-activity proxy 1.0; zero-crossing rate 0.17077; spectral centroid 638.521 Hz; pitch proxy 222.656 Hz; words/second proxy 0.615; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 6.
 
 ## review-018: `example_marker`
 
@@ -270,7 +270,7 @@ Interpretation: The speaker is moving from an abstract claim to an example.
 
 Limitation: This does not establish whether the example was effective.
 
-Delivery measurements: RMS -15.101; speech-activity proxy 1.0; zero-crossing rate 0.12568; spectral centroid 491.947 Hz; overlapping audio windows 7.
+Delivery measurements: RMS -15.101; speech-activity proxy 1.0; zero-crossing rate 0.12568; spectral centroid 491.947 Hz; pitch proxy 260.045 Hz; words/second proxy 0.949; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 7.
 
 ## review-019: `audience_question_or_rhetorical_question`
 
@@ -285,7 +285,7 @@ Interpretation: The speaker is posing a question to orient the audience.
 
 Limitation: It is unclear whether the audience was expected to answer aloud.
 
-Delivery measurements: RMS -43.174; speech-activity proxy 0.6; zero-crossing rate 0.16535; spectral centroid 791.795 Hz; overlapping audio windows 5.
+Delivery measurements: RMS -43.174; speech-activity proxy 0.6; zero-crossing rate 0.16535; spectral centroid 791.795 Hz; pitch proxy 244.792 Hz; words/second proxy 2.174; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 5.
 
 ## review-020: `narrative_detail`
 
@@ -300,7 +300,7 @@ Interpretation: This is another question-detector false positive.
 
 Limitation: Transcript punctuation may be imperfect.
 
-Delivery measurements: RMS -13.346; speech-activity proxy 1.0; zero-crossing rate 0.10697; spectral centroid 466.106 Hz; overlapping audio windows 5.
+Delivery measurements: RMS -13.346; speech-activity proxy 1.0; zero-crossing rate 0.10697; spectral centroid 466.106 Hz; pitch proxy 260.938 Hz; words/second proxy 4.128; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 5.
 
 ## review-021: `policy_call_to_action`
 
@@ -315,7 +315,7 @@ Interpretation: This is an explicit policy-oriented call to action rather than a
 
 Limitation: The transcript does not show whether the audience accepted or acted on the proposal.
 
-Delivery measurements: RMS -28.763; speech-activity proxy 0.6; zero-crossing rate 0.11173; spectral centroid 1183.051 Hz; overlapping audio windows 5.
+Delivery measurements: RMS -28.763; speech-activity proxy 0.6; zero-crossing rate 0.11173; spectral centroid 1183.051 Hz; pitch proxy 315.104 Hz; words/second proxy 1.471; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 5.
 
 ## review-022: `moderator_turn_invitation`
 
@@ -330,7 +330,7 @@ Interpretation: The imperative form is a conversational turn allocation, not a s
 
 Limitation: The distinction depends on the surrounding interview format and speaker roles.
 
-Delivery measurements: RMS -16.368; speech-activity proxy 1.0; zero-crossing rate 0.17713; spectral centroid 677.75 Hz; overlapping audio windows 6.
+Delivery measurements: RMS -16.368; speech-activity proxy 1.0; zero-crossing rate 0.17713; spectral centroid 677.75 Hz; pitch proxy 298.177 Hz; words/second proxy 1.974; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 6.
 
 ## review-023: `compressed_evaluation`
 
@@ -345,7 +345,7 @@ Interpretation: The speaker is marking a summary conclusion.
 
 Limitation: The marker identifies discourse function, not the truth of the evaluation.
 
-Delivery measurements: RMS -20.84; speech-activity proxy 0.875; zero-crossing rate 0.19334; spectral centroid 794.007 Hz; overlapping audio windows 8.
+Delivery measurements: RMS -20.84; speech-activity proxy 0.875; zero-crossing rate 0.19334; spectral centroid 794.007 Hz; pitch proxy 177.455 Hz; words/second proxy 1.235; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 8.
 
 ## review-024: `normative_rejection`
 
@@ -360,7 +360,7 @@ Interpretation: This is a forceful normative disagreement, though not an exchang
 
 Limitation: 'Disagreement' here describes the stance toward a position, not observable interpersonal conflict.
 
-Delivery measurements: RMS -18.045; speech-activity proxy 1.0; zero-crossing rate 0.11509; spectral centroid 653.329 Hz; overlapping audio windows 7.
+Delivery measurements: RMS -18.045; speech-activity proxy 1.0; zero-crossing rate 0.11509; spectral centroid 653.329 Hz; pitch proxy 350.447 Hz; words/second proxy 2.239; transcript gap before 0.0 seconds; transcript gap after 2.08 seconds; overlapping audio windows 7.
 
 ## review-025: `explicit_rejection`
 
@@ -375,7 +375,7 @@ Interpretation: The speaker is sharpening a disagreement through contrastive ref
 
 Limitation: The transcript alone cannot establish whom the speaker is addressing.
 
-Delivery measurements: RMS -18.776; speech-activity proxy 1.0; zero-crossing rate 0.11912; spectral centroid 726.56 Hz; overlapping audio windows 6.
+Delivery measurements: RMS -18.776; speech-activity proxy 1.0; zero-crossing rate 0.11912; spectral centroid 726.56 Hz; pitch proxy 236.979 Hz; words/second proxy 1.695; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 6.
 
 ## review-026: `evidence_based_contrast`
 
@@ -390,7 +390,7 @@ Interpretation: The speaker is correcting an expected trajectory by presenting a
 
 Limitation: A contrast marker does not by itself prove that another person disagreed.
 
-Delivery measurements: RMS -15.454; speech-activity proxy 1.0; zero-crossing rate 0.13829; spectral centroid 490.296 Hz; overlapping audio windows 7.
+Delivery measurements: RMS -15.454; speech-activity proxy 1.0; zero-crossing rate 0.13829; spectral centroid 490.296 Hz; pitch proxy 253.348 Hz; words/second proxy 0.88; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 7.
 
 ## review-027: `conceptual_reframing`
 
@@ -405,7 +405,7 @@ Interpretation: This is a definition-like reformulation used to distinguish tole
 
 Limitation: It defines a rhetorical use of the phrase, not every possible meaning of 'tolerate'.
 
-Delivery measurements: RMS -19.159; speech-activity proxy 1.0; zero-crossing rate 0.12002; spectral centroid 699.246 Hz; overlapping audio windows 11.
+Delivery measurements: RMS -19.159; speech-activity proxy 1.0; zero-crossing rate 0.12002; spectral centroid 699.246 Hz; pitch proxy 303.267 Hz; words/second proxy 1.667; transcript gap before 2.64 seconds; transcript gap after 0.0 seconds; overlapping audio windows 11.
 
 ## review-028: `interpretive_definition`
 
@@ -420,7 +420,7 @@ Interpretation: The phrase functions as a compact definition or meaning assignme
 
 Limitation: It is a personal interpretation, not a universally established definition.
 
-Delivery measurements: RMS -40.996; speech-activity proxy 0.3; zero-crossing rate 0.25735; spectral centroid 1799.914 Hz; overlapping audio windows 10.
+Delivery measurements: RMS -40.996; speech-activity proxy 0.3; zero-crossing rate 0.25735; spectral centroid 1799.914 Hz; pitch proxy 257.813 Hz; words/second proxy 0.644; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 10.
 
 ## review-029: `conceptual_equation`
 
@@ -435,7 +435,7 @@ Interpretation: This is a rhetorical definition or conceptual reframing that lin
 
 Limitation: The equivalence is persuasive language; it does not establish a literal causal identity.
 
-Delivery measurements: RMS -24.272; speech-activity proxy 0.875; zero-crossing rate 0.1855; spectral centroid 787.154 Hz; overlapping audio windows 8.
+Delivery measurements: RMS -24.272; speech-activity proxy 0.875; zero-crossing rate 0.1855; spectral centroid 787.154 Hz; pitch proxy 213.17 Hz; words/second proxy 0.801; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 8.
 
 ## review-030: `personal_story_detail`
 
@@ -450,7 +450,7 @@ Interpretation: This is a concrete narrative detail, but the segment does not in
 
 Limitation: The distinction between story detail and example depends on the larger discourse purpose.
 
-Delivery measurements: RMS -24.687; speech-activity proxy 1.0; zero-crossing rate 0.08421; spectral centroid 374.397 Hz; overlapping audio windows 7.
+Delivery measurements: RMS -24.687; speech-activity proxy 1.0; zero-crossing rate 0.08421; spectral centroid 374.397 Hz; pitch proxy 170.759 Hz; words/second proxy 1.809; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 7.
 
 ## review-031: `statistical_example_introduction`
 
@@ -465,7 +465,7 @@ Interpretation: The speaker is moving from general history to an illustrative qu
 
 Limitation: The statistic itself begins in the next caption and must be read with it.
 
-Delivery measurements: RMS -18.201; speech-activity proxy 1.0; zero-crossing rate 0.22754; spectral centroid 1021.689 Hz; overlapping audio windows 6.
+Delivery measurements: RMS -18.201; speech-activity proxy 1.0; zero-crossing rate 0.22754; spectral centroid 1021.689 Hz; pitch proxy 238.281 Hz; words/second proxy 1.679; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 6.
 
 ## review-032: `institutional_example_introduction`
 
@@ -480,7 +480,7 @@ Interpretation: The speaker is grounding a general claim about agreements in a c
 
 Limitation: The example supports illustration, not necessarily causal proof.
 
-Delivery measurements: RMS -14.027; speech-activity proxy 1.0; zero-crossing rate 0.16262; spectral centroid 579.236 Hz; overlapping audio windows 5.
+Delivery measurements: RMS -14.027; speech-activity proxy 1.0; zero-crossing rate 0.16262; spectral centroid 579.236 Hz; pitch proxy 206.25 Hz; words/second proxy 1.724; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 5.
 
 ## review-033: `hesitation_and_repair`
 
@@ -495,7 +495,7 @@ Interpretation: The segment is consistent with planning or repair during a perso
 
 Limitation: The measurement is window-level and cannot determine the speaker's internal reason for pausing.
 
-Delivery measurements: RMS -20.801; speech-activity proxy 1.0; zero-crossing rate 0.09132; spectral centroid 637.313 Hz; overlapping audio windows 5.
+Delivery measurements: RMS -20.801; speech-activity proxy 1.0; zero-crossing rate 0.09132; spectral centroid 637.313 Hz; pitch proxy 273.437 Hz; words/second proxy 1.359; transcript gap before 0.239 seconds; transcript gap after 0.0 seconds; overlapping audio windows 5.
 
 ## review-034: `dramatic_story_transition`
 
@@ -510,7 +510,7 @@ Interpretation: The pause may mark a transition from an example to its broader s
 
 Limitation: The audio proxy cannot distinguish intentional rhetorical silence from editing or segmentation.
 
-Delivery measurements: RMS -32.28; speech-activity proxy 0.857; zero-crossing rate 0.23243; spectral centroid 1341.164 Hz; overlapping audio windows 7.
+Delivery measurements: RMS -32.28; speech-activity proxy 0.857; zero-crossing rate 0.23243; spectral centroid 1341.164 Hz; pitch proxy 290.365 Hz; words/second proxy 1.477; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 7.
 
 ## review-035: `disfluency_without_measured_pause`
 
@@ -525,7 +525,7 @@ Interpretation: A verbal restart or disfluency should not be treated as a measur
 
 Limitation: The one-second window may miss sub-second timing distinctions.
 
-Delivery measurements: RMS -15.834; speech-activity proxy 1.0; zero-crossing rate 0.13463; spectral centroid 543.476 Hz; overlapping audio windows 6.
+Delivery measurements: RMS -15.834; speech-activity proxy 1.0; zero-crossing rate 0.13463; spectral centroid 543.476 Hz; pitch proxy 248.698 Hz; words/second proxy 1.852; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 6.
 
 ## review-036: `rhetorical_question`
 
@@ -540,7 +540,7 @@ Interpretation: It appears to function rhetorically or conversationally rather t
 
 Limitation: Transcript context cannot establish whether an audience response was expected.
 
-Delivery measurements: RMS -18.445; speech-activity proxy 1.0; zero-crossing rate 0.05662; spectral centroid 409.525 Hz; overlapping audio windows 5.
+Delivery measurements: RMS -18.445; speech-activity proxy 1.0; zero-crossing rate 0.05662; spectral centroid 409.525 Hz; pitch proxy 201.563 Hz; words/second proxy 0.915; transcript gap before 0.72 seconds; transcript gap after 0.0 seconds; overlapping audio windows 5.
 
 ## review-037: `self_question_sequence`
 
@@ -555,7 +555,7 @@ Interpretation: The speaker is using self-questioning to structure a personal id
 
 Limitation: The function is rhetorical in context; it should not be counted as an interviewer question.
 
-Delivery measurements: RMS -17.273; speech-activity proxy 1.0; zero-crossing rate 0.08101; spectral centroid 439.012 Hz; overlapping audio windows 2.
+Delivery measurements: RMS -17.273; speech-activity proxy 1.0; zero-crossing rate 0.08101; spectral centroid 439.012 Hz; pitch proxy 222.656 Hz; words/second proxy 2.502; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 2.
 
 ## review-038: `relative_clause`
 
@@ -570,7 +570,7 @@ Interpretation: This is a question-detector false positive caused by an interrog
 
 Limitation: Transcript punctuation and segmentation can still obscure clause boundaries.
 
-Delivery measurements: RMS -15.537; speech-activity proxy 1.0; zero-crossing rate 0.14657; spectral centroid 516.852 Hz; overlapping audio windows 6.
+Delivery measurements: RMS -15.537; speech-activity proxy 1.0; zero-crossing rate 0.14657; spectral centroid 516.852 Hz; pitch proxy 248.698 Hz; words/second proxy 1.613; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 6.
 
 ## review-039: `generalized_scenario`
 
@@ -585,7 +585,7 @@ Interpretation: This is a hypothetical or generalized scenario rather than a per
 
 Limitation: A longer context could reveal an embedded example or autobiographical reference.
 
-Delivery measurements: RMS -19.032; speech-activity proxy 1.0; zero-crossing rate 0.14187; spectral centroid 654.524 Hz; overlapping audio windows 6.
+Delivery measurements: RMS -19.032; speech-activity proxy 1.0; zero-crossing rate 0.14187; spectral centroid 654.524 Hz; pitch proxy 302.083 Hz; words/second proxy 2.841; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 6.
 
 ## review-040: `personal_rejection_story`
 
@@ -600,7 +600,7 @@ Interpretation: This is a personal anecdote used to illustrate persistence and f
 
 Limitation: The transcript may contain recognition errors in the job descriptions.
 
-Delivery measurements: RMS -22.085; speech-activity proxy 1.0; zero-crossing rate 0.1154; spectral centroid 771.816 Hz; overlapping audio windows 6.
+Delivery measurements: RMS -22.085; speech-activity proxy 1.0; zero-crossing rate 0.1154; spectral centroid 771.816 Hz; pitch proxy 313.802 Hz; words/second proxy 1.585; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 6.
 
 ## review-041: `personal_story_dialogue`
 
@@ -615,7 +615,7 @@ Interpretation: This is a personal story segment with embedded dialogue and a na
 
 Limitation: The quote attribution is inferred from transcript wording and should be checked against the audio.
 
-Delivery measurements: RMS -33.165; speech-activity proxy 0.833; zero-crossing rate 0.22626; spectral centroid 1782.799 Hz; overlapping audio windows 6.
+Delivery measurements: RMS -33.165; speech-activity proxy 0.833; zero-crossing rate 0.22626; spectral centroid 1782.799 Hz; pitch proxy 262.5 Hz; words/second proxy 3.598; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 6.
 
 ## review-042: `epistemic_hedge`
 
@@ -630,7 +630,7 @@ Interpretation: The wording qualifies the assertion without withdrawing the posi
 
 Limitation: A hedge in wording does not establish uncertainty in the speaker's state of mind.
 
-Delivery measurements: RMS -18.437; speech-activity proxy 1.0; zero-crossing rate 0.11846; spectral centroid 668.199 Hz; overlapping audio windows 10.
+Delivery measurements: RMS -18.437; speech-activity proxy 1.0; zero-crossing rate 0.11846; spectral centroid 668.199 Hz; pitch proxy 278.125 Hz; words/second proxy 1.786; transcript gap before 5.28 seconds; transcript gap after 0.0 seconds; overlapping audio windows 10.
 
 ## review-043: `qualified_recommendation`
 
@@ -645,7 +645,7 @@ Interpretation: The phrase combines an epistemic hedge with a strong recommendat
 
 Limitation: The transcript cannot determine whether the vocal delivery strengthened or softened the hedge.
 
-Delivery measurements: RMS -25.918; speech-activity proxy 1.0; zero-crossing rate 0.08987; spectral centroid 525.238 Hz; overlapping audio windows 7.
+Delivery measurements: RMS -25.918; speech-activity proxy 1.0; zero-crossing rate 0.08987; spectral centroid 525.238 Hz; pitch proxy 198.661 Hz; words/second proxy 1.667; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 7.
 
 ## review-044: `explicit_uncertainty`
 
@@ -660,7 +660,7 @@ Interpretation: This is a clear verbal uncertainty marker around a future claim.
 
 Limitation: It does not show whether the speaker's voice conveyed the same degree of qualification.
 
-Delivery measurements: RMS -27.822; speech-activity proxy 0.833; zero-crossing rate 0.15358; spectral centroid 814.142 Hz; overlapping audio windows 6.
+Delivery measurements: RMS -27.822; speech-activity proxy 0.833; zero-crossing rate 0.15358; spectral centroid 814.142 Hz; pitch proxy 268.75 Hz; words/second proxy 1.626; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 6.
 
 ## review-045: `object_description_transition`
 
@@ -675,7 +675,7 @@ Interpretation: The segment is best treated as an object-description or topic-tr
 
 Limitation: The description may become an example in the following captions.
 
-Delivery measurements: RMS -19.488; speech-activity proxy 1.0; zero-crossing rate 0.08998; spectral centroid 592.662 Hz; overlapping audio windows 6.
+Delivery measurements: RMS -19.488; speech-activity proxy 1.0; zero-crossing rate 0.08998; spectral centroid 592.662 Hz; pitch proxy 338.542 Hz; words/second proxy 1.287; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 6.
 
 ## review-046: `personal_story_detail`
 
@@ -690,7 +690,7 @@ Interpretation: This is a narrative detail, but the current candidate inventory 
 
 Limitation: The false negative likely reflects a retrieval limitation rather than an incorrect story interpretation.
 
-Delivery measurements: RMS -33.75; speech-activity proxy 0.857; zero-crossing rate 0.08735; spectral centroid 385.086 Hz; overlapping audio windows 7.
+Delivery measurements: RMS -33.75; speech-activity proxy 0.857; zero-crossing rate 0.08735; spectral centroid 385.086 Hz; pitch proxy 169.271 Hz; words/second proxy 1.855; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 7.
 
 ## review-047: `repeated_story_action`
 
@@ -705,4 +705,4 @@ Interpretation: This is a compact narrative or habitual-action detail that remai
 
 Limitation: The single caption is too short to determine whether it functions as story, example, or claim.
 
-Delivery measurements: RMS -27.153; speech-activity proxy 1.0; zero-crossing rate 0.27195; spectral centroid 2004.81 Hz; overlapping audio windows 2.
+Delivery measurements: RMS -27.153; speech-activity proxy 1.0; zero-crossing rate 0.27195; spectral centroid 2004.81 Hz; pitch proxy 308.594 Hz; words/second proxy 2.0; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 2.

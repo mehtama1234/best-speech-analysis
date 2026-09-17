@@ -23,6 +23,11 @@ def main() -> int:
             "speech_activity_fraction": measured.get("speech_activity_fraction"),
             "mean_zero_crossing_rate": measured.get("mean_zero_crossing_rate"),
             "mean_spectral_centroid_hz": measured.get("mean_spectral_centroid_hz"),
+            "mean_pitch_hz_proxy": measured.get("mean_pitch_hz_proxy"),
+            "mean_pitch_confidence_proxy": measured.get("mean_pitch_confidence_proxy"),
+            "words_per_second_proxy": measured.get("words_per_second_proxy"),
+            "transcript_gap_before_seconds": measured.get("transcript_gap_before_seconds"),
+            "transcript_gap_after_seconds": measured.get("transcript_gap_after_seconds"),
             "audio_window_count": measured.get("audio_window_count"),
         }, "measurement_status": "direct_audio_summary_when_available" if measured else "no_pilot_media_for_video"})
     output = root / "research/reviewed-pattern-cards.json"
@@ -50,7 +55,7 @@ def main() -> int:
             "",
             f"Limitation: {card['limitations']}",
             "",
-            f"Delivery measurements: RMS {measured['mean_rms_db']}; speech-activity proxy {measured['speech_activity_fraction']}; zero-crossing rate {measured['mean_zero_crossing_rate']}; spectral centroid {measured['mean_spectral_centroid_hz']} Hz; overlapping audio windows {measured['audio_window_count']}.",
+            f"Delivery measurements: RMS {measured['mean_rms_db']}; speech-activity proxy {measured['speech_activity_fraction']}; zero-crossing rate {measured['mean_zero_crossing_rate']}; spectral centroid {measured['mean_spectral_centroid_hz']} Hz; pitch proxy {measured['mean_pitch_hz_proxy']} Hz; words/second proxy {measured['words_per_second_proxy']}; transcript gap before {measured['transcript_gap_before_seconds']} seconds; transcript gap after {measured['transcript_gap_after_seconds']} seconds; overlapping audio windows {measured['audio_window_count']}.",
             "",
         ])
     (root / "writeups/reviewed-pattern-cards.md").write_text("\n".join(markdown))

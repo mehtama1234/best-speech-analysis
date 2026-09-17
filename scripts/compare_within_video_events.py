@@ -11,7 +11,14 @@ from statistics import mean, median, stdev
 from build_segment_registry import candidate_functions
 
 
-METRICS = ["mean_rms_db", "speech_activity_fraction", "mean_zero_crossing_rate", "mean_spectral_centroid_hz"]
+METRICS = [
+    "mean_rms_db",
+    "speech_activity_fraction",
+    "mean_zero_crossing_rate",
+    "mean_spectral_centroid_hz",
+    "mean_pitch_hz_proxy",
+    "mean_pitch_confidence_proxy",
+]
 
 
 def stats(values: list[float]) -> dict:
@@ -62,12 +69,12 @@ def main() -> int:
         "",
         "For each candidate label, this compares the mean measurement of matching transcript segments with the mean measurement of all usable segments in the same video. The contrast reduces—but does not eliminate—speaker, microphone, editing, and topic confounds. Labels are heuristic retrieval aids.",
         "",
-        "| Candidate label | Videos | Segments | RMS delta dB | Activity delta | ZCR delta | Spectral centroid delta Hz |",
-        "|---|---:|---:|---:|---:|---:|---:|",
+        "| Candidate label | Videos | Segments | RMS delta dB | Activity delta | ZCR delta | Spectral centroid delta Hz | Pitch proxy delta Hz | Pitch confidence delta |",
+        "|---|---:|---:|---:|---:|---:|---:|---:|---:|",
     ]
     for label, item in report["patterns"].items():
         md = item["metric_deltas"]
-        lines.append(f"| `{label}` | {item['video_count_by_segment_presence']} | {item['segment_count']} | {md['mean_rms_db']['mean_delta']} | {md['speech_activity_fraction']['mean_delta']} | {md['mean_zero_crossing_rate']['mean_delta']} | {md['mean_spectral_centroid_hz']['mean_delta']} |")
+        lines.append(f"| `{label}` | {item['video_count_by_segment_presence']} | {item['segment_count']} | {md['mean_rms_db']['mean_delta']} | {md['speech_activity_fraction']['mean_delta']} | {md['mean_zero_crossing_rate']['mean_delta']} | {md['mean_spectral_centroid_hz']['mean_delta']} | {md['mean_pitch_hz_proxy']['mean_delta']} | {md['mean_pitch_confidence_proxy']['mean_delta']} |")
     lines += [
         "",
         "## Reading the table",

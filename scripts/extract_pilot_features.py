@@ -47,6 +47,16 @@ def audio_windows(samples: np.ndarray) -> list[dict]:
         frequencies, power = welch(chunk, fs=SAMPLE_RATE, nperseg=min(2048, len(chunk)))
         power_sum = float(np.sum(power) + 1e-12)
         centroid = float(np.sum(frequencies * power) / power_sum)
+        # This is a coarse fundamental-frequency proxy, not a validated pitch
+        # tracker. Restricting the spectral peak to a voice-like band makes the
+        # measurement useful for broad comparisons while keeping its limits
+        # explicit for music, noise, and overlapping speakers.
+        pitch_mask = (frequencies >= 60.0) & (frequencies <= 400.0)
+        pitch_power = power[pitch_mask]
+        pitch_frequencies = frequencies[pitch_mask]
+        pitch_index = int(np.argmax(pitch_power)) if len(pitch_power) else 0
+        pitch_hz = float(pitch_frequencies[pitch_index]) if len(pitch_frequencies) else None
+        pitch_confidence = float(np.max(pitch_power) / (np.sum(pitch_power) + 1e-12)) if len(pitch_power) else None
         rows.append({
             "start_seconds": round(start / SAMPLE_RATE, 3),
             "end_seconds": round((start + len(chunk)) / SAMPLE_RATE, 3),
@@ -55,6 +65,8 @@ def audio_windows(samples: np.ndarray) -> list[dict]:
             "zero_crossing_rate": zcr,
             "spectral_centroid_hz": round(centroid, 3),
             "speech_activity_proxy": rms > 0.01,
+            "pitch_hz_proxy": round(pitch_hz, 3) if pitch_hz is not None and rms > 0.01 else None,
+            "pitch_confidence_proxy": round(pitch_confidence, 5) if pitch_confidence is not None and rms > 0.01 else None,
         })
     return rows
 
@@ -104,22 +116,37 @@ def frame_feature(video_path: Path, time_seconds: float) -> dict | None:
 
 def aligned_transcript(video_id: str, root: Path, windows: list[dict]) -> list[dict]:
     payload = json.loads((root / "data/transcripts" / f"{video_id}.json").read_text())
+    segments = payload.get("transcript") or []
     rows = []
-    for ordinal, segment in enumerate(payload.get("transcript") or []):
+    parsed = []
+    for segment in segments:
         start = float(segment.get("startMs", 0)) / 1000
         end = float(segment.get("endMs", start * 1000)) / 1000
+        parsed.append((start, end, " ".join(str(segment.get("text", "")).split())))
+    for ordinal, (start, end, text) in enumerate(parsed):
         overlaps = [window for window in windows if window["end_seconds"] > start and window["start_seconds"] < end]
+        word_count = len(text.split())
+        previous_end = parsed[ordinal - 1][1] if ordinal else None
+        next_start = parsed[ordinal + 1][0] if ordinal + 1 < len(parsed) else None
+        gap_before = max(0.0, start - previous_end) if previous_end is not None else None
+        gap_after = max(0.0, next_start - end) if next_start is not None else None
         rows.append({
             "evidence_id": f"{video_id}:{ordinal:05d}",
             "video_id": video_id,
             "start_seconds": round(start, 3),
             "end_seconds": round(end, 3),
-            "text": " ".join(str(segment.get("text", "")).split()),
+            "text": text,
+            "word_count": word_count,
+            "words_per_second_proxy": round(word_count / max(end - start, 0.001), 3),
+            "transcript_gap_before_seconds": round(gap_before, 3) if gap_before is not None else None,
+            "transcript_gap_after_seconds": round(gap_after, 3) if gap_after is not None else None,
             "audio_window_count": len(overlaps),
             "mean_rms_db": round(float(np.mean([x["rms_db"] for x in overlaps])), 3) if overlaps else None,
             "speech_activity_fraction": round(float(np.mean([x["speech_activity_proxy"] for x in overlaps])), 3) if overlaps else None,
             "mean_zero_crossing_rate": round(float(np.mean([x["zero_crossing_rate"] for x in overlaps])), 5) if overlaps else None,
             "mean_spectral_centroid_hz": round(float(np.mean([x["spectral_centroid_hz"] for x in overlaps])), 3) if overlaps else None,
+            "mean_pitch_hz_proxy": round(float(np.mean([x["pitch_hz_proxy"] for x in overlaps if x.get("pitch_hz_proxy") is not None])), 3) if any(x.get("pitch_hz_proxy") is not None for x in overlaps) else None,
+            "mean_pitch_confidence_proxy": round(float(np.mean([x["pitch_confidence_proxy"] for x in overlaps if x.get("pitch_confidence_proxy") is not None])), 5) if any(x.get("pitch_confidence_proxy") is not None for x in overlaps) else None,
         })
     return rows
 
@@ -129,6 +156,7 @@ def main() -> int:
     parser.add_argument("--manifest", default="data/media-status.jsonl")
     parser.add_argument("--output-dir", default="data/features")
     parser.add_argument("--frame-step", type=float, default=10.0)
+    parser.add_argument("--reuse-frames", action="store_true", help="Keep existing sampled frames while refreshing audio/transcript features.")
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     output_dir = root / args.output_dir
@@ -143,13 +171,18 @@ def main() -> int:
         samples = decode_audio(audio_candidates[0])
         windows = audio_windows(samples)
         duration = len(samples) / SAMPLE_RATE
-        frames = []
-        for time_seconds in np.arange(0, duration, args.frame_step):
-            feature = frame_feature(video_candidates[0], float(time_seconds))
-            if feature:
-                frames.append(feature)
+        existing_report = output_dir / f"{video_id}.json"
+        existing_frames = []
+        if args.reuse_frames and existing_report.exists():
+            existing_frames = json.loads(existing_report.read_text()).get("sampled_frames", [])
+        frames = existing_frames
+        if not frames:
+            for time_seconds in np.arange(0, duration, args.frame_step):
+                feature = frame_feature(video_candidates[0], float(time_seconds))
+                if feature:
+                    frames.append(feature)
         report = {
-            "schema_version": "0.1",
+            "schema_version": "0.2",
             "video_id": video_id,
             "audio_source": str(audio_candidates[0].relative_to(root)),
             "video_source": str(video_candidates[0].relative_to(root)),
@@ -159,6 +192,7 @@ def main() -> int:
             "aligned_transcript": aligned_transcript(video_id, root, windows),
             "sampled_frames": frames,
             "visual_measurement_status": "scene_pixel_features_only; face_expression_not_analyzed",
+            "audio_measurement_status": "rms_zcr_spectral_centroid_and_coarse_spectral_pitch_proxy; not_a_validated_pitch_tracker",
         }
         (output_dir / f"{video_id}.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
         print(f"saved {video_id}: {len(windows)} audio windows, {len(frames)} frames", flush=True)
