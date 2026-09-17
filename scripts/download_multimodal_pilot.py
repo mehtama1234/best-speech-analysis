@@ -26,7 +26,12 @@ def main() -> int:
     status_path = Path(args.status_file)
     existing = {}
     if status_path.exists():
-        existing = {row["video_id"]: row for row in map(json.loads, status_path.read_text().splitlines()) if row.strip()}
+        existing = {
+            row["video_id"]: row
+            for line in status_path.read_text().splitlines()
+            if line.strip()
+            for row in [json.loads(line)]
+        }
     videos = manifest["videos"][:args.limit] if args.limit else manifest["videos"]
     results = dict(existing)
 
@@ -34,6 +39,9 @@ def main() -> int:
         video_id = video["video_id"]
         url = video["url"]
         row = results.setdefault(video_id, {"video_id": video_id, "url": url})
+        if row.get("video_status") == "downloaded" and row.get("audio_status") == "downloaded":
+            print(json.dumps({"video_id": video_id, "status": "cached"}), flush=True)
+            continue
         video_pattern = str(video_dir / f"{video_id}.%(ext)s")
         audio_pattern = str(audio_dir / f"{video_id}.%(ext)s")
         try:
@@ -62,4 +70,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
