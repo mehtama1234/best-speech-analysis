@@ -1,0 +1,240 @@
+{
+  "schema_version": "0.1",
+  "video_id": "RCxgqHqakXc",
+  "source_feature_file": "data/features/RCxgqHqakXc.json",
+  "model": "torchvision Keypoint R-CNN ResNet-50 FPN COCO weights",
+  "measurement_policy": "Observable person/keypoint geometry only; no gesture, emotion, confidence, intent, or mental-state inference.",
+  "frame_count": 4,
+  "frames": [
+    {
+      "time_seconds": 0.0,
+      "person_detected": false,
+      "person_score": null,
+      "image_width": 640,
+      "image_height": 360,
+      "keypoints": {},
+      "visible_keypoint_count": 0,
+      "visible_wrist_count": 0,
+      "observable_geometry_status": "no_person_above_score_threshold"
+    },
+    {
+      "time_seconds": 40.0,
+      "person_detected": true,
+      "person_score": 0.98613,
+      "person_box": {
+        "x_min_fraction": 0.02284,
+        "y_min_fraction": 0.03401,
+        "x_max_fraction": 0.39083,
+        "y_max_fraction": 0.76018
+      },
+      "image_width": 640,
+      "image_height": 360,
+      "keypoints": {
+        "nose": {
+          "x_fraction": 0.14813,
+          "y_fraction": 0.12595,
+          "confidence": 1.0
+        },
+        "left_eye": {
+          "x_fraction": 0.1604,
+          "y_fraction": 0.10725,
+          "confidence": 1.0
+        },
+        "right_eye": {
+          "x_fraction": 0.14287,
+          "y_fraction": 0.10102,
+          "confidence": 1.0
+        },
+        "left_ear": {
+          "x_fraction": 0.19719,
+          "y_fraction": 0.06674,
+          "confidence": 1.0
+        },
+        "right_ear": {
+          "x_fraction": 0.19719,
+          "y_fraction": 0.06362,
+          "confidence": 1.0
+        },
+        "left_shoulder": {
+          "x_fraction": 0.24276,
+          "y_fraction": 0.14154,
+          "confidence": 1.0
+        },
+        "right_shoulder": {
+          "x_fraction": 0.13586,
+          "y_fraction": 0.13842,
+          "confidence": 1.0
+        },
+        "left_elbow": {
+          "x_fraction": 0.24626,
+          "y_fraction": 0.30671,
+          "confidence": 1.0
+        },
+        "right_elbow": {
+          "x_fraction": 0.08505,
+          "y_fraction": 0.36905,
+          "confidence": 1.0
+        },
+        "left_wrist": {
+          "x_fraction": 0.19895,
+          "y_fraction": 0.26932,
+          "confidence": 1.0
+        },
+        "right_wrist": {
+          "x_fraction": 0.02371,
+          "y_fraction": 0.49994,
+          "confidence": 1.0
+        },
+        "left_hip": {
+          "x_fraction": 0.36367,
+          "y_fraction": 0.07297,
+          "confidence": 1.0
+        },
+        "right_hip": {
+          "x_fraction": 0.14112,
+          "y_fraction": 0.15089,
+          "confidence": 1.0
+        },
+        "left_knee": {
+          "x_fraction": 0.30584,
+          "y_fraction": 0.45319,
+          "confidence": 1.0
+        },
+        "right_knee": {
+          "x_fraction": 0.23399,
+          "y_fraction": 0.33165,
+          "confidence": 1.0
+        },
+        "left_ankle": {
+          "x_fraction": 0.2007,
+          "y_fraction": 0.662,
+          "confidence": 1.0
+        },
+        "right_ankle": {
+          "x_fraction": 0.19895,
+          "y_fraction": 0.69629,
+          "confidence": 1.0
+        }
+      },
+      "visible_keypoint_count": 17,
+      "visible_wrist_count": 2,
+      "shoulder_width_fraction": 0.1069,
+      "observable_geometry_status": "keypoint_geometry_only; no_gesture_or_intent_inference"
+    },
+    {
+      "time_seconds": 80.0,
+      "person_detected": false,
+      "person_score": 0.38241,
+      "image_width": 640,
+      "image_height": 360,
+      "keypoints": {},
+      "visible_keypoint_count": 0,
+      "visible_wrist_count": 0,
+      "observable_geometry_status": "no_person_above_score_threshold"
+    },
+    {
+      "time_seconds": 120.0,
+      "person_detected": true,
+      "person_score": 0.94189,
+      "person_box": {
+        "x_min_fraction": 0.09369,
+        "y_min_fraction": 0.16381,
+        "x_max_fraction": 0.16736,
+        "y_max_fraction": 0.36451
+      },
+      "image_width": 640,
+      "image_height": 360,
+      "keypoints": {
+        "nose": {
+          "x_fraction": 0.11737,
+          "y_fraction": 0.24872,
+          "confidence": 1.0
+        },
+        "left_eye": {
+          "x_fraction": 0.12263,
+          "y_fraction": 0.23328,
+          "confidence": 1.0
+        },
+        "right_eye": {
+          "x_fraction": 0.11386,
+          "y_fraction": 0.23637,
+          "confidence": 1.0
+        },
+        "left_ear": {
+          "x_fraction": 0.14894,
+          "y_fraction": 0.21784,
+          "confidence": 1.0
+        },
+        "right_ear": {
+          "x_fraction": 0.11211,
+          "y_fraction": 0.23946,
+          "confidence": 1.0
+        },
+        "left_shoulder": {
+          "x_fraction": 0.15771,
+          "y_fraction": 0.29503,
+          "confidence": 1.0
+        },
+        "right_shoulder": {
+          "x_fraction": 0.10158,
+          "y_fraction": 0.29195,
+          "confidence": 1.0
+        },
+        "left_elbow": {
+          "x_fraction": 0.16298,
+          "y_fraction": 0.35061,
+          "confidence": 1.0
+        },
+        "right_elbow": {
+          "x_fraction": 0.10509,
+          "y_fraction": 0.32591,
+          "confidence": 1.0
+        },
+        "left_wrist": {
+          "x_fraction": 0.14368,
+          "y_fraction": 0.28268,
+          "confidence": 1.0
+        },
+        "right_wrist": {
+          "x_fraction": 0.12439,
+          "y_fraction": 0.27342,
+          "confidence": 1.0
+        },
+        "left_hip": {
+          "x_fraction": 0.15596,
+          "y_fraction": 0.36296,
+          "confidence": 1.0
+        },
+        "right_hip": {
+          "x_fraction": 0.12088,
+          "y_fraction": 0.36296,
+          "confidence": 1.0
+        },
+        "left_knee": {
+          "x_fraction": 0.12789,
+          "y_fraction": 0.33826,
+          "confidence": 1.0
+        },
+        "right_knee": {
+          "x_fraction": 0.10334,
+          "y_fraction": 0.29503,
+          "confidence": 1.0
+        },
+        "left_ankle": {
+          "x_fraction": 0.16648,
+          "y_fraction": 0.36296,
+          "confidence": 1.0
+        },
+        "right_ankle": {
+          "x_fraction": 0.12789,
+          "y_fraction": 0.34444,
+          "confidence": 1.0
+        }
+      },
+      "visible_keypoint_count": 17,
+      "visible_wrist_count": 2,
+      "shoulder_width_fraction": 0.05613,
+      "observable_geometry_status": "keypoint_geometry_only; no_gesture_or_intent_inference"
+    }
+  ]
+}
