@@ -1,0 +1,316 @@
+{
+  "schema_version": "0.1",
+  "measurement_policy": "Face geometry and scene-pixel changes only; no emotion or intent inference.",
+  "video_summary": {
+    "2fWJh-_UG5s": {
+      "sampled_frame_count": 139,
+      "face_present_frames": 105,
+      "movement_pairs": 138
+    },
+    "2m_lqGnLtWA": {
+      "sampled_frame_count": 17,
+      "face_present_frames": 3,
+      "movement_pairs": 16
+    },
+    "3AIoHLr8nTI": {
+      "sampled_frame_count": 102,
+      "face_present_frames": 95,
+      "movement_pairs": 101
+    },
+    "5i0u4jFmE78": {
+      "sampled_frame_count": 16,
+      "face_present_frames": 9,
+      "movement_pairs": 15
+    },
+    "9fEurt2OZ0I": {
+      "sampled_frame_count": 13,
+      "face_present_frames": 10,
+      "movement_pairs": 12
+    },
+    "JDfP3thQYrM": {
+      "sampled_frame_count": 59,
+      "face_present_frames": 44,
+      "movement_pairs": 58
+    },
+    "S43F1BZfQKY": {
+      "sampled_frame_count": 47,
+      "face_present_frames": 23,
+      "movement_pairs": 46
+    },
+    "W-mgdUdOjhs": {
+      "sampled_frame_count": 28,
+      "face_present_frames": 10,
+      "movement_pairs": 27
+    },
+    "ZwMVMbmQBug": {
+      "sampled_frame_count": 23,
+      "face_present_frames": 13,
+      "movement_pairs": 22
+    },
+    "aHXxveJTJoE": {
+      "sampled_frame_count": 25,
+      "face_present_frames": 4,
+      "movement_pairs": 24
+    },
+    "aXmM0VZv810": {
+      "sampled_frame_count": 162,
+      "face_present_frames": 107,
+      "movement_pairs": 161
+    },
+    "fBnAMUkNM2k": {
+      "sampled_frame_count": 238,
+      "face_present_frames": 139,
+      "movement_pairs": 237
+    },
+    "hZ0YhrgYejI": {
+      "sampled_frame_count": 17,
+      "face_present_frames": 5,
+      "movement_pairs": 16
+    },
+    "jxY2-YgAgm0": {
+      "sampled_frame_count": 39,
+      "face_present_frames": 34,
+      "movement_pairs": 38
+    },
+    "lcj1wMZRitI": {
+      "sampled_frame_count": 55,
+      "face_present_frames": 36,
+      "movement_pairs": 54
+    },
+    "m92yvNscIAo": {
+      "sampled_frame_count": 16,
+      "face_present_frames": 6,
+      "movement_pairs": 15
+    },
+    "qOwYULOPuPs": {
+      "sampled_frame_count": 93,
+      "face_present_frames": 72,
+      "movement_pairs": 92
+    },
+    "r2kP2Pqdx6w": {
+      "sampled_frame_count": 103,
+      "face_present_frames": 99,
+      "movement_pairs": 102
+    },
+    "u1gg_L-syCw": {
+      "sampled_frame_count": 18,
+      "face_present_frames": 8,
+      "movement_pairs": 17
+    },
+    "xRiwgtdyjQk": {
+      "sampled_frame_count": 59,
+      "face_present_frames": 49,
+      "movement_pairs": 58
+    }
+  },
+  "patterns": {
+    "call_to_action": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count": 5,
+      "video_weighted_metrics": {
+        "face_center_movement": {
+          "video_count": 4,
+          "mean": 0.18225,
+          "stddev": 0.20699
+        },
+        "face_area_change": {
+          "video_count": 4,
+          "mean": 0.00224,
+          "stddev": 0.00063
+        },
+        "scene_luminance_change": {
+          "video_count": 5,
+          "mean": 5.41721,
+          "stddev": 2.44725
+        },
+        "face_presence_transition": {
+          "video_count": 5,
+          "mean": 0.29524,
+          "stddev": 0.41704
+        }
+      }
+    },
+    "contrast_or_disagreement": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count": 4,
+      "video_weighted_metrics": {
+        "face_center_movement": {
+          "video_count": 3,
+          "mean": 0.08604,
+          "stddev": 0.10127
+        },
+        "face_area_change": {
+          "video_count": 3,
+          "mean": 0.0021,
+          "stddev": 0.00203
+        },
+        "scene_luminance_change": {
+          "video_count": 4,
+          "mean": 8.68683,
+          "stddev": 7.69862
+        },
+        "face_presence_transition": {
+          "video_count": 4,
+          "mean": 0.375,
+          "stddev": 0.47871
+        }
+      }
+    },
+    "definition": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count": 2,
+      "video_weighted_metrics": {
+        "face_center_movement": {
+          "video_count": 1,
+          "mean": 0.04388,
+          "stddev": 0.0
+        },
+        "face_area_change": {
+          "video_count": 1,
+          "mean": 0.0025,
+          "stddev": 0.0
+        },
+        "scene_luminance_change": {
+          "video_count": 2,
+          "mean": 61.349,
+          "stddev": 63.17292
+        },
+        "face_presence_transition": {
+          "video_count": 2,
+          "mean": 0.5,
+          "stddev": 0.70711
+        }
+      }
+    },
+    "example": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count": 4,
+      "video_weighted_metrics": {
+        "face_center_movement": {
+          "video_count": 3,
+          "mean": 0.167,
+          "stddev": 0.26531
+        },
+        "face_area_change": {
+          "video_count": 3,
+          "mean": 0.01214,
+          "stddev": 0.01012
+        },
+        "scene_luminance_change": {
+          "video_count": 4,
+          "mean": 24.634,
+          "stddev": 39.54696
+        },
+        "face_presence_transition": {
+          "video_count": 4,
+          "mean": 0.25,
+          "stddev": 0.5
+        }
+      }
+    },
+    "question": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count": 12,
+      "video_weighted_metrics": {
+        "face_center_movement": {
+          "video_count": 9,
+          "mean": 0.07432,
+          "stddev": 0.05074
+        },
+        "face_area_change": {
+          "video_count": 9,
+          "mean": 0.00488,
+          "stddev": 0.00367
+        },
+        "scene_luminance_change": {
+          "video_count": 12,
+          "mean": 11.09217,
+          "stddev": 9.54954
+        },
+        "face_presence_transition": {
+          "video_count": 12,
+          "mean": 0.27969,
+          "stddev": 0.25342
+        }
+      }
+    },
+    "story_or_personal_experience": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count": 5,
+      "video_weighted_metrics": {
+        "face_center_movement": {
+          "video_count": 3,
+          "mean": 0.1125,
+          "stddev": 0.16183
+        },
+        "face_area_change": {
+          "video_count": 3,
+          "mean": 0.02417,
+          "stddev": 0.03373
+        },
+        "scene_luminance_change": {
+          "video_count": 5,
+          "mean": 10.22305,
+          "stddev": 8.23918
+        },
+        "face_presence_transition": {
+          "video_count": 5,
+          "mean": 0.2,
+          "stddev": 0.44721
+        }
+      }
+    },
+    "uncertainty_or_qualification": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count": 12,
+      "video_weighted_metrics": {
+        "face_center_movement": {
+          "video_count": 9,
+          "mean": 0.18263,
+          "stddev": 0.15929
+        },
+        "face_area_change": {
+          "video_count": 9,
+          "mean": 0.01603,
+          "stddev": 0.02462
+        },
+        "scene_luminance_change": {
+          "video_count": 12,
+          "mean": 7.90555,
+          "stddev": 6.20911
+        },
+        "face_presence_transition": {
+          "video_count": 12,
+          "mean": 0.38353,
+          "stddev": 0.36723
+        }
+      }
+    },
+    "unclassified": {
+      "label_status": "heuristic_retrieval_aid_requires_manual_review",
+      "video_count": 20,
+      "video_weighted_metrics": {
+        "face_center_movement": {
+          "video_count": 19,
+          "mean": 0.11026,
+          "stddev": 0.07226
+        },
+        "face_area_change": {
+          "video_count": 19,
+          "mean": 0.01612,
+          "stddev": 0.01692
+        },
+        "scene_luminance_change": {
+          "video_count": 20,
+          "mean": 11.81714,
+          "stddev": 6.5785
+        },
+        "face_presence_transition": {
+          "video_count": 20,
+          "mean": 0.31855,
+          "stddev": 0.17459
+        }
+      }
+    }
+  }
+}
