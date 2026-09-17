@@ -266,6 +266,183 @@
         "audio_window_count": null
       },
       "measurement_status": "no_pilot_media_for_video"
+    },
+    {
+      "annotation_id": "review-013",
+      "evidence_id": "S43F1BZfQKY:00002",
+      "review_status": "reviewed",
+      "candidate_labels": [
+        "story_or_personal_experience"
+      ],
+      "reviewed_speech_function": "story_recall",
+      "candidate_label_supported": true,
+      "direct_observation": "The speaker explicitly says 'I remember that day'.",
+      "interpretation": "The speaker is opening a personal story.",
+      "confidence": "high",
+      "limitations": "A story label does not imply emotional state.",
+      "measured_delivery": {
+        "mean_rms_db": -24.076,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.11111,
+        "mean_spectral_centroid_hz": 466.09,
+        "audio_window_count": 3
+      },
+      "measurement_status": "direct_audio_summary_when_available"
+    },
+    {
+      "annotation_id": "review-014",
+      "evidence_id": "S43F1BZfQKY:00011",
+      "review_status": "reviewed",
+      "candidate_labels": [
+        "call_to_action",
+        "story_or_personal_experience"
+      ],
+      "reviewed_speech_function": "story_event_with_embedded_advice",
+      "candidate_label_supported": false,
+      "direct_observation": "'Maybe you should' occurs inside a narrated event and is advice quoted from another person, not the speaker's call to the audience.",
+      "interpretation": "The story marker is supported; the call-to-action heuristic is a false positive.",
+      "confidence": "high",
+      "limitations": "Speaker attribution within quoted dialogue requires broader context.",
+      "measured_delivery": {
+        "mean_rms_db": -39.485,
+        "speech_activity_fraction": 0.444,
+        "mean_zero_crossing_rate": 0.0955,
+        "mean_spectral_centroid_hz": 434.722,
+        "audio_window_count": 18
+      },
+      "measurement_status": "direct_audio_summary_when_available"
+    },
+    {
+      "annotation_id": "review-015",
+      "evidence_id": "S43F1BZfQKY:00036",
+      "review_status": "reviewed",
+      "candidate_labels": [
+        "story_or_personal_experience"
+      ],
+      "reviewed_speech_function": "story_action",
+      "candidate_label_supported": true,
+      "direct_observation": "The speaker narrates a first-person past action: 'I went for it'.",
+      "interpretation": "The speaker is advancing a personal narrative.",
+      "confidence": "high",
+      "limitations": "Caption-level boundaries may split one narrative unit.",
+      "measured_delivery": {
+        "mean_rms_db": -20.403,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.16655,
+        "mean_spectral_centroid_hz": 1136.106,
+        "audio_window_count": 20
+      },
+      "measurement_status": "direct_audio_summary_when_available"
+    },
+    {
+      "annotation_id": "review-016",
+      "evidence_id": "3AIoHLr8nTI:00003",
+      "review_status": "reviewed",
+      "candidate_labels": [
+        "conclusion_or_summary"
+      ],
+      "reviewed_speech_function": "causal_transition",
+      "candidate_label_supported": false,
+      "direct_observation": "'Therefore' links a preceding idea to a consequence but does not by itself summarize or conclude the speech.",
+      "interpretation": "The conclusion keyword heuristic is a false positive for this transition.",
+      "confidence": "high",
+      "limitations": "The surrounding speech may establish a larger conclusion.",
+      "measured_delivery": {
+        "mean_rms_db": -19.439,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.11621,
+        "mean_spectral_centroid_hz": 673.143,
+        "audio_window_count": 10
+      },
+      "measurement_status": "direct_audio_summary_when_available"
+    },
+    {
+      "annotation_id": "review-017",
+      "evidence_id": "aXmM0VZv810:00483",
+      "review_status": "reviewed",
+      "candidate_labels": [
+        "conclusion_or_summary"
+      ],
+      "reviewed_speech_function": "conclusion_marker",
+      "candidate_label_supported": true,
+      "direct_observation": "The phrase 'what matters' explicitly foregrounds a criterion or takeaway.",
+      "interpretation": "The speaker is emphasizing a concluding or prioritizing point.",
+      "confidence": "medium",
+      "limitations": "The segment is short and should be read with neighboring captions.",
+      "measured_delivery": {
+        "mean_rms_db": -15.764,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.17077,
+        "mean_spectral_centroid_hz": 638.521,
+        "audio_window_count": 6
+      },
+      "measurement_status": "direct_audio_summary_when_available"
+    },
+    {
+      "annotation_id": "review-018",
+      "evidence_id": "aXmM0VZv810:00274",
+      "review_status": "reviewed",
+      "candidate_labels": [
+        "example"
+      ],
+      "reviewed_speech_function": "example_marker",
+      "candidate_label_supported": true,
+      "direct_observation": "The phrase 'for example' introduces a concrete case.",
+      "interpretation": "The speaker is moving from an abstract claim to an example.",
+      "confidence": "high",
+      "limitations": "This does not establish whether the example was effective.",
+      "measured_delivery": {
+        "mean_rms_db": -15.101,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.12568,
+        "mean_spectral_centroid_hz": 491.947,
+        "audio_window_count": 7
+      },
+      "measurement_status": "direct_audio_summary_when_available"
+    },
+    {
+      "annotation_id": "review-019",
+      "evidence_id": "m92yvNscIAo:00004",
+      "review_status": "reviewed",
+      "candidate_labels": [
+        "question"
+      ],
+      "reviewed_speech_function": "audience_question_or_rhetorical_question",
+      "candidate_label_supported": true,
+      "direct_observation": "The segment asks 'how many different ways'.",
+      "interpretation": "The speaker is posing a question to orient the audience.",
+      "confidence": "medium",
+      "limitations": "It is unclear whether the audience was expected to answer aloud.",
+      "measured_delivery": {
+        "mean_rms_db": -43.174,
+        "speech_activity_fraction": 0.6,
+        "mean_zero_crossing_rate": 0.16535,
+        "mean_spectral_centroid_hz": 791.795,
+        "audio_window_count": 5
+      },
+      "measurement_status": "direct_audio_summary_when_available"
+    },
+    {
+      "annotation_id": "review-020",
+      "evidence_id": "S43F1BZfQKY:00021",
+      "review_status": "reviewed",
+      "candidate_labels": [
+        "question"
+      ],
+      "reviewed_speech_function": "narrative_detail",
+      "candidate_label_supported": false,
+      "direct_observation": "The segment contains no interrogative structure; the question heuristic fired on an ordinary word match.",
+      "interpretation": "This is another question-detector false positive.",
+      "confidence": "high",
+      "limitations": "Transcript punctuation may be imperfect.",
+      "measured_delivery": {
+        "mean_rms_db": -13.346,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.10697,
+        "mean_spectral_centroid_hz": 466.106,
+        "audio_window_count": 5
+      },
+      "measurement_status": "direct_audio_summary_when_available"
     }
   ]
 }

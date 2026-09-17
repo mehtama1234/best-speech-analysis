@@ -181,3 +181,123 @@ Interpretation: The speaker is introducing a personal reconsideration.
 Limitation: Contrast markers should not automatically be treated as disagreement.
 
 Delivery measurements: RMS None; speech-activity proxy None; zero-crossing rate None; spectral centroid None Hz; overlapping audio windows None.
+
+## review-013: `story_recall`
+
+Evidence: `S43F1BZfQKY:00002`  
+Candidate labels: story_or_personal_experience  
+Supported by review: **True**  
+Confidence: **high**
+
+Direct observation: The speaker explicitly says 'I remember that day'.
+
+Interpretation: The speaker is opening a personal story.
+
+Limitation: A story label does not imply emotional state.
+
+Delivery measurements: RMS -24.076; speech-activity proxy 1.0; zero-crossing rate 0.11111; spectral centroid 466.09 Hz; overlapping audio windows 3.
+
+## review-014: `story_event_with_embedded_advice`
+
+Evidence: `S43F1BZfQKY:00011`  
+Candidate labels: call_to_action, story_or_personal_experience  
+Supported by review: **False**  
+Confidence: **high**
+
+Direct observation: 'Maybe you should' occurs inside a narrated event and is advice quoted from another person, not the speaker's call to the audience.
+
+Interpretation: The story marker is supported; the call-to-action heuristic is a false positive.
+
+Limitation: Speaker attribution within quoted dialogue requires broader context.
+
+Delivery measurements: RMS -39.485; speech-activity proxy 0.444; zero-crossing rate 0.0955; spectral centroid 434.722 Hz; overlapping audio windows 18.
+
+## review-015: `story_action`
+
+Evidence: `S43F1BZfQKY:00036`  
+Candidate labels: story_or_personal_experience  
+Supported by review: **True**  
+Confidence: **high**
+
+Direct observation: The speaker narrates a first-person past action: 'I went for it'.
+
+Interpretation: The speaker is advancing a personal narrative.
+
+Limitation: Caption-level boundaries may split one narrative unit.
+
+Delivery measurements: RMS -20.403; speech-activity proxy 1.0; zero-crossing rate 0.16655; spectral centroid 1136.106 Hz; overlapping audio windows 20.
+
+## review-016: `causal_transition`
+
+Evidence: `3AIoHLr8nTI:00003`  
+Candidate labels: conclusion_or_summary  
+Supported by review: **False**  
+Confidence: **high**
+
+Direct observation: 'Therefore' links a preceding idea to a consequence but does not by itself summarize or conclude the speech.
+
+Interpretation: The conclusion keyword heuristic is a false positive for this transition.
+
+Limitation: The surrounding speech may establish a larger conclusion.
+
+Delivery measurements: RMS -19.439; speech-activity proxy 1.0; zero-crossing rate 0.11621; spectral centroid 673.143 Hz; overlapping audio windows 10.
+
+## review-017: `conclusion_marker`
+
+Evidence: `aXmM0VZv810:00483`  
+Candidate labels: conclusion_or_summary  
+Supported by review: **True**  
+Confidence: **medium**
+
+Direct observation: The phrase 'what matters' explicitly foregrounds a criterion or takeaway.
+
+Interpretation: The speaker is emphasizing a concluding or prioritizing point.
+
+Limitation: The segment is short and should be read with neighboring captions.
+
+Delivery measurements: RMS -15.764; speech-activity proxy 1.0; zero-crossing rate 0.17077; spectral centroid 638.521 Hz; overlapping audio windows 6.
+
+## review-018: `example_marker`
+
+Evidence: `aXmM0VZv810:00274`  
+Candidate labels: example  
+Supported by review: **True**  
+Confidence: **high**
+
+Direct observation: The phrase 'for example' introduces a concrete case.
+
+Interpretation: The speaker is moving from an abstract claim to an example.
+
+Limitation: This does not establish whether the example was effective.
+
+Delivery measurements: RMS -15.101; speech-activity proxy 1.0; zero-crossing rate 0.12568; spectral centroid 491.947 Hz; overlapping audio windows 7.
+
+## review-019: `audience_question_or_rhetorical_question`
+
+Evidence: `m92yvNscIAo:00004`  
+Candidate labels: question  
+Supported by review: **True**  
+Confidence: **medium**
+
+Direct observation: The segment asks 'how many different ways'.
+
+Interpretation: The speaker is posing a question to orient the audience.
+
+Limitation: It is unclear whether the audience was expected to answer aloud.
+
+Delivery measurements: RMS -43.174; speech-activity proxy 0.6; zero-crossing rate 0.16535; spectral centroid 791.795 Hz; overlapping audio windows 5.
+
+## review-020: `narrative_detail`
+
+Evidence: `S43F1BZfQKY:00021`  
+Candidate labels: question  
+Supported by review: **False**  
+Confidence: **high**
+
+Direct observation: The segment contains no interrogative structure; the question heuristic fired on an ordinary word match.
+
+Interpretation: This is another question-detector false positive.
+
+Limitation: Transcript punctuation may be imperfect.
+
+Delivery measurements: RMS -13.346; speech-activity proxy 1.0; zero-crossing rate 0.10697; spectral centroid 466.106 Hz; overlapping audio windows 5.
