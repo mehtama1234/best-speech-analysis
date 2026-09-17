@@ -706,3 +706,603 @@ Interpretation: This is a compact narrative or habitual-action detail that remai
 Limitation: The single caption is too short to determine whether it functions as story, example, or claim.
 
 Delivery measurements: RMS -27.153; speech-activity proxy 1.0; zero-crossing rate 0.27195; spectral centroid 2004.81 Hz; pitch proxy 308.594 Hz; words/second proxy 2.0; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 2.
+
+## review-048: `interview_story_prompt`
+
+Evidence: `AwA0Jnfj3ao:00002`
+Candidate labels: call_to_action
+Supported by review: **False**
+Confidence: **high**
+
+Direct observation: The interviewer says 'let's share a few stories' and immediately asks to begin at the start.
+
+Interpretation: This is an interview prompt and turn invitation, not a substantive call for audience action.
+
+Limitation: A conversational prompt can share imperative grammar with a public call to action.
+
+Delivery measurements: RMS -21.27; speech-activity proxy 1.0; zero-crossing rate 0.18905; spectral centroid 1245.169 Hz; pitch proxy 334.822 Hz; words/second proxy 1.384; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 7.
+
+## review-049: `audience_practice_call`
+
+Evidence: `jxY2-YgAgm0:00125`
+Candidate labels: call_to_action
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: The speaker invites the audience to speak English together after directing them to a community resource.
+
+Interpretation: This is a direct practice-oriented call to action.
+
+Limitation: The transcript cannot show whether viewers followed the invitation.
+
+Delivery measurements: RMS -21.292; speech-activity proxy 1.0; zero-crossing rate 0.07442; spectral centroid 609.355 Hz; pitch proxy 101.562 Hz; words/second proxy 0.694; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 5.
+
+## review-050: `civic_collective_call`
+
+Evidence: `pmAL79dnvu0:00116`
+Candidate labels: call_to_action
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: The surrounding captions say 'we must vote' and 'we need you'; the candidate segment continues that collective appeal.
+
+Interpretation: The speaker is motivating civic participation through an explicit collective imperative.
+
+Limitation: The candidate caption is fragmented and should be read with the adjacent captions.
+
+Delivery measurements: RMS -20.969; speech-activity proxy 1.0; zero-crossing rate 0.1845; spectral centroid 1258.807 Hz; pitch proxy 246.652 Hz; words/second proxy 0.46; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 7.
+
+## review-051: `encouraging_continuation`
+
+Evidence: `qOwYULOPuPs:00348`
+Candidate labels: call_to_action
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: 'Let's keep going' directly encourages continued collective effort after a progress statement.
+
+Interpretation: This is a brief motivational call rather than a detailed policy instruction.
+
+Limitation: The phrase alone does not reveal the intended action or audience response.
+
+Delivery measurements: RMS -31.259; speech-activity proxy 0.875; zero-crossing rate 0.1055; spectral centroid 429.14 Hz; pitch proxy 139.509 Hz; words/second proxy 0.949; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 8.
+
+## review-052: `stage_management`
+
+Evidence: `aXmM0VZv810:00003`
+Candidate labels: call_to_action
+Supported by review: **False**
+Confidence: **high**
+
+Direct observation: 'Let's go ahead' follows an applause prompt and transitions the event into the next topic.
+
+Interpretation: This is stage management, not a substantive call for behavior outside the event.
+
+Limitation: The distinction depends on the event context.
+
+Delivery measurements: RMS -16.946; speech-activity proxy 1.0; zero-crossing rate 0.18468; spectral centroid 880.532 Hz; pitch proxy 348.633 Hz; words/second proxy 0.633; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 8.
+
+## review-053: `interview_opening_question`
+
+Evidence: `AwA0Jnfj3ao:00003`
+Candidate labels: question
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: The interviewer asks 'Why don't we start right at the beginning?' to elicit a narrative answer.
+
+Interpretation: This is a genuine interview question functioning as a story prompt.
+
+Limitation: It is not evidence that the speaker used a question in a monologue.
+
+Delivery measurements: RMS -24.741; speech-activity proxy 0.75; zero-crossing rate 0.18171; spectral centroid 1427.234 Hz; pitch proxy 369.792 Hz; words/second proxy 2.615; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 4.
+
+## review-054: `audience_or_interlocutor_question`
+
+Evidence: `aHXxveJTJoE:00039`
+Candidate labels: question
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: 'Who are you going to share it with?' and the following 'Who are your friends?' are direct questions to the interlocutor.
+
+Interpretation: The speaker is using sequential questions to develop the conversation.
+
+Limitation: The transcript does not distinguish whether the second question is an interruption or planned follow-up.
+
+Delivery measurements: RMS -37.087; speech-activity proxy 0.75; zero-crossing rate 0.12791; spectral centroid 772.624 Hz; pitch proxy 291.667 Hz; words/second proxy 0.575; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 4.
+
+## review-055: `rhetorical_question_with_answer`
+
+Evidence: `hZ0YhrgYejI:00001`
+Candidate labels: question
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: The speaker asks what to do when falling down and supplies the answer 'Get back up' immediately afterward.
+
+Interpretation: The question is used to set up a concise audience-facing answer.
+
+Limitation: The transcript cannot establish whether the audience was expected to answer before the speaker did.
+
+Delivery measurements: RMS -19.441; speech-activity proxy 1.0; zero-crossing rate 0.13946; spectral centroid 962.462 Hz; pitch proxy 245.739 Hz; words/second proxy 0.869; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 11.
+
+## review-056: `relative_clause`
+
+Evidence: `OfwfTN1mEyM:00092`
+Candidate labels: question
+Supported by review: **False**
+Confidence: **high**
+
+Direct observation: The words 'where does the energy come from' occur in the surrounding context, but the candidate segment describes solar energy's capability and is not itself interrogative.
+
+Interpretation: The question detector appears to have attached a nearby question to the wrong caption segment.
+
+Limitation: Caption segmentation can shift a question boundary across neighboring rows.
+
+Delivery measurements: RMS -19.663; speech-activity proxy 0.857; zero-crossing rate 0.13785; spectral centroid 568.751 Hz; pitch proxy 197.917 Hz; words/second proxy 1.19; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 7.
+
+## review-057: `prediction_statement`
+
+Evidence: `aXmM0VZv810:00259`
+Candidate labels: question
+Supported by review: **False**
+Confidence: **high**
+
+Direct observation: The caption says AI may make the speaker busier and continues into a causal explanation; it contains no question structure.
+
+Interpretation: This is a question-keyword false positive or a boundary artifact.
+
+Limitation: The transcript may omit punctuation from the preceding or following sentence.
+
+Delivery measurements: RMS -15.311; speech-activity proxy 1.0; zero-crossing rate 0.13182; spectral centroid 521.314 Hz; pitch proxy 275.0 Hz; words/second proxy 2.083; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 5.
+
+## review-058: `caption_boundary_without_pause`
+
+Evidence: `C8-twwwTETE:00019`
+Candidate labels: pause_event
+Supported by review: **False**
+Confidence: **high**
+
+Direct observation: The caption ends after 'the first time I met 50' and the next caption begins with 'um', but the aligned gap is zero seconds.
+
+Interpretation: The segmentation and filler do not establish a measured pause event.
+
+Limitation: A sub-second pause may be hidden by the one-second audio windows.
+
+Delivery measurements: RMS -32.593; speech-activity proxy 0.75; zero-crossing rate 0.13085; spectral centroid 908.088 Hz; pitch proxy 250.0 Hz; words/second proxy 1.111; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 4.
+
+## review-059: `laughter_marker_without_pause`
+
+Evidence: `aXmM0VZv810:00227`
+Candidate labels: pause_event
+Supported by review: **False**
+Confidence: **high**
+
+Direct observation: The caption contains '[laughter]' between interview turns, but the aligned transcript gap is zero seconds.
+
+Interpretation: Laughter and pause should be represented as separate observable events.
+
+Limitation: The current extractor does not separately detect laughter acoustically.
+
+Delivery measurements: RMS -19.08; speech-activity proxy 1.0; zero-crossing rate 0.18989; spectral centroid 1048.801 Hz; pitch proxy 231.771 Hz; words/second proxy 0.495; transcript gap before 0.0 seconds; transcript gap after 0.583 seconds; overlapping audio windows 3.
+
+## review-060: `edit_or_segment_boundary`
+
+Evidence: `gDadfh0ZdBM:00036`
+Candidate labels: pause_event
+Supported by review: **False**
+Confidence: **high**
+
+Direct observation: The candidate segment is followed by a measured ten-second transcript gap before the next caption.
+
+Interpretation: The unusually long gap is more consistent with an edit, scene boundary, or missing caption than an ordinary rhetorical pause.
+
+Limitation: Without inspecting the full video timeline, the cause of the gap cannot be determined.
+
+Delivery measurements: RMS -38.193; speech-activity proxy 0.75; zero-crossing rate 0.11273; spectral centroid 682.368 Hz; pitch proxy 184.896 Hz; words/second proxy 1.667; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 4.
+
+## review-061: `continuous_clause_boundary`
+
+Evidence: `qM-gZintWDc:00055`
+Candidate labels: pause_event
+Supported by review: **False**
+Confidence: **high**
+
+Direct observation: The caption ends with 'been totally vulnerable' and the adjacent transcript continues without a measured gap.
+
+Interpretation: This is a caption boundary, not evidence of a pause.
+
+Limitation: The audio proxy may miss a very short breath or silence.
+
+Delivery measurements: RMS -27.76; speech-activity proxy 1.0; zero-crossing rate 0.06222; spectral centroid 382.755 Hz; pitch proxy 254.687 Hz; words/second proxy 0.67; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 5.
+
+## review-062: `hypothetical_visualization`
+
+Evidence: `aXmM0VZv810:00529`
+Candidate labels: example
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: 'Just imagine how tiny that little supercomputer is' asks the audience to visualize a concrete scale comparison.
+
+Interpretation: This is an illustrative hypothetical used to make a technical object more tangible.
+
+Limitation: The segment does not prove that the visualization improved comprehension.
+
+Delivery measurements: RMS -15.29; speech-activity proxy 1.0; zero-crossing rate 0.14209; spectral centroid 555.89 Hz; pitch proxy 263.672 Hz; words/second proxy 2.133; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 4.
+
+## review-063: `direct_advice`
+
+Evidence: `gDadfh0ZdBM:00001`
+Candidate labels: example
+Supported by review: **False**
+Confidence: **high**
+
+Direct observation: 'Let me give you one piece of advice' introduces an imperative recommendation, followed by 'be honest'.
+
+Interpretation: This is advice or a principle, not an example of a case or event.
+
+Limitation: Advice can later be supported by an example in the surrounding speech.
+
+Delivery measurements: RMS -36.778; speech-activity proxy 0.571; zero-crossing rate 0.11348; spectral centroid 704.437 Hz; pitch proxy 222.656 Hz; words/second proxy 1.282; transcript gap before 2.08 seconds; transcript gap after 0.0 seconds; overlapping audio windows 7.
+
+## review-064: `named_example_list`
+
+Evidence: `jxY2-YgAgm0:00087`
+Candidate labels: example
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: 'Such as' introduces named publications and people as concrete instances of the preceding accusation.
+
+Interpretation: The speaker is grounding a general claim with named examples.
+
+Limitation: The examples function rhetorically and are not independently verified here.
+
+Delivery measurements: RMS -23.931; speech-activity proxy 0.889; zero-crossing rate 0.13138; spectral centroid 868.018 Hz; pitch proxy 225.586 Hz; words/second proxy 0.911; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 9.
+
+## review-065: `imagined_future_example`
+
+Evidence: `pmAL79dnvu0:00083`
+Candidate labels: example
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: 'Imagine our daughters growing up' introduces a concrete future scene for the audience to picture.
+
+Interpretation: This is an illustrative scenario supporting a broader social vision.
+
+Limitation: An imagined scenario is not a report of an observed event.
+
+Delivery measurements: RMS -18.499; speech-activity proxy 1.0; zero-crossing rate 0.15145; spectral centroid 1118.256 Hz; pitch proxy 247.768 Hz; words/second proxy 1.014; transcript gap before 0.12 seconds; transcript gap after 0.0 seconds; overlapping audio windows 7.
+
+## review-066: `historical_example_setup`
+
+Evidence: `qOwYULOPuPs:00040`
+Candidate labels: example
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: 'Agreements such as Confederation' names a historical case while explaining the limits of prior arrangements.
+
+Interpretation: The speaker is moving from a general claim to a historical example.
+
+Limitation: The caption is fragmentary and needs the neighboring lines for full syntax.
+
+Delivery measurements: RMS -13.916; speech-activity proxy 1.0; zero-crossing rate 0.13405; spectral centroid 436.574 Hz; pitch proxy 239.063 Hz; words/second proxy 1.524; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 5.
+
+## review-067: `personal_emotional_story`
+
+Evidence: `AwA0Jnfj3ao:00130`
+Candidate labels: story_or_personal_experience
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: The speaker narrates going to the bathroom and crying after a disappointing cricket experience.
+
+Interpretation: This is a first-person story beat that conveys a setback through action and setting.
+
+Limitation: The transcript does not establish the vocal or facial delivery of the emotion.
+
+Delivery measurements: RMS -20.469; speech-activity proxy 1.0; zero-crossing rate 0.13022; spectral centroid 689.131 Hz; pitch proxy 190.104 Hz; words/second proxy 2.787; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 3.
+
+## review-068: `personal_counterfactual_recollection`
+
+Evidence: `bR4tDSa3O10:00051`
+Candidate labels: story_or_personal_experience
+Supported by review: **True**
+Confidence: **medium**
+
+Direct observation: The speaker reflects on what childhood acquaintances would have said if told about the speaker's later opportunity.
+
+Interpretation: This is a personal recollection framed as a counterfactual scenario.
+
+Limitation: It is not a fully narrated event and should not be treated as one.
+
+Delivery measurements: RMS -24.433; speech-activity proxy 1.0; zero-crossing rate 0.1471; spectral centroid 830.247 Hz; pitch proxy 256.511 Hz; words/second proxy 2.122; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 6.
+
+## review-069: `historical_trend_explanation`
+
+Evidence: `OfwfTN1mEyM:00152`
+Candidate labels: story_or_personal_experience
+Supported by review: **False**
+Confidence: **high**
+
+Direct observation: The speaker compares solar costs five, ten, and twenty years ago with current costs.
+
+Interpretation: This is an explanatory historical comparison, not a personal experience story.
+
+Limitation: The comparison may contain an example, but the story label is too specific.
+
+Delivery measurements: RMS -16.379; speech-activity proxy 1.0; zero-crossing rate 0.12971; spectral centroid 522.835 Hz; pitch proxy 195.312 Hz; words/second proxy 1.434; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 6.
+
+## review-070: `family_story_dialogue`
+
+Evidence: `fBnAMUkNM2k:00104`
+Candidate labels: story_or_personal_experience
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: The speaker quotes the mother's words within a first-person account of a difficult period.
+
+Interpretation: This is a personal story with embedded family dialogue.
+
+Limitation: The transcript contains recognition errors in the quoted phrase.
+
+Delivery measurements: RMS -42.935; speech-activity proxy 0.571; zero-crossing rate 0.28696; spectral centroid 2069.145 Hz; pitch proxy 238.281 Hz; words/second proxy 1.429; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 7.
+
+## review-071: `childhood_story_setup`
+
+Evidence: `pmAL79dnvu0:00042`
+Candidate labels: story_or_personal_experience
+Supported by review: **True**
+Confidence: **medium**
+
+Direct observation: The speaker shifts to a first-person childhood reference while describing the origin of a proposed national story.
+
+Interpretation: This is a personal origin-story fragment embedded in a broader policy speech.
+
+Limitation: The caption is split and the complete autobiographical event may extend beyond it.
+
+Delivery measurements: RMS -22.605; speech-activity proxy 1.0; zero-crossing rate 0.17485; spectral centroid 1279.948 Hz; pitch proxy 333.984 Hz; words/second proxy 1.324; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 8.
+
+## review-072: `speculative_empathy`
+
+Evidence: `2fWJh-_UG5s:00160`
+Candidate labels: uncertainty_or_qualification
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: 'Maybe that would make' presents a possible emotional consequence rather than a certain one.
+
+Interpretation: The speaker qualifies a hypothetical interpretation of another person's response.
+
+Limitation: The hedge does not reveal the speaker's internal certainty beyond the wording.
+
+Delivery measurements: RMS -20.493; speech-activity proxy 1.0; zero-crossing rate 0.09369; spectral centroid 483.715 Hz; pitch proxy 293.75 Hz; words/second proxy 0.833; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 5.
+
+## review-073: `hedged_recommendation`
+
+Evidence: `3AIoHLr8nTI:00074`
+Candidate labels: uncertainty_or_qualification
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: 'I think you need to be brave' combines an epistemic hedge with a strong recommendation.
+
+Interpretation: The wording softens the grammatical commitment while retaining an imperative force.
+
+Limitation: Vocal emphasis and audience context require audio/video review beyond the transcript.
+
+Delivery measurements: RMS -23.957; speech-activity proxy 1.0; zero-crossing rate 0.10624; spectral centroid 814.03 Hz; pitch proxy 270.833 Hz; words/second proxy 1.75; transcript gap before 0.72 seconds; transcript gap after 1.04 seconds; overlapping audio windows 9.
+
+## review-074: `self_correction_qualification`
+
+Evidence: `C8-twwwTETE:00045`
+Candidate labels: uncertainty_or_qualification
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: The speaker says 'I think' and 'might have probably' while reconsidering whether an action was excessive.
+
+Interpretation: This is a cluster of verbal qualification around a self-evaluation.
+
+Limitation: Several fillers and repairs make exact wording uncertain.
+
+Delivery measurements: RMS -29.39; speech-activity proxy 0.875; zero-crossing rate 0.11267; spectral centroid 841.932 Hz; pitch proxy 316.964 Hz; words/second proxy 1.582; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 8.
+
+## review-075: `qualified_prediction`
+
+Evidence: `OfwfTN1mEyM:00041`
+Candidate labels: uncertainty_or_qualification
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: The speaker says the future 'will actually be great' but frames the broader conclusion with 'I think'.
+
+Interpretation: The segment combines optimism with explicit qualification.
+
+Limitation: A hedge can coexist with strong vocal commitment; the transcript alone cannot compare the channels.
+
+Delivery measurements: RMS -19.983; speech-activity proxy 0.875; zero-crossing rate 0.13095; spectral centroid 540.349 Hz; pitch proxy 225.447 Hz; words/second proxy 1.332; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 8.
+
+## review-076: `qualified_generalization`
+
+Evidence: `aXmM0VZv810:00350`
+Candidate labels: uncertainty_or_qualification
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: 'I think' introduces a generalization about how humanity responds to technological trends.
+
+Interpretation: The speaker presents the generalization as a considered view rather than an unqualified fact.
+
+Limitation: The wording does not establish whether the claim is evidence-based.
+
+Delivery measurements: RMS -16.421; speech-activity proxy 1.0; zero-crossing rate 0.16657; spectral centroid 807.235 Hz; pitch proxy 309.896 Hz; words/second proxy 1.339; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 6.
+
+## review-077: `narrative_correction`
+
+Evidence: `AwA0Jnfj3ao:00125`
+Candidate labels: contrast_or_disagreement
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: The speaker contrasts where the ball was with where it should have been and then calls the position wrong.
+
+Interpretation: This is a contrast within a personal account, not necessarily disagreement with another speaker.
+
+Limitation: Contrast and interpersonal disagreement should remain separate analytic dimensions.
+
+Delivery measurements: RMS -21.64; speech-activity proxy 1.0; zero-crossing rate 0.19597; spectral centroid 1165.733 Hz; pitch proxy 189.063 Hz; words/second proxy 2.433; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 5.
+
+## review-078: `concession_and_correction`
+
+Evidence: `OfwfTN1mEyM:00139`
+Candidate labels: contrast_or_disagreement
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: 'But' separates an acknowledgment about public understanding from a corrective statement about the mathematics.
+
+Interpretation: The speaker uses contrast to redirect attention from perception to evidence.
+
+Limitation: The repeated word 'but' may reflect transcription disfluency rather than rhetorical repetition.
+
+Delivery measurements: RMS -15.293; speech-activity proxy 1.0; zero-crossing rate 0.1242; spectral centroid 544.098 Hz; pitch proxy 205.357 Hz; words/second proxy 1.006; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 7.
+
+## review-079: `opposition_framing`
+
+Evidence: `fBnAMUkNM2k:00278`
+Candidate labels: contrast_or_disagreement
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: The speaker sets 'haters, naysayers, disbelievers' against the audience's act of proving them wrong.
+
+Interpretation: This frames a motivational contrast between opposition and response.
+
+Limitation: The segment is embedded in a personal story and is not a direct debate exchange.
+
+Delivery measurements: RMS -33.639; speech-activity proxy 0.5; zero-crossing rate 0.21858; spectral centroid 1720.448 Hz; pitch proxy 234.375 Hz; words/second proxy 9.0; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 2.
+
+## review-080: `existential_observation`
+
+Evidence: `gDadfh0ZdBM:00036`
+Candidate labels: contrast_or_disagreement
+Supported by review: **False**
+Confidence: **medium**
+
+Direct observation: The segment says there is something wrong with the world and continues with 'but it's there'.
+
+Interpretation: The marker does not establish a contrastive argument or disagreement; it is a reflective observation.
+
+Limitation: The ten-second gap makes the transcript boundary unreliable.
+
+Delivery measurements: RMS -38.193; speech-activity proxy 0.75; zero-crossing rate 0.11273; spectral centroid 682.368 Hz; pitch proxy 184.896 Hz; words/second proxy 1.667; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 4.
+
+## review-081: `qualified_judgment`
+
+Evidence: `lcj1wMZRitI:00095`
+Candidate labels: contrast_or_disagreement
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: 'Not a judge or jury but I can tell you' contrasts a disclaimer of authority with a statement the speaker is prepared to make.
+
+Interpretation: The speaker uses contrast to qualify and then strengthen a judgment.
+
+Limitation: This is rhetorical qualification, not proof of an actual dispute.
+
+Delivery measurements: RMS -17.383; speech-activity proxy 1.0; zero-crossing rate 0.17723; spectral centroid 946.051 Hz; pitch proxy 266.741 Hz; words/second proxy 1.755; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 7.
+
+## review-082: `meaning_explanation`
+
+Evidence: `OfwfTN1mEyM:00055`
+Candidate labels: definition
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: 'What that means is' explicitly introduces the implication of a preceding statistic about water and land.
+
+Interpretation: This is a definition-like explanatory transition from measurement to consequence.
+
+Limitation: The candidate caption is fragmentary and the consequence continues in the next caption.
+
+Delivery measurements: RMS -18.954; speech-activity proxy 0.875; zero-crossing rate 0.11855; spectral centroid 484.906 Hz; pitch proxy 291.295 Hz; words/second proxy 1.205; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 8.
+
+## review-083: `term_definition`
+
+Evidence: `_Mb1-CN3wZs:00048`
+Candidate labels: definition
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: The speaker explains that 'Pitchfork' means an assassin or something similar.
+
+Interpretation: This is an explicit lexical definition, albeit tentative in wording.
+
+Limitation: The phrase 'or something' signals that the definition may be approximate.
+
+Delivery measurements: RMS -18.325; speech-activity proxy 1.0; zero-crossing rate 0.18171; spectral centroid 983.697 Hz; pitch proxy 295.313 Hz; words/second proxy 1.456; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 5.
+
+## review-084: `translation_definition`
+
+Evidence: `fBnAMUkNM2k:00374`
+Candidate labels: definition
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: The speaker directly translates the name 'Bijli' as electricity.
+
+Interpretation: This is a concise translation-based definition embedded in a personal anecdote.
+
+Limitation: The translation may be culturally or contextually specific.
+
+Delivery measurements: RMS -33.206; speech-activity proxy 1.0; zero-crossing rate 0.29214; spectral centroid 1771.977 Hz; pitch proxy 296.875 Hz; words/second proxy 2.586; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 2.
+
+## review-085: `personal_meaning_statement`
+
+Evidence: `pmAL79dnvu0:00047`
+Candidate labels: definition
+Supported by review: **False**
+Confidence: **high**
+
+Direct observation: The speaker says what a flag means personally and immediately connects that meaning to voting.
+
+Interpretation: This is a personal value statement and action explanation, not a general definition.
+
+Limitation: The boundary between definition and personal interpretation depends on the broader speech.
+
+Delivery measurements: RMS -17.865; speech-activity proxy 1.0; zero-crossing rate 0.17994; spectral centroid 1426.452 Hz; pitch proxy 355.469 Hz; words/second proxy 1.411; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 6.
+
+## review-086: `personal_significance_statement`
+
+Evidence: `AwA0Jnfj3ao:00174`
+Candidate labels: definition
+Supported by review: **False**
+Confidence: **high**
+
+Direct observation: The phrase 'it means a lot' expresses personal significance after a story about learning a name.
+
+Interpretation: This is an affective evaluation, not a definition or reformulation of a concept.
+
+Limitation: Transcript wording may omit the object of 'it'.
+
+Delivery measurements: RMS -19.765; speech-activity proxy 1.0; zero-crossing rate 0.15016; spectral centroid 1159.036 Hz; pitch proxy 217.634 Hz; words/second proxy 2.483; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 7.
+
+## review-087: `summary_principle`
+
+Evidence: `AwA0Jnfj3ao:00234`
+Candidate labels: conclusion_or_summary
+Supported by review: **True**
+Confidence: **high**
+
+Direct observation: 'In short' compresses the preceding cricket story into the principle of staying ahead of an opponent.
+
+Interpretation: This is an explicit summary transition from narrative detail to a general takeaway.
+
+Limitation: The takeaway's validity or usefulness is not established by the marker itself.
+
+Delivery measurements: RMS -18.007; speech-activity proxy 1.0; zero-crossing rate 0.18363; spectral centroid 945.878 Hz; pitch proxy 229.167 Hz; words/second proxy 2.713; transcript gap before 0.0 seconds; transcript gap after 0.0 seconds; overlapping audio windows 6.

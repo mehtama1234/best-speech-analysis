@@ -1,87 +1,102 @@
 {
   "schema_version": "0.1",
   "policy": "Only manually reviewed supported annotations enter function summaries. This is an evidence index, not a causal or effectiveness test.",
-  "reviewed_annotation_count": 47,
-  "supported_annotation_count": 35,
+  "reviewed_annotation_count": 87,
+  "supported_annotation_count": 62,
   "feature_record_count": 36,
   "candidate_label_audit": {
     "call_to_action": {
-      "supported": 4,
-      "unsupported": 2,
+      "supported": 7,
+      "unsupported": 4,
       "evidence_ids": [
         "S43F1BZfQKY:00011",
-        "aXmM0VZv810:00179"
+        "aXmM0VZv810:00179",
+        "AwA0Jnfj3ao:00002",
+        "aXmM0VZv810:00003"
       ],
-      "reviewed_count": 6,
-      "support_rate": 0.667
+      "reviewed_count": 11,
+      "support_rate": 0.636
     },
     "conclusion_or_summary": {
-      "supported": 4,
+      "supported": 5,
       "unsupported": 1,
       "evidence_ids": [
         "3AIoHLr8nTI:00003"
       ],
-      "reviewed_count": 5,
-      "support_rate": 0.8
+      "reviewed_count": 6,
+      "support_rate": 0.833
     },
     "contrast_or_disagreement": {
-      "supported": 5,
-      "unsupported": 0,
-      "evidence_ids": [],
-      "reviewed_count": 5,
-      "support_rate": 1.0
-    },
-    "definition": {
-      "supported": 4,
-      "unsupported": 0,
-      "evidence_ids": [],
-      "reviewed_count": 4,
-      "support_rate": 1.0
-    },
-    "example": {
-      "supported": 4,
+      "supported": 9,
       "unsupported": 1,
       "evidence_ids": [
-        "S43F1BZfQKY:00018"
+        "gDadfh0ZdBM:00036"
       ],
-      "reviewed_count": 5,
+      "reviewed_count": 10,
+      "support_rate": 0.9
+    },
+    "definition": {
+      "supported": 7,
+      "unsupported": 2,
+      "evidence_ids": [
+        "pmAL79dnvu0:00047",
+        "AwA0Jnfj3ao:00174"
+      ],
+      "reviewed_count": 9,
+      "support_rate": 0.778
+    },
+    "example": {
+      "supported": 8,
+      "unsupported": 2,
+      "evidence_ids": [
+        "S43F1BZfQKY:00018",
+        "gDadfh0ZdBM:00001"
+      ],
+      "reviewed_count": 10,
       "support_rate": 0.8
     },
     "pause_event": {
       "supported": 2,
-      "unsupported": 1,
+      "unsupported": 5,
       "evidence_ids": [
-        "aXmM0VZv810:00269"
+        "aXmM0VZv810:00269",
+        "C8-twwwTETE:00019",
+        "aXmM0VZv810:00227",
+        "gDadfh0ZdBM:00036",
+        "qM-gZintWDc:00055"
       ],
-      "reviewed_count": 3,
-      "support_rate": 0.667
+      "reviewed_count": 7,
+      "support_rate": 0.286
     },
     "question": {
-      "supported": 4,
-      "unsupported": 3,
+      "supported": 7,
+      "unsupported": 5,
       "evidence_ids": [
         "-54zUwySKCg:00015",
         "S43F1BZfQKY:00021",
-        "aXmM0VZv810:00414"
+        "aXmM0VZv810:00414",
+        "OfwfTN1mEyM:00092",
+        "aXmM0VZv810:00259"
       ],
-      "reviewed_count": 7,
-      "support_rate": 0.571
+      "reviewed_count": 12,
+      "support_rate": 0.583
     },
     "story_or_personal_experience": {
-      "supported": 6,
-      "unsupported": 2,
+      "supported": 10,
+      "unsupported": 3,
       "evidence_ids": [
         "S43F1BZfQKY:00011",
-        "3AIoHLr8nTI:00069"
+        "3AIoHLr8nTI:00069",
+        "OfwfTN1mEyM:00152"
       ],
-      "reviewed_count": 8,
-      "support_rate": 0.75
+      "reviewed_count": 13,
+      "support_rate": 0.769
     },
     "uncertainty_or_qualification": {
-      "supported": 4,
+      "supported": 9,
       "unsupported": 0,
       "evidence_ids": [],
-      "reviewed_count": 4,
+      "reviewed_count": 9,
       "support_rate": 1.0
     },
     "unclassified": {
@@ -97,6 +112,132 @@
     }
   },
   "patterns_by_reviewed_function": {
+    "audience_or_interlocutor_question": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -37.087,
+          "stddev": 0.0,
+          "minimum": -37.087,
+          "maximum": -37.087
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 291.667,
+          "stddev": 0.0,
+          "minimum": 291.667,
+          "maximum": 291.667
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 0.575,
+          "stddev": 0.0,
+          "minimum": 0.575,
+          "maximum": 0.575
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-054",
+          "evidence_id": "aHXxveJTJoE:00039",
+          "video_id": "aHXxveJTJoE",
+          "title": "The Muppet Movie: Showdown/Animal Saves the Day",
+          "channel": "Muppet Songs",
+          "start_seconds": 112.36,
+          "url": "https://www.youtube.com/watch?v=aHXxveJTJoE&t=112",
+          "text": "it with?",
+          "confidence": "high",
+          "reviewed_speech_function": "audience_or_interlocutor_question",
+          "measurements": {
+            "mean_rms_db": -37.087,
+            "mean_pitch_hz_proxy": 291.667,
+            "words_per_second_proxy": 0.575,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
+    "audience_practice_call": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -21.292,
+          "stddev": 0.0,
+          "minimum": -21.292,
+          "maximum": -21.292
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 101.562,
+          "stddev": 0.0,
+          "minimum": 101.562,
+          "maximum": 101.562
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 0.694,
+          "stddev": 0.0,
+          "minimum": 0.694,
+          "maximum": 0.694
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-049",
+          "evidence_id": "jxY2-YgAgm0:00125",
+          "video_id": "jxY2-YgAgm0",
+          "title": "ENGLISH SPEECH | MELANIA TRUMP: A Public Denial (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 370.32,
+          "url": "https://www.youtube.com/watch?v=jxY2-YgAgm0&t=370",
+          "text": "Let's speak English",
+          "confidence": "high",
+          "reviewed_speech_function": "audience_practice_call",
+          "measurements": {
+            "mean_rms_db": -21.292,
+            "mean_pitch_hz_proxy": 101.562,
+            "words_per_second_proxy": 0.694,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
     "audience_question_or_rhetorical_question": {
       "reviewed_supported_example_count": 1,
       "distinct_video_count": 1,
@@ -154,6 +295,132 @@
             "mean_rms_db": -43.174,
             "mean_pitch_hz_proxy": 244.792,
             "words_per_second_proxy": 2.174,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
+    "childhood_story_setup": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -22.605,
+          "stddev": 0.0,
+          "minimum": -22.605,
+          "maximum": -22.605
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 333.984,
+          "stddev": 0.0,
+          "minimum": 333.984,
+          "maximum": 333.984
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 1.324,
+          "stddev": 0.0,
+          "minimum": 1.324,
+          "maximum": 1.324
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-071",
+          "evidence_id": "pmAL79dnvu0:00042",
+          "video_id": "pmAL79dnvu0",
+          "title": "ENGLISH SPEECH | KELLY & BEYONCÉ: Grabbing the Pen (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 136.28,
+          "url": "https://www.youtube.com/watch?v=pmAL79dnvu0&t=136",
+          "text": "kindness and of hope when I was a little",
+          "confidence": "medium",
+          "reviewed_speech_function": "childhood_story_setup",
+          "measurements": {
+            "mean_rms_db": -22.605,
+            "mean_pitch_hz_proxy": 333.984,
+            "words_per_second_proxy": 1.324,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
+    "civic_collective_call": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -20.969,
+          "stddev": 0.0,
+          "minimum": -20.969,
+          "maximum": -20.969
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 246.652,
+          "stddev": 0.0,
+          "minimum": 246.652,
+          "maximum": 246.652
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 0.46,
+          "stddev": 0.0,
+          "minimum": 0.46,
+          "maximum": 0.46
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-050",
+          "evidence_id": "pmAL79dnvu0:00116",
+          "video_id": "pmAL79dnvu0",
+          "title": "ENGLISH SPEECH | KELLY & BEYONCÉ: Grabbing the Pen (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 393.08,
+          "url": "https://www.youtube.com/watch?v=pmAL79dnvu0&t=393",
+          "text": "bigger we must",
+          "confidence": "high",
+          "reviewed_speech_function": "civic_collective_call",
+          "measurements": {
+            "mean_rms_db": -20.969,
+            "mean_pitch_hz_proxy": 246.652,
+            "words_per_second_proxy": 0.46,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
           }
@@ -412,6 +679,69 @@
         }
       ]
     },
+    "concession_and_correction": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -15.293,
+          "stddev": 0.0,
+          "minimum": -15.293,
+          "maximum": -15.293
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 205.357,
+          "stddev": 0.0,
+          "minimum": 205.357,
+          "maximum": 205.357
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 1.006,
+          "stddev": 0.0,
+          "minimum": 1.006,
+          "maximum": 1.006
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-078",
+          "evidence_id": "OfwfTN1mEyM:00139",
+          "video_id": "OfwfTN1mEyM",
+          "title": "ENGLISH SPEECH | ELON MUSK: The Power of Solar Energy (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 368.0,
+          "url": "https://www.youtube.com/watch?v=OfwfTN1mEyM&t=368",
+          "text": "often not quite understood but but the",
+          "confidence": "high",
+          "reviewed_speech_function": "concession_and_correction",
+          "measurements": {
+            "mean_rms_db": -15.293,
+            "mean_pitch_hz_proxy": 205.357,
+            "words_per_second_proxy": 1.006,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
     "conclusion_marker": {
       "reviewed_supported_example_count": 1,
       "distinct_video_count": 1,
@@ -658,6 +988,69 @@
             "mean_rms_db": -32.28,
             "mean_pitch_hz_proxy": 290.365,
             "words_per_second_proxy": 1.477,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
+    "encouraging_continuation": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -31.259,
+          "stddev": 0.0,
+          "minimum": -31.259,
+          "maximum": -31.259
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 139.509,
+          "stddev": 0.0,
+          "minimum": 139.509,
+          "maximum": 139.509
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 0.949,
+          "stddev": 0.0,
+          "minimum": 0.949,
+          "maximum": 0.949
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-051",
+          "evidence_id": "qOwYULOPuPs:00348",
+          "video_id": "qOwYULOPuPs",
+          "title": "Mark Carney: Building Our Future",
+          "channel": "English Speeches",
+          "start_seconds": 902.72,
+          "url": "https://www.youtube.com/watch?v=qOwYULOPuPs&t=902",
+          "text": "just getting started. Let's keep going.",
+          "confidence": "high",
+          "reviewed_speech_function": "encouraging_continuation",
+          "measurements": {
+            "mean_rms_db": -31.259,
+            "mean_pitch_hz_proxy": 139.509,
+            "words_per_second_proxy": 0.949,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
           }
@@ -1042,6 +1435,132 @@
         }
       ]
     },
+    "family_story_dialogue": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -42.935,
+          "stddev": 0.0,
+          "minimum": -42.935,
+          "maximum": -42.935
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 238.281,
+          "stddev": 0.0,
+          "minimum": 238.281,
+          "maximum": 238.281
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 1.429,
+          "stddev": 0.0,
+          "minimum": 1.429,
+          "maximum": 1.429
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-070",
+          "evidence_id": "fBnAMUkNM2k:00104",
+          "video_id": "fBnAMUkNM2k",
+          "title": "Muniba Mazari Speech: I See My Ability | English Subtitles",
+          "channel": "English Speeches",
+          "start_seconds": 574.14,
+          "url": "https://www.youtube.com/watch?v=fBnAMUkNM2k&t=574",
+          "text": "My mother said to me that this two sell-pass.",
+          "confidence": "high",
+          "reviewed_speech_function": "family_story_dialogue",
+          "measurements": {
+            "mean_rms_db": -42.935,
+            "mean_pitch_hz_proxy": 238.281,
+            "words_per_second_proxy": 1.429,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
+    "hedged_recommendation": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -23.957,
+          "stddev": 0.0,
+          "minimum": -23.957,
+          "maximum": -23.957
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 270.833,
+          "stddev": 0.0,
+          "minimum": 270.833,
+          "maximum": 270.833
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 1.75,
+          "stddev": 0.0,
+          "minimum": 1.75,
+          "maximum": 1.75
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.72,
+          "stddev": 0.0,
+          "minimum": 0.72,
+          "maximum": 0.72
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 1.04,
+          "stddev": 0.0,
+          "minimum": 1.04,
+          "maximum": 1.04
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-073",
+          "evidence_id": "3AIoHLr8nTI:00074",
+          "video_id": "3AIoHLr8nTI",
+          "title": "ENGLISH SPEECH | JUSTIN TRUDEAU: We’re All the Same (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 665.84,
+          "url": "https://www.youtube.com/watch?v=3AIoHLr8nTI&t=665",
+          "text": "from their leaders today and tomorrow? Now, I think you need to be brave.",
+          "confidence": "high",
+          "reviewed_speech_function": "hedged_recommendation",
+          "measurements": {
+            "mean_rms_db": -23.957,
+            "mean_pitch_hz_proxy": 270.833,
+            "words_per_second_proxy": 1.75,
+            "transcript_gap_before_seconds": 0.72,
+            "transcript_gap_after_seconds": 1.04
+          }
+        }
+      ]
+    },
     "hesitation_and_repair": {
       "reviewed_supported_example_count": 1,
       "distinct_video_count": 1,
@@ -1100,6 +1619,195 @@
             "mean_pitch_hz_proxy": 273.437,
             "words_per_second_proxy": 1.359,
             "transcript_gap_before_seconds": 0.239,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
+    "historical_example_setup": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -13.916,
+          "stddev": 0.0,
+          "minimum": -13.916,
+          "maximum": -13.916
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 239.063,
+          "stddev": 0.0,
+          "minimum": 239.063,
+          "maximum": 239.063
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 1.524,
+          "stddev": 0.0,
+          "minimum": 1.524,
+          "maximum": 1.524
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-066",
+          "evidence_id": "qOwYULOPuPs:00040",
+          "video_id": "qOwYULOPuPs",
+          "title": "Mark Carney: Building Our Future",
+          "channel": "English Speeches",
+          "start_seconds": 97.92,
+          "url": "https://www.youtube.com/watch?v=qOwYULOPuPs&t=97",
+          "text": "knew that agreements such as",
+          "confidence": "high",
+          "reviewed_speech_function": "historical_example_setup",
+          "measurements": {
+            "mean_rms_db": -13.916,
+            "mean_pitch_hz_proxy": 239.063,
+            "words_per_second_proxy": 1.524,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
+    "hypothetical_visualization": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -15.29,
+          "stddev": 0.0,
+          "minimum": -15.29,
+          "maximum": -15.29
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 263.672,
+          "stddev": 0.0,
+          "minimum": 263.672,
+          "maximum": 263.672
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 2.133,
+          "stddev": 0.0,
+          "minimum": 2.133,
+          "maximum": 2.133
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-062",
+          "evidence_id": "aXmM0VZv810:00529",
+          "video_id": "aXmM0VZv810",
+          "title": "ENGLISH SPEECH | ELON & JENSEN: Work Becomes Optional (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 1274.559,
+          "url": "https://www.youtube.com/watch?v=aXmM0VZv810&t=1274",
+          "text": ">> Just imagine how tiny that little",
+          "confidence": "high",
+          "reviewed_speech_function": "hypothetical_visualization",
+          "measurements": {
+            "mean_rms_db": -15.29,
+            "mean_pitch_hz_proxy": 263.672,
+            "words_per_second_proxy": 2.133,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
+    "imagined_future_example": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -18.499,
+          "stddev": 0.0,
+          "minimum": -18.499,
+          "maximum": -18.499
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 247.768,
+          "stddev": 0.0,
+          "minimum": 247.768,
+          "maximum": 247.768
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 1.014,
+          "stddev": 0.0,
+          "minimum": 1.014,
+          "maximum": 1.014
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.12,
+          "stddev": 0.0,
+          "minimum": 0.12,
+          "maximum": 0.12
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-065",
+          "evidence_id": "pmAL79dnvu0:00083",
+          "video_id": "pmAL79dnvu0",
+          "title": "ENGLISH SPEECH | KELLY & BEYONCÉ: Grabbing the Pen (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 281.44,
+          "url": "https://www.youtube.com/watch?v=pmAL79dnvu0&t=281",
+          "text": "here imagine our daughters growing up",
+          "confidence": "high",
+          "reviewed_speech_function": "imagined_future_example",
+          "measurements": {
+            "mean_rms_db": -18.499,
+            "mean_pitch_hz_proxy": 247.768,
+            "words_per_second_proxy": 1.014,
+            "transcript_gap_before_seconds": 0.12,
             "transcript_gap_after_seconds": 0.0
           }
         }
@@ -1294,6 +2002,258 @@
         }
       ]
     },
+    "interview_opening_question": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -24.741,
+          "stddev": 0.0,
+          "minimum": -24.741,
+          "maximum": -24.741
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 369.792,
+          "stddev": 0.0,
+          "minimum": 369.792,
+          "maximum": 369.792
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 2.615,
+          "stddev": 0.0,
+          "minimum": 2.615,
+          "maximum": 2.615
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-053",
+          "evidence_id": "AwA0Jnfj3ao:00003",
+          "video_id": "AwA0Jnfj3ao",
+          "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 23.21,
+          "url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=23",
+          "text": "Why don't we start right at the beginning?",
+          "confidence": "high",
+          "reviewed_speech_function": "interview_opening_question",
+          "measurements": {
+            "mean_rms_db": -24.741,
+            "mean_pitch_hz_proxy": 369.792,
+            "words_per_second_proxy": 2.615,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
+    "meaning_explanation": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -18.954,
+          "stddev": 0.0,
+          "minimum": -18.954,
+          "maximum": -18.954
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 291.295,
+          "stddev": 0.0,
+          "minimum": 291.295,
+          "maximum": 291.295
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 1.205,
+          "stddev": 0.0,
+          "minimum": 1.205,
+          "maximum": 1.205
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-082",
+          "evidence_id": "OfwfTN1mEyM:00055",
+          "video_id": "OfwfTN1mEyM",
+          "title": "ENGLISH SPEECH | ELON MUSK: The Power of Solar Energy (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 138.959,
+          "url": "https://www.youtube.com/watch?v=OfwfTN1mEyM&t=138",
+          "text": "uh what that means is the potential for",
+          "confidence": "high",
+          "reviewed_speech_function": "meaning_explanation",
+          "measurements": {
+            "mean_rms_db": -18.954,
+            "mean_pitch_hz_proxy": 291.295,
+            "words_per_second_proxy": 1.205,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
+    "named_example_list": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -23.931,
+          "stddev": 0.0,
+          "minimum": -23.931,
+          "maximum": -23.931
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 225.586,
+          "stddev": 0.0,
+          "minimum": 225.586,
+          "maximum": 225.586
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 0.911,
+          "stddev": 0.0,
+          "minimum": 0.911,
+          "maximum": 0.911
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-064",
+          "evidence_id": "jxY2-YgAgm0:00087",
+          "video_id": "jxY2-YgAgm0",
+          "title": "ENGLISH SPEECH | MELANIA TRUMP: A Public Denial (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 258.959,
+          "url": "https://www.youtube.com/watch?v=jxY2-YgAgm0&t=258",
+          "text": "such as Daily Beast, James Carville, and",
+          "confidence": "high",
+          "reviewed_speech_function": "named_example_list",
+          "measurements": {
+            "mean_rms_db": -23.931,
+            "mean_pitch_hz_proxy": 225.586,
+            "words_per_second_proxy": 0.911,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
+    "narrative_correction": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -21.64,
+          "stddev": 0.0,
+          "minimum": -21.64,
+          "maximum": -21.64
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 189.063,
+          "stddev": 0.0,
+          "minimum": 189.063,
+          "maximum": 189.063
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 2.433,
+          "stddev": 0.0,
+          "minimum": 2.433,
+          "maximum": 2.433
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-077",
+          "evidence_id": "AwA0Jnfj3ao:00125",
+          "video_id": "AwA0Jnfj3ao",
+          "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 580.06,
+          "url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=580",
+          "text": "But and I said, oh, this is a wrong place.",
+          "confidence": "high",
+          "reviewed_speech_function": "narrative_correction",
+          "measurements": {
+            "mean_rms_db": -21.64,
+            "mean_pitch_hz_proxy": 189.063,
+            "words_per_second_proxy": 2.433,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
     "normative_rejection": {
       "reviewed_supported_example_count": 1,
       "distinct_video_count": 1,
@@ -1353,6 +2313,195 @@
             "words_per_second_proxy": 2.239,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 2.08
+          }
+        }
+      ]
+    },
+    "opposition_framing": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -33.639,
+          "stddev": 0.0,
+          "minimum": -33.639,
+          "maximum": -33.639
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 234.375,
+          "stddev": 0.0,
+          "minimum": 234.375,
+          "maximum": 234.375
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 9.0,
+          "stddev": 0.0,
+          "minimum": 9.0,
+          "maximum": 9.0
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-079",
+          "evidence_id": "fBnAMUkNM2k:00278",
+          "video_id": "fBnAMUkNM2k",
+          "title": "Muniba Mazari Speech: I See My Ability | English Subtitles",
+          "channel": "English Speeches",
+          "start_seconds": 1328.8,
+          "url": "https://www.youtube.com/watch?v=fBnAMUkNM2k&t=1328",
+          "text": "and there will be you to proving them wrong.",
+          "confidence": "high",
+          "reviewed_speech_function": "opposition_framing",
+          "measurements": {
+            "mean_rms_db": -33.639,
+            "mean_pitch_hz_proxy": 234.375,
+            "words_per_second_proxy": 9.0,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
+    "personal_counterfactual_recollection": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -24.433,
+          "stddev": 0.0,
+          "minimum": -24.433,
+          "maximum": -24.433
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 256.511,
+          "stddev": 0.0,
+          "minimum": 256.511,
+          "maximum": 256.511
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 2.122,
+          "stddev": 0.0,
+          "minimum": 2.122,
+          "maximum": 2.122
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-068",
+          "evidence_id": "bR4tDSa3O10:00051",
+          "video_id": "bR4tDSa3O10",
+          "title": "ENGLISH SPEECH | JENNIFER COOLIDGE: Find Your Own Path (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 152.879,
+          "url": "https://www.youtube.com/watch?v=bR4tDSa3O10&t=152",
+          "text": "once you know one day you know I would",
+          "confidence": "medium",
+          "reviewed_speech_function": "personal_counterfactual_recollection",
+          "measurements": {
+            "mean_rms_db": -24.433,
+            "mean_pitch_hz_proxy": 256.511,
+            "words_per_second_proxy": 2.122,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
+    "personal_emotional_story": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -20.469,
+          "stddev": 0.0,
+          "minimum": -20.469,
+          "maximum": -20.469
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 190.104,
+          "stddev": 0.0,
+          "minimum": 190.104,
+          "maximum": 190.104
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 2.787,
+          "stddev": 0.0,
+          "minimum": 2.787,
+          "maximum": 2.787
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-067",
+          "evidence_id": "AwA0Jnfj3ao:00130",
+          "video_id": "AwA0Jnfj3ao",
+          "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 598.13,
+          "url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=598",
+          "text": "I went to the bathroom and I cried.",
+          "confidence": "high",
+          "reviewed_speech_function": "personal_emotional_story",
+          "measurements": {
+            "mean_rms_db": -20.469,
+            "mean_pitch_hz_proxy": 190.104,
+            "words_per_second_proxy": 2.787,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
           }
         }
       ]
@@ -1735,6 +2884,195 @@
         }
       ]
     },
+    "qualified_generalization": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -16.421,
+          "stddev": 0.0,
+          "minimum": -16.421,
+          "maximum": -16.421
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 309.896,
+          "stddev": 0.0,
+          "minimum": 309.896,
+          "maximum": 309.896
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 1.339,
+          "stddev": 0.0,
+          "minimum": 1.339,
+          "maximum": 1.339
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-076",
+          "evidence_id": "aXmM0VZv810:00350",
+          "video_id": "aXmM0VZv810",
+          "title": "ENGLISH SPEECH | ELON & JENSEN: Work Becomes Optional (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 858.639,
+          "url": "https://www.youtube.com/watch?v=aXmM0VZv810&t=858",
+          "text": "pools. So I think with every",
+          "confidence": "high",
+          "reviewed_speech_function": "qualified_generalization",
+          "measurements": {
+            "mean_rms_db": -16.421,
+            "mean_pitch_hz_proxy": 309.896,
+            "words_per_second_proxy": 1.339,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
+    "qualified_judgment": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -17.383,
+          "stddev": 0.0,
+          "minimum": -17.383,
+          "maximum": -17.383
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 266.741,
+          "stddev": 0.0,
+          "minimum": 266.741,
+          "maximum": 266.741
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 1.755,
+          "stddev": 0.0,
+          "minimum": 1.755,
+          "maximum": 1.755
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-081",
+          "evidence_id": "lcj1wMZRitI:00095",
+          "video_id": "lcj1wMZRitI",
+          "title": "Al pacino-za oskara.rm",
+          "channel": "dokonmozak",
+          "start_seconds": 337.47,
+          "url": "https://www.youtube.com/watch?v=lcj1wMZRitI&t=337",
+          "text": "not a judge or jury but I can tell you",
+          "confidence": "high",
+          "reviewed_speech_function": "qualified_judgment",
+          "measurements": {
+            "mean_rms_db": -17.383,
+            "mean_pitch_hz_proxy": 266.741,
+            "words_per_second_proxy": 1.755,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
+    "qualified_prediction": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -19.983,
+          "stddev": 0.0,
+          "minimum": -19.983,
+          "maximum": -19.983
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 225.447,
+          "stddev": 0.0,
+          "minimum": 225.447,
+          "maximum": 225.447
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 1.332,
+          "stddev": 0.0,
+          "minimum": 1.332,
+          "maximum": 1.332
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-075",
+          "evidence_id": "OfwfTN1mEyM:00041",
+          "video_id": "OfwfTN1mEyM",
+          "title": "ENGLISH SPEECH | ELON MUSK: The Power of Solar Energy (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 98.72,
+          "url": "https://www.youtube.com/watch?v=OfwfTN1mEyM&t=98",
+          "text": "be great for the world and I think we're",
+          "confidence": "high",
+          "reviewed_speech_function": "qualified_prediction",
+          "measurements": {
+            "mean_rms_db": -19.983,
+            "mean_pitch_hz_proxy": 225.447,
+            "words_per_second_proxy": 1.332,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
     "qualified_recommendation": {
       "reviewed_supported_example_count": 1,
       "distinct_video_count": 1,
@@ -1880,6 +3218,132 @@
         }
       ]
     },
+    "rhetorical_question_with_answer": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -19.441,
+          "stddev": 0.0,
+          "minimum": -19.441,
+          "maximum": -19.441
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 245.739,
+          "stddev": 0.0,
+          "minimum": 245.739,
+          "maximum": 245.739
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 0.869,
+          "stddev": 0.0,
+          "minimum": 0.869,
+          "maximum": 0.869
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-055",
+          "evidence_id": "hZ0YhrgYejI:00001",
+          "video_id": "hZ0YhrgYejI",
+          "title": "ENGLISH SPEECH | NICK VUJICIC: If you fail, try again (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 16.609,
+          "url": "https://www.youtube.com/watch?v=hZ0YhrgYejI&t=16",
+          "text": "So, what do you do when you fall down?",
+          "confidence": "high",
+          "reviewed_speech_function": "rhetorical_question_with_answer",
+          "measurements": {
+            "mean_rms_db": -19.441,
+            "mean_pitch_hz_proxy": 245.739,
+            "words_per_second_proxy": 0.869,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
+    "self_correction_qualification": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -29.39,
+          "stddev": 0.0,
+          "minimum": -29.39,
+          "maximum": -29.39
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 316.964,
+          "stddev": 0.0,
+          "minimum": 316.964,
+          "maximum": 316.964
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 1.582,
+          "stddev": 0.0,
+          "minimum": 1.582,
+          "maximum": 1.582
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-074",
+          "evidence_id": "C8-twwwTETE:00045",
+          "video_id": "C8-twwwTETE",
+          "title": "ENGLISH SPEECH | EMINEM & 50 CENT: Walk of Fame Speech (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 98.88,
+          "url": "https://www.youtube.com/watch?v=C8-twwwTETE&t=98",
+          "text": "how into him I was right but I think I",
+          "confidence": "high",
+          "reviewed_speech_function": "self_correction_qualification",
+          "measurements": {
+            "mean_rms_db": -29.39,
+            "mean_pitch_hz_proxy": 316.964,
+            "words_per_second_proxy": 1.582,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
     "self_question_sequence": {
       "reviewed_supported_example_count": 1,
       "distinct_video_count": 1,
@@ -1937,6 +3401,69 @@
             "mean_rms_db": -17.273,
             "mean_pitch_hz_proxy": 222.656,
             "words_per_second_proxy": 2.502,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
+    "speculative_empathy": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -20.493,
+          "stddev": 0.0,
+          "minimum": -20.493,
+          "maximum": -20.493
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 293.75,
+          "stddev": 0.0,
+          "minimum": 293.75,
+          "maximum": 293.75
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 0.833,
+          "stddev": 0.0,
+          "minimum": 0.833,
+          "maximum": 0.833
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-072",
+          "evidence_id": "2fWJh-_UG5s:00160",
+          "video_id": "2fWJh-_UG5s",
+          "title": "ENGLISH SPEECH | MATTHEW MCCONAUGHEY: White House Speech (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 362.16,
+          "url": "https://www.youtube.com/watch?v=2fWJh-_UG5s&t=362",
+          "text": "maybe that would make",
+          "confidence": "high",
+          "reviewed_speech_function": "speculative_empathy",
+          "measurements": {
+            "mean_rms_db": -20.493,
+            "mean_pitch_hz_proxy": 293.75,
+            "words_per_second_proxy": 0.833,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
           }
@@ -2132,6 +3659,69 @@
         }
       ]
     },
+    "summary_principle": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -18.007,
+          "stddev": 0.0,
+          "minimum": -18.007,
+          "maximum": -18.007
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 229.167,
+          "stddev": 0.0,
+          "minimum": 229.167,
+          "maximum": 229.167
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 2.713,
+          "stddev": 0.0,
+          "minimum": 2.713,
+          "maximum": 2.713
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-087",
+          "evidence_id": "AwA0Jnfj3ao:00234",
+          "video_id": "AwA0Jnfj3ao",
+          "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 1016.839,
+          "url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=1016",
+          "text": "So, it's just, in short, it's just being astep ahead of your opposition.",
+          "confidence": "high",
+          "reviewed_speech_function": "summary_principle",
+          "measurements": {
+            "mean_rms_db": -18.007,
+            "mean_pitch_hz_proxy": 229.167,
+            "words_per_second_proxy": 2.713,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
     "summary_transition": {
       "reviewed_supported_example_count": 1,
       "distinct_video_count": 1,
@@ -2191,6 +3781,132 @@
             "words_per_second_proxy": null,
             "transcript_gap_before_seconds": null,
             "transcript_gap_after_seconds": null
+          }
+        }
+      ]
+    },
+    "term_definition": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -18.325,
+          "stddev": 0.0,
+          "minimum": -18.325,
+          "maximum": -18.325
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 295.313,
+          "stddev": 0.0,
+          "minimum": 295.313,
+          "maximum": 295.313
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 1.456,
+          "stddev": 0.0,
+          "minimum": 1.456,
+          "maximum": 1.456
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-083",
+          "evidence_id": "_Mb1-CN3wZs:00048",
+          "video_id": "_Mb1-CN3wZs",
+          "title": "Al Pacino as Tony Montana in the opening scene of \"Scarface\" (1983) by Brian De Palma 1080p",
+          "channel": "jack7cat",
+          "start_seconds": 136.0,
+          "url": "https://www.youtube.com/watch?v=_Mb1-CN3wZs&t=136",
+          "text": "Pitchfork means an assassin or something",
+          "confidence": "high",
+          "reviewed_speech_function": "term_definition",
+          "measurements": {
+            "mean_rms_db": -18.325,
+            "mean_pitch_hz_proxy": 295.313,
+            "words_per_second_proxy": 1.456,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ]
+    },
+    "translation_definition": {
+      "reviewed_supported_example_count": 1,
+      "distinct_video_count": 1,
+      "distinct_uploader_count": 1,
+      "measurement_summary": {
+        "mean_rms_db": {
+          "count": 1,
+          "mean": -33.206,
+          "stddev": 0.0,
+          "minimum": -33.206,
+          "maximum": -33.206
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 1,
+          "mean": 296.875,
+          "stddev": 0.0,
+          "minimum": 296.875,
+          "maximum": 296.875
+        },
+        "words_per_second_proxy": {
+          "count": 1,
+          "mean": 2.586,
+          "stddev": 0.0,
+          "minimum": 2.586,
+          "maximum": 2.586
+        },
+        "transcript_gap_before_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 1,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "examples": [
+        {
+          "annotation_id": "review-084",
+          "evidence_id": "fBnAMUkNM2k:00374",
+          "video_id": "fBnAMUkNM2k",
+          "title": "Muniba Mazari Speech: I See My Ability | English Subtitles",
+          "channel": "English Speeches",
+          "start_seconds": 1581.53,
+          "url": "https://www.youtube.com/watch?v=fBnAMUkNM2k&t=1581",
+          "text": "Bijli means electricity.",
+          "confidence": "high",
+          "reviewed_speech_function": "translation_definition",
+          "measurements": {
+            "mean_rms_db": -33.206,
+            "mean_pitch_hz_proxy": 296.875,
+            "words_per_second_proxy": 2.586,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
           }
         }
       ]
@@ -2261,40 +3977,40 @@
   },
   "patterns_by_candidate_label": {
     "call_to_action": {
-      "reviewed_supported_example_count": 4,
-      "distinct_video_count": 3,
+      "reviewed_supported_example_count": 7,
+      "distinct_video_count": 6,
       "distinct_uploader_count": 2,
       "measurement_summary": {
         "mean_rms_db": {
-          "count": 1,
-          "mean": -28.763,
-          "stddev": 0.0,
-          "minimum": -28.763,
-          "maximum": -28.763
+          "count": 4,
+          "mean": -25.57075,
+          "stddev": 5.2291,
+          "minimum": -31.259,
+          "maximum": -20.969
         },
         "mean_pitch_hz_proxy": {
-          "count": 1,
-          "mean": 315.104,
-          "stddev": 0.0,
-          "minimum": 315.104,
+          "count": 4,
+          "mean": 200.70675,
+          "stddev": 97.93287,
+          "minimum": 101.562,
           "maximum": 315.104
         },
         "words_per_second_proxy": {
-          "count": 1,
-          "mean": 1.471,
-          "stddev": 0.0,
-          "minimum": 1.471,
+          "count": 4,
+          "mean": 0.8935,
+          "stddev": 0.43371,
+          "minimum": 0.46,
           "maximum": 1.471
         },
         "transcript_gap_before_seconds": {
-          "count": 1,
+          "count": 4,
           "mean": 0.0,
           "stddev": 0.0,
           "minimum": 0.0,
           "maximum": 0.0
         },
         "transcript_gap_after_seconds": {
-          "count": 1,
+          "count": 4,
           "mean": 0.0,
           "stddev": 0.0,
           "minimum": 0.0,
@@ -2377,44 +4093,101 @@
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
           }
+        },
+        {
+          "annotation_id": "review-049",
+          "evidence_id": "jxY2-YgAgm0:00125",
+          "video_id": "jxY2-YgAgm0",
+          "title": "ENGLISH SPEECH | MELANIA TRUMP: A Public Denial (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 370.32,
+          "url": "https://www.youtube.com/watch?v=jxY2-YgAgm0&t=370",
+          "text": "Let's speak English",
+          "confidence": "high",
+          "reviewed_speech_function": "audience_practice_call",
+          "measurements": {
+            "mean_rms_db": -21.292,
+            "mean_pitch_hz_proxy": 101.562,
+            "words_per_second_proxy": 0.694,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-050",
+          "evidence_id": "pmAL79dnvu0:00116",
+          "video_id": "pmAL79dnvu0",
+          "title": "ENGLISH SPEECH | KELLY & BEYONCÉ: Grabbing the Pen (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 393.08,
+          "url": "https://www.youtube.com/watch?v=pmAL79dnvu0&t=393",
+          "text": "bigger we must",
+          "confidence": "high",
+          "reviewed_speech_function": "civic_collective_call",
+          "measurements": {
+            "mean_rms_db": -20.969,
+            "mean_pitch_hz_proxy": 246.652,
+            "words_per_second_proxy": 0.46,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-051",
+          "evidence_id": "qOwYULOPuPs:00348",
+          "video_id": "qOwYULOPuPs",
+          "title": "Mark Carney: Building Our Future",
+          "channel": "English Speeches",
+          "start_seconds": 902.72,
+          "url": "https://www.youtube.com/watch?v=qOwYULOPuPs&t=902",
+          "text": "just getting started. Let's keep going.",
+          "confidence": "high",
+          "reviewed_speech_function": "encouraging_continuation",
+          "measurements": {
+            "mean_rms_db": -31.259,
+            "mean_pitch_hz_proxy": 139.509,
+            "words_per_second_proxy": 0.949,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
         }
       ]
     },
     "conclusion_or_summary": {
-      "reviewed_supported_example_count": 4,
-      "distinct_video_count": 4,
+      "reviewed_supported_example_count": 5,
+      "distinct_video_count": 5,
       "distinct_uploader_count": 1,
       "measurement_summary": {
         "mean_rms_db": {
-          "count": 2,
-          "mean": -18.302,
-          "stddev": 3.58927,
+          "count": 3,
+          "mean": -18.20367,
+          "stddev": 2.54371,
           "minimum": -20.84,
           "maximum": -15.764
         },
         "mean_pitch_hz_proxy": {
-          "count": 2,
-          "mean": 200.0555,
-          "stddev": 31.96193,
+          "count": 3,
+          "mean": 209.75933,
+          "stddev": 28.16515,
           "minimum": 177.455,
-          "maximum": 222.656
+          "maximum": 229.167
         },
         "words_per_second_proxy": {
-          "count": 2,
-          "mean": 0.925,
-          "stddev": 0.43841,
+          "count": 3,
+          "mean": 1.521,
+          "stddev": 1.07784,
           "minimum": 0.615,
-          "maximum": 1.235
+          "maximum": 2.713
         },
         "transcript_gap_before_seconds": {
-          "count": 2,
+          "count": 3,
           "mean": 0.0,
           "stddev": 0.0,
           "minimum": 0.0,
           "maximum": 0.0
         },
         "transcript_gap_after_seconds": {
-          "count": 2,
+          "count": 3,
           "mean": 0.0,
           "stddev": 0.0,
           "minimum": 0.0,
@@ -2461,6 +4234,25 @@
           }
         },
         {
+          "annotation_id": "review-087",
+          "evidence_id": "AwA0Jnfj3ao:00234",
+          "video_id": "AwA0Jnfj3ao",
+          "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 1016.839,
+          "url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=1016",
+          "text": "So, it's just, in short, it's just being astep ahead of your opposition.",
+          "confidence": "high",
+          "reviewed_speech_function": "summary_principle",
+          "measurements": {
+            "mean_rms_db": -18.007,
+            "mean_pitch_hz_proxy": 229.167,
+            "words_per_second_proxy": 2.713,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
           "annotation_id": "review-017",
           "evidence_id": "aXmM0VZv810:00483",
           "video_id": "aXmM0VZv810",
@@ -2501,42 +4293,42 @@
       ]
     },
     "contrast_or_disagreement": {
-      "reviewed_supported_example_count": 5,
-      "distinct_video_count": 4,
-      "distinct_uploader_count": 1,
+      "reviewed_supported_example_count": 9,
+      "distinct_video_count": 8,
+      "distinct_uploader_count": 2,
       "measurement_summary": {
         "mean_rms_db": {
-          "count": 3,
-          "mean": -17.425,
-          "stddev": 1.74563,
-          "minimum": -18.776,
-          "maximum": -15.454
+          "count": 7,
+          "mean": -20.03286,
+          "stddev": 6.37306,
+          "minimum": -33.639,
+          "maximum": -15.293
         },
         "mean_pitch_hz_proxy": {
-          "count": 3,
-          "mean": 280.258,
-          "stddev": 61.33399,
-          "minimum": 236.979,
+          "count": 7,
+          "mean": 248.04429,
+          "stddev": 52.39958,
+          "minimum": 189.063,
           "maximum": 350.447
         },
         "words_per_second_proxy": {
-          "count": 3,
-          "mean": 1.60467,
-          "stddev": 0.68399,
+          "count": 7,
+          "mean": 2.71543,
+          "stddev": 2.83011,
           "minimum": 0.88,
-          "maximum": 2.239
+          "maximum": 9.0
         },
         "transcript_gap_before_seconds": {
-          "count": 3,
+          "count": 7,
           "mean": 0.0,
           "stddev": 0.0,
           "minimum": 0.0,
           "maximum": 0.0
         },
         "transcript_gap_after_seconds": {
-          "count": 3,
-          "mean": 0.69333,
-          "stddev": 1.20089,
+          "count": 7,
+          "mean": 0.29714,
+          "stddev": 0.78617,
           "minimum": 0.0,
           "maximum": 2.08
         }
@@ -2600,6 +4392,63 @@
           }
         },
         {
+          "annotation_id": "review-077",
+          "evidence_id": "AwA0Jnfj3ao:00125",
+          "video_id": "AwA0Jnfj3ao",
+          "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 580.06,
+          "url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=580",
+          "text": "But and I said, oh, this is a wrong place.",
+          "confidence": "high",
+          "reviewed_speech_function": "narrative_correction",
+          "measurements": {
+            "mean_rms_db": -21.64,
+            "mean_pitch_hz_proxy": 189.063,
+            "words_per_second_proxy": 2.433,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-078",
+          "evidence_id": "OfwfTN1mEyM:00139",
+          "video_id": "OfwfTN1mEyM",
+          "title": "ENGLISH SPEECH | ELON MUSK: The Power of Solar Energy (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 368.0,
+          "url": "https://www.youtube.com/watch?v=OfwfTN1mEyM&t=368",
+          "text": "often not quite understood but but the",
+          "confidence": "high",
+          "reviewed_speech_function": "concession_and_correction",
+          "measurements": {
+            "mean_rms_db": -15.293,
+            "mean_pitch_hz_proxy": 205.357,
+            "words_per_second_proxy": 1.006,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-079",
+          "evidence_id": "fBnAMUkNM2k:00278",
+          "video_id": "fBnAMUkNM2k",
+          "title": "Muniba Mazari Speech: I See My Ability | English Subtitles",
+          "channel": "English Speeches",
+          "start_seconds": 1328.8,
+          "url": "https://www.youtube.com/watch?v=fBnAMUkNM2k&t=1328",
+          "text": "and there will be you to proving them wrong.",
+          "confidence": "high",
+          "reviewed_speech_function": "opposition_framing",
+          "measurements": {
+            "mean_rms_db": -33.639,
+            "mean_pitch_hz_proxy": 234.375,
+            "words_per_second_proxy": 9.0,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
           "annotation_id": "review-025",
           "evidence_id": "jxY2-YgAgm0:00008",
           "video_id": "jxY2-YgAgm0",
@@ -2614,6 +4463,25 @@
             "mean_rms_db": -18.776,
             "mean_pitch_hz_proxy": 236.979,
             "words_per_second_proxy": 1.695,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-081",
+          "evidence_id": "lcj1wMZRitI:00095",
+          "video_id": "lcj1wMZRitI",
+          "title": "Al pacino-za oskara.rm",
+          "channel": "dokonmozak",
+          "start_seconds": 337.47,
+          "url": "https://www.youtube.com/watch?v=lcj1wMZRitI&t=337",
+          "text": "not a judge or jury but I can tell you",
+          "confidence": "high",
+          "reviewed_speech_function": "qualified_judgment",
+          "measurements": {
+            "mean_rms_db": -17.383,
+            "mean_pitch_hz_proxy": 266.741,
+            "words_per_second_proxy": 1.755,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
           }
@@ -2640,40 +4508,40 @@
       ]
     },
     "definition": {
-      "reviewed_supported_example_count": 4,
-      "distinct_video_count": 4,
-      "distinct_uploader_count": 1,
+      "reviewed_supported_example_count": 7,
+      "distinct_video_count": 6,
+      "distinct_uploader_count": 2,
       "measurement_summary": {
         "mean_rms_db": {
-          "count": 3,
-          "mean": -28.14233,
-          "stddev": 11.42139,
+          "count": 6,
+          "mean": -25.81867,
+          "stddev": 9.3268,
           "minimum": -40.996,
-          "maximum": -19.159
+          "maximum": -18.325
         },
         "mean_pitch_hz_proxy": {
-          "count": 3,
-          "mean": 258.08333,
-          "stddev": 45.04911,
+          "count": 6,
+          "mean": 276.28883,
+          "stddev": 34.82545,
           "minimum": 213.17,
           "maximum": 303.267
         },
         "words_per_second_proxy": {
-          "count": 3,
-          "mean": 1.03733,
-          "stddev": 0.55093,
+          "count": 6,
+          "mean": 1.39317,
+          "stddev": 0.69987,
           "minimum": 0.644,
-          "maximum": 1.667
+          "maximum": 2.586
         },
         "transcript_gap_before_seconds": {
-          "count": 3,
-          "mean": 0.88,
-          "stddev": 1.5242,
+          "count": 6,
+          "mean": 0.44,
+          "stddev": 1.07778,
           "minimum": 0.0,
           "maximum": 2.64
         },
         "transcript_gap_after_seconds": {
-          "count": 3,
+          "count": 6,
           "mean": 0.0,
           "stddev": 0.0,
           "minimum": 0.0,
@@ -2720,6 +4588,44 @@
           }
         },
         {
+          "annotation_id": "review-082",
+          "evidence_id": "OfwfTN1mEyM:00055",
+          "video_id": "OfwfTN1mEyM",
+          "title": "ENGLISH SPEECH | ELON MUSK: The Power of Solar Energy (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 138.959,
+          "url": "https://www.youtube.com/watch?v=OfwfTN1mEyM&t=138",
+          "text": "uh what that means is the potential for",
+          "confidence": "high",
+          "reviewed_speech_function": "meaning_explanation",
+          "measurements": {
+            "mean_rms_db": -18.954,
+            "mean_pitch_hz_proxy": 291.295,
+            "words_per_second_proxy": 1.205,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-083",
+          "evidence_id": "_Mb1-CN3wZs:00048",
+          "video_id": "_Mb1-CN3wZs",
+          "title": "Al Pacino as Tony Montana in the opening scene of \"Scarface\" (1983) by Brian De Palma 1080p",
+          "channel": "jack7cat",
+          "start_seconds": 136.0,
+          "url": "https://www.youtube.com/watch?v=_Mb1-CN3wZs&t=136",
+          "text": "Pitchfork means an assassin or something",
+          "confidence": "high",
+          "reviewed_speech_function": "term_definition",
+          "measurements": {
+            "mean_rms_db": -18.325,
+            "mean_pitch_hz_proxy": 295.313,
+            "words_per_second_proxy": 1.456,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
           "annotation_id": "review-028",
           "evidence_id": "fBnAMUkNM2k:00068",
           "video_id": "fBnAMUkNM2k",
@@ -2734,6 +4640,25 @@
             "mean_rms_db": -40.996,
             "mean_pitch_hz_proxy": 257.813,
             "words_per_second_proxy": 0.644,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-084",
+          "evidence_id": "fBnAMUkNM2k:00374",
+          "video_id": "fBnAMUkNM2k",
+          "title": "Muniba Mazari Speech: I See My Ability | English Subtitles",
+          "channel": "English Speeches",
+          "start_seconds": 1581.53,
+          "url": "https://www.youtube.com/watch?v=fBnAMUkNM2k&t=1581",
+          "text": "Bijli means electricity.",
+          "confidence": "high",
+          "reviewed_speech_function": "translation_definition",
+          "measurements": {
+            "mean_rms_db": -33.206,
+            "mean_pitch_hz_proxy": 296.875,
+            "words_per_second_proxy": 2.586,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
           }
@@ -2760,40 +4685,40 @@
       ]
     },
     "example": {
-      "reviewed_supported_example_count": 4,
-      "distinct_video_count": 3,
+      "reviewed_supported_example_count": 8,
+      "distinct_video_count": 5,
       "distinct_uploader_count": 1,
       "measurement_summary": {
         "mean_rms_db": {
-          "count": 3,
-          "mean": -15.77633,
-          "stddev": 2.1674,
-          "minimum": -18.201,
-          "maximum": -14.027
+          "count": 7,
+          "mean": -16.995,
+          "stddev": 3.57324,
+          "minimum": -23.931,
+          "maximum": -13.916
         },
         "mean_pitch_hz_proxy": {
-          "count": 3,
-          "mean": 234.85867,
-          "stddev": 27.0603,
+          "count": 7,
+          "mean": 240.095,
+          "stddev": 19.88761,
           "minimum": 206.25,
-          "maximum": 260.045
+          "maximum": 263.672
         },
         "words_per_second_proxy": {
-          "count": 3,
-          "mean": 1.45067,
-          "stddev": 0.43504,
-          "minimum": 0.949,
-          "maximum": 1.724
+          "count": 7,
+          "mean": 1.41914,
+          "stddev": 0.46983,
+          "minimum": 0.911,
+          "maximum": 2.133
         },
         "transcript_gap_before_seconds": {
-          "count": 3,
-          "mean": 0.0,
-          "stddev": 0.0,
+          "count": 7,
+          "mean": 0.01714,
+          "stddev": 0.04536,
           "minimum": 0.0,
-          "maximum": 0.0
+          "maximum": 0.12
         },
         "transcript_gap_after_seconds": {
-          "count": 3,
+          "count": 7,
           "mean": 0.0,
           "stddev": 0.0,
           "minimum": 0.0,
@@ -2840,6 +4765,25 @@
           }
         },
         {
+          "annotation_id": "review-062",
+          "evidence_id": "aXmM0VZv810:00529",
+          "video_id": "aXmM0VZv810",
+          "title": "ENGLISH SPEECH | ELON & JENSEN: Work Becomes Optional (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 1274.559,
+          "url": "https://www.youtube.com/watch?v=aXmM0VZv810&t=1274",
+          "text": ">> Just imagine how tiny that little",
+          "confidence": "high",
+          "reviewed_speech_function": "hypothetical_visualization",
+          "measurements": {
+            "mean_rms_db": -15.29,
+            "mean_pitch_hz_proxy": 263.672,
+            "words_per_second_proxy": 2.133,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
           "annotation_id": "review-031",
           "evidence_id": "aXmM0VZv810:00596",
           "video_id": "aXmM0VZv810",
@@ -2854,6 +4798,63 @@
             "mean_rms_db": -18.201,
             "mean_pitch_hz_proxy": 238.281,
             "words_per_second_proxy": 1.679,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-064",
+          "evidence_id": "jxY2-YgAgm0:00087",
+          "video_id": "jxY2-YgAgm0",
+          "title": "ENGLISH SPEECH | MELANIA TRUMP: A Public Denial (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 258.959,
+          "url": "https://www.youtube.com/watch?v=jxY2-YgAgm0&t=258",
+          "text": "such as Daily Beast, James Carville, and",
+          "confidence": "high",
+          "reviewed_speech_function": "named_example_list",
+          "measurements": {
+            "mean_rms_db": -23.931,
+            "mean_pitch_hz_proxy": 225.586,
+            "words_per_second_proxy": 0.911,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-065",
+          "evidence_id": "pmAL79dnvu0:00083",
+          "video_id": "pmAL79dnvu0",
+          "title": "ENGLISH SPEECH | KELLY & BEYONCÉ: Grabbing the Pen (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 281.44,
+          "url": "https://www.youtube.com/watch?v=pmAL79dnvu0&t=281",
+          "text": "here imagine our daughters growing up",
+          "confidence": "high",
+          "reviewed_speech_function": "imagined_future_example",
+          "measurements": {
+            "mean_rms_db": -18.499,
+            "mean_pitch_hz_proxy": 247.768,
+            "words_per_second_proxy": 1.014,
+            "transcript_gap_before_seconds": 0.12,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-066",
+          "evidence_id": "qOwYULOPuPs:00040",
+          "video_id": "qOwYULOPuPs",
+          "title": "Mark Carney: Building Our Future",
+          "channel": "English Speeches",
+          "start_seconds": 97.92,
+          "url": "https://www.youtube.com/watch?v=qOwYULOPuPs&t=97",
+          "text": "knew that agreements such as",
+          "confidence": "high",
+          "reviewed_speech_function": "historical_example_setup",
+          "measurements": {
+            "mean_rms_db": -13.916,
+            "mean_pitch_hz_proxy": 239.063,
+            "words_per_second_proxy": 1.524,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
           }
@@ -2962,40 +4963,40 @@
       ]
     },
     "question": {
-      "reviewed_supported_example_count": 4,
-      "distinct_video_count": 4,
-      "distinct_uploader_count": 2,
+      "reviewed_supported_example_count": 7,
+      "distinct_video_count": 7,
+      "distinct_uploader_count": 3,
       "measurement_summary": {
         "mean_rms_db": {
-          "count": 3,
-          "mean": -26.29733,
-          "stddev": 14.62736,
+          "count": 6,
+          "mean": -26.6935,
+          "stddev": 10.88877,
           "minimum": -43.174,
           "maximum": -17.273
         },
         "mean_pitch_hz_proxy": {
-          "count": 3,
-          "mean": 223.00367,
-          "stddev": 21.6166,
+          "count": 6,
+          "mean": 262.7015,
+          "stddev": 60.42749,
           "minimum": 201.563,
-          "maximum": 244.792
+          "maximum": 369.792
         },
         "words_per_second_proxy": {
-          "count": 3,
-          "mean": 1.86367,
-          "stddev": 0.83778,
-          "minimum": 0.915,
-          "maximum": 2.502
+          "count": 6,
+          "mean": 1.60833,
+          "stddev": 0.91947,
+          "minimum": 0.575,
+          "maximum": 2.615
         },
         "transcript_gap_before_seconds": {
-          "count": 3,
-          "mean": 0.24,
-          "stddev": 0.41569,
+          "count": 6,
+          "mean": 0.12,
+          "stddev": 0.29394,
           "minimum": 0.0,
           "maximum": 0.72
         },
         "transcript_gap_after_seconds": {
-          "count": 3,
+          "count": 6,
           "mean": 0.0,
           "stddev": 0.0,
           "minimum": 0.0,
@@ -3042,6 +5043,25 @@
           }
         },
         {
+          "annotation_id": "review-053",
+          "evidence_id": "AwA0Jnfj3ao:00003",
+          "video_id": "AwA0Jnfj3ao",
+          "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 23.21,
+          "url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=23",
+          "text": "Why don't we start right at the beginning?",
+          "confidence": "high",
+          "reviewed_speech_function": "interview_opening_question",
+          "measurements": {
+            "mean_rms_db": -24.741,
+            "mean_pitch_hz_proxy": 369.792,
+            "words_per_second_proxy": 2.615,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
           "annotation_id": "review-037",
           "evidence_id": "S43F1BZfQKY:00049",
           "video_id": "S43F1BZfQKY",
@@ -3056,6 +5076,44 @@
             "mean_rms_db": -17.273,
             "mean_pitch_hz_proxy": 222.656,
             "words_per_second_proxy": 2.502,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-054",
+          "evidence_id": "aHXxveJTJoE:00039",
+          "video_id": "aHXxveJTJoE",
+          "title": "The Muppet Movie: Showdown/Animal Saves the Day",
+          "channel": "Muppet Songs",
+          "start_seconds": 112.36,
+          "url": "https://www.youtube.com/watch?v=aHXxveJTJoE&t=112",
+          "text": "it with?",
+          "confidence": "high",
+          "reviewed_speech_function": "audience_or_interlocutor_question",
+          "measurements": {
+            "mean_rms_db": -37.087,
+            "mean_pitch_hz_proxy": 291.667,
+            "words_per_second_proxy": 0.575,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-055",
+          "evidence_id": "hZ0YhrgYejI:00001",
+          "video_id": "hZ0YhrgYejI",
+          "title": "ENGLISH SPEECH | NICK VUJICIC: If you fail, try again (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 16.609,
+          "url": "https://www.youtube.com/watch?v=hZ0YhrgYejI&t=16",
+          "text": "So, what do you do when you fall down?",
+          "confidence": "high",
+          "reviewed_speech_function": "rhetorical_question_with_answer",
+          "measurements": {
+            "mean_rms_db": -19.441,
+            "mean_pitch_hz_proxy": 245.739,
+            "words_per_second_proxy": 0.869,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
           }
@@ -3082,40 +5140,40 @@
       ]
     },
     "story_or_personal_experience": {
-      "reviewed_supported_example_count": 6,
-      "distinct_video_count": 4,
+      "reviewed_supported_example_count": 10,
+      "distinct_video_count": 7,
       "distinct_uploader_count": 1,
       "measurement_summary": {
         "mean_rms_db": {
-          "count": 4,
-          "mean": -24.93225,
-          "stddev": 5.69012,
-          "minimum": -33.165,
+          "count": 8,
+          "mean": -26.27137,
+          "stddev": 7.86013,
+          "minimum": -42.935,
           "maximum": -20.403
         },
         "mean_pitch_hz_proxy": {
-          "count": 4,
-          "mean": 241.732,
-          "stddev": 58.94382,
+          "count": 8,
+          "mean": 248.226,
+          "stddev": 55.4101,
           "minimum": 179.688,
-          "maximum": 313.802
+          "maximum": 333.984
         },
         "words_per_second_proxy": {
-          "count": 4,
-          "mean": 1.95875,
-          "stddev": 1.27942,
+          "count": 8,
+          "mean": 1.93712,
+          "stddev": 0.94893,
           "minimum": 0.525,
           "maximum": 3.598
         },
         "transcript_gap_before_seconds": {
-          "count": 4,
+          "count": 8,
           "mean": 0.0,
           "stddev": 0.0,
           "minimum": 0.0,
           "maximum": 0.0
         },
         "transcript_gap_after_seconds": {
-          "count": 4,
+          "count": 8,
           "mean": 0.0,
           "stddev": 0.0,
           "minimum": 0.0,
@@ -3181,6 +5239,25 @@
           }
         },
         {
+          "annotation_id": "review-067",
+          "evidence_id": "AwA0Jnfj3ao:00130",
+          "video_id": "AwA0Jnfj3ao",
+          "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 598.13,
+          "url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=598",
+          "text": "I went to the bathroom and I cried.",
+          "confidence": "high",
+          "reviewed_speech_function": "personal_emotional_story",
+          "measurements": {
+            "mean_rms_db": -20.469,
+            "mean_pitch_hz_proxy": 190.104,
+            "words_per_second_proxy": 2.787,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
           "annotation_id": "review-013",
           "evidence_id": "S43F1BZfQKY:00002",
           "video_id": "S43F1BZfQKY",
@@ -3219,6 +5296,25 @@
           }
         },
         {
+          "annotation_id": "review-068",
+          "evidence_id": "bR4tDSa3O10:00051",
+          "video_id": "bR4tDSa3O10",
+          "title": "ENGLISH SPEECH | JENNIFER COOLIDGE: Find Your Own Path (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 152.879,
+          "url": "https://www.youtube.com/watch?v=bR4tDSa3O10&t=152",
+          "text": "once you know one day you know I would",
+          "confidence": "medium",
+          "reviewed_speech_function": "personal_counterfactual_recollection",
+          "measurements": {
+            "mean_rms_db": -24.433,
+            "mean_pitch_hz_proxy": 256.511,
+            "words_per_second_proxy": 2.122,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
           "annotation_id": "review-041",
           "evidence_id": "fBnAMUkNM2k:00072",
           "video_id": "fBnAMUkNM2k",
@@ -3236,48 +5332,86 @@
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
           }
+        },
+        {
+          "annotation_id": "review-070",
+          "evidence_id": "fBnAMUkNM2k:00104",
+          "video_id": "fBnAMUkNM2k",
+          "title": "Muniba Mazari Speech: I See My Ability | English Subtitles",
+          "channel": "English Speeches",
+          "start_seconds": 574.14,
+          "url": "https://www.youtube.com/watch?v=fBnAMUkNM2k&t=574",
+          "text": "My mother said to me that this two sell-pass.",
+          "confidence": "high",
+          "reviewed_speech_function": "family_story_dialogue",
+          "measurements": {
+            "mean_rms_db": -42.935,
+            "mean_pitch_hz_proxy": 238.281,
+            "words_per_second_proxy": 1.429,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-071",
+          "evidence_id": "pmAL79dnvu0:00042",
+          "video_id": "pmAL79dnvu0",
+          "title": "ENGLISH SPEECH | KELLY & BEYONCÉ: Grabbing the Pen (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 136.28,
+          "url": "https://www.youtube.com/watch?v=pmAL79dnvu0&t=136",
+          "text": "kindness and of hope when I was a little",
+          "confidence": "medium",
+          "reviewed_speech_function": "childhood_story_setup",
+          "measurements": {
+            "mean_rms_db": -22.605,
+            "mean_pitch_hz_proxy": 333.984,
+            "words_per_second_proxy": 1.324,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
         }
       ]
     },
     "uncertainty_or_qualification": {
-      "reviewed_supported_example_count": 4,
-      "distinct_video_count": 4,
+      "reviewed_supported_example_count": 9,
+      "distinct_video_count": 8,
       "distinct_uploader_count": 1,
       "measurement_summary": {
         "mean_rms_db": {
-          "count": 3,
-          "mean": -24.059,
-          "stddev": 4.96099,
-          "minimum": -27.822,
-          "maximum": -18.437
+          "count": 8,
+          "mean": -22.80262,
+          "stddev": 4.67049,
+          "minimum": -29.39,
+          "maximum": -16.421
         },
         "mean_pitch_hz_proxy": {
-          "count": 3,
-          "mean": 248.512,
-          "stddev": 43.42596,
+          "count": 8,
+          "mean": 270.30325,
+          "stddev": 40.53769,
           "minimum": 198.661,
-          "maximum": 278.125
+          "maximum": 316.964
         },
         "words_per_second_proxy": {
-          "count": 3,
-          "mean": 1.693,
-          "stddev": 0.08311,
-          "minimum": 1.626,
+          "count": 8,
+          "mean": 1.48937,
+          "stddev": 0.31462,
+          "minimum": 0.833,
           "maximum": 1.786
         },
         "transcript_gap_before_seconds": {
-          "count": 3,
-          "mean": 1.76,
-          "stddev": 3.04841,
+          "count": 8,
+          "mean": 0.75,
+          "stddev": 1.84765,
           "minimum": 0.0,
           "maximum": 5.28
         },
         "transcript_gap_after_seconds": {
-          "count": 3,
-          "mean": 0.0,
-          "stddev": 0.0,
+          "count": 8,
+          "mean": 0.13,
+          "stddev": 0.3677,
           "minimum": 0.0,
-          "maximum": 0.0
+          "maximum": 1.04
         }
       },
       "examples": [
@@ -3301,6 +5435,25 @@
           }
         },
         {
+          "annotation_id": "review-072",
+          "evidence_id": "2fWJh-_UG5s:00160",
+          "video_id": "2fWJh-_UG5s",
+          "title": "ENGLISH SPEECH | MATTHEW MCCONAUGHEY: White House Speech (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 362.16,
+          "url": "https://www.youtube.com/watch?v=2fWJh-_UG5s&t=362",
+          "text": "maybe that would make",
+          "confidence": "high",
+          "reviewed_speech_function": "speculative_empathy",
+          "measurements": {
+            "mean_rms_db": -20.493,
+            "mean_pitch_hz_proxy": 293.75,
+            "words_per_second_proxy": 0.833,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
           "annotation_id": "review-042",
           "evidence_id": "3AIoHLr8nTI:00008",
           "video_id": "3AIoHLr8nTI",
@@ -3320,6 +5473,25 @@
           }
         },
         {
+          "annotation_id": "review-073",
+          "evidence_id": "3AIoHLr8nTI:00074",
+          "video_id": "3AIoHLr8nTI",
+          "title": "ENGLISH SPEECH | JUSTIN TRUDEAU: We’re All the Same (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 665.84,
+          "url": "https://www.youtube.com/watch?v=3AIoHLr8nTI&t=665",
+          "text": "from their leaders today and tomorrow? Now, I think you need to be brave.",
+          "confidence": "high",
+          "reviewed_speech_function": "hedged_recommendation",
+          "measurements": {
+            "mean_rms_db": -23.957,
+            "mean_pitch_hz_proxy": 270.833,
+            "words_per_second_proxy": 1.75,
+            "transcript_gap_before_seconds": 0.72,
+            "transcript_gap_after_seconds": 1.04
+          }
+        },
+        {
           "annotation_id": "review-043",
           "evidence_id": "9fEurt2OZ0I:00020",
           "video_id": "9fEurt2OZ0I",
@@ -3334,6 +5506,63 @@
             "mean_rms_db": -25.918,
             "mean_pitch_hz_proxy": 198.661,
             "words_per_second_proxy": 1.667,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-074",
+          "evidence_id": "C8-twwwTETE:00045",
+          "video_id": "C8-twwwTETE",
+          "title": "ENGLISH SPEECH | EMINEM & 50 CENT: Walk of Fame Speech (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 98.88,
+          "url": "https://www.youtube.com/watch?v=C8-twwwTETE&t=98",
+          "text": "how into him I was right but I think I",
+          "confidence": "high",
+          "reviewed_speech_function": "self_correction_qualification",
+          "measurements": {
+            "mean_rms_db": -29.39,
+            "mean_pitch_hz_proxy": 316.964,
+            "words_per_second_proxy": 1.582,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-075",
+          "evidence_id": "OfwfTN1mEyM:00041",
+          "video_id": "OfwfTN1mEyM",
+          "title": "ENGLISH SPEECH | ELON MUSK: The Power of Solar Energy (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 98.72,
+          "url": "https://www.youtube.com/watch?v=OfwfTN1mEyM&t=98",
+          "text": "be great for the world and I think we're",
+          "confidence": "high",
+          "reviewed_speech_function": "qualified_prediction",
+          "measurements": {
+            "mean_rms_db": -19.983,
+            "mean_pitch_hz_proxy": 225.447,
+            "words_per_second_proxy": 1.332,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-076",
+          "evidence_id": "aXmM0VZv810:00350",
+          "video_id": "aXmM0VZv810",
+          "title": "ENGLISH SPEECH | ELON & JENSEN: Work Becomes Optional (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 858.639,
+          "url": "https://www.youtube.com/watch?v=aXmM0VZv810&t=858",
+          "text": "pools. So I think with every",
+          "confidence": "high",
+          "reviewed_speech_function": "qualified_generalization",
+          "measurements": {
+            "mean_rms_db": -16.421,
+            "mean_pitch_hz_proxy": 309.896,
+            "words_per_second_proxy": 1.339,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
           }

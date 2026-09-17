@@ -2,19 +2,19 @@
 
 This report compares manually reviewed supported examples with ordinary usable transcript segments from the same video. Each video contributes one mean delta per label, which reduces—but does not remove—speaker, microphone, editing, topic, and segmentation confounds. Results are exploratory and do not establish effectiveness or causation.
 
-Supported reviewed annotations: **35**; feature records: **36**.
+Supported reviewed annotations: **62**; feature records: **36**.
 
 | Candidate label | Videos | Examples | RMS Δ dB | Pitch Δ Hz | WPS Δ | Spectral centroid Δ Hz |
 |---|---:|---:|---:|---:|---:|---:|
-| `call_to_action` | 1 | 1 | -4.99899 | 35.55667 | 0.2666 | 546.36948 |
-| `conclusion_or_summary` | 2 | 2 | -1.79265 | -27.65331 | -0.3799 | 87.7721 |
-| `contrast_or_disagreement` | 3 | 3 | 0.72523 | 39.90607 | 0.23045 | -34.33525 |
-| `definition` | 3 | 3 | -4.82014 | 9.04148 | -0.88667 | 148.92435 |
-| `example` | 2 | 3 | 1.17035 | -0.00231 | 0.2141 | 39.5351 |
+| `call_to_action` | 4 | 4 | -6.11893 | -46.16644 | -0.15588 | 95.84392 |
+| `conclusion_or_summary` | 3 | 3 | 0.36422 | -12.44097 | -1.22622 | 92.19269 |
+| `contrast_or_disagreement` | 7 | 7 | 1.42165 | 12.21817 | 0.61405 | 42.06158 |
+| `definition` | 5 | 6 | -1.75799 | 30.963 | -0.36778 | 58.09262 |
+| `example` | 4 | 7 | -0.42955 | -3.53387 | 0.18469 | 5.89654 |
 | `pause_event` | 2 | 2 | 2.44813 | 13.52118 | -0.4134 | -124.46775 |
-| `question` | 3 | 3 | 1.92635 | -41.38026 | 0.38306 | -118.42462 |
-| `story_or_personal_experience` | 3 | 4 | 1.16957 | -1.42866 | 0.24179 | 212.42516 |
-| `uncertainty_or_qualification` | 3 | 3 | -3.4406 | -45.40161 | 0.09677 | -117.85101 |
+| `question` | 6 | 6 | 0.17618 | 9.00494 | -0.71285 | 58.53343 |
+| `story_or_personal_experience` | 6 | 8 | -0.11226 | -0.5027 | -0.32649 | 98.39248 |
+| `uncertainty_or_qualification` | 7 | 8 | -2.00437 | 1.97689 | 0.01203 | -43.55161 |
 
 ## Reading the deltas
 
