@@ -1,0 +1,22 @@
+{
+  "schema_version": "0.1",
+  "analysis_unit": "timestamped_segment",
+  "minimum_evidence_for_recurring_pattern": {
+    "distinct_speakers": 3,
+    "distinct_videos": 5,
+    "timestamped_examples": 3,
+    "counterexamples_required": true
+  },
+  "channels": ["language", "voice", "face", "gesture", "scene", "context"],
+  "required_labels": [
+    "speech_function",
+    "speaker_id",
+    "video_id",
+    "start_seconds",
+    "end_seconds",
+    "evidence_type",
+    "confidence",
+    "limitations"
+  ],
+  "interpretation_policy": "Describe measurements directly; mark explanations as tentative; never infer mental state as fact."
+}
