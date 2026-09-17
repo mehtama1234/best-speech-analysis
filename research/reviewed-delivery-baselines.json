@@ -1,0 +1,962 @@
+{
+  "schema_version": "0.1",
+  "policy": "Only manually reviewed supported examples are included. Deltas are video-balanced and exploratory; they do not establish causation, effectiveness, or speaker-independent rules.",
+  "supported_annotation_count": 35,
+  "feature_record_count": 36,
+  "patterns": {
+    "call_to_action": {
+      "comparison": "supported_reviewed_segments_minus_same_video_all_usable_segments",
+      "label_status": "manually_reviewed_supported_examples; exploratory_only",
+      "video_count": 1,
+      "example_count": 1,
+      "metric_deltas": {
+        "mean_rms_db": {
+          "video_count": 1,
+          "mean_delta": -4.99899,
+          "median_delta": -4.99899,
+          "stddev": 0.0,
+          "minimum": -4.99899,
+          "maximum": -4.99899
+        },
+        "speech_activity_fraction": {
+          "video_count": 1,
+          "mean_delta": -0.276,
+          "median_delta": -0.276,
+          "stddev": 0.0,
+          "minimum": -0.276,
+          "maximum": -0.276
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 1,
+          "mean_delta": 0.00977,
+          "median_delta": 0.00977,
+          "stddev": 0.0,
+          "minimum": 0.00977,
+          "maximum": 0.00977
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 1,
+          "mean_delta": 546.36948,
+          "median_delta": 546.36948,
+          "stddev": 0.0,
+          "minimum": 546.36948,
+          "maximum": 546.36948
+        },
+        "mean_pitch_hz_proxy": {
+          "video_count": 1,
+          "mean_delta": 35.55667,
+          "median_delta": 35.55667,
+          "stddev": 0.0,
+          "minimum": 35.55667,
+          "maximum": 35.55667
+        },
+        "mean_pitch_confidence_proxy": {
+          "video_count": 1,
+          "mean_delta": 0.02948,
+          "median_delta": 0.02948,
+          "stddev": 0.0,
+          "minimum": 0.02948,
+          "maximum": 0.02948
+        },
+        "words_per_second_proxy": {
+          "video_count": 1,
+          "mean_delta": 0.2666,
+          "median_delta": 0.2666,
+          "stddev": 0.0,
+          "minimum": 0.2666,
+          "maximum": 0.2666
+        }
+      },
+      "per_video_deltas": {
+        "2fWJh-_UG5s": {
+          "mean_rms_db": -4.998994584837547,
+          "speech_activity_fraction": -0.276,
+          "mean_zero_crossing_rate": 0.00976906137184115,
+          "mean_spectral_centroid_hz": 546.3694819494584,
+          "mean_pitch_hz_proxy": 35.5566672694394,
+          "mean_pitch_confidence_proxy": 0.029484647377938517,
+          "words_per_second_proxy": 0.26660108303249097
+        }
+      },
+      "examples": [
+        {
+          "evidence_id": "2fWJh-_UG5s:00401",
+          "video_id": "2fWJh-_UG5s",
+          "reviewed_speech_function": "policy_call_to_action",
+          "text": "we need to save for schools"
+        }
+      ]
+    },
+    "conclusion_or_summary": {
+      "comparison": "supported_reviewed_segments_minus_same_video_all_usable_segments",
+      "label_status": "manually_reviewed_supported_examples; exploratory_only",
+      "video_count": 2,
+      "example_count": 2,
+      "metric_deltas": {
+        "mean_rms_db": {
+          "video_count": 2,
+          "mean_delta": -1.79265,
+          "median_delta": -1.79265,
+          "stddev": 4.05311,
+          "minimum": -4.65863,
+          "maximum": 1.07333
+        },
+        "speech_activity_fraction": {
+          "video_count": 2,
+          "mean_delta": -0.05092,
+          "median_delta": -0.05092,
+          "stddev": 0.08154,
+          "minimum": -0.10858,
+          "maximum": 0.00673
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 2,
+          "mean_delta": 0.02792,
+          "median_delta": 0.02792,
+          "stddev": 0.01616,
+          "minimum": 0.01649,
+          "maximum": 0.03934
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 2,
+          "mean_delta": 87.7721,
+          "median_delta": 87.7721,
+          "stddev": 211.26955,
+          "minimum": -61.61804,
+          "maximum": 237.16223
+        },
+        "mean_pitch_hz_proxy": {
+          "video_count": 2,
+          "mean_delta": -27.65331,
+          "median_delta": -27.65331,
+          "stddev": 8.33053,
+          "minimum": -33.54389,
+          "maximum": -21.76273
+        },
+        "mean_pitch_confidence_proxy": {
+          "video_count": 2,
+          "mean_delta": 0.00837,
+          "median_delta": 0.00837,
+          "stddev": 0.00069,
+          "minimum": 0.00788,
+          "maximum": 0.00886
+        },
+        "words_per_second_proxy": {
+          "video_count": 2,
+          "mean_delta": -0.3799,
+          "median_delta": -0.3799,
+          "stddev": 0.57869,
+          "minimum": -0.7891,
+          "maximum": 0.02929
+        }
+      },
+      "per_video_deltas": {
+        "aXmM0VZv810": {
+          "mean_rms_db": 1.0733328358208958,
+          "speech_activity_fraction": 0.006734328358208974,
+          "mean_zero_crossing_rate": 0.016491328358208962,
+          "mean_spectral_centroid_hz": -61.618037313432865,
+          "mean_pitch_hz_proxy": -33.54388507462687,
+          "mean_pitch_confidence_proxy": 0.00787598507462689,
+          "words_per_second_proxy": -0.7890955223880598
+        },
+        "qOwYULOPuPs": {
+          "mean_rms_db": -4.658627118644066,
+          "speech_activity_fraction": -0.1085819209039548,
+          "mean_zero_crossing_rate": 0.03934129943502826,
+          "mean_spectral_centroid_hz": 237.1622288135593,
+          "mean_pitch_hz_proxy": -21.762731638418074,
+          "mean_pitch_confidence_proxy": 0.00885579096045197,
+          "words_per_second_proxy": 0.029293785310734455
+        }
+      },
+      "examples": [
+        {
+          "evidence_id": "aXmM0VZv810:00483",
+          "video_id": "aXmM0VZv810",
+          "reviewed_speech_function": "conclusion_marker",
+          "text": "overwhelmingly what matters"
+        },
+        {
+          "evidence_id": "qOwYULOPuPs:00124",
+          "video_id": "qOwYULOPuPs",
+          "reviewed_speech_function": "compressed_evaluation",
+          "text": "In short, they were asking far too much"
+        }
+      ]
+    },
+    "contrast_or_disagreement": {
+      "comparison": "supported_reviewed_segments_minus_same_video_all_usable_segments",
+      "label_status": "manually_reviewed_supported_examples; exploratory_only",
+      "video_count": 3,
+      "example_count": 3,
+      "metric_deltas": {
+        "mean_rms_db": {
+          "video_count": 3,
+          "mean_delta": 0.72523,
+          "median_delta": 0.72737,
+          "stddev": 0.80282,
+          "minimum": -0.07865,
+          "maximum": 1.52697
+        },
+        "speech_activity_fraction": {
+          "video_count": 3,
+          "mean_delta": 0.01555,
+          "median_delta": 0.01642,
+          "stddev": 0.00774,
+          "minimum": 0.00742,
+          "maximum": 0.02282
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 3,
+          "mean_delta": -0.00813,
+          "median_delta": -0.00824,
+          "stddev": 0.00763,
+          "minimum": -0.01571,
+          "maximum": -0.00044
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 3,
+          "mean_delta": -34.33525,
+          "median_delta": -38.63619,
+          "stddev": 34.56526,
+          "minimum": -66.54877,
+          "maximum": 2.1792
+        },
+        "mean_pitch_hz_proxy": {
+          "video_count": 3,
+          "mean_delta": 39.90607,
+          "median_delta": 54.13027,
+          "stddev": 29.63871,
+          "minimum": 5.83646,
+          "maximum": 59.75147
+        },
+        "mean_pitch_confidence_proxy": {
+          "video_count": 3,
+          "mean_delta": 0.01255,
+          "median_delta": 0.03093,
+          "stddev": 0.06005,
+          "minimum": -0.05454,
+          "maximum": 0.06128
+        },
+        "words_per_second_proxy": {
+          "video_count": 3,
+          "mean_delta": 0.23045,
+          "median_delta": 0.13111,
+          "stddev": 0.6119,
+          "minimum": -0.32571,
+          "maximum": 0.88594
+        }
+      },
+      "per_video_deltas": {
+        "3AIoHLr8nTI": {
+          "mean_rms_db": 1.5269734513274322,
+          "speech_activity_fraction": 0.007415929203539839,
+          "mean_zero_crossing_rate": -0.008235929203539827,
+          "mean_spectral_centroid_hz": -38.63618584070798,
+          "mean_pitch_hz_proxy": 59.75146902654865,
+          "mean_pitch_confidence_proxy": 0.061277345132743355,
+          "words_per_second_proxy": 0.1311061946902652
+        },
+        "jxY2-YgAgm0": {
+          "mean_rms_db": -0.0786535433070874,
+          "speech_activity_fraction": 0.02281889763779532,
+          "mean_zero_crossing_rate": -0.0004449606299212622,
+          "mean_spectral_centroid_hz": 2.1792047244093737,
+          "mean_pitch_hz_proxy": 5.836464566929152,
+          "mean_pitch_confidence_proxy": -0.05453984251968502,
+          "words_per_second_proxy": 0.8859448818897638
+        },
+        "qOwYULOPuPs": {
+          "mean_rms_db": 0.727372881355933,
+          "speech_activity_fraction": 0.0164180790960452,
+          "mean_zero_crossing_rate": -0.015708700564971756,
+          "mean_spectral_centroid_hz": -66.54877118644066,
+          "mean_pitch_hz_proxy": 54.130268361581926,
+          "mean_pitch_confidence_proxy": 0.030925790960451977,
+          "words_per_second_proxy": -0.32570621468926564
+        }
+      },
+      "examples": [
+        {
+          "evidence_id": "3AIoHLr8nTI:00097",
+          "video_id": "3AIoHLr8nTI",
+          "reviewed_speech_function": "normative_rejection",
+          "text": "genital mutilation is wrong, no matter how many generations have practiced it."
+        },
+        {
+          "evidence_id": "jxY2-YgAgm0:00008",
+          "video_id": "jxY2-YgAgm0",
+          "reviewed_speech_function": "explicit_rejection",
+          "text": "I do not object to their ignorance, but"
+        },
+        {
+          "evidence_id": "qOwYULOPuPs:00075",
+          "video_id": "qOwYULOPuPs",
+          "reviewed_speech_function": "evidence_based_contrast",
+          "text": "Canada grew stronger. Instead of"
+        }
+      ]
+    },
+    "definition": {
+      "comparison": "supported_reviewed_segments_minus_same_video_all_usable_segments",
+      "label_status": "manually_reviewed_supported_examples; exploratory_only",
+      "video_count": 3,
+      "example_count": 3,
+      "metric_deltas": {
+        "mean_rms_db": {
+          "video_count": 3,
+          "mean_delta": -4.82014,
+          "median_delta": -6.78275,
+          "stddev": 4.57894,
+          "minimum": -8.09063,
+          "maximum": 0.41297
+        },
+        "speech_activity_fraction": {
+          "video_count": 3,
+          "mean_delta": -0.20993,
+          "median_delta": -0.10858,
+          "stddev": 0.28203,
+          "minimum": -0.52863,
+          "maximum": 0.00742
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 3,
+          "mean_delta": 0.01846,
+          "median_delta": 0.02719,
+          "stddev": 0.01898,
+          "minimum": -0.00331,
+          "maximum": 0.0315
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 3,
+          "mean_delta": 148.92435,
+          "median_delta": 209.18301,
+          "stddev": 123.12087,
+          "minimum": 7.28081,
+          "maximum": 230.30923
+        },
+        "mean_pitch_hz_proxy": {
+          "video_count": 3,
+          "mean_delta": 9.04148,
+          "median_delta": 12.57147,
+          "stddev": 7.34246,
+          "minimum": 0.6007,
+          "maximum": 13.95227
+        },
+        "mean_pitch_confidence_proxy": {
+          "video_count": 3,
+          "mean_delta": -0.00058,
+          "median_delta": -0.00186,
+          "stddev": 0.01168,
+          "minimum": -0.01156,
+          "maximum": 0.01169
+        },
+        "words_per_second_proxy": {
+          "video_count": 3,
+          "mean_delta": -0.88667,
+          "median_delta": -0.44089,
+          "stddev": 0.80365,
+          "minimum": -1.81441,
+          "maximum": -0.40471
+        }
+      },
+      "per_video_deltas": {
+        "3AIoHLr8nTI": {
+          "mean_rms_db": 0.412973451327435,
+          "speech_activity_fraction": 0.007415929203539839,
+          "mean_zero_crossing_rate": -0.003305929203539823,
+          "mean_spectral_centroid_hz": 7.280814159292049,
+          "mean_pitch_hz_proxy": 12.571469026548641,
+          "mean_pitch_confidence_proxy": 0.01168734513274336,
+          "words_per_second_proxy": -0.44089380530973465
+        },
+        "fBnAMUkNM2k": {
+          "mean_rms_db": -6.782751592356689,
+          "speech_activity_fraction": -0.5286284501061571,
+          "mean_zero_crossing_rate": 0.02719416135881106,
+          "mean_spectral_centroid_hz": 209.18301486199584,
+          "mean_pitch_hz_proxy": 0.6006972281449521,
+          "mean_pitch_confidence_proxy": -0.0018606396588486118,
+          "words_per_second_proxy": -1.8144055201698515
+        },
+        "qOwYULOPuPs": {
+          "mean_rms_db": -8.090627118644065,
+          "speech_activity_fraction": -0.1085819209039548,
+          "mean_zero_crossing_rate": 0.031501299435028246,
+          "mean_spectral_centroid_hz": 230.30922881355934,
+          "mean_pitch_hz_proxy": 13.9522683615819,
+          "mean_pitch_confidence_proxy": -0.011564209039548023,
+          "words_per_second_proxy": -0.4047062146892656
+        }
+      },
+      "examples": [
+        {
+          "evidence_id": "3AIoHLr8nTI:00046",
+          "video_id": "3AIoHLr8nTI",
+          "reviewed_speech_function": "conceptual_reframing",
+          "text": "Think about it: Saying “I tolerate you” actually means something like, “Ok, I grudgingly admit that"
+        },
+        {
+          "evidence_id": "fBnAMUkNM2k:00068",
+          "video_id": "fBnAMUkNM2k",
+          "reviewed_speech_function": "interpretive_definition",
+          "text": "cry, that means you are healing."
+        },
+        {
+          "evidence_id": "qOwYULOPuPs:00279",
+          "video_id": "qOwYULOPuPs",
+          "reviewed_speech_function": "conceptual_equation",
+          "text": "Because controlling our energy means"
+        }
+      ]
+    },
+    "example": {
+      "comparison": "supported_reviewed_segments_minus_same_video_all_usable_segments",
+      "label_status": "manually_reviewed_supported_examples; exploratory_only",
+      "video_count": 2,
+      "example_count": 3,
+      "metric_deltas": {
+        "mean_rms_db": {
+          "video_count": 2,
+          "mean_delta": 1.17035,
+          "median_delta": 1.17035,
+          "stddev": 1.39161,
+          "minimum": 0.18633,
+          "maximum": 2.15437
+        },
+        "speech_activity_fraction": {
+          "video_count": 2,
+          "mean_delta": 0.01158,
+          "median_delta": 0.01158,
+          "stddev": 0.00685,
+          "minimum": 0.00673,
+          "maximum": 0.01642
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 2,
+          "mean_delta": 0.01548,
+          "median_delta": 0.01548,
+          "stddev": 0.00969,
+          "minimum": 0.00862,
+          "maximum": 0.02233
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 2,
+          "mean_delta": 39.5351,
+          "median_delta": 39.5351,
+          "stddev": 24.24509,
+          "minimum": 22.39123,
+          "maximum": 56.67896
+        },
+        "mean_pitch_hz_proxy": {
+          "video_count": 2,
+          "mean_delta": -0.00231,
+          "median_delta": -0.00231,
+          "stddev": 9.94839,
+          "minimum": -7.03689,
+          "maximum": 7.03227
+        },
+        "mean_pitch_confidence_proxy": {
+          "video_count": 2,
+          "mean_delta": -0.00322,
+          "median_delta": -0.00322,
+          "stddev": 0.03791,
+          "minimum": -0.03002,
+          "maximum": 0.02359
+        },
+        "words_per_second_proxy": {
+          "video_count": 2,
+          "mean_delta": 0.2141,
+          "median_delta": 0.2141,
+          "stddev": 0.4302,
+          "minimum": -0.0901,
+          "maximum": 0.51829
+        }
+      },
+      "per_video_deltas": {
+        "aXmM0VZv810": {
+          "mean_rms_db": 0.18633283582089444,
+          "speech_activity_fraction": 0.006734328358208974,
+          "mean_zero_crossing_rate": 0.022331328358208946,
+          "mean_spectral_centroid_hz": 56.67896268656716,
+          "mean_pitch_hz_proxy": -7.036885074626866,
+          "mean_pitch_confidence_proxy": -0.030024014925373127,
+          "words_per_second_proxy": -0.09009552238805979
+        },
+        "qOwYULOPuPs": {
+          "mean_rms_db": 2.1543728813559344,
+          "speech_activity_fraction": 0.0164180790960452,
+          "mean_zero_crossing_rate": 0.008621299435028235,
+          "mean_spectral_centroid_hz": 22.391228813559337,
+          "mean_pitch_hz_proxy": 7.032268361581913,
+          "mean_pitch_confidence_proxy": 0.023585790960451963,
+          "words_per_second_proxy": 0.5182937853107343
+        }
+      },
+      "examples": [
+        {
+          "evidence_id": "aXmM0VZv810:00274",
+          "video_id": "aXmM0VZv810",
+          "reviewed_speech_function": "example_marker",
+          "text": "this earlier radiology for example has"
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00596",
+          "video_id": "aXmM0VZv810",
+          "reviewed_speech_function": "statistical_example_introduction",
+          "text": "some over 20 years. Let me give you one"
+        },
+        {
+          "evidence_id": "qOwYULOPuPs:00221",
+          "video_id": "qOwYULOPuPs",
+          "reviewed_speech_function": "institutional_example_introduction",
+          "text": "the many. For example, in July of this"
+        }
+      ]
+    },
+    "pause_event": {
+      "comparison": "supported_reviewed_segments_minus_same_video_all_usable_segments",
+      "label_status": "manually_reviewed_supported_examples; exploratory_only",
+      "video_count": 2,
+      "example_count": 2,
+      "metric_deltas": {
+        "mean_rms_db": {
+          "video_count": 2,
+          "mean_delta": 2.44813,
+          "median_delta": 2.44813,
+          "stddev": 0.72815,
+          "minimum": 1.93325,
+          "maximum": 2.96301
+        },
+        "speech_activity_fraction": {
+          "video_count": 2,
+          "mean_delta": 0.07619,
+          "median_delta": 0.07619,
+          "stddev": 0.06762,
+          "minimum": 0.02837,
+          "maximum": 0.124
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 2,
+          "mean_delta": -0.00418,
+          "median_delta": -0.00418,
+          "stddev": 0.00913,
+          "minimum": -0.01064,
+          "maximum": 0.00227
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 2,
+          "mean_delta": -124.46775,
+          "median_delta": -124.46775,
+          "stddev": 176.91703,
+          "minimum": -249.56699,
+          "maximum": 0.63148
+        },
+        "mean_pitch_hz_proxy": {
+          "video_count": 2,
+          "mean_delta": 13.52118,
+          "median_delta": 13.52118,
+          "stddev": 27.76315,
+          "minimum": -6.11033,
+          "maximum": 33.1527
+        },
+        "mean_pitch_confidence_proxy": {
+          "video_count": 2,
+          "mean_delta": -0.0017,
+          "median_delta": -0.0017,
+          "stddev": 0.02192,
+          "minimum": -0.01721,
+          "maximum": 0.0138
+        },
+        "words_per_second_proxy": {
+          "video_count": 2,
+          "mean_delta": -0.4134,
+          "median_delta": -0.4134,
+          "stddev": 0.80328,
+          "minimum": -0.98141,
+          "maximum": 0.1546
+        }
+      },
+      "per_video_deltas": {
+        "2fWJh-_UG5s": {
+          "mean_rms_db": 2.9630054151624563,
+          "speech_activity_fraction": 0.124,
+          "mean_zero_crossing_rate": -0.010640938628158847,
+          "mean_spectral_centroid_hz": 0.6314819494584754,
+          "mean_pitch_hz_proxy": -6.110332730560572,
+          "mean_pitch_confidence_proxy": -0.017205352622061493,
+          "words_per_second_proxy": 0.15460108303249087
+        },
+        "fBnAMUkNM2k": {
+          "mean_rms_db": 1.9332484076433119,
+          "speech_activity_fraction": 0.02837154989384283,
+          "mean_zero_crossing_rate": 0.002274161358811033,
+          "mean_spectral_centroid_hz": -249.56698513800416,
+          "mean_pitch_hz_proxy": 33.15269722814497,
+          "mean_pitch_confidence_proxy": 0.013799360341151368,
+          "words_per_second_proxy": -0.9814055201698515
+        }
+      },
+      "examples": [
+        {
+          "evidence_id": "2fWJh-_UG5s:00035",
+          "video_id": "2fWJh-_UG5s",
+          "reviewed_speech_function": "hesitation_and_repair",
+          "text": "my uh wife and i"
+        },
+        {
+          "evidence_id": "fBnAMUkNM2k:00021",
+          "video_id": "fBnAMUkNM2k",
+          "reviewed_speech_function": "dramatic_story_transition",
+          "text": "And those incidents are so strong that theychange your DNA."
+        }
+      ]
+    },
+    "question": {
+      "comparison": "supported_reviewed_segments_minus_same_video_all_usable_segments",
+      "label_status": "manually_reviewed_supported_examples; exploratory_only",
+      "video_count": 3,
+      "example_count": 3,
+      "metric_deltas": {
+        "mean_rms_db": {
+          "video_count": 3,
+          "mean_delta": 1.92635,
+          "median_delta": 5.31901,
+          "stddev": 6.15524,
+          "minimum": -5.17871,
+          "maximum": 5.63875
+        },
+        "speech_activity_fraction": {
+          "video_count": 3,
+          "mean_delta": 0.01778,
+          "median_delta": 0.09151,
+          "stddev": 0.1567,
+          "minimum": -0.16219,
+          "maximum": 0.124
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 3,
+          "mean_delta": -0.02485,
+          "median_delta": -0.03058,
+          "stddev": 0.02387,
+          "minimum": -0.04534,
+          "maximum": 0.00136
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 3,
+          "mean_delta": -118.42462,
+          "median_delta": -93.84415,
+          "stddev": 98.76307,
+          "minimum": -227.15652,
+          "maximum": -34.2732
+        },
+        "mean_pitch_hz_proxy": {
+          "video_count": 3,
+          "mean_delta": -41.38026,
+          "median_delta": -35.8206,
+          "stddev": 34.16522,
+          "minimum": -77.98433,
+          "maximum": -10.33584
+        },
+        "mean_pitch_confidence_proxy": {
+          "video_count": 3,
+          "mean_delta": 0.0343,
+          "median_delta": 0.04449,
+          "stddev": 0.07944,
+          "minimum": -0.04975,
+          "maximum": 0.10814
+        },
+        "words_per_second_proxy": {
+          "video_count": 3,
+          "mean_delta": 0.38306,
+          "median_delta": 0.55579,
+          "stddev": 0.60489,
+          "minimum": -0.2894,
+          "maximum": 0.8828
+        }
+      },
+      "per_video_deltas": {
+        "m92yvNscIAo": {
+          "mean_rms_db": -5.178711864406779,
+          "speech_activity_fraction": -0.16218644067796617,
+          "mean_zero_crossing_rate": 0.0013603389830508517,
+          "mean_spectral_centroid_hz": -34.27320338983054,
+          "mean_pitch_hz_proxy": -35.82059649122809,
+          "mean_pitch_confidence_proxy": 0.04449385964912281,
+          "words_per_second_proxy": 0.8827966101694915
+        },
+        "2fWJh-_UG5s": {
+          "mean_rms_db": 5.319005415162454,
+          "speech_activity_fraction": 0.124,
+          "mean_zero_crossing_rate": -0.04534093862815885,
+          "mean_spectral_centroid_hz": -227.15651805054154,
+          "mean_pitch_hz_proxy": -77.9843327305606,
+          "mean_pitch_confidence_proxy": 0.1081446473779385,
+          "words_per_second_proxy": -0.2893989169675091
+        },
+        "S43F1BZfQKY": {
+          "mean_rms_db": 5.638750000000002,
+          "speech_activity_fraction": 0.0915125,
+          "mean_zero_crossing_rate": -0.030582625000000002,
+          "mean_spectral_centroid_hz": -93.84414999999996,
+          "mean_pitch_hz_proxy": -10.335837499999997,
+          "mean_pitch_confidence_proxy": -0.049745125,
+          "words_per_second_proxy": 0.5557874999999999
+        }
+      },
+      "examples": [
+        {
+          "evidence_id": "m92yvNscIAo:00004",
+          "video_id": "m92yvNscIAo",
+          "reviewed_speech_function": "audience_question_or_rhetorical_question",
+          "text": "hours now how many different ways do you"
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00005",
+          "video_id": "2fWJh-_UG5s",
+          "reviewed_speech_function": "rhetorical_question",
+          "text": "how about that"
+        },
+        {
+          "evidence_id": "S43F1BZfQKY:00049",
+          "video_id": "S43F1BZfQKY",
+          "reviewed_speech_function": "self_question_sequence",
+          "text": "Am I Indian?"
+        }
+      ]
+    },
+    "story_or_personal_experience": {
+      "comparison": "supported_reviewed_segments_minus_same_video_all_usable_segments",
+      "label_status": "manually_reviewed_supported_examples; exploratory_only",
+      "video_count": 3,
+      "example_count": 4,
+      "metric_deltas": {
+        "mean_rms_db": {
+          "video_count": 3,
+          "mean_delta": 1.16957,
+          "median_delta": 1.04825,
+          "stddev": 0.56779,
+          "minimum": 0.67225,
+          "maximum": 1.78823
+        },
+        "speech_activity_fraction": {
+          "video_count": 3,
+          "mean_delta": 0.04365,
+          "median_delta": 0.03507,
+          "stddev": 0.0442,
+          "minimum": 0.00437,
+          "maximum": 0.09151
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 3,
+          "mean_delta": 0.00831,
+          "median_delta": 0.00159,
+          "stddev": 0.01662,
+          "minimum": -0.0039,
+          "maximum": 0.02724
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 3,
+          "mean_delta": 212.42516,
+          "median_delta": 192.06801,
+          "stddev": 48.92492,
+          "minimum": 176.96563,
+          "maximum": 268.24185
+        },
+        "mean_pitch_hz_proxy": {
+          "video_count": 3,
+          "mean_delta": -1.42866,
+          "median_delta": 5.2877,
+          "stddev": 33.40234,
+          "minimum": -37.67884,
+          "maximum": 28.10518
+        },
+        "mean_pitch_confidence_proxy": {
+          "video_count": 3,
+          "mean_delta": -0.00887,
+          "median_delta": -0.01781,
+          "stddev": 0.03115,
+          "minimum": -0.03458,
+          "maximum": 0.02577
+        },
+        "words_per_second_proxy": {
+          "video_count": 3,
+          "mean_delta": 0.24179,
+          "median_delta": 0.20598,
+          "stddev": 0.88045,
+          "minimum": -0.62021,
+          "maximum": 1.13959
+        }
+      },
+      "per_video_deltas": {
+        "S43F1BZfQKY": {
+          "mean_rms_db": 0.6722500000000018,
+          "speech_activity_fraction": 0.0915125,
+          "mean_zero_crossing_rate": 0.027237375,
+          "mean_spectral_centroid_hz": 268.24185,
+          "mean_pitch_hz_proxy": -37.678837500000014,
+          "mean_pitch_confidence_proxy": 0.025769874999999998,
+          "words_per_second_proxy": -0.6202124999999999
+        },
+        "9fEurt2OZ0I": {
+          "mean_rms_db": 1.7882250000000006,
+          "speech_activity_fraction": 0.03507499999999997,
+          "mean_zero_crossing_rate": 0.001586000000000004,
+          "mean_spectral_centroid_hz": 176.96562500000005,
+          "mean_pitch_hz_proxy": 28.10517500000003,
+          "mean_pitch_confidence_proxy": -0.017809999999999993,
+          "words_per_second_proxy": 0.20597500000000002
+        },
+        "fBnAMUkNM2k": {
+          "mean_rms_db": 1.0482484076433138,
+          "speech_activity_fraction": 0.004371549893842808,
+          "mean_zero_crossing_rate": -0.0038958386411889756,
+          "mean_spectral_centroid_hz": 192.06801486199583,
+          "mean_pitch_hz_proxy": 5.287697228144964,
+          "mean_pitch_confidence_proxy": -0.03458063965884861,
+          "words_per_second_proxy": 1.1395944798301483
+        }
+      },
+      "examples": [
+        {
+          "evidence_id": "S43F1BZfQKY:00002",
+          "video_id": "S43F1BZfQKY",
+          "reviewed_speech_function": "story_recall",
+          "text": "I remember that day."
+        },
+        {
+          "evidence_id": "S43F1BZfQKY:00036",
+          "video_id": "S43F1BZfQKY",
+          "reviewed_speech_function": "story_action",
+          "text": "So, I went for it and f*cking shaved my head."
+        },
+        {
+          "evidence_id": "9fEurt2OZ0I:00008",
+          "video_id": "9fEurt2OZ0I",
+          "reviewed_speech_function": "personal_rejection_story",
+          "text": "I went for a police they said no you're"
+        },
+        {
+          "evidence_id": "fBnAMUkNM2k:00072",
+          "video_id": "fBnAMUkNM2k",
+          "reviewed_speech_function": "personal_story_dialogue",
+          "text": "One day the doctor came to me, and he said,well I heard that you want to be an artist,"
+        }
+      ]
+    },
+    "uncertainty_or_qualification": {
+      "comparison": "supported_reviewed_segments_minus_same_video_all_usable_segments",
+      "label_status": "manually_reviewed_supported_examples; exploratory_only",
+      "video_count": 3,
+      "example_count": 3,
+      "metric_deltas": {
+        "mean_rms_db": {
+          "video_count": 3,
+          "mean_delta": -3.4406,
+          "median_delta": -2.04477,
+          "stddev": 5.41026,
+          "minimum": -9.412,
+          "maximum": 1.13497
+        },
+        "speech_activity_fraction": {
+          "video_count": 3,
+          "mean_delta": -0.03538,
+          "median_delta": 0.00742,
+          "stddev": 0.09904,
+          "minimum": -0.14862,
+          "maximum": 0.03507
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 3,
+          "mean_delta": -0.01772,
+          "median_delta": -0.02394,
+          "stddev": 0.01113,
+          "minimum": -0.02434,
+          "maximum": -0.00487
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 3,
+          "mean_delta": -117.85101,
+          "median_delta": -69.61237,
+          "stddev": 125.36923,
+          "minimum": -260.17448,
+          "maximum": -23.76619
+        },
+        "mean_pitch_hz_proxy": {
+          "video_count": 3,
+          "mean_delta": -45.40161,
+          "median_delta": -36.59848,
+          "stddev": 38.00515,
+          "minimum": -87.03582,
+          "maximum": -12.57053
+        },
+        "mean_pitch_confidence_proxy": {
+          "video_count": 3,
+          "mean_delta": 0.0051,
+          "median_delta": 0.01777,
+          "stddev": 0.02529,
+          "minimum": -0.02402,
+          "maximum": 0.02156
+        },
+        "words_per_second_proxy": {
+          "video_count": 3,
+          "mean_delta": 0.09677,
+          "median_delta": 0.28798,
+          "stddev": 0.36302,
+          "minimum": -0.32189,
+          "maximum": 0.32421
+        }
+      },
+      "per_video_deltas": {
+        "3AIoHLr8nTI": {
+          "mean_rms_db": 1.1349734513274328,
+          "speech_activity_fraction": 0.007415929203539839,
+          "mean_zero_crossing_rate": -0.004865929203539829,
+          "mean_spectral_centroid_hz": -23.766185840707976,
+          "mean_pitch_hz_proxy": -12.570530973451355,
+          "mean_pitch_confidence_proxy": 0.017767345132743362,
+          "words_per_second_proxy": -0.32189380530973466
+        },
+        "9fEurt2OZ0I": {
+          "mean_rms_db": -2.044774999999998,
+          "speech_activity_fraction": 0.03507499999999997,
+          "mean_zero_crossing_rate": -0.023943999999999993,
+          "mean_spectral_centroid_hz": -69.61237499999993,
+          "mean_pitch_hz_proxy": -87.03582499999999,
+          "mean_pitch_confidence_proxy": -0.024019999999999986,
+          "words_per_second_proxy": 0.2879750000000001
+        },
+        "r2kP2Pqdx6w": {
+          "mean_rms_db": -9.411999999999999,
+          "speech_activity_fraction": -0.1486195652173914,
+          "mean_zero_crossing_rate": -0.02433692934782608,
+          "mean_spectral_centroid_hz": -260.1744782608696,
+          "mean_pitch_hz_proxy": -36.59847826086957,
+          "mean_pitch_confidence_proxy": 0.02156480978260869,
+          "words_per_second_proxy": 0.32421467391304337
+        }
+      },
+      "examples": [
+        {
+          "evidence_id": "3AIoHLr8nTI:00008",
+          "video_id": "3AIoHLr8nTI",
+          "reviewed_speech_function": "epistemic_hedge",
+          "text": "This group is truly diverse in every possible way. And I think that is an extraordinarily"
+        },
+        {
+          "evidence_id": "9fEurt2OZ0I:00020",
+          "video_id": "9fEurt2OZ0I",
+          "reviewed_speech_function": "qualified_recommendation",
+          "text": "sorry now I think we have to get used to"
+        },
+        {
+          "evidence_id": "r2kP2Pqdx6w:00014",
+          "video_id": "r2kP2Pqdx6w",
+          "reviewed_speech_function": "explicit_uncertainty",
+          "text": "yeah might might end up being true you"
+        }
+      ]
+    }
+  }
+}
