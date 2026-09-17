@@ -16,6 +16,7 @@ from pathlib import Path
 
 import imageio_ffmpeg
 import numpy as np
+import cv2
 from PIL import Image
 from scipy.signal import welch
 
@@ -67,6 +68,22 @@ def frame_feature(video_path: Path, time_seconds: float) -> dict | None:
         raw = subprocess.check_output(command, timeout=30)
         image = Image.open(io.BytesIO(raw)).convert("RGB")
         pixels = np.asarray(image, dtype=np.float32)
+        gray = cv2.cvtColor(pixels.astype(np.uint8), cv2.COLOR_RGB2GRAY)
+        face_detector = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
+        smile_detector = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_smile.xml")
+        faces = face_detector.detectMultiScale(gray, scaleFactor=1.1, minNeighbors=5, minSize=(24, 24))
+        face_records = []
+        smile_candidates = 0
+        for x, y, width, height in faces:
+            roi = gray[y:y + height, x:x + width]
+            smiles = smile_detector.detectMultiScale(roi, scaleFactor=1.7, minNeighbors=20, minSize=(12, 12))
+            smile_candidates += len(smiles)
+            face_records.append({
+                "x": int(x), "y": int(y), "width": int(width), "height": int(height),
+                "center_x_fraction": round(float((x + width / 2) / image.width), 4),
+                "center_y_fraction": round(float((y + height / 2) / image.height), 4),
+                "area_fraction": round(float(width * height / (image.width * image.height)), 5),
+            })
         return {
             "time_seconds": round(time_seconds, 3),
             "width": image.width,
@@ -76,7 +93,10 @@ def frame_feature(video_path: Path, time_seconds: float) -> dict | None:
             "mean_red": round(float(np.mean(pixels[:, :, 0])), 3),
             "mean_green": round(float(np.mean(pixels[:, :, 1])), 3),
             "mean_blue": round(float(np.mean(pixels[:, :, 2])), 3),
-            "face_expression_status": "not_analyzed",
+            "faces": face_records,
+            "face_count": len(face_records),
+            "smile_detector_candidate_count": smile_candidates,
+            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference",
         }
     except (subprocess.CalledProcessError, subprocess.TimeoutExpired, OSError):
         return None
@@ -147,4 +167,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
