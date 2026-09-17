@@ -1,0 +1,1339 @@
+{
+  "schema_version": "0.1",
+  "policy": "Provisional practice hypotheses require at least five supported reviewed examples, four distinct videos, and a support rate of at least 0.70. They are not universal findings or effectiveness claims.",
+  "candidate_label_count": 7,
+  "eligible_pattern_count": 6,
+  "patterns": [
+    {
+      "pattern_id": "provisional-contrast_or_disagreement",
+      "candidate_label": "contrast_or_disagreement",
+      "title": "Make the comparison explicit",
+      "status": "provisional_practice_hypothesis",
+      "eligibility": {
+        "reviewed_count": 10,
+        "supported_count": 9,
+        "support_rate": 0.9,
+        "distinct_video_count": 8,
+        "distinct_uploader_count": 2,
+        "minimum_supported_examples": 5,
+        "minimum_distinct_videos": 4
+      },
+      "direct_measurement_summary": {
+        "mean_rms_db": {
+          "count": 7,
+          "mean": -20.03286,
+          "stddev": 6.37306,
+          "minimum": -33.639,
+          "maximum": -15.293
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 7,
+          "mean": 248.04429,
+          "stddev": 52.39958,
+          "minimum": 189.063,
+          "maximum": 350.447
+        },
+        "words_per_second_proxy": {
+          "count": 7,
+          "mean": 2.71543,
+          "stddev": 2.83011,
+          "minimum": 0.88,
+          "maximum": 9.0
+        },
+        "transcript_gap_before_seconds": {
+          "count": 7,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 7,
+          "mean": 0.29714,
+          "stddev": 0.78617,
+          "minimum": 0.0,
+          "maximum": 2.08
+        }
+      },
+      "same_video_baseline_summary": {
+        "mean_rms_db": {
+          "video_count": 7,
+          "mean_delta": 1.42165,
+          "median_delta": 0.99646,
+          "stddev": 1.72055,
+          "minimum": -0.07865,
+          "maximum": 5.16024
+        },
+        "speech_activity_fraction": {
+          "video_count": 7,
+          "mean_delta": -0.03482,
+          "median_delta": 0.01642,
+          "stddev": 0.1298,
+          "minimum": -0.32863,
+          "maximum": 0.02282
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 7,
+          "mean_delta": 0.0032,
+          "median_delta": -0.00091,
+          "stddev": 0.02285,
+          "minimum": -0.01571,
+          "maximum": 0.05196
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 7,
+          "mean_delta": 42.06158,
+          "median_delta": -22.53339,
+          "stddev": 138.31394,
+          "minimum": -66.54877,
+          "maximum": 320.88887
+        },
+        "mean_pitch_hz_proxy": {
+          "video_count": 7,
+          "mean_delta": 12.21817,
+          "median_delta": 5.83646,
+          "stddev": 33.79579,
+          "minimum": -22.8373,
+          "maximum": 59.75147
+        },
+        "mean_pitch_confidence_proxy": {
+          "video_count": 7,
+          "mean_delta": 0.01633,
+          "median_delta": 0.03093,
+          "stddev": 0.05749,
+          "minimum": -0.05454,
+          "maximum": 0.0855
+        },
+        "words_per_second_proxy": {
+          "video_count": 7,
+          "mean_delta": 0.61405,
+          "median_delta": 0.13111,
+          "stddev": 2.93665,
+          "minimum": -3.19885,
+          "maximum": 6.54159
+        }
+      },
+      "timestamped_examples": [
+        {
+          "annotation_id": "review-012",
+          "evidence_id": "-54zUwySKCg:00028",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": null,
+          "url": "https://www.youtube.com/watch?v=-54zUwySKCg",
+          "text": null,
+          "confidence": "high",
+          "reviewed_speech_function": "qualification_or_contrast",
+          "measurements": {
+            "mean_rms_db": null,
+            "mean_pitch_hz_proxy": null,
+            "words_per_second_proxy": null,
+            "transcript_gap_before_seconds": null,
+            "transcript_gap_after_seconds": null
+          }
+        },
+        {
+          "annotation_id": "review-002",
+          "evidence_id": "-54zUwySKCg:00059",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": null,
+          "url": "https://www.youtube.com/watch?v=-54zUwySKCg",
+          "text": null,
+          "confidence": "high",
+          "reviewed_speech_function": "personal_story_transition",
+          "measurements": {
+            "mean_rms_db": null,
+            "mean_pitch_hz_proxy": null,
+            "words_per_second_proxy": null,
+            "transcript_gap_before_seconds": null,
+            "transcript_gap_after_seconds": null
+          }
+        },
+        {
+          "annotation_id": "review-024",
+          "evidence_id": "3AIoHLr8nTI:00097",
+          "video_id": "3AIoHLr8nTI",
+          "title": "ENGLISH SPEECH | JUSTIN TRUDEAU: We’re All the Same (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 845.76,
+          "url": "https://www.youtube.com/watch?v=3AIoHLr8nTI&t=845",
+          "text": "genital mutilation is wrong, no matter how many generations have practiced it.",
+          "confidence": "high",
+          "reviewed_speech_function": "normative_rejection",
+          "measurements": {
+            "mean_rms_db": -18.045,
+            "mean_pitch_hz_proxy": 350.447,
+            "words_per_second_proxy": 2.239,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 2.08
+          }
+        },
+        {
+          "annotation_id": "review-077",
+          "evidence_id": "AwA0Jnfj3ao:00125",
+          "video_id": "AwA0Jnfj3ao",
+          "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 580.06,
+          "url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=580",
+          "text": "But and I said, oh, this is a wrong place.",
+          "confidence": "high",
+          "reviewed_speech_function": "narrative_correction",
+          "measurements": {
+            "mean_rms_db": -21.64,
+            "mean_pitch_hz_proxy": 189.063,
+            "words_per_second_proxy": 2.433,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-078",
+          "evidence_id": "OfwfTN1mEyM:00139",
+          "video_id": "OfwfTN1mEyM",
+          "title": "ENGLISH SPEECH | ELON MUSK: The Power of Solar Energy (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 368.0,
+          "url": "https://www.youtube.com/watch?v=OfwfTN1mEyM&t=368",
+          "text": "often not quite understood but but the",
+          "confidence": "high",
+          "reviewed_speech_function": "concession_and_correction",
+          "measurements": {
+            "mean_rms_db": -15.293,
+            "mean_pitch_hz_proxy": 205.357,
+            "words_per_second_proxy": 1.006,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ],
+      "counterexamples": [
+        {
+          "annotation_id": "review-080",
+          "evidence_id": "gDadfh0ZdBM:00036",
+          "reviewed_speech_function": "existential_observation",
+          "direct_observation": "The segment says there is something wrong with the world and continues with 'but it's there'."
+        }
+      ],
+      "practice_implication": "When correcting or distinguishing ideas, state the contrast directly (for example, expected outcome versus observed outcome) and then supply the replacement claim or evidence.",
+      "interpretation_limit": "Contrast markers can describe a personal turning point or rhetorical framing rather than an interpersonal disagreement.",
+      "visual_evidence_status": "Pose and face measurements exist for the broader pilot, but these pattern cards do not claim manually verified visual alignment.",
+      "required_next_test": "Review more examples across speakers and formats, inspect the video frames/audio, and compare with matched speech-function controls before calling this a general best practice."
+    },
+    {
+      "pattern_id": "provisional-definition",
+      "candidate_label": "definition",
+      "title": "Define or reframe the key term",
+      "status": "provisional_practice_hypothesis",
+      "eligibility": {
+        "reviewed_count": 9,
+        "supported_count": 7,
+        "support_rate": 0.778,
+        "distinct_video_count": 6,
+        "distinct_uploader_count": 2,
+        "minimum_supported_examples": 5,
+        "minimum_distinct_videos": 4
+      },
+      "direct_measurement_summary": {
+        "mean_rms_db": {
+          "count": 6,
+          "mean": -25.81867,
+          "stddev": 9.3268,
+          "minimum": -40.996,
+          "maximum": -18.325
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 6,
+          "mean": 276.28883,
+          "stddev": 34.82545,
+          "minimum": 213.17,
+          "maximum": 303.267
+        },
+        "words_per_second_proxy": {
+          "count": 6,
+          "mean": 1.39317,
+          "stddev": 0.69987,
+          "minimum": 0.644,
+          "maximum": 2.586
+        },
+        "transcript_gap_before_seconds": {
+          "count": 6,
+          "mean": 0.44,
+          "stddev": 1.07778,
+          "minimum": 0.0,
+          "maximum": 2.64
+        },
+        "transcript_gap_after_seconds": {
+          "count": 6,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "same_video_baseline_summary": {
+        "mean_rms_db": {
+          "video_count": 5,
+          "mean_delta": -1.75799,
+          "median_delta": -2.66454,
+          "stddev": 4.61868,
+          "minimum": -8.09063,
+          "maximum": 4.44001
+        },
+        "speech_activity_fraction": {
+          "video_count": 5,
+          "mean_delta": -0.07418,
+          "median_delta": -0.10336,
+          "stddev": 0.08226,
+          "minimum": -0.17863,
+          "maximum": 0.01223
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 5,
+          "mean_delta": 0.01125,
+          "median_delta": -0.00331,
+          "stddev": 0.02501,
+          "minimum": -0.01,
+          "maximum": 0.04459
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 5,
+          "mean_delta": 58.09262,
+          "median_delta": 7.28081,
+          "stddev": 145.50227,
+          "minimum": -81.72539,
+          "maximum": 230.30923
+        },
+        "mean_pitch_hz_proxy": {
+          "video_count": 5,
+          "mean_delta": 30.963,
+          "median_delta": 20.1317,
+          "stddev": 27.72161,
+          "minimum": 12.57147,
+          "maximum": 79.18207
+        },
+        "mean_pitch_confidence_proxy": {
+          "video_count": 5,
+          "mean_delta": 0.00136,
+          "median_delta": 0.00536,
+          "stddev": 0.01884,
+          "minimum": -0.02309,
+          "maximum": 0.02443
+        },
+        "words_per_second_proxy": {
+          "video_count": 5,
+          "mean_delta": -0.36778,
+          "median_delta": -0.40471,
+          "stddev": 0.31987,
+          "minimum": -0.84341,
+          "maximum": -0.02576
+        }
+      },
+      "timestamped_examples": [
+        {
+          "annotation_id": "review-006",
+          "evidence_id": "-6qN3bm2RYo:00068",
+          "video_id": "-6qN3bm2RYo",
+          "title": "ENGLISH SPEECH | S. JAISHANKAR: India's Five Pledges (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": null,
+          "url": "https://www.youtube.com/watch?v=-6qN3bm2RYo",
+          "text": null,
+          "confidence": "medium",
+          "reviewed_speech_function": "definition_or_reformulation",
+          "measurements": {
+            "mean_rms_db": null,
+            "mean_pitch_hz_proxy": null,
+            "words_per_second_proxy": null,
+            "transcript_gap_before_seconds": null,
+            "transcript_gap_after_seconds": null
+          }
+        },
+        {
+          "annotation_id": "review-027",
+          "evidence_id": "3AIoHLr8nTI:00046",
+          "video_id": "3AIoHLr8nTI",
+          "title": "ENGLISH SPEECH | JUSTIN TRUDEAU: We’re All the Same (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 421.68,
+          "url": "https://www.youtube.com/watch?v=3AIoHLr8nTI&t=421",
+          "text": "Think about it: Saying “I tolerate you” actually means something like, “Ok, I grudgingly admit that",
+          "confidence": "high",
+          "reviewed_speech_function": "conceptual_reframing",
+          "measurements": {
+            "mean_rms_db": -19.159,
+            "mean_pitch_hz_proxy": 303.267,
+            "words_per_second_proxy": 1.667,
+            "transcript_gap_before_seconds": 2.64,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-082",
+          "evidence_id": "OfwfTN1mEyM:00055",
+          "video_id": "OfwfTN1mEyM",
+          "title": "ENGLISH SPEECH | ELON MUSK: The Power of Solar Energy (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 138.959,
+          "url": "https://www.youtube.com/watch?v=OfwfTN1mEyM&t=138",
+          "text": "uh what that means is the potential for",
+          "confidence": "high",
+          "reviewed_speech_function": "meaning_explanation",
+          "measurements": {
+            "mean_rms_db": -18.954,
+            "mean_pitch_hz_proxy": 291.295,
+            "words_per_second_proxy": 1.205,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-083",
+          "evidence_id": "_Mb1-CN3wZs:00048",
+          "video_id": "_Mb1-CN3wZs",
+          "title": "Al Pacino as Tony Montana in the opening scene of \"Scarface\" (1983) by Brian De Palma 1080p",
+          "channel": "jack7cat",
+          "start_seconds": 136.0,
+          "url": "https://www.youtube.com/watch?v=_Mb1-CN3wZs&t=136",
+          "text": "Pitchfork means an assassin or something",
+          "confidence": "high",
+          "reviewed_speech_function": "term_definition",
+          "measurements": {
+            "mean_rms_db": -18.325,
+            "mean_pitch_hz_proxy": 295.313,
+            "words_per_second_proxy": 1.456,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-028",
+          "evidence_id": "fBnAMUkNM2k:00068",
+          "video_id": "fBnAMUkNM2k",
+          "title": "Muniba Mazari Speech: I See My Ability | English Subtitles",
+          "channel": "English Speeches",
+          "start_seconds": 440.66,
+          "url": "https://www.youtube.com/watch?v=fBnAMUkNM2k&t=440",
+          "text": "cry, that means you are healing.",
+          "confidence": "high",
+          "reviewed_speech_function": "interpretive_definition",
+          "measurements": {
+            "mean_rms_db": -40.996,
+            "mean_pitch_hz_proxy": 257.813,
+            "words_per_second_proxy": 0.644,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ],
+      "counterexamples": [
+        {
+          "annotation_id": "review-085",
+          "evidence_id": "pmAL79dnvu0:00047",
+          "reviewed_speech_function": "personal_meaning_statement",
+          "direct_observation": "The speaker says what a flag means personally and immediately connects that meaning to voting."
+        },
+        {
+          "annotation_id": "review-086",
+          "evidence_id": "AwA0Jnfj3ao:00174",
+          "reviewed_speech_function": "personal_significance_statement",
+          "direct_observation": "The phrase 'it means a lot' expresses personal significance after a story about learning a name."
+        }
+      ],
+      "practice_implication": "When a term may be ambiguous, give a short meaning, translation, or paraphrase before building the next claim on it.",
+      "interpretation_limit": "A phrase such as 'means' can express personal significance or a causal interpretation rather than a general definition.",
+      "visual_evidence_status": "Pose and face measurements exist for the broader pilot, but these pattern cards do not claim manually verified visual alignment.",
+      "required_next_test": "Review more examples across speakers and formats, inspect the video frames/audio, and compare with matched speech-function controls before calling this a general best practice."
+    },
+    {
+      "pattern_id": "provisional-example",
+      "candidate_label": "example",
+      "title": "Move from the general claim to a concrete case",
+      "status": "provisional_practice_hypothesis",
+      "eligibility": {
+        "reviewed_count": 10,
+        "supported_count": 8,
+        "support_rate": 0.8,
+        "distinct_video_count": 5,
+        "distinct_uploader_count": 1,
+        "minimum_supported_examples": 5,
+        "minimum_distinct_videos": 4
+      },
+      "direct_measurement_summary": {
+        "mean_rms_db": {
+          "count": 7,
+          "mean": -16.995,
+          "stddev": 3.57324,
+          "minimum": -23.931,
+          "maximum": -13.916
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 7,
+          "mean": 240.095,
+          "stddev": 19.88761,
+          "minimum": 206.25,
+          "maximum": 263.672
+        },
+        "words_per_second_proxy": {
+          "count": 7,
+          "mean": 1.41914,
+          "stddev": 0.46983,
+          "minimum": 0.911,
+          "maximum": 2.133
+        },
+        "transcript_gap_before_seconds": {
+          "count": 7,
+          "mean": 0.01714,
+          "stddev": 0.04536,
+          "minimum": 0.0,
+          "maximum": 0.12
+        },
+        "transcript_gap_after_seconds": {
+          "count": 7,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "same_video_baseline_summary": {
+        "mean_rms_db": {
+          "video_count": 4,
+          "mean_delta": -0.42955,
+          "median_delta": 0.65279,
+          "stddev": 3.28579,
+          "minimum": -5.23365,
+          "maximum": 2.20987
+        },
+        "speech_activity_fraction": {
+          "video_count": 4,
+          "mean_delta": -0.01592,
+          "median_delta": 0.00405,
+          "stddev": 0.04858,
+          "minimum": -0.08818,
+          "maximum": 0.01642
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 4,
+          "mean_delta": 0.00113,
+          "median_delta": 0.00258,
+          "stddev": 0.01209,
+          "minimum": -0.01244,
+          "maximum": 0.01182
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 4,
+          "mean_delta": 5.89654,
+          "median_delta": -29.6184,
+          "stddev": 94.3258,
+          "minimum": -60.81424,
+          "maximum": 143.6372
+        },
+        "mean_pitch_hz_proxy": {
+          "video_count": 4,
+          "mean_delta": -3.53387,
+          "median_delta": -3.87854,
+          "stddev": 21.7884,
+          "minimum": -29.81716,
+          "maximum": 23.43877
+        },
+        "mean_pitch_confidence_proxy": {
+          "video_count": 4,
+          "mean_delta": -0.0224,
+          "median_delta": -0.02364,
+          "stddev": 0.01898,
+          "minimum": -0.04062,
+          "maximum": -0.00171
+        },
+        "words_per_second_proxy": {
+          "video_count": 4,
+          "mean_delta": 0.18469,
+          "median_delta": 0.14242,
+          "stddev": 0.16697,
+          "minimum": 0.03563,
+          "maximum": 0.41829
+        }
+      },
+      "timestamped_examples": [
+        {
+          "annotation_id": "review-007",
+          "evidence_id": "-6qN3bm2RYo:00079",
+          "video_id": "-6qN3bm2RYo",
+          "title": "ENGLISH SPEECH | S. JAISHANKAR: India's Five Pledges (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": null,
+          "url": "https://www.youtube.com/watch?v=-6qN3bm2RYo",
+          "text": null,
+          "confidence": "high",
+          "reviewed_speech_function": "example_introduction",
+          "measurements": {
+            "mean_rms_db": null,
+            "mean_pitch_hz_proxy": null,
+            "words_per_second_proxy": null,
+            "transcript_gap_before_seconds": null,
+            "transcript_gap_after_seconds": null
+          }
+        },
+        {
+          "annotation_id": "review-018",
+          "evidence_id": "aXmM0VZv810:00274",
+          "video_id": "aXmM0VZv810",
+          "title": "ENGLISH SPEECH | ELON & JENSEN: Work Becomes Optional (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 673.519,
+          "url": "https://www.youtube.com/watch?v=aXmM0VZv810&t=673",
+          "text": "this earlier radiology for example has",
+          "confidence": "high",
+          "reviewed_speech_function": "example_marker",
+          "measurements": {
+            "mean_rms_db": -15.101,
+            "mean_pitch_hz_proxy": 260.045,
+            "words_per_second_proxy": 0.949,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-062",
+          "evidence_id": "aXmM0VZv810:00529",
+          "video_id": "aXmM0VZv810",
+          "title": "ENGLISH SPEECH | ELON & JENSEN: Work Becomes Optional (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 1274.559,
+          "url": "https://www.youtube.com/watch?v=aXmM0VZv810&t=1274",
+          "text": ">> Just imagine how tiny that little",
+          "confidence": "high",
+          "reviewed_speech_function": "hypothetical_visualization",
+          "measurements": {
+            "mean_rms_db": -15.29,
+            "mean_pitch_hz_proxy": 263.672,
+            "words_per_second_proxy": 2.133,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-031",
+          "evidence_id": "aXmM0VZv810:00596",
+          "video_id": "aXmM0VZv810",
+          "title": "ENGLISH SPEECH | ELON & JENSEN: Work Becomes Optional (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 1418.24,
+          "url": "https://www.youtube.com/watch?v=aXmM0VZv810&t=1418",
+          "text": "some over 20 years. Let me give you one",
+          "confidence": "high",
+          "reviewed_speech_function": "statistical_example_introduction",
+          "measurements": {
+            "mean_rms_db": -18.201,
+            "mean_pitch_hz_proxy": 238.281,
+            "words_per_second_proxy": 1.679,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-064",
+          "evidence_id": "jxY2-YgAgm0:00087",
+          "video_id": "jxY2-YgAgm0",
+          "title": "ENGLISH SPEECH | MELANIA TRUMP: A Public Denial (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 258.959,
+          "url": "https://www.youtube.com/watch?v=jxY2-YgAgm0&t=258",
+          "text": "such as Daily Beast, James Carville, and",
+          "confidence": "high",
+          "reviewed_speech_function": "named_example_list",
+          "measurements": {
+            "mean_rms_db": -23.931,
+            "mean_pitch_hz_proxy": 225.586,
+            "words_per_second_proxy": 0.911,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ],
+      "counterexamples": [
+        {
+          "annotation_id": "review-030",
+          "evidence_id": "S43F1BZfQKY:00018",
+          "reviewed_speech_function": "personal_story_detail",
+          "direct_observation": "The speaker narrates a specific wig shown by a doctor within a first-person story."
+        },
+        {
+          "annotation_id": "review-063",
+          "evidence_id": "gDadfh0ZdBM:00001",
+          "reviewed_speech_function": "direct_advice",
+          "direct_observation": "'Let me give you one piece of advice' introduces an imperative recommendation, followed by 'be honest'."
+        }
+      ],
+      "practice_implication": "After an abstract claim, announce or signal a specific case, statistic, named example, or imagined scene, and connect it back to the claim.",
+      "interpretation_limit": "A vivid story detail is not automatically an example used to support a general argument.",
+      "visual_evidence_status": "Pose and face measurements exist for the broader pilot, but these pattern cards do not claim manually verified visual alignment.",
+      "required_next_test": "Review more examples across speakers and formats, inspect the video frames/audio, and compare with matched speech-function controls before calling this a general best practice."
+    },
+    {
+      "pattern_id": "provisional-story_or_personal_experience",
+      "candidate_label": "story_or_personal_experience",
+      "title": "Use bounded personal detail",
+      "status": "provisional_practice_hypothesis",
+      "eligibility": {
+        "reviewed_count": 13,
+        "supported_count": 10,
+        "support_rate": 0.769,
+        "distinct_video_count": 7,
+        "distinct_uploader_count": 1,
+        "minimum_supported_examples": 5,
+        "minimum_distinct_videos": 4
+      },
+      "direct_measurement_summary": {
+        "mean_rms_db": {
+          "count": 8,
+          "mean": -26.27137,
+          "stddev": 7.86013,
+          "minimum": -42.935,
+          "maximum": -20.403
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 8,
+          "mean": 248.226,
+          "stddev": 55.4101,
+          "minimum": 179.688,
+          "maximum": 333.984
+        },
+        "words_per_second_proxy": {
+          "count": 8,
+          "mean": 1.93712,
+          "stddev": 0.94893,
+          "minimum": 0.525,
+          "maximum": 3.598
+        },
+        "transcript_gap_before_seconds": {
+          "count": 8,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 8,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "same_video_baseline_summary": {
+        "mean_rms_db": {
+          "video_count": 6,
+          "mean_delta": -0.11226,
+          "median_delta": 1.23024,
+          "stddev": 2.78409,
+          "minimum": -3.83675,
+          "maximum": 2.21594
+        },
+        "speech_activity_fraction": {
+          "video_count": 6,
+          "mean_delta": 0.00873,
+          "median_delta": 0.02554,
+          "stddev": 0.07301,
+          "minimum": -0.12663,
+          "maximum": 0.09151
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 6,
+          "mean_delta": 0.00592,
+          "median_delta": 0.00627,
+          "stddev": 0.01914,
+          "minimum": -0.01694,
+          "maximum": 0.02724
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 6,
+          "mean_delta": 98.39248,
+          "median_delta": 138.92169,
+          "stddev": 205.07963,
+          "minimum": -155.71313,
+          "maximum": 335.24101
+        },
+        "mean_pitch_hz_proxy": {
+          "video_count": 6,
+          "mean_delta": -0.5027,
+          "median_delta": -13.95055,
+          "stddev": 35.66836,
+          "minimum": -37.67884,
+          "maximum": 56.39884
+        },
+        "mean_pitch_confidence_proxy": {
+          "video_count": 6,
+          "mean_delta": -0.02293,
+          "median_delta": -0.02065,
+          "stddev": 0.03438,
+          "minimum": -0.07751,
+          "maximum": 0.02577
+        },
+        "words_per_second_proxy": {
+          "video_count": 6,
+          "mean_delta": -0.32649,
+          "median_delta": 0.13053,
+          "stddev": 1.32756,
+          "minimum": -2.84485,
+          "maximum": 0.89942
+        }
+      },
+      "timestamped_examples": [
+        {
+          "annotation_id": "review-001",
+          "evidence_id": "-54zUwySKCg:00035",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": null,
+          "url": "https://www.youtube.com/watch?v=-54zUwySKCg",
+          "text": null,
+          "confidence": "high",
+          "reviewed_speech_function": "personal_story_setup",
+          "measurements": {
+            "mean_rms_db": null,
+            "mean_pitch_hz_proxy": null,
+            "words_per_second_proxy": null,
+            "transcript_gap_before_seconds": null,
+            "transcript_gap_after_seconds": null
+          }
+        },
+        {
+          "annotation_id": "review-002",
+          "evidence_id": "-54zUwySKCg:00059",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": null,
+          "url": "https://www.youtube.com/watch?v=-54zUwySKCg",
+          "text": null,
+          "confidence": "high",
+          "reviewed_speech_function": "personal_story_transition",
+          "measurements": {
+            "mean_rms_db": null,
+            "mean_pitch_hz_proxy": null,
+            "words_per_second_proxy": null,
+            "transcript_gap_before_seconds": null,
+            "transcript_gap_after_seconds": null
+          }
+        },
+        {
+          "annotation_id": "review-040",
+          "evidence_id": "9fEurt2OZ0I:00008",
+          "video_id": "9fEurt2OZ0I",
+          "title": "ENGLISH SPEECH | JACK MA ALIBABA: We Never Give Up (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 31.08,
+          "url": "https://www.youtube.com/watch?v=9fEurt2OZ0I&t=31",
+          "text": "I went for a police they said no you're",
+          "confidence": "high",
+          "reviewed_speech_function": "personal_rejection_story",
+          "measurements": {
+            "mean_rms_db": -22.085,
+            "mean_pitch_hz_proxy": 313.802,
+            "words_per_second_proxy": 1.585,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-067",
+          "evidence_id": "AwA0Jnfj3ao:00130",
+          "video_id": "AwA0Jnfj3ao",
+          "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 598.13,
+          "url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=598",
+          "text": "I went to the bathroom and I cried.",
+          "confidence": "high",
+          "reviewed_speech_function": "personal_emotional_story",
+          "measurements": {
+            "mean_rms_db": -20.469,
+            "mean_pitch_hz_proxy": 190.104,
+            "words_per_second_proxy": 2.787,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-013",
+          "evidence_id": "S43F1BZfQKY:00002",
+          "video_id": "S43F1BZfQKY",
+          "title": "ENGLISH SPEECH | PARUL BANSAL: I Shaved My Head (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 29.829,
+          "url": "https://www.youtube.com/watch?v=S43F1BZfQKY&t=29",
+          "text": "I remember that day.",
+          "confidence": "high",
+          "reviewed_speech_function": "story_recall",
+          "measurements": {
+            "mean_rms_db": -24.076,
+            "mean_pitch_hz_proxy": 210.938,
+            "words_per_second_proxy": 2.127,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ],
+      "counterexamples": [
+        {
+          "annotation_id": "review-014",
+          "evidence_id": "S43F1BZfQKY:00011",
+          "reviewed_speech_function": "story_event_with_embedded_advice",
+          "direct_observation": "'Maybe you should' occurs inside a narrated event and is advice quoted from another person, not the speaker's call to the audience."
+        },
+        {
+          "annotation_id": "review-039",
+          "evidence_id": "3AIoHLr8nTI:00069",
+          "reviewed_speech_function": "generalized_scenario",
+          "direct_observation": "The speaker describes what leaders may realize one day using a generalized 'you/them' construction, not a personal past event."
+        },
+        {
+          "annotation_id": "review-069",
+          "evidence_id": "OfwfTN1mEyM:00152",
+          "reviewed_speech_function": "historical_trend_explanation",
+          "direct_observation": "The speaker compares solar costs five, ten, and twenty years ago with current costs."
+        }
+      ],
+      "practice_implication": "A short first-person event, setting, action, or quoted line can make an abstract point concrete; mark the transition back to the broader point.",
+      "interpretation_limit": "Historical explanation, hypothetical scenarios, and isolated personal details may not form a complete story.",
+      "visual_evidence_status": "Pose and face measurements exist for the broader pilot, but these pattern cards do not claim manually verified visual alignment.",
+      "required_next_test": "Review more examples across speakers and formats, inspect the video frames/audio, and compare with matched speech-function controls before calling this a general best practice."
+    },
+    {
+      "pattern_id": "provisional-uncertainty_or_qualification",
+      "candidate_label": "uncertainty_or_qualification",
+      "title": "Qualify predictions and interpretations precisely",
+      "status": "provisional_practice_hypothesis",
+      "eligibility": {
+        "reviewed_count": 9,
+        "supported_count": 9,
+        "support_rate": 1.0,
+        "distinct_video_count": 8,
+        "distinct_uploader_count": 1,
+        "minimum_supported_examples": 5,
+        "minimum_distinct_videos": 4
+      },
+      "direct_measurement_summary": {
+        "mean_rms_db": {
+          "count": 8,
+          "mean": -22.80262,
+          "stddev": 4.67049,
+          "minimum": -29.39,
+          "maximum": -16.421
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 8,
+          "mean": 270.30325,
+          "stddev": 40.53769,
+          "minimum": 198.661,
+          "maximum": 316.964
+        },
+        "words_per_second_proxy": {
+          "count": 8,
+          "mean": 1.48937,
+          "stddev": 0.31462,
+          "minimum": 0.833,
+          "maximum": 1.786
+        },
+        "transcript_gap_before_seconds": {
+          "count": 8,
+          "mean": 0.75,
+          "stddev": 1.84765,
+          "minimum": 0.0,
+          "maximum": 5.28
+        },
+        "transcript_gap_after_seconds": {
+          "count": 8,
+          "mean": 0.13,
+          "stddev": 0.3677,
+          "minimum": 0.0,
+          "maximum": 1.04
+        }
+      },
+      "same_video_baseline_summary": {
+        "mean_rms_db": {
+          "video_count": 7,
+          "mean_delta": -2.00437,
+          "median_delta": -1.62503,
+          "stddev": 3.93041,
+          "minimum": -9.412,
+          "maximum": 3.27101
+        },
+        "speech_activity_fraction": {
+          "video_count": 7,
+          "mean_delta": -0.01385,
+          "median_delta": 0.00673,
+          "stddev": 0.08987,
+          "minimum": -0.14862,
+          "maximum": 0.124
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 7,
+          "mean_delta": -0.00866,
+          "median_delta": -0.01098,
+          "stddev": 0.01379,
+          "minimum": -0.02434,
+          "maximum": 0.01229
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 7,
+          "mean_delta": -43.55161,
+          "median_delta": -26.28239,
+          "stddev": 128.79659,
+          "minimum": -260.17448,
+          "maximum": 107.09596
+        },
+        "mean_pitch_hz_proxy": {
+          "video_count": 7,
+          "mean_delta": 1.97689,
+          "median_delta": 13.33407,
+          "stddev": 54.25709,
+          "minimum": -87.03582,
+          "maximum": 72.45622
+        },
+        "mean_pitch_confidence_proxy": {
+          "video_count": 7,
+          "mean_delta": -0.00663,
+          "median_delta": -0.01583,
+          "stddev": 0.02375,
+          "minimum": -0.03843,
+          "maximum": 0.02156
+        },
+        "words_per_second_proxy": {
+          "video_count": 7,
+          "mean_delta": 0.01203,
+          "median_delta": 0.00286,
+          "stddev": 0.29013,
+          "minimum": -0.3714,
+          "maximum": 0.32421
+        }
+      },
+      "timestamped_examples": [
+        {
+          "annotation_id": "review-003",
+          "evidence_id": "-54zUwySKCg:00122",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": null,
+          "url": "https://www.youtube.com/watch?v=-54zUwySKCg",
+          "text": null,
+          "confidence": "high",
+          "reviewed_speech_function": "rhetorical_question",
+          "measurements": {
+            "mean_rms_db": null,
+            "mean_pitch_hz_proxy": null,
+            "words_per_second_proxy": null,
+            "transcript_gap_before_seconds": null,
+            "transcript_gap_after_seconds": null
+          }
+        },
+        {
+          "annotation_id": "review-072",
+          "evidence_id": "2fWJh-_UG5s:00160",
+          "video_id": "2fWJh-_UG5s",
+          "title": "ENGLISH SPEECH | MATTHEW MCCONAUGHEY: White House Speech (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 362.16,
+          "url": "https://www.youtube.com/watch?v=2fWJh-_UG5s&t=362",
+          "text": "maybe that would make",
+          "confidence": "high",
+          "reviewed_speech_function": "speculative_empathy",
+          "measurements": {
+            "mean_rms_db": -20.493,
+            "mean_pitch_hz_proxy": 293.75,
+            "words_per_second_proxy": 0.833,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-042",
+          "evidence_id": "3AIoHLr8nTI:00008",
+          "video_id": "3AIoHLr8nTI",
+          "title": "ENGLISH SPEECH | JUSTIN TRUDEAU: We’re All the Same (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 91.12,
+          "url": "https://www.youtube.com/watch?v=3AIoHLr8nTI&t=91",
+          "text": "This group is truly diverse in every possible way. And I think that is an extraordinarily",
+          "confidence": "high",
+          "reviewed_speech_function": "epistemic_hedge",
+          "measurements": {
+            "mean_rms_db": -18.437,
+            "mean_pitch_hz_proxy": 278.125,
+            "words_per_second_proxy": 1.786,
+            "transcript_gap_before_seconds": 5.28,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-073",
+          "evidence_id": "3AIoHLr8nTI:00074",
+          "video_id": "3AIoHLr8nTI",
+          "title": "ENGLISH SPEECH | JUSTIN TRUDEAU: We’re All the Same (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 665.84,
+          "url": "https://www.youtube.com/watch?v=3AIoHLr8nTI&t=665",
+          "text": "from their leaders today and tomorrow? Now, I think you need to be brave.",
+          "confidence": "high",
+          "reviewed_speech_function": "hedged_recommendation",
+          "measurements": {
+            "mean_rms_db": -23.957,
+            "mean_pitch_hz_proxy": 270.833,
+            "words_per_second_proxy": 1.75,
+            "transcript_gap_before_seconds": 0.72,
+            "transcript_gap_after_seconds": 1.04
+          }
+        },
+        {
+          "annotation_id": "review-043",
+          "evidence_id": "9fEurt2OZ0I:00020",
+          "video_id": "9fEurt2OZ0I",
+          "title": "ENGLISH SPEECH | JACK MA ALIBABA: We Never Give Up (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 66.159,
+          "url": "https://www.youtube.com/watch?v=9fEurt2OZ0I&t=66",
+          "text": "sorry now I think we have to get used to",
+          "confidence": "high",
+          "reviewed_speech_function": "qualified_recommendation",
+          "measurements": {
+            "mean_rms_db": -25.918,
+            "mean_pitch_hz_proxy": 198.661,
+            "words_per_second_proxy": 1.667,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ],
+      "counterexamples": [],
+      "practice_implication": "Use explicit qualifiers such as 'I think', 'might', or 'probably' when a claim is a view, prediction, or interpretation rather than an established fact.",
+      "interpretation_limit": "Verbal qualification does not prove a speaker's internal uncertainty, and voice may reinforce or contradict the wording.",
+      "visual_evidence_status": "Pose and face measurements exist for the broader pilot, but these pattern cards do not claim manually verified visual alignment.",
+      "required_next_test": "Review more examples across speakers and formats, inspect the video frames/audio, and compare with matched speech-function controls before calling this a general best practice."
+    },
+    {
+      "pattern_id": "provisional-conclusion_or_summary",
+      "candidate_label": "conclusion_or_summary",
+      "title": "Mark the takeaway",
+      "status": "provisional_practice_hypothesis",
+      "eligibility": {
+        "reviewed_count": 6,
+        "supported_count": 5,
+        "support_rate": 0.833,
+        "distinct_video_count": 5,
+        "distinct_uploader_count": 1,
+        "minimum_supported_examples": 5,
+        "minimum_distinct_videos": 4
+      },
+      "direct_measurement_summary": {
+        "mean_rms_db": {
+          "count": 3,
+          "mean": -18.20367,
+          "stddev": 2.54371,
+          "minimum": -20.84,
+          "maximum": -15.764
+        },
+        "mean_pitch_hz_proxy": {
+          "count": 3,
+          "mean": 209.75933,
+          "stddev": 28.16515,
+          "minimum": 177.455,
+          "maximum": 229.167
+        },
+        "words_per_second_proxy": {
+          "count": 3,
+          "mean": 1.521,
+          "stddev": 1.07784,
+          "minimum": 0.615,
+          "maximum": 2.713
+        },
+        "transcript_gap_before_seconds": {
+          "count": 3,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        },
+        "transcript_gap_after_seconds": {
+          "count": 3,
+          "mean": 0.0,
+          "stddev": 0.0,
+          "minimum": 0.0,
+          "maximum": 0.0
+        }
+      },
+      "same_video_baseline_summary": {
+        "mean_rms_db": {
+          "video_count": 3,
+          "mean_delta": 0.36422,
+          "median_delta": 1.07333,
+          "stddev": 4.7085,
+          "minimum": -4.65863,
+          "maximum": 4.67794
+        },
+        "speech_activity_fraction": {
+          "video_count": 3,
+          "mean_delta": -0.02843,
+          "median_delta": 0.00673,
+          "stddev": 0.06959,
+          "minimum": -0.10858,
+          "maximum": 0.01656
+        },
+        "mean_zero_crossing_rate": {
+          "video_count": 3,
+          "mean_delta": 0.03182,
+          "median_delta": 0.03934,
+          "stddev": 0.01327,
+          "minimum": 0.01649,
+          "maximum": 0.03962
+        },
+        "mean_spectral_centroid_hz": {
+          "video_count": 3,
+          "mean_delta": 92.19269,
+          "median_delta": 101.03387,
+          "stddev": 149.58622,
+          "minimum": -61.61804,
+          "maximum": 237.16223
+        },
+        "mean_pitch_hz_proxy": {
+          "video_count": 3,
+          "mean_delta": -12.44097,
+          "median_delta": -21.76273,
+          "stddev": 26.99897,
+          "minimum": -33.54389,
+          "maximum": 17.9837
+        },
+        "mean_pitch_confidence_proxy": {
+          "video_count": 3,
+          "mean_delta": 0.0185,
+          "median_delta": 0.00886,
+          "stddev": 0.01755,
+          "minimum": 0.00788,
+          "maximum": 0.03876
+        },
+        "words_per_second_proxy": {
+          "video_count": 3,
+          "mean_delta": -1.22622,
+          "median_delta": -0.7891,
+          "stddev": 1.5219,
+          "minimum": -2.91885,
+          "maximum": 0.02929
+        }
+      },
+      "timestamped_examples": [
+        {
+          "annotation_id": "review-005",
+          "evidence_id": "-54zUwySKCg:00196",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": null,
+          "url": "https://www.youtube.com/watch?v=-54zUwySKCg",
+          "text": null,
+          "confidence": "high",
+          "reviewed_speech_function": "conclusion_or_charge",
+          "measurements": {
+            "mean_rms_db": null,
+            "mean_pitch_hz_proxy": null,
+            "words_per_second_proxy": null,
+            "transcript_gap_before_seconds": null,
+            "transcript_gap_after_seconds": null
+          }
+        },
+        {
+          "annotation_id": "review-010",
+          "evidence_id": "-URn1fARvts:00119",
+          "video_id": "-URn1fARvts",
+          "title": "ENGLISH SPEECH | EILEEN GU: Courage To Try (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": null,
+          "url": "https://www.youtube.com/watch?v=-URn1fARvts",
+          "text": null,
+          "confidence": "high",
+          "reviewed_speech_function": "summary_transition",
+          "measurements": {
+            "mean_rms_db": null,
+            "mean_pitch_hz_proxy": null,
+            "words_per_second_proxy": null,
+            "transcript_gap_before_seconds": null,
+            "transcript_gap_after_seconds": null
+          }
+        },
+        {
+          "annotation_id": "review-087",
+          "evidence_id": "AwA0Jnfj3ao:00234",
+          "video_id": "AwA0Jnfj3ao",
+          "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 1016.839,
+          "url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=1016",
+          "text": "So, it's just, in short, it's just being astep ahead of your opposition.",
+          "confidence": "high",
+          "reviewed_speech_function": "summary_principle",
+          "measurements": {
+            "mean_rms_db": -18.007,
+            "mean_pitch_hz_proxy": 229.167,
+            "words_per_second_proxy": 2.713,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-017",
+          "evidence_id": "aXmM0VZv810:00483",
+          "video_id": "aXmM0VZv810",
+          "title": "ENGLISH SPEECH | ELON & JENSEN: Work Becomes Optional (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 1175.919,
+          "url": "https://www.youtube.com/watch?v=aXmM0VZv810&t=1175",
+          "text": "overwhelmingly what matters",
+          "confidence": "medium",
+          "reviewed_speech_function": "conclusion_marker",
+          "measurements": {
+            "mean_rms_db": -15.764,
+            "mean_pitch_hz_proxy": 222.656,
+            "words_per_second_proxy": 0.615,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        },
+        {
+          "annotation_id": "review-023",
+          "evidence_id": "qOwYULOPuPs:00124",
+          "video_id": "qOwYULOPuPs",
+          "title": "Mark Carney: Building Our Future",
+          "channel": "English Speeches",
+          "start_seconds": 312.56,
+          "url": "https://www.youtube.com/watch?v=qOwYULOPuPs&t=312",
+          "text": "In short, they were asking far too much",
+          "confidence": "high",
+          "reviewed_speech_function": "compressed_evaluation",
+          "measurements": {
+            "mean_rms_db": -20.84,
+            "mean_pitch_hz_proxy": 177.455,
+            "words_per_second_proxy": 1.235,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          }
+        }
+      ],
+      "counterexamples": [
+        {
+          "annotation_id": "review-016",
+          "evidence_id": "3AIoHLr8nTI:00003",
+          "reviewed_speech_function": "causal_transition",
+          "direct_observation": "'Therefore' links a preceding idea to a consequence but does not by itself summarize or conclude the speech."
+        }
+      ],
+      "practice_implication": "Use a clear summary or conclusion marker when compressing a preceding explanation, story, or comparison into the point the audience should retain.",
+      "interpretation_limit": "A transition word such as 'therefore' can introduce a consequence without closing the speech.",
+      "visual_evidence_status": "Pose and face measurements exist for the broader pilot, but these pattern cards do not claim manually verified visual alignment.",
+      "required_next_test": "Review more examples across speakers and formats, inspect the video frames/audio, and compare with matched speech-function controls before calling this a general best practice."
+    }
+  ]
+}
