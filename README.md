@@ -52,4 +52,8 @@ Raw media stays outside Git. The repository stores manifests, derived features, 
 
 ## Status
 
-The playlist inventory is complete. The first transcript pass returned 477 transcript responses for 480 unique videos: 474 successful responses and 3 provider 404 failures. The returned files contain 102,816 timestamped segments; 395 videos have non-empty transcripts and 82 responses contain zero segments. Audio/video measurement and pattern analysis are the next stages.
+The playlist inventory is complete: 958 playlist memberships resolve to 480 unique videos, with duplicate memberships retained as provenance. The first transcript pass returned 477 responses: 474 successful responses and 3 provider 404 failures. The returned files contain 102,816 timestamped segments and 770,424 words; 395 videos have non-empty transcripts and 82 responses contain zero segments.
+
+The project has completed a 24-video multimodal pilot. Twenty videos have usable local audio/video pairs and derived feature files. The pilot currently measures one-second audio windows, transcript alignment, face-presence and face-geometry proxies, scene change, and visual sampling. It does not infer emotion, intent, confidence, or mental state. Candidate speech-function labels remain retrieval aids until manually reviewed.
+
+Current research outputs include corpus coverage audits, a searchable evidence browser, reviewed annotation queues, pause/rhythm analysis, within-video comparisons, audio/visual pilot comparisons, and counterexample-aware pattern cards. The next scale-up is to expand stratified audio/video measurement and manual review while preserving the distinction between measured observation and interpretation.
