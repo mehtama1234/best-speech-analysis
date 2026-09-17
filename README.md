@@ -11,13 +11,15 @@ The project identifies recurring patterns only when they are supported by timest
 
 ## Initial corpus
 
-The first corpus contains three YouTube playlists focused on speech and presentation. They are registered in `config/playlists.json`. More playlists can be added as separate sources.
+The first corpus contains three YouTube playlists focused on speech and presentation. They are registered in `config/playlists.json` and currently resolve to 958 playlist memberships covering 480 unique videos after deduplication.
 
-The three supplied video links are retained as seed examples:
+The three supplied video links were used as seed examples for testing ingestion:
 
 - `fBnAMUkNM2k`
 - `5i0u4jFmE78`
 - `qOwYULOPuPs`
+
+The complete playlist registry is in `data/metadata/video-registry.jsonl`. Transcript acquisition is resumable through `scripts/download_corpus_transcripts.py` and is tracked in `data/metadata/transcript-status.jsonl`.
 
 ## Research rule
 
@@ -50,5 +52,4 @@ Raw media stays outside Git. The repository stores manifests, derived features, 
 
 ## Status
 
-The project is at corpus-definition and pipeline-design stage. Network access was unavailable during the initial playlist probe, so playlist metadata and transcripts have not yet been downloaded.
-
+The playlist inventory is complete. The first transcript pass returned 477 transcript responses for 480 unique videos: 474 successful responses and 3 provider 404 failures. The returned files contain 102,816 timestamped segments; 395 videos have non-empty transcripts and 82 responses contain zero segments. Audio/video measurement and pattern analysis are the next stages.
