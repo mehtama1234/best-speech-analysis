@@ -2,7 +2,31 @@
   "schema_version": "0.1",
   "policy": "Provisional practice hypotheses require at least five supported reviewed examples, four distinct videos, and a support rate of at least 0.70. They are not universal findings or effectiveness claims.",
   "candidate_label_count": 7,
-  "eligible_pattern_count": 6,
+  "eligible_pattern_count": 5,
+  "delivery_sensitivity_report": "research/disjoint-delivery-comparison.json",
+  "excluded_patterns": [
+    {
+      "candidate_label": "definition",
+      "reviewed_count": 9,
+      "supported_count": 4,
+      "support_rate": 0.444,
+      "distinct_video_count": 4,
+      "reasons": [
+        "fewer than five supported examples",
+        "support rate below 0.70"
+      ]
+    },
+    {
+      "candidate_label": "question",
+      "reviewed_count": 12,
+      "supported_count": 7,
+      "support_rate": 0.583,
+      "distinct_video_count": 7,
+      "reasons": [
+        "support rate below 0.70"
+      ]
+    }
+  ],
   "patterns": [
     {
       "pattern_id": "provisional-contrast_or_disagreement",
@@ -11,107 +35,120 @@
       "status": "provisional_practice_hypothesis",
       "eligibility": {
         "reviewed_count": 10,
-        "supported_count": 9,
-        "support_rate": 0.9,
-        "distinct_video_count": 8,
-        "distinct_uploader_count": 2,
+        "supported_count": 10,
+        "support_rate": 1.0,
+        "distinct_video_count": 9,
+        "distinct_uploader_count": 3,
         "minimum_supported_examples": 5,
         "minimum_distinct_videos": 4
       },
       "direct_measurement_summary": {
         "mean_rms_db": {
-          "count": 7,
-          "mean": -20.03286,
-          "stddev": 6.37306,
-          "minimum": -33.639,
+          "count": 8,
+          "mean": -22.30288,
+          "stddev": 8.71995,
+          "minimum": -38.193,
           "maximum": -15.293
         },
         "mean_pitch_hz_proxy": {
-          "count": 7,
-          "mean": 248.04429,
-          "stddev": 52.39958,
-          "minimum": 189.063,
+          "count": 8,
+          "mean": 240.15075,
+          "stddev": 53.40351,
+          "minimum": 184.896,
           "maximum": 350.447
         },
         "words_per_second_proxy": {
-          "count": 7,
-          "mean": 2.71543,
-          "stddev": 2.83011,
+          "count": 8,
+          "mean": 2.58438,
+          "stddev": 2.64627,
           "minimum": 0.88,
           "maximum": 9.0
         },
         "transcript_gap_before_seconds": {
-          "count": 7,
+          "count": 8,
           "mean": 0.0,
           "stddev": 0.0,
           "minimum": 0.0,
           "maximum": 0.0
         },
         "transcript_gap_after_seconds": {
-          "count": 7,
-          "mean": 0.29714,
-          "stddev": 0.78617,
+          "count": 8,
+          "mean": 0.26,
+          "stddev": 0.73539,
           "minimum": 0.0,
           "maximum": 2.08
         }
       },
       "same_video_baseline_summary": {
         "mean_rms_db": {
-          "video_count": 7,
-          "mean_delta": 1.42165,
-          "median_delta": 0.99646,
-          "stddev": 1.72055,
+          "video_count": 8,
+          "mean_delta": 1.88977,
+          "median_delta": 1.0207,
+          "stddev": 2.07135,
           "minimum": -0.07865,
-          "maximum": 5.16024
+          "maximum": 5.16659
         },
         "speech_activity_fraction": {
-          "video_count": 7,
-          "mean_delta": -0.03482,
-          "median_delta": 0.01642,
-          "stddev": 0.1298,
+          "video_count": 8,
+          "mean_delta": 0.01959,
+          "median_delta": 0.01649,
+          "stddev": 0.19527,
           "minimum": -0.32863,
-          "maximum": 0.02282
+          "maximum": 0.40048
         },
         "mean_zero_crossing_rate": {
-          "video_count": 7,
-          "mean_delta": 0.0032,
-          "median_delta": -0.00091,
-          "stddev": 0.02285,
+          "video_count": 8,
+          "mean_delta": 0.00429,
+          "median_delta": -0.00068,
+          "stddev": 0.02138,
           "minimum": -0.01571,
           "maximum": 0.05196
         },
         "mean_spectral_centroid_hz": {
-          "video_count": 7,
-          "mean_delta": 42.06158,
-          "median_delta": -22.53339,
-          "stddev": 138.31394,
+          "video_count": 8,
+          "mean_delta": 36.69241,
+          "median_delta": -11.71261,
+          "stddev": 128.95118,
           "minimum": -66.54877,
           "maximum": 320.88887
         },
         "mean_pitch_hz_proxy": {
-          "video_count": 7,
-          "mean_delta": 12.21817,
-          "median_delta": 5.83646,
-          "stddev": 33.79579,
+          "video_count": 8,
+          "mean_delta": 8.38618,
+          "median_delta": -0.45973,
+          "stddev": 33.11289,
           "minimum": -22.8373,
           "maximum": 59.75147
         },
         "mean_pitch_confidence_proxy": {
-          "video_count": 7,
-          "mean_delta": 0.01633,
-          "median_delta": 0.03093,
-          "stddev": 0.05749,
+          "video_count": 8,
+          "mean_delta": 0.01591,
+          "median_delta": 0.02196,
+          "stddev": 0.05324,
           "minimum": -0.05454,
           "maximum": 0.0855
         },
         "words_per_second_proxy": {
-          "video_count": 7,
-          "mean_delta": 0.61405,
-          "median_delta": 0.13111,
-          "stddev": 2.93665,
-          "minimum": -3.19885,
+          "video_count": 8,
+          "mean_delta": 0.99482,
+          "median_delta": 0.33188,
+          "stddev": 2.28415,
+          "minimum": -0.32571,
           "maximum": 6.54159
         }
+      },
+      "measurement_scope": {
+        "per_metric_example_counts": {
+          "mean_rms_db": 8,
+          "mean_pitch_hz_proxy": 8,
+          "words_per_second_proxy": 8,
+          "transcript_gap_before_seconds": 8,
+          "transcript_gap_after_seconds": 8
+        },
+        "baseline_video_count": 8,
+        "baseline_example_count": 8,
+        "baseline_definition": "supported_reviewed_segments_minus_same_video_all_usable_segments",
+        "speaker_recurrence": "not_established; uploaders and videos are not verified distinct speakers"
       },
       "timestamped_examples": [
         {
@@ -120,10 +157,24 @@
           "video_id": "-54zUwySKCg",
           "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
           "channel": "English Speeches",
-          "start_seconds": null,
-          "url": "https://www.youtube.com/watch?v=-54zUwySKCg",
-          "text": null,
+          "start_seconds": 173.78,
+          "url": "https://www.youtube.com/watch?v=-54zUwySKCg&t=173",
+          "end_seconds": 179.31,
+          "text": "But then I realized that you don’t haveto necessarily go to Harvard to have a driven",
+          "source_transcript_file": "data/transcripts/-54zUwySKCg.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "no_aligned_features",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-012",
+          "contextual_label_decisions": {
+            "contrast_or_disagreement": {
+              "supported": true,
+              "subtype": "personal_reconsideration",
+              "view_attribution": "current_turn_narrative",
+              "reason": "The speaker first describes pressure about addressing Harvard graduates, then revises the premise that attendance is necessary for a particular disposition. This is a personal reconsideration. The self-description is reported wording, not a personality assessment by this project."
+            }
+          },
           "reviewed_speech_function": "qualification_or_contrast",
           "measurements": {
             "mean_rms_db": null,
@@ -131,7 +182,9 @@
             "words_per_second_proxy": null,
             "transcript_gap_before_seconds": null,
             "transcript_gap_after_seconds": null
-          }
+          },
+          "raw_words_per_second_proxy": null,
+          "rate_exclusion_reason": "missing_or_nonfinite_caption_timing"
         },
         {
           "annotation_id": "review-002",
@@ -139,10 +192,26 @@
           "video_id": "-54zUwySKCg",
           "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
           "channel": "English Speeches",
-          "start_seconds": null,
-          "url": "https://www.youtube.com/watch?v=-54zUwySKCg",
-          "text": null,
+          "start_seconds": 305.669,
+          "url": "https://www.youtube.com/watch?v=-54zUwySKCg&t=305",
+          "end_seconds": 313.51,
+          "text": "But a few years ago I decided, as you willat some point, that it was time to recalculate,",
+          "source_transcript_file": "data/transcripts/-54zUwySKCg.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "no_aligned_features",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-002",
+          "contextual_label_decisions": {
+            "contrast_or_disagreement": {
+              "supported": true,
+              "reason": "The preceding captions describe sustained success and comfort; 'But' introduces a decision to change direction. This supports contrast, not interpersonal disagreement."
+            },
+            "story_or_personal_experience": {
+              "supported": true,
+              "reason": "A first-person decision anchored a few years earlier is followed by ending the show and launching a network. The inspected sequence supports a personal-story transition."
+            }
+          },
           "reviewed_speech_function": "personal_story_transition",
           "measurements": {
             "mean_rms_db": null,
@@ -150,7 +219,9 @@
             "words_per_second_proxy": null,
             "transcript_gap_before_seconds": null,
             "transcript_gap_after_seconds": null
-          }
+          },
+          "raw_words_per_second_proxy": null,
+          "rate_exclusion_reason": "missing_or_nonfinite_caption_timing"
         },
         {
           "annotation_id": "review-024",
@@ -160,8 +231,22 @@
           "channel": "English Speeches",
           "start_seconds": 845.76,
           "url": "https://www.youtube.com/watch?v=3AIoHLr8nTI&t=845",
+          "end_seconds": 851.12,
           "text": "genital mutilation is wrong, no matter how many generations have practiced it.",
+          "source_transcript_file": "data/transcripts/3AIoHLr8nTI.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "aligned_features_available",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-024",
+          "contextual_label_decisions": {
+            "contrast_or_disagreement": {
+              "supported": true,
+              "subtype": "normative_rejection_of_justification",
+              "view_attribution": "current_turn_argument",
+              "reason": "The passage rejects a practice despite its historical prevalence after distinguishing understanding from moral relativism. It opposes a possible justification; no actual exchange with a disputant is observed in these captions."
+            }
+          },
           "reviewed_speech_function": "normative_rejection",
           "measurements": {
             "mean_rms_db": -18.045,
@@ -169,7 +254,9 @@
             "words_per_second_proxy": 2.239,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 2.08
-          }
+          },
+          "raw_words_per_second_proxy": 2.239,
+          "rate_exclusion_reason": null
         },
         {
           "annotation_id": "review-077",
@@ -179,8 +266,22 @@
           "channel": "English Speeches",
           "start_seconds": 580.06,
           "url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=580",
+          "end_seconds": 584.17,
           "text": "But and I said, oh, this is a wrong place.",
+          "source_transcript_file": "data/transcripts/AwA0Jnfj3ao.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "aligned_features_available",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-077",
+          "contextual_label_decisions": {
+            "contrast_or_disagreement": {
+              "supported": true,
+              "subtype": "observed_versus_expected_position_in_story",
+              "view_attribution": "current_turn_narrative",
+              "reason": "The surrounding narrative contrasts seeing the ball with reacting too late and where it was versus where it should be. The wording is somewhat garbled; the target's 'wrong place' belongs to that narrative contrast, not a live dispute."
+            }
+          },
           "reviewed_speech_function": "narrative_correction",
           "measurements": {
             "mean_rms_db": -21.64,
@@ -188,7 +289,9 @@
             "words_per_second_proxy": 2.433,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
-          }
+          },
+          "raw_words_per_second_proxy": 2.433,
+          "rate_exclusion_reason": null
         },
         {
           "annotation_id": "review-078",
@@ -198,8 +301,22 @@
           "channel": "English Speeches",
           "start_seconds": 368.0,
           "url": "https://www.youtube.com/watch?v=OfwfTN1mEyM&t=368",
+          "end_seconds": 374.96,
           "text": "often not quite understood but but the",
+          "source_transcript_file": "data/transcripts/OfwfTN1mEyM.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "aligned_features_available",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-078",
+          "contextual_label_decisions": {
+            "contrast_or_disagreement": {
+              "supported": true,
+              "subtype": "public_perception_versus_claimed_analysis",
+              "view_attribution": "current_turn_argument",
+              "reason": "The speaker contrasts limited public understanding of available solar power with a claim that its mathematics is clear, followed by a recommendation. The textual opposition is present; neither the mathematics nor public understanding is independently evaluated."
+            }
+          },
           "reviewed_speech_function": "concession_and_correction",
           "measurements": {
             "mean_rms_db": -15.293,
@@ -207,244 +324,14 @@
             "words_per_second_proxy": 1.006,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
-          }
+          },
+          "raw_words_per_second_proxy": 1.006,
+          "rate_exclusion_reason": null
         }
       ],
-      "counterexamples": [
-        {
-          "annotation_id": "review-080",
-          "evidence_id": "gDadfh0ZdBM:00036",
-          "reviewed_speech_function": "existential_observation",
-          "direct_observation": "The segment says there is something wrong with the world and continues with 'but it's there'."
-        }
-      ],
+      "counterexamples": [],
       "practice_implication": "When correcting or distinguishing ideas, state the contrast directly (for example, expected outcome versus observed outcome) and then supply the replacement claim or evidence.",
-      "interpretation_limit": "Contrast markers can describe a personal turning point or rhetorical framing rather than an interpersonal disagreement.",
-      "visual_evidence_status": "Pose and face measurements exist for the broader pilot, but these pattern cards do not claim manually verified visual alignment.",
-      "required_next_test": "Review more examples across speakers and formats, inspect the video frames/audio, and compare with matched speech-function controls before calling this a general best practice."
-    },
-    {
-      "pattern_id": "provisional-definition",
-      "candidate_label": "definition",
-      "title": "Define or reframe the key term",
-      "status": "provisional_practice_hypothesis",
-      "eligibility": {
-        "reviewed_count": 9,
-        "supported_count": 7,
-        "support_rate": 0.778,
-        "distinct_video_count": 6,
-        "distinct_uploader_count": 2,
-        "minimum_supported_examples": 5,
-        "minimum_distinct_videos": 4
-      },
-      "direct_measurement_summary": {
-        "mean_rms_db": {
-          "count": 6,
-          "mean": -25.81867,
-          "stddev": 9.3268,
-          "minimum": -40.996,
-          "maximum": -18.325
-        },
-        "mean_pitch_hz_proxy": {
-          "count": 6,
-          "mean": 276.28883,
-          "stddev": 34.82545,
-          "minimum": 213.17,
-          "maximum": 303.267
-        },
-        "words_per_second_proxy": {
-          "count": 6,
-          "mean": 1.39317,
-          "stddev": 0.69987,
-          "minimum": 0.644,
-          "maximum": 2.586
-        },
-        "transcript_gap_before_seconds": {
-          "count": 6,
-          "mean": 0.44,
-          "stddev": 1.07778,
-          "minimum": 0.0,
-          "maximum": 2.64
-        },
-        "transcript_gap_after_seconds": {
-          "count": 6,
-          "mean": 0.0,
-          "stddev": 0.0,
-          "minimum": 0.0,
-          "maximum": 0.0
-        }
-      },
-      "same_video_baseline_summary": {
-        "mean_rms_db": {
-          "video_count": 5,
-          "mean_delta": -1.75799,
-          "median_delta": -2.66454,
-          "stddev": 4.61868,
-          "minimum": -8.09063,
-          "maximum": 4.44001
-        },
-        "speech_activity_fraction": {
-          "video_count": 5,
-          "mean_delta": -0.07418,
-          "median_delta": -0.10336,
-          "stddev": 0.08226,
-          "minimum": -0.17863,
-          "maximum": 0.01223
-        },
-        "mean_zero_crossing_rate": {
-          "video_count": 5,
-          "mean_delta": 0.01125,
-          "median_delta": -0.00331,
-          "stddev": 0.02501,
-          "minimum": -0.01,
-          "maximum": 0.04459
-        },
-        "mean_spectral_centroid_hz": {
-          "video_count": 5,
-          "mean_delta": 58.09262,
-          "median_delta": 7.28081,
-          "stddev": 145.50227,
-          "minimum": -81.72539,
-          "maximum": 230.30923
-        },
-        "mean_pitch_hz_proxy": {
-          "video_count": 5,
-          "mean_delta": 30.963,
-          "median_delta": 20.1317,
-          "stddev": 27.72161,
-          "minimum": 12.57147,
-          "maximum": 79.18207
-        },
-        "mean_pitch_confidence_proxy": {
-          "video_count": 5,
-          "mean_delta": 0.00136,
-          "median_delta": 0.00536,
-          "stddev": 0.01884,
-          "minimum": -0.02309,
-          "maximum": 0.02443
-        },
-        "words_per_second_proxy": {
-          "video_count": 5,
-          "mean_delta": -0.36778,
-          "median_delta": -0.40471,
-          "stddev": 0.31987,
-          "minimum": -0.84341,
-          "maximum": -0.02576
-        }
-      },
-      "timestamped_examples": [
-        {
-          "annotation_id": "review-006",
-          "evidence_id": "-6qN3bm2RYo:00068",
-          "video_id": "-6qN3bm2RYo",
-          "title": "ENGLISH SPEECH | S. JAISHANKAR: India's Five Pledges (English Subtitles)",
-          "channel": "English Speeches",
-          "start_seconds": null,
-          "url": "https://www.youtube.com/watch?v=-6qN3bm2RYo",
-          "text": null,
-          "confidence": "medium",
-          "reviewed_speech_function": "definition_or_reformulation",
-          "measurements": {
-            "mean_rms_db": null,
-            "mean_pitch_hz_proxy": null,
-            "words_per_second_proxy": null,
-            "transcript_gap_before_seconds": null,
-            "transcript_gap_after_seconds": null
-          }
-        },
-        {
-          "annotation_id": "review-027",
-          "evidence_id": "3AIoHLr8nTI:00046",
-          "video_id": "3AIoHLr8nTI",
-          "title": "ENGLISH SPEECH | JUSTIN TRUDEAU: We’re All the Same (English Subtitles)",
-          "channel": "English Speeches",
-          "start_seconds": 421.68,
-          "url": "https://www.youtube.com/watch?v=3AIoHLr8nTI&t=421",
-          "text": "Think about it: Saying “I tolerate you” actually means something like, “Ok, I grudgingly admit that",
-          "confidence": "high",
-          "reviewed_speech_function": "conceptual_reframing",
-          "measurements": {
-            "mean_rms_db": -19.159,
-            "mean_pitch_hz_proxy": 303.267,
-            "words_per_second_proxy": 1.667,
-            "transcript_gap_before_seconds": 2.64,
-            "transcript_gap_after_seconds": 0.0
-          }
-        },
-        {
-          "annotation_id": "review-082",
-          "evidence_id": "OfwfTN1mEyM:00055",
-          "video_id": "OfwfTN1mEyM",
-          "title": "ENGLISH SPEECH | ELON MUSK: The Power of Solar Energy (English Subtitles)",
-          "channel": "English Speeches",
-          "start_seconds": 138.959,
-          "url": "https://www.youtube.com/watch?v=OfwfTN1mEyM&t=138",
-          "text": "uh what that means is the potential for",
-          "confidence": "high",
-          "reviewed_speech_function": "meaning_explanation",
-          "measurements": {
-            "mean_rms_db": -18.954,
-            "mean_pitch_hz_proxy": 291.295,
-            "words_per_second_proxy": 1.205,
-            "transcript_gap_before_seconds": 0.0,
-            "transcript_gap_after_seconds": 0.0
-          }
-        },
-        {
-          "annotation_id": "review-083",
-          "evidence_id": "_Mb1-CN3wZs:00048",
-          "video_id": "_Mb1-CN3wZs",
-          "title": "Al Pacino as Tony Montana in the opening scene of \"Scarface\" (1983) by Brian De Palma 1080p",
-          "channel": "jack7cat",
-          "start_seconds": 136.0,
-          "url": "https://www.youtube.com/watch?v=_Mb1-CN3wZs&t=136",
-          "text": "Pitchfork means an assassin or something",
-          "confidence": "high",
-          "reviewed_speech_function": "term_definition",
-          "measurements": {
-            "mean_rms_db": -18.325,
-            "mean_pitch_hz_proxy": 295.313,
-            "words_per_second_proxy": 1.456,
-            "transcript_gap_before_seconds": 0.0,
-            "transcript_gap_after_seconds": 0.0
-          }
-        },
-        {
-          "annotation_id": "review-028",
-          "evidence_id": "fBnAMUkNM2k:00068",
-          "video_id": "fBnAMUkNM2k",
-          "title": "Muniba Mazari Speech: I See My Ability | English Subtitles",
-          "channel": "English Speeches",
-          "start_seconds": 440.66,
-          "url": "https://www.youtube.com/watch?v=fBnAMUkNM2k&t=440",
-          "text": "cry, that means you are healing.",
-          "confidence": "high",
-          "reviewed_speech_function": "interpretive_definition",
-          "measurements": {
-            "mean_rms_db": -40.996,
-            "mean_pitch_hz_proxy": 257.813,
-            "words_per_second_proxy": 0.644,
-            "transcript_gap_before_seconds": 0.0,
-            "transcript_gap_after_seconds": 0.0
-          }
-        }
-      ],
-      "counterexamples": [
-        {
-          "annotation_id": "review-085",
-          "evidence_id": "pmAL79dnvu0:00047",
-          "reviewed_speech_function": "personal_meaning_statement",
-          "direct_observation": "The speaker says what a flag means personally and immediately connects that meaning to voting."
-        },
-        {
-          "annotation_id": "review-086",
-          "evidence_id": "AwA0Jnfj3ao:00174",
-          "reviewed_speech_function": "personal_significance_statement",
-          "direct_observation": "The phrase 'it means a lot' expresses personal significance after a story about learning a name."
-        }
-      ],
-      "practice_implication": "When a term may be ambiguous, give a short meaning, translation, or paraphrase before building the next claim on it.",
-      "interpretation_limit": "A phrase such as 'means' can express personal significance or a causal interpretation rather than a general definition.",
+      "interpretation_limit": "This sample combines personal reconsideration, asserted outcomes, reported advice and scene dialogue. Textual contrast does not establish a real interpersonal dispute, successful disagreement handling or truth of the contrasted claims. The selected reviewed sample is not a population precision estimate.",
       "visual_evidence_status": "Pose and face measurements exist for the broader pilot, but these pattern cards do not claim manually verified visual alignment.",
       "required_next_test": "Review more examples across speakers and formats, inspect the video frames/audio, and compare with matched speech-function controls before calling this a general best practice."
     },
@@ -557,6 +444,19 @@
           "maximum": 0.41829
         }
       },
+      "measurement_scope": {
+        "per_metric_example_counts": {
+          "mean_rms_db": 7,
+          "mean_pitch_hz_proxy": 7,
+          "words_per_second_proxy": 7,
+          "transcript_gap_before_seconds": 7,
+          "transcript_gap_after_seconds": 7
+        },
+        "baseline_video_count": 4,
+        "baseline_example_count": 7,
+        "baseline_definition": "supported_reviewed_segments_minus_same_video_all_usable_segments",
+        "speaker_recurrence": "not_established; uploaders and videos are not verified distinct speakers"
+      },
       "timestamped_examples": [
         {
           "annotation_id": "review-007",
@@ -564,10 +464,23 @@
           "video_id": "-6qN3bm2RYo",
           "title": "ENGLISH SPEECH | S. JAISHANKAR: India's Five Pledges (English Subtitles)",
           "channel": "English Speeches",
-          "start_seconds": null,
-          "url": "https://www.youtube.com/watch?v=-6qN3bm2RYo",
-          "text": null,
+          "start_seconds": 221.84,
+          "url": "https://www.youtube.com/watch?v=-6qN3bm2RYo&t=221",
+          "end_seconds": 228.36,
+          "text": "together on global issues such as",
+          "source_transcript_file": "data/transcripts/-6qN3bm2RYo.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "no_aligned_features",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-007",
+          "contextual_label_decisions": {
+            "example": {
+              "supported": true,
+              "subtype": "category_enumeration",
+              "reason": "Global issues are unpacked into terrorism, pandemics and the environment after a statement about unity. These are category members, not detailed empirical cases or evidence that the policy succeeds."
+            }
+          },
           "reviewed_speech_function": "example_introduction",
           "measurements": {
             "mean_rms_db": null,
@@ -575,7 +488,9 @@
             "words_per_second_proxy": null,
             "transcript_gap_before_seconds": null,
             "transcript_gap_after_seconds": null
-          }
+          },
+          "raw_words_per_second_proxy": null,
+          "rate_exclusion_reason": "missing_or_nonfinite_caption_timing"
         },
         {
           "annotation_id": "review-018",
@@ -585,8 +500,21 @@
           "channel": "English Speeches",
           "start_seconds": 673.519,
           "url": "https://www.youtube.com/watch?v=aXmM0VZv810&t=673",
+          "end_seconds": 679.839,
           "text": "this earlier radiology for example has",
+          "source_transcript_file": "data/transcripts/aXmM0VZv810.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "aligned_features_available",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-018",
+          "contextual_label_decisions": {
+            "example": {
+              "supported": true,
+              "subtype": "asserted_domain_case_with_explanation",
+              "reason": "The speaker introduces radiology as a case for a claim about technology and work, contrasts a forecast with an asserted employment trend, then explains a goal-versus-task distinction. The extended context establishes the illustration; the medical/employment assertions are not independently validated."
+            }
+          },
           "reviewed_speech_function": "example_marker",
           "measurements": {
             "mean_rms_db": -15.101,
@@ -594,7 +522,9 @@
             "words_per_second_proxy": 0.949,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
-          }
+          },
+          "raw_words_per_second_proxy": 0.949,
+          "rate_exclusion_reason": null
         },
         {
           "annotation_id": "review-062",
@@ -604,8 +534,21 @@
           "channel": "English Speeches",
           "start_seconds": 1274.559,
           "url": "https://www.youtube.com/watch?v=aXmM0VZv810&t=1274",
+          "end_seconds": 1277.84,
           "text": ">> Just imagine how tiny that little",
+          "source_transcript_file": "data/transcripts/aXmM0VZv810.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "aligned_features_available",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-062",
+          "contextual_label_decisions": {
+            "example": {
+              "supported": true,
+              "subtype": "scale_visualization_of_existing_object",
+              "reason": "A discussion of rack weight and cooling is followed by an invitation to imagine the small computational object. This is concrete scale illustration of an existing referent, not necessarily a new hypothetical event. Speaker turns are not reliably attributed by captions."
+            }
+          },
           "reviewed_speech_function": "hypothetical_visualization",
           "measurements": {
             "mean_rms_db": -15.29,
@@ -613,7 +556,9 @@
             "words_per_second_proxy": 2.133,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
-          }
+          },
+          "raw_words_per_second_proxy": 2.133,
+          "rate_exclusion_reason": null
         },
         {
           "annotation_id": "review-031",
@@ -623,8 +568,21 @@
           "channel": "English Speeches",
           "start_seconds": 1418.24,
           "url": "https://www.youtube.com/watch?v=aXmM0VZv810&t=1418",
+          "end_seconds": 1423.6,
           "text": "some over 20 years. Let me give you one",
+          "source_transcript_file": "data/transcripts/aXmM0VZv810.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "aligned_features_available",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-031",
+          "contextual_label_decisions": {
+            "example": {
+              "supported": true,
+              "subtype": "quantitative_before_after_case",
+              "reason": "A claim about movement toward accelerated computing is followed by a top-500-supercomputer percentage comparison and a return to the transition claim. The transcript gives both 'less than 15%' and '10%' for the later CPU share; these must not be silently reconciled. The numerical claim is not fact-checked."
+            }
+          },
           "reviewed_speech_function": "statistical_example_introduction",
           "measurements": {
             "mean_rms_db": -18.201,
@@ -632,7 +590,9 @@
             "words_per_second_proxy": 1.679,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
-          }
+          },
+          "raw_words_per_second_proxy": 1.679,
+          "rate_exclusion_reason": null
         },
         {
           "annotation_id": "review-064",
@@ -642,8 +602,21 @@
           "channel": "English Speeches",
           "start_seconds": 258.959,
           "url": "https://www.youtube.com/watch?v=jxY2-YgAgm0&t=258",
+          "end_seconds": 266.64,
           "text": "such as Daily Beast, James Carville, and",
+          "source_transcript_file": "data/transcripts/jxY2-YgAgm0.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "aligned_features_available",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-064",
+          "contextual_label_decisions": {
+            "example": {
+              "supported": true,
+              "subtype": "named_instances_of_asserted_category",
+              "reason": "The speaker names entities after asserting a category of people/companies that retracted statements. The local list instantiates that asserted category. This review does not endorse allegations, legal characterizations or claims about the named parties."
+            }
+          },
           "reviewed_speech_function": "named_example_list",
           "measurements": {
             "mean_rms_db": -23.931,
@@ -651,7 +624,9 @@
             "words_per_second_proxy": 0.911,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
-          }
+          },
+          "raw_words_per_second_proxy": 0.911,
+          "rate_exclusion_reason": null
         }
       ],
       "counterexamples": [
@@ -659,17 +634,17 @@
           "annotation_id": "review-030",
           "evidence_id": "S43F1BZfQKY:00018",
           "reviewed_speech_function": "personal_story_detail",
-          "direct_observation": "The speaker narrates a specific wig shown by a doctor within a first-person story."
+          "direct_observation": "The shop visit continues with a wig being shown and bought, followed by the narrator's reported reaction. 'Imagine' intensifies description of that object rather than introducing a case for general reasoning. The source explicitly says wig shop owner; the legacy record's doctor attribution is unsupported."
         },
         {
           "annotation_id": "review-063",
           "evidence_id": "gDadfh0ZdBM:00001",
           "reviewed_speech_function": "direct_advice",
-          "direct_observation": "'Let me give you one piece of advice' introduces an imperative recommendation, followed by 'be honest'."
+          "direct_observation": "The speaker offers advice to be honest, not an event or case illustrating a broader proposition. Later unrelated dialogue in the inspected window does not establish an example relation."
         }
       ],
       "practice_implication": "After an abstract claim, announce or signal a specific case, statistic, named example, or imagined scene, and connect it back to the claim.",
-      "interpretation_limit": "A vivid story detail is not automatically an example used to support a general argument.",
+      "interpretation_limit": "This sample mixes category lists, asserted cases, numerical comparisons and imagined scenarios. A vivid detail is not automatically an example; an illustration is not factual verification or causal proof. Source allegations and numerical claims are not endorsed.",
       "visual_evidence_status": "Pose and face measurements exist for the broader pilot, but these pattern cards do not claim manually verified visual alignment.",
       "required_next_test": "Review more examples across speakers and formats, inspect the video frames/audio, and compare with matched speech-function controls before calling this a general best practice."
     },
@@ -682,7 +657,7 @@
         "reviewed_count": 13,
         "supported_count": 10,
         "support_rate": 0.769,
-        "distinct_video_count": 7,
+        "distinct_video_count": 6,
         "distinct_uploader_count": 1,
         "minimum_supported_examples": 5,
         "minimum_distinct_videos": 4
@@ -690,22 +665,22 @@
       "direct_measurement_summary": {
         "mean_rms_db": {
           "count": 8,
-          "mean": -26.27137,
-          "stddev": 7.86013,
+          "mean": -28.15288,
+          "stddev": 9.06619,
           "minimum": -42.935,
           "maximum": -20.403
         },
         "mean_pitch_hz_proxy": {
           "count": 8,
-          "mean": 248.226,
-          "stddev": 55.4101,
-          "minimum": 179.688,
+          "mean": 237.89062,
+          "stddev": 61.0665,
+          "minimum": 173.828,
           "maximum": 333.984
         },
         "words_per_second_proxy": {
           "count": 8,
-          "mean": 1.93712,
-          "stddev": 0.94893,
+          "mean": 1.77737,
+          "stddev": 1.01839,
           "minimum": 0.525,
           "maximum": 3.598
         },
@@ -726,61 +701,74 @@
       },
       "same_video_baseline_summary": {
         "mean_rms_db": {
-          "video_count": 6,
-          "mean_delta": -0.11226,
-          "median_delta": 1.23024,
-          "stddev": 2.78409,
-          "minimum": -3.83675,
+          "video_count": 5,
+          "mean_delta": -1.66985,
+          "median_delta": -3.44043,
+          "stddev": 3.40924,
+          "minimum": -5.07625,
           "maximum": 2.21594
         },
         "speech_activity_fraction": {
-          "video_count": 6,
-          "mean_delta": 0.00873,
-          "median_delta": 0.02554,
-          "stddev": 0.07301,
+          "video_count": 5,
+          "mean_delta": -0.03349,
+          "median_delta": 0.00136,
+          "stddev": 0.072,
           "minimum": -0.12663,
-          "maximum": 0.09151
+          "maximum": 0.03507
         },
         "mean_zero_crossing_rate": {
-          "video_count": 6,
-          "mean_delta": 0.00592,
-          "median_delta": 0.00627,
-          "stddev": 0.01914,
-          "minimum": -0.01694,
-          "maximum": 0.02724
+          "video_count": 5,
+          "mean_delta": 0.0076,
+          "median_delta": 0.01096,
+          "stddev": 0.01489,
+          "minimum": -0.01379,
+          "maximum": 0.02645
         },
         "mean_spectral_centroid_hz": {
-          "video_count": 6,
-          "mean_delta": 98.39248,
-          "median_delta": 138.92169,
-          "stddev": 205.07963,
+          "video_count": 5,
+          "mean_delta": 120.69756,
+          "median_delta": 146.11652,
+          "stddev": 177.93033,
           "minimum": -155.71313,
           "maximum": 335.24101
         },
         "mean_pitch_hz_proxy": {
-          "video_count": 6,
-          "mean_delta": -0.5027,
-          "median_delta": -13.95055,
-          "stddev": 35.66836,
-          "minimum": -37.67884,
+          "video_count": 5,
+          "mean_delta": 2.35248,
+          "median_delta": -6.8218,
+          "stddev": 40.13915,
+          "minimum": -44.8405,
           "maximum": 56.39884
         },
         "mean_pitch_confidence_proxy": {
-          "video_count": 6,
-          "mean_delta": -0.02293,
-          "median_delta": -0.02065,
-          "stddev": 0.03438,
+          "video_count": 5,
+          "mean_delta": -0.02145,
+          "median_delta": -0.01781,
+          "stddev": 0.03507,
           "minimum": -0.07751,
-          "maximum": 0.02577
+          "maximum": 0.01752
         },
         "words_per_second_proxy": {
-          "video_count": 6,
-          "mean_delta": -0.32649,
-          "median_delta": 0.13053,
-          "stddev": 1.32756,
-          "minimum": -2.84485,
-          "maximum": 0.89942
+          "video_count": 5,
+          "mean_delta": 0.02171,
+          "median_delta": 0.20598,
+          "stddev": 0.4616,
+          "minimum": -0.78088,
+          "maximum": 0.34563
         }
+      },
+      "measurement_scope": {
+        "per_metric_example_counts": {
+          "mean_rms_db": 8,
+          "mean_pitch_hz_proxy": 8,
+          "words_per_second_proxy": 8,
+          "transcript_gap_before_seconds": 8,
+          "transcript_gap_after_seconds": 8
+        },
+        "baseline_video_count": 5,
+        "baseline_example_count": 8,
+        "baseline_definition": "supported_reviewed_segments_minus_same_video_all_usable_segments",
+        "speaker_recurrence": "not_established; uploaders and videos are not verified distinct speakers"
       },
       "timestamped_examples": [
         {
@@ -789,10 +777,23 @@
           "video_id": "-54zUwySKCg",
           "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
           "channel": "English Speeches",
-          "start_seconds": null,
-          "url": "https://www.youtube.com/watch?v=-54zUwySKCg",
-          "text": null,
+          "start_seconds": 201.7,
+          "url": "https://www.youtube.com/watch?v=-54zUwySKCg&t=201",
+          "end_seconds": 207.23,
+          "text": "That was when I was 16 years old in Nashville,Tennessee, and you had the requirement of",
+          "source_transcript_file": "data/transcripts/-54zUwySKCg.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "no_aligned_features",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-001",
+          "contextual_label_decisions": {
+            "story_or_personal_experience": {
+              "supported": true,
+              "subtype": "autobiographical_scene_setup",
+              "reason": "The narrator names a career origin, a contest, an age and a place, then introduces its question-and-answer sequence. The target sets up a personal event; this short window does not contain the full story or verify its historical truth."
+            }
+          },
           "reviewed_speech_function": "personal_story_setup",
           "measurements": {
             "mean_rms_db": null,
@@ -800,7 +801,9 @@
             "words_per_second_proxy": null,
             "transcript_gap_before_seconds": null,
             "transcript_gap_after_seconds": null
-          }
+          },
+          "raw_words_per_second_proxy": null,
+          "rate_exclusion_reason": "missing_or_nonfinite_caption_timing"
         },
         {
           "annotation_id": "review-002",
@@ -808,10 +811,26 @@
           "video_id": "-54zUwySKCg",
           "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
           "channel": "English Speeches",
-          "start_seconds": null,
-          "url": "https://www.youtube.com/watch?v=-54zUwySKCg",
-          "text": null,
+          "start_seconds": 305.669,
+          "url": "https://www.youtube.com/watch?v=-54zUwySKCg&t=305",
+          "end_seconds": 313.51,
+          "text": "But a few years ago I decided, as you willat some point, that it was time to recalculate,",
+          "source_transcript_file": "data/transcripts/-54zUwySKCg.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "no_aligned_features",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-002",
+          "contextual_label_decisions": {
+            "contrast_or_disagreement": {
+              "supported": true,
+              "reason": "The preceding captions describe sustained success and comfort; 'But' introduces a decision to change direction. This supports contrast, not interpersonal disagreement."
+            },
+            "story_or_personal_experience": {
+              "supported": true,
+              "reason": "A first-person decision anchored a few years earlier is followed by ending the show and launching a network. The inspected sequence supports a personal-story transition."
+            }
+          },
           "reviewed_speech_function": "personal_story_transition",
           "measurements": {
             "mean_rms_db": null,
@@ -819,7 +838,9 @@
             "words_per_second_proxy": null,
             "transcript_gap_before_seconds": null,
             "transcript_gap_after_seconds": null
-          }
+          },
+          "raw_words_per_second_proxy": null,
+          "rate_exclusion_reason": "missing_or_nonfinite_caption_timing"
         },
         {
           "annotation_id": "review-040",
@@ -829,8 +850,21 @@
           "channel": "English Speeches",
           "start_seconds": 31.08,
           "url": "https://www.youtube.com/watch?v=9fEurt2OZ0I&t=31",
+          "end_seconds": 36.76,
           "text": "I went for a police they said no you're",
+          "source_transcript_file": "data/transcripts/9fEurt2OZ0I.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "aligned_features_available",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-040",
+          "contextual_label_decisions": {
+            "story_or_personal_experience": {
+              "supported": true,
+              "subtype": "sequence_of_personal_rejection_accounts",
+              "reason": "The narrator links job applications, a reported rejection and another application example. Despite garbled wording, personal actions and responses form a sequence. Counts, job names and outcomes are not independently fact-checked."
+            }
+          },
           "reviewed_speech_function": "personal_rejection_story",
           "measurements": {
             "mean_rms_db": -22.085,
@@ -838,7 +872,9 @@
             "words_per_second_proxy": 1.585,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
-          }
+          },
+          "raw_words_per_second_proxy": 1.585,
+          "rate_exclusion_reason": null
         },
         {
           "annotation_id": "review-067",
@@ -848,8 +884,21 @@
           "channel": "English Speeches",
           "start_seconds": 598.13,
           "url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=598",
+          "end_seconds": 601.0,
           "text": "I went to the bathroom and I cried.",
+          "source_transcript_file": "data/transcripts/AwA0Jnfj3ao.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "aligned_features_available",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-067",
+          "contextual_label_decisions": {
+            "story_or_personal_experience": {
+              "supported": true,
+              "subtype": "setback_action_and_self_address",
+              "reason": "Following a cricket setback, the narrator describes going to a bathroom, crying and speaking to himself in a mirror, before later seeking advice. Those are narrated actions, not acoustic or visual evidence of emotion during the current speech."
+            }
+          },
           "reviewed_speech_function": "personal_emotional_story",
           "measurements": {
             "mean_rms_db": -20.469,
@@ -857,7 +906,9 @@
             "words_per_second_proxy": 2.787,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
-          }
+          },
+          "raw_words_per_second_proxy": 2.787,
+          "rate_exclusion_reason": null
         },
         {
           "annotation_id": "review-013",
@@ -867,8 +918,21 @@
           "channel": "English Speeches",
           "start_seconds": 29.829,
           "url": "https://www.youtube.com/watch?v=S43F1BZfQKY&t=29",
+          "end_seconds": 31.71,
           "text": "I remember that day.",
+          "source_transcript_file": "data/transcripts/S43F1BZfQKY.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "aligned_features_available",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-013",
+          "contextual_label_decisions": {
+            "story_or_personal_experience": {
+              "supported": true,
+              "subtype": "dated_recollection_with_trigger_event",
+              "reason": "The remembered date is followed by a first-person shower episode and discovery of hair in the hand. Context supplies an actual narrated event rather than merely the marker 'I remember'. The report does not independently verify the medical history."
+            }
+          },
           "reviewed_speech_function": "story_recall",
           "measurements": {
             "mean_rms_db": -24.076,
@@ -876,31 +940,33 @@
             "words_per_second_proxy": 2.127,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
-          }
+          },
+          "raw_words_per_second_proxy": 2.127,
+          "rate_exclusion_reason": null
         }
       ],
       "counterexamples": [
         {
-          "annotation_id": "review-014",
-          "evidence_id": "S43F1BZfQKY:00011",
-          "reviewed_speech_function": "story_event_with_embedded_advice",
-          "direct_observation": "'Maybe you should' occurs inside a narrated event and is advice quoted from another person, not the speaker's call to the audience."
-        },
-        {
           "annotation_id": "review-039",
           "evidence_id": "3AIoHLr8nTI:00069",
           "reviewed_speech_function": "generalized_scenario",
-          "direct_observation": "The speaker describes what leaders may realize one day using a generalized 'you/them' construction, not a personal past event."
+          "direct_observation": "The passage describes what leaders in every generation supposedly realize and urges the graduates to lead. It is a generalized scenario, not an identified personally experienced event."
+        },
+        {
+          "annotation_id": "review-068",
+          "evidence_id": "bR4tDSa3O10:00051",
+          "reviewed_speech_function": "personal_counterfactual_recollection",
+          "direct_observation": "A childhood location anchors an imagined reaction: if acquaintances had been told about the later opportunity, they would have laughed. The target does not report that such an exchange occurred or narrate a sequence of experienced events. This can still be a useful counterfactual device, but is not support for the narrower experienced-event rubric."
         },
         {
           "annotation_id": "review-069",
           "evidence_id": "OfwfTN1mEyM:00152",
           "reviewed_speech_function": "historical_trend_explanation",
-          "direct_observation": "The speaker compares solar costs five, ten, and twenty years ago with current costs."
+          "direct_observation": "The speaker compares earlier and current solar/battery costs. Time references alone do not make this a personally experienced narrative. The price claims are not verified here."
         }
       ],
       "practice_implication": "A short first-person event, setting, action, or quoted line can make an abstract point concrete; mark the transition back to the broader point.",
-      "interpretation_limit": "Historical explanation, hypothetical scenarios, and isolated personal details may not form a complete story.",
+      "interpretation_limit": "This sample mixes scene setups, actions, reported dialogue and brief autobiographical memories, not complete story arcs. Isolated counterfactual reactions and historical comparisons are excluded under the experienced-event rubric. Narrated events, quoted claims and emotional descriptions are not independently verified facts or current delivery measurements.",
       "visual_evidence_status": "Pose and face measurements exist for the broader pilot, but these pattern cards do not claim manually verified visual alignment.",
       "required_next_test": "Review more examples across speakers and formats, inspect the video frames/audio, and compare with matched speech-function controls before calling this a general best practice."
     },
@@ -911,9 +977,9 @@
       "status": "provisional_practice_hypothesis",
       "eligibility": {
         "reviewed_count": 9,
-        "supported_count": 9,
-        "support_rate": 1.0,
-        "distinct_video_count": 8,
+        "supported_count": 8,
+        "support_rate": 0.889,
+        "distinct_video_count": 7,
         "distinct_uploader_count": 1,
         "minimum_supported_examples": 5,
         "minimum_distinct_videos": 4
@@ -1013,26 +1079,20 @@
           "maximum": 0.32421
         }
       },
-      "timestamped_examples": [
-        {
-          "annotation_id": "review-003",
-          "evidence_id": "-54zUwySKCg:00122",
-          "video_id": "-54zUwySKCg",
-          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
-          "channel": "English Speeches",
-          "start_seconds": null,
-          "url": "https://www.youtube.com/watch?v=-54zUwySKCg",
-          "text": null,
-          "confidence": "high",
-          "reviewed_speech_function": "rhetorical_question",
-          "measurements": {
-            "mean_rms_db": null,
-            "mean_pitch_hz_proxy": null,
-            "words_per_second_proxy": null,
-            "transcript_gap_before_seconds": null,
-            "transcript_gap_after_seconds": null
-          }
+      "measurement_scope": {
+        "per_metric_example_counts": {
+          "mean_rms_db": 8,
+          "mean_pitch_hz_proxy": 8,
+          "words_per_second_proxy": 8,
+          "transcript_gap_before_seconds": 8,
+          "transcript_gap_after_seconds": 8
         },
+        "baseline_video_count": 7,
+        "baseline_example_count": 8,
+        "baseline_definition": "supported_reviewed_segments_minus_same_video_all_usable_segments",
+        "speaker_recurrence": "not_established; uploaders and videos are not verified distinct speakers"
+      },
+      "timestamped_examples": [
         {
           "annotation_id": "review-072",
           "evidence_id": "2fWJh-_UG5s:00160",
@@ -1041,8 +1101,22 @@
           "channel": "English Speeches",
           "start_seconds": 362.16,
           "url": "https://www.youtube.com/watch?v=2fWJh-_UG5s&t=362",
+          "end_seconds": 366.96,
           "text": "maybe that would make",
+          "source_transcript_file": "data/transcripts/2fWJh-_UG5s.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "aligned_features_available",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-072",
+          "contextual_label_decisions": {
+            "uncertainty_or_qualification": {
+              "supported": true,
+              "subtype": "reported_hypothetical_consequence",
+              "view_attribution": "reported_other_people_text",
+              "reason": "The surrounding clauses say Ryan and Jessica said sharing the art might have a hoped-for consequence. The qualification is in reported speech, not evidence of the narrator's own belief strength. No afterlife or emotional-response claim is validated."
+            }
+          },
           "reviewed_speech_function": "speculative_empathy",
           "measurements": {
             "mean_rms_db": -20.493,
@@ -1050,7 +1124,9 @@
             "words_per_second_proxy": 0.833,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
-          }
+          },
+          "raw_words_per_second_proxy": 0.833,
+          "rate_exclusion_reason": null
         },
         {
           "annotation_id": "review-042",
@@ -1060,8 +1136,22 @@
           "channel": "English Speeches",
           "start_seconds": 91.12,
           "url": "https://www.youtube.com/watch?v=3AIoHLr8nTI&t=91",
+          "end_seconds": 100.08,
           "text": "This group is truly diverse in every possible way. And I think that is an extraordinarily",
+          "source_transcript_file": "data/transcripts/3AIoHLr8nTI.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "aligned_features_available",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-042",
+          "contextual_label_decisions": {
+            "uncertainty_or_qualification": {
+              "supported": true,
+              "subtype": "opinion_framed_evaluation",
+              "view_attribution": "current_turn_text",
+              "reason": "After describing the group's diversity, 'I think' introduces an evaluation of its value. This marks the evaluation as a view; it does not establish weak conviction or internal uncertainty."
+            }
+          },
           "reviewed_speech_function": "epistemic_hedge",
           "measurements": {
             "mean_rms_db": -18.437,
@@ -1069,7 +1159,9 @@
             "words_per_second_proxy": 1.786,
             "transcript_gap_before_seconds": 5.28,
             "transcript_gap_after_seconds": 0.0
-          }
+          },
+          "raw_words_per_second_proxy": 1.786,
+          "rate_exclusion_reason": null
         },
         {
           "annotation_id": "review-073",
@@ -1079,8 +1171,22 @@
           "channel": "English Speeches",
           "start_seconds": 665.84,
           "url": "https://www.youtube.com/watch?v=3AIoHLr8nTI&t=665",
+          "end_seconds": 673.84,
           "text": "from their leaders today and tomorrow? Now, I think you need to be brave.",
+          "source_transcript_file": "data/transcripts/3AIoHLr8nTI.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "aligned_features_available",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-073",
+          "contextual_label_decisions": {
+            "uncertainty_or_qualification": {
+              "supported": true,
+              "subtype": "opinion_framed_advice_with_reinforcement",
+              "view_attribution": "current_turn_text",
+              "reason": "A question about leadership is answered with 'I think you need to be brave', followed by 'Really brave'. The viewpoint marker coexists with textually reinforced advice; it does not prove hesitation."
+            }
+          },
           "reviewed_speech_function": "hedged_recommendation",
           "measurements": {
             "mean_rms_db": -23.957,
@@ -1088,7 +1194,9 @@
             "words_per_second_proxy": 1.75,
             "transcript_gap_before_seconds": 0.72,
             "transcript_gap_after_seconds": 1.04
-          }
+          },
+          "raw_words_per_second_proxy": 1.75,
+          "rate_exclusion_reason": null
         },
         {
           "annotation_id": "review-043",
@@ -1098,8 +1206,22 @@
           "channel": "English Speeches",
           "start_seconds": 66.159,
           "url": "https://www.youtube.com/watch?v=9fEurt2OZ0I&t=66",
+          "end_seconds": 72.159,
           "text": "sorry now I think we have to get used to",
+          "source_transcript_file": "data/transcripts/9fEurt2OZ0I.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "aligned_features_available",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-043",
+          "contextual_label_decisions": {
+            "uncertainty_or_qualification": {
+              "supported": true,
+              "subtype": "opinion_framed_recommendation",
+              "view_attribution": "current_turn_text",
+              "reason": "Following repeated rejection in the account, 'I think' frames the recommendation to get used to rejection. 'Have to' still expresses necessity. No softness of vocal delivery is inferred."
+            }
+          },
           "reviewed_speech_function": "qualified_recommendation",
           "measurements": {
             "mean_rms_db": -25.918,
@@ -1107,12 +1229,56 @@
             "words_per_second_proxy": 1.667,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
-          }
+          },
+          "raw_words_per_second_proxy": 1.667,
+          "rate_exclusion_reason": null
+        },
+        {
+          "annotation_id": "review-074",
+          "evidence_id": "C8-twwwTETE:00045",
+          "video_id": "C8-twwwTETE",
+          "title": "ENGLISH SPEECH | EMINEM & 50 CENT: Walk of Fame Speech (English Subtitles)",
+          "channel": "English Speeches",
+          "start_seconds": 98.88,
+          "url": "https://www.youtube.com/watch?v=C8-twwwTETE&t=98",
+          "end_seconds": 105.2,
+          "text": "how into him I was right but I think I",
+          "source_transcript_file": "data/transcripts/C8-twwwTETE.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "aligned_features_available",
+          "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-074",
+          "contextual_label_decisions": {
+            "uncertainty_or_qualification": {
+              "supported": true,
+              "subtype": "qualified_retrospective_self_evaluation",
+              "view_attribution": "current_turn_text",
+              "reason": "The narrator describes talking at length to someone, then uses 'I think' and 'might have probably' to evaluate whether it was excessive. The continuation is needed to complete the clause; this is not an acoustic uncertainty judgment."
+            }
+          },
+          "reviewed_speech_function": "self_correction_qualification",
+          "measurements": {
+            "mean_rms_db": -29.39,
+            "mean_pitch_hz_proxy": 316.964,
+            "words_per_second_proxy": 1.582,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0
+          },
+          "raw_words_per_second_proxy": 1.582,
+          "rate_exclusion_reason": null
         }
       ],
-      "counterexamples": [],
+      "counterexamples": [
+        {
+          "annotation_id": "review-003",
+          "evidence_id": "-54zUwySKCg:00122",
+          "reviewed_speech_function": "rhetorical_question",
+          "direct_observation": "Under the claim-qualification definition, 'could' describes hypothetical capacity inside a narrated question. No factual assertion or prediction is explicitly hedged in this context. A broader wondering category could differ; no internal uncertainty is inferred."
+        }
+      ],
       "practice_implication": "Use explicit qualifiers such as 'I think', 'might', or 'probably' when a claim is a view, prediction, or interpretation rather than an established fact.",
-      "interpretation_limit": "Verbal qualification does not prove a speaker's internal uncertainty, and voice may reinforce or contradict the wording.",
+      "interpretation_limit": "Verbal qualification does not prove internal uncertainty. This sample mixes current-turn views, reported other people's words and unresolved turn attribution; recommendations may remain strong. Voice has not been adjudicated against the wording.",
       "visual_evidence_status": "Pose and face measurements exist for the broader pilot, but these pattern cards do not claim manually verified visual alignment.",
       "required_next_test": "Review more examples across speakers and formats, inspect the video frames/audio, and compare with matched speech-function controls before calling this a general best practice."
     },
@@ -1218,12 +1384,25 @@
         },
         "words_per_second_proxy": {
           "video_count": 3,
-          "mean_delta": -1.22622,
-          "median_delta": -0.7891,
-          "stddev": 1.5219,
-          "minimum": -2.91885,
-          "maximum": 0.02929
+          "mean_delta": -0.18368,
+          "median_delta": 0.02929,
+          "stddev": 0.53192,
+          "minimum": -0.7891,
+          "maximum": 0.20875
         }
+      },
+      "measurement_scope": {
+        "per_metric_example_counts": {
+          "mean_rms_db": 3,
+          "mean_pitch_hz_proxy": 3,
+          "words_per_second_proxy": 3,
+          "transcript_gap_before_seconds": 3,
+          "transcript_gap_after_seconds": 3
+        },
+        "baseline_video_count": 3,
+        "baseline_example_count": 3,
+        "baseline_definition": "supported_reviewed_segments_minus_same_video_all_usable_segments",
+        "speaker_recurrence": "not_established; uploaders and videos are not verified distinct speakers"
       },
       "timestamped_examples": [
         {
@@ -1232,10 +1411,23 @@
           "video_id": "-54zUwySKCg",
           "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
           "channel": "English Speeches",
-          "start_seconds": null,
-          "url": "https://www.youtube.com/watch?v=-54zUwySKCg",
-          "text": null,
+          "start_seconds": 989.73,
+          "url": "https://www.youtube.com/watch?v=-54zUwySKCg&t=989",
+          "end_seconds": 996.649,
+          "text": "The point is your generation is charged withthis task of breaking through what the body",
+          "source_transcript_file": "data/transcripts/-54zUwySKCg.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "no_aligned_features",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-005",
+          "contextual_label_decisions": {
+            "conclusion_or_summary": {
+              "supported": true,
+              "subtype": "broad_takeaway_and_charge",
+              "reason": "Several possible ways to make a difference precede a general charge to the generation to change political conditions. This is a broad takeaway tied to those examples, not merely an isolated 'point' marker. Full speech closure is not established."
+            }
+          },
           "reviewed_speech_function": "conclusion_or_charge",
           "measurements": {
             "mean_rms_db": null,
@@ -1243,7 +1435,9 @@
             "words_per_second_proxy": null,
             "transcript_gap_before_seconds": null,
             "transcript_gap_after_seconds": null
-          }
+          },
+          "raw_words_per_second_proxy": null,
+          "rate_exclusion_reason": "missing_or_nonfinite_caption_timing"
         },
         {
           "annotation_id": "review-010",
@@ -1251,10 +1445,23 @@
           "video_id": "-URn1fARvts",
           "title": "ENGLISH SPEECH | EILEEN GU: Courage To Try (English Subtitles)",
           "channel": "English Speeches",
-          "start_seconds": null,
-          "url": "https://www.youtube.com/watch?v=-URn1fARvts",
-          "text": null,
+          "start_seconds": 254.44,
+          "url": "https://www.youtube.com/watch?v=-URn1fARvts&t=254",
+          "end_seconds": 258.28,
+          "text": "In short, being a young person balancing",
+          "source_transcript_file": "data/transcripts/-URn1fARvts.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "no_aligned_features",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-010",
+          "contextual_label_decisions": {
+            "conclusion_or_summary": {
+              "supported": true,
+              "subtype": "autobiographical_summary",
+              "reason": "The earlier captions describe combining skills, asking hard questions and willingness to learn; the following complete sentence compresses school and sport into critical curiosity and learning about the world. Some transcript phrasing remains uncertain."
+            }
+          },
           "reviewed_speech_function": "summary_transition",
           "measurements": {
             "mean_rms_db": null,
@@ -1262,7 +1469,9 @@
             "words_per_second_proxy": null,
             "transcript_gap_before_seconds": null,
             "transcript_gap_after_seconds": null
-          }
+          },
+          "raw_words_per_second_proxy": null,
+          "rate_exclusion_reason": "missing_or_nonfinite_caption_timing"
         },
         {
           "annotation_id": "review-087",
@@ -1272,8 +1481,21 @@
           "channel": "English Speeches",
           "start_seconds": 1016.839,
           "url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=1016",
+          "end_seconds": 1021.63,
           "text": "So, it's just, in short, it's just being astep ahead of your opposition.",
+          "source_transcript_file": "data/transcripts/AwA0Jnfj3ao.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "aligned_features_available",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-087",
+          "contextual_label_decisions": {
+            "conclusion_or_summary": {
+              "supported": true,
+              "subtype": "story_to_principle",
+              "reason": "The preceding cricket sequence describes anticipating an opponent and warning a teammate. The target states the general lesson of being a step ahead, followed by interviewer thanks. This supports a story-to-principle summary, not proof the strategy is universally useful."
+            }
+          },
           "reviewed_speech_function": "summary_principle",
           "measurements": {
             "mean_rms_db": -18.007,
@@ -1281,7 +1503,9 @@
             "words_per_second_proxy": 2.713,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
-          }
+          },
+          "raw_words_per_second_proxy": 2.713,
+          "rate_exclusion_reason": null
         },
         {
           "annotation_id": "review-017",
@@ -1291,8 +1515,21 @@
           "channel": "English Speeches",
           "start_seconds": 1175.919,
           "url": "https://www.youtube.com/watch?v=aXmM0VZv810&t=1175",
+          "end_seconds": 1180.799,
           "text": "overwhelmingly what matters",
+          "source_transcript_file": "data/transcripts/aXmM0VZv810.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "aligned_features_available",
           "confidence": "medium",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-017",
+          "contextual_label_decisions": {
+            "conclusion_or_summary": {
+              "supported": true,
+              "subtype": "local_argumentative_conclusion",
+              "reason": "The preceding energy-use criterion leads to a prioritizing conclusion that space matters. It is a local argumentative takeaway, not a speech-ending summary. Additional support follows; garbled scientific wording is not repaired or fact-checked here."
+            }
+          },
           "reviewed_speech_function": "conclusion_marker",
           "measurements": {
             "mean_rms_db": -15.764,
@@ -1300,7 +1537,9 @@
             "words_per_second_proxy": 0.615,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
-          }
+          },
+          "raw_words_per_second_proxy": 0.615,
+          "rate_exclusion_reason": null
         },
         {
           "annotation_id": "review-023",
@@ -1310,8 +1549,21 @@
           "channel": "English Speeches",
           "start_seconds": 312.56,
           "url": "https://www.youtube.com/watch?v=qOwYULOPuPs&t=312",
+          "end_seconds": 319.039,
           "text": "In short, they were asking far too much",
+          "source_transcript_file": "data/transcripts/qOwYULOPuPs.json",
+          "transcript_evidence_status": "available",
+          "measurement_status": "aligned_features_available",
           "confidence": "high",
+          "confidence_source": "legacy_annotation_not_reassessed",
+          "contextual_review_id": "context-20260917-review-023",
+          "contextual_label_decisions": {
+            "conclusion_or_summary": {
+              "supported": true,
+              "subtype": "compressed_evaluation",
+              "reason": "The preceding account lists proposed terms and effects on industries; a two-part evaluation compresses that account before the narrative resumes. The political evaluation's truth is not assessed."
+            }
+          },
           "reviewed_speech_function": "compressed_evaluation",
           "measurements": {
             "mean_rms_db": -20.84,
@@ -1319,7 +1571,9 @@
             "words_per_second_proxy": 1.235,
             "transcript_gap_before_seconds": 0.0,
             "transcript_gap_after_seconds": 0.0
-          }
+          },
+          "raw_words_per_second_proxy": 1.235,
+          "rate_exclusion_reason": null
         }
       ],
       "counterexamples": [
@@ -1327,7 +1581,7 @@
           "annotation_id": "review-016",
           "evidence_id": "3AIoHLr8nTI:00003",
           "reviewed_speech_function": "causal_transition",
-          "direct_observation": "'Therefore' links a preceding idea to a consequence but does not by itself summarize or conclude the speech."
+          "direct_observation": "The speaker moves from graduates' potential to responsibility and then announces today's topic. This is an opening inference/agenda, not a summary of a developed account. 'Therefore' alone does not support the label."
         }
       ],
       "practice_implication": "Use a clear summary or conclusion marker when compressing a preceding explanation, story, or comparison into the point the audience should retain.",

@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0",
+  "reviewer": "assistant:Codex",
+  "review_date": "2026-09-17",
+  "modality": "direct_still_frame_inspection_with_prior_audio_measurements",
+  "probe_manifest": "research/pause-visual-probes.json",
+  "probe_manifest_sha256": "2f397a32918a42ad5ac468f3201169a2a55b63239d8578ad65465b979b9b18ce",
+  "listened_to_audio": false,
+  "watched_continuous_video": false,
+  "audio_video_sync_verified": false,
+  "scope": "All nine extracted stills were inspected directly. Requested seeks are not verified decoded PTS. These three purposive probes are not a representative sample or an independent review. Frame references resolve through the hash-bound manifest, which binds the exact PNG and source video bytes.",
+  "reviews": [
+    {
+      "evidence_id": "2fWJh-_UG5s:00035",
+      "frames": [
+        {"requested_seek_seconds": 92.8, "observation": "Speaker in glasses and a dark jacket before a blue White House backdrop with a flag at image-left. Head angled down; one hand raised with index finger extended. No bottom subtitle visible."},
+        {"requested_seek_seconds": 93.8, "observation": "Same recognizable speaker, backdrop and framing. Head angled down and sideways; raised index-finger configuration no longer visible. No bottom subtitle visible."},
+        {"requested_seek_seconds": 94.9, "observation": "Same recognizable scene. Head turned toward image-left and one hand extended low. A bottom subtitle introduces the speaker and spouse."}
+      ],
+      "sampled_scene_comparison": "No obvious shot change at the three sampled instants. Head/hand configurations and subtitle presence differ. This does not prove continuous motion or absence of an intervening cut.",
+      "quiet_interval_seconds": [93.12, 94.62],
+      "interpretation": "If timelines align, the middle still lies in a measured quiet interval and the last lies after it. Changing configurations may accompany a speech transition, but deliberate emphasis, gesture timing and rhetorical function are not established.",
+      "rhetorical_pause_status": "unresolved"
+    },
+    {
+      "evidence_id": "fBnAMUkNM2k:00021",
+      "frames": [
+        {"requested_seek_seconds": 196.6, "observation": "Close view of a speaker holding a handheld microphone near the mouth, facing image-right; blurred seated figures behind. Large bottom text refers to incidents in life."},
+        {"requested_seek_seconds": 197.4, "observation": "Same recognizable person, microphone and background arrangement. Head/face configuration differs slightly. Bottom text has disappeared; a dark lower gradient remains."},
+        {"requested_seek_seconds": 198.2, "observation": "Same recognizable shot arrangement, microphone still near the mouth. Brow and mouth configurations differ from the middle still. New bottom text continues the statement about incidents."}
+      ],
+      "sampled_scene_comparison": "No obvious shot change at the three sampled instants. Subtitle removal and replacement are visible editorial changes, not independent evidence of spoken-word boundaries or the speaker's intention.",
+      "quiet_interval_seconds": [196.94, 197.88],
+      "interpretation": "If timelines align, the subtitle-free middle still lies inside measured quiet audio. The pattern warrants checking caption presentation separately from actual speaking and silence. It does not establish emotional intensity or intentional suspense.",
+      "rhetorical_pause_status": "unresolved"
+    },
+    {
+      "evidence_id": "gDadfh0ZdBM:00036",
+      "frames": [
+        {"requested_seek_seconds": 131.9, "observation": "Letterboxed scene shows a seated bald character wearing dark glasses in a tufted reddish chair, with hands and a small object in the foreground."},
+        {"requested_seek_seconds": 132.8, "observation": "Different shot shows a dark-haired character without glasses in a closer head view against another background arrangement. Eyelids appear closed."},
+        {"requested_seek_seconds": 133.7, "observation": "Same recognizable dark-haired character and framing as the middle still; eyelids appear open."}
+      ],
+      "sampled_scene_comparison": "A change of shot and visible character is established between the first and middle sampled frames. Exact cut time, intervening cuts and which character is speaking are not established by these stills.",
+      "quiet_interval_seconds": [132.24, 133.5],
+      "interpretation": "The requested-seek bracket for the shot change overlaps the numerical audio quiet interval, conditional on synchronization. The cut could fall before or within that interval; do not report it as precisely synchronized. This is an editing/context confound, not proof the edit caused silence or that a speaker intentionally paused.",
+      "rhetorical_pause_status": "unresolved"
+    }
+  ],
+  "next_test": "Inspect continuous clips with listening, establish decoded timestamps and audio/video alignment, identify speaker turns and subtitle/shot changes, then classify pause function using surrounding speech. Include non-quiet comparison windows and independently review decisions before recurrence claims."
+}

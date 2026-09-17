@@ -1,5 +1,5 @@
 {
-  "schema_version": "0.1",
+  "schema_version": "0.2",
   "patterns": {
     "call_to_action": {
       "candidate_status": "heuristic_retrieval_aid_requires_manual_review",
@@ -211,8 +211,8 @@
     },
     "contrast_or_disagreement": {
       "candidate_status": "heuristic_retrieval_aid_requires_manual_review",
-      "segment_count": 854,
-      "video_count": 277,
+      "segment_count": 851,
+      "video_count": 276,
       "channel_count": 12,
       "examples": [
         {
@@ -315,8 +315,8 @@
     },
     "definition": {
       "candidate_status": "heuristic_retrieval_aid_requires_manual_review",
-      "segment_count": 374,
-      "video_count": 163,
+      "segment_count": 372,
+      "video_count": 162,
       "channel_count": 5,
       "examples": [
         {
@@ -523,8 +523,8 @@
     },
     "question": {
       "candidate_status": "heuristic_retrieval_aid_requires_manual_review",
-      "segment_count": 6207,
-      "video_count": 384,
+      "segment_count": 6181,
+      "video_count": 383,
       "channel_count": 34,
       "examples": [
         {
@@ -627,8 +627,8 @@
     },
     "story_or_personal_experience": {
       "candidate_status": "heuristic_retrieval_aid_requires_manual_review",
-      "segment_count": 1075,
-      "video_count": 266,
+      "segment_count": 1063,
+      "video_count": 265,
       "channel_count": 8,
       "examples": [
         {
@@ -731,8 +731,8 @@
     },
     "uncertainty_or_qualification": {
       "candidate_status": "heuristic_retrieval_aid_requires_manual_review",
-      "segment_count": 3349,
-      "video_count": 340,
+      "segment_count": 3343,
+      "video_count": 339,
       "channel_count": 22,
       "examples": [
         {
@@ -835,8 +835,8 @@
     },
     "unclassified": {
       "candidate_status": "heuristic_retrieval_aid_requires_manual_review",
-      "segment_count": 90397,
-      "video_count": 395,
+      "segment_count": 89980,
+      "video_count": 394,
       "channel_count": 40,
       "examples": [
         {
@@ -937,5 +937,16 @@
         }
       ]
     }
+  },
+  "scope": "Heuristic candidates excluding explicitly restricted sources; absence of a restriction is not verification.",
+  "excluded_source_segments": {
+    "bV5uKHsWQtY": 465
+  },
+  "source_restrictions": {
+    "bV5uKHsWQtY": [
+      "speaker_attribution_unverified",
+      "timestamp_alignment_unreliable",
+      "video_transcript_pairing_unverified"
+    ]
   }
 }

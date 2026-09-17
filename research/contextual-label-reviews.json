@@ -1,0 +1,2396 @@
+{
+  "schema_version": "1.0",
+  "policy": "Append-only contextual re-review, separate from legacy ledger. Decisions apply to individual labels under the documented rubric; not human-review or delivery-effectiveness evidence.",
+  "rubric": {
+    "unclassified": "A retrieval fallback, not a positive speech-function category. A false support flag means it is not admitted as a substantive pattern, not that the passage lacks meaning or the fallback was computed incorrectly. Record contextual function in subtype without silently adding candidate labels; these cases cannot estimate recall.",
+    "contrast_or_disagreement": "Explicit opposition or change between propositions/events; subtype need not be interpersonal disagreement.",
+    "story_or_personal_experience": "A personally attributed event placed in a narrative sequence.",
+    "question": "An interrogative or explicitly narrated self-question; no audience response implied.",
+    "uncertainty_or_qualification": "Explicit qualification of a claim, prediction or interpretation; hypothetical ability alone is insufficient.",
+    "call_to_action": "A present substantive action appeal directed to an audience, including collective proposals and broad encouragement. Embedded advice to a story character, conversational turn allocation and procedural stage management are excluded. A promotional outro can contain an action appeal, but its speaker attribution must remain separate from the featured speech. Support concerns discourse function, not effectiveness or endorsement.",
+    "definition": "Explains a term or phrase through a translation, paraphrase, or concrete unpacking of its intended content. Merely inferring a consequence, assigning significance, or interpreting a symptom/event does not establish a definition. Operational reformulation is distinguished from lexical definition.",
+    "conclusion_or_summary": "A local or whole-speech takeaway that compresses, generalizes, or draws a closing inference from identifiable preceding material. It need not end a speech. A connector or new topic announcement alone is insufficient. Record local versus broad function; no truth or effectiveness endorsement.",
+    "example": "A concrete member, case, comparison, quantity or imagined scenario linked to an identifiable broader point. Distinguish enumeration, illustration and asserted evidence. A marker alone, bare advice or vivid story detail without a local general-to-case relation is insufficient. Support describes discourse function, not factual truth or effectiveness."
+  },
+  "reviews": [
+    {
+      "review_id": "context-20260917-review-002",
+      "annotation_id": "review-002",
+      "evidence_id": "-54zUwySKCg:00059",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "context_evidence_ids": [
+        "-54zUwySKCg:00055",
+        "-54zUwySKCg:00056",
+        "-54zUwySKCg:00057",
+        "-54zUwySKCg:00058",
+        "-54zUwySKCg:00059",
+        "-54zUwySKCg:00060",
+        "-54zUwySKCg:00061",
+        "-54zUwySKCg:00062",
+        "-54zUwySKCg:00063"
+      ],
+      "context_sha256": "fb304d3bc2500be7d7bfae361c0dd9f7ecef1cea7e161a1d11e6a8eb1a4932c6",
+      "label_decisions": {
+        "contrast_or_disagreement": {
+          "supported": true,
+          "reason": "The preceding captions describe sustained success and comfort; 'But' introduces a decision to change direction. This supports contrast, not interpersonal disagreement."
+        },
+        "story_or_personal_experience": {
+          "supported": true,
+          "reason": "A first-person decision anchored a few years earlier is followed by ending the show and launching a network. The inspected sequence supports a personal-story transition."
+        }
+      },
+      "limitations": "Nine adjacent caption segments inspected; no full-video reading, audio listening, visual review or independent adjudication. Transcript errors and boundary choices remain possible."
+    },
+    {
+      "review_id": "context-20260917-review-003",
+      "annotation_id": "review-003",
+      "evidence_id": "-54zUwySKCg:00122",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "context_evidence_ids": [
+        "-54zUwySKCg:00118",
+        "-54zUwySKCg:00119",
+        "-54zUwySKCg:00120",
+        "-54zUwySKCg:00121",
+        "-54zUwySKCg:00122",
+        "-54zUwySKCg:00123",
+        "-54zUwySKCg:00124",
+        "-54zUwySKCg:00125",
+        "-54zUwySKCg:00126"
+      ],
+      "context_sha256": "794b0e3962a4b40d18d7b10db669914a1fb68b82bbd562ac38116e1ff1ade5ad",
+      "label_decisions": {
+        "question": {
+          "supported": true,
+          "reason": "The narrator reports asking what she could do, then describes asking viewers to collect change. This is a narrated self-question, not an observed audience exchange."
+        },
+        "uncertainty_or_qualification": {
+          "supported": false,
+          "reason": "Under the claim-qualification definition, 'could' describes hypothetical capacity inside a narrated question. No factual assertion or prediction is explicitly hedged in this context. A broader wondering category could differ; no internal uncertainty is inferred."
+        }
+      },
+      "limitations": "Nine adjacent caption segments inspected; no full-video reading, audio listening, visual review or independent adjudication. Transcript errors and boundary choices remain possible."
+    },
+    {
+      "review_id": "context-20260917-review-014",
+      "annotation_id": "review-014",
+      "evidence_id": "S43F1BZfQKY:00011",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "context_evidence_ids": [
+        "S43F1BZfQKY:00007",
+        "S43F1BZfQKY:00008",
+        "S43F1BZfQKY:00009",
+        "S43F1BZfQKY:00010",
+        "S43F1BZfQKY:00011",
+        "S43F1BZfQKY:00012",
+        "S43F1BZfQKY:00013",
+        "S43F1BZfQKY:00014",
+        "S43F1BZfQKY:00015"
+      ],
+      "context_sha256": "44578d0ae35ac6a1a19eb1ccf1c3375dcc0c5fb817344bf85577cf005b29b048",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": false,
+          "reason": "The recommendation is attributed to the boyfriend within a past event. It is not a request for the current audience to act."
+        },
+        "story_or_personal_experience": {
+          "supported": true,
+          "reason": "The narrator describes a sequence of hair loss, a boyfriend's suggestion, crying that night and visiting a shop two weeks later. The target is an event within that personal story."
+        }
+      },
+      "limitations": "Nine adjacent caption segments inspected; no full-video reading, audio listening, visual review or independent adjudication. Transcript errors and boundary choices remain possible."
+    },
+    {
+      "annotation_id": "review-006",
+      "evidence_id": "-6qN3bm2RYo:00068",
+      "context_evidence_ids": [
+        "-6qN3bm2RYo:00065",
+        "-6qN3bm2RYo:00066",
+        "-6qN3bm2RYo:00067",
+        "-6qN3bm2RYo:00068",
+        "-6qN3bm2RYo:00069",
+        "-6qN3bm2RYo:00070",
+        "-6qN3bm2RYo:00071"
+      ],
+      "context_sha256": "2620d8b7fc0f56b3cd4867e31c207a456e75fb5e6a79134c49ca5f5670dacf41",
+      "review_id": "context-20260917-review-006",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "definition": {
+          "supported": true,
+          "subtype": "operational_reformulation",
+          "reason": "The surrounding phrase is liberation from a colonial mindset; the next captions unpack its external content as reformed multilateralism and contemporary global governance. This supports operational reformulation, not a dictionary definition. The boundary with policy implication is interpretive; confidence is moderate."
+        }
+      },
+      "limitations": "Seven adjacent captions inspected. No audio/video review, full-speech reading or independent human adjudication. Transcript errors and category boundaries remain possible."
+    },
+    {
+      "annotation_id": "review-027",
+      "evidence_id": "3AIoHLr8nTI:00046",
+      "context_evidence_ids": [
+        "3AIoHLr8nTI:00043",
+        "3AIoHLr8nTI:00044",
+        "3AIoHLr8nTI:00045",
+        "3AIoHLr8nTI:00046",
+        "3AIoHLr8nTI:00047",
+        "3AIoHLr8nTI:00048",
+        "3AIoHLr8nTI:00049"
+      ],
+      "context_sha256": "6df41b77b17750e200bca2573386e5776ac542cdf0f5c61bc307857ef74b6629",
+      "review_id": "context-20260917-review-027",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "definition": {
+          "supported": true,
+          "subtype": "pragmatic_paraphrase",
+          "reason": "The speaker supplies an imagined paraphrase of 'I tolerate you' and contrasts tolerance with acceptance. It explains the intended pragmatic meaning, not a universally valid lexical definition."
+        }
+      },
+      "limitations": "Seven adjacent captions inspected. No audio/video review, full-speech reading or independent human adjudication. Transcript errors and category boundaries remain possible."
+    },
+    {
+      "annotation_id": "review-028",
+      "evidence_id": "fBnAMUkNM2k:00068",
+      "context_evidence_ids": [
+        "fBnAMUkNM2k:00065",
+        "fBnAMUkNM2k:00066",
+        "fBnAMUkNM2k:00067",
+        "fBnAMUkNM2k:00068",
+        "fBnAMUkNM2k:00069",
+        "fBnAMUkNM2k:00070",
+        "fBnAMUkNM2k:00071"
+      ],
+      "context_sha256": "868ef214467bdca8c98e3c8f673064104756c43654562c461ceae45b1c6c206d",
+      "review_id": "context-20260917-review-028",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "definition": {
+          "supported": false,
+          "subtype": "interpretive_claim",
+          "reason": "The completed clause says telling a story without crying indicates healing. It interprets an event as a sign; it does not explain the meaning of a term. No health or mental-state claim is validated here. The legacy observation also omitted the negation spanning the preceding caption."
+        }
+      },
+      "limitations": "Seven adjacent captions inspected. No audio/video review, full-speech reading or independent human adjudication. Transcript errors and category boundaries remain possible."
+    },
+    {
+      "annotation_id": "review-029",
+      "evidence_id": "qOwYULOPuPs:00279",
+      "context_evidence_ids": [
+        "qOwYULOPuPs:00276",
+        "qOwYULOPuPs:00277",
+        "qOwYULOPuPs:00278",
+        "qOwYULOPuPs:00279",
+        "qOwYULOPuPs:00280",
+        "qOwYULOPuPs:00281",
+        "qOwYULOPuPs:00282"
+      ],
+      "context_sha256": "f7edc04c9cf933c35fa104fd6754a0c6ebd5eea9b4f9252c4fba041b30f3d75a",
+      "review_id": "context-20260917-review-029",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "definition": {
+          "supported": false,
+          "subtype": "rhetorical_consequence",
+          "reason": "Energy control is linked to control of destiny following an energy-access proposal. This is a persuasive consequence/equivalence claim, not a paraphrase establishing what energy or destiny means."
+        }
+      },
+      "limitations": "Seven adjacent captions inspected. No audio/video review, full-speech reading or independent human adjudication. Transcript errors and category boundaries remain possible."
+    },
+    {
+      "annotation_id": "review-082",
+      "evidence_id": "OfwfTN1mEyM:00055",
+      "context_evidence_ids": [
+        "OfwfTN1mEyM:00052",
+        "OfwfTN1mEyM:00053",
+        "OfwfTN1mEyM:00054",
+        "OfwfTN1mEyM:00055",
+        "OfwfTN1mEyM:00056",
+        "OfwfTN1mEyM:00057",
+        "OfwfTN1mEyM:00058"
+      ],
+      "context_sha256": "5b3e05c8ab39d109b78c1fe71afe1dc7b5f434697401a624fa0798be0440aff9",
+      "review_id": "context-20260917-review-082",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "definition": {
+          "supported": false,
+          "subtype": "inference_from_quantity",
+          "reason": "The preceding water-versus-land statistic is followed by a claim about the potential for solving water problems. 'What that means' introduces an inference, not a term definition. This review does not validate that inference."
+        }
+      },
+      "limitations": "Seven adjacent captions inspected. No audio/video review, full-speech reading or independent human adjudication. Transcript errors and category boundaries remain possible."
+    },
+    {
+      "annotation_id": "review-083",
+      "evidence_id": "_Mb1-CN3wZs:00048",
+      "context_evidence_ids": [
+        "_Mb1-CN3wZs:00045",
+        "_Mb1-CN3wZs:00046",
+        "_Mb1-CN3wZs:00047",
+        "_Mb1-CN3wZs:00048",
+        "_Mb1-CN3wZs:00049",
+        "_Mb1-CN3wZs:00050",
+        "_Mb1-CN3wZs:00051"
+      ],
+      "context_sha256": "38365771c91af72a263bfcf70ea63d07a18e4ec90e56f852ec56a014e67d087f",
+      "review_id": "context-20260917-review-083",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "definition": {
+          "supported": true,
+          "subtype": "lexical_gloss_in_dialogue",
+          "reason": "The transcript explicitly offers a meaning for a code word, with an approximation marker. This supports a lexical-gloss act within dialogue, not factual correctness of the gloss or its suitability as a public-speaking technique."
+        }
+      },
+      "limitations": "Seven adjacent captions inspected. No audio/video review, full-speech reading or independent human adjudication. Transcript errors and category boundaries remain possible."
+    },
+    {
+      "annotation_id": "review-084",
+      "evidence_id": "fBnAMUkNM2k:00374",
+      "context_evidence_ids": [
+        "fBnAMUkNM2k:00371",
+        "fBnAMUkNM2k:00372",
+        "fBnAMUkNM2k:00373",
+        "fBnAMUkNM2k:00374",
+        "fBnAMUkNM2k:00375",
+        "fBnAMUkNM2k:00376",
+        "fBnAMUkNM2k:00377"
+      ],
+      "context_sha256": "996bd31a649e8e2bd62831dbee714666b35f743d0de697c0a17d4ed49c26a4dc",
+      "review_id": "context-20260917-review-084",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "definition": {
+          "supported": true,
+          "subtype": "translation_gloss",
+          "reason": "The name Bijli is followed by an explicit translation as electricity, then dialogue about the name. The translation act is present in the text; linguistic accuracy is not independently checked."
+        }
+      },
+      "limitations": "Seven adjacent captions inspected. No audio/video review, full-speech reading or independent human adjudication. Transcript errors and category boundaries remain possible."
+    },
+    {
+      "annotation_id": "review-085",
+      "evidence_id": "pmAL79dnvu0:00047",
+      "context_evidence_ids": [
+        "pmAL79dnvu0:00044",
+        "pmAL79dnvu0:00045",
+        "pmAL79dnvu0:00046",
+        "pmAL79dnvu0:00047",
+        "pmAL79dnvu0:00048",
+        "pmAL79dnvu0:00049",
+        "pmAL79dnvu0:00050"
+      ],
+      "context_sha256": "856e7d989d070071aea76cdf3465e95c5eaeb0a16fa5b76a572012e4f3e0daea",
+      "review_id": "context-20260917-review-085",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "definition": {
+          "supported": false,
+          "subtype": "personal_significance_and_action",
+          "reason": "The flag's significance to the speaker is connected to voting. The passage explains a personal motivation/action, not the meaning of a term."
+        }
+      },
+      "limitations": "Seven adjacent captions inspected. No audio/video review, full-speech reading or independent human adjudication. Transcript errors and category boundaries remain possible."
+    },
+    {
+      "annotation_id": "review-086",
+      "evidence_id": "AwA0Jnfj3ao:00174",
+      "context_evidence_ids": [
+        "AwA0Jnfj3ao:00171",
+        "AwA0Jnfj3ao:00172",
+        "AwA0Jnfj3ao:00173",
+        "AwA0Jnfj3ao:00174",
+        "AwA0Jnfj3ao:00175",
+        "AwA0Jnfj3ao:00176",
+        "AwA0Jnfj3ao:00177"
+      ],
+      "context_sha256": "bd10e45dd9d7420441796b64c18ab7278c5b1c0db9972d95d40e9c50029ee689",
+      "review_id": "context-20260917-review-086",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "definition": {
+          "supported": false,
+          "subtype": "significance_statement",
+          "reason": "'It means a lot' follows a discussion of drawing a series as a moral victory. It assigns significance rather than defining a term. The odd 'learned Edward' transcript fragment is not enough to establish the legacy claim about learning a name."
+        }
+      },
+      "limitations": "Seven adjacent captions inspected. No audio/video review, full-speech reading or independent human adjudication. Transcript errors and category boundaries remain possible."
+    },
+    {
+      "annotation_id": "review-005",
+      "evidence_id": "-54zUwySKCg:00196",
+      "context_evidence_ids": [
+        "-54zUwySKCg:00191",
+        "-54zUwySKCg:00192",
+        "-54zUwySKCg:00193",
+        "-54zUwySKCg:00194",
+        "-54zUwySKCg:00195",
+        "-54zUwySKCg:00196",
+        "-54zUwySKCg:00197",
+        "-54zUwySKCg:00198",
+        "-54zUwySKCg:00199"
+      ],
+      "context_sha256": "402b1cbf9be381b9b841712786d6166524a4f88c3877cdf204add1035063cf00",
+      "review_id": "context-20260917-review-005",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "conclusion_or_summary": {
+          "supported": true,
+          "subtype": "broad_takeaway_and_charge",
+          "reason": "Several possible ways to make a difference precede a general charge to the generation to change political conditions. This is a broad takeaway tied to those examples, not merely an isolated 'point' marker. Full speech closure is not established."
+        }
+      },
+      "limitations": "Up to five preceding and three following captions inspected, clipped at transcript start. No full-transcript reading, audio/video review or independent adjudication. Local versus global conclusion remains explicit."
+    },
+    {
+      "annotation_id": "review-010",
+      "evidence_id": "-URn1fARvts:00119",
+      "context_evidence_ids": [
+        "-URn1fARvts:00114",
+        "-URn1fARvts:00115",
+        "-URn1fARvts:00116",
+        "-URn1fARvts:00117",
+        "-URn1fARvts:00118",
+        "-URn1fARvts:00119",
+        "-URn1fARvts:00120",
+        "-URn1fARvts:00121",
+        "-URn1fARvts:00122"
+      ],
+      "context_sha256": "b60e5f0abde7f2d6475388835eb5c4680bcf0d4d6750f6cbba0f748806683f3f",
+      "review_id": "context-20260917-review-010",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "conclusion_or_summary": {
+          "supported": true,
+          "subtype": "autobiographical_summary",
+          "reason": "The earlier captions describe combining skills, asking hard questions and willingness to learn; the following complete sentence compresses school and sport into critical curiosity and learning about the world. Some transcript phrasing remains uncertain."
+        }
+      },
+      "limitations": "Up to five preceding and three following captions inspected, clipped at transcript start. No full-transcript reading, audio/video review or independent adjudication. Local versus global conclusion remains explicit."
+    },
+    {
+      "annotation_id": "review-016",
+      "evidence_id": "3AIoHLr8nTI:00003",
+      "context_evidence_ids": [
+        "3AIoHLr8nTI:00000",
+        "3AIoHLr8nTI:00001",
+        "3AIoHLr8nTI:00002",
+        "3AIoHLr8nTI:00003",
+        "3AIoHLr8nTI:00004",
+        "3AIoHLr8nTI:00005",
+        "3AIoHLr8nTI:00006"
+      ],
+      "context_sha256": "7967747e434220b4eba9cb9f3889322b14fcf92ae2ba38defc1377c9740fda35",
+      "review_id": "context-20260917-review-016",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "conclusion_or_summary": {
+          "supported": false,
+          "subtype": "opening_inference_and_agenda",
+          "reason": "The speaker moves from graduates' potential to responsibility and then announces today's topic. This is an opening inference/agenda, not a summary of a developed account. 'Therefore' alone does not support the label."
+        }
+      },
+      "limitations": "Up to five preceding and three following captions inspected, clipped at transcript start. No full-transcript reading, audio/video review or independent adjudication. Local versus global conclusion remains explicit."
+    },
+    {
+      "annotation_id": "review-017",
+      "evidence_id": "aXmM0VZv810:00483",
+      "context_evidence_ids": [
+        "aXmM0VZv810:00478",
+        "aXmM0VZv810:00479",
+        "aXmM0VZv810:00480",
+        "aXmM0VZv810:00481",
+        "aXmM0VZv810:00482",
+        "aXmM0VZv810:00483",
+        "aXmM0VZv810:00484",
+        "aXmM0VZv810:00485",
+        "aXmM0VZv810:00486"
+      ],
+      "context_sha256": "dc7f47d365854f2353abd912b6e59503efcdeca08c72e8ea6ee67d8ff2646053",
+      "review_id": "context-20260917-review-017",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "conclusion_or_summary": {
+          "supported": true,
+          "subtype": "local_argumentative_conclusion",
+          "reason": "The preceding energy-use criterion leads to a prioritizing conclusion that space matters. It is a local argumentative takeaway, not a speech-ending summary. Additional support follows; garbled scientific wording is not repaired or fact-checked here."
+        }
+      },
+      "limitations": "Up to five preceding and three following captions inspected, clipped at transcript start. No full-transcript reading, audio/video review or independent adjudication. Local versus global conclusion remains explicit."
+    },
+    {
+      "annotation_id": "review-023",
+      "evidence_id": "qOwYULOPuPs:00124",
+      "context_evidence_ids": [
+        "qOwYULOPuPs:00119",
+        "qOwYULOPuPs:00120",
+        "qOwYULOPuPs:00121",
+        "qOwYULOPuPs:00122",
+        "qOwYULOPuPs:00123",
+        "qOwYULOPuPs:00124",
+        "qOwYULOPuPs:00125",
+        "qOwYULOPuPs:00126",
+        "qOwYULOPuPs:00127"
+      ],
+      "context_sha256": "4f99ec3ee457c7b0619e0011346d9d002f50bd93f26deb9523c28b8d3cac436e",
+      "review_id": "context-20260917-review-023",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "conclusion_or_summary": {
+          "supported": true,
+          "subtype": "compressed_evaluation",
+          "reason": "The preceding account lists proposed terms and effects on industries; a two-part evaluation compresses that account before the narrative resumes. The political evaluation's truth is not assessed."
+        }
+      },
+      "limitations": "Up to five preceding and three following captions inspected, clipped at transcript start. No full-transcript reading, audio/video review or independent adjudication. Local versus global conclusion remains explicit."
+    },
+    {
+      "annotation_id": "review-087",
+      "evidence_id": "AwA0Jnfj3ao:00234",
+      "context_evidence_ids": [
+        "AwA0Jnfj3ao:00229",
+        "AwA0Jnfj3ao:00230",
+        "AwA0Jnfj3ao:00231",
+        "AwA0Jnfj3ao:00232",
+        "AwA0Jnfj3ao:00233",
+        "AwA0Jnfj3ao:00234",
+        "AwA0Jnfj3ao:00235",
+        "AwA0Jnfj3ao:00236",
+        "AwA0Jnfj3ao:00237"
+      ],
+      "context_sha256": "8f0f5ab16c010e248888ed7565728b2e1d1563303cb1b56eb2268a27ceb37ce7",
+      "review_id": "context-20260917-review-087",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "conclusion_or_summary": {
+          "supported": true,
+          "subtype": "story_to_principle",
+          "reason": "The preceding cricket sequence describes anticipating an opponent and warning a teammate. The target states the general lesson of being a step ahead, followed by interviewer thanks. This supports a story-to-principle summary, not proof the strategy is universally useful."
+        }
+      },
+      "limitations": "Up to five preceding and three following captions inspected, clipped at transcript start. No full-transcript reading, audio/video review or independent adjudication. Local versus global conclusion remains explicit."
+    },
+    {
+      "annotation_id": "review-042",
+      "evidence_id": "3AIoHLr8nTI:00008",
+      "context_evidence_ids": [
+        "3AIoHLr8nTI:00004",
+        "3AIoHLr8nTI:00005",
+        "3AIoHLr8nTI:00006",
+        "3AIoHLr8nTI:00007",
+        "3AIoHLr8nTI:00008",
+        "3AIoHLr8nTI:00009",
+        "3AIoHLr8nTI:00010",
+        "3AIoHLr8nTI:00011",
+        "3AIoHLr8nTI:00012"
+      ],
+      "context_sha256": "d93d552a31f6dc7f3d9b318db7e6c06dc70f8910f2e465d9b24b764005e64d9d",
+      "review_id": "context-20260917-review-042",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "uncertainty_or_qualification": {
+          "supported": true,
+          "subtype": "opinion_framed_evaluation",
+          "view_attribution": "current_turn_text",
+          "reason": "After describing the group's diversity, 'I think' introduces an evaluation of its value. This marks the evaluation as a view; it does not establish weak conviction or internal uncertainty."
+        }
+      },
+      "limitations": "Nine adjacent captions inspected, no full-speech reading, audio/video inspection or independent adjudication. View attribution concerns textual framing, not verified speaker identity or internal mental state."
+    },
+    {
+      "annotation_id": "review-043",
+      "evidence_id": "9fEurt2OZ0I:00020",
+      "context_evidence_ids": [
+        "9fEurt2OZ0I:00016",
+        "9fEurt2OZ0I:00017",
+        "9fEurt2OZ0I:00018",
+        "9fEurt2OZ0I:00019",
+        "9fEurt2OZ0I:00020",
+        "9fEurt2OZ0I:00021",
+        "9fEurt2OZ0I:00022",
+        "9fEurt2OZ0I:00023",
+        "9fEurt2OZ0I:00024"
+      ],
+      "context_sha256": "dc825c117188513f1157c1cfa3b44e5dd0d9d6725a17002d5d343eb263c92667",
+      "review_id": "context-20260917-review-043",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "uncertainty_or_qualification": {
+          "supported": true,
+          "subtype": "opinion_framed_recommendation",
+          "view_attribution": "current_turn_text",
+          "reason": "Following repeated rejection in the account, 'I think' frames the recommendation to get used to rejection. 'Have to' still expresses necessity. No softness of vocal delivery is inferred."
+        }
+      },
+      "limitations": "Nine adjacent captions inspected, no full-speech reading, audio/video inspection or independent adjudication. View attribution concerns textual framing, not verified speaker identity or internal mental state."
+    },
+    {
+      "annotation_id": "review-044",
+      "evidence_id": "r2kP2Pqdx6w:00014",
+      "context_evidence_ids": [
+        "r2kP2Pqdx6w:00010",
+        "r2kP2Pqdx6w:00011",
+        "r2kP2Pqdx6w:00012",
+        "r2kP2Pqdx6w:00013",
+        "r2kP2Pqdx6w:00014",
+        "r2kP2Pqdx6w:00015",
+        "r2kP2Pqdx6w:00016",
+        "r2kP2Pqdx6w:00017",
+        "r2kP2Pqdx6w:00018"
+      ],
+      "context_sha256": "e472613c02f84ebecdee222c82abfe128fd9b186782091fe659ff3202344e228",
+      "review_id": "context-20260917-review-044",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "uncertainty_or_qualification": {
+          "supported": true,
+          "subtype": "qualified_possibility_in_exchange",
+          "view_attribution": "turn_attribution_unresolved",
+          "reason": "The exchange about an alternative expansion of AI is followed by 'might end up being true' and 'you never know'. Possibility is textually qualified, but captions do not reliably assign this response to a speaker or establish whether it is humorous."
+        }
+      },
+      "limitations": "Nine adjacent captions inspected, no full-speech reading, audio/video inspection or independent adjudication. View attribution concerns textual framing, not verified speaker identity or internal mental state."
+    },
+    {
+      "annotation_id": "review-072",
+      "evidence_id": "2fWJh-_UG5s:00160",
+      "context_evidence_ids": [
+        "2fWJh-_UG5s:00156",
+        "2fWJh-_UG5s:00157",
+        "2fWJh-_UG5s:00158",
+        "2fWJh-_UG5s:00159",
+        "2fWJh-_UG5s:00160",
+        "2fWJh-_UG5s:00161",
+        "2fWJh-_UG5s:00162",
+        "2fWJh-_UG5s:00163",
+        "2fWJh-_UG5s:00164"
+      ],
+      "context_sha256": "2564b6fa930d1b77d03273b5b77c01872c0f632a093ef69ba41b8f62d6c4c94c",
+      "review_id": "context-20260917-review-072",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "uncertainty_or_qualification": {
+          "supported": true,
+          "subtype": "reported_hypothetical_consequence",
+          "view_attribution": "reported_other_people_text",
+          "reason": "The surrounding clauses say Ryan and Jessica said sharing the art might have a hoped-for consequence. The qualification is in reported speech, not evidence of the narrator's own belief strength. No afterlife or emotional-response claim is validated."
+        }
+      },
+      "limitations": "Nine adjacent captions inspected, no full-speech reading, audio/video inspection or independent adjudication. View attribution concerns textual framing, not verified speaker identity or internal mental state."
+    },
+    {
+      "annotation_id": "review-073",
+      "evidence_id": "3AIoHLr8nTI:00074",
+      "context_evidence_ids": [
+        "3AIoHLr8nTI:00070",
+        "3AIoHLr8nTI:00071",
+        "3AIoHLr8nTI:00072",
+        "3AIoHLr8nTI:00073",
+        "3AIoHLr8nTI:00074",
+        "3AIoHLr8nTI:00075",
+        "3AIoHLr8nTI:00076",
+        "3AIoHLr8nTI:00077",
+        "3AIoHLr8nTI:00078"
+      ],
+      "context_sha256": "eea01197670235a74807e324884dd55eb268fd2e26845b45e8fab85d7fbb077f",
+      "review_id": "context-20260917-review-073",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "uncertainty_or_qualification": {
+          "supported": true,
+          "subtype": "opinion_framed_advice_with_reinforcement",
+          "view_attribution": "current_turn_text",
+          "reason": "A question about leadership is answered with 'I think you need to be brave', followed by 'Really brave'. The viewpoint marker coexists with textually reinforced advice; it does not prove hesitation."
+        }
+      },
+      "limitations": "Nine adjacent captions inspected, no full-speech reading, audio/video inspection or independent adjudication. View attribution concerns textual framing, not verified speaker identity or internal mental state."
+    },
+    {
+      "annotation_id": "review-074",
+      "evidence_id": "C8-twwwTETE:00045",
+      "context_evidence_ids": [
+        "C8-twwwTETE:00041",
+        "C8-twwwTETE:00042",
+        "C8-twwwTETE:00043",
+        "C8-twwwTETE:00044",
+        "C8-twwwTETE:00045",
+        "C8-twwwTETE:00046",
+        "C8-twwwTETE:00047",
+        "C8-twwwTETE:00048",
+        "C8-twwwTETE:00049"
+      ],
+      "context_sha256": "905e904fa9eb75978f102d921a75b27312db9cbec8d551bf607c0ae2b0ba677a",
+      "review_id": "context-20260917-review-074",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "uncertainty_or_qualification": {
+          "supported": true,
+          "subtype": "qualified_retrospective_self_evaluation",
+          "view_attribution": "current_turn_text",
+          "reason": "The narrator describes talking at length to someone, then uses 'I think' and 'might have probably' to evaluate whether it was excessive. The continuation is needed to complete the clause; this is not an acoustic uncertainty judgment."
+        }
+      },
+      "limitations": "Nine adjacent captions inspected, no full-speech reading, audio/video inspection or independent adjudication. View attribution concerns textual framing, not verified speaker identity or internal mental state."
+    },
+    {
+      "annotation_id": "review-075",
+      "evidence_id": "OfwfTN1mEyM:00041",
+      "context_evidence_ids": [
+        "OfwfTN1mEyM:00037",
+        "OfwfTN1mEyM:00038",
+        "OfwfTN1mEyM:00039",
+        "OfwfTN1mEyM:00040",
+        "OfwfTN1mEyM:00041",
+        "OfwfTN1mEyM:00042",
+        "OfwfTN1mEyM:00043",
+        "OfwfTN1mEyM:00044",
+        "OfwfTN1mEyM:00045"
+      ],
+      "context_sha256": "5c20f09fe59bc28f24e630ed3432677d833998abf395a252037d14e176504639",
+      "review_id": "context-20260917-review-075",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "uncertainty_or_qualification": {
+          "supported": true,
+          "subtype": "conditional_and_opinion_framed_prediction",
+          "view_attribution": "current_turn_text",
+          "reason": "The preceding conditional excludes complacency or entitlement, and 'I think' introduces an optimistic forecast. It qualifies the prediction as a viewpoint under a stated condition, not as an objectively validated forecast."
+        }
+      },
+      "limitations": "Nine adjacent captions inspected, no full-speech reading, audio/video inspection or independent adjudication. View attribution concerns textual framing, not verified speaker identity or internal mental state."
+    },
+    {
+      "annotation_id": "review-076",
+      "evidence_id": "aXmM0VZv810:00350",
+      "context_evidence_ids": [
+        "aXmM0VZv810:00346",
+        "aXmM0VZv810:00347",
+        "aXmM0VZv810:00348",
+        "aXmM0VZv810:00349",
+        "aXmM0VZv810:00350",
+        "aXmM0VZv810:00351",
+        "aXmM0VZv810:00352",
+        "aXmM0VZv810:00353",
+        "aXmM0VZv810:00354"
+      ],
+      "context_sha256": "b11fc748adafd13f42417315e3e526c00b67e3c1340a41c65b7f1a82f05a72ca",
+      "review_id": "context-20260917-review-076",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "uncertainty_or_qualification": {
+          "supported": true,
+          "subtype": "opinion_framed_generalization",
+          "view_attribution": "current_turn_text",
+          "reason": "After discussing research and AI, 'I think' introduces a broad claim that humanity will always shift to new value pools. The view marker coexists with 'always'; the generalization's truth and the speaker's certainty are not assessed."
+        }
+      },
+      "limitations": "Nine adjacent captions inspected, no full-speech reading, audio/video inspection or independent adjudication. View attribution concerns textual framing, not verified speaker identity or internal mental state."
+    },
+    {
+      "annotation_id": "review-007",
+      "evidence_id": "-6qN3bm2RYo:00079",
+      "context_evidence_ids": [
+        "-6qN3bm2RYo:00075",
+        "-6qN3bm2RYo:00076",
+        "-6qN3bm2RYo:00077",
+        "-6qN3bm2RYo:00078",
+        "-6qN3bm2RYo:00079",
+        "-6qN3bm2RYo:00080",
+        "-6qN3bm2RYo:00081",
+        "-6qN3bm2RYo:00082",
+        "-6qN3bm2RYo:00083"
+      ],
+      "context_sha256": "82b15df57cea2c32f64574b81290eb48491c3ee4deaff6bca7f180096da5ba12",
+      "review_id": "context-20260917-review-007",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "example": {
+          "supported": true,
+          "subtype": "category_enumeration",
+          "reason": "Global issues are unpacked into terrorism, pandemics and the environment after a statement about unity. These are category members, not detailed empirical cases or evidence that the policy succeeds."
+        }
+      },
+      "limitations": "Context IDs record the actual inspected window; three cases expanded beyond nine captions to complete the illustration. No full-speech reading, audio/video inspection, fact-check of source assertions or independent human adjudication."
+    },
+    {
+      "annotation_id": "review-018",
+      "evidence_id": "aXmM0VZv810:00274",
+      "context_evidence_ids": [
+        "aXmM0VZv810:00270",
+        "aXmM0VZv810:00271",
+        "aXmM0VZv810:00272",
+        "aXmM0VZv810:00273",
+        "aXmM0VZv810:00274",
+        "aXmM0VZv810:00275",
+        "aXmM0VZv810:00276",
+        "aXmM0VZv810:00277",
+        "aXmM0VZv810:00278",
+        "aXmM0VZv810:00279",
+        "aXmM0VZv810:00280",
+        "aXmM0VZv810:00281",
+        "aXmM0VZv810:00282",
+        "aXmM0VZv810:00283",
+        "aXmM0VZv810:00284",
+        "aXmM0VZv810:00285",
+        "aXmM0VZv810:00286",
+        "aXmM0VZv810:00287",
+        "aXmM0VZv810:00288",
+        "aXmM0VZv810:00289",
+        "aXmM0VZv810:00290"
+      ],
+      "context_sha256": "81045f6905d400e005c92ef1ad7c19fd91d1e110e1eac17648324de99a12a801",
+      "review_id": "context-20260917-review-018",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "example": {
+          "supported": true,
+          "subtype": "asserted_domain_case_with_explanation",
+          "reason": "The speaker introduces radiology as a case for a claim about technology and work, contrasts a forecast with an asserted employment trend, then explains a goal-versus-task distinction. The extended context establishes the illustration; the medical/employment assertions are not independently validated."
+        }
+      },
+      "limitations": "Context IDs record the actual inspected window; three cases expanded beyond nine captions to complete the illustration. No full-speech reading, audio/video inspection, fact-check of source assertions or independent human adjudication."
+    },
+    {
+      "annotation_id": "review-030",
+      "evidence_id": "S43F1BZfQKY:00018",
+      "context_evidence_ids": [
+        "S43F1BZfQKY:00014",
+        "S43F1BZfQKY:00015",
+        "S43F1BZfQKY:00016",
+        "S43F1BZfQKY:00017",
+        "S43F1BZfQKY:00018",
+        "S43F1BZfQKY:00019",
+        "S43F1BZfQKY:00020",
+        "S43F1BZfQKY:00021",
+        "S43F1BZfQKY:00022"
+      ],
+      "context_sha256": "e913bdff6de3944e68b66b36aea6cb8dfec82382afad3d520c6b1e9777a8acaf",
+      "review_id": "context-20260917-review-030",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "example": {
+          "supported": false,
+          "subtype": "vivid_detail_inside_personal_story",
+          "reason": "The shop visit continues with a wig being shown and bought, followed by the narrator's reported reaction. 'Imagine' intensifies description of that object rather than introducing a case for general reasoning. The source explicitly says wig shop owner; the legacy record's doctor attribution is unsupported."
+        }
+      },
+      "limitations": "Context IDs record the actual inspected window; three cases expanded beyond nine captions to complete the illustration. No full-speech reading, audio/video inspection, fact-check of source assertions or independent human adjudication."
+    },
+    {
+      "annotation_id": "review-031",
+      "evidence_id": "aXmM0VZv810:00596",
+      "context_evidence_ids": [
+        "aXmM0VZv810:00592",
+        "aXmM0VZv810:00593",
+        "aXmM0VZv810:00594",
+        "aXmM0VZv810:00595",
+        "aXmM0VZv810:00596",
+        "aXmM0VZv810:00597",
+        "aXmM0VZv810:00598",
+        "aXmM0VZv810:00599",
+        "aXmM0VZv810:00600",
+        "aXmM0VZv810:00601",
+        "aXmM0VZv810:00602",
+        "aXmM0VZv810:00603",
+        "aXmM0VZv810:00604",
+        "aXmM0VZv810:00605",
+        "aXmM0VZv810:00606",
+        "aXmM0VZv810:00607",
+        "aXmM0VZv810:00608",
+        "aXmM0VZv810:00609",
+        "aXmM0VZv810:00610",
+        "aXmM0VZv810:00611",
+        "aXmM0VZv810:00612"
+      ],
+      "context_sha256": "fcc9ef944d87b28d57d22e4697929e2f47b12b56f51ea83dbda2f4c2aed94844",
+      "review_id": "context-20260917-review-031",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "example": {
+          "supported": true,
+          "subtype": "quantitative_before_after_case",
+          "reason": "A claim about movement toward accelerated computing is followed by a top-500-supercomputer percentage comparison and a return to the transition claim. The transcript gives both 'less than 15%' and '10%' for the later CPU share; these must not be silently reconciled. The numerical claim is not fact-checked."
+        }
+      },
+      "limitations": "Context IDs record the actual inspected window; three cases expanded beyond nine captions to complete the illustration. No full-speech reading, audio/video inspection, fact-check of source assertions or independent human adjudication."
+    },
+    {
+      "annotation_id": "review-032",
+      "evidence_id": "qOwYULOPuPs:00221",
+      "context_evidence_ids": [
+        "qOwYULOPuPs:00217",
+        "qOwYULOPuPs:00218",
+        "qOwYULOPuPs:00219",
+        "qOwYULOPuPs:00220",
+        "qOwYULOPuPs:00221",
+        "qOwYULOPuPs:00222",
+        "qOwYULOPuPs:00223",
+        "qOwYULOPuPs:00224",
+        "qOwYULOPuPs:00225",
+        "qOwYULOPuPs:00226",
+        "qOwYULOPuPs:00227",
+        "qOwYULOPuPs:00228",
+        "qOwYULOPuPs:00229",
+        "qOwYULOPuPs:00230",
+        "qOwYULOPuPs:00231",
+        "qOwYULOPuPs:00232",
+        "qOwYULOPuPs:00233"
+      ],
+      "context_sha256": "463d23d91aa5f357d774396e094147216dfbb720dac33f9dcebd448931363b8b",
+      "review_id": "context-20260917-review-032",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "example": {
+          "supported": true,
+          "subtype": "named_institutional_case",
+          "reason": "A general contrast between deals and agreements is illustrated by an announced company contract; the passage returns to a claim about why companies can reach agreements. The case's occurrence, name spelling and claimed benefits are not independently verified."
+        }
+      },
+      "limitations": "Context IDs record the actual inspected window; three cases expanded beyond nine captions to complete the illustration. No full-speech reading, audio/video inspection, fact-check of source assertions or independent human adjudication."
+    },
+    {
+      "annotation_id": "review-062",
+      "evidence_id": "aXmM0VZv810:00529",
+      "context_evidence_ids": [
+        "aXmM0VZv810:00525",
+        "aXmM0VZv810:00526",
+        "aXmM0VZv810:00527",
+        "aXmM0VZv810:00528",
+        "aXmM0VZv810:00529",
+        "aXmM0VZv810:00530",
+        "aXmM0VZv810:00531",
+        "aXmM0VZv810:00532",
+        "aXmM0VZv810:00533"
+      ],
+      "context_sha256": "b74257db140b2c9d30c1047486e46e63fe9c68f68779413dcb375db24d160a8e",
+      "review_id": "context-20260917-review-062",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "example": {
+          "supported": true,
+          "subtype": "scale_visualization_of_existing_object",
+          "reason": "A discussion of rack weight and cooling is followed by an invitation to imagine the small computational object. This is concrete scale illustration of an existing referent, not necessarily a new hypothetical event. Speaker turns are not reliably attributed by captions."
+        }
+      },
+      "limitations": "Context IDs record the actual inspected window; three cases expanded beyond nine captions to complete the illustration. No full-speech reading, audio/video inspection, fact-check of source assertions or independent human adjudication."
+    },
+    {
+      "annotation_id": "review-063",
+      "evidence_id": "gDadfh0ZdBM:00001",
+      "context_evidence_ids": [
+        "gDadfh0ZdBM:00000",
+        "gDadfh0ZdBM:00001",
+        "gDadfh0ZdBM:00002",
+        "gDadfh0ZdBM:00003",
+        "gDadfh0ZdBM:00004",
+        "gDadfh0ZdBM:00005"
+      ],
+      "context_sha256": "df0950629ad022a97868fe1067d68c329228e4e6426984ec64acb1d2048d54a6",
+      "review_id": "context-20260917-review-063",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "example": {
+          "supported": false,
+          "subtype": "bare_advice_not_case",
+          "reason": "The speaker offers advice to be honest, not an event or case illustrating a broader proposition. Later unrelated dialogue in the inspected window does not establish an example relation."
+        }
+      },
+      "limitations": "Context IDs record the actual inspected window; three cases expanded beyond nine captions to complete the illustration. No full-speech reading, audio/video inspection, fact-check of source assertions or independent human adjudication."
+    },
+    {
+      "annotation_id": "review-064",
+      "evidence_id": "jxY2-YgAgm0:00087",
+      "context_evidence_ids": [
+        "jxY2-YgAgm0:00083",
+        "jxY2-YgAgm0:00084",
+        "jxY2-YgAgm0:00085",
+        "jxY2-YgAgm0:00086",
+        "jxY2-YgAgm0:00087",
+        "jxY2-YgAgm0:00088",
+        "jxY2-YgAgm0:00089",
+        "jxY2-YgAgm0:00090",
+        "jxY2-YgAgm0:00091"
+      ],
+      "context_sha256": "0c1d19463047a834c0e9656ce6ab29d04e7d6018737c07d713d61e6edb7bb441",
+      "review_id": "context-20260917-review-064",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "example": {
+          "supported": true,
+          "subtype": "named_instances_of_asserted_category",
+          "reason": "The speaker names entities after asserting a category of people/companies that retracted statements. The local list instantiates that asserted category. This review does not endorse allegations, legal characterizations or claims about the named parties."
+        }
+      },
+      "limitations": "Context IDs record the actual inspected window; three cases expanded beyond nine captions to complete the illustration. No full-speech reading, audio/video inspection, fact-check of source assertions or independent human adjudication."
+    },
+    {
+      "annotation_id": "review-065",
+      "evidence_id": "pmAL79dnvu0:00083",
+      "context_evidence_ids": [
+        "pmAL79dnvu0:00079",
+        "pmAL79dnvu0:00080",
+        "pmAL79dnvu0:00081",
+        "pmAL79dnvu0:00082",
+        "pmAL79dnvu0:00083",
+        "pmAL79dnvu0:00084",
+        "pmAL79dnvu0:00085",
+        "pmAL79dnvu0:00086",
+        "pmAL79dnvu0:00087"
+      ],
+      "context_sha256": "ee78e6c56e68825e0a71400090da6a04aa3885a5f0d466df6d50e48a5bb6c954",
+      "review_id": "context-20260917-review-065",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "example": {
+          "supported": true,
+          "subtype": "imagined_future_scenario",
+          "reason": "A broad vision about a world without limitations is made concrete through daughters growing up with possibilities and then grandmothers' imagined responses. It is an aspirational scenario, not an observed event or measured audience effect."
+        }
+      },
+      "limitations": "Context IDs record the actual inspected window; three cases expanded beyond nine captions to complete the illustration. No full-speech reading, audio/video inspection, fact-check of source assertions or independent human adjudication."
+    },
+    {
+      "annotation_id": "review-066",
+      "evidence_id": "qOwYULOPuPs:00040",
+      "context_evidence_ids": [
+        "qOwYULOPuPs:00036",
+        "qOwYULOPuPs:00037",
+        "qOwYULOPuPs:00038",
+        "qOwYULOPuPs:00039",
+        "qOwYULOPuPs:00040",
+        "qOwYULOPuPs:00041",
+        "qOwYULOPuPs:00042",
+        "qOwYULOPuPs:00043",
+        "qOwYULOPuPs:00044"
+      ],
+      "context_sha256": "735b55a3482b773d563b08d58464109277e21d7f43991614da7d97d37eab746d",
+      "review_id": "context-20260917-review-066",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "example": {
+          "supported": true,
+          "subtype": "historical_case_in_limitation_argument",
+          "reason": "Confederation is presented as one agreement in an argument that agreements alone could do only so much, followed by the claimed need for a corridor. This identifies rhetorical case use, not validation of historical or causal claims."
+        }
+      },
+      "limitations": "Context IDs record the actual inspected window; three cases expanded beyond nine captions to complete the illustration. No full-speech reading, audio/video inspection, fact-check of source assertions or independent human adjudication."
+    },
+    {
+      "annotation_id": "review-012",
+      "evidence_id": "-54zUwySKCg:00028",
+      "context_evidence_ids": [
+        "-54zUwySKCg:00024",
+        "-54zUwySKCg:00025",
+        "-54zUwySKCg:00026",
+        "-54zUwySKCg:00027",
+        "-54zUwySKCg:00028",
+        "-54zUwySKCg:00029",
+        "-54zUwySKCg:00030",
+        "-54zUwySKCg:00031",
+        "-54zUwySKCg:00032"
+      ],
+      "context_sha256": "000e78650885390ee6906ad809bb0229433ebe5eb7268a7f229c32eb5b1fb5da",
+      "review_id": "context-20260917-review-012",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "contrast_or_disagreement": {
+          "supported": true,
+          "subtype": "personal_reconsideration",
+          "view_attribution": "current_turn_narrative",
+          "reason": "The speaker first describes pressure about addressing Harvard graduates, then revises the premise that attendance is necessary for a particular disposition. This is a personal reconsideration. The self-description is reported wording, not a personality assessment by this project."
+        }
+      },
+      "limitations": "Nine adjacent captions inspected. No complete speech/film viewing, listening review, independent adjudication or validation of claims/traits. Textual opposition does not establish a real interpersonal dispute."
+    },
+    {
+      "annotation_id": "review-024",
+      "evidence_id": "3AIoHLr8nTI:00097",
+      "context_evidence_ids": [
+        "3AIoHLr8nTI:00093",
+        "3AIoHLr8nTI:00094",
+        "3AIoHLr8nTI:00095",
+        "3AIoHLr8nTI:00096",
+        "3AIoHLr8nTI:00097",
+        "3AIoHLr8nTI:00098",
+        "3AIoHLr8nTI:00099",
+        "3AIoHLr8nTI:00100",
+        "3AIoHLr8nTI:00101"
+      ],
+      "context_sha256": "212fbfe42aa0501f7d366e41eedcac0eed2e35195d8834153f6e5064d8818aa6",
+      "review_id": "context-20260917-review-024",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "contrast_or_disagreement": {
+          "supported": true,
+          "subtype": "normative_rejection_of_justification",
+          "view_attribution": "current_turn_argument",
+          "reason": "The passage rejects a practice despite its historical prevalence after distinguishing understanding from moral relativism. It opposes a possible justification; no actual exchange with a disputant is observed in these captions."
+        }
+      },
+      "limitations": "Nine adjacent captions inspected. No complete speech/film viewing, listening review, independent adjudication or validation of claims/traits. Textual opposition does not establish a real interpersonal dispute."
+    },
+    {
+      "annotation_id": "review-025",
+      "evidence_id": "jxY2-YgAgm0:00008",
+      "context_evidence_ids": [
+        "jxY2-YgAgm0:00004",
+        "jxY2-YgAgm0:00005",
+        "jxY2-YgAgm0:00006",
+        "jxY2-YgAgm0:00007",
+        "jxY2-YgAgm0:00008",
+        "jxY2-YgAgm0:00009",
+        "jxY2-YgAgm0:00010",
+        "jxY2-YgAgm0:00011",
+        "jxY2-YgAgm0:00012"
+      ],
+      "context_sha256": "59a6e8669991323983a495601c80def6d61b1afece069e1f0a45d92461a40076",
+      "review_id": "context-20260917-review-025",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "contrast_or_disagreement": {
+          "supported": true,
+          "subtype": "contrastive_reformulation_of_rejection",
+          "view_attribution": "current_turn_argument",
+          "reason": "The construction contrasts not objecting to one alleged quality with rejecting alleged attempts to damage reputation. The alternative objects of rejection establish contrast. The allegations are not verified or endorsed."
+        }
+      },
+      "limitations": "Nine adjacent captions inspected. No complete speech/film viewing, listening review, independent adjudication or validation of claims/traits. Textual opposition does not establish a real interpersonal dispute."
+    },
+    {
+      "annotation_id": "review-026",
+      "evidence_id": "qOwYULOPuPs:00075",
+      "context_evidence_ids": [
+        "qOwYULOPuPs:00071",
+        "qOwYULOPuPs:00072",
+        "qOwYULOPuPs:00073",
+        "qOwYULOPuPs:00074",
+        "qOwYULOPuPs:00075",
+        "qOwYULOPuPs:00076",
+        "qOwYULOPuPs:00077",
+        "qOwYULOPuPs:00078",
+        "qOwYULOPuPs:00079"
+      ],
+      "context_sha256": "b211f5a8af3822c3036ccf4df4feb248cb746c54e5a176d2117a593274807b44",
+      "review_id": "context-20260917-review-026",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "contrast_or_disagreement": {
+          "supported": true,
+          "subtype": "expected_versus_asserted_outcome",
+          "view_attribution": "current_turn_argument",
+          "reason": "The passage contrasts the claimed intention to create dependence with an asserted opposite outcome, then contrasts dependence with diversified relationships. It is an asserted policy-outcome contrast, not verified causal evidence."
+        }
+      },
+      "limitations": "Nine adjacent captions inspected. No complete speech/film viewing, listening review, independent adjudication or validation of claims/traits. Textual opposition does not establish a real interpersonal dispute."
+    },
+    {
+      "annotation_id": "review-077",
+      "evidence_id": "AwA0Jnfj3ao:00125",
+      "context_evidence_ids": [
+        "AwA0Jnfj3ao:00121",
+        "AwA0Jnfj3ao:00122",
+        "AwA0Jnfj3ao:00123",
+        "AwA0Jnfj3ao:00124",
+        "AwA0Jnfj3ao:00125",
+        "AwA0Jnfj3ao:00126",
+        "AwA0Jnfj3ao:00127",
+        "AwA0Jnfj3ao:00128",
+        "AwA0Jnfj3ao:00129"
+      ],
+      "context_sha256": "07b009bed024c4e2e8b2f3699c49b1c8796d3c76b8591e5bfccf67303a2c4478",
+      "review_id": "context-20260917-review-077",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "contrast_or_disagreement": {
+          "supported": true,
+          "subtype": "observed_versus_expected_position_in_story",
+          "view_attribution": "current_turn_narrative",
+          "reason": "The surrounding narrative contrasts seeing the ball with reacting too late and where it was versus where it should be. The wording is somewhat garbled; the target's 'wrong place' belongs to that narrative contrast, not a live dispute."
+        }
+      },
+      "limitations": "Nine adjacent captions inspected. No complete speech/film viewing, listening review, independent adjudication or validation of claims/traits. Textual opposition does not establish a real interpersonal dispute."
+    },
+    {
+      "annotation_id": "review-078",
+      "evidence_id": "OfwfTN1mEyM:00139",
+      "context_evidence_ids": [
+        "OfwfTN1mEyM:00135",
+        "OfwfTN1mEyM:00136",
+        "OfwfTN1mEyM:00137",
+        "OfwfTN1mEyM:00138",
+        "OfwfTN1mEyM:00139",
+        "OfwfTN1mEyM:00140",
+        "OfwfTN1mEyM:00141",
+        "OfwfTN1mEyM:00142",
+        "OfwfTN1mEyM:00143"
+      ],
+      "context_sha256": "3828ec71a45538b95dd174e237acf2a67332ee035c9a88c9606a4cdb32b5759f",
+      "review_id": "context-20260917-review-078",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "contrast_or_disagreement": {
+          "supported": true,
+          "subtype": "public_perception_versus_claimed_analysis",
+          "view_attribution": "current_turn_argument",
+          "reason": "The speaker contrasts limited public understanding of available solar power with a claim that its mathematics is clear, followed by a recommendation. The textual opposition is present; neither the mathematics nor public understanding is independently evaluated."
+        }
+      },
+      "limitations": "Nine adjacent captions inspected. No complete speech/film viewing, listening review, independent adjudication or validation of claims/traits. Textual opposition does not establish a real interpersonal dispute."
+    },
+    {
+      "annotation_id": "review-079",
+      "evidence_id": "fBnAMUkNM2k:00278",
+      "context_evidence_ids": [
+        "fBnAMUkNM2k:00274",
+        "fBnAMUkNM2k:00275",
+        "fBnAMUkNM2k:00276",
+        "fBnAMUkNM2k:00277",
+        "fBnAMUkNM2k:00278",
+        "fBnAMUkNM2k:00279",
+        "fBnAMUkNM2k:00280",
+        "fBnAMUkNM2k:00281",
+        "fBnAMUkNM2k:00282"
+      ],
+      "context_sha256": "c3ba0f3ca0fee089ee039fbb5d1ac900a63e53f24f4692ce4c4ee7fb7d69a5d0",
+      "review_id": "context-20260917-review-079",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "contrast_or_disagreement": {
+          "supported": true,
+          "subtype": "opposition_and_response_in_reported_advice",
+          "view_attribution": "reported_mother_text",
+          "reason": "The surrounding clauses explicitly attribute the contrast between critics and proving them wrong to the narrator's mother. It is reported motivational advice, not an observed argument with those critics or proof of the narrator's own current stance."
+        }
+      },
+      "limitations": "Nine adjacent captions inspected. No complete speech/film viewing, listening review, independent adjudication or validation of claims/traits. Textual opposition does not establish a real interpersonal dispute."
+    },
+    {
+      "annotation_id": "review-080",
+      "evidence_id": "gDadfh0ZdBM:00036",
+      "context_evidence_ids": [
+        "gDadfh0ZdBM:00032",
+        "gDadfh0ZdBM:00033",
+        "gDadfh0ZdBM:00034",
+        "gDadfh0ZdBM:00035",
+        "gDadfh0ZdBM:00036",
+        "gDadfh0ZdBM:00037",
+        "gDadfh0ZdBM:00038",
+        "gDadfh0ZdBM:00039",
+        "gDadfh0ZdBM:00040"
+      ],
+      "context_sha256": "676fa54be09ada076cb63fb8f6133fe874998bef1b534f37332ae616cecab71d",
+      "review_id": "context-20260917-review-080",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "contrast_or_disagreement": {
+          "supported": true,
+          "subtype": "explanation_versus_felt_presence_in_dialogue",
+          "view_attribution": "scene_dialogue_text",
+          "reason": "The captions oppose inability to explain/identify something with feeling or sensing its presence. This supports contextual contrast under the broad label, though not interpersonal disagreement. Adjacent stored intervals overlap and do not support the legacy ten-second-gap rationale; audio silence is not inferred from captions."
+        }
+      },
+      "limitations": "Nine adjacent captions inspected. No complete speech/film viewing, listening review, independent adjudication or validation of claims/traits. Textual opposition does not establish a real interpersonal dispute."
+    },
+    {
+      "annotation_id": "review-081",
+      "evidence_id": "lcj1wMZRitI:00095",
+      "context_evidence_ids": [
+        "lcj1wMZRitI:00091",
+        "lcj1wMZRitI:00092",
+        "lcj1wMZRitI:00093",
+        "lcj1wMZRitI:00094",
+        "lcj1wMZRitI:00095",
+        "lcj1wMZRitI:00096",
+        "lcj1wMZRitI:00097",
+        "lcj1wMZRitI:00098",
+        "lcj1wMZRitI:00099"
+      ],
+      "context_sha256": "ba0cc8a2bc28c8a843500feb08b06036ff0785574ef48e8001810388f9c20f28",
+      "review_id": "context-20260917-review-081",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "contrast_or_disagreement": {
+          "supported": true,
+          "subtype": "authority_disclaimer_versus_committed_statement",
+          "view_attribution": "scene_or_speech_turn_text",
+          "reason": "The speaker disclaims being a judge or jury, then asserts a character's refusal to betray others and labels it integrity. That contrast in authority and commitment is textual; it does not establish the actor's traits or a verified real-world assessment."
+        }
+      },
+      "limitations": "Nine adjacent captions inspected. No complete speech/film viewing, listening review, independent adjudication or validation of claims/traits. Textual opposition does not establish a real interpersonal dispute."
+    },
+    {
+      "annotation_id": "review-001",
+      "evidence_id": "-54zUwySKCg:00035",
+      "context_evidence_ids": [
+        "-54zUwySKCg:00031",
+        "-54zUwySKCg:00032",
+        "-54zUwySKCg:00033",
+        "-54zUwySKCg:00034",
+        "-54zUwySKCg:00035",
+        "-54zUwySKCg:00036",
+        "-54zUwySKCg:00037",
+        "-54zUwySKCg:00038",
+        "-54zUwySKCg:00039"
+      ],
+      "context_sha256": "a4912820d118fd6a7ce630bb67751015aef4f07bb5b5a4228f9f9867105999f7",
+      "review_id": "context-20260917-review-001",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": true,
+          "subtype": "autobiographical_scene_setup",
+          "reason": "The narrator names a career origin, a contest, an age and a place, then introduces its question-and-answer sequence. The target sets up a personal event; this short window does not contain the full story or verify its historical truth."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. No full-story verification, listening/visual review, source-claim fact-check or independent adjudication. Narrated experience is not proof the event occurred."
+    },
+    {
+      "annotation_id": "review-013",
+      "evidence_id": "S43F1BZfQKY:00002",
+      "context_evidence_ids": [
+        "S43F1BZfQKY:00000",
+        "S43F1BZfQKY:00001",
+        "S43F1BZfQKY:00002",
+        "S43F1BZfQKY:00003",
+        "S43F1BZfQKY:00004",
+        "S43F1BZfQKY:00005",
+        "S43F1BZfQKY:00006"
+      ],
+      "context_sha256": "cf3fc5e46349323e9b0878585d6d9848ddb02134690e4dd8742f2a0a3d8c4c4a",
+      "review_id": "context-20260917-review-013",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": true,
+          "subtype": "dated_recollection_with_trigger_event",
+          "reason": "The remembered date is followed by a first-person shower episode and discovery of hair in the hand. Context supplies an actual narrated event rather than merely the marker 'I remember'. The report does not independently verify the medical history."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. No full-story verification, listening/visual review, source-claim fact-check or independent adjudication. Narrated experience is not proof the event occurred."
+    },
+    {
+      "annotation_id": "review-015",
+      "evidence_id": "S43F1BZfQKY:00036",
+      "context_evidence_ids": [
+        "S43F1BZfQKY:00032",
+        "S43F1BZfQKY:00033",
+        "S43F1BZfQKY:00034",
+        "S43F1BZfQKY:00035",
+        "S43F1BZfQKY:00036",
+        "S43F1BZfQKY:00037",
+        "S43F1BZfQKY:00038",
+        "S43F1BZfQKY:00039",
+        "S43F1BZfQKY:00040"
+      ],
+      "context_sha256": "fceca529a0b34e7b8e461ff7d21cf367d0af7b8bceede89b883ca85c953bfc25",
+      "review_id": "context-20260917-review-015",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": true,
+          "subtype": "decision_and_action_with_reported_aftermath",
+          "reason": "The preceding self-question leads to the narrator's stated action of shaving the head, followed by reported messages and encounters. This is a narrative event/aftermath sequence; other people's attributed descriptions are not this project's trait judgments."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. No full-story verification, listening/visual review, source-claim fact-check or independent adjudication. Narrated experience is not proof the event occurred."
+    },
+    {
+      "annotation_id": "review-039",
+      "evidence_id": "3AIoHLr8nTI:00069",
+      "context_evidence_ids": [
+        "3AIoHLr8nTI:00065",
+        "3AIoHLr8nTI:00066",
+        "3AIoHLr8nTI:00067",
+        "3AIoHLr8nTI:00068",
+        "3AIoHLr8nTI:00069",
+        "3AIoHLr8nTI:00070",
+        "3AIoHLr8nTI:00071",
+        "3AIoHLr8nTI:00072",
+        "3AIoHLr8nTI:00073"
+      ],
+      "context_sha256": "a5deb258760eb525f4e17ea0b202ad739e58653ecdc35714865aa9ac5c3372c5",
+      "review_id": "context-20260917-review-039",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": false,
+          "subtype": "generalized_leadership_scenario",
+          "reason": "The passage describes what leaders in every generation supposedly realize and urges the graduates to lead. It is a generalized scenario, not an identified personally experienced event."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. No full-story verification, listening/visual review, source-claim fact-check or independent adjudication. Narrated experience is not proof the event occurred."
+    },
+    {
+      "annotation_id": "review-040",
+      "evidence_id": "9fEurt2OZ0I:00008",
+      "context_evidence_ids": [
+        "9fEurt2OZ0I:00004",
+        "9fEurt2OZ0I:00005",
+        "9fEurt2OZ0I:00006",
+        "9fEurt2OZ0I:00007",
+        "9fEurt2OZ0I:00008",
+        "9fEurt2OZ0I:00009",
+        "9fEurt2OZ0I:00010",
+        "9fEurt2OZ0I:00011",
+        "9fEurt2OZ0I:00012"
+      ],
+      "context_sha256": "de9b771fd798bc76da53739fa2d42c11f329cd3d79e6880bd775dfed626597c7",
+      "review_id": "context-20260917-review-040",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": true,
+          "subtype": "sequence_of_personal_rejection_accounts",
+          "reason": "The narrator links job applications, a reported rejection and another application example. Despite garbled wording, personal actions and responses form a sequence. Counts, job names and outcomes are not independently fact-checked."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. No full-story verification, listening/visual review, source-claim fact-check or independent adjudication. Narrated experience is not proof the event occurred."
+    },
+    {
+      "annotation_id": "review-041",
+      "evidence_id": "fBnAMUkNM2k:00072",
+      "context_evidence_ids": [
+        "fBnAMUkNM2k:00068",
+        "fBnAMUkNM2k:00069",
+        "fBnAMUkNM2k:00070",
+        "fBnAMUkNM2k:00071",
+        "fBnAMUkNM2k:00072",
+        "fBnAMUkNM2k:00073",
+        "fBnAMUkNM2k:00074",
+        "fBnAMUkNM2k:00075",
+        "fBnAMUkNM2k:00076"
+      ],
+      "context_sha256": "8b73ea19e556b9239ea3f1b0f22a5968dfa424ba07dbd623832ce978d5e1015e",
+      "review_id": "context-20260917-review-041",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": true,
+          "subtype": "personal_event_with_attributed_dialogue",
+          "reason": "The account places a doctor's visit within a hospital period and quotes what the doctor reportedly said. It is an event with attributed dialogue; the quoted prognosis is not validated medical guidance or an observation of present health."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. No full-story verification, listening/visual review, source-claim fact-check or independent adjudication. Narrated experience is not proof the event occurred."
+    },
+    {
+      "annotation_id": "review-067",
+      "evidence_id": "AwA0Jnfj3ao:00130",
+      "context_evidence_ids": [
+        "AwA0Jnfj3ao:00126",
+        "AwA0Jnfj3ao:00127",
+        "AwA0Jnfj3ao:00128",
+        "AwA0Jnfj3ao:00129",
+        "AwA0Jnfj3ao:00130",
+        "AwA0Jnfj3ao:00131",
+        "AwA0Jnfj3ao:00132",
+        "AwA0Jnfj3ao:00133",
+        "AwA0Jnfj3ao:00134"
+      ],
+      "context_sha256": "8d0ca2422b89cf9788506341f8ba6c367d85114d0842e721f9bf519eb72a0dd5",
+      "review_id": "context-20260917-review-067",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": true,
+          "subtype": "setback_action_and_self_address",
+          "reason": "Following a cricket setback, the narrator describes going to a bathroom, crying and speaking to himself in a mirror, before later seeking advice. Those are narrated actions, not acoustic or visual evidence of emotion during the current speech."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. No full-story verification, listening/visual review, source-claim fact-check or independent adjudication. Narrated experience is not proof the event occurred."
+    },
+    {
+      "annotation_id": "review-068",
+      "evidence_id": "bR4tDSa3O10:00051",
+      "context_evidence_ids": [
+        "bR4tDSa3O10:00047",
+        "bR4tDSa3O10:00048",
+        "bR4tDSa3O10:00049",
+        "bR4tDSa3O10:00050",
+        "bR4tDSa3O10:00051",
+        "bR4tDSa3O10:00052",
+        "bR4tDSa3O10:00053",
+        "bR4tDSa3O10:00054",
+        "bR4tDSa3O10:00055"
+      ],
+      "context_sha256": "13ad0e363c990d450060d912dc3d05983bb20d06c52c343d27413be560aa8a42",
+      "review_id": "context-20260917-review-068",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": false,
+          "subtype": "autobiographically_anchored_counterfactual",
+          "reason": "A childhood location anchors an imagined reaction: if acquaintances had been told about the later opportunity, they would have laughed. The target does not report that such an exchange occurred or narrate a sequence of experienced events. This can still be a useful counterfactual device, but is not support for the narrower experienced-event rubric."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. No full-story verification, listening/visual review, source-claim fact-check or independent adjudication. Narrated experience is not proof the event occurred."
+    },
+    {
+      "annotation_id": "review-069",
+      "evidence_id": "OfwfTN1mEyM:00152",
+      "context_evidence_ids": [
+        "OfwfTN1mEyM:00148",
+        "OfwfTN1mEyM:00149",
+        "OfwfTN1mEyM:00150",
+        "OfwfTN1mEyM:00151",
+        "OfwfTN1mEyM:00152",
+        "OfwfTN1mEyM:00153",
+        "OfwfTN1mEyM:00154",
+        "OfwfTN1mEyM:00155",
+        "OfwfTN1mEyM:00156"
+      ],
+      "context_sha256": "0b1908bd58446a23db7c3d606a29a9a6c9bd80551f701389da43032c71f52f11",
+      "review_id": "context-20260917-review-069",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": false,
+          "subtype": "historical_price_comparison",
+          "reason": "The speaker compares earlier and current solar/battery costs. Time references alone do not make this a personally experienced narrative. The price claims are not verified here."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. No full-story verification, listening/visual review, source-claim fact-check or independent adjudication. Narrated experience is not proof the event occurred."
+    },
+    {
+      "annotation_id": "review-070",
+      "evidence_id": "fBnAMUkNM2k:00104",
+      "context_evidence_ids": [
+        "fBnAMUkNM2k:00100",
+        "fBnAMUkNM2k:00101",
+        "fBnAMUkNM2k:00102",
+        "fBnAMUkNM2k:00103",
+        "fBnAMUkNM2k:00104",
+        "fBnAMUkNM2k:00105",
+        "fBnAMUkNM2k:00106",
+        "fBnAMUkNM2k:00107",
+        "fBnAMUkNM2k:00108"
+      ],
+      "context_sha256": "259462d2dc9231375d73db9a6aac67a1205faade6ebe47b518cd9e5c995db4e9",
+      "review_id": "context-20260917-review-070",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": true,
+          "subtype": "family_dialogue_in_personal_recollection",
+          "reason": "The narrator introduces the mother's words during a recalled difficult period and describes their significance in that account. The garbled phrase 'this two sell-pass' is preserved, not silently reconstructed. Reported spiritual/health implications are not independently endorsed."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. No full-story verification, listening/visual review, source-claim fact-check or independent adjudication. Narrated experience is not proof the event occurred."
+    },
+    {
+      "annotation_id": "review-071",
+      "evidence_id": "pmAL79dnvu0:00042",
+      "context_evidence_ids": [
+        "pmAL79dnvu0:00038",
+        "pmAL79dnvu0:00039",
+        "pmAL79dnvu0:00040",
+        "pmAL79dnvu0:00041",
+        "pmAL79dnvu0:00042",
+        "pmAL79dnvu0:00043",
+        "pmAL79dnvu0:00044",
+        "pmAL79dnvu0:00045",
+        "pmAL79dnvu0:00046"
+      ],
+      "context_sha256": "951d2a2ede707b777a228afcab87d9d46e6f2395a3e3e01f652313f607bb06db",
+      "review_id": "context-20260917-review-071",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": true,
+          "subtype": "brief_autobiographical_habit_recollection",
+          "reason": "The national-story metaphor transitions into the speaker's stated childhood practice of pledging allegiance and its personal significance. This supports a brief autobiographical recollection under the broad personal-experience label, not a complete story arc or evidence of audience effect."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. No full-story verification, listening/visual review, source-claim fact-check or independent adjudication. Narrated experience is not proof the event occurred."
+    },
+    {
+      "annotation_id": "review-004",
+      "evidence_id": "-54zUwySKCg:00015",
+      "context_evidence_ids": [
+        "-54zUwySKCg:00011",
+        "-54zUwySKCg:00012",
+        "-54zUwySKCg:00013",
+        "-54zUwySKCg:00014",
+        "-54zUwySKCg:00015",
+        "-54zUwySKCg:00016",
+        "-54zUwySKCg:00017",
+        "-54zUwySKCg:00018",
+        "-54zUwySKCg:00019"
+      ],
+      "context_sha256": "1581100ebe5a632854936a0fd08f0b876063ef5244cca72bd9d856bea1bc5819",
+      "review_id": "context-20260917-review-004",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "question": {
+          "supported": false,
+          "subtype": "declarative_personal_evaluation",
+          "reason": "The target continues into a statement calling the occasion a defining milestone. The wording 'I consider' does not introduce an interrogative; narrated tears are source self-description, not independently observed emotion."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. Transcript-only assistant review; no listening, visual inspection, audience-response verification, source-claim fact-check or independent adjudication."
+    },
+    {
+      "annotation_id": "review-019",
+      "evidence_id": "m92yvNscIAo:00004",
+      "context_evidence_ids": [
+        "m92yvNscIAo:00000",
+        "m92yvNscIAo:00001",
+        "m92yvNscIAo:00002",
+        "m92yvNscIAo:00003",
+        "m92yvNscIAo:00004",
+        "m92yvNscIAo:00005",
+        "m92yvNscIAo:00006",
+        "m92yvNscIAo:00007",
+        "m92yvNscIAo:00008"
+      ],
+      "context_sha256": "90d0170f112b9e0905f8e56a5ed8b6c72954fda8c079ea836e5f29a0069a009f",
+      "review_id": "context-20260917-review-019",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "question": {
+          "supported": true,
+          "subtype": "question_form_challenge_to_repetition",
+          "reason": "The question begins in the target and continues through captions 5–6, asking how many ways the same story must be told after three and a half hours. This is a challenge about repetition, not simply an audience-orientation prompt. Speaker identity, turn boundaries and vocal affect are not established by this window."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. Transcript-only assistant review; no listening, visual inspection, audience-response verification, source-claim fact-check or independent adjudication."
+    },
+    {
+      "annotation_id": "review-020",
+      "evidence_id": "S43F1BZfQKY:00021",
+      "context_evidence_ids": [
+        "S43F1BZfQKY:00017",
+        "S43F1BZfQKY:00018",
+        "S43F1BZfQKY:00019",
+        "S43F1BZfQKY:00020",
+        "S43F1BZfQKY:00021",
+        "S43F1BZfQKY:00022",
+        "S43F1BZfQKY:00023",
+        "S43F1BZfQKY:00024",
+        "S43F1BZfQKY:00025"
+      ],
+      "context_sha256": "566fa3f8cb0b9bc32f0addc33bd0a9b9927c1324ee04cb529f8c51b56970f46a",
+      "review_id": "context-20260917-review-020",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "question": {
+          "supported": false,
+          "subtype": "declarative_narrative_constraint",
+          "reason": "The target lists activities the narrator says the wig prevents, with the roller-coaster phrase completed in the next caption. It is a declarative narrative detail, not a question."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. Transcript-only assistant review; no listening, visual inspection, audience-response verification, source-claim fact-check or independent adjudication."
+    },
+    {
+      "annotation_id": "review-036",
+      "evidence_id": "2fWJh-_UG5s:00005",
+      "context_evidence_ids": [
+        "2fWJh-_UG5s:00001",
+        "2fWJh-_UG5s:00002",
+        "2fWJh-_UG5s:00003",
+        "2fWJh-_UG5s:00004",
+        "2fWJh-_UG5s:00005",
+        "2fWJh-_UG5s:00006",
+        "2fWJh-_UG5s:00007",
+        "2fWJh-_UG5s:00008",
+        "2fWJh-_UG5s:00009"
+      ],
+      "context_sha256": "7ebcafe1dcfd28d430a7721f8a70700c7d12a82b1a0638d6d639ebf58a995bb5",
+      "review_id": "context-20260917-review-036",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "question": {
+          "supported": true,
+          "subtype": "interrogative_form_reaction",
+          "reason": "The short 'how about that' follows a reference to children being killed and precedes a greeting. It supports a question-form reaction, not an information request or evidence of audience participation; neither tone nor the reported event is independently verified."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. Transcript-only assistant review; no listening, visual inspection, audience-response verification, source-claim fact-check or independent adjudication."
+    },
+    {
+      "annotation_id": "review-037",
+      "evidence_id": "S43F1BZfQKY:00049",
+      "context_evidence_ids": [
+        "S43F1BZfQKY:00045",
+        "S43F1BZfQKY:00046",
+        "S43F1BZfQKY:00047",
+        "S43F1BZfQKY:00048",
+        "S43F1BZfQKY:00049",
+        "S43F1BZfQKY:00050",
+        "S43F1BZfQKY:00051",
+        "S43F1BZfQKY:00052",
+        "S43F1BZfQKY:00053"
+      ],
+      "context_sha256": "b90311cea3cbb67a3c34b76133ea9ffed00fab2b9986cef8f7301bf178e3659b",
+      "review_id": "context-20260917-review-037",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "question": {
+          "supported": true,
+          "subtype": "narrated_identity_self_question_sequence",
+          "reason": "The target is an explicit first-person question among questions about appearance, identity and fitting in. The narrator presents self-questioning as part of a personal account. This does not establish current internal state or an audience question."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. Transcript-only assistant review; no listening, visual inspection, audience-response verification, source-claim fact-check or independent adjudication."
+    },
+    {
+      "annotation_id": "review-038",
+      "evidence_id": "aXmM0VZv810:00414",
+      "context_evidence_ids": [
+        "aXmM0VZv810:00410",
+        "aXmM0VZv810:00411",
+        "aXmM0VZv810:00412",
+        "aXmM0VZv810:00413",
+        "aXmM0VZv810:00414",
+        "aXmM0VZv810:00415",
+        "aXmM0VZv810:00416",
+        "aXmM0VZv810:00417",
+        "aXmM0VZv810:00418"
+      ],
+      "context_sha256": "92d9c79c3b13f630e28a3f3d2f77841d3ef4c09ec28be2767ed886cd0db90f91",
+      "review_id": "context-20260917-review-038",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "question": {
+          "supported": false,
+          "subtype": "relative_clause_describing_environment",
+          "reason": "The preceding caption introduces a world called Omniverse; the target's 'where' clause describes it, and 'how to be' is embedded within what robots learn. Neither is a direct question in this passage. Technical claims remain attributed to the source."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. Transcript-only assistant review; no listening, visual inspection, audience-response verification, source-claim fact-check or independent adjudication."
+    },
+    {
+      "annotation_id": "review-053",
+      "evidence_id": "AwA0Jnfj3ao:00003",
+      "context_evidence_ids": [
+        "AwA0Jnfj3ao:00000",
+        "AwA0Jnfj3ao:00001",
+        "AwA0Jnfj3ao:00002",
+        "AwA0Jnfj3ao:00003",
+        "AwA0Jnfj3ao:00004",
+        "AwA0Jnfj3ao:00005",
+        "AwA0Jnfj3ao:00006",
+        "AwA0Jnfj3ao:00007"
+      ],
+      "context_sha256": "3f9ffe4eb9cc704deb48782672306ae35aadef47e22156f16ea87bb375166537",
+      "review_id": "context-20260917-review-053",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "question": {
+          "supported": true,
+          "subtype": "interviewer_narrative_prompt",
+          "reason": "The transcript explicitly labels an interviewer who proposes starting at the beginning, followed by a Sachin Tendulkar-labeled answer recalling school cricket. The question prompts a narrative answer; it is not a monologue technique used by the interviewee."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. Transcript-only assistant review; no listening, visual inspection, audience-response verification, source-claim fact-check or independent adjudication."
+    },
+    {
+      "annotation_id": "review-054",
+      "evidence_id": "aHXxveJTJoE:00039",
+      "context_evidence_ids": [
+        "aHXxveJTJoE:00035",
+        "aHXxveJTJoE:00036",
+        "aHXxveJTJoE:00037",
+        "aHXxveJTJoE:00038",
+        "aHXxveJTJoE:00039",
+        "aHXxveJTJoE:00040",
+        "aHXxveJTJoE:00041",
+        "aHXxveJTJoE:00042",
+        "aHXxveJTJoE:00043"
+      ],
+      "context_sha256": "38116114cc21c72c85f2a16241147727a6d26323ff7c30f4d04d26dcd17a3e15",
+      "review_id": "context-20260917-review-054",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "question": {
+          "supported": true,
+          "subtype": "interlocutor_question_spanning_captions",
+          "reason": "The target 'it with?' completes a question beginning in captions 37–38 about whom Hopper would share restaurants with; subsequent questions address Doc and friends. This supports a question spanning caption boundaries. Transcript text alone does not settle speaker turns, interruption or whether this is spontaneous conversation."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. Transcript-only assistant review; no listening, visual inspection, audience-response verification, source-claim fact-check or independent adjudication."
+    },
+    {
+      "annotation_id": "review-055",
+      "evidence_id": "hZ0YhrgYejI:00001",
+      "context_evidence_ids": [
+        "hZ0YhrgYejI:00000",
+        "hZ0YhrgYejI:00001",
+        "hZ0YhrgYejI:00002",
+        "hZ0YhrgYejI:00003",
+        "hZ0YhrgYejI:00004",
+        "hZ0YhrgYejI:00005"
+      ],
+      "context_sha256": "42d4facba9184a899658a6422a540603e4892ccea81493f9db3d285d2ec4d800",
+      "review_id": "context-20260917-review-055",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "question": {
+          "supported": true,
+          "subtype": "question_followed_by_transcribed_answer",
+          "reason": "The target asks what to do after falling; the next caption supplies 'Get back up', then the passage qualifies that advice by describing difficulty doing so. The transcript supports question-answer structure, but lacks turn labels proving who supplied the answer or whether an audience answered."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. Transcript-only assistant review; no listening, visual inspection, audience-response verification, source-claim fact-check or independent adjudication."
+    },
+    {
+      "annotation_id": "review-056",
+      "evidence_id": "OfwfTN1mEyM:00092",
+      "context_evidence_ids": [
+        "OfwfTN1mEyM:00088",
+        "OfwfTN1mEyM:00089",
+        "OfwfTN1mEyM:00090",
+        "OfwfTN1mEyM:00091",
+        "OfwfTN1mEyM:00092",
+        "OfwfTN1mEyM:00093",
+        "OfwfTN1mEyM:00094",
+        "OfwfTN1mEyM:00095",
+        "OfwfTN1mEyM:00096"
+      ],
+      "context_sha256": "c8511e7b81c09c92bad2448de8ea78b28d704b9bb2e3500597ae23225e8c9619",
+      "review_id": "context-20260917-review-056",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "question": {
+          "supported": false,
+          "subtype": "declarative_answer_after_nearby_question",
+          "reason": "A question about the source of energy occurs at captions 89–90, while the target continues the declarative solar-energy assessment begun in 91. Nearby interrogatives do not make this target a question. The target remains rejected without denying questions elsewhere in the context."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. Transcript-only assistant review; no listening, visual inspection, audience-response verification, source-claim fact-check or independent adjudication."
+    },
+    {
+      "annotation_id": "review-057",
+      "evidence_id": "aXmM0VZv810:00259",
+      "context_evidence_ids": [
+        "aXmM0VZv810:00255",
+        "aXmM0VZv810:00256",
+        "aXmM0VZv810:00257",
+        "aXmM0VZv810:00258",
+        "aXmM0VZv810:00259",
+        "aXmM0VZv810:00260",
+        "aXmM0VZv810:00261",
+        "aXmM0VZv810:00262",
+        "aXmM0VZv810:00263"
+      ],
+      "context_sha256": "a57af67b7b6c10d327547690134de9291acfa1f2ce0af88c822c72ec4230d235",
+      "review_id": "context-20260917-review-057",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "question": {
+          "supported": false,
+          "subtype": "qualified_prediction_not_question",
+          "reason": "The target continues a prediction introduced by 'It is my guess' in the preceding caption, then supplies a causal explanation. It is not interrogative. The stated prediction about AI is not independently verified."
+        }
+      },
+      "limitations": "Up to four preceding and four following captions inspected, clipped at transcript start. Transcript-only assistant review; no listening, visual inspection, audience-response verification, source-claim fact-check or independent adjudication."
+    },
+    {
+      "annotation_id": "review-008",
+      "evidence_id": "-6qN3bm2RYo:00276",
+      "context_evidence_ids": [
+        "-6qN3bm2RYo:00272",
+        "-6qN3bm2RYo:00273",
+        "-6qN3bm2RYo:00274",
+        "-6qN3bm2RYo:00275",
+        "-6qN3bm2RYo:00276",
+        "-6qN3bm2RYo:00277",
+        "-6qN3bm2RYo:00278",
+        "-6qN3bm2RYo:00279",
+        "-6qN3bm2RYo:00280"
+      ],
+      "context_sha256": "c3db6ec072aecc6454e99a6cd07af2e7647793286ca434824cc8946bb08b6aba",
+      "review_id": "context-20260917-review-008",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": true,
+          "subtype": "institutional_collective_proposal",
+          "view_attribution": "current_speech_text",
+          "reason": "A present invitation to member states precedes the target proposal for a global architecture, which continues through captions 277–280. This is a collective policy appeal, not a completed institutional action or independently endorsed policy."
+        }
+      },
+      "limitations": "Assistant transcript-only review of listed context IDs. Default window is four captions either side; review-011 expands to 75–90 and review-049 to 108–126. No listening, visual inspection, independent source-claim verification, audience-effect measurement or human adjudication."
+    },
+    {
+      "annotation_id": "review-009",
+      "evidence_id": "-6qN3bm2RYo:00343",
+      "context_evidence_ids": [
+        "-6qN3bm2RYo:00339",
+        "-6qN3bm2RYo:00340",
+        "-6qN3bm2RYo:00341",
+        "-6qN3bm2RYo:00342",
+        "-6qN3bm2RYo:00343",
+        "-6qN3bm2RYo:00344",
+        "-6qN3bm2RYo:00345",
+        "-6qN3bm2RYo:00346",
+        "-6qN3bm2RYo:00347"
+      ],
+      "context_sha256": "d8cedd5122da002fd8143d5387047840835fb8d77df51d2caae480ad7cef88b6",
+      "review_id": "context-20260917-review-009",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": true,
+          "subtype": "closing_collective_aspiration",
+          "view_attribution": "current_speech_text",
+          "reason": "The target begins a collective appeal continued by peace, progress and prosperity in the following captions, then thanks the audience. It supports a broad closing aspiration, not a detailed executable instruction or measured audience response."
+        }
+      },
+      "limitations": "Assistant transcript-only review of listed context IDs. Default window is four captions either side; review-011 expands to 75–90 and review-049 to 108–126. No listening, visual inspection, independent source-claim verification, audience-effect measurement or human adjudication."
+    },
+    {
+      "annotation_id": "review-011",
+      "evidence_id": "-HA8kSdsf_M:00079",
+      "context_evidence_ids": [
+        "-HA8kSdsf_M:00075",
+        "-HA8kSdsf_M:00076",
+        "-HA8kSdsf_M:00077",
+        "-HA8kSdsf_M:00078",
+        "-HA8kSdsf_M:00079",
+        "-HA8kSdsf_M:00080",
+        "-HA8kSdsf_M:00081",
+        "-HA8kSdsf_M:00082",
+        "-HA8kSdsf_M:00083",
+        "-HA8kSdsf_M:00084",
+        "-HA8kSdsf_M:00085",
+        "-HA8kSdsf_M:00086",
+        "-HA8kSdsf_M:00087",
+        "-HA8kSdsf_M:00088",
+        "-HA8kSdsf_M:00089",
+        "-HA8kSdsf_M:00090"
+      ],
+      "context_sha256": "ed68ebf78dbda525f29593ff5a2d5735c5d8e3af4aacca3d24677712e6bc5374",
+      "review_id": "context-20260917-review-011",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": true,
+          "subtype": "repeated_collective_appeal",
+          "view_attribution": "performed_address_text_identity_unverified",
+          "reason": "The target pivots from a description of dictators to repeated appeals to fulfill a promise, free the world and unite. The expanded window completes the appeal. This identifies rhetorical structure in the transcript, not literal combat instructions, historical truth, spontaneous delivery or audience effect."
+        }
+      },
+      "limitations": "Assistant transcript-only review of listed context IDs. Default window is four captions either side; review-011 expands to 75–90 and review-049 to 108–126. No listening, visual inspection, independent source-claim verification, audience-effect measurement or human adjudication."
+    },
+    {
+      "annotation_id": "review-021",
+      "evidence_id": "2fWJh-_UG5s:00401",
+      "context_evidence_ids": [
+        "2fWJh-_UG5s:00397",
+        "2fWJh-_UG5s:00398",
+        "2fWJh-_UG5s:00399",
+        "2fWJh-_UG5s:00400",
+        "2fWJh-_UG5s:00401",
+        "2fWJh-_UG5s:00402",
+        "2fWJh-_UG5s:00403",
+        "2fWJh-_UG5s:00404",
+        "2fWJh-_UG5s:00405"
+      ],
+      "context_sha256": "7595e7f3edad8e50c7ac43ccb64e43eadee783bde0285b25adce9cc48fb49e22",
+      "review_id": "context-20260917-review-021",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": true,
+          "subtype": "policy_necessity_sequence_with_transcript_uncertainty",
+          "view_attribution": "current_speech_text",
+          "reason": "Repeated 'we need to' constructions list proposed public actions. The target's 'save for schools' wording is unclear and remains unrepaired; the surrounding sequence supports the action-appeal function but not a precise reconstruction of that proposal."
+        }
+      },
+      "limitations": "Assistant transcript-only review of listed context IDs. Default window is four captions either side; review-011 expands to 75–90 and review-049 to 108–126. No listening, visual inspection, independent source-claim verification, audience-effect measurement or human adjudication."
+    },
+    {
+      "annotation_id": "review-022",
+      "evidence_id": "aXmM0VZv810:00179",
+      "context_evidence_ids": [
+        "aXmM0VZv810:00175",
+        "aXmM0VZv810:00176",
+        "aXmM0VZv810:00177",
+        "aXmM0VZv810:00178",
+        "aXmM0VZv810:00179",
+        "aXmM0VZv810:00180",
+        "aXmM0VZv810:00181",
+        "aXmM0VZv810:00182",
+        "aXmM0VZv810:00183"
+      ],
+      "context_sha256": "17fb1c498103d925c35991274fbf51e22560636ca23c8ace504ffe258df85f21",
+      "review_id": "context-20260917-review-022",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": false,
+          "subtype": "moderator_turn_allocation",
+          "view_attribution": "moderator_invitation_text",
+          "reason": "The target starts an invitation completed in captions 180–181 asking Elon and Jensen for thoughts on jobs, followed by an answer marker. It allocates a conversational turn rather than soliciting substantive action from the wider audience."
+        }
+      },
+      "limitations": "Assistant transcript-only review of listed context IDs. Default window is four captions either side; review-011 expands to 75–90 and review-049 to 108–126. No listening, visual inspection, independent source-claim verification, audience-effect measurement or human adjudication."
+    },
+    {
+      "annotation_id": "review-048",
+      "evidence_id": "AwA0Jnfj3ao:00002",
+      "context_evidence_ids": [
+        "AwA0Jnfj3ao:00000",
+        "AwA0Jnfj3ao:00001",
+        "AwA0Jnfj3ao:00002",
+        "AwA0Jnfj3ao:00003",
+        "AwA0Jnfj3ao:00004",
+        "AwA0Jnfj3ao:00005",
+        "AwA0Jnfj3ao:00006"
+      ],
+      "context_sha256": "45c5f5ebdeea7cb9965aba8136e54388e01bf86adb5104e5ab7a4179988a284d",
+      "review_id": "context-20260917-review-048",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": false,
+          "subtype": "interviewer_story_prompt",
+          "view_attribution": "explicitly_labelled_interviewer_text",
+          "reason": "An interviewer proposes sharing stories and starting at the beginning, followed by an explicitly labelled interviewee answer. This is an interview prompt, not a substantive audience action appeal."
+        }
+      },
+      "limitations": "Assistant transcript-only review of listed context IDs. Default window is four captions either side; review-011 expands to 75–90 and review-049 to 108–126. No listening, visual inspection, independent source-claim verification, audience-effect measurement or human adjudication."
+    },
+    {
+      "annotation_id": "review-049",
+      "evidence_id": "jxY2-YgAgm0:00125",
+      "context_evidence_ids": [
+        "jxY2-YgAgm0:00108",
+        "jxY2-YgAgm0:00109",
+        "jxY2-YgAgm0:00110",
+        "jxY2-YgAgm0:00111",
+        "jxY2-YgAgm0:00112",
+        "jxY2-YgAgm0:00113",
+        "jxY2-YgAgm0:00114",
+        "jxY2-YgAgm0:00115",
+        "jxY2-YgAgm0:00116",
+        "jxY2-YgAgm0:00117",
+        "jxY2-YgAgm0:00118",
+        "jxY2-YgAgm0:00119",
+        "jxY2-YgAgm0:00120",
+        "jxY2-YgAgm0:00121",
+        "jxY2-YgAgm0:00122",
+        "jxY2-YgAgm0:00123",
+        "jxY2-YgAgm0:00124",
+        "jxY2-YgAgm0:00125",
+        "jxY2-YgAgm0:00126"
+      ],
+      "context_sha256": "77b3365e6737d97364cdfae9f4d74b5e58d4a47241e0b06d26bd856d3caed491",
+      "review_id": "context-20260917-review-049",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": true,
+          "subtype": "promotional_outro_practice_invitation",
+          "view_attribution": "promotional_outro_text_not_featured_speaker_verified",
+          "reason": "The speech closes with thanks at caption 115; captions 116–126 promote a language-learning community, resources and classes. The target invites English practice in that promotional passage. It supports a call to action in the upload, but must not be attributed to the featured speech's speaker without further evidence."
+        }
+      },
+      "limitations": "Assistant transcript-only review of listed context IDs. Default window is four captions either side; review-011 expands to 75–90 and review-049 to 108–126. No listening, visual inspection, independent source-claim verification, audience-effect measurement or human adjudication."
+    },
+    {
+      "annotation_id": "review-050",
+      "evidence_id": "pmAL79dnvu0:00116",
+      "context_evidence_ids": [
+        "pmAL79dnvu0:00112",
+        "pmAL79dnvu0:00113",
+        "pmAL79dnvu0:00114",
+        "pmAL79dnvu0:00115",
+        "pmAL79dnvu0:00116",
+        "pmAL79dnvu0:00117",
+        "pmAL79dnvu0:00118",
+        "pmAL79dnvu0:00119",
+        "pmAL79dnvu0:00120"
+      ],
+      "context_sha256": "fff43a41a830a6c5d954b2f03f472c40161b322d17b53ac1e421714706789b57",
+      "review_id": "context-20260917-review-050",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": true,
+          "subtype": "civic_participation_appeal_spanning_captions",
+          "view_attribution": "current_speech_text",
+          "reason": "The target ends with 'we must' and the next caption supplies 'vote' and a request for participation. Together they form a collective civic action appeal. The short target is part of the same clause, not labelled merely because a separate request is nearby. No electoral effect or audience compliance is established."
+        }
+      },
+      "limitations": "Assistant transcript-only review of listed context IDs. Default window is four captions either side; review-011 expands to 75–90 and review-049 to 108–126. No listening, visual inspection, independent source-claim verification, audience-effect measurement or human adjudication."
+    },
+    {
+      "annotation_id": "review-051",
+      "evidence_id": "qOwYULOPuPs:00348",
+      "context_evidence_ids": [
+        "qOwYULOPuPs:00344",
+        "qOwYULOPuPs:00345",
+        "qOwYULOPuPs:00346",
+        "qOwYULOPuPs:00347",
+        "qOwYULOPuPs:00348",
+        "qOwYULOPuPs:00349",
+        "qOwYULOPuPs:00350",
+        "qOwYULOPuPs:00351",
+        "qOwYULOPuPs:00352"
+      ],
+      "context_sha256": "be04fc2554c37da1dbc87448a0f073cfeece6997a0edf5ecd41d06f61e53763a",
+      "review_id": "context-20260917-review-051",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": true,
+          "subtype": "closing_continuation_encouragement",
+          "view_attribution": "current_speech_text",
+          "reason": "The target links an assertion of progress to encouragement to continue, then thanks the audience before a resource promotion begins. It is a broad continuation appeal with no operationally specified task; garbled earlier wording is not repaired or used to identify the speaker."
+        }
+      },
+      "limitations": "Assistant transcript-only review of listed context IDs. Default window is four captions either side; review-011 expands to 75–90 and review-049 to 108–126. No listening, visual inspection, independent source-claim verification, audience-effect measurement or human adjudication."
+    },
+    {
+      "annotation_id": "review-052",
+      "evidence_id": "aXmM0VZv810:00003",
+      "context_evidence_ids": [
+        "aXmM0VZv810:00000",
+        "aXmM0VZv810:00001",
+        "aXmM0VZv810:00002",
+        "aXmM0VZv810:00003",
+        "aXmM0VZv810:00004",
+        "aXmM0VZv810:00005",
+        "aXmM0VZv810:00006",
+        "aXmM0VZv810:00007"
+      ],
+      "context_sha256": "49cd9a1988254ffd05534d2109a4225c983bd07c555fdff2b61969a57c3b425f",
+      "review_id": "context-20260917-review-052",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": false,
+          "subtype": "event_management_transition",
+          "view_attribution": "event_host_text_identity_unverified",
+          "reason": "Seating and applause instructions precede the target, which moves the event onward into an introduction. Under the substantive audience-action rubric this is event management, not a behavioral commitment beyond the conversational procedure."
+        }
+      },
+      "limitations": "Assistant transcript-only review of listed context IDs. Default window is four captions either side; review-011 expands to 75–90 and review-049 to 108–126. No listening, visual inspection, independent source-claim verification, audience-effect measurement or human adjudication."
+    },
+    {
+      "annotation_id": "review-045",
+      "evidence_id": "2fWJh-_UG5s:00165",
+      "context_evidence_ids": [
+        "2fWJh-_UG5s:00160",
+        "2fWJh-_UG5s:00161",
+        "2fWJh-_UG5s:00162",
+        "2fWJh-_UG5s:00163",
+        "2fWJh-_UG5s:00164",
+        "2fWJh-_UG5s:00165",
+        "2fWJh-_UG5s:00166",
+        "2fWJh-_UG5s:00167",
+        "2fWJh-_UG5s:00168",
+        "2fWJh-_UG5s:00169",
+        "2fWJh-_UG5s:00170"
+      ],
+      "context_sha256": "f125680a06f73359e92fe02d3acbc2b34d718974529bba8ec8a923ee93543118",
+      "review_id": "context-20260917-review-045",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "unclassified": {
+          "supported": false,
+          "subtype": "object_description_transition",
+          "reason": "The target shifts from reported family wishes about sharing a child's art to describing a particular drawing. The next captions call it a self-portrait and describe its content. This is an identifiable object-description transition; garbled name wording is not repaired and the drawing has not been visually inspected. 'Unclassified' is a retrieval fallback, not a substantive speech function. No additional candidate label is silently promoted."
+        }
+      },
+      "limitations": "Five captions before and after the target inspected. Assistant transcript-only interpretation, not independent adjudication, event verification, visual observation or evidence of retrieval recall."
+    },
+    {
+      "annotation_id": "review-046",
+      "evidence_id": "S43F1BZfQKY:00010",
+      "context_evidence_ids": [
+        "S43F1BZfQKY:00005",
+        "S43F1BZfQKY:00006",
+        "S43F1BZfQKY:00007",
+        "S43F1BZfQKY:00008",
+        "S43F1BZfQKY:00009",
+        "S43F1BZfQKY:00010",
+        "S43F1BZfQKY:00011",
+        "S43F1BZfQKY:00012",
+        "S43F1BZfQKY:00013",
+        "S43F1BZfQKY:00014",
+        "S43F1BZfQKY:00015"
+      ],
+      "context_sha256": "c6f05bb57bfe5fe005c0071796a90d6bf62e10316127f55aaf00db67a760bce4",
+      "review_id": "context-20260917-review-046",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "unclassified": {
+          "supported": false,
+          "subtype": "autobiographical_condition_detail",
+          "reason": "The surrounding passage describes repeated hair loss, then a boyfriend's suggestion and a later wig-shop visit. The target is a condition detail within that personal account, not semantically empty text. Reported health details and feelings are not independently verified. 'Unclassified' is a retrieval fallback, not a substantive speech function. No additional candidate label is silently promoted."
+        }
+      },
+      "limitations": "Five captions before and after the target inspected. Assistant transcript-only interpretation, not independent adjudication, event verification, visual observation or evidence of retrieval recall."
+    },
+    {
+      "annotation_id": "review-047",
+      "evidence_id": "fBnAMUkNM2k:00391",
+      "context_evidence_ids": [
+        "fBnAMUkNM2k:00386",
+        "fBnAMUkNM2k:00387",
+        "fBnAMUkNM2k:00388",
+        "fBnAMUkNM2k:00389",
+        "fBnAMUkNM2k:00390",
+        "fBnAMUkNM2k:00391",
+        "fBnAMUkNM2k:00392",
+        "fBnAMUkNM2k:00393",
+        "fBnAMUkNM2k:00394",
+        "fBnAMUkNM2k:00395",
+        "fBnAMUkNM2k:00396"
+      ],
+      "context_sha256": "1548e5fb7053560eefd12c89cf1767a0e27f4705fd93a14df4536ba608f8184f",
+      "review_id": "context-20260917-review-047",
+      "reviewer_type": "assistant",
+      "reviewer_name": "Codex",
+      "reviewed_at": "2026-09-17",
+      "modality": "transcript_only",
+      "label_decisions": {
+        "unclassified": {
+          "supported": false,
+          "subtype": "habitual_action_with_reported_dialogue",
+          "reason": "The target follows a general statement about public encounters and leads into other people's reported questions and the narrator's habitual reply. It contributes an action detail to a recurring-experience account. The phrase 'I smile' does not establish visible smiling at this point in the recording. 'Unclassified' is a retrieval fallback, not a substantive speech function. No additional candidate label is silently promoted."
+        }
+      },
+      "limitations": "Five captions before and after the target inspected. Assistant transcript-only interpretation, not independent adjudication, event verification, visual observation or evidence of retrieval recall."
+    }
+  ]
+}

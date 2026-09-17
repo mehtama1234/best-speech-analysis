@@ -7,6 +7,8 @@ import json
 from collections import defaultdict
 from pathlib import Path
 from statistics import mean, median, stdev
+from review_evidence import load_annotations, supported_labels
+from delivery_quality import screened_value
 
 
 METRICS = [
@@ -33,19 +35,15 @@ def summary(values: list[float]) -> dict:
 
 def main() -> int:
     root = Path(__file__).resolve().parents[1]
-    annotations = [
-        json.loads(line)
-        for line in (root / "research/annotation-ledger.jsonl").read_text().splitlines()
-        if line.strip()
-    ]
-    supported = [row for row in annotations if row.get("candidate_label_supported") is True]
+    annotations = load_annotations(root)
+    supported = [row for row in annotations if supported_labels(row)]
     feature_by_evidence = {}
     video_baselines = {}
     for path in (root / "data/features").glob("*.json"):
         report = json.loads(path.read_text())
         usable = [row for row in report.get("aligned_transcript", []) if row.get("audio_window_count", 0) > 0]
         video_baselines[report["video_id"]] = {
-            metric: mean([row[metric] for row in usable if row.get(metric) is not None]) if any(row.get(metric) is not None for row in usable) else None
+            metric: mean([screened_value(row, metric) for row in usable if screened_value(row, metric) is not None]) if any(screened_value(row, metric) is not None for row in usable) else None
             for metric in METRICS
         }
         feature_by_evidence.update({row["evidence_id"]: row for row in report.get("aligned_transcript", [])})
@@ -61,10 +59,10 @@ def main() -> int:
         baseline = video_baselines.get(video_id)
         if not feature or not baseline:
             continue
-        labels = annotation.get("candidate_labels", [])
+        labels = supported_labels(annotation)
         for label in labels:
             for metric in METRICS:
-                value = feature.get(metric)
+                value = screened_value(feature, metric)
                 reference = baseline.get(metric)
                 if value is not None and reference is not None:
                     deltas_by_label_video[label][video_id][metric].append(value - reference)
@@ -86,7 +84,7 @@ def main() -> int:
         }
         patterns[label] = {
             "comparison": "supported_reviewed_segments_minus_same_video_all_usable_segments",
-            "label_status": "manually_reviewed_supported_examples; exploratory_only",
+            "label_status": "resolved_label_supported_examples; exploratory_only",
             "video_count": len(video_means),
             "example_count": len(examples_by_label[label]),
             "metric_deltas": {
@@ -102,8 +100,9 @@ def main() -> int:
         }
 
     report = {
-        "schema_version": "0.1",
-        "policy": "Only manually reviewed supported examples are included. Deltas are video-balanced and exploratory; they do not establish causation, effectiveness, or speaker-independent rules.",
+        "schema_version": "0.2",
+        "review_provenance": "Legacy reviewer identity unknown; contextual overrides are assistant transcript-only judgments, not independent human review.",
+        "policy": "Only transcript-reviewed supported examples are included. Deltas are video-balanced and exploratory; they do not establish causation, effectiveness, or speaker-independent rules.",
         "supported_annotation_count": len(supported),
         "feature_record_count": len(video_baselines),
         "patterns": patterns,
@@ -114,7 +113,11 @@ def main() -> int:
     lines = [
         "# Reviewed delivery versus same-video baselines",
         "",
-        "This report compares manually reviewed supported examples with ordinary usable transcript segments from the same video. Each video contributes one mean delta per label, which reduces—but does not remove—speaker, microphone, editing, topic, and segmentation confounds. Results are exploratory and do not establish effectiveness or causation.",
+        "Caption-rate screening excludes durations below a provisional 0.25-second floor; original features are preserved. See timing-quality-audit.md before interpreting deltas.",
+        "",
+        "Review provenance: legacy reviewer identity is unknown; contextual per-label overrides are assistant transcript-only judgments. Baselines include target segments and are not disjoint matched controls.",
+        "",
+        "This report compares transcript-reviewed supported examples with all usable transcript segments (including target examples) from the same video. Each video contributes one mean delta per label, which reduces—but does not remove—speaker, microphone, editing, topic, and segmentation confounds. Results are exploratory and do not establish effectiveness or causation.",
         "",
         f"Supported reviewed annotations: **{len(supported)}**; feature records: **{len(video_baselines)}**.",
         "",

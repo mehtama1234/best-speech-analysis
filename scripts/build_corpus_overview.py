@@ -8,6 +8,10 @@ import re
 from collections import Counter, defaultdict
 from datetime import datetime, timezone
 from pathlib import Path
+if __package__:
+    from .source_restrictions import load_restrictions
+else:
+    from source_restrictions import load_restrictions
 
 
 WORD_RE = re.compile(r"[A-Za-z][A-Za-z'’-]*")
@@ -18,6 +22,7 @@ STOPWORDS = {
 
 def main() -> int:
     root = Path(__file__).resolve().parents[1]
+    restrictions = load_restrictions(root)
     registry = [json.loads(line) for line in (root / "data/metadata/video-registry.jsonl").read_text().splitlines() if line.strip()]
     by_video = {row["video_id"]: row for row in registry}
     per_playlist = defaultdict(lambda: {"memberships": 0, "unique_videos": set(), "transcript_videos": set(), "nonempty_videos": set(), "segments_by_video": {}, "words_by_video": {}})
@@ -38,17 +43,20 @@ def main() -> int:
         row = {
             "video_id": video_id,
             "title": video.get("title"),
+            "evidence_restrictions": restrictions.get(video_id, []),
             "channel": video.get("channel"),
             "playlist_memberships": video.get("playlist_memberships", []),
             "transcript_file": path.exists(),
             "segment_count": len(segments),
             "word_count": len(words),
             "transcript_duration_seconds": transcript_duration,
-            "approx_words_per_minute": round(len(words) / (transcript_duration / 60), 1) if transcript_duration else None,
+            "approx_words_per_minute": round(len(words) / (transcript_duration / 60), 1) if transcript_duration and video_id not in restrictions else None,
+            "rate_status": "withheld_source_restriction" if video_id in restrictions else "unvalidated_caption_duration_proxy",
         }
         rows.append(row)
-        all_words.update(content_words)
-        all_bigrams.update(zip(content_words, content_words[1:]))
+        if video_id not in restrictions:
+            all_words.update(content_words)
+            all_bigrams.update(zip(content_words, content_words[1:]))
         for membership in video.get("playlist_memberships", []):
             bucket = per_playlist[membership["source_id"]]
             bucket["memberships"] += 1
@@ -72,7 +80,9 @@ def main() -> int:
         }
 
     report = {
-        "schema_version": "0.1",
+        "schema_version": "0.2",
+        "scope": "Inventory counts include restricted raw sources; lexical aggregates exclude them. Unrestricted does not mean verified. All caption-duration rates are unvalidated proxies.",
+        "restricted_sources": restrictions,
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "video_count": len(rows),
         "transcript_file_count": sum(row["transcript_file"] for row in rows),

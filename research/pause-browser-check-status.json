@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "command": "python3 scripts/check_pause_review_browser.py",
+  "status": "cancelled_without_result",
+  "exit_code": 130,
+  "exec_session": 74400,
+  "observed_pid": 1193487,
+  "elapsed_before_cancellation": "approximately 12 minutes",
+  "cancellation": "Assistant sent SIGINT to the confirmed test PID to release resources; no replacement test launched in this continuation.",
+  "traceback_stage": "browser.new_page()",
+  "stage_interpretation": "The interrupted call was page creation, before page.goto and the playback assertions. This does not establish a defect in the generated review page or media.",
+  "root_cause": "not established",
+  "checks_reached": [],
+  "playback_verified": false,
+  "seeking_verified_in_browser": false,
+  "draft_export_verified_in_browser": false,
+  "cleanup": "Test PID and its previously observed Playwright/Chromium process IDs were absent after cancellation.",
+  "review_server": "HTTP HEAD 200 confirmed at http://127.0.0.1:49191/ after cleanup; server left running.",
+  "next_action": "Diagnose browser page-creation separately with bounded diagnostics before attempting the application smoke test again. Do not infer semantic viewing/listening from any automated check."
+}

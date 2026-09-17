@@ -14,6 +14,17 @@
       "interpretation": "The speaker is beginning a personal anecdote.",
       "confidence": "high",
       "limitations": "One caption is not enough to establish the full story boundary.",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": true,
+          "subtype": "autobiographical_scene_setup",
+          "reason": "The narrator names a career origin, a contest, an age and a place, then introduces its question-and-answer sequence. The target sets up a personal event; this short window does not contain the full story or verify its historical truth."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-001",
+      "resolved_label_support": {
+        "story_or_personal_experience": true
+      },
       "measured_delivery": {
         "mean_rms_db": null,
         "speech_activity_fraction": null,
@@ -22,6 +33,8 @@
         "mean_pitch_hz_proxy": null,
         "mean_pitch_confidence_proxy": null,
         "words_per_second_proxy": null,
+        "raw_words_per_second_proxy": null,
+        "rate_exclusion_reason": "missing_or_nonfinite_caption_timing",
         "transcript_gap_before_seconds": null,
         "transcript_gap_after_seconds": null,
         "audio_window_count": null
@@ -42,6 +55,21 @@
       "interpretation": "The speaker is narrating a decision or turning point.",
       "confidence": "high",
       "limitations": "The contrast marker does not by itself indicate disagreement.",
+      "label_decisions": {
+        "contrast_or_disagreement": {
+          "supported": true,
+          "reason": "The preceding captions describe sustained success and comfort; 'But' introduces a decision to change direction. This supports contrast, not interpersonal disagreement."
+        },
+        "story_or_personal_experience": {
+          "supported": true,
+          "reason": "A first-person decision anchored a few years earlier is followed by ending the show and launching a network. The inspected sequence supports a personal-story transition."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-002",
+      "resolved_label_support": {
+        "contrast_or_disagreement": true,
+        "story_or_personal_experience": true
+      },
       "measured_delivery": {
         "mean_rms_db": null,
         "speech_activity_fraction": null,
@@ -50,6 +78,8 @@
         "mean_pitch_hz_proxy": null,
         "mean_pitch_confidence_proxy": null,
         "words_per_second_proxy": null,
+        "raw_words_per_second_proxy": null,
+        "rate_exclusion_reason": "missing_or_nonfinite_caption_timing",
         "transcript_gap_before_seconds": null,
         "transcript_gap_after_seconds": null,
         "audio_window_count": null
@@ -70,6 +100,21 @@
       "interpretation": "The question appears to transition from another person's example to the speaker's own reflection.",
       "confidence": "high",
       "limitations": "The transcript does not establish audience response.",
+      "label_decisions": {
+        "question": {
+          "supported": true,
+          "reason": "The narrator reports asking what she could do, then describes asking viewers to collect change. This is a narrated self-question, not an observed audience exchange."
+        },
+        "uncertainty_or_qualification": {
+          "supported": false,
+          "reason": "Under the claim-qualification definition, 'could' describes hypothetical capacity inside a narrated question. No factual assertion or prediction is explicitly hedged in this context. A broader wondering category could differ; no internal uncertainty is inferred."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-003",
+      "resolved_label_support": {
+        "question": true,
+        "uncertainty_or_qualification": false
+      },
       "measured_delivery": {
         "mean_rms_db": null,
         "speech_activity_fraction": null,
@@ -78,6 +123,8 @@
         "mean_pitch_hz_proxy": null,
         "mean_pitch_confidence_proxy": null,
         "words_per_second_proxy": null,
+        "raw_words_per_second_proxy": null,
+        "rate_exclusion_reason": "missing_or_nonfinite_caption_timing",
         "transcript_gap_before_seconds": null,
         "transcript_gap_after_seconds": null,
         "audio_window_count": null
@@ -97,6 +144,17 @@
       "interpretation": "The question keyword heuristic is a false positive here.",
       "confidence": "high",
       "limitations": "Caption punctuation and segmentation may be incomplete.",
+      "label_decisions": {
+        "question": {
+          "supported": false,
+          "subtype": "declarative_personal_evaluation",
+          "reason": "The target continues into a statement calling the occasion a defining milestone. The wording 'I consider' does not introduce an interrogative; narrated tears are source self-description, not independently observed emotion."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-004",
+      "resolved_label_support": {
+        "question": false
+      },
       "measured_delivery": {
         "mean_rms_db": null,
         "speech_activity_fraction": null,
@@ -105,6 +163,8 @@
         "mean_pitch_hz_proxy": null,
         "mean_pitch_confidence_proxy": null,
         "words_per_second_proxy": null,
+        "raw_words_per_second_proxy": null,
+        "rate_exclusion_reason": "missing_or_nonfinite_caption_timing",
         "transcript_gap_before_seconds": null,
         "transcript_gap_after_seconds": null,
         "audio_window_count": null
@@ -124,6 +184,17 @@
       "interpretation": "The speaker is foregrounding a conclusion or charge to the audience.",
       "confidence": "high",
       "limitations": "The surrounding paragraph is needed to distinguish summary from a new claim.",
+      "label_decisions": {
+        "conclusion_or_summary": {
+          "supported": true,
+          "subtype": "broad_takeaway_and_charge",
+          "reason": "Several possible ways to make a difference precede a general charge to the generation to change political conditions. This is a broad takeaway tied to those examples, not merely an isolated 'point' marker. Full speech closure is not established."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-005",
+      "resolved_label_support": {
+        "conclusion_or_summary": true
+      },
       "measured_delivery": {
         "mean_rms_db": null,
         "speech_activity_fraction": null,
@@ -132,6 +203,8 @@
         "mean_pitch_hz_proxy": null,
         "mean_pitch_confidence_proxy": null,
         "words_per_second_proxy": null,
+        "raw_words_per_second_proxy": null,
+        "rate_exclusion_reason": "missing_or_nonfinite_caption_timing",
         "transcript_gap_before_seconds": null,
         "transcript_gap_after_seconds": null,
         "audio_window_count": null
@@ -151,6 +224,17 @@
       "interpretation": "The speaker is likely reformulating or defining the preceding idea.",
       "confidence": "medium",
       "limitations": "The caption is fragmented; preceding context is required.",
+      "label_decisions": {
+        "definition": {
+          "supported": true,
+          "subtype": "operational_reformulation",
+          "reason": "The surrounding phrase is liberation from a colonial mindset; the next captions unpack its external content as reformed multilateralism and contemporary global governance. This supports operational reformulation, not a dictionary definition. The boundary with policy implication is interpretive; confidence is moderate."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-006",
+      "resolved_label_support": {
+        "definition": true
+      },
       "measured_delivery": {
         "mean_rms_db": null,
         "speech_activity_fraction": null,
@@ -159,6 +243,8 @@
         "mean_pitch_hz_proxy": null,
         "mean_pitch_confidence_proxy": null,
         "words_per_second_proxy": null,
+        "raw_words_per_second_proxy": null,
+        "rate_exclusion_reason": "missing_or_nonfinite_caption_timing",
         "transcript_gap_before_seconds": null,
         "transcript_gap_after_seconds": null,
         "audio_window_count": null
@@ -178,6 +264,17 @@
       "interpretation": "The speaker is moving from a general issue to examples.",
       "confidence": "high",
       "limitations": "This is an example marker, not evidence that the example improved comprehension.",
+      "label_decisions": {
+        "example": {
+          "supported": true,
+          "subtype": "category_enumeration",
+          "reason": "Global issues are unpacked into terrorism, pandemics and the environment after a statement about unity. These are category members, not detailed empirical cases or evidence that the policy succeeds."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-007",
+      "resolved_label_support": {
+        "example": true
+      },
       "measured_delivery": {
         "mean_rms_db": null,
         "speech_activity_fraction": null,
@@ -186,6 +283,8 @@
         "mean_pitch_hz_proxy": null,
         "mean_pitch_confidence_proxy": null,
         "words_per_second_proxy": null,
+        "raw_words_per_second_proxy": null,
+        "rate_exclusion_reason": "missing_or_nonfinite_caption_timing",
         "transcript_gap_before_seconds": null,
         "transcript_gap_after_seconds": null,
         "audio_window_count": null
@@ -205,6 +304,18 @@
       "interpretation": "The speaker is presenting a collective action or policy recommendation.",
       "confidence": "high",
       "limitations": "The transcript does not reveal whether the audience accepted it.",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": true,
+          "subtype": "institutional_collective_proposal",
+          "view_attribution": "current_speech_text",
+          "reason": "A present invitation to member states precedes the target proposal for a global architecture, which continues through captions 277–280. This is a collective policy appeal, not a completed institutional action or independently endorsed policy."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-008",
+      "resolved_label_support": {
+        "call_to_action": true
+      },
       "measured_delivery": {
         "mean_rms_db": null,
         "speech_activity_fraction": null,
@@ -213,6 +324,8 @@
         "mean_pitch_hz_proxy": null,
         "mean_pitch_confidence_proxy": null,
         "words_per_second_proxy": null,
+        "raw_words_per_second_proxy": null,
+        "rate_exclusion_reason": "missing_or_nonfinite_caption_timing",
         "transcript_gap_before_seconds": null,
         "transcript_gap_after_seconds": null,
         "audio_window_count": null
@@ -232,6 +345,18 @@
       "interpretation": "The speaker is closing or intensifying an appeal.",
       "confidence": "high",
       "limitations": "The caption is a fragment and should be reviewed with adjacent captions.",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": true,
+          "subtype": "closing_collective_aspiration",
+          "view_attribution": "current_speech_text",
+          "reason": "The target begins a collective appeal continued by peace, progress and prosperity in the following captions, then thanks the audience. It supports a broad closing aspiration, not a detailed executable instruction or measured audience response."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-009",
+      "resolved_label_support": {
+        "call_to_action": true
+      },
       "measured_delivery": {
         "mean_rms_db": null,
         "speech_activity_fraction": null,
@@ -240,6 +365,8 @@
         "mean_pitch_hz_proxy": null,
         "mean_pitch_confidence_proxy": null,
         "words_per_second_proxy": null,
+        "raw_words_per_second_proxy": null,
+        "rate_exclusion_reason": "missing_or_nonfinite_caption_timing",
         "transcript_gap_before_seconds": null,
         "transcript_gap_after_seconds": null,
         "audio_window_count": null
@@ -259,6 +386,17 @@
       "interpretation": "The speaker is summarizing a preceding idea.",
       "confidence": "high",
       "limitations": "The summary's effectiveness cannot be inferred from the phrase alone.",
+      "label_decisions": {
+        "conclusion_or_summary": {
+          "supported": true,
+          "subtype": "autobiographical_summary",
+          "reason": "The earlier captions describe combining skills, asking hard questions and willingness to learn; the following complete sentence compresses school and sport into critical curiosity and learning about the world. Some transcript phrasing remains uncertain."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-010",
+      "resolved_label_support": {
+        "conclusion_or_summary": true
+      },
       "measured_delivery": {
         "mean_rms_db": null,
         "speech_activity_fraction": null,
@@ -267,6 +405,8 @@
         "mean_pitch_hz_proxy": null,
         "mean_pitch_confidence_proxy": null,
         "words_per_second_proxy": null,
+        "raw_words_per_second_proxy": null,
+        "rate_exclusion_reason": "missing_or_nonfinite_caption_timing",
         "transcript_gap_before_seconds": null,
         "transcript_gap_after_seconds": null,
         "audio_window_count": null
@@ -286,6 +426,18 @@
       "interpretation": "The speaker is escalating toward a call to action.",
       "confidence": "high",
       "limitations": "The historical and rhetorical context matters; this is not a general best practice.",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": true,
+          "subtype": "repeated_collective_appeal",
+          "view_attribution": "performed_address_text_identity_unverified",
+          "reason": "The target pivots from a description of dictators to repeated appeals to fulfill a promise, free the world and unite. The expanded window completes the appeal. This identifies rhetorical structure in the transcript, not literal combat instructions, historical truth, spontaneous delivery or audience effect."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-011",
+      "resolved_label_support": {
+        "call_to_action": true
+      },
       "measured_delivery": {
         "mean_rms_db": null,
         "speech_activity_fraction": null,
@@ -294,6 +446,8 @@
         "mean_pitch_hz_proxy": null,
         "mean_pitch_confidence_proxy": null,
         "words_per_second_proxy": null,
+        "raw_words_per_second_proxy": null,
+        "rate_exclusion_reason": "missing_or_nonfinite_caption_timing",
         "transcript_gap_before_seconds": null,
         "transcript_gap_after_seconds": null,
         "audio_window_count": null
@@ -313,6 +467,18 @@
       "interpretation": "The speaker is introducing a personal reconsideration.",
       "confidence": "high",
       "limitations": "Contrast markers should not automatically be treated as disagreement.",
+      "label_decisions": {
+        "contrast_or_disagreement": {
+          "supported": true,
+          "subtype": "personal_reconsideration",
+          "view_attribution": "current_turn_narrative",
+          "reason": "The speaker first describes pressure about addressing Harvard graduates, then revises the premise that attendance is necessary for a particular disposition. This is a personal reconsideration. The self-description is reported wording, not a personality assessment by this project."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-012",
+      "resolved_label_support": {
+        "contrast_or_disagreement": true
+      },
       "measured_delivery": {
         "mean_rms_db": null,
         "speech_activity_fraction": null,
@@ -321,6 +487,8 @@
         "mean_pitch_hz_proxy": null,
         "mean_pitch_confidence_proxy": null,
         "words_per_second_proxy": null,
+        "raw_words_per_second_proxy": null,
+        "rate_exclusion_reason": "missing_or_nonfinite_caption_timing",
         "transcript_gap_before_seconds": null,
         "transcript_gap_after_seconds": null,
         "audio_window_count": null
@@ -340,6 +508,17 @@
       "interpretation": "The speaker is opening a personal story.",
       "confidence": "high",
       "limitations": "A story label does not imply emotional state.",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": true,
+          "subtype": "dated_recollection_with_trigger_event",
+          "reason": "The remembered date is followed by a first-person shower episode and discovery of hair in the hand. Context supplies an actual narrated event rather than merely the marker 'I remember'. The report does not independently verify the medical history."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-013",
+      "resolved_label_support": {
+        "story_or_personal_experience": true
+      },
       "measured_delivery": {
         "mean_rms_db": -24.076,
         "speech_activity_fraction": 1.0,
@@ -348,6 +527,8 @@
         "mean_pitch_hz_proxy": 210.938,
         "mean_pitch_confidence_proxy": 0.26668,
         "words_per_second_proxy": 2.127,
+        "raw_words_per_second_proxy": 2.127,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 3
@@ -368,6 +549,21 @@
       "interpretation": "The story marker is supported; the call-to-action heuristic is a false positive.",
       "confidence": "high",
       "limitations": "Speaker attribution within quoted dialogue requires broader context.",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": false,
+          "reason": "The recommendation is attributed to the boyfriend within a past event. It is not a request for the current audience to act."
+        },
+        "story_or_personal_experience": {
+          "supported": true,
+          "reason": "The narrator describes a sequence of hair loss, a boyfriend's suggestion, crying that night and visiting a shop two weeks later. The target is an event within that personal story."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-014",
+      "resolved_label_support": {
+        "call_to_action": false,
+        "story_or_personal_experience": true
+      },
       "measured_delivery": {
         "mean_rms_db": -39.485,
         "speech_activity_fraction": 0.444,
@@ -376,6 +572,8 @@
         "mean_pitch_hz_proxy": 173.828,
         "mean_pitch_confidence_proxy": 0.18953,
         "words_per_second_proxy": 0.844,
+        "raw_words_per_second_proxy": 0.844,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 18
@@ -395,6 +593,17 @@
       "interpretation": "The speaker is advancing a personal narrative.",
       "confidence": "high",
       "limitations": "Caption-level boundaries may split one narrative unit.",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": true,
+          "subtype": "decision_and_action_with_reported_aftermath",
+          "reason": "The preceding self-question leads to the narrator's stated action of shaving the head, followed by reported messages and encounters. This is a narrative event/aftermath sequence; other people's attributed descriptions are not this project's trait judgments."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-015",
+      "resolved_label_support": {
+        "story_or_personal_experience": true
+      },
       "measured_delivery": {
         "mean_rms_db": -20.403,
         "speech_activity_fraction": 1.0,
@@ -403,6 +612,8 @@
         "mean_pitch_hz_proxy": 179.688,
         "mean_pitch_confidence_proxy": 0.16187,
         "words_per_second_proxy": 0.525,
+        "raw_words_per_second_proxy": 0.525,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 20
@@ -422,6 +633,17 @@
       "interpretation": "The conclusion keyword heuristic is a false positive for this transition.",
       "confidence": "high",
       "limitations": "The surrounding speech may establish a larger conclusion.",
+      "label_decisions": {
+        "conclusion_or_summary": {
+          "supported": false,
+          "subtype": "opening_inference_and_agenda",
+          "reason": "The speaker moves from graduates' potential to responsibility and then announces today's topic. This is an opening inference/agenda, not a summary of a developed account. 'Therefore' alone does not support the label."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-016",
+      "resolved_label_support": {
+        "conclusion_or_summary": false
+      },
       "measured_delivery": {
         "mean_rms_db": -19.439,
         "speech_activity_fraction": 1.0,
@@ -430,6 +652,8 @@
         "mean_pitch_hz_proxy": 233.594,
         "mean_pitch_confidence_proxy": 0.1725,
         "words_per_second_proxy": 1.471,
+        "raw_words_per_second_proxy": 1.471,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 10
@@ -449,6 +673,17 @@
       "interpretation": "The speaker is emphasizing a concluding or prioritizing point.",
       "confidence": "medium",
       "limitations": "The segment is short and should be read with neighboring captions.",
+      "label_decisions": {
+        "conclusion_or_summary": {
+          "supported": true,
+          "subtype": "local_argumentative_conclusion",
+          "reason": "The preceding energy-use criterion leads to a prioritizing conclusion that space matters. It is a local argumentative takeaway, not a speech-ending summary. Additional support follows; garbled scientific wording is not repaired or fact-checked here."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-017",
+      "resolved_label_support": {
+        "conclusion_or_summary": true
+      },
       "measured_delivery": {
         "mean_rms_db": -15.764,
         "speech_activity_fraction": 1.0,
@@ -457,6 +692,8 @@
         "mean_pitch_hz_proxy": 222.656,
         "mean_pitch_confidence_proxy": 0.16617,
         "words_per_second_proxy": 0.615,
+        "raw_words_per_second_proxy": 0.615,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 6
@@ -476,6 +713,17 @@
       "interpretation": "The speaker is moving from an abstract claim to an example.",
       "confidence": "high",
       "limitations": "This does not establish whether the example was effective.",
+      "label_decisions": {
+        "example": {
+          "supported": true,
+          "subtype": "asserted_domain_case_with_explanation",
+          "reason": "The speaker introduces radiology as a case for a claim about technology and work, contrasts a forecast with an asserted employment trend, then explains a goal-versus-task distinction. The extended context establishes the illustration; the medical/employment assertions are not independently validated."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-018",
+      "resolved_label_support": {
+        "example": true
+      },
       "measured_delivery": {
         "mean_rms_db": -15.101,
         "speech_activity_fraction": 1.0,
@@ -484,6 +732,8 @@
         "mean_pitch_hz_proxy": 260.045,
         "mean_pitch_confidence_proxy": 0.15069,
         "words_per_second_proxy": 0.949,
+        "raw_words_per_second_proxy": 0.949,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 7
@@ -503,6 +753,17 @@
       "interpretation": "The speaker is posing a question to orient the audience.",
       "confidence": "medium",
       "limitations": "It is unclear whether the audience was expected to answer aloud.",
+      "label_decisions": {
+        "question": {
+          "supported": true,
+          "subtype": "question_form_challenge_to_repetition",
+          "reason": "The question begins in the target and continues through captions 5–6, asking how many ways the same story must be told after three and a half hours. This is a challenge about repetition, not simply an audience-orientation prompt. Speaker identity, turn boundaries and vocal affect are not established by this window."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-019",
+      "resolved_label_support": {
+        "question": true
+      },
       "measured_delivery": {
         "mean_rms_db": -43.174,
         "speech_activity_fraction": 0.6,
@@ -511,6 +772,8 @@
         "mean_pitch_hz_proxy": 244.792,
         "mean_pitch_confidence_proxy": 0.23286,
         "words_per_second_proxy": 2.174,
+        "raw_words_per_second_proxy": 2.174,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 5
@@ -530,6 +793,17 @@
       "interpretation": "This is another question-detector false positive.",
       "confidence": "high",
       "limitations": "Transcript punctuation may be imperfect.",
+      "label_decisions": {
+        "question": {
+          "supported": false,
+          "subtype": "declarative_narrative_constraint",
+          "reason": "The target lists activities the narrator says the wig prevents, with the roller-coaster phrase completed in the next caption. It is a declarative narrative detail, not a question."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-020",
+      "resolved_label_support": {
+        "question": false
+      },
       "measured_delivery": {
         "mean_rms_db": -13.346,
         "speech_activity_fraction": 1.0,
@@ -538,6 +812,8 @@
         "mean_pitch_hz_proxy": 260.938,
         "mean_pitch_confidence_proxy": 0.14383,
         "words_per_second_proxy": 4.128,
+        "raw_words_per_second_proxy": 4.128,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 5
@@ -557,6 +833,18 @@
       "interpretation": "This is an explicit policy-oriented call to action rather than a description of past events.",
       "confidence": "high",
       "limitations": "The transcript does not show whether the audience accepted or acted on the proposal.",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": true,
+          "subtype": "policy_necessity_sequence_with_transcript_uncertainty",
+          "view_attribution": "current_speech_text",
+          "reason": "Repeated 'we need to' constructions list proposed public actions. The target's 'save for schools' wording is unclear and remains unrepaired; the surrounding sequence supports the action-appeal function but not a precise reconstruction of that proposal."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-021",
+      "resolved_label_support": {
+        "call_to_action": true
+      },
       "measured_delivery": {
         "mean_rms_db": -28.763,
         "speech_activity_fraction": 0.6,
@@ -565,6 +853,8 @@
         "mean_pitch_hz_proxy": 315.104,
         "mean_pitch_confidence_proxy": 0.18958,
         "words_per_second_proxy": 1.471,
+        "raw_words_per_second_proxy": 1.471,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 5
@@ -584,6 +874,18 @@
       "interpretation": "The imperative form is a conversational turn allocation, not a substantive audience call to action.",
       "confidence": "high",
       "limitations": "The distinction depends on the surrounding interview format and speaker roles.",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": false,
+          "subtype": "moderator_turn_allocation",
+          "view_attribution": "moderator_invitation_text",
+          "reason": "The target starts an invitation completed in captions 180–181 asking Elon and Jensen for thoughts on jobs, followed by an answer marker. It allocates a conversational turn rather than soliciting substantive action from the wider audience."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-022",
+      "resolved_label_support": {
+        "call_to_action": false
+      },
       "measured_delivery": {
         "mean_rms_db": -16.368,
         "speech_activity_fraction": 1.0,
@@ -592,6 +894,8 @@
         "mean_pitch_hz_proxy": 298.177,
         "mean_pitch_confidence_proxy": 0.18434,
         "words_per_second_proxy": 1.974,
+        "raw_words_per_second_proxy": 1.974,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 6
@@ -611,6 +915,17 @@
       "interpretation": "The speaker is marking a summary conclusion.",
       "confidence": "high",
       "limitations": "The marker identifies discourse function, not the truth of the evaluation.",
+      "label_decisions": {
+        "conclusion_or_summary": {
+          "supported": true,
+          "subtype": "compressed_evaluation",
+          "reason": "The preceding account lists proposed terms and effects on industries; a two-part evaluation compresses that account before the narrative resumes. The political evaluation's truth is not assessed."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-023",
+      "resolved_label_support": {
+        "conclusion_or_summary": true
+      },
       "measured_delivery": {
         "mean_rms_db": -20.84,
         "speech_activity_fraction": 0.875,
@@ -619,6 +934,8 @@
         "mean_pitch_hz_proxy": 177.455,
         "mean_pitch_confidence_proxy": 0.16461,
         "words_per_second_proxy": 1.235,
+        "raw_words_per_second_proxy": 1.235,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 8
@@ -638,6 +955,18 @@
       "interpretation": "This is a forceful normative disagreement, though not an exchange with a named interlocutor.",
       "confidence": "high",
       "limitations": "'Disagreement' here describes the stance toward a position, not observable interpersonal conflict.",
+      "label_decisions": {
+        "contrast_or_disagreement": {
+          "supported": true,
+          "subtype": "normative_rejection_of_justification",
+          "view_attribution": "current_turn_argument",
+          "reason": "The passage rejects a practice despite its historical prevalence after distinguishing understanding from moral relativism. It opposes a possible justification; no actual exchange with a disputant is observed in these captions."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-024",
+      "resolved_label_support": {
+        "contrast_or_disagreement": true
+      },
       "measured_delivery": {
         "mean_rms_db": -18.045,
         "speech_activity_fraction": 1.0,
@@ -646,6 +975,8 @@
         "mean_pitch_hz_proxy": 350.447,
         "mean_pitch_confidence_proxy": 0.24888,
         "words_per_second_proxy": 2.239,
+        "raw_words_per_second_proxy": 2.239,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 2.08,
         "audio_window_count": 7
@@ -665,6 +996,18 @@
       "interpretation": "The speaker is sharpening a disagreement through contrastive reformulation.",
       "confidence": "high",
       "limitations": "The transcript alone cannot establish whom the speaker is addressing.",
+      "label_decisions": {
+        "contrast_or_disagreement": {
+          "supported": true,
+          "subtype": "contrastive_reformulation_of_rejection",
+          "view_attribution": "current_turn_argument",
+          "reason": "The construction contrasts not objecting to one alleged quality with rejecting alleged attempts to damage reputation. The alternative objects of rejection establish contrast. The allegations are not verified or endorsed."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-025",
+      "resolved_label_support": {
+        "contrast_or_disagreement": true
+      },
       "measured_delivery": {
         "mean_rms_db": -18.776,
         "speech_activity_fraction": 1.0,
@@ -673,6 +1016,8 @@
         "mean_pitch_hz_proxy": 236.979,
         "mean_pitch_confidence_proxy": 0.20348,
         "words_per_second_proxy": 1.695,
+        "raw_words_per_second_proxy": 1.695,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 6
@@ -692,6 +1037,18 @@
       "interpretation": "The speaker is correcting an expected trajectory by presenting an opposite outcome.",
       "confidence": "high",
       "limitations": "A contrast marker does not by itself prove that another person disagreed.",
+      "label_decisions": {
+        "contrast_or_disagreement": {
+          "supported": true,
+          "subtype": "expected_versus_asserted_outcome",
+          "view_attribution": "current_turn_argument",
+          "reason": "The passage contrasts the claimed intention to create dependence with an asserted opposite outcome, then contrasts dependence with diversified relationships. It is an asserted policy-outcome contrast, not verified causal evidence."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-026",
+      "resolved_label_support": {
+        "contrast_or_disagreement": true
+      },
       "measured_delivery": {
         "mean_rms_db": -15.454,
         "speech_activity_fraction": 1.0,
@@ -700,6 +1057,8 @@
         "mean_pitch_hz_proxy": 253.348,
         "mean_pitch_confidence_proxy": 0.18668,
         "words_per_second_proxy": 0.88,
+        "raw_words_per_second_proxy": 0.88,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 7
@@ -719,6 +1078,17 @@
       "interpretation": "This is a definition-like reformulation used to distinguish tolerance from a stronger ideal.",
       "confidence": "high",
       "limitations": "It defines a rhetorical use of the phrase, not every possible meaning of 'tolerate'.",
+      "label_decisions": {
+        "definition": {
+          "supported": true,
+          "subtype": "pragmatic_paraphrase",
+          "reason": "The speaker supplies an imagined paraphrase of 'I tolerate you' and contrasts tolerance with acceptance. It explains the intended pragmatic meaning, not a universally valid lexical definition."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-027",
+      "resolved_label_support": {
+        "definition": true
+      },
       "measured_delivery": {
         "mean_rms_db": -19.159,
         "speech_activity_fraction": 1.0,
@@ -727,6 +1097,8 @@
         "mean_pitch_hz_proxy": 303.267,
         "mean_pitch_confidence_proxy": 0.19929,
         "words_per_second_proxy": 1.667,
+        "raw_words_per_second_proxy": 1.667,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 2.64,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 11
@@ -746,6 +1118,17 @@
       "interpretation": "The phrase functions as a compact definition or meaning assignment.",
       "confidence": "high",
       "limitations": "It is a personal interpretation, not a universally established definition.",
+      "label_decisions": {
+        "definition": {
+          "supported": false,
+          "subtype": "interpretive_claim",
+          "reason": "The completed clause says telling a story without crying indicates healing. It interprets an event as a sign; it does not explain the meaning of a term. No health or mental-state claim is validated here. The legacy observation also omitted the negation spanning the preceding caption."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-028",
+      "resolved_label_support": {
+        "definition": false
+      },
       "measured_delivery": {
         "mean_rms_db": -40.996,
         "speech_activity_fraction": 0.3,
@@ -754,6 +1137,8 @@
         "mean_pitch_hz_proxy": 257.813,
         "mean_pitch_confidence_proxy": 0.19889,
         "words_per_second_proxy": 0.644,
+        "raw_words_per_second_proxy": 0.644,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 10
@@ -773,6 +1158,17 @@
       "interpretation": "This is a rhetorical definition or conceptual reframing that links a concrete policy topic to a broader consequence.",
       "confidence": "medium",
       "limitations": "The equivalence is persuasive language; it does not establish a literal causal identity.",
+      "label_decisions": {
+        "definition": {
+          "supported": false,
+          "subtype": "rhetorical_consequence",
+          "reason": "Energy control is linked to control of destiny following an energy-access proposal. This is a persuasive consequence/equivalence claim, not a paraphrase establishing what energy or destiny means."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-029",
+      "resolved_label_support": {
+        "definition": false
+      },
       "measured_delivery": {
         "mean_rms_db": -24.272,
         "speech_activity_fraction": 0.875,
@@ -781,6 +1177,8 @@
         "mean_pitch_hz_proxy": 213.17,
         "mean_pitch_confidence_proxy": 0.14419,
         "words_per_second_proxy": 0.801,
+        "raw_words_per_second_proxy": 0.801,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 8
@@ -800,6 +1198,17 @@
       "interpretation": "This is a concrete narrative detail, but the segment does not introduce an example for general reasoning.",
       "confidence": "high",
       "limitations": "The distinction between story detail and example depends on the larger discourse purpose.",
+      "label_decisions": {
+        "example": {
+          "supported": false,
+          "subtype": "vivid_detail_inside_personal_story",
+          "reason": "The shop visit continues with a wig being shown and bought, followed by the narrator's reported reaction. 'Imagine' intensifies description of that object rather than introducing a case for general reasoning. The source explicitly says wig shop owner; the legacy record's doctor attribution is unsupported."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-030",
+      "resolved_label_support": {
+        "example": false
+      },
       "measured_delivery": {
         "mean_rms_db": -24.687,
         "speech_activity_fraction": 1.0,
@@ -808,6 +1217,8 @@
         "mean_pitch_hz_proxy": 170.759,
         "mean_pitch_confidence_proxy": 0.18938,
         "words_per_second_proxy": 1.809,
+        "raw_words_per_second_proxy": 1.809,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 7
@@ -827,6 +1238,17 @@
       "interpretation": "The speaker is moving from general history to an illustrative quantitative example.",
       "confidence": "high",
       "limitations": "The statistic itself begins in the next caption and must be read with it.",
+      "label_decisions": {
+        "example": {
+          "supported": true,
+          "subtype": "quantitative_before_after_case",
+          "reason": "A claim about movement toward accelerated computing is followed by a top-500-supercomputer percentage comparison and a return to the transition claim. The transcript gives both 'less than 15%' and '10%' for the later CPU share; these must not be silently reconciled. The numerical claim is not fact-checked."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-031",
+      "resolved_label_support": {
+        "example": true
+      },
       "measured_delivery": {
         "mean_rms_db": -18.201,
         "speech_activity_fraction": 1.0,
@@ -835,6 +1257,8 @@
         "mean_pitch_hz_proxy": 238.281,
         "mean_pitch_confidence_proxy": 0.10585,
         "words_per_second_proxy": 1.679,
+        "raw_words_per_second_proxy": 1.679,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 6
@@ -854,6 +1278,17 @@
       "interpretation": "The speaker is grounding a general claim about agreements in a concrete case.",
       "confidence": "high",
       "limitations": "The example supports illustration, not necessarily causal proof.",
+      "label_decisions": {
+        "example": {
+          "supported": true,
+          "subtype": "named_institutional_case",
+          "reason": "A general contrast between deals and agreements is illustrated by an announced company contract; the passage returns to a claim about why companies can reach agreements. The case's occurrence, name spelling and claimed benefits are not independently verified."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-032",
+      "resolved_label_support": {
+        "example": true
+      },
       "measured_delivery": {
         "mean_rms_db": -14.027,
         "speech_activity_fraction": 1.0,
@@ -862,6 +1297,8 @@
         "mean_pitch_hz_proxy": 206.25,
         "mean_pitch_confidence_proxy": 0.17934,
         "words_per_second_proxy": 1.724,
+        "raw_words_per_second_proxy": 1.724,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 5
@@ -881,6 +1318,9 @@
       "interpretation": "The segment is consistent with planning or repair during a personal account.",
       "confidence": "medium",
       "limitations": "The measurement is window-level and cannot determine the speaker's internal reason for pausing.",
+      "resolved_label_support": {
+        "pause_event": true
+      },
       "measured_delivery": {
         "mean_rms_db": -20.801,
         "speech_activity_fraction": 1.0,
@@ -889,6 +1329,8 @@
         "mean_pitch_hz_proxy": 273.437,
         "mean_pitch_confidence_proxy": 0.14289,
         "words_per_second_proxy": 1.359,
+        "raw_words_per_second_proxy": 1.359,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.239,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 5
@@ -908,6 +1350,9 @@
       "interpretation": "The pause may mark a transition from an example to its broader significance.",
       "confidence": "medium",
       "limitations": "The audio proxy cannot distinguish intentional rhetorical silence from editing or segmentation.",
+      "resolved_label_support": {
+        "pause_event": true
+      },
       "measured_delivery": {
         "mean_rms_db": -32.28,
         "speech_activity_fraction": 0.857,
@@ -916,6 +1361,8 @@
         "mean_pitch_hz_proxy": 290.365,
         "mean_pitch_confidence_proxy": 0.21455,
         "words_per_second_proxy": 1.477,
+        "raw_words_per_second_proxy": 1.477,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 7
@@ -935,6 +1382,9 @@
       "interpretation": "A verbal restart or disfluency should not be treated as a measured pause event.",
       "confidence": "high",
       "limitations": "The one-second window may miss sub-second timing distinctions.",
+      "resolved_label_support": {
+        "pause_event": false
+      },
       "measured_delivery": {
         "mean_rms_db": -15.834,
         "speech_activity_fraction": 1.0,
@@ -943,6 +1393,8 @@
         "mean_pitch_hz_proxy": 248.698,
         "mean_pitch_confidence_proxy": 0.13179,
         "words_per_second_proxy": 1.852,
+        "raw_words_per_second_proxy": 1.852,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 6
@@ -962,6 +1414,17 @@
       "interpretation": "It appears to function rhetorically or conversationally rather than request factual information.",
       "confidence": "medium",
       "limitations": "Transcript context cannot establish whether an audience response was expected.",
+      "label_decisions": {
+        "question": {
+          "supported": true,
+          "subtype": "interrogative_form_reaction",
+          "reason": "The short 'how about that' follows a reference to children being killed and precedes a greeting. It supports a question-form reaction, not an information request or evidence of audience participation; neither tone nor the reported event is independently verified."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-036",
+      "resolved_label_support": {
+        "question": true
+      },
       "measured_delivery": {
         "mean_rms_db": -18.445,
         "speech_activity_fraction": 1.0,
@@ -970,6 +1433,8 @@
         "mean_pitch_hz_proxy": 201.563,
         "mean_pitch_confidence_proxy": 0.26824,
         "words_per_second_proxy": 0.915,
+        "raw_words_per_second_proxy": 0.915,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.72,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 5
@@ -989,6 +1454,17 @@
       "interpretation": "The speaker is using self-questioning to structure a personal identity reflection.",
       "confidence": "high",
       "limitations": "The function is rhetorical in context; it should not be counted as an interviewer question.",
+      "label_decisions": {
+        "question": {
+          "supported": true,
+          "subtype": "narrated_identity_self_question_sequence",
+          "reason": "The target is an explicit first-person question among questions about appearance, identity and fitting in. The narrator presents self-questioning as part of a personal account. This does not establish current internal state or an audience question."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-037",
+      "resolved_label_support": {
+        "question": true
+      },
       "measured_delivery": {
         "mean_rms_db": -17.273,
         "speech_activity_fraction": 1.0,
@@ -997,6 +1473,8 @@
         "mean_pitch_hz_proxy": 222.656,
         "mean_pitch_confidence_proxy": 0.13876,
         "words_per_second_proxy": 2.502,
+        "raw_words_per_second_proxy": 2.502,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 2
@@ -1016,6 +1494,17 @@
       "interpretation": "This is a question-detector false positive caused by an interrogative word in a non-interrogative clause.",
       "confidence": "high",
       "limitations": "Transcript punctuation and segmentation can still obscure clause boundaries.",
+      "label_decisions": {
+        "question": {
+          "supported": false,
+          "subtype": "relative_clause_describing_environment",
+          "reason": "The preceding caption introduces a world called Omniverse; the target's 'where' clause describes it, and 'how to be' is embedded within what robots learn. Neither is a direct question in this passage. Technical claims remain attributed to the source."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-038",
+      "resolved_label_support": {
+        "question": false
+      },
       "measured_delivery": {
         "mean_rms_db": -15.537,
         "speech_activity_fraction": 1.0,
@@ -1024,6 +1513,8 @@
         "mean_pitch_hz_proxy": 248.698,
         "mean_pitch_confidence_proxy": 0.18347,
         "words_per_second_proxy": 1.613,
+        "raw_words_per_second_proxy": 1.613,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 6
@@ -1043,6 +1534,17 @@
       "interpretation": "This is a hypothetical or generalized scenario rather than a personal story.",
       "confidence": "high",
       "limitations": "A longer context could reveal an embedded example or autobiographical reference.",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": false,
+          "subtype": "generalized_leadership_scenario",
+          "reason": "The passage describes what leaders in every generation supposedly realize and urges the graduates to lead. It is a generalized scenario, not an identified personally experienced event."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-039",
+      "resolved_label_support": {
+        "story_or_personal_experience": false
+      },
       "measured_delivery": {
         "mean_rms_db": -19.032,
         "speech_activity_fraction": 1.0,
@@ -1051,6 +1553,8 @@
         "mean_pitch_hz_proxy": 302.083,
         "mean_pitch_confidence_proxy": 0.14592,
         "words_per_second_proxy": 2.841,
+        "raw_words_per_second_proxy": 2.841,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 6
@@ -1070,6 +1574,17 @@
       "interpretation": "This is a personal anecdote used to illustrate persistence and failure.",
       "confidence": "high",
       "limitations": "The transcript may contain recognition errors in the job descriptions.",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": true,
+          "subtype": "sequence_of_personal_rejection_accounts",
+          "reason": "The narrator links job applications, a reported rejection and another application example. Despite garbled wording, personal actions and responses form a sequence. Counts, job names and outcomes are not independently fact-checked."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-040",
+      "resolved_label_support": {
+        "story_or_personal_experience": true
+      },
       "measured_delivery": {
         "mean_rms_db": -22.085,
         "speech_activity_fraction": 1.0,
@@ -1078,6 +1593,8 @@
         "mean_pitch_hz_proxy": 313.802,
         "mean_pitch_confidence_proxy": 0.13547,
         "words_per_second_proxy": 1.585,
+        "raw_words_per_second_proxy": 1.585,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 6
@@ -1097,6 +1614,17 @@
       "interpretation": "This is a personal story segment with embedded dialogue and a narrative turn.",
       "confidence": "high",
       "limitations": "The quote attribution is inferred from transcript wording and should be checked against the audio.",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": true,
+          "subtype": "personal_event_with_attributed_dialogue",
+          "reason": "The account places a doctor's visit within a hospital period and quotes what the doctor reportedly said. It is an event with attributed dialogue; the quoted prognosis is not validated medical guidance or an observation of present health."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-041",
+      "resolved_label_support": {
+        "story_or_personal_experience": true
+      },
       "measured_delivery": {
         "mean_rms_db": -33.165,
         "speech_activity_fraction": 0.833,
@@ -1105,6 +1633,8 @@
         "mean_pitch_hz_proxy": 262.5,
         "mean_pitch_confidence_proxy": 0.16617,
         "words_per_second_proxy": 3.598,
+        "raw_words_per_second_proxy": 3.598,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 6
@@ -1124,6 +1654,18 @@
       "interpretation": "The wording qualifies the assertion without withdrawing the positive evaluation.",
       "confidence": "high",
       "limitations": "A hedge in wording does not establish uncertainty in the speaker's state of mind.",
+      "label_decisions": {
+        "uncertainty_or_qualification": {
+          "supported": true,
+          "subtype": "opinion_framed_evaluation",
+          "view_attribution": "current_turn_text",
+          "reason": "After describing the group's diversity, 'I think' introduces an evaluation of its value. This marks the evaluation as a view; it does not establish weak conviction or internal uncertainty."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-042",
+      "resolved_label_support": {
+        "uncertainty_or_qualification": true
+      },
       "measured_delivery": {
         "mean_rms_db": -18.437,
         "speech_activity_fraction": 1.0,
@@ -1132,6 +1674,8 @@
         "mean_pitch_hz_proxy": 278.125,
         "mean_pitch_confidence_proxy": 0.20537,
         "words_per_second_proxy": 1.786,
+        "raw_words_per_second_proxy": 1.786,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 5.28,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 10
@@ -1151,6 +1695,18 @@
       "interpretation": "The phrase combines an epistemic hedge with a strong recommendation or necessity claim.",
       "confidence": "high",
       "limitations": "The transcript cannot determine whether the vocal delivery strengthened or softened the hedge.",
+      "label_decisions": {
+        "uncertainty_or_qualification": {
+          "supported": true,
+          "subtype": "opinion_framed_recommendation",
+          "view_attribution": "current_turn_text",
+          "reason": "Following repeated rejection in the account, 'I think' frames the recommendation to get used to rejection. 'Have to' still expresses necessity. No softness of vocal delivery is inferred."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-043",
+      "resolved_label_support": {
+        "uncertainty_or_qualification": true
+      },
       "measured_delivery": {
         "mean_rms_db": -25.918,
         "speech_activity_fraction": 1.0,
@@ -1159,6 +1715,8 @@
         "mean_pitch_hz_proxy": 198.661,
         "mean_pitch_confidence_proxy": 0.12926,
         "words_per_second_proxy": 1.667,
+        "raw_words_per_second_proxy": 1.667,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 7
@@ -1178,6 +1736,18 @@
       "interpretation": "This is a clear verbal uncertainty marker around a future claim.",
       "confidence": "high",
       "limitations": "It does not show whether the speaker's voice conveyed the same degree of qualification.",
+      "label_decisions": {
+        "uncertainty_or_qualification": {
+          "supported": true,
+          "subtype": "qualified_possibility_in_exchange",
+          "view_attribution": "turn_attribution_unresolved",
+          "reason": "The exchange about an alternative expansion of AI is followed by 'might end up being true' and 'you never know'. Possibility is textually qualified, but captions do not reliably assign this response to a speaker or establish whether it is humorous."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-044",
+      "resolved_label_support": {
+        "uncertainty_or_qualification": true
+      },
       "measured_delivery": {
         "mean_rms_db": -27.822,
         "speech_activity_fraction": 0.833,
@@ -1186,6 +1756,8 @@
         "mean_pitch_hz_proxy": 268.75,
         "mean_pitch_confidence_proxy": 0.17279,
         "words_per_second_proxy": 1.626,
+        "raw_words_per_second_proxy": 1.626,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 6
@@ -1205,6 +1777,17 @@
       "interpretation": "The segment is best treated as an object-description or topic-transition function, not assigned to a more specific current heuristic label.",
       "confidence": "high",
       "limitations": "The description may become an example in the following captions.",
+      "label_decisions": {
+        "unclassified": {
+          "supported": false,
+          "subtype": "object_description_transition",
+          "reason": "The target shifts from reported family wishes about sharing a child's art to describing a particular drawing. The next captions call it a self-portrait and describe its content. This is an identifiable object-description transition; garbled name wording is not repaired and the drawing has not been visually inspected. 'Unclassified' is a retrieval fallback, not a substantive speech function. No additional candidate label is silently promoted."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-045",
+      "resolved_label_support": {
+        "unclassified": false
+      },
       "measured_delivery": {
         "mean_rms_db": -19.488,
         "speech_activity_fraction": 1.0,
@@ -1213,6 +1796,8 @@
         "mean_pitch_hz_proxy": 338.542,
         "mean_pitch_confidence_proxy": 0.1582,
         "words_per_second_proxy": 1.287,
+        "raw_words_per_second_proxy": 1.287,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 6
@@ -1232,6 +1817,17 @@
       "interpretation": "This is a narrative detail, but the current candidate inventory did not retrieve a story label for it.",
       "confidence": "high",
       "limitations": "The false negative likely reflects a retrieval limitation rather than an incorrect story interpretation.",
+      "label_decisions": {
+        "unclassified": {
+          "supported": false,
+          "subtype": "autobiographical_condition_detail",
+          "reason": "The surrounding passage describes repeated hair loss, then a boyfriend's suggestion and a later wig-shop visit. The target is a condition detail within that personal account, not semantically empty text. Reported health details and feelings are not independently verified. 'Unclassified' is a retrieval fallback, not a substantive speech function. No additional candidate label is silently promoted."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-046",
+      "resolved_label_support": {
+        "unclassified": false
+      },
       "measured_delivery": {
         "mean_rms_db": -33.75,
         "speech_activity_fraction": 0.857,
@@ -1240,6 +1836,8 @@
         "mean_pitch_hz_proxy": 169.271,
         "mean_pitch_confidence_proxy": 0.19892,
         "words_per_second_proxy": 1.855,
+        "raw_words_per_second_proxy": 1.855,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 7
@@ -1259,6 +1857,17 @@
       "interpretation": "This is a compact narrative or habitual-action detail that remains unclassified by the current heuristic inventory.",
       "confidence": "medium",
       "limitations": "The single caption is too short to determine whether it functions as story, example, or claim.",
+      "label_decisions": {
+        "unclassified": {
+          "supported": false,
+          "subtype": "habitual_action_with_reported_dialogue",
+          "reason": "The target follows a general statement about public encounters and leads into other people's reported questions and the narrator's habitual reply. It contributes an action detail to a recurring-experience account. The phrase 'I smile' does not establish visible smiling at this point in the recording. 'Unclassified' is a retrieval fallback, not a substantive speech function. No additional candidate label is silently promoted."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-047",
+      "resolved_label_support": {
+        "unclassified": false
+      },
       "measured_delivery": {
         "mean_rms_db": -27.153,
         "speech_activity_fraction": 1.0,
@@ -1267,6 +1876,8 @@
         "mean_pitch_hz_proxy": 308.594,
         "mean_pitch_confidence_proxy": 0.18855,
         "words_per_second_proxy": 2.0,
+        "raw_words_per_second_proxy": 2.0,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 2
@@ -1286,6 +1897,18 @@
       "interpretation": "This is an interview prompt and turn invitation, not a substantive call for audience action.",
       "confidence": "high",
       "limitations": "A conversational prompt can share imperative grammar with a public call to action.",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": false,
+          "subtype": "interviewer_story_prompt",
+          "view_attribution": "explicitly_labelled_interviewer_text",
+          "reason": "An interviewer proposes sharing stories and starting at the beginning, followed by an explicitly labelled interviewee answer. This is an interview prompt, not a substantive audience action appeal."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-048",
+      "resolved_label_support": {
+        "call_to_action": false
+      },
       "measured_delivery": {
         "mean_rms_db": -21.27,
         "speech_activity_fraction": 1.0,
@@ -1294,6 +1917,8 @@
         "mean_pitch_hz_proxy": 334.822,
         "mean_pitch_confidence_proxy": 0.14528,
         "words_per_second_proxy": 1.384,
+        "raw_words_per_second_proxy": 1.384,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 7
@@ -1313,6 +1938,18 @@
       "interpretation": "This is a direct practice-oriented call to action.",
       "confidence": "high",
       "limitations": "The transcript cannot show whether viewers followed the invitation.",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": true,
+          "subtype": "promotional_outro_practice_invitation",
+          "view_attribution": "promotional_outro_text_not_featured_speaker_verified",
+          "reason": "The speech closes with thanks at caption 115; captions 116–126 promote a language-learning community, resources and classes. The target invites English practice in that promotional passage. It supports a call to action in the upload, but must not be attributed to the featured speech's speaker without further evidence."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-049",
+      "resolved_label_support": {
+        "call_to_action": true
+      },
       "measured_delivery": {
         "mean_rms_db": -21.292,
         "speech_activity_fraction": 1.0,
@@ -1321,6 +1958,8 @@
         "mean_pitch_hz_proxy": 101.562,
         "mean_pitch_confidence_proxy": 0.27565,
         "words_per_second_proxy": 0.694,
+        "raw_words_per_second_proxy": 0.694,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 5
@@ -1340,6 +1979,18 @@
       "interpretation": "The speaker is motivating civic participation through an explicit collective imperative.",
       "confidence": "high",
       "limitations": "The candidate caption is fragmented and should be read with the adjacent captions.",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": true,
+          "subtype": "civic_participation_appeal_spanning_captions",
+          "view_attribution": "current_speech_text",
+          "reason": "The target ends with 'we must' and the next caption supplies 'vote' and a request for participation. Together they form a collective civic action appeal. The short target is part of the same clause, not labelled merely because a separate request is nearby. No electoral effect or audience compliance is established."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-050",
+      "resolved_label_support": {
+        "call_to_action": true
+      },
       "measured_delivery": {
         "mean_rms_db": -20.969,
         "speech_activity_fraction": 1.0,
@@ -1348,6 +1999,8 @@
         "mean_pitch_hz_proxy": 246.652,
         "mean_pitch_confidence_proxy": 0.20387,
         "words_per_second_proxy": 0.46,
+        "raw_words_per_second_proxy": 0.46,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 7
@@ -1367,6 +2020,18 @@
       "interpretation": "This is a brief motivational call rather than a detailed policy instruction.",
       "confidence": "high",
       "limitations": "The phrase alone does not reveal the intended action or audience response.",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": true,
+          "subtype": "closing_continuation_encouragement",
+          "view_attribution": "current_speech_text",
+          "reason": "The target links an assertion of progress to encouragement to continue, then thanks the audience before a resource promotion begins. It is a broad continuation appeal with no operationally specified task; garbled earlier wording is not repaired or used to identify the speaker."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-051",
+      "resolved_label_support": {
+        "call_to_action": true
+      },
       "measured_delivery": {
         "mean_rms_db": -31.259,
         "speech_activity_fraction": 0.875,
@@ -1375,6 +2040,8 @@
         "mean_pitch_hz_proxy": 139.509,
         "mean_pitch_confidence_proxy": 0.16387,
         "words_per_second_proxy": 0.949,
+        "raw_words_per_second_proxy": 0.949,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 8
@@ -1394,6 +2061,18 @@
       "interpretation": "This is stage management, not a substantive call for behavior outside the event.",
       "confidence": "high",
       "limitations": "The distinction depends on the event context.",
+      "label_decisions": {
+        "call_to_action": {
+          "supported": false,
+          "subtype": "event_management_transition",
+          "view_attribution": "event_host_text_identity_unverified",
+          "reason": "Seating and applause instructions precede the target, which moves the event onward into an introduction. Under the substantive audience-action rubric this is event management, not a behavioral commitment beyond the conversational procedure."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-052",
+      "resolved_label_support": {
+        "call_to_action": false
+      },
       "measured_delivery": {
         "mean_rms_db": -16.946,
         "speech_activity_fraction": 1.0,
@@ -1402,6 +2081,8 @@
         "mean_pitch_hz_proxy": 348.633,
         "mean_pitch_confidence_proxy": 0.1649,
         "words_per_second_proxy": 0.633,
+        "raw_words_per_second_proxy": 0.633,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 8
@@ -1421,6 +2102,17 @@
       "interpretation": "This is a genuine interview question functioning as a story prompt.",
       "confidence": "high",
       "limitations": "It is not evidence that the speaker used a question in a monologue.",
+      "label_decisions": {
+        "question": {
+          "supported": true,
+          "subtype": "interviewer_narrative_prompt",
+          "reason": "The transcript explicitly labels an interviewer who proposes starting at the beginning, followed by a Sachin Tendulkar-labeled answer recalling school cricket. The question prompts a narrative answer; it is not a monologue technique used by the interviewee."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-053",
+      "resolved_label_support": {
+        "question": true
+      },
       "measured_delivery": {
         "mean_rms_db": -24.741,
         "speech_activity_fraction": 0.75,
@@ -1429,6 +2121,8 @@
         "mean_pitch_hz_proxy": 369.792,
         "mean_pitch_confidence_proxy": 0.14221,
         "words_per_second_proxy": 2.615,
+        "raw_words_per_second_proxy": 2.615,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 4
@@ -1448,6 +2142,17 @@
       "interpretation": "The speaker is using sequential questions to develop the conversation.",
       "confidence": "high",
       "limitations": "The transcript does not distinguish whether the second question is an interruption or planned follow-up.",
+      "label_decisions": {
+        "question": {
+          "supported": true,
+          "subtype": "interlocutor_question_spanning_captions",
+          "reason": "The target 'it with?' completes a question beginning in captions 37–38 about whom Hopper would share restaurants with; subsequent questions address Doc and friends. This supports a question spanning caption boundaries. Transcript text alone does not settle speaker turns, interruption or whether this is spontaneous conversation."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-054",
+      "resolved_label_support": {
+        "question": true
+      },
       "measured_delivery": {
         "mean_rms_db": -37.087,
         "speech_activity_fraction": 0.75,
@@ -1456,6 +2161,8 @@
         "mean_pitch_hz_proxy": 291.667,
         "mean_pitch_confidence_proxy": 0.23242,
         "words_per_second_proxy": 0.575,
+        "raw_words_per_second_proxy": 0.575,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 4
@@ -1475,6 +2182,17 @@
       "interpretation": "The question is used to set up a concise audience-facing answer.",
       "confidence": "high",
       "limitations": "The transcript cannot establish whether the audience was expected to answer before the speaker did.",
+      "label_decisions": {
+        "question": {
+          "supported": true,
+          "subtype": "question_followed_by_transcribed_answer",
+          "reason": "The target asks what to do after falling; the next caption supplies 'Get back up', then the passage qualifies that advice by describing difficulty doing so. The transcript supports question-answer structure, but lacks turn labels proving who supplied the answer or whether an audience answered."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-055",
+      "resolved_label_support": {
+        "question": true
+      },
       "measured_delivery": {
         "mean_rms_db": -19.441,
         "speech_activity_fraction": 1.0,
@@ -1483,6 +2201,8 @@
         "mean_pitch_hz_proxy": 245.739,
         "mean_pitch_confidence_proxy": 0.16815,
         "words_per_second_proxy": 0.869,
+        "raw_words_per_second_proxy": 0.869,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 11
@@ -1502,6 +2222,17 @@
       "interpretation": "The question detector appears to have attached a nearby question to the wrong caption segment.",
       "confidence": "high",
       "limitations": "Caption segmentation can shift a question boundary across neighboring rows.",
+      "label_decisions": {
+        "question": {
+          "supported": false,
+          "subtype": "declarative_answer_after_nearby_question",
+          "reason": "A question about the source of energy occurs at captions 89–90, while the target continues the declarative solar-energy assessment begun in 91. Nearby interrogatives do not make this target a question. The target remains rejected without denying questions elsewhere in the context."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-056",
+      "resolved_label_support": {
+        "question": false
+      },
       "measured_delivery": {
         "mean_rms_db": -19.663,
         "speech_activity_fraction": 0.857,
@@ -1510,6 +2241,8 @@
         "mean_pitch_hz_proxy": 197.917,
         "mean_pitch_confidence_proxy": 0.1657,
         "words_per_second_proxy": 1.19,
+        "raw_words_per_second_proxy": 1.19,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 7
@@ -1529,6 +2262,17 @@
       "interpretation": "This is a question-keyword false positive or a boundary artifact.",
       "confidence": "high",
       "limitations": "The transcript may omit punctuation from the preceding or following sentence.",
+      "label_decisions": {
+        "question": {
+          "supported": false,
+          "subtype": "qualified_prediction_not_question",
+          "reason": "The target continues a prediction introduced by 'It is my guess' in the preceding caption, then supplies a causal explanation. It is not interrogative. The stated prediction about AI is not independently verified."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-057",
+      "resolved_label_support": {
+        "question": false
+      },
       "measured_delivery": {
         "mean_rms_db": -15.311,
         "speech_activity_fraction": 1.0,
@@ -1537,6 +2281,8 @@
         "mean_pitch_hz_proxy": 275.0,
         "mean_pitch_confidence_proxy": 0.12901,
         "words_per_second_proxy": 2.083,
+        "raw_words_per_second_proxy": 2.083,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 5
@@ -1556,6 +2302,9 @@
       "interpretation": "The segmentation and filler do not establish a measured pause event.",
       "confidence": "high",
       "limitations": "A sub-second pause may be hidden by the one-second audio windows.",
+      "resolved_label_support": {
+        "pause_event": false
+      },
       "measured_delivery": {
         "mean_rms_db": -32.593,
         "speech_activity_fraction": 0.75,
@@ -1564,6 +2313,8 @@
         "mean_pitch_hz_proxy": 250.0,
         "mean_pitch_confidence_proxy": 0.12694,
         "words_per_second_proxy": 1.111,
+        "raw_words_per_second_proxy": 1.111,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 4
@@ -1583,6 +2334,9 @@
       "interpretation": "Laughter and pause should be represented as separate observable events.",
       "confidence": "high",
       "limitations": "The current extractor does not separately detect laughter acoustically.",
+      "resolved_label_support": {
+        "pause_event": false
+      },
       "measured_delivery": {
         "mean_rms_db": -19.08,
         "speech_activity_fraction": 1.0,
@@ -1591,6 +2345,8 @@
         "mean_pitch_hz_proxy": 231.771,
         "mean_pitch_confidence_proxy": 0.12368,
         "words_per_second_proxy": 0.495,
+        "raw_words_per_second_proxy": 0.495,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.583,
         "audio_window_count": 3
@@ -1610,6 +2366,9 @@
       "interpretation": "The unusually long gap is more consistent with an edit, scene boundary, or missing caption than an ordinary rhetorical pause.",
       "confidence": "high",
       "limitations": "Without inspecting the full video timeline, the cause of the gap cannot be determined.",
+      "resolved_label_support": {
+        "pause_event": false
+      },
       "measured_delivery": {
         "mean_rms_db": -38.193,
         "speech_activity_fraction": 0.75,
@@ -1618,6 +2377,8 @@
         "mean_pitch_hz_proxy": 184.896,
         "mean_pitch_confidence_proxy": 0.16189,
         "words_per_second_proxy": 1.667,
+        "raw_words_per_second_proxy": 1.667,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 4
@@ -1637,6 +2398,9 @@
       "interpretation": "This is a caption boundary, not evidence of a pause.",
       "confidence": "high",
       "limitations": "The audio proxy may miss a very short breath or silence.",
+      "resolved_label_support": {
+        "pause_event": false
+      },
       "measured_delivery": {
         "mean_rms_db": -27.76,
         "speech_activity_fraction": 1.0,
@@ -1645,6 +2409,8 @@
         "mean_pitch_hz_proxy": 254.687,
         "mean_pitch_confidence_proxy": 0.10291,
         "words_per_second_proxy": 0.67,
+        "raw_words_per_second_proxy": 0.67,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 5
@@ -1664,6 +2430,17 @@
       "interpretation": "This is an illustrative hypothetical used to make a technical object more tangible.",
       "confidence": "high",
       "limitations": "The segment does not prove that the visualization improved comprehension.",
+      "label_decisions": {
+        "example": {
+          "supported": true,
+          "subtype": "scale_visualization_of_existing_object",
+          "reason": "A discussion of rack weight and cooling is followed by an invitation to imagine the small computational object. This is concrete scale illustration of an existing referent, not necessarily a new hypothetical event. Speaker turns are not reliably attributed by captions."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-062",
+      "resolved_label_support": {
+        "example": true
+      },
       "measured_delivery": {
         "mean_rms_db": -15.29,
         "speech_activity_fraction": 1.0,
@@ -1672,6 +2449,8 @@
         "mean_pitch_hz_proxy": 263.672,
         "mean_pitch_confidence_proxy": 0.10958,
         "words_per_second_proxy": 2.133,
+        "raw_words_per_second_proxy": 2.133,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 4
@@ -1691,6 +2470,17 @@
       "interpretation": "This is advice or a principle, not an example of a case or event.",
       "confidence": "high",
       "limitations": "Advice can later be supported by an example in the surrounding speech.",
+      "label_decisions": {
+        "example": {
+          "supported": false,
+          "subtype": "bare_advice_not_case",
+          "reason": "The speaker offers advice to be honest, not an event or case illustrating a broader proposition. Later unrelated dialogue in the inspected window does not establish an example relation."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-063",
+      "resolved_label_support": {
+        "example": false
+      },
       "measured_delivery": {
         "mean_rms_db": -36.778,
         "speech_activity_fraction": 0.571,
@@ -1699,6 +2489,8 @@
         "mean_pitch_hz_proxy": 222.656,
         "mean_pitch_confidence_proxy": 0.16551,
         "words_per_second_proxy": 1.282,
+        "raw_words_per_second_proxy": 1.282,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 2.08,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 7
@@ -1718,6 +2510,17 @@
       "interpretation": "The speaker is grounding a general claim with named examples.",
       "confidence": "high",
       "limitations": "The examples function rhetorically and are not independently verified here.",
+      "label_decisions": {
+        "example": {
+          "supported": true,
+          "subtype": "named_instances_of_asserted_category",
+          "reason": "The speaker names entities after asserting a category of people/companies that retracted statements. The local list instantiates that asserted category. This review does not endorse allegations, legal characterizations or claims about the named parties."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-064",
+      "resolved_label_support": {
+        "example": true
+      },
       "measured_delivery": {
         "mean_rms_db": -23.931,
         "speech_activity_fraction": 0.889,
@@ -1726,6 +2529,8 @@
         "mean_pitch_hz_proxy": 225.586,
         "mean_pitch_confidence_proxy": 0.2174,
         "words_per_second_proxy": 0.911,
+        "raw_words_per_second_proxy": 0.911,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 9
@@ -1745,6 +2550,17 @@
       "interpretation": "This is an illustrative scenario supporting a broader social vision.",
       "confidence": "high",
       "limitations": "An imagined scenario is not a report of an observed event.",
+      "label_decisions": {
+        "example": {
+          "supported": true,
+          "subtype": "imagined_future_scenario",
+          "reason": "A broad vision about a world without limitations is made concrete through daughters growing up with possibilities and then grandmothers' imagined responses. It is an aspirational scenario, not an observed event or measured audience effect."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-065",
+      "resolved_label_support": {
+        "example": true
+      },
       "measured_delivery": {
         "mean_rms_db": -18.499,
         "speech_activity_fraction": 1.0,
@@ -1753,6 +2569,8 @@
         "mean_pitch_hz_proxy": 247.768,
         "mean_pitch_confidence_proxy": 0.17914,
         "words_per_second_proxy": 1.014,
+        "raw_words_per_second_proxy": 1.014,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.12,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 7
@@ -1772,6 +2590,17 @@
       "interpretation": "The speaker is moving from a general claim to a historical example.",
       "confidence": "high",
       "limitations": "The caption is fragmentary and needs the neighboring lines for full syntax.",
+      "label_decisions": {
+        "example": {
+          "supported": true,
+          "subtype": "historical_case_in_limitation_argument",
+          "reason": "Confederation is presented as one agreement in an argument that agreements alone could do only so much, followed by the claimed need for a corridor. This identifies rhetorical case use, not validation of historical or causal claims."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-066",
+      "resolved_label_support": {
+        "example": true
+      },
       "measured_delivery": {
         "mean_rms_db": -13.916,
         "speech_activity_fraction": 1.0,
@@ -1780,6 +2609,8 @@
         "mean_pitch_hz_proxy": 239.063,
         "mean_pitch_confidence_proxy": 0.11012,
         "words_per_second_proxy": 1.524,
+        "raw_words_per_second_proxy": 1.524,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 5
@@ -1799,6 +2630,17 @@
       "interpretation": "This is a first-person story beat that conveys a setback through action and setting.",
       "confidence": "high",
       "limitations": "The transcript does not establish the vocal or facial delivery of the emotion.",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": true,
+          "subtype": "setback_action_and_self_address",
+          "reason": "Following a cricket setback, the narrator describes going to a bathroom, crying and speaking to himself in a mirror, before later seeking advice. Those are narrated actions, not acoustic or visual evidence of emotion during the current speech."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-067",
+      "resolved_label_support": {
+        "story_or_personal_experience": true
+      },
       "measured_delivery": {
         "mean_rms_db": -20.469,
         "speech_activity_fraction": 1.0,
@@ -1807,6 +2649,8 @@
         "mean_pitch_hz_proxy": 190.104,
         "mean_pitch_confidence_proxy": 0.11981,
         "words_per_second_proxy": 2.787,
+        "raw_words_per_second_proxy": 2.787,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 3
@@ -1826,6 +2670,17 @@
       "interpretation": "This is a personal recollection framed as a counterfactual scenario.",
       "confidence": "medium",
       "limitations": "It is not a fully narrated event and should not be treated as one.",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": false,
+          "subtype": "autobiographically_anchored_counterfactual",
+          "reason": "A childhood location anchors an imagined reaction: if acquaintances had been told about the later opportunity, they would have laughed. The target does not report that such an exchange occurred or narrate a sequence of experienced events. This can still be a useful counterfactual device, but is not support for the narrower experienced-event rubric."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-068",
+      "resolved_label_support": {
+        "story_or_personal_experience": false
+      },
       "measured_delivery": {
         "mean_rms_db": -24.433,
         "speech_activity_fraction": 1.0,
@@ -1834,6 +2689,8 @@
         "mean_pitch_hz_proxy": 256.511,
         "mean_pitch_confidence_proxy": 0.1789,
         "words_per_second_proxy": 2.122,
+        "raw_words_per_second_proxy": 2.122,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 6
@@ -1853,6 +2710,17 @@
       "interpretation": "This is an explanatory historical comparison, not a personal experience story.",
       "confidence": "high",
       "limitations": "The comparison may contain an example, but the story label is too specific.",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": false,
+          "subtype": "historical_price_comparison",
+          "reason": "The speaker compares earlier and current solar/battery costs. Time references alone do not make this a personally experienced narrative. The price claims are not verified here."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-069",
+      "resolved_label_support": {
+        "story_or_personal_experience": false
+      },
       "measured_delivery": {
         "mean_rms_db": -16.379,
         "speech_activity_fraction": 1.0,
@@ -1861,6 +2729,8 @@
         "mean_pitch_hz_proxy": 195.312,
         "mean_pitch_confidence_proxy": 0.12809,
         "words_per_second_proxy": 1.434,
+        "raw_words_per_second_proxy": 1.434,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 6
@@ -1880,6 +2750,17 @@
       "interpretation": "This is a personal story with embedded family dialogue.",
       "confidence": "high",
       "limitations": "The transcript contains recognition errors in the quoted phrase.",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": true,
+          "subtype": "family_dialogue_in_personal_recollection",
+          "reason": "The narrator introduces the mother's words during a recalled difficult period and describes their significance in that account. The garbled phrase 'this two sell-pass' is preserved, not silently reconstructed. Reported spiritual/health implications are not independently endorsed."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-070",
+      "resolved_label_support": {
+        "story_or_personal_experience": true
+      },
       "measured_delivery": {
         "mean_rms_db": -42.935,
         "speech_activity_fraction": 0.571,
@@ -1888,6 +2769,8 @@
         "mean_pitch_hz_proxy": 238.281,
         "mean_pitch_confidence_proxy": 0.18834,
         "words_per_second_proxy": 1.429,
+        "raw_words_per_second_proxy": 1.429,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 7
@@ -1907,6 +2790,17 @@
       "interpretation": "This is a personal origin-story fragment embedded in a broader policy speech.",
       "confidence": "medium",
       "limitations": "The caption is split and the complete autobiographical event may extend beyond it.",
+      "label_decisions": {
+        "story_or_personal_experience": {
+          "supported": true,
+          "subtype": "brief_autobiographical_habit_recollection",
+          "reason": "The national-story metaphor transitions into the speaker's stated childhood practice of pledging allegiance and its personal significance. This supports a brief autobiographical recollection under the broad personal-experience label, not a complete story arc or evidence of audience effect."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-071",
+      "resolved_label_support": {
+        "story_or_personal_experience": true
+      },
       "measured_delivery": {
         "mean_rms_db": -22.605,
         "speech_activity_fraction": 1.0,
@@ -1915,6 +2809,8 @@
         "mean_pitch_hz_proxy": 333.984,
         "mean_pitch_confidence_proxy": 0.17491,
         "words_per_second_proxy": 1.324,
+        "raw_words_per_second_proxy": 1.324,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 8
@@ -1934,6 +2830,18 @@
       "interpretation": "The speaker qualifies a hypothetical interpretation of another person's response.",
       "confidence": "high",
       "limitations": "The hedge does not reveal the speaker's internal certainty beyond the wording.",
+      "label_decisions": {
+        "uncertainty_or_qualification": {
+          "supported": true,
+          "subtype": "reported_hypothetical_consequence",
+          "view_attribution": "reported_other_people_text",
+          "reason": "The surrounding clauses say Ryan and Jessica said sharing the art might have a hoped-for consequence. The qualification is in reported speech, not evidence of the narrator's own belief strength. No afterlife or emotional-response claim is validated."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-072",
+      "resolved_label_support": {
+        "uncertainty_or_qualification": true
+      },
       "measured_delivery": {
         "mean_rms_db": -20.493,
         "speech_activity_fraction": 1.0,
@@ -1942,6 +2850,8 @@
         "mean_pitch_hz_proxy": 293.75,
         "mean_pitch_confidence_proxy": 0.13935,
         "words_per_second_proxy": 0.833,
+        "raw_words_per_second_proxy": 0.833,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 5
@@ -1961,6 +2871,18 @@
       "interpretation": "The wording softens the grammatical commitment while retaining an imperative force.",
       "confidence": "high",
       "limitations": "Vocal emphasis and audience context require audio/video review beyond the transcript.",
+      "label_decisions": {
+        "uncertainty_or_qualification": {
+          "supported": true,
+          "subtype": "opinion_framed_advice_with_reinforcement",
+          "view_attribution": "current_turn_text",
+          "reason": "A question about leadership is answered with 'I think you need to be brave', followed by 'Really brave'. The viewpoint marker coexists with textually reinforced advice; it does not prove hesitation."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-073",
+      "resolved_label_support": {
+        "uncertainty_or_qualification": true
+      },
       "measured_delivery": {
         "mean_rms_db": -23.957,
         "speech_activity_fraction": 1.0,
@@ -1969,6 +2891,8 @@
         "mean_pitch_hz_proxy": 270.833,
         "mean_pitch_confidence_proxy": 0.19617,
         "words_per_second_proxy": 1.75,
+        "raw_words_per_second_proxy": 1.75,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.72,
         "transcript_gap_after_seconds": 1.04,
         "audio_window_count": 9
@@ -1988,6 +2912,18 @@
       "interpretation": "This is a cluster of verbal qualification around a self-evaluation.",
       "confidence": "high",
       "limitations": "Several fillers and repairs make exact wording uncertain.",
+      "label_decisions": {
+        "uncertainty_or_qualification": {
+          "supported": true,
+          "subtype": "qualified_retrospective_self_evaluation",
+          "view_attribution": "current_turn_text",
+          "reason": "The narrator describes talking at length to someone, then uses 'I think' and 'might have probably' to evaluate whether it was excessive. The continuation is needed to complete the clause; this is not an acoustic uncertainty judgment."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-074",
+      "resolved_label_support": {
+        "uncertainty_or_qualification": true
+      },
       "measured_delivery": {
         "mean_rms_db": -29.39,
         "speech_activity_fraction": 0.875,
@@ -1996,6 +2932,8 @@
         "mean_pitch_hz_proxy": 316.964,
         "mean_pitch_confidence_proxy": 0.12236,
         "words_per_second_proxy": 1.582,
+        "raw_words_per_second_proxy": 1.582,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 8
@@ -2015,6 +2953,18 @@
       "interpretation": "The segment combines optimism with explicit qualification.",
       "confidence": "high",
       "limitations": "A hedge can coexist with strong vocal commitment; the transcript alone cannot compare the channels.",
+      "label_decisions": {
+        "uncertainty_or_qualification": {
+          "supported": true,
+          "subtype": "conditional_and_opinion_framed_prediction",
+          "view_attribution": "current_turn_text",
+          "reason": "The preceding conditional excludes complacency or entitlement, and 'I think' introduces an optimistic forecast. It qualifies the prediction as a viewpoint under a stated condition, not as an objectively validated forecast."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-075",
+      "resolved_label_support": {
+        "uncertainty_or_qualification": true
+      },
       "measured_delivery": {
         "mean_rms_db": -19.983,
         "speech_activity_fraction": 0.875,
@@ -2023,6 +2973,8 @@
         "mean_pitch_hz_proxy": 225.447,
         "mean_pitch_confidence_proxy": 0.12263,
         "words_per_second_proxy": 1.332,
+        "raw_words_per_second_proxy": 1.332,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 8
@@ -2042,6 +2994,18 @@
       "interpretation": "The speaker presents the generalization as a considered view rather than an unqualified fact.",
       "confidence": "high",
       "limitations": "The wording does not establish whether the claim is evidence-based.",
+      "label_decisions": {
+        "uncertainty_or_qualification": {
+          "supported": true,
+          "subtype": "opinion_framed_generalization",
+          "view_attribution": "current_turn_text",
+          "reason": "After discussing research and AI, 'I think' introduces a broad claim that humanity will always shift to new value pools. The view marker coexists with 'always'; the generalization's truth and the speaker's certainty are not assessed."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-076",
+      "resolved_label_support": {
+        "uncertainty_or_qualification": true
+      },
       "measured_delivery": {
         "mean_rms_db": -16.421,
         "speech_activity_fraction": 1.0,
@@ -2050,6 +3014,8 @@
         "mean_pitch_hz_proxy": 309.896,
         "mean_pitch_confidence_proxy": 0.17617,
         "words_per_second_proxy": 1.339,
+        "raw_words_per_second_proxy": 1.339,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 6
@@ -2069,6 +3035,18 @@
       "interpretation": "This is a contrast within a personal account, not necessarily disagreement with another speaker.",
       "confidence": "high",
       "limitations": "Contrast and interpersonal disagreement should remain separate analytic dimensions.",
+      "label_decisions": {
+        "contrast_or_disagreement": {
+          "supported": true,
+          "subtype": "observed_versus_expected_position_in_story",
+          "view_attribution": "current_turn_narrative",
+          "reason": "The surrounding narrative contrasts seeing the ball with reacting too late and where it was versus where it should be. The wording is somewhat garbled; the target's 'wrong place' belongs to that narrative contrast, not a live dispute."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-077",
+      "resolved_label_support": {
+        "contrast_or_disagreement": true
+      },
       "measured_delivery": {
         "mean_rms_db": -21.64,
         "speech_activity_fraction": 1.0,
@@ -2077,6 +3055,8 @@
         "mean_pitch_hz_proxy": 189.063,
         "mean_pitch_confidence_proxy": 0.15243,
         "words_per_second_proxy": 2.433,
+        "raw_words_per_second_proxy": 2.433,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 5
@@ -2096,6 +3076,18 @@
       "interpretation": "The speaker uses contrast to redirect attention from perception to evidence.",
       "confidence": "high",
       "limitations": "The repeated word 'but' may reflect transcription disfluency rather than rhetorical repetition.",
+      "label_decisions": {
+        "contrast_or_disagreement": {
+          "supported": true,
+          "subtype": "public_perception_versus_claimed_analysis",
+          "view_attribution": "current_turn_argument",
+          "reason": "The speaker contrasts limited public understanding of available solar power with a claim that its mathematics is clear, followed by a recommendation. The textual opposition is present; neither the mathematics nor public understanding is independently evaluated."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-078",
+      "resolved_label_support": {
+        "contrast_or_disagreement": true
+      },
       "measured_delivery": {
         "mean_rms_db": -15.293,
         "speech_activity_fraction": 1.0,
@@ -2104,6 +3096,8 @@
         "mean_pitch_hz_proxy": 205.357,
         "mean_pitch_confidence_proxy": 0.11155,
         "words_per_second_proxy": 1.006,
+        "raw_words_per_second_proxy": 1.006,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 7
@@ -2123,6 +3117,18 @@
       "interpretation": "This frames a motivational contrast between opposition and response.",
       "confidence": "high",
       "limitations": "The segment is embedded in a personal story and is not a direct debate exchange.",
+      "label_decisions": {
+        "contrast_or_disagreement": {
+          "supported": true,
+          "subtype": "opposition_and_response_in_reported_advice",
+          "view_attribution": "reported_mother_text",
+          "reason": "The surrounding clauses explicitly attribute the contrast between critics and proving them wrong to the narrator's mother. It is reported motivational advice, not an observed argument with those critics or proof of the narrator's own current stance."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-079",
+      "resolved_label_support": {
+        "contrast_or_disagreement": true
+      },
       "measured_delivery": {
         "mean_rms_db": -33.639,
         "speech_activity_fraction": 0.5,
@@ -2131,6 +3137,8 @@
         "mean_pitch_hz_proxy": 234.375,
         "mean_pitch_confidence_proxy": 0.28625,
         "words_per_second_proxy": 9.0,
+        "raw_words_per_second_proxy": 9.0,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 2
@@ -2150,6 +3158,18 @@
       "interpretation": "The marker does not establish a contrastive argument or disagreement; it is a reflective observation.",
       "confidence": "medium",
       "limitations": "The ten-second gap makes the transcript boundary unreliable.",
+      "label_decisions": {
+        "contrast_or_disagreement": {
+          "supported": true,
+          "subtype": "explanation_versus_felt_presence_in_dialogue",
+          "view_attribution": "scene_dialogue_text",
+          "reason": "The captions oppose inability to explain/identify something with feeling or sensing its presence. This supports contextual contrast under the broad label, though not interpersonal disagreement. Adjacent stored intervals overlap and do not support the legacy ten-second-gap rationale; audio silence is not inferred from captions."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-080",
+      "resolved_label_support": {
+        "contrast_or_disagreement": true
+      },
       "measured_delivery": {
         "mean_rms_db": -38.193,
         "speech_activity_fraction": 0.75,
@@ -2158,6 +3178,8 @@
         "mean_pitch_hz_proxy": 184.896,
         "mean_pitch_confidence_proxy": 0.16189,
         "words_per_second_proxy": 1.667,
+        "raw_words_per_second_proxy": 1.667,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 4
@@ -2177,6 +3199,18 @@
       "interpretation": "The speaker uses contrast to qualify and then strengthen a judgment.",
       "confidence": "high",
       "limitations": "This is rhetorical qualification, not proof of an actual dispute.",
+      "label_decisions": {
+        "contrast_or_disagreement": {
+          "supported": true,
+          "subtype": "authority_disclaimer_versus_committed_statement",
+          "view_attribution": "scene_or_speech_turn_text",
+          "reason": "The speaker disclaims being a judge or jury, then asserts a character's refusal to betray others and labels it integrity. That contrast in authority and commitment is textual; it does not establish the actor's traits or a verified real-world assessment."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-081",
+      "resolved_label_support": {
+        "contrast_or_disagreement": true
+      },
       "measured_delivery": {
         "mean_rms_db": -17.383,
         "speech_activity_fraction": 1.0,
@@ -2185,6 +3219,8 @@
         "mean_pitch_hz_proxy": 266.741,
         "mean_pitch_confidence_proxy": 0.22694,
         "words_per_second_proxy": 1.755,
+        "raw_words_per_second_proxy": 1.755,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 7
@@ -2204,6 +3240,17 @@
       "interpretation": "This is a definition-like explanatory transition from measurement to consequence.",
       "confidence": "high",
       "limitations": "The candidate caption is fragmentary and the consequence continues in the next caption.",
+      "label_decisions": {
+        "definition": {
+          "supported": false,
+          "subtype": "inference_from_quantity",
+          "reason": "The preceding water-versus-land statistic is followed by a claim about the potential for solving water problems. 'What that means' introduces an inference, not a term definition. This review does not validate that inference."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-082",
+      "resolved_label_support": {
+        "definition": false
+      },
       "measured_delivery": {
         "mean_rms_db": -18.954,
         "speech_activity_fraction": 0.875,
@@ -2212,6 +3259,8 @@
         "mean_pitch_hz_proxy": 291.295,
         "mean_pitch_confidence_proxy": 0.14382,
         "words_per_second_proxy": 1.205,
+        "raw_words_per_second_proxy": 1.205,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 8
@@ -2231,6 +3280,17 @@
       "interpretation": "This is an explicit lexical definition, albeit tentative in wording.",
       "confidence": "high",
       "limitations": "The phrase 'or something' signals that the definition may be approximate.",
+      "label_decisions": {
+        "definition": {
+          "supported": true,
+          "subtype": "lexical_gloss_in_dialogue",
+          "reason": "The transcript explicitly offers a meaning for a code word, with an approximation marker. This supports a lexical-gloss act within dialogue, not factual correctness of the gloss or its suitability as a public-speaking technique."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-083",
+      "resolved_label_support": {
+        "definition": true
+      },
       "measured_delivery": {
         "mean_rms_db": -18.325,
         "speech_activity_fraction": 1.0,
@@ -2239,6 +3299,8 @@
         "mean_pitch_hz_proxy": 295.313,
         "mean_pitch_confidence_proxy": 0.16614,
         "words_per_second_proxy": 1.456,
+        "raw_words_per_second_proxy": 1.456,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 5
@@ -2258,6 +3320,17 @@
       "interpretation": "This is a concise translation-based definition embedded in a personal anecdote.",
       "confidence": "high",
       "limitations": "The translation may be culturally or contextually specific.",
+      "label_decisions": {
+        "definition": {
+          "supported": true,
+          "subtype": "translation_gloss",
+          "reason": "The name Bijli is followed by an explicit translation as electricity, then dialogue about the name. The translation act is present in the text; linguistic accuracy is not independently checked."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-084",
+      "resolved_label_support": {
+        "definition": true
+      },
       "measured_delivery": {
         "mean_rms_db": -33.206,
         "speech_activity_fraction": 1.0,
@@ -2266,6 +3339,8 @@
         "mean_pitch_hz_proxy": 296.875,
         "mean_pitch_confidence_proxy": 0.15643,
         "words_per_second_proxy": 2.586,
+        "raw_words_per_second_proxy": 2.586,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 2
@@ -2285,6 +3360,17 @@
       "interpretation": "This is a personal value statement and action explanation, not a general definition.",
       "confidence": "high",
       "limitations": "The boundary between definition and personal interpretation depends on the broader speech.",
+      "label_decisions": {
+        "definition": {
+          "supported": false,
+          "subtype": "personal_significance_and_action",
+          "reason": "The flag's significance to the speaker is connected to voting. The passage explains a personal motivation/action, not the meaning of a term."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-085",
+      "resolved_label_support": {
+        "definition": false
+      },
       "measured_delivery": {
         "mean_rms_db": -17.865,
         "speech_activity_fraction": 1.0,
@@ -2293,6 +3379,8 @@
         "mean_pitch_hz_proxy": 355.469,
         "mean_pitch_confidence_proxy": 0.18025,
         "words_per_second_proxy": 1.411,
+        "raw_words_per_second_proxy": 1.411,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 6
@@ -2312,6 +3400,17 @@
       "interpretation": "This is an affective evaluation, not a definition or reformulation of a concept.",
       "confidence": "high",
       "limitations": "Transcript wording may omit the object of 'it'.",
+      "label_decisions": {
+        "definition": {
+          "supported": false,
+          "subtype": "significance_statement",
+          "reason": "'It means a lot' follows a discussion of drawing a series as a moral victory. It assigns significance rather than defining a term. The odd 'learned Edward' transcript fragment is not enough to establish the legacy claim about learning a name."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-086",
+      "resolved_label_support": {
+        "definition": false
+      },
       "measured_delivery": {
         "mean_rms_db": -19.765,
         "speech_activity_fraction": 1.0,
@@ -2320,6 +3419,8 @@
         "mean_pitch_hz_proxy": 217.634,
         "mean_pitch_confidence_proxy": 0.16848,
         "words_per_second_proxy": 2.483,
+        "raw_words_per_second_proxy": 2.483,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 7
@@ -2339,6 +3440,17 @@
       "interpretation": "This is an explicit summary transition from narrative detail to a general takeaway.",
       "confidence": "high",
       "limitations": "The takeaway's validity or usefulness is not established by the marker itself.",
+      "label_decisions": {
+        "conclusion_or_summary": {
+          "supported": true,
+          "subtype": "story_to_principle",
+          "reason": "The preceding cricket sequence describes anticipating an opponent and warning a teammate. The target states the general lesson of being a step ahead, followed by interviewer thanks. This supports a story-to-principle summary, not proof the strategy is universally useful."
+        }
+      },
+      "contextual_review_id": "context-20260917-review-087",
+      "resolved_label_support": {
+        "conclusion_or_summary": true
+      },
       "measured_delivery": {
         "mean_rms_db": -18.007,
         "speech_activity_fraction": 1.0,
@@ -2347,6 +3459,8 @@
         "mean_pitch_hz_proxy": 229.167,
         "mean_pitch_confidence_proxy": 0.23608,
         "words_per_second_proxy": 2.713,
+        "raw_words_per_second_proxy": 2.713,
+        "rate_exclusion_reason": null,
         "transcript_gap_before_seconds": 0.0,
         "transcript_gap_after_seconds": 0.0,
         "audio_window_count": 6

@@ -1,0 +1,219 @@
+{
+  "schema_version": "1.0",
+  "status": "exploratory_assistant_synthesis",
+  "policy": "Curated cross-passage comparisons, not exhaustive coding, independent adjudication, population prevalence or demonstrated communication benefit. Contrasts are boundary cases, not matched experimental controls.",
+  "cards": [
+    {
+      "id": "specific_to_broader",
+      "title": "Move from a specific account to a broader point",
+      "mechanism": "A narrated person, encounter or event supplies a concrete anchor before a broader interpretation or appeal.",
+      "supports": [
+        {
+          "review_id": "passage-context-20260917-002",
+          "observation_index": 3
+        },
+        {
+          "review_id": "passage-context-20260917-003",
+          "observation_index": 1
+        },
+        {
+          "review_id": "passage-context-20260917-017",
+          "observation_index": 2
+        },
+        {
+          "review_id": "passage-context-20260917-023",
+          "observation_index": 0
+        }
+      ],
+      "contrasts": [
+        {
+          "review_id": "passage-context-20260917-008",
+          "observation_index": 2
+        },
+        {
+          "review_id": "passage-context-20260917-011",
+          "observation_index": 1
+        }
+      ],
+      "limit": "An acknowledgment chain need not generalize; a story's causal conclusion may also depend on access, selection or other changes. An example can illustrate without proving.",
+      "exercise": "Mark the exact transition from event to general claim. Write down what additional evidence the general claim needs.",
+      "test": "Compare complete episodes with and without explicit transitions, matched on genre and topic; independently rate whether listeners can distinguish example from conclusion."
+    },
+    {
+      "id": "repetition_function",
+      "title": "The same repeated form can do different jobs",
+      "mechanism": "Repeated stems organize units, but the units may be preferences, gratitude, hypotheses or metaphorical appeals.",
+      "supports": [
+        {
+          "review_id": "passage-context-20260917-001",
+          "observation_index": 2
+        },
+        {
+          "review_id": "passage-context-20260917-008",
+          "observation_index": 0
+        },
+        {
+          "review_id": "passage-context-20260917-012",
+          "observation_index": 0
+        },
+        {
+          "review_id": "passage-context-20260917-018",
+          "observation_index": 1
+        }
+      ],
+      "contrasts": [
+        {
+          "review_id": "passage-context-20260917-013",
+          "observation_index": 0
+        },
+        {
+          "review_id": "passage-context-20260917-013",
+          "observation_index": 1
+        }
+      ],
+      "limit": "Later rejection can invert an apparent imperative. Counts of repeated words do not establish confidence, persuasion or a stable function.",
+      "exercise": "Label the job of each repeated clause and inspect the ending before interpreting the opening.",
+      "test": "Annotate repetition spans and later reversals before testing delivery. Compare within-function examples rather than pooling all repeated phrases."
+    },
+    {
+      "id": "return_anchor",
+      "title": "Return to an earlier anchor",
+      "mechanism": "A later section explicitly revisits an image, example, analogy or topic used earlier, linking separated parts of an episode.",
+      "supports": [
+        {
+          "review_id": "passage-context-20260917-002",
+          "observation_index": 5
+        },
+        {
+          "review_id": "passage-context-20260917-004",
+          "observation_index": 4
+        },
+        {
+          "review_id": "passage-context-20260917-010",
+          "observation_index": 3
+        },
+        {
+          "review_id": "passage-context-20260917-023",
+          "observation_index": 2
+        }
+      ],
+      "contrasts": [
+        {
+          "review_id": "passage-context-20260917-019",
+          "observation_index": 2
+        }
+      ],
+      "limit": "A new mission-level answer is not necessarily a return to an earlier anchor. Topic overlap alone is insufficient; establish both linked spans. No memory benefit has been measured.",
+      "exercise": "Draw a link between the earlier anchor and its return, then explain what new role it plays.",
+      "test": "Verify complete anchor/return boundaries and compare audience recall with a matched version lacking the return; no such experiment has been run."
+    },
+    {
+      "id": "reframing",
+      "title": "Change the frame of a claim or choice",
+      "mechanism": "The passage changes what a credential, situation, opponent or decision is taken to mean, then develops consequences under that frame.",
+      "supports": [
+        {
+          "review_id": "passage-context-20260917-007",
+          "observation_index": 2
+        },
+        {
+          "review_id": "passage-context-20260917-016",
+          "observation_index": 2
+        },
+        {
+          "review_id": "passage-context-20260917-020",
+          "observation_index": 2
+        }
+      ],
+      "contrasts": [
+        {
+          "review_id": "passage-context-20260917-009",
+          "observation_index": 2
+        },
+        {
+          "review_id": "passage-context-20260917-015",
+          "observation_index": 1
+        }
+      ],
+      "limit": "A clear frame can omit alternatives, advocate harm or propose an inadequate test of values. Structural coherence is not truth, ethics or effectiveness.",
+      "exercise": "Restate the frame neutrally and list alternatives or assumptions it leaves out. Do not rehearse harmful mobilization appeals.",
+      "test": "Independently assess frame accuracy, alternatives and target action before evaluating comprehension. Separate normative validity from audience agreement."
+    },
+    {
+      "id": "question_response",
+      "title": "Questions organize different kinds of response",
+      "mechanism": "Questions can allocate a turn, obtain a detail, challenge a premise or request an explanation; evaluate the response against that particular job.",
+      "supports": [
+        {
+          "review_id": "passage-context-20260917-005",
+          "observation_index": 4
+        },
+        {
+          "review_id": "passage-context-20260917-010",
+          "observation_index": 0
+        },
+        {
+          "review_id": "passage-context-20260917-019",
+          "observation_index": 1
+        },
+        {
+          "review_id": "passage-context-20260917-019",
+          "observation_index": 2
+        },
+        {
+          "review_id": "passage-context-20260917-021",
+          "observation_index": 0
+        }
+      ],
+      "contrasts": [
+        {
+          "review_id": "passage-context-20260917-012",
+          "observation_index": 3
+        },
+        {
+          "review_id": "passage-context-20260917-010",
+          "observation_index": 2
+        }
+      ],
+      "limit": "A quoted question is not a current audience prompt. A response may supply purpose instead of mechanics, and an ambiguous reassurance may require repair.",
+      "exercise": "Write the requested information beside what the answer actually supplies; identify any change of level or repair.",
+      "test": "Use independently labelled turns and compare response relevance at mechanism, purpose, evidence and procedure levels. Audio is needed for uncertain turn boundaries."
+    },
+    {
+      "id": "causal_story_limits",
+      "title": "Preserve caveats when a story claims an outcome",
+      "mechanism": "A speaker connects preceding words, actions or experiences to a reported result; the story may omit alternatives or acknowledge chance.",
+      "supports": [
+        {
+          "review_id": "passage-context-20260917-011",
+          "observation_index": 1
+        },
+        {
+          "review_id": "passage-context-20260917-014",
+          "observation_index": 1
+        },
+        {
+          "review_id": "passage-context-20260917-021",
+          "observation_index": 1
+        },
+        {
+          "review_id": "passage-context-20260917-024",
+          "observation_index": 2
+        }
+      ],
+      "contrasts": [
+        {
+          "review_id": "passage-context-20260917-014",
+          "observation_index": 0
+        },
+        {
+          "review_id": "passage-context-20260917-022",
+          "observation_index": 0
+        }
+      ],
+      "limit": "These are evidence-quality comparisons, not a recommended persuasive tactic. Fabricated premises and unrepresentative extrapolation are not effectiveness evidence.",
+      "exercise": "List every changed condition, the counterfactual and any luck caveat. Separate reported outcome from independently measured outcome.",
+      "test": "Seek independent outcome records, comparison cases and alternative explanations. Self-report, awards and testimonials are not causal validation."
+    }
+  ]
+}

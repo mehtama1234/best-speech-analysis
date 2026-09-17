@@ -1,0 +1,707 @@
+{
+  "schema_version": "1.0",
+  "video_id": "05RW7gx-gG4",
+  "source_sha256": {
+    "research/language-verification-frames.json": "36e51af903464adc56746b32b1b81c6ea142e7631c6fe827f436a45be6f86118",
+    "scripts/ocr_language_verification_frames.py": "6a13d96dd684fa40a4ca48c2f52ca5d9906e4d6c6071c0407dce60edb019afd3",
+    "data/cache/ocr-runtime/root/usr/bin/tesseract": "1b3c3861f528d4f59477a9d1c7a0c9cdc9d511f70c3b035ca172a8b6be9c3e6c",
+    "data/cache/ocr-runtime/root/usr/share/tesseract-ocr/4.00/tessdata/eng.traineddata": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2",
+    "data/cache/ocr-runtime/root/usr/lib/x86_64-linux-gnu/libtesseract.so.4": "538915d532d35501cecd75fa04cf8aeb3e33681e052f676b8e62b541d7025277",
+    "data/cache/ocr-runtime/root/usr/lib/x86_64-linux-gnu/liblept.so.5": "134ef6aec02c34d6d5afb58755e255b9076b598f48742db04ead43f874691a29",
+    "data/cache/ocr-runtime/debs/liblept5_1.82.0-3build1_amd64.deb": "936cf3ce4f192bd33e1ac45921f5f530e7681cfc78d67048f0acd6c2d39f894d",
+    "data/cache/ocr-runtime/debs/libtesseract4_4.1.1-2.1build1_amd64.deb": "1c428586aa9d0b5ef5a8a107f958d7eac99d734b6cb98338488c3aae9e8bd702",
+    "data/cache/ocr-runtime/debs/tesseract-ocr-eng_1%3a4.00~git30-7274cfa-1.1_all.deb": "a4709bd43f71c83f9171071dddaf87a125f467d5258bd323048d49b054ef5eb8",
+    "data/cache/ocr-runtime/debs/tesseract-ocr_4.1.1-2.1build1_amd64.deb": "5d33a2cc1484aa5032d07f51a4375d414d6868347691239874f0cfc03280a18f"
+  },
+  "modality": "editorial_subtitle_ocr",
+  "roi_pixels": {
+    "left": 0,
+    "top": 245,
+    "right": 640,
+    "bottom": 360
+  },
+  "page_segmentation_mode": 6,
+  "opencv_version": "4.10.0",
+  "preprocessing": "Crop fixed subtitle rectangle in memory and upscale 2x with cubic interpolation before recognition. Store boxes mapped back to source frame coordinates. No source image modified.",
+  "version": "tesseract 4.1.1",
+  "frames": [
+    {
+      "frame_path": "data/cache/language-verification/13acacc2f1d9ea2c/60.png",
+      "frame_sha256": "588d7ab4e4da759866a33230bcb70626f4964139fdd58a257f2c30dc72b2b1a6",
+      "decoded_pts_seconds": 60.026633,
+      "whole_frame_then_filter_baseline": {
+        "words": [
+          {
+            "text": "pload",
+            "left": 161,
+            "top": 251,
+            "width": 96,
+            "height": 39,
+            "ocr_confidence": 92.0,
+            "line_key": [
+              7,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "your",
+            "left": 267,
+            "top": 260,
+            "width": 82,
+            "height": 31,
+            "ocr_confidence": 96.0,
+            "line_key": [
+              7,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "medical",
+            "left": 360,
+            "top": 251,
+            "width": 137,
+            "height": 30,
+            "ocr_confidence": 96.0,
+            "line_key": [
+              7,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "report",
+            "left": 28,
+            "top": 301,
+            "width": 113,
+            "height": 34,
+            "ocr_confidence": 96.0,
+            "line_key": [
+              8,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "to",
+            "left": 151,
+            "top": 301,
+            "width": 35,
+            "height": 25,
+            "ocr_confidence": 96.0,
+            "line_key": [
+              8,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "an",
+            "left": 198,
+            "top": 306,
+            "width": 41,
+            "height": 20,
+            "ocr_confidence": 96.0,
+            "line_key": [
+              8,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "AI",
+            "left": 249,
+            "top": 298,
+            "width": 38,
+            "height": 28,
+            "ocr_confidence": 74.0,
+            "line_key": [
+              8,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "app,",
+            "left": 299,
+            "top": 306,
+            "width": 71,
+            "height": 29,
+            "ocr_confidence": 96.0,
+            "line_key": [
+              8,
+              1,
+              1
+            ]
+          }
+        ],
+        "text": "pload your medical\nreport to an AI app,"
+      },
+      "words": [
+        {
+          "text": "If",
+          "left": 28.0,
+          "top": 251.5,
+          "width": 28.0,
+          "height": 29.0,
+          "ocr_confidence": 96.0,
+          "line_key": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "text": "you",
+          "left": 63.0,
+          "top": 260.5,
+          "width": 64.0,
+          "height": 30.0,
+          "ocr_confidence": 96.0,
+          "line_key": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "text": "upload",
+          "left": 138.0,
+          "top": 251.5,
+          "width": 119.0,
+          "height": 38.5,
+          "ocr_confidence": 95.0,
+          "line_key": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "text": "your",
+          "left": 267.0,
+          "top": 260.5,
+          "width": 82.0,
+          "height": 30.0,
+          "ocr_confidence": 95.0,
+          "line_key": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "text": "medical",
+          "left": 360.0,
+          "top": 251.5,
+          "width": 137.0,
+          "height": 29.5,
+          "ocr_confidence": 96.0,
+          "line_key": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "text": "report",
+          "left": 28.0,
+          "top": 301.0,
+          "width": 113.0,
+          "height": 34.0,
+          "ocr_confidence": 96.0,
+          "line_key": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "text": "to",
+          "left": 151.0,
+          "top": 301.0,
+          "width": 35.0,
+          "height": 25.0,
+          "ocr_confidence": 95.0,
+          "line_key": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "text": "an",
+          "left": 198.0,
+          "top": 305.5,
+          "width": 41.5,
+          "height": 20.5,
+          "ocr_confidence": 95.0,
+          "line_key": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "text": "AI",
+          "left": 249.5,
+          "top": 298.0,
+          "width": 37.0,
+          "height": 27.5,
+          "ocr_confidence": 82.0,
+          "line_key": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "text": "app,",
+          "left": 299.0,
+          "top": 305.5,
+          "width": 71.5,
+          "height": 29.5,
+          "ocr_confidence": 96.0,
+          "line_key": [
+            1,
+            1,
+            2
+          ]
+        }
+      ],
+      "text": "If you upload your medical\nreport to an AI app,"
+    },
+    {
+      "frame_path": "data/cache/language-verification/13acacc2f1d9ea2c/100.png",
+      "frame_sha256": "1d29ad3e9c3943101c41ef161f4320015d7e8ca4c739bc7e265bfca61c47358f",
+      "decoded_pts_seconds": 100.033267,
+      "whole_frame_then_filter_baseline": {
+        "words": [
+          {
+            "text": "Tose",
+            "left": 27,
+            "top": 296,
+            "width": 57,
+            "height": 30,
+            "ocr_confidence": 0.0,
+            "line_key": [
+              8,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "yoy",
+            "left": 96,
+            "top": 305,
+            "width": 62,
+            "height": 30,
+            "ocr_confidence": 0.0,
+            "line_key": [
+              8,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "Om",
+            "left": 143,
+            "top": 292,
+            "width": 32,
+            "height": 48,
+            "ocr_confidence": 27.0,
+            "line_key": [
+              8,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "U",
+            "left": 179,
+            "top": 297,
+            "width": 24,
+            "height": 29,
+            "ocr_confidence": 0.0,
+            "line_key": [
+              8,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "II",
+            "left": 212,
+            "top": 292,
+            "width": 15,
+            "height": 48,
+            "ocr_confidence": 30.0,
+            "line_key": [
+              8,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "Bereta",
+            "left": 244,
+            "top": 301,
+            "width": 89,
+            "height": 25,
+            "ocr_confidence": 6.0,
+            "line_key": [
+              8,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "tlc",
+            "left": 342,
+            "top": 296,
+            "width": 96,
+            "height": 40,
+            "ocr_confidence": 19.0,
+            "line_key": [
+              8,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "mele",
+            "left": 423,
+            "top": 292,
+            "width": 64,
+            "height": 48,
+            "ocr_confidence": 10.0,
+            "line_key": [
+              8,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "hig",
+            "left": 495,
+            "top": 292,
+            "width": 44,
+            "height": 48,
+            "ocr_confidence": 21.0,
+            "line_key": [
+              8,
+              1,
+              1
+            ]
+          }
+        ],
+        "text": "Tose yoy Om U II Bereta tlc mele hig"
+      },
+      "words": [
+        {
+          "text": "the",
+          "left": 27.0,
+          "top": 296.5,
+          "width": 57.0,
+          "height": 29.5,
+          "ocr_confidence": 96.0,
+          "line_key": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "text": "app",
+          "left": 96.0,
+          "top": 305.5,
+          "width": 62.0,
+          "height": 29.5,
+          "ocr_confidence": 96.0,
+          "line_key": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "text": "will",
+          "left": 169.5,
+          "top": 296.5,
+          "width": 63.5,
+          "height": 29.0,
+          "ocr_confidence": 95.0,
+          "line_key": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "text": "most",
+          "left": 244.5,
+          "top": 301.0,
+          "width": 88.0,
+          "height": 25.0,
+          "ocr_confidence": 95.0,
+          "line_key": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "text": "likely",
+          "left": 342.5,
+          "top": 296.5,
+          "width": 95.0,
+          "height": 39.0,
+          "ocr_confidence": 96.0,
+          "line_key": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "text": "draw",
+          "left": 448.5,
+          "top": 296.5,
+          "width": 88.0,
+          "height": 29.5,
+          "ocr_confidence": 96.0,
+          "line_key": [
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "text": "the app will most likely draw"
+    },
+    {
+      "frame_path": "data/cache/language-verification/13acacc2f1d9ea2c/378.png",
+      "frame_sha256": "5bd3ee2702cbc2068303d6981c225ce19f6b5a4e99b0c5f674c278e3a372b808",
+      "decoded_pts_seconds": 378.010967,
+      "whole_frame_then_filter_baseline": {
+        "words": [
+          {
+            "text": "must",
+            "left": 93,
+            "top": 256,
+            "width": 90,
+            "height": 25,
+            "ocr_confidence": 96.0,
+            "line_key": [
+              6,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "build",
+            "left": 192,
+            "top": 251,
+            "width": 90,
+            "height": 30,
+            "ocr_confidence": 96.0,
+            "line_key": [
+              6,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "data",
+            "left": 28,
+            "top": 297,
+            "width": 75,
+            "height": 29,
+            "ocr_confidence": 95.0,
+            "line_key": [
+              7,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "sets",
+            "left": 114,
+            "top": 301,
+            "width": 69,
+            "height": 25,
+            "ocr_confidence": 95.0,
+            "line_key": [
+              7,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "free",
+            "left": 195,
+            "top": 296,
+            "width": 69,
+            "height": 30,
+            "ocr_confidence": 96.0,
+            "line_key": [
+              7,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "from",
+            "left": 275,
+            "top": 296,
+            "width": 85,
+            "height": 30,
+            "ocr_confidence": 95.0,
+            "line_key": [
+              7,
+              1,
+              1
+            ]
+          },
+          {
+            "text": "biases",
+            "left": 370,
+            "top": 297,
+            "width": 109,
+            "height": 29,
+            "ocr_confidence": 95.0,
+            "line_key": [
+              7,
+              1,
+              1
+            ]
+          }
+        ],
+        "text": "must build\ndata sets free from biases"
+      },
+      "words": [
+        {
+          "text": "We",
+          "left": 27.0,
+          "top": 253.5,
+          "width": 54.5,
+          "height": 27.5,
+          "ocr_confidence": 96.0,
+          "line_key": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "text": "must",
+          "left": 93.5,
+          "top": 256.0,
+          "width": 89.0,
+          "height": 25.0,
+          "ocr_confidence": 95.0,
+          "line_key": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "text": "build",
+          "left": 192.0,
+          "top": 251.5,
+          "width": 89.5,
+          "height": 29.5,
+          "ocr_confidence": 96.0,
+          "line_key": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "text": "quality",
+          "left": 293.0,
+          "top": 251.5,
+          "width": 121.5,
+          "height": 39.0,
+          "ocr_confidence": 95.0,
+          "line_key": [
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "text": "data",
+          "left": 28.0,
+          "top": 296.5,
+          "width": 74.5,
+          "height": 29.5,
+          "ocr_confidence": 96.0,
+          "line_key": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "text": "sets",
+          "left": 114.5,
+          "top": 301.0,
+          "width": 68.5,
+          "height": 25.0,
+          "ocr_confidence": 96.0,
+          "line_key": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "text": "free",
+          "left": 195.0,
+          "top": 296.5,
+          "width": 68.5,
+          "height": 29.5,
+          "ocr_confidence": 96.0,
+          "line_key": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "text": "from",
+          "left": 275.5,
+          "top": 296.5,
+          "width": 85.0,
+          "height": 29.5,
+          "ocr_confidence": 95.0,
+          "line_key": [
+            1,
+            1,
+            2
+          ]
+        },
+        {
+          "text": "biases.",
+          "left": 370.5,
+          "top": 296.5,
+          "width": 116.5,
+          "height": 29.5,
+          "ocr_confidence": 96.0,
+          "line_key": [
+            1,
+            1,
+            2
+          ]
+        }
+      ],
+      "text": "We must build quality\ndata sets free from biases."
+    }
+  ],
+  "promoted_to_corpus": false,
+  "limitations": "Fixed layout-specific box chosen after inspecting these frames; not a held-out layout test. May omit clipped words or include unrelated overlays. Confidence is engine output, not calibrated correctness. Frame appearance time is not speech onset or subtitle duration. No listening or spoken-word verification."
+}

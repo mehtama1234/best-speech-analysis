@@ -1,0 +1,82 @@
+{
+  "schema_version": "1.0",
+  "reviewer_type": "assistant",
+  "reviewer_name": "Codex",
+  "review_date": "2026-09-17",
+  "modality": "direct_still_frame_and_OCR_comparison",
+  "report_path": "research/subtitle-ocr-new-frames.json",
+  "report_sha256": "1e03e847cc1acb3fab243341aaa0a2aa95b073cbcc93dced14c61cdd93805547",
+  "independent_reviewer": false,
+  "random_sample": false,
+  "preprocessing_changed_after_results": false,
+  "promoted_to_corpus": false,
+  "comparisons": [
+    {
+      "requested_seek_seconds": 0,
+      "visible_subtitle_in_region": false,
+      "classification": "false_text_detection",
+      "observation": "Close view of speaker; no subtitle in the fixed region. Clothing/background produced apparent tokens.",
+      "text_role": "no_subtitle"
+    },
+    {
+      "requested_seek_seconds": 20,
+      "visible_subtitle_in_region": true,
+      "classification": "exact_visible_subtitle",
+      "observation": "Wide hall view. A preview label appears above the subtitle; correct OCR does not make this featured-speaker text.",
+      "text_role": "preview"
+    },
+    {
+      "requested_seek_seconds": 160,
+      "visible_subtitle_in_region": true,
+      "classification": "exact_visible_subtitle",
+      "observation": "Wide hall view with podium and large screen; one visible subtitle line matches OCR.",
+      "text_role": "speech_overlay"
+    },
+    {
+      "requested_seek_seconds": 300,
+      "visible_subtitle_in_region": true,
+      "classification": "partial_mistranscription",
+      "observation": "Seated attendee fills frame. The first subtitle line is read, but the second is replaced by nonsense. Do not treat the attendee as the captioned speaker.",
+      "text_role": "speech_overlay"
+    },
+    {
+      "requested_seek_seconds": 440,
+      "visible_subtitle_in_region": false,
+      "classification": "false_text_detection",
+      "observation": "Wide hall and audience; a small speaker label remains above the region but there is no subtitle inside it. OCR outputs background noise.",
+      "text_role": "no_subtitle"
+    },
+    {
+      "requested_seek_seconds": 580,
+      "visible_subtitle_in_region": true,
+      "classification": "exact_visible_subtitle",
+      "observation": "Close podium-speaker view; one subtitle line matches OCR.",
+      "text_role": "speech_overlay"
+    },
+    {
+      "requested_seek_seconds": 720,
+      "visible_subtitle_in_region": true,
+      "classification": "exact_visible_subtitle",
+      "observation": "Close podium-speaker view; two subtitle lines match OCR.",
+      "text_role": "speech_overlay"
+    },
+    {
+      "requested_seek_seconds": 843,
+      "visible_subtitle_in_region": false,
+      "classification": "false_text_detection",
+      "observation": "Promotional end card has subscription text above the region; the fixed subtitle region contains background graphics, not subtitle words.",
+      "text_role": "promotional_card"
+    }
+  ],
+  "counts": {
+    "frames": 8,
+    "subtitle_present": 5,
+    "exact_subtitle_matches": 4,
+    "subtitle_mistranscriptions": 1,
+    "subtitle_absent": 3,
+    "false_text_detections_on_absent_frames": 3
+  },
+  "limitations": "New timestamps with frozen preprocessing, but same upload and assistant; not independent corpus evaluation. All eight images were directly inspected after seeing OCR results. No listening, continuous viewing, word alignment or speaker identification from faces. Region-relative absence does not mean the whole frame contains no text.",
+  "decision": "Do not scale this fixed-layout OCR as an unattended transcript builder. Separate text-presence detection, transcription correctness and editorial/speaker role. Preserve the failures as development cases; use fresh data to evaluate any revised gate.",
+  "confidence_observation": "No-subtitle and corrupted-line tokens have lower engine scores here, but no acceptance threshold was predefined. A threshold chosen now would be trained on this evaluation, not independently validated."
+}

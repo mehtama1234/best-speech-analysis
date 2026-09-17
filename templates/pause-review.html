@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pause evidence — audiovisual review</title>
+<style>
+body{font:16px/1.5 system-ui,sans-serif;background:#f5f3ed;color:#182532;margin:0}main{max-width:1100px;margin:auto;padding:24px}h1{margin-bottom:8px}button,select,textarea,input{font:inherit;padding:8px}button{cursor:pointer}select{max-width:100%}.warning{background:#fff0cf;border-left:4px solid #825800;padding:14px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}section{background:white;border:1px solid #c5cbd0;border-radius:8px;padding:16px}video{width:100%;background:#111}#captions{max-height:470px;overflow:auto}.caption{padding:9px;border-bottom:1px solid #ddd}.caption.active{background:#e0edf9}.caption.target{border-left:4px solid #136080}.caption button{border:0;background:none;color:#07577b;text-decoration:underline}textarea{box-sizing:border-box;width:100%;min-height:100px}label{display:block;margin:10px 0}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:13px}a{color:#07577b}details{margin:12px 0}#status{min-height:1.5em}small{display:block} @media(max-width:760px){.grid{grid-template-columns:1fr}main{padding:12px}}
+</style></head><body><main>
+<h1>Pause evidence: watch, listen, then decide</h1>
+<p>Seven unresolved candidates. These clips are preparation for review, not completed audiovisual judgments.</p>
+<p class="warning"><strong>Synchronization is unverified.</strong> Clips combine separate streams at the same requested start time. No offset was measured. Player timestamps map approximately to source time. Caption gaps are not silence; quiet energy is not a rhetorical pause.</p>
+<label>Evidence case <select id="case"></select></label>
+<h2 id="title"></h2><a id="source" target="_blank" rel="noopener">Open original source</a>
+<div class="grid"><section aria-label="Local audiovisual evidence">
+<video id="player" controls preload="metadata" aria-label="Local review clip"></video>
+<p id="status" role="status"></p><p id="time"></p>
+<button id="target">Seek to target caption</button> <button id="quiet">Seek near first −40 dBFS quiet interval</button>
+<small>Playback changes and note edits do not update research decisions automatically.</small>
+<h3>Measured quiet intervals</h3><p>Source-audio time, energy threshold screening only.</p><div id="runs"></div>
+<details><summary>Saved visual observations and decoded timestamps</summary><pre id="visual"></pre></details>
+<details><summary>Clip provenance</summary><pre id="provenance"></pre></details>
+</section><section><h3>Surrounding transcript</h3><p>Provider captions may overlap, be wrong, or be misaligned. Highlighting follows approximate time, not validated word alignment.</p><div id="captions"></div></section></div>
+<section style="margin-top:20px"><h2>Draft review notes</h2>
+<p>Local browser storage only. Export to save a separate draft; nothing is submitted or added to the authoritative ledger.</p>
+<label>Reviewer name or identifier <input id="reviewer" autocomplete="off"></label>
+<label><input id="watched" type="checkbox"> I watched the continuous clip.</label>
+<label><input id="listened" type="checkbox"> I listened to the audio.</label>
+<label>Alignment evidence, inspected anchors and offset uncertainty<textarea id="alignment"></textarea></label>
+<label>Observed behavior, speech function, turn/shot boundaries and alternatives<textarea id="notes"></textarea></label>
+<button id="export">Export this draft as JSON</button><p id="saved" role="status"></p>
+</section></main>
+<script id="packet" type="application/json">__PACKET_JSON__</script>
+<script>
+const packet=JSON.parse(document.getElementById('packet').textContent), rows=packet.examples;
+const el=id=>document.getElementById(id), player=el('player'); let current, loading=false;
+const fields=['reviewer','watched','listened','alignment','notes'];
+function storageKey(){return 'speech-pause-draft-v1:'+current.evidence_id;}
+function draft(){const d={schema_version:'1.0',status:'unadjudicated_draft',evidence_id:current.evidence_id,clip_sha256:current.clip?.sha256,source_sha256:packet.source_sha256,alignment_status:'not_verified_by_application',saved_at:new Date().toISOString()};for(const k of fields)d[k]=el(k).type==='checkbox'?el(k).checked:el(k).value;return d;}
+function save(){if(loading)return;try{localStorage.setItem(storageKey(),JSON.stringify(draft()));el('saved').textContent='Draft saved in this browser only.';}catch(e){el('saved').textContent='Browser storage unavailable; use Export to retain notes.';}}
+function seek(sourceTime){if(!Number.isFinite(player.duration)){el('status').textContent='Wait for playable media metadata before seeking.';return;}player.currentTime=Math.max(0,Math.min(player.duration,sourceTime-current.start_seconds));}
+function render(){loading=true;player.pause();current=rows[Number(el('case').value)];el('title').textContent=current.evidence_id+' · '+current.title;el('source').href='https://www.youtube.com/watch?v='+encodeURIComponent(current.target.video_id)+'&t='+Math.floor(current.start_seconds);el('status').textContent='Loading local clip…';
+if(current.clip){player.src='../'+current.clip.path;player.load();}else{player.removeAttribute('src');player.load();el('status').textContent=current.media_error||'Local clip unavailable';}
+el('captions').replaceChildren();for(const c of current.context){const div=document.createElement('div');div.className='caption'+(c.evidence_id===current.evidence_id?' target':'');div.dataset.start=c.start_seconds;div.dataset.end=c.end_seconds;const b=document.createElement('button');b.textContent=c.start_seconds.toFixed(3)+'–'+c.end_seconds.toFixed(3)+' s';b.onclick=()=>seek(c.start_seconds);div.append(b,document.createTextNode(' '+c.text));el('captions').append(div);}
+el('runs').replaceChildren();for(const [threshold,runs] of Object.entries(current.quiet_runs)){const p=document.createElement('p');p.textContent=threshold+' dBFS: '+(runs.map(r=>r.start_seconds.toFixed(2)+'–'+r.end_seconds.toFixed(2)+' s'+(r.left_window_censored||r.right_window_censored?' (window-censored)':'')).join('; ')||'none in audited window');el('runs').append(p);}
+el('visual').textContent=JSON.stringify({visual:current.visual_review||'Not reviewed',frame_timeline:current.frame_timeline||'Not audited'},null,2);el('provenance').textContent=JSON.stringify({clip:current.clip,alignment:current.alignment},null,2);
+let d={};try{d=JSON.parse(localStorage.getItem(storageKey())||'{}');}catch(e){}for(const k of fields){if(el(k).type==='checkbox')el(k).checked=d[k]===true;else el(k).value=d[k]||'';}el('saved').textContent=d.saved_at?'Restored local draft; not an adjudicated finding.':'';el('time').textContent='';loading=false;}
+rows.forEach((r,i)=>{const o=document.createElement('option');o.value=i;o.textContent=r.evidence_id;el('case').append(o);});el('case').onchange=render;
+player.addEventListener('loadedmetadata',()=>{el('status').textContent='Clip ready. Alignment remains unverified.';});player.addEventListener('error',()=>{el('status').textContent='Media unavailable or unsupported. Check the local cache; no observation should be inferred.';});
+player.addEventListener('timeupdate',()=>{const t=current.start_seconds+player.currentTime;el('time').textContent='Approximate source time: '+t.toFixed(3)+' s';for(const c of el('captions').children)c.classList.toggle('active',t>=Number(c.dataset.start)&&t<Number(c.dataset.end));});
+el('target').onclick=()=>seek(current.target.start_seconds);el('quiet').onclick=()=>{const r=current.quiet_runs['-40']?.[0];if(r)seek(r.start_seconds-1);else el('status').textContent='No −40 dBFS interval in the audited window.';};
+for(const k of fields)el(k).addEventListener('input',save);
+el('export').onclick=()=>{const blob=new Blob([JSON.stringify(draft(),null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download=current.evidence_id.replace(':','-')+'-draft.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};render();
+</script></body></html>

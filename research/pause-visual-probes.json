@@ -1,0 +1,112 @@
+{
+  "schema_version": "1.0",
+  "source_sha256": {
+    "research/local-pause-audio-audit.json": "d0d1ea1def84c24df5599b8fbe67d2d8abe40df1908822b6727c927be9ba9c88",
+    "scripts/extract_pause_visual_probes.py": "5dc520bd852f00affa240d537861d8a8849f5653f4f550dbffa12406ee491382",
+    "data/video/2fWJh-_UG5s.mp4": "44b88453b6ad3f620ecaf81a6a54e4da2d1ae980cb3400d56774d47599ef566e",
+    "data/video/fBnAMUkNM2k.mp4": "2668269df1bdd3c681bed01235c60a5b4289a317120df6396b50a963af45eade",
+    "data/video/gDadfh0ZdBM.mp4": "008baaf53048f94d71b4470953cc50599b08aa2d38369a001549540354669217"
+  },
+  "policy": "Requested seek times, not verified decoded frame PTS. Audio/video timeline synchronization unverified. Three stills per interval cannot establish continuous motion, absence of intervening cuts, speech timing, emotion or intent. Raw frames are ignored cache artifacts.",
+  "probes": [
+    {
+      "evidence_id": "2fWJh-_UG5s:00035",
+      "video_path": "data/video/2fWJh-_UG5s.mp4",
+      "selection": "Purposive probe of three measured low-energy intervals near caption starts, not a representative sample.",
+      "quiet_runs_minus40_dbfs": [
+        {
+          "start_seconds": 93.12,
+          "end_seconds": 94.62,
+          "left_window_censored": false,
+          "right_window_censored": false,
+          "duration_seconds": 1.5,
+          "distance_from_caption_start_seconds": 0.0,
+          "distance_from_caption_end_seconds": 3.539
+        }
+      ],
+      "frames": [
+        {
+          "requested_seek_seconds": 92.8,
+          "path": "data/cache/pause-visual-probes-v1/2fWJh-_UG5s/44b88453b6ad/92.800.png",
+          "sha256": "69c24f6e147ffcf1df0ccccd7a19a2624ea92b84767d751a0e70beb3064de249"
+        },
+        {
+          "requested_seek_seconds": 93.8,
+          "path": "data/cache/pause-visual-probes-v1/2fWJh-_UG5s/44b88453b6ad/93.800.png",
+          "sha256": "a5b82200517539638bb5d3d347dcd6de384f7a899ee4a1c883f0aee3f390e3e4"
+        },
+        {
+          "requested_seek_seconds": 94.9,
+          "path": "data/cache/pause-visual-probes-v1/2fWJh-_UG5s/44b88453b6ad/94.900.png",
+          "sha256": "4082e6c1176eda369e3893734bd9116192cbbeacdcaaa55da405a5ae34509b7c"
+        }
+      ]
+    },
+    {
+      "evidence_id": "fBnAMUkNM2k:00021",
+      "video_path": "data/video/fBnAMUkNM2k.mp4",
+      "selection": "Purposive probe of three measured low-energy intervals near caption starts, not a representative sample.",
+      "quiet_runs_minus40_dbfs": [
+        {
+          "start_seconds": 196.94,
+          "end_seconds": 197.88,
+          "left_window_censored": false,
+          "right_window_censored": false,
+          "duration_seconds": 0.94,
+          "distance_from_caption_start_seconds": 0.229,
+          "distance_from_caption_end_seconds": 6.999
+        }
+      ],
+      "frames": [
+        {
+          "requested_seek_seconds": 196.6,
+          "path": "data/cache/pause-visual-probes-v1/fBnAMUkNM2k/2668269df1bd/196.600.png",
+          "sha256": "926a621ca0c656f36092b65e9d72a1db586347c54edb7d20b43ccc27ad5b906a"
+        },
+        {
+          "requested_seek_seconds": 197.4,
+          "path": "data/cache/pause-visual-probes-v1/fBnAMUkNM2k/2668269df1bd/197.400.png",
+          "sha256": "d77bf2f9fd4dbe3c761bbb36533586d29d9ca6ffe9c905d79804a2a13023eab1"
+        },
+        {
+          "requested_seek_seconds": 198.2,
+          "path": "data/cache/pause-visual-probes-v1/fBnAMUkNM2k/2668269df1bd/198.200.png",
+          "sha256": "df63af5a5070cccd61e9e2453c8c86186144b75b69703b487647f42517c6a8f4"
+        }
+      ]
+    },
+    {
+      "evidence_id": "gDadfh0ZdBM:00036",
+      "video_path": "data/video/gDadfh0ZdBM.mp4",
+      "selection": "Purposive probe of three measured low-energy intervals near caption starts, not a representative sample.",
+      "quiet_runs_minus40_dbfs": [
+        {
+          "start_seconds": 132.24,
+          "end_seconds": 133.5,
+          "left_window_censored": false,
+          "right_window_censored": false,
+          "duration_seconds": 1.26,
+          "distance_from_caption_start_seconds": 0.0,
+          "distance_from_caption_end_seconds": 3.22
+        }
+      ],
+      "frames": [
+        {
+          "requested_seek_seconds": 131.9,
+          "path": "data/cache/pause-visual-probes-v1/gDadfh0ZdBM/008baaf53048/131.900.png",
+          "sha256": "68bfdfbffa321aa8337c332686fa68e41e9a9612b04e9e0a6be6dfafeaeb888e"
+        },
+        {
+          "requested_seek_seconds": 132.8,
+          "path": "data/cache/pause-visual-probes-v1/gDadfh0ZdBM/008baaf53048/132.800.png",
+          "sha256": "a2bd8dd1a48124e26c50ffbf9f13468c112634dbc9f74b27ab7e8497bd8bc859"
+        },
+        {
+          "requested_seek_seconds": 133.7,
+          "path": "data/cache/pause-visual-probes-v1/gDadfh0ZdBM/008baaf53048/133.700.png",
+          "sha256": "861368c24167b2b7b368ae64bac7366a50ae70411dade75d7b8e1e6512d7f107"
+        }
+      ]
+    }
+  ]
+}

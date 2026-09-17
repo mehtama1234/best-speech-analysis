@@ -6,13 +6,22 @@ from __future__ import annotations
 import json
 from collections import Counter, defaultdict
 from pathlib import Path
+if __package__:
+    from .source_restrictions import load_restrictions
+else:
+    from source_restrictions import load_restrictions
 
 
 def main() -> int:
     root = Path(__file__).resolve().parents[1]
+    restrictions = load_restrictions(root)
+    excluded = Counter()
     patterns = defaultdict(lambda: {"segments": 0, "videos": set(), "channels": set(), "examples": []})
     for line in (root / "research/segment-registry.jsonl").open():
         row = json.loads(line)
+        if row['video_id'] in restrictions:
+            excluded[row['video_id']] += 1
+            continue
         for label in row["candidate_speech_functions"]:
             item = patterns[label]
             item["segments"] += 1
@@ -38,11 +47,13 @@ def main() -> int:
             "examples": item["examples"],
         }
     output = root / "research/candidate-patterns.json"
-    output.write_text(json.dumps({"schema_version": "0.1", "patterns": report}, ensure_ascii=False, indent=2) + "\n")
+    output.write_text(json.dumps({"schema_version": "0.2", "patterns": report,
+        "scope": "Heuristic candidates excluding explicitly restricted sources; absence of a restriction is not verification.",
+        "excluded_source_segments": dict(sorted(excluded.items())),
+        "source_restrictions": restrictions}, ensure_ascii=False, indent=2) + "\n")
     print(json.dumps({label: {key: value for key, value in item.items() if key != "examples"} for label, item in report.items()}, indent=2))
     return 0
 
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "reviewer_type": "assistant",
+  "reviewer_name": "Codex",
+  "review_date": "2026-09-17",
+  "report_path": "research/subtitle-ocr-pilot.json",
+  "report_sha256": "cd9065aec6661eddfc659afc793e596e228a456cf03374719e800a39607369ee",
+  "modality": "OCR_output_compared_with_previously_directly_inspected_stills",
+  "held_out": false,
+  "independent_reviewer": false,
+  "listened_to_audio": false,
+  "promoted_to_corpus": false,
+  "comparisons": [
+    {
+      "decoded_pts_seconds": 60.026633,
+      "region_first_text_matches_visible_subtitle": true,
+      "whole_frame_baseline": "Misses opening words and drops a character; surrounding scene/label contaminates segmentation.",
+      "scope": "Two displayed lines, not a complete verified spoken utterance."
+    },
+    {
+      "decoded_pts_seconds": 100.033267,
+      "region_first_text_matches_visible_subtitle": true,
+      "whole_frame_baseline": "Nonsensical recognition instead of the displayed English subtitle.",
+      "scope": "Partial clause over an audience shot, not speaker-face evidence."
+    },
+    {
+      "decoded_pts_seconds": 378.010967,
+      "region_first_text_matches_visible_subtitle": true,
+      "whole_frame_baseline": "Omits first-line words and final punctuation.",
+      "scope": "Two displayed lines, not independent acoustic evidence."
+    }
+  ],
+  "interpretation": "Three in-sample matches after post-selection layout tuning; not general OCR accuracy or linguistic validity.",
+  "next_test": "Freeze preprocessing, sample previously uninspected timestamps including no-subtitle frames, and measure omissions, insertions and layout failures. Keep frame observations separate from speech timing."
+}

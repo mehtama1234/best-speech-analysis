@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "method": "Re-decode each requested seek with -copyts, showinfo and one PNG to stdout. Bind first frame PTS to prior review only when PNG bytes have the same SHA256. Container metadata is displayed rounded by ffmpeg; it is not precise packet timing.",
+  "ffmpeg_version": "ffmpeg version 7.0.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2024 the FFmpeg developers",
+  "source_sha256": {
+    "research/pause-visual-probes.json": "2f397a32918a42ad5ac468f3201169a2a55b63239d8578ad65465b979b9b18ce",
+    "scripts/audit_pause_media_timeline.py": "44bd21a4c61c826e6810f329d35835ae95c83443bbe301635bf8977e51870cf6",
+    "data/audio/2fWJh-_UG5s.m4a": "2954998d671e917f7cc6d9fdf70d3dc06598b32bc5939315f8f6fdb8e50a2909",
+    "data/video/2fWJh-_UG5s.mp4": "44b88453b6ad3f620ecaf81a6a54e4da2d1ae980cb3400d56774d47599ef566e",
+    "data/audio/fBnAMUkNM2k.m4a": "7229923a2f4f48609eed8d31a0633b9fda63d813a00f4d50e3c0b50e18140fc8",
+    "data/video/fBnAMUkNM2k.mp4": "2668269df1bdd3c681bed01235c60a5b4289a317120df6396b50a963af45eade",
+    "data/audio/gDadfh0ZdBM.m4a": "da04f07f68079d63a72d7d05e8ae829e9cf0088ff75c50251c12a660e662f48b",
+    "data/video/gDadfh0ZdBM.mp4": "008baaf53048f94d71b4470953cc50599b08aa2d38369a001549540354669217"
+  },
+  "audio_video_sync_verified": false,
+  "limitation": "Matching container starts and similar durations do not establish content synchronization, local offset, drift, lip synchronization or transcript alignment. Video-only sources provide no common audio waveform for direct correlation. No listening or continuous viewing performed.",
+  "examples": [
+    {
+      "evidence_id": "2fWJh-_UG5s:00035",
+      "streams": {
+        "audio": {
+          "duration_seconds": 1388.41,
+          "container_start_seconds": 0.0,
+          "stream_descriptions": [
+            "Stream #0:0[0x1](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 0 kb/s (default)"
+          ],
+          "has_audio": true,
+          "has_video": false
+        },
+        "video": {
+          "duration_seconds": 1388.35,
+          "container_start_seconds": 0.0,
+          "stream_descriptions": [
+            "Stream #0:0[0x1](und): Video: vp9 (Profile 0) (vp09 / 0x39307076), yuv420p(tv, bt709), 640x360, 208 kb/s, 29.97 fps, 29.97 tbr, 1k tbn (default)"
+          ],
+          "has_audio": false,
+          "has_video": true
+        }
+      },
+      "frames": [
+        {
+          "requested_seek_seconds": 92.8,
+          "reviewed_png_sha256": "69c24f6e147ffcf1df0ccccd7a19a2624ea92b84767d751a0e70beb3064de249",
+          "pts": 92827,
+          "pts_seconds": 92.827,
+          "time_base_numerator": 1,
+          "time_base_denominator": 1000,
+          "redecoded_png_sha256": "69c24f6e147ffcf1df0ccccd7a19a2624ea92b84767d751a0e70beb3064de249",
+          "matches_reviewed_pixels": true,
+          "pts_minus_requested_seconds": 0.027,
+          "reviewed_frame_pts_status": "verified_by_identical_png"
+        },
+        {
+          "requested_seek_seconds": 93.8,
+          "reviewed_png_sha256": "a5b82200517539638bb5d3d347dcd6de384f7a899ee4a1c883f0aee3f390e3e4",
+          "pts": 93828,
+          "pts_seconds": 93.828,
+          "time_base_numerator": 1,
+          "time_base_denominator": 1000,
+          "redecoded_png_sha256": "a5b82200517539638bb5d3d347dcd6de384f7a899ee4a1c883f0aee3f390e3e4",
+          "matches_reviewed_pixels": true,
+          "pts_minus_requested_seconds": 0.028,
+          "reviewed_frame_pts_status": "verified_by_identical_png"
+        },
+        {
+          "requested_seek_seconds": 94.9,
+          "reviewed_png_sha256": "4082e6c1176eda369e3893734bd9116192cbbeacdcaaa55da405a5ae34509b7c",
+          "pts": 94928,
+          "pts_seconds": 94.928,
+          "time_base_numerator": 1,
+          "time_base_denominator": 1000,
+          "redecoded_png_sha256": "4082e6c1176eda369e3893734bd9116192cbbeacdcaaa55da405a5ae34509b7c",
+          "matches_reviewed_pixels": true,
+          "pts_minus_requested_seconds": 0.028,
+          "reviewed_frame_pts_status": "verified_by_identical_png"
+        }
+      ]
+    },
+    {
+      "evidence_id": "fBnAMUkNM2k:00021",
+      "streams": {
+        "audio": {
+          "duration_seconds": 2370.46,
+          "container_start_seconds": 0.0,
+          "stream_descriptions": [
+            "Stream #0:0[0x1](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 0 kb/s (default)"
+          ],
+          "has_audio": true,
+          "has_video": false
+        },
+        "video": {
+          "duration_seconds": 2370.4,
+          "container_start_seconds": 0.0,
+          "stream_descriptions": [
+            "Stream #0:0[0x1](und): Video: av1 (libdav1d) (Main) (av01 / 0x31307661), yuv420p(tv, bt709), 640x360, 0 kb/s, 29.97 fps, 29.97 tbr, 30k tbn (default)"
+          ],
+          "has_audio": false,
+          "has_video": true
+        }
+      },
+      "frames": [
+        {
+          "requested_seek_seconds": 196.6,
+          "reviewed_png_sha256": "926a621ca0c656f36092b65e9d72a1db586347c54edb7d20b43ccc27ad5b906a",
+          "pts": 5898893,
+          "pts_seconds": 196.629767,
+          "time_base_numerator": 1,
+          "time_base_denominator": 30000,
+          "redecoded_png_sha256": "926a621ca0c656f36092b65e9d72a1db586347c54edb7d20b43ccc27ad5b906a",
+          "matches_reviewed_pixels": true,
+          "pts_minus_requested_seconds": 0.029767,
+          "reviewed_frame_pts_status": "verified_by_identical_png"
+        },
+        {
+          "requested_seek_seconds": 197.4,
+          "reviewed_png_sha256": "d77bf2f9fd4dbe3c761bbb36533586d29d9ca6ffe9c905d79804a2a13023eab1",
+          "pts": 5922917,
+          "pts_seconds": 197.430567,
+          "time_base_numerator": 1,
+          "time_base_denominator": 30000,
+          "redecoded_png_sha256": "d77bf2f9fd4dbe3c761bbb36533586d29d9ca6ffe9c905d79804a2a13023eab1",
+          "matches_reviewed_pixels": true,
+          "pts_minus_requested_seconds": 0.030567,
+          "reviewed_frame_pts_status": "verified_by_identical_png"
+        },
+        {
+          "requested_seek_seconds": 198.2,
+          "reviewed_png_sha256": "df63af5a5070cccd61e9e2453c8c86186144b75b69703b487647f42517c6a8f4",
+          "pts": 5946941,
+          "pts_seconds": 198.231367,
+          "time_base_numerator": 1,
+          "time_base_denominator": 30000,
+          "redecoded_png_sha256": "df63af5a5070cccd61e9e2453c8c86186144b75b69703b487647f42517c6a8f4",
+          "matches_reviewed_pixels": true,
+          "pts_minus_requested_seconds": 0.031367,
+          "reviewed_frame_pts_status": "verified_by_identical_png"
+        }
+      ]
+    },
+    {
+      "evidence_id": "gDadfh0ZdBM:00036",
+      "streams": {
+        "audio": {
+          "duration_seconds": 287.67,
+          "container_start_seconds": 0.0,
+          "stream_descriptions": [
+            "Stream #0:0[0x1](eng): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 4 kb/s (default)"
+          ],
+          "has_audio": true,
+          "has_video": false
+        },
+        "video": {
+          "duration_seconds": 287.53,
+          "container_start_seconds": 0.0,
+          "stream_descriptions": [
+            "Stream #0:0[0x1](und): Video: av1 (libdav1d) (Main) (av01 / 0x31307661), yuv420p(tv, bt709), 640x360, 2 kb/s, 30 fps, 30 tbr, 15360 tbn (default)"
+          ],
+          "has_audio": false,
+          "has_video": true
+        }
+      },
+      "frames": [
+        {
+          "requested_seek_seconds": 131.9,
+          "reviewed_png_sha256": "68bfdfbffa321aa8337c332686fa68e41e9a9612b04e9e0a6be6dfafeaeb888e",
+          "pts": 2025984,
+          "pts_seconds": 131.9,
+          "time_base_numerator": 1,
+          "time_base_denominator": 15360,
+          "redecoded_png_sha256": "68bfdfbffa321aa8337c332686fa68e41e9a9612b04e9e0a6be6dfafeaeb888e",
+          "matches_reviewed_pixels": true,
+          "pts_minus_requested_seconds": 0.0,
+          "reviewed_frame_pts_status": "verified_by_identical_png"
+        },
+        {
+          "requested_seek_seconds": 132.8,
+          "reviewed_png_sha256": "a2bd8dd1a48124e26c50ffbf9f13468c112634dbc9f74b27ab7e8497bd8bc859",
+          "pts": 2039808,
+          "pts_seconds": 132.8,
+          "time_base_numerator": 1,
+          "time_base_denominator": 15360,
+          "redecoded_png_sha256": "a2bd8dd1a48124e26c50ffbf9f13468c112634dbc9f74b27ab7e8497bd8bc859",
+          "matches_reviewed_pixels": true,
+          "pts_minus_requested_seconds": 0.0,
+          "reviewed_frame_pts_status": "verified_by_identical_png"
+        },
+        {
+          "requested_seek_seconds": 133.7,
+          "reviewed_png_sha256": "861368c24167b2b7b368ae64bac7366a50ae70411dade75d7b8e1e6512d7f107",
+          "pts": 2053632,
+          "pts_seconds": 133.7,
+          "time_base_numerator": 1,
+          "time_base_denominator": 15360,
+          "redecoded_png_sha256": "861368c24167b2b7b368ae64bac7366a50ae70411dade75d7b8e1e6512d7f107",
+          "matches_reviewed_pixels": true,
+          "pts_minus_requested_seconds": 0.0,
+          "reviewed_frame_pts_status": "verified_by_identical_png"
+        }
+      ]
+    }
+  ]
+}
