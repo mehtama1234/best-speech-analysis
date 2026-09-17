@@ -1,0 +1,74 @@
+{
+  "schema_version": "0.1",
+  "reviewed_pause_example_count": 5,
+  "confidence_counts": {
+    "low": 1,
+    "medium": 2,
+    "high": 2
+  },
+  "context_counts": {
+    "story_transition": 1,
+    "ordered_policy_recommendation": 1,
+    "dialogue_fragment": 1,
+    "dialogue_example": 1,
+    "introduction": 1
+  },
+  "policy": "Small qualitative review; measured silence is not assumed to be intentional rhetoric.",
+  "examples": [
+    {
+      "review_id": "pause-001",
+      "evidence_id": "2fWJh-_UG5s:00197",
+      "candidate_function": "contrast_or_disagreement",
+      "reviewed_context": "story_transition",
+      "pause_before_seconds": 4.0,
+      "pause_interpretation": "Possible narrative boundary before a contrastive clause; requires audio/video review for edit or room silence.",
+      "direct_observation": "Transcript timing shows the prior caption ending at 451840 ms and this caption beginning at 455120 ms.",
+      "confidence": "low",
+      "counterexample_or_confound": "The gap may be an edit, caption delay, or removed speech."
+    },
+    {
+      "review_id": "pause-002",
+      "evidence_id": "2fWJh-_UG5s:00400",
+      "candidate_function": "call_to_action",
+      "reviewed_context": "ordered_policy_recommendation",
+      "pause_before_seconds": 1.0,
+      "pause_interpretation": "A short acoustic boundary may separate setup from the first item in an action list.",
+      "direct_observation": "The segment begins 'we need to invest in mental health care' and is followed by repeated 'we need to' clauses.",
+      "confidence": "medium",
+      "counterexample_or_confound": "The pause may arise from caption segmentation or editing; it does not prove emphasis."
+    },
+    {
+      "review_id": "pause-003",
+      "evidence_id": "W-mgdUdOjhs:00012",
+      "candidate_function": "definition",
+      "reviewed_context": "dialogue_fragment",
+      "pause_before_seconds": 1.0,
+      "pause_interpretation": "The word 'means' functions as a definition marker, but the surrounding delivery is too fragmented to infer a deliberate pause.",
+      "direct_observation": "The caption contains only 'means' and is followed by a repetition of 'horror'.",
+      "confidence": "high",
+      "counterexample_or_confound": "Caption overlap and film editing make the pause unsuitable as a general presentation example."
+    },
+    {
+      "review_id": "pause-004",
+      "evidence_id": "aHXxveJTJoE:00044",
+      "candidate_function": "example",
+      "reviewed_context": "dialogue_example",
+      "pause_before_seconds": 3.0,
+      "pause_interpretation": "The gap likely reflects turn-taking or dramatic timing in a film dialogue, not a general explanatory technique.",
+      "direct_observation": "'Max, for instance' occurs after two short dialogue turns: 'Those guys?' and 'Max?'.",
+      "confidence": "medium",
+      "counterexample_or_confound": "Movie editing and character interaction are major confounds."
+    },
+    {
+      "review_id": "pause-005",
+      "evidence_id": "2fWJh-_UG5s:00008",
+      "candidate_function": "unclassified",
+      "reviewed_context": "introduction",
+      "pause_before_seconds": 4.0,
+      "pause_interpretation": "The long gap occurs during a host introduction and may reflect stage or video editing rather than rhetorical emphasis.",
+      "direct_observation": "The preceding captions contain 'um' and 'good afternoon everyone' before the welcome.",
+      "confidence": "high",
+      "counterexample_or_confound": "Opening credits, applause, edits, and host handoff can create low-energy gaps."
+    }
+  ]
+}
