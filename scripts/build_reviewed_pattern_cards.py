@@ -39,9 +39,9 @@ def main() -> int:
         markdown.extend([
             f"## {card['annotation_id']}: `{card['reviewed_speech_function']}`",
             "",
-            f"Evidence: `{card['evidence_id']}`  ",
-            f"Candidate labels: {', '.join(card['candidate_labels'])}  ",
-            f"Supported by review: **{card['candidate_label_supported']}**  ",
+            f"Evidence: `{card['evidence_id']}`",
+            f"Candidate labels: {', '.join(card['candidate_labels'])}",
+            f"Supported by review: **{card['candidate_label_supported']}**",
             f"Confidence: **{card['confidence']}**",
             "",
             f"Direct observation: {card['direct_observation']}",
@@ -60,4 +60,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
