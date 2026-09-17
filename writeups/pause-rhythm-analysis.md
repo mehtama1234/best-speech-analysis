@@ -5,14 +5,14 @@ This report measures acoustic low-energy runs around transcript segments. A paus
 | Candidate label | Videos | Segments | Mean pause before (s) | Mean pause after (s) | Caption word-rate proxy | Mean RMS dB |
 |---|---:|---:|---:|---:|---:|---:|
 | `call_to_action` | 6 | 33 | 0.0694 | 0.0306 | 1.1005 | -23.3006 |
-| `conclusion_or_summary` | 3 | 6 | 0.0 | 0.0 | 1.1964 | -18.8979 |
-| `contrast_or_disagreement` | 17 | 155 | 0.1218 | 0.2212 | 1.7318 | -23.4727 |
+| `conclusion_or_summary` | 2 | 2 | 0.0 | 0.0 | 0.9248 | -18.302 |
+| `contrast_or_disagreement` | 8 | 19 | 0.0417 | 0.125 | 1.7922 | -22.7117 |
 | `definition` | 4 | 5 | 0.25 | 0.375 | 1.1042 | -32.0212 |
 | `example` | 6 | 11 | 0.6667 | 0.1667 | 1.1636 | -22.7863 |
-| `question` | 18 | 471 | 0.0864 | 0.1133 | 1.7872 | -23.549 |
+| `question` | 16 | 182 | 0.0971 | 0.0743 | 1.3854 | -22.8879 |
 | `story_or_personal_experience` | 10 | 30 | 0.3083 | 0.3083 | 1.7304 | -24.8472 |
 | `uncertainty_or_qualification` | 14 | 92 | 0.049 | 0.0329 | 1.5137 | -23.3476 |
-| `unclassified` | 18 | 2756 | 0.1994 | 0.1526 | 1.5245 | -23.938 |
+| `unclassified` | 18 | 3118 | 0.1872 | 0.1436 | 1.5591 | -23.8647 |
 
 ## Limits
 

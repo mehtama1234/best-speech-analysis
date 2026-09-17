@@ -9,14 +9,14 @@ Pilot videos: **20**
 | Candidate label | Videos | Segments | Mean RMS dB | Speech activity | Zero-crossing rate | Spectral centroid Hz |
 |---|---:|---:|---:|---:|---:|---:|
 | `call_to_action` | 6 | 33 | -23.30056 | 0.87068 | 0.12096 | 660.99065 |
-| `conclusion_or_summary` | 3 | 6 | -18.89792 | 0.95833 | 0.16476 | 764.55058 |
-| `contrast_or_disagreement` | 17 | 155 | -23.47274 | 0.93275 | 0.14455 | 806.13376 |
+| `conclusion_or_summary` | 2 | 2 | -18.302 | 0.9375 | 0.18206 | 716.264 |
+| `contrast_or_disagreement` | 8 | 19 | -22.71172 | 0.92596 | 0.15415 | 903.59116 |
 | `definition` | 4 | 5 | -32.02125 | 0.69375 | 0.18157 | 1181.82063 |
 | `example` | 6 | 11 | -22.78635 | 0.8565 | 0.12807 | 704.65747 |
-| `question` | 18 | 471 | -23.549 | 0.92243 | 0.1408 | 806.19485 |
+| `question` | 16 | 182 | -22.88794 | 0.90767 | 0.13139 | 792.95708 |
 | `story_or_personal_experience` | 10 | 30 | -24.84717 | 0.89099 | 0.14905 | 863.63291 |
 | `uncertainty_or_qualification` | 14 | 92 | -23.34763 | 0.9314 | 0.14108 | 837.55298 |
-| `unclassified` | 18 | 2756 | -23.93795 | 0.91183 | 0.14138 | 821.90171 |
+| `unclassified` | 18 | 3118 | -23.8647 | 0.91565 | 0.14087 | 816.30013 |
 
 ## Visual coverage
 

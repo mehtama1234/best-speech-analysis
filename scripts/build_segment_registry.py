@@ -13,12 +13,12 @@ from pathlib import Path
 
 
 PATTERNS = {
-    "question": re.compile(r"\?\s*$|\b(?:why|how|what|when|where|who|can|could|would)\b", re.I),
+    "question": re.compile(r"\?\s*$|^(?:why|how|what|when|where|who|can|could|would|is|are|do|does|did|have|has|will)\b", re.I),
     "example": re.compile(r"\b(?:for example|for instance|such as|imagine|let me give you)\b", re.I),
     "definition": re.compile(r"\b(?:means|defined as|in other words|what I mean|is when)\b", re.I),
-    "contrast_or_disagreement": re.compile(r"\b(?:but|however|although|instead|disagree|wrong|not true|on the other hand)\b", re.I),
+    "contrast_or_disagreement": re.compile(r"\b(?:however|although|instead|disagree|wrong|not true|on the other hand|I disagree|rather than)\b|\bnot\b[^.!?]{0,50}\bbut\b", re.I),
     "uncertainty_or_qualification": re.compile(r"\b(?:maybe|perhaps|probably|possibly|I think|I believe|might|could|it seems)\b", re.I),
-    "conclusion_or_summary": re.compile(r"\b(?:in conclusion|to summarize|the point is|ultimately|therefore|in short|what matters)\b", re.I),
+    "conclusion_or_summary": re.compile(r"\b(?:in conclusion|to summarize|the point is|in short|what matters)\b", re.I),
     "call_to_action": re.compile(r"\b(?:we must|we need to|you should|let us|let's|take action|do not give up)\b", re.I),
     "story_or_personal_experience": re.compile(r"\b(?:when I was|I remember|my father|my mother|one day|years ago|I went|I saw)\b", re.I),
 }
@@ -86,4 +86,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-
