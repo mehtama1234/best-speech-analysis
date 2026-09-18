@@ -34,6 +34,17 @@ links. Candidate-function filtering remains heuristic and transcript-only.
 The [pattern-admission reconciliation](writeups/pattern-admission-reconciliation.md)
 now distinguishes the legacy five contextual threshold passes from the eight
 shared draft cards; neither count represents independent validation.
+
+The [corpus transcript-derived lesson inventory](writeups/corpus-lesson-index.md)
+now exposes the lesson-shaped material already recorded in all 395 full-context
+reviews: 4,016 episode-map communication-function items and 2,800 structural
+relations, each linked to the review's exact context evidence, limits and next
+test. Its [browser](writeups/corpus-lesson-index.html) makes the complete
+inventory searchable by title, video ID, function, relation or evidence ID.
+This is a transcript-derived discovery index, not a validated pattern library;
+it does not establish recurrence, delivery effects, teachability or listener
+outcomes.
+
 The generated [validation handoff](writeups/validation-handoff.md) consolidates
 the four independent-review gates plus learner and listener protocols, with
 export validators and explicit non-claims; no human records are present.

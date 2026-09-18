@@ -21,6 +21,11 @@ bounded transcript retrieval layer across the completed corpus: exact
 phrase-form candidates, heuristic speech-job labels, timestamps, source links,
 and per-video recurrence counts. It is explicitly not audiovisual or
 independent validation.
+The [corpus lesson inventory](writeups/corpus-lesson-index.html) complements
+that phrase atlas by indexing the communication functions, structural
+relations, limits and next tests recorded in all 395 full-context reviews. It
+is a transcript-derived discovery surface, not a claim that those observations
+are recurring, effective or validated.
 The [corpus atlas browser](writeups/corpus-pattern-atlas.html) makes those
 videos searchable by phrase family, event split, evidence ID and candidate
 speech-function counts; it also filters by the heuristic candidate function

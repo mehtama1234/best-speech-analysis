@@ -4,6 +4,12 @@ Status: **instruments ready; no human records received**.
 
 These are operational instruments and instructions, not validation results. No reviewer, learner or listener judgment is included.
 
+Before selecting examples, use the [corpus transcript-derived lesson
+inventory](corpus-lesson-index.html) to search the communication functions and
+structural relations recorded across all 395 completed transcript reviews. It
+is a discovery index only; its entries still require the independent review,
+delivery, learner and listener gates below.
+
 ## Independent review gates
 
 ### corpus_function — 187 items

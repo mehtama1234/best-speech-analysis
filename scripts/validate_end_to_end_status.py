@@ -20,6 +20,7 @@ def validate(report: dict) -> list[str]:
     queue = read("research/full-reading-queue.json")
     reviews = read("research/full-context-reviews.json")
     atlas = read("research/corpus-pattern-atlas.json")
+    lesson_index = read("research/corpus-lesson-index.json")
     media = read("research/multimodal-coverage-audit.json")
     functions = read("research/corpus-function-independent-review-workbook.json")
     recurrence = read("research/corpus-recurrence-independent-review-workbook.json")
@@ -36,6 +37,9 @@ def validate(report: dict) -> list[str]:
         ("transcript_context", "caption_count"): queue["caption_count"],
         ("phrase_retrieval_atlas", "eligible_video_count"): atlas["eligible_video_count"],
         ("phrase_retrieval_atlas", "eligible_segment_count"): atlas["eligible_segment_count"],
+        ("transcript_lesson_inventory", "review_count"): lesson_index["review_count"],
+        ("transcript_lesson_inventory", "function_inventory_item_count"): lesson_index["summary"]["function_inventory_item_count"],
+        ("transcript_lesson_inventory", "relation_inventory_item_count"): lesson_index["summary"]["relation_inventory_item_count"],
         ("speech_function_candidate_review", "queued_item_count"): functions["item_count"],
         ("recurrence_candidate_review", "queued_item_count"): recurrence["item_count"],
         ("delivery_evidence", "selected_video_count"): media["selected_video_count"],
