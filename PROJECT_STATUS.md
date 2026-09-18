@@ -34,6 +34,9 @@ links. Candidate-function filtering remains heuristic and transcript-only.
 The [pattern-admission reconciliation](writeups/pattern-admission-reconciliation.md)
 now distinguishes the legacy five contextual threshold passes from the eight
 shared draft cards; neither count represents independent validation.
+The generated [validation handoff](writeups/validation-handoff.md) consolidates
+the four independent-review gates plus learner and listener protocols, with
+export validators and explicit non-claims; no human records are present.
 
 The atlas also now exposes a separate 187-item [candidate speech-function
 independent-review workbook](research/corpus-function-independent-review-workbook.json)
