@@ -26,6 +26,9 @@ that phrase atlas by indexing the communication functions, structural
 relations, limits and next tests recorded in all 395 full-context reviews. It
 is a transcript-derived discovery surface, not a claim that those observations
 are recurring, effective or validated.
+The [provisional function taxonomy](writeups/corpus-function-taxonomy.md) adds
+shared comparison labels without deleting the original free-text functions;
+2,394 items remain explicitly unclassified for human review.
 The [corpus atlas browser](writeups/corpus-pattern-atlas.html) makes those
 videos searchable by phrase family, event split, evidence ID and candidate
 speech-function counts; it also filters by the heuristic candidate function

@@ -19,6 +19,7 @@ def main() -> int:
     reviews = load("research/full-context-reviews.json")
     atlas = load("research/corpus-pattern-atlas.json")
     lesson_index = load("research/corpus-lesson-index.json")
+    taxonomy = load("research/corpus-function-taxonomy.json")
     media = load("research/multimodal-coverage-audit.json")
     media_independent = load("research/multimodal-independent-review-workbook.json")
     recurrence = load("research/corpus-recurrence-independent-review-workbook.json")
@@ -37,6 +38,7 @@ def main() -> int:
             "research/full-reading-queue.json", "research/full-context-reviews.json",
             "research/corpus-pattern-atlas.json", "research/multimodal-coverage-audit.json",
             "research/corpus-lesson-index.json",
+            "research/corpus-function-taxonomy.json",
             "research/shared-lesson-cards.json", "research/shared-learner-check.json",
             "research/listener-outcome-protocol.json", "research/raw-media-only-visual-audit.json",
         ],
@@ -47,6 +49,7 @@ def main() -> int:
             "transcript_context": {"status": "complete_for_fixed_corpus", "video_count": transcript_count, "caption_count": caption_count, "source": "research/full-context-reviews.json"},
             "phrase_retrieval_atlas": {"status": "complete_as_heuristic_transcript_retrieval", "eligible_video_count": atlas["eligible_video_count"], "eligible_segment_count": atlas["eligible_segment_count"], "source": "research/corpus-pattern-atlas.json"},
             "transcript_lesson_inventory": {"status": lesson_index["status"], "review_count": lesson_index["review_count"], "function_inventory_item_count": lesson_index["summary"]["function_inventory_item_count"], "relation_inventory_item_count": lesson_index["summary"]["relation_inventory_item_count"], "source": "research/corpus-lesson-index.json"},
+            "canonical_function_taxonomy": {"status": taxonomy["status"], "review_count": taxonomy["summary"]["review_count"], "function_item_count": taxonomy["summary"]["function_item_count"], "canonical_job_count": len(taxonomy["canonical_jobs"]), "unclassified_item_count": taxonomy["summary"]["unclassified_item_count"], "source": "research/corpus-function-taxonomy.json"},
             "speech_function_candidate_review": {"status": functions["status"], "queued_item_count": functions["item_count"], "completed_independent_reviews": 0, "source": "research/corpus-function-independent-review-workbook.json"},
             "recurrence_candidate_review": {"status": recurrence["status"], "queued_item_count": recurrence["item_count"], "completed_independent_reviews": 0, "source": "research/corpus-recurrence-independent-review-workbook.json"},
             "delivery_evidence": {"status": media["status"], "selected_video_count": media["selected_video_count"], "raw_audio_video_present": media["raw_audio_video_present_count"], "raw_audio_video_with_transcript": media["raw_audio_video_with_transcript_count"], "raw_audio_video_without_transcript": media["raw_audio_video_without_transcript_count"], "internal_manual_reviews": media["internal_manual_review_count"], "raw_only_visual_audit_items": raw_only_visual["item_count"], "raw_only_visual_audit_status": raw_only_visual["status"], "independent_review_items": media_independent["item_count"], "completed_independent_reviews": 0, "source": "research/multimodal-coverage-audit.json"},
@@ -73,6 +76,7 @@ def main() -> int:
         f"| Transcript context | `{report['stages']['transcript_context']['status']}` | {transcript_count} videos / {caption_count} captions |",
         f"| Phrase atlas | `{report['stages']['phrase_retrieval_atlas']['status']}` | {atlas['eligible_video_count']} videos / {atlas['eligible_segment_count']} segments |",
         f"| Transcript lesson inventory | `{lesson_index['status']}` | {lesson_index['review_count']} reviews / {lesson_index['summary']['function_inventory_item_count']} functions / {lesson_index['summary']['relation_inventory_item_count']} relations |",
+        f"| Canonical function taxonomy | `{taxonomy['status']}` | {taxonomy['summary']['function_item_count']} items / {taxonomy['summary']['unclassified_item_count']} unclassified |",
         f"| Function review | `{functions['status']}` | {functions['item_count']} queued / 0 completed |",
         f"| Recurrence review | `{recurrence['status']}` | {recurrence['item_count']} queued / 0 completed |",
         f"| Delivery evidence | `{media['status']}` | {media['raw_audio_video_present_count']} raw-complete ({media['raw_audio_video_without_transcript_count']} without transcript) / {media['internal_manual_review_count']} internal reviewed |",

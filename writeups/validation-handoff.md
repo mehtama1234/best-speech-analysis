@@ -9,6 +9,9 @@ inventory](corpus-lesson-index.html) to search the communication functions and
 structural relations recorded across all 395 completed transcript reviews. It
 is a discovery index only; its entries still require the independent review,
 delivery, learner and listener gates below.
+The [provisional shared function taxonomy](corpus-function-taxonomy.md) is a
+comparison aid for those free-text labels; its unclassified queue must not be
+treated as evidence of absence.
 
 ## Independent review gates
 

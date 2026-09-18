@@ -45,6 +45,12 @@ This is a transcript-derived discovery index, not a validated pattern library;
 it does not establish recurrence, delivery effects, teachability or listener
 outcomes.
 
+The [provisional shared communication-job taxonomy](writeups/corpus-function-taxonomy.md)
+maps those free-text episode labels to a comparison vocabulary while preserving
+the original labels. It currently maps 1,622 items heuristically and leaves
+2,394 items explicitly unclassified for human canonical-job review; this layer
+is not independent semantic validation.
+
 The generated [validation handoff](writeups/validation-handoff.md) consolidates
 the four independent-review gates plus learner and listener protocols, with
 export validators and explicit non-claims; no human records are present.
