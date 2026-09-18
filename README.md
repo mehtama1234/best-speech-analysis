@@ -35,6 +35,8 @@ records, with transcript errors and the transcript-only boundary visible.
 The [provisional communication-job cards](writeups/communication-job-cards.html)
 turn 18 jobs into bounded practice hypotheses with exact examples, mechanisms,
 self-checks and non-fit warnings; they are not validated best practices.
+Five cards also expose 19 internally reviewed multimodal samples, clearly
+separated from independent delivery evidence and listener outcomes.
 The [corpus atlas browser](writeups/corpus-pattern-atlas.html) makes those
 videos searchable by phrase family, event split, evidence ID and candidate
 speech-function counts; it also filters by the heuristic candidate function

@@ -5,6 +5,7 @@ from __future__ import annotations
 
 import html
 import json
+import math
 from collections import defaultdict
 from pathlib import Path
 
@@ -157,9 +158,46 @@ CARD_CONTENT = {
 }
 
 
+DELIVERY_PATTERN_JOBS = {
+    "candidate-question": ["question"],
+    "candidate-question-or-qualification": ["question", "qualification_or_boundary"],
+    "candidate-uncertainty-or-qualification": ["qualification_or_boundary"],
+    "candidate-story-or-personal-experience": ["story_or_personal_experience"],
+    "candidate-call-to-action": ["call_to_action_or_audience_role"],
+    "candidate-example": ["example_or_case"],
+}
+
+
+def load_delivery_items(root: Path) -> dict[str, list[dict]]:
+    by_job = defaultdict(list)
+    for filename in ("research/multimodal-expansion-manual-review.json", "research/multimodal-expansion-manual-review-02.json"):
+        report = json.loads((root / filename).read_text())
+        for item in report["items"]:
+            for job in DELIVERY_PATTERN_JOBS.get(item.get("pattern_id"), []):
+                video_url = f"https://www.youtube.com/watch?v={item['video_id']}&t={math.floor(item['sampled_time_seconds'])}s"
+                by_job[job].append({
+                    "evidence_id": item["evidence_id"],
+                    "video_id": item["video_id"],
+                    "title": item["title"],
+                    "pattern_id": item.get("pattern_id"),
+                    "sampled_time_seconds": item.get("sampled_time_seconds"),
+                    "source_url": video_url,
+                    "transcript_text": item.get("transcript_text", ""),
+                    "frame_observation": item.get("frame_observation", ""),
+                    "alignment_decision": item.get("alignment_decision"),
+                    "measured_audio_proxy": item.get("measured_audio_proxy", {}),
+                    "nearest_frame_measurement": item.get("nearest_frame_measurement", {}),
+                    "feature_limit": item.get("feature_limit", ""),
+                    "review_status": item.get("review_status"),
+                    "delivery_evidence_status": "internal_bounded_review_not_independent",
+                })
+    return by_job
+
+
 def build(root: Path | None = None) -> dict:
     root = root or Path(__file__).resolve().parents[1]
     bank = json.loads((root / "research/corpus-evidence-bank.json").read_text())
+    delivery_by_job = load_delivery_items(root)
     by_job = defaultdict(list)
     for record in bank["records"]:
         if record["canonical_job"] in CARD_CONTENT and record["segments"]:
@@ -199,6 +237,8 @@ def build(root: Path | None = None) -> dict:
                 "denominator_status": "inventory_counts_not_effectiveness_denominators",
             },
             "exact_examples": selected,
+            "delivery_evidence_status": "internal_bounded_review_not_independent" if delivery_by_job[job] else "no_aligned_internal_sample_for_this_job",
+            "delivery_observations": delivery_by_job[job],
             "validation": {
                 "independent_function_review": "pending",
                 "independent_recurrence_review": "pending",
@@ -224,7 +264,7 @@ def write_outputs(root: Path | None = None) -> dict:
     (root / "research/communication-job-cards.json").write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n")
     lines = ["# Provisional communication-job cards", "", "Status: **transcript-derived practice hypotheses; not validated**.", "", result["claim_boundary"], ""]
     for card in result["cards"]:
-        lines += [f"## `{card['canonical_job']}`", "", f"**Problem:** {card['problem']}", "", f"**Mechanism hypothesis:** {card['mechanism']}", "", f"**Repeatable form:** {card['form']}", "", f"**Recurrence inventory:** {card['recurrence']['function_record_count']} records across {card['recurrence']['video_count']} videos.", "", f"**Practice:** {card['practice']}", "", f"**Self-check:** {card['self_check']}", "", f"**When not to use:** {card['non_fit']}", ""]
+        lines += [f"## `{card['canonical_job']}`", "", f"**Problem:** {card['problem']}", "", f"**Mechanism hypothesis:** {card['mechanism']}", "", f"**Repeatable form:** {card['form']}", "", f"**Recurrence inventory:** {card['recurrence']['function_record_count']} records across {card['recurrence']['video_count']} videos.", "", f"**Practice:** {card['practice']}", "", f"**Self-check:** {card['self_check']}", "", f"**When not to use:** {card['non_fit']}", "", f"**Delivery evidence:** {len(card['delivery_observations'])} internally reviewed sample(s); status `{card['delivery_evidence_status']}`.", ""]
     (root / "writeups/communication-job-cards.md").write_text("\n".join(lines))
     cards_html = []
     for card in result["cards"]:
@@ -232,7 +272,8 @@ def write_outputs(root: Path | None = None) -> dict:
             f"<li><a href='{html.escape(example['source_url'] or '', quote=True)}'>{html.escape(example['title'])}</a> — <code>{html.escape(example['raw_function_label'] or '[unlabeled]')}</code><blockquote>{html.escape(' '.join(segment['text'] for segment in example['exact_segments']))}</blockquote></li>"
             for example in card["exact_examples"]
         )
-        cards_html.append(f"<article class='card' data-search='{html.escape((card['canonical_job']+' '+card['problem']).lower(), quote=True)}'><h2>{html.escape(card['canonical_job'])}</h2><p><strong>Problem:</strong> {html.escape(card['problem'])}</p><p><strong>Mechanism hypothesis:</strong> {html.escape(card['mechanism'])}</p><p><strong>Repeatable form:</strong> {html.escape(card['form'])}</p><p><strong>Inventory:</strong> {card['recurrence']['function_record_count']} records / {card['recurrence']['video_count']} videos</p><p><strong>Practice:</strong> {html.escape(card['practice'])}</p><p><strong>Self-check:</strong> {html.escape(card['self_check'])}</p><p><strong>When not to use:</strong> {html.escape(card['non_fit'])}</p><details><summary>Exact examples</summary><ol>{examples}</ol></details></article>")
+        delivery = "".join(f"<li><a href='{html.escape(item['source_url'], quote=True)}'>{html.escape(item['title'])}</a> — {html.escape(item['transcript_text'])}<br><small>{html.escape(item['frame_observation'])} Alignment: {html.escape(str(item['alignment_decision']))}. Audio/visual fields are bounded proxies; no intent or effect inferred.</small></li>" for item in card['delivery_observations'])
+        cards_html.append(f"<article class='card' data-search='{html.escape((card['canonical_job']+' '+card['problem']).lower(), quote=True)}'><h2>{html.escape(card['canonical_job'])}</h2><p><strong>Problem:</strong> {html.escape(card['problem'])}</p><p><strong>Mechanism hypothesis:</strong> {html.escape(card['mechanism'])}</p><p><strong>Repeatable form:</strong> {html.escape(card['form'])}</p><p><strong>Inventory:</strong> {card['recurrence']['function_record_count']} records / {card['recurrence']['video_count']} videos</p><p><strong>Practice:</strong> {html.escape(card['practice'])}</p><p><strong>Self-check:</strong> {html.escape(card['self_check'])}</p><p><strong>When not to use:</strong> {html.escape(card['non_fit'])}</p><details><summary>Exact examples</summary><ol>{examples}</ol></details><details><summary>Internal delivery observations ({len(card['delivery_observations'])})</summary><ul>{delivery or '<li>No aligned internal sample.</li>'}</ul></details></article>")
     browser = """<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Communication job cards</title><style>body{font:16px system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;color:#17202a}input{width:100%;box-sizing:border-box;padding:.7rem;font:inherit;margin:1rem 0 1.5rem}.notice{background:#fff4ce;padding:1rem;border-left:4px solid #b8860b}.card{border:1px solid #ccd3da;border-radius:8px;padding:1rem;margin:1rem 0}.card h2{margin:.1rem 0}blockquote{background:#f5f7f9;padding:.7rem;margin:.5rem 0}code{overflow-wrap:anywhere}</style><main><h1>Provisional communication-job cards</h1><div class="notice"><strong>Practice hypotheses, not proven best practices.</strong> All examples are transcript-derived; delivery, independent review, learner and listener gates remain visible.</div><label for="search">Search cards</label><input id="search" type="search" placeholder="e.g. question, contrast, story"><p id="count" aria-live="polite"></p>""" + "\n".join(cards_html) + """</main><script>const i=document.querySelector('#search'),c=[...document.querySelectorAll('.card')],n=document.querySelector('#count');function f(){let q=i.value.toLowerCase(),x=0;c.forEach(a=>{let s=!q||a.dataset.search.includes(q);a.hidden=!s;if(s)x++});n.textContent=`Showing ${x} of ${c.length} cards`}i.oninput=f;f()</script>"""
     (root / "writeups/communication-job-cards.html").write_text(browser)
     return result

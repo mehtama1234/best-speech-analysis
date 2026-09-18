@@ -17,6 +17,8 @@ retained words and timestamped source before reviewing a function or lesson.
 The [communication-job cards](communication-job-cards.html) are a provisional
 practice surface; reviewers should check their mechanism language, examples,
 limits and non-fit warnings rather than treating the cards as findings.
+Their delivery sections contain only bounded internal observations; the blank
+multimodal workbook remains the independent gate.
 
 ## Independent review gates
 

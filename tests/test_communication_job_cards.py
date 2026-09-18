@@ -21,6 +21,9 @@ class CommunicationJobCardTests(unittest.TestCase):
             self.assertTrue(card["practice"])
             self.assertTrue(card["non_fit"])
             self.assertEqual(card["validation"]["learner_check"], "not_run")
+            self.assertIn("delivery_evidence_status", card)
+            for observation in card["delivery_observations"]:
+                self.assertEqual(observation["delivery_evidence_status"], "internal_bounded_review_not_independent")
 
     def test_examples_retain_exact_caption_text_and_links(self):
         for card in self.cards["cards"]:
@@ -32,6 +35,7 @@ class CommunicationJobCardTests(unittest.TestCase):
                 self.assertEqual(example["sample_scope"], "first_three_retained_segments_of_function_span")
         self.assertIn("Practice hypotheses", self.html)
         self.assertIn("Exact examples", self.html)
+        self.assertIn("Internal delivery observations", self.html)
 
 
 if __name__ == "__main__":

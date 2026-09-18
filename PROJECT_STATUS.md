@@ -61,6 +61,9 @@ turn 18 shared jobs into practice hypotheses with exact examples, recurrence
 inventory counts, repeatable forms, self-checks and non-fit warnings. They are
 not validated lessons: independent review, delivery checks, learner checks and
 listener outcomes remain pending.
+Five of the cards also carry 19 linked internal multimodal observations with
+frame notes and coarse audio/visual proxies; these remain explicitly
+non-independent and do not establish intent, emotion or effectiveness.
 
 The generated [validation handoff](writeups/validation-handoff.md) consolidates
 the four independent-review gates plus learner and listener protocols, with

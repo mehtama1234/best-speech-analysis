@@ -20,6 +20,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not force a formal opening into a fast response or an already shared conversation.
 
+**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
+
 ## `closing`
 
 **Problem:** End without leaving the main point or next step diffuse.
@@ -35,6 +37,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 **Self-check:** Does the close add orientation rather than merely announce that the talk is ending?
 
 **When not to use:** Do not close over a live objection that still needs an answer.
+
+**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
 
 ## `question`
 
@@ -52,6 +56,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not use a rhetorical question to disguise a demand or corner someone.
 
+**Delivery evidence:** 10 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
+
 ## `answer_or_response`
 
 **Problem:** Respond to the literal prompt while addressing the underlying need.
@@ -67,6 +73,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 **Self-check:** Can the listener identify both the direct answer and any justified reframing?
 
 **When not to use:** Do not reframe merely to avoid an uncomfortable but legitimate question.
+
+**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
 
 ## `story_or_personal_experience`
 
@@ -84,6 +92,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not disclose another person’s private experience or use trauma as decorative evidence.
 
+**Delivery evidence:** 2 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
+
 ## `example_or_case`
 
 **Problem:** Give a general claim a concrete handle without presenting an illustration as proof.
@@ -99,6 +109,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 **Self-check:** Does the case clarify the claim without pretending to establish its prevalence or cause?
 
 **When not to use:** Do not select a vivid outlier to imply a typical pattern without denominators.
+
+**Delivery evidence:** 1 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
 
 ## `contrast_or_disagreement`
 
@@ -116,6 +128,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not manufacture a false binary or treat a person as an argument to defeat.
 
+**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
+
 ## `correction_or_reframe`
 
 **Problem:** Move from an unhelpful starting frame to a more useful question or category.
@@ -131,6 +145,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 **Self-check:** Did you preserve the valid concern inside the revised frame?
 
 **When not to use:** Do not label a challenge a ‘bad question’ simply because it is inconvenient.
+
+**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
 
 ## `repair_or_self_correction`
 
@@ -148,6 +164,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not use ‘repair’ theatrically to avoid responsibility for a substantive claim.
 
+**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
+
 ## `qualification_or_boundary`
 
 **Problem:** State a clear point while marking uncertainty, scope or conditions.
@@ -163,6 +181,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 **Self-check:** Is the claim clearer and more honest, rather than simply weaker?
 
 **When not to use:** Do not add ornamental uncertainty to a claim that should be checked directly.
+
+**Delivery evidence:** 4 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
 
 ## `definition_or_explanation`
 
@@ -180,6 +200,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not substitute a slogan, metaphor or credential for a usable definition.
 
+**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
+
 ## `transition_or_structure`
 
 **Problem:** Help a listener follow a change of topic, scale, speaker or reasoning step.
@@ -195,6 +217,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 **Self-check:** Can the listener say why the next point arrived here?
 
 **When not to use:** Do not use a transition to imply a connection that the evidence does not support.
+
+**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
 
 ## `callback_or_repetition`
 
@@ -212,6 +236,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not repeat a slogan to pressure agreement or simulate evidence.
 
+**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
+
 ## `humor_or_rapport`
 
 **Problem:** Create ease or relational room without making affected people the joke.
@@ -227,6 +253,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 **Self-check:** Who bears the cost of the joke, and can the listener opt out of laughing?
 
 **When not to use:** Do not use humor to trivialize grief, vulnerability, identity or an unresolved harm.
+
+**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
 
 ## `credit_or_acknowledgment`
 
@@ -244,6 +272,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not claim to transfer authority through praise while retaining all control.
 
+**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
+
 ## `call_to_action_or_audience_role`
 
 **Problem:** Turn a broad aspiration into a voluntary, bounded next role.
@@ -259,6 +289,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 **Self-check:** Can the listener say what they may do and what the action cannot solve?
 
 **When not to use:** Do not assign risk, money or care labor without authority, consent or support.
+
+**Delivery evidence:** 2 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
 
 ## `persuasion_or_advocacy`
 
@@ -276,6 +308,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not use urgency, fear or moral identity to conceal missing evidence or coercion.
 
+**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
+
 ## `reflection_or_value_frame`
 
 **Problem:** Connect an event or decision to a value without pretending the value settles the facts.
@@ -291,3 +325,5 @@ These cards organize transcript-derived observations into practice hypotheses. T
 **Self-check:** Can the listener tell which part is observation, value judgment and open question?
 
 **When not to use:** Do not use a value label to end inquiry or claim moral superiority.
+
+**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
