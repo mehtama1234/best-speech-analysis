@@ -15,6 +15,7 @@ This dashboard reports artifact and validation status. It does not convert trans
 | Communication-job cards | `provisional_transcript_cards_not_validated` | 18 provisional cards / 0 validated |
 | Communication-job learner check | `protocol_drafted_not_run` | 18 cards / 72 tasks / 0 records |
 | Communication-job listener outcomes | `design_complete_not_run` | 18 jobs / 6 tasks / stimuli locked: False |
+| Listener stimulus preflight | `automated_screening_not_independent_review` | 18 pairs / 18 manual reviews required |
 | Function review | `template_not_completed` | 187 queued / 0 completed |
 | Recurrence review | `template_not_completed` | 192 queued / 0 completed |
 | Delivery evidence | `raw_media_reconciled_manual_review_pending` | 29 raw-complete (8 without transcript) / 21 internal reviewed |

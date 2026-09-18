@@ -1,0 +1,427 @@
+{
+  "schema_version": "1.0",
+  "audit_id": "communication-job-stimulus-automated-preflight",
+  "status": "automated_screening_not_independent_review",
+  "claim_boundary": "Token overlap, word counts, marker checks and keyword safety flags are screening aids. They cannot establish proposition equivalence, readability, accessibility, causal isolation or listener outcomes.",
+  "source": "research/communication-job-listener-stimuli-draft.json",
+  "pair_count": 18,
+  "records": [
+    {
+      "stimulus_id": "draft-opening-01",
+      "canonical_job": "opening",
+      "word_count_delta": 2,
+      "non_stopword_jaccard": 0.5,
+      "shared_content_token_count": 10,
+      "control_content_token_count": 14,
+      "pattern_content_token_count": 16,
+      "target_marker_hits": [
+        "explain",
+        "why",
+        "where"
+      ],
+      "target_marker_status": "present",
+      "safety_flags": [],
+      "automated_status": "screened_not_independently_equated",
+      "manual_checks_required": [
+        "same proposition and no extra outcome claim",
+        "readability and vocabulary match",
+        "target form is the intended manipulation",
+        "accessibility and safety"
+      ]
+    },
+    {
+      "stimulus_id": "draft-closing-01",
+      "canonical_job": "closing",
+      "word_count_delta": 13,
+      "non_stopword_jaccard": 0.65,
+      "shared_content_token_count": 13,
+      "control_content_token_count": 14,
+      "pattern_content_token_count": 19,
+      "target_marker_hits": [
+        "takeaway",
+        "simple",
+        "if you can"
+      ],
+      "target_marker_status": "present",
+      "safety_flags": [],
+      "automated_status": "screened_not_independently_equated",
+      "manual_checks_required": [
+        "same proposition and no extra outcome claim",
+        "readability and vocabulary match",
+        "target form is the intended manipulation",
+        "accessibility and safety"
+      ]
+    },
+    {
+      "stimulus_id": "draft-question-01",
+      "canonical_job": "question",
+      "word_count_delta": 13,
+      "non_stopword_jaccard": 0.4,
+      "shared_content_token_count": 8,
+      "control_content_token_count": 10,
+      "pattern_content_token_count": 18,
+      "target_marker_hits": [
+        "which",
+        "?",
+        "ask"
+      ],
+      "target_marker_status": "present",
+      "safety_flags": [],
+      "automated_status": "screened_not_independently_equated",
+      "manual_checks_required": [
+        "same proposition and no extra outcome claim",
+        "readability and vocabulary match",
+        "target form is the intended manipulation",
+        "accessibility and safety"
+      ]
+    },
+    {
+      "stimulus_id": "draft-answer_or_response-01",
+      "canonical_job": "answer_or_response",
+      "word_count_delta": 13,
+      "non_stopword_jaccard": 0.588,
+      "shared_content_token_count": 10,
+      "control_content_token_count": 11,
+      "pattern_content_token_count": 16,
+      "target_marker_hits": [
+        "short answer",
+        "useful question",
+        "if it is not"
+      ],
+      "target_marker_status": "present",
+      "safety_flags": [],
+      "automated_status": "screened_not_independently_equated",
+      "manual_checks_required": [
+        "same proposition and no extra outcome claim",
+        "readability and vocabulary match",
+        "target form is the intended manipulation",
+        "accessibility and safety"
+      ]
+    },
+    {
+      "stimulus_id": "draft-story_or_personal_experience-01",
+      "canonical_job": "story_or_personal_experience",
+      "word_count_delta": 7,
+      "non_stopword_jaccard": 0.139,
+      "shared_content_token_count": 5,
+      "control_content_token_count": 20,
+      "pattern_content_token_count": 21,
+      "target_marker_hits": [
+        "during one",
+        "missed",
+        "event illustrates"
+      ],
+      "target_marker_status": "present",
+      "safety_flags": [],
+      "automated_status": "screened_not_independently_equated",
+      "manual_checks_required": [
+        "same proposition and no extra outcome claim",
+        "readability and vocabulary match",
+        "target form is the intended manipulation",
+        "accessibility and safety"
+      ]
+    },
+    {
+      "stimulus_id": "draft-example_or_case-01",
+      "canonical_job": "example_or_case",
+      "word_count_delta": 7,
+      "non_stopword_jaccard": 0.182,
+      "shared_content_token_count": 6,
+      "control_content_token_count": 19,
+      "pattern_content_token_count": 20,
+      "target_marker_hits": [
+        "for example",
+        "case illustrates"
+      ],
+      "target_marker_status": "present",
+      "safety_flags": [],
+      "automated_status": "screened_not_independently_equated",
+      "manual_checks_required": [
+        "same proposition and no extra outcome claim",
+        "readability and vocabulary match",
+        "target form is the intended manipulation",
+        "accessibility and safety"
+      ]
+    },
+    {
+      "stimulus_id": "draft-contrast_or_disagreement-01",
+      "canonical_job": "contrast_or_disagreement",
+      "word_count_delta": 4,
+      "non_stopword_jaccard": 0.333,
+      "shared_content_token_count": 12,
+      "control_content_token_count": 24,
+      "pattern_content_token_count": 24,
+      "target_marker_hits": [
+        "expected",
+        "but",
+        "change explains"
+      ],
+      "target_marker_status": "present",
+      "safety_flags": [],
+      "automated_status": "screened_not_independently_equated",
+      "manual_checks_required": [
+        "same proposition and no extra outcome claim",
+        "readability and vocabulary match",
+        "target form is the intended manipulation",
+        "accessibility and safety"
+      ]
+    },
+    {
+      "stimulus_id": "draft-correction_or_reframe-01",
+      "canonical_job": "correction_or_reframe",
+      "word_count_delta": 1,
+      "non_stopword_jaccard": 0.296,
+      "shared_content_token_count": 8,
+      "control_content_token_count": 17,
+      "pattern_content_token_count": 18,
+      "target_marker_hits": [
+        "more useful question",
+        "before we treat"
+      ],
+      "target_marker_status": "present",
+      "safety_flags": [],
+      "automated_status": "screened_not_independently_equated",
+      "manual_checks_required": [
+        "same proposition and no extra outcome claim",
+        "readability and vocabulary match",
+        "target form is the intended manipulation",
+        "accessibility and safety"
+      ]
+    },
+    {
+      "stimulus_id": "draft-repair_or_self_correction-01",
+      "canonical_job": "repair_or_self_correction",
+      "word_count_delta": 5,
+      "non_stopword_jaccard": 0.583,
+      "shared_content_token_count": 7,
+      "control_content_token_count": 8,
+      "pattern_content_token_count": 11,
+      "target_marker_hits": [
+        "sorry",
+        "i mean"
+      ],
+      "target_marker_status": "present",
+      "safety_flags": [],
+      "automated_status": "screened_not_independently_equated",
+      "manual_checks_required": [
+        "same proposition and no extra outcome claim",
+        "readability and vocabulary match",
+        "target form is the intended manipulation",
+        "accessibility and safety"
+      ]
+    },
+    {
+      "stimulus_id": "draft-qualification_or_boundary-01",
+      "canonical_job": "qualification_or_boundary",
+      "word_count_delta": 13,
+      "non_stopword_jaccard": 0.294,
+      "shared_content_token_count": 5,
+      "control_content_token_count": 8,
+      "pattern_content_token_count": 14,
+      "target_marker_hits": [
+        "suggest",
+        "may",
+        "sample is small"
+      ],
+      "target_marker_status": "present",
+      "safety_flags": [],
+      "automated_status": "screened_not_independently_equated",
+      "manual_checks_required": [
+        "same proposition and no extra outcome claim",
+        "readability and vocabulary match",
+        "target form is the intended manipulation",
+        "accessibility and safety"
+      ]
+    },
+    {
+      "stimulus_id": "draft-definition_or_explanation-01",
+      "canonical_job": "definition_or_explanation",
+      "word_count_delta": 10,
+      "non_stopword_jaccard": 0.045,
+      "shared_content_token_count": 1,
+      "control_content_token_count": 10,
+      "pattern_content_token_count": 13,
+      "target_marker_hits": [
+        "by a",
+        "i mean",
+        "not simply"
+      ],
+      "target_marker_status": "present",
+      "safety_flags": [],
+      "automated_status": "screened_not_independently_equated",
+      "manual_checks_required": [
+        "same proposition and no extra outcome claim",
+        "readability and vocabulary match",
+        "target form is the intended manipulation",
+        "accessibility and safety"
+      ]
+    },
+    {
+      "stimulus_id": "draft-transition_or_structure-01",
+      "canonical_job": "transition_or_structure",
+      "word_count_delta": 9,
+      "non_stopword_jaccard": 0.474,
+      "shared_content_token_count": 9,
+      "control_content_token_count": 12,
+      "pattern_content_token_count": 16,
+      "target_marker_hits": [
+        "now we can move",
+        "choice it creates"
+      ],
+      "target_marker_status": "present",
+      "safety_flags": [],
+      "automated_status": "screened_not_independently_equated",
+      "manual_checks_required": [
+        "same proposition and no extra outcome claim",
+        "readability and vocabulary match",
+        "target form is the intended manipulation",
+        "accessibility and safety"
+      ]
+    },
+    {
+      "stimulus_id": "draft-callback_or_repetition-01",
+      "canonical_job": "callback_or_repetition",
+      "word_count_delta": 11,
+      "non_stopword_jaccard": 0.174,
+      "shared_content_token_count": 4,
+      "control_content_token_count": 12,
+      "pattern_content_token_count": 15,
+      "target_marker_hits": [
+        "at the start",
+        "return to",
+        "safety check"
+      ],
+      "target_marker_status": "present",
+      "safety_flags": [],
+      "automated_status": "screened_not_independently_equated",
+      "manual_checks_required": [
+        "same proposition and no extra outcome claim",
+        "readability and vocabulary match",
+        "target form is the intended manipulation",
+        "accessibility and safety"
+      ]
+    },
+    {
+      "stimulus_id": "draft-humor_or_rapport-01",
+      "canonical_job": "humor_or_rapport",
+      "word_count_delta": 8,
+      "non_stopword_jaccard": 0.647,
+      "shared_content_token_count": 11,
+      "control_content_token_count": 11,
+      "pattern_content_token_count": 17,
+      "target_marker_hits": [
+        "stage manager",
+        "fire exit"
+      ],
+      "target_marker_status": "present",
+      "safety_flags": [],
+      "automated_status": "screened_not_independently_equated",
+      "manual_checks_required": [
+        "same proposition and no extra outcome claim",
+        "readability and vocabulary match",
+        "target form is the intended manipulation",
+        "accessibility and safety"
+      ]
+    },
+    {
+      "stimulus_id": "draft-credit_or_acknowledgment-01",
+      "canonical_job": "credit_or_acknowledgment",
+      "word_count_delta": 12,
+      "non_stopword_jaccard": 0.214,
+      "shared_content_token_count": 6,
+      "control_content_token_count": 11,
+      "pattern_content_token_count": 23,
+      "target_marker_hits": [
+        "collected",
+        "checked",
+        "their work"
+      ],
+      "target_marker_status": "present",
+      "safety_flags": [],
+      "automated_status": "screened_not_independently_equated",
+      "manual_checks_required": [
+        "same proposition and no extra outcome claim",
+        "readability and vocabulary match",
+        "target form is the intended manipulation",
+        "accessibility and safety"
+      ]
+    },
+    {
+      "stimulus_id": "draft-call_to_action_or_audience_role-01",
+      "canonical_job": "call_to_action_or_audience_role",
+      "word_count_delta": 7,
+      "non_stopword_jaccard": 0.088,
+      "shared_content_token_count": 3,
+      "control_content_token_count": 15,
+      "pattern_content_token_count": 22,
+      "target_marker_hits": [
+        "if you need",
+        "request",
+        "coordinator"
+      ],
+      "target_marker_status": "present",
+      "safety_flags": [],
+      "automated_status": "screened_not_independently_equated",
+      "manual_checks_required": [
+        "same proposition and no extra outcome claim",
+        "readability and vocabulary match",
+        "target form is the intended manipulation",
+        "accessibility and safety"
+      ]
+    },
+    {
+      "stimulus_id": "draft-persuasion_or_advocacy-01",
+      "canonical_job": "persuasion_or_advocacy",
+      "word_count_delta": 8,
+      "non_stopword_jaccard": 0.135,
+      "shared_content_token_count": 5,
+      "control_content_token_count": 18,
+      "pattern_content_token_count": 24,
+      "target_marker_hits": [
+        "pilot",
+        "measure",
+        "revise or stop"
+      ],
+      "target_marker_status": "present",
+      "safety_flags": [],
+      "automated_status": "screened_not_independently_equated",
+      "manual_checks_required": [
+        "same proposition and no extra outcome claim",
+        "readability and vocabulary match",
+        "target form is the intended manipulation",
+        "accessibility and safety"
+      ]
+    },
+    {
+      "stimulus_id": "draft-reflection_or_value_frame-01",
+      "canonical_job": "reflection_or_value_frame",
+      "word_count_delta": 7,
+      "non_stopword_jaccard": 0.344,
+      "shared_content_token_count": 11,
+      "control_content_token_count": 20,
+      "pattern_content_token_count": 23,
+      "target_marker_hits": [
+        "value",
+        "interpretations",
+        "alongside"
+      ],
+      "target_marker_status": "present",
+      "safety_flags": [],
+      "automated_status": "screened_not_independently_equated",
+      "manual_checks_required": [
+        "same proposition and no extra outcome claim",
+        "readability and vocabulary match",
+        "target form is the intended manipulation",
+        "accessibility and safety"
+      ]
+    }
+  ],
+  "summary": {
+    "pair_count": 18,
+    "max_absolute_word_count_delta": 13,
+    "min_non_stopword_jaccard": 0.045,
+    "pairs_with_marker_flag": 0,
+    "pairs_with_safety_flags": 0,
+    "pairs_requiring_manual_review": 18
+  }
+}

@@ -20,6 +20,7 @@ class CommunicationJobListenerProtocolTests(unittest.TestCase):
         self.assertEqual(len(self.protocol["patterns"]), 18)
         self.assertFalse(self.protocol["stimulus_pairs_locked"])
         self.assertEqual(self.protocol["stimulus_pair_count"], 18)
+        self.assertEqual(self.protocol["stimulus_preflight_status"], "automated_screening_not_independent_review")
         self.assertEqual(self.protocol["patterns"][0]["draft_stimulus_status"], "draft_requires_matching_readability_accessibility_and_safety_review")
         self.assertEqual(len(self.protocol["listener_tasks"]), 6)
         self.assertIn("trust", self.protocol["claim_boundary"])

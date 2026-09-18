@@ -26,6 +26,7 @@ def build(root: Path | None = None) -> dict:
     root = root or Path(__file__).resolve().parents[1]
     cards = json.loads((root / "research/communication-job-cards.json").read_text())["cards"]
     stimuli = json.loads((root / "research/communication-job-listener-stimuli-draft.json").read_text())
+    preflight = json.loads((root / "research/communication-job-stimuli-preflight.json").read_text())
     stimuli_by_card = {item["card_id"]: item for item in stimuli["records"]}
     patterns = []
     for card in cards:
@@ -46,6 +47,8 @@ def build(root: Path | None = None) -> dict:
         "claim_boundary": "A result can show differences in the measured task for the authored stimuli and tested population. It cannot establish that a celebrity's delivery or a speech form causes trust, long-term memory, persuasion, engagement or action generally.",
         "source": "research/communication-job-cards.json",
         "stimulus_bank": "research/communication-job-listener-stimuli-draft.json",
+        "stimulus_preflight": "research/communication-job-stimuli-preflight.json",
+        "stimulus_preflight_status": preflight["status"],
         "stimulus_pairs_locked": False,
         "stimulus_pair_count": stimuli["pair_count"],
         "patterns": patterns,

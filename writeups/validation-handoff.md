@@ -26,6 +26,9 @@ The [18-job listener protocol](communication-job-listener-outcome-protocol.md)
 remains a separate outcome gate; it cannot start until matched stimuli are
 independently reviewed, pretested and locked. The current [draft stimulus
 bank](communication-job-listener-stimuli-draft.md) is not yet that locked set.
+The [stimulus preflight](communication-job-stimuli-preflight.md) is only an
+automated screen; its 18 pairs still need independent content-equivalence,
+readability, accessibility and safety review.
 
 ## Independent review gates
 
