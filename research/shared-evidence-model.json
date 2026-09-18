@@ -1,0 +1,228 @@
+{
+  "schema_version": "1.0",
+  "model_id": "shared-communication-evidence-model",
+  "status": "contract_ready_research_evidence_incomplete",
+  "claim_boundary": "This contract lets web and mobile surfaces carry provenance and uncertainty together. The presence of a linked record never promotes a provisional observation to a validated pattern, learning result or listener outcome.",
+  "claim_levels": [
+    {
+      "level": "source_observation",
+      "meaning": "Checkable wording, audio, video or setting record."
+    },
+    {
+      "level": "contextual_interpretation",
+      "meaning": "Bounded reading supported by surrounding context."
+    },
+    {
+      "level": "candidate_mechanism",
+      "meaning": "Hypothesis about why a choice might help; not outcome evidence."
+    },
+    {
+      "level": "provisional_pattern",
+      "meaning": "Repeated candidate with denominators and limits; independent review still required here."
+    },
+    {
+      "level": "practice_hypothesis",
+      "meaning": "Exercise derived from the candidate; not proof that the source behavior works."
+    },
+    {
+      "level": "learning_evidence",
+      "meaning": "Observed learner teachability under a separate protocol."
+    },
+    {
+      "level": "listener_outcome_evidence",
+      "meaning": "Observed listener task outcome under a locked matched-stimulus study."
+    }
+  ],
+  "entity_types": {
+    "source": {
+      "required": [
+        "source_id",
+        "title",
+        "source_url",
+        "provenance_status"
+      ]
+    },
+    "transcript_segment": {
+      "required": [
+        "evidence_id",
+        "source_id",
+        "text",
+        "start_seconds",
+        "end_seconds",
+        "caption_status"
+      ]
+    },
+    "phrase_form": {
+      "required": [
+        "phrase_form_id",
+        "family",
+        "exact_form",
+        "recurrence",
+        "mechanism_hypothesis",
+        "status"
+      ]
+    },
+    "function_observation": {
+      "required": [
+        "function_observation_id",
+        "evidence_ids",
+        "raw_label",
+        "canonical_job",
+        "status"
+      ]
+    },
+    "delivery_observation": {
+      "required": [
+        "delivery_observation_id",
+        "evidence_id",
+        "modality",
+        "observation",
+        "measurement_limit",
+        "independence_status"
+      ]
+    },
+    "pattern_card": {
+      "required": [
+        "pattern_id",
+        "communication_problem",
+        "evidence_chain",
+        "claim_level",
+        "status"
+      ]
+    },
+    "mechanism_hypothesis": {
+      "required": [
+        "hypothesis_id",
+        "text",
+        "status",
+        "alternative_explanations"
+      ]
+    },
+    "practice_task": {
+      "required": [
+        "task_id",
+        "pattern_id",
+        "phase",
+        "prompt",
+        "boundary"
+      ]
+    },
+    "learner_observation": {
+      "required": [
+        "record_id",
+        "participant_code",
+        "task_responses",
+        "consent",
+        "claim_boundary"
+      ]
+    },
+    "listener_observation": {
+      "required": [
+        "record_id",
+        "stimulus_id",
+        "condition",
+        "task_responses",
+        "scorer_id_or_blind_code",
+        "claim_boundary"
+      ]
+    }
+  },
+  "status_vocabulary": {
+    "evidence": [
+      "retained",
+      "missing",
+      "restricted",
+      "unrepaired_caption"
+    ],
+    "interpretation": [
+      "provisional",
+      "indeterminate",
+      "independently_reviewed",
+      "adjudicated"
+    ],
+    "delivery": [
+      "not_available",
+      "derived_proxy",
+      "internal_bounded",
+      "independent_reviewed"
+    ],
+    "lesson": [
+      "draft",
+      "practice_hypothesis",
+      "teachability_observed",
+      "promoted_with_limits"
+    ],
+    "outcome": [
+      "not_run",
+      "designed",
+      "data_collected",
+      "analyzed",
+      "replicated"
+    ]
+  },
+  "link_rules": [
+    "Every pattern example links to one or more exact transcript_segment IDs.",
+    "Every delivery observation links to an exact segment when transcript alignment is claimed; otherwise it must say raw-media-only.",
+    "Every mechanism hypothesis is marked as a hypothesis until an outcome protocol supports a narrower claim.",
+    "Every practice task links to a pattern and carries a non-fit or safety boundary.",
+    "Learner observations and listener observations remain separate entity types and separate claim levels.",
+    "Missing, disagreement and indeterminate statuses remain visible to clients."
+  ],
+  "client_contract": {
+    "web": [
+      "search by communication problem, job, phrase, modality and status",
+      "show exact context before interpretation",
+      "show limits, counterexamples and disagreement",
+      "never hide missing validation"
+    ],
+    "mobile": [
+      "load the same pattern ID and evidence links",
+      "show one bounded practice task and self-check",
+      "support text, captioned and asynchronous use",
+      "store learner records only with consent and claim boundary"
+    ]
+  },
+  "current_manifest": {
+    "exact_phrase_forms": {
+      "source": "research/corpus-phrase-form-inventory.json",
+      "form_count": 50,
+      "status": "heuristic_exact_phrase_inventory_not_validated"
+    },
+    "exact_caption_evidence": {
+      "source": "research/corpus-evidence-bank.json",
+      "function_record_count": 4016,
+      "caption_segment_record_count": 102816,
+      "status": "transcript_evidence_navigation_not_validated"
+    },
+    "validated_shared_lesson_cards": {
+      "source": "research/shared-lesson-cards.json",
+      "card_count": 8,
+      "status": "eight_draft_cards_not_validated"
+    },
+    "provisional_job_cards": {
+      "source": "research/communication-job-cards.json",
+      "card_count": 18,
+      "status": "provisional_transcript_cards_not_validated"
+    },
+    "delivery": {
+      "source": "research/delivery-evidence-index.json",
+      "internal_observation_count": 21,
+      "independent_observation_count": 0,
+      "status": "delivery_evidence_reconciled_independent_review_pending"
+    },
+    "learner": {
+      "source": "research/communication-job-learner-check.json",
+      "card_count": 18,
+      "task_count": 72,
+      "completed_records": 0,
+      "status": "protocol_drafted_not_run"
+    },
+    "listener": {
+      "source": "research/communication-job-listener-outcome-protocol.json",
+      "pattern_count": 18,
+      "stimulus_pairs_locked": false,
+      "completed_records": 0,
+      "status": "design_complete_not_run"
+    }
+  }
+}

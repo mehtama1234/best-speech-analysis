@@ -56,6 +56,9 @@ mechanism hypotheses; it is not evidence of effectiveness.
 The [delivery evidence index](writeups/delivery-evidence-index.md) keeps raw
 media, derived features, internal observations and independent observations
 separate; it currently records 21 internal and zero independent observations.
+The [shared evidence model](writeups/shared-evidence-model.md) is the common
+web/mobile contract for provenance, modality, hypotheses, practice, learner
+records and listener records, with uncertainty and missing validation visible.
 The [pattern-admission reconciliation](writeups/pattern-admission-reconciliation.md)
 explains why the older five-pattern count and newer eight-card curriculum are
 different inventories, not conflicting completion claims.

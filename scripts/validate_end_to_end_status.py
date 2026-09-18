@@ -29,6 +29,7 @@ def validate(report: dict) -> list[str]:
     stimulus_preflight = read("research/communication-job-stimuli-preflight.json")
     phrase_inventory = read("research/corpus-phrase-form-inventory.json")
     delivery_index = read("research/delivery-evidence-index.json")
+    evidence_model = read("research/shared-evidence-model.json")
     media = read("research/multimodal-coverage-audit.json")
     functions = read("research/corpus-function-independent-review-workbook.json")
     recurrence = read("research/corpus-recurrence-independent-review-workbook.json")
@@ -66,6 +67,7 @@ def validate(report: dict) -> list[str]:
         ("delivery_evidence_index", "selected_video_count"): delivery_index["coverage"]["selected_video_count"],
         ("delivery_evidence_index", "internal_observation_count"): delivery_index["coverage"]["internal_manual_observation_count"],
         ("delivery_evidence_index", "independent_observation_count"): delivery_index["coverage"]["independent_review_count"],
+        ("shared_evidence_model", "entity_type_count"): len(evidence_model["entity_types"]),
         ("speech_function_candidate_review", "queued_item_count"): functions["item_count"],
         ("recurrence_candidate_review", "queued_item_count"): recurrence["item_count"],
         ("delivery_evidence", "selected_video_count"): media["selected_video_count"],

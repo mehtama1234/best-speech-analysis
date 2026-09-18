@@ -27,6 +27,7 @@ def main() -> int:
     stimulus_preflight = load("research/communication-job-stimuli-preflight.json")
     phrase_inventory = load("research/corpus-phrase-form-inventory.json")
     delivery_index = load("research/delivery-evidence-index.json")
+    evidence_model = load("research/shared-evidence-model.json")
     media = load("research/multimodal-coverage-audit.json")
     media_independent = load("research/multimodal-independent-review-workbook.json")
     recurrence = load("research/corpus-recurrence-independent-review-workbook.json")
@@ -53,6 +54,7 @@ def main() -> int:
             "research/communication-job-stimuli-preflight.json",
             "research/corpus-phrase-form-inventory.json",
             "research/delivery-evidence-index.json",
+            "research/shared-evidence-model.json",
             "research/shared-lesson-cards.json", "research/shared-learner-check.json",
             "research/listener-outcome-protocol.json", "research/raw-media-only-visual-audit.json",
         ],
@@ -71,6 +73,7 @@ def main() -> int:
             "listener_stimulus_preflight": {"status": stimulus_preflight["status"], "pair_count": stimulus_preflight["pair_count"], "manual_review_required": stimulus_preflight["summary"]["pairs_requiring_manual_review"], "source": "research/communication-job-stimuli-preflight.json"},
             "exact_phrase_form_inventory": {"status": phrase_inventory["status"], "form_count": phrase_inventory["form_count"], "eligible_caption_segment_count": phrase_inventory["eligible_caption_segment_count"], "source": "research/corpus-phrase-form-inventory.json"},
             "delivery_evidence_index": {"status": delivery_index["status"], "selected_video_count": delivery_index["coverage"]["selected_video_count"], "internal_observation_count": delivery_index["coverage"]["internal_manual_observation_count"], "independent_observation_count": delivery_index["coverage"]["independent_review_count"], "source": "research/delivery-evidence-index.json"},
+            "shared_evidence_model": {"status": evidence_model["status"], "entity_type_count": len(evidence_model["entity_types"]), "source": "research/shared-evidence-model.json"},
             "speech_function_candidate_review": {"status": functions["status"], "queued_item_count": functions["item_count"], "completed_independent_reviews": 0, "source": "research/corpus-function-independent-review-workbook.json"},
             "recurrence_candidate_review": {"status": recurrence["status"], "queued_item_count": recurrence["item_count"], "completed_independent_reviews": 0, "source": "research/corpus-recurrence-independent-review-workbook.json"},
             "delivery_evidence": {"status": media["status"], "selected_video_count": media["selected_video_count"], "raw_audio_video_present": media["raw_audio_video_present_count"], "raw_audio_video_with_transcript": media["raw_audio_video_with_transcript_count"], "raw_audio_video_without_transcript": media["raw_audio_video_without_transcript_count"], "internal_manual_reviews": media["internal_manual_review_count"], "raw_only_visual_audit_items": raw_only_visual["item_count"], "raw_only_visual_audit_status": raw_only_visual["status"], "independent_review_items": media_independent["item_count"], "completed_independent_reviews": 0, "source": "research/multimodal-coverage-audit.json"},
@@ -105,6 +108,7 @@ def main() -> int:
         f"| Listener stimulus preflight | `{stimulus_preflight['status']}` | {stimulus_preflight['pair_count']} pairs / {stimulus_preflight['summary']['pairs_requiring_manual_review']} manual reviews required |",
         f"| Exact phrase-form inventory | `{phrase_inventory['status']}` | {phrase_inventory['form_count']} forms / {phrase_inventory['eligible_caption_segment_count']} segments |",
         f"| Delivery evidence index | `{delivery_index['status']}` | {delivery_index['coverage']['internal_manual_observation_count']} internal / {delivery_index['coverage']['independent_review_count']} independent observations |",
+        f"| Shared evidence model | `{evidence_model['status']}` | {len(evidence_model['entity_types'])} entity types / web-mobile contract |",
         f"| Function review | `{functions['status']}` | {functions['item_count']} queued / 0 completed |",
         f"| Recurrence review | `{recurrence['status']}` | {recurrence['item_count']} queued / 0 completed |",
         f"| Delivery evidence | `{media['status']}` | {media['raw_audio_video_present_count']} raw-complete ({media['raw_audio_video_without_transcript_count']} without transcript) / {media['internal_manual_review_count']} internal reviewed |",

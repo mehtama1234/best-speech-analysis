@@ -18,6 +18,9 @@ full-context and independent recurrence review.
 The [delivery evidence index](delivery-evidence-index.md) is the accounting
 surface for raw media, derived proxies and internal multimodal notes; the
 independent workbook remains the authoritative review gate.
+The [shared evidence model](shared-evidence-model.md) is the client-facing
+contract; it must not be interpreted as proof that any pending entity has been
+validated.
 Use the [exact-caption evidence bank](corpus-evidence-bank.html) to inspect the
 retained words and timestamped source before reviewing a function or lesson.
 The [communication-job cards](communication-job-cards.html) are a provisional

@@ -42,6 +42,11 @@ The [delivery evidence index](writeups/delivery-evidence-index.md) reconciles
 transcripts, 8 raw items without transcripts, 8 derived-features-only items and
 21 internal multimodal observations. Independent delivery observations remain
 at zero.
+The [shared evidence model](writeups/shared-evidence-model.md) formalizes the
+web/mobile contract: entity types, claim levels, status vocabulary, provenance
+links, missing/disagreement handling and separate learner/listener records. Its
+manifest is generated from live artifacts; the contract is ready while the
+research gates remain incomplete.
 The [pattern-admission reconciliation](writeups/pattern-admission-reconciliation.md)
 now distinguishes the legacy five contextual threshold passes from the eight
 shared draft cards; neither count represents independent validation.
