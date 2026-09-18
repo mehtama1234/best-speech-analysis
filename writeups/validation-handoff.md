@@ -14,6 +14,9 @@ comparison aid for those free-text labels; its unclassified queue must not be
 treated as evidence of absence.
 Use the [exact-caption evidence bank](corpus-evidence-bank.html) to inspect the
 retained words and timestamped source before reviewing a function or lesson.
+The [communication-job cards](communication-job-cards.html) are a provisional
+practice surface; reviewers should check their mechanism language, examples,
+limits and non-fit warnings rather than treating the cards as findings.
 
 ## Independent review gates
 

@@ -56,6 +56,12 @@ The [exact-caption evidence bank](writeups/corpus-evidence-bank.md) joins all
 timestamped source URLs. Wording is preserved as stored, including recognition
 errors; no transcript repair, delivery inference or outcome claim is added.
 
+The [provisional communication-job cards](writeups/communication-job-cards.md)
+turn 18 shared jobs into practice hypotheses with exact examples, recurrence
+inventory counts, repeatable forms, self-checks and non-fit warnings. They are
+not validated lessons: independent review, delivery checks, learner checks and
+listener outcomes remain pending.
+
 The generated [validation handoff](writeups/validation-handoff.md) consolidates
 the four independent-review gates plus learner and listener protocols, with
 export validators and explicit non-claims; no human records are present.

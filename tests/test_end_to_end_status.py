@@ -20,6 +20,7 @@ class EndToEndStatusTests(unittest.TestCase):
         self.assertGreater(self.status["stages"]["canonical_function_taxonomy"]["unclassified_item_count"], 0)
         self.assertEqual(self.status["stages"]["exact_caption_evidence_bank"]["function_record_count"], 4016)
         self.assertEqual(self.status["stages"]["exact_caption_evidence_bank"]["missing_evidence_id_count"], 0)
+        self.assertEqual(self.status["stages"]["communication_job_cards"]["card_count"], 18)
         self.assertEqual(self.status["stages"]["speech_function_candidate_review"]["completed_independent_reviews"], 0)
         self.assertEqual(self.status["stages"]["learner_check"]["completed_records"], 0)
         self.assertEqual(self.status["stages"]["listener_outcomes"]["completed_records"], 0)
