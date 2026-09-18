@@ -11,6 +11,7 @@ This dashboard reports artifact and validation status. It does not convert trans
 | Phrase atlas | `complete_as_heuristic_transcript_retrieval` | 394 videos / 102351 segments |
 | Transcript lesson inventory | `transcript_derived_discovery_index_not_validated` | 395 reviews / 4016 functions / 2800 relations |
 | Canonical function taxonomy | `heuristic_canonicalization_not_independently_validated` | 4016 items / 2394 unclassified |
+| Exact caption evidence bank | `transcript_evidence_navigation_not_validated` | 4016 function records / 102816 caption segments |
 | Function review | `template_not_completed` | 187 queued / 0 completed |
 | Recurrence review | `template_not_completed` | 192 queued / 0 completed |
 | Delivery evidence | `raw_media_reconciled_manual_review_pending` | 29 raw-complete (8 without transcript) / 21 internal reviewed |

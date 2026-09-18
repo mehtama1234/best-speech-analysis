@@ -51,6 +51,11 @@ the original labels. It currently maps 1,622 items heuristically and leaves
 2,394 items explicitly unclassified for human canonical-job review; this layer
 is not independent semantic validation.
 
+The [exact-caption evidence bank](writeups/corpus-evidence-bank.md) joins all
+4,016 function records to 102,816 retained caption segments, timestamps and
+timestamped source URLs. Wording is preserved as stored, including recognition
+errors; no transcript repair, delivery inference or outcome claim is added.
+
 The generated [validation handoff](writeups/validation-handoff.md) consolidates
 the four independent-review gates plus learner and listener protocols, with
 export validators and explicit non-claims; no human records are present.

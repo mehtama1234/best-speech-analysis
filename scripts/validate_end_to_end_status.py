@@ -22,6 +22,7 @@ def validate(report: dict) -> list[str]:
     atlas = read("research/corpus-pattern-atlas.json")
     lesson_index = read("research/corpus-lesson-index.json")
     taxonomy = read("research/corpus-function-taxonomy.json")
+    evidence_bank = read("research/corpus-evidence-bank.json")
     media = read("research/multimodal-coverage-audit.json")
     functions = read("research/corpus-function-independent-review-workbook.json")
     recurrence = read("research/corpus-recurrence-independent-review-workbook.json")
@@ -44,6 +45,9 @@ def validate(report: dict) -> list[str]:
         ("canonical_function_taxonomy", "review_count"): taxonomy["summary"]["review_count"],
         ("canonical_function_taxonomy", "function_item_count"): taxonomy["summary"]["function_item_count"],
         ("canonical_function_taxonomy", "unclassified_item_count"): taxonomy["summary"]["unclassified_item_count"],
+        ("exact_caption_evidence_bank", "function_record_count"): evidence_bank["summary"]["function_record_count"],
+        ("exact_caption_evidence_bank", "caption_segment_record_count"): evidence_bank["summary"]["caption_segment_record_count"],
+        ("exact_caption_evidence_bank", "missing_evidence_id_count"): evidence_bank["summary"]["missing_evidence_id_count"],
         ("speech_function_candidate_review", "queued_item_count"): functions["item_count"],
         ("recurrence_candidate_review", "queued_item_count"): recurrence["item_count"],
         ("delivery_evidence", "selected_video_count"): media["selected_video_count"],

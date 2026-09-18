@@ -29,6 +29,9 @@ are recurring, effective or validated.
 The [provisional function taxonomy](writeups/corpus-function-taxonomy.md) adds
 shared comparison labels without deleting the original free-text functions;
 2,394 items remain explicitly unclassified for human review.
+The [exact-caption evidence bank](writeups/corpus-evidence-bank.html) exposes
+the retained words, timestamps and source links for all indexed function
+records, with transcript errors and the transcript-only boundary visible.
 The [corpus atlas browser](writeups/corpus-pattern-atlas.html) makes those
 videos searchable by phrase family, event split, evidence ID and candidate
 speech-function counts; it also filters by the heuristic candidate function
