@@ -15,6 +15,9 @@ treated as evidence of absence.
 The [exact phrase-form inventory](corpus-phrase-form-inventory.html) exposes
 the actual matched wording behind the phrase families; every form still needs
 full-context and independent recurrence review.
+The [delivery evidence index](delivery-evidence-index.md) is the accounting
+surface for raw media, derived proxies and internal multimodal notes; the
+independent workbook remains the authoritative review gate.
 Use the [exact-caption evidence bank](corpus-evidence-bank.html) to inspect the
 retained words and timestamped source before reviewing a function or lesson.
 The [communication-job cards](communication-job-cards.html) are a provisional

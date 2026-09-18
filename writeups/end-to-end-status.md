@@ -17,6 +17,7 @@ This dashboard reports artifact and validation status. It does not convert trans
 | Communication-job listener outcomes | `design_complete_not_run` | 18 jobs / 6 tasks / stimuli locked: False |
 | Listener stimulus preflight | `automated_screening_not_independent_review` | 18 pairs / 18 manual reviews required |
 | Exact phrase-form inventory | `heuristic_exact_phrase_inventory_not_validated` | 50 forms / 102351 segments |
+| Delivery evidence index | `delivery_evidence_reconciled_independent_review_pending` | 21 internal / 0 independent observations |
 | Function review | `template_not_completed` | 187 queued / 0 completed |
 | Recurrence review | `template_not_completed` | 192 queued / 0 completed |
 | Delivery evidence | `raw_media_reconciled_manual_review_pending` | 29 raw-complete (8 without transcript) / 21 internal reviewed |

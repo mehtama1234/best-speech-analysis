@@ -53,6 +53,9 @@ labels while keeping their provisional status visible.
 The [exact phrase-form inventory](writeups/corpus-phrase-form-inventory.html)
 shows the actual matched forms, recurrence splits, source examples and bounded
 mechanism hypotheses; it is not evidence of effectiveness.
+The [delivery evidence index](writeups/delivery-evidence-index.md) keeps raw
+media, derived features, internal observations and independent observations
+separate; it currently records 21 internal and zero independent observations.
 The [pattern-admission reconciliation](writeups/pattern-admission-reconciliation.md)
 explains why the older five-pattern count and newer eight-card curriculum are
 different inventories, not conflicting completion claims.

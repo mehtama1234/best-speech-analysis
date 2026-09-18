@@ -36,6 +36,12 @@ now exposes 50 actual matched word forms across the restricted 102,351-caption
 atlas, with train/holdout video counts, exact examples and bounded mechanism
 hypotheses. Phrase recurrence remains heuristic and requires context and
 independent review.
+
+The [delivery evidence index](writeups/delivery-evidence-index.md) reconciles
+41 selected media items: 29 raw audio/video items, 21 raw items with retained
+transcripts, 8 raw items without transcripts, 8 derived-features-only items and
+21 internal multimodal observations. Independent delivery observations remain
+at zero.
 The [pattern-admission reconciliation](writeups/pattern-admission-reconciliation.md)
 now distinguishes the legacy five contextual threshold passes from the eight
 shared draft cards; neither count represents independent validation.
