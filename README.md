@@ -50,6 +50,9 @@ The [corpus atlas browser](writeups/corpus-pattern-atlas.html) makes those
 videos searchable by phrase family, event split, evidence ID and candidate
 speech-function counts; it also filters by the heuristic candidate function
 labels while keeping their provisional status visible.
+The [exact phrase-form inventory](writeups/corpus-phrase-form-inventory.html)
+shows the actual matched forms, recurrence splits, source examples and bounded
+mechanism hypotheses; it is not evidence of effectiveness.
 The [pattern-admission reconciliation](writeups/pattern-admission-reconciliation.md)
 explains why the older five-pattern count and newer eight-card curriculum are
 different inventories, not conflicting completion claims.

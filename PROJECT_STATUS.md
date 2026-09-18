@@ -31,6 +31,11 @@ The [corpus atlas browser](writeups/corpus-pattern-atlas.html) exposes the same
 retrieval layer across all 394 eligible videos with search, phrase-family and
 candidate-function and event-split filters, exact candidate intervals and source
 links. Candidate-function filtering remains heuristic and transcript-only.
+The [exact phrase-form inventory](writeups/corpus-phrase-form-inventory.md)
+now exposes 50 actual matched word forms across the restricted 102,351-caption
+atlas, with train/holdout video counts, exact examples and bounded mechanism
+hypotheses. Phrase recurrence remains heuristic and requires context and
+independent review.
 The [pattern-admission reconciliation](writeups/pattern-admission-reconciliation.md)
 now distinguishes the legacy five contextual threshold passes from the eight
 shared draft cards; neither count represents independent validation.

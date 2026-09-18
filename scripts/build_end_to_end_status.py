@@ -25,6 +25,7 @@ def main() -> int:
     job_learner = load("research/communication-job-learner-check.json")
     job_listener = load("research/communication-job-listener-outcome-protocol.json")
     stimulus_preflight = load("research/communication-job-stimuli-preflight.json")
+    phrase_inventory = load("research/corpus-phrase-form-inventory.json")
     media = load("research/multimodal-coverage-audit.json")
     media_independent = load("research/multimodal-independent-review-workbook.json")
     recurrence = load("research/corpus-recurrence-independent-review-workbook.json")
@@ -49,6 +50,7 @@ def main() -> int:
             "research/communication-job-learner-check.json",
             "research/communication-job-listener-outcome-protocol.json",
             "research/communication-job-stimuli-preflight.json",
+            "research/corpus-phrase-form-inventory.json",
             "research/shared-lesson-cards.json", "research/shared-learner-check.json",
             "research/listener-outcome-protocol.json", "research/raw-media-only-visual-audit.json",
         ],
@@ -65,6 +67,7 @@ def main() -> int:
             "communication_job_learner_check": {"status": job_learner["status"], "card_count": job_learner["card_count"], "task_count": job_learner["task_count"], "completed_records": 0, "source": "research/communication-job-learner-check.json"},
             "communication_job_listener_outcomes": {"status": job_listener["status"], "pattern_count": len(job_listener["patterns"]), "listener_task_count": len(job_listener["listener_tasks"]), "stimulus_pairs_locked": job_listener["stimulus_pairs_locked"], "completed_records": 0, "source": "research/communication-job-listener-outcome-protocol.json"},
             "listener_stimulus_preflight": {"status": stimulus_preflight["status"], "pair_count": stimulus_preflight["pair_count"], "manual_review_required": stimulus_preflight["summary"]["pairs_requiring_manual_review"], "source": "research/communication-job-stimuli-preflight.json"},
+            "exact_phrase_form_inventory": {"status": phrase_inventory["status"], "form_count": phrase_inventory["form_count"], "eligible_caption_segment_count": phrase_inventory["eligible_caption_segment_count"], "source": "research/corpus-phrase-form-inventory.json"},
             "speech_function_candidate_review": {"status": functions["status"], "queued_item_count": functions["item_count"], "completed_independent_reviews": 0, "source": "research/corpus-function-independent-review-workbook.json"},
             "recurrence_candidate_review": {"status": recurrence["status"], "queued_item_count": recurrence["item_count"], "completed_independent_reviews": 0, "source": "research/corpus-recurrence-independent-review-workbook.json"},
             "delivery_evidence": {"status": media["status"], "selected_video_count": media["selected_video_count"], "raw_audio_video_present": media["raw_audio_video_present_count"], "raw_audio_video_with_transcript": media["raw_audio_video_with_transcript_count"], "raw_audio_video_without_transcript": media["raw_audio_video_without_transcript_count"], "internal_manual_reviews": media["internal_manual_review_count"], "raw_only_visual_audit_items": raw_only_visual["item_count"], "raw_only_visual_audit_status": raw_only_visual["status"], "independent_review_items": media_independent["item_count"], "completed_independent_reviews": 0, "source": "research/multimodal-coverage-audit.json"},
@@ -97,6 +100,7 @@ def main() -> int:
         f"| Communication-job learner check | `{job_learner['status']}` | {job_learner['card_count']} cards / {job_learner['task_count']} tasks / 0 records |",
         f"| Communication-job listener outcomes | `{job_listener['status']}` | {len(job_listener['patterns'])} jobs / {len(job_listener['listener_tasks'])} tasks / stimuli locked: {job_listener['stimulus_pairs_locked']} |",
         f"| Listener stimulus preflight | `{stimulus_preflight['status']}` | {stimulus_preflight['pair_count']} pairs / {stimulus_preflight['summary']['pairs_requiring_manual_review']} manual reviews required |",
+        f"| Exact phrase-form inventory | `{phrase_inventory['status']}` | {phrase_inventory['form_count']} forms / {phrase_inventory['eligible_caption_segment_count']} segments |",
         f"| Function review | `{functions['status']}` | {functions['item_count']} queued / 0 completed |",
         f"| Recurrence review | `{recurrence['status']}` | {recurrence['item_count']} queued / 0 completed |",
         f"| Delivery evidence | `{media['status']}` | {media['raw_audio_video_present_count']} raw-complete ({media['raw_audio_video_without_transcript_count']} without transcript) / {media['internal_manual_review_count']} internal reviewed |",

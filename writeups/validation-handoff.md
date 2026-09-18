@@ -12,6 +12,9 @@ delivery, learner and listener gates below.
 The [provisional shared function taxonomy](corpus-function-taxonomy.md) is a
 comparison aid for those free-text labels; its unclassified queue must not be
 treated as evidence of absence.
+The [exact phrase-form inventory](corpus-phrase-form-inventory.html) exposes
+the actual matched wording behind the phrase families; every form still needs
+full-context and independent recurrence review.
 Use the [exact-caption evidence bank](corpus-evidence-bank.html) to inspect the
 retained words and timestamped source before reviewing a function or lesson.
 The [communication-job cards](communication-job-cards.html) are a provisional

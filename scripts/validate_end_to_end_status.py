@@ -27,6 +27,7 @@ def validate(report: dict) -> list[str]:
     job_learner = read("research/communication-job-learner-check.json")
     job_listener = read("research/communication-job-listener-outcome-protocol.json")
     stimulus_preflight = read("research/communication-job-stimuli-preflight.json")
+    phrase_inventory = read("research/corpus-phrase-form-inventory.json")
     media = read("research/multimodal-coverage-audit.json")
     functions = read("research/corpus-function-independent-review-workbook.json")
     recurrence = read("research/corpus-recurrence-independent-review-workbook.json")
@@ -59,6 +60,8 @@ def validate(report: dict) -> list[str]:
         ("communication_job_listener_outcomes", "listener_task_count"): len(job_listener["listener_tasks"]),
         ("listener_stimulus_preflight", "pair_count"): stimulus_preflight["pair_count"],
         ("listener_stimulus_preflight", "manual_review_required"): stimulus_preflight["summary"]["pairs_requiring_manual_review"],
+        ("exact_phrase_form_inventory", "form_count"): phrase_inventory["form_count"],
+        ("exact_phrase_form_inventory", "eligible_caption_segment_count"): phrase_inventory["eligible_caption_segment_count"],
         ("speech_function_candidate_review", "queued_item_count"): functions["item_count"],
         ("recurrence_candidate_review", "queued_item_count"): recurrence["item_count"],
         ("delivery_evidence", "selected_video_count"): media["selected_video_count"],
