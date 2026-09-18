@@ -22,6 +22,9 @@ multimodal workbook remains the independent gate.
 The expanded [18-card learner check](communication-job-learner-check.html) is
 also unrun; exported records must pass its validator before any teachability
 summary is written.
+The [18-job listener protocol](communication-job-listener-outcome-protocol.md)
+remains a separate outcome gate; it cannot start until matched stimuli are
+authored, pretested and locked.
 
 ## Independent review gates
 

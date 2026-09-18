@@ -40,6 +40,9 @@ separated from independent delivery evidence and listener outcomes.
 The [18-card learner check](writeups/communication-job-learner-check.html)
 provides 72 fixed teachability tasks; it is an unrun instrument, not learner
 evidence.
+The [18-job listener protocol](writeups/communication-job-listener-outcome-protocol.md)
+separately defines matched controls, comprehension/recall measures and blinded
+scoring; stimuli are not yet locked and no listener data exist.
 The [corpus atlas browser](writeups/corpus-pattern-atlas.html) makes those
 videos searchable by phrase family, event split, evidence ID and candidate
 speech-function counts; it also filters by the heuristic candidate function

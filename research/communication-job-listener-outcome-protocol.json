@@ -1,0 +1,229 @@
+{
+  "schema_version": "1.0",
+  "protocol_id": "communication-job-listener-outcome-protocol",
+  "status": "design_complete_not_run",
+  "purpose": "Test comprehension, recall and reported cognitive load for matched control versus pattern-informed versions of the 18 provisional communication-job cards.",
+  "claim_boundary": "A result can show differences in the measured task for the authored stimuli and tested population. It cannot establish that a celebrity's delivery or a speech form causes trust, long-term memory, persuasion, engagement or action generally.",
+  "source": "research/communication-job-cards.json",
+  "stimulus_pairs_locked": false,
+  "patterns": [
+    {
+      "pattern_id": "provisional-job-opening",
+      "canonical_job": "opening",
+      "communication_job": "Give the listener a reason and orientation for the exchange.",
+      "pattern_informed_form": "Name the room or question; state why it matters; preview the route.",
+      "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
+    },
+    {
+      "pattern_id": "provisional-job-closing",
+      "canonical_job": "closing",
+      "communication_job": "End without leaving the main point or next step diffuse.",
+      "pattern_informed_form": "Return to the point; name the limit or next step; release the turn.",
+      "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
+    },
+    {
+      "pattern_id": "provisional-job-question",
+      "canonical_job": "question",
+      "communication_job": "Invite inquiry, reflection or a useful next turn.",
+      "pattern_informed_form": "Ask one specific question; give context; allow a genuine answer or opt-out.",
+      "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
+    },
+    {
+      "pattern_id": "provisional-job-answer_or_response",
+      "canonical_job": "answer_or_response",
+      "communication_job": "Respond to the literal prompt while addressing the underlying need.",
+      "pattern_informed_form": "Answer the literal point; state a useful frame if needed; give the bounded answer.",
+      "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
+    },
+    {
+      "pattern_id": "provisional-job-story_or_personal_experience",
+      "canonical_job": "story_or_personal_experience",
+      "communication_job": "Make an idea concrete without turning one life into universal proof.",
+      "pattern_informed_form": "Give a bounded scene; say what it changed or illustrates; state what it cannot prove.",
+      "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
+    },
+    {
+      "pattern_id": "provisional-job-example_or_case",
+      "canonical_job": "example_or_case",
+      "communication_job": "Give a general claim a concrete handle without presenting an illustration as proof.",
+      "pattern_informed_form": "State the claim; give one representative case; return to the claim and its evidence boundary.",
+      "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
+    },
+    {
+      "pattern_id": "provisional-job-contrast_or_disagreement",
+      "canonical_job": "contrast_or_disagreement",
+      "communication_job": "Make a distinction or change in reasoning visible without escalating disagreement.",
+      "pattern_informed_form": "Name the earlier view; identify what changed; state the present view and remaining overlap.",
+      "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
+    },
+    {
+      "pattern_id": "provisional-job-correction_or_reframe",
+      "canonical_job": "correction_or_reframe",
+      "communication_job": "Move from an unhelpful starting frame to a more useful question or category.",
+      "pattern_informed_form": "Acknowledge the starting frame; explain the correction; answer the more useful question.",
+      "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
+    },
+    {
+      "pattern_id": "provisional-job-repair_or_self_correction",
+      "canonical_job": "repair_or_self_correction",
+      "communication_job": "Restore accuracy or shared understanding after an error, interruption or unclear phrase.",
+      "pattern_informed_form": "Mark the error; replace it plainly; continue without over-explaining.",
+      "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
+    },
+    {
+      "pattern_id": "provisional-job-qualification_or_boundary",
+      "canonical_job": "qualification_or_boundary",
+      "communication_job": "State a clear point while marking uncertainty, scope or conditions.",
+      "pattern_informed_form": "State the main claim; name its evidence status or condition; say what would change it.",
+      "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
+    },
+    {
+      "pattern_id": "provisional-job-definition_or_explanation",
+      "canonical_job": "definition_or_explanation",
+      "communication_job": "Make an unfamiliar idea usable without overextending it.",
+      "pattern_informed_form": "Name the term; give its plain meaning; show one example and one boundary.",
+      "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
+    },
+    {
+      "pattern_id": "provisional-job-transition_or_structure",
+      "canonical_job": "transition_or_structure",
+      "communication_job": "Help a listener follow a change of topic, scale, speaker or reasoning step.",
+      "pattern_informed_form": "Close the current point; name the relationship; enter the next point.",
+      "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
+    },
+    {
+      "pattern_id": "provisional-job-callback_or_repetition",
+      "canonical_job": "callback_or_repetition",
+      "communication_job": "Give a long exchange continuity or let an earlier image carry changed meaning.",
+      "pattern_informed_form": "Introduce a meaningful anchor; return to it with a new application; avoid merely repeating it.",
+      "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
+    },
+    {
+      "pattern_id": "provisional-job-humor_or_rapport",
+      "canonical_job": "humor_or_rapport",
+      "communication_job": "Create ease or relational room without making affected people the joke.",
+      "pattern_informed_form": "Use lightness about your own situation or the shared setting; return clearly to the point.",
+      "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
+    },
+    {
+      "pattern_id": "provisional-job-credit_or_acknowledgment",
+      "canonical_job": "credit_or_acknowledgment",
+      "communication_job": "Make contribution, support or dependence visible without turning praise into a status performance.",
+      "pattern_informed_form": "Name the contribution; connect it to the result; state what remains owed or unfinished.",
+      "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
+    },
+    {
+      "pattern_id": "provisional-job-call_to_action_or_audience_role",
+      "canonical_job": "call_to_action_or_audience_role",
+      "communication_job": "Turn a broad aspiration into a voluntary, bounded next role.",
+      "pattern_informed_form": "Name the problem; offer a specific action and responsible actor; state the limit and consent path.",
+      "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
+    },
+    {
+      "pattern_id": "provisional-job-persuasion_or_advocacy",
+      "canonical_job": "persuasion_or_advocacy",
+      "communication_job": "Move a room toward judgment or action while showing evidence, tradeoffs and responsibility.",
+      "pattern_informed_form": "State the stake; show the mechanism; name tradeoffs and accountable actors; invite a bounded choice.",
+      "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
+    },
+    {
+      "pattern_id": "provisional-job-reflection_or_value_frame",
+      "canonical_job": "reflection_or_value_frame",
+      "communication_job": "Connect an event or decision to a value without pretending the value settles the facts.",
+      "pattern_informed_form": "Describe the event; name the value it raises; distinguish interpretation from verified fact.",
+      "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
+    }
+  ],
+  "listener_tasks": [
+    {
+      "task_id": "main_point_recall",
+      "prompt": "State the speaker's main point in your own words without seeing the script.",
+      "measure": "blind rubric score 0–2"
+    },
+    {
+      "task_id": "evidence_or_example_identification",
+      "prompt": "Name the example, reason or evidence the speaker used, if any.",
+      "measure": "blind rubric score 0–2"
+    },
+    {
+      "task_id": "limit_or_condition_identification",
+      "prompt": "State one limit, uncertainty or condition included by the speaker, or say that none was clear.",
+      "measure": "blind rubric score 0–2"
+    },
+    {
+      "task_id": "requested_action_or_role",
+      "prompt": "What action or role, if any, did the speaker invite? Include owner or condition if stated.",
+      "measure": "blind rubric score 0–2"
+    },
+    {
+      "task_id": "confusion_and_load",
+      "prompt": "Report what was confusing, rushed, emotionally difficult or easy to follow; agreement is not required.",
+      "measure": "coded response plus optional rating"
+    },
+    {
+      "task_id": "delayed_recall",
+      "prompt": "After a defined delay, restate the main point and one supporting detail.",
+      "measure": "blind rubric score 0–2; only when feasible and consented"
+    }
+  ],
+  "design": {
+    "unit": "listener-session-by-stimulus",
+    "comparison": "randomized matched control versus pattern-informed version",
+    "assignment": "randomize version and pattern order; keep scorer blind to condition where practical",
+    "holdout": "Lock a new authored stimulus set before unblinding and reserve some pairs for holdout.",
+    "primary_outcome": "pre-registered main-point recall score",
+    "secondary_outcomes": [
+      "evidence identification",
+      "limit/condition identification",
+      "requested action/role",
+      "confusion/load",
+      "delayed recall"
+    ]
+  },
+  "controls": [
+    "Keep proposition, topic, vocabulary, length and modality matched.",
+    "Do not use source celebrity identity or copied quotations as the manipulation.",
+    "Pretest readability, captions, audio levels and accessibility.",
+    "Record topic familiarity and agreement separately from comprehension.",
+    "Do not treat liking, trust or agreement as comprehension proxies."
+  ],
+  "consent_and_accessibility": [
+    "Use plain-language consent and allow withdrawal without penalty.",
+    "Offer text, captioned audio/video and screen-reader-compatible response modes.",
+    "Do not require trauma, medical, political or personal disclosure.",
+    "Minimize retention of recordings; obtain separate permission for recording."
+  ],
+  "record_schema": {
+    "required": [
+      "participant_code",
+      "date",
+      "protocol_version",
+      "consent",
+      "modality",
+      "stimulus_id",
+      "condition",
+      "task_responses",
+      "scorer_id_or_blind_code"
+    ],
+    "condition_values": [
+      "control",
+      "pattern_informed",
+      "unknown_or_blinded"
+    ],
+    "score_values": [
+      0,
+      1,
+      2,
+      null
+    ]
+  },
+  "record_form": "writeups/communication-job-listener-record.html",
+  "analysis_plan": [
+    "Report item-level and aggregate comprehension/recall with uncertainty and missingness.",
+    "Compare conditions within stimulus and, where possible, within participant.",
+    "Inspect null results, reversals, topic interactions and accessibility failures.",
+    "Pre-register primary task and exclusions before unblinding.",
+    "Treat results as local to the authored stimuli and tested population until replicated."
+  ],
+  "not_run_reason": "No matched stimulus pairs or consented listener observations are present."
+}

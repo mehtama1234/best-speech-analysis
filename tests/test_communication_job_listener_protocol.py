@@ -1,0 +1,45 @@
+import copy
+import json
+import unittest
+from pathlib import Path
+
+from scripts.validate_communication_job_listener_record import validate
+
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+class CommunicationJobListenerProtocolTests(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.protocol = json.loads((ROOT / "research/communication-job-listener-outcome-protocol.json").read_text())
+        cls.html = (ROOT / "writeups/communication-job-listener-record.html").read_text()
+
+    def test_design_covers_all_jobs_and_is_not_run(self):
+        self.assertEqual(self.protocol["status"], "design_complete_not_run")
+        self.assertEqual(len(self.protocol["patterns"]), 18)
+        self.assertFalse(self.protocol["stimulus_pairs_locked"])
+        self.assertEqual(len(self.protocol["listener_tasks"]), 6)
+        self.assertIn("trust", self.protocol["claim_boundary"])
+        self.assertIn("Download JSON record", self.html)
+
+    def test_validator_accepts_complete_synthetic_record_and_rejects_missing(self):
+        record = {
+            "record_type": "communication_job_listener_outcome_observation",
+            "protocol_id": self.protocol["protocol_id"],
+            "responses": {
+                "participant_code": "synthetic", "date": "2026-09-18", "protocol_version": "test",
+                "modality": "text", "stimulus_id": "synthetic-pair-01", "condition": "control",
+                "scorer_id_or_blind_code": "blind-1", "consent": True,
+            },
+        }
+        for task in self.protocol["listener_tasks"]:
+            record["responses"][f"task_{task['task_id']}"] = "synthetic response"
+        self.assertEqual(validate(record, self.protocol), [])
+        incomplete = copy.deepcopy(record)
+        del incomplete["responses"]["task_main_point_recall"]
+        self.assertTrue(any("main_point_recall" in error for error in validate(incomplete, self.protocol)))
+
+
+if __name__ == "__main__":
+    unittest.main()
