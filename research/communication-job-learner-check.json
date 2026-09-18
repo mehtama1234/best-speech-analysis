@@ -1,0 +1,1083 @@
+{
+  "schema_version": "1.0",
+  "protocol_id": "communication-job-learner-check",
+  "status": "protocol_drafted_not_run",
+  "purpose": "Test whether learners can recognize, explain, transfer and safely bound all 18 provisional communication-job cards.",
+  "claim_boundary": "This protocol tests teachability and usability of draft cards. It does not establish that a speech form improves trust, memory, persuasion, engagement, delivery, listener outcomes or action.",
+  "consent_and_accessibility": "Use a pseudonym; allow written, typed, captioned, asynchronous or spoken responses; do not require personal disclosure; do not upload recordings through this form; store no sensitive information.",
+  "source": "research/communication-job-cards.json",
+  "card_count": 18,
+  "task_count": 72,
+  "cards": [
+    {
+      "card_id": "provisional-job-opening",
+      "canonical_job": "opening",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "card_id": "provisional-job-closing",
+      "canonical_job": "closing",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "card_id": "provisional-job-question",
+      "canonical_job": "question",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "card_id": "provisional-job-answer_or_response",
+      "canonical_job": "answer_or_response",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "card_id": "provisional-job-story_or_personal_experience",
+      "canonical_job": "story_or_personal_experience",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "card_id": "provisional-job-example_or_case",
+      "canonical_job": "example_or_case",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "card_id": "provisional-job-contrast_or_disagreement",
+      "canonical_job": "contrast_or_disagreement",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "card_id": "provisional-job-correction_or_reframe",
+      "canonical_job": "correction_or_reframe",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "card_id": "provisional-job-repair_or_self_correction",
+      "canonical_job": "repair_or_self_correction",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "card_id": "provisional-job-qualification_or_boundary",
+      "canonical_job": "qualification_or_boundary",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "card_id": "provisional-job-definition_or_explanation",
+      "canonical_job": "definition_or_explanation",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "card_id": "provisional-job-transition_or_structure",
+      "canonical_job": "transition_or_structure",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "card_id": "provisional-job-callback_or_repetition",
+      "canonical_job": "callback_or_repetition",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "card_id": "provisional-job-humor_or_rapport",
+      "canonical_job": "humor_or_rapport",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "card_id": "provisional-job-credit_or_acknowledgment",
+      "canonical_job": "credit_or_acknowledgment",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "card_id": "provisional-job-call_to_action_or_audience_role",
+      "canonical_job": "call_to_action_or_audience_role",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "card_id": "provisional-job-persuasion_or_advocacy",
+      "canonical_job": "persuasion_or_advocacy",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "card_id": "provisional-job-reflection_or_value_frame",
+      "canonical_job": "reflection_or_value_frame",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": "opening-recognition-01",
+      "card_id": "provisional-job-opening",
+      "canonical_job": "opening",
+      "phase": "new_example_recognition",
+      "prompt": "A speaker is trying to do this: Give the listener a reason and orientation for the exchange. Read this response: ‘Name the room or question; state why it matters; preview the route.’ Does it perform the job opening? Identify the words that support your judgment and one alternative explanation.",
+      "required_features": [
+        "job judgment",
+        "textual evidence",
+        "alternative explanation"
+      ],
+      "boundary": "A plausible form is not proof that a listener understood or benefited."
+    },
+    {
+      "task_id": "opening-explanation-01",
+      "card_id": "provisional-job-opening",
+      "canonical_job": "opening",
+      "phase": "plain_language_explanation",
+      "prompt": "Explain the underlying communication choice for opening to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "required_features": [
+        "plain-language explanation",
+        "underlying choice separated from persona",
+        "limit or condition"
+      ],
+      "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
+    },
+    {
+      "task_id": "opening-transfer-01",
+      "card_id": "provisional-job-opening",
+      "canonical_job": "opening",
+      "phase": "transfer",
+      "prompt": "Open the same two-minute explanation with context, then without it; ask a listener what they think the talk is for.",
+      "required_features": [
+        "new situation",
+        "underlying choice used",
+        "bounded claim"
+      ],
+      "boundary": "The learner may use a hypothetical, anonymous or direct example; personal disclosure is optional."
+    },
+    {
+      "task_id": "opening-non-fit-01",
+      "card_id": "provisional-job-opening",
+      "canonical_job": "opening",
+      "phase": "misuse_non_fit",
+      "prompt": "When should this job not be used? Start with this warning: Do not force a formal opening into a fast response or an already shared conversation. Give one ordinary scenario where a different communication choice would be safer or clearer.",
+      "required_features": [
+        "non-fit identified",
+        "alternative choice",
+        "safety or consent boundary"
+      ],
+      "boundary": "Do not force a formal opening into a fast response or an already shared conversation."
+    },
+    {
+      "task_id": "closing-recognition-01",
+      "card_id": "provisional-job-closing",
+      "canonical_job": "closing",
+      "phase": "new_example_recognition",
+      "prompt": "A speaker is trying to do this: End without leaving the main point or next step diffuse. Read this response: ‘Return to the point; name the limit or next step; release the turn.’ Does it perform the job closing? Identify the words that support your judgment and one alternative explanation.",
+      "required_features": [
+        "job judgment",
+        "textual evidence",
+        "alternative explanation"
+      ],
+      "boundary": "A plausible form is not proof that a listener understood or benefited."
+    },
+    {
+      "task_id": "closing-explanation-01",
+      "card_id": "provisional-job-closing",
+      "canonical_job": "closing",
+      "phase": "plain_language_explanation",
+      "prompt": "Explain the underlying communication choice for closing to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "required_features": [
+        "plain-language explanation",
+        "underlying choice separated from persona",
+        "limit or condition"
+      ],
+      "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
+    },
+    {
+      "task_id": "closing-transfer-01",
+      "card_id": "provisional-job-closing",
+      "canonical_job": "closing",
+      "phase": "transfer",
+      "prompt": "Close a short explanation in one sentence, then ask a listener to restate the takeaway and what remains open.",
+      "required_features": [
+        "new situation",
+        "underlying choice used",
+        "bounded claim"
+      ],
+      "boundary": "The learner may use a hypothetical, anonymous or direct example; personal disclosure is optional."
+    },
+    {
+      "task_id": "closing-non-fit-01",
+      "card_id": "provisional-job-closing",
+      "canonical_job": "closing",
+      "phase": "misuse_non_fit",
+      "prompt": "When should this job not be used? Start with this warning: Do not close over a live objection that still needs an answer. Give one ordinary scenario where a different communication choice would be safer or clearer.",
+      "required_features": [
+        "non-fit identified",
+        "alternative choice",
+        "safety or consent boundary"
+      ],
+      "boundary": "Do not close over a live objection that still needs an answer."
+    },
+    {
+      "task_id": "question-recognition-01",
+      "card_id": "provisional-job-question",
+      "canonical_job": "question",
+      "phase": "new_example_recognition",
+      "prompt": "A speaker is trying to do this: Invite inquiry, reflection or a useful next turn. Read this response: ‘Ask one specific question; give context; allow a genuine answer or opt-out.’ Does it perform the job question? Identify the words that support your judgment and one alternative explanation.",
+      "required_features": [
+        "job judgment",
+        "textual evidence",
+        "alternative explanation"
+      ],
+      "boundary": "A plausible form is not proof that a listener understood or benefited."
+    },
+    {
+      "task_id": "question-explanation-01",
+      "card_id": "provisional-job-question",
+      "canonical_job": "question",
+      "phase": "plain_language_explanation",
+      "prompt": "Explain the underlying communication choice for question to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "required_features": [
+        "plain-language explanation",
+        "underlying choice separated from persona",
+        "limit or condition"
+      ],
+      "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
+    },
+    {
+      "task_id": "question-transfer-01",
+      "card_id": "provisional-job-question",
+      "canonical_job": "question",
+      "phase": "transfer",
+      "prompt": "Replace a broad question with a specific, answerable one and compare the next turn.",
+      "required_features": [
+        "new situation",
+        "underlying choice used",
+        "bounded claim"
+      ],
+      "boundary": "The learner may use a hypothetical, anonymous or direct example; personal disclosure is optional."
+    },
+    {
+      "task_id": "question-non-fit-01",
+      "card_id": "provisional-job-question",
+      "canonical_job": "question",
+      "phase": "misuse_non_fit",
+      "prompt": "When should this job not be used? Start with this warning: Do not use a rhetorical question to disguise a demand or corner someone. Give one ordinary scenario where a different communication choice would be safer or clearer.",
+      "required_features": [
+        "non-fit identified",
+        "alternative choice",
+        "safety or consent boundary"
+      ],
+      "boundary": "Do not use a rhetorical question to disguise a demand or corner someone."
+    },
+    {
+      "task_id": "answer_or_response-recognition-01",
+      "card_id": "provisional-job-answer_or_response",
+      "canonical_job": "answer_or_response",
+      "phase": "new_example_recognition",
+      "prompt": "A speaker is trying to do this: Respond to the literal prompt while addressing the underlying need. Read this response: ‘Answer the literal point; state a useful frame if needed; give the bounded answer.’ Does it perform the job answer_or_response? Identify the words that support your judgment and one alternative explanation.",
+      "required_features": [
+        "job judgment",
+        "textual evidence",
+        "alternative explanation"
+      ],
+      "boundary": "A plausible form is not proof that a listener understood or benefited."
+    },
+    {
+      "task_id": "answer_or_response-explanation-01",
+      "card_id": "provisional-job-answer_or_response",
+      "canonical_job": "answer_or_response",
+      "phase": "plain_language_explanation",
+      "prompt": "Explain the underlying communication choice for answer_or_response to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "required_features": [
+        "plain-language explanation",
+        "underlying choice separated from persona",
+        "limit or condition"
+      ],
+      "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
+    },
+    {
+      "task_id": "answer_or_response-transfer-01",
+      "card_id": "provisional-job-answer_or_response",
+      "canonical_job": "answer_or_response",
+      "phase": "transfer",
+      "prompt": "Give a direct answer, then a frame-corrected answer; ask which one remains responsive.",
+      "required_features": [
+        "new situation",
+        "underlying choice used",
+        "bounded claim"
+      ],
+      "boundary": "The learner may use a hypothetical, anonymous or direct example; personal disclosure is optional."
+    },
+    {
+      "task_id": "answer_or_response-non-fit-01",
+      "card_id": "provisional-job-answer_or_response",
+      "canonical_job": "answer_or_response",
+      "phase": "misuse_non_fit",
+      "prompt": "When should this job not be used? Start with this warning: Do not reframe merely to avoid an uncomfortable but legitimate question. Give one ordinary scenario where a different communication choice would be safer or clearer.",
+      "required_features": [
+        "non-fit identified",
+        "alternative choice",
+        "safety or consent boundary"
+      ],
+      "boundary": "Do not reframe merely to avoid an uncomfortable but legitimate question."
+    },
+    {
+      "task_id": "story_or_personal_experience-recognition-01",
+      "card_id": "provisional-job-story_or_personal_experience",
+      "canonical_job": "story_or_personal_experience",
+      "phase": "new_example_recognition",
+      "prompt": "A speaker is trying to do this: Make an idea concrete without turning one life into universal proof. Read this response: ‘Give a bounded scene; say what it changed or illustrates; state what it cannot prove.’ Does it perform the job story_or_personal_experience? Identify the words that support your judgment and one alternative explanation.",
+      "required_features": [
+        "job judgment",
+        "textual evidence",
+        "alternative explanation"
+      ],
+      "boundary": "A plausible form is not proof that a listener understood or benefited."
+    },
+    {
+      "task_id": "story_or_personal_experience-explanation-01",
+      "card_id": "provisional-job-story_or_personal_experience",
+      "canonical_job": "story_or_personal_experience",
+      "phase": "plain_language_explanation",
+      "prompt": "Explain the underlying communication choice for story_or_personal_experience to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "required_features": [
+        "plain-language explanation",
+        "underlying choice separated from persona",
+        "limit or condition"
+      ],
+      "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
+    },
+    {
+      "task_id": "story_or_personal_experience-transfer-01",
+      "card_id": "provisional-job-story_or_personal_experience",
+      "canonical_job": "story_or_personal_experience",
+      "phase": "transfer",
+      "prompt": "Tell a 45-second event, then name the narrow lesson and one limit.",
+      "required_features": [
+        "new situation",
+        "underlying choice used",
+        "bounded claim"
+      ],
+      "boundary": "The learner may use a hypothetical, anonymous or direct example; personal disclosure is optional."
+    },
+    {
+      "task_id": "story_or_personal_experience-non-fit-01",
+      "card_id": "provisional-job-story_or_personal_experience",
+      "canonical_job": "story_or_personal_experience",
+      "phase": "misuse_non_fit",
+      "prompt": "When should this job not be used? Start with this warning: Do not disclose another person’s private experience or use trauma as decorative evidence. Give one ordinary scenario where a different communication choice would be safer or clearer.",
+      "required_features": [
+        "non-fit identified",
+        "alternative choice",
+        "safety or consent boundary"
+      ],
+      "boundary": "Do not disclose another person’s private experience or use trauma as decorative evidence."
+    },
+    {
+      "task_id": "example_or_case-recognition-01",
+      "card_id": "provisional-job-example_or_case",
+      "canonical_job": "example_or_case",
+      "phase": "new_example_recognition",
+      "prompt": "A speaker is trying to do this: Give a general claim a concrete handle without presenting an illustration as proof. Read this response: ‘State the claim; give one representative case; return to the claim and its evidence boundary.’ Does it perform the job example_or_case? Identify the words that support your judgment and one alternative explanation.",
+      "required_features": [
+        "job judgment",
+        "textual evidence",
+        "alternative explanation"
+      ],
+      "boundary": "A plausible form is not proof that a listener understood or benefited."
+    },
+    {
+      "task_id": "example_or_case-explanation-01",
+      "card_id": "provisional-job-example_or_case",
+      "canonical_job": "example_or_case",
+      "phase": "plain_language_explanation",
+      "prompt": "Explain the underlying communication choice for example_or_case to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "required_features": [
+        "plain-language explanation",
+        "underlying choice separated from persona",
+        "limit or condition"
+      ],
+      "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
+    },
+    {
+      "task_id": "example_or_case-transfer-01",
+      "card_id": "provisional-job-example_or_case",
+      "canonical_job": "example_or_case",
+      "phase": "transfer",
+      "prompt": "Explain a principle with and without a case; ask which detail made the idea more inspectable.",
+      "required_features": [
+        "new situation",
+        "underlying choice used",
+        "bounded claim"
+      ],
+      "boundary": "The learner may use a hypothetical, anonymous or direct example; personal disclosure is optional."
+    },
+    {
+      "task_id": "example_or_case-non-fit-01",
+      "card_id": "provisional-job-example_or_case",
+      "canonical_job": "example_or_case",
+      "phase": "misuse_non_fit",
+      "prompt": "When should this job not be used? Start with this warning: Do not select a vivid outlier to imply a typical pattern without denominators. Give one ordinary scenario where a different communication choice would be safer or clearer.",
+      "required_features": [
+        "non-fit identified",
+        "alternative choice",
+        "safety or consent boundary"
+      ],
+      "boundary": "Do not select a vivid outlier to imply a typical pattern without denominators."
+    },
+    {
+      "task_id": "contrast_or_disagreement-recognition-01",
+      "card_id": "provisional-job-contrast_or_disagreement",
+      "canonical_job": "contrast_or_disagreement",
+      "phase": "new_example_recognition",
+      "prompt": "A speaker is trying to do this: Make a distinction or change in reasoning visible without escalating disagreement. Read this response: ‘Name the earlier view; identify what changed; state the present view and remaining overlap.’ Does it perform the job contrast_or_disagreement? Identify the words that support your judgment and one alternative explanation.",
+      "required_features": [
+        "job judgment",
+        "textual evidence",
+        "alternative explanation"
+      ],
+      "boundary": "A plausible form is not proof that a listener understood or benefited."
+    },
+    {
+      "task_id": "contrast_or_disagreement-explanation-01",
+      "card_id": "provisional-job-contrast_or_disagreement",
+      "canonical_job": "contrast_or_disagreement",
+      "phase": "plain_language_explanation",
+      "prompt": "Explain the underlying communication choice for contrast_or_disagreement to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "required_features": [
+        "plain-language explanation",
+        "underlying choice separated from persona",
+        "limit or condition"
+      ],
+      "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
+    },
+    {
+      "task_id": "contrast_or_disagreement-transfer-01",
+      "card_id": "provisional-job-contrast_or_disagreement",
+      "canonical_job": "contrast_or_disagreement",
+      "phase": "transfer",
+      "prompt": "Use ‘I used to think X; Y changed the question; now I think Z,’ then test whether the distinction is fair.",
+      "required_features": [
+        "new situation",
+        "underlying choice used",
+        "bounded claim"
+      ],
+      "boundary": "The learner may use a hypothetical, anonymous or direct example; personal disclosure is optional."
+    },
+    {
+      "task_id": "contrast_or_disagreement-non-fit-01",
+      "card_id": "provisional-job-contrast_or_disagreement",
+      "canonical_job": "contrast_or_disagreement",
+      "phase": "misuse_non_fit",
+      "prompt": "When should this job not be used? Start with this warning: Do not manufacture a false binary or treat a person as an argument to defeat. Give one ordinary scenario where a different communication choice would be safer or clearer.",
+      "required_features": [
+        "non-fit identified",
+        "alternative choice",
+        "safety or consent boundary"
+      ],
+      "boundary": "Do not manufacture a false binary or treat a person as an argument to defeat."
+    },
+    {
+      "task_id": "correction_or_reframe-recognition-01",
+      "card_id": "provisional-job-correction_or_reframe",
+      "canonical_job": "correction_or_reframe",
+      "phase": "new_example_recognition",
+      "prompt": "A speaker is trying to do this: Move from an unhelpful starting frame to a more useful question or category. Read this response: ‘Acknowledge the starting frame; explain the correction; answer the more useful question.’ Does it perform the job correction_or_reframe? Identify the words that support your judgment and one alternative explanation.",
+      "required_features": [
+        "job judgment",
+        "textual evidence",
+        "alternative explanation"
+      ],
+      "boundary": "A plausible form is not proof that a listener understood or benefited."
+    },
+    {
+      "task_id": "correction_or_reframe-explanation-01",
+      "card_id": "provisional-job-correction_or_reframe",
+      "canonical_job": "correction_or_reframe",
+      "phase": "plain_language_explanation",
+      "prompt": "Explain the underlying communication choice for correction_or_reframe to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "required_features": [
+        "plain-language explanation",
+        "underlying choice separated from persona",
+        "limit or condition"
+      ],
+      "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
+    },
+    {
+      "task_id": "correction_or_reframe-transfer-01",
+      "card_id": "provisional-job-correction_or_reframe",
+      "canonical_job": "correction_or_reframe",
+      "phase": "transfer",
+      "prompt": "Answer a difficult prompt twice: first literally, then with one transparent frame correction.",
+      "required_features": [
+        "new situation",
+        "underlying choice used",
+        "bounded claim"
+      ],
+      "boundary": "The learner may use a hypothetical, anonymous or direct example; personal disclosure is optional."
+    },
+    {
+      "task_id": "correction_or_reframe-non-fit-01",
+      "card_id": "provisional-job-correction_or_reframe",
+      "canonical_job": "correction_or_reframe",
+      "phase": "misuse_non_fit",
+      "prompt": "When should this job not be used? Start with this warning: Do not label a challenge a ‘bad question’ simply because it is inconvenient. Give one ordinary scenario where a different communication choice would be safer or clearer.",
+      "required_features": [
+        "non-fit identified",
+        "alternative choice",
+        "safety or consent boundary"
+      ],
+      "boundary": "Do not label a challenge a ‘bad question’ simply because it is inconvenient."
+    },
+    {
+      "task_id": "repair_or_self_correction-recognition-01",
+      "card_id": "provisional-job-repair_or_self_correction",
+      "canonical_job": "repair_or_self_correction",
+      "phase": "new_example_recognition",
+      "prompt": "A speaker is trying to do this: Restore accuracy or shared understanding after an error, interruption or unclear phrase. Read this response: ‘Mark the error; replace it plainly; continue without over-explaining.’ Does it perform the job repair_or_self_correction? Identify the words that support your judgment and one alternative explanation.",
+      "required_features": [
+        "job judgment",
+        "textual evidence",
+        "alternative explanation"
+      ],
+      "boundary": "A plausible form is not proof that a listener understood or benefited."
+    },
+    {
+      "task_id": "repair_or_self_correction-explanation-01",
+      "card_id": "provisional-job-repair_or_self_correction",
+      "canonical_job": "repair_or_self_correction",
+      "phase": "plain_language_explanation",
+      "prompt": "Explain the underlying communication choice for repair_or_self_correction to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "required_features": [
+        "plain-language explanation",
+        "underlying choice separated from persona",
+        "limit or condition"
+      ],
+      "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
+    },
+    {
+      "task_id": "repair_or_self_correction-transfer-01",
+      "card_id": "provisional-job-repair_or_self_correction",
+      "canonical_job": "repair_or_self_correction",
+      "phase": "transfer",
+      "prompt": "Record a short answer with one intentional error and repair it in one sentence.",
+      "required_features": [
+        "new situation",
+        "underlying choice used",
+        "bounded claim"
+      ],
+      "boundary": "The learner may use a hypothetical, anonymous or direct example; personal disclosure is optional."
+    },
+    {
+      "task_id": "repair_or_self_correction-non-fit-01",
+      "card_id": "provisional-job-repair_or_self_correction",
+      "canonical_job": "repair_or_self_correction",
+      "phase": "misuse_non_fit",
+      "prompt": "When should this job not be used? Start with this warning: Do not use ‘repair’ theatrically to avoid responsibility for a substantive claim. Give one ordinary scenario where a different communication choice would be safer or clearer.",
+      "required_features": [
+        "non-fit identified",
+        "alternative choice",
+        "safety or consent boundary"
+      ],
+      "boundary": "Do not use ‘repair’ theatrically to avoid responsibility for a substantive claim."
+    },
+    {
+      "task_id": "qualification_or_boundary-recognition-01",
+      "card_id": "provisional-job-qualification_or_boundary",
+      "canonical_job": "qualification_or_boundary",
+      "phase": "new_example_recognition",
+      "prompt": "A speaker is trying to do this: State a clear point while marking uncertainty, scope or conditions. Read this response: ‘State the main claim; name its evidence status or condition; say what would change it.’ Does it perform the job qualification_or_boundary? Identify the words that support your judgment and one alternative explanation.",
+      "required_features": [
+        "job judgment",
+        "textual evidence",
+        "alternative explanation"
+      ],
+      "boundary": "A plausible form is not proof that a listener understood or benefited."
+    },
+    {
+      "task_id": "qualification_or_boundary-explanation-01",
+      "card_id": "provisional-job-qualification_or_boundary",
+      "canonical_job": "qualification_or_boundary",
+      "phase": "plain_language_explanation",
+      "prompt": "Explain the underlying communication choice for qualification_or_boundary to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "required_features": [
+        "plain-language explanation",
+        "underlying choice separated from persona",
+        "limit or condition"
+      ],
+      "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
+    },
+    {
+      "task_id": "qualification_or_boundary-transfer-01",
+      "card_id": "provisional-job-qualification_or_boundary",
+      "canonical_job": "qualification_or_boundary",
+      "phase": "transfer",
+      "prompt": "Convert one absolute sentence into a bounded claim with one observable condition.",
+      "required_features": [
+        "new situation",
+        "underlying choice used",
+        "bounded claim"
+      ],
+      "boundary": "The learner may use a hypothetical, anonymous or direct example; personal disclosure is optional."
+    },
+    {
+      "task_id": "qualification_or_boundary-non-fit-01",
+      "card_id": "provisional-job-qualification_or_boundary",
+      "canonical_job": "qualification_or_boundary",
+      "phase": "misuse_non_fit",
+      "prompt": "When should this job not be used? Start with this warning: Do not add ornamental uncertainty to a claim that should be checked directly. Give one ordinary scenario where a different communication choice would be safer or clearer.",
+      "required_features": [
+        "non-fit identified",
+        "alternative choice",
+        "safety or consent boundary"
+      ],
+      "boundary": "Do not add ornamental uncertainty to a claim that should be checked directly."
+    },
+    {
+      "task_id": "definition_or_explanation-recognition-01",
+      "card_id": "provisional-job-definition_or_explanation",
+      "canonical_job": "definition_or_explanation",
+      "phase": "new_example_recognition",
+      "prompt": "A speaker is trying to do this: Make an unfamiliar idea usable without overextending it. Read this response: ‘Name the term; give its plain meaning; show one example and one boundary.’ Does it perform the job definition_or_explanation? Identify the words that support your judgment and one alternative explanation.",
+      "required_features": [
+        "job judgment",
+        "textual evidence",
+        "alternative explanation"
+      ],
+      "boundary": "A plausible form is not proof that a listener understood or benefited."
+    },
+    {
+      "task_id": "definition_or_explanation-explanation-01",
+      "card_id": "provisional-job-definition_or_explanation",
+      "canonical_job": "definition_or_explanation",
+      "phase": "plain_language_explanation",
+      "prompt": "Explain the underlying communication choice for definition_or_explanation to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "required_features": [
+        "plain-language explanation",
+        "underlying choice separated from persona",
+        "limit or condition"
+      ],
+      "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
+    },
+    {
+      "task_id": "definition_or_explanation-transfer-01",
+      "card_id": "provisional-job-definition_or_explanation",
+      "canonical_job": "definition_or_explanation",
+      "phase": "transfer",
+      "prompt": "Define a technical term for a newcomer in 20 seconds, then ask them to use it in a new sentence.",
+      "required_features": [
+        "new situation",
+        "underlying choice used",
+        "bounded claim"
+      ],
+      "boundary": "The learner may use a hypothetical, anonymous or direct example; personal disclosure is optional."
+    },
+    {
+      "task_id": "definition_or_explanation-non-fit-01",
+      "card_id": "provisional-job-definition_or_explanation",
+      "canonical_job": "definition_or_explanation",
+      "phase": "misuse_non_fit",
+      "prompt": "When should this job not be used? Start with this warning: Do not substitute a slogan, metaphor or credential for a usable definition. Give one ordinary scenario where a different communication choice would be safer or clearer.",
+      "required_features": [
+        "non-fit identified",
+        "alternative choice",
+        "safety or consent boundary"
+      ],
+      "boundary": "Do not substitute a slogan, metaphor or credential for a usable definition."
+    },
+    {
+      "task_id": "transition_or_structure-recognition-01",
+      "card_id": "provisional-job-transition_or_structure",
+      "canonical_job": "transition_or_structure",
+      "phase": "new_example_recognition",
+      "prompt": "A speaker is trying to do this: Help a listener follow a change of topic, scale, speaker or reasoning step. Read this response: ‘Close the current point; name the relationship; enter the next point.’ Does it perform the job transition_or_structure? Identify the words that support your judgment and one alternative explanation.",
+      "required_features": [
+        "job judgment",
+        "textual evidence",
+        "alternative explanation"
+      ],
+      "boundary": "A plausible form is not proof that a listener understood or benefited."
+    },
+    {
+      "task_id": "transition_or_structure-explanation-01",
+      "card_id": "provisional-job-transition_or_structure",
+      "canonical_job": "transition_or_structure",
+      "phase": "plain_language_explanation",
+      "prompt": "Explain the underlying communication choice for transition_or_structure to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "required_features": [
+        "plain-language explanation",
+        "underlying choice separated from persona",
+        "limit or condition"
+      ],
+      "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
+    },
+    {
+      "task_id": "transition_or_structure-transfer-01",
+      "card_id": "provisional-job-transition_or_structure",
+      "canonical_job": "transition_or_structure",
+      "phase": "transfer",
+      "prompt": "Add one spoken bridge between two unrelated ideas and ask a listener to describe the connection.",
+      "required_features": [
+        "new situation",
+        "underlying choice used",
+        "bounded claim"
+      ],
+      "boundary": "The learner may use a hypothetical, anonymous or direct example; personal disclosure is optional."
+    },
+    {
+      "task_id": "transition_or_structure-non-fit-01",
+      "card_id": "provisional-job-transition_or_structure",
+      "canonical_job": "transition_or_structure",
+      "phase": "misuse_non_fit",
+      "prompt": "When should this job not be used? Start with this warning: Do not use a transition to imply a connection that the evidence does not support. Give one ordinary scenario where a different communication choice would be safer or clearer.",
+      "required_features": [
+        "non-fit identified",
+        "alternative choice",
+        "safety or consent boundary"
+      ],
+      "boundary": "Do not use a transition to imply a connection that the evidence does not support."
+    },
+    {
+      "task_id": "callback_or_repetition-recognition-01",
+      "card_id": "provisional-job-callback_or_repetition",
+      "canonical_job": "callback_or_repetition",
+      "phase": "new_example_recognition",
+      "prompt": "A speaker is trying to do this: Give a long exchange continuity or let an earlier image carry changed meaning. Read this response: ‘Introduce a meaningful anchor; return to it with a new application; avoid merely repeating it.’ Does it perform the job callback_or_repetition? Identify the words that support your judgment and one alternative explanation.",
+      "required_features": [
+        "job judgment",
+        "textual evidence",
+        "alternative explanation"
+      ],
+      "boundary": "A plausible form is not proof that a listener understood or benefited."
+    },
+    {
+      "task_id": "callback_or_repetition-explanation-01",
+      "card_id": "provisional-job-callback_or_repetition",
+      "canonical_job": "callback_or_repetition",
+      "phase": "plain_language_explanation",
+      "prompt": "Explain the underlying communication choice for callback_or_repetition to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "required_features": [
+        "plain-language explanation",
+        "underlying choice separated from persona",
+        "limit or condition"
+      ],
+      "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
+    },
+    {
+      "task_id": "callback_or_repetition-transfer-01",
+      "card_id": "provisional-job-callback_or_repetition",
+      "canonical_job": "callback_or_repetition",
+      "phase": "transfer",
+      "prompt": "Use one image at the opening and return to it at the close with a changed implication.",
+      "required_features": [
+        "new situation",
+        "underlying choice used",
+        "bounded claim"
+      ],
+      "boundary": "The learner may use a hypothetical, anonymous or direct example; personal disclosure is optional."
+    },
+    {
+      "task_id": "callback_or_repetition-non-fit-01",
+      "card_id": "provisional-job-callback_or_repetition",
+      "canonical_job": "callback_or_repetition",
+      "phase": "misuse_non_fit",
+      "prompt": "When should this job not be used? Start with this warning: Do not repeat a slogan to pressure agreement or simulate evidence. Give one ordinary scenario where a different communication choice would be safer or clearer.",
+      "required_features": [
+        "non-fit identified",
+        "alternative choice",
+        "safety or consent boundary"
+      ],
+      "boundary": "Do not repeat a slogan to pressure agreement or simulate evidence."
+    },
+    {
+      "task_id": "humor_or_rapport-recognition-01",
+      "card_id": "provisional-job-humor_or_rapport",
+      "canonical_job": "humor_or_rapport",
+      "phase": "new_example_recognition",
+      "prompt": "A speaker is trying to do this: Create ease or relational room without making affected people the joke. Read this response: ‘Use lightness about your own situation or the shared setting; return clearly to the point.’ Does it perform the job humor_or_rapport? Identify the words that support your judgment and one alternative explanation.",
+      "required_features": [
+        "job judgment",
+        "textual evidence",
+        "alternative explanation"
+      ],
+      "boundary": "A plausible form is not proof that a listener understood or benefited."
+    },
+    {
+      "task_id": "humor_or_rapport-explanation-01",
+      "card_id": "provisional-job-humor_or_rapport",
+      "canonical_job": "humor_or_rapport",
+      "phase": "plain_language_explanation",
+      "prompt": "Explain the underlying communication choice for humor_or_rapport to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "required_features": [
+        "plain-language explanation",
+        "underlying choice separated from persona",
+        "limit or condition"
+      ],
+      "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
+    },
+    {
+      "task_id": "humor_or_rapport-transfer-01",
+      "card_id": "provisional-job-humor_or_rapport",
+      "canonical_job": "humor_or_rapport",
+      "phase": "transfer",
+      "prompt": "Try a self-directed release and a neutral transition after difficult material; check whether either targets someone else.",
+      "required_features": [
+        "new situation",
+        "underlying choice used",
+        "bounded claim"
+      ],
+      "boundary": "The learner may use a hypothetical, anonymous or direct example; personal disclosure is optional."
+    },
+    {
+      "task_id": "humor_or_rapport-non-fit-01",
+      "card_id": "provisional-job-humor_or_rapport",
+      "canonical_job": "humor_or_rapport",
+      "phase": "misuse_non_fit",
+      "prompt": "When should this job not be used? Start with this warning: Do not use humor to trivialize grief, vulnerability, identity or an unresolved harm. Give one ordinary scenario where a different communication choice would be safer or clearer.",
+      "required_features": [
+        "non-fit identified",
+        "alternative choice",
+        "safety or consent boundary"
+      ],
+      "boundary": "Do not use humor to trivialize grief, vulnerability, identity or an unresolved harm."
+    },
+    {
+      "task_id": "credit_or_acknowledgment-recognition-01",
+      "card_id": "provisional-job-credit_or_acknowledgment",
+      "canonical_job": "credit_or_acknowledgment",
+      "phase": "new_example_recognition",
+      "prompt": "A speaker is trying to do this: Make contribution, support or dependence visible without turning praise into a status performance. Read this response: ‘Name the contribution; connect it to the result; state what remains owed or unfinished.’ Does it perform the job credit_or_acknowledgment? Identify the words that support your judgment and one alternative explanation.",
+      "required_features": [
+        "job judgment",
+        "textual evidence",
+        "alternative explanation"
+      ],
+      "boundary": "A plausible form is not proof that a listener understood or benefited."
+    },
+    {
+      "task_id": "credit_or_acknowledgment-explanation-01",
+      "card_id": "provisional-job-credit_or_acknowledgment",
+      "canonical_job": "credit_or_acknowledgment",
+      "phase": "plain_language_explanation",
+      "prompt": "Explain the underlying communication choice for credit_or_acknowledgment to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "required_features": [
+        "plain-language explanation",
+        "underlying choice separated from persona",
+        "limit or condition"
+      ],
+      "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
+    },
+    {
+      "task_id": "credit_or_acknowledgment-transfer-01",
+      "card_id": "provisional-job-credit_or_acknowledgment",
+      "canonical_job": "credit_or_acknowledgment",
+      "phase": "transfer",
+      "prompt": "Replace generic thanks with one observable contribution and its consequence.",
+      "required_features": [
+        "new situation",
+        "underlying choice used",
+        "bounded claim"
+      ],
+      "boundary": "The learner may use a hypothetical, anonymous or direct example; personal disclosure is optional."
+    },
+    {
+      "task_id": "credit_or_acknowledgment-non-fit-01",
+      "card_id": "provisional-job-credit_or_acknowledgment",
+      "canonical_job": "credit_or_acknowledgment",
+      "phase": "misuse_non_fit",
+      "prompt": "When should this job not be used? Start with this warning: Do not claim to transfer authority through praise while retaining all control. Give one ordinary scenario where a different communication choice would be safer or clearer.",
+      "required_features": [
+        "non-fit identified",
+        "alternative choice",
+        "safety or consent boundary"
+      ],
+      "boundary": "Do not claim to transfer authority through praise while retaining all control."
+    },
+    {
+      "task_id": "call_to_action_or_audience_role-recognition-01",
+      "card_id": "provisional-job-call_to_action_or_audience_role",
+      "canonical_job": "call_to_action_or_audience_role",
+      "phase": "new_example_recognition",
+      "prompt": "A speaker is trying to do this: Turn a broad aspiration into a voluntary, bounded next role. Read this response: ‘Name the problem; offer a specific action and responsible actor; state the limit and consent path.’ Does it perform the job call_to_action_or_audience_role? Identify the words that support your judgment and one alternative explanation.",
+      "required_features": [
+        "job judgment",
+        "textual evidence",
+        "alternative explanation"
+      ],
+      "boundary": "A plausible form is not proof that a listener understood or benefited."
+    },
+    {
+      "task_id": "call_to_action_or_audience_role-explanation-01",
+      "card_id": "provisional-job-call_to_action_or_audience_role",
+      "canonical_job": "call_to_action_or_audience_role",
+      "phase": "plain_language_explanation",
+      "prompt": "Explain the underlying communication choice for call_to_action_or_audience_role to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "required_features": [
+        "plain-language explanation",
+        "underlying choice separated from persona",
+        "limit or condition"
+      ],
+      "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
+    },
+    {
+      "task_id": "call_to_action_or_audience_role-transfer-01",
+      "card_id": "provisional-job-call_to_action_or_audience_role",
+      "canonical_job": "call_to_action_or_audience_role",
+      "phase": "transfer",
+      "prompt": "Rewrite ‘we should care’ as one feasible action with an owner, timeframe and non-fit.",
+      "required_features": [
+        "new situation",
+        "underlying choice used",
+        "bounded claim"
+      ],
+      "boundary": "The learner may use a hypothetical, anonymous or direct example; personal disclosure is optional."
+    },
+    {
+      "task_id": "call_to_action_or_audience_role-non-fit-01",
+      "card_id": "provisional-job-call_to_action_or_audience_role",
+      "canonical_job": "call_to_action_or_audience_role",
+      "phase": "misuse_non_fit",
+      "prompt": "When should this job not be used? Start with this warning: Do not assign risk, money or care labor without authority, consent or support. Give one ordinary scenario where a different communication choice would be safer or clearer.",
+      "required_features": [
+        "non-fit identified",
+        "alternative choice",
+        "safety or consent boundary"
+      ],
+      "boundary": "Do not assign risk, money or care labor without authority, consent or support."
+    },
+    {
+      "task_id": "persuasion_or_advocacy-recognition-01",
+      "card_id": "provisional-job-persuasion_or_advocacy",
+      "canonical_job": "persuasion_or_advocacy",
+      "phase": "new_example_recognition",
+      "prompt": "A speaker is trying to do this: Move a room toward judgment or action while showing evidence, tradeoffs and responsibility. Read this response: ‘State the stake; show the mechanism; name tradeoffs and accountable actors; invite a bounded choice.’ Does it perform the job persuasion_or_advocacy? Identify the words that support your judgment and one alternative explanation.",
+      "required_features": [
+        "job judgment",
+        "textual evidence",
+        "alternative explanation"
+      ],
+      "boundary": "A plausible form is not proof that a listener understood or benefited."
+    },
+    {
+      "task_id": "persuasion_or_advocacy-explanation-01",
+      "card_id": "provisional-job-persuasion_or_advocacy",
+      "canonical_job": "persuasion_or_advocacy",
+      "phase": "plain_language_explanation",
+      "prompt": "Explain the underlying communication choice for persuasion_or_advocacy to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "required_features": [
+        "plain-language explanation",
+        "underlying choice separated from persona",
+        "limit or condition"
+      ],
+      "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
+    },
+    {
+      "task_id": "persuasion_or_advocacy-transfer-01",
+      "card_id": "provisional-job-persuasion_or_advocacy",
+      "canonical_job": "persuasion_or_advocacy",
+      "phase": "transfer",
+      "prompt": "Make one advocacy claim with evidence status, opposing concern, responsible actor and review point.",
+      "required_features": [
+        "new situation",
+        "underlying choice used",
+        "bounded claim"
+      ],
+      "boundary": "The learner may use a hypothetical, anonymous or direct example; personal disclosure is optional."
+    },
+    {
+      "task_id": "persuasion_or_advocacy-non-fit-01",
+      "card_id": "provisional-job-persuasion_or_advocacy",
+      "canonical_job": "persuasion_or_advocacy",
+      "phase": "misuse_non_fit",
+      "prompt": "When should this job not be used? Start with this warning: Do not use urgency, fear or moral identity to conceal missing evidence or coercion. Give one ordinary scenario where a different communication choice would be safer or clearer.",
+      "required_features": [
+        "non-fit identified",
+        "alternative choice",
+        "safety or consent boundary"
+      ],
+      "boundary": "Do not use urgency, fear or moral identity to conceal missing evidence or coercion."
+    },
+    {
+      "task_id": "reflection_or_value_frame-recognition-01",
+      "card_id": "provisional-job-reflection_or_value_frame",
+      "canonical_job": "reflection_or_value_frame",
+      "phase": "new_example_recognition",
+      "prompt": "A speaker is trying to do this: Connect an event or decision to a value without pretending the value settles the facts. Read this response: ‘Describe the event; name the value it raises; distinguish interpretation from verified fact.’ Does it perform the job reflection_or_value_frame? Identify the words that support your judgment and one alternative explanation.",
+      "required_features": [
+        "job judgment",
+        "textual evidence",
+        "alternative explanation"
+      ],
+      "boundary": "A plausible form is not proof that a listener understood or benefited."
+    },
+    {
+      "task_id": "reflection_or_value_frame-explanation-01",
+      "card_id": "provisional-job-reflection_or_value_frame",
+      "canonical_job": "reflection_or_value_frame",
+      "phase": "plain_language_explanation",
+      "prompt": "Explain the underlying communication choice for reflection_or_value_frame to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "required_features": [
+        "plain-language explanation",
+        "underlying choice separated from persona",
+        "limit or condition"
+      ],
+      "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
+    },
+    {
+      "task_id": "reflection_or_value_frame-transfer-01",
+      "card_id": "provisional-job-reflection_or_value_frame",
+      "canonical_job": "reflection_or_value_frame",
+      "phase": "transfer",
+      "prompt": "Take one personal or public event and state the value interpretation plus one alternative reading.",
+      "required_features": [
+        "new situation",
+        "underlying choice used",
+        "bounded claim"
+      ],
+      "boundary": "The learner may use a hypothetical, anonymous or direct example; personal disclosure is optional."
+    },
+    {
+      "task_id": "reflection_or_value_frame-non-fit-01",
+      "card_id": "provisional-job-reflection_or_value_frame",
+      "canonical_job": "reflection_or_value_frame",
+      "phase": "misuse_non_fit",
+      "prompt": "When should this job not be used? Start with this warning: Do not use a value label to end inquiry or claim moral superiority. Give one ordinary scenario where a different communication choice would be safer or clearer.",
+      "required_features": [
+        "non-fit identified",
+        "alternative choice",
+        "safety or consent boundary"
+      ],
+      "boundary": "Do not use a value label to end inquiry or claim moral superiority."
+    }
+  ],
+  "procedure": [
+    "baseline recognition",
+    "lesson exposure",
+    "new-example recognition",
+    "plain-language explanation",
+    "transfer",
+    "non-fit judgment",
+    "listener restatement",
+    "revision after feedback"
+  ],
+  "rubric": {
+    "scale": "0=missing or misleading; 1=partial; 2=clear and bounded",
+    "dimensions": [
+      "job identified",
+      "underlying choice explained",
+      "transfer to new situation",
+      "non-fit detection",
+      "privacy/accessibility/safety boundary",
+      "listener restatement",
+      "revision after feedback"
+    ],
+    "safety_rule": "Do not average away a privacy, consent or safety failure; retain it as a boundary finding."
+  },
+  "outcome_boundary": "Learner observations show whether the cards are understandable and usable; they do not establish original speech-pattern effectiveness or listener outcomes."
+}

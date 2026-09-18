@@ -19,6 +19,9 @@ practice surface; reviewers should check their mechanism language, examples,
 limits and non-fit warnings rather than treating the cards as findings.
 Their delivery sections contain only bounded internal observations; the blank
 multimodal workbook remains the independent gate.
+The expanded [18-card learner check](communication-job-learner-check.html) is
+also unrun; exported records must pass its validator before any teachability
+summary is written.
 
 ## Independent review gates
 

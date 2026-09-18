@@ -24,6 +24,7 @@ def validate(report: dict) -> list[str]:
     taxonomy = read("research/corpus-function-taxonomy.json")
     evidence_bank = read("research/corpus-evidence-bank.json")
     job_cards = read("research/communication-job-cards.json")
+    job_learner = read("research/communication-job-learner-check.json")
     media = read("research/multimodal-coverage-audit.json")
     functions = read("research/corpus-function-independent-review-workbook.json")
     recurrence = read("research/corpus-recurrence-independent-review-workbook.json")
@@ -50,6 +51,8 @@ def validate(report: dict) -> list[str]:
         ("exact_caption_evidence_bank", "caption_segment_record_count"): evidence_bank["summary"]["caption_segment_record_count"],
         ("exact_caption_evidence_bank", "missing_evidence_id_count"): evidence_bank["summary"]["missing_evidence_id_count"],
         ("communication_job_cards", "card_count"): job_cards["card_count"],
+        ("communication_job_learner_check", "card_count"): job_learner["card_count"],
+        ("communication_job_learner_check", "task_count"): job_learner["task_count"],
         ("speech_function_candidate_review", "queued_item_count"): functions["item_count"],
         ("recurrence_candidate_review", "queued_item_count"): recurrence["item_count"],
         ("delivery_evidence", "selected_video_count"): media["selected_video_count"],
@@ -66,6 +69,7 @@ def validate(report: dict) -> list[str]:
     if stages.get("recurrence_candidate_review", {}).get("completed_independent_reviews") != 0: errors.append("recurrence review completion cannot be nonzero without an imported independent export")
     if stages.get("learner_check", {}).get("completed_records") != 0: errors.append("learner records are not present")
     if stages.get("listener_outcomes", {}).get("completed_records") != 0: errors.append("listener records are not present")
+    if stages.get("communication_job_learner_check", {}).get("completed_records") != 0: errors.append("communication-job learner records are not present")
     return errors
 
 

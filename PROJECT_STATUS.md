@@ -65,6 +65,11 @@ Five of the cards also carry 19 linked internal multimodal observations with
 frame notes and coarse audio/visual proxies; these remain explicitly
 non-independent and do not establish intent, emotion or effectiveness.
 
+The [18-card learner check](writeups/communication-job-learner-check.md) now
+provides 72 fixed tasks covering recognition, plain-language explanation,
+transfer, non-fit judgment, listener restatement and revision. It is runnable
+but has zero learner records and cannot be treated as learning evidence.
+
 The generated [validation handoff](writeups/validation-handoff.md) consolidates
 the four independent-review gates plus learner and listener protocols, with
 export validators and explicit non-claims; no human records are present.

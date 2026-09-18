@@ -22,6 +22,7 @@ def main() -> int:
     taxonomy = load("research/corpus-function-taxonomy.json")
     evidence_bank = load("research/corpus-evidence-bank.json")
     job_cards = load("research/communication-job-cards.json")
+    job_learner = load("research/communication-job-learner-check.json")
     media = load("research/multimodal-coverage-audit.json")
     media_independent = load("research/multimodal-independent-review-workbook.json")
     recurrence = load("research/corpus-recurrence-independent-review-workbook.json")
@@ -43,6 +44,7 @@ def main() -> int:
             "research/corpus-function-taxonomy.json",
             "research/corpus-evidence-bank.json",
             "research/communication-job-cards.json",
+            "research/communication-job-learner-check.json",
             "research/shared-lesson-cards.json", "research/shared-learner-check.json",
             "research/listener-outcome-protocol.json", "research/raw-media-only-visual-audit.json",
         ],
@@ -56,6 +58,7 @@ def main() -> int:
             "canonical_function_taxonomy": {"status": taxonomy["status"], "review_count": taxonomy["summary"]["review_count"], "function_item_count": taxonomy["summary"]["function_item_count"], "canonical_job_count": len(taxonomy["canonical_jobs"]), "unclassified_item_count": taxonomy["summary"]["unclassified_item_count"], "source": "research/corpus-function-taxonomy.json"},
             "exact_caption_evidence_bank": {"status": evidence_bank["status"], "function_record_count": evidence_bank["summary"]["function_record_count"], "caption_segment_record_count": evidence_bank["summary"]["caption_segment_record_count"], "missing_evidence_id_count": evidence_bank["summary"]["missing_evidence_id_count"], "source": "research/corpus-evidence-bank.json"},
             "communication_job_cards": {"status": job_cards["status"], "card_count": job_cards["card_count"], "source": "research/communication-job-cards.json"},
+            "communication_job_learner_check": {"status": job_learner["status"], "card_count": job_learner["card_count"], "task_count": job_learner["task_count"], "completed_records": 0, "source": "research/communication-job-learner-check.json"},
             "speech_function_candidate_review": {"status": functions["status"], "queued_item_count": functions["item_count"], "completed_independent_reviews": 0, "source": "research/corpus-function-independent-review-workbook.json"},
             "recurrence_candidate_review": {"status": recurrence["status"], "queued_item_count": recurrence["item_count"], "completed_independent_reviews": 0, "source": "research/corpus-recurrence-independent-review-workbook.json"},
             "delivery_evidence": {"status": media["status"], "selected_video_count": media["selected_video_count"], "raw_audio_video_present": media["raw_audio_video_present_count"], "raw_audio_video_with_transcript": media["raw_audio_video_with_transcript_count"], "raw_audio_video_without_transcript": media["raw_audio_video_without_transcript_count"], "internal_manual_reviews": media["internal_manual_review_count"], "raw_only_visual_audit_items": raw_only_visual["item_count"], "raw_only_visual_audit_status": raw_only_visual["status"], "independent_review_items": media_independent["item_count"], "completed_independent_reviews": 0, "source": "research/multimodal-coverage-audit.json"},
@@ -85,6 +88,7 @@ def main() -> int:
         f"| Canonical function taxonomy | `{taxonomy['status']}` | {taxonomy['summary']['function_item_count']} items / {taxonomy['summary']['unclassified_item_count']} unclassified |",
         f"| Exact caption evidence bank | `{evidence_bank['status']}` | {evidence_bank['summary']['function_record_count']} function records / {evidence_bank['summary']['caption_segment_record_count']} caption segments |",
         f"| Communication-job cards | `{job_cards['status']}` | {job_cards['card_count']} provisional cards / 0 validated |",
+        f"| Communication-job learner check | `{job_learner['status']}` | {job_learner['card_count']} cards / {job_learner['task_count']} tasks / 0 records |",
         f"| Function review | `{functions['status']}` | {functions['item_count']} queued / 0 completed |",
         f"| Recurrence review | `{recurrence['status']}` | {recurrence['item_count']} queued / 0 completed |",
         f"| Delivery evidence | `{media['status']}` | {media['raw_audio_video_present_count']} raw-complete ({media['raw_audio_video_without_transcript_count']} without transcript) / {media['internal_manual_review_count']} internal reviewed |",
