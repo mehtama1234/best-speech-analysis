@@ -6,6 +6,7 @@ from __future__ import annotations
 import html
 import json
 import math
+import re
 from collections import defaultdict
 from pathlib import Path
 
@@ -194,6 +195,19 @@ def load_delivery_items(root: Path) -> dict[str, list[dict]]:
     return by_job
 
 
+NON_SPEECH_MARKER = re.compile(r"^\s*\[[^\]]+\]\s*$")
+
+
+def example_quality(record: dict) -> tuple[int, int, int]:
+    """Rank examples for teaching usefulness without changing source text."""
+    segments = record["segments"][:3]
+    lexical = [segment for segment in segments if segment.get("text", "").strip() and not NON_SPEECH_MARKER.match(segment["text"])]
+    word_count = sum(len(re.findall(r"[A-Za-zÀ-ÿ]+", segment.get("text", ""))) for segment in lexical)
+    contamination = sum(1 for segment in segments if NON_SPEECH_MARKER.match(segment.get("text", "")))
+    # Prefer lexical speech, then more words, then fewer non-speech cues.
+    return (1 if lexical else 0, word_count, -contamination)
+
+
 def build(root: Path | None = None) -> dict:
     root = root or Path(__file__).resolve().parents[1]
     bank = json.loads((root / "research/corpus-evidence-bank.json").read_text())
@@ -204,7 +218,7 @@ def build(root: Path | None = None) -> dict:
             by_job[record["canonical_job"]].append(record)
     cards = []
     for job, content in CARD_CONTENT.items():
-        records = sorted(by_job[job], key=lambda item: (len(item["segments"]), item["record_id"]))
+        records = sorted(by_job[job], key=lambda item: (-example_quality(item)[0], -example_quality(item)[1], example_quality(item)[2], item["record_id"]))
         selected = []
         seen_videos = set()
         for record in records:
@@ -222,6 +236,12 @@ def build(root: Path | None = None) -> dict:
                 "source_url": record["source_url"],
                 "full_function_segment_count": len(record["segments"]),
                 "sample_scope": "first_three_retained_segments_of_function_span",
+                "example_quality": {
+                    "lexical_speech_present": bool(example_quality(record)[0]),
+                    "lexical_word_count": example_quality(record)[1],
+                    "non_speech_marker_count": -example_quality(record)[2],
+                    "selection_note": "ranked for lexical speech and low non-speech-marker contamination; transcript wording remains unrepaired",
+                },
                 "exact_segments": sample,
             })
             if len(selected) >= 8:

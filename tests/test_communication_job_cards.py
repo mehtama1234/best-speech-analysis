@@ -33,6 +33,8 @@ class CommunicationJobCardTests(unittest.TestCase):
                 self.assertTrue(example["exact_segments"])
                 self.assertTrue(example["source_url"].startswith("https://"))
                 self.assertEqual(example["sample_scope"], "first_three_retained_segments_of_function_span")
+                self.assertIn("example_quality", example)
+                self.assertGreater(example["example_quality"]["lexical_word_count"], 0)
         self.assertIn("Practice hypotheses", self.html)
         self.assertIn("Exact examples", self.html)
         self.assertIn("Internal delivery observations", self.html)

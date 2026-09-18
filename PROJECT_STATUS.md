@@ -81,6 +81,9 @@ turn 18 shared jobs into practice hypotheses with exact examples, recurrence
 inventory counts, repeatable forms, self-checks and non-fit warnings. They are
 not validated lessons: independent review, delivery checks, learner checks and
 listener outcomes remain pending.
+Their example selector now ranks lexical speech above marker-only cues such as
+music or applause and records the quality metadata without repairing the stored
+transcript wording.
 Five of the cards also carry 19 linked internal multimodal observations with
 frame notes and coarse audio/visual proxies; these remain explicitly
 non-independent and do not establish intent, emotion or effectiveness.

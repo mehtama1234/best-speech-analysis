@@ -35,6 +35,8 @@ records, with transcript errors and the transcript-only boundary visible.
 The [provisional communication-job cards](writeups/communication-job-cards.html)
 turn 18 jobs into bounded practice hypotheses with exact examples, mechanisms,
 self-checks and non-fit warnings; they are not validated best practices.
+Example selection now prefers lexical speech over marker-only music/applause
+cues and exposes the selection metadata while preserving raw transcript text.
 Five cards also expose 19 internally reviewed multimodal samples, clearly
 separated from independent delivery evidence and listener outcomes.
 The [18-card learner check](writeups/communication-job-learner-check.html)
