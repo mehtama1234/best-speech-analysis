@@ -25,6 +25,8 @@ def esc(value: object) -> str:
 def build(root: Path | None = None) -> dict:
     root = root or Path(__file__).resolve().parents[1]
     cards = json.loads((root / "research/communication-job-cards.json").read_text())["cards"]
+    stimuli = json.loads((root / "research/communication-job-listener-stimuli-draft.json").read_text())
+    stimuli_by_card = {item["card_id"]: item for item in stimuli["records"]}
     patterns = []
     for card in cards:
         patterns.append({
@@ -32,6 +34,8 @@ def build(root: Path | None = None) -> dict:
             "canonical_job": card["canonical_job"],
             "communication_job": card["problem"],
             "pattern_informed_form": card["form"],
+            "draft_stimulus_id": stimuli_by_card[card["card_id"]]["stimulus_id"],
+            "draft_stimulus_status": stimuli_by_card[card["card_id"]]["status"],
             "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity",
         })
     return {
@@ -41,7 +45,9 @@ def build(root: Path | None = None) -> dict:
         "purpose": "Test comprehension, recall and reported cognitive load for matched control versus pattern-informed versions of the 18 provisional communication-job cards.",
         "claim_boundary": "A result can show differences in the measured task for the authored stimuli and tested population. It cannot establish that a celebrity's delivery or a speech form causes trust, long-term memory, persuasion, engagement or action generally.",
         "source": "research/communication-job-cards.json",
+        "stimulus_bank": "research/communication-job-listener-stimuli-draft.json",
         "stimulus_pairs_locked": False,
+        "stimulus_pair_count": stimuli["pair_count"],
         "patterns": patterns,
         "listener_tasks": [{"task_id": task_id, "prompt": prompt, "measure": measure} for task_id, prompt, measure in TASKS],
         "design": {

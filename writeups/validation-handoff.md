@@ -24,7 +24,8 @@ also unrun; exported records must pass its validator before any teachability
 summary is written.
 The [18-job listener protocol](communication-job-listener-outcome-protocol.md)
 remains a separate outcome gate; it cannot start until matched stimuli are
-authored, pretested and locked.
+independently reviewed, pretested and locked. The current [draft stimulus
+bank](communication-job-listener-stimuli-draft.md) is not yet that locked set.
 
 ## Independent review gates
 

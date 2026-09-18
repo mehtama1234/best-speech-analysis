@@ -5,13 +5,17 @@
   "purpose": "Test comprehension, recall and reported cognitive load for matched control versus pattern-informed versions of the 18 provisional communication-job cards.",
   "claim_boundary": "A result can show differences in the measured task for the authored stimuli and tested population. It cannot establish that a celebrity's delivery or a speech form causes trust, long-term memory, persuasion, engagement or action generally.",
   "source": "research/communication-job-cards.json",
+  "stimulus_bank": "research/communication-job-listener-stimuli-draft.json",
   "stimulus_pairs_locked": false,
+  "stimulus_pair_count": 18,
   "patterns": [
     {
       "pattern_id": "provisional-job-opening",
       "canonical_job": "opening",
       "communication_job": "Give the listener a reason and orientation for the exchange.",
       "pattern_informed_form": "Name the room or question; state why it matters; preview the route.",
+      "draft_stimulus_id": "draft-opening-01",
+      "draft_stimulus_status": "draft_requires_matching_readability_accessibility_and_safety_review",
       "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
     },
     {
@@ -19,6 +23,8 @@
       "canonical_job": "closing",
       "communication_job": "End without leaving the main point or next step diffuse.",
       "pattern_informed_form": "Return to the point; name the limit or next step; release the turn.",
+      "draft_stimulus_id": "draft-closing-01",
+      "draft_stimulus_status": "draft_requires_matching_readability_accessibility_and_safety_review",
       "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
     },
     {
@@ -26,6 +32,8 @@
       "canonical_job": "question",
       "communication_job": "Invite inquiry, reflection or a useful next turn.",
       "pattern_informed_form": "Ask one specific question; give context; allow a genuine answer or opt-out.",
+      "draft_stimulus_id": "draft-question-01",
+      "draft_stimulus_status": "draft_requires_matching_readability_accessibility_and_safety_review",
       "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
     },
     {
@@ -33,6 +41,8 @@
       "canonical_job": "answer_or_response",
       "communication_job": "Respond to the literal prompt while addressing the underlying need.",
       "pattern_informed_form": "Answer the literal point; state a useful frame if needed; give the bounded answer.",
+      "draft_stimulus_id": "draft-answer_or_response-01",
+      "draft_stimulus_status": "draft_requires_matching_readability_accessibility_and_safety_review",
       "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
     },
     {
@@ -40,6 +50,8 @@
       "canonical_job": "story_or_personal_experience",
       "communication_job": "Make an idea concrete without turning one life into universal proof.",
       "pattern_informed_form": "Give a bounded scene; say what it changed or illustrates; state what it cannot prove.",
+      "draft_stimulus_id": "draft-story_or_personal_experience-01",
+      "draft_stimulus_status": "draft_requires_matching_readability_accessibility_and_safety_review",
       "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
     },
     {
@@ -47,6 +59,8 @@
       "canonical_job": "example_or_case",
       "communication_job": "Give a general claim a concrete handle without presenting an illustration as proof.",
       "pattern_informed_form": "State the claim; give one representative case; return to the claim and its evidence boundary.",
+      "draft_stimulus_id": "draft-example_or_case-01",
+      "draft_stimulus_status": "draft_requires_matching_readability_accessibility_and_safety_review",
       "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
     },
     {
@@ -54,6 +68,8 @@
       "canonical_job": "contrast_or_disagreement",
       "communication_job": "Make a distinction or change in reasoning visible without escalating disagreement.",
       "pattern_informed_form": "Name the earlier view; identify what changed; state the present view and remaining overlap.",
+      "draft_stimulus_id": "draft-contrast_or_disagreement-01",
+      "draft_stimulus_status": "draft_requires_matching_readability_accessibility_and_safety_review",
       "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
     },
     {
@@ -61,6 +77,8 @@
       "canonical_job": "correction_or_reframe",
       "communication_job": "Move from an unhelpful starting frame to a more useful question or category.",
       "pattern_informed_form": "Acknowledge the starting frame; explain the correction; answer the more useful question.",
+      "draft_stimulus_id": "draft-correction_or_reframe-01",
+      "draft_stimulus_status": "draft_requires_matching_readability_accessibility_and_safety_review",
       "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
     },
     {
@@ -68,6 +86,8 @@
       "canonical_job": "repair_or_self_correction",
       "communication_job": "Restore accuracy or shared understanding after an error, interruption or unclear phrase.",
       "pattern_informed_form": "Mark the error; replace it plainly; continue without over-explaining.",
+      "draft_stimulus_id": "draft-repair_or_self_correction-01",
+      "draft_stimulus_status": "draft_requires_matching_readability_accessibility_and_safety_review",
       "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
     },
     {
@@ -75,6 +95,8 @@
       "canonical_job": "qualification_or_boundary",
       "communication_job": "State a clear point while marking uncertainty, scope or conditions.",
       "pattern_informed_form": "State the main claim; name its evidence status or condition; say what would change it.",
+      "draft_stimulus_id": "draft-qualification_or_boundary-01",
+      "draft_stimulus_status": "draft_requires_matching_readability_accessibility_and_safety_review",
       "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
     },
     {
@@ -82,6 +104,8 @@
       "canonical_job": "definition_or_explanation",
       "communication_job": "Make an unfamiliar idea usable without overextending it.",
       "pattern_informed_form": "Name the term; give its plain meaning; show one example and one boundary.",
+      "draft_stimulus_id": "draft-definition_or_explanation-01",
+      "draft_stimulus_status": "draft_requires_matching_readability_accessibility_and_safety_review",
       "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
     },
     {
@@ -89,6 +113,8 @@
       "canonical_job": "transition_or_structure",
       "communication_job": "Help a listener follow a change of topic, scale, speaker or reasoning step.",
       "pattern_informed_form": "Close the current point; name the relationship; enter the next point.",
+      "draft_stimulus_id": "draft-transition_or_structure-01",
+      "draft_stimulus_status": "draft_requires_matching_readability_accessibility_and_safety_review",
       "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
     },
     {
@@ -96,6 +122,8 @@
       "canonical_job": "callback_or_repetition",
       "communication_job": "Give a long exchange continuity or let an earlier image carry changed meaning.",
       "pattern_informed_form": "Introduce a meaningful anchor; return to it with a new application; avoid merely repeating it.",
+      "draft_stimulus_id": "draft-callback_or_repetition-01",
+      "draft_stimulus_status": "draft_requires_matching_readability_accessibility_and_safety_review",
       "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
     },
     {
@@ -103,6 +131,8 @@
       "canonical_job": "humor_or_rapport",
       "communication_job": "Create ease or relational room without making affected people the joke.",
       "pattern_informed_form": "Use lightness about your own situation or the shared setting; return clearly to the point.",
+      "draft_stimulus_id": "draft-humor_or_rapport-01",
+      "draft_stimulus_status": "draft_requires_matching_readability_accessibility_and_safety_review",
       "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
     },
     {
@@ -110,6 +140,8 @@
       "canonical_job": "credit_or_acknowledgment",
       "communication_job": "Make contribution, support or dependence visible without turning praise into a status performance.",
       "pattern_informed_form": "Name the contribution; connect it to the result; state what remains owed or unfinished.",
+      "draft_stimulus_id": "draft-credit_or_acknowledgment-01",
+      "draft_stimulus_status": "draft_requires_matching_readability_accessibility_and_safety_review",
       "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
     },
     {
@@ -117,6 +149,8 @@
       "canonical_job": "call_to_action_or_audience_role",
       "communication_job": "Turn a broad aspiration into a voluntary, bounded next role.",
       "pattern_informed_form": "Name the problem; offer a specific action and responsible actor; state the limit and consent path.",
+      "draft_stimulus_id": "draft-call_to_action_or_audience_role-01",
+      "draft_stimulus_status": "draft_requires_matching_readability_accessibility_and_safety_review",
       "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
     },
     {
@@ -124,6 +158,8 @@
       "canonical_job": "persuasion_or_advocacy",
       "communication_job": "Move a room toward judgment or action while showing evidence, tradeoffs and responsibility.",
       "pattern_informed_form": "State the stake; show the mechanism; name tradeoffs and accountable actors; invite a bounded choice.",
+      "draft_stimulus_id": "draft-persuasion_or_advocacy-01",
+      "draft_stimulus_status": "draft_requires_matching_readability_accessibility_and_safety_review",
       "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
     },
     {
@@ -131,6 +167,8 @@
       "canonical_job": "reflection_or_value_frame",
       "communication_job": "Connect an event or decision to a value without pretending the value settles the facts.",
       "pattern_informed_form": "Describe the event; name the value it raises; distinguish interpretation from verified fact.",
+      "draft_stimulus_id": "draft-reflection_or_value_frame-01",
+      "draft_stimulus_status": "draft_requires_matching_readability_accessibility_and_safety_review",
       "stimulus_requirement": "one newly authored matched pair; same proposition, topic, vocabulary, modality and length range; no source-speaker identity"
     }
   ],

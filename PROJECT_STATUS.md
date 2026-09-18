@@ -73,7 +73,9 @@ but has zero learner records and cannot be treated as learning evidence.
 The [18-job listener-outcome protocol](writeups/communication-job-listener-outcome-protocol.md)
 defines matched control/pattern-informed stimuli, six comprehension/recall
 tasks, blinded scoring, missingness, accessibility and uncertainty reporting.
-Stimulus pairs are not locked and no listener records exist.
+The [draft stimulus bank](writeups/communication-job-listener-stimuli-draft.md)
+now supplies one newly authored pair per job with word-count audits; pairs are
+not locked and no listener records exist.
 
 The generated [validation handoff](writeups/validation-handoff.md) consolidates
 the four independent-review gates plus learner and listener protocols, with

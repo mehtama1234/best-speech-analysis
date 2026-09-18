@@ -42,7 +42,9 @@ provides 72 fixed teachability tasks; it is an unrun instrument, not learner
 evidence.
 The [18-job listener protocol](writeups/communication-job-listener-outcome-protocol.md)
 separately defines matched controls, comprehension/recall measures and blinded
-scoring; stimuli are not yet locked and no listener data exist.
+scoring. Its [draft stimulus bank](writeups/communication-job-listener-stimuli-draft.md)
+contains one newly authored pair per job, pending independent matching and
+accessibility review; no listener data exist.
 The [corpus atlas browser](writeups/corpus-pattern-atlas.html) makes those
 videos searchable by phrase family, event split, evidence ID and candidate
 speech-function counts; it also filters by the heuristic candidate function
