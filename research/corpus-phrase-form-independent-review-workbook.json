@@ -1,0 +1,2103 @@
+{
+  "schema_version": "1.0",
+  "workbook_id": "corpus-phrase-form-independent-review-workbook",
+  "status": "template_not_completed",
+  "source_inventory": "research/corpus-phrase-form-inventory.json",
+  "item_count": 50,
+  "claim_boundary": "This review tests whether the listed exact transcript form is actually present and whether the sampled contexts support a proposed communication-function and recurrence interpretation. It does not establish delivery effectiveness, speaker intent, audience outcomes, causality or universal best practice.",
+  "sampling_rule": "The inventory supplies up to two exact-source examples per form, preserving train/holdout labels when available. A reviewer may request more examples when these are insufficient.",
+  "independence_requirement": "Reviewer must not have created the phrase inventory, regex families, candidate mechanisms or workbook.",
+  "reviewer": {
+    "name": null,
+    "role": null,
+    "date": null,
+    "conflict_statement": null
+  },
+  "decision_vocabulary": {
+    "form_match_decision": [
+      "confirmed",
+      "not_exact",
+      "unclear"
+    ],
+    "primary_function": [
+      "opening",
+      "definition",
+      "explanation",
+      "example",
+      "story",
+      "contrast",
+      "correction",
+      "question",
+      "answer",
+      "repair",
+      "qualification",
+      "transition",
+      "callback",
+      "humour_or_rapport",
+      "persuasion",
+      "call_to_action",
+      "closing",
+      "other",
+      "indeterminate"
+    ],
+    "speaker_event_identity": [
+      "distinct_event",
+      "same_event_as_another_item",
+      "compilation_or_clip",
+      "unclear"
+    ],
+    "duplicate_or_compilation_risk": [
+      "low",
+      "medium",
+      "high",
+      "unclear"
+    ],
+    "recurrence_decision": [
+      "admit_as_candidate",
+      "exclude",
+      "indeterminate"
+    ]
+  },
+  "items": [
+    {
+      "review_item_id": "phrase-form:call_to_action:don't",
+      "phrase_form": "don't",
+      "family": "call_to_action",
+      "matched_pattern": "\\bdon't\\b",
+      "occurrence_count": 2234,
+      "video_count": 326,
+      "train_video_count": 268,
+      "holdout_video_count": 58,
+      "examples": [
+        {
+          "evidence_id": "-54zUwySKCg:00028",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "start_seconds": 173.78,
+          "end_seconds": 179.31,
+          "text": "But then I realized that you don't haveto necessarily go to Harvard to have a driven",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg"
+        },
+        {
+          "evidence_id": "-6qN3bm2RYo:00349",
+          "video_id": "-6qN3bm2RYo",
+          "title": "ENGLISH SPEECH | S. JAISHANKAR: India's Five Pledges (English Subtitles)",
+          "start_seconds": 1009.759,
+          "end_seconds": 1015.88,
+          "text": "lessons and private classes don't forget",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-6qN3bm2RYo"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:call_to_action:you can",
+      "phrase_form": "you can",
+      "family": "call_to_action",
+      "matched_pattern": "\\byou can\\b",
+      "occurrence_count": 702,
+      "video_count": 225,
+      "train_video_count": 196,
+      "holdout_video_count": 29,
+      "examples": [
+        {
+          "evidence_id": "-54zUwySKCg:00127",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "start_seconds": 639.09,
+          "end_seconds": 648.071,
+          "text": "And so what I did was I simply asked our viewers,“Do what you can wherever you are, from",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg"
+        },
+        {
+          "evidence_id": "-6qN3bm2RYo:00104",
+          "video_id": "-6qN3bm2RYo",
+          "title": "ENGLISH SPEECH | S. JAISHANKAR: India's Five Pledges (English Subtitles)",
+          "start_seconds": 304.199,
+          "end_seconds": 309.52,
+          "text": "words you can see them in 700 projects",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-6qN3bm2RYo"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:call_to_action:let's",
+      "phrase_form": "let's",
+      "family": "call_to_action",
+      "matched_pattern": "\\blet's\\b",
+      "occurrence_count": 417,
+      "video_count": 168,
+      "train_video_count": 141,
+      "holdout_video_count": 27,
+      "examples": [
+        {
+          "evidence_id": "-URn1fARvts:00265",
+          "video_id": "-URn1fARvts",
+          "title": "ENGLISH SPEECH | EILEEN GU: Courage To Try (English Subtitles)",
+          "start_seconds": 573.8,
+          "end_seconds": 578.0,
+          "text": "Let's speak English",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-URn1fARvts"
+        },
+        {
+          "evidence_id": "-Unkvng_jp8:00092",
+          "video_id": "-Unkvng_jp8",
+          "title": "ENGLISH SPEECH | US PRESIDENTIAL DEBATES 2020: Highlights (English Subtitles)",
+          "start_seconds": 486.32,
+          "end_seconds": 490.0,
+          "text": "very liberal governor. They wanted to make it work —” “O.K, let's hear, let's let Vice",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-Unkvng_jp8"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:call_to_action:do not",
+      "phrase_form": "do not",
+      "family": "call_to_action",
+      "matched_pattern": "\\bdo not\\b",
+      "occurrence_count": 159,
+      "video_count": 83,
+      "train_video_count": 68,
+      "holdout_video_count": 15,
+      "examples": [
+        {
+          "evidence_id": "-URn1fARvts:00240",
+          "video_id": "-URn1fARvts",
+          "title": "ENGLISH SPEECH | EILEEN GU: Courage To Try (English Subtitles)",
+          "start_seconds": 512.159,
+          "end_seconds": 515.36,
+          "text": "We do not have to wait until we're older",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-URn1fARvts"
+        },
+        {
+          "evidence_id": "1Bc3LkP7dh8:00034",
+          "video_id": "1Bc3LkP7dh8",
+          "title": "ENGLISH SPEECH | EMMANUEL MACRON: Sovereignty & Security (English Subtitles)",
+          "start_seconds": 93.36,
+          "end_seconds": 99.04,
+          "text": "do not misunderstand me.",
+          "event_split": "holdout",
+          "source_url": "https://www.youtube.com/watch?v=1Bc3LkP7dh8"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:call_to_action:we need to",
+      "phrase_form": "we need to",
+      "family": "call_to_action",
+      "matched_pattern": "\\bwe need to\\b",
+      "occurrence_count": 148,
+      "video_count": 70,
+      "train_video_count": 58,
+      "holdout_video_count": 12,
+      "examples": [
+        {
+          "evidence_id": "-6qN3bm2RYo:00276",
+          "video_id": "-6qN3bm2RYo",
+          "title": "ENGLISH SPEECH | S. JAISHANKAR: India's Five Pledges (English Subtitles)",
+          "start_seconds": 792.639,
+          "end_seconds": 798.6,
+          "text": "we need to create a global architecture",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-6qN3bm2RYo"
+        },
+        {
+          "evidence_id": "1gK42jcb_WM:00048",
+          "video_id": "1gK42jcb_WM",
+          "title": "ENGLISH SPEECH | YASH: Set Scary Goals (English Subtitles)",
+          "start_seconds": 147.28,
+          "end_seconds": 152.239,
+          "text": "connect because we need to give them",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=1gK42jcb_WM"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:call_to_action:join us",
+      "phrase_form": "join us",
+      "family": "call_to_action",
+      "matched_pattern": "\\bjoin us\\b",
+      "occurrence_count": 29,
+      "video_count": 28,
+      "train_video_count": 21,
+      "holdout_video_count": 7,
+      "examples": [
+        {
+          "evidence_id": "5nN-15CrnGc:00606",
+          "video_id": "5nN-15CrnGc",
+          "title": "Barack Obama: Choose Hope",
+          "start_seconds": 1913.279,
+          "end_seconds": 1921.279,
+          "text": "we ask that you join us.",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=5nN-15CrnGc"
+        },
+        {
+          "evidence_id": "6PNDD5Xy5DU:00011",
+          "video_id": "6PNDD5Xy5DU",
+          "title": "ENGLISH SPEECH | AYRTON SENNA: The Unstoppable Legend (English Subtitles)",
+          "start_seconds": 31.599,
+          "end_seconds": 37.44,
+          "text": "around the globe join us as we delve",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=6PNDD5Xy5DU"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:call_to_action:take action",
+      "phrase_form": "take action",
+      "family": "call_to_action",
+      "matched_pattern": "\\btake action\\b",
+      "occurrence_count": 9,
+      "video_count": 7,
+      "train_video_count": 5,
+      "holdout_video_count": 2,
+      "examples": [
+        {
+          "evidence_id": "5rbyzJf4ZuQ:00031",
+          "video_id": "5rbyzJf4ZuQ",
+          "title": "ENGLISH SPEECH | SHAKIRA: The Power of Education (English Subtitles)",
+          "start_seconds": 225.12,
+          "end_seconds": 230.0,
+          "text": "This should make us all furious. They should make us all want to take action",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=5rbyzJf4ZuQ"
+        },
+        {
+          "evidence_id": "Amv2iIoXsNw:00299",
+          "video_id": "Amv2iIoXsNw",
+          "title": "ENGLISH SPEECH | BERNIE SANDERS & AOC: Stop AI Data Centers (English Subtitles)",
+          "start_seconds": 749.08,
+          "end_seconds": 753.32,
+          "text": "to take action as well.",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=Amv2iIoXsNw"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:conclusion_or_summary:so the",
+      "phrase_form": "so the",
+      "family": "conclusion_or_summary",
+      "matched_pattern": "\\bso the\\b",
+      "occurrence_count": 106,
+      "video_count": 63,
+      "train_video_count": 52,
+      "holdout_video_count": 11,
+      "examples": [
+        {
+          "evidence_id": "-54zUwySKCg:00134",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "start_seconds": 672.85,
+          "end_seconds": 678.92,
+          "text": "So the Angel Network — I have been on theair for a long time — but it was the Angel",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg"
+        },
+        {
+          "evidence_id": "-s-h-eebSgw:00135",
+          "video_id": "-s-h-eebSgw",
+          "title": "Sundar Pichai: Say Yes to Hard Things",
+          "start_seconds": 309.919,
+          "end_seconds": 312.919,
+          "text": "long, so the next day we started the",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-s-h-eebSgw"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:conclusion_or_summary:ultimately",
+      "phrase_form": "ultimately",
+      "family": "conclusion_or_summary",
+      "matched_pattern": "\\bultimately\\b",
+      "occurrence_count": 48,
+      "video_count": 39,
+      "train_video_count": 34,
+      "holdout_video_count": 5,
+      "examples": [
+        {
+          "evidence_id": "-54zUwySKCg:00138",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "start_seconds": 696.22,
+          "end_seconds": 706.61,
+          "text": "I might pursue would be to make clear thatwhat unites us is ultimately far more redeeming",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg"
+        },
+        {
+          "evidence_id": "-URn1fARvts:00129",
+          "video_id": "-URn1fARvts",
+          "title": "ENGLISH SPEECH | EILEEN GU: Courage To Try (English Subtitles)",
+          "start_seconds": 277.88,
+          "end_seconds": 283.2,
+          "text": "exchange, and is ultimately harmful",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-URn1fARvts"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:conclusion_or_summary:the point is",
+      "phrase_form": "the point is",
+      "family": "conclusion_or_summary",
+      "matched_pattern": "\\bthe point is\\b",
+      "occurrence_count": 13,
+      "video_count": 11,
+      "train_video_count": 9,
+      "holdout_video_count": 2,
+      "examples": [
+        {
+          "evidence_id": "-54zUwySKCg:00196",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "start_seconds": 989.73,
+          "end_seconds": 996.649,
+          "text": "The point is your generation is charged withthis task of breaking through what the body",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg"
+        },
+        {
+          "evidence_id": "1Bc3LkP7dh8:00562",
+          "video_id": "1Bc3LkP7dh8",
+          "title": "ENGLISH SPEECH | EMMANUEL MACRON: Sovereignty & Security (English Subtitles)",
+          "start_seconds": 1576.88,
+          "end_seconds": 1584.96,
+          "text": "The point is not to diverge",
+          "event_split": "holdout",
+          "source_url": "https://www.youtube.com/watch?v=1Bc3LkP7dh8"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:conclusion_or_summary:what matters",
+      "phrase_form": "what matters",
+      "family": "conclusion_or_summary",
+      "matched_pattern": "\\bwhat matters\\b",
+      "occurrence_count": 13,
+      "video_count": 11,
+      "train_video_count": 8,
+      "holdout_video_count": 3,
+      "examples": [
+        {
+          "evidence_id": "46yStqMV4eY:00108",
+          "video_id": "46yStqMV4eY",
+          "title": "ENGLISH SPEECH | HILLARY CLINTON: Be Resilient (English Subtitles)",
+          "start_seconds": 607.77,
+          "end_seconds": 612.45,
+          "text": "What matters is whether you get back up andkeep going.",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=46yStqMV4eY"
+        },
+        {
+          "evidence_id": "A1hcbdWEEO8:00390",
+          "video_id": "A1hcbdWEEO8",
+          "title": "ENGLISH SPEECH | RASHIDA JONES: Choose Love (English Subtitles)",
+          "start_seconds": 1377.2,
+          "end_seconds": 1383.96,
+          "text": "All this to say, care about what matters toyou and don't let complacency or feeling overwhelmed",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=A1hcbdWEEO8"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:conclusion_or_summary:in short",
+      "phrase_form": "in short",
+      "family": "conclusion_or_summary",
+      "matched_pattern": "\\bin short\\b",
+      "occurrence_count": 9,
+      "video_count": 9,
+      "train_video_count": 7,
+      "holdout_video_count": 2,
+      "examples": [
+        {
+          "evidence_id": "-URn1fARvts:00119",
+          "video_id": "-URn1fARvts",
+          "title": "ENGLISH SPEECH | EILEEN GU: Courage To Try (English Subtitles)",
+          "start_seconds": 254.44,
+          "end_seconds": 258.28,
+          "text": "In short, being a young person balancing",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-URn1fARvts"
+        },
+        {
+          "evidence_id": "A1hcbdWEEO8:00043",
+          "video_id": "A1hcbdWEEO8",
+          "title": "ENGLISH SPEECH | RASHIDA JONES: Choose Love (English Subtitles)",
+          "start_seconds": 180.919,
+          "end_seconds": 185.879,
+          "text": "In short, I really took advantage of the bestHarvard had to offer.",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=A1hcbdWEEO8"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:conclusion_or_summary:the lesson",
+      "phrase_form": "the lesson",
+      "family": "conclusion_or_summary",
+      "matched_pattern": "\\bthe lesson\\b",
+      "occurrence_count": 5,
+      "video_count": 3,
+      "train_video_count": 3,
+      "holdout_video_count": 0,
+      "examples": [
+        {
+          "evidence_id": "8R4TMmU_Ig0:00059",
+          "video_id": "8R4TMmU_Ig0",
+          "title": "ENGLISH SPEECH | SIMON SINEK: 5 Rules for Success (English Subtitles)",
+          "start_seconds": 293.18,
+          "end_seconds": 300.87,
+          "text": "My point is, the lesson here is sometimesyou're the problem.",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=8R4TMmU_Ig0"
+        },
+        {
+          "evidence_id": "APgpWHlzdQ8:00376",
+          "video_id": "APgpWHlzdQ8",
+          "title": "ENGLISH SPEECH | RISHI  & AKSHATA: Trust Your Intuition (English Subtitles)",
+          "start_seconds": 1032.0,
+          "end_seconds": 1037.76,
+          "text": "So, here's the lesson. Dharma isn't just",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=APgpWHlzdQ8"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:conclusion_or_summary:in conclusion",
+      "phrase_form": "in conclusion",
+      "family": "conclusion_or_summary",
+      "matched_pattern": "\\bin conclusion\\b",
+      "occurrence_count": 3,
+      "video_count": 3,
+      "train_video_count": 3,
+      "holdout_video_count": 0,
+      "examples": [
+        {
+          "evidence_id": "LEtP7HgGTu0:00451",
+          "video_id": "LEtP7HgGTu0",
+          "title": "ENGLISH SPEECH | DR. A.P.J ABDUL KALAM: Culture of Excellence (English Subtitles)",
+          "start_seconds": 1071.36,
+          "end_seconds": 1076.08,
+          "text": "so finally in conclusion i would like",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=LEtP7HgGTu0"
+        },
+        {
+          "evidence_id": "MzYKtA-d7iQ:01269",
+          "video_id": "MzYKtA-d7iQ",
+          "title": "ENGLISH SPEECH | TOP 5 SPEECHES of 2024 (English Subtitles)",
+          "start_seconds": 3521.72,
+          "end_seconds": 3526.88,
+          "text": "Facts in conclusion let me say",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=MzYKtA-d7iQ"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:contrast_or_disagreement:but",
+      "phrase_form": "but",
+      "family": "contrast_or_disagreement",
+      "matched_pattern": "\\bbut\\b",
+      "occurrence_count": 5039,
+      "video_count": 374,
+      "train_video_count": 309,
+      "holdout_video_count": 65,
+      "examples": [
+        {
+          "evidence_id": "-54zUwySKCg:00023",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "start_seconds": 153.09,
+          "end_seconds": 159.66,
+          "text": "and doctor degrees but I see you got thatcovered already.",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg"
+        },
+        {
+          "evidence_id": "-6qN3bm2RYo:00162",
+          "video_id": "-6qN3bm2RYo",
+          "title": "ENGLISH SPEECH | S. JAISHANKAR: India's Five Pledges (English Subtitles)",
+          "start_seconds": 464.039,
+          "end_seconds": 468.72,
+          "text": "ongoing conflicts but they speak too of",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-6qN3bm2RYo"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:contrast_or_disagreement:used to",
+      "phrase_form": "used to",
+      "family": "contrast_or_disagreement",
+      "matched_pattern": "\\bused to\\b",
+      "occurrence_count": 214,
+      "video_count": 105,
+      "train_video_count": 87,
+      "holdout_video_count": 18,
+      "examples": [
+        {
+          "evidence_id": "-Unkvng_jp8:00100",
+          "video_id": "-Unkvng_jp8",
+          "title": "ENGLISH SPEECH | US PRESIDENTIAL DEBATES 2020: Highlights (English Subtitles)",
+          "start_seconds": 526.08,
+          "end_seconds": 531.92,
+          "text": "and they used to use them to get into our country. We now have as strong a border as we've ever had.",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-Unkvng_jp8"
+        },
+        {
+          "evidence_id": "1DXo2fcfleY:00054",
+          "video_id": "1DXo2fcfleY",
+          "title": "ENGLISH SPEECH | SARA ALI KHAN: Be Your Best Self (English Subtitles)",
+          "start_seconds": 209.569,
+          "end_seconds": 212.68,
+          "text": "You know, there used to be times and I promiseyou, I'm not making this up.",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=1DXo2fcfleY"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:contrast_or_disagreement:now i",
+      "phrase_form": "now i",
+      "family": "contrast_or_disagreement",
+      "matched_pattern": "\\bnow I\\b",
+      "occurrence_count": 151,
+      "video_count": 98,
+      "train_video_count": 87,
+      "holdout_video_count": 11,
+      "examples": [
+        {
+          "evidence_id": "1DXo2fcfleY:00091",
+          "video_id": "1DXo2fcfleY",
+          "title": "ENGLISH SPEECH | SARA ALI KHAN: Be Your Best Self (English Subtitles)",
+          "start_seconds": 348.199,
+          "end_seconds": 353.74,
+          "text": "Then I was in Columbia University, now I ampart of the Indian film industry, I feel that",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=1DXo2fcfleY"
+        },
+        {
+          "evidence_id": "1QvLB4yEHsI:00314",
+          "video_id": "1QvLB4yEHsI",
+          "title": "ENGLISH SPEECH | SHRADDHA KAPOOR: You're Beautiful (English Subtitles)",
+          "start_seconds": 740.7,
+          "end_seconds": 746.339,
+          "text": "done and women to go from here now I",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=1QvLB4yEHsI"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:contrast_or_disagreement:instead",
+      "phrase_form": "instead",
+      "family": "contrast_or_disagreement",
+      "matched_pattern": "\\binstead\\b",
+      "occurrence_count": 118,
+      "video_count": 86,
+      "train_video_count": 70,
+      "holdout_video_count": 16,
+      "examples": [
+        {
+          "evidence_id": "-s-h-eebSgw:00109",
+          "video_id": "-s-h-eebSgw",
+          "title": "Sundar Pichai: Say Yes to Hard Things",
+          "start_seconds": 255.0,
+          "end_seconds": 258.64,
+          "text": "instead?\"",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-s-h-eebSgw"
+        },
+        {
+          "evidence_id": "19rhQUB_FQc:00210",
+          "video_id": "19rhQUB_FQc",
+          "title": "ENGLISH SPEECH | STEVE CARELL: Choose Kindness (English Subtitles)",
+          "start_seconds": 638.88,
+          "end_seconds": 644.0,
+          "text": "this? Instead of requiring people to",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=19rhQUB_FQc"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:contrast_or_disagreement:however",
+      "phrase_form": "however",
+      "family": "contrast_or_disagreement",
+      "matched_pattern": "\\bhowever\\b",
+      "occurrence_count": 71,
+      "video_count": 54,
+      "train_video_count": 45,
+      "holdout_video_count": 9,
+      "examples": [
+        {
+          "evidence_id": "-6qN3bm2RYo:00286",
+          "video_id": "-6qN3bm2RYo",
+          "title": "ENGLISH SPEECH | S. JAISHANKAR: India's Five Pledges (English Subtitles)",
+          "start_seconds": 822.0,
+          "end_seconds": 829.68,
+          "text": "motivation and no rhetoric however",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-6qN3bm2RYo"
+        },
+        {
+          "evidence_id": "-s-h-eebSgw:00150",
+          "video_id": "-s-h-eebSgw",
+          "title": "Sundar Pichai: Say Yes to Hard Things",
+          "start_seconds": 336.48,
+          "end_seconds": 340.4,
+          "text": "However, you will face many more moments",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-s-h-eebSgw"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:contrast_or_disagreement:rather than",
+      "phrase_form": "rather than",
+      "family": "contrast_or_disagreement",
+      "matched_pattern": "\\brather than\\b",
+      "occurrence_count": 58,
+      "video_count": 48,
+      "train_video_count": 40,
+      "holdout_video_count": 8,
+      "examples": [
+        {
+          "evidence_id": "-URn1fARvts:00116",
+          "video_id": "-URn1fARvts",
+          "title": "ENGLISH SPEECH | EILEEN GU: Courage To Try (English Subtitles)",
+          "start_seconds": 249.24,
+          "end_seconds": 253.0,
+          "text": "willingness to learn, rather than",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-URn1fARvts"
+        },
+        {
+          "evidence_id": "0nUDkCgyppM:00206",
+          "video_id": "0nUDkCgyppM",
+          "title": "ENGLISH SPEECH | RAKUL, SAMANTHA, TAMANNAAH & KAJAL: Heroines Unite (English Subtitles)",
+          "start_seconds": 456.76,
+          "end_seconds": 460.04,
+          "text": "it rather than just sitting on the stage",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=0nUDkCgyppM"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:contrast_or_disagreement:on the other hand",
+      "phrase_form": "on the other hand",
+      "family": "contrast_or_disagreement",
+      "matched_pattern": "\\bon the other hand\\b",
+      "occurrence_count": 7,
+      "video_count": 7,
+      "train_video_count": 7,
+      "holdout_video_count": 0,
+      "examples": [
+        {
+          "evidence_id": "1EPechcSwE0:00095",
+          "video_id": "1EPechcSwE0",
+          "title": "ENGLISH SPEECH | SNEHA DUBEY: India vs Pakistan at the UN (English Subtitles)",
+          "start_seconds": 238.6,
+          "end_seconds": 242.6,
+          "text": "On the other hand,",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=1EPechcSwE0"
+        },
+        {
+          "evidence_id": "6uUblznfrsk:00075",
+          "video_id": "6uUblznfrsk",
+          "title": "ENGLISH SPEECH | ANAND MAHINDRA: Purpose in Life (English Subtitles)",
+          "start_seconds": 207.64,
+          "end_seconds": 212.959,
+          "text": "change on the other hand the metaverse",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=6uUblznfrsk"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:definition:is when",
+      "phrase_form": "is when",
+      "family": "definition",
+      "matched_pattern": "\\bis when\\b",
+      "occurrence_count": 32,
+      "video_count": 26,
+      "train_video_count": 22,
+      "holdout_video_count": 4,
+      "examples": [
+        {
+          "evidence_id": "5DU16MQYzDw:00397",
+          "video_id": "5DU16MQYzDw",
+          "title": "ENGLISH SPEECH | RISHI SUNAK & ELON MUSK: AI and the Future of Work (English Subtitles)",
+          "start_seconds": 871.639,
+          "end_seconds": 874.639,
+          "text": "the thing I was going to ask is when I",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=5DU16MQYzDw"
+        },
+        {
+          "evidence_id": "65v4EyR774E:00019",
+          "video_id": "65v4EyR774E",
+          "title": "ENGLISH SPEECH | AMITABH BACHCHAN: Power of Dreams (English Subtitles)",
+          "start_seconds": 84.52,
+          "end_seconds": 90.709,
+          "text": "The tough part is when you and your dreamcannot be distinguished.",
+          "event_split": "holdout",
+          "source_url": "https://www.youtube.com/watch?v=65v4EyR774E"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:definition:means that",
+      "phrase_form": "means that",
+      "family": "definition",
+      "matched_pattern": "\\bmeans that\\b",
+      "occurrence_count": 23,
+      "video_count": 19,
+      "train_video_count": 16,
+      "holdout_video_count": 3,
+      "examples": [
+        {
+          "evidence_id": "-URn1fARvts:00029",
+          "video_id": "-URn1fARvts",
+          "title": "ENGLISH SPEECH | EILEEN GU: Courage To Try (English Subtitles)",
+          "start_seconds": 60.12,
+          "end_seconds": 64.08,
+          "text": "It means that all of our youthful energy",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-URn1fARvts"
+        },
+        {
+          "evidence_id": "3l0_J20c4dI:00081",
+          "video_id": "3l0_J20c4dI",
+          "title": "ENGLISH SPEECH | MANUSHI CHHILLAR: Sincerity, Kindness, Happiness (English Subtitles)",
+          "start_seconds": 213.76,
+          "end_seconds": 218.959,
+          "text": "means that right now we have maximum",
+          "event_split": "holdout",
+          "source_url": "https://www.youtube.com/watch?v=3l0_J20c4dI"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:definition:in other words",
+      "phrase_form": "in other words",
+      "family": "definition",
+      "matched_pattern": "\\bin other words\\b",
+      "occurrence_count": 18,
+      "video_count": 14,
+      "train_video_count": 11,
+      "holdout_video_count": 3,
+      "examples": [
+        {
+          "evidence_id": "2mqQMA7CSLQ:00131",
+          "video_id": "2mqQMA7CSLQ",
+          "title": "Donald Trump’s Never Give Up Message",
+          "start_seconds": 732.12,
+          "end_seconds": 736.45,
+          "text": "old enough, in other words your parents.",
+          "event_split": "holdout",
+          "source_url": "https://www.youtube.com/watch?v=2mqQMA7CSLQ"
+        },
+        {
+          "evidence_id": "3FtDXPHua9o:00093",
+          "video_id": "3FtDXPHua9o",
+          "title": "ENGLISH SPEECH | BOB PROCTOR: The Billion Dollar Practice (English Subtitles)",
+          "start_seconds": 449.219,
+          "end_seconds": 451.219,
+          "text": "In other words, your decision.",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=3FtDXPHua9o"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:definition:what i mean",
+      "phrase_form": "what i mean",
+      "family": "definition",
+      "matched_pattern": "\\bwhat I mean\\b",
+      "occurrence_count": 14,
+      "video_count": 14,
+      "train_video_count": 13,
+      "holdout_video_count": 1,
+      "examples": [
+        {
+          "evidence_id": "-s-h-eebSgw:00230",
+          "video_id": "-s-h-eebSgw",
+          "title": "Sundar Pichai: Say Yes to Hard Things",
+          "start_seconds": 489.2,
+          "end_seconds": 493.2,
+          "text": "And that's exactly what I mean by",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-s-h-eebSgw"
+        },
+        {
+          "evidence_id": "3Z4TsHqyssc:00053",
+          "video_id": "3Z4TsHqyssc",
+          "title": "ENGLISH SPEECH | NITA AMBANI: Women's empowerment (English Subtitles)",
+          "start_seconds": 152.04,
+          "end_seconds": 159.66,
+          "text": "allow me to explain what I mean",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=3Z4TsHqyssc"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:definition:the definition",
+      "phrase_form": "the definition",
+      "family": "definition",
+      "matched_pattern": "\\bthe definition\\b",
+      "occurrence_count": 8,
+      "video_count": 6,
+      "train_video_count": 4,
+      "holdout_video_count": 2,
+      "examples": [
+        {
+          "evidence_id": "1QvLB4yEHsI:00230",
+          "video_id": "1QvLB4yEHsI",
+          "title": "ENGLISH SPEECH | SHRADDHA KAPOOR: You're Beautiful (English Subtitles)",
+          "start_seconds": 548.94,
+          "end_seconds": 554.1,
+          "text": "well it depends on what the definition",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=1QvLB4yEHsI"
+        },
+        {
+          "evidence_id": "5xRv-eOuras:00165",
+          "video_id": "5xRv-eOuras",
+          "title": "ENGLISH SPEECH | JORDAN PETERSON: Freedom to Be Yourself (English Subtitles)",
+          "start_seconds": 461.78,
+          "end_seconds": 465.419,
+          "text": "Everything you do matters!(that's the definition of a meaningful life)",
+          "event_split": "holdout",
+          "source_url": "https://www.youtube.com/watch?v=5xRv-eOuras"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:definition:defined as",
+      "phrase_form": "defined as",
+      "family": "definition",
+      "matched_pattern": "\\bdefined as\\b",
+      "occurrence_count": 1,
+      "video_count": 1,
+      "train_video_count": 1,
+      "holdout_video_count": 0,
+      "examples": [
+        {
+          "evidence_id": "cLp3pxq7Dj0:00211",
+          "video_id": "cLp3pxq7Dj0",
+          "title": "ENGLISH SPEECH | JOHN KRASINSKI: Find Your People (English Subtitles)",
+          "start_seconds": 531.02,
+          "end_seconds": 536.13,
+          "text": "success simply defined as you're just beingonto something, taking an idea farther that",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=cLp3pxq7Dj0"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:example:for example",
+      "phrase_form": "for example",
+      "family": "example",
+      "matched_pattern": "\\bfor example\\b",
+      "occurrence_count": 67,
+      "video_count": 42,
+      "train_video_count": 37,
+      "holdout_video_count": 5,
+      "examples": [
+        {
+          "evidence_id": "2wf1qE7AC8Y:00007",
+          "video_id": "2wf1qE7AC8Y",
+          "title": "ENGLISH SPEECH | CARA DELEVINGNE: Battling Depression (English Subtitles)",
+          "start_seconds": 54.56,
+          "end_seconds": 56.56,
+          "text": "for example, when you were 15.Cara:",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=2wf1qE7AC8Y"
+        },
+        {
+          "evidence_id": "7iHNwOAr-9E:00105",
+          "video_id": "7iHNwOAr-9E",
+          "title": "ENGLISH SPEECH | TOP 5 SPEECHES of 2023 (English Subtitles)",
+          "start_seconds": 319.56,
+          "end_seconds": 325.479,
+          "text": "South Korea for example the African",
+          "event_split": "holdout",
+          "source_url": "https://www.youtube.com/watch?v=7iHNwOAr-9E"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:example:such as",
+      "phrase_form": "such as",
+      "family": "example",
+      "matched_pattern": "\\bsuch as\\b",
+      "occurrence_count": 36,
+      "video_count": 26,
+      "train_video_count": 23,
+      "holdout_video_count": 3,
+      "examples": [
+        {
+          "evidence_id": "-6qN3bm2RYo:00079",
+          "video_id": "-6qN3bm2RYo",
+          "title": "ENGLISH SPEECH | S. JAISHANKAR: India's Five Pledges (English Subtitles)",
+          "start_seconds": 221.84,
+          "end_seconds": 228.36,
+          "text": "together on global issues such as",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-6qN3bm2RYo"
+        },
+        {
+          "evidence_id": "-URn1fARvts:00249",
+          "video_id": "-URn1fARvts",
+          "title": "ENGLISH SPEECH | EILEEN GU: Courage To Try (English Subtitles)",
+          "start_seconds": 528.8,
+          "end_seconds": 536.12,
+          "text": "human avenues, such as sports, art,",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-URn1fARvts"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:example:for instance",
+      "phrase_form": "for instance",
+      "family": "example",
+      "matched_pattern": "\\bfor instance\\b",
+      "occurrence_count": 18,
+      "video_count": 15,
+      "train_video_count": 12,
+      "holdout_video_count": 3,
+      "examples": [
+        {
+          "evidence_id": "4u71aIcrxtQ:00139",
+          "video_id": "4u71aIcrxtQ",
+          "title": "ENGLISH SPEECH | BRITISH ROYAL FAMILY: The Royal Foundation (English Subtitles)",
+          "start_seconds": 485.419,
+          "end_seconds": 490.34,
+          "text": "Suicide, for instance, among young men isone of the biggest killers in the country.",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=4u71aIcrxtQ"
+        },
+        {
+          "evidence_id": "7zUUV8_CY2M:02015",
+          "video_id": "7zUUV8_CY2M",
+          "title": "ENGLISH SPEECH | TOP 5 SPEECHES of 2025 (English Subtitles)",
+          "start_seconds": 5371.36,
+          "end_seconds": 5374.48,
+          "text": "for instance you know the best agencies",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=7zUUV8_CY2M"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:example:one example",
+      "phrase_form": "one example",
+      "family": "example",
+      "matched_pattern": "\\bone example\\b",
+      "occurrence_count": 8,
+      "video_count": 6,
+      "train_video_count": 3,
+      "holdout_video_count": 3,
+      "examples": [
+        {
+          "evidence_id": "1i9kcBHX2Nw:00045",
+          "video_id": "1i9kcBHX2Nw",
+          "title": "ENGLISH SPEECH | STEVE JOBS: Stanford Speech (English Subtitles)",
+          "start_seconds": 199.045,
+          "end_seconds": 202.224,
+          "text": "Let me give you one example:",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=1i9kcBHX2Nw"
+        },
+        {
+          "evidence_id": "7zUUV8_CY2M:00655",
+          "video_id": "7zUUV8_CY2M",
+          "title": "ENGLISH SPEECH | TOP 5 SPEECHES of 2025 (English Subtitles)",
+          "start_seconds": 1749.2,
+          "end_seconds": 1754.0,
+          "text": "business one I'll just give one example",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=7zUUV8_CY2M"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:question:?",
+      "phrase_form": "?",
+      "family": "question",
+      "matched_pattern": "\\?",
+      "occurrence_count": 2709,
+      "video_count": 219,
+      "train_video_count": 183,
+      "holdout_video_count": 36,
+      "examples": [
+        {
+          "evidence_id": "-54zUwySKCg:00040",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "start_seconds": 222.269,
+          "end_seconds": 225.36,
+          "text": "you like to be when you grow up?”",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg"
+        },
+        {
+          "evidence_id": "-URn1fARvts:00020",
+          "video_id": "-URn1fARvts",
+          "title": "ENGLISH SPEECH | EILEEN GU: Courage To Try (English Subtitles)",
+          "start_seconds": 40.88,
+          "end_seconds": 45.16,
+          "text": "possibly do?",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-URn1fARvts"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:question:how",
+      "phrase_form": "how",
+      "family": "question",
+      "matched_pattern": "\\bhow\\b",
+      "occurrence_count": 1905,
+      "video_count": 325,
+      "train_video_count": 267,
+      "holdout_video_count": 58,
+      "examples": [
+        {
+          "evidence_id": "-54zUwySKCg:00156",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "start_seconds": 796.32,
+          "end_seconds": 801.4,
+          "text": "how they refused to be discouraged.",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg"
+        },
+        {
+          "evidence_id": "-6qN3bm2RYo:00007",
+          "video_id": "-6qN3bm2RYo",
+          "title": "ENGLISH SPEECH | S. JAISHANKAR: India's Five Pledges (English Subtitles)",
+          "start_seconds": 16.039,
+          "end_seconds": 20.08,
+          "text": "discover how India celebrates its 75",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-6qN3bm2RYo"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:question:why",
+      "phrase_form": "why",
+      "family": "question",
+      "matched_pattern": "\\bwhy\\b",
+      "occurrence_count": 894,
+      "video_count": 246,
+      "train_video_count": 207,
+      "holdout_video_count": 39,
+      "examples": [
+        {
+          "evidence_id": "-54zUwySKCg:00039",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "start_seconds": 216.96,
+          "end_seconds": 222.269,
+          "text": "So during the question and answer period thequestion came “Why, young lady, what would",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg"
+        },
+        {
+          "evidence_id": "-CXBIAH4Kgo:00021",
+          "video_id": "-CXBIAH4Kgo",
+          "title": "The Hunger Games: Mockingjay - Part 2 (1/10) Movie CLIP - Turn Your Weapons to Snow (2015) HD",
+          "start_seconds": 70.159,
+          "end_seconds": 75.52,
+          "text": "am that's why I killed",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-CXBIAH4Kgo"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:question:can we",
+      "phrase_form": "can we",
+      "family": "question",
+      "matched_pattern": "\\bcan we\\b",
+      "occurrence_count": 63,
+      "video_count": 41,
+      "train_video_count": 38,
+      "holdout_video_count": 3,
+      "examples": [
+        {
+          "evidence_id": "-URn1fARvts:00019",
+          "video_id": "-URn1fARvts",
+          "title": "ENGLISH SPEECH | EILEEN GU: Courage To Try (English Subtitles)",
+          "start_seconds": 38.72,
+          "end_seconds": 42.6,
+          "text": "After all, we're only young. What can we",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-URn1fARvts"
+        },
+        {
+          "evidence_id": "0nUDkCgyppM:00212",
+          "video_id": "0nUDkCgyppM",
+          "title": "ENGLISH SPEECH | RAKUL, SAMANTHA, TAMANNAAH & KAJAL: Heroines Unite (English Subtitles)",
+          "start_seconds": 469.04,
+          "end_seconds": 474.52,
+          "text": "Absolutely, I agree. Can we give a big",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=0nUDkCgyppM"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:question:what if",
+      "phrase_form": "what if",
+      "family": "question",
+      "matched_pattern": "\\bwhat if\\b",
+      "occurrence_count": 29,
+      "video_count": 16,
+      "train_video_count": 13,
+      "holdout_video_count": 3,
+      "examples": [
+        {
+          "evidence_id": "3TWYqYJqU8U:00142",
+          "video_id": "3TWYqYJqU8U",
+          "title": "ENGLISH SPEECH | KATE WINSLET: Believe in Yourself (English Subtitles)",
+          "start_seconds": 391.0,
+          "end_seconds": 395.84,
+          "text": "possible to overcome your fears what if",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=3TWYqYJqU8U"
+        },
+        {
+          "evidence_id": "42QjAxty_1o:00155",
+          "video_id": "42QjAxty_1o",
+          "title": "ENGLISH SPEECH | JIM CARREY: Do What You Love (English Subtitles)",
+          "start_seconds": 852.01,
+          "end_seconds": 856.94,
+          "text": "What if I showed up to the party without myMardi Gras mask and I refused to flash my",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=42QjAxty_1o"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:story_or_personal_experience:i was",
+      "phrase_form": "i was",
+      "family": "story_or_personal_experience",
+      "matched_pattern": "\\bI was\\b",
+      "occurrence_count": 1621,
+      "video_count": 255,
+      "train_video_count": 213,
+      "holdout_video_count": 42,
+      "examples": [
+        {
+          "evidence_id": "-54zUwySKCg:00021",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "start_seconds": 140.4,
+          "end_seconds": 143.68,
+          "text": "Actually I was so honored I wanted to do somethingreally special for you.",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg"
+        },
+        {
+          "evidence_id": "-URn1fARvts:00159",
+          "video_id": "-URn1fARvts",
+          "title": "ENGLISH SPEECH | EILEEN GU: Courage To Try (English Subtitles)",
+          "start_seconds": 341.2,
+          "end_seconds": 344.72,
+          "text": "women's sports and Title IX when I was",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-URn1fARvts"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:story_or_personal_experience:when i",
+      "phrase_form": "when i",
+      "family": "story_or_personal_experience",
+      "matched_pattern": "\\bwhen I\\b",
+      "occurrence_count": 766,
+      "video_count": 245,
+      "train_video_count": 203,
+      "holdout_video_count": 42,
+      "examples": [
+        {
+          "evidence_id": "-54zUwySKCg:00035",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "start_seconds": 201.7,
+          "end_seconds": 207.23,
+          "text": "That was when I was 16 years old in Nashville,Tennessee, and you had the requirement of",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg"
+        },
+        {
+          "evidence_id": "-URn1fARvts:00159",
+          "video_id": "-URn1fARvts",
+          "title": "ENGLISH SPEECH | EILEEN GU: Courage To Try (English Subtitles)",
+          "start_seconds": 341.2,
+          "end_seconds": 344.72,
+          "text": "women's sports and Title IX when I was",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-URn1fARvts"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:story_or_personal_experience:years ago",
+      "phrase_form": "years ago",
+      "family": "story_or_personal_experience",
+      "matched_pattern": "\\byears ago\\b",
+      "occurrence_count": 180,
+      "video_count": 107,
+      "train_video_count": 88,
+      "holdout_video_count": 19,
+      "examples": [
+        {
+          "evidence_id": "-54zUwySKCg:00059",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "start_seconds": 305.669,
+          "end_seconds": 313.51,
+          "text": "But a few years ago I decided, as you willat some point, that it was time to recalculate,",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg"
+        },
+        {
+          "evidence_id": "-s-h-eebSgw:00374",
+          "video_id": "-s-h-eebSgw",
+          "title": "Sundar Pichai: Say Yes to Hard Things",
+          "start_seconds": 777.0,
+          "end_seconds": 781.36,
+          "text": "Several years ago, I remember meeting a",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-s-h-eebSgw"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:story_or_personal_experience:i remember",
+      "phrase_form": "i remember",
+      "family": "story_or_personal_experience",
+      "matched_pattern": "\\bI remember\\b",
+      "occurrence_count": 125,
+      "video_count": 77,
+      "train_video_count": 65,
+      "holdout_video_count": 12,
+      "examples": [
+        {
+          "evidence_id": "-s-h-eebSgw:00075",
+          "video_id": "-s-h-eebSgw",
+          "title": "Sundar Pichai: Say Yes to Hard Things",
+          "start_seconds": 182.16,
+          "end_seconds": 185.84,
+          "text": "I remember feeling uncertain on",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-s-h-eebSgw"
+        },
+        {
+          "evidence_id": "0kjuI8M3NHk:00052",
+          "video_id": "0kjuI8M3NHk",
+          "title": "ENGLISH SPEECH | OBAMA & MCRAVEN: The Night History Changed (English Subtitles)",
+          "start_seconds": 117.48,
+          "end_seconds": 120.88,
+          "text": "I remember walking away going",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=0kjuI8M3NHk"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:story_or_personal_experience:one day",
+      "phrase_form": "one day",
+      "family": "story_or_personal_experience",
+      "matched_pattern": "\\bone day\\b",
+      "occurrence_count": 109,
+      "video_count": 72,
+      "train_video_count": 56,
+      "holdout_video_count": 16,
+      "examples": [
+        {
+          "evidence_id": "-s-h-eebSgw:00209",
+          "video_id": "-s-h-eebSgw",
+          "title": "Sundar Pichai: Say Yes to Hard Things",
+          "start_seconds": 449.48,
+          "end_seconds": 453.2,
+          "text": "I could one day work in a faraway place",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-s-h-eebSgw"
+        },
+        {
+          "evidence_id": "0eNEz2lhyk8:00010",
+          "video_id": "0eNEz2lhyk8",
+          "title": "ENGLISH SPEECH | SANDRA BULLOCK: Never Google Yourself (English Subtitles)",
+          "start_seconds": 23.82,
+          "end_seconds": 27.9,
+          "text": "because they will one day help me show",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=0eNEz2lhyk8"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:story_or_personal_experience:my first",
+      "phrase_form": "my first",
+      "family": "story_or_personal_experience",
+      "matched_pattern": "\\bmy first\\b",
+      "occurrence_count": 96,
+      "video_count": 69,
+      "train_video_count": 60,
+      "holdout_video_count": 9,
+      "examples": [
+        {
+          "evidence_id": "-URn1fARvts:00158",
+          "video_id": "-URn1fARvts",
+          "title": "ENGLISH SPEECH | EILEEN GU: Courage To Try (English Subtitles)",
+          "start_seconds": 339.48,
+          "end_seconds": 342.84,
+          "text": "I gave my first speech on equality in",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-URn1fARvts"
+        },
+        {
+          "evidence_id": "-s-h-eebSgw:00214",
+          "video_id": "-s-h-eebSgw",
+          "title": "Sundar Pichai: Say Yes to Hard Things",
+          "start_seconds": 459.0,
+          "end_seconds": 463.56,
+          "text": "It was my first time on a plane.",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-s-h-eebSgw"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:story_or_personal_experience:growing up",
+      "phrase_form": "growing up",
+      "family": "story_or_personal_experience",
+      "matched_pattern": "\\bgrowing up\\b",
+      "occurrence_count": 40,
+      "video_count": 32,
+      "train_video_count": 29,
+      "holdout_video_count": 3,
+      "examples": [
+        {
+          "evidence_id": "2wf1qE7AC8Y:00010",
+          "video_id": "2wf1qE7AC8Y",
+          "title": "ENGLISH SPEECH | CARA DELEVINGNE: Battling Depression (English Subtitles)",
+          "start_seconds": 65.52,
+          "end_seconds": 72.72,
+          "text": "scared. What I want to say is through growing up, what I've discovered is that this world is a very",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=2wf1qE7AC8Y"
+        },
+        {
+          "evidence_id": "76ZHvFMtVEw:00056",
+          "video_id": "76ZHvFMtVEw",
+          "title": "ENGLISH SPEECH | JESSICA CHASTAIN: Breaking the Cycle (English Subtitles)",
+          "start_seconds": 162.48,
+          "end_seconds": 169.64,
+          "text": "cycle growing up every woman in my",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=76ZHvFMtVEw"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:uncertainty_or_qualification:i think",
+      "phrase_form": "i think",
+      "family": "uncertainty_or_qualification",
+      "matched_pattern": "\\bI think\\b",
+      "occurrence_count": 1436,
+      "video_count": 214,
+      "train_video_count": 177,
+      "holdout_video_count": 37,
+      "examples": [
+        {
+          "evidence_id": "-Unkvng_jp8:00036",
+          "video_id": "-Unkvng_jp8",
+          "title": "ENGLISH SPEECH | US PRESIDENTIAL DEBATES 2020: Highlights (English Subtitles)",
+          "start_seconds": 196.72,
+          "end_seconds": 202.08,
+          "text": "the threat is —” Are you questioning —” “No, I think masks are OK.",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-Unkvng_jp8"
+        },
+        {
+          "evidence_id": "0kjuI8M3NHk:00101",
+          "video_id": "0kjuI8M3NHk",
+          "title": "ENGLISH SPEECH | OBAMA & MCRAVEN: The Night History Changed (English Subtitles)",
+          "start_seconds": 216.68,
+          "end_seconds": 220.2,
+          "text": "second reason I think it was important",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=0kjuI8M3NHk"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:uncertainty_or_qualification:maybe",
+      "phrase_form": "maybe",
+      "family": "uncertainty_or_qualification",
+      "matched_pattern": "\\bmaybe\\b",
+      "occurrence_count": 382,
+      "video_count": 159,
+      "train_video_count": 132,
+      "holdout_video_count": 27,
+      "examples": [
+        {
+          "evidence_id": "-54zUwySKCg:00188",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "start_seconds": 964.99,
+          "end_seconds": 966.56,
+          "text": "Maybe you agree with these beliefs.",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg"
+        },
+        {
+          "evidence_id": "-s-h-eebSgw:00256",
+          "video_id": "-s-h-eebSgw",
+          "title": "Sundar Pichai: Say Yes to Hard Things",
+          "start_seconds": 541.0,
+          "end_seconds": 544.56,
+          "text": "Maybe it's because you can wear shorts",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=-s-h-eebSgw"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:uncertainty_or_qualification:perhaps",
+      "phrase_form": "perhaps",
+      "family": "uncertainty_or_qualification",
+      "matched_pattern": "\\bperhaps\\b",
+      "occurrence_count": 91,
+      "video_count": 65,
+      "train_video_count": 52,
+      "holdout_video_count": 13,
+      "examples": [
+        {
+          "evidence_id": "2fWJh-_UG5s:00055",
+          "video_id": "2fWJh-_UG5s",
+          "title": "ENGLISH SPEECH | MATTHEW MCCONAUGHEY: White House Speech (English Subtitles)",
+          "start_seconds": 135.76,
+          "end_seconds": 140.16,
+          "text": "there is a sense that perhaps there's a",
+          "event_split": "holdout",
+          "source_url": "https://www.youtube.com/watch?v=2fWJh-_UG5s"
+        },
+        {
+          "evidence_id": "2mqQMA7CSLQ:00204",
+          "video_id": "2mqQMA7CSLQ",
+          "title": "Donald Trump’s Never Give Up Message",
+          "start_seconds": 1070.12,
+          "end_seconds": 1074.169,
+          "text": "want to go home perhaps to that wonderfulmother that's sitting back there watching",
+          "event_split": "holdout",
+          "source_url": "https://www.youtube.com/watch?v=2mqQMA7CSLQ"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:uncertainty_or_qualification:i'm not sure",
+      "phrase_form": "i'm not sure",
+      "family": "uncertainty_or_qualification",
+      "matched_pattern": "\\bI'm not sure\\b",
+      "occurrence_count": 16,
+      "video_count": 15,
+      "train_video_count": 15,
+      "holdout_video_count": 0,
+      "examples": [
+        {
+          "evidence_id": "5mXFlne4JB8:00236",
+          "video_id": "5mXFlne4JB8",
+          "title": "ENGLISH SPEECH | MINDY KALING: Why Not Me? (English Subtitles)",
+          "start_seconds": 886.27,
+          "end_seconds": 890.7,
+          "text": "Well, spoiler alert: I've only done oneof those things, and I'm not sure I will",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=5mXFlne4JB8"
+        },
+        {
+          "evidence_id": "7zUUV8_CY2M:01969",
+          "video_id": "7zUUV8_CY2M",
+          "title": "ENGLISH SPEECH | TOP 5 SPEECHES of 2025 (English Subtitles)",
+          "start_seconds": 5269.12,
+          "end_seconds": 5273.52,
+          "text": "education policy? I I'm not sure I'm the",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=7zUUV8_CY2M"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:uncertainty_or_qualification:it depends",
+      "phrase_form": "it depends",
+      "family": "uncertainty_or_qualification",
+      "matched_pattern": "\\bit depends\\b",
+      "occurrence_count": 12,
+      "video_count": 11,
+      "train_video_count": 9,
+      "holdout_video_count": 2,
+      "examples": [
+        {
+          "evidence_id": "1QvLB4yEHsI:00230",
+          "video_id": "1QvLB4yEHsI",
+          "title": "ENGLISH SPEECH | SHRADDHA KAPOOR: You're Beautiful (English Subtitles)",
+          "start_seconds": 548.94,
+          "end_seconds": 554.1,
+          "text": "well it depends on what the definition",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=1QvLB4yEHsI"
+        },
+        {
+          "evidence_id": "1viYHfNj3Bk:00314",
+          "video_id": "1viYHfNj3Bk",
+          "title": "ENGLISH SPEECH | AKASH BANERJEE: India’s Path (English Subtitles)",
+          "start_seconds": 820.8,
+          "end_seconds": 825.6,
+          "text": "it depends on how the leaderships work.",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=1viYHfNj3Bk"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:uncertainty_or_qualification:not necessarily",
+      "phrase_form": "not necessarily",
+      "family": "uncertainty_or_qualification",
+      "matched_pattern": "\\bnot necessarily\\b",
+      "occurrence_count": 5,
+      "video_count": 5,
+      "train_video_count": 5,
+      "holdout_video_count": 0,
+      "examples": [
+        {
+          "evidence_id": "7zUUV8_CY2M:01740",
+          "video_id": "7zUUV8_CY2M",
+          "title": "ENGLISH SPEECH | TOP 5 SPEECHES of 2025 (English Subtitles)",
+          "start_seconds": 4742.239,
+          "end_seconds": 4745.52,
+          "text": "not necessarily just media, but yeah,",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=7zUUV8_CY2M"
+        },
+        {
+          "evidence_id": "Az2tYNXDcqs:00145",
+          "video_id": "Az2tYNXDcqs",
+          "title": "ENGLISH SPEECH | PALKI SHARMA: Voice of Change (English Subtitles)",
+          "start_seconds": 352.08,
+          "end_seconds": 355.68,
+          "text": "industries, not necessarily just media,",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=Az2tYNXDcqs"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    },
+    {
+      "review_item_id": "phrase-form:uncertainty_or_qualification:to some extent",
+      "phrase_form": "to some extent",
+      "family": "uncertainty_or_qualification",
+      "matched_pattern": "\\bto some extent\\b",
+      "occurrence_count": 2,
+      "video_count": 2,
+      "train_video_count": 2,
+      "holdout_video_count": 0,
+      "examples": [
+        {
+          "evidence_id": "Iw363WNPReQ:00009",
+          "video_id": "Iw363WNPReQ",
+          "title": "ENGLISH SPEECH | SADHGURU: Developing an Inclusive Consciousness (English Subtitles)",
+          "start_seconds": 41.67,
+          "end_seconds": 52.29,
+          "text": "They spoke about the right kind of thoughts,emotions, attitudes, and to some extent actions.",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=Iw363WNPReQ"
+        },
+        {
+          "evidence_id": "pdYwZhCAeB0:00109",
+          "video_id": "pdYwZhCAeB0",
+          "title": "ENGLISH SPEECH | MS DHONI: Be Honest & Take Risks (English Subtitles)",
+          "start_seconds": 413.05,
+          "end_seconds": 417.83,
+          "text": "So, immediately more often than not, you don'tget a chance to some extent to redeem yourself.",
+          "event_split": "train",
+          "source_url": "https://www.youtube.com/watch?v=pdYwZhCAeB0"
+        }
+      ],
+      "review": {
+        "form_match_decision": null,
+        "primary_function": null,
+        "alternate_function": null,
+        "speaker_event_identity": null,
+        "duplicate_or_compilation_risk": null,
+        "recurrence_decision": null,
+        "reason": null
+      }
+    }
+  ]
+}

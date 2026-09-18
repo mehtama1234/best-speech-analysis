@@ -53,6 +53,10 @@ labels while keeping their provisional status visible.
 The [exact phrase-form inventory](writeups/corpus-phrase-form-inventory.html)
 shows the actual matched forms, recurrence splits, source examples and bounded
 mechanism hypotheses; it is not evidence of effectiveness.
+The [exact phrase-form independent-review workbook](writeups/corpus-phrase-form-independent-review-workbook.html)
+covers all 50 retrieved forms with sampled source contexts and blank
+independent decisions for exactness, function, event identity, duplication
+risk and recurrence eligibility; it is not validation data.
 The [delivery evidence index](writeups/delivery-evidence-index.md) keeps raw
 media, derived features, internal observations and independent observations
 separate; it currently records 21 internal and zero independent observations.

@@ -26,6 +26,7 @@ def main() -> int:
     job_listener = load("research/communication-job-listener-outcome-protocol.json")
     stimulus_preflight = load("research/communication-job-stimuli-preflight.json")
     phrase_inventory = load("research/corpus-phrase-form-inventory.json")
+    phrase_form_review = load("research/corpus-phrase-form-independent-review-workbook.json")
     delivery_index = load("research/delivery-evidence-index.json")
     evidence_model = load("research/shared-evidence-model.json")
     media = load("research/multimodal-coverage-audit.json")
@@ -53,6 +54,7 @@ def main() -> int:
             "research/communication-job-listener-outcome-protocol.json",
             "research/communication-job-stimuli-preflight.json",
             "research/corpus-phrase-form-inventory.json",
+            "research/corpus-phrase-form-independent-review-workbook.json",
             "research/delivery-evidence-index.json",
             "research/shared-evidence-model.json",
             "research/shared-lesson-cards.json", "research/shared-learner-check.json",
@@ -72,6 +74,7 @@ def main() -> int:
             "communication_job_listener_outcomes": {"status": job_listener["status"], "pattern_count": len(job_listener["patterns"]), "listener_task_count": len(job_listener["listener_tasks"]), "stimulus_pairs_locked": job_listener["stimulus_pairs_locked"], "completed_records": 0, "source": "research/communication-job-listener-outcome-protocol.json"},
             "listener_stimulus_preflight": {"status": stimulus_preflight["status"], "pair_count": stimulus_preflight["pair_count"], "manual_review_required": stimulus_preflight["summary"]["pairs_requiring_manual_review"], "source": "research/communication-job-stimuli-preflight.json"},
             "exact_phrase_form_inventory": {"status": phrase_inventory["status"], "form_count": phrase_inventory["form_count"], "eligible_caption_segment_count": phrase_inventory["eligible_caption_segment_count"], "source": "research/corpus-phrase-form-inventory.json"},
+            "exact_phrase_form_independent_review": {"status": phrase_form_review["status"], "queued_form_count": phrase_form_review["item_count"], "completed_independent_reviews": 0, "source": "research/corpus-phrase-form-independent-review-workbook.json"},
             "delivery_evidence_index": {"status": delivery_index["status"], "selected_video_count": delivery_index["coverage"]["selected_video_count"], "internal_observation_count": delivery_index["coverage"]["internal_manual_observation_count"], "independent_observation_count": delivery_index["coverage"]["independent_review_count"], "source": "research/delivery-evidence-index.json"},
             "shared_evidence_model": {"status": evidence_model["status"], "entity_type_count": len(evidence_model["entity_types"]), "source": "research/shared-evidence-model.json"},
             "speech_function_candidate_review": {"status": functions["status"], "queued_item_count": functions["item_count"], "completed_independent_reviews": 0, "source": "research/corpus-function-independent-review-workbook.json"},
@@ -84,6 +87,7 @@ def main() -> int:
         "next_required_gates": [
             "obtain independent transcript-function review exports and preserve disagreements",
             "obtain independent recurrence review exports and adjudicate disagreements",
+            "obtain independent exact phrase-form review exports and adjudicate form, identity and recurrence disagreements",
             "complete independent multimodal alignment/function/safety review",
             "run learner teachability protocol and validate exported records",
             "run blinded listener-outcome protocol before making effectiveness claims",
@@ -107,6 +111,7 @@ def main() -> int:
         f"| Communication-job listener outcomes | `{job_listener['status']}` | {len(job_listener['patterns'])} jobs / {len(job_listener['listener_tasks'])} tasks / stimuli locked: {job_listener['stimulus_pairs_locked']} |",
         f"| Listener stimulus preflight | `{stimulus_preflight['status']}` | {stimulus_preflight['pair_count']} pairs / {stimulus_preflight['summary']['pairs_requiring_manual_review']} manual reviews required |",
         f"| Exact phrase-form inventory | `{phrase_inventory['status']}` | {phrase_inventory['form_count']} forms / {phrase_inventory['eligible_caption_segment_count']} segments |",
+        f"| Exact phrase-form independent review | `{phrase_form_review['status']}` | {phrase_form_review['item_count']} forms queued / 0 completed |",
         f"| Delivery evidence index | `{delivery_index['status']}` | {delivery_index['coverage']['internal_manual_observation_count']} internal / {delivery_index['coverage']['independent_review_count']} independent observations |",
         f"| Shared evidence model | `{evidence_model['status']}` | {len(evidence_model['entity_types'])} entity types / web-mobile contract |",
         f"| Function review | `{functions['status']}` | {functions['item_count']} queued / 0 completed |",

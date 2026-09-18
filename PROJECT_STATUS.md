@@ -36,6 +36,10 @@ now exposes 50 actual matched word forms across the restricted 102,351-caption
 atlas, with train/holdout video counts, exact examples and bounded mechanism
 hypotheses. Phrase recurrence remains heuristic and requires context and
 independent review.
+The separate [exact phrase-form independent-review workbook](research/corpus-phrase-form-independent-review-workbook.json)
+now covers all 50 forms with sampled train/holdout contexts, exact-match,
+function, event-identity, duplication-risk and recurrence decisions. It is
+blank; no independent form judgments have been received.
 
 The [delivery evidence index](writeups/delivery-evidence-index.md) reconciles
 41 selected media items: 29 raw audio/video items, 21 raw items with retained

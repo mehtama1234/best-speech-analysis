@@ -27,6 +27,8 @@ class EndToEndStatusTests(unittest.TestCase):
         self.assertFalse(self.status["stages"]["communication_job_listener_outcomes"]["stimulus_pairs_locked"])
         self.assertEqual(self.status["stages"]["listener_stimulus_preflight"]["manual_review_required"], 18)
         self.assertEqual(self.status["stages"]["exact_phrase_form_inventory"]["form_count"], 50)
+        self.assertEqual(self.status["stages"]["exact_phrase_form_independent_review"]["queued_form_count"], 50)
+        self.assertEqual(self.status["stages"]["exact_phrase_form_independent_review"]["completed_independent_reviews"], 0)
         self.assertEqual(self.status["stages"]["delivery_evidence_index"]["independent_observation_count"], 0)
         self.assertEqual(self.status["stages"]["shared_evidence_model"]["entity_type_count"], 10)
         self.assertEqual(self.status["stages"]["speech_function_candidate_review"]["completed_independent_reviews"], 0)

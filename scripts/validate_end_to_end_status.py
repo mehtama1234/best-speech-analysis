@@ -28,6 +28,7 @@ def validate(report: dict) -> list[str]:
     job_listener = read("research/communication-job-listener-outcome-protocol.json")
     stimulus_preflight = read("research/communication-job-stimuli-preflight.json")
     phrase_inventory = read("research/corpus-phrase-form-inventory.json")
+    phrase_form_review = read("research/corpus-phrase-form-independent-review-workbook.json")
     delivery_index = read("research/delivery-evidence-index.json")
     evidence_model = read("research/shared-evidence-model.json")
     media = read("research/multimodal-coverage-audit.json")
@@ -64,6 +65,7 @@ def validate(report: dict) -> list[str]:
         ("listener_stimulus_preflight", "manual_review_required"): stimulus_preflight["summary"]["pairs_requiring_manual_review"],
         ("exact_phrase_form_inventory", "form_count"): phrase_inventory["form_count"],
         ("exact_phrase_form_inventory", "eligible_caption_segment_count"): phrase_inventory["eligible_caption_segment_count"],
+        ("exact_phrase_form_independent_review", "queued_form_count"): phrase_form_review["item_count"],
         ("delivery_evidence_index", "selected_video_count"): delivery_index["coverage"]["selected_video_count"],
         ("delivery_evidence_index", "internal_observation_count"): delivery_index["coverage"]["internal_manual_observation_count"],
         ("delivery_evidence_index", "independent_observation_count"): delivery_index["coverage"]["independent_review_count"],
@@ -82,6 +84,7 @@ def validate(report: dict) -> list[str]:
             errors.append(f"{stage}.{field} does not match authoritative value {expected}")
     if stages.get("speech_function_candidate_review", {}).get("completed_independent_reviews") != 0: errors.append("function review completion cannot be nonzero without an imported independent export")
     if stages.get("recurrence_candidate_review", {}).get("completed_independent_reviews") != 0: errors.append("recurrence review completion cannot be nonzero without an imported independent export")
+    if stages.get("exact_phrase_form_independent_review", {}).get("completed_independent_reviews") != 0: errors.append("exact phrase-form review completion cannot be nonzero without an imported independent export")
     if stages.get("learner_check", {}).get("completed_records") != 0: errors.append("learner records are not present")
     if stages.get("listener_outcomes", {}).get("completed_records") != 0: errors.append("listener records are not present")
     if stages.get("communication_job_learner_check", {}).get("completed_records") != 0: errors.append("communication-job learner records are not present")

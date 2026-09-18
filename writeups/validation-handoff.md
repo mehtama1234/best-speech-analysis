@@ -63,6 +63,17 @@ Check whether phrase-form hits support the proposed function family in context.
 - Independence: Reviewer must not have created the atlas, phrase queue or candidate labels.
 - Does not establish: effectiveness, causality, universal recurrence
 
+### exact_phrase_form — 50 items
+
+Check the actual retrieved word forms in sampled train/holdout contexts before
+using exact wording or recurrence counts in a lesson.
+
+- Workbook: `research/corpus-phrase-form-independent-review-workbook.json`
+- Browser form: `writeups/corpus-phrase-form-independent-review-workbook.html`
+- Validator: `scripts/validate_corpus_phrase_form_review.py`
+- Independence: Reviewer must not have created the phrase inventory, regex families, candidate mechanisms or workbook.
+- Does not establish: delivery effectiveness, speaker intent, listener outcomes, causality or universal best practice
+
 ### multimodal — 21 items
 
 Check transcript alignment, speaker/setting observations, modality limits and safety boundaries.

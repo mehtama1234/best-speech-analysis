@@ -17,6 +17,7 @@ This dashboard reports artifact and validation status. It does not convert trans
 | Communication-job listener outcomes | `design_complete_not_run` | 18 jobs / 6 tasks / stimuli locked: False |
 | Listener stimulus preflight | `automated_screening_not_independent_review` | 18 pairs / 18 manual reviews required |
 | Exact phrase-form inventory | `heuristic_exact_phrase_inventory_not_validated` | 50 forms / 102351 segments |
+| Exact phrase-form independent review | `template_not_completed` | 50 forms queued / 0 completed |
 | Delivery evidence index | `delivery_evidence_reconciled_independent_review_pending` | 21 internal / 0 independent observations |
 | Shared evidence model | `contract_ready_research_evidence_incomplete` | 10 entity types / web-mobile contract |
 | Function review | `template_not_completed` | 187 queued / 0 completed |
@@ -30,6 +31,7 @@ This dashboard reports artifact and validation status. It does not convert trans
 
 - obtain independent transcript-function review exports and preserve disagreements
 - obtain independent recurrence review exports and adjudicate disagreements
+- obtain independent exact phrase-form review exports and adjudicate form, identity and recurrence disagreements
 - complete independent multimodal alignment/function/safety review
 - run learner teachability protocol and validate exported records
 - run blinded listener-outcome protocol before making effectiveness claims
