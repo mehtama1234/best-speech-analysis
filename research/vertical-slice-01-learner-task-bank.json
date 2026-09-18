@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "task_bank_id": "vertical-slice-01-learner-task-bank",
+  "status": "draft_not_piloted",
+  "claim_boundary": "These stimuli test recognition and transfer of communication choices; they do not test trust, memory, persuasion, engagement or action.",
+  "randomization_rule": "Randomize task order within phase while keeping each learner's baseline and matched post-task assignment recorded.",
+  "tasks": [
+    {
+      "task_id": "contrast-recognition-01",
+      "pattern_id": "provisional-contrast_or_disagreement",
+      "phase": "new_example_recognition",
+      "prompt": "A project was expected to take two weeks but took six because a required dependency arrived late. Which response most clearly performs the communication job? A: ‘The team is unreliable.’ B: ‘We planned for two weeks; the dependency arrived in week four, so the schedule moved to six weeks. This does not by itself show why the dependency was late.’ C: ‘Everyone knows this always happens.’",
+      "expected_choice": "B",
+      "boundary": "Do not infer motive or personality from the comparison."
+    },
+    {
+      "task_id": "contrast-transfer-01",
+      "pattern_id": "provisional-contrast_or_disagreement",
+      "phase": "transfer",
+      "prompt": "Describe one expected-versus-observed difference in an ordinary task using two sentences and one limit. Do not name a person as the cause unless you have separate evidence.",
+      "expected_features": ["both sides named", "consequence or change stated", "limit stated", "no motive claim"]
+    },
+    {
+      "task_id": "contrast-nonfit-01",
+      "pattern_id": "provisional-contrast_or_disagreement",
+      "phase": "misuse_non_fit",
+      "prompt": "A speaker says ‘In short, bring your identification tomorrow’ after explaining a process. Is this primarily an explicit contrast? Explain why or why not.",
+      "expected_judgment": "not_fit_summary_or_instruction",
+      "boundary": "A marker or change word alone is not proof of the underlying job."
+    },
+    {
+      "task_id": "contrast-control-01",
+      "pattern_id": "provisional-contrast_or_disagreement",
+      "phase": "matched_control",
+      "prompt": "Give a plain instruction without using a contrast marker, then explain how it differs from reporting an expected-versus-observed outcome.",
+      "expected_features": ["instruction is usable", "difference from contrast is explicit"]
+    },
+    {
+      "task_id": "example-recognition-01",
+      "pattern_id": "provisional-example",
+      "phase": "new_example_recognition",
+      "prompt": "A speaker says ‘Clear documentation reduces repeated questions. For example, our clinic added a one-page intake guide and saw fewer missing fields in one month.’ What must the speaker still avoid claiming? A: that the case illustrates the claim; B: that one case proves the guide caused the entire change or applies to every clinic; C: that the case has any relevance.",
+      "expected_choice": "B",
+      "boundary": "A case can illustrate without proving representativeness or causality."
+    },
+    {
+      "task_id": "example-transfer-01",
+      "pattern_id": "provisional-example",
+      "phase": "transfer",
+      "prompt": "State a general claim, give a labeled observed, reported, hypothetical or illustrative case, connect it to the claim, and state one limit. Use no identifying personal detail.",
+      "expected_features": ["claim stated", "case labeled", "connection explained", "limit stated", "privacy protected"]
+    },
+    {
+      "task_id": "example-nonfit-01",
+      "pattern_id": "provisional-example",
+      "phase": "misuse_non_fit",
+      "prompt": "Someone names one dramatic incident and says it proves an entire group is dangerous. Is this a safe use of an example? Explain the missing boundary.",
+      "expected_judgment": "unsafe_overgeneralization",
+      "boundary": "Vividness is not representativeness or proof."
+    },
+    {
+      "task_id": "example-control-01",
+      "pattern_id": "provisional-example",
+      "phase": "matched_control",
+      "prompt": "Explain a definition directly without adding a case, then say when a concrete example would improve clarity and when it could distract or expose privacy.",
+      "expected_features": ["direct explanation works", "example is optional and bounded"]
+    },
+    {
+      "task_id": "story-recognition-01",
+      "pattern_id": "provisional-story_or_personal_experience",
+      "phase": "new_example_recognition",
+      "prompt": "Which response uses bounded personal detail responsibly? A: ‘I once missed a deadline on a group project, so everyone should work exactly as I do.’ B: ‘During one group project, I missed a deadline after misunderstanding the handoff. It taught me to confirm ownership; that experience does not establish the best process for every team.’ C: a detailed story naming a private colleague without consent.",
+      "expected_choice": "B",
+      "boundary": "Personal disclosure is optional and cannot become universal proof."
+    },
+    {
+      "task_id": "story-transfer-01",
+      "pattern_id": "provisional-story_or_personal_experience",
+      "phase": "transfer",
+      "prompt": "Make one communication point concrete with an anonymous, hypothetical or safely bounded event. State what the event illustrates and what it cannot establish.",
+      "expected_features": ["event bounded", "point connected", "non-universal limit", "privacy respected"]
+    },
+    {
+      "task_id": "story-nonfit-01",
+      "pattern_id": "provisional-story_or_personal_experience",
+      "phase": "misuse_non_fit",
+      "prompt": "You do not want to disclose a personal experience, but a listener needs a clear explanation. Is refusing personal disclosure a communication failure? Give a safer alternative.",
+      "expected_judgment": "not_failure_use_direct_or_hypothetical_explanation",
+      "boundary": "No learner should be required to disclose trauma, identity or private information."
+    },
+    {
+      "task_id": "story-control-01",
+      "pattern_id": "provisional-story_or_personal_experience",
+      "phase": "matched_control",
+      "prompt": "Explain the same communication point directly without a story, then compare the privacy and clarity tradeoffs.",
+      "expected_features": ["direct route usable", "story not treated as mandatory"]
+    },
+    {
+      "task_id": "uncertainty-recognition-01",
+      "pattern_id": "provisional-uncertainty_or_qualification",
+      "phase": "new_example_recognition",
+      "prompt": "Which sentence is most precisely qualified? A: ‘This will definitely solve the problem.’ B: ‘The early data suggest the change may reduce delays, but we need another month of records to test that interpretation.’ C: ‘Maybe perhaps possibly it could sort of help.’",
+      "expected_choice": "B",
+      "boundary": "The qualifier should match the claim and name a revision condition."
+    },
+    {
+      "task_id": "uncertainty-transfer-01",
+      "pattern_id": "provisional-uncertainty_or_qualification",
+      "phase": "transfer",
+      "prompt": "State one observed, predicted, interpreted or recommended claim. Add the smallest qualifier needed and name what evidence would change your mind.",
+      "expected_features": ["claim type labeled", "main point clear", "qualifier scoped", "revision condition"]
+    },
+    {
+      "task_id": "uncertainty-nonfit-01",
+      "pattern_id": "provisional-uncertainty_or_qualification",
+      "phase": "misuse_non_fit",
+      "prompt": "A manager uses ‘we cannot know anything’ to avoid answering a question about a documented missed deadline. Is this good uncertainty handling? Explain the accountability problem.",
+      "expected_judgment": "empty_hedging_evasion",
+      "boundary": "Uncertainty must not erase known observations or responsibility."
+    },
+    {
+      "task_id": "uncertainty-control-01",
+      "pattern_id": "provisional-uncertainty_or_qualification",
+      "phase": "matched_control",
+      "prompt": "State a fact that needs no hedge, then state a prediction that does. Explain why the qualification differs.",
+      "expected_features": ["fact and prediction distinguished", "hedge attached to right claim"]
+    },
+    {
+      "task_id": "conclusion-recognition-01",
+      "pattern_id": "provisional-conclusion_or_summary",
+      "phase": "new_example_recognition",
+      "prompt": "After explaining how a shared calendar prevents duplicate bookings, which closing is clearest? A: ‘Anyway.’ B: ‘The takeaway is to assign one owner to the calendar; this helps prevent duplicate bookings but does not replace schedule review.’ C: ‘You should agree with me.’",
+      "expected_choice": "B",
+      "boundary": "The takeaway must follow from the explanation and retain its limit."
+    },
+    {
+      "task_id": "conclusion-transfer-01",
+      "pattern_id": "provisional-conclusion_or_summary",
+      "phase": "transfer",
+      "prompt": "Explain a small topic, mark one takeaway, name its support, preserve one qualification, and offer a next step.",
+      "expected_features": ["takeaway marked", "support named", "limit retained", "next step offered"]
+    },
+    {
+      "task_id": "conclusion-nonfit-01",
+      "pattern_id": "provisional-conclusion_or_summary",
+      "phase": "misuse_non_fit",
+      "prompt": "A speaker ends a complex disagreement by saying ‘there is only one acceptable view’ without addressing the evidence. Is this a responsible summary? Explain what was compressed away.",
+      "expected_judgment": "overcompressed_or_forced_conclusion",
+      "boundary": "A clear close must not erase essential uncertainty or valid alternatives."
+    },
+    {
+      "task_id": "conclusion-control-01",
+      "pattern_id": "provisional-conclusion_or_summary",
+      "phase": "matched_control",
+      "prompt": "Close a short explanation with an unmarked final sentence, then close it again with a marked takeaway. Compare clarity without claiming listener improvement.",
+      "expected_features": ["both forms attempted", "comparison is observational", "no outcome claim"]
+    }
+  ]
+}

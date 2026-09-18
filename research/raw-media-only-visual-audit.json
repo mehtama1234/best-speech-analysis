@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "report_id": "raw-media-only-visual-audit",
+  "status": "internal_visual_source_audit_complete_transcript_missing",
+  "reviewer": "internal project agent",
+  "independence": "not_independent",
+  "claim_boundary": "These are bounded visual/source observations for eight raw-complete items without retained transcript coverage. They do not establish speech function, exact language, delivery effectiveness, speaker intent, audience response or listener outcome.",
+  "method": {
+    "selection": "all raw-audio-and-video-complete expansion items with zero retained transcript segments",
+    "frame_rule": "one deterministic midpoint feature frame inspected against the local video",
+    "not_inferred": [
+      "speech function",
+      "emotion",
+      "intent",
+      "effectiveness",
+      "audience response",
+      "listener comprehension"
+    ]
+  },
+  "item_count": 8,
+  "items": [
+    {
+      "video_id": "5i0u4jFmE78",
+      "title": "Gladiator - Maximus Decimus Meridius",
+      "video_url": "https://www.youtube.com/watch?v=5i0u4jFmE78",
+      "source_class": "fictional_film_scene",
+      "sampled_time_seconds": 80.0,
+      "video_source": "data/video/5i0u4jFmE78.mp4",
+      "audio_source": "data/audio/5i0u4jFmE78.m4a",
+      "feature_source": "data/features/5i0u4jFmE78.json",
+      "transcript_status": "no_retained_transcript_in_segment_registry",
+      "visual_observation": "Film scene with multiple visible characters in armor and a crowd/background; an on-screen subtitle is visible. This is scripted cinematic footage, not an independently retained speech transcript.",
+      "nearest_frame_measurement": {
+        "time_seconds": 80.0,
+        "width": 640,
+        "height": 272,
+        "mean_luminance": 56.902,
+        "luminance_std": 30.13,
+        "face_count": 3,
+        "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+      },
+      "review_status": "internal_visual_source_audit_not_independent"
+    },
+    {
+      "video_id": "JDfP3thQYrM",
+      "title": "ENGLISH SPEECH | KALKI KOECHLIN: Indian at Heart (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=JDfP3thQYrM",
+      "source_class": "edited_subtitled_speech_upload",
+      "sampled_time_seconds": 300.0,
+      "video_source": "data/video/JDfP3thQYrM.mp4",
+      "audio_source": "data/audio/JDfP3thQYrM.m4a",
+      "feature_source": "data/features/JDfP3thQYrM.json",
+      "transcript_status": "no_retained_transcript_in_segment_registry",
+      "visual_observation": "Single woman in a close interview/speech-style shot with large English subtitles and branded edit treatment. The visible subtitle is not part of the retained transcript registry for this item.",
+      "nearest_frame_measurement": {
+        "time_seconds": 300.0,
+        "width": 640,
+        "height": 360,
+        "mean_luminance": 52.419,
+        "luminance_std": 60.395,
+        "face_count": null,
+        "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+      },
+      "review_status": "internal_visual_source_audit_not_independent"
+    },
+    {
+      "video_id": "KieuXXue2Ag",
+      "title": "ENGLISH SPEECH | MAHIRA KHAN: War Against War (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=KieuXXue2Ag",
+      "source_class": "edited_subtitled_speech_upload",
+      "sampled_time_seconds": 180.0,
+      "video_source": "data/video/KieuXXue2Ag.mp4",
+      "audio_source": "data/audio/KieuXXue2Ag.m4a",
+      "feature_source": "data/features/KieuXXue2Ag.json",
+      "transcript_status": "no_retained_transcript_in_segment_registry",
+      "visual_observation": "Single woman at a formal lectern or chamber setting with large subtitles and broadcast branding. The image supports speaker/setting visibility only; retained transcript coverage is absent.",
+      "nearest_frame_measurement": {
+        "time_seconds": 180.0,
+        "width": 640,
+        "height": 360,
+        "mean_luminance": 45.013,
+        "luminance_std": 52.473,
+        "face_count": 1,
+        "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+      },
+      "review_status": "internal_visual_source_audit_not_independent"
+    },
+    {
+      "video_id": "UtJDpOUIEd8",
+      "title": "ENGLISH SPEECH | PRINCESS AMEERAH: Our Water, Our Life (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=UtJDpOUIEd8",
+      "source_class": "edited_subtitled_speech_upload",
+      "sampled_time_seconds": 200.0,
+      "video_source": "data/video/UtJDpOUIEd8.mp4",
+      "audio_source": "data/audio/UtJDpOUIEd8.m4a",
+      "feature_source": "data/features/UtJDpOUIEd8.json",
+      "transcript_status": "no_retained_transcript_in_segment_registry",
+      "visual_observation": "Single woman seated at a branded formal event, looking down toward notes or a device; large subtitles are visible. No retained transcript is available for speech-function alignment.",
+      "nearest_frame_measurement": {
+        "time_seconds": 200.0,
+        "width": 640,
+        "height": 360,
+        "mean_luminance": 136.483,
+        "luminance_std": 93.443,
+        "face_count": 1,
+        "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+      },
+      "review_status": "internal_visual_source_audit_not_independent"
+    },
+    {
+      "video_id": "Y0B32z3WwwA",
+      "title": "ENGLISH SPEECH | JACKIE CHAN: Become the Dragon (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=Y0B32z3WwwA",
+      "source_class": "stage_speech_upload",
+      "sampled_time_seconds": 750.0,
+      "video_source": "data/video/Y0B32z3WwwA.mp4",
+      "audio_source": "data/audio/Y0B32z3WwwA.m4a",
+      "feature_source": "data/features/Y0B32z3WwwA.json",
+      "transcript_status": "no_retained_transcript_in_segment_registry",
+      "visual_observation": "Single man on a dark stage with event branding and visible hand position; the frame is a delivery-setting observation only. No retained transcript is available.",
+      "nearest_frame_measurement": {
+        "time_seconds": 750.0,
+        "width": 640,
+        "height": 360,
+        "mean_luminance": 9.733,
+        "luminance_std": 23.829,
+        "face_count": null,
+        "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+      },
+      "review_status": "internal_visual_source_audit_not_independent"
+    },
+    {
+      "video_id": "fBnAMUkNM2k",
+      "title": "Muniba Mazari Speech: I See My Ability | English Subtitles",
+      "video_url": "https://www.youtube.com/watch?v=fBnAMUkNM2k",
+      "source_class": "edited_subtitled_speech_upload_sensitive_context",
+      "sampled_time_seconds": 1200.0,
+      "video_source": "data/video/fBnAMUkNM2k.mp4",
+      "audio_source": "data/audio/fBnAMUkNM2k.m4a",
+      "feature_source": "data/features/fBnAMUkNM2k.json",
+      "transcript_status": "no_retained_transcript_in_segment_registry",
+      "visual_observation": "A large subtitle is visible over a scene showing a woman and a child or child-related visual context; the edit and visible caption require safeguarding and do not establish the underlying claim or delivery effect.",
+      "nearest_frame_measurement": {
+        "time_seconds": 1200.0,
+        "width": 640,
+        "height": 360,
+        "mean_luminance": 57.805,
+        "luminance_std": 76.251,
+        "face_count": null,
+        "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+      },
+      "review_status": "internal_visual_source_audit_not_independent"
+    },
+    {
+      "video_id": "qOwYULOPuPs",
+      "title": "Mark Carney: Building Our Future",
+      "video_url": "https://www.youtube.com/watch?v=qOwYULOPuPs",
+      "source_class": "edited_subtitled_speech_upload",
+      "sampled_time_seconds": 600.0,
+      "video_source": "data/video/qOwYULOPuPs.mp4",
+      "audio_source": "data/audio/qOwYULOPuPs.m4a",
+      "feature_source": "data/features/qOwYULOPuPs.json",
+      "transcript_status": "no_retained_transcript_in_segment_registry",
+      "visual_observation": "Single man in a formal interior setting with large subtitles; the frame supports speaker visibility and institutional setting. No retained transcript is available for exact speech alignment.",
+      "nearest_frame_measurement": {
+        "time_seconds": 600.0,
+        "width": 640,
+        "height": 360,
+        "mean_luminance": 46.12,
+        "luminance_std": 56.214,
+        "face_count": null,
+        "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+      },
+      "review_status": "internal_visual_source_audit_not_independent"
+    },
+    {
+      "video_id": "zKCjmtxgyNg",
+      "title": "ENGLISH SPEECH | JOAQUIN PHOENIX: Emotional Tribute (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=zKCjmtxgyNg",
+      "source_class": "edited_film_or_tribute_clip",
+      "sampled_time_seconds": 230.0,
+      "video_source": "data/video/zKCjmtxgyNg.mp4",
+      "audio_source": "data/audio/zKCjmtxgyNg.m4a",
+      "feature_source": "data/features/zKCjmtxgyNg.json",
+      "transcript_status": "no_retained_transcript_in_segment_registry",
+      "visual_observation": "Single man in a close cinematic shot with large subtitles and a film/tribute edit treatment. This is not retained transcript evidence and should not be generalized as live speaking practice.",
+      "nearest_frame_measurement": {
+        "time_seconds": 230.0,
+        "width": 640,
+        "height": 360,
+        "mean_luminance": 46.063,
+        "luminance_std": 53.383,
+        "face_count": 1,
+        "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+      },
+      "review_status": "internal_visual_source_audit_not_independent"
+    }
+  ],
+  "next_actions": [
+    "Acquire or reconstruct an admissible transcript before linking any item to exact speech forms.",
+    "Keep sensitive child-related and fictional/edit material under source and safety review.",
+    "Do not merge this report into transcript-linked pattern recurrence counts.",
+    "Obtain independent visual/source review if these items are later used for delivery comparisons."
+  ]
+}

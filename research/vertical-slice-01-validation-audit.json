@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0",
+  "audit_id": "vertical-slice-01-validation-audit",
+  "status": "not_ready_for_promotion",
+  "claim_boundary": "This audit proves repository readiness conditions only; it does not prove listener, trust, memory, persuasion or action outcomes.",
+  "packet_count": 5,
+  "packets_ready_for_promotion": 0,
+  "learner_protocol_status": "protocol_drafted_not_run",
+  "learner_observations_available": false,
+  "media_audit": {
+    "path": "research/vertical-slice-01-media-audit.json",
+    "packet_item_occurrences": 50,
+    "unique_video_ids": 16,
+    "unique_ids_with_raw_media": 15,
+    "contradiction_count": 0
+  },
+  "manual_multimodal_review": {
+    "path": "research/vertical-slice-01-manual-multimodal-review.json",
+    "status": "internal_manual_review_complete_independent_review_pending",
+    "independence": "not_independent",
+    "item_count": 13
+  },
+  "official_source_checks": {
+    "path": "research/vertical-slice-01-official-source-checks.json",
+    "status": "partial_official_corroboration_not_event_verified",
+    "check_count": 9,
+    "event_context_corroborated": 3,
+    "exact_upload_event_verified": 0
+  },
+  "learner_gate": {
+    "status": "blocked_pending_run",
+    "required_protocol": "research/vertical-slice-01-learner-check.json"
+  },
+  "packets": [
+    {
+      "packet": "research/vertical-slice-01-contrast-or-disagreement.json",
+      "pattern_id": "provisional-contrast_or_disagreement",
+      "packet_status": "evidence_packet_partial_not_validated",
+      "representative_example_count": 5,
+      "control_status": "partial_controls_and_failure_candidate",
+      "independent_review_status": "pending_external_reviewer",
+      "speaker_event_status": "metadata_audited_speaker_unverified",
+      "visual_alignment_status": "not manually verified",
+      "issues": [
+        {
+          "gate": "speaker_event_independence",
+          "severity": "blocking",
+          "status": "metadata_audited_speaker_unverified"
+        },
+        {
+          "gate": "visual_alignment",
+          "severity": "blocking",
+          "status": "not manually verified"
+        },
+        {
+          "gate": "independent_review",
+          "severity": "blocking",
+          "status": "pending_external_reviewer"
+        }
+      ],
+      "ready_for_promotion": false
+    },
+    {
+      "packet": "research/vertical-slice-01-example.json",
+      "pattern_id": "provisional-example",
+      "packet_status": "evidence_packet_partial_not_validated",
+      "representative_example_count": 5,
+      "control_status": "controls_recorded",
+      "independent_review_status": "not_started",
+      "speaker_event_status": "metadata_audited_speaker_unverified",
+      "visual_alignment_status": "not manually verified",
+      "issues": [
+        {
+          "gate": "speaker_event_independence",
+          "severity": "blocking",
+          "status": "metadata_audited_speaker_unverified"
+        },
+        {
+          "gate": "visual_alignment",
+          "severity": "blocking",
+          "status": "not manually verified"
+        },
+        {
+          "gate": "independent_review",
+          "severity": "blocking",
+          "status": "not_started"
+        }
+      ],
+      "ready_for_promotion": false
+    },
+    {
+      "packet": "research/vertical-slice-01-story.json",
+      "pattern_id": "provisional-story_or_personal_experience",
+      "packet_status": "evidence_packet_partial_not_validated",
+      "representative_example_count": 5,
+      "control_status": "controls_recorded",
+      "independent_review_status": "not_started",
+      "speaker_event_status": "metadata_audited_speaker_unverified",
+      "visual_alignment_status": "not manually verified",
+      "issues": [
+        {
+          "gate": "speaker_event_independence",
+          "severity": "blocking",
+          "status": "metadata_audited_speaker_unverified"
+        },
+        {
+          "gate": "visual_alignment",
+          "severity": "blocking",
+          "status": "not manually verified"
+        },
+        {
+          "gate": "independent_review",
+          "severity": "blocking",
+          "status": "not_started"
+        }
+      ],
+      "ready_for_promotion": false
+    },
+    {
+      "packet": "research/vertical-slice-01-uncertainty.json",
+      "pattern_id": "provisional-uncertainty_or_qualification",
+      "packet_status": "evidence_packet_partial_not_validated",
+      "representative_example_count": 5,
+      "control_status": "controls_recorded",
+      "independent_review_status": "not_started",
+      "speaker_event_status": "metadata_audited_speaker_unverified",
+      "visual_alignment_status": "not manually verified",
+      "issues": [
+        {
+          "gate": "speaker_event_independence",
+          "severity": "blocking",
+          "status": "metadata_audited_speaker_unverified"
+        },
+        {
+          "gate": "visual_alignment",
+          "severity": "blocking",
+          "status": "not manually verified"
+        },
+        {
+          "gate": "independent_review",
+          "severity": "blocking",
+          "status": "not_started"
+        }
+      ],
+      "ready_for_promotion": false
+    },
+    {
+      "packet": "research/vertical-slice-01-conclusion.json",
+      "pattern_id": "provisional-conclusion_or_summary",
+      "packet_status": "evidence_packet_partial_not_validated",
+      "representative_example_count": 5,
+      "control_status": "controls_recorded",
+      "independent_review_status": "not_started",
+      "speaker_event_status": "metadata_audited_speaker_unverified",
+      "visual_alignment_status": "not manually verified",
+      "issues": [
+        {
+          "gate": "speaker_event_independence",
+          "severity": "blocking",
+          "status": "metadata_audited_speaker_unverified"
+        },
+        {
+          "gate": "visual_alignment",
+          "severity": "blocking",
+          "status": "not manually verified"
+        },
+        {
+          "gate": "independent_review",
+          "severity": "blocking",
+          "status": "not_started"
+        }
+      ],
+      "ready_for_promotion": false
+    }
+  ],
+  "next_actions": [
+    "Obtain independent review with reviewer identity, per-item decisions and disagreements.",
+    "Verify remaining speaker/event identity and manually inspect audio/video alignment.",
+    "Run the learner protocol with consented participants and record rubric-level results.",
+    "Revise lessons from observed failures before any promotion claim."
+  ]
+}

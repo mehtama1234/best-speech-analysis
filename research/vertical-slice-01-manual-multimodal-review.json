@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "review_id": "vertical-slice-01-manual-multimodal-review",
+  "status": "internal_manual_review_complete_independent_review_pending",
+  "reviewer": "internal project agent",
+  "independence": "not_independent",
+  "claim_boundary": "These observations describe sampled source frames and retained feature provenance; they do not establish delivery meaning, speaker identity, audience response or learner outcome.",
+  "method": {
+    "source_files": "data/video/*.mp4 and data/features/*.json",
+    "frame_rule": "one midpoint frame at each retained evidence interval",
+    "observed_fields": [
+      "speaker visibility",
+      "setting",
+      "on-screen text",
+      "apparent shot",
+      "timestamp relation"
+    ],
+    "not_inferred": [
+      "emotion",
+      "intent",
+      "confidence",
+      "authenticity",
+      "audience effect",
+      "facial meaning"
+    ]
+  },
+  "items": [
+    {
+      "evidence_id": "9fEurt2OZ0I:00008",
+      "pattern_id": "provisional-story_or_personal_experience",
+      "video_source": "data/video/9fEurt2OZ0I.mp4",
+      "audio_source": "data/audio/9fEurt2OZ0I.m4a",
+      "feature_source": "data/features/9fEurt2OZ0I.json",
+      "sampled_time_seconds": [31.3, 36.5],
+      "frame_observation": "The speaker is visible in a seated interview or event setting. The start frame shows animated text including ‘I went for the ... rejected’; the end frame has moved to ‘I went to even the KFC,’ which is the following personal-application account.",
+      "alignment_decision": "partial_caption_overlap_boundary_transition",
+      "alignment_limit": "The frames support a personal story sequence and nearby caption timing, but the animated subtitle transitions do not isolate the retained transcript segment exactly.",
+      "feature_limit": "Audio features are coarse proxies; no inference is made from expression, posture, authenticity or audience response."
+    },
+    {
+      "evidence_id": "2fWJh-_UG5s:00160",
+      "pattern_id": "provisional-uncertainty_or_qualification",
+      "video_source": "data/video/2fWJh-_UG5s.mp4",
+      "audio_source": "data/audio/2fWJh-_UG5s.m4a",
+      "feature_source": "data/features/2fWJh-_UG5s.json",
+      "sampled_time_seconds": [
+        362.4,
+        366.5
+      ],
+      "frame_observation": "Single speaker appears in a White House press-room style setting with a U.S. flag and White House backdrop. The start frame visibly includes ‘maybe that would make’ and the following line about Alethia smiling in heaven; the end frame has transitioned to ‘They told us that showing someone else,’ the following caption.",
+      "alignment_decision": "partial_caption_overlap_boundary_transition",
+      "alignment_limit": "The start frame supports subtitle overlap; the end frame shows an early caption transition relative to the retained transcript end, so the exact boundary needs audio/caption-timing review.",
+      "feature_limit": "Audio features are RMS, zero-crossing rate, spectral centroid and a coarse spectral pitch proxy; visual features are scene pixels only."
+    },
+    {
+      "evidence_id": "3AIoHLr8nTI:00097",
+      "pattern_id": "provisional-contrast_or_disagreement",
+      "video_source": "data/video/3AIoHLr8nTI.mp4",
+      "audio_source": "data/audio/3AIoHLr8nTI.m4a",
+      "feature_source": "data/features/3AIoHLr8nTI.json",
+      "sampled_time_seconds": [
+        845.9,
+        850.9
+      ],
+      "frame_observation": "Single speaker is centered at a podium in academic regalia against a purple NYU-branded background. The start caption reads ‘Female genital mutilation is wrong,’ and the end caption reads ‘no matter how many generations have practiced it.’ The retained transcript omits ‘Female’ at the start, consistent with a caption/transcript wording discrepancy.",
+      "alignment_decision": "visible_caption_overlap_with_transcript_wording_discrepancy",
+      "alignment_limit": "Both boundary frames support the sentence’s timing and scene, but the caption and retained transcript differ by an initial word; preserve the discrepancy rather than silently normalizing it.",
+      "feature_limit": "Audio features are proxies and the frame contains no validated facial or gesture measurement."
+    },
+    {
+      "evidence_id": "aXmM0VZv810:00274",
+      "pattern_id": "provisional-example",
+      "video_source": "data/video/aXmM0VZv810.mp4",
+      "audio_source": "data/audio/aXmM0VZv810.m4a",
+      "feature_source": "data/features/aXmM0VZv810.json",
+      "sampled_time_seconds": [
+        674.0,
+        679.3
+      ],
+      "frame_observation": "A labeled speaker appears in a formal forum setting with event branding. The start caption reads ‘Radiology, for example,’ and the end caption reads ‘has largely been converted to AI-driven radiology,’ providing visible portions of the retained phrase and its continuation.",
+      "alignment_decision": "partial_caption_overlap_at_both_boundaries",
+      "alignment_limit": "The exact opening words ‘this earlier’ are not visible in the sampled start frame; inspect adjacent frames/audio before treating the full retained segment as visually aligned.",
+      "feature_limit": "No inference is made from the speaker’s expression, posture or vocal quality."
+    },
+    {
+      "evidence_id": "AwA0Jnfj3ao:00234",
+      "pattern_id": "provisional-conclusion_or_summary",
+      "video_source": "data/video/AwA0Jnfj3ao.mp4",
+      "audio_source": "data/audio/AwA0Jnfj3ao.m4a",
+      "feature_source": "data/features/AwA0Jnfj3ao.json",
+      "sampled_time_seconds": [1018.0, 1019.0],
+      "frame_observation": "Two speakers are visible seated in an interview or event setting with repeated BMW Melbourne branding. The retained conclusion is visibly overlaid: ‘So, it's just in short, it's just being a step ahead of your opposition.’",
+      "alignment_decision": "visible_caption_overlap_with_conclusion_wording",
+      "alignment_limit": "The sampled frame supports the displayed wording and setting at approximately 1018 seconds; it does not establish the exact audio boundary, editing history or whether the conclusion was understood by listeners.",
+      "feature_limit": "Audio features are coarse proxies; no inference is made from gaze, gesture, expression, confidence, intent or audience response."
+    },
+    {
+      "evidence_id": "C8-twwwTETE:00045",
+      "pattern_id": "provisional-uncertainty_or_qualification",
+      "video_source": "data/video/C8-twwwTETE.mp4",
+      "audio_source": "data/audio/C8-twwwTETE.m4a",
+      "feature_source": "data/features/C8-twwwTETE.json",
+      "sampled_time_seconds": [101.0, 102.0],
+      "frame_observation": "Two speakers are visible at an outdoor public ceremony with a large audience and a podium. The retained wording is visibly overlaid around the interval, including ‘how into him I was, right?’, while the speaker stands beside the lectern.",
+      "alignment_decision": "visible_caption_overlap_with_qualification_and_boundary_transition",
+      "alignment_limit": "The frame supports nearby caption wording and public-event context, but the retained interval includes overlapping caption timing and the phrase continues into a self-correction; inspect adjacent audio before treating it as a clean isolated qualification.",
+      "feature_limit": "Audio features are coarse proxies and scene pixels do not identify vocal meaning, sincerity, confidence or listener effect."
+    },
+    {
+      "evidence_id": "gDadfh0ZdBM:00001",
+      "pattern_id": "provisional-example",
+      "video_source": "data/video/gDadfh0ZdBM.mp4",
+      "audio_source": "data/audio/gDadfh0ZdBM.m4a",
+      "feature_source": "data/features/gDadfh0ZdBM.json",
+      "sampled_time_seconds": [30.0, 31.0],
+      "frame_observation": "Two actors are visible facing one another in a dim interior film scene. The sampled frame contains no visible retained subtitle, so the visual evidence identifies the setting and participants only, not the exact wording of the advice line.",
+      "alignment_decision": "scene_context_without_visible_caption",
+      "alignment_limit": "The source is a fictional edited scene and the sampled frame does not display the retained phrase; this cannot establish that the example pattern is visually aligned or that the scene functions like a live speech.",
+      "feature_limit": "Scene-pixel and audio proxies cannot establish character intent, acting quality, persuasion or audience response."
+    },
+    {
+      "evidence_id": "bR4tDSa3O10:00051",
+      "pattern_id": "provisional-story_or_personal_experience",
+      "video_source": "data/video/bR4tDSa3O10.mp4",
+      "audio_source": "data/audio/bR4tDSa3O10.m4a",
+      "feature_source": "data/features/bR4tDSa3O10.json",
+      "sampled_time_seconds": [155.0, 156.0],
+      "frame_observation": "A labeled speaker appears alone at a formal graduation podium against a purple backdrop. The visible caption includes ‘I would have this opportunity like this,’ overlapping the retained personal-experience segment.",
+      "alignment_decision": "visible_caption_overlap_with_story_boundary",
+      "alignment_limit": "The frame supports speaker, ceremony setting and nearby wording, but a single frame cannot determine whether the surrounding personal account is bounded, effective or representative of other settings.",
+      "feature_limit": "No inference is made from facial expression, posture, vocal quality, sincerity or listener effect."
+    },
+    {
+      "evidence_id": "-54zUwySKCg:00196",
+      "pattern_id": "provisional-conclusion_or_summary",
+      "video_source": "data/video/-54zUwySKCg.mp4",
+      "audio_source": "data/audio/-54zUwySKCg.m4a",
+      "feature_source": "data/features/-54zUwySKCg.json",
+      "sampled_time_seconds": [993.0, 994.0],
+      "frame_observation": "The speaker is visible at a microphone with an audience behind her. The displayed caption overlaps the retained charge: ‘your generation is charged with this task of’.",
+      "alignment_decision": "visible_caption_overlap_with_conclusion_or_charge",
+      "alignment_limit": "The frame supports the displayed wording and public speaking setting, but the retained segment continues beyond the sampled frame and does not establish whether the audience accepted or remembered the charge.",
+      "feature_limit": "No inference is made from hand position, facial expression, vocal force, intent or audience response."
+    },
+    {
+      "evidence_id": "-54zUwySKCg:00028",
+      "pattern_id": "provisional-contrast_or_disagreement",
+      "video_source": "data/video/-54zUwySKCg.mp4",
+      "audio_source": "data/audio/-54zUwySKCg.m4a",
+      "feature_source": "data/features/-54zUwySKCg.json",
+      "sampled_time_seconds": [176.0, 177.0],
+      "frame_observation": "The source cuts to an audience seated outdoors. The visible caption begins ‘But then I realized that you don’t have to necessarily go to Harvard’, showing the explicit turn from the preceding claim while the speaker is not visible in this sampled shot.",
+      "alignment_decision": "caption_overlap_with_cutaway_audience_shot",
+      "alignment_limit": "The wording is visible, but the cutaway means the sampled frame cannot support a speaker-delivery observation for this sentence; editing and audience context are alternative explanations for the visual change.",
+      "feature_limit": "No inference is made from audience posture, reaction, agreement or comprehension."
+    },
+    {
+      "evidence_id": "-6qN3bm2RYo:00079",
+      "pattern_id": "provisional-example",
+      "video_source": "data/video/-6qN3bm2RYo.mp4",
+      "audio_source": "data/audio/-6qN3bm2RYo.m4a",
+      "feature_source": "data/features/-6qN3bm2RYo.json",
+      "sampled_time_seconds": [225.0, 226.0],
+      "frame_observation": "The labeled speaker is visible at a formal podium against a marble institutional backdrop. The caption visibly overlaps the concrete list ‘such as terrorism, pandemics or the environment.’",
+      "alignment_decision": "visible_caption_overlap_with_example_list",
+      "alignment_limit": "The frame supports the list wording and formal setting, but it cannot establish whether the examples clarified the larger claim or whether the sequence was independently sourced.",
+      "feature_limit": "No inference is made from posture, gaze, vocal emphasis, authority or listener effect."
+    },
+    {
+      "evidence_id": "-54zUwySKCg:00035",
+      "pattern_id": "provisional-story_or_personal_experience",
+      "video_source": "data/video/-54zUwySKCg.mp4",
+      "audio_source": "data/audio/-54zUwySKCg.m4a",
+      "feature_source": "data/features/-54zUwySKCg.json",
+      "sampled_time_seconds": [204.0, 205.0],
+      "frame_observation": "The speaker is visible at a microphone with a formal audience behind her. The caption displays a bounded personal-time and place detail: ‘That was when I was 16 years old in Nashville, Tennessee,’.",
+      "alignment_decision": "visible_caption_overlap_with_bounded_personal_detail",
+      "alignment_limit": "The frame supports the personal detail and setting, but a single excerpt does not establish privacy suitability, factual accuracy or whether the detail advances the surrounding story.",
+      "feature_limit": "No inference is made from expression, gesture, sincerity, vocal quality or audience response."
+    },
+    {
+      "evidence_id": "3AIoHLr8nTI:00008",
+      "pattern_id": "provisional-uncertainty_or_qualification",
+      "video_source": "data/video/3AIoHLr8nTI.mp4",
+      "audio_source": "data/audio/3AIoHLr8nTI.m4a",
+      "feature_source": "data/features/3AIoHLr8nTI.json",
+      "sampled_time_seconds": [95.0, 96.0],
+      "frame_observation": "The labeled speaker is centered at a podium in academic regalia against a purple NYU backdrop. The displayed caption reads ‘This group is truly diverse in every possible way.’ and the following clause begins the speaker’s qualification with ‘And I think’.",
+      "alignment_decision": "visible_caption_overlap_with_qualification_boundary",
+      "alignment_limit": "The frame supports the wording and ceremonial setting, but the sampled boundary does not by itself determine whether ‘I think’ qualifies the claim, introduces a new judgment or is merely a transition.",
+      "feature_limit": "No inference is made from facial expression, posture, confidence, truthfulness or audience response."
+    }
+  ],
+  "next_actions": [
+    "Have an independent reviewer inspect these intervals and record boundary decisions.",
+    "Re-sample start and end frames for the items without exact visible caption overlap.",
+    "Keep all thirteen items provisional until speaker/event identity and independent review are recorded."
+  ]
+}

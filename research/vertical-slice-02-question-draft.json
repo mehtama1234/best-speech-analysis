@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0",
+  "packet_id": "vertical-slice-02-question",
+  "pattern_id": "candidate-question",
+  "status": "draft_candidate_packet_not_validated",
+  "communication_job": "open inquiry, invite reflection or orient an interview",
+  "evidence_level": "candidate_context_review_only",
+  "claim_boundary": "The examples show question-like language in transcript context. They do not prove audience engagement, comprehension, turn-taking success or a universal benefit.",
+  "practice_hypothesis": "Choose the question type that matches the job: invite reflection, open a narrative, check shared attention or request information. Do not use a question form to pressure a listener or disguise a claim.",
+  "representative_examples": [
+    {
+      "evidence_id": "-54zUwySKCg:00122",
+      "video_id": "-54zUwySKCg",
+      "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+      "start_seconds": 613.72,
+      "end_seconds": 618.18,
+      "url": "https://www.youtube.com/watch?v=-54zUwySKCg&t=613",
+      "text": "girl with a bucket and big heart could dothat, I wonder what I could do?",
+      "function_hypothesis": "self-question moving from another person's example to the speaker's own possible action",
+      "boundary": "The question is narrated reflection, not evidence of an audience reply."
+    },
+    {
+      "evidence_id": "2fWJh-_UG5s:00005",
+      "video_id": "2fWJh-_UG5s",
+      "title": "ENGLISH SPEECH | MATTHEW MCCONAUGHEY: White House Speech (English Subtitles)",
+      "start_seconds": 12.88,
+      "end_seconds": 16.16,
+      "url": "https://www.youtube.com/watch?v=2fWJh-_UG5s&t=12",
+      "text": "how about that",
+      "function_hypothesis": "short rhetorical or conversational question-like reaction before the formal address",
+      "boundary": "The form may be a reaction or rapport move rather than information-seeking inquiry."
+    },
+    {
+      "evidence_id": "AwA0Jnfj3ao:00003",
+      "video_id": "AwA0Jnfj3ao",
+      "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
+      "start_seconds": 23.21,
+      "end_seconds": 26.269,
+      "url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=23",
+      "text": "Why don't we start right at the beginning?",
+      "function_hypothesis": "interview-opening question that invites a narrative answer",
+      "boundary": "The transcript cannot by itself establish turn ownership, prosody or whether the answer followed as intended."
+    }
+  ],
+  "counterexamples": [
+    {
+      "evidence_id": "-54zUwySKCg:00015",
+      "video_id": "-54zUwySKCg",
+      "text": "And I can tell you that I consider today asI sat on the stage this morning getting teary",
+      "direct_observation": "A question detector could be distracted by question-related vocabulary elsewhere, but this retained caption is declarative and does not contain an interrogative structure.",
+      "non_fit": "keyword presence is not a question"
+    },
+    {
+      "evidence_id": "S43F1BZfQKY:00021",
+      "video_id": "S43F1BZfQKY",
+      "text": "And because of this wig, I can't shower atthe gym or go swimming or even ride a freakin'",
+      "direct_observation": "The source record contains no interrogative structure in this segment; the source is also unavailable for raw-media inspection.",
+      "non_fit": "heuristic retrieval and a missing recording cannot establish a question"
+    }
+  ],
+  "multimodal_status": "raw_media_available_for_three_representatives; manual_alignment_not_yet_reviewed_for_this_packet",
+  "independence_status": "not_verified",
+  "learner_status": "not_started",
+  "next_actions": [
+    "Read full surrounding contexts and verify speaker/event identity.",
+    "Inspect audio/video turn timing and caption boundaries independently.",
+    "Add a question that fails or pressures, and a successful explanation without a question.",
+    "Create a lesson only after independent review and a learner check."
+  ]
+}

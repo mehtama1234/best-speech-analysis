@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "bank_id": "vertical-slice-02-learner-task-bank",
+  "status": "candidate_tasks_not_piloted",
+  "claim_boundary": "These tasks are a draft teachability instrument. They are not learner results and do not validate the candidate patterns.",
+  "consent_and_accessibility": "Allow written, typed, captioned, asynchronous or spoken responses. Do not require personal disclosure. Store no recording without consent.",
+  "tasks": [
+    {"task_id":"question-recognition-01","pattern_id":"candidate-question","phase":"recognition","stimulus":"I wonder what I could try next?","prompt":"Identify whether this is information-seeking, reflection, a rhetorical move or another function. Explain what evidence you used."},
+    {"task_id":"question-transfer-01","pattern_id":"candidate-question","phase":"transfer","stimulus":"A colleague gives you a complicated explanation.","prompt":"Write one respectful question that invites clarification without implying the colleague failed."},
+    {"task_id":"question-nonfit-01","pattern_id":"candidate-question","phase":"non_fit","stimulus":"You already know the answer and want the group to agree.","prompt":"Explain when a rhetorical question could pressure the group and write a bounded alternative."},
+    {"task_id":"question-control-01","pattern_id":"candidate-question","phase":"control","stimulus":"You need to move directly from one agenda item to the next.","prompt":"Write a plain transition without a question, then explain why a question is not necessary here."},
+    {"task_id":"definition-recognition-01","pattern_id":"candidate-definition_or_reformulation","phase":"recognition","stimulus":"By ‘access,’ I mean the ability to use the service without an extra barrier.","prompt":"Identify whether this is a definition, translation, interpretation or recommendation, and name the limit it states or leaves open."},
+    {"task_id":"definition-transfer-01","pattern_id":"candidate-definition_or_reformulation","phase":"transfer","stimulus":"Your audience does not know a technical term.","prompt":"Define it in one sentence, then state one thing your definition does not cover."},
+    {"task_id":"definition-nonfit-01","pattern_id":"candidate-definition_or_reformulation","phase":"non_fit","stimulus":"That means everyone who disagrees is acting in bad faith.","prompt":"Explain why this may be an interpretation or accusation rather than a definition. Rewrite it more carefully."},
+    {"task_id":"definition-control-01","pattern_id":"candidate-definition_or_reformulation","phase":"control","stimulus":"The audience already shares the term’s ordinary meaning.","prompt":"Explain why adding a definition may create unnecessary friction, and offer a concise transition instead."},
+    {"task_id":"action-recognition-01","pattern_id":"candidate-call_to_action","phase":"recognition","stimulus":"By Friday, the project owner will publish the draft and invite comments.","prompt":"Identify the action, owner, time horizon and remaining limit. Distinguish it from a broad aspiration."},
+    {"task_id":"action-transfer-01","pattern_id":"candidate-call_to_action","phase":"transfer","stimulus":"Your team has identified one small problem it can address.","prompt":"Write a call to action with an owner, resource, time horizon and consent or opt-out condition."},
+    {"task_id":"action-nonfit-01","pattern_id":"candidate-call_to_action","phase":"non_fit","stimulus":"Everyone must share this immediately or they do not care.","prompt":"Identify the coercive or unsafe features and rewrite the request with a bounded alternative."},
+    {"task_id":"action-control-01","pattern_id":"candidate-call_to_action","phase":"control","stimulus":"You are closing a talk with appreciation but no action request.","prompt":"Write a gratitude-based close that does not imply the audience owes an action."}
+  ]
+}

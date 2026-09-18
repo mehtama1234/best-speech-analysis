@@ -1,0 +1,2093 @@
+{
+  "schema_version": "0.1",
+  "status": "raw_media_reconciled_manual_review_pending",
+  "scope": "Deterministic multimodal expansion only; not full-corpus audiovisual validation.",
+  "source_manifest": "data/metadata/multimodal-expansion.json",
+  "selected_video_count": 41,
+  "selected_with_transcripts": 27,
+  "raw_audio_video_present_count": 29,
+  "partial_raw_media_count": 0,
+  "derived_features_only_count": 8,
+  "raw_media_missing_count": 4,
+  "raw_audio_video_with_transcript_count": 21,
+  "raw_audio_video_without_transcript_count": 8,
+  "derived_feature_file_count": 37,
+  "manual_review_queue_count": 21,
+  "internal_manual_review_count": 21,
+  "internal_manual_review_reports": [
+    "research/multimodal-expansion-manual-review.json",
+    "research/multimodal-expansion-manual-review-02.json"
+  ],
+  "independent_review_status": "pending",
+  "independent_review_workbook": "research/multimodal-independent-review-workbook.json",
+  "independent_review_form": "writeups/multimodal-independent-review-workbook.html",
+  "independent_review_validator": "scripts/validate_multimodal_independent_review.py",
+  "media_state_counts": {
+    "derived_features_only": 8,
+    "raw_audio_video_present": 29,
+    "raw_media_missing": 4
+  },
+  "duration_bucket_counts": {
+    "long_over_10m": 10,
+    "medium_3_10m": 17,
+    "short_0_3m": 11,
+    "unknown_duration": 3
+  },
+  "videos": [
+    {
+      "video_id": "1crhwQPKr7w",
+      "title": "Shrinking Balls - Snatch (7/8) Movie CLIP (2000) HD",
+      "video_url": "https://www.youtube.com/watch?v=1crhwQPKr7w",
+      "duration_bucket": "short_0_3m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-02",
+          "playlist_title": "Greatest Movie Speeches",
+          "position": 33
+        }
+      ],
+      "transcript_segments": 44,
+      "selection_reasons": [
+        "playlist-02:short_0_3m"
+      ],
+      "media_state": "derived_features_only",
+      "video_files": [],
+      "audio_files": [],
+      "feature_files": [
+        "1crhwQPKr7w.json"
+      ],
+      "ledger_video_status": "failed:1",
+      "ledger_audio_status": "failed:1",
+      "candidate_function_counts": {
+        "unclassified": 44
+      },
+      "manual_review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "2fWJh-_UG5s",
+      "title": "ENGLISH SPEECH | MATTHEW MCCONAUGHEY: White House Speech (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=2fWJh-_UG5s",
+      "duration_bucket": "long_over_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 351
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 430
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 431
+        }
+      ],
+      "transcript_segments": 554,
+      "selection_reasons": [
+        "playlist-01:long_over_10m",
+        "playlist-03:long_over_10m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "2fWJh-_UG5s.mp4"
+      ],
+      "audio_files": [
+        "2fWJh-_UG5s.m4a"
+      ],
+      "feature_files": [
+        "2fWJh-_UG5s.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "call_to_action": 12,
+        "contrast_or_disagreement": 1,
+        "question": 25,
+        "story_or_personal_experience": 1,
+        "uncertainty_or_qualification": 17,
+        "unclassified": 500
+      },
+      "manual_review_status": "internal_bounded_review_complete_independent_review_pending"
+    },
+    {
+      "video_id": "2m_lqGnLtWA",
+      "title": "Apology - The Blair Witch Project (7/8) Movie CLIP (1999) HD",
+      "video_url": "https://www.youtube.com/watch?v=2m_lqGnLtWA",
+      "duration_bucket": "short_0_3m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-02",
+          "playlist_title": "Greatest Movie Speeches",
+          "position": 35
+        }
+      ],
+      "transcript_segments": 0,
+      "selection_reasons": [
+        "playlist-02:short_0_3m"
+      ],
+      "media_state": "derived_features_only",
+      "video_files": [],
+      "audio_files": [],
+      "feature_files": [
+        "2m_lqGnLtWA.json"
+      ],
+      "ledger_video_status": "failed:1",
+      "ledger_audio_status": "failed:1",
+      "candidate_function_counts": {},
+      "manual_review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "3AIoHLr8nTI",
+      "title": "ENGLISH SPEECH | JUSTIN TRUDEAU: We’re All the Same (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=3AIoHLr8nTI",
+      "duration_bucket": "long_over_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 38
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 40
+        }
+      ],
+      "transcript_segments": 113,
+      "selection_reasons": [
+        "playlist-01:long_over_10m",
+        "playlist-03:long_over_10m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "3AIoHLr8nTI.mp4"
+      ],
+      "audio_files": [
+        "3AIoHLr8nTI.m4a"
+      ],
+      "feature_files": [
+        "3AIoHLr8nTI.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "contrast_or_disagreement": 2,
+        "definition": 1,
+        "question": 10,
+        "story_or_personal_experience": 2,
+        "uncertainty_or_qualification": 7,
+        "unclassified": 92
+      },
+      "manual_review_status": "internal_bounded_review_complete_independent_review_pending"
+    },
+    {
+      "video_id": "5i0u4jFmE78",
+      "title": "Gladiator - Maximus Decimus Meridius",
+      "video_url": "https://www.youtube.com/watch?v=5i0u4jFmE78",
+      "duration_bucket": "short_0_3m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-02",
+          "playlist_title": "Greatest Movie Speeches",
+          "position": 1
+        }
+      ],
+      "transcript_segments": 0,
+      "selection_reasons": [
+        "playlist-02:short_0_3m",
+        "user_seed"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "5i0u4jFmE78.mp4"
+      ],
+      "audio_files": [
+        "5i0u4jFmE78.m4a"
+      ],
+      "feature_files": [
+        "5i0u4jFmE78.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "question": 1,
+        "unclassified": 31
+      },
+      "manual_review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "9fEurt2OZ0I",
+      "title": "ENGLISH SPEECH | JACK MA ALIBABA: We Never Give Up (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=9fEurt2OZ0I",
+      "duration_bucket": "short_0_3m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 123
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 155
+        }
+      ],
+      "transcript_segments": 40,
+      "selection_reasons": [
+        "playlist-01:short_0_3m",
+        "playlist-03:short_0_3m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "9fEurt2OZ0I.mp4"
+      ],
+      "audio_files": [
+        "9fEurt2OZ0I.m4a"
+      ],
+      "feature_files": [
+        "9fEurt2OZ0I.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "contrast_or_disagreement": 1,
+        "question": 1,
+        "story_or_personal_experience": 2,
+        "uncertainty_or_qualification": 1,
+        "unclassified": 35
+      },
+      "manual_review_status": "internal_bounded_review_complete_independent_review_pending"
+    },
+    {
+      "video_id": "AwA0Jnfj3ao",
+      "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao",
+      "duration_bucket": "long_over_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 41
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 43
+        }
+      ],
+      "transcript_segments": 239,
+      "selection_reasons": [
+        "playlist-01:long_over_10m",
+        "playlist-03:long_over_10m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "AwA0Jnfj3ao.mp4"
+      ],
+      "audio_files": [
+        "AwA0Jnfj3ao.m4a"
+      ],
+      "feature_files": [
+        "AwA0Jnfj3ao.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "call_to_action": 2,
+        "conclusion_or_summary": 1,
+        "contrast_or_disagreement": 7,
+        "definition": 1,
+        "question": 15,
+        "story_or_personal_experience": 4,
+        "uncertainty_or_qualification": 6,
+        "unclassified": 205
+      },
+      "manual_review_status": "internal_bounded_review_complete_independent_review_pending"
+    },
+    {
+      "video_id": "C8-twwwTETE",
+      "title": "ENGLISH SPEECH | EMINEM & 50 CENT: Walk of Fame Speech (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=C8-twwwTETE",
+      "duration_bucket": "long_over_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 288
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 349
+        }
+      ],
+      "transcript_segments": 241,
+      "selection_reasons": [
+        "playlist-01:long_over_10m",
+        "playlist-03:long_over_10m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "C8-twwwTETE.mp4"
+      ],
+      "audio_files": [
+        "C8-twwwTETE.m4a"
+      ],
+      "feature_files": [
+        "C8-twwwTETE.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "call_to_action": 1,
+        "contrast_or_disagreement": 1,
+        "question": 4,
+        "uncertainty_or_qualification": 8,
+        "unclassified": 228
+      },
+      "manual_review_status": "internal_bounded_review_complete_independent_review_pending"
+    },
+    {
+      "video_id": "JDfP3thQYrM",
+      "title": "ENGLISH SPEECH | KALKI KOECHLIN: Indian at Heart (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=JDfP3thQYrM",
+      "duration_bucket": "medium_3_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 355
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 435
+        }
+      ],
+      "transcript_segments": 0,
+      "selection_reasons": [
+        "playlist-01:medium_3_10m",
+        "playlist-03:medium_3_10m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "JDfP3thQYrM.mp4"
+      ],
+      "audio_files": [
+        "JDfP3thQYrM.m4a"
+      ],
+      "feature_files": [
+        "JDfP3thQYrM.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "failed:1",
+      "candidate_function_counts": {},
+      "manual_review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "JdUq2opPY-Q",
+      "title": "Blade Runner - Roy Batty's monologue (Full HD)",
+      "video_url": "https://www.youtube.com/watch?v=JdUq2opPY-Q",
+      "duration_bucket": "short_0_3m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-02",
+          "playlist_title": "Greatest Movie Speeches",
+          "position": 11
+        }
+      ],
+      "transcript_segments": 17,
+      "selection_reasons": [
+        "playlist-02:short_0_3m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "JdUq2opPY-Q.mp4"
+      ],
+      "audio_files": [
+        "JdUq2opPY-Q.m4a"
+      ],
+      "feature_files": [
+        "JdUq2opPY-Q.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "unclassified": 17
+      },
+      "manual_review_status": "internal_bounded_review_complete_independent_review_pending"
+    },
+    {
+      "video_id": "KieuXXue2Ag",
+      "title": "ENGLISH SPEECH | MAHIRA KHAN: War Against War (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=KieuXXue2Ag",
+      "duration_bucket": "medium_3_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 294
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 360
+        }
+      ],
+      "transcript_segments": 0,
+      "selection_reasons": [
+        "playlist-01:medium_3_10m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "KieuXXue2Ag.mp4"
+      ],
+      "audio_files": [
+        "KieuXXue2Ag.m4a"
+      ],
+      "feature_files": [
+        "KieuXXue2Ag.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {},
+      "manual_review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "OfwfTN1mEyM",
+      "title": "ENGLISH SPEECH | ELON MUSK: The Power of Solar Energy (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=OfwfTN1mEyM",
+      "duration_bucket": "medium_3_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 245
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 298
+        }
+      ],
+      "transcript_segments": 183,
+      "selection_reasons": [
+        "playlist-01:medium_3_10m",
+        "playlist-03:medium_3_10m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "OfwfTN1mEyM.mp4"
+      ],
+      "audio_files": [
+        "OfwfTN1mEyM.m4a"
+      ],
+      "feature_files": [
+        "OfwfTN1mEyM.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "contrast_or_disagreement": 1,
+        "definition": 1,
+        "question": 11,
+        "story_or_personal_experience": 2,
+        "uncertainty_or_qualification": 9,
+        "unclassified": 160
+      },
+      "manual_review_status": "internal_bounded_review_complete_independent_review_pending"
+    },
+    {
+      "video_id": "RCxgqHqakXc",
+      "title": "Choose Life - Trainspotting (1-12) Movie CLIP (1996) HD.mp4",
+      "video_url": "https://www.youtube.com/watch?v=RCxgqHqakXc",
+      "duration_bucket": "short_0_3m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-02",
+          "playlist_title": "Greatest Movie Speeches",
+          "position": 18
+        }
+      ],
+      "transcript_segments": 35,
+      "selection_reasons": [
+        "playlist-02:short_0_3m"
+      ],
+      "media_state": "derived_features_only",
+      "video_files": [],
+      "audio_files": [],
+      "feature_files": [
+        "RCxgqHqakXc.json"
+      ],
+      "ledger_video_status": "failed:1",
+      "ledger_audio_status": "failed:1",
+      "candidate_function_counts": {
+        "unclassified": 35
+      },
+      "manual_review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "S43F1BZfQKY",
+      "title": "ENGLISH SPEECH | PARUL BANSAL: I Shaved My Head (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=S43F1BZfQKY",
+      "duration_bucket": "medium_3_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 333
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 404
+        }
+      ],
+      "transcript_segments": 80,
+      "selection_reasons": [
+        "playlist-01:medium_3_10m",
+        "playlist-03:medium_3_10m"
+      ],
+      "media_state": "derived_features_only",
+      "video_files": [],
+      "audio_files": [],
+      "feature_files": [
+        "S43F1BZfQKY.json"
+      ],
+      "ledger_video_status": "failed:1",
+      "ledger_audio_status": "failed:1",
+      "candidate_function_counts": {
+        "call_to_action": 1,
+        "example": 1,
+        "question": 11,
+        "story_or_personal_experience": 4,
+        "uncertainty_or_qualification": 2,
+        "unclassified": 64
+      },
+      "manual_review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "UtJDpOUIEd8",
+      "title": "ENGLISH SPEECH | PRINCESS AMEERAH: Our Water, Our Life (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=UtJDpOUIEd8",
+      "duration_bucket": "medium_3_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 305
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 372
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 373
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 374
+        }
+      ],
+      "transcript_segments": 0,
+      "selection_reasons": [
+        "playlist-01:medium_3_10m",
+        "playlist-03:medium_3_10m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "UtJDpOUIEd8.mp4"
+      ],
+      "audio_files": [
+        "UtJDpOUIEd8.m4a"
+      ],
+      "feature_files": [
+        "UtJDpOUIEd8.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {},
+      "manual_review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "W-mgdUdOjhs",
+      "title": "Colonel Walter E. Kurtz (Marlon Brando)",
+      "video_url": "https://www.youtube.com/watch?v=W-mgdUdOjhs",
+      "duration_bucket": "medium_3_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-02",
+          "playlist_title": "Greatest Movie Speeches",
+          "position": 39
+        }
+      ],
+      "transcript_segments": 73,
+      "selection_reasons": [
+        "playlist-02:medium_3_10m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "W-mgdUdOjhs.mp4"
+      ],
+      "audio_files": [
+        "W-mgdUdOjhs.m4a"
+      ],
+      "feature_files": [
+        "W-mgdUdOjhs.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "definition": 1,
+        "question": 3,
+        "story_or_personal_experience": 1,
+        "uncertainty_or_qualification": 1,
+        "unclassified": 67
+      },
+      "manual_review_status": "internal_bounded_review_complete_independent_review_pending"
+    },
+    {
+      "video_id": "Y0B32z3WwwA",
+      "title": "ENGLISH SPEECH | JACKIE CHAN: Become the Dragon (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=Y0B32z3WwwA",
+      "duration_bucket": "long_over_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 57
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 63
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 64
+        }
+      ],
+      "transcript_segments": 0,
+      "selection_reasons": [
+        "playlist-01:long_over_10m",
+        "playlist-03:long_over_10m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "Y0B32z3WwwA.mp4"
+      ],
+      "audio_files": [
+        "Y0B32z3WwwA.m4a"
+      ],
+      "feature_files": [
+        "Y0B32z3WwwA.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {},
+      "manual_review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "ZwMVMbmQBug",
+      "title": "I'm as mad as hell, and I'm not going to take this anymore! Speech from Network (1976)",
+      "video_url": "https://www.youtube.com/watch?v=ZwMVMbmQBug",
+      "duration_bucket": "medium_3_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-02",
+          "playlist_title": "Greatest Movie Speeches",
+          "position": 12
+        }
+      ],
+      "transcript_segments": 52,
+      "selection_reasons": [
+        "playlist-02:medium_3_10m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "ZwMVMbmQBug.mp4"
+      ],
+      "audio_files": [
+        "ZwMVMbmQBug.m4a"
+      ],
+      "feature_files": [
+        "ZwMVMbmQBug.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "unclassified": 52
+      },
+      "manual_review_status": "internal_bounded_review_complete_independent_review_pending"
+    },
+    {
+      "video_id": "_Mb1-CN3wZs",
+      "title": "Al Pacino as Tony Montana in the opening scene of \"Scarface\" (1983) by Brian De Palma 1080p",
+      "video_url": "https://www.youtube.com/watch?v=_Mb1-CN3wZs",
+      "duration_bucket": "medium_3_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-02",
+          "playlist_title": "Greatest Movie Speeches",
+          "position": 56
+        }
+      ],
+      "transcript_segments": 94,
+      "selection_reasons": [
+        "playlist-02:medium_3_10m"
+      ],
+      "media_state": "derived_features_only",
+      "video_files": [],
+      "audio_files": [],
+      "feature_files": [
+        "_Mb1-CN3wZs.json"
+      ],
+      "ledger_video_status": "failed:1",
+      "ledger_audio_status": "failed:1",
+      "candidate_function_counts": {
+        "call_to_action": 1,
+        "contrast_or_disagreement": 1,
+        "definition": 1,
+        "question": 5,
+        "story_or_personal_experience": 3,
+        "unclassified": 84
+      },
+      "manual_review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "aHXxveJTJoE",
+      "title": "The Muppet Movie: Showdown/Animal Saves the Day",
+      "video_url": "https://www.youtube.com/watch?v=aHXxveJTJoE",
+      "duration_bucket": "medium_3_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-02",
+          "playlist_title": "Greatest Movie Speeches",
+          "position": 50
+        }
+      ],
+      "transcript_segments": 68,
+      "selection_reasons": [
+        "playlist-02:medium_3_10m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "aHXxveJTJoE.mp4"
+      ],
+      "audio_files": [
+        "aHXxveJTJoE.m4a"
+      ],
+      "feature_files": [
+        "aHXxveJTJoE.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "example": 1,
+        "question": 15,
+        "uncertainty_or_qualification": 1,
+        "unclassified": 51
+      },
+      "manual_review_status": "internal_bounded_review_complete_independent_review_pending"
+    },
+    {
+      "video_id": "aXmM0VZv810",
+      "title": "ENGLISH SPEECH | ELON & JENSEN: Work Becomes Optional (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=aXmM0VZv810",
+      "duration_bucket": "long_over_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 363
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 444
+        }
+      ],
+      "transcript_segments": 670,
+      "selection_reasons": [
+        "playlist-01:long_over_10m",
+        "playlist-03:long_over_10m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "aXmM0VZv810.mp4"
+      ],
+      "audio_files": [
+        "aXmM0VZv810.m4a"
+      ],
+      "feature_files": [
+        "aXmM0VZv810.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "call_to_action": 10,
+        "conclusion_or_summary": 1,
+        "example": 5,
+        "question": 31,
+        "story_or_personal_experience": 3,
+        "uncertainty_or_qualification": 20,
+        "unclassified": 600
+      },
+      "manual_review_status": "internal_bounded_review_complete_independent_review_pending"
+    },
+    {
+      "video_id": "bR4tDSa3O10",
+      "title": "ENGLISH SPEECH | JENNIFER COOLIDGE: Find Your Own Path (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=bR4tDSa3O10",
+      "duration_bucket": "long_over_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 389
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 474
+        }
+      ],
+      "transcript_segments": 352,
+      "selection_reasons": [
+        "playlist-01:long_over_10m",
+        "playlist-03:long_over_10m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "bR4tDSa3O10.mp4"
+      ],
+      "audio_files": [
+        "bR4tDSa3O10.m4a"
+      ],
+      "feature_files": [
+        "bR4tDSa3O10.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "call_to_action": 1,
+        "contrast_or_disagreement": 1,
+        "question": 8,
+        "story_or_personal_experience": 4,
+        "uncertainty_or_qualification": 8,
+        "unclassified": 330
+      },
+      "manual_review_status": "internal_bounded_review_complete_independent_review_pending"
+    },
+    {
+      "video_id": "dPi40lQetew",
+      "title": "Jaws (1975) - The Head, the Tail, the Whole Damn Thing Scene (3/10) | Movieclips",
+      "video_url": "https://www.youtube.com/watch?v=dPi40lQetew",
+      "duration_bucket": "short_0_3m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-02",
+          "playlist_title": "Greatest Movie Speeches",
+          "position": 4
+        }
+      ],
+      "transcript_segments": 36,
+      "selection_reasons": [
+        "playlist-02:short_0_3m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "dPi40lQetew.mp4"
+      ],
+      "audio_files": [
+        "dPi40lQetew.m4a"
+      ],
+      "feature_files": [
+        "dPi40lQetew.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "question": 2,
+        "unclassified": 34
+      },
+      "manual_review_status": "internal_bounded_review_complete_independent_review_pending"
+    },
+    {
+      "video_id": "fBnAMUkNM2k",
+      "title": "Muniba Mazari Speech: I See My Ability | English Subtitles",
+      "video_url": "https://www.youtube.com/watch?v=fBnAMUkNM2k",
+      "duration_bucket": "long_over_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 1
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 1
+        }
+      ],
+      "transcript_segments": 0,
+      "selection_reasons": [
+        "user_seed"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "fBnAMUkNM2k.mp4"
+      ],
+      "audio_files": [
+        "fBnAMUkNM2k.m4a"
+      ],
+      "feature_files": [
+        "fBnAMUkNM2k.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "contrast_or_disagreement": 3,
+        "definition": 2,
+        "question": 27,
+        "story_or_personal_experience": 12,
+        "uncertainty_or_qualification": 6,
+        "unclassified": 422
+      },
+      "manual_review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "gDadfh0ZdBM",
+      "title": "The Matrix Meeting Morpheus Scene HD",
+      "video_url": "https://www.youtube.com/watch?v=gDadfh0ZdBM",
+      "duration_bucket": "medium_3_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-02",
+          "playlist_title": "Greatest Movie Speeches",
+          "position": 16
+        }
+      ],
+      "transcript_segments": 83,
+      "selection_reasons": [
+        "playlist-02:medium_3_10m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "gDadfh0ZdBM.mp4"
+      ],
+      "audio_files": [
+        "gDadfh0ZdBM.m4a"
+      ],
+      "feature_files": [
+        "gDadfh0ZdBM.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "contrast_or_disagreement": 1,
+        "example": 3,
+        "question": 10,
+        "uncertainty_or_qualification": 1,
+        "unclassified": 68
+      },
+      "manual_review_status": "internal_bounded_review_complete_independent_review_pending"
+    },
+    {
+      "video_id": "hZ0YhrgYejI",
+      "title": "ENGLISH SPEECH | NICK VUJICIC: If you fail, try again (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=hZ0YhrgYejI",
+      "duration_bucket": "short_0_3m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 173
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 213
+        }
+      ],
+      "transcript_segments": 31,
+      "selection_reasons": [
+        "playlist-01:short_0_3m",
+        "playlist-03:short_0_3m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "hZ0YhrgYejI.mp4"
+      ],
+      "audio_files": [
+        "hZ0YhrgYejI.m4a"
+      ],
+      "feature_files": [
+        "hZ0YhrgYejI.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "question": 5,
+        "uncertainty_or_qualification": 1,
+        "unclassified": 26
+      },
+      "manual_review_status": "internal_bounded_review_complete_independent_review_pending"
+    },
+    {
+      "video_id": "jxY2-YgAgm0",
+      "title": "ENGLISH SPEECH | MELANIA TRUMP: A Public Denial (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=jxY2-YgAgm0",
+      "duration_bucket": "medium_3_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 359
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 439
+        }
+      ],
+      "transcript_segments": 127,
+      "selection_reasons": [
+        "playlist-01:medium_3_10m",
+        "playlist-03:medium_3_10m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "jxY2-YgAgm0.mp4"
+      ],
+      "audio_files": [
+        "jxY2-YgAgm0.m4a"
+      ],
+      "feature_files": [
+        "jxY2-YgAgm0.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "call_to_action": 1,
+        "contrast_or_disagreement": 1,
+        "example": 1,
+        "question": 4,
+        "unclassified": 120
+      },
+      "manual_review_status": "internal_bounded_review_complete_independent_review_pending"
+    },
+    {
+      "video_id": "lcj1wMZRitI",
+      "title": "Al pacino-za oskara.rm",
+      "video_url": "https://www.youtube.com/watch?v=lcj1wMZRitI",
+      "duration_bucket": "medium_3_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-02",
+          "playlist_title": "Greatest Movie Speeches",
+          "position": 2
+        }
+      ],
+      "transcript_segments": 134,
+      "selection_reasons": [
+        "playlist-02:medium_3_10m"
+      ],
+      "media_state": "derived_features_only",
+      "video_files": [],
+      "audio_files": [],
+      "feature_files": [
+        "lcj1wMZRitI.json"
+      ],
+      "ledger_video_status": "failed:1",
+      "ledger_audio_status": "failed:1",
+      "candidate_function_counts": {
+        "contrast_or_disagreement": 2,
+        "question": 16,
+        "story_or_personal_experience": 3,
+        "uncertainty_or_qualification": 2,
+        "unclassified": 111
+      },
+      "manual_review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "m92yvNscIAo",
+      "title": "Aliens Debriefing (1986) Edited",
+      "video_url": "https://www.youtube.com/watch?v=m92yvNscIAo",
+      "duration_bucket": "short_0_3m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-02",
+          "playlist_title": "Greatest Movie Speeches",
+          "position": 65
+        }
+      ],
+      "transcript_segments": 59,
+      "selection_reasons": [
+        "playlist-02:short_0_3m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "m92yvNscIAo.mp4"
+      ],
+      "audio_files": [
+        "m92yvNscIAo.m4a"
+      ],
+      "feature_files": [
+        "m92yvNscIAo.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "unclassified": 59
+      },
+      "manual_review_status": "internal_bounded_review_complete_independent_review_pending"
+    },
+    {
+      "video_id": "nWRxPDhd3d0",
+      "title": "A F***ing Car - Planes, Trains & Automobiles (6/10) Movie CLIP (1987) HD",
+      "video_url": "https://www.youtube.com/watch?v=nWRxPDhd3d0",
+      "duration_bucket": "short_0_3m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-02",
+          "playlist_title": "Greatest Movie Speeches",
+          "position": 64
+        }
+      ],
+      "transcript_segments": 0,
+      "selection_reasons": [
+        "playlist-02:short_0_3m"
+      ],
+      "media_state": "raw_media_missing",
+      "video_files": [],
+      "audio_files": [],
+      "feature_files": [],
+      "ledger_video_status": "failed:1",
+      "ledger_audio_status": "failed:1",
+      "candidate_function_counts": {},
+      "manual_review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "njmzcD4eY94",
+      "title": "Steel Magnolias Cemetery",
+      "video_url": "https://www.youtube.com/watch?v=njmzcD4eY94",
+      "duration_bucket": "medium_3_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-02",
+          "playlist_title": "Greatest Movie Speeches",
+          "position": 25
+        }
+      ],
+      "transcript_segments": 0,
+      "selection_reasons": [
+        "playlist-02:medium_3_10m"
+      ],
+      "media_state": "derived_features_only",
+      "video_files": [],
+      "audio_files": [],
+      "feature_files": [
+        "njmzcD4eY94.json"
+      ],
+      "ledger_video_status": "failed:1",
+      "ledger_audio_status": "failed:1",
+      "candidate_function_counts": {},
+      "manual_review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "oMZZGzPg254",
+      "title": null,
+      "video_url": "https://www.youtube.com/watch?v=oMZZGzPg254",
+      "duration_bucket": "unknown_duration",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 402
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 486
+        }
+      ],
+      "transcript_segments": 0,
+      "selection_reasons": [
+        "playlist-01:unknown_duration",
+        "playlist-03:unknown_duration"
+      ],
+      "media_state": "raw_media_missing",
+      "video_files": [],
+      "audio_files": [],
+      "feature_files": [],
+      "ledger_video_status": "failed:1",
+      "ledger_audio_status": "failed:1",
+      "candidate_function_counts": {},
+      "manual_review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "pmAL79dnvu0",
+      "title": "ENGLISH SPEECH | KELLY & BEYONCÉ: Grabbing the Pen (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=pmAL79dnvu0",
+      "duration_bucket": "medium_3_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 386
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 471
+        }
+      ],
+      "transcript_segments": 147,
+      "selection_reasons": [
+        "playlist-01:medium_3_10m",
+        "playlist-03:medium_3_10m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "pmAL79dnvu0.mp4"
+      ],
+      "audio_files": [
+        "pmAL79dnvu0.m4a"
+      ],
+      "feature_files": [
+        "pmAL79dnvu0.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "call_to_action": 2,
+        "definition": 1,
+        "example": 4,
+        "question": 3,
+        "story_or_personal_experience": 1,
+        "unclassified": 136
+      },
+      "manual_review_status": "internal_bounded_review_complete_independent_review_pending"
+    },
+    {
+      "video_id": "qM-gZintWDc",
+      "title": "[Great Movie Scenes] Good Will Hunting - Park Scene",
+      "video_url": "https://www.youtube.com/watch?v=qM-gZintWDc",
+      "duration_bucket": "medium_3_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-02",
+          "playlist_title": "Greatest Movie Speeches",
+          "position": 36
+        }
+      ],
+      "transcript_segments": 108,
+      "selection_reasons": [
+        "playlist-02:medium_3_10m"
+      ],
+      "media_state": "derived_features_only",
+      "video_files": [],
+      "audio_files": [],
+      "feature_files": [
+        "qM-gZintWDc.json"
+      ],
+      "ledger_video_status": "failed:1",
+      "ledger_audio_status": "failed:1",
+      "candidate_function_counts": {
+        "question": 11,
+        "uncertainty_or_qualification": 10,
+        "unclassified": 88
+      },
+      "manual_review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "qOwYULOPuPs",
+      "title": "Mark Carney: Building Our Future",
+      "video_url": "https://www.youtube.com/watch?v=qOwYULOPuPs",
+      "duration_bucket": "long_over_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 401
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 485
+        }
+      ],
+      "transcript_segments": 0,
+      "selection_reasons": [
+        "user_seed"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "qOwYULOPuPs.mp4"
+      ],
+      "audio_files": [
+        "qOwYULOPuPs.m4a"
+      ],
+      "feature_files": [
+        "qOwYULOPuPs.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "call_to_action": 3,
+        "conclusion_or_summary": 1,
+        "contrast_or_disagreement": 2,
+        "definition": 1,
+        "example": 2,
+        "question": 8,
+        "uncertainty_or_qualification": 6,
+        "unclassified": 332
+      },
+      "manual_review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "r2kP2Pqdx6w",
+      "title": "ENGLISH SPEECH | ELON MUSK & JACK MA: Elon Musk & Jack Ma: Billionaires Debate (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=r2kP2Pqdx6w",
+      "duration_bucket": "long_over_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 100
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 124
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 125
+        }
+      ],
+      "transcript_segments": 368,
+      "selection_reasons": [
+        "playlist-01:long_over_10m",
+        "playlist-03:long_over_10m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "r2kP2Pqdx6w.mp4"
+      ],
+      "audio_files": [
+        "r2kP2Pqdx6w.m4a"
+      ],
+      "feature_files": [
+        "r2kP2Pqdx6w.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "call_to_action": 6,
+        "contrast_or_disagreement": 7,
+        "question": 16,
+        "story_or_personal_experience": 1,
+        "uncertainty_or_qualification": 22,
+        "unclassified": 319
+      },
+      "manual_review_status": "internal_bounded_review_complete_independent_review_pending"
+    },
+    {
+      "video_id": "tWhHf7IeFmo",
+      "title": null,
+      "video_url": "https://www.youtube.com/watch?v=tWhHf7IeFmo",
+      "duration_bucket": "unknown_duration",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 404
+        }
+      ],
+      "transcript_segments": 0,
+      "selection_reasons": [
+        "playlist-01:unknown_duration"
+      ],
+      "media_state": "raw_media_missing",
+      "video_files": [],
+      "audio_files": [],
+      "feature_files": [],
+      "ledger_video_status": "failed:1",
+      "ledger_audio_status": "failed:1",
+      "candidate_function_counts": {},
+      "manual_review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "u1gg_L-syCw",
+      "title": "ENGLISH SPEECH | OPRAH WINFREY: God use Me (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=u1gg_L-syCw",
+      "duration_bucket": "short_0_3m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 260
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 317
+        }
+      ],
+      "transcript_segments": 53,
+      "selection_reasons": [
+        "playlist-01:short_0_3m",
+        "playlist-03:short_0_3m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "u1gg_L-syCw.mp4"
+      ],
+      "audio_files": [
+        "u1gg_L-syCw.m4a"
+      ],
+      "feature_files": [
+        "u1gg_L-syCw.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "question": 1,
+        "uncertainty_or_qualification": 3,
+        "unclassified": 49
+      },
+      "manual_review_status": "internal_bounded_review_complete_independent_review_pending"
+    },
+    {
+      "video_id": "xRiwgtdyjQk",
+      "title": "ENGLISH SPEECH | DONALD TRUMP: Victory Speech 2024 (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=xRiwgtdyjQk",
+      "duration_bucket": "medium_3_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 149
+        },
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 185
+        }
+      ],
+      "transcript_segments": 201,
+      "selection_reasons": [
+        "playlist-01:medium_3_10m",
+        "playlist-03:medium_3_10m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "xRiwgtdyjQk.mp4"
+      ],
+      "audio_files": [
+        "xRiwgtdyjQk.m4a"
+      ],
+      "feature_files": [
+        "xRiwgtdyjQk.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {
+        "example": 1,
+        "question": 8,
+        "story_or_personal_experience": 1,
+        "uncertainty_or_qualification": 3,
+        "unclassified": 188
+      },
+      "manual_review_status": "internal_bounded_review_complete_independent_review_pending"
+    },
+    {
+      "video_id": "y0oWA2yVB3s",
+      "title": null,
+      "video_url": "https://www.youtube.com/watch?v=y0oWA2yVB3s",
+      "duration_bucket": "unknown_duration",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-01",
+          "playlist_title": "Learn English with Speeches",
+          "position": 403
+        }
+      ],
+      "transcript_segments": 0,
+      "selection_reasons": [
+        "playlist-01:unknown_duration"
+      ],
+      "media_state": "raw_media_missing",
+      "video_files": [],
+      "audio_files": [],
+      "feature_files": [],
+      "ledger_video_status": "failed:1",
+      "ledger_audio_status": "failed:1",
+      "candidate_function_counts": {},
+      "manual_review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "zKCjmtxgyNg",
+      "title": "ENGLISH SPEECH | JOAQUIN PHOENIX: Emotional Tribute (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=zKCjmtxgyNg",
+      "duration_bucket": "medium_3_10m",
+      "playlist_memberships": [
+        {
+          "source_id": "playlist-03",
+          "playlist_title": "The Best Speeches Ever",
+          "position": 466
+        }
+      ],
+      "transcript_segments": 0,
+      "selection_reasons": [
+        "playlist-03:medium_3_10m"
+      ],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "zKCjmtxgyNg.mp4"
+      ],
+      "audio_files": [
+        "zKCjmtxgyNg.m4a"
+      ],
+      "feature_files": [
+        "zKCjmtxgyNg.json"
+      ],
+      "ledger_video_status": "downloaded",
+      "ledger_audio_status": "downloaded",
+      "candidate_function_counts": {},
+      "manual_review_status": "not_manually_reviewed"
+    }
+  ],
+  "manual_review_queue": [
+    {
+      "video_id": "2fWJh-_UG5s",
+      "title": "ENGLISH SPEECH | MATTHEW MCCONAUGHEY: White House Speech (English Subtitles)",
+      "duration_bucket": "long_over_10m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 554,
+      "candidate_function_counts": {
+        "call_to_action": 12,
+        "contrast_or_disagreement": 1,
+        "question": 25,
+        "story_or_personal_experience": 1,
+        "uncertainty_or_qualification": 17,
+        "unclassified": 500
+      },
+      "selection_reasons": [
+        "playlist-01:long_over_10m",
+        "playlist-03:long_over_10m"
+      ],
+      "review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "3AIoHLr8nTI",
+      "title": "ENGLISH SPEECH | JUSTIN TRUDEAU: We’re All the Same (English Subtitles)",
+      "duration_bucket": "long_over_10m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 113,
+      "candidate_function_counts": {
+        "contrast_or_disagreement": 2,
+        "definition": 1,
+        "question": 10,
+        "story_or_personal_experience": 2,
+        "uncertainty_or_qualification": 7,
+        "unclassified": 92
+      },
+      "selection_reasons": [
+        "playlist-01:long_over_10m",
+        "playlist-03:long_over_10m"
+      ],
+      "review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "9fEurt2OZ0I",
+      "title": "ENGLISH SPEECH | JACK MA ALIBABA: We Never Give Up (English Subtitles)",
+      "duration_bucket": "short_0_3m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 40,
+      "candidate_function_counts": {
+        "contrast_or_disagreement": 1,
+        "question": 1,
+        "story_or_personal_experience": 2,
+        "uncertainty_or_qualification": 1,
+        "unclassified": 35
+      },
+      "selection_reasons": [
+        "playlist-01:short_0_3m",
+        "playlist-03:short_0_3m"
+      ],
+      "review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "AwA0Jnfj3ao",
+      "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
+      "duration_bucket": "long_over_10m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 239,
+      "candidate_function_counts": {
+        "call_to_action": 2,
+        "conclusion_or_summary": 1,
+        "contrast_or_disagreement": 7,
+        "definition": 1,
+        "question": 15,
+        "story_or_personal_experience": 4,
+        "uncertainty_or_qualification": 6,
+        "unclassified": 205
+      },
+      "selection_reasons": [
+        "playlist-01:long_over_10m",
+        "playlist-03:long_over_10m"
+      ],
+      "review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "C8-twwwTETE",
+      "title": "ENGLISH SPEECH | EMINEM & 50 CENT: Walk of Fame Speech (English Subtitles)",
+      "duration_bucket": "long_over_10m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 241,
+      "candidate_function_counts": {
+        "call_to_action": 1,
+        "contrast_or_disagreement": 1,
+        "question": 4,
+        "uncertainty_or_qualification": 8,
+        "unclassified": 228
+      },
+      "selection_reasons": [
+        "playlist-01:long_over_10m",
+        "playlist-03:long_over_10m"
+      ],
+      "review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "JdUq2opPY-Q",
+      "title": "Blade Runner - Roy Batty's monologue (Full HD)",
+      "duration_bucket": "short_0_3m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 17,
+      "candidate_function_counts": {
+        "unclassified": 17
+      },
+      "selection_reasons": [
+        "playlist-02:short_0_3m"
+      ],
+      "review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "OfwfTN1mEyM",
+      "title": "ENGLISH SPEECH | ELON MUSK: The Power of Solar Energy (English Subtitles)",
+      "duration_bucket": "medium_3_10m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 183,
+      "candidate_function_counts": {
+        "contrast_or_disagreement": 1,
+        "definition": 1,
+        "question": 11,
+        "story_or_personal_experience": 2,
+        "uncertainty_or_qualification": 9,
+        "unclassified": 160
+      },
+      "selection_reasons": [
+        "playlist-01:medium_3_10m",
+        "playlist-03:medium_3_10m"
+      ],
+      "review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "W-mgdUdOjhs",
+      "title": "Colonel Walter E. Kurtz (Marlon Brando)",
+      "duration_bucket": "medium_3_10m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 73,
+      "candidate_function_counts": {
+        "definition": 1,
+        "question": 3,
+        "story_or_personal_experience": 1,
+        "uncertainty_or_qualification": 1,
+        "unclassified": 67
+      },
+      "selection_reasons": [
+        "playlist-02:medium_3_10m"
+      ],
+      "review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "ZwMVMbmQBug",
+      "title": "I'm as mad as hell, and I'm not going to take this anymore! Speech from Network (1976)",
+      "duration_bucket": "medium_3_10m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 52,
+      "candidate_function_counts": {
+        "unclassified": 52
+      },
+      "selection_reasons": [
+        "playlist-02:medium_3_10m"
+      ],
+      "review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "aHXxveJTJoE",
+      "title": "The Muppet Movie: Showdown/Animal Saves the Day",
+      "duration_bucket": "medium_3_10m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 68,
+      "candidate_function_counts": {
+        "example": 1,
+        "question": 15,
+        "uncertainty_or_qualification": 1,
+        "unclassified": 51
+      },
+      "selection_reasons": [
+        "playlist-02:medium_3_10m"
+      ],
+      "review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "aXmM0VZv810",
+      "title": "ENGLISH SPEECH | ELON & JENSEN: Work Becomes Optional (English Subtitles)",
+      "duration_bucket": "long_over_10m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 670,
+      "candidate_function_counts": {
+        "call_to_action": 10,
+        "conclusion_or_summary": 1,
+        "example": 5,
+        "question": 31,
+        "story_or_personal_experience": 3,
+        "uncertainty_or_qualification": 20,
+        "unclassified": 600
+      },
+      "selection_reasons": [
+        "playlist-01:long_over_10m",
+        "playlist-03:long_over_10m"
+      ],
+      "review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "bR4tDSa3O10",
+      "title": "ENGLISH SPEECH | JENNIFER COOLIDGE: Find Your Own Path (English Subtitles)",
+      "duration_bucket": "long_over_10m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 352,
+      "candidate_function_counts": {
+        "call_to_action": 1,
+        "contrast_or_disagreement": 1,
+        "question": 8,
+        "story_or_personal_experience": 4,
+        "uncertainty_or_qualification": 8,
+        "unclassified": 330
+      },
+      "selection_reasons": [
+        "playlist-01:long_over_10m",
+        "playlist-03:long_over_10m"
+      ],
+      "review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "dPi40lQetew",
+      "title": "Jaws (1975) - The Head, the Tail, the Whole Damn Thing Scene (3/10) | Movieclips",
+      "duration_bucket": "short_0_3m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 36,
+      "candidate_function_counts": {
+        "question": 2,
+        "unclassified": 34
+      },
+      "selection_reasons": [
+        "playlist-02:short_0_3m"
+      ],
+      "review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "gDadfh0ZdBM",
+      "title": "The Matrix Meeting Morpheus Scene HD",
+      "duration_bucket": "medium_3_10m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 83,
+      "candidate_function_counts": {
+        "contrast_or_disagreement": 1,
+        "example": 3,
+        "question": 10,
+        "uncertainty_or_qualification": 1,
+        "unclassified": 68
+      },
+      "selection_reasons": [
+        "playlist-02:medium_3_10m"
+      ],
+      "review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "hZ0YhrgYejI",
+      "title": "ENGLISH SPEECH | NICK VUJICIC: If you fail, try again (English Subtitles)",
+      "duration_bucket": "short_0_3m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 31,
+      "candidate_function_counts": {
+        "question": 5,
+        "uncertainty_or_qualification": 1,
+        "unclassified": 26
+      },
+      "selection_reasons": [
+        "playlist-01:short_0_3m",
+        "playlist-03:short_0_3m"
+      ],
+      "review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "jxY2-YgAgm0",
+      "title": "ENGLISH SPEECH | MELANIA TRUMP: A Public Denial (English Subtitles)",
+      "duration_bucket": "medium_3_10m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 127,
+      "candidate_function_counts": {
+        "call_to_action": 1,
+        "contrast_or_disagreement": 1,
+        "example": 1,
+        "question": 4,
+        "unclassified": 120
+      },
+      "selection_reasons": [
+        "playlist-01:medium_3_10m",
+        "playlist-03:medium_3_10m"
+      ],
+      "review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "m92yvNscIAo",
+      "title": "Aliens Debriefing (1986) Edited",
+      "duration_bucket": "short_0_3m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 59,
+      "candidate_function_counts": {
+        "unclassified": 59
+      },
+      "selection_reasons": [
+        "playlist-02:short_0_3m"
+      ],
+      "review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "pmAL79dnvu0",
+      "title": "ENGLISH SPEECH | KELLY & BEYONCÉ: Grabbing the Pen (English Subtitles)",
+      "duration_bucket": "medium_3_10m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 147,
+      "candidate_function_counts": {
+        "call_to_action": 2,
+        "definition": 1,
+        "example": 4,
+        "question": 3,
+        "story_or_personal_experience": 1,
+        "unclassified": 136
+      },
+      "selection_reasons": [
+        "playlist-01:medium_3_10m",
+        "playlist-03:medium_3_10m"
+      ],
+      "review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "r2kP2Pqdx6w",
+      "title": "ENGLISH SPEECH | ELON MUSK & JACK MA: Elon Musk & Jack Ma: Billionaires Debate (English Subtitles)",
+      "duration_bucket": "long_over_10m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 368,
+      "candidate_function_counts": {
+        "call_to_action": 6,
+        "contrast_or_disagreement": 7,
+        "question": 16,
+        "story_or_personal_experience": 1,
+        "uncertainty_or_qualification": 22,
+        "unclassified": 319
+      },
+      "selection_reasons": [
+        "playlist-01:long_over_10m",
+        "playlist-03:long_over_10m"
+      ],
+      "review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "u1gg_L-syCw",
+      "title": "ENGLISH SPEECH | OPRAH WINFREY: God use Me (English Subtitles)",
+      "duration_bucket": "short_0_3m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 53,
+      "candidate_function_counts": {
+        "question": 1,
+        "uncertainty_or_qualification": 3,
+        "unclassified": 49
+      },
+      "selection_reasons": [
+        "playlist-01:short_0_3m",
+        "playlist-03:short_0_3m"
+      ],
+      "review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "xRiwgtdyjQk",
+      "title": "ENGLISH SPEECH | DONALD TRUMP: Victory Speech 2024 (English Subtitles)",
+      "duration_bucket": "medium_3_10m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 201,
+      "candidate_function_counts": {
+        "example": 1,
+        "question": 8,
+        "story_or_personal_experience": 1,
+        "uncertainty_or_qualification": 3,
+        "unclassified": 188
+      },
+      "selection_reasons": [
+        "playlist-01:medium_3_10m",
+        "playlist-03:medium_3_10m"
+      ],
+      "review_status": "not_manually_reviewed"
+    }
+  ],
+  "raw_media_only_queue": [
+    {
+      "video_id": "5i0u4jFmE78",
+      "title": "Gladiator - Maximus Decimus Meridius",
+      "video_url": "https://www.youtube.com/watch?v=5i0u4jFmE78",
+      "video_files": [
+        "5i0u4jFmE78.mp4"
+      ],
+      "audio_files": [
+        "5i0u4jFmE78.m4a"
+      ],
+      "feature_files": [
+        "5i0u4jFmE78.json"
+      ],
+      "transcript_segments": 0,
+      "review_status": "raw_media_present_but_no_retained_transcript"
+    },
+    {
+      "video_id": "JDfP3thQYrM",
+      "title": "ENGLISH SPEECH | KALKI KOECHLIN: Indian at Heart (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=JDfP3thQYrM",
+      "video_files": [
+        "JDfP3thQYrM.mp4"
+      ],
+      "audio_files": [
+        "JDfP3thQYrM.m4a"
+      ],
+      "feature_files": [
+        "JDfP3thQYrM.json"
+      ],
+      "transcript_segments": 0,
+      "review_status": "raw_media_present_but_no_retained_transcript"
+    },
+    {
+      "video_id": "KieuXXue2Ag",
+      "title": "ENGLISH SPEECH | MAHIRA KHAN: War Against War (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=KieuXXue2Ag",
+      "video_files": [
+        "KieuXXue2Ag.mp4"
+      ],
+      "audio_files": [
+        "KieuXXue2Ag.m4a"
+      ],
+      "feature_files": [
+        "KieuXXue2Ag.json"
+      ],
+      "transcript_segments": 0,
+      "review_status": "raw_media_present_but_no_retained_transcript"
+    },
+    {
+      "video_id": "UtJDpOUIEd8",
+      "title": "ENGLISH SPEECH | PRINCESS AMEERAH: Our Water, Our Life (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=UtJDpOUIEd8",
+      "video_files": [
+        "UtJDpOUIEd8.mp4"
+      ],
+      "audio_files": [
+        "UtJDpOUIEd8.m4a"
+      ],
+      "feature_files": [
+        "UtJDpOUIEd8.json"
+      ],
+      "transcript_segments": 0,
+      "review_status": "raw_media_present_but_no_retained_transcript"
+    },
+    {
+      "video_id": "Y0B32z3WwwA",
+      "title": "ENGLISH SPEECH | JACKIE CHAN: Become the Dragon (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=Y0B32z3WwwA",
+      "video_files": [
+        "Y0B32z3WwwA.mp4"
+      ],
+      "audio_files": [
+        "Y0B32z3WwwA.m4a"
+      ],
+      "feature_files": [
+        "Y0B32z3WwwA.json"
+      ],
+      "transcript_segments": 0,
+      "review_status": "raw_media_present_but_no_retained_transcript"
+    },
+    {
+      "video_id": "fBnAMUkNM2k",
+      "title": "Muniba Mazari Speech: I See My Ability | English Subtitles",
+      "video_url": "https://www.youtube.com/watch?v=fBnAMUkNM2k",
+      "video_files": [
+        "fBnAMUkNM2k.mp4"
+      ],
+      "audio_files": [
+        "fBnAMUkNM2k.m4a"
+      ],
+      "feature_files": [
+        "fBnAMUkNM2k.json"
+      ],
+      "transcript_segments": 0,
+      "review_status": "raw_media_present_but_no_retained_transcript"
+    },
+    {
+      "video_id": "qOwYULOPuPs",
+      "title": "Mark Carney: Building Our Future",
+      "video_url": "https://www.youtube.com/watch?v=qOwYULOPuPs",
+      "video_files": [
+        "qOwYULOPuPs.mp4"
+      ],
+      "audio_files": [
+        "qOwYULOPuPs.m4a"
+      ],
+      "feature_files": [
+        "qOwYULOPuPs.json"
+      ],
+      "transcript_segments": 0,
+      "review_status": "raw_media_present_but_no_retained_transcript"
+    },
+    {
+      "video_id": "zKCjmtxgyNg",
+      "title": "ENGLISH SPEECH | JOAQUIN PHOENIX: Emotional Tribute (English Subtitles)",
+      "video_url": "https://www.youtube.com/watch?v=zKCjmtxgyNg",
+      "video_files": [
+        "zKCjmtxgyNg.mp4"
+      ],
+      "audio_files": [
+        "zKCjmtxgyNg.m4a"
+      ],
+      "feature_files": [
+        "zKCjmtxgyNg.json"
+      ],
+      "transcript_segments": 0,
+      "review_status": "raw_media_present_but_no_retained_transcript"
+    }
+  ],
+  "limits": [
+    "Raw files prove local availability, not that a human inspected the delivery.",
+    "Derived features are measurements/proxies and do not establish speech function or audience effect.",
+    "The expansion is stratified but not a complete audiovisual census of the 395 transcript-reviewed videos.",
+    "Candidate function counts come from heuristic transcript retrieval and remain unvalidated."
+  ]
+}

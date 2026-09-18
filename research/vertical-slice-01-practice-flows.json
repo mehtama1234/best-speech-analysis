@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.0",
+  "flow_set_id": "vertical-slice-01-practice-flows",
+  "status": "draft_not_validated",
+  "shared_evidence_model": "Each flow points to a packet and lesson; packets retain exact evidence IDs and provisional limits.",
+  "accessibility": [
+    "typed response",
+    "spoken response with transcript/captions",
+    "asynchronous completion",
+    "no forced personal disclosure",
+    "listener restatement may be written"
+  ],
+  "flows": [
+    {
+      "flow_id": "practice-contrast-or-disagreement",
+      "pattern_id": "provisional-contrast_or_disagreement",
+      "evidence_packet": "research/vertical-slice-01-contrast-or-disagreement.json",
+      "lesson": "writeups/vertical-slice-01-lesson-contrast.md",
+      "status": "draft_not_validated",
+      "input_mode": [
+        "typed",
+        "spoken",
+        "captioned"
+      ],
+      "steps": [
+        {
+          "id": "choose_job",
+          "prompt": "disagree safely or show a change in reasoning without confusing textual contrast with interpersonal disagreement."
+        },
+        {
+          "id": "practice",
+          "prompt": "State A, state B, explain the consequence, then name the limit."
+        },
+        {
+          "id": "self_check",
+          "prompt": "Run the linked lesson self-check."
+        },
+        {
+          "id": "listener_check",
+          "prompt": "Ask a second listener to restate the intended point or classify the response."
+        }
+      ],
+      "expected_output": "A two-sentence comparison plus one boundary.",
+      "safety_boundary": "Do not invent an opponent or turn a difference into a motive claim.",
+      "success_criteria": [
+        "underlying communication job is identifiable",
+        "response performs the choice rather than only repeating a marker",
+        "limit or non-fit condition is stated",
+        "learner can revise after feedback"
+      ],
+      "outcome_claim_boundary": "Teachability is not evidence of improved trust, memory, persuasion or action."
+    },
+    {
+      "flow_id": "practice-example",
+      "pattern_id": "provisional-example",
+      "evidence_packet": "research/vertical-slice-01-example.json",
+      "lesson": "writeups/vertical-slice-01-lesson-example.md",
+      "status": "draft_not_validated",
+      "input_mode": [
+        "typed",
+        "spoken",
+        "captioned"
+      ],
+      "steps": [
+        {
+          "id": "choose_job",
+          "prompt": "make an abstract or general claim concrete without treating an illustration as proof."
+        },
+        {
+          "id": "practice",
+          "prompt": "State a general claim, give one labeled case, connect it to the claim, then state what it does not prove."
+        },
+        {
+          "id": "self_check",
+          "prompt": "Run the linked lesson self-check."
+        },
+        {
+          "id": "listener_check",
+          "prompt": "Ask a second listener to restate the intended point or classify the response."
+        }
+      ],
+      "expected_output": "A claim-case-connection-limit response.",
+      "safety_boundary": "Do not expose private details or treat one vivid case as representative proof.",
+      "success_criteria": [
+        "underlying communication job is identifiable",
+        "response performs the choice rather than only repeating a marker",
+        "limit or non-fit condition is stated",
+        "learner can revise after feedback"
+      ],
+      "outcome_claim_boundary": "Teachability is not evidence of improved trust, memory, persuasion or action."
+    },
+    {
+      "flow_id": "practice-story",
+      "pattern_id": "provisional-story_or_personal_experience",
+      "evidence_packet": "research/vertical-slice-01-story.json",
+      "lesson": "writeups/vertical-slice-01-lesson-story.md",
+      "status": "draft_not_validated",
+      "input_mode": [
+        "typed",
+        "spoken",
+        "captioned"
+      ],
+      "steps": [
+        {
+          "id": "choose_job",
+          "prompt": "use bounded personal detail to make an idea concrete without treating autobiography as universal proof."
+        },
+        {
+          "id": "practice",
+          "prompt": "State the point, tell a bounded event, connect its meaning, and name what it cannot establish."
+        },
+        {
+          "id": "self_check",
+          "prompt": "Run the linked lesson self-check."
+        },
+        {
+          "id": "listener_check",
+          "prompt": "Ask a second listener to restate the intended point or classify the response."
+        }
+      ],
+      "expected_output": "A short event with time/place/action and a non-universal limit.",
+      "safety_boundary": "Personal disclosure is optional; use anonymous, hypothetical or direct explanation when safer.",
+      "success_criteria": [
+        "underlying communication job is identifiable",
+        "response performs the choice rather than only repeating a marker",
+        "limit or non-fit condition is stated",
+        "learner can revise after feedback"
+      ],
+      "outcome_claim_boundary": "Teachability is not evidence of improved trust, memory, persuasion or action."
+    },
+    {
+      "flow_id": "practice-uncertainty",
+      "pattern_id": "provisional-uncertainty_or_qualification",
+      "evidence_packet": "research/vertical-slice-01-uncertainty.json",
+      "lesson": "writeups/vertical-slice-01-lesson-uncertainty.md",
+      "status": "draft_not_validated",
+      "input_mode": [
+        "typed",
+        "spoken",
+        "captioned"
+      ],
+      "steps": [
+        {
+          "id": "choose_job",
+          "prompt": "state uncertainty, possibility or recommendation limits precisely without hiding the main point behind vague hedging."
+        },
+        {
+          "id": "practice",
+          "prompt": "Label the claim type, state it plainly, add the smallest qualifier, and name what would change it."
+        },
+        {
+          "id": "self_check",
+          "prompt": "Run the linked lesson self-check."
+        },
+        {
+          "id": "listener_check",
+          "prompt": "Ask a second listener to restate the intended point or classify the response."
+        }
+      ],
+      "expected_output": "A calibrated claim with evidence basis and revision condition.",
+      "safety_boundary": "Do not use vague hedging to evade accountability or present interpretation as fact.",
+      "success_criteria": [
+        "underlying communication job is identifiable",
+        "response performs the choice rather than only repeating a marker",
+        "limit or non-fit condition is stated",
+        "learner can revise after feedback"
+      ],
+      "outcome_claim_boundary": "Teachability is not evidence of improved trust, memory, persuasion or action."
+    },
+    {
+      "flow_id": "practice-conclusion",
+      "pattern_id": "provisional-conclusion_or_summary",
+      "evidence_packet": "research/vertical-slice-01-conclusion.json",
+      "lesson": "writeups/vertical-slice-01-lesson-conclusion.md",
+      "status": "draft_not_validated",
+      "input_mode": [
+        "typed",
+        "spoken",
+        "captioned"
+      ],
+      "steps": [
+        {
+          "id": "choose_job",
+          "prompt": "close or compress an explanation so the listener can state the takeaway without mistaking a marker for proof."
+        },
+        {
+          "id": "practice",
+          "prompt": "Explain a small topic, mark the takeaway, give its support, retain the limit, and offer a next step."
+        },
+        {
+          "id": "self_check",
+          "prompt": "Run the linked lesson self-check."
+        },
+        {
+          "id": "listener_check",
+          "prompt": "Ask a second listener to restate the intended point or classify the response."
+        }
+      ],
+      "expected_output": "A takeaway-support-limit-next-step close.",
+      "safety_boundary": "Do not compress away essential qualifications or force one conclusion where several remain valid.",
+      "success_criteria": [
+        "underlying communication job is identifiable",
+        "response performs the choice rather than only repeating a marker",
+        "limit or non-fit condition is stated",
+        "learner can revise after feedback"
+      ],
+      "outcome_claim_boundary": "Teachability is not evidence of improved trust, memory, persuasion or action."
+    }
+  ],
+  "learner_check": "research/vertical-slice-01-learner-check.json",
+  "source_sha256": {
+    "research/vertical-slice-01-contrast-or-disagreement.json": "aee829f5568303063f65cefe39621eac646278511c360511548335451636793d",
+    "research/vertical-slice-01-example.json": "fc5baba3f91a422275755abe3a01608e6d3dcbbb7cf53b1ecb4773b3cec7c7cd",
+    "research/vertical-slice-01-story.json": "e005bb3aa286b387508fefdbf1c437d362c2de57e4ab136d74f54ff0c173504d",
+    "research/vertical-slice-01-uncertainty.json": "4fb684e9cc17d30dd567fe6cc660652e0eca3130e100114a3762001c02e45987",
+    "research/vertical-slice-01-conclusion.json": "954ef169e3ea4d8b0ef7c1e6235bd760c2bd45a63d79554920c9fc9a6eec971c"
+  }
+}

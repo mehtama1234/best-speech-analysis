@@ -1,0 +1,61 @@
+{
+  "schema_version": "1.0",
+  "slice_id": "vertical-slice-02",
+  "status": "candidate_not_validated",
+  "purpose": "Next evidence-to-practice slice for questions, definitions/reformulations and calls to action.",
+  "claim_boundary": "This slice contains candidate packets and draft lessons only. It does not establish independent label validity, event independence, learner teachability or communication effects.",
+  "candidate_plan": "research/vertical-slice-02-candidate-plan.json",
+  "patterns": [
+    {
+      "pattern_id": "candidate-question",
+      "packet": "research/vertical-slice-02-question-draft.json",
+      "lesson": "writeups/vertical-slice-02-lesson-question-draft.md"
+    },
+    {
+      "pattern_id": "candidate-definition_or_reformulation",
+      "packet": "research/vertical-slice-02-definition-draft.json",
+      "lesson": "writeups/vertical-slice-02-lesson-definition-draft.md"
+    },
+    {
+      "pattern_id": "candidate-call_to_action",
+      "packet": "research/vertical-slice-02-call-to-action-draft.json",
+      "lesson": "writeups/vertical-slice-02-lesson-call-to-action-draft.md"
+    }
+  ],
+  "validator": "scripts/validate_vertical_slice_02_drafts.py",
+  "manual_multimodal_review": "research/vertical-slice-02-manual-multimodal-review.json",
+ "learner_task_bank": "research/vertical-slice-02-learner-task-bank.json",
+ "learner_check_draft": "writeups/vertical-slice-02-learner-check-draft.md",
+ "learner_check_html": "writeups/vertical-slice-02-learner-check.html",
+ "learner_check_validator": "scripts/validate_vertical_slice_02_learner_record.py",
+ "learner_check_browser_smoke_test": "scripts/check_vertical_slice_02_learner_browser.py",
+  "review_workbook": "research/vertical-slice-02-independent-review-workbook.json",
+  "review_workbook_writeup": "writeups/vertical-slice-02-independent-review-workbook.md",
+  "review_workbook_html": "writeups/vertical-slice-02-independent-review-workbook.html",
+  "review_request": "writeups/vertical-slice-02-independent-review-request.md",
+  "review_browser_smoke_test": "scripts/check_vertical_slice_02_review_browser.py",
+  "independent_review": "not_started",
+  "learner_check": "not_started",
+  "next_action": "Complete packet-level source/event, multimodal, independent-review and learner gates before any promotion decision.",
+  "source_sha256": {
+    "research/vertical-slice-02-candidate-plan.json": "bf5ed0ad7278665c98035cc7a9968e5a9908ea1688bea694b276ae34ab2473f7",
+    "research/vertical-slice-02-question-draft.json": "5c6fa973614f1ce41f938b026013748e0ed3e06fa11a36014a08c37dfcc46a99",
+    "research/vertical-slice-02-definition-draft.json": "8f6ab13ee52dcdb6bd44da1a96cfebfc6c886a8951d9709d7e1f8556466f36d4",
+    "research/vertical-slice-02-call-to-action-draft.json": "52379196355f1b6f60d77b74b16078f663308bc40ab3a54ee037e990099fb69f",
+    "research/vertical-slice-02-manual-multimodal-review.json": "f4f6717b0c211b1c9ff259b0203c3e2f2fa05aeed0be0c5e858c68180e354146",
+    "research/vertical-slice-02-learner-task-bank.json": "fcf76e80280020b54e1f4c066f91cf67f905bf9f40c38cf82007cac9de748a6f",
+    "research/vertical-slice-02-independent-review-workbook.json": "14ed1a68afed77e5ef96c9bf51a4c5fd9f646dd33ab6a4fc27c60bab30aa94e7",
+    "writeups/vertical-slice-02-candidate-plan.md": "dc91278a885b661b2ed180380c798fdd9d25b3b55ad7848a67ada198ff0b2943",
+    "writeups/vertical-slice-02-lesson-question-draft.md": "839867f0391fd0f2589ca2a2df10d4bc8993011d34cddf23a032b2dd4e7f03ff",
+    "writeups/vertical-slice-02-lesson-definition-draft.md": "abfa80940f17c93b2585de0fcee98a56cfd318090d090549862b3f7b5ba15f10",
+    "writeups/vertical-slice-02-lesson-call-to-action-draft.md": "06295b2e7a77b6642880b008d04cdb28c794fee8d3a5feac4b4e624e62e4d04a",
+    "writeups/vertical-slice-02-manual-multimodal-review.md": "86fb748a2f3603b743f634ffb4534e013422ac00ea1fa3ca0a410f65429a1c4c",
+    "writeups/vertical-slice-02-learner-check-draft.md": "a58539a0b6d96a9220968bfd41a4fb0cd7bf60718afbd3d976a70e9f4e217212",
+    "writeups/vertical-slice-02-independent-review-workbook.md": "fad63da1095dbbe7151da731ca9563a3ab213ae556a2df3b3da27c344f315b2d",
+    "writeups/vertical-slice-02-independent-review-workbook.html": "cd57362ace056993fcb753148efe6095c9fadd8cd021860177c0b2f59782f1c2",
+    "writeups/vertical-slice-02-independent-review-request.md": "63043f02b898aba703a60e414f7f54305694f3a5be409e9700d06a3f61ebf3f0",
+    "scripts/validate_vertical_slice_02_drafts.py": "d48f907ce1ec34ccdce4bcb71d6f04110e30968fd8473228a991515ecb00d8da",
+    "scripts/build_vertical_slice_02_review_workbook.py": "2108d0f70bc9c283fc56f44a94462b035f35aeca5f3d4142d699085dc1075221",
+    "scripts/check_vertical_slice_02_review_browser.py": "9495683ddd08ff0b7cb1226d21c7dd7330fe3ae3c3dd2baf7f564de2ecdde63f"
+  }
+}

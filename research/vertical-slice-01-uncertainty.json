@@ -1,0 +1,610 @@
+{
+  "schema_version": "1.0",
+  "packet_id": "vertical-slice-01-uncertainty",
+  "pattern_id": "provisional-uncertainty_or_qualification",
+  "status": "evidence_packet_partial_not_validated",
+  "communication_job": "state uncertainty, possibility or recommendation limits precisely without hiding the main point behind vague hedging.",
+  "practice_hypothesis": "Use explicit qualifiers such as 'I think', 'might', or 'probably' when a claim is a view, prediction, or interpretation rather than an established fact.",
+  "evidence_level": "provisional_practice_hypothesis",
+  "source_policy": "Reviewed transcript segments and coarse aligned audio proxies show qualification markers and context; they do not establish factuality, speaker certainty, sincerity, listener calibration or outcome effects.",
+  "eligibility_snapshot": {
+    "reviewed_count": 9,
+    "supported_count": 8,
+    "support_rate": 0.889,
+    "distinct_video_count": 7,
+    "distinct_uploader_count": 1,
+    "minimum_supported_examples": 5,
+    "minimum_distinct_videos": 4
+  },
+  "representative_examples": [
+    {
+      "annotation_id": "review-072",
+      "evidence_id": "2fWJh-_UG5s:00160",
+      "video_id": "2fWJh-_UG5s",
+      "title": "ENGLISH SPEECH | MATTHEW MCCONAUGHEY: White House Speech (English Subtitles)",
+      "channel": "English Speeches",
+      "start_seconds": 362.16,
+      "end_seconds": 366.96,
+      "url": "https://www.youtube.com/watch?v=2fWJh-_UG5s&t=362",
+      "text": "maybe that would make",
+      "reviewed_speech_function": "speculative_empathy",
+      "confidence": "high",
+      "measurement_status": "aligned_features_available",
+      "context": [
+        {
+          "evidence_id": "2fWJh-_UG5s:00158",
+          "start_seconds": 357.84,
+          "end_seconds": 362.16,
+          "text": "aletheia's heart with us and said if we"
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00159",
+          "start_seconds": 359.68,
+          "end_seconds": 364.0,
+          "text": "could share it that somehow"
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00160",
+          "start_seconds": 362.16,
+          "end_seconds": 366.96,
+          "text": "maybe that would make"
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00161",
+          "start_seconds": 364.0,
+          "end_seconds": 368.639,
+          "text": "aletha smile in heaven they told us that"
+        },
+        {
+          "evidence_id": "2fWJh-_UG5s:00162",
+          "start_seconds": 366.96,
+          "end_seconds": 370.16,
+          "text": "showing someone else a lethia's art"
+        }
+      ],
+      "interpretation": {
+        "supported": true,
+        "subtype": "reported_hypothetical_consequence",
+        "view_attribution": "reported_other_people_text",
+        "reason": "The surrounding clauses say Ryan and Jessica said sharing the art might have a hoped-for consequence. The qualification is in reported speech, not evidence of the narrator's own belief strength. No afterlife or emotional-response claim is validated."
+      },
+      "audio_measurement": {
+        "audio_window_count": 5,
+        "mean_rms_db": -20.493,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.09369,
+        "mean_spectral_centroid_hz": 483.715,
+        "mean_pitch_hz_proxy": 293.75,
+        "mean_pitch_confidence_proxy": 0.13935,
+        "words_per_second_proxy": 0.833,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0
+      },
+      "audio_measurement_status": "rms_zcr_spectral_centroid_and_coarse_spectral_pitch_proxy; not_a_validated_pitch_tracker",
+      "visual_measurement_status": "scene_pixel_features_only; face_expression_not_analyzed"
+    },
+    {
+      "annotation_id": "review-042",
+      "evidence_id": "3AIoHLr8nTI:00008",
+      "video_id": "3AIoHLr8nTI",
+      "title": "ENGLISH SPEECH | JUSTIN TRUDEAU: We’re All the Same (English Subtitles)",
+      "channel": "English Speeches",
+      "start_seconds": 91.12,
+      "end_seconds": 100.08,
+      "url": "https://www.youtube.com/watch?v=3AIoHLr8nTI&t=91",
+      "text": "This group is truly diverse in every possible way. And I think that is an extraordinarily",
+      "reviewed_speech_function": "epistemic_hedge",
+      "confidence": "high",
+      "measurement_status": "aligned_features_available",
+      "context": [
+        {
+          "evidence_id": "3AIoHLr8nTI:00006",
+          "start_seconds": 65.84,
+          "end_seconds": 73.04,
+          "text": "Among the many things I admire about NYU, is that about a fifth of the students are international."
+        },
+        {
+          "evidence_id": "3AIoHLr8nTI:00007",
+          "start_seconds": 79.84,
+          "end_seconds": 85.84,
+          "text": "And a similar proportion are the very first in their families to go to college."
+        },
+        {
+          "evidence_id": "3AIoHLr8nTI:00008",
+          "start_seconds": 91.12,
+          "end_seconds": 100.08,
+          "text": "This group is truly diverse in every possible way. And I think that is an extraordinarily"
+        },
+        {
+          "evidence_id": "3AIoHLr8nTI:00009",
+          "start_seconds": 100.08,
+          "end_seconds": 109.84,
+          "text": "valuable and important thing. When I graduated in the early 1990s, I went on a trip around the world"
+        },
+        {
+          "evidence_id": "3AIoHLr8nTI:00010",
+          "start_seconds": 109.84,
+          "end_seconds": 115.76,
+          "text": "with a few good friends — who actually remain good friends to this day, which is sort of a miracle."
+        }
+      ],
+      "interpretation": {
+        "supported": true,
+        "subtype": "opinion_framed_evaluation",
+        "view_attribution": "current_turn_text",
+        "reason": "After describing the group's diversity, 'I think' introduces an evaluation of its value. This marks the evaluation as a view; it does not establish weak conviction or internal uncertainty."
+      },
+      "audio_measurement": {
+        "audio_window_count": 10,
+        "mean_rms_db": -18.437,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.11846,
+        "mean_spectral_centroid_hz": 668.199,
+        "mean_pitch_hz_proxy": 278.125,
+        "mean_pitch_confidence_proxy": 0.20537,
+        "words_per_second_proxy": 1.786,
+        "transcript_gap_before_seconds": 5.28,
+        "transcript_gap_after_seconds": 0.0
+      },
+      "audio_measurement_status": "rms_zcr_spectral_centroid_and_coarse_spectral_pitch_proxy; not_a_validated_pitch_tracker",
+      "visual_measurement_status": "scene_pixel_features_only; face_expression_not_analyzed"
+    },
+    {
+      "annotation_id": "review-073",
+      "evidence_id": "3AIoHLr8nTI:00074",
+      "video_id": "3AIoHLr8nTI",
+      "title": "ENGLISH SPEECH | JUSTIN TRUDEAU: We’re All the Same (English Subtitles)",
+      "channel": "English Speeches",
+      "start_seconds": 665.84,
+      "end_seconds": 673.84,
+      "url": "https://www.youtube.com/watch?v=3AIoHLr8nTI&t=665",
+      "text": "from their leaders today and tomorrow? Now, I think you need to be brave.",
+      "reviewed_speech_function": "hedged_recommendation",
+      "confidence": "high",
+      "measurement_status": "aligned_features_available",
+      "context": [
+        {
+          "evidence_id": "3AIoHLr8nTI:00072",
+          "start_seconds": 645.92,
+          "end_seconds": 656.32,
+          "text": "past few hours, days, weeks and years. Leaders of tomorrow. Leaders of today. But what does it mean?"
+        },
+        {
+          "evidence_id": "3AIoHLr8nTI:00073",
+          "start_seconds": 657.6,
+          "end_seconds": 665.12,
+          "text": "What attributes does a 21st century leader need to have? What do people need most"
+        },
+        {
+          "evidence_id": "3AIoHLr8nTI:00074",
+          "start_seconds": 665.84,
+          "end_seconds": 673.84,
+          "text": "from their leaders today and tomorrow? Now, I think you need to be brave."
+        },
+        {
+          "evidence_id": "3AIoHLr8nTI:00075",
+          "start_seconds": 674.88,
+          "end_seconds": 681.28,
+          "text": "Really brave. And I know, when you think of courageous leaders,"
+        },
+        {
+          "evidence_id": "3AIoHLr8nTI:00076",
+          "start_seconds": 681.28,
+          "end_seconds": 688.96,
+          "text": "you think of those folks who stood implacably and fearlessly, anchored in their sense of rightness,"
+        }
+      ],
+      "interpretation": {
+        "supported": true,
+        "subtype": "opinion_framed_advice_with_reinforcement",
+        "view_attribution": "current_turn_text",
+        "reason": "A question about leadership is answered with 'I think you need to be brave', followed by 'Really brave'. The viewpoint marker coexists with textually reinforced advice; it does not prove hesitation."
+      },
+      "audio_measurement": {
+        "audio_window_count": 9,
+        "mean_rms_db": -23.957,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.10624,
+        "mean_spectral_centroid_hz": 814.03,
+        "mean_pitch_hz_proxy": 270.833,
+        "mean_pitch_confidence_proxy": 0.19617,
+        "words_per_second_proxy": 1.75,
+        "transcript_gap_before_seconds": 0.72,
+        "transcript_gap_after_seconds": 1.04
+      },
+      "audio_measurement_status": "rms_zcr_spectral_centroid_and_coarse_spectral_pitch_proxy; not_a_validated_pitch_tracker",
+      "visual_measurement_status": "scene_pixel_features_only; face_expression_not_analyzed"
+    },
+    {
+      "annotation_id": "review-043",
+      "evidence_id": "9fEurt2OZ0I:00020",
+      "video_id": "9fEurt2OZ0I",
+      "title": "ENGLISH SPEECH | JACK MA ALIBABA: We Never Give Up (English Subtitles)",
+      "channel": "English Speeches",
+      "start_seconds": 66.159,
+      "end_seconds": 72.159,
+      "url": "https://www.youtube.com/watch?v=9fEurt2OZ0I&t=66",
+      "text": "sorry now I think we have to get used to",
+      "reviewed_speech_function": "qualified_recommendation",
+      "confidence": "high",
+      "measurement_status": "aligned_features_available",
+      "context": [
+        {
+          "evidence_id": "9fEurt2OZ0I:00018",
+          "start_seconds": 60.44,
+          "end_seconds": 66.159,
+          "text": "Harvard for 10 times"
+        },
+        {
+          "evidence_id": "9fEurt2OZ0I:00019",
+          "start_seconds": 63.0,
+          "end_seconds": 69.159,
+          "text": "rejected I know be rejected I that's"
+        },
+        {
+          "evidence_id": "9fEurt2OZ0I:00020",
+          "start_seconds": 66.159,
+          "end_seconds": 72.159,
+          "text": "sorry now I think we have to get used to"
+        },
+        {
+          "evidence_id": "9fEurt2OZ0I:00021",
+          "start_seconds": 69.159,
+          "end_seconds": 74.68,
+          "text": "it we're not that good even today we"
+        },
+        {
+          "evidence_id": "9fEurt2OZ0I:00022",
+          "start_seconds": 72.159,
+          "end_seconds": 76.119,
+          "text": "still have a lot of people reject us I I"
+        }
+      ],
+      "interpretation": {
+        "supported": true,
+        "subtype": "opinion_framed_recommendation",
+        "view_attribution": "current_turn_text",
+        "reason": "Following repeated rejection in the account, 'I think' frames the recommendation to get used to rejection. 'Have to' still expresses necessity. No softness of vocal delivery is inferred."
+      },
+      "audio_measurement": {
+        "audio_window_count": 7,
+        "mean_rms_db": -25.918,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.08987,
+        "mean_spectral_centroid_hz": 525.238,
+        "mean_pitch_hz_proxy": 198.661,
+        "mean_pitch_confidence_proxy": 0.12926,
+        "words_per_second_proxy": 1.667,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0
+      },
+      "audio_measurement_status": "rms_zcr_spectral_centroid_and_coarse_spectral_pitch_proxy; not_a_validated_pitch_tracker",
+      "visual_measurement_status": "scene_pixel_features_only; face_expression_not_analyzed"
+    },
+    {
+      "annotation_id": "review-074",
+      "evidence_id": "C8-twwwTETE:00045",
+      "video_id": "C8-twwwTETE",
+      "title": "ENGLISH SPEECH | EMINEM & 50 CENT: Walk of Fame Speech (English Subtitles)",
+      "channel": "English Speeches",
+      "start_seconds": 98.88,
+      "end_seconds": 105.2,
+      "url": "https://www.youtube.com/watch?v=C8-twwwTETE&t=98",
+      "text": "how into him I was right but I think I",
+      "reviewed_speech_function": "self_correction_qualification",
+      "confidence": "high",
+      "measurement_status": "aligned_features_available",
+      "context": [
+        {
+          "evidence_id": "C8-twwwTETE:00043",
+          "start_seconds": 94.74,
+          "end_seconds": 98.88,
+          "text": "uh"
+        },
+        {
+          "evidence_id": "C8-twwwTETE:00044",
+          "start_seconds": 96.36,
+          "end_seconds": 102.119,
+          "text": "I kind of was trying to show him like"
+        },
+        {
+          "evidence_id": "C8-twwwTETE:00045",
+          "start_seconds": 98.88,
+          "end_seconds": 105.2,
+          "text": "how into him I was right but I think I"
+        },
+        {
+          "evidence_id": "C8-twwwTETE:00046",
+          "start_seconds": 102.119,
+          "end_seconds": 105.2,
+          "text": "might have probably overdid it"
+        },
+        {
+          "evidence_id": "C8-twwwTETE:00047",
+          "start_seconds": 105.96,
+          "end_seconds": 109.38,
+          "text": "um"
+        }
+      ],
+      "interpretation": {
+        "supported": true,
+        "subtype": "qualified_retrospective_self_evaluation",
+        "view_attribution": "current_turn_text",
+        "reason": "The narrator describes talking at length to someone, then uses 'I think' and 'might have probably' to evaluate whether it was excessive. The continuation is needed to complete the clause; this is not an acoustic uncertainty judgment."
+      },
+      "audio_measurement": {
+        "audio_window_count": 8,
+        "mean_rms_db": -29.39,
+        "speech_activity_fraction": 0.875,
+        "mean_zero_crossing_rate": 0.11267,
+        "mean_spectral_centroid_hz": 841.932,
+        "mean_pitch_hz_proxy": 316.964,
+        "mean_pitch_confidence_proxy": 0.12236,
+        "words_per_second_proxy": 1.582,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0
+      },
+      "audio_measurement_status": "rms_zcr_spectral_centroid_and_coarse_spectral_pitch_proxy; not_a_validated_pitch_tracker",
+      "visual_measurement_status": "scene_pixel_features_only; face_expression_not_analyzed"
+    }
+  ],
+  "counterexamples": [
+    {
+      "control_id": "existing-counterexample-review-003",
+      "annotation_id": "review-003",
+      "evidence_id": "-54zUwySKCg:00122",
+      "video_id": "-54zUwySKCg",
+      "communication_job": "rhetorical_question",
+      "qualification_pattern_present": false,
+      "direct_observation": "Under the claim-qualification definition, 'could' describes hypothetical capacity inside a narrated question. No factual assertion or prediction is explicitly hedged in this context. A broader wondering category could differ; no internal uncertainty is inferred.",
+      "context": [
+        {
+          "evidence_id": "-54zUwySKCg:00120",
+          "start_seconds": 605.62,
+          "end_seconds": 610.52,
+          "text": "to collect pocket change in order to helpother people in need."
+        },
+        {
+          "evidence_id": "-54zUwySKCg:00121",
+          "start_seconds": 610.52,
+          "end_seconds": 613.72,
+          "text": "She raised a thousand dollars all by herselfand I thought, well if that little 9-year-old"
+        },
+        {
+          "evidence_id": "-54zUwySKCg:00122",
+          "start_seconds": 613.72,
+          "end_seconds": 618.18,
+          "text": "girl with a bucket and big heart could dothat, I wonder what I could do?"
+        },
+        {
+          "evidence_id": "-54zUwySKCg:00123",
+          "start_seconds": 618.18,
+          "end_seconds": 625.05,
+          "text": "So I asked for our viewers to take up theirown change collection and in one month, just"
+        },
+        {
+          "evidence_id": "-54zUwySKCg:00124",
+          "start_seconds": 625.05,
+          "end_seconds": 630.32,
+          "text": "from pennies and nickels and dimes, we raisedmore than three million dollars that we used"
+        }
+      ]
+    },
+    {
+      "control_id": "firm-claim-control-review-018",
+      "annotation_id": "review-018",
+      "evidence_id": "aXmM0VZv810:00274",
+      "video_id": "aXmM0VZv810",
+      "communication_job": "example_marker",
+      "qualification_pattern_present": false,
+      "direct_observation": "The phrase 'for example' introduces a concrete case.",
+      "context": [
+        {
+          "evidence_id": "aXmM0VZv810:00272",
+          "start_seconds": 669.44,
+          "end_seconds": 673.519,
+          "text": "give you give you some evidence is that"
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00273",
+          "start_seconds": 672.079,
+          "end_seconds": 676.64,
+          "text": "uh and I was just telling Elon about"
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00274",
+          "start_seconds": 673.519,
+          "end_seconds": 679.839,
+          "text": "this earlier radiology for example has"
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00275",
+          "start_seconds": 676.64,
+          "end_seconds": 681.36,
+          "text": "largely been uh converted to AIdriven"
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00276",
+          "start_seconds": 679.839,
+          "end_seconds": 684.48,
+          "text": "radiology and there's some really great"
+        }
+      ]
+    },
+    {
+      "control_id": "firm-claim-control-review-031",
+      "annotation_id": "review-031",
+      "evidence_id": "aXmM0VZv810:00596",
+      "video_id": "aXmM0VZv810",
+      "communication_job": "statistical_example_introduction",
+      "qualification_pattern_present": false,
+      "direct_observation": "'Let me give you one statistic' explicitly announces a concrete supporting case after a broad time claim.",
+      "context": [
+        {
+          "evidence_id": "aXmM0VZv810:00594",
+          "start_seconds": 1415.12,
+          "end_seconds": 1418.24,
+          "text": "moving to accelerated computing for some"
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00595",
+          "start_seconds": 1416.96,
+          "end_seconds": 1420.96,
+          "text": "time. We've been pushing this now for"
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00596",
+          "start_seconds": 1418.24,
+          "end_seconds": 1423.6,
+          "text": "some over 20 years. Let me give you one"
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00597",
+          "start_seconds": 1420.96,
+          "end_seconds": 1427.12,
+          "text": "statistic. I was just at supercomputing"
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00598",
+          "start_seconds": 1423.6,
+          "end_seconds": 1430.48,
+          "text": "six years ago. Uh"
+        }
+      ]
+    },
+    {
+      "control_id": "firm-claim-control-review-005",
+      "annotation_id": "review-005",
+      "evidence_id": "-54zUwySKCg:00196",
+      "video_id": "-54zUwySKCg",
+      "communication_job": "conclusion_or_charge",
+      "qualification_pattern_present": false,
+      "direct_observation": "The phrase 'The point is' explicitly marks a central takeaway.",
+      "context": [
+        {
+          "evidence_id": "-54zUwySKCg:00194",
+          "start_seconds": 981.279,
+          "end_seconds": 985.06,
+          "text": "Or maybe you simply want to collect some change."
+        },
+        {
+          "evidence_id": "-54zUwySKCg:00195",
+          "start_seconds": 985.06,
+          "end_seconds": 989.73,
+          "text": "Your parents would appreciate that about now."
+        },
+        {
+          "evidence_id": "-54zUwySKCg:00196",
+          "start_seconds": 989.73,
+          "end_seconds": 996.649,
+          "text": "The point is your generation is charged withthis task of breaking through what the body"
+        },
+        {
+          "evidence_id": "-54zUwySKCg:00197",
+          "start_seconds": 996.649,
+          "end_seconds": 1001.11,
+          "text": "politic has thus far made impervious to change."
+        },
+        {
+          "evidence_id": "-54zUwySKCg:00198",
+          "start_seconds": 1001.11,
+          "end_seconds": 1006.86,
+          "text": "Each of you has been blessed with this enormousopportunity of attending this prestigious"
+        }
+      ]
+    }
+  ],
+  "counterexample_status": {
+    "status": "controls_recorded",
+    "existing_pattern_counterexamples": 1,
+    "firm_claim_controls_recorded": 3,
+    "remaining_cases": [
+      "hedge that obscures rather than calibrates",
+      "strong evidence stated too weakly",
+      "uncertainty marker used to evade accountability",
+      "nonverbal delivery changing perceived certainty"
+    ]
+  },
+  "multimodal_status": {
+    "aligned_audio_examples": 5,
+    "visual_alignment": "not manually verified",
+    "audio_measurement_caveat": "Existing audio features are coarse proxies; transcript hedges do not directly measure vocal confidence or listener calibration.",
+    "raw_media_audit": "research/vertical-slice-01-media-audit.json",
+    "raw_media_verified_examples": [
+      {
+        "evidence_id": "2fWJh-_UG5s:00160",
+        "audio_source": "data/audio/2fWJh-_UG5s.m4a",
+        "video_source": "data/video/2fWJh-_UG5s.mp4",
+        "feature_source": "data/features/2fWJh-_UG5s.json",
+        "verification": "raw files present; aligned features refreshed; manual visual alignment pending"
+      },
+      {
+        "evidence_id": "3AIoHLr8nTI:00008",
+        "audio_source": "data/audio/3AIoHLr8nTI.m4a",
+        "video_source": "data/video/3AIoHLr8nTI.mp4",
+        "feature_source": "data/features/3AIoHLr8nTI.json",
+        "verification": "raw files present; aligned features refreshed; manual visual alignment pending"
+      },
+      {
+        "evidence_id": "3AIoHLr8nTI:00074",
+        "audio_source": "data/audio/3AIoHLr8nTI.m4a",
+        "video_source": "data/video/3AIoHLr8nTI.mp4",
+        "feature_source": "data/features/3AIoHLr8nTI.json",
+        "verification": "raw files present; aligned features refreshed; manual visual alignment pending"
+      },
+      {
+        "evidence_id": "9fEurt2OZ0I:00020",
+        "audio_source": "data/audio/9fEurt2OZ0I.m4a",
+        "video_source": "data/video/9fEurt2OZ0I.mp4",
+        "feature_source": "data/features/9fEurt2OZ0I.json",
+        "verification": "raw files present; aligned features refreshed; manual visual alignment pending"
+      }
+    ]
+  },
+  "independence_status": {
+    "status": "metadata_audited_speaker_unverified",
+    "reviewed_annotation_video_count": 6,
+    "note": "Uploader identity is not sufficient for speaker/event independence; verification remains pending.",
+    "audit": "research/vertical-slice-01-source-event-independence.json",
+    "finding": "Canonical source IDs and metadata were audited; speaker identity and event independence beyond distinct video IDs remain unverified."
+  },
+  "independent_review": {
+    "status": "not_started",
+    "required_checks": [
+      "scope of uncertainty",
+      "claim/hedge relation",
+      "accountability boundary",
+      "alternative reading",
+      "accessibility and clarity"
+    ]
+  },
+  "learner_lesson": {
+    "status": "draft_not_validated",
+    "draft_task": "State one claim, label whether it is observed, predicted, interpreted or recommended, add the smallest uncertainty needed, and name what evidence would change your mind.",
+    "self_check": [
+      "Is the main point still clear?",
+      "Does the qualifier attach to the right claim?",
+      "Did I avoid both false certainty and empty vagueness?",
+      "Did I name a revision condition?"
+    ],
+    "writeup": "writeups/vertical-slice-01-lesson-uncertainty.md"
+  },
+  "source_sha256": {
+    "research/provisional-practice-patterns.json": "93a0b92d09c1e17fd6c74f7c598cf9844656389f40b5d8074a732485cde73f64",
+    "research/reviewed-pattern-cards.json": "10dc91145e892b01d586151c76a267eaa1f7c7a234fffac274602892221757bc",
+    "research/segment-registry.jsonl": "5b0d238e683a26700744a015ebb88d8f23b48720a9503a51de8fa0ec54bc4598",
+    "writeups/vertical-slice-01-lesson-uncertainty.md": "29411ed2632e528dbac2c814f3efa9ad6db289a2c3d4f23b0099033f269fc167",
+    "research/vertical-slice-01-source-event-independence.json": "a88c347d55623d15125f5af5a9ab207813a43c2ada7eeb3e1012d68c9565dcf1",
+    "data/features/2fWJh-_UG5s.json": "e08ae740998a5ae61cbb93caa592324366ce8f2a25d43b3020ac2006d812cb5b",
+    "data/media-status.jsonl": "ffe48cd19591790d03ab533a36f2b2e1d2ab6814c1550339b1088a4d476ecec9",
+    "data/features/3AIoHLr8nTI.json": "73cacb7ba00e30f7eefa201fec000e2d5c9ae5e08e9e02414b75cc4133e0de6f",
+    "data/audio/2fWJh-_UG5s.m4a": "2954998d671e917f7cc6d9fdf70d3dc06598b32bc5939315f8f6fdb8e50a2909",
+    "data/audio/3AIoHLr8nTI.m4a": "0e7a20833b6f97b1ec42f2cff7256f88b561c8c2496ac989603459ef383af1f3",
+    "data/video/2fWJh-_UG5s.mp4": "7754bfb704dc727f84611ac01bc0c3ea356b6d3348244a41dac52ec6a60339f6",
+    "data/video/3AIoHLr8nTI.mp4": "e0fb890ff5634a17d1a33b859989316d4b042c07208d7a4b501762d3b564a567",
+    "data/features/9fEurt2OZ0I.json": "e9e7cbcffabbdc8e8953afaf32c1b52c47c2ad4769fafc0d1f390b31dd6881c1",
+    "data/audio/9fEurt2OZ0I.m4a": "a7928ffacba296fbd4780f8fa110310fa43083745e833fecec952562dd669822",
+    "data/video/9fEurt2OZ0I.mp4": "1ac93645c958695f2c97556a6e5c19e0c5d222f0856a3fbda7bc25e79940a6be"
+  },
+  "next_action": "Add a hedge-that-obscures control, verify speaker/event independence and obtain independent interpretation review."
+}

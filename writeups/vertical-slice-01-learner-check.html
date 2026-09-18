@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vertical slice 01 learner check</title>
+<style>
+body{font:16px/1.5 system-ui,sans-serif;max-width:900px;margin:2rem auto;padding:0 1rem;color:#17202a}
+h1{line-height:1.15} fieldset{border:1px solid #9aa7b2;border-radius:.5rem;margin:1.5rem 0;padding:1rem}
+legend{font-weight:700;padding:0 .4rem} label{display:block;margin:.75rem 0} textarea{display:block;width:100%;box-sizing:border-box;margin-top:.3rem}
+input[type=text],input[type=date],input[type=number]{max-width:24rem;padding:.35rem} button{padding:.6rem 1rem;margin:.5rem .5rem .5rem 0;cursor:pointer}
+.notice{background:#fff6d6;border-left:4px solid #c88a00;padding:.8rem} .checks label{margin:.25rem 0}
+.scores{display:flex;gap:1rem;flex-wrap:wrap} .scores label{margin:.5rem 0}
+#result{white-space:pre-wrap;background:#f3f5f7;padding:1rem;display:none}
+.task-bank{background:#eef5fb;border-left:4px solid #39739d;padding:.6rem;margin:.8rem 0} .task{background:white;padding:.45rem;margin:.45rem 0}
+</style></head><body>
+<h1>Vertical slice 01 learner check</h1>
+<div class="notice"><strong>Research boundary:</strong> This local form records teachability observations only. It does not test trust, memory, persuasion, engagement or action. Do not enter identifying personal stories or sensitive information.</div>
+<form id="check">
+<fieldset><legend>Session record</legend>
+<label>Pseudonym or participant code<input required type="text" name="participant_code"></label>
+<label>Date<input required type="date" name="date"></label>
+<label>Lesson version<input required type="text" name="lesson_version" value="vertical-slice-01-draft"></label>
+<label>Accessibility needs or modality<textarea name="accessibility" rows="2"></textarea></label>
+<label><input required type="checkbox" name="consent"> I consent to this local research record being saved for the stated learner-check purpose.</label>
+</fieldset>
+
+    <fieldset class="pattern">
+      <legend>1. provisional-contrast_or_disagreement</legend>
+      <input type="hidden" name="p1_task_bank_ids" value="contrast-recognition-01,contrast-transfer-01,contrast-nonfit-01,contrast-control-01">
+      <p><strong>Recognition task:</strong> State an expected outcome and observed outcome in two sentences, then explain what changed without claiming that the contrast proves a personal or interpersonal motive.</p>
+      <div class="task-bank"><strong>Fixed stimuli shown in this section</strong><div class="task"><strong>new_example_recognition — contrast-recognition-01</strong><p>A project was expected to take two weeks but took six because a required dependency arrived late. Which response most clearly performs the communication job? A: ‘The team is unreliable.’ B: ‘We planned for two weeks; the dependency arrived in week four, so the schedule moved to six weeks. This does not by itself show why the dependency was late.’ C: ‘Everyone knows this always happens.’</p></div><div class="task"><strong>transfer — contrast-transfer-01</strong><p>Describe one expected-versus-observed difference in an ordinary task using two sentences and one limit. Do not name a person as the cause unless you have separate evidence.</p></div><div class="task"><strong>misuse_non_fit — contrast-nonfit-01</strong><p>A speaker says ‘In short, bring your identification tomorrow’ after explaining a process. Is this primarily an explicit contrast? Explain why or why not.</p></div><div class="task"><strong>matched_control — contrast-control-01</strong><p>Give a plain instruction without using a contrast marker, then explain how it differs from reporting an expected-versus-observed outcome.</p></div></div>
+      <label>Baseline response<textarea name="p1_baseline" rows="4"></textarea></label>
+      <label>New-example / transfer response<textarea name="p1_transfer" rows="4"></textarea></label>
+      <label>Misuse or non-fit judgment<textarea name="p1_non_fit" rows="3"></textarea></label>
+      <label>Matched plain-communication control response<textarea name="p1_control" rows="3"></textarea></label>
+      <label>Second-listener restatement<textarea name="p1_listener" rows="3"></textarea></label>
+      <label>Revision after feedback<textarea name="p1_revision" rows="4"></textarea></label>
+      <div class="checks"><strong>Self-check</strong><label><input type="checkbox" name="p1_self_check_1"> Did I name both sides?</label><label><input type="checkbox" name="p1_self_check_2"> Did I distinguish observation from interpretation?</label><label><input type="checkbox" name="p1_self_check_3"> Did I avoid treating disagreement as a personality trait?</label><label><input type="checkbox" name="p1_self_check_4"> Did I state when the contrast is not enough evidence?</label></div>
+      <div class="scores">
+        <label>Transfer score (0–2)<input type="number" name="p1_transfer_score" min="0" max="2"></label>
+        <label>Boundary score (0–2)<input type="number" name="p1_boundary_score" min="0" max="2"></label>
+        <label>Listener-restatement score (0–2)<input type="number" name="p1_listener_score" min="0" max="2"></label>
+      </div>
+    </fieldset>
+
+    <fieldset class="pattern">
+      <legend>2. provisional-example</legend>
+      <input type="hidden" name="p2_task_bank_ids" value="example-recognition-01,example-transfer-01,example-nonfit-01,example-control-01">
+      <p><strong>Recognition task:</strong> State one general claim, give one concrete case or imagined scene, explain what the case illustrates, and state what it does not prove.</p>
+      <div class="task-bank"><strong>Fixed stimuli shown in this section</strong><div class="task"><strong>new_example_recognition — example-recognition-01</strong><p>A speaker says ‘Clear documentation reduces repeated questions. For example, our clinic added a one-page intake guide and saw fewer missing fields in one month.’ What must the speaker still avoid claiming? A: that the case illustrates the claim; B: that one case proves the guide caused the entire change or applies to every clinic; C: that the case has any relevance.</p></div><div class="task"><strong>transfer — example-transfer-01</strong><p>State a general claim, give a labeled observed, reported, hypothetical or illustrative case, connect it to the claim, and state one limit. Use no identifying personal detail.</p></div><div class="task"><strong>misuse_non_fit — example-nonfit-01</strong><p>Someone names one dramatic incident and says it proves an entire group is dangerous. Is this a safe use of an example? Explain the missing boundary.</p></div><div class="task"><strong>matched_control — example-control-01</strong><p>Explain a definition directly without adding a case, then say when a concrete example would improve clarity and when it could distract or expose privacy.</p></div></div>
+      <label>Baseline response<textarea name="p2_baseline" rows="4"></textarea></label>
+      <label>New-example / transfer response<textarea name="p2_transfer" rows="4"></textarea></label>
+      <label>Misuse or non-fit judgment<textarea name="p2_non_fit" rows="3"></textarea></label>
+      <label>Matched plain-communication control response<textarea name="p2_control" rows="3"></textarea></label>
+      <label>Second-listener restatement<textarea name="p2_listener" rows="3"></textarea></label>
+      <label>Revision after feedback<textarea name="p2_revision" rows="4"></textarea></label>
+      <div class="checks"><strong>Self-check</strong><label><input type="checkbox" name="p2_self_check_1"> Did I label the case as example, evidence or hypothesis?</label><label><input type="checkbox" name="p2_self_check_2"> Did I connect it back to the claim?</label><label><input type="checkbox" name="p2_self_check_3"> Did I avoid using a vivid detail as proof?</label><label><input type="checkbox" name="p2_self_check_4"> Did I protect privacy and avoid unnecessary identifying detail?</label></div>
+      <div class="scores">
+        <label>Transfer score (0–2)<input type="number" name="p2_transfer_score" min="0" max="2"></label>
+        <label>Boundary score (0–2)<input type="number" name="p2_boundary_score" min="0" max="2"></label>
+        <label>Listener-restatement score (0–2)<input type="number" name="p2_listener_score" min="0" max="2"></label>
+      </div>
+    </fieldset>
+
+    <fieldset class="pattern">
+      <legend>3. provisional-story_or_personal_experience</legend>
+      <input type="hidden" name="p3_task_bank_ids" value="story-recognition-01,story-transfer-01,story-nonfit-01,story-control-01">
+      <p><strong>Recognition task:</strong> Choose one communication point, tell one short personal event with time/place/action, explain what it illustrates, and name what your experience cannot establish.</p>
+      <div class="task-bank"><strong>Fixed stimuli shown in this section</strong><div class="task"><strong>new_example_recognition — story-recognition-01</strong><p>Which response uses bounded personal detail responsibly? A: ‘I once missed a deadline on a group project, so everyone should work exactly as I do.’ B: ‘During one group project, I missed a deadline after misunderstanding the handoff. It taught me to confirm ownership; that experience does not establish the best process for every team.’ C: a detailed story naming a private colleague without consent.</p></div><div class="task"><strong>transfer — story-transfer-01</strong><p>Make one communication point concrete with an anonymous, hypothetical or safely bounded event. State what the event illustrates and what it cannot establish.</p></div><div class="task"><strong>misuse_non_fit — story-nonfit-01</strong><p>You do not want to disclose a personal experience, but a listener needs a clear explanation. Is refusing personal disclosure a communication failure? Give a safer alternative.</p></div><div class="task"><strong>matched_control — story-control-01</strong><p>Explain the same communication point directly without a story, then compare the privacy and clarity tradeoffs.</p></div></div>
+      <label>Baseline response<textarea name="p3_baseline" rows="4"></textarea></label>
+      <label>New-example / transfer response<textarea name="p3_transfer" rows="4"></textarea></label>
+      <label>Misuse or non-fit judgment<textarea name="p3_non_fit" rows="3"></textarea></label>
+      <label>Matched plain-communication control response<textarea name="p3_control" rows="3"></textarea></label>
+      <label>Second-listener restatement<textarea name="p3_listener" rows="3"></textarea></label>
+      <label>Revision after feedback<textarea name="p3_revision" rows="4"></textarea></label>
+      <div class="checks"><strong>Self-check</strong><label><input type="checkbox" name="p3_self_check_1"> Did I share only what is safe to share?</label><label><input type="checkbox" name="p3_self_check_2"> Did I give the event a clear boundary?</label><label><input type="checkbox" name="p3_self_check_3"> Did I connect it to the point?</label><label><input type="checkbox" name="p3_self_check_4"> Did I avoid presenting my path as universal?</label></div>
+      <div class="scores">
+        <label>Transfer score (0–2)<input type="number" name="p3_transfer_score" min="0" max="2"></label>
+        <label>Boundary score (0–2)<input type="number" name="p3_boundary_score" min="0" max="2"></label>
+        <label>Listener-restatement score (0–2)<input type="number" name="p3_listener_score" min="0" max="2"></label>
+      </div>
+    </fieldset>
+
+    <fieldset class="pattern">
+      <legend>4. provisional-uncertainty_or_qualification</legend>
+      <input type="hidden" name="p4_task_bank_ids" value="uncertainty-recognition-01,uncertainty-transfer-01,uncertainty-nonfit-01,uncertainty-control-01">
+      <p><strong>Recognition task:</strong> State one claim, label whether it is observed, predicted, interpreted or recommended, add the smallest uncertainty needed, and name what evidence would change your mind.</p>
+      <div class="task-bank"><strong>Fixed stimuli shown in this section</strong><div class="task"><strong>new_example_recognition — uncertainty-recognition-01</strong><p>Which sentence is most precisely qualified? A: ‘This will definitely solve the problem.’ B: ‘The early data suggest the change may reduce delays, but we need another month of records to test that interpretation.’ C: ‘Maybe perhaps possibly it could sort of help.’</p></div><div class="task"><strong>transfer — uncertainty-transfer-01</strong><p>State one observed, predicted, interpreted or recommended claim. Add the smallest qualifier needed and name what evidence would change your mind.</p></div><div class="task"><strong>misuse_non_fit — uncertainty-nonfit-01</strong><p>A manager uses ‘we cannot know anything’ to avoid answering a question about a documented missed deadline. Is this good uncertainty handling? Explain the accountability problem.</p></div><div class="task"><strong>matched_control — uncertainty-control-01</strong><p>State a fact that needs no hedge, then state a prediction that does. Explain why the qualification differs.</p></div></div>
+      <label>Baseline response<textarea name="p4_baseline" rows="4"></textarea></label>
+      <label>New-example / transfer response<textarea name="p4_transfer" rows="4"></textarea></label>
+      <label>Misuse or non-fit judgment<textarea name="p4_non_fit" rows="3"></textarea></label>
+      <label>Matched plain-communication control response<textarea name="p4_control" rows="3"></textarea></label>
+      <label>Second-listener restatement<textarea name="p4_listener" rows="3"></textarea></label>
+      <label>Revision after feedback<textarea name="p4_revision" rows="4"></textarea></label>
+      <div class="checks"><strong>Self-check</strong><label><input type="checkbox" name="p4_self_check_1"> Is the main point still clear?</label><label><input type="checkbox" name="p4_self_check_2"> Does the qualifier attach to the right claim?</label><label><input type="checkbox" name="p4_self_check_3"> Did I avoid both false certainty and empty vagueness?</label><label><input type="checkbox" name="p4_self_check_4"> Did I name a revision condition?</label></div>
+      <div class="scores">
+        <label>Transfer score (0–2)<input type="number" name="p4_transfer_score" min="0" max="2"></label>
+        <label>Boundary score (0–2)<input type="number" name="p4_boundary_score" min="0" max="2"></label>
+        <label>Listener-restatement score (0–2)<input type="number" name="p4_listener_score" min="0" max="2"></label>
+      </div>
+    </fieldset>
+
+    <fieldset class="pattern">
+      <legend>5. provisional-conclusion_or_summary</legend>
+      <input type="hidden" name="p5_task_bank_ids" value="conclusion-recognition-01,conclusion-transfer-01,conclusion-nonfit-01,conclusion-control-01">
+      <p><strong>Recognition task:</strong> Explain a small topic, then state the takeaway in one sentence, name the evidence supporting it, and state one limit. Ask a listener to repeat the takeaway without seeing your notes.</p>
+      <div class="task-bank"><strong>Fixed stimuli shown in this section</strong><div class="task"><strong>new_example_recognition — conclusion-recognition-01</strong><p>After explaining how a shared calendar prevents duplicate bookings, which closing is clearest? A: ‘Anyway.’ B: ‘The takeaway is to assign one owner to the calendar; this helps prevent duplicate bookings but does not replace schedule review.’ C: ‘You should agree with me.’</p></div><div class="task"><strong>transfer — conclusion-transfer-01</strong><p>Explain a small topic, mark one takeaway, name its support, preserve one qualification, and offer a next step.</p></div><div class="task"><strong>misuse_non_fit — conclusion-nonfit-01</strong><p>A speaker ends a complex disagreement by saying ‘there is only one acceptable view’ without addressing the evidence. Is this a responsible summary? Explain what was compressed away.</p></div><div class="task"><strong>matched_control — conclusion-control-01</strong><p>Close a short explanation with an unmarked final sentence, then close it again with a marked takeaway. Compare clarity without claiming listener improvement.</p></div></div>
+      <label>Baseline response<textarea name="p5_baseline" rows="4"></textarea></label>
+      <label>New-example / transfer response<textarea name="p5_transfer" rows="4"></textarea></label>
+      <label>Misuse or non-fit judgment<textarea name="p5_non_fit" rows="3"></textarea></label>
+      <label>Matched plain-communication control response<textarea name="p5_control" rows="3"></textarea></label>
+      <label>Second-listener restatement<textarea name="p5_listener" rows="3"></textarea></label>
+      <label>Revision after feedback<textarea name="p5_revision" rows="4"></textarea></label>
+      <div class="checks"><strong>Self-check</strong><label><input type="checkbox" name="p5_self_check_1"> Did I mark the takeaway clearly?</label><label><input type="checkbox" name="p5_self_check_2"> Does it follow from what I explained?</label><label><input type="checkbox" name="p5_self_check_3"> Did I preserve the essential qualification?</label><label><input type="checkbox" name="p5_self_check_4"> Can a listener restate it accurately?</label></div>
+      <div class="scores">
+        <label>Transfer score (0–2)<input type="number" name="p5_transfer_score" min="0" max="2"></label>
+        <label>Boundary score (0–2)<input type="number" name="p5_boundary_score" min="0" max="2"></label>
+        <label>Listener-restatement score (0–2)<input type="number" name="p5_listener_score" min="0" max="2"></label>
+      </div>
+    </fieldset>
+<fieldset><legend>Facilitator record</legend>
+<label>Feedback given<textarea name="facilitator_feedback" rows="4"></textarea></label>
+<label>Facilitator changes or accommodations<textarea name="facilitator_changes" rows="3"></textarea></label>
+<label>Unresolved disagreement<textarea name="unresolved_disagreement" rows="3"></textarea></label>
+</fieldset>
+<button type="button" id="download">Download JSON record</button>
+<button type="reset">Clear form</button>
+</form><pre id="result" aria-live="polite"></pre>
+<script type="application/json" id="protocol">{"schema_version": "1.0", "protocol_id": "vertical-slice-01-learner-check", "status": "protocol_drafted_not_run", "purpose": "Test recognition, plain-language explanation, transfer, non-fit detection, boundary handling and listener restatement for five draft practice lessons.", "outcome_boundary": "This protocol tests teachability, not whether an original speech pattern improves trust, memory, persuasion, engagement or action.", "task_bank": "research/vertical-slice-01-learner-task-bank.json", "patterns": [{"pattern_id": "provisional-contrast_or_disagreement", "packet": "research/vertical-slice-01-contrast-or-disagreement.json", "lesson": "writeups/vertical-slice-01-lesson-contrast.md", "recognition_task": "State an expected outcome and observed outcome in two sentences, then explain what changed without claiming that the contrast proves a personal or interpersonal motive.", "self_check": ["Did I name both sides?", "Did I distinguish observation from interpretation?", "Did I avoid treating disagreement as a personality trait?", "Did I state when the contrast is not enough evidence?"], "lesson_status": "draft_not_validated"}, {"pattern_id": "provisional-example", "packet": "research/vertical-slice-01-example.json", "lesson": "writeups/vertical-slice-01-lesson-example.md", "recognition_task": "State one general claim, give one concrete case or imagined scene, explain what the case illustrates, and state what it does not prove.", "self_check": ["Did I label the case as example, evidence or hypothesis?", "Did I connect it back to the claim?", "Did I avoid using a vivid detail as proof?", "Did I protect privacy and avoid unnecessary identifying detail?"], "lesson_status": "draft_not_validated"}, {"pattern_id": "provisional-story_or_personal_experience", "packet": "research/vertical-slice-01-story.json", "lesson": "writeups/vertical-slice-01-lesson-story.md", "recognition_task": "Choose one communication point, tell one short personal event with time/place/action, explain what it illustrates, and name what your experience cannot establish.", "self_check": ["Did I share only what is safe to share?", "Did I give the event a clear boundary?", "Did I connect it to the point?", "Did I avoid presenting my path as universal?"], "lesson_status": "draft_not_validated"}, {"pattern_id": "provisional-uncertainty_or_qualification", "packet": "research/vertical-slice-01-uncertainty.json", "lesson": "writeups/vertical-slice-01-lesson-uncertainty.md", "recognition_task": "State one claim, label whether it is observed, predicted, interpreted or recommended, add the smallest uncertainty needed, and name what evidence would change your mind.", "self_check": ["Is the main point still clear?", "Does the qualifier attach to the right claim?", "Did I avoid both false certainty and empty vagueness?", "Did I name a revision condition?"], "lesson_status": "draft_not_validated"}, {"pattern_id": "provisional-conclusion_or_summary", "packet": "research/vertical-slice-01-conclusion.json", "lesson": "writeups/vertical-slice-01-lesson-conclusion.md", "recognition_task": "Explain a small topic, then state the takeaway in one sentence, name the evidence supporting it, and state one limit. Ask a listener to repeat the takeaway without seeing your notes.", "self_check": ["Did I mark the takeaway clearly?", "Does it follow from what I explained?", "Did I preserve the essential qualification?", "Can a listener restate it accurately?"], "lesson_status": "draft_not_validated"}], "procedure": ["baseline explanation", "lesson exposure", "new-example recognition", "transfer response", "second-listener restatement", "misuse/non-fit judgment", "matched post-task"], "rubric": {"scale": "0=missing or misleading; 1=partial; 2=clear and bounded", "dimensions": ["communication job identified", "new-example recognition", "plain-language explanation", "underlying-choice transfer", "alternative explanation or limit", "misuse/non-fit detection", "privacy/accessibility/safety boundary", "second-listener restatement"], "safety_rule": "Do not average away a safety or privacy failure; promotion requires boundary competence.", "control": "Include a plain-communication or no-marker comparison task."}, "record_requirements": ["learner ID or pseudonym", "date", "lesson version", "source examples shown", "new examples", "responses", "rubric scores", "confidence", "second-listener restatement", "accessibility needs", "facilitator changes", "unresolved disagreements"], "consent_policy": "Obtain consent for recordings and private stories; permit written, typed, captioned and asynchronous responses.", "source_sha256": {"writeups/vertical-slice-01-learner-check.md": "856d7aa919ae61a039e3a45ed11e678338b5b16d3dd7954c8fbcb61775ee3e84", "research/vertical-slice-01-contrast-or-disagreement.json": "2a3b73482f9f393952f2a99985879deef1a28217b4ecd7932e50af62eefbd9e5", "research/vertical-slice-01-example.json": "29c613a3d27ff4567b8a8611c7282674a804a577084d9eb11ea5bccb1b9d3a44", "research/vertical-slice-01-story.json": "609f7fa78bbe174487db680f9be80d7f1ca10b5ecc1c515ff28b4359dcdefa94", "research/vertical-slice-01-uncertainty.json": "4fb684e9cc17d30dd567fe6cc660652e0eca3130e100114a3762001c02e45987", "research/vertical-slice-01-conclusion.json": "3fea6b01b17e3fbf6d921515bcc6aaa164efc4f78521ba9dcf86fc019e7e0bf5"}}</script>
+<script>
+const form=document.querySelector('#check'), result=document.querySelector('#result');
+document.querySelector('#download').addEventListener('click',()=>{
+  if(!form.reportValidity()) return;
+  const data={schema_version:'1.0',protocol_id:'vertical-slice-01-learner-check',record_type:'learner_observation',responses:{}};
+  for(const el of form.elements){ if(!el.name) continue; if(el.type==='checkbox') data.responses[el.name]=el.checked; else data.responses[el.name]=el.value; }
+  data.claim_boundary='Teachability observations only; not listener outcomes.';
+  const blob=new Blob([JSON.stringify(data,null,2)+'\n'],{type:'application/json'}), url=URL.createObjectURL(blob), a=document.createElement('a');
+  a.href=url; a.download='vertical-slice-01-learner-record-'+data.responses.participant_code+'.json'; a.click(); URL.revokeObjectURL(url);
+  result.style.display='block'; result.textContent='Record prepared for download. Keep the participant code non-identifying.';
+});
+</script></body></html>

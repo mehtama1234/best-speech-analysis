@@ -1,0 +1,655 @@
+{
+  "schema_version": "1.0",
+  "packet_id": "vertical-slice-01-example",
+  "pattern_id": "provisional-example",
+  "status": "evidence_packet_partial_not_validated",
+  "communication_job": "make an abstract or general claim concrete without treating an illustration as proof.",
+  "practice_hypothesis": "After an abstract claim, announce or signal a specific case, statistic, named example, or imagined scene, and connect it back to the claim.",
+  "evidence_level": "provisional_practice_hypothesis",
+  "source_policy": "Reviewed transcript segments and coarse aligned audio proxies are evidence of textual structure and measurement, not proof of factuality, causality, listener comprehension or general effectiveness.",
+  "eligibility_snapshot": {
+    "reviewed_count": 10,
+    "supported_count": 8,
+    "support_rate": 0.8,
+    "distinct_video_count": 5,
+    "distinct_uploader_count": 1,
+    "minimum_supported_examples": 5,
+    "minimum_distinct_videos": 4
+  },
+  "representative_examples": [
+    {
+      "annotation_id": "review-007",
+      "evidence_id": "-6qN3bm2RYo:00079",
+      "video_id": "-6qN3bm2RYo",
+      "title": "ENGLISH SPEECH | S. JAISHANKAR: India's Five Pledges (English Subtitles)",
+      "channel": "English Speeches",
+      "start_seconds": 221.84,
+      "end_seconds": 228.36,
+      "url": "https://www.youtube.com/watch?v=-6qN3bm2RYo&t=221",
+      "text": "together on global issues such as",
+      "reviewed_speech_function": "example_introduction",
+      "confidence": "high",
+      "measurement_status": "no_aligned_features",
+      "context": [
+        {
+          "evidence_id": "-6qN3bm2RYo:00077",
+          "start_seconds": 217.28,
+          "end_seconds": 221.84,
+          "text": "greater unity and"
+        },
+        {
+          "evidence_id": "-6qN3bm2RYo:00078",
+          "start_seconds": 219.08,
+          "end_seconds": 224.439,
+          "text": "solidarity this expresses a coming"
+        },
+        {
+          "evidence_id": "-6qN3bm2RYo:00079",
+          "start_seconds": 221.84,
+          "end_seconds": 228.36,
+          "text": "together on global issues such as"
+        },
+        {
+          "evidence_id": "-6qN3bm2RYo:00080",
+          "start_seconds": 224.439,
+          "end_seconds": 231.92,
+          "text": "terrorism pandemics or the environment"
+        },
+        {
+          "evidence_id": "-6qN3bm2RYo:00081",
+          "start_seconds": 228.36,
+          "end_seconds": 234.4,
+          "text": "and five we will instill Consciousness"
+        }
+      ],
+      "interpretation": {
+        "supported": true,
+        "subtype": "category_enumeration",
+        "reason": "Global issues are unpacked into terrorism, pandemics and the environment after a statement about unity. These are category members, not detailed empirical cases or evidence that the policy succeeds."
+      },
+      "audio_measurement": null
+    },
+    {
+      "annotation_id": "review-018",
+      "evidence_id": "aXmM0VZv810:00274",
+      "video_id": "aXmM0VZv810",
+      "title": "ENGLISH SPEECH | ELON & JENSEN: Work Becomes Optional (English Subtitles)",
+      "channel": "English Speeches",
+      "start_seconds": 673.519,
+      "end_seconds": 679.839,
+      "url": "https://www.youtube.com/watch?v=aXmM0VZv810&t=673",
+      "text": "this earlier radiology for example has",
+      "reviewed_speech_function": "example_marker",
+      "confidence": "high",
+      "measurement_status": "aligned_features_available",
+      "context": [
+        {
+          "evidence_id": "aXmM0VZv810:00272",
+          "start_seconds": 669.44,
+          "end_seconds": 673.519,
+          "text": "give you give you some evidence is that"
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00273",
+          "start_seconds": 672.079,
+          "end_seconds": 676.64,
+          "text": "uh and I was just telling Elon about"
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00274",
+          "start_seconds": 673.519,
+          "end_seconds": 679.839,
+          "text": "this earlier radiology for example has"
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00275",
+          "start_seconds": 676.64,
+          "end_seconds": 681.36,
+          "text": "largely been uh converted to AIdriven"
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00276",
+          "start_seconds": 679.839,
+          "end_seconds": 684.48,
+          "text": "radiology and there's some really great"
+        }
+      ],
+      "interpretation": {
+        "supported": true,
+        "subtype": "asserted_domain_case_with_explanation",
+        "reason": "The speaker introduces radiology as a case for a claim about technology and work, contrasts a forecast with an asserted employment trend, then explains a goal-versus-task distinction. The extended context establishes the illustration; the medical/employment assertions are not independently validated."
+      },
+      "audio_measurement": {
+        "audio_window_count": 7,
+        "mean_rms_db": -15.101,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.12568,
+        "mean_spectral_centroid_hz": 491.947,
+        "mean_pitch_hz_proxy": 260.045,
+        "mean_pitch_confidence_proxy": 0.15069,
+        "words_per_second_proxy": 0.949,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0
+      },
+      "audio_measurement_status": "rms_zcr_spectral_centroid_and_coarse_spectral_pitch_proxy; not_a_validated_pitch_tracker",
+      "visual_measurement_status": "scene_pixel_features_only; face_expression_not_analyzed"
+    },
+    {
+      "annotation_id": "review-062",
+      "evidence_id": "aXmM0VZv810:00529",
+      "video_id": "aXmM0VZv810",
+      "title": "ENGLISH SPEECH | ELON & JENSEN: Work Becomes Optional (English Subtitles)",
+      "channel": "English Speeches",
+      "start_seconds": 1274.559,
+      "end_seconds": 1277.84,
+      "url": "https://www.youtube.com/watch?v=aXmM0VZv810&t=1274",
+      "text": ">> Just imagine how tiny that little",
+      "reviewed_speech_function": "hypothetical_visualization",
+      "confidence": "high",
+      "measurement_status": "aligned_features_available",
+      "context": [
+        {
+          "evidence_id": "aXmM0VZv810:00527",
+          "start_seconds": 1273.039,
+          "end_seconds": 1274.559,
+          "text": ">> right?"
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00528",
+          "start_seconds": 1273.44,
+          "end_seconds": 1276.4,
+          "text": ">> Oh, yeah."
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00529",
+          "start_seconds": 1274.559,
+          "end_seconds": 1277.84,
+          "text": ">> Just imagine how tiny that little"
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00530",
+          "start_seconds": 1276.4,
+          "end_seconds": 1280.08,
+          "text": "supercomputer is, right? Each one of"
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00531",
+          "start_seconds": 1277.84,
+          "end_seconds": 1280.64,
+          "text": "these GB300 racks will just be a little"
+        }
+      ],
+      "interpretation": {
+        "supported": true,
+        "subtype": "scale_visualization_of_existing_object",
+        "reason": "A discussion of rack weight and cooling is followed by an invitation to imagine the small computational object. This is concrete scale illustration of an existing referent, not necessarily a new hypothetical event. Speaker turns are not reliably attributed by captions."
+      },
+      "audio_measurement": {
+        "audio_window_count": 4,
+        "mean_rms_db": -15.29,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.14209,
+        "mean_spectral_centroid_hz": 555.89,
+        "mean_pitch_hz_proxy": 263.672,
+        "mean_pitch_confidence_proxy": 0.10958,
+        "words_per_second_proxy": 2.133,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0
+      },
+      "audio_measurement_status": "rms_zcr_spectral_centroid_and_coarse_spectral_pitch_proxy; not_a_validated_pitch_tracker",
+      "visual_measurement_status": "scene_pixel_features_only; face_expression_not_analyzed"
+    },
+    {
+      "annotation_id": "review-031",
+      "evidence_id": "aXmM0VZv810:00596",
+      "video_id": "aXmM0VZv810",
+      "title": "ENGLISH SPEECH | ELON & JENSEN: Work Becomes Optional (English Subtitles)",
+      "channel": "English Speeches",
+      "start_seconds": 1418.24,
+      "end_seconds": 1423.6,
+      "url": "https://www.youtube.com/watch?v=aXmM0VZv810&t=1418",
+      "text": "some over 20 years. Let me give you one",
+      "reviewed_speech_function": "statistical_example_introduction",
+      "confidence": "high",
+      "measurement_status": "aligned_features_available",
+      "context": [
+        {
+          "evidence_id": "aXmM0VZv810:00594",
+          "start_seconds": 1415.12,
+          "end_seconds": 1418.24,
+          "text": "moving to accelerated computing for some"
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00595",
+          "start_seconds": 1416.96,
+          "end_seconds": 1420.96,
+          "text": "time. We've been pushing this now for"
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00596",
+          "start_seconds": 1418.24,
+          "end_seconds": 1423.6,
+          "text": "some over 20 years. Let me give you one"
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00597",
+          "start_seconds": 1420.96,
+          "end_seconds": 1427.12,
+          "text": "statistic. I was just at supercomputing"
+        },
+        {
+          "evidence_id": "aXmM0VZv810:00598",
+          "start_seconds": 1423.6,
+          "end_seconds": 1430.48,
+          "text": "six years ago. Uh"
+        }
+      ],
+      "interpretation": {
+        "supported": true,
+        "subtype": "quantitative_before_after_case",
+        "reason": "A claim about movement toward accelerated computing is followed by a top-500-supercomputer percentage comparison and a return to the transition claim. The transcript gives both 'less than 15%' and '10%' for the later CPU share; these must not be silently reconciled. The numerical claim is not fact-checked."
+      },
+      "audio_measurement": {
+        "audio_window_count": 6,
+        "mean_rms_db": -18.201,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.22754,
+        "mean_spectral_centroid_hz": 1021.689,
+        "mean_pitch_hz_proxy": 238.281,
+        "mean_pitch_confidence_proxy": 0.10585,
+        "words_per_second_proxy": 1.679,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0
+      },
+      "audio_measurement_status": "rms_zcr_spectral_centroid_and_coarse_spectral_pitch_proxy; not_a_validated_pitch_tracker",
+      "visual_measurement_status": "scene_pixel_features_only; face_expression_not_analyzed"
+    },
+    {
+      "annotation_id": "review-064",
+      "evidence_id": "jxY2-YgAgm0:00087",
+      "video_id": "jxY2-YgAgm0",
+      "title": "ENGLISH SPEECH | MELANIA TRUMP: A Public Denial (English Subtitles)",
+      "channel": "English Speeches",
+      "start_seconds": 258.959,
+      "end_seconds": 266.64,
+      "url": "https://www.youtube.com/watch?v=jxY2-YgAgm0&t=258",
+      "text": "such as Daily Beast, James Carville, and",
+      "reviewed_speech_function": "named_example_list",
+      "confidence": "high",
+      "measurement_status": "aligned_features_available",
+      "context": [
+        {
+          "evidence_id": "jxY2-YgAgm0:00085",
+          "start_seconds": 254.28,
+          "end_seconds": 258.959,
+          "text": "apologize and retract their lies about"
+        },
+        {
+          "evidence_id": "jxY2-YgAgm0:00086",
+          "start_seconds": 258.04,
+          "end_seconds": 262.52,
+          "text": "me,"
+        },
+        {
+          "evidence_id": "jxY2-YgAgm0:00087",
+          "start_seconds": 258.959,
+          "end_seconds": 266.64,
+          "text": "such as Daily Beast, James Carville, and"
+        },
+        {
+          "evidence_id": "jxY2-YgAgm0:00088",
+          "start_seconds": 262.52,
+          "end_seconds": 266.64,
+          "text": "HarperCollins UK."
+        },
+        {
+          "evidence_id": "jxY2-YgAgm0:00089",
+          "start_seconds": 267.08,
+          "end_seconds": 274.08,
+          "text": "Now is the time for Congress to act."
+        }
+      ],
+      "interpretation": {
+        "supported": true,
+        "subtype": "named_instances_of_asserted_category",
+        "reason": "The speaker names entities after asserting a category of people/companies that retracted statements. The local list instantiates that asserted category. This review does not endorse allegations, legal characterizations or claims about the named parties."
+      },
+      "audio_measurement": {
+        "audio_window_count": 9,
+        "mean_rms_db": -23.931,
+        "speech_activity_fraction": 0.889,
+        "mean_zero_crossing_rate": 0.13138,
+        "mean_spectral_centroid_hz": 868.018,
+        "mean_pitch_hz_proxy": 225.586,
+        "mean_pitch_confidence_proxy": 0.2174,
+        "words_per_second_proxy": 0.911,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0
+      },
+      "audio_measurement_status": "rms_zcr_spectral_centroid_and_coarse_spectral_pitch_proxy; not_a_validated_pitch_tracker",
+      "visual_measurement_status": "scene_pixel_features_only; face_expression_not_analyzed"
+    }
+  ],
+  "counterexamples": [
+    {
+      "control_id": "existing-counterexample-review-030",
+      "annotation_id": "review-030",
+      "evidence_id": "S43F1BZfQKY:00018",
+      "video_id": "S43F1BZfQKY",
+      "communication_job": "personal_story_detail",
+      "contrast_pattern_present": "not_applicable",
+      "direct_observation": "The shop visit continues with a wig being shown and bought, followed by the narrator's reported reaction. 'Imagine' intensifies description of that object rather than introducing a case for general reasoning. The source explicitly says wig shop owner; the legacy record's doctor attribution is unsupported.",
+      "context": [
+        {
+          "evidence_id": "S43F1BZfQKY:00016",
+          "start_seconds": 106.63,
+          "end_seconds": 111.06,
+          "text": "it's perfectly normal and lots of his clientswho have it wear wigs and feel good about"
+        },
+        {
+          "evidence_id": "S43F1BZfQKY:00017",
+          "start_seconds": 111.06,
+          "end_seconds": 113.02,
+          "text": "themselves."
+        },
+        {
+          "evidence_id": "S43F1BZfQKY:00018",
+          "start_seconds": 113.02,
+          "end_seconds": 119.1,
+          "text": "Then he showed me the most beautiful wig youcould ever imagine."
+        },
+        {
+          "evidence_id": "S43F1BZfQKY:00019",
+          "start_seconds": 119.1,
+          "end_seconds": 126.58,
+          "text": "And me, a perfect Indian woman, so I boughtit."
+        },
+        {
+          "evidence_id": "S43F1BZfQKY:00020",
+          "start_seconds": 126.58,
+          "end_seconds": 134.45,
+          "text": "Yet the very next day, I felt like a fraud,like I was hiding a dirty little secret."
+        }
+      ]
+    },
+    {
+      "control_id": "existing-counterexample-review-063",
+      "annotation_id": "review-063",
+      "evidence_id": "gDadfh0ZdBM:00001",
+      "video_id": "gDadfh0ZdBM",
+      "communication_job": "direct_advice",
+      "contrast_pattern_present": "not_applicable",
+      "direct_observation": "The speaker offers advice to be honest, not an event or case illustrating a broader proposition. Later unrelated dialogue in the inspected window does not establish an example relation.",
+      "context": [
+        {
+          "evidence_id": "gDadfh0ZdBM:00000",
+          "start_seconds": 23.039,
+          "end_seconds": 25.6,
+          "text": "this is it"
+        },
+        {
+          "evidence_id": "gDadfh0ZdBM:00001",
+          "start_seconds": 27.68,
+          "end_seconds": 33.92,
+          "text": "let me give you one piece of advice"
+        },
+        {
+          "evidence_id": "gDadfh0ZdBM:00002",
+          "start_seconds": 31.199,
+          "end_seconds": 33.92,
+          "text": "be honest"
+        },
+        {
+          "evidence_id": "gDadfh0ZdBM:00003",
+          "start_seconds": 34.32,
+          "end_seconds": 38.36,
+          "text": "he knows more than you can imagine"
+        }
+      ]
+    },
+    {
+      "control_id": "job-control-review-001",
+      "annotation_id": "review-001",
+      "evidence_id": "-54zUwySKCg:00035",
+      "video_id": "-54zUwySKCg",
+      "communication_job": "personal_story_setup",
+      "example_pattern_present": false,
+      "direct_observation": "First-person past-tense account with a named place and age.",
+      "context": [
+        {
+          "evidence_id": "-54zUwySKCg:00033",
+          "start_seconds": 191.76,
+          "end_seconds": 197.15,
+          "text": "You know my television career began unexpectedly."
+        },
+        {
+          "evidence_id": "-54zUwySKCg:00034",
+          "start_seconds": 197.15,
+          "end_seconds": 201.7,
+          "text": "As you heard this morning I was in the MissFire Prevention contest."
+        },
+        {
+          "evidence_id": "-54zUwySKCg:00035",
+          "start_seconds": 201.7,
+          "end_seconds": 207.23,
+          "text": "That was when I was 16 years old in Nashville,Tennessee, and you had the requirement of"
+        },
+        {
+          "evidence_id": "-54zUwySKCg:00036",
+          "start_seconds": 207.23,
+          "end_seconds": 212.12,
+          "text": "having to have red hair in order to win upuntil the year that I entered."
+        },
+        {
+          "evidence_id": "-54zUwySKCg:00037",
+          "start_seconds": 212.12,
+          "end_seconds": 214.78,
+          "text": "So they were doing the question and answerperiod because I knew I wasn’t going to"
+        }
+      ]
+    },
+    {
+      "control_id": "job-control-review-005",
+      "annotation_id": "review-005",
+      "evidence_id": "-54zUwySKCg:00196",
+      "video_id": "-54zUwySKCg",
+      "communication_job": "conclusion_or_charge",
+      "example_pattern_present": false,
+      "direct_observation": "The phrase 'The point is' explicitly marks a central takeaway.",
+      "context": [
+        {
+          "evidence_id": "-54zUwySKCg:00194",
+          "start_seconds": 981.279,
+          "end_seconds": 985.06,
+          "text": "Or maybe you simply want to collect some change."
+        },
+        {
+          "evidence_id": "-54zUwySKCg:00195",
+          "start_seconds": 985.06,
+          "end_seconds": 989.73,
+          "text": "Your parents would appreciate that about now."
+        },
+        {
+          "evidence_id": "-54zUwySKCg:00196",
+          "start_seconds": 989.73,
+          "end_seconds": 996.649,
+          "text": "The point is your generation is charged withthis task of breaking through what the body"
+        },
+        {
+          "evidence_id": "-54zUwySKCg:00197",
+          "start_seconds": 996.649,
+          "end_seconds": 1001.11,
+          "text": "politic has thus far made impervious to change."
+        },
+        {
+          "evidence_id": "-54zUwySKCg:00198",
+          "start_seconds": 1001.11,
+          "end_seconds": 1006.86,
+          "text": "Each of you has been blessed with this enormousopportunity of attending this prestigious"
+        }
+      ]
+    },
+    {
+      "control_id": "job-control-review-042",
+      "annotation_id": "review-042",
+      "evidence_id": "3AIoHLr8nTI:00008",
+      "video_id": "3AIoHLr8nTI",
+      "communication_job": "epistemic_hedge",
+      "example_pattern_present": false,
+      "direct_observation": "The speaker uses 'I think' while evaluating the importance of the group's diversity.",
+      "context": [
+        {
+          "evidence_id": "3AIoHLr8nTI:00006",
+          "start_seconds": 65.84,
+          "end_seconds": 73.04,
+          "text": "Among the many things I admire about NYU, is that about a fifth of the students are international."
+        },
+        {
+          "evidence_id": "3AIoHLr8nTI:00007",
+          "start_seconds": 79.84,
+          "end_seconds": 85.84,
+          "text": "And a similar proportion are the very first in their families to go to college."
+        },
+        {
+          "evidence_id": "3AIoHLr8nTI:00008",
+          "start_seconds": 91.12,
+          "end_seconds": 100.08,
+          "text": "This group is truly diverse in every possible way. And I think that is an extraordinarily"
+        },
+        {
+          "evidence_id": "3AIoHLr8nTI:00009",
+          "start_seconds": 100.08,
+          "end_seconds": 109.84,
+          "text": "valuable and important thing. When I graduated in the early 1990s, I went on a trip around the world"
+        },
+        {
+          "evidence_id": "3AIoHLr8nTI:00010",
+          "start_seconds": 109.84,
+          "end_seconds": 115.76,
+          "text": "with a few good friends — who actually remain good friends to this day, which is sort of a miracle."
+        }
+      ]
+    },
+    {
+      "control_id": "job-control-review-043",
+      "annotation_id": "review-043",
+      "evidence_id": "9fEurt2OZ0I:00020",
+      "video_id": "9fEurt2OZ0I",
+      "communication_job": "qualified_recommendation",
+      "example_pattern_present": false,
+      "direct_observation": "The speaker says 'I think we have to get used to it' while discussing repeated rejection.",
+      "context": [
+        {
+          "evidence_id": "9fEurt2OZ0I:00018",
+          "start_seconds": 60.44,
+          "end_seconds": 66.159,
+          "text": "Harvard for 10 times"
+        },
+        {
+          "evidence_id": "9fEurt2OZ0I:00019",
+          "start_seconds": 63.0,
+          "end_seconds": 69.159,
+          "text": "rejected I know be rejected I that's"
+        },
+        {
+          "evidence_id": "9fEurt2OZ0I:00020",
+          "start_seconds": 66.159,
+          "end_seconds": 72.159,
+          "text": "sorry now I think we have to get used to"
+        },
+        {
+          "evidence_id": "9fEurt2OZ0I:00021",
+          "start_seconds": 69.159,
+          "end_seconds": 74.68,
+          "text": "it we're not that good even today we"
+        },
+        {
+          "evidence_id": "9fEurt2OZ0I:00022",
+          "start_seconds": 72.159,
+          "end_seconds": 76.119,
+          "text": "still have a lot of people reject us I I"
+        }
+      ]
+    }
+  ],
+  "counterexample_status": {
+    "status": "controls_recorded",
+    "existing_pattern_counterexamples": 2,
+    "job_controls_recorded": 4,
+    "remaining_cases": [
+      "example present but misleading or unsupported",
+      "example absent but equivalent explanation succeeds",
+      "editing/topic/microphone/setting alternative",
+      "copying specificity becomes invasive or unsafe"
+    ]
+  },
+  "multimodal_status": {
+    "aligned_audio_examples": 4,
+    "visual_alignment": "not manually verified",
+    "audio_measurement_caveat": "Existing audio features are coarse proxies; no listener or audience outcome is inferred.",
+    "raw_media_audit": "research/vertical-slice-01-media-audit.json",
+    "raw_media_verified_examples": [
+      {
+        "evidence_id": "aXmM0VZv810:00274",
+        "audio_source": "data/audio/aXmM0VZv810.m4a",
+        "video_source": "data/video/aXmM0VZv810.mp4",
+        "feature_source": "data/features/aXmM0VZv810.json",
+        "verification": "raw files present; aligned features refreshed; manual visual alignment pending"
+      },
+      {
+        "evidence_id": "aXmM0VZv810:00529",
+        "audio_source": "data/audio/aXmM0VZv810.m4a",
+        "video_source": "data/video/aXmM0VZv810.mp4",
+        "feature_source": "data/features/aXmM0VZv810.json",
+        "verification": "raw files present; aligned features refreshed; manual visual alignment pending"
+      },
+      {
+        "evidence_id": "aXmM0VZv810:00596",
+        "audio_source": "data/audio/aXmM0VZv810.m4a",
+        "video_source": "data/video/aXmM0VZv810.mp4",
+        "feature_source": "data/features/aXmM0VZv810.json",
+        "verification": "raw files present; aligned features refreshed; manual visual alignment pending"
+      }
+    ]
+  },
+  "independence_status": {
+    "status": "metadata_audited_speaker_unverified",
+    "reviewed_annotation_video_count": 8,
+    "note": "Uploader identity is not sufficient for speaker/event independence; verification remains pending.",
+    "audit": "research/vertical-slice-01-source-event-independence.json",
+    "finding": "Canonical source IDs and metadata were audited; speaker identity and event independence beyond distinct video IDs remain unverified."
+  },
+  "independent_review": {
+    "status": "not_started",
+    "required_checks": [
+      "example boundary",
+      "communication job",
+      "illustration-versus-proof distinction",
+      "factuality and source limits",
+      "safety/privacy boundary"
+    ]
+  },
+  "learner_lesson": {
+    "status": "draft_not_validated",
+    "draft_task": "State one general claim, give one concrete case or imagined scene, explain what the case illustrates, and state what it does not prove.",
+    "self_check": [
+      "Did I label the case as example, evidence or hypothesis?",
+      "Did I connect it back to the claim?",
+      "Did I avoid using a vivid detail as proof?",
+      "Did I protect privacy and avoid unnecessary identifying detail?"
+    ],
+    "writeup": "writeups/vertical-slice-01-lesson-example.md"
+  },
+  "source_sha256": {
+    "research/provisional-practice-patterns.json": "93a0b92d09c1e17fd6c74f7c598cf9844656389f40b5d8074a732485cde73f64",
+    "research/reviewed-pattern-cards.json": "10dc91145e892b01d586151c76a267eaa1f7c7a234fffac274602892221757bc",
+    "research/segment-registry.jsonl": "5b0d238e683a26700744a015ebb88d8f23b48720a9503a51de8fa0ec54bc4598",
+    "writeups/vertical-slice-01-lesson-example.md": "f54e0d8140053bd75e186f0f5193adbe745125ed6d2d8ccf08fb9a954f31091d",
+    "research/vertical-slice-01-source-event-independence.json": "a88c347d55623d15125f5af5a9ab207813a43c2ada7eeb3e1012d68c9565dcf1",
+    "data/media-status.jsonl": "ffe48cd19591790d03ab533a36f2b2e1d2ab6814c1550339b1088a4d476ecec9",
+    "data/features/aXmM0VZv810.json": "5c2e07c73a6df821dc670f26511c8be5c3185a52dc08cf929d222b56e2a3363a",
+    "data/audio/aXmM0VZv810.m4a": "472969d92364100413c8f076cda23a4f42ba2e42e06e09f34acb27a1824aacec",
+    "data/video/aXmM0VZv810.mp4": "31127cafc02c8a968677c39633fa7996be3b43a6abfcf448ab78f89ac67cffe9"
+  },
+  "next_action": "Add a misleading/unsupported example control, verify speaker/event independence, and obtain independent interpretation review."
+}

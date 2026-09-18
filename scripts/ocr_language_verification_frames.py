@@ -8,7 +8,10 @@ import os
 import subprocess
 from collections import defaultdict
 from pathlib import Path
-import cv2
+try:
+    import cv2
+except ImportError:  # OCR report generation needs it; pure parsing helpers do not.
+    cv2 = None
 
 ROOT = Path(__file__).resolve().parents[1]
 ROI = {'left': 0, 'top': 245, 'right': 640, 'bottom': 360}
@@ -42,6 +45,8 @@ def select_words(tsv, roi):
 
 
 def main():
+    if cv2 is None:
+        raise RuntimeError('opencv-python is required to generate OCR frame reports')
     runtime = ROOT / 'data/cache/ocr-runtime/root'
     executable = runtime / 'usr/bin/tesseract'
     trained = runtime / 'usr/share/tesseract-ocr/4.00/tessdata/eng.traineddata'

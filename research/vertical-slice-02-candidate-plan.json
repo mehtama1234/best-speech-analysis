@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0",
+  "plan_id": "vertical-slice-02-candidate-plan",
+  "status": "candidate_plan_not_validated",
+  "claim_boundary": "These are context-reviewed candidate examples selected for the next evidence-to-practice slice. They are not validated lessons or universal best practices.",
+  "source_policy": "Use full context, preserve transcript uncertainty, verify speaker/event identity, inspect delivery independently and retain non-fit cases.",
+  "candidates": [
+    {
+      "pattern_id": "candidate-question",
+      "communication_job": "open inquiry, invite reflection or orient an interview",
+      "candidate_forms": ["I wonder what I could do?", "How about that?", "Why don't we start right at the beginning?"],
+      "evidence_ids": ["-54zUwySKCg:00122", "2fWJh-_UG5s:00005", "AwA0Jnfj3ao:00003"],
+      "video_ids": ["-54zUwySKCg", "2fWJh-_UG5s", "AwA0Jnfj3ao"],
+      "raw_audio_video_status": "3/3 available",
+      "mechanism_hypothesis": "A question may open a reasoning path, invite participation or establish a shared starting point, but its job depends on turn structure and whether an answer follows.",
+      "required_counterexamples": ["rhetorical question used as a claim", "question that is only a scripted transition", "question that excludes or pressures the listener"],
+      "next_work": "Build a packet with question type, turn ownership, answer relation, accessibility and non-fit controls.",
+      "draft_packet": "research/vertical-slice-02-question-draft.json",
+      "draft_lesson": "writeups/vertical-slice-02-lesson-question-draft.md"
+    },
+    {
+      "pattern_id": "candidate-definition_or_reformulation",
+      "communication_job": "define, translate or operationalize an unfamiliar idea",
+      "candidate_forms": ["means an assassin", "this means reformed", "means electricity"],
+      "evidence_ids": ["_Mb1-CN3wZs:00048", "-6qN3bm2RYo:00068", "fBnAMUkNM2k:00374"],
+      "video_ids": ["_Mb1-CN3wZs", "-6qN3bm2RYo", "fBnAMUkNM2k"],
+      "raw_audio_video_status": "2/3 available; one transcript-only candidate",
+      "mechanism_hypothesis": "A definition may reduce ambiguity by linking a term to a familiar meaning or operational consequence, but translation, simplification and persuasion must not be conflated.",
+      "required_counterexamples": ["definition that changes the claim", "familiar term that needs no definition", "translation whose cultural context is lost"],
+      "next_work": "Separate dictionary definition, translation, reformulation and example; verify wording and speaker/event identity.",
+      "draft_packet": "research/vertical-slice-02-definition-draft.json",
+      "draft_lesson": "writeups/vertical-slice-02-lesson-definition-draft.md"
+    },
+    {
+      "pattern_id": "candidate-call_to_action",
+      "communication_job": "invite a collective, institutional or personal next step",
+      "candidate_forms": ["we need to save for schools", "we need to create a global architecture", "let us strive"],
+      "evidence_ids": ["2fWJh-_UG5s:00401", "-6qN3bm2RYo:00276", "-6qN3bm2RYo:00343"],
+      "video_ids": ["2fWJh-_UG5s", "-6qN3bm2RYo"],
+      "raw_audio_video_status": "3/3 available",
+      "mechanism_hypothesis": "A call to action may make agency and direction explicit, but its quality depends on feasibility, ownership, resources, consent and limits rather than imperative wording alone.",
+      "required_counterexamples": ["aspiration without an actionable owner", "coercive or unsafe invitation", "promotional call misattributed to the featured speaker"],
+      "next_work": "Separate action scale, owner, time horizon, evidence, consent and unintended-harm safeguards.",
+      "draft_packet": "research/vertical-slice-02-call-to-action-draft.json",
+      "draft_lesson": "writeups/vertical-slice-02-lesson-call-to-action-draft.md"
+    }
+  ],
+  "next_actions": [
+    "Freeze candidate contexts before writing lessons.",
+    "Create representative, absent-but-effective and failed-or-misfit examples for each candidate.",
+    "Run independent source/event and audiovisual review before promotion.",
+    "Reuse the existing reviewer workbook and learner protocol only after packet construction."
+  ]
+}

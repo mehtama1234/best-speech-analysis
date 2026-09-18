@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "review_id": "vertical-slice-02-manual-multimodal-review",
+  "status": "internal_sample_review_complete_independent_review_pending",
+  "reviewer": "internal project agent",
+  "independence": "not_independent",
+  "claim_boundary": "These observations describe sampled frames and caption alignment. They do not establish turn meaning, speaker intent, audience response, learner outcome or communication effectiveness.",
+  "method": {
+    "rule": "one sampled frame near the midpoint of each selected raw-media interval",
+    "observed_fields": ["speaker visibility", "setting", "on-screen text", "apparent edit or shot"],
+    "not_inferred": ["emotion", "intent", "confidence", "comprehension", "persuasion", "audience effect"]
+  },
+  "items": [
+    {"evidence_id":"-54zUwySKCg:00122","pattern_id":"candidate-question","sampled_time_seconds":615.9,"frame_observation":"Speaker is visible at a microphone with an audience behind her; the displayed caption includes the full reflective question, ‘I wonder what I could do?’","alignment_decision":"visible_caption_overlap","alignment_limit":"The frame supports wording and public setting, not whether the question invited a response or changed audience behavior."},
+    {"evidence_id":"2fWJh-_UG5s:00005","pattern_id":"candidate-question","sampled_time_seconds":14.5,"frame_observation":"Speaker is visible in a White House press-room setting, but the sampled frame is dominated by an edit/title treatment and does not display the short ‘how about that’ caption.","alignment_decision":"setting_visible_caption_not_aligned","alignment_limit":"The source edit prevents treating this frame as exact visual alignment for the question-like phrase."},
+    {"evidence_id":"AwA0Jnfj3ao:00003","pattern_id":"candidate-question","sampled_time_seconds":24.7,"frame_observation":"Two people are visible in a seated interview setting with event branding; the caption visibly displays ‘Why don't we start right at the beginning?’","alignment_decision":"visible_caption_overlap","alignment_limit":"The frame supports a question and interview setting, not turn ownership, prosody or the answer that followed."},
+    {"evidence_id":"-6qN3bm2RYo:00068","pattern_id":"candidate-definition_or_reformulation","sampled_time_seconds":194.4,"frame_observation":"Speaker is visible at a formal podium against an institutional marble backdrop; the caption displays ‘Externally, this means reformed multilateralism.’","alignment_decision":"visible_caption_overlap","alignment_limit":"The frame supports wording and setting, not whether the reformulation is complete, accurate or understood."},
+    {"evidence_id":"fBnAMUkNM2k:00374","pattern_id":"candidate-definition_or_reformulation","sampled_time_seconds":1582.0,"frame_observation":"The speaker appears in a dark interview/story setting; the sampled frame displays nearby personal-story text rather than the exact short translation ‘Bijli means electricity.’","alignment_decision":"nearby_caption_boundary_transition","alignment_limit":"The raw source is available, but this sample does not isolate the exact target caption; resampling adjacent frames is required."},
+    {"evidence_id":"2fWJh-_UG5s:00401","pattern_id":"candidate-call_to_action","sampled_time_seconds":956.5,"frame_observation":"Speaker is visible at the White House podium with the U.S. flag and White House backdrop; the sampled frame does not display the exact ‘we need to save for schools’ wording.","alignment_decision":"setting_visible_caption_not_aligned","alignment_limit":"The frame supports formal setting only; it does not support exact visual alignment or audience response."},
+    {"evidence_id":"-6qN3bm2RYo:00276","pattern_id":"candidate-call_to_action","sampled_time_seconds":795.6,"frame_observation":"Speaker is centered at a formal podium against a marble institutional backdrop; the caption visibly reads ‘We need to create a global architecture.’","alignment_decision":"visible_caption_overlap","alignment_limit":"The frame supports the proposal wording, not feasibility, ownership, consent or listener uptake."},
+    {"evidence_id":"-6qN3bm2RYo:00343","pattern_id":"candidate-call_to_action","sampled_time_seconds":991.3,"frame_observation":"Speaker remains at the same formal podium; the caption visibly reads ‘let us strive to return to the course of seeking peace.’","alignment_decision":"visible_caption_overlap","alignment_limit":"The frame supports a collective appeal, not a measurable action plan or audience commitment."}
+  ],
+  "next_actions": [
+    "Have an independent reviewer inspect all eight intervals.",
+    "Resample the definition translation and edit/title intervals at both boundaries.",
+    "Add a manual counterexample review for each candidate packet.",
+    "Keep all observations provisional until source/event and learner gates are complete."
+  ]
+}

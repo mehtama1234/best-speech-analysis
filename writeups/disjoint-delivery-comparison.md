@@ -9,14 +9,14 @@ one delta; missing comparisons remain missing, not zero.
 
 | Label | RMS delta / videos | Pitch proxy delta / videos | WPS proxy delta / videos |
 | --- | --- | --- | --- |
-| call_to_action | -6.288 / 4 | -47.068 / 4 | -0.161 / 4 |
-| conclusion_or_summary | 0.309 / 3 | -11.532 / 3 | -0.186 / 3 |
-| contrast_or_disagreement | 1.835 / 8 | 8.510 / 8 | 1.012 / 8 |
-| definition | 1.876 / 3 | 28.261 / 3 | -0.058 / 3 |
-| example | -0.600 / 4 | -4.302 / 4 | 0.183 / 4 |
+| call_to_action | -4.634 / 5 | -40.689 / 5 | -0.054 / 5 |
+| conclusion_or_summary | 0.916 / 5 | 3.742 / 5 | -0.035 / 5 |
+| contrast_or_disagreement | 1.740 / 9 | 9.528 / 9 | 0.946 / 9 |
+| definition | 1.717 / 4 | 14.193 / 4 | -0.091 / 4 |
+| example | -0.103 / 5 | -7.091 / 5 | 0.147 / 5 |
 | pause_event | 2.482 / 2 | 14.327 / 2 | -0.363 / 2 |
-| question | -0.229 / 6 | 8.596 / 6 | -0.185 / 6 |
-| story_or_personal_experience | -1.419 / 5 | -2.182 / 5 | 0.164 / 5 |
+| question | -0.264 / 7 | 7.451 / 7 | 0.011 / 7 |
+| story_or_personal_experience | -1.014 / 6 | -2.872 / 6 | 0.206 / 6 |
 | uncertainty_or_qualification | -1.565 / 7 | 1.349 / 7 | 0.081 / 7 |
 
 RMS deltas are in dB; pitch-proxy deltas in Hz; WPS in words/second.
@@ -30,14 +30,14 @@ These are transcript timing proxies, not validated articulation rates.
 
 | Label | All usable reference | Disjoint reference |
 | --- | --- | --- |
-| call_to_action | -0.156 | -0.161 |
-| conclusion_or_summary | -0.184 | -0.186 |
-| contrast_or_disagreement | 0.995 | 1.012 |
-| definition | -0.113 | -0.058 |
-| example | 0.185 | 0.183 |
+| call_to_action | -0.051 | -0.054 |
+| conclusion_or_summary | -0.043 | -0.035 |
+| contrast_or_disagreement | 0.925 | 0.946 |
+| definition | -0.134 | -0.091 |
+| example | 0.148 | 0.147 |
 | pause_event | -0.413 | -0.363 |
-| question | -0.192 | -0.185 |
-| story_or_personal_experience | 0.022 | 0.164 |
+| question | -0.002 | 0.011 |
+| story_or_personal_experience | 0.079 | 0.206 |
 | uncertainty_or_qualification | 0.012 | 0.081 |
 
 ## Limits

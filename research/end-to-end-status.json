@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "report_id": "best-speech-analysis-end-to-end-status",
+  "generated_from": [
+    "research/full-reading-queue.json",
+    "research/full-context-reviews.json",
+    "research/corpus-pattern-atlas.json",
+    "research/multimodal-coverage-audit.json",
+    "research/shared-lesson-cards.json",
+    "research/shared-learner-check.json",
+    "research/listener-outcome-protocol.json",
+    "research/raw-media-only-visual-audit.json"
+  ],
+  "status": "research_checkpoint_not_complete",
+  "claim_boundary": "This dashboard reports artifact and validation status. It does not convert transcript coverage, internal review, generated instruments or passing tests into evidence of communication effectiveness.",
+  "stages": {
+    "inventory": {
+      "status": "complete_for_fixed_corpus",
+      "video_count": 395,
+      "source": "research/full-reading-queue.json"
+    },
+    "transcript_context": {
+      "status": "complete_for_fixed_corpus",
+      "video_count": 395,
+      "caption_count": 102816,
+      "source": "research/full-context-reviews.json"
+    },
+    "phrase_retrieval_atlas": {
+      "status": "complete_as_heuristic_transcript_retrieval",
+      "eligible_video_count": 394,
+      "eligible_segment_count": 102351,
+      "source": "research/corpus-pattern-atlas.json"
+    },
+    "speech_function_candidate_review": {
+      "status": "template_not_completed",
+      "queued_item_count": 187,
+      "completed_independent_reviews": 0,
+      "source": "research/corpus-function-independent-review-workbook.json"
+    },
+    "recurrence_candidate_review": {
+      "status": "template_not_completed",
+      "queued_item_count": 192,
+      "completed_independent_reviews": 0,
+      "source": "research/corpus-recurrence-independent-review-workbook.json"
+    },
+    "delivery_evidence": {
+      "status": "raw_media_reconciled_manual_review_pending",
+      "selected_video_count": 41,
+      "raw_audio_video_present": 29,
+      "raw_audio_video_with_transcript": 21,
+      "raw_audio_video_without_transcript": 8,
+      "internal_manual_reviews": 21,
+      "raw_only_visual_audit_items": 8,
+      "raw_only_visual_audit_status": "internal_visual_source_audit_complete_transcript_missing",
+      "independent_review_items": 21,
+      "completed_independent_reviews": 0,
+      "source": "research/multimodal-coverage-audit.json"
+    },
+    "shared_lessons": {
+      "status": "eight_draft_cards_not_validated",
+      "draft_card_count": 8,
+      "promotion_ready_card_count": 0,
+      "source": "research/shared-lesson-cards.json"
+    },
+    "learner_check": {
+      "status": "protocol_drafted_not_run",
+      "task_count": 32,
+      "completed_records": 0,
+      "source": "research/shared-learner-check.json"
+    },
+    "listener_outcomes": {
+      "status": "design_complete_not_run",
+      "task_count": 6,
+      "completed_records": 0,
+      "source": "research/listener-outcome-protocol.json"
+    }
+  },
+  "next_required_gates": [
+    "obtain independent transcript-function review exports and preserve disagreements",
+    "obtain independent recurrence review exports and adjudicate disagreements",
+    "complete independent multimodal alignment/function/safety review",
+    "run learner teachability protocol and validate exported records",
+    "run blinded listener-outcome protocol before making effectiveness claims"
+  ]
+}

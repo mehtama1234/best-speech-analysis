@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vertical slice 02 learner check</title>
+<style>
+body{font:16px/1.5 system-ui,sans-serif;max-width:900px;margin:2rem auto;padding:0 1rem;color:#17202a}
+h1{line-height:1.15} fieldset{border:1px solid #9aa7b2;border-radius:.5rem;margin:1.5rem 0;padding:1rem}
+legend{font-weight:700;padding:0 .4rem} label{display:block;margin:.75rem 0} textarea{display:block;width:100%;box-sizing:border-box;margin-top:.3rem}
+input[type=text],input[type=date]{max-width:24rem;padding:.35rem} button{padding:.6rem 1rem;margin:.5rem .5rem .5rem 0;cursor:pointer}
+.notice{background:#fff6d6;border-left:4px solid #c88a00;padding:.8rem} .task{background:#eef5fb;border-left:4px solid #39739d;padding:.6rem;margin:.7rem 0}
+#result{white-space:pre-wrap;background:#f3f5f7;padding:1rem;display:none}
+</style></head><body>
+<h1>Vertical slice 02 learner check</h1>
+<div class="notice"><strong>Research boundary:</strong> This records teachability observations for three unvalidated candidate patterns. It does not test trust, memory, persuasion, engagement or action. Do not enter identifying personal stories or sensitive information. Written, typed, captioned and asynchronous responses are allowed.</div>
+<form id="check">
+<fieldset><legend>Session record</legend>
+<label>Pseudonym or participant code<input required type="text" name="participant_code"></label>
+<label>Date<input required type="date" name="date"></label>
+<label>Lesson version<input required type="text" name="lesson_version" value="vertical-slice-02-draft"></label>
+<label>Accessibility needs or modality<textarea name="accessibility" rows="2"></textarea></label>
+<label><input required type="checkbox" name="consent"> I consent to this local research record being saved for the stated learner-check purpose.</label>
+</fieldset>
+
+    <fieldset class="pattern"><legend>1. candidate-question</legend>
+      <input type="hidden" name="p1_task_bank_ids" value="question-recognition-01,question-transfer-01,question-nonfit-01,question-control-01">
+      <div class="task"><strong>recognition — question-recognition-01</strong><p><b>Stimulus:</b> I wonder what I could try next?</p><p>Identify whether this is information-seeking, reflection, a rhetorical move or another function. Explain what evidence you used.</p><label>Response<textarea required name="p1_question-recognition-01" rows="4"></textarea></label></div><div class="task"><strong>transfer — question-transfer-01</strong><p><b>Stimulus:</b> A colleague gives you a complicated explanation.</p><p>Write one respectful question that invites clarification without implying the colleague failed.</p><label>Response<textarea required name="p1_question-transfer-01" rows="4"></textarea></label></div><div class="task"><strong>non_fit — question-nonfit-01</strong><p><b>Stimulus:</b> You already know the answer and want the group to agree.</p><p>Explain when a rhetorical question could pressure the group and write a bounded alternative.</p><label>Response<textarea required name="p1_question-nonfit-01" rows="4"></textarea></label></div><div class="task"><strong>control — question-control-01</strong><p><b>Stimulus:</b> You need to move directly from one agenda item to the next.</p><p>Write a plain transition without a question, then explain why a question is not necessary here.</p><label>Response<textarea required name="p1_question-control-01" rows="4"></textarea></label></div>
+      <label>Listener restatement<textarea required name="p1_listener_restatement" rows="3"></textarea></label>
+      <label>Revision after feedback<textarea required name="p1_revision" rows="3"></textarea></label>
+      <label>Boundary or safety note<textarea required name="p1_boundary_note" rows="3"></textarea></label>
+    </fieldset>
+
+    <fieldset class="pattern"><legend>2. candidate-definition_or_reformulation</legend>
+      <input type="hidden" name="p2_task_bank_ids" value="definition-recognition-01,definition-transfer-01,definition-nonfit-01,definition-control-01">
+      <div class="task"><strong>recognition — definition-recognition-01</strong><p><b>Stimulus:</b> By ‘access,’ I mean the ability to use the service without an extra barrier.</p><p>Identify whether this is a definition, translation, interpretation or recommendation, and name the limit it states or leaves open.</p><label>Response<textarea required name="p2_definition-recognition-01" rows="4"></textarea></label></div><div class="task"><strong>transfer — definition-transfer-01</strong><p><b>Stimulus:</b> Your audience does not know a technical term.</p><p>Define it in one sentence, then state one thing your definition does not cover.</p><label>Response<textarea required name="p2_definition-transfer-01" rows="4"></textarea></label></div><div class="task"><strong>non_fit — definition-nonfit-01</strong><p><b>Stimulus:</b> That means everyone who disagrees is acting in bad faith.</p><p>Explain why this may be an interpretation or accusation rather than a definition. Rewrite it more carefully.</p><label>Response<textarea required name="p2_definition-nonfit-01" rows="4"></textarea></label></div><div class="task"><strong>control — definition-control-01</strong><p><b>Stimulus:</b> The audience already shares the term’s ordinary meaning.</p><p>Explain why adding a definition may create unnecessary friction, and offer a concise transition instead.</p><label>Response<textarea required name="p2_definition-control-01" rows="4"></textarea></label></div>
+      <label>Listener restatement<textarea required name="p2_listener_restatement" rows="3"></textarea></label>
+      <label>Revision after feedback<textarea required name="p2_revision" rows="3"></textarea></label>
+      <label>Boundary or safety note<textarea required name="p2_boundary_note" rows="3"></textarea></label>
+    </fieldset>
+
+    <fieldset class="pattern"><legend>3. candidate-call_to_action</legend>
+      <input type="hidden" name="p3_task_bank_ids" value="action-recognition-01,action-transfer-01,action-nonfit-01,action-control-01">
+      <div class="task"><strong>recognition — action-recognition-01</strong><p><b>Stimulus:</b> By Friday, the project owner will publish the draft and invite comments.</p><p>Identify the action, owner, time horizon and remaining limit. Distinguish it from a broad aspiration.</p><label>Response<textarea required name="p3_action-recognition-01" rows="4"></textarea></label></div><div class="task"><strong>transfer — action-transfer-01</strong><p><b>Stimulus:</b> Your team has identified one small problem it can address.</p><p>Write a call to action with an owner, resource, time horizon and consent or opt-out condition.</p><label>Response<textarea required name="p3_action-transfer-01" rows="4"></textarea></label></div><div class="task"><strong>non_fit — action-nonfit-01</strong><p><b>Stimulus:</b> Everyone must share this immediately or they do not care.</p><p>Identify the coercive or unsafe features and rewrite the request with a bounded alternative.</p><label>Response<textarea required name="p3_action-nonfit-01" rows="4"></textarea></label></div><div class="task"><strong>control — action-control-01</strong><p><b>Stimulus:</b> You are closing a talk with appreciation but no action request.</p><p>Write a gratitude-based close that does not imply the audience owes an action.</p><label>Response<textarea required name="p3_action-control-01" rows="4"></textarea></label></div>
+      <label>Listener restatement<textarea required name="p3_listener_restatement" rows="3"></textarea></label>
+      <label>Revision after feedback<textarea required name="p3_revision" rows="3"></textarea></label>
+      <label>Boundary or safety note<textarea required name="p3_boundary_note" rows="3"></textarea></label>
+    </fieldset>
+<fieldset><legend>Facilitator record</legend>
+<label>Feedback given<textarea name="facilitator_feedback" rows="4"></textarea></label>
+<label>Accommodations or unresolved disagreement<textarea name="facilitator_notes" rows="3"></textarea></label>
+</fieldset>
+<button type="button" id="download">Download JSON record</button><button type="reset">Clear form</button>
+</form><pre id="result" aria-live="polite"></pre>
+<script type="application/json" id="task-bank">["question-recognition-01", "question-transfer-01", "question-nonfit-01", "question-control-01", "definition-recognition-01", "definition-transfer-01", "definition-nonfit-01", "definition-control-01", "action-recognition-01", "action-transfer-01", "action-nonfit-01", "action-control-01"]</script>
+<script>
+const form=document.querySelector('#check'), result=document.querySelector('#result');
+document.querySelector('#download').addEventListener('click',()=>{
+  if(!form.reportValidity()) return;
+  const data={schema_version:'1.0',protocol_id:'vertical-slice-02-learner-check',record_type:'learner_observation',responses:{}};
+  for(const el of form.elements){if(!el.name)continue;if(el.type==='checkbox')data.responses[el.name]=el.checked;else data.responses[el.name]=el.value;}
+  data.task_bank_ids=JSON.parse(document.querySelector('#task-bank').textContent);
+  data.claim_boundary='Teachability observations only; not listener outcomes or communication-effectiveness evidence.';
+  const blob=new Blob([JSON.stringify(data,null,2)+'\n'],{type:'application/json'}),url=URL.createObjectURL(blob),a=document.createElement('a');
+  a.href=url;a.download='vertical-slice-02-learner-record-'+data.responses.participant_code+'.json';a.click();URL.revokeObjectURL(url);
+  result.style.display='block';result.textContent='Record prepared for download. Keep the participant code non-identifying.';
+});
+</script></body></html>

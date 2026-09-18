@@ -16,7 +16,10 @@ from pathlib import Path
 
 import imageio_ffmpeg
 import numpy as np
-import cv2
+try:
+    import cv2
+except ImportError:  # Optional: audio and scene-pixel extraction remain usable.
+    cv2 = None
 from PIL import Image
 from scipy.signal import welch
 
@@ -80,6 +83,21 @@ def frame_feature(video_path: Path, time_seconds: float) -> dict | None:
         raw = subprocess.check_output(command, timeout=30)
         image = Image.open(io.BytesIO(raw)).convert("RGB")
         pixels = np.asarray(image, dtype=np.float32)
+        if cv2 is None:
+            return {
+                "time_seconds": round(time_seconds, 3),
+                "width": image.width,
+                "height": image.height,
+                "mean_luminance": round(float(np.mean(pixels)), 3),
+                "luminance_std": round(float(np.std(pixels)), 3),
+                "mean_red": round(float(np.mean(pixels[:, :, 0])), 3),
+                "mean_green": round(float(np.mean(pixels[:, :, 1])), 3),
+                "mean_blue": round(float(np.mean(pixels[:, :, 2])), 3),
+                "faces": [],
+                "face_count": None,
+                "smile_detector_candidate_count": None,
+                "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only",
+            }
         gray = cv2.cvtColor(pixels.astype(np.uint8), cv2.COLOR_RGB2GRAY)
         face_detector = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_frontalface_default.xml")
         smile_detector = cv2.CascadeClassifier(cv2.data.haarcascades + "haarcascade_smile.xml")
@@ -157,11 +175,16 @@ def main() -> int:
     parser.add_argument("--output-dir", default="data/features")
     parser.add_argument("--frame-step", type=float, default=10.0)
     parser.add_argument("--reuse-frames", action="store_true", help="Keep existing sampled frames while refreshing audio/transcript features.")
+    parser.add_argument("--video-id", action="append", dest="video_ids",
+                        help="Extract only these video IDs; repeatable.")
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[1]
     output_dir = root / args.output_dir
     output_dir.mkdir(parents=True, exist_ok=True)
     statuses = [json.loads(line) for line in Path(args.manifest).read_text().splitlines() if line.strip()]
+    if args.video_ids:
+        wanted = set(args.video_ids)
+        statuses = [status for status in statuses if status["video_id"] in wanted]
     for status in statuses:
         video_id = status["video_id"]
         audio_candidates = list((root / "data/audio").glob(f"{video_id}.*"))

@@ -9,6 +9,21 @@ import subprocess
 from pathlib import Path
 
 
+def existing_media(directory: Path, video_id: str) -> list[Path]:
+    """Return real output files; ledger status alone is never a cache hit."""
+    return sorted(path for path in directory.glob(f"{video_id}.*") if path.is_file())
+
+
+def run_download(command: list[str], directory: Path, video_id: str) -> str:
+    try:
+        subprocess.run(command, check=True)
+    except FileNotFoundError:
+        return "failed:missing_command"
+    except subprocess.CalledProcessError as exc:
+        return f"failed:{exc.returncode}"
+    return "downloaded" if existing_media(directory, video_id) else "failed:no_output"
+
+
 def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--manifest", default="data/metadata/multimodal-pilot.json")
@@ -16,6 +31,8 @@ def main() -> int:
     parser.add_argument("--video-dir", default="data/video")
     parser.add_argument("--status-file", default="data/media-status.jsonl")
     parser.add_argument("--limit", type=int)
+    parser.add_argument("--video-id", action="append", dest="video_ids",
+                        help="Download only these manifest video IDs; repeatable.")
     args = parser.parse_args()
 
     manifest = json.loads(Path(args.manifest).read_text())
@@ -32,34 +49,36 @@ def main() -> int:
             if line.strip()
             for row in [json.loads(line)]
         }
-    videos = manifest["videos"][:args.limit] if args.limit else manifest["videos"]
+    videos = manifest["videos"]
+    if args.video_ids:
+        wanted = set(args.video_ids)
+        videos = [video for video in videos if video["video_id"] in wanted]
+    elif args.limit:
+        videos = videos[:args.limit]
     results = dict(existing)
 
     for video in videos:
         video_id = video["video_id"]
         url = video["url"]
         row = results.setdefault(video_id, {"video_id": video_id, "url": url})
-        if row.get("video_status") == "downloaded" and row.get("audio_status") == "downloaded":
+        if (
+            row.get("video_status") == "downloaded"
+            and row.get("audio_status") == "downloaded"
+            and existing_media(video_dir, video_id)
+            and existing_media(audio_dir, video_id)
+        ):
             print(json.dumps({"video_id": video_id, "status": "cached"}), flush=True)
             continue
         video_pattern = str(video_dir / f"{video_id}.%(ext)s")
         audio_pattern = str(audio_dir / f"{video_id}.%(ext)s")
-        try:
-            subprocess.run([
-                "yt-dlp", "--no-playlist", "--no-part", "--format", "bestvideo[height<=360][ext=mp4]/bestvideo[height<=360]/worstvideo",
-                "--output", video_pattern, url,
-            ], check=True)
-            row["video_status"] = "downloaded"
-        except subprocess.CalledProcessError as exc:
-            row["video_status"] = f"failed:{exc.returncode}"
-        try:
-            subprocess.run([
-                "yt-dlp", "--no-playlist", "--no-part", "--format", "bestaudio[ext=m4a]/bestaudio",
-                "--output", audio_pattern, url,
-            ], check=True)
-            row["audio_status"] = "downloaded"
-        except subprocess.CalledProcessError as exc:
-            row["audio_status"] = f"failed:{exc.returncode}"
+        row["video_status"] = run_download([
+            "yt-dlp", "--no-playlist", "--no-part", "--format", "bestvideo[height<=360][ext=mp4]/bestvideo[height<=360]/worstvideo",
+            "--output", video_pattern, url,
+        ], video_dir, video_id)
+        row["audio_status"] = run_download([
+            "yt-dlp", "--no-playlist", "--no-part", "--format", "bestaudio[ext=m4a]/bestaudio",
+            "--output", audio_pattern, url,
+        ], audio_dir, video_id)
         print(json.dumps(row), flush=True)
 
     with status_path.open("w") as handle:

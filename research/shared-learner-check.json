@@ -1,0 +1,423 @@
+{
+  "schema_version": "1.0",
+  "protocol_id": "shared-learner-check",
+  "status": "protocol_drafted_not_run",
+  "purpose": "Test whether learners can recognize, explain, transfer and safely bound all eight current draft communication patterns.",
+  "claim_boundary": "This protocol tests teachability of draft lessons, not whether any speech pattern improves trust, memory, persuasion, engagement or action.",
+  "consent_and_accessibility": "Use a pseudonym; allow written, typed, captioned, asynchronous or spoken responses; do not require personal disclosure; store no recording without explicit separate consent.",
+  "source_task_banks": [
+    "research/vertical-slice-01-learner-task-bank.json",
+    "research/vertical-slice-02-learner-task-bank.json"
+  ],
+  "lesson_index": "research/shared-provisional-curriculum.json",
+  "task_count": 32,
+  "pattern_count": 8,
+  "patterns": [
+    {
+      "pattern_id": "provisional-contrast_or_disagreement",
+      "slice": "vertical-slice-01",
+      "communication_job": "disagree safely or show a change in reasoning without confusing textual contrast with interpersonal disagreement.",
+      "lesson": "writeups/vertical-slice-01-lesson-contrast.md",
+      "packet": "research/vertical-slice-01-contrast-or-disagreement.json",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "pattern_id": "provisional-example",
+      "slice": "vertical-slice-01",
+      "communication_job": "make an abstract or general claim concrete without treating an illustration as proof.",
+      "lesson": "writeups/vertical-slice-01-lesson-example.md",
+      "packet": "research/vertical-slice-01-example.json",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "pattern_id": "provisional-story_or_personal_experience",
+      "slice": "vertical-slice-01",
+      "communication_job": "use bounded personal detail to make an idea concrete without treating autobiography as universal proof.",
+      "lesson": "writeups/vertical-slice-01-lesson-story.md",
+      "packet": "research/vertical-slice-01-story.json",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "pattern_id": "provisional-uncertainty_or_qualification",
+      "slice": "vertical-slice-01",
+      "communication_job": "state uncertainty, possibility or recommendation limits precisely without hiding the main point behind vague hedging.",
+      "lesson": "writeups/vertical-slice-01-lesson-uncertainty.md",
+      "packet": "research/vertical-slice-01-uncertainty.json",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "pattern_id": "provisional-conclusion_or_summary",
+      "slice": "vertical-slice-01",
+      "communication_job": "close or compress an explanation so the listener can state the takeaway without mistaking a marker for proof.",
+      "lesson": "writeups/vertical-slice-01-lesson-conclusion.md",
+      "packet": "research/vertical-slice-01-conclusion.json",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "pattern_id": "candidate-question",
+      "slice": "vertical-slice-02",
+      "communication_job": "open inquiry, invite reflection or orient an interview",
+      "lesson": "writeups/vertical-slice-02-lesson-question-draft.md",
+      "packet": "research/vertical-slice-02-question-draft.json",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "pattern_id": "candidate-definition_or_reformulation",
+      "slice": "vertical-slice-02",
+      "communication_job": "define, translate or operationalize an unfamiliar idea",
+      "lesson": "writeups/vertical-slice-02-lesson-definition-draft.md",
+      "packet": "research/vertical-slice-02-definition-draft.json",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    },
+    {
+      "pattern_id": "candidate-call_to_action",
+      "slice": "vertical-slice-02",
+      "communication_job": "invite a collective, institutional or personal next step",
+      "lesson": "writeups/vertical-slice-02-lesson-call-to-action-draft.md",
+      "packet": "research/vertical-slice-02-call-to-action-draft.json",
+      "task_count": 4,
+      "status": "draft_not_validated"
+    }
+  ],
+  "tasks": [
+    {
+      "task_id": "contrast-recognition-01",
+      "pattern_id": "provisional-contrast_or_disagreement",
+      "phase": "new_example_recognition",
+      "prompt": "A project was expected to take two weeks but took six because a required dependency arrived late. Which response most clearly performs the communication job? A: ‘The team is unreliable.’ B: ‘We planned for two weeks; the dependency arrived in week four, so the schedule moved to six weeks. This does not by itself show why the dependency was late.’ C: ‘Everyone knows this always happens.’",
+      "expected_choice": "B",
+      "boundary": "Do not infer motive or personality from the comparison.",
+      "source_task_bank": "vertical-slice-01-learner-task-bank"
+    },
+    {
+      "task_id": "contrast-transfer-01",
+      "pattern_id": "provisional-contrast_or_disagreement",
+      "phase": "transfer",
+      "prompt": "Describe one expected-versus-observed difference in an ordinary task using two sentences and one limit. Do not name a person as the cause unless you have separate evidence.",
+      "expected_features": [
+        "both sides named",
+        "consequence or change stated",
+        "limit stated",
+        "no motive claim"
+      ],
+      "source_task_bank": "vertical-slice-01-learner-task-bank"
+    },
+    {
+      "task_id": "contrast-nonfit-01",
+      "pattern_id": "provisional-contrast_or_disagreement",
+      "phase": "misuse_non_fit",
+      "prompt": "A speaker says ‘In short, bring your identification tomorrow’ after explaining a process. Is this primarily an explicit contrast? Explain why or why not.",
+      "expected_judgment": "not_fit_summary_or_instruction",
+      "boundary": "A marker or change word alone is not proof of the underlying job.",
+      "source_task_bank": "vertical-slice-01-learner-task-bank"
+    },
+    {
+      "task_id": "contrast-control-01",
+      "pattern_id": "provisional-contrast_or_disagreement",
+      "phase": "matched_control",
+      "prompt": "Give a plain instruction without using a contrast marker, then explain how it differs from reporting an expected-versus-observed outcome.",
+      "expected_features": [
+        "instruction is usable",
+        "difference from contrast is explicit"
+      ],
+      "source_task_bank": "vertical-slice-01-learner-task-bank"
+    },
+    {
+      "task_id": "example-recognition-01",
+      "pattern_id": "provisional-example",
+      "phase": "new_example_recognition",
+      "prompt": "A speaker says ‘Clear documentation reduces repeated questions. For example, our clinic added a one-page intake guide and saw fewer missing fields in one month.’ What must the speaker still avoid claiming? A: that the case illustrates the claim; B: that one case proves the guide caused the entire change or applies to every clinic; C: that the case has any relevance.",
+      "expected_choice": "B",
+      "boundary": "A case can illustrate without proving representativeness or causality.",
+      "source_task_bank": "vertical-slice-01-learner-task-bank"
+    },
+    {
+      "task_id": "example-transfer-01",
+      "pattern_id": "provisional-example",
+      "phase": "transfer",
+      "prompt": "State a general claim, give a labeled observed, reported, hypothetical or illustrative case, connect it to the claim, and state one limit. Use no identifying personal detail.",
+      "expected_features": [
+        "claim stated",
+        "case labeled",
+        "connection explained",
+        "limit stated",
+        "privacy protected"
+      ],
+      "source_task_bank": "vertical-slice-01-learner-task-bank"
+    },
+    {
+      "task_id": "example-nonfit-01",
+      "pattern_id": "provisional-example",
+      "phase": "misuse_non_fit",
+      "prompt": "Someone names one dramatic incident and says it proves an entire group is dangerous. Is this a safe use of an example? Explain the missing boundary.",
+      "expected_judgment": "unsafe_overgeneralization",
+      "boundary": "Vividness is not representativeness or proof.",
+      "source_task_bank": "vertical-slice-01-learner-task-bank"
+    },
+    {
+      "task_id": "example-control-01",
+      "pattern_id": "provisional-example",
+      "phase": "matched_control",
+      "prompt": "Explain a definition directly without adding a case, then say when a concrete example would improve clarity and when it could distract or expose privacy.",
+      "expected_features": [
+        "direct explanation works",
+        "example is optional and bounded"
+      ],
+      "source_task_bank": "vertical-slice-01-learner-task-bank"
+    },
+    {
+      "task_id": "story-recognition-01",
+      "pattern_id": "provisional-story_or_personal_experience",
+      "phase": "new_example_recognition",
+      "prompt": "Which response uses bounded personal detail responsibly? A: ‘I once missed a deadline on a group project, so everyone should work exactly as I do.’ B: ‘During one group project, I missed a deadline after misunderstanding the handoff. It taught me to confirm ownership; that experience does not establish the best process for every team.’ C: a detailed story naming a private colleague without consent.",
+      "expected_choice": "B",
+      "boundary": "Personal disclosure is optional and cannot become universal proof.",
+      "source_task_bank": "vertical-slice-01-learner-task-bank"
+    },
+    {
+      "task_id": "story-transfer-01",
+      "pattern_id": "provisional-story_or_personal_experience",
+      "phase": "transfer",
+      "prompt": "Make one communication point concrete with an anonymous, hypothetical or safely bounded event. State what the event illustrates and what it cannot establish.",
+      "expected_features": [
+        "event bounded",
+        "point connected",
+        "non-universal limit",
+        "privacy respected"
+      ],
+      "source_task_bank": "vertical-slice-01-learner-task-bank"
+    },
+    {
+      "task_id": "story-nonfit-01",
+      "pattern_id": "provisional-story_or_personal_experience",
+      "phase": "misuse_non_fit",
+      "prompt": "You do not want to disclose a personal experience, but a listener needs a clear explanation. Is refusing personal disclosure a communication failure? Give a safer alternative.",
+      "expected_judgment": "not_failure_use_direct_or_hypothetical_explanation",
+      "boundary": "No learner should be required to disclose trauma, identity or private information.",
+      "source_task_bank": "vertical-slice-01-learner-task-bank"
+    },
+    {
+      "task_id": "story-control-01",
+      "pattern_id": "provisional-story_or_personal_experience",
+      "phase": "matched_control",
+      "prompt": "Explain the same communication point directly without a story, then compare the privacy and clarity tradeoffs.",
+      "expected_features": [
+        "direct route usable",
+        "story not treated as mandatory"
+      ],
+      "source_task_bank": "vertical-slice-01-learner-task-bank"
+    },
+    {
+      "task_id": "uncertainty-recognition-01",
+      "pattern_id": "provisional-uncertainty_or_qualification",
+      "phase": "new_example_recognition",
+      "prompt": "Which sentence is most precisely qualified? A: ‘This will definitely solve the problem.’ B: ‘The early data suggest the change may reduce delays, but we need another month of records to test that interpretation.’ C: ‘Maybe perhaps possibly it could sort of help.’",
+      "expected_choice": "B",
+      "boundary": "The qualifier should match the claim and name a revision condition.",
+      "source_task_bank": "vertical-slice-01-learner-task-bank"
+    },
+    {
+      "task_id": "uncertainty-transfer-01",
+      "pattern_id": "provisional-uncertainty_or_qualification",
+      "phase": "transfer",
+      "prompt": "State one observed, predicted, interpreted or recommended claim. Add the smallest qualifier needed and name what evidence would change your mind.",
+      "expected_features": [
+        "claim type labeled",
+        "main point clear",
+        "qualifier scoped",
+        "revision condition"
+      ],
+      "source_task_bank": "vertical-slice-01-learner-task-bank"
+    },
+    {
+      "task_id": "uncertainty-nonfit-01",
+      "pattern_id": "provisional-uncertainty_or_qualification",
+      "phase": "misuse_non_fit",
+      "prompt": "A manager uses ‘we cannot know anything’ to avoid answering a question about a documented missed deadline. Is this good uncertainty handling? Explain the accountability problem.",
+      "expected_judgment": "empty_hedging_evasion",
+      "boundary": "Uncertainty must not erase known observations or responsibility.",
+      "source_task_bank": "vertical-slice-01-learner-task-bank"
+    },
+    {
+      "task_id": "uncertainty-control-01",
+      "pattern_id": "provisional-uncertainty_or_qualification",
+      "phase": "matched_control",
+      "prompt": "State a fact that needs no hedge, then state a prediction that does. Explain why the qualification differs.",
+      "expected_features": [
+        "fact and prediction distinguished",
+        "hedge attached to right claim"
+      ],
+      "source_task_bank": "vertical-slice-01-learner-task-bank"
+    },
+    {
+      "task_id": "conclusion-recognition-01",
+      "pattern_id": "provisional-conclusion_or_summary",
+      "phase": "new_example_recognition",
+      "prompt": "After explaining how a shared calendar prevents duplicate bookings, which closing is clearest? A: ‘Anyway.’ B: ‘The takeaway is to assign one owner to the calendar; this helps prevent duplicate bookings but does not replace schedule review.’ C: ‘You should agree with me.’",
+      "expected_choice": "B",
+      "boundary": "The takeaway must follow from the explanation and retain its limit.",
+      "source_task_bank": "vertical-slice-01-learner-task-bank"
+    },
+    {
+      "task_id": "conclusion-transfer-01",
+      "pattern_id": "provisional-conclusion_or_summary",
+      "phase": "transfer",
+      "prompt": "Explain a small topic, mark one takeaway, name its support, preserve one qualification, and offer a next step.",
+      "expected_features": [
+        "takeaway marked",
+        "support named",
+        "limit retained",
+        "next step offered"
+      ],
+      "source_task_bank": "vertical-slice-01-learner-task-bank"
+    },
+    {
+      "task_id": "conclusion-nonfit-01",
+      "pattern_id": "provisional-conclusion_or_summary",
+      "phase": "misuse_non_fit",
+      "prompt": "A speaker ends a complex disagreement by saying ‘there is only one acceptable view’ without addressing the evidence. Is this a responsible summary? Explain what was compressed away.",
+      "expected_judgment": "overcompressed_or_forced_conclusion",
+      "boundary": "A clear close must not erase essential uncertainty or valid alternatives.",
+      "source_task_bank": "vertical-slice-01-learner-task-bank"
+    },
+    {
+      "task_id": "conclusion-control-01",
+      "pattern_id": "provisional-conclusion_or_summary",
+      "phase": "matched_control",
+      "prompt": "Close a short explanation with an unmarked final sentence, then close it again with a marked takeaway. Compare clarity without claiming listener improvement.",
+      "expected_features": [
+        "both forms attempted",
+        "comparison is observational",
+        "no outcome claim"
+      ],
+      "source_task_bank": "vertical-slice-01-learner-task-bank"
+    },
+    {
+      "task_id": "question-recognition-01",
+      "pattern_id": "candidate-question",
+      "phase": "recognition",
+      "stimulus": "I wonder what I could try next?",
+      "prompt": "Identify whether this is information-seeking, reflection, a rhetorical move or another function. Explain what evidence you used.",
+      "source_task_bank": "vertical-slice-02-learner-task-bank"
+    },
+    {
+      "task_id": "question-transfer-01",
+      "pattern_id": "candidate-question",
+      "phase": "transfer",
+      "stimulus": "A colleague gives you a complicated explanation.",
+      "prompt": "Write one respectful question that invites clarification without implying the colleague failed.",
+      "source_task_bank": "vertical-slice-02-learner-task-bank"
+    },
+    {
+      "task_id": "question-nonfit-01",
+      "pattern_id": "candidate-question",
+      "phase": "non_fit",
+      "stimulus": "You already know the answer and want the group to agree.",
+      "prompt": "Explain when a rhetorical question could pressure the group and write a bounded alternative.",
+      "source_task_bank": "vertical-slice-02-learner-task-bank"
+    },
+    {
+      "task_id": "question-control-01",
+      "pattern_id": "candidate-question",
+      "phase": "control",
+      "stimulus": "You need to move directly from one agenda item to the next.",
+      "prompt": "Write a plain transition without a question, then explain why a question is not necessary here.",
+      "source_task_bank": "vertical-slice-02-learner-task-bank"
+    },
+    {
+      "task_id": "definition-recognition-01",
+      "pattern_id": "candidate-definition_or_reformulation",
+      "phase": "recognition",
+      "stimulus": "By ‘access,’ I mean the ability to use the service without an extra barrier.",
+      "prompt": "Identify whether this is a definition, translation, interpretation or recommendation, and name the limit it states or leaves open.",
+      "source_task_bank": "vertical-slice-02-learner-task-bank"
+    },
+    {
+      "task_id": "definition-transfer-01",
+      "pattern_id": "candidate-definition_or_reformulation",
+      "phase": "transfer",
+      "stimulus": "Your audience does not know a technical term.",
+      "prompt": "Define it in one sentence, then state one thing your definition does not cover.",
+      "source_task_bank": "vertical-slice-02-learner-task-bank"
+    },
+    {
+      "task_id": "definition-nonfit-01",
+      "pattern_id": "candidate-definition_or_reformulation",
+      "phase": "non_fit",
+      "stimulus": "That means everyone who disagrees is acting in bad faith.",
+      "prompt": "Explain why this may be an interpretation or accusation rather than a definition. Rewrite it more carefully.",
+      "source_task_bank": "vertical-slice-02-learner-task-bank"
+    },
+    {
+      "task_id": "definition-control-01",
+      "pattern_id": "candidate-definition_or_reformulation",
+      "phase": "control",
+      "stimulus": "The audience already shares the term’s ordinary meaning.",
+      "prompt": "Explain why adding a definition may create unnecessary friction, and offer a concise transition instead.",
+      "source_task_bank": "vertical-slice-02-learner-task-bank"
+    },
+    {
+      "task_id": "action-recognition-01",
+      "pattern_id": "candidate-call_to_action",
+      "phase": "recognition",
+      "stimulus": "By Friday, the project owner will publish the draft and invite comments.",
+      "prompt": "Identify the action, owner, time horizon and remaining limit. Distinguish it from a broad aspiration.",
+      "source_task_bank": "vertical-slice-02-learner-task-bank"
+    },
+    {
+      "task_id": "action-transfer-01",
+      "pattern_id": "candidate-call_to_action",
+      "phase": "transfer",
+      "stimulus": "Your team has identified one small problem it can address.",
+      "prompt": "Write a call to action with an owner, resource, time horizon and consent or opt-out condition.",
+      "source_task_bank": "vertical-slice-02-learner-task-bank"
+    },
+    {
+      "task_id": "action-nonfit-01",
+      "pattern_id": "candidate-call_to_action",
+      "phase": "non_fit",
+      "stimulus": "Everyone must share this immediately or they do not care.",
+      "prompt": "Identify the coercive or unsafe features and rewrite the request with a bounded alternative.",
+      "source_task_bank": "vertical-slice-02-learner-task-bank"
+    },
+    {
+      "task_id": "action-control-01",
+      "pattern_id": "candidate-call_to_action",
+      "phase": "control",
+      "stimulus": "You are closing a talk with appreciation but no action request.",
+      "prompt": "Write a gratitude-based close that does not imply the audience owes an action.",
+      "source_task_bank": "vertical-slice-02-learner-task-bank"
+    }
+  ],
+  "procedure": [
+    "baseline",
+    "lesson exposure",
+    "new-example recognition",
+    "transfer",
+    "non-fit judgment",
+    "listener restatement",
+    "revision after feedback",
+    "matched post-task"
+  ],
+  "rubric": {
+    "scale": "0=missing or misleading; 1=partial; 2=clear and bounded",
+    "dimensions": [
+      "communication job identified",
+      "underlying choice transferred",
+      "alternative explanation or limit",
+      "misuse/non-fit detection",
+      "privacy/accessibility/safety boundary",
+      "listener restatement"
+    ],
+    "safety_rule": "Do not average away a safety or privacy failure; retain it as a boundary finding.",
+    "control": "Include a plain-communication or no-marker comparison task where the source bank provides one."
+  },
+  "outcome_boundary": "Learner observations can show whether the lesson is understandable and usable; they do not establish audience outcomes of the original speech patterns."
+}

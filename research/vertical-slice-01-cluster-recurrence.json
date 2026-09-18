@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0",
+  "report_id": "vertical-slice-01-cluster-recurrence",
+  "status": "provisional_cluster_recurrence_not_event_independent",
+  "claim_boundary": "These counts summarize packet selections and source records. They do not independently validate labels, speaker identity, event independence or communication effects.",
+  "packet_count": 5,
+  "representative_occurrence_count": 25,
+  "unique_video_id_count_across_representatives": 13,
+  "unique_video_id_count_all_packet_occurrences": 16,
+  "source_sha256": {
+    "research/vertical-slice-01-contrast-or-disagreement.json": "2a3b73482f9f393952f2a99985879deef1a28217b4ecd7932e50af62eefbd9e5",
+    "research/vertical-slice-01-example.json": "29c613a3d27ff4567b8a8611c7282674a804a577084d9eb11ea5bccb1b9d3a44",
+    "research/vertical-slice-01-story.json": "609f7fa78bbe174487db680f9be80d7f1ca10b5ecc1c515ff28b4359dcdefa94",
+    "research/vertical-slice-01-uncertainty.json": "4df0926acc7cf7fa7c6fd62f26307607ca12cd0fc697b40c594f6a9d9f645143",
+    "research/vertical-slice-01-conclusion.json": "3fea6b01b17e3fbf6d921515bcc6aaa164efc4f78521ba9dcf86fc019e7e0bf5",
+    "research/vertical-slice-01-media-audit.json": "0a6ba10883eee9eef06f2872b8acd1af8e616669981c3aae1e9df150e8149e62",
+    "scripts/audit_vertical_slice_cluster_recurrence.py": "9ebe86108e644f8d3b459a1334620c8031d0691d02d3f24aa838654652f58917"
+  },
+  "clusters": [
+    {
+      "pattern_id": "provisional-contrast_or_disagreement",
+      "representative_occurrence_count": 5,
+      "unique_video_id_count": 4,
+      "representative_video_ids": [
+        "-54zUwySKCg",
+        "3AIoHLr8nTI",
+        "AwA0Jnfj3ao",
+        "OfwfTN1mEyM"
+      ],
+      "representatives_with_raw_audio_video": 5,
+      "counterexample_occurrence_count": 0,
+      "interpretation": "The packet contains five selected representatives across four canonical video IDs; textual contrast and interpersonal disagreement remain distinct questions."
+    },
+    {
+      "pattern_id": "provisional-example",
+      "representative_occurrence_count": 5,
+      "unique_video_id_count": 3,
+      "representative_video_ids": [
+        "-6qN3bm2RYo",
+        "aXmM0VZv810",
+        "jxY2-YgAgm0"
+      ],
+      "representatives_with_raw_audio_video": 5,
+      "counterexample_occurrence_count": 6,
+      "interpretation": "The packet contains five selected representatives across three canonical video IDs; one category list or case does not by itself establish evidence, explanation or listener understanding."
+    },
+    {
+      "pattern_id": "provisional-story_or_personal_experience",
+      "representative_occurrence_count": 5,
+      "unique_video_id_count": 4,
+      "representative_video_ids": [
+        "-54zUwySKCg",
+        "9fEurt2OZ0I",
+        "AwA0Jnfj3ao",
+        "S43F1BZfQKY"
+      ],
+      "representatives_with_raw_audio_video": 4,
+      "counterexample_occurrence_count": 3,
+      "interpretation": "The packet contains five selected representatives across four canonical video IDs; the unavailable Parul Bansal source remains transcript-only for this packet and personal detail requires privacy and boundary review."
+    },
+    {
+      "pattern_id": "provisional-uncertainty_or_qualification",
+      "representative_occurrence_count": 5,
+      "unique_video_id_count": 4,
+      "representative_video_ids": [
+        "2fWJh-_UG5s",
+        "3AIoHLr8nTI",
+        "9fEurt2OZ0I",
+        "C8-twwwTETE"
+      ],
+      "representatives_with_raw_audio_video": 5,
+      "counterexample_occurrence_count": 4,
+      "interpretation": "The packet contains five selected representatives across four canonical video IDs; a hedge, opinion marker or correction must be interpreted in surrounding context rather than treated as generic uncertainty."
+    },
+    {
+      "pattern_id": "provisional-conclusion_or_summary",
+      "representative_occurrence_count": 5,
+      "unique_video_id_count": 5,
+      "representative_video_ids": [
+        "-54zUwySKCg",
+        "-URn1fARvts",
+        "AwA0Jnfj3ao",
+        "aXmM0VZv810",
+        "qOwYULOPuPs"
+      ],
+      "representatives_with_raw_audio_video": 5,
+      "counterexample_occurrence_count": 5,
+      "interpretation": "The packet contains five selected representatives across five canonical video IDs; a marked takeaway may be a charge, transition or new claim rather than a summary."
+    }
+  ],
+  "next_actions": [
+    "Verify speaker and event independence for each selected occurrence.",
+    "Add event-level holdouts before treating cluster recurrence as general evidence.",
+    "Have independent reviewers test whether the five cluster labels remain plausible.",
+    "Keep representative counts separate from listener-outcome evidence."
+  ]
+}
