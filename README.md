@@ -25,6 +25,9 @@ The [corpus atlas browser](writeups/corpus-pattern-atlas.html) makes those
 videos searchable by phrase family, event split, evidence ID and candidate
 speech-function counts; it also filters by the heuristic candidate function
 labels while keeping their provisional status visible.
+The [pattern-admission reconciliation](writeups/pattern-admission-reconciliation.md)
+explains why the older five-pattern count and newer eight-card curriculum are
+different inventories, not conflicting completion claims.
 
 The separate [speech-function review workbook](writeups/corpus-function-independent-review-workbook.html)
 provides 187 stratified transcript candidates for an independent reviewer to

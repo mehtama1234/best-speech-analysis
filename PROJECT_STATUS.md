@@ -31,6 +31,9 @@ The [corpus atlas browser](writeups/corpus-pattern-atlas.html) exposes the same
 retrieval layer across all 394 eligible videos with search, phrase-family and
 candidate-function and event-split filters, exact candidate intervals and source
 links. Candidate-function filtering remains heuristic and transcript-only.
+The [pattern-admission reconciliation](writeups/pattern-admission-reconciliation.md)
+now distinguishes the legacy five contextual threshold passes from the eight
+shared draft cards; neither count represents independent validation.
 
 The atlas also now exposes a separate 187-item [candidate speech-function
 independent-review workbook](research/corpus-function-independent-review-workbook.json)

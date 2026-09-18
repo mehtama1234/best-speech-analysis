@@ -1,0 +1,131 @@
+{
+  "schema_version": "1.0",
+  "report_id": "pattern-admission-reconciliation",
+  "status": "terminology_reconciled_no_pattern_promoted",
+  "legacy_source": "research/provisional-practice-patterns.json",
+  "shared_source": "research/shared-lesson-cards.json",
+  "atlas_source": "research/corpus-pattern-atlas.json",
+  "legacy_contextual_pattern_count": 5,
+  "shared_draft_card_count": 8,
+  "atlas_phrase_family_count": 8,
+  "claim_boundary": "Legacy contextual threshold admission, shared draft-card presence and atlas phrase retrieval are different statuses. None establishes independent semantic validation, delivery effectiveness, learner success, listener outcomes or universal best practice.",
+  "admission_rules": {
+    "legacy_contextual": "Provisional practice hypotheses require at least five supported reviewed examples, four distinct videos, and a support rate of at least 0.70. They are not universal findings or effectiveness claims.",
+    "shared_curriculum": "card may be drafted to make a candidate pattern teachable, but remains provisional until independent review, delivery checks and learner checks",
+    "atlas": "phrase hit or candidate function is a retrieval aid requiring manual review"
+  },
+  "patterns": [
+    {
+      "label": "call_to_action",
+      "legacy_contextual_admission": false,
+      "legacy_status": "not_admitted_by_legacy_threshold_or_not_in_legacy_guidance",
+      "shared_card_present": true,
+      "shared_card_status": "draft_candidate_not_validated",
+      "shared_validation_status": {
+        "independent_review": "not_started",
+        "learner_status": "not_started",
+        "listener_outcomes": "not_tested",
+        "speaker_event_independence": "not_verified"
+      },
+      "atlas_phrase_status": "heuristic_retrieval_aid_requires_manual_review"
+    },
+    {
+      "label": "conclusion_or_summary",
+      "legacy_contextual_admission": true,
+      "legacy_status": "legacy_contextual_threshold_pass",
+      "shared_card_present": true,
+      "shared_card_status": "draft_not_validated",
+      "shared_validation_status": {
+        "independent_review": "pending",
+        "learner_status": "protocol_drafted_not_run",
+        "listener_outcomes": "not_tested",
+        "speaker_event_independence": "metadata_audited_speaker_unverified"
+      },
+      "atlas_phrase_status": "heuristic_retrieval_aid_requires_manual_review"
+    },
+    {
+      "label": "contrast_or_disagreement",
+      "legacy_contextual_admission": true,
+      "legacy_status": "legacy_contextual_threshold_pass",
+      "shared_card_present": true,
+      "shared_card_status": "draft_not_validated",
+      "shared_validation_status": {
+        "independent_review": "pending_external_reviewer",
+        "learner_status": "protocol_drafted_not_run",
+        "listener_outcomes": "not_tested",
+        "speaker_event_independence": "metadata_audited_speaker_unverified"
+      },
+      "atlas_phrase_status": "heuristic_retrieval_aid_requires_manual_review"
+    },
+    {
+      "label": "definition",
+      "legacy_contextual_admission": false,
+      "legacy_status": "not_admitted_by_legacy_threshold_or_not_in_legacy_guidance",
+      "shared_card_present": true,
+      "shared_card_status": "draft_candidate_not_validated",
+      "shared_validation_status": {
+        "independent_review": "not_started",
+        "learner_status": "not_started",
+        "listener_outcomes": "not_tested",
+        "speaker_event_independence": "not_verified"
+      },
+      "atlas_phrase_status": "heuristic_retrieval_aid_requires_manual_review"
+    },
+    {
+      "label": "example",
+      "legacy_contextual_admission": true,
+      "legacy_status": "legacy_contextual_threshold_pass",
+      "shared_card_present": true,
+      "shared_card_status": "draft_not_validated",
+      "shared_validation_status": {
+        "independent_review": "pending",
+        "learner_status": "protocol_drafted_not_run",
+        "listener_outcomes": "not_tested",
+        "speaker_event_independence": "metadata_audited_speaker_unverified"
+      },
+      "atlas_phrase_status": "heuristic_retrieval_aid_requires_manual_review"
+    },
+    {
+      "label": "question",
+      "legacy_contextual_admission": false,
+      "legacy_status": "not_admitted_by_legacy_threshold_or_not_in_legacy_guidance",
+      "shared_card_present": true,
+      "shared_card_status": "draft_candidate_not_validated",
+      "shared_validation_status": {
+        "independent_review": "not_started",
+        "learner_status": "not_started",
+        "listener_outcomes": "not_tested",
+        "speaker_event_independence": "not_verified"
+      },
+      "atlas_phrase_status": "heuristic_retrieval_aid_requires_manual_review"
+    },
+    {
+      "label": "story_or_personal_experience",
+      "legacy_contextual_admission": true,
+      "legacy_status": "legacy_contextual_threshold_pass",
+      "shared_card_present": true,
+      "shared_card_status": "draft_not_validated",
+      "shared_validation_status": {
+        "independent_review": "pending",
+        "learner_status": "protocol_drafted_not_run",
+        "listener_outcomes": "not_tested",
+        "speaker_event_independence": "metadata_audited_speaker_unverified"
+      },
+      "atlas_phrase_status": "heuristic_retrieval_aid_requires_manual_review"
+    },
+    {
+      "label": "uncertainty_or_qualification",
+      "legacy_contextual_admission": true,
+      "legacy_status": "legacy_contextual_threshold_pass",
+      "shared_card_present": true,
+      "shared_card_status": "draft_not_validated",
+      "shared_validation_status": {
+        "independent_review": "pending",
+        "learner_status": "protocol_drafted_not_run",
+        "listener_outcomes": "not_tested",
+        "speaker_event_independence": "metadata_audited_speaker_unverified"
+      },
+      "atlas_phrase_status": "heuristic_retrieval_aid_requires_manual_review"
+    }
+  ]
+}
