@@ -98,7 +98,10 @@ not completed their records, the project remains incomplete.
 The fixed transcript layer is complete: 395 reviews and 102,816 inspected
 captions. The repository has 18 provisional communication-job cards, exact
 phrase retrieval, practice surfaces, a 36-sample raw A/V delivery queue and
-the validation instruments. The remaining work is human evidence: independent
+the validation instruments. The fixed-corpus media audit currently reports
+354 raw A/V sources, 5 derived-feature-only records, 35 transcript-only
+records and 1 video-only record; the remaining 41 records are routed in the
+recovery queue. The remaining work is human evidence: independent
 source/function/recurrence/delivery/counterexample review, learner records,
 stimulus locking and blinded listener records. No job is promotion-ready yet.
 
