@@ -21,6 +21,7 @@ This dashboard reports artifact and validation status. It does not convert trans
 | Delivery evidence index | `delivery_evidence_reconciled_independent_review_pending` | 21 internal / 0 independent observations |
 | Shared evidence model | `contract_ready_research_evidence_incomplete` | 11 entity types / web-mobile contract |
 | Counterexample library | `template_not_completed` | 18 jobs / 90 required slots / 0 completed |
+| Cross-job comparison | `transcript_video_level_comparison_not_independently_validated` | 18 jobs / 153 pairs / 394 eligible videos |
 | Function review | `template_not_completed` | 187 queued / 0 completed |
 | Recurrence review | `template_not_completed` | 192 queued / 0 completed |
 | Delivery evidence | `raw_media_reconciled_manual_review_pending` | 29 raw-complete (8 without transcript) / 21 internal reviewed |
@@ -34,6 +35,7 @@ This dashboard reports artifact and validation status. It does not convert trans
 - obtain independent recurrence review exports and adjudicate disagreements
 - obtain independent exact phrase-form review exports and adjudicate form, identity and recurrence disagreements
 - populate and independently review counterexample, alternate-function, confound and misuse-limit records for all 18 jobs
+- independently verify speaker/event identity before treating cross-job or holdout comparisons as recurrence evidence
 - complete independent multimodal alignment/function/safety review
 - run learner teachability protocol and validate exported records
 - run blinded listener-outcome protocol before making effectiveness claims

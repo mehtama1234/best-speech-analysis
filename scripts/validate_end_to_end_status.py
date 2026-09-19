@@ -32,6 +32,7 @@ def validate(report: dict) -> list[str]:
     delivery_index = read("research/delivery-evidence-index.json")
     evidence_model = read("research/shared-evidence-model.json")
     counterexamples = read("research/communication-job-counterexample-workbook.json")
+    cross_comparison = read("research/communication-job-cross-comparison.json")
     media = read("research/multimodal-coverage-audit.json")
     functions = read("research/corpus-function-independent-review-workbook.json")
     recurrence = read("research/corpus-recurrence-independent-review-workbook.json")
@@ -73,6 +74,9 @@ def validate(report: dict) -> list[str]:
         ("shared_evidence_model", "entity_type_count"): len(evidence_model["entity_types"]),
         ("counterexample_library", "job_count"): counterexamples["job_count"],
         ("counterexample_library", "queued_slot_count"): counterexamples["item_count"],
+        ("cross_job_comparison", "job_count"): cross_comparison["job_count"],
+        ("cross_job_comparison", "pair_count"): cross_comparison["pair_count"],
+        ("cross_job_comparison", "eligible_video_denominator"): cross_comparison["video_denominator"],
         ("speech_function_candidate_review", "queued_item_count"): functions["item_count"],
         ("recurrence_candidate_review", "queued_item_count"): recurrence["item_count"],
         ("delivery_evidence", "selected_video_count"): media["selected_video_count"],

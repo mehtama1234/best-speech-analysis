@@ -29,6 +29,10 @@ are recurring, effective or validated.
 The [provisional function taxonomy](writeups/corpus-function-taxonomy.md) adds
 shared comparison labels without deleting the original free-text functions;
 2,394 items remain explicitly unclassified for human review.
+The [cross-job comparison](writeups/communication-job-cross-comparison.html)
+shows video-level train/holdout denominators and pairwise co-occurrence for the
+18 shared jobs, while keeping unclassified records out of the curriculum and
+not treating same-video co-occurrence as independent recurrence.
 The [exact-caption evidence bank](writeups/corpus-evidence-bank.html) exposes
 the retained words, timestamps and source links for all indexed function
 records, with transcript errors and the transcript-only boundary visible.

@@ -44,6 +44,9 @@ requires five explicit checks for every provisional job: absence with speech
 still working, presence with an observable failure or limit, alternate
 function, confound/setting, and misuse or copying risk. It is blank and must
 not be treated as evidence until independently completed.
+The [cross-job comparison](communication-job-cross-comparison.html) is the
+current denominator surface for comparing jobs; verify speaker and event
+identity before promoting its video-level comparisons to recurrence claims.
 
 ## Independent review gates
 

@@ -33,6 +33,8 @@ class EndToEndStatusTests(unittest.TestCase):
         self.assertEqual(self.status["stages"]["shared_evidence_model"]["entity_type_count"], 11)
         self.assertEqual(self.status["stages"]["counterexample_library"]["queued_slot_count"], 90)
         self.assertEqual(self.status["stages"]["counterexample_library"]["completed_independent_reviews"], 0)
+        self.assertEqual(self.status["stages"]["cross_job_comparison"]["job_count"], 18)
+        self.assertEqual(self.status["stages"]["cross_job_comparison"]["pair_count"], 153)
         self.assertEqual(self.status["stages"]["speech_function_candidate_review"]["completed_independent_reviews"], 0)
         self.assertEqual(self.status["stages"]["learner_check"]["completed_records"], 0)
         self.assertEqual(self.status["stages"]["listener_outcomes"]["completed_records"], 0)

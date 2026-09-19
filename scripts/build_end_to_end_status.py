@@ -30,6 +30,7 @@ def main() -> int:
     delivery_index = load("research/delivery-evidence-index.json")
     evidence_model = load("research/shared-evidence-model.json")
     counterexamples = load("research/communication-job-counterexample-workbook.json")
+    cross_comparison = load("research/communication-job-cross-comparison.json")
     media = load("research/multimodal-coverage-audit.json")
     media_independent = load("research/multimodal-independent-review-workbook.json")
     recurrence = load("research/corpus-recurrence-independent-review-workbook.json")
@@ -59,6 +60,7 @@ def main() -> int:
             "research/delivery-evidence-index.json",
             "research/shared-evidence-model.json",
             "research/communication-job-counterexample-workbook.json",
+            "research/communication-job-cross-comparison.json",
             "research/shared-lesson-cards.json", "research/shared-learner-check.json",
             "research/listener-outcome-protocol.json", "research/raw-media-only-visual-audit.json",
         ],
@@ -80,6 +82,7 @@ def main() -> int:
             "delivery_evidence_index": {"status": delivery_index["status"], "selected_video_count": delivery_index["coverage"]["selected_video_count"], "internal_observation_count": delivery_index["coverage"]["internal_manual_observation_count"], "independent_observation_count": delivery_index["coverage"]["independent_review_count"], "source": "research/delivery-evidence-index.json"},
             "shared_evidence_model": {"status": evidence_model["status"], "entity_type_count": len(evidence_model["entity_types"]), "source": "research/shared-evidence-model.json"},
             "counterexample_library": {"status": counterexamples["status"], "job_count": counterexamples["job_count"], "queued_slot_count": counterexamples["item_count"], "completed_independent_reviews": 0, "source": "research/communication-job-counterexample-workbook.json"},
+            "cross_job_comparison": {"status": cross_comparison["status"], "job_count": cross_comparison["job_count"], "pair_count": cross_comparison["pair_count"], "eligible_video_denominator": cross_comparison["video_denominator"], "source": "research/communication-job-cross-comparison.json"},
             "speech_function_candidate_review": {"status": functions["status"], "queued_item_count": functions["item_count"], "completed_independent_reviews": 0, "source": "research/corpus-function-independent-review-workbook.json"},
             "recurrence_candidate_review": {"status": recurrence["status"], "queued_item_count": recurrence["item_count"], "completed_independent_reviews": 0, "source": "research/corpus-recurrence-independent-review-workbook.json"},
             "delivery_evidence": {"status": media["status"], "selected_video_count": media["selected_video_count"], "raw_audio_video_present": media["raw_audio_video_present_count"], "raw_audio_video_with_transcript": media["raw_audio_video_with_transcript_count"], "raw_audio_video_without_transcript": media["raw_audio_video_without_transcript_count"], "internal_manual_reviews": media["internal_manual_review_count"], "raw_only_visual_audit_items": raw_only_visual["item_count"], "raw_only_visual_audit_status": raw_only_visual["status"], "independent_review_items": media_independent["item_count"], "completed_independent_reviews": 0, "source": "research/multimodal-coverage-audit.json"},
@@ -92,6 +95,7 @@ def main() -> int:
             "obtain independent recurrence review exports and adjudicate disagreements",
             "obtain independent exact phrase-form review exports and adjudicate form, identity and recurrence disagreements",
             "populate and independently review counterexample, alternate-function, confound and misuse-limit records for all 18 jobs",
+            "independently verify speaker/event identity before treating cross-job or holdout comparisons as recurrence evidence",
             "complete independent multimodal alignment/function/safety review",
             "run learner teachability protocol and validate exported records",
             "run blinded listener-outcome protocol before making effectiveness claims",
@@ -119,6 +123,7 @@ def main() -> int:
         f"| Delivery evidence index | `{delivery_index['status']}` | {delivery_index['coverage']['internal_manual_observation_count']} internal / {delivery_index['coverage']['independent_review_count']} independent observations |",
         f"| Shared evidence model | `{evidence_model['status']}` | {len(evidence_model['entity_types'])} entity types / web-mobile contract |",
         f"| Counterexample library | `{counterexamples['status']}` | {counterexamples['job_count']} jobs / {counterexamples['item_count']} required slots / 0 completed |",
+        f"| Cross-job comparison | `{cross_comparison['status']}` | {cross_comparison['job_count']} jobs / {cross_comparison['pair_count']} pairs / {cross_comparison['video_denominator']} eligible videos |",
         f"| Function review | `{functions['status']}` | {functions['item_count']} queued / 0 completed |",
         f"| Recurrence review | `{recurrence['status']}` | {recurrence['item_count']} queued / 0 completed |",
         f"| Delivery evidence | `{media['status']}` | {media['raw_audio_video_present_count']} raw-complete ({media['raw_audio_video_without_transcript_count']} without transcript) / {media['internal_manual_review_count']} internal reviewed |",

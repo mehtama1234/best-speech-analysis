@@ -7549,6 +7549,12 @@ seconds), whitespace checks passed, and original annotations, transcripts and
 raw features have no diff. Tests establish consistency rather than independent
 semantic validation.
 
+The [cross-job comparison](writeups/communication-job-cross-comparison.md)
+now reports video-level denominators, train/holdout counts and all 153 pairwise
+same-video co-occurrence comparisons for the 18 shared jobs. It excludes
+unclassified and media/publisher records rather than forcing them into the
+curriculum; it does not establish independent speaker/event recurrence.
+
 **Current contextual checkpoint:** [question review](writeups/question-context-review.md)
 adds eleven rows, bringing coverage to 67/87 with twenty remaining. All twelve
 question candidates have contextual decisions; support remains 7/12. Reviews
