@@ -126,11 +126,13 @@
   "learning_gates": [
     {
       "id": "listener_stimulus_review",
-      "purpose": "Review proposition equivalence, readability, accessibility, safety and blinding before locking listener pairs.",
+      "purpose": "Review proposition equivalence, readability, accessibility, safety and blinding before locking listener pairs; then preserve an explicit adjudicator decision.",
       "tasks": 18,
       "protocol": "research/communication-job-listener-stimuli-draft.json",
       "form": "writeups/communication-job-listener-stimulus-review-workbook.html",
       "validator": "scripts/validate_listener_stimulus_review.py",
+      "adjudication_form": "writeups/communication-job-listener-stimulus-adjudication.html",
+      "adjudication_validator": "scripts/validate_listener_stimulus_adjudication.py",
       "status": "manual_equivalence_review_pending",
       "does_not_establish": [
         "listener comprehension",

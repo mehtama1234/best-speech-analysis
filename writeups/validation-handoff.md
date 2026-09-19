@@ -96,11 +96,13 @@ Review the five linked lesson packets and their evidence boundaries.
 
 ### listener_stimulus_review — 18 tasks
 
-Review proposition equivalence, readability, accessibility, safety and blinding before locking listener pairs.
+Review proposition equivalence, readability, accessibility, safety and blinding before locking listener pairs; then preserve an explicit adjudicator decision.
 
 - Protocol: `research/communication-job-listener-stimuli-draft.json`
 - Form: `writeups/communication-job-listener-stimulus-review-workbook.html`
 - Validator: `scripts/validate_listener_stimulus_review.py`
+- Adjudication form: `writeups/communication-job-listener-stimulus-adjudication.html`
+- Adjudication validator: `scripts/validate_listener_stimulus_adjudication.py`
 - Status: `manual_equivalence_review_pending`
 - Does not establish: listener comprehension, real-world effectiveness
 
