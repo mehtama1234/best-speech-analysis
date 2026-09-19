@@ -62,6 +62,9 @@ ARTIFACTS = [
     ("research/full-corpus-media-recovery-queue.json", "full transcript-corpus media recovery routing queue"),
     ("scripts/recover_full_corpus_media.py", "resumable fixed-queue media recovery tool"),
     ("data/full-corpus-media-recovery.jsonl", "fixed-queue media recovery attempt ledger"),
+    ("research/multimodal-pattern-comparison.json", "heuristic multimodal feature comparison"),
+    ("writeups/multimodal-pattern-comparison.md", "heuristic multimodal comparison report"),
+    ("scripts/compare_multimodal_patterns.py", "multimodal comparison builder"),
 ]
 
 
