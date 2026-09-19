@@ -8,22 +8,21 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 344,
+  "item_count": 337,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 6,
-      "fixed_corpus_transcript_only": 338
+      "fixed_corpus_transcript_only": 331
     },
     "by_media_state": {
-      "audio_only": 1,
       "derived_features_only": 6,
-      "transcript_only_no_local_media": 336,
-      "video_only": 1
+      "transcript_only_no_local_media": 329,
+      "video_only": 2
     },
     "by_video_status": {
-      "downloaded": 1,
+      "downloaded": 2,
       "failed:1": 7,
-      "not_attempted": 336
+      "not_attempted": 328
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -1157,18 +1156,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "Elv-c3ZTkYg",
-      "title": "ENGLISH SPEECH | GRETA THUNBERG: How Dare You (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=Elv-c3ZTkYg",
-      "media_state": "audio_only",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "failed:1",
-      "audio_download_status": "downloaded",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "F1iB6dI8U7c",
       "title": "ENGLISH SPEECH | ELON MUSK: A Future Of Amazing Abundance (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=F1iB6dI8U7c",
@@ -1529,18 +1516,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "LJRs2TnP9H8",
-      "title": "Little Big Man",
-      "source_url": "https://www.youtube.com/watch?v=LJRs2TnP9H8",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "LOK1TcrSKDs",
       "title": "ENGLISH SPEECH | ANNE HATHAWAY: Gender Equality Progress (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=LOK1TcrSKDs",
@@ -1709,18 +1684,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "O1VdQQkbUOU",
-      "title": "Conan O’Brien: Be Bad First",
-      "source_url": "https://www.youtube.com/watch?v=O1VdQQkbUOU",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "PJofnNqfDJw",
       "title": "ENGLISH SPEECH | A. R. RAHMAN: Creating Magic with Music (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=PJofnNqfDJw",
@@ -1822,28 +1785,16 @@
       "source_url": "https://www.youtube.com/watch?v=RaLXDIJW3_M",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
       "video_id": "Rj4-heRlMQE",
       "title": "ENGLISH SPEECH | AISHWARYA RAI: Resilience & Advocacy (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=Rj4-heRlMQE",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "RnIqGFqPwkQ",
-      "title": "ENGLISH SPEECH | DEEPIKA PADUKONE: Depression is Real (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=RnIqGFqPwkQ",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -2288,18 +2239,6 @@
       "video_id": "_Q0ctJPDdGI",
       "title": "ENGLISH SPEECH | SAMANTHA: Living with Myositis (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=_Q0ctJPDdGI",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "_S955fkSZd8",
-      "title": "ENGLISH SPEECH | SHASHI THAROOR: Britain owes reparations to India (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=_S955fkSZd8",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -3029,27 +2968,15 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "kHti_4zsQhc",
-      "title": "ENGLISH SPEECH | AISHWARYA RAI BACHCHAN: Love All, Serve All (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=kHti_4zsQhc",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "kM8HJPbFnJg",
       "title": "ENGLISH SPEECH | JK ROWLING: The Benefits Of Failure (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=kM8HJPbFnJg",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "video_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "downloaded",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -3704,18 +3631,6 @@
       "video_id": "ssc3G5-uAoM",
       "title": "ENGLISH SPEECH | KRISTEN BELL: Build Your Tribe (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=ssc3G5-uAoM",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "stxIHzmQw6w",
-      "title": "A Direct Message To Trump | Mark Carney Speech",
-      "source_url": "https://www.youtube.com/watch?v=stxIHzmQw6w",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
