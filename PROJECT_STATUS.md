@@ -39,6 +39,9 @@ The export format is documented in
 `research/local-practice-log-contract.json` and checked by
 `scripts/validate_local_practice_log.py`; the validator checks structure and
 boundaries only, not learner performance or listener outcomes.
+The [blinded review packet](blinded-review-packet.md) makes the function,
+recurrence and phrase-form gates executable without exposing internal
+candidate labels to the reviewer; no human judgments have been received yet.
 The [video-learning itinerary](writeups/corpus-video-learning-itinerary.html)
 now gives each of the 395 reviewed videos one selected starting lesson without
 claiming that the selection is the most important, representative or effective

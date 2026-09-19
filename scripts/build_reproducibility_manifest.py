@@ -124,6 +124,11 @@ ARTIFACTS = [
     ("writeups/start-here.md", "user-facing speech-learning entry guide"),
     ("research/local-practice-log-contract.json", "local learner practice export contract"),
     ("scripts/validate_local_practice_log.py", "local learner practice export validator"),
+    ("research/blinded-review-packet.json", "label-blinded independent review packet"),
+    ("research/blinded-review-packet-key.json", "internal blinded review adjudication key"),
+    ("writeups/blinded-review-packet.md", "label-blinded independent review instructions"),
+    ("scripts/build_blinded_review_packets.py", "label-blinded independent review packet builder"),
+    ("scripts/validate_blinded_review_packet.py", "label-blinded packet leakage validator"),
 ]
 
 
