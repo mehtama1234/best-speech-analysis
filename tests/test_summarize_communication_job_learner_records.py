@@ -13,7 +13,7 @@ class SummarizeCommunicationJobLearnerRecordsTests(unittest.TestCase):
         cls.protocol = json.loads((ROOT / "research/communication-job-learner-check.json").read_text())
 
     def synthetic(self, participant: str, score: str = "2"):
-        responses = {"participant_code": participant, "date": "2026-09-18", "lesson_version": "test", "consent": True}
+        responses = {"participant_code": participant, "date": "2026-09-18", "lesson_version": "test", "consent": True, "facilitator_code": "facilitator-1", "facilitator_role": "test scorer", "scoring_disagreement_or_uncertainty": "none"}
         for card in self.protocol["cards"]:
             tasks = [task["task_id"] for task in self.protocol["tasks"] if task["card_id"] == card["card_id"]]
             responses[f"{card['card_id']}_task_ids"] = ",".join(tasks)

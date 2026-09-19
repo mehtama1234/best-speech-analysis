@@ -19,7 +19,7 @@ def validate(record: dict, protocol: dict | None = None) -> list[str]:
     if record.get("protocol_id") != protocol["protocol_id"]: errors.append("protocol_id does not match")
     if not record.get("claim_boundary"): errors.append("claim_boundary is required")
     responses = record.get("responses", {})
-    for key in ("participant_code", "date", "lesson_version"):
+    for key in ("participant_code", "date", "lesson_version", "facilitator_code", "facilitator_role", "scoring_disagreement_or_uncertainty"):
         if not str(responses.get(key, "")).strip(): errors.append(f"responses.{key} is required")
     if responses.get("consent") is not True: errors.append("responses.consent must be true")
     expected = [task["task_id"] for task in protocol["tasks"]]

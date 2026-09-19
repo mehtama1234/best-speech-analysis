@@ -38,7 +38,7 @@ class CommunicationJobLearnerCheckTests(unittest.TestCase):
             "protocol_id": self.protocol["protocol_id"],
             "claim_boundary": self.protocol["claim_boundary"],
             "task_bank_ids": [task["task_id"] for task in self.protocol["tasks"]],
-            "responses": {"participant_code": "synthetic", "date": "2026-09-18", "lesson_version": "test", "consent": True},
+            "responses": {"participant_code": "synthetic", "date": "2026-09-18", "lesson_version": "test", "consent": True, "facilitator_code": "facilitator-1", "facilitator_role": "test scorer", "scoring_disagreement_or_uncertainty": "none"},
         }
         for card in self.protocol["cards"]:
             tasks = [task["task_id"] for task in self.protocol["tasks"] if task["card_id"] == card["card_id"]]

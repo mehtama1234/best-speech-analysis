@@ -1632,7 +1632,12 @@
       "revision after feedback"
     ],
     "safety_rule": "Do not average away a privacy, consent or safety failure; retain it as a boundary finding.",
-    "facilitator_scoring": "For each card, score recognition, explanation, transfer, non-fit, listener restatement and revision as 0=missing/misleading, 1=partial, 2=clear and bounded; record a separate safety/privacy issue flag."
+    "facilitator_scoring": "For each card, score recognition, explanation, transfer, non-fit, listener restatement and revision as 0=missing/misleading, 1=partial, 2=clear and bounded; record a separate safety/privacy issue flag.",
+    "scoring_record_fields": [
+      "facilitator_code",
+      "facilitator_role",
+      "scoring_disagreement_or_uncertainty"
+    ]
   },
   "outcome_boundary": "Learner observations show whether the cards are understandable and usable; they do not establish original speech-pattern effectiveness or listener outcomes."
 }

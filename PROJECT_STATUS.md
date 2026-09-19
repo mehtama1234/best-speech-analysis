@@ -140,6 +140,8 @@ The protocol now also requires facilitator-entered 0–2 rubric scores for six
 teachability dimensions per job plus a separate safety/privacy/accessibility
 flag. The [non-promotional summarizer](scripts/summarize_communication_job_learner_records.py)
 will preserve per-job low scores and safety findings once records exist.
+Exports also require facilitator identity/role and a scoring disagreement or
+uncertainty note; no facilitator or learner records exist yet.
 The integrated [18-job curriculum browser](writeups/communication-job-curriculum.html)
 now joins each job's problem, mechanism hypothesis, repeatable form, exact
 examples, delivery queue/measurements, counterexample slots, practice,

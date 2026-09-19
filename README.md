@@ -51,6 +51,9 @@ marks the other ten jobs as lacking a direct indexed family.
 It also captures six facilitator-scored teachability dimensions and a separate
 safety flag per job; the [summarizer](scripts/summarize_communication_job_learner_records.py)
 keeps those results non-promotional.
+Learner exports now require facilitator code, role and a scoring
+disagreement/uncertainty note, so teachability scores are attributable and
+uncertainty is retained rather than silently averaged away.
 The [integrated 18-job curriculum](writeups/communication-job-curriculum.html)
 puts examples, delivery measurements, counterexample queues, practice and
 learner/listener gates together without hiding missing validation.

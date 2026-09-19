@@ -43,6 +43,7 @@ def summarize(records: list[dict], protocol: dict | None = None) -> dict:
         "protocol_id": protocol["protocol_id"],
         "record_count": len(records),
         "participant_codes": [record["responses"]["participant_code"] for record in records],
+        "facilitator_codes": sorted({record["responses"]["facilitator_code"] for record in records}),
         "by_card": rows,
         "claim_boundary": "This summarizes facilitator-entered teachability rubric scores and safety flags. It does not establish that the original speech patterns are effective, recurrent, causal, persuasive or beneficial to listeners.",
         "next_step": "Inspect low scores, disagreements, accessibility needs and safety flags; revise the lesson before describing it as teachable.",
