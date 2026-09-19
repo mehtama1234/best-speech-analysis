@@ -2,21 +2,21 @@
 
 This report compares directly measured pilot features against heuristic transcript markers. It does not establish general speech principles. Labels must be manually reviewed, and all face measurements are detector outputs rather than emotion judgments.
 
-Pilot videos: **215**
+Pilot videos: **222**
 
 ## Acoustic comparison
 
 | Candidate label | Videos | Segments | Mean RMS dB | Speech activity | Zero-crossing rate | Spectral centroid Hz | Pitch proxy Hz | Pitch confidence |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| `call_to_action` | 130 | 485 | -20.09298 | 0.96744 | 0.13778 | 776.13742 | 238.71741 | 0.19271 |
+| `call_to_action` | 136 | 502 | -20.11748 | 0.96726 | 0.13963 | 786.78208 | 239.0492 | 0.19259 |
 | `conclusion_or_summary` | 18 | 21 | -19.30228 | 0.96075 | 0.16739 | 854.69814 | 277.60433 | 0.18215 |
-| `contrast_or_disagreement` | 143 | 449 | -20.16653 | 0.96211 | 0.14037 | 794.73252 | 260.39854 | 0.17659 |
-| `definition` | 91 | 224 | -20.07186 | 0.95733 | 0.14388 | 793.61322 | 260.93155 | 0.18139 |
-| `example` | 79 | 150 | -19.74248 | 0.96528 | 0.14522 | 793.76343 | 246.04667 | 0.1859 |
-| `question` | 202 | 3577 | -20.70373 | 0.95196 | 0.1415 | 821.875 | 259.37982 | 0.18521 |
-| `story_or_personal_experience` | 156 | 666 | -19.85111 | 0.96725 | 0.14162 | 808.45494 | 260.67773 | 0.18531 |
-| `uncertainty_or_qualification` | 179 | 1848 | -20.27401 | 0.96007 | 0.14191 | 819.50282 | 261.42474 | 0.18212 |
-| `unclassified` | 208 | 53332 | -20.90564 | 0.95344 | 0.14498 | 833.56136 | 258.30137 | 0.18508 |
+| `contrast_or_disagreement` | 150 | 470 | -20.14904 | 0.96285 | 0.14138 | 799.30907 | 260.10131 | 0.17678 |
+| `definition` | 93 | 227 | -20.06007 | 0.95758 | 0.14322 | 788.82404 | 261.32928 | 0.18217 |
+| `example` | 82 | 155 | -19.89982 | 0.96179 | 0.14504 | 788.89798 | 245.68784 | 0.18596 |
+| `question` | 209 | 3715 | -20.72531 | 0.95141 | 0.1421 | 824.64662 | 259.47931 | 0.18499 |
+| `story_or_personal_experience` | 160 | 683 | -19.86492 | 0.96698 | 0.14185 | 808.10543 | 260.47659 | 0.18549 |
+| `uncertainty_or_qualification` | 186 | 1950 | -20.28071 | 0.95981 | 0.14264 | 822.33013 | 261.32905 | 0.18203 |
+| `unclassified` | 215 | 55240 | -20.89952 | 0.95348 | 0.14553 | 835.84708 | 258.097 | 0.18493 |
 
 ## Visual coverage
 
@@ -32,6 +32,7 @@ Visual results currently describe face detection and geometry only. They do not 
 | `0eNEz2lhyk8` | 8 | 0 | 0.0 | None | 0 |
 | `19rhQUB_FQc` | 16 | 0 | 0.0 | None | 0 |
 | `1QvLB4yEHsI` | 14 | 0 | 0.0 | None | 0 |
+| `1TAuuyvIZjA` | 13 | 0 | 0.0 | None | 0 |
 | `1crhwQPKr7w` | 17 | 7 | 0.41176 | 0.04548 | 0 |
 | `1i9kcBHX2Nw` | 15 | 0 | 0.0 | None | 0 |
 | `1qfB9wExiy8` | 10 | 0 | 0.0 | None | 0 |
@@ -57,9 +58,11 @@ Visual results currently describe face detection and geometry only. They do not 
 | `65v4EyR774E` | 1 | 0 | 0.0 | None | 0 |
 | `6PNDD5Xy5DU` | 15 | 0 | 0.0 | None | 0 |
 | `6dKimoybmEo` | 24 | 0 | 0.0 | None | 0 |
+| `6uUblznfrsk` | 17 | 0 | 0.0 | None | 0 |
 | `7iHNwOAr-9E` | 57 | 0 | 0.0 | None | 0 |
 | `7zUUV8_CY2M` | 96 | 0 | 0.0 | None | 0 |
 | `8hcxnuaXDF0` | 12 | 0 | 0.0 | None | 0 |
+| `9MLd7kt2lKQ` | 45 | 0 | 0.0 | None | 0 |
 | `9fEurt2OZ0I` | 1 | 0 | 0.0 | None | 0 |
 | `9vwK8mLwyTA` | 9 | 0 | 0.0 | None | 0 |
 | `A1hcbdWEEO8` | 28 | 0 | 0.0 | None | 0 |
@@ -98,6 +101,7 @@ Visual results currently describe face detection and geometry only. They do not 
 | `JVnsJRMVGHk` | 8 | 0 | 0.0 | None | 0 |
 | `JdUq2opPY-Q` | 12 | 4 | 0.33333 | 0.16961 | 0 |
 | `Jye58Lh-UD0` | 18 | 0 | 0.0 | None | 0 |
+| `K9Ah9seEDFI` | 10 | 0 | 0.0 | None | 0 |
 | `KLe7Rxkrj94` | 26 | 0 | 0.0 | None | 0 |
 | `KMEe2ni92rQ` | 27 | 0 | 0.0 | None | 0 |
 | `KieuXXue2Ag` | 37 | 26 | 0.7027 | 0.015 | 0 |
@@ -159,6 +163,7 @@ Visual results currently describe face detection and geometry only. They do not 
 | `c2xqHLIb-d4` | 9 | 0 | 0.0 | None | 0 |
 | `cCzoX0pKlew` | 21 | 0 | 0.0 | None | 0 |
 | `cLp3pxq7Dj0` | 12 | 0 | 0.0 | None | 0 |
+| `ckFokCksaXA` | 14 | 0 | 0.0 | None | 0 |
 | `d4mrO13trBY` | 16 | 0 | 0.0 | None | 0 |
 | `dKe3WbGR7Xs` | 49 | 0 | 0.0 | None | 0 |
 | `dPi40lQetew` | 17 | 12 | 0.70588 | 0.022 | 0 |
@@ -167,6 +172,7 @@ Visual results currently describe face detection and geometry only. They do not 
 | `dgkxN6RASpg` | 76 | 0 | 0.0 | None | 0 |
 | `e6_spMLKR6c` | 7 | 0 | 0.0 | None | 0 |
 | `eW_G2yO0b2w` | 9 | 0 | 0.0 | None | 0 |
+| `f0uqUzEf3A8` | 13 | 0 | 0.0 | None | 0 |
 | `fBnAMUkNM2k` | 8 | 0 | 0.0 | None | 0 |
 | `fnCW1NWngP4` | 16 | 0 | 0.0 | None | 0 |
 | `g3xLEDJeU2E` | 10 | 0 | 0.0 | None | 0 |
@@ -203,6 +209,7 @@ Visual results currently describe face detection and geometry only. They do not 
 | `nI0N3Y3TPu0` | 17 | 0 | 0.0 | None | 0 |
 | `njmzcD4eY94` | 27 | 17 | 0.62963 | 0.03737 | 0 |
 | `oFyh5YMmB80` | 9 | 0 | 0.0 | None | 0 |
+| `oK2cdUVNsCY` | 10 | 0 | 0.0 | None | 0 |
 | `ocfcVuuuMpQ` | 17 | 0 | 0.0 | None | 0 |
 | `oe492FoGYng` | 8 | 0 | 0.0 | None | 0 |
 | `onix2Uk_d2g` | 27 | 0 | 0.0 | None | 0 |
