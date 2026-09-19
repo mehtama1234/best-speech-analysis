@@ -2,21 +2,21 @@
 
 This report compares directly measured pilot features against heuristic transcript markers. It does not establish general speech principles. Labels must be manually reviewed, and all face measurements are detector outputs rather than emotion judgments.
 
-Pilot videos: **89**
+Pilot videos: **94**
 
 ## Acoustic comparison
 
 | Candidate label | Videos | Segments | Mean RMS dB | Speech activity | Zero-crossing rate | Spectral centroid Hz | Pitch proxy Hz | Pitch confidence |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| `call_to_action` | 43 | 147 | -21.03515 | 0.95913 | 0.12933 | 730.36561 | 220.88235 | 0.19364 |
+| `call_to_action` | 47 | 157 | -20.88992 | 0.95995 | 0.13093 | 744.06697 | 225.54241 | 0.19287 |
 | `conclusion_or_summary` | 9 | 9 | -17.61044 | 0.98611 | 0.17995 | 885.27756 | 263.40222 | 0.19002 |
-| `contrast_or_disagreement` | 49 | 141 | -20.48829 | 0.95626 | 0.14478 | 833.0306 | 259.83991 | 0.17544 |
-| `definition` | 33 | 56 | -20.05248 | 0.94908 | 0.14572 | 807.77301 | 262.93018 | 0.17196 |
-| `example` | 32 | 68 | -20.08781 | 0.94395 | 0.13281 | 758.65295 | 240.83056 | 0.18056 |
-| `question` | 77 | 1141 | -21.61331 | 0.93523 | 0.13933 | 825.09043 | 257.60128 | 0.18417 |
-| `story_or_personal_experience` | 55 | 241 | -20.31981 | 0.96285 | 0.14086 | 789.97969 | 257.8912 | 0.17638 |
-| `uncertainty_or_qualification` | 62 | 647 | -20.9083 | 0.94896 | 0.13825 | 799.98394 | 257.91252 | 0.17836 |
-| `unclassified` | 82 | 18409 | -22.18814 | 0.93361 | 0.1416 | 817.8086 | 254.96685 | 0.18198 |
+| `contrast_or_disagreement` | 53 | 149 | -20.57782 | 0.95612 | 0.14627 | 853.71528 | 259.8694 | 0.17496 |
+| `definition` | 36 | 61 | -20.26307 | 0.94931 | 0.14504 | 804.64299 | 260.15013 | 0.1724 |
+| `example` | 34 | 77 | -19.93288 | 0.94665 | 0.13422 | 770.76814 | 242.20526 | 0.1793 |
+| `question` | 82 | 1216 | -21.63595 | 0.93669 | 0.14027 | 834.60048 | 257.4986 | 0.18379 |
+| `story_or_personal_experience` | 59 | 248 | -20.36748 | 0.96133 | 0.14237 | 809.6897 | 259.84193 | 0.17833 |
+| `uncertainty_or_qualification` | 66 | 685 | -21.01046 | 0.94987 | 0.13812 | 806.98814 | 258.68453 | 0.17846 |
+| `unclassified` | 87 | 19724 | -22.16821 | 0.93444 | 0.14238 | 826.28751 | 255.57915 | 0.18208 |
 
 ## Visual coverage
 
@@ -58,12 +58,14 @@ Visual results currently describe face detection and geometry only. They do not 
 | `JFd8bnupsQY` | 9 | 0 | 0.0 | None | 0 |
 | `JdUq2opPY-Q` | 12 | 4 | 0.33333 | 0.16961 | 0 |
 | `KieuXXue2Ag` | 37 | 26 | 0.7027 | 0.015 | 0 |
+| `L9lIWfz7Exw` | 9 | 0 | 0.0 | None | 0 |
 | `LJRs2TnP9H8` | 4 | 0 | 0.0 | None | 0 |
 | `Mo1YPGySiko` | 146 | 0 | 0.0 | None | 0 |
 | `N6ROB3Q_iXg` | 26 | 0 | 0.0 | None | 0 |
 | `O1VdQQkbUOU` | 26 | 0 | 0.0 | None | 0 |
 | `OfwfTN1mEyM` | 50 | 41 | 0.82 | 0.02261 | 0 |
 | `PvcLdCo03TM` | 47 | 0 | 0.0 | None | 0 |
+| `QTR4l60l910` | 29 | 0 | 0.0 | None | 0 |
 | `RCxgqHqakXc` | 13 | 4 | 0.30769 | 0.0213 | 0 |
 | `RLklwFPNQ_g` | 14 | 0 | 0.0 | None | 0 |
 | `RnIqGFqPwkQ` | 23 | 0 | 0.0 | None | 0 |
@@ -93,6 +95,7 @@ Visual results currently describe face detection and geometry only. They do not 
 | `fBnAMUkNM2k` | 8 | 0 | 0.0 | None | 0 |
 | `gDadfh0ZdBM` | 29 | 19 | 0.65517 | 0.06165 | 0 |
 | `gQzZkTRhp0U` | 22 | 0 | 0.0 | None | 0 |
+| `gVRlg4BXKVo` | 16 | 0 | 0.0 | None | 0 |
 | `gWziScXTR_4` | 10 | 0 | 0.0 | None | 0 |
 | `h4vlcM-5X1E` | 9 | 0 | 0.0 | None | 0 |
 | `hBYoDp-Zh64` | 12 | 0 | 0.0 | None | 0 |
@@ -105,12 +108,14 @@ Visual results currently describe face detection and geometry only. They do not 
 | `m92yvNscIAo` | 16 | 6 | 0.375 | 0.03101 | 0 |
 | `njmzcD4eY94` | 27 | 17 | 0.62963 | 0.03737 | 0 |
 | `pmAL79dnvu0` | 51 | 23 | 0.45098 | 0.01753 | 0 |
+| `pqQBl-cMY84` | 14 | 0 | 0.0 | None | 0 |
 | `qM-gZintWDc` | 29 | 10 | 0.34483 | 0.085 | 0 |
 | `qOwYULOPuPs` | 4 | 0 | 0.0 | None | 0 |
 | `r2kP2Pqdx6w` | 4 | 0 | 0.0 | None | 0 |
 | `r3aCv8b2OfE` | 21 | 0 | 0.0 | None | 0 |
 | `stxIHzmQw6w` | 17 | 0 | 0.0 | None | 0 |
 | `u1gg_L-syCw` | 18 | 8 | 0.44444 | 0.02543 | 0 |
+| `vs5A3ZgBx1k` | 7 | 0 | 0.0 | None | 0 |
 | `xRiwgtdyjQk` | 59 | 49 | 0.83051 | 0.01611 | 0 |
 | `zKCjmtxgyNg` | 46 | 40 | 0.86957 | 0.05654 | 0 |
 
