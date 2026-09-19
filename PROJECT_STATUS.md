@@ -2,6 +2,22 @@
 
 Last corpus checkpoint: 2026-09-18. Provenance/report repair: 2026-09-17.
 
+## Latest continuation update — full local delivery proxy expansion
+
+The transcript layer remains complete at 395/395 reviews and 102,816 inspected
+captions. Local delivery navigation now covers 364 feature reports, including
+audio windows and sampled frames for all 364, with 357 reports containing
+aligned retained-caption rows. The [full-corpus timing candidate atlas]
+(writeups/full-corpus-timing-candidate-atlas.md) routes 5,557 bounded pause and
+density candidates across those 357 videos; caption gaps and density remain
+proxies requiring manual listening. The [full local visual movement report]
+(writeups/visual-movement-analysis.md) measures sampled face/scene changes while
+preserving detector missingness. The pose extractor remains unavailable in the
+base environment because `torchvision` is not installed and the isolated wheel
+is incompatible with the installed PyTorch build; no pose claims are promoted.
+All delivery, identity, learner and listener validation gates remain separate
+and no independent records have been received.
+
 ## Latest continuation update — multimodal recovery tranche
 
 The transcript corpus remains complete at 395/395 full-context reviews,
