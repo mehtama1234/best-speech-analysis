@@ -8,22 +8,22 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 184,
+  "item_count": 177,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 6,
-      "fixed_corpus_transcript_only": 178
+      "fixed_corpus_transcript_only": 171
     },
     "by_media_state": {
       "audio_only": 8,
       "derived_features_only": 6,
-      "transcript_only_no_local_media": 166,
+      "transcript_only_no_local_media": 159,
       "video_only": 4
     },
     "by_video_status": {
       "downloaded": 4,
-      "failed:1": 33,
-      "not_attempted": 147
+      "failed:1": 35,
+      "not_attempted": 138
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -341,18 +341,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "69vFAHLkAlI",
-      "title": "ENGLISH SPEECH | MOTHER TERESA: Nobel Peace Prize Speech (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=69vFAHLkAlI",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "74ZgwDcjeGc",
       "title": "ENGLISH SPEECH | LIONEL MESSI: Heartfelt Farewell Speech (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=74ZgwDcjeGc",
@@ -562,10 +550,10 @@
       "source_url": "https://www.youtube.com/watch?v=BZ7v0wVrKDo",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -836,18 +824,6 @@
       "video_id": "LEtP7HgGTu0",
       "title": "ENGLISH SPEECH | DR. A.P.J ABDUL KALAM: Culture of Excellence (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=LEtP7HgGTu0",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "MME0I87oiJI",
-      "title": "ENGLISH SPEECH | HRITHIK ROSHAN: Know Who You Are (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=MME0I87oiJI",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -1169,18 +1145,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "WRPisaWDGBU",
-      "title": "The Muppet Movie: Kermit Talks to Himself",
-      "source_url": "https://www.youtube.com/watch?v=WRPisaWDGBU",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "XVHd_UUTK-c",
       "title": "ENGLISH SPEECH | RO KHANNA: Epstein Files Transparency (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=XVHd_UUTK-c",
@@ -1313,18 +1277,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "aj0PTgHnNaI",
-      "title": "Shah Rukh Khan: The Art of Perseverance",
-      "source_url": "https://www.youtube.com/watch?v=aj0PTgHnNaI",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "ar1hltV1QzI",
       "title": "ENGLISH SPEECH | RYAN REYNOLDS: Deadpool Interview (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=ar1hltV1QzI",
@@ -1378,10 +1330,10 @@
       "source_url": "https://www.youtube.com/watch?v=da2N4KMGuFo",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1580,18 +1532,6 @@
       "video_id": "j1TKhGBIKFk",
       "title": "ENGLISH SPEECH | CRISTIANO RONALDO: Motivated by Fans (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=j1TKhGBIKFk",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "kBh--e1sa5o",
-      "title": "ENGLISH SPEECH | KOBE BRYANT: Love What You Do! (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=kBh--e1sa5o",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -1814,18 +1754,6 @@
       "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "p5XZZfQ9L9c",
-      "title": "ENGLISH SPEECH | OPRAH WINFREY: Service and Success (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=p5XZZfQ9L9c",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -2150,18 +2078,6 @@
       "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "x45lP81Pmq8",
-      "title": "ENGLISH SPEECH | MUHAMMAD YUNUS: Zero Poverty Vision (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=x45lP81Pmq8",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
