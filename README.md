@@ -42,6 +42,9 @@ selects one bounded starting lesson for each of the 395 reviewed videos, with
 exact evidence, a practice move, self-check and sequence bridge where recorded.
 It also attaches nearest local audio, face/scene and pose proxy fields for 357
 videos; 38 retain explicit no-local-proxy status.
+It attaches 555 exact phrase-form retrieval handles across 189 videos where
+the phrase inventory contains an example from that video; these are wording
+handles for rereading, not scripts or evidence of effectiveness.
 The [corpus findings catalog](writeups/corpus-findings-catalog.md) is the
 practical reading surface: all 395 video findings, 18 usable speech jobs,
 timestamp-linked examples, exact phrase-form counts, copyable forms, practice

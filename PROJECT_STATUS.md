@@ -26,6 +26,10 @@ The itinerary attaches nearest local audio, face/scene and pose proxy fields
 for 357 videos and preserves explicit no-local-proxy status for the remaining
 38; offsets are visible so a sampled measurement is not mistaken for exact
 delivery alignment.
+It also exposes 555 exact phrase-form retrieval handles across 189 entries,
+linking each indexed form to the retained caption text and source URL. Entries
+without a matching indexed form say so explicitly; the handles are not scripts
+or evidence that a phrase is effective.
 
 ## Latest continuation update — full local delivery proxy expansion
 
