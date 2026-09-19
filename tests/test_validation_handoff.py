@@ -37,8 +37,11 @@ class ValidationHandoffTests(unittest.TestCase):
         self.assertEqual(entry["candidate_video_count"], 188)
         self.assertTrue((ROOT / entry["markdown"]).is_file())
         self.assertTrue((ROOT / entry["browser"]).is_file())
+        self.assertTrue((ROOT / entry["validator"]).is_file())
+        self.assertTrue((ROOT / entry["summarizer"]).is_file())
         self.assertIn("delivery-proxy-candidate-atlas.md", self.markdown)
         self.assertIn("delivery-proxy-candidate-atlas.html", self.markdown)
+        self.assertIn("validate_delivery_proxy_local_reviews.py", self.markdown)
 
 
 if __name__ == "__main__":

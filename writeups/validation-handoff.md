@@ -6,7 +6,7 @@ These are operational instruments and instructions, not validation results. No r
 
 Start with the [seven-day learner path](learner-7-day-path.md) for practical drills. The [corpus findings catalog](corpus-findings-catalog.md) currently routes 207 of 395 videos to one or more provisional practice jobs; 188 remain explicitly unclassified. This routing is heuristic discovery support, not proof that a pattern works.
 
-For multimodal review, use the [delivery proxy candidate atlas](delivery-proxy-candidate-atlas.md) or its [searchable browser surface](delivery-proxy-candidate-atlas.html): 1505 transcript-linked clips across 188 videos. These are proxy-backed review candidates, not delivery scores or effectiveness evidence.
+For multimodal review, use the [delivery proxy candidate atlas](delivery-proxy-candidate-atlas.md) or its [searchable browser surface](delivery-proxy-candidate-atlas.html): 1505 transcript-linked clips across 188 videos. These are proxy-backed review candidates, not delivery scores or effectiveness evidence. Validate exports with `scripts/validate_delivery_proxy_local_reviews.py` and summarize them with `scripts/summarize_delivery_proxy_local_reviews.py`; neither establishes independence.
 
 Before selecting examples, use the [corpus lesson inventory](corpus-lesson-index.html), [exact phrase-form inventory](corpus-phrase-form-inventory.html), [evidence bank](corpus-evidence-bank.html), [provisional cards](communication-job-cards.html), [delivery inventory](communication-job-delivery-inventory.md) and [shared evidence model](shared-evidence-model.md). These are discovery and routing surfaces; none is proof that a pattern works.
 
