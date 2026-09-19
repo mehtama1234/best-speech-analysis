@@ -46,6 +46,8 @@ def validate(report: dict) -> list[str]:
     learner = read("research/shared-learner-check.json")
     listener = read("research/listener-outcome-protocol.json")
     raw_visual = read("research/raw-media-only-visual-audit.json")
+    full_media = read("research/full-corpus-media-coverage.json")
+    media_recovery = read("research/full-corpus-media-recovery-queue.json")
     errors = []
     if report.get("status") != "research_checkpoint_not_complete": errors.append("dashboard status must remain research_checkpoint_not_complete")
     stages = report.get("stages", {})
@@ -100,6 +102,11 @@ def validate(report: dict) -> list[str]:
         ("delivery_evidence", "selected_video_count"): media["selected_video_count"],
         ("delivery_evidence", "raw_audio_video_present"): media["raw_audio_video_present_count"],
         ("delivery_evidence", "raw_only_visual_audit_items"): raw_visual["item_count"],
+        ("full_corpus_media_coverage", "video_count"): full_media["video_count"],
+        ("full_corpus_media_coverage", "raw_audio_video_present"): full_media["counts"].get("raw_audio_video_present", 0),
+        ("full_corpus_media_coverage", "derived_features_only"): full_media["counts"].get("derived_features_only", 0),
+        ("full_corpus_media_coverage", "transcript_only_no_local_media"): full_media["counts"].get("transcript_only_no_local_media", 0),
+        ("full_corpus_media_recovery", "queued_item_count"): media_recovery["item_count"],
         ("shared_lessons", "draft_card_count"): cards["card_count"],
         ("learner_check", "task_count"): learner["task_count"],
         ("listener_outcomes", "task_count"): len(listener["listener_tasks"]),

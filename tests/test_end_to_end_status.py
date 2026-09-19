@@ -52,6 +52,9 @@ class EndToEndStatusTests(unittest.TestCase):
         self.assertEqual(self.status["stages"]["listener_outcomes"]["completed_records"], 0)
         self.assertEqual(self.status["stages"]["delivery_evidence"]["raw_audio_video_without_transcript"], 8)
         self.assertEqual(self.status["stages"]["delivery_evidence"]["raw_only_visual_audit_items"], 8)
+        self.assertEqual(self.status["stages"]["full_corpus_media_coverage"]["video_count"], 395)
+        self.assertEqual(self.status["stages"]["full_corpus_media_coverage"]["raw_audio_video_present"], 31)
+        self.assertEqual(self.status["stages"]["full_corpus_media_recovery"]["queued_item_count"], 364)
         self.assertGreaterEqual(len(self.status["next_required_gates"]), 5)
         self.assertIn("effectiveness", self.status["claim_boundary"])
 

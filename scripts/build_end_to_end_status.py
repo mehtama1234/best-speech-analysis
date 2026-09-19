@@ -47,6 +47,8 @@ def main() -> int:
     learner = load("research/shared-learner-check.json")
     listener = load("research/communication-job-listener-outcome-protocol.json")
     raw_only_visual = load("research/raw-media-only-visual-audit.json")
+    full_media = load("research/full-corpus-media-coverage.json")
+    media_recovery = load("research/full-corpus-media-recovery-queue.json")
 
     transcript_count = len(reviews["reviews"])
     caption_count = queue["caption_count"]
@@ -79,6 +81,7 @@ def main() -> int:
             "research/communication-job-listener-stimulus-review-workbook.json",
             "research/shared-lesson-cards.json", "research/shared-learner-check.json",
             "research/communication-job-listener-outcome-protocol.json", "research/raw-media-only-visual-audit.json",
+            "research/full-corpus-media-coverage.json", "research/full-corpus-media-recovery-queue.json",
         ],
         "status": "research_checkpoint_not_complete",
         "claim_boundary": "This dashboard reports artifact and validation status. It does not convert transcript coverage, internal review, generated instruments or passing tests into evidence of communication effectiveness.",
@@ -110,6 +113,8 @@ def main() -> int:
             "speech_function_candidate_review": {"status": functions["status"], "queued_item_count": functions["item_count"], "completed_independent_reviews": 0, "source": "research/corpus-function-independent-review-workbook.json"},
             "recurrence_candidate_review": {"status": recurrence["status"], "queued_item_count": recurrence["item_count"], "completed_independent_reviews": 0, "source": "research/corpus-recurrence-independent-review-workbook.json"},
             "delivery_evidence": {"status": media["status"], "selected_video_count": media["selected_video_count"], "raw_audio_video_present": media["raw_audio_video_present_count"], "raw_audio_video_with_transcript": media["raw_audio_video_with_transcript_count"], "raw_audio_video_without_transcript": media["raw_audio_video_without_transcript_count"], "internal_manual_reviews": media["internal_manual_review_count"], "raw_only_visual_audit_items": raw_only_visual["item_count"], "raw_only_visual_audit_status": raw_only_visual["status"], "independent_review_items": media_independent["item_count"], "completed_independent_reviews": 0, "source": "research/multimodal-coverage-audit.json"},
+            "full_corpus_media_coverage": {"status": full_media["status"], "video_count": full_media["video_count"], "raw_audio_video_present": full_media["counts"].get("raw_audio_video_present", 0), "derived_features_only": full_media["counts"].get("derived_features_only", 0), "transcript_only_no_local_media": full_media["counts"].get("transcript_only_no_local_media", 0), "source": "research/full-corpus-media-coverage.json"},
+            "full_corpus_media_recovery": {"status": media_recovery["status"], "queued_item_count": media_recovery["item_count"], "source": "research/full-corpus-media-recovery-queue.json"},
             "shared_lessons": {"status": cards["status"], "draft_card_count": cards["card_count"], "promotion_ready_card_count": 0, "source": "research/shared-lesson-cards.json"},
             "learner_check": {"status": learner["status"], "task_count": learner["task_count"], "completed_records": 0, "source": "research/shared-learner-check.json"},
             "listener_outcomes": {"status": listener["status"], "task_count": len(listener["listener_tasks"]), "stimulus_pairs_locked": listener["stimulus_pairs_locked"], "completed_records": 0, "source": "research/communication-job-listener-outcome-protocol.json"},
@@ -162,6 +167,8 @@ def main() -> int:
         f"| Function review | `{functions['status']}` | {functions['item_count']} queued / 0 completed |",
         f"| Recurrence review | `{recurrence['status']}` | {recurrence['item_count']} queued / 0 completed |",
         f"| Delivery evidence | `{media['status']}` | {media['raw_audio_video_present_count']} raw-complete ({media['raw_audio_video_without_transcript_count']} without transcript) / {media['internal_manual_review_count']} internal reviewed |",
+        f"| Full-corpus media coverage | `{full_media['status']}` | {full_media['video_count']} videos / {full_media['counts'].get('raw_audio_video_present', 0)} raw A/V / {full_media['counts'].get('derived_features_only', 0)} derived-only / {full_media['counts'].get('transcript_only_no_local_media', 0)} transcript-only |",
+        f"| Full-corpus media recovery | `{media_recovery['status']}` | {media_recovery['item_count']} queued missing/derived items |",
         f"| Shared lessons | `{cards['status']}` | {cards['card_count']} drafts / 0 promotion-ready |",
         f"| Learner check | `{learner['status']}` | {learner['task_count']} tasks / 0 records |",
         f"| Listener outcomes | `{listener['status']}` | {len(listener['listener_tasks'])} tasks / stimuli locked: {listener['stimulus_pairs_locked']} / 0 records |",
