@@ -65,6 +65,9 @@ the 18 flows runnable with exact examples, self-checks, non-fit boundaries and
 consent-gated local JSON export; it does not upload responses.
 The [end-to-end goal and definition of done](writeups/end-to-end-goal.md)
 defines the evidence chain required before any lesson can be promoted.
+The [learner field guide](writeups/learner-field-guide.md) consolidates the
+18 communication jobs, repeatable forms, indexed phrase families, practice
+boundaries and delivery-inspection questions in one usable guide.
 The [18-job listener protocol](writeups/communication-job-listener-outcome-protocol.md)
 separately defines matched controls, six comprehension/recall measures and
 controlled blind 0–2 task scoring with an explicit accessibility/missingness
