@@ -123,4 +123,6 @@ across people.
 The delivery queue and independent review instruments are in the [validation
 handoff](validation-handoff.md). The [communication-job delivery
 inventory](communication-job-delivery-inventory.md) shows the current samples,
-measurements and missingness. Use both before promoting a delivery claim.
+measurements and missingness. The [full delivery proxy index](full-delivery-proxy-index.md)
+extends navigation to 364 local feature reports, but remains proxy-only. Use
+these artifacts before promoting a delivery claim.
