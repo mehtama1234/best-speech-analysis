@@ -20,7 +20,7 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not force a formal opening into a fast response or an already shared conversation.
 
-**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
+**Delivery evidence:** 2 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
 
 ## `closing`
 
@@ -38,7 +38,7 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not close over a live objection that still needs an answer.
 
-**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
+**Delivery evidence:** 2 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
 
 ## `question`
 
@@ -56,7 +56,7 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not use a rhetorical question to disguise a demand or corner someone.
 
-**Delivery evidence:** 10 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
+**Delivery evidence:** 2 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
 
 ## `answer_or_response`
 
@@ -74,7 +74,7 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not reframe merely to avoid an uncomfortable but legitimate question.
 
-**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
+**Delivery evidence:** 2 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
 
 ## `story_or_personal_experience`
 
@@ -110,7 +110,7 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not select a vivid outlier to imply a typical pattern without denominators.
 
-**Delivery evidence:** 1 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
+**Delivery evidence:** 2 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
 
 ## `contrast_or_disagreement`
 
@@ -128,7 +128,7 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not manufacture a false binary or treat a person as an argument to defeat.
 
-**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
+**Delivery evidence:** 2 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
 
 ## `correction_or_reframe`
 
@@ -146,7 +146,7 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not label a challenge a ‘bad question’ simply because it is inconvenient.
 
-**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
+**Delivery evidence:** 2 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
 
 ## `repair_or_self_correction`
 
@@ -164,7 +164,7 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not use ‘repair’ theatrically to avoid responsibility for a substantive claim.
 
-**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
+**Delivery evidence:** 2 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
 
 ## `qualification_or_boundary`
 
@@ -182,7 +182,7 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not add ornamental uncertainty to a claim that should be checked directly.
 
-**Delivery evidence:** 4 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
+**Delivery evidence:** 2 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
 
 ## `definition_or_explanation`
 
@@ -200,7 +200,7 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not substitute a slogan, metaphor or credential for a usable definition.
 
-**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
+**Delivery evidence:** 2 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
 
 ## `transition_or_structure`
 
@@ -218,7 +218,7 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not use a transition to imply a connection that the evidence does not support.
 
-**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
+**Delivery evidence:** 2 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
 
 ## `callback_or_repetition`
 
@@ -236,7 +236,7 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not repeat a slogan to pressure agreement or simulate evidence.
 
-**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
+**Delivery evidence:** 2 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
 
 ## `humor_or_rapport`
 
@@ -254,7 +254,7 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not use humor to trivialize grief, vulnerability, identity or an unresolved harm.
 
-**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
+**Delivery evidence:** 2 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
 
 ## `credit_or_acknowledgment`
 
@@ -272,7 +272,7 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not claim to transfer authority through praise while retaining all control.
 
-**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
+**Delivery evidence:** 2 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
 
 ## `call_to_action_or_audience_role`
 
@@ -308,7 +308,7 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not use urgency, fear or moral identity to conceal missing evidence or coercion.
 
-**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
+**Delivery evidence:** 2 internally reviewed sample(s); status `internal_bounded_review_not_independent`.
 
 ## `reflection_or_value_frame`
 
@@ -326,4 +326,4 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **When not to use:** Do not use a value label to end inquiry or claim moral superiority.
 
-**Delivery evidence:** 0 internally reviewed sample(s); status `no_aligned_internal_sample_for_this_job`.
+**Delivery evidence:** 2 internally reviewed sample(s); status `internal_bounded_review_not_independent`.

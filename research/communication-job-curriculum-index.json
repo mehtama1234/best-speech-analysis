@@ -387,6 +387,81 @@
           "sample_id": "delivery:opening:01",
           "card_id": "provisional-job-opening",
           "canonical_job": "opening",
+          "evidence_id": "dgkxN6RASpg:00000",
+          "video_id": "dgkxN6RASpg",
+          "title": "ENGLISH SPEECH | TOM CRUISE & BEN STILLER: Footprint Ceremony (English Subtitles)",
+          "start_seconds": 13.68,
+          "end_seconds": 30.4,
+          "source_url": "https://www.youtube.com/watch?v=dgkxN6RASpg&t=13s",
+          "transcript_excerpt": "Hi, everybody. You know, I love these ceremonies. I remember as a little kid, I used to look at pictures of Man's Chinese and the premieres they had here in these kinds of events. So, it's a real honor for me to be here today. As today, we're going to celebrate a great artist, Ben Stiller.",
+          "transcript_segment_ids": [
+            "dgkxN6RASpg:00000",
+            "dgkxN6RASpg:00001",
+            "dgkxN6RASpg:00002"
+          ],
+          "raw_media_state": "raw_audio_video_present_local_unselected",
+          "video_file": "dgkxN6RASpg.mp4",
+          "audio_file": "dgkxN6RASpg.m4a",
+          "feature_file": null,
+          "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
+          "review": {
+            "transcript_alignment": null,
+            "vocal_timing_observation": null,
+            "audio_measurement_and_limit": null,
+            "visual_observation": null,
+            "setting_editing_music_observation": null,
+            "speaker_event_identity": null,
+            "missingness_or_accessibility_note": null,
+            "reviewer_code": null
+          },
+          "measurement": {
+            "sample_id": "delivery:opening:01",
+            "canonical_job": "opening",
+            "video_id": "dgkxN6RASpg",
+            "evidence_ids_requested": [
+              "dgkxN6RASpg:00000",
+              "dgkxN6RASpg:00001",
+              "dgkxN6RASpg:00002"
+            ],
+            "evidence_ids_matched": [
+              "dgkxN6RASpg:00000",
+              "dgkxN6RASpg:00001",
+              "dgkxN6RASpg:00002"
+            ],
+            "missing_evidence_ids": [],
+            "feature_file": "data/features/dgkxN6RASpg.json",
+            "feature_schema_version": "0.2",
+            "measurement_status": "aligned_feature_measurement_available",
+            "audio_measurements": {
+              "words_per_second_proxy": 3.35867,
+              "transcript_gap_before_seconds": 0.0,
+              "transcript_gap_after_seconds": 1.38667,
+              "mean_rms_db": -20.79533,
+              "speech_activity_fraction": 1.0,
+              "mean_zero_crossing_rate": 0.19919,
+              "mean_spectral_centroid_hz": 1357.68867,
+              "mean_pitch_hz_proxy": 254.34,
+              "mean_pitch_confidence_proxy": 0.1571
+            },
+            "nearest_sampled_frame": {
+              "time_seconds": 20.0,
+              "face_count": null,
+              "smile_detector_candidate_count": null,
+              "mean_luminance": 107.388,
+              "luminance_std": 90.961,
+              "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+            },
+            "measurement_limits": [
+              "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
+              "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
+              "Feature alignment does not verify speaker identity, editing, room acoustics or transcript correctness."
+            ]
+          }
+        },
+        {
+          "sample_id": "delivery:opening:02",
+          "card_id": "provisional-job-opening",
+          "canonical_job": "opening",
           "evidence_id": "AwA0Jnfj3ao:00000",
           "video_id": "AwA0Jnfj3ao",
           "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
@@ -415,7 +490,7 @@
             "reviewer_code": null
           },
           "measurement": {
-            "sample_id": "delivery:opening:01",
+            "sample_id": "delivery:opening:02",
             "canonical_job": "opening",
             "video_id": "AwA0Jnfj3ao",
             "evidence_ids_requested": [
@@ -450,81 +525,6 @@
               "mean_luminance": 25.658,
               "luminance_std": 27.938,
               "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
-            },
-            "measurement_limits": [
-              "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
-              "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
-              "Feature alignment does not verify speaker identity, editing, room acoustics or transcript correctness."
-            ]
-          }
-        },
-        {
-          "sample_id": "delivery:opening:02",
-          "card_id": "provisional-job-opening",
-          "canonical_job": "opening",
-          "evidence_id": "jxY2-YgAgm0:00000",
-          "video_id": "jxY2-YgAgm0",
-          "title": "ENGLISH SPEECH | MELANIA TRUMP: A Public Denial (English Subtitles)",
-          "start_seconds": 3.6,
-          "end_seconds": 14.52,
-          "source_url": "https://www.youtube.com/watch?v=jxY2-YgAgm0&t=3s",
-          "transcript_excerpt": "Good afternoon. The lies linking me with the disgraceful Jeffrey Epstein",
-          "transcript_segment_ids": [
-            "jxY2-YgAgm0:00000",
-            "jxY2-YgAgm0:00001",
-            "jxY2-YgAgm0:00002"
-          ],
-          "raw_media_state": "raw_audio_video_present",
-          "video_file": "jxY2-YgAgm0.mp4",
-          "audio_file": "jxY2-YgAgm0.m4a",
-          "feature_file": "jxY2-YgAgm0.json",
-          "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
-          "review": {
-            "transcript_alignment": null,
-            "vocal_timing_observation": null,
-            "audio_measurement_and_limit": null,
-            "visual_observation": null,
-            "setting_editing_music_observation": null,
-            "speaker_event_identity": null,
-            "missingness_or_accessibility_note": null,
-            "reviewer_code": null
-          },
-          "measurement": {
-            "sample_id": "delivery:opening:02",
-            "canonical_job": "opening",
-            "video_id": "jxY2-YgAgm0",
-            "evidence_ids_requested": [
-              "jxY2-YgAgm0:00000",
-              "jxY2-YgAgm0:00001",
-              "jxY2-YgAgm0:00002"
-            ],
-            "evidence_ids_matched": [
-              "jxY2-YgAgm0:00000",
-              "jxY2-YgAgm0:00001",
-              "jxY2-YgAgm0:00002"
-            ],
-            "missing_evidence_ids": [],
-            "feature_file": "data/features/jxY2-YgAgm0.json",
-            "feature_schema_version": "0.2",
-            "measurement_status": "aligned_feature_measurement_available",
-            "audio_measurements": {
-              "words_per_second_proxy": 0.69333,
-              "transcript_gap_before_seconds": 0.0,
-              "transcript_gap_after_seconds": 0.0,
-              "mean_rms_db": -19.465,
-              "speech_activity_fraction": 0.95233,
-              "mean_zero_crossing_rate": 0.12869,
-              "mean_spectral_centroid_hz": 607.05067,
-              "mean_pitch_hz_proxy": 223.524,
-              "mean_pitch_confidence_proxy": 0.25758
-            },
-            "nearest_sampled_frame": {
-              "time_seconds": 0.0,
-              "face_count": null,
-              "smile_detector_candidate_count": null,
-              "mean_luminance": 78.878,
-              "luminance_std": 60.57,
-              "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
             },
             "measurement_limits": [
               "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
@@ -992,22 +992,22 @@
           "sample_id": "delivery:closing:01",
           "card_id": "provisional-job-closing",
           "canonical_job": "closing",
-          "evidence_id": "9fEurt2OZ0I:00030",
-          "video_id": "9fEurt2OZ0I",
-          "title": "ENGLISH SPEECH | JACK MA ALIBABA: We Never Give Up (English Subtitles)",
-          "start_seconds": 89.439,
-          "end_seconds": 100.72,
-          "source_url": "https://www.youtube.com/watch?v=9fEurt2OZ0I&t=89s",
-          "transcript_excerpt": "successful I find one per people when they finish the job if they make the mistake if they fail if they always",
+          "evidence_id": "6dKimoybmEo:00067",
+          "video_id": "6dKimoybmEo",
+          "title": "ENGLISH SPEECH | MARTIN LUTHER KING: I Have a Dream (English Subtitles)",
+          "start_seconds": 209.94,
+          "end_seconds": 212.94,
+          "source_url": "https://www.youtube.com/watch?v=6dKimoybmEo&t=209s",
+          "transcript_excerpt": "And when this happens, when we allow freedomto ring, when we let it ring from every village and hamlet, from every state and every city,we will be able to speed up that day when all of God's children, black men and whitemen, Jews and Gentiles, Protestants and Catholics,",
           "transcript_segment_ids": [
-            "9fEurt2OZ0I:00030",
-            "9fEurt2OZ0I:00031",
-            "9fEurt2OZ0I:00032"
+            "6dKimoybmEo:00067",
+            "6dKimoybmEo:00068",
+            "6dKimoybmEo:00069"
           ],
-          "raw_media_state": "raw_audio_video_present",
-          "video_file": "9fEurt2OZ0I.mp4",
-          "audio_file": "9fEurt2OZ0I.m4a",
-          "feature_file": "9fEurt2OZ0I.json",
+          "raw_media_state": "raw_audio_video_present_local_unselected",
+          "video_file": "6dKimoybmEo.mp4",
+          "audio_file": "6dKimoybmEo.m4a",
+          "feature_file": null,
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -1022,38 +1022,38 @@
           "measurement": {
             "sample_id": "delivery:closing:01",
             "canonical_job": "closing",
-            "video_id": "9fEurt2OZ0I",
+            "video_id": "6dKimoybmEo",
             "evidence_ids_requested": [
-              "9fEurt2OZ0I:00030",
-              "9fEurt2OZ0I:00031",
-              "9fEurt2OZ0I:00032"
+              "6dKimoybmEo:00067",
+              "6dKimoybmEo:00068",
+              "6dKimoybmEo:00069"
             ],
             "evidence_ids_matched": [
-              "9fEurt2OZ0I:00030",
-              "9fEurt2OZ0I:00031",
-              "9fEurt2OZ0I:00032"
+              "6dKimoybmEo:00067",
+              "6dKimoybmEo:00068",
+              "6dKimoybmEo:00069"
             ],
             "missing_evidence_ids": [],
-            "feature_file": "data/features/9fEurt2OZ0I.json",
+            "feature_file": "data/features/6dKimoybmEo.json",
             "feature_schema_version": "0.2",
             "measurement_status": "aligned_feature_measurement_available",
             "audio_measurements": {
-              "words_per_second_proxy": 1.31133,
+              "words_per_second_proxy": 16.0,
               "transcript_gap_before_seconds": 0.0,
               "transcript_gap_after_seconds": 0.0,
-              "mean_rms_db": -23.497,
+              "mean_rms_db": -15.346,
               "speech_activity_fraction": 1.0,
-              "mean_zero_crossing_rate": 0.11425,
-              "mean_spectral_centroid_hz": 531.25267,
-              "mean_pitch_hz_proxy": 318.51467,
-              "mean_pitch_confidence_proxy": 0.15688
+              "mean_zero_crossing_rate": 0.10642,
+              "mean_spectral_centroid_hz": 990.71967,
+              "mean_pitch_hz_proxy": 333.33367,
+              "mean_pitch_confidence_proxy": 0.27334
             },
             "nearest_sampled_frame": {
-              "time_seconds": 0.0,
+              "time_seconds": 210.0,
               "face_count": null,
               "smile_detector_candidate_count": null,
-              "mean_luminance": 0.004,
-              "luminance_std": 0.067,
+              "mean_luminance": 88.716,
+              "luminance_std": 74.643,
               "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
             },
             "measurement_limits": [
@@ -1067,22 +1067,22 @@
           "sample_id": "delivery:closing:02",
           "card_id": "provisional-job-closing",
           "canonical_job": "closing",
-          "evidence_id": "AwA0Jnfj3ao:00235",
-          "video_id": "AwA0Jnfj3ao",
-          "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
-          "start_seconds": 1021.63,
-          "end_seconds": 1028.26,
-          "source_url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=1021s",
-          "transcript_excerpt": "Interviewer:Sachin, thank you so much. Ladies and gentlemen, it has been an outstandingnight. Thank you so much.",
+          "evidence_id": "dgkxN6RASpg:00089",
+          "video_id": "dgkxN6RASpg",
+          "title": "ENGLISH SPEECH | TOM CRUISE & BEN STILLER: Footprint Ceremony (English Subtitles)",
+          "start_seconds": 615.44,
+          "end_seconds": 635.36,
+          "source_url": "https://www.youtube.com/watch?v=dgkxN6RASpg&t=615s",
+          "transcript_excerpt": "Hopefully this shows you that all the years of not being there for school conferences, Oboe recitals, birthdays, all of it was worth it because here we are together on Hollywood Boulevard watching me kneel on the ground, stick my hands in wet cement. And kids,",
           "transcript_segment_ids": [
-            "AwA0Jnfj3ao:00235",
-            "AwA0Jnfj3ao:00236",
-            "AwA0Jnfj3ao:00237"
+            "dgkxN6RASpg:00089",
+            "dgkxN6RASpg:00090",
+            "dgkxN6RASpg:00091"
           ],
-          "raw_media_state": "raw_audio_video_present",
-          "video_file": "AwA0Jnfj3ao.mp4",
-          "audio_file": "AwA0Jnfj3ao.m4a",
-          "feature_file": "AwA0Jnfj3ao.json",
+          "raw_media_state": "raw_audio_video_present_local_unselected",
+          "video_file": "dgkxN6RASpg.mp4",
+          "audio_file": "dgkxN6RASpg.m4a",
+          "feature_file": null,
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -1097,39 +1097,39 @@
           "measurement": {
             "sample_id": "delivery:closing:02",
             "canonical_job": "closing",
-            "video_id": "AwA0Jnfj3ao",
+            "video_id": "dgkxN6RASpg",
             "evidence_ids_requested": [
-              "AwA0Jnfj3ao:00235",
-              "AwA0Jnfj3ao:00236",
-              "AwA0Jnfj3ao:00237"
+              "dgkxN6RASpg:00089",
+              "dgkxN6RASpg:00090",
+              "dgkxN6RASpg:00091"
             ],
             "evidence_ids_matched": [
-              "AwA0Jnfj3ao:00235",
-              "AwA0Jnfj3ao:00236",
-              "AwA0Jnfj3ao:00237"
+              "dgkxN6RASpg:00089",
+              "dgkxN6RASpg:00090",
+              "dgkxN6RASpg:00091"
             ],
             "missing_evidence_ids": [],
-            "feature_file": "data/features/AwA0Jnfj3ao.json",
+            "feature_file": "data/features/dgkxN6RASpg.json",
             "feature_schema_version": "0.2",
             "measurement_status": "aligned_feature_measurement_available",
             "audio_measurements": {
-              "words_per_second_proxy": 2.87333,
-              "transcript_gap_before_seconds": 0.0,
-              "transcript_gap_after_seconds": 0.0,
-              "mean_rms_db": -19.547,
-              "speech_activity_fraction": 1.0,
-              "mean_zero_crossing_rate": 0.19145,
-              "mean_spectral_centroid_hz": 1160.30667,
-              "mean_pitch_hz_proxy": 238.45467,
-              "mean_pitch_confidence_proxy": 0.16118
+              "words_per_second_proxy": 2.547,
+              "transcript_gap_before_seconds": 1.65333,
+              "transcript_gap_after_seconds": 0.26667,
+              "mean_rms_db": -21.00033,
+              "speech_activity_fraction": 0.95833,
+              "mean_zero_crossing_rate": 0.17017,
+              "mean_spectral_centroid_hz": 922.84933,
+              "mean_pitch_hz_proxy": 293.634,
+              "mean_pitch_confidence_proxy": 0.17487
             },
             "nearest_sampled_frame": {
-              "time_seconds": 1020.0,
-              "face_count": 0,
-              "smile_detector_candidate_count": 0,
-              "mean_luminance": 113.976,
-              "luminance_std": 80.917,
-              "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+              "time_seconds": 630.0,
+              "face_count": null,
+              "smile_detector_candidate_count": null,
+              "mean_luminance": 120.914,
+              "luminance_std": 92.15,
+              "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
             },
             "measurement_limits": [
               "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
@@ -1585,6 +1585,81 @@
           "sample_id": "delivery:question:01",
           "card_id": "provisional-job-question",
           "canonical_job": "question",
+          "evidence_id": "dKe3WbGR7Xs:00062",
+          "video_id": "dKe3WbGR7Xs",
+          "title": "ENGLISH SPEECH | JENNIFER ANISTON: Find Your Voice (English Subtitles)",
+          "start_seconds": 321.11,
+          "end_seconds": 334.949,
+          "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=321s",
+          "transcript_excerpt": "After hearing this word, at the end of theday, after hearing the word repeated over and over again, she looked up at me with this,those big blue eyeballs, and she asked me what is cancer?",
+          "transcript_segment_ids": [
+            "dKe3WbGR7Xs:00062",
+            "dKe3WbGR7Xs:00063",
+            "dKe3WbGR7Xs:00064"
+          ],
+          "raw_media_state": "raw_audio_video_present_local_unselected",
+          "video_file": "dKe3WbGR7Xs.mp4",
+          "audio_file": "dKe3WbGR7Xs.m4a",
+          "feature_file": null,
+          "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
+          "review": {
+            "transcript_alignment": null,
+            "vocal_timing_observation": null,
+            "audio_measurement_and_limit": null,
+            "visual_observation": null,
+            "setting_editing_music_observation": null,
+            "speaker_event_identity": null,
+            "missingness_or_accessibility_note": null,
+            "reviewer_code": null
+          },
+          "measurement": {
+            "sample_id": "delivery:question:01",
+            "canonical_job": "question",
+            "video_id": "dKe3WbGR7Xs",
+            "evidence_ids_requested": [
+              "dKe3WbGR7Xs:00062",
+              "dKe3WbGR7Xs:00063",
+              "dKe3WbGR7Xs:00064"
+            ],
+            "evidence_ids_matched": [
+              "dKe3WbGR7Xs:00062",
+              "dKe3WbGR7Xs:00063",
+              "dKe3WbGR7Xs:00064"
+            ],
+            "missing_evidence_ids": [],
+            "feature_file": "data/features/dKe3WbGR7Xs.json",
+            "feature_schema_version": "0.2",
+            "measurement_status": "aligned_feature_measurement_available",
+            "audio_measurements": {
+              "words_per_second_proxy": 2.54033,
+              "transcript_gap_before_seconds": 0.0,
+              "transcript_gap_after_seconds": 0.0,
+              "mean_rms_db": -29.589,
+              "speech_activity_fraction": 0.86667,
+              "mean_zero_crossing_rate": 0.13751,
+              "mean_spectral_centroid_hz": 787.01867,
+              "mean_pitch_hz_proxy": 283.761,
+              "mean_pitch_confidence_proxy": 0.18535
+            },
+            "nearest_sampled_frame": {
+              "time_seconds": 330.0,
+              "face_count": null,
+              "smile_detector_candidate_count": null,
+              "mean_luminance": 125.793,
+              "luminance_std": 72.75,
+              "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+            },
+            "measurement_limits": [
+              "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
+              "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
+              "Feature alignment does not verify speaker identity, editing, room acoustics or transcript correctness."
+            ]
+          }
+        },
+        {
+          "sample_id": "delivery:question:02",
+          "card_id": "provisional-job-question",
+          "canonical_job": "question",
           "evidence_id": "AwA0Jnfj3ao:00063",
           "video_id": "AwA0Jnfj3ao",
           "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
@@ -1613,7 +1688,7 @@
             "reviewer_code": null
           },
           "measurement": {
-            "sample_id": "delivery:question:01",
+            "sample_id": "delivery:question:02",
             "canonical_job": "question",
             "video_id": "AwA0Jnfj3ao",
             "evidence_ids_requested": [
@@ -1648,81 +1723,6 @@
               "mean_luminance": 88.951,
               "luminance_std": 74.235,
               "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
-            },
-            "measurement_limits": [
-              "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
-              "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
-              "Feature alignment does not verify speaker identity, editing, room acoustics or transcript correctness."
-            ]
-          }
-        },
-        {
-          "sample_id": "delivery:question:02",
-          "card_id": "provisional-job-question",
-          "canonical_job": "question",
-          "evidence_id": "jxY2-YgAgm0:00089",
-          "video_id": "jxY2-YgAgm0",
-          "title": "ENGLISH SPEECH | MELANIA TRUMP: A Public Denial (English Subtitles)",
-          "start_seconds": 267.08,
-          "end_seconds": 279.32,
-          "source_url": "https://www.youtube.com/watch?v=jxY2-YgAgm0&t=267s",
-          "transcript_excerpt": "Now is the time for Congress to act. Epstein was not alone. Several prominent male executives",
-          "transcript_segment_ids": [
-            "jxY2-YgAgm0:00089",
-            "jxY2-YgAgm0:00090",
-            "jxY2-YgAgm0:00091"
-          ],
-          "raw_media_state": "raw_audio_video_present",
-          "video_file": "jxY2-YgAgm0.mp4",
-          "audio_file": "jxY2-YgAgm0.m4a",
-          "feature_file": "jxY2-YgAgm0.json",
-          "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
-          "review": {
-            "transcript_alignment": null,
-            "vocal_timing_observation": null,
-            "audio_measurement_and_limit": null,
-            "visual_observation": null,
-            "setting_editing_music_observation": null,
-            "speaker_event_identity": null,
-            "missingness_or_accessibility_note": null,
-            "reviewer_code": null
-          },
-          "measurement": {
-            "sample_id": "delivery:question:02",
-            "canonical_job": "question",
-            "video_id": "jxY2-YgAgm0",
-            "evidence_ids_requested": [
-              "jxY2-YgAgm0:00089",
-              "jxY2-YgAgm0:00090",
-              "jxY2-YgAgm0:00091"
-            ],
-            "evidence_ids_matched": [
-              "jxY2-YgAgm0:00089",
-              "jxY2-YgAgm0:00090",
-              "jxY2-YgAgm0:00091"
-            ],
-            "missing_evidence_ids": [],
-            "feature_file": "data/features/jxY2-YgAgm0.json",
-            "feature_schema_version": "0.2",
-            "measurement_status": "aligned_feature_measurement_available",
-            "audio_measurements": {
-              "words_per_second_proxy": 0.87167,
-              "transcript_gap_before_seconds": 0.14667,
-              "transcript_gap_after_seconds": 0.0,
-              "mean_rms_db": -17.37367,
-              "speech_activity_fraction": 0.95833,
-              "mean_zero_crossing_rate": 0.13098,
-              "mean_spectral_centroid_hz": 622.47767,
-              "mean_pitch_hz_proxy": 250.86833,
-              "mean_pitch_confidence_proxy": 0.30067
-            },
-            "nearest_sampled_frame": {
-              "time_seconds": 300.0,
-              "face_count": null,
-              "smile_detector_candidate_count": null,
-              "mean_luminance": 78.656,
-              "luminance_std": 72.378,
-              "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
             },
             "measurement_limits": [
               "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
@@ -2752,22 +2752,22 @@
           "sample_id": "delivery:story_or_personal_experience:01",
           "card_id": "provisional-job-story_or_personal_experience",
           "canonical_job": "story_or_personal_experience",
-          "evidence_id": "AwA0Jnfj3ao:00004",
-          "video_id": "AwA0Jnfj3ao",
-          "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
-          "start_seconds": 26.269,
-          "end_seconds": 47.29,
-          "source_url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=26s",
-          "transcript_excerpt": "Sachin Tendulkar:Well, school cricket was exciting and the reason to start playing cricket was a strangeone. I mean, I was a notorious child, difficultto manage and I took a lot of pride in that.",
+          "evidence_id": "dgkxN6RASpg:00003",
+          "video_id": "dgkxN6RASpg",
+          "title": "ENGLISH SPEECH | TOM CRUISE & BEN STILLER: Footprint Ceremony (English Subtitles)",
+          "start_seconds": 34.56,
+          "end_seconds": 54.08,
+          "source_url": "https://www.youtube.com/watch?v=dgkxN6RASpg&t=34s",
+          "transcript_excerpt": "Now I've, you know, Ben and I grew up together. I really, first time I saw him was actually, he was doing theater in circle in the square. And then over the years, you know, he and I became very close friends and I was, you know, he's very, he's so generous because when I was doing Mission",
           "transcript_segment_ids": [
-            "AwA0Jnfj3ao:00004",
-            "AwA0Jnfj3ao:00005",
-            "AwA0Jnfj3ao:00006"
+            "dgkxN6RASpg:00003",
+            "dgkxN6RASpg:00004",
+            "dgkxN6RASpg:00005"
           ],
-          "raw_media_state": "raw_audio_video_present",
-          "video_file": "AwA0Jnfj3ao.mp4",
-          "audio_file": "AwA0Jnfj3ao.m4a",
-          "feature_file": "AwA0Jnfj3ao.json",
+          "raw_media_state": "raw_audio_video_present_local_unselected",
+          "video_file": "dgkxN6RASpg.mp4",
+          "audio_file": "dgkxN6RASpg.m4a",
+          "feature_file": null,
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -2782,39 +2782,39 @@
           "measurement": {
             "sample_id": "delivery:story_or_personal_experience:01",
             "canonical_job": "story_or_personal_experience",
-            "video_id": "AwA0Jnfj3ao",
+            "video_id": "dgkxN6RASpg",
             "evidence_ids_requested": [
-              "AwA0Jnfj3ao:00004",
-              "AwA0Jnfj3ao:00005",
-              "AwA0Jnfj3ao:00006"
+              "dgkxN6RASpg:00003",
+              "dgkxN6RASpg:00004",
+              "dgkxN6RASpg:00005"
             ],
             "evidence_ids_matched": [
-              "AwA0Jnfj3ao:00004",
-              "AwA0Jnfj3ao:00005",
-              "AwA0Jnfj3ao:00006"
+              "dgkxN6RASpg:00003",
+              "dgkxN6RASpg:00004",
+              "dgkxN6RASpg:00005"
             ],
             "missing_evidence_ids": [],
-            "feature_file": "data/features/AwA0Jnfj3ao.json",
+            "feature_file": "data/features/dgkxN6RASpg.json",
             "feature_schema_version": "0.2",
             "measurement_status": "aligned_feature_measurement_available",
             "audio_measurements": {
-              "words_per_second_proxy": 1.60867,
-              "transcript_gap_before_seconds": 0.0,
+              "words_per_second_proxy": 3.09967,
+              "transcript_gap_before_seconds": 1.38667,
               "transcript_gap_after_seconds": 0.0,
-              "mean_rms_db": -26.82167,
-              "speech_activity_fraction": 0.84467,
-              "mean_zero_crossing_rate": 0.15698,
-              "mean_spectral_centroid_hz": 1116.68667,
-              "mean_pitch_hz_proxy": 197.91667,
-              "mean_pitch_confidence_proxy": 0.2049
+              "mean_rms_db": -19.70367,
+              "speech_activity_fraction": 1.0,
+              "mean_zero_crossing_rate": 0.20618,
+              "mean_spectral_centroid_hz": 1245.562,
+              "mean_pitch_hz_proxy": 286.02433,
+              "mean_pitch_confidence_proxy": 0.18159
             },
             "nearest_sampled_frame": {
               "time_seconds": 40.0,
-              "face_count": 0,
-              "smile_detector_candidate_count": 0,
-              "mean_luminance": 111.581,
-              "luminance_std": 83.395,
-              "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+              "face_count": null,
+              "smile_detector_candidate_count": null,
+              "mean_luminance": 101.898,
+              "luminance_std": 88.423,
+              "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
             },
             "measurement_limits": [
               "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
@@ -2827,22 +2827,22 @@
           "sample_id": "delivery:story_or_personal_experience:02",
           "card_id": "provisional-job-story_or_personal_experience",
           "canonical_job": "story_or_personal_experience",
-          "evidence_id": "bR4tDSa3O10:00258",
-          "video_id": "bR4tDSa3O10",
-          "title": "ENGLISH SPEECH | JENNIFER COOLIDGE: Find Your Own Path (English Subtitles)",
-          "start_seconds": 756.24,
-          "end_seconds": 767.76,
-          "source_url": "https://www.youtube.com/watch?v=bR4tDSa3O10&t=756s",
-          "transcript_excerpt": "but rather so I could tell you that I mean it really doesn't matter what anyone thinks or says. I mean, you know,",
+          "evidence_id": "-54zUwySKCg:00033",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "start_seconds": 191.76,
+          "end_seconds": 207.23,
+          "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg&t=191s",
+          "transcript_excerpt": "You know my television career began unexpectedly. As you heard this morning I was in the MissFire Prevention contest. That was when I was 16 years old in Nashville,Tennessee, and you had the requirement of",
           "transcript_segment_ids": [
-            "bR4tDSa3O10:00258",
-            "bR4tDSa3O10:00259",
-            "bR4tDSa3O10:00260"
+            "-54zUwySKCg:00033",
+            "-54zUwySKCg:00034",
+            "-54zUwySKCg:00035"
           ],
-          "raw_media_state": "raw_audio_video_present",
-          "video_file": "bR4tDSa3O10.mp4",
-          "audio_file": "bR4tDSa3O10.m4a",
-          "feature_file": "bR4tDSa3O10.json",
+          "raw_media_state": "raw_audio_video_present_local_unselected",
+          "video_file": "-54zUwySKCg.mp4",
+          "audio_file": "-54zUwySKCg.m4a",
+          "feature_file": null,
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -2857,39 +2857,39 @@
           "measurement": {
             "sample_id": "delivery:story_or_personal_experience:02",
             "canonical_job": "story_or_personal_experience",
-            "video_id": "bR4tDSa3O10",
+            "video_id": "-54zUwySKCg",
             "evidence_ids_requested": [
-              "bR4tDSa3O10:00258",
-              "bR4tDSa3O10:00259",
-              "bR4tDSa3O10:00260"
+              "-54zUwySKCg:00033",
+              "-54zUwySKCg:00034",
+              "-54zUwySKCg:00035"
             ],
             "evidence_ids_matched": [
-              "bR4tDSa3O10:00258",
-              "bR4tDSa3O10:00259",
-              "bR4tDSa3O10:00260"
+              "-54zUwySKCg:00033",
+              "-54zUwySKCg:00034",
+              "-54zUwySKCg:00035"
             ],
             "missing_evidence_ids": [],
-            "feature_file": "data/features/bR4tDSa3O10.json",
+            "feature_file": "data/features/-54zUwySKCg.json",
             "feature_schema_version": "0.2",
             "measurement_status": "aligned_feature_measurement_available",
             "audio_measurements": {
-              "words_per_second_proxy": 1.35733,
+              "words_per_second_proxy": 2.27633,
               "transcript_gap_before_seconds": 0.0,
               "transcript_gap_after_seconds": 0.0,
-              "mean_rms_db": -27.161,
-              "speech_activity_fraction": 0.93333,
-              "mean_zero_crossing_rate": 0.1592,
-              "mean_spectral_centroid_hz": 896.074,
-              "mean_pitch_hz_proxy": 285.80733,
-              "mean_pitch_confidence_proxy": 0.19713
+              "mean_rms_db": -22.298,
+              "speech_activity_fraction": 1.0,
+              "mean_zero_crossing_rate": 0.13798,
+              "mean_spectral_centroid_hz": 646.69933,
+              "mean_pitch_hz_proxy": 288.02067,
+              "mean_pitch_confidence_proxy": 0.16832
             },
             "nearest_sampled_frame": {
-              "time_seconds": 760.0,
-              "face_count": 1,
-              "smile_detector_candidate_count": 0,
-              "mean_luminance": 86.805,
-              "luminance_std": 80.968,
-              "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+              "time_seconds": 300.0,
+              "face_count": null,
+              "smile_detector_candidate_count": null,
+              "mean_luminance": 64.658,
+              "luminance_std": 45.614,
+              "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
             },
             "measurement_limits": [
               "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
@@ -3339,6 +3339,81 @@
           "sample_id": "delivery:example_or_case:01",
           "card_id": "provisional-job-example_or_case",
           "canonical_job": "example_or_case",
+          "evidence_id": "-54zUwySKCg:00119",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "start_seconds": 600.6,
+          "end_seconds": 613.72,
+          "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg&t=600s",
+          "transcript_excerpt": "For me that discovery came in 1994 when Iinterviewed a little girl who had decided to collect pocket change in order to helpother people in need. She raised a thousand dollars all by herselfand I thought, well if that little 9-year-old",
+          "transcript_segment_ids": [
+            "-54zUwySKCg:00119",
+            "-54zUwySKCg:00120",
+            "-54zUwySKCg:00121"
+          ],
+          "raw_media_state": "raw_audio_video_present_local_unselected",
+          "video_file": "-54zUwySKCg.mp4",
+          "audio_file": "-54zUwySKCg.m4a",
+          "feature_file": null,
+          "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
+          "review": {
+            "transcript_alignment": null,
+            "vocal_timing_observation": null,
+            "audio_measurement_and_limit": null,
+            "visual_observation": null,
+            "setting_editing_music_observation": null,
+            "speaker_event_identity": null,
+            "missingness_or_accessibility_note": null,
+            "reviewer_code": null
+          },
+          "measurement": {
+            "sample_id": "delivery:example_or_case:01",
+            "canonical_job": "example_or_case",
+            "video_id": "-54zUwySKCg",
+            "evidence_ids_requested": [
+              "-54zUwySKCg:00119",
+              "-54zUwySKCg:00120",
+              "-54zUwySKCg:00121"
+            ],
+            "evidence_ids_matched": [
+              "-54zUwySKCg:00119",
+              "-54zUwySKCg:00120",
+              "-54zUwySKCg:00121"
+            ],
+            "missing_evidence_ids": [],
+            "feature_file": "data/features/-54zUwySKCg.json",
+            "feature_schema_version": "0.2",
+            "measurement_status": "aligned_feature_measurement_available",
+            "audio_measurements": {
+              "words_per_second_proxy": 3.30667,
+              "transcript_gap_before_seconds": 0.0,
+              "transcript_gap_after_seconds": 0.0,
+              "mean_rms_db": -23.237,
+              "speech_activity_fraction": 1.0,
+              "mean_zero_crossing_rate": 0.11345,
+              "mean_spectral_centroid_hz": 601.41833,
+              "mean_pitch_hz_proxy": 298.394,
+              "mean_pitch_confidence_proxy": 0.17675
+            },
+            "nearest_sampled_frame": {
+              "time_seconds": 600.0,
+              "face_count": null,
+              "smile_detector_candidate_count": null,
+              "mean_luminance": 63.812,
+              "luminance_std": 47.965,
+              "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+            },
+            "measurement_limits": [
+              "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
+              "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
+              "Feature alignment does not verify speaker identity, editing, room acoustics or transcript correctness."
+            ]
+          }
+        },
+        {
+          "sample_id": "delivery:example_or_case:02",
+          "card_id": "provisional-job-example_or_case",
+          "canonical_job": "example_or_case",
           "evidence_id": "9fEurt2OZ0I:00008",
           "video_id": "9fEurt2OZ0I",
           "title": "ENGLISH SPEECH | JACK MA ALIBABA: We Never Give Up (English Subtitles)",
@@ -3367,7 +3442,7 @@
             "reviewer_code": null
           },
           "measurement": {
-            "sample_id": "delivery:example_or_case:01",
+            "sample_id": "delivery:example_or_case:02",
             "canonical_job": "example_or_case",
             "video_id": "9fEurt2OZ0I",
             "evidence_ids_requested": [
@@ -3402,81 +3477,6 @@
               "mean_luminance": 0.004,
               "luminance_std": 0.067,
               "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
-            },
-            "measurement_limits": [
-              "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
-              "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
-              "Feature alignment does not verify speaker identity, editing, room acoustics or transcript correctness."
-            ]
-          }
-        },
-        {
-          "sample_id": "delivery:example_or_case:02",
-          "card_id": "provisional-job-example_or_case",
-          "canonical_job": "example_or_case",
-          "evidence_id": "bR4tDSa3O10:00147",
-          "video_id": "bR4tDSa3O10",
-          "title": "ENGLISH SPEECH | JENNIFER COOLIDGE: Find Your Own Path (English Subtitles)",
-          "start_seconds": 440.08,
-          "end_seconds": 450.8,
-          "source_url": "https://www.youtube.com/watch?v=bR4tDSa3O10&t=440s",
-          "transcript_excerpt": "you know, my mother had a magazine in the living room and uh it had Grace Kelly on the cover and uh inside there",
-          "transcript_segment_ids": [
-            "bR4tDSa3O10:00147",
-            "bR4tDSa3O10:00148",
-            "bR4tDSa3O10:00149"
-          ],
-          "raw_media_state": "raw_audio_video_present",
-          "video_file": "bR4tDSa3O10.mp4",
-          "audio_file": "bR4tDSa3O10.m4a",
-          "feature_file": "bR4tDSa3O10.json",
-          "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
-          "review": {
-            "transcript_alignment": null,
-            "vocal_timing_observation": null,
-            "audio_measurement_and_limit": null,
-            "visual_observation": null,
-            "setting_editing_music_observation": null,
-            "speaker_event_identity": null,
-            "missingness_or_accessibility_note": null,
-            "reviewer_code": null
-          },
-          "measurement": {
-            "sample_id": "delivery:example_or_case:02",
-            "canonical_job": "example_or_case",
-            "video_id": "bR4tDSa3O10",
-            "evidence_ids_requested": [
-              "bR4tDSa3O10:00147",
-              "bR4tDSa3O10:00148",
-              "bR4tDSa3O10:00149"
-            ],
-            "evidence_ids_matched": [
-              "bR4tDSa3O10:00147",
-              "bR4tDSa3O10:00148",
-              "bR4tDSa3O10:00149"
-            ],
-            "missing_evidence_ids": [],
-            "feature_file": "data/features/bR4tDSa3O10.json",
-            "feature_schema_version": "0.2",
-            "measurement_status": "aligned_feature_measurement_available",
-            "audio_measurements": {
-              "words_per_second_proxy": 1.445,
-              "transcript_gap_before_seconds": 1.77367,
-              "transcript_gap_after_seconds": 0.0,
-              "mean_rms_db": -24.23633,
-              "speech_activity_fraction": 1.0,
-              "mean_zero_crossing_rate": 0.15232,
-              "mean_spectral_centroid_hz": 829.53333,
-              "mean_pitch_hz_proxy": 303.199,
-              "mean_pitch_confidence_proxy": 0.21264
-            },
-            "nearest_sampled_frame": {
-              "time_seconds": 450.0,
-              "face_count": 1,
-              "smile_detector_candidate_count": 0,
-              "mean_luminance": 87.749,
-              "luminance_std": 81.176,
-              "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
             },
             "measurement_limits": [
               "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
@@ -4019,22 +4019,22 @@
           "sample_id": "delivery:contrast_or_disagreement:02",
           "card_id": "provisional-job-contrast_or_disagreement",
           "canonical_job": "contrast_or_disagreement",
-          "evidence_id": "bR4tDSa3O10:00012",
-          "video_id": "bR4tDSa3O10",
-          "title": "ENGLISH SPEECH | JENNIFER COOLIDGE: Find Your Own Path (English Subtitles)",
-          "start_seconds": 30.48,
-          "end_seconds": 38.04,
-          "source_url": "https://www.youtube.com/watch?v=bR4tDSa3O10&t=30s",
-          "transcript_excerpt": "Wow. Wow. Wow.",
+          "evidence_id": "-54zUwySKCg:00256",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "start_seconds": 1307.299,
+          "end_seconds": 1320.06,
+          "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg&t=1307s",
+          "transcript_excerpt": "And as a young girl from rural MississippiI learned long ago that being myself was much easier than pretending to be Barbara Walters. Although when I first started because I hadBarbara in my head I would try to sit like",
           "transcript_segment_ids": [
-            "bR4tDSa3O10:00012",
-            "bR4tDSa3O10:00013",
-            "bR4tDSa3O10:00014"
+            "-54zUwySKCg:00256",
+            "-54zUwySKCg:00257",
+            "-54zUwySKCg:00258"
           ],
-          "raw_media_state": "raw_audio_video_present",
-          "video_file": "bR4tDSa3O10.mp4",
-          "audio_file": "bR4tDSa3O10.m4a",
-          "feature_file": "bR4tDSa3O10.json",
+          "raw_media_state": "raw_audio_video_present_local_unselected",
+          "video_file": "-54zUwySKCg.mp4",
+          "audio_file": "-54zUwySKCg.m4a",
+          "feature_file": null,
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -4049,39 +4049,39 @@
           "measurement": {
             "sample_id": "delivery:contrast_or_disagreement:02",
             "canonical_job": "contrast_or_disagreement",
-            "video_id": "bR4tDSa3O10",
+            "video_id": "-54zUwySKCg",
             "evidence_ids_requested": [
-              "bR4tDSa3O10:00012",
-              "bR4tDSa3O10:00013",
-              "bR4tDSa3O10:00014"
+              "-54zUwySKCg:00256",
+              "-54zUwySKCg:00257",
+              "-54zUwySKCg:00258"
             ],
             "evidence_ids_matched": [
-              "bR4tDSa3O10:00012",
-              "bR4tDSa3O10:00013",
-              "bR4tDSa3O10:00014"
+              "-54zUwySKCg:00256",
+              "-54zUwySKCg:00257",
+              "-54zUwySKCg:00258"
             ],
             "missing_evidence_ids": [],
-            "feature_file": "data/features/bR4tDSa3O10.json",
+            "feature_file": "data/features/-54zUwySKCg.json",
             "feature_schema_version": "0.2",
             "measurement_status": "aligned_feature_measurement_available",
             "audio_measurements": {
-              "words_per_second_proxy": 0.29567,
-              "transcript_gap_before_seconds": 0.01333,
-              "transcript_gap_after_seconds": 0.32,
-              "mean_rms_db": -25.70633,
+              "words_per_second_proxy": 3.24,
+              "transcript_gap_before_seconds": 0.0,
+              "transcript_gap_after_seconds": 0.0,
+              "mean_rms_db": -23.02433,
               "speech_activity_fraction": 1.0,
-              "mean_zero_crossing_rate": 0.1862,
-              "mean_spectral_centroid_hz": 1297.79,
-              "mean_pitch_hz_proxy": 279.73067,
-              "mean_pitch_confidence_proxy": 0.20199
+              "mean_zero_crossing_rate": 0.10117,
+              "mean_spectral_centroid_hz": 597.40967,
+              "mean_pitch_hz_proxy": 249.479,
+              "mean_pitch_confidence_proxy": 0.19573
             },
             "nearest_sampled_frame": {
-              "time_seconds": 30.0,
-              "face_count": 2,
-              "smile_detector_candidate_count": 0,
-              "mean_luminance": 23.34,
-              "luminance_std": 28.738,
-              "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+              "time_seconds": 1200.0,
+              "face_count": null,
+              "smile_detector_candidate_count": null,
+              "mean_luminance": 57.916,
+              "luminance_std": 45.108,
+              "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
             },
             "measurement_limits": [
               "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
@@ -4506,22 +4506,22 @@
           "sample_id": "delivery:correction_or_reframe:01",
           "card_id": "provisional-job-correction_or_reframe",
           "canonical_job": "correction_or_reframe",
-          "evidence_id": "bR4tDSa3O10:00238",
-          "video_id": "bR4tDSa3O10",
-          "title": "ENGLISH SPEECH | JENNIFER COOLIDGE: Find Your Own Path (English Subtitles)",
-          "start_seconds": 696.399,
-          "end_seconds": 708.56,
-          "source_url": "https://www.youtube.com/watch?v=bR4tDSa3O10&t=696s",
-          "transcript_excerpt": "this is my advice and that really was my advice, the main part of my advice. But uh I do want to",
+          "evidence_id": "dgkxN6RASpg:00060",
+          "video_id": "dgkxN6RASpg",
+          "title": "ENGLISH SPEECH | TOM CRUISE & BEN STILLER: Footprint Ceremony (English Subtitles)",
+          "start_seconds": 422.08,
+          "end_seconds": 437.92,
+          "source_url": "https://www.youtube.com/watch?v=dgkxN6RASpg&t=422s",
+          "transcript_excerpt": "I want to thank all the people who've given me a chance over the years, all the agents and managers and casting directors who took a chance on me, even when I didn't even really know what the hell I was doing. And that you had faith in me that I would somehow get it",
           "transcript_segment_ids": [
-            "bR4tDSa3O10:00238",
-            "bR4tDSa3O10:00239",
-            "bR4tDSa3O10:00240"
+            "dgkxN6RASpg:00060",
+            "dgkxN6RASpg:00061",
+            "dgkxN6RASpg:00062"
           ],
-          "raw_media_state": "raw_audio_video_present",
-          "video_file": "bR4tDSa3O10.mp4",
-          "audio_file": "bR4tDSa3O10.m4a",
-          "feature_file": "bR4tDSa3O10.json",
+          "raw_media_state": "raw_audio_video_present_local_unselected",
+          "video_file": "dgkxN6RASpg.mp4",
+          "audio_file": "dgkxN6RASpg.m4a",
+          "feature_file": null,
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -4536,39 +4536,39 @@
           "measurement": {
             "sample_id": "delivery:correction_or_reframe:01",
             "canonical_job": "correction_or_reframe",
-            "video_id": "bR4tDSa3O10",
+            "video_id": "dgkxN6RASpg",
             "evidence_ids_requested": [
-              "bR4tDSa3O10:00238",
-              "bR4tDSa3O10:00239",
-              "bR4tDSa3O10:00240"
+              "dgkxN6RASpg:00060",
+              "dgkxN6RASpg:00061",
+              "dgkxN6RASpg:00062"
             ],
             "evidence_ids_matched": [
-              "bR4tDSa3O10:00238",
-              "bR4tDSa3O10:00239",
-              "bR4tDSa3O10:00240"
+              "dgkxN6RASpg:00060",
+              "dgkxN6RASpg:00061",
+              "dgkxN6RASpg:00062"
             ],
             "missing_evidence_ids": [],
-            "feature_file": "data/features/bR4tDSa3O10.json",
+            "feature_file": "data/features/dgkxN6RASpg.json",
             "feature_schema_version": "0.2",
             "measurement_status": "aligned_feature_measurement_available",
             "audio_measurements": {
-              "words_per_second_proxy": 1.13133,
-              "transcript_gap_before_seconds": 0.0,
+              "words_per_second_proxy": 3.82133,
+              "transcript_gap_before_seconds": 0.56,
               "transcript_gap_after_seconds": 0.0,
-              "mean_rms_db": -25.91567,
-              "speech_activity_fraction": 0.95233,
-              "mean_zero_crossing_rate": 0.16933,
-              "mean_spectral_centroid_hz": 1225.51067,
-              "mean_pitch_hz_proxy": 297.12267,
-              "mean_pitch_confidence_proxy": 0.23055
+              "mean_rms_db": -19.60867,
+              "speech_activity_fraction": 1.0,
+              "mean_zero_crossing_rate": 0.16167,
+              "mean_spectral_centroid_hz": 1018.06167,
+              "mean_pitch_hz_proxy": 269.45867,
+              "mean_pitch_confidence_proxy": 0.20411
             },
             "nearest_sampled_frame": {
-              "time_seconds": 700.0,
-              "face_count": 1,
-              "smile_detector_candidate_count": 0,
-              "mean_luminance": 83.966,
-              "luminance_std": 80.037,
-              "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+              "time_seconds": 430.0,
+              "face_count": null,
+              "smile_detector_candidate_count": null,
+              "mean_luminance": 89.711,
+              "luminance_std": 87.57,
+              "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
             },
             "measurement_limits": [
               "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
@@ -4581,21 +4581,21 @@
           "sample_id": "delivery:correction_or_reframe:02",
           "card_id": "provisional-job-correction_or_reframe",
           "canonical_job": "correction_or_reframe",
-          "evidence_id": "dgkxN6RASpg:00060",
-          "video_id": "dgkxN6RASpg",
-          "title": "ENGLISH SPEECH | TOM CRUISE & BEN STILLER: Footprint Ceremony (English Subtitles)",
-          "start_seconds": 422.08,
-          "end_seconds": 437.92,
-          "source_url": "https://www.youtube.com/watch?v=dgkxN6RASpg&t=422s",
-          "transcript_excerpt": "I want to thank all the people who've given me a chance over the years, all the agents and managers and casting directors who took a chance on me, even when I didn't even really know what the hell I was doing. And that you had faith in me that I would somehow get it",
+          "evidence_id": "dKe3WbGR7Xs:00034",
+          "video_id": "dKe3WbGR7Xs",
+          "title": "ENGLISH SPEECH | JENNIFER ANISTON: Find Your Voice (English Subtitles)",
+          "start_seconds": 184.51,
+          "end_seconds": 202.18,
+          "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=184s",
+          "transcript_excerpt": "And it wasn't until Friends took off thatI started seeing myself in a different light. I started meeting all of these people whoexpressed to me how much the show meant to them, how it lifted their spirits during abad breakup or got them through an illness,",
           "transcript_segment_ids": [
-            "dgkxN6RASpg:00060",
-            "dgkxN6RASpg:00061",
-            "dgkxN6RASpg:00062"
+            "dKe3WbGR7Xs:00034",
+            "dKe3WbGR7Xs:00035",
+            "dKe3WbGR7Xs:00036"
           ],
-          "raw_media_state": "not_in_selected_media_audit",
-          "video_file": null,
-          "audio_file": null,
+          "raw_media_state": "raw_audio_video_present_local_unselected",
+          "video_file": "dKe3WbGR7Xs.mp4",
+          "audio_file": "dKe3WbGR7Xs.m4a",
           "feature_file": null,
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
@@ -4611,33 +4611,40 @@
           "measurement": {
             "sample_id": "delivery:correction_or_reframe:02",
             "canonical_job": "correction_or_reframe",
-            "video_id": "dgkxN6RASpg",
+            "video_id": "dKe3WbGR7Xs",
             "evidence_ids_requested": [
-              "dgkxN6RASpg:00060",
-              "dgkxN6RASpg:00061",
-              "dgkxN6RASpg:00062"
+              "dKe3WbGR7Xs:00034",
+              "dKe3WbGR7Xs:00035",
+              "dKe3WbGR7Xs:00036"
             ],
-            "evidence_ids_matched": [],
-            "missing_evidence_ids": [
-              "dgkxN6RASpg:00060",
-              "dgkxN6RASpg:00061",
-              "dgkxN6RASpg:00062"
+            "evidence_ids_matched": [
+              "dKe3WbGR7Xs:00034",
+              "dKe3WbGR7Xs:00035",
+              "dKe3WbGR7Xs:00036"
             ],
-            "feature_file": null,
-            "feature_schema_version": null,
-            "measurement_status": "no_aligned_feature_measurement",
+            "missing_evidence_ids": [],
+            "feature_file": "data/features/dKe3WbGR7Xs.json",
+            "feature_schema_version": "0.2",
+            "measurement_status": "aligned_feature_measurement_available",
             "audio_measurements": {
-              "words_per_second_proxy": null,
-              "transcript_gap_before_seconds": null,
-              "transcript_gap_after_seconds": null,
-              "mean_rms_db": null,
-              "speech_activity_fraction": null,
-              "mean_zero_crossing_rate": null,
-              "mean_spectral_centroid_hz": null,
-              "mean_pitch_hz_proxy": null,
-              "mean_pitch_confidence_proxy": null
+              "words_per_second_proxy": 2.665,
+              "transcript_gap_before_seconds": 0.0,
+              "transcript_gap_after_seconds": 0.0,
+              "mean_rms_db": -22.45567,
+              "speech_activity_fraction": 0.95233,
+              "mean_zero_crossing_rate": 0.1796,
+              "mean_spectral_centroid_hz": 925.23433,
+              "mean_pitch_hz_proxy": 245.551,
+              "mean_pitch_confidence_proxy": 0.17972
             },
-            "nearest_sampled_frame": null,
+            "nearest_sampled_frame": {
+              "time_seconds": 190.0,
+              "face_count": null,
+              "smile_detector_candidate_count": null,
+              "mean_luminance": 114.711,
+              "luminance_std": 65.867,
+              "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+            },
             "measurement_limits": [
               "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
               "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
@@ -5136,21 +5143,21 @@
           "sample_id": "delivery:repair_or_self_correction:02",
           "card_id": "provisional-job-repair_or_self_correction",
           "canonical_job": "repair_or_self_correction",
-          "evidence_id": "7XO7kVaEgpM:00000",
-          "video_id": "7XO7kVaEgpM",
-          "title": "ENGLISH SPEECH | BENEDICT CUMBERBATCH: Just Do It! (English Subtitles)",
-          "start_seconds": 13.67,
-          "end_seconds": 33.38,
-          "source_url": "https://www.youtube.com/watch?v=7XO7kVaEgpM&t=13s",
-          "transcript_excerpt": "Dear Eva,It will be almost a month since you wrote to me and you have possibly forgotten yourstate of mind (I doubt it though). You seem the same as always, and being you, hate everyminute of it. Don’t! Learn to say “F*ck",
+          "evidence_id": "5nN-15CrnGc:00359",
+          "video_id": "5nN-15CrnGc",
+          "title": "Barack Obama: Choose Hope",
+          "start_seconds": 1134.0,
+          "end_seconds": 1144.4,
+          "source_url": "https://www.youtube.com/watch?v=5nN-15CrnGc&t=1134s",
+          "transcript_excerpt": "I recognize it's been almost a decade since I left office.",
           "transcript_segment_ids": [
-            "7XO7kVaEgpM:00000",
-            "7XO7kVaEgpM:00001",
-            "7XO7kVaEgpM:00002"
+            "5nN-15CrnGc:00359",
+            "5nN-15CrnGc:00360",
+            "5nN-15CrnGc:00361"
           ],
-          "raw_media_state": "not_in_selected_media_audit",
-          "video_file": null,
-          "audio_file": null,
+          "raw_media_state": "raw_audio_video_present_local_unselected",
+          "video_file": "5nN-15CrnGc.mp4",
+          "audio_file": "5nN-15CrnGc.m4a",
           "feature_file": null,
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
@@ -5166,33 +5173,40 @@
           "measurement": {
             "sample_id": "delivery:repair_or_self_correction:02",
             "canonical_job": "repair_or_self_correction",
-            "video_id": "7XO7kVaEgpM",
+            "video_id": "5nN-15CrnGc",
             "evidence_ids_requested": [
-              "7XO7kVaEgpM:00000",
-              "7XO7kVaEgpM:00001",
-              "7XO7kVaEgpM:00002"
+              "5nN-15CrnGc:00359",
+              "5nN-15CrnGc:00360",
+              "5nN-15CrnGc:00361"
             ],
-            "evidence_ids_matched": [],
-            "missing_evidence_ids": [
-              "7XO7kVaEgpM:00000",
-              "7XO7kVaEgpM:00001",
-              "7XO7kVaEgpM:00002"
+            "evidence_ids_matched": [
+              "5nN-15CrnGc:00359",
+              "5nN-15CrnGc:00360",
+              "5nN-15CrnGc:00361"
             ],
-            "feature_file": null,
-            "feature_schema_version": null,
-            "measurement_status": "no_aligned_feature_measurement",
+            "missing_evidence_ids": [],
+            "feature_file": "data/features/5nN-15CrnGc.json",
+            "feature_schema_version": "0.2",
+            "measurement_status": "aligned_feature_measurement_available",
             "audio_measurements": {
-              "words_per_second_proxy": null,
-              "transcript_gap_before_seconds": null,
-              "transcript_gap_after_seconds": null,
-              "mean_rms_db": null,
-              "speech_activity_fraction": null,
-              "mean_zero_crossing_rate": null,
-              "mean_spectral_centroid_hz": null,
-              "mean_pitch_hz_proxy": null,
-              "mean_pitch_confidence_proxy": null
+              "words_per_second_proxy": 0.695,
+              "transcript_gap_before_seconds": 1.13333,
+              "transcript_gap_after_seconds": 0.0,
+              "mean_rms_db": -25.454,
+              "speech_activity_fraction": 0.72233,
+              "mean_zero_crossing_rate": 0.12769,
+              "mean_spectral_centroid_hz": 564.238,
+              "mean_pitch_hz_proxy": 277.08333,
+              "mean_pitch_confidence_proxy": 0.1996
             },
-            "nearest_sampled_frame": null,
+            "nearest_sampled_frame": {
+              "time_seconds": 1140.0,
+              "face_count": null,
+              "smile_detector_candidate_count": null,
+              "mean_luminance": 40.258,
+              "luminance_std": 37.604,
+              "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+            },
             "measurement_limits": [
               "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
               "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
@@ -5659,6 +5673,81 @@
           "sample_id": "delivery:qualification_or_boundary:01",
           "card_id": "provisional-job-qualification_or_boundary",
           "canonical_job": "qualification_or_boundary",
+          "evidence_id": "6dKimoybmEo:00021",
+          "video_id": "6dKimoybmEo",
+          "title": "ENGLISH SPEECH | MARTIN LUTHER KING: I Have a Dream (English Subtitles)",
+          "start_seconds": 34.809,
+          "end_seconds": 37.809,
+          "source_url": "https://www.youtube.com/watch?v=6dKimoybmEo&t=34s",
+          "transcript_excerpt": "We must forever conduct our struggle on thehigh plane of dignity and discipline. We must not allow our creative protest todegenerate into physical violence. Again and again we must rise to the majesticheights of meeting physical force with soul",
+          "transcript_segment_ids": [
+            "6dKimoybmEo:00021",
+            "6dKimoybmEo:00022",
+            "6dKimoybmEo:00023"
+          ],
+          "raw_media_state": "raw_audio_video_present_local_unselected",
+          "video_file": "6dKimoybmEo.mp4",
+          "audio_file": "6dKimoybmEo.m4a",
+          "feature_file": null,
+          "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
+          "review": {
+            "transcript_alignment": null,
+            "vocal_timing_observation": null,
+            "audio_measurement_and_limit": null,
+            "visual_observation": null,
+            "setting_editing_music_observation": null,
+            "speaker_event_identity": null,
+            "missingness_or_accessibility_note": null,
+            "reviewer_code": null
+          },
+          "measurement": {
+            "sample_id": "delivery:qualification_or_boundary:01",
+            "canonical_job": "qualification_or_boundary",
+            "video_id": "6dKimoybmEo",
+            "evidence_ids_requested": [
+              "6dKimoybmEo:00021",
+              "6dKimoybmEo:00022",
+              "6dKimoybmEo:00023"
+            ],
+            "evidence_ids_matched": [
+              "6dKimoybmEo:00021",
+              "6dKimoybmEo:00022",
+              "6dKimoybmEo:00023"
+            ],
+            "missing_evidence_ids": [],
+            "feature_file": "data/features/6dKimoybmEo.json",
+            "feature_schema_version": "0.2",
+            "measurement_status": "aligned_feature_measurement_available",
+            "audio_measurements": {
+              "words_per_second_proxy": 13.0,
+              "transcript_gap_before_seconds": 0.0,
+              "transcript_gap_after_seconds": 0.0,
+              "mean_rms_db": -19.46,
+              "speech_activity_fraction": 1.0,
+              "mean_zero_crossing_rate": 0.06938,
+              "mean_spectral_centroid_hz": 635.52267,
+              "mean_pitch_hz_proxy": 169.271,
+              "mean_pitch_confidence_proxy": 0.26556
+            },
+            "nearest_sampled_frame": {
+              "time_seconds": 40.0,
+              "face_count": null,
+              "smile_detector_candidate_count": null,
+              "mean_luminance": 97.714,
+              "luminance_std": 74.225,
+              "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+            },
+            "measurement_limits": [
+              "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
+              "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
+              "Feature alignment does not verify speaker identity, editing, room acoustics or transcript correctness."
+            ]
+          }
+        },
+        {
+          "sample_id": "delivery:qualification_or_boundary:02",
+          "card_id": "provisional-job-qualification_or_boundary",
+          "canonical_job": "qualification_or_boundary",
           "evidence_id": "bR4tDSa3O10:00067",
           "video_id": "bR4tDSa3O10",
           "title": "ENGLISH SPEECH | JENNIFER COOLIDGE: Find Your Own Path (English Subtitles)",
@@ -5687,7 +5776,7 @@
             "reviewer_code": null
           },
           "measurement": {
-            "sample_id": "delivery:qualification_or_boundary:01",
+            "sample_id": "delivery:qualification_or_boundary:02",
             "canonical_job": "qualification_or_boundary",
             "video_id": "bR4tDSa3O10",
             "evidence_ids_requested": [
@@ -5721,81 +5810,6 @@
               "smile_detector_candidate_count": 0,
               "mean_luminance": 83.466,
               "luminance_std": 80.289,
-              "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
-            },
-            "measurement_limits": [
-              "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
-              "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
-              "Feature alignment does not verify speaker identity, editing, room acoustics or transcript correctness."
-            ]
-          }
-        },
-        {
-          "sample_id": "delivery:qualification_or_boundary:02",
-          "card_id": "provisional-job-qualification_or_boundary",
-          "canonical_job": "qualification_or_boundary",
-          "evidence_id": "dPi40lQetew:00021",
-          "video_id": "dPi40lQetew",
-          "title": "Jaws (1975) - The Head, the Tail, the Whole Damn Thing Scene (3/10) | Movieclips",
-          "start_seconds": 73.45,
-          "end_seconds": 83.396,
-          "source_url": "https://www.youtube.com/watch?v=dPi40lQetew&t=73s",
-          "transcript_excerpt": "l value my neck a lot more thanthree thousand bucks, Chief. l'll find himfor three, but l'll catch himand kill him forten.",
-          "transcript_segment_ids": [
-            "dPi40lQetew:00021",
-            "dPi40lQetew:00022",
-            "dPi40lQetew:00023"
-          ],
-          "raw_media_state": "raw_audio_video_present",
-          "video_file": "dPi40lQetew.mp4",
-          "audio_file": "dPi40lQetew.m4a",
-          "feature_file": "dPi40lQetew.json",
-          "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
-          "review": {
-            "transcript_alignment": null,
-            "vocal_timing_observation": null,
-            "audio_measurement_and_limit": null,
-            "visual_observation": null,
-            "setting_editing_music_observation": null,
-            "speaker_event_identity": null,
-            "missingness_or_accessibility_note": null,
-            "reviewer_code": null
-          },
-          "measurement": {
-            "sample_id": "delivery:qualification_or_boundary:02",
-            "canonical_job": "qualification_or_boundary",
-            "video_id": "dPi40lQetew",
-            "evidence_ids_requested": [
-              "dPi40lQetew:00021",
-              "dPi40lQetew:00022",
-              "dPi40lQetew:00023"
-            ],
-            "evidence_ids_matched": [
-              "dPi40lQetew:00021",
-              "dPi40lQetew:00022",
-              "dPi40lQetew:00023"
-            ],
-            "missing_evidence_ids": [],
-            "feature_file": "data/features/dPi40lQetew.json",
-            "feature_schema_version": "0.2",
-            "measurement_status": "aligned_feature_measurement_available",
-            "audio_measurements": {
-              "words_per_second_proxy": 2.27633,
-              "transcript_gap_before_seconds": 0.09767,
-              "transcript_gap_after_seconds": 0.097,
-              "mean_rms_db": -25.39333,
-              "speech_activity_fraction": 1.0,
-              "mean_zero_crossing_rate": 0.16272,
-              "mean_spectral_centroid_hz": 1060.29433,
-              "mean_pitch_hz_proxy": 283.98467,
-              "mean_pitch_confidence_proxy": 0.15403
-            },
-            "nearest_sampled_frame": {
-              "time_seconds": 80.0,
-              "face_count": 4,
-              "smile_detector_candidate_count": 0,
-              "mean_luminance": 55.285,
-              "luminance_std": 53.41,
               "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
             },
             "measurement_limits": [
@@ -6258,6 +6272,81 @@
           "sample_id": "delivery:definition_or_explanation:01",
           "card_id": "provisional-job-definition_or_explanation",
           "canonical_job": "definition_or_explanation",
+          "evidence_id": "dKe3WbGR7Xs:00008",
+          "video_id": "dKe3WbGR7Xs",
+          "title": "ENGLISH SPEECH | JENNIFER ANISTON: Find Your Voice (English Subtitles)",
+          "start_seconds": 38.26,
+          "end_seconds": 61.339,
+          "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=38s",
+          "transcript_excerpt": "It's not that often we're surrounded by peoplewho found their voice and are using it, and using it to hold people up and bring peopletogether and that to me is true power. I mean, it's funny because I've never, youknow, I've never actually thought about myself",
+          "transcript_segment_ids": [
+            "dKe3WbGR7Xs:00008",
+            "dKe3WbGR7Xs:00009",
+            "dKe3WbGR7Xs:00010"
+          ],
+          "raw_media_state": "raw_audio_video_present_local_unselected",
+          "video_file": "dKe3WbGR7Xs.mp4",
+          "audio_file": "dKe3WbGR7Xs.m4a",
+          "feature_file": null,
+          "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
+          "review": {
+            "transcript_alignment": null,
+            "vocal_timing_observation": null,
+            "audio_measurement_and_limit": null,
+            "visual_observation": null,
+            "setting_editing_music_observation": null,
+            "speaker_event_identity": null,
+            "missingness_or_accessibility_note": null,
+            "reviewer_code": null
+          },
+          "measurement": {
+            "sample_id": "delivery:definition_or_explanation:01",
+            "canonical_job": "definition_or_explanation",
+            "video_id": "dKe3WbGR7Xs",
+            "evidence_ids_requested": [
+              "dKe3WbGR7Xs:00008",
+              "dKe3WbGR7Xs:00009",
+              "dKe3WbGR7Xs:00010"
+            ],
+            "evidence_ids_matched": [
+              "dKe3WbGR7Xs:00008",
+              "dKe3WbGR7Xs:00009",
+              "dKe3WbGR7Xs:00010"
+            ],
+            "missing_evidence_ids": [],
+            "feature_file": "data/features/dKe3WbGR7Xs.json",
+            "feature_schema_version": "0.2",
+            "measurement_status": "aligned_feature_measurement_available",
+            "audio_measurements": {
+              "words_per_second_proxy": 2.12733,
+              "transcript_gap_before_seconds": 0.0,
+              "transcript_gap_after_seconds": 0.0,
+              "mean_rms_db": -22.21167,
+              "speech_activity_fraction": 1.0,
+              "mean_zero_crossing_rate": 0.17227,
+              "mean_spectral_centroid_hz": 1069.60967,
+              "mean_pitch_hz_proxy": 278.10333,
+              "mean_pitch_confidence_proxy": 0.15676
+            },
+            "nearest_sampled_frame": {
+              "time_seconds": 50.0,
+              "face_count": null,
+              "smile_detector_candidate_count": null,
+              "mean_luminance": 119.412,
+              "luminance_std": 70.753,
+              "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+            },
+            "measurement_limits": [
+              "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
+              "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
+              "Feature alignment does not verify speaker identity, editing, room acoustics or transcript correctness."
+            ]
+          }
+        },
+        {
+          "sample_id": "delivery:definition_or_explanation:02",
+          "card_id": "provisional-job-definition_or_explanation",
+          "canonical_job": "definition_or_explanation",
           "evidence_id": "AwA0Jnfj3ao:00078",
           "video_id": "AwA0Jnfj3ao",
           "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
@@ -6286,7 +6375,7 @@
             "reviewer_code": null
           },
           "measurement": {
-            "sample_id": "delivery:definition_or_explanation:01",
+            "sample_id": "delivery:definition_or_explanation:02",
             "canonical_job": "definition_or_explanation",
             "video_id": "AwA0Jnfj3ao",
             "evidence_ids_requested": [
@@ -6320,81 +6409,6 @@
               "smile_detector_candidate_count": 0,
               "mean_luminance": 110.816,
               "luminance_std": 85.704,
-              "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
-            },
-            "measurement_limits": [
-              "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
-              "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
-              "Feature alignment does not verify speaker identity, editing, room acoustics or transcript correctness."
-            ]
-          }
-        },
-        {
-          "sample_id": "delivery:definition_or_explanation:02",
-          "card_id": "provisional-job-definition_or_explanation",
-          "canonical_job": "definition_or_explanation",
-          "evidence_id": "xRiwgtdyjQk:00166",
-          "video_id": "xRiwgtdyjQk",
-          "title": "ENGLISH SPEECH | DONALD TRUMP: Victory Speech 2024 (English Subtitles)",
-          "start_seconds": 485.56,
-          "end_seconds": 495.24,
-          "source_url": "https://www.youtube.com/watch?v=xRiwgtdyjQk&t=485s",
-          "transcript_excerpt": "I'm asking every citizen all across our land to join me in this Noble and righteous Endeavor that's what it is",
-          "transcript_segment_ids": [
-            "xRiwgtdyjQk:00166",
-            "xRiwgtdyjQk:00167",
-            "xRiwgtdyjQk:00168"
-          ],
-          "raw_media_state": "raw_audio_video_present",
-          "video_file": "xRiwgtdyjQk.mp4",
-          "audio_file": "xRiwgtdyjQk.m4a",
-          "feature_file": "xRiwgtdyjQk.json",
-          "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
-          "review": {
-            "transcript_alignment": null,
-            "vocal_timing_observation": null,
-            "audio_measurement_and_limit": null,
-            "visual_observation": null,
-            "setting_editing_music_observation": null,
-            "speaker_event_identity": null,
-            "missingness_or_accessibility_note": null,
-            "reviewer_code": null
-          },
-          "measurement": {
-            "sample_id": "delivery:definition_or_explanation:02",
-            "canonical_job": "definition_or_explanation",
-            "video_id": "xRiwgtdyjQk",
-            "evidence_ids_requested": [
-              "xRiwgtdyjQk:00166",
-              "xRiwgtdyjQk:00167",
-              "xRiwgtdyjQk:00168"
-            ],
-            "evidence_ids_matched": [
-              "xRiwgtdyjQk:00166",
-              "xRiwgtdyjQk:00167",
-              "xRiwgtdyjQk:00168"
-            ],
-            "missing_evidence_ids": [],
-            "feature_file": "data/features/xRiwgtdyjQk.json",
-            "feature_schema_version": "0.2",
-            "measurement_status": "aligned_feature_measurement_available",
-            "audio_measurements": {
-              "words_per_second_proxy": 1.47833,
-              "transcript_gap_before_seconds": 0.0,
-              "transcript_gap_after_seconds": 0.0,
-              "mean_rms_db": -16.03633,
-              "speech_activity_fraction": 1.0,
-              "mean_zero_crossing_rate": 0.124,
-              "mean_spectral_centroid_hz": 750.40567,
-              "mean_pitch_hz_proxy": 239.93067,
-              "mean_pitch_confidence_proxy": 0.16134
-            },
-            "nearest_sampled_frame": {
-              "time_seconds": 490.0,
-              "face_count": 1,
-              "smile_detector_candidate_count": 0,
-              "mean_luminance": 62.645,
-              "luminance_std": 70.453,
               "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
             },
             "measurement_limits": [
@@ -6820,6 +6834,81 @@
           "sample_id": "delivery:transition_or_structure:01",
           "card_id": "provisional-job-transition_or_structure",
           "canonical_job": "transition_or_structure",
+          "evidence_id": "6dKimoybmEo:00029",
+          "video_id": "6dKimoybmEo",
+          "title": "ENGLISH SPEECH | MARTIN LUTHER KING: I Have a Dream (English Subtitles)",
+          "start_seconds": 42.809,
+          "end_seconds": 45.809,
+          "source_url": "https://www.youtube.com/watch?v=6dKimoybmEo&t=42s",
+          "transcript_excerpt": "So even though we face the difficulties oftoday and tomorrow I still have a dream. It is a dream deeply rooted in the Americandream. I have a dream that one day this nation willrise up and live out the true meaning of its",
+          "transcript_segment_ids": [
+            "6dKimoybmEo:00029",
+            "6dKimoybmEo:00030",
+            "6dKimoybmEo:00031"
+          ],
+          "raw_media_state": "raw_audio_video_present_local_unselected",
+          "video_file": "6dKimoybmEo.mp4",
+          "audio_file": "6dKimoybmEo.m4a",
+          "feature_file": null,
+          "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
+          "review": {
+            "transcript_alignment": null,
+            "vocal_timing_observation": null,
+            "audio_measurement_and_limit": null,
+            "visual_observation": null,
+            "setting_editing_music_observation": null,
+            "speaker_event_identity": null,
+            "missingness_or_accessibility_note": null,
+            "reviewer_code": null
+          },
+          "measurement": {
+            "sample_id": "delivery:transition_or_structure:01",
+            "canonical_job": "transition_or_structure",
+            "video_id": "6dKimoybmEo",
+            "evidence_ids_requested": [
+              "6dKimoybmEo:00029",
+              "6dKimoybmEo:00030",
+              "6dKimoybmEo:00031"
+            ],
+            "evidence_ids_matched": [
+              "6dKimoybmEo:00029",
+              "6dKimoybmEo:00030",
+              "6dKimoybmEo:00031"
+            ],
+            "missing_evidence_ids": [],
+            "feature_file": "data/features/6dKimoybmEo.json",
+            "feature_schema_version": "0.2",
+            "measurement_status": "aligned_feature_measurement_available",
+            "audio_measurements": {
+              "words_per_second_proxy": 14.33333,
+              "transcript_gap_before_seconds": 0.0,
+              "transcript_gap_after_seconds": 0.0,
+              "mean_rms_db": -18.18233,
+              "speech_activity_fraction": 1.0,
+              "mean_zero_crossing_rate": 0.07173,
+              "mean_spectral_centroid_hz": 643.502,
+              "mean_pitch_hz_proxy": 200.521,
+              "mean_pitch_confidence_proxy": 0.2633
+            },
+            "nearest_sampled_frame": {
+              "time_seconds": 40.0,
+              "face_count": null,
+              "smile_detector_candidate_count": null,
+              "mean_luminance": 97.714,
+              "luminance_std": 74.225,
+              "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+            },
+            "measurement_limits": [
+              "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
+              "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
+              "Feature alignment does not verify speaker identity, editing, room acoustics or transcript correctness."
+            ]
+          }
+        },
+        {
+          "sample_id": "delivery:transition_or_structure:02",
+          "card_id": "provisional-job-transition_or_structure",
+          "canonical_job": "transition_or_structure",
           "evidence_id": "ZwMVMbmQBug:00030",
           "video_id": "ZwMVMbmQBug",
           "title": "I'm as mad as hell, and I'm not going to take this anymore! Speech from Network (1976)",
@@ -6848,7 +6937,7 @@
             "reviewer_code": null
           },
           "measurement": {
-            "sample_id": "delivery:transition_or_structure:01",
+            "sample_id": "delivery:transition_or_structure:02",
             "canonical_job": "transition_or_structure",
             "video_id": "ZwMVMbmQBug",
             "evidence_ids_requested": [
@@ -6882,81 +6971,6 @@
               "smile_detector_candidate_count": 0,
               "mean_luminance": 15.422,
               "luminance_std": 14.185,
-              "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
-            },
-            "measurement_limits": [
-              "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
-              "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
-              "Feature alignment does not verify speaker identity, editing, room acoustics or transcript correctness."
-            ]
-          }
-        },
-        {
-          "sample_id": "delivery:transition_or_structure:02",
-          "card_id": "provisional-job-transition_or_structure",
-          "canonical_job": "transition_or_structure",
-          "evidence_id": "xRiwgtdyjQk:00126",
-          "video_id": "xRiwgtdyjQk",
-          "title": "ENGLISH SPEECH | DONALD TRUMP: Victory Speech 2024 (English Subtitles)",
-          "start_seconds": 373.44,
-          "end_seconds": 384.639,
-          "source_url": "https://www.youtube.com/watch?v=xRiwgtdyjQk&t=373s",
-          "transcript_excerpt": "for our people yesterday as I stood at my last stop on the campaign tra I'll never be doing a rally again can you",
-          "transcript_segment_ids": [
-            "xRiwgtdyjQk:00126",
-            "xRiwgtdyjQk:00127",
-            "xRiwgtdyjQk:00128"
-          ],
-          "raw_media_state": "raw_audio_video_present",
-          "video_file": "xRiwgtdyjQk.mp4",
-          "audio_file": "xRiwgtdyjQk.m4a",
-          "feature_file": "xRiwgtdyjQk.json",
-          "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
-          "review": {
-            "transcript_alignment": null,
-            "vocal_timing_observation": null,
-            "audio_measurement_and_limit": null,
-            "visual_observation": null,
-            "setting_editing_music_observation": null,
-            "speaker_event_identity": null,
-            "missingness_or_accessibility_note": null,
-            "reviewer_code": null
-          },
-          "measurement": {
-            "sample_id": "delivery:transition_or_structure:02",
-            "canonical_job": "transition_or_structure",
-            "video_id": "xRiwgtdyjQk",
-            "evidence_ids_requested": [
-              "xRiwgtdyjQk:00126",
-              "xRiwgtdyjQk:00127",
-              "xRiwgtdyjQk:00128"
-            ],
-            "evidence_ids_matched": [
-              "xRiwgtdyjQk:00126",
-              "xRiwgtdyjQk:00127",
-              "xRiwgtdyjQk:00128"
-            ],
-            "missing_evidence_ids": [],
-            "feature_file": "data/features/xRiwgtdyjQk.json",
-            "feature_schema_version": "0.2",
-            "measurement_status": "aligned_feature_measurement_available",
-            "audio_measurements": {
-              "words_per_second_proxy": 1.54433,
-              "transcript_gap_before_seconds": 0.0,
-              "transcript_gap_after_seconds": 0.0,
-              "mean_rms_db": -16.40133,
-              "speech_activity_fraction": 1.0,
-              "mean_zero_crossing_rate": 0.09632,
-              "mean_spectral_centroid_hz": 582.36433,
-              "mean_pitch_hz_proxy": 366.44367,
-              "mean_pitch_confidence_proxy": 0.16329
-            },
-            "nearest_sampled_frame": {
-              "time_seconds": 380.0,
-              "face_count": 1,
-              "smile_detector_candidate_count": 0,
-              "mean_luminance": 61.038,
-              "luminance_std": 68.537,
               "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
             },
             "measurement_limits": [
@@ -7382,6 +7396,81 @@
           "sample_id": "delivery:callback_or_repetition:01",
           "card_id": "provisional-job-callback_or_repetition",
           "canonical_job": "callback_or_repetition",
+          "evidence_id": "dKe3WbGR7Xs:00080",
+          "video_id": "dKe3WbGR7Xs",
+          "title": "ENGLISH SPEECH | JENNIFER ANISTON: Find Your Voice (English Subtitles)",
+          "start_seconds": 417.819,
+          "end_seconds": 434.36,
+          "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=417s",
+          "transcript_excerpt": "And that is what every child deserves to knowthat they are seen, they are powerful, and they are loved and that they deserve a seatat the table and that anything they have to say or any question they have to ask is ofvalue even if we don't have all the answers",
+          "transcript_segment_ids": [
+            "dKe3WbGR7Xs:00080",
+            "dKe3WbGR7Xs:00081",
+            "dKe3WbGR7Xs:00082"
+          ],
+          "raw_media_state": "raw_audio_video_present_local_unselected",
+          "video_file": "dKe3WbGR7Xs.mp4",
+          "audio_file": "dKe3WbGR7Xs.m4a",
+          "feature_file": null,
+          "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
+          "review": {
+            "transcript_alignment": null,
+            "vocal_timing_observation": null,
+            "audio_measurement_and_limit": null,
+            "visual_observation": null,
+            "setting_editing_music_observation": null,
+            "speaker_event_identity": null,
+            "missingness_or_accessibility_note": null,
+            "reviewer_code": null
+          },
+          "measurement": {
+            "sample_id": "delivery:callback_or_repetition:01",
+            "canonical_job": "callback_or_repetition",
+            "video_id": "dKe3WbGR7Xs",
+            "evidence_ids_requested": [
+              "dKe3WbGR7Xs:00080",
+              "dKe3WbGR7Xs:00081",
+              "dKe3WbGR7Xs:00082"
+            ],
+            "evidence_ids_matched": [
+              "dKe3WbGR7Xs:00080",
+              "dKe3WbGR7Xs:00081",
+              "dKe3WbGR7Xs:00082"
+            ],
+            "missing_evidence_ids": [],
+            "feature_file": "data/features/dKe3WbGR7Xs.json",
+            "feature_schema_version": "0.2",
+            "measurement_status": "aligned_feature_measurement_available",
+            "audio_measurements": {
+              "words_per_second_proxy": 3.153,
+              "transcript_gap_before_seconds": 0.0,
+              "transcript_gap_after_seconds": 0.0,
+              "mean_rms_db": -23.65067,
+              "speech_activity_fraction": 0.95233,
+              "mean_zero_crossing_rate": 0.15827,
+              "mean_spectral_centroid_hz": 887.45933,
+              "mean_pitch_hz_proxy": 247.83,
+              "mean_pitch_confidence_proxy": 0.20945
+            },
+            "nearest_sampled_frame": {
+              "time_seconds": 430.0,
+              "face_count": null,
+              "smile_detector_candidate_count": null,
+              "mean_luminance": 131.363,
+              "luminance_std": 73.606,
+              "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+            },
+            "measurement_limits": [
+              "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
+              "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
+              "Feature alignment does not verify speaker identity, editing, room acoustics or transcript correctness."
+            ]
+          }
+        },
+        {
+          "sample_id": "delivery:callback_or_repetition:02",
+          "card_id": "provisional-job-callback_or_repetition",
+          "canonical_job": "callback_or_repetition",
           "evidence_id": "ZwMVMbmQBug:00038",
           "video_id": "ZwMVMbmQBug",
           "title": "I'm as mad as hell, and I'm not going to take this anymore! Speech from Network (1976)",
@@ -7410,7 +7499,7 @@
             "reviewer_code": null
           },
           "measurement": {
-            "sample_id": "delivery:callback_or_repetition:01",
+            "sample_id": "delivery:callback_or_repetition:02",
             "canonical_job": "callback_or_repetition",
             "video_id": "ZwMVMbmQBug",
             "evidence_ids_requested": [
@@ -7446,74 +7535,6 @@
               "luminance_std": 45.132,
               "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
             },
-            "measurement_limits": [
-              "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
-              "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
-              "Feature alignment does not verify speaker identity, editing, room acoustics or transcript correctness."
-            ]
-          }
-        },
-        {
-          "sample_id": "delivery:callback_or_repetition:02",
-          "card_id": "provisional-job-callback_or_repetition",
-          "canonical_job": "callback_or_repetition",
-          "evidence_id": "dKe3WbGR7Xs:00080",
-          "video_id": "dKe3WbGR7Xs",
-          "title": "ENGLISH SPEECH | JENNIFER ANISTON: Find Your Voice (English Subtitles)",
-          "start_seconds": 417.819,
-          "end_seconds": 434.36,
-          "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=417s",
-          "transcript_excerpt": "And that is what every child deserves to knowthat they are seen, they are powerful, and they are loved and that they deserve a seatat the table and that anything they have to say or any question they have to ask is ofvalue even if we don't have all the answers",
-          "transcript_segment_ids": [
-            "dKe3WbGR7Xs:00080",
-            "dKe3WbGR7Xs:00081",
-            "dKe3WbGR7Xs:00082"
-          ],
-          "raw_media_state": "not_in_selected_media_audit",
-          "video_file": null,
-          "audio_file": null,
-          "feature_file": null,
-          "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
-          "review": {
-            "transcript_alignment": null,
-            "vocal_timing_observation": null,
-            "audio_measurement_and_limit": null,
-            "visual_observation": null,
-            "setting_editing_music_observation": null,
-            "speaker_event_identity": null,
-            "missingness_or_accessibility_note": null,
-            "reviewer_code": null
-          },
-          "measurement": {
-            "sample_id": "delivery:callback_or_repetition:02",
-            "canonical_job": "callback_or_repetition",
-            "video_id": "dKe3WbGR7Xs",
-            "evidence_ids_requested": [
-              "dKe3WbGR7Xs:00080",
-              "dKe3WbGR7Xs:00081",
-              "dKe3WbGR7Xs:00082"
-            ],
-            "evidence_ids_matched": [],
-            "missing_evidence_ids": [
-              "dKe3WbGR7Xs:00080",
-              "dKe3WbGR7Xs:00081",
-              "dKe3WbGR7Xs:00082"
-            ],
-            "feature_file": null,
-            "feature_schema_version": null,
-            "measurement_status": "no_aligned_feature_measurement",
-            "audio_measurements": {
-              "words_per_second_proxy": null,
-              "transcript_gap_before_seconds": null,
-              "transcript_gap_after_seconds": null,
-              "mean_rms_db": null,
-              "speech_activity_fraction": null,
-              "mean_zero_crossing_rate": null,
-              "mean_spectral_centroid_hz": null,
-              "mean_pitch_hz_proxy": null,
-              "mean_pitch_confidence_proxy": null
-            },
-            "nearest_sampled_frame": null,
             "measurement_limits": [
               "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
               "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
@@ -7937,6 +7958,81 @@
           "sample_id": "delivery:humor_or_rapport:01",
           "card_id": "provisional-job-humor_or_rapport",
           "canonical_job": "humor_or_rapport",
+          "evidence_id": "6dKimoybmEo:00000",
+          "video_id": "6dKimoybmEo",
+          "title": "ENGLISH SPEECH | MARTIN LUTHER KING: I Have a Dream (English Subtitles)",
+          "start_seconds": 13.809,
+          "end_seconds": 16.809,
+          "source_url": "https://www.youtube.com/watch?v=6dKimoybmEo&t=13s",
+          "transcript_excerpt": "I am happy to join with you today in whatwill go down in history as the greatest demonstration for freedom in the history of our nation. Five score years ago a great American in whosesymbolic shadow we stand today signed the",
+          "transcript_segment_ids": [
+            "6dKimoybmEo:00000",
+            "6dKimoybmEo:00001",
+            "6dKimoybmEo:00002"
+          ],
+          "raw_media_state": "raw_audio_video_present_local_unselected",
+          "video_file": "6dKimoybmEo.mp4",
+          "audio_file": "6dKimoybmEo.m4a",
+          "feature_file": null,
+          "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
+          "review": {
+            "transcript_alignment": null,
+            "vocal_timing_observation": null,
+            "audio_measurement_and_limit": null,
+            "visual_observation": null,
+            "setting_editing_music_observation": null,
+            "speaker_event_identity": null,
+            "missingness_or_accessibility_note": null,
+            "reviewer_code": null
+          },
+          "measurement": {
+            "sample_id": "delivery:humor_or_rapport:01",
+            "canonical_job": "humor_or_rapport",
+            "video_id": "6dKimoybmEo",
+            "evidence_ids_requested": [
+              "6dKimoybmEo:00000",
+              "6dKimoybmEo:00001",
+              "6dKimoybmEo:00002"
+            ],
+            "evidence_ids_matched": [
+              "6dKimoybmEo:00000",
+              "6dKimoybmEo:00001",
+              "6dKimoybmEo:00002"
+            ],
+            "missing_evidence_ids": [],
+            "feature_file": "data/features/6dKimoybmEo.json",
+            "feature_schema_version": "0.2",
+            "measurement_status": "aligned_feature_measurement_available",
+            "audio_measurements": {
+              "words_per_second_proxy": 13.66667,
+              "transcript_gap_before_seconds": 0.0,
+              "transcript_gap_after_seconds": 0.0,
+              "mean_rms_db": -17.373,
+              "speech_activity_fraction": 1.0,
+              "mean_zero_crossing_rate": 0.0717,
+              "mean_spectral_centroid_hz": 616.63467,
+              "mean_pitch_hz_proxy": 234.375,
+              "mean_pitch_confidence_proxy": 0.24887
+            },
+            "nearest_sampled_frame": {
+              "time_seconds": 20.0,
+              "face_count": null,
+              "smile_detector_candidate_count": null,
+              "mean_luminance": 74.997,
+              "luminance_std": 59.028,
+              "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+            },
+            "measurement_limits": [
+              "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
+              "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
+              "Feature alignment does not verify speaker identity, editing, room acoustics or transcript correctness."
+            ]
+          }
+        },
+        {
+          "sample_id": "delivery:humor_or_rapport:02",
+          "card_id": "provisional-job-humor_or_rapport",
+          "canonical_job": "humor_or_rapport",
           "evidence_id": "C8-twwwTETE:00016",
           "video_id": "C8-twwwTETE",
           "title": "ENGLISH SPEECH | EMINEM & 50 CENT: Walk of Fame Speech (English Subtitles)",
@@ -7965,7 +8061,7 @@
             "reviewer_code": null
           },
           "measurement": {
-            "sample_id": "delivery:humor_or_rapport:01",
+            "sample_id": "delivery:humor_or_rapport:02",
             "canonical_job": "humor_or_rapport",
             "video_id": "C8-twwwTETE",
             "evidence_ids_requested": [
@@ -8001,74 +8097,6 @@
               "luminance_std": 80.165,
               "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
             },
-            "measurement_limits": [
-              "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
-              "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
-              "Feature alignment does not verify speaker identity, editing, room acoustics or transcript correctness."
-            ]
-          }
-        },
-        {
-          "sample_id": "delivery:humor_or_rapport:02",
-          "card_id": "provisional-job-humor_or_rapport",
-          "canonical_job": "humor_or_rapport",
-          "evidence_id": "6dKimoybmEo:00000",
-          "video_id": "6dKimoybmEo",
-          "title": "ENGLISH SPEECH | MARTIN LUTHER KING: I Have a Dream (English Subtitles)",
-          "start_seconds": 13.809,
-          "end_seconds": 16.809,
-          "source_url": "https://www.youtube.com/watch?v=6dKimoybmEo&t=13s",
-          "transcript_excerpt": "I am happy to join with you today in whatwill go down in history as the greatest demonstration for freedom in the history of our nation. Five score years ago a great American in whosesymbolic shadow we stand today signed the",
-          "transcript_segment_ids": [
-            "6dKimoybmEo:00000",
-            "6dKimoybmEo:00001",
-            "6dKimoybmEo:00002"
-          ],
-          "raw_media_state": "not_in_selected_media_audit",
-          "video_file": null,
-          "audio_file": null,
-          "feature_file": null,
-          "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
-          "review": {
-            "transcript_alignment": null,
-            "vocal_timing_observation": null,
-            "audio_measurement_and_limit": null,
-            "visual_observation": null,
-            "setting_editing_music_observation": null,
-            "speaker_event_identity": null,
-            "missingness_or_accessibility_note": null,
-            "reviewer_code": null
-          },
-          "measurement": {
-            "sample_id": "delivery:humor_or_rapport:02",
-            "canonical_job": "humor_or_rapport",
-            "video_id": "6dKimoybmEo",
-            "evidence_ids_requested": [
-              "6dKimoybmEo:00000",
-              "6dKimoybmEo:00001",
-              "6dKimoybmEo:00002"
-            ],
-            "evidence_ids_matched": [],
-            "missing_evidence_ids": [
-              "6dKimoybmEo:00000",
-              "6dKimoybmEo:00001",
-              "6dKimoybmEo:00002"
-            ],
-            "feature_file": null,
-            "feature_schema_version": null,
-            "measurement_status": "no_aligned_feature_measurement",
-            "audio_measurements": {
-              "words_per_second_proxy": null,
-              "transcript_gap_before_seconds": null,
-              "transcript_gap_after_seconds": null,
-              "mean_rms_db": null,
-              "speech_activity_fraction": null,
-              "mean_zero_crossing_rate": null,
-              "mean_spectral_centroid_hz": null,
-              "mean_pitch_hz_proxy": null,
-              "mean_pitch_confidence_proxy": null
-            },
-            "nearest_sampled_frame": null,
             "measurement_limits": [
               "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
               "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
@@ -8492,6 +8520,81 @@
           "sample_id": "delivery:credit_or_acknowledgment:01",
           "card_id": "provisional-job-credit_or_acknowledgment",
           "canonical_job": "credit_or_acknowledgment",
+          "evidence_id": "dKe3WbGR7Xs:00071",
+          "video_id": "dKe3WbGR7Xs",
+          "title": "ENGLISH SPEECH | JENNIFER ANISTON: Find Your Voice (English Subtitles)",
+          "start_seconds": 367.069,
+          "end_seconds": 385.659,
+          "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=367s",
+          "transcript_excerpt": "She was just making the absolute best of it,and that's what's unbelievable about these children despite everything that they areup against and as much pain as they are often in they are vibrant, they're joyful they arefearless, and that's part of the magic of",
+          "transcript_segment_ids": [
+            "dKe3WbGR7Xs:00071",
+            "dKe3WbGR7Xs:00072",
+            "dKe3WbGR7Xs:00073"
+          ],
+          "raw_media_state": "raw_audio_video_present_local_unselected",
+          "video_file": "dKe3WbGR7Xs.mp4",
+          "audio_file": "dKe3WbGR7Xs.m4a",
+          "feature_file": null,
+          "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
+          "review": {
+            "transcript_alignment": null,
+            "vocal_timing_observation": null,
+            "audio_measurement_and_limit": null,
+            "visual_observation": null,
+            "setting_editing_music_observation": null,
+            "speaker_event_identity": null,
+            "missingness_or_accessibility_note": null,
+            "reviewer_code": null
+          },
+          "measurement": {
+            "sample_id": "delivery:credit_or_acknowledgment:01",
+            "canonical_job": "credit_or_acknowledgment",
+            "video_id": "dKe3WbGR7Xs",
+            "evidence_ids_requested": [
+              "dKe3WbGR7Xs:00071",
+              "dKe3WbGR7Xs:00072",
+              "dKe3WbGR7Xs:00073"
+            ],
+            "evidence_ids_matched": [
+              "dKe3WbGR7Xs:00071",
+              "dKe3WbGR7Xs:00072",
+              "dKe3WbGR7Xs:00073"
+            ],
+            "missing_evidence_ids": [],
+            "feature_file": "data/features/dKe3WbGR7Xs.json",
+            "feature_schema_version": "0.2",
+            "measurement_status": "aligned_feature_measurement_available",
+            "audio_measurements": {
+              "words_per_second_proxy": 2.38033,
+              "transcript_gap_before_seconds": 0.0,
+              "transcript_gap_after_seconds": 0.0,
+              "mean_rms_db": -24.482,
+              "speech_activity_fraction": 0.95233,
+              "mean_zero_crossing_rate": 0.17329,
+              "mean_spectral_centroid_hz": 904.07567,
+              "mean_pitch_hz_proxy": 226.888,
+              "mean_pitch_confidence_proxy": 0.20618
+            },
+            "nearest_sampled_frame": {
+              "time_seconds": 380.0,
+              "face_count": null,
+              "smile_detector_candidate_count": null,
+              "mean_luminance": 131.373,
+              "luminance_std": 73.269,
+              "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+            },
+            "measurement_limits": [
+              "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
+              "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
+              "Feature alignment does not verify speaker identity, editing, room acoustics or transcript correctness."
+            ]
+          }
+        },
+        {
+          "sample_id": "delivery:credit_or_acknowledgment:02",
+          "card_id": "provisional-job-credit_or_acknowledgment",
+          "canonical_job": "credit_or_acknowledgment",
           "evidence_id": "C8-twwwTETE:00123",
           "video_id": "C8-twwwTETE",
           "title": "ENGLISH SPEECH | EMINEM & 50 CENT: Walk of Fame Speech (English Subtitles)",
@@ -8520,7 +8623,7 @@
             "reviewer_code": null
           },
           "measurement": {
-            "sample_id": "delivery:credit_or_acknowledgment:01",
+            "sample_id": "delivery:credit_or_acknowledgment:02",
             "canonical_job": "credit_or_acknowledgment",
             "video_id": "C8-twwwTETE",
             "evidence_ids_requested": [
@@ -8554,81 +8657,6 @@
               "smile_detector_candidate_count": 0,
               "mean_luminance": 89.607,
               "luminance_std": 76.994,
-              "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
-            },
-            "measurement_limits": [
-              "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
-              "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
-              "Feature alignment does not verify speaker identity, editing, room acoustics or transcript correctness."
-            ]
-          }
-        },
-        {
-          "sample_id": "delivery:credit_or_acknowledgment:02",
-          "card_id": "provisional-job-credit_or_acknowledgment",
-          "canonical_job": "credit_or_acknowledgment",
-          "evidence_id": "xRiwgtdyjQk:00184",
-          "video_id": "xRiwgtdyjQk",
-          "title": "ENGLISH SPEECH | DONALD TRUMP: Victory Speech 2024 (English Subtitles)",
-          "start_seconds": 533.959,
-          "end_seconds": 545.2,
-          "source_url": "https://www.youtube.com/watch?v=xRiwgtdyjQk&t=533s",
-          "transcript_excerpt": "I want to just tell you what a great honor this is I want to thank you I will not let you down America's future will",
-          "transcript_segment_ids": [
-            "xRiwgtdyjQk:00184",
-            "xRiwgtdyjQk:00185",
-            "xRiwgtdyjQk:00186"
-          ],
-          "raw_media_state": "raw_audio_video_present",
-          "video_file": "xRiwgtdyjQk.mp4",
-          "audio_file": "xRiwgtdyjQk.m4a",
-          "feature_file": "xRiwgtdyjQk.json",
-          "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
-          "review": {
-            "transcript_alignment": null,
-            "vocal_timing_observation": null,
-            "audio_measurement_and_limit": null,
-            "visual_observation": null,
-            "setting_editing_music_observation": null,
-            "speaker_event_identity": null,
-            "missingness_or_accessibility_note": null,
-            "reviewer_code": null
-          },
-          "measurement": {
-            "sample_id": "delivery:credit_or_acknowledgment:02",
-            "canonical_job": "credit_or_acknowledgment",
-            "video_id": "xRiwgtdyjQk",
-            "evidence_ids_requested": [
-              "xRiwgtdyjQk:00184",
-              "xRiwgtdyjQk:00185",
-              "xRiwgtdyjQk:00186"
-            ],
-            "evidence_ids_matched": [
-              "xRiwgtdyjQk:00184",
-              "xRiwgtdyjQk:00185",
-              "xRiwgtdyjQk:00186"
-            ],
-            "missing_evidence_ids": [],
-            "feature_file": "data/features/xRiwgtdyjQk.json",
-            "feature_schema_version": "0.2",
-            "measurement_status": "aligned_feature_measurement_available",
-            "audio_measurements": {
-              "words_per_second_proxy": 1.73067,
-              "transcript_gap_before_seconds": 0.0,
-              "transcript_gap_after_seconds": 0.0,
-              "mean_rms_db": -16.06833,
-              "speech_activity_fraction": 1.0,
-              "mean_zero_crossing_rate": 0.11562,
-              "mean_spectral_centroid_hz": 719.16433,
-              "mean_pitch_hz_proxy": 283.42,
-              "mean_pitch_confidence_proxy": 0.17705
-            },
-            "nearest_sampled_frame": {
-              "time_seconds": 540.0,
-              "face_count": 1,
-              "smile_detector_candidate_count": 0,
-              "mean_luminance": 64.681,
-              "luminance_std": 72.529,
               "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
             },
             "measurement_limits": [
@@ -9097,6 +9125,81 @@
           "sample_id": "delivery:call_to_action_or_audience_role:01",
           "card_id": "provisional-job-call_to_action_or_audience_role",
           "canonical_job": "call_to_action_or_audience_role",
+          "evidence_id": "dKe3WbGR7Xs:00041",
+          "video_id": "dKe3WbGR7Xs",
+          "title": "ENGLISH SPEECH | JENNIFER ANISTON: Find Your Voice (English Subtitles)",
+          "start_seconds": 217.29,
+          "end_seconds": 229.01,
+          "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=217s",
+          "transcript_excerpt": "And then enter Marlo Thomas. Marlo Thomas, as some of you might remember,she was my mama on friends, and I remember one day we were on set, and she said to meI'm going to this St. Jude Gala tonight would",
+          "transcript_segment_ids": [
+            "dKe3WbGR7Xs:00041",
+            "dKe3WbGR7Xs:00042",
+            "dKe3WbGR7Xs:00043"
+          ],
+          "raw_media_state": "raw_audio_video_present_local_unselected",
+          "video_file": "dKe3WbGR7Xs.mp4",
+          "audio_file": "dKe3WbGR7Xs.m4a",
+          "feature_file": null,
+          "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
+          "review": {
+            "transcript_alignment": null,
+            "vocal_timing_observation": null,
+            "audio_measurement_and_limit": null,
+            "visual_observation": null,
+            "setting_editing_music_observation": null,
+            "speaker_event_identity": null,
+            "missingness_or_accessibility_note": null,
+            "reviewer_code": null
+          },
+          "measurement": {
+            "sample_id": "delivery:call_to_action_or_audience_role:01",
+            "canonical_job": "call_to_action_or_audience_role",
+            "video_id": "dKe3WbGR7Xs",
+            "evidence_ids_requested": [
+              "dKe3WbGR7Xs:00041",
+              "dKe3WbGR7Xs:00042",
+              "dKe3WbGR7Xs:00043"
+            ],
+            "evidence_ids_matched": [
+              "dKe3WbGR7Xs:00041",
+              "dKe3WbGR7Xs:00042",
+              "dKe3WbGR7Xs:00043"
+            ],
+            "missing_evidence_ids": [],
+            "feature_file": "data/features/dKe3WbGR7Xs.json",
+            "feature_schema_version": "0.2",
+            "measurement_status": "aligned_feature_measurement_available",
+            "audio_measurements": {
+              "words_per_second_proxy": 3.30667,
+              "transcript_gap_before_seconds": 0.0,
+              "transcript_gap_after_seconds": 0.0,
+              "mean_rms_db": -20.73667,
+              "speech_activity_fraction": 1.0,
+              "mean_zero_crossing_rate": 0.16774,
+              "mean_spectral_centroid_hz": 998.248,
+              "mean_pitch_hz_proxy": 248.698,
+              "mean_pitch_confidence_proxy": 0.21829
+            },
+            "nearest_sampled_frame": {
+              "time_seconds": 220.0,
+              "face_count": null,
+              "smile_detector_candidate_count": null,
+              "mean_luminance": 117.464,
+              "luminance_std": 69.349,
+              "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+            },
+            "measurement_limits": [
+              "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
+              "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
+              "Feature alignment does not verify speaker identity, editing, room acoustics or transcript correctness."
+            ]
+          }
+        },
+        {
+          "sample_id": "delivery:call_to_action_or_audience_role:02",
+          "card_id": "provisional-job-call_to_action_or_audience_role",
+          "canonical_job": "call_to_action_or_audience_role",
           "evidence_id": "ZwMVMbmQBug:00022",
           "video_id": "ZwMVMbmQBug",
           "title": "I'm as mad as hell, and I'm not going to take this anymore! Speech from Network (1976)",
@@ -9125,7 +9228,7 @@
             "reviewer_code": null
           },
           "measurement": {
-            "sample_id": "delivery:call_to_action_or_audience_role:01",
+            "sample_id": "delivery:call_to_action_or_audience_role:02",
             "canonical_job": "call_to_action_or_audience_role",
             "video_id": "ZwMVMbmQBug",
             "evidence_ids_requested": [
@@ -9159,81 +9262,6 @@
               "smile_detector_candidate_count": 0,
               "mean_luminance": 78.406,
               "luminance_std": 49.221,
-              "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
-            },
-            "measurement_limits": [
-              "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
-              "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
-              "Feature alignment does not verify speaker identity, editing, room acoustics or transcript correctness."
-            ]
-          }
-        },
-        {
-          "sample_id": "delivery:call_to_action_or_audience_role:02",
-          "card_id": "provisional-job-call_to_action_or_audience_role",
-          "canonical_job": "call_to_action_or_audience_role",
-          "evidence_id": "u1gg_L-syCw:00044",
-          "video_id": "u1gg_L-syCw",
-          "title": "ENGLISH SPEECH | OPRAH WINFREY: God use Me (English Subtitles)",
-          "start_seconds": 132.959,
-          "end_seconds": 146.8,
-          "source_url": "https://www.youtube.com/watch?v=u1gg_L-syCw&t=132s",
-          "transcript_excerpt": "television as we become more polarized in this medium. I choose to use it in whatever way I can we can to make people",
-          "transcript_segment_ids": [
-            "u1gg_L-syCw:00044",
-            "u1gg_L-syCw:00045",
-            "u1gg_L-syCw:00046"
-          ],
-          "raw_media_state": "raw_audio_video_present",
-          "video_file": "u1gg_L-syCw.mp4",
-          "audio_file": "u1gg_L-syCw.m4a",
-          "feature_file": "u1gg_L-syCw.json",
-          "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
-          "review": {
-            "transcript_alignment": null,
-            "vocal_timing_observation": null,
-            "audio_measurement_and_limit": null,
-            "visual_observation": null,
-            "setting_editing_music_observation": null,
-            "speaker_event_identity": null,
-            "missingness_or_accessibility_note": null,
-            "reviewer_code": null
-          },
-          "measurement": {
-            "sample_id": "delivery:call_to_action_or_audience_role:02",
-            "canonical_job": "call_to_action_or_audience_role",
-            "video_id": "u1gg_L-syCw",
-            "evidence_ids_requested": [
-              "u1gg_L-syCw:00044",
-              "u1gg_L-syCw:00045",
-              "u1gg_L-syCw:00046"
-            ],
-            "evidence_ids_matched": [
-              "u1gg_L-syCw:00044",
-              "u1gg_L-syCw:00045",
-              "u1gg_L-syCw:00046"
-            ],
-            "missing_evidence_ids": [],
-            "feature_file": "data/features/u1gg_L-syCw.json",
-            "feature_schema_version": "0.2",
-            "measurement_status": "aligned_feature_measurement_available",
-            "audio_measurements": {
-              "words_per_second_proxy": 1.066,
-              "transcript_gap_before_seconds": 0.0,
-              "transcript_gap_after_seconds": 0.0,
-              "mean_rms_db": -8.08867,
-              "speech_activity_fraction": 1.0,
-              "mean_zero_crossing_rate": 0.15309,
-              "mean_spectral_centroid_hz": 793.13867,
-              "mean_pitch_hz_proxy": 321.0,
-              "mean_pitch_confidence_proxy": 0.18148
-            },
-            "nearest_sampled_frame": {
-              "time_seconds": 140.0,
-              "face_count": 0,
-              "smile_detector_candidate_count": 0,
-              "mean_luminance": 73.595,
-              "luminance_std": 55.523,
               "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
             },
             "measurement_limits": [
@@ -9659,22 +9687,22 @@
           "sample_id": "delivery:persuasion_or_advocacy:01",
           "card_id": "provisional-job-persuasion_or_advocacy",
           "canonical_job": "persuasion_or_advocacy",
-          "evidence_id": "xRiwgtdyjQk:00111",
-          "video_id": "xRiwgtdyjQk",
-          "title": "ENGLISH SPEECH | DONALD TRUMP: Victory Speech 2024 (English Subtitles)",
-          "start_seconds": 332.759,
-          "end_seconds": 342.919,
-          "source_url": "https://www.youtube.com/watch?v=xRiwgtdyjQk&t=332s",
-          "transcript_excerpt": "we're the party of Common Sense we want to have borders we want to have security we want to have things be good safe we",
+          "evidence_id": "-54zUwySKCg:00226",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "start_seconds": 1131.49,
+          "end_seconds": 1150.59,
+          "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg&t=1131s",
+          "transcript_excerpt": "I have to say that the single most importantlesson I learned in 25 years talking every single day to people, was that there is acommon denominator in our human experience. Most of us, I tell you we don’t want tobe divided.",
           "transcript_segment_ids": [
-            "xRiwgtdyjQk:00111",
-            "xRiwgtdyjQk:00112",
-            "xRiwgtdyjQk:00113"
+            "-54zUwySKCg:00226",
+            "-54zUwySKCg:00227",
+            "-54zUwySKCg:00228"
           ],
-          "raw_media_state": "raw_audio_video_present",
-          "video_file": "xRiwgtdyjQk.mp4",
-          "audio_file": "xRiwgtdyjQk.m4a",
-          "feature_file": "xRiwgtdyjQk.json",
+          "raw_media_state": "raw_audio_video_present_local_unselected",
+          "video_file": "-54zUwySKCg.mp4",
+          "audio_file": "-54zUwySKCg.m4a",
+          "feature_file": null,
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -9689,39 +9717,39 @@
           "measurement": {
             "sample_id": "delivery:persuasion_or_advocacy:01",
             "canonical_job": "persuasion_or_advocacy",
-            "video_id": "xRiwgtdyjQk",
+            "video_id": "-54zUwySKCg",
             "evidence_ids_requested": [
-              "xRiwgtdyjQk:00111",
-              "xRiwgtdyjQk:00112",
-              "xRiwgtdyjQk:00113"
+              "-54zUwySKCg:00226",
+              "-54zUwySKCg:00227",
+              "-54zUwySKCg:00228"
             ],
             "evidence_ids_matched": [
-              "xRiwgtdyjQk:00111",
-              "xRiwgtdyjQk:00112",
-              "xRiwgtdyjQk:00113"
+              "-54zUwySKCg:00226",
+              "-54zUwySKCg:00227",
+              "-54zUwySKCg:00228"
             ],
             "missing_evidence_ids": [],
-            "feature_file": "data/features/xRiwgtdyjQk.json",
+            "feature_file": "data/features/-54zUwySKCg.json",
             "feature_schema_version": "0.2",
             "measurement_status": "aligned_feature_measurement_available",
             "audio_measurements": {
-              "words_per_second_proxy": 1.583,
+              "words_per_second_proxy": 2.19433,
               "transcript_gap_before_seconds": 0.0,
               "transcript_gap_after_seconds": 0.0,
-              "mean_rms_db": -15.922,
+              "mean_rms_db": -23.867,
               "speech_activity_fraction": 1.0,
-              "mean_zero_crossing_rate": 0.14297,
-              "mean_spectral_centroid_hz": 810.73267,
-              "mean_pitch_hz_proxy": 346.29167,
-              "mean_pitch_confidence_proxy": 0.25144
+              "mean_zero_crossing_rate": 0.13649,
+              "mean_spectral_centroid_hz": 612.953,
+              "mean_pitch_hz_proxy": 318.374,
+              "mean_pitch_confidence_proxy": 0.15518
             },
             "nearest_sampled_frame": {
-              "time_seconds": 340.0,
-              "face_count": 1,
-              "smile_detector_candidate_count": 0,
-              "mean_luminance": 62.942,
-              "luminance_std": 70.269,
-              "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+              "time_seconds": 1200.0,
+              "face_count": null,
+              "smile_detector_candidate_count": null,
+              "mean_luminance": 57.916,
+              "luminance_std": 45.108,
+              "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
             },
             "measurement_limits": [
               "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
@@ -9734,22 +9762,22 @@
           "sample_id": "delivery:persuasion_or_advocacy:02",
           "card_id": "provisional-job-persuasion_or_advocacy",
           "canonical_job": "persuasion_or_advocacy",
-          "evidence_id": "bR4tDSa3O10:00205",
-          "video_id": "bR4tDSa3O10",
-          "title": "ENGLISH SPEECH | JENNIFER COOLIDGE: Find Your Own Path (English Subtitles)",
-          "start_seconds": 603.92,
-          "end_seconds": 613.2,
-          "source_url": "https://www.youtube.com/watch?v=bR4tDSa3O10&t=603s",
-          "transcript_excerpt": "other people think right now you You know, for so much of my life, I was in this this constant state of",
+          "evidence_id": "6dKimoybmEo:00014",
+          "video_id": "6dKimoybmEo",
+          "title": "ENGLISH SPEECH | MARTIN LUTHER KING: I Have a Dream (English Subtitles)",
+          "start_seconds": 27.809,
+          "end_seconds": 30.809,
+          "source_url": "https://www.youtube.com/watch?v=6dKimoybmEo&t=27s",
+          "transcript_excerpt": "We all have come to this hallowed spot toremind America of the fierce urgency of now. Now is the time to rise from the dark anddesolate valley of segregation to the sunlit path of racial justice.",
           "transcript_segment_ids": [
-            "bR4tDSa3O10:00205",
-            "bR4tDSa3O10:00206",
-            "bR4tDSa3O10:00207"
+            "6dKimoybmEo:00014",
+            "6dKimoybmEo:00015",
+            "6dKimoybmEo:00016"
           ],
-          "raw_media_state": "raw_audio_video_present",
-          "video_file": "bR4tDSa3O10.mp4",
-          "audio_file": "bR4tDSa3O10.m4a",
-          "feature_file": "bR4tDSa3O10.json",
+          "raw_media_state": "raw_audio_video_present_local_unselected",
+          "video_file": "6dKimoybmEo.mp4",
+          "audio_file": "6dKimoybmEo.m4a",
+          "feature_file": null,
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -9764,39 +9792,39 @@
           "measurement": {
             "sample_id": "delivery:persuasion_or_advocacy:02",
             "canonical_job": "persuasion_or_advocacy",
-            "video_id": "bR4tDSa3O10",
+            "video_id": "6dKimoybmEo",
             "evidence_ids_requested": [
-              "bR4tDSa3O10:00205",
-              "bR4tDSa3O10:00206",
-              "bR4tDSa3O10:00207"
+              "6dKimoybmEo:00014",
+              "6dKimoybmEo:00015",
+              "6dKimoybmEo:00016"
             ],
             "evidence_ids_matched": [
-              "bR4tDSa3O10:00205",
-              "bR4tDSa3O10:00206",
-              "bR4tDSa3O10:00207"
+              "6dKimoybmEo:00014",
+              "6dKimoybmEo:00015",
+              "6dKimoybmEo:00016"
             ],
             "missing_evidence_ids": [],
-            "feature_file": "data/features/bR4tDSa3O10.json",
+            "feature_file": "data/features/6dKimoybmEo.json",
             "feature_schema_version": "0.2",
             "measurement_status": "aligned_feature_measurement_available",
             "audio_measurements": {
-              "words_per_second_proxy": 1.62033,
+              "words_per_second_proxy": 12.0,
               "transcript_gap_before_seconds": 0.0,
               "transcript_gap_after_seconds": 0.0,
-              "mean_rms_db": -25.43467,
+              "mean_rms_db": -26.202,
               "speech_activity_fraction": 1.0,
-              "mean_zero_crossing_rate": 0.18979,
-              "mean_spectral_centroid_hz": 922.266,
-              "mean_pitch_hz_proxy": 299.13167,
-              "mean_pitch_confidence_proxy": 0.19484
+              "mean_zero_crossing_rate": 0.05718,
+              "mean_spectral_centroid_hz": 449.904,
+              "mean_pitch_hz_proxy": 216.146,
+              "mean_pitch_confidence_proxy": 0.2389
             },
             "nearest_sampled_frame": {
-              "time_seconds": 610.0,
-              "face_count": 1,
-              "smile_detector_candidate_count": 0,
-              "mean_luminance": 85.549,
-              "luminance_std": 80.493,
-              "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+              "time_seconds": 30.0,
+              "face_count": null,
+              "smile_detector_candidate_count": null,
+              "mean_luminance": 85.621,
+              "luminance_std": 69.529,
+              "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
             },
             "measurement_limits": [
               "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",

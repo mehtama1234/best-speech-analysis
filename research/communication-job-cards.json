@@ -378,8 +378,75 @@
           ]
         }
       ],
-      "delivery_evidence_status": "no_aligned_internal_sample_for_this_job",
-      "delivery_observations": [],
+      "delivery_evidence_status": "internal_bounded_review_not_independent",
+      "delivery_observations": [
+        {
+          "evidence_id": "dgkxN6RASpg:00000",
+          "video_id": "dgkxN6RASpg",
+          "title": "ENGLISH SPEECH | TOM CRUISE & BEN STILLER: Footprint Ceremony (English Subtitles)",
+          "pattern_id": "delivery-sample-opening",
+          "sampled_time_seconds": 22.04,
+          "source_url": "https://www.youtube.com/watch?v=dgkxN6RASpg&t=13s",
+          "transcript_text": "Hi, everybody. You know, I love these ceremonies. I remember as a little kid, I used to look at pictures of Man's Chinese and the premieres they had here in these kinds of events. So, it's a real honor for me to be here today. As today, we're going to celebrate a great artist, Ben Stiller.",
+          "frame_observation": "Older man is visible seated at a branded formal event; the frame carries a large edited subtitle overlay and event watermark. Interview/event set with BMW branding; edited subtitle treatment is visible.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 3.35867,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 1.38667,
+            "mean_rms_db": -20.79533,
+            "speech_activity_fraction": 1.0,
+            "mean_zero_crossing_rate": 0.19919,
+            "mean_spectral_centroid_hz": 1357.68867,
+            "mean_pitch_hz_proxy": 254.34,
+            "mean_pitch_confidence_proxy": 0.1571
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 20.0,
+            "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 107.388,
+            "luminance_std": 90.961,
+            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        },
+        {
+          "evidence_id": "AwA0Jnfj3ao:00000",
+          "video_id": "AwA0Jnfj3ao",
+          "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
+          "pattern_id": "delivery-sample-opening",
+          "sampled_time_seconds": 11.725,
+          "source_url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=0s",
+          "transcript_text": "Interviewer:Let's introduce the batting master of the world, Sachin Tendulkar. Well, let's share a few stories, I reckon.",
+          "frame_observation": "Single woman is visible at a lectern or press-room setting with flags; a large subtitle overlay is visible. Formal press-room composition; flags and broadcast-style subtitle editing are visible.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 0.94967,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -20.53833,
+            "speech_activity_fraction": 1.0,
+            "mean_zero_crossing_rate": 0.16852,
+            "mean_spectral_centroid_hz": 1122.33267,
+            "mean_pitch_hz_proxy": 248.49967,
+            "mean_pitch_confidence_proxy": 0.15078
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 10.0,
+            "face_count": 2,
+            "smile_detector_candidate_count": 0,
+            "mean_luminance": 25.658,
+            "luminance_std": 27.938,
+            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        }
+      ],
       "validation": {
         "independent_function_review": "pending",
         "independent_recurrence_review": "pending",
@@ -757,8 +824,75 @@
           ]
         }
       ],
-      "delivery_evidence_status": "no_aligned_internal_sample_for_this_job",
-      "delivery_observations": [],
+      "delivery_evidence_status": "internal_bounded_review_not_independent",
+      "delivery_observations": [
+        {
+          "evidence_id": "6dKimoybmEo:00067",
+          "video_id": "6dKimoybmEo",
+          "title": "ENGLISH SPEECH | MARTIN LUTHER KING: I Have a Dream (English Subtitles)",
+          "pattern_id": "delivery-sample-closing",
+          "sampled_time_seconds": 211.44,
+          "source_url": "https://www.youtube.com/watch?v=6dKimoybmEo&t=209s",
+          "transcript_text": "And when this happens, when we allow freedomto ring, when we let it ring from every village and hamlet, from every state and every city,we will be able to speed up that day when all of God's children, black men and whitemen, Jews and Gentiles, Protestants and Catholics,",
+          "frame_observation": "A male speaker is visible in a formal event/interview composition with subtitle text; other people are partly visible behind him. Branded event setting with edited subtitle overlay; exact shot boundaries are not established by one frame.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 16.0,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -15.346,
+            "speech_activity_fraction": 1.0,
+            "mean_zero_crossing_rate": 0.10642,
+            "mean_spectral_centroid_hz": 990.71967,
+            "mean_pitch_hz_proxy": 333.33367,
+            "mean_pitch_confidence_proxy": 0.27334
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 210.0,
+            "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 88.716,
+            "luminance_std": 74.643,
+            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        },
+        {
+          "evidence_id": "dgkxN6RASpg:00089",
+          "video_id": "dgkxN6RASpg",
+          "title": "ENGLISH SPEECH | TOM CRUISE & BEN STILLER: Footprint Ceremony (English Subtitles)",
+          "pattern_id": "delivery-sample-closing",
+          "sampled_time_seconds": 625.4,
+          "source_url": "https://www.youtube.com/watch?v=dgkxN6RASpg&t=615s",
+          "transcript_text": "Hopefully this shows you that all the years of not being there for school conferences, Oboe recitals, birthdays, all of it was worth it because here we are together on Hollywood Boulevard watching me kneel on the ground, stick my hands in wet cement. And kids,",
+          "frame_observation": "A male speaker/interviewer is visible seated at a branded event while the closing wording is overlaid. Formal interview/event setting with subtitle overlay and background branding.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 2.547,
+            "transcript_gap_before_seconds": 1.65333,
+            "transcript_gap_after_seconds": 0.26667,
+            "mean_rms_db": -21.00033,
+            "speech_activity_fraction": 0.95833,
+            "mean_zero_crossing_rate": 0.17017,
+            "mean_spectral_centroid_hz": 922.84933,
+            "mean_pitch_hz_proxy": 293.634,
+            "mean_pitch_confidence_proxy": 0.17487
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 630.0,
+            "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 120.914,
+            "luminance_std": 92.15,
+            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        }
+      ],
       "validation": {
         "independent_function_review": "pending",
         "independent_recurrence_review": "pending",
@@ -1139,333 +1273,69 @@
       "delivery_evidence_status": "internal_bounded_review_not_independent",
       "delivery_observations": [
         {
-          "evidence_id": "2fWJh-_UG5s:00005",
-          "video_id": "2fWJh-_UG5s",
-          "title": "ENGLISH SPEECH | MATTHEW MCCONAUGHEY: White House Speech (English Subtitles)",
-          "pattern_id": "candidate-question",
-          "sampled_time_seconds": 14.52,
-          "source_url": "https://www.youtube.com/watch?v=2fWJh-_UG5s&t=14s",
-          "transcript_text": "how about that",
-          "frame_observation": "A single speaker is visible in a formal White House press-room setting with a U.S. flag and White House backdrop. The large on-screen caption displays the short phrase ‘how about that’.",
-          "alignment_decision": "visible_caption_overlap",
+          "evidence_id": "dKe3WbGR7Xs:00062",
+          "video_id": "dKe3WbGR7Xs",
+          "title": "ENGLISH SPEECH | JENNIFER ANISTON: Find Your Voice (English Subtitles)",
+          "pattern_id": "delivery-sample-question",
+          "sampled_time_seconds": 328.029,
+          "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=321s",
+          "transcript_text": "After hearing this word, at the end of theday, after hearing the word repeated over and over again, she looked up at me with this,those big blue eyeballs, and she asked me what is cancer?",
+          "frame_observation": "Two people are visible in a seated interview setting and the retained question wording is overlaid. Branded interview/event setup; the frame cannot establish turn timing or who is speaking.",
+          "alignment_decision": "partially_aligned",
           "measured_audio_proxy": {
-            "words_per_second_proxy": 0.915,
-            "mean_rms_db": -18.445,
-            "speech_activity_fraction": 1.0,
-            "mean_zero_crossing_rate": 0.05662,
-            "mean_spectral_centroid_hz": 409.525,
-            "mean_pitch_hz_proxy": 201.563,
-            "mean_pitch_confidence_proxy": 0.26824,
-            "audio_window_count": 5
+            "words_per_second_proxy": 2.54033,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -29.589,
+            "speech_activity_fraction": 0.86667,
+            "mean_zero_crossing_rate": 0.13751,
+            "mean_spectral_centroid_hz": 787.01867,
+            "mean_pitch_hz_proxy": 283.761,
+            "mean_pitch_confidence_proxy": 0.18535
           },
           "nearest_frame_measurement": {
-            "time_seconds": 0.0,
-            "width": 640,
-            "height": 360,
-            "mean_luminance": 59.502,
-            "luminance_std": 52.797,
+            "time_seconds": 330.0,
             "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 125.793,
+            "luminance_std": 72.75,
             "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
           },
-          "feature_limit": "Audio values are coarse proxies; scene-pixel/face fields are measurements, not emotion, intent, confidence, authenticity or audience-effect evidence.",
-          "review_status": "internal_bounded_review_not_independent",
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
           "delivery_evidence_status": "internal_bounded_review_not_independent"
         },
         {
-          "evidence_id": "OfwfTN1mEyM:00018",
-          "video_id": "OfwfTN1mEyM",
-          "title": "ENGLISH SPEECH | ELON MUSK: The Power of Solar Energy (English Subtitles)",
-          "pattern_id": "candidate-question",
-          "sampled_time_seconds": 42.76,
-          "source_url": "https://www.youtube.com/watch?v=OfwfTN1mEyM&t=42s",
-          "transcript_text": "is amazing I feel like I'm in a",
-          "frame_observation": "A single speaker is visible on a blue international-event stage with event branding. The subtitle includes ‘I feel like I’m in a waterfall’, with no audience shown in the sampled frame.",
-          "alignment_decision": "visible_caption_overlap_partial",
+          "evidence_id": "AwA0Jnfj3ao:00063",
+          "video_id": "AwA0Jnfj3ao",
+          "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
+          "pattern_id": "delivery-sample-question",
+          "sampled_time_seconds": 291.255,
+          "source_url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=283s",
+          "transcript_text": "Interviewer:I've asked around the room and we will have a chance to ask some questions after we haveour conversation here. Many people have said simple, easy question.",
+          "frame_observation": "A woman is visible in a formal press setting with flags and subtitle text. Press-room composition and edited caption overlay; no listener response is inferred.",
+          "alignment_decision": "partially_aligned",
           "measured_audio_proxy": {
-            "words_per_second_proxy": 2.127,
-            "mean_rms_db": -14.458,
-            "speech_activity_fraction": 1.0,
-            "mean_zero_crossing_rate": 0.10602,
-            "mean_spectral_centroid_hz": 529.788,
-            "mean_pitch_hz_proxy": 292.188,
-            "mean_pitch_confidence_proxy": 0.10701,
-            "audio_window_count": 5
+            "words_per_second_proxy": 1.87367,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -29.42767,
+            "speech_activity_fraction": 0.86667,
+            "mean_zero_crossing_rate": 0.14625,
+            "mean_spectral_centroid_hz": 965.47267,
+            "mean_pitch_hz_proxy": 272.78667,
+            "mean_pitch_confidence_proxy": 0.14695
           },
           "nearest_frame_measurement": {
-            "time_seconds": 40.0,
-            "width": 640,
-            "height": 360,
-            "mean_luminance": 52.077,
-            "luminance_std": 71.878,
-            "face_count": 2,
-            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
-          },
-          "feature_limit": "Audio values are coarse proxies; scene-pixel/face fields are measurements, not emotion, intent, confidence, authenticity or audience-effect evidence.",
-          "review_status": "internal_bounded_review_not_independent",
-          "delivery_evidence_status": "internal_bounded_review_not_independent"
-        },
-        {
-          "evidence_id": "aXmM0VZv810:00001",
-          "video_id": "aXmM0VZv810",
-          "title": "ENGLISH SPEECH | ELON & JENSEN: Work Becomes Optional (English Subtitles)",
-          "pattern_id": "candidate-question",
-          "sampled_time_seconds": 5.079,
-          "source_url": "https://www.youtube.com/watch?v=aXmM0VZv810&t=5s",
-          "transcript_text": "do a bigger round of applause for one of",
-          "frame_observation": "The frame shows a digital-globe event graphic and small on-screen speaker labels while subtitles display a request for a bigger round of applause. The sampled image does not isolate a single speaker’s face.",
-          "alignment_decision": "visible_caption_overlap_setting_and_edit",
-          "measured_audio_proxy": {
-            "words_per_second_proxy": 1.679,
-            "mean_rms_db": -17.192,
-            "speech_activity_fraction": 1.0,
-            "mean_zero_crossing_rate": 0.12064,
-            "mean_spectral_centroid_hz": 566.953,
-            "mean_pitch_hz_proxy": 300.781,
-            "mean_pitch_confidence_proxy": 0.14088,
-            "audio_window_count": 6
-          },
-          "nearest_frame_measurement": {
-            "time_seconds": 0.0,
-            "width": 640,
-            "height": 360,
-            "mean_luminance": 44.307,
-            "luminance_std": 56.876,
-            "face_count": null,
-            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
-          },
-          "feature_limit": "Audio values are coarse proxies; scene-pixel/face fields are measurements, not emotion, intent, confidence, authenticity or audience-effect evidence.",
-          "review_status": "internal_bounded_review_not_independent",
-          "delivery_evidence_status": "internal_bounded_review_not_independent"
-        },
-        {
-          "evidence_id": "bR4tDSa3O10:00024",
-          "video_id": "bR4tDSa3O10",
-          "title": "ENGLISH SPEECH | JENNIFER COOLIDGE: Find Your Own Path (English Subtitles)",
-          "pattern_id": "candidate-question",
-          "sampled_time_seconds": 66.18,
-          "source_url": "https://www.youtube.com/watch?v=bR4tDSa3O10&t=66s",
-          "transcript_text": "what's been said. Happy Mother's Day",
-          "frame_observation": "A single speaker in graduation regalia is visible against a purple and orange stage backdrop. The subtitle ends with ‘Happy Mother’s Day’, while the preceding question-like wording is partly outside the sampled frame.",
-          "alignment_decision": "visible_caption_overlap_boundary_transition",
-          "measured_audio_proxy": {
-            "words_per_second_proxy": 1.128,
-            "mean_rms_db": -23.997,
-            "speech_activity_fraction": 1.0,
-            "mean_zero_crossing_rate": 0.17959,
-            "mean_spectral_centroid_hz": 1100.513,
-            "mean_pitch_hz_proxy": 304.687,
-            "mean_pitch_confidence_proxy": 0.15566,
-            "audio_window_count": 6
-          },
-          "nearest_frame_measurement": {
-            "time_seconds": 70.0,
-            "width": 640,
-            "height": 360,
-            "mean_luminance": 53.326,
-            "luminance_std": 55.443,
-            "face_count": 1,
-            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
-          },
-          "feature_limit": "Audio values are coarse proxies; scene-pixel/face fields are measurements, not emotion, intent, confidence, authenticity or audience-effect evidence.",
-          "review_status": "internal_bounded_review_not_independent",
-          "delivery_evidence_status": "internal_bounded_review_not_independent"
-        },
-        {
-          "evidence_id": "jxY2-YgAgm0:00005",
-          "video_id": "jxY2-YgAgm0",
-          "title": "ENGLISH SPEECH | MELANIA TRUMP: A Public Denial (English Subtitles)",
-          "pattern_id": "candidate-question",
-          "sampled_time_seconds": 20.08,
-          "source_url": "https://www.youtube.com/watch?v=jxY2-YgAgm0&t=20s",
-          "transcript_text": "are devoid of ethical standards,",
-          "frame_observation": "A single speaker is visible at a formal desk with U.S. flags and a windowed government-room setting. The subtitle ‘The individuals lying about me are devoid of ethical standards’ is clearly visible.",
-          "alignment_decision": "visible_caption_overlap",
-          "measured_audio_proxy": {
-            "words_per_second_proxy": 1.087,
-            "mean_rms_db": -19.329,
-            "speech_activity_fraction": 1.0,
-            "mean_zero_crossing_rate": 0.12078,
-            "mean_spectral_centroid_hz": 986.835,
-            "mean_pitch_hz_proxy": 221.354,
-            "mean_pitch_confidence_proxy": 0.25022,
-            "audio_window_count": 6
-          },
-          "nearest_frame_measurement": {
-            "time_seconds": 0.0,
-            "width": 640,
-            "height": 360,
-            "mean_luminance": 78.878,
-            "luminance_std": 60.57,
-            "face_count": null,
-            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
-          },
-          "feature_limit": "Audio values are coarse proxies; scene-pixel/face fields are measurements, not emotion, intent, confidence, authenticity or audience-effect evidence.",
-          "review_status": "internal_bounded_review_not_independent",
-          "delivery_evidence_status": "internal_bounded_review_not_independent"
-        },
-        {
-          "evidence_id": "W-mgdUdOjhs:00007",
-          "video_id": "W-mgdUdOjhs",
-          "title": "Colonel Walter E. Kurtz (Marlon Brando)",
-          "pattern_id": "candidate-question",
-          "sampled_time_seconds": 31.52,
-          "source_url": "https://www.youtube.com/watch?v=W-mgdUdOjhs&t=31s",
-          "transcript_text": "is necessary",
-          "frame_observation": "A close cinematic shot shows one character against a nearly black background. No exact candidate caption is visible in the sampled frame.",
-          "alignment_decision": "setting_visible_caption_not_aligned",
-          "measured_audio_proxy": {
-            "words_per_second_proxy": 0.347,
-            "mean_rms_db": -43.802,
-            "speech_activity_fraction": 0.429,
-            "mean_zero_crossing_rate": 0.16527,
-            "mean_spectral_centroid_hz": 1511.855,
-            "mean_pitch_hz_proxy": 302.083,
-            "mean_pitch_confidence_proxy": 0.20462,
-            "audio_window_count": 7
-          },
-          "nearest_frame_measurement": {
-            "time_seconds": 30.0,
-            "width": 640,
-            "height": 272,
-            "mean_luminance": 5.902,
-            "luminance_std": 17.645,
+            "time_seconds": 290.0,
             "face_count": 0,
+            "smile_detector_candidate_count": 0,
+            "mean_luminance": 88.951,
+            "luminance_std": 74.235,
             "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
           },
-          "feature_limit": "Audio values are coarse proxies; scene-pixel/face fields are measurements, not emotion, intent, confidence, authenticity or audience-effect evidence.",
-          "review_status": "internal_bounded_review_not_independent",
-          "delivery_evidence_status": "internal_bounded_review_not_independent"
-        },
-        {
-          "evidence_id": "aHXxveJTJoE:00001",
-          "video_id": "aHXxveJTJoE",
-          "title": "The Muppet Movie: Showdown/Animal Saves the Day",
-          "pattern_id": "candidate-question",
-          "sampled_time_seconds": 4.44,
-          "source_url": "https://www.youtube.com/watch?v=aHXxveJTJoE&t=4s",
-          "transcript_text": "pills make big?",
-          "frame_observation": "Two puppet characters are visible at a table in a brightly lit fictional scene. The candidate wording is not visibly subtitled in this frame.",
-          "alignment_decision": "fictional_setting_caption_not_aligned",
-          "measured_audio_proxy": {
-            "words_per_second_proxy": 0.798,
-            "mean_rms_db": -21.036,
-            "speech_activity_fraction": 1.0,
-            "mean_zero_crossing_rate": 0.11503,
-            "mean_spectral_centroid_hz": 696.486,
-            "mean_pitch_hz_proxy": 331.25,
-            "mean_pitch_confidence_proxy": 0.15915,
-            "audio_window_count": 5
-          },
-          "nearest_frame_measurement": {
-            "time_seconds": 0.0,
-            "width": 640,
-            "height": 360,
-            "mean_luminance": 82.188,
-            "luminance_std": 52.471,
-            "face_count": 0,
-            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
-          },
-          "feature_limit": "Audio values are coarse proxies; scene-pixel/face fields are measurements, not emotion, intent, confidence, authenticity or audience-effect evidence.",
-          "review_status": "internal_bounded_review_not_independent",
-          "delivery_evidence_status": "internal_bounded_review_not_independent"
-        },
-        {
-          "evidence_id": "dPi40lQetew:00005",
-          "video_id": "dPi40lQetew",
-          "title": "Jaws (1975) - The Head, the Tail, the Whole Damn Thing Scene (3/10) | Movieclips",
-          "pattern_id": "candidate-question",
-          "sampled_time_seconds": 14.77,
-          "source_url": "https://www.youtube.com/watch?v=dPi40lQetew&t=14s",
-          "transcript_text": "24 hours is likethree weeks ?",
-          "frame_observation": "Several characters are visible in a film scene with a Movieclips watermark. The candidate question-like caption is not visibly aligned in the sampled frame.",
-          "alignment_decision": "fictional_setting_caption_not_aligned",
-          "measured_audio_proxy": {
-            "words_per_second_proxy": 2.365,
-            "mean_rms_db": -18.957,
-            "speech_activity_fraction": 1.0,
-            "mean_zero_crossing_rate": 0.20317,
-            "mean_spectral_centroid_hz": 1435.543,
-            "mean_pitch_hz_proxy": 361.328,
-            "mean_pitch_confidence_proxy": 0.08854,
-            "audio_window_count": 4
-          },
-          "nearest_frame_measurement": {
-            "time_seconds": 10.0,
-            "width": 640,
-            "height": 360,
-            "mean_luminance": 65.409,
-            "luminance_std": 49.564,
-            "face_count": 0,
-            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
-          },
-          "feature_limit": "Audio values are coarse proxies; scene-pixel/face fields are measurements, not emotion, intent, confidence, authenticity or audience-effect evidence.",
-          "review_status": "internal_bounded_review_not_independent",
-          "delivery_evidence_status": "internal_bounded_review_not_independent"
-        },
-        {
-          "evidence_id": "hZ0YhrgYejI:00000",
-          "video_id": "hZ0YhrgYejI",
-          "title": "ENGLISH SPEECH | NICK VUJICIC: If you fail, try again (English Subtitles)",
-          "pattern_id": "candidate-question-or-qualification",
-          "sampled_time_seconds": 8.87,
-          "source_url": "https://www.youtube.com/watch?v=hZ0YhrgYejI&t=8s",
-          "transcript_text": "But honestly along the way you might falldown like this, ready?",
-          "frame_observation": "The frame is a promotional title-card collage with multiple public figures and ‘English Speeches’ branding rather than an isolated speaker shot.",
-          "alignment_decision": "title_card_not_aligned",
-          "measured_audio_proxy": {
-            "words_per_second_proxy": 0.711,
-            "mean_rms_db": -22.059,
-            "speech_activity_fraction": 0.938,
-            "mean_zero_crossing_rate": 0.0948,
-            "mean_spectral_centroid_hz": 811.702,
-            "mean_pitch_hz_proxy": 290.625,
-            "mean_pitch_confidence_proxy": 0.2419,
-            "audio_window_count": 16
-          },
-          "nearest_frame_measurement": {
-            "time_seconds": 10.0,
-            "width": 640,
-            "height": 360,
-            "mean_luminance": 0.004,
-            "luminance_std": 0.067,
-            "face_count": 0,
-            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
-          },
-          "feature_limit": "Audio values are coarse proxies; scene-pixel/face fields are measurements, not emotion, intent, confidence, authenticity or audience-effect evidence.",
-          "review_status": "internal_bounded_review_not_independent",
-          "delivery_evidence_status": "internal_bounded_review_not_independent"
-        },
-        {
-          "evidence_id": "xRiwgtdyjQk:00016",
-          "video_id": "xRiwgtdyjQk",
-          "title": "ENGLISH SPEECH | DONALD TRUMP: Victory Speech 2024 (English Subtitles)",
-          "pattern_id": "candidate-question",
-          "sampled_time_seconds": 42.3,
-          "source_url": "https://www.youtube.com/watch?v=xRiwgtdyjQk&t=42s",
-          "transcript_text": "have thousands of friends on",
-          "frame_observation": "A single speaker is visible at a podium in front of repeated U.S. flags. The subtitle ‘We have thousands of friends in this incredible moment’ is clearly visible.",
-          "alignment_decision": "visible_caption_overlap",
-          "measured_audio_proxy": {
-            "words_per_second_proxy": 0.796,
-            "mean_rms_db": -15.958,
-            "speech_activity_fraction": 1.0,
-            "mean_zero_crossing_rate": 0.13796,
-            "mean_spectral_centroid_hz": 894.436,
-            "mean_pitch_hz_proxy": 293.527,
-            "mean_pitch_confidence_proxy": 0.19902,
-            "audio_window_count": 7
-          },
-          "nearest_frame_measurement": {
-            "time_seconds": 40.0,
-            "width": 640,
-            "height": 360,
-            "mean_luminance": 63.139,
-            "luminance_std": 71.425,
-            "face_count": 1,
-            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
-          },
-          "feature_limit": "Audio values are coarse proxies; scene-pixel/face fields are measurements, not emotion, intent, confidence, authenticity or audience-effect evidence.",
-          "review_status": "internal_bounded_review_not_independent",
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
           "delivery_evidence_status": "internal_bounded_review_not_independent"
         }
       ],
@@ -1846,8 +1716,75 @@
           ]
         }
       ],
-      "delivery_evidence_status": "no_aligned_internal_sample_for_this_job",
-      "delivery_observations": [],
+      "delivery_evidence_status": "internal_bounded_review_not_independent",
+      "delivery_observations": [
+        {
+          "evidence_id": "AwA0Jnfj3ao:00213",
+          "video_id": "AwA0Jnfj3ao",
+          "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
+          "pattern_id": "delivery-sample-answer_or_response",
+          "sampled_time_seconds": 938.54,
+          "source_url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=934s",
+          "transcript_text": "So, that's the only time in my career whenthe batsman is ready to face the ball. He's not watching the bowler; he's watchingthe bat in my hand. So, he is...",
+          "frame_observation": "A male speaker is visible seated at the branded event with a subtitle overlay. Interview/event set; the frame does not identify the question-answer boundary.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 3.39767,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -16.227,
+            "speech_activity_fraction": 1.0,
+            "mean_zero_crossing_rate": 0.1334,
+            "mean_spectral_centroid_hz": 924.11267,
+            "mean_pitch_hz_proxy": 229.601,
+            "mean_pitch_confidence_proxy": 0.18563
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 940.0,
+            "face_count": 1,
+            "smile_detector_candidate_count": 0,
+            "mean_luminance": 122.337,
+            "luminance_std": 82.065,
+            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        },
+        {
+          "evidence_id": "qOwYULOPuPs:00000",
+          "video_id": "qOwYULOPuPs",
+          "title": "Mark Carney: Building Our Future",
+          "pattern_id": "delivery-sample-answer_or_response",
+          "sampled_time_seconds": 5.24,
+          "source_url": "https://www.youtube.com/watch?v=qOwYULOPuPs&t=0s",
+          "transcript_text": "I started these videos so I could talk with you directly about the challenges we face, the solutions we need, and how",
+          "frame_observation": "A single man is visible in an indoor formal setting with the answer wording overlaid. Interior interview/podium-like setting; camera/edit history is unavailable from the frame.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 1.43533,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -14.46167,
+            "speech_activity_fraction": 1.0,
+            "mean_zero_crossing_rate": 0.15393,
+            "mean_spectral_centroid_hz": 471.001,
+            "mean_pitch_hz_proxy": 214.70767,
+            "mean_pitch_confidence_proxy": 0.1563
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 0.0,
+            "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 37.891,
+            "luminance_std": 42.647,
+            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        }
+      ],
       "validation": {
         "independent_function_review": "pending",
         "independent_recurrence_review": "pending",
@@ -2228,69 +2165,69 @@
       "delivery_evidence_status": "internal_bounded_review_not_independent",
       "delivery_observations": [
         {
-          "evidence_id": "9fEurt2OZ0I:00008",
-          "video_id": "9fEurt2OZ0I",
-          "title": "ENGLISH SPEECH | JACK MA ALIBABA: We Never Give Up (English Subtitles)",
-          "pattern_id": "candidate-story-or-personal-experience",
-          "sampled_time_seconds": 33.92,
-          "source_url": "https://www.youtube.com/watch?v=9fEurt2OZ0I&t=33s",
-          "transcript_text": "I went for a police they said no you're",
-          "frame_observation": "The speaker is shown in a close interview-style shot with an audience or room behind him. Large colored subtitles visibly carry the account beginning ‘police, they said…’.",
-          "alignment_decision": "visible_caption_overlap",
+          "evidence_id": "dgkxN6RASpg:00003",
+          "video_id": "dgkxN6RASpg",
+          "title": "ENGLISH SPEECH | TOM CRUISE & BEN STILLER: Footprint Ceremony (English Subtitles)",
+          "pattern_id": "delivery-sample-story_or_personal_experience",
+          "sampled_time_seconds": 44.32,
+          "source_url": "https://www.youtube.com/watch?v=dgkxN6RASpg&t=34s",
+          "transcript_text": "Now I've, you know, Ben and I grew up together. I really, first time I saw him was actually, he was doing theater in circle in the square. And then over the years, you know, he and I became very close friends and I was, you know, he's very, he's so generous because when I was doing Mission",
+          "frame_observation": "A male speaker is visible seated at the branded event and the personal-story wording is overlaid. Formal interview/event setting with edited subtitles.",
+          "alignment_decision": "partially_aligned",
           "measured_audio_proxy": {
-            "words_per_second_proxy": 1.585,
-            "mean_rms_db": -22.085,
+            "words_per_second_proxy": 3.09967,
+            "transcript_gap_before_seconds": 1.38667,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -19.70367,
             "speech_activity_fraction": 1.0,
-            "mean_zero_crossing_rate": 0.1154,
-            "mean_spectral_centroid_hz": 771.816,
-            "mean_pitch_hz_proxy": 313.802,
-            "mean_pitch_confidence_proxy": 0.13547,
-            "audio_window_count": 6
+            "mean_zero_crossing_rate": 0.20618,
+            "mean_spectral_centroid_hz": 1245.562,
+            "mean_pitch_hz_proxy": 286.02433,
+            "mean_pitch_confidence_proxy": 0.18159
           },
           "nearest_frame_measurement": {
-            "time_seconds": 0.0,
-            "width": 640,
-            "height": 360,
-            "mean_luminance": 0.004,
-            "luminance_std": 0.067,
+            "time_seconds": 40.0,
             "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 101.898,
+            "luminance_std": 88.423,
             "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
           },
-          "feature_limit": "Audio values are coarse proxies; scene-pixel/face fields are measurements, not emotion, intent, confidence, authenticity or audience-effect evidence.",
-          "review_status": "internal_bounded_review_not_independent",
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
           "delivery_evidence_status": "internal_bounded_review_not_independent"
         },
         {
-          "evidence_id": "pmAL79dnvu0:00042",
-          "video_id": "pmAL79dnvu0",
-          "title": "ENGLISH SPEECH | KELLY & BEYONCÉ: Grabbing the Pen (English Subtitles)",
-          "pattern_id": "candidate-story-or-personal-experience",
-          "sampled_time_seconds": 139.68,
-          "source_url": "https://www.youtube.com/watch?v=pmAL79dnvu0&t=139s",
-          "transcript_text": "kindness and of hope when I was a little",
-          "frame_observation": "Two people are visible on a public event stage with a crowd behind them. The large subtitle ‘When I was a little girl’ is visibly aligned with the sampled shot.",
-          "alignment_decision": "visible_caption_overlap_multi_speaker",
+          "evidence_id": "-54zUwySKCg:00033",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "pattern_id": "delivery-sample-story_or_personal_experience",
+          "sampled_time_seconds": 199.495,
+          "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg&t=191s",
+          "transcript_text": "You know my television career began unexpectedly. As you heard this morning I was in the MissFire Prevention contest. That was when I was 16 years old in Nashville,Tennessee, and you had the requirement of",
+          "frame_observation": "A woman is visible at a graduation podium with stage seating behind her and subtitle text. Graduation-stage setting; the frame supports setting only, not biographical truth or effect.",
+          "alignment_decision": "partially_aligned",
           "measured_audio_proxy": {
-            "words_per_second_proxy": 1.324,
-            "mean_rms_db": -22.605,
+            "words_per_second_proxy": 2.27633,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -22.298,
             "speech_activity_fraction": 1.0,
-            "mean_zero_crossing_rate": 0.17485,
-            "mean_spectral_centroid_hz": 1279.948,
-            "mean_pitch_hz_proxy": 333.984,
-            "mean_pitch_confidence_proxy": 0.17491,
-            "audio_window_count": 8
+            "mean_zero_crossing_rate": 0.13798,
+            "mean_spectral_centroid_hz": 646.69933,
+            "mean_pitch_hz_proxy": 288.02067,
+            "mean_pitch_confidence_proxy": 0.16832
           },
           "nearest_frame_measurement": {
-            "time_seconds": 140.0,
-            "width": 640,
-            "height": 360,
-            "mean_luminance": 32.345,
-            "luminance_std": 55.815,
-            "face_count": 0,
-            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+            "time_seconds": 300.0,
+            "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 64.658,
+            "luminance_std": 45.614,
+            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
           },
-          "feature_limit": "Audio values are coarse proxies; scene-pixel/face fields are measurements, not emotion, intent, confidence, authenticity or audience-effect evidence.",
-          "review_status": "internal_bounded_review_not_independent",
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
           "delivery_evidence_status": "internal_bounded_review_not_independent"
         }
       ],
@@ -2674,36 +2611,69 @@
       "delivery_evidence_status": "internal_bounded_review_not_independent",
       "delivery_observations": [
         {
-          "evidence_id": "gDadfh0ZdBM:00001",
-          "video_id": "gDadfh0ZdBM",
-          "title": "The Matrix Meeting Morpheus Scene HD",
-          "pattern_id": "candidate-example",
-          "sampled_time_seconds": 30.8,
-          "source_url": "https://www.youtube.com/watch?v=gDadfh0ZdBM&t=30s",
-          "transcript_text": "let me give you one piece of advice",
-          "frame_observation": "Two characters are visible in a dark film scene near a doorway. The candidate text ‘let me give you one piece of advice’ is not displayed as an exact subtitle in the sampled frame.",
-          "alignment_decision": "setting_visible_caption_not_aligned",
+          "evidence_id": "-54zUwySKCg:00119",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "pattern_id": "delivery-sample-example_or_case",
+          "sampled_time_seconds": 607.16,
+          "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg&t=600s",
+          "transcript_text": "For me that discovery came in 1994 when Iinterviewed a little girl who had decided to collect pocket change in order to helpother people in need. She raised a thousand dollars all by herselfand I thought, well if that little 9-year-old",
+          "frame_observation": "A male speaker is visible in a branded event setting with a large subtitle overlay. Formal event/interview setting with edited caption styling.",
+          "alignment_decision": "partially_aligned",
           "measured_audio_proxy": {
-            "words_per_second_proxy": 1.282,
-            "mean_rms_db": -36.778,
-            "speech_activity_fraction": 0.571,
-            "mean_zero_crossing_rate": 0.11348,
-            "mean_spectral_centroid_hz": 704.437,
-            "mean_pitch_hz_proxy": 222.656,
-            "mean_pitch_confidence_proxy": 0.16551,
-            "audio_window_count": 7
+            "words_per_second_proxy": 3.30667,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -23.237,
+            "speech_activity_fraction": 1.0,
+            "mean_zero_crossing_rate": 0.11345,
+            "mean_spectral_centroid_hz": 601.41833,
+            "mean_pitch_hz_proxy": 298.394,
+            "mean_pitch_confidence_proxy": 0.17675
           },
           "nearest_frame_measurement": {
-            "time_seconds": 30.0,
-            "width": 640,
-            "height": 360,
-            "mean_luminance": 18.087,
-            "luminance_std": 12.181,
-            "face_count": 0,
-            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+            "time_seconds": 600.0,
+            "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 63.812,
+            "luminance_std": 47.965,
+            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
           },
-          "feature_limit": "Audio values are coarse proxies; scene-pixel/face fields are measurements, not emotion, intent, confidence, authenticity or audience-effect evidence.",
-          "review_status": "internal_bounded_review_not_independent",
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        },
+        {
+          "evidence_id": "9fEurt2OZ0I:00008",
+          "video_id": "9fEurt2OZ0I",
+          "title": "ENGLISH SPEECH | JACK MA ALIBABA: We Never Give Up (English Subtitles)",
+          "pattern_id": "delivery-sample-example_or_case",
+          "sampled_time_seconds": 38.12,
+          "source_url": "https://www.youtube.com/watch?v=9fEurt2OZ0I&t=31s",
+          "transcript_text": "I went for a police they said no you're not good I went to even the uh KFC when KFC came to China come to my",
+          "frame_observation": "A woman is visible at a graduation podium with audience/stage seating and subtitle text. Graduation ceremony setting; one frame cannot establish whether the example function was understood.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 1.34367,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -21.981,
+            "speech_activity_fraction": 1.0,
+            "mean_zero_crossing_rate": 0.12892,
+            "mean_spectral_centroid_hz": 711.82233,
+            "mean_pitch_hz_proxy": 312.07833,
+            "mean_pitch_confidence_proxy": 0.13692
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 0.0,
+            "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 0.004,
+            "luminance_std": 0.067,
+            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
           "delivery_evidence_status": "internal_bounded_review_not_independent"
         }
       ],
@@ -3084,8 +3054,75 @@
           ]
         }
       ],
-      "delivery_evidence_status": "no_aligned_internal_sample_for_this_job",
-      "delivery_observations": [],
+      "delivery_evidence_status": "internal_bounded_review_not_independent",
+      "delivery_observations": [
+        {
+          "evidence_id": "ZwMVMbmQBug:00011",
+          "video_id": "ZwMVMbmQBug",
+          "title": "I'm as mad as hell, and I'm not going to take this anymore! Speech from Network (1976)",
+          "pattern_id": "delivery-sample-contrast_or_disagreement",
+          "sampled_time_seconds": 44.09,
+          "source_url": "https://www.youtube.com/watch?v=ZwMVMbmQBug&t=38s",
+          "transcript_text": "It's like everything everywhere is goingcrazy so we don't go out anymore. We sit in the house and slowly the world we're living in is getting smaller and all we say is \"Please at least leave usalone in our living rooms. Let me have my",
+          "frame_observation": "A seated older man is visible in an interior interview setting with subtitle text; wall clocks are visible. Interview/lecture-like interior; subtitle overlay is edited into the image.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 4.03533,
+            "transcript_gap_before_seconds": 0.00667,
+            "transcript_gap_after_seconds": 0.00667,
+            "mean_rms_db": -27.001,
+            "speech_activity_fraction": 1.0,
+            "mean_zero_crossing_rate": 0.17339,
+            "mean_spectral_centroid_hz": 962.36733,
+            "mean_pitch_hz_proxy": 327.99533,
+            "mean_pitch_confidence_proxy": 0.17357
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 40.0,
+            "face_count": 2,
+            "smile_detector_candidate_count": 0,
+            "mean_luminance": 65.041,
+            "luminance_std": 51.817,
+            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        },
+        {
+          "evidence_id": "-54zUwySKCg:00256",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "pattern_id": "delivery-sample-contrast_or_disagreement",
+          "sampled_time_seconds": 1313.679,
+          "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg&t=1307s",
+          "transcript_text": "And as a young girl from rural MississippiI learned long ago that being myself was much easier than pretending to be Barbara Walters. Although when I first started because I hadBarbara in my head I would try to sit like",
+          "frame_observation": "A woman is visible on a graduation stage with a subtitle overlay. Graduation-stage setting; no interpersonal disagreement or audience reaction is inferred.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 3.24,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -23.02433,
+            "speech_activity_fraction": 1.0,
+            "mean_zero_crossing_rate": 0.10117,
+            "mean_spectral_centroid_hz": 597.40967,
+            "mean_pitch_hz_proxy": 249.479,
+            "mean_pitch_confidence_proxy": 0.19573
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 1200.0,
+            "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 57.916,
+            "luminance_std": 45.108,
+            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        }
+      ],
       "validation": {
         "independent_function_review": "pending",
         "independent_recurrence_review": "pending",
@@ -3463,8 +3500,75 @@
           ]
         }
       ],
-      "delivery_evidence_status": "no_aligned_internal_sample_for_this_job",
-      "delivery_observations": [],
+      "delivery_evidence_status": "internal_bounded_review_not_independent",
+      "delivery_observations": [
+        {
+          "evidence_id": "dgkxN6RASpg:00060",
+          "video_id": "dgkxN6RASpg",
+          "title": "ENGLISH SPEECH | TOM CRUISE & BEN STILLER: Footprint Ceremony (English Subtitles)",
+          "pattern_id": "delivery-sample-correction_or_reframe",
+          "sampled_time_seconds": 430.0,
+          "source_url": "https://www.youtube.com/watch?v=dgkxN6RASpg&t=422s",
+          "transcript_text": "I want to thank all the people who've given me a chance over the years, all the agents and managers and casting directors who took a chance on me, even when I didn't even really know what the hell I was doing. And that you had faith in me that I would somehow get it",
+          "frame_observation": "A woman is visible at a podium/stage with the correction wording overlaid. Formal stage setting with edited subtitles; exact delivery timing remains unverified.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 3.82133,
+            "transcript_gap_before_seconds": 0.56,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -19.60867,
+            "speech_activity_fraction": 1.0,
+            "mean_zero_crossing_rate": 0.16167,
+            "mean_spectral_centroid_hz": 1018.06167,
+            "mean_pitch_hz_proxy": 269.45867,
+            "mean_pitch_confidence_proxy": 0.20411
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 430.0,
+            "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 89.711,
+            "luminance_std": 87.57,
+            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        },
+        {
+          "evidence_id": "dKe3WbGR7Xs:00034",
+          "video_id": "dKe3WbGR7Xs",
+          "title": "ENGLISH SPEECH | JENNIFER ANISTON: Find Your Voice (English Subtitles)",
+          "pattern_id": "delivery-sample-correction_or_reframe",
+          "sampled_time_seconds": 193.345,
+          "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=184s",
+          "transcript_text": "And it wasn't until Friends took off thatI started seeing myself in a different light. I started meeting all of these people whoexpressed to me how much the show meant to them, how it lifted their spirits during abad breakup or got them through an illness,",
+          "frame_observation": "A male speaker is visible at a microphone against a branded film-event backdrop; a large edited subtitle overlay covers the lower frame. Formal promotional/event stage with visible branding and edited subtitles; one frame cannot establish the correction timing.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 2.665,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -22.45567,
+            "speech_activity_fraction": 0.95233,
+            "mean_zero_crossing_rate": 0.1796,
+            "mean_spectral_centroid_hz": 925.23433,
+            "mean_pitch_hz_proxy": 245.551,
+            "mean_pitch_confidence_proxy": 0.17972
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 190.0,
+            "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 114.711,
+            "luminance_std": 65.867,
+            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        }
+      ],
       "validation": {
         "independent_function_review": "pending",
         "independent_recurrence_review": "pending",
@@ -3842,8 +3946,75 @@
           ]
         }
       ],
-      "delivery_evidence_status": "no_aligned_internal_sample_for_this_job",
-      "delivery_observations": [],
+      "delivery_evidence_status": "internal_bounded_review_not_independent",
+      "delivery_observations": [
+        {
+          "evidence_id": "C8-twwwTETE:00141",
+          "video_id": "C8-twwwTETE",
+          "title": "ENGLISH SPEECH | EMINEM & 50 CENT: Walk of Fame Speech (English Subtitles)",
+          "pattern_id": "delivery-sample-repair_or_self_correction",
+          "sampled_time_seconds": 362.25,
+          "source_url": "https://www.youtube.com/watch?v=C8-twwwTETE&t=356s",
+          "transcript_text": "I um I didn't invite Jimmy Alvin and he should be here we needed the money",
+          "frame_observation": "A male performer/speaker is visible outdoors addressing a crowd with a microphone and subtitle overlay. Outdoor public event with crowd and edited captions; speaker identity/event independence remains unverified.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 0.927,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -28.32833,
+            "speech_activity_fraction": 0.89667,
+            "mean_zero_crossing_rate": 0.11481,
+            "mean_spectral_centroid_hz": 949.295,
+            "mean_pitch_hz_proxy": 243.29133,
+            "mean_pitch_confidence_proxy": 0.15959
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 360.0,
+            "face_count": 0,
+            "smile_detector_candidate_count": 0,
+            "mean_luminance": 94.432,
+            "luminance_std": 78.7,
+            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        },
+        {
+          "evidence_id": "5nN-15CrnGc:00359",
+          "video_id": "5nN-15CrnGc",
+          "title": "Barack Obama: Choose Hope",
+          "pattern_id": "delivery-sample-repair_or_self_correction",
+          "sampled_time_seconds": 1139.2,
+          "source_url": "https://www.youtube.com/watch?v=5nN-15CrnGc&t=1134s",
+          "transcript_text": "I recognize it's been almost a decade since I left office.",
+          "frame_observation": "A male speaker is visible at a lectern with a microphone against a dark blue stage backdrop; large edited subtitles and a speaker label are overlaid. Formal stage/podium setting with edited caption and name treatment; one frame cannot establish repair timing, vocal delivery or audience response.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 0.695,
+            "transcript_gap_before_seconds": 1.13333,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -25.454,
+            "speech_activity_fraction": 0.72233,
+            "mean_zero_crossing_rate": 0.12769,
+            "mean_spectral_centroid_hz": 564.238,
+            "mean_pitch_hz_proxy": 277.08333,
+            "mean_pitch_confidence_proxy": 0.1996
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 1140.0,
+            "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 40.258,
+            "luminance_std": 37.604,
+            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        }
+      ],
       "validation": {
         "independent_function_review": "pending",
         "independent_recurrence_review": "pending",
@@ -4224,135 +4395,69 @@
       "delivery_evidence_status": "internal_bounded_review_not_independent",
       "delivery_observations": [
         {
-          "evidence_id": "3AIoHLr8nTI:00004",
-          "video_id": "3AIoHLr8nTI",
-          "title": "ENGLISH SPEECH | JUSTIN TRUDEAU: We’re All the Same (English Subtitles)",
-          "pattern_id": "candidate-uncertainty-or-qualification",
-          "sampled_time_seconds": 53.64,
-          "source_url": "https://www.youtube.com/watch?v=3AIoHLr8nTI&t=53s",
-          "transcript_text": "about the nature of both those things, and I’d like to offer you a challenge. One that I think is",
-          "frame_observation": "A single speaker in academic regalia is visible against a purple graduation backdrop with an NYU mark. Large subtitles are visible and the frame is a stable speaker shot rather than a cutaway.",
-          "alignment_decision": "visible_caption_overlap_partial",
+          "evidence_id": "6dKimoybmEo:00021",
+          "video_id": "6dKimoybmEo",
+          "title": "ENGLISH SPEECH | MARTIN LUTHER KING: I Have a Dream (English Subtitles)",
+          "pattern_id": "delivery-sample-qualification_or_boundary",
+          "sampled_time_seconds": 36.309,
+          "source_url": "https://www.youtube.com/watch?v=6dKimoybmEo&t=34s",
+          "transcript_text": "We must forever conduct our struggle on thehigh plane of dignity and discipline. We must not allow our creative protest todegenerate into physical violence. Again and again we must rise to the majesticheights of meeting physical force with soul",
+          "frame_observation": "A woman is visible on a graduation stage with subtitle text. Graduation-stage setting; the frame cannot establish vocal certainty or listener calibration.",
+          "alignment_decision": "partially_aligned",
           "measured_audio_proxy": {
-            "words_per_second_proxy": 2.427,
-            "mean_rms_db": -21.461,
+            "words_per_second_proxy": 13.0,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -19.46,
             "speech_activity_fraction": 1.0,
-            "mean_zero_crossing_rate": 0.12177,
-            "mean_spectral_centroid_hz": 725.843,
-            "mean_pitch_hz_proxy": 232.639,
-            "mean_pitch_confidence_proxy": 0.20331,
-            "audio_window_count": 9
-          },
-          "nearest_frame_measurement": {
-            "time_seconds": 0.0,
-            "width": 640,
-            "height": 360,
-            "mean_luminance": 0.0,
-            "luminance_std": 0.0,
-            "face_count": null,
-            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
-          },
-          "feature_limit": "Audio values are coarse proxies; scene-pixel/face fields are measurements, not emotion, intent, confidence, authenticity or audience-effect evidence.",
-          "review_status": "internal_bounded_review_not_independent",
-          "delivery_evidence_status": "internal_bounded_review_not_independent"
-        },
-        {
-          "evidence_id": "C8-twwwTETE:00021",
-          "video_id": "C8-twwwTETE",
-          "title": "ENGLISH SPEECH | EMINEM & 50 CENT: Walk of Fame Speech (English Subtitles)",
-          "pattern_id": "candidate-uncertainty-or-qualification",
-          "sampled_time_seconds": 48.36,
-          "source_url": "https://www.youtube.com/watch?v=C8-twwwTETE&t=48s",
-          "transcript_text": "and I think one of the things I noticed",
-          "frame_observation": "Two speakers are visible outdoors at a public ceremony with a crowd, podium and event branding. The subtitle ‘And I think one of the things I noticed’ is visible over the shot.",
-          "alignment_decision": "visible_caption_overlap",
-          "measured_audio_proxy": {
-            "words_per_second_proxy": 2.885,
-            "mean_rms_db": -27.976,
-            "speech_activity_fraction": 0.75,
-            "mean_zero_crossing_rate": 0.10476,
-            "mean_spectral_centroid_hz": 713.683,
+            "mean_zero_crossing_rate": 0.06938,
+            "mean_spectral_centroid_hz": 635.52267,
             "mean_pitch_hz_proxy": 169.271,
-            "mean_pitch_confidence_proxy": 0.14659,
-            "audio_window_count": 4
-          },
-          "nearest_frame_measurement": {
-            "time_seconds": 50.0,
-            "width": 640,
-            "height": 360,
-            "mean_luminance": 94.921,
-            "luminance_std": 84.857,
-            "face_count": 4,
-            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
-          },
-          "feature_limit": "Audio values are coarse proxies; scene-pixel/face fields are measurements, not emotion, intent, confidence, authenticity or audience-effect evidence.",
-          "review_status": "internal_bounded_review_not_independent",
-          "delivery_evidence_status": "internal_bounded_review_not_independent"
-        },
-        {
-          "evidence_id": "hZ0YhrgYejI:00000",
-          "video_id": "hZ0YhrgYejI",
-          "title": "ENGLISH SPEECH | NICK VUJICIC: If you fail, try again (English Subtitles)",
-          "pattern_id": "candidate-question-or-qualification",
-          "sampled_time_seconds": 8.87,
-          "source_url": "https://www.youtube.com/watch?v=hZ0YhrgYejI&t=8s",
-          "transcript_text": "But honestly along the way you might falldown like this, ready?",
-          "frame_observation": "The frame is a promotional title-card collage with multiple public figures and ‘English Speeches’ branding rather than an isolated speaker shot.",
-          "alignment_decision": "title_card_not_aligned",
-          "measured_audio_proxy": {
-            "words_per_second_proxy": 0.711,
-            "mean_rms_db": -22.059,
-            "speech_activity_fraction": 0.938,
-            "mean_zero_crossing_rate": 0.0948,
-            "mean_spectral_centroid_hz": 811.702,
-            "mean_pitch_hz_proxy": 290.625,
-            "mean_pitch_confidence_proxy": 0.2419,
-            "audio_window_count": 16
-          },
-          "nearest_frame_measurement": {
-            "time_seconds": 10.0,
-            "width": 640,
-            "height": 360,
-            "mean_luminance": 0.004,
-            "luminance_std": 0.067,
-            "face_count": 0,
-            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
-          },
-          "feature_limit": "Audio values are coarse proxies; scene-pixel/face fields are measurements, not emotion, intent, confidence, authenticity or audience-effect evidence.",
-          "review_status": "internal_bounded_review_not_independent",
-          "delivery_evidence_status": "internal_bounded_review_not_independent"
-        },
-        {
-          "evidence_id": "u1gg_L-syCw:00009",
-          "video_id": "u1gg_L-syCw",
-          "title": "ENGLISH SPEECH | OPRAH WINFREY: God use Me (English Subtitles)",
-          "pattern_id": "candidate-uncertainty-or-qualification",
-          "sampled_time_seconds": 39.54,
-          "source_url": "https://www.youtube.com/watch?v=u1gg_L-syCw&t=39s",
-          "transcript_text": "I could be today. Thank you, Miss",
-          "frame_observation": "A blurred person is shown walking through an indoor corridor or lobby; the sampled frame does not visibly display the retained caption.",
-          "alignment_decision": "cutaway_caption_not_aligned",
-          "measured_audio_proxy": {
-            "words_per_second_proxy": 1.144,
-            "mean_rms_db": -9.301,
-            "speech_activity_fraction": 1.0,
-            "mean_zero_crossing_rate": 0.16915,
-            "mean_spectral_centroid_hz": 1094.339,
-            "mean_pitch_hz_proxy": 330.357,
-            "mean_pitch_confidence_proxy": 0.13239,
-            "audio_window_count": 7
+            "mean_pitch_confidence_proxy": 0.26556
           },
           "nearest_frame_measurement": {
             "time_seconds": 40.0,
-            "width": 640,
-            "height": 360,
-            "mean_luminance": 69.85,
-            "luminance_std": 48.778,
-            "face_count": 0,
+            "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 97.714,
+            "luminance_std": 74.225,
+            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        },
+        {
+          "evidence_id": "bR4tDSa3O10:00067",
+          "video_id": "bR4tDSa3O10",
+          "title": "ENGLISH SPEECH | JENNIFER COOLIDGE: Find Your Own Path (English Subtitles)",
+          "pattern_id": "delivery-sample-qualification_or_boundary",
+          "sampled_time_seconds": 198.519,
+          "source_url": "https://www.youtube.com/watch?v=bR4tDSa3O10&t=192s",
+          "transcript_text": "And I say that because when I was in the first grade, the last day of school was called field day. And field day was a",
+          "frame_observation": "Multiple people are visible in a scripted interior film scene; the retained qualification is not isolated by the midpoint frame. Edited fictional scene; visual evidence is limited to scene context.",
+          "alignment_decision": "indeterminate",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 1.44367,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -24.55767,
+            "speech_activity_fraction": 1.0,
+            "mean_zero_crossing_rate": 0.16986,
+            "mean_spectral_centroid_hz": 790.82433,
+            "mean_pitch_hz_proxy": 323.14933,
+            "mean_pitch_confidence_proxy": 0.20495
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 200.0,
+            "face_count": 1,
+            "smile_detector_candidate_count": 0,
+            "mean_luminance": 83.466,
+            "luminance_std": 80.289,
             "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
           },
-          "feature_limit": "Audio values are coarse proxies; scene-pixel/face fields are measurements, not emotion, intent, confidence, authenticity or audience-effect evidence.",
-          "review_status": "internal_bounded_review_not_independent",
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
           "delivery_evidence_status": "internal_bounded_review_not_independent"
         }
       ],
@@ -4733,8 +4838,75 @@
           ]
         }
       ],
-      "delivery_evidence_status": "no_aligned_internal_sample_for_this_job",
-      "delivery_observations": [],
+      "delivery_evidence_status": "internal_bounded_review_not_independent",
+      "delivery_observations": [
+        {
+          "evidence_id": "dKe3WbGR7Xs:00008",
+          "video_id": "dKe3WbGR7Xs",
+          "title": "ENGLISH SPEECH | JENNIFER ANISTON: Find Your Voice (English Subtitles)",
+          "pattern_id": "delivery-sample-definition_or_explanation",
+          "sampled_time_seconds": 49.799,
+          "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=38s",
+          "transcript_text": "It's not that often we're surrounded by peoplewho found their voice and are using it, and using it to hold people up and bring peopletogether and that to me is true power. I mean, it's funny because I've never, youknow, I've never actually thought about myself",
+          "frame_observation": "A male speaker is visible seated at a branded formal event with subtitle text. Interview/event set with edited captions; no inference about explanatory success.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 2.12733,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -22.21167,
+            "speech_activity_fraction": 1.0,
+            "mean_zero_crossing_rate": 0.17227,
+            "mean_spectral_centroid_hz": 1069.60967,
+            "mean_pitch_hz_proxy": 278.10333,
+            "mean_pitch_confidence_proxy": 0.15676
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 50.0,
+            "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 119.412,
+            "luminance_std": 70.753,
+            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        },
+        {
+          "evidence_id": "AwA0Jnfj3ao:00078",
+          "video_id": "AwA0Jnfj3ao",
+          "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
+          "pattern_id": "delivery-sample-definition_or_explanation",
+          "sampled_time_seconds": 373.63,
+          "source_url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=362s",
+          "transcript_text": "But the most meaningful innings and somethingwhich has stayed with me now and it'll stay with me forever, has to be the one that Iplayed against England in Chennai in 2008. That was a time when Mumbai was hit by thatterrible terrorist attack.",
+          "frame_observation": "A male speaker is visible at a podium with flags and subtitle text. Formal political/podium setting; source identity and event context require independent review.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 1.91833,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -24.93267,
+            "speech_activity_fraction": 1.0,
+            "mean_zero_crossing_rate": 0.14858,
+            "mean_spectral_centroid_hz": 702.55467,
+            "mean_pitch_hz_proxy": 211.47067,
+            "mean_pitch_confidence_proxy": 0.23105
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 370.0,
+            "face_count": 1,
+            "smile_detector_candidate_count": 0,
+            "mean_luminance": 110.816,
+            "luminance_std": 85.704,
+            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        }
+      ],
       "validation": {
         "independent_function_review": "pending",
         "independent_recurrence_review": "pending",
@@ -5112,8 +5284,75 @@
           ]
         }
       ],
-      "delivery_evidence_status": "no_aligned_internal_sample_for_this_job",
-      "delivery_observations": [],
+      "delivery_evidence_status": "internal_bounded_review_not_independent",
+      "delivery_observations": [
+        {
+          "evidence_id": "6dKimoybmEo:00029",
+          "video_id": "6dKimoybmEo",
+          "title": "ENGLISH SPEECH | MARTIN LUTHER KING: I Have a Dream (English Subtitles)",
+          "pattern_id": "delivery-sample-transition_or_structure",
+          "sampled_time_seconds": 44.309,
+          "source_url": "https://www.youtube.com/watch?v=6dKimoybmEo&t=42s",
+          "transcript_text": "So even though we face the difficulties oftoday and tomorrow I still have a dream. It is a dream deeply rooted in the Americandream. I have a dream that one day this nation willrise up and live out the true meaning of its",
+          "frame_observation": "A person is visible moving through a dim scripted interior scene; the retained transition wording is not visibly isolated. Edited fictional scene with limited visual speech evidence.",
+          "alignment_decision": "indeterminate",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 14.33333,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -18.18233,
+            "speech_activity_fraction": 1.0,
+            "mean_zero_crossing_rate": 0.07173,
+            "mean_spectral_centroid_hz": 643.502,
+            "mean_pitch_hz_proxy": 200.521,
+            "mean_pitch_confidence_proxy": 0.2633
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 40.0,
+            "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 97.714,
+            "luminance_std": 74.225,
+            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        },
+        {
+          "evidence_id": "ZwMVMbmQBug:00030",
+          "video_id": "ZwMVMbmQBug",
+          "title": "I'm as mad as hell, and I'm not going to take this anymore! Speech from Network (1976)",
+          "pattern_id": "delivery-sample-transition_or_structure",
+          "sampled_time_seconds": 115.03,
+          "source_url": "https://www.youtube.com/watch?v=ZwMVMbmQBug&t=110s",
+          "transcript_text": "But first, you've got to get mad. You've got to say \"I'M AS MAD AS HELL, AND I'M NOT GOING TO TAKE THIS ANYMORE!\" Then we'll figure out what to do about the depression and the inflation",
+          "frame_observation": "A male speaker is visible at a podium with flags and subtitle text. Formal political/podium setting with edited caption overlay.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 3.94833,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -26.11667,
+            "speech_activity_fraction": 1.0,
+            "mean_zero_crossing_rate": 0.19635,
+            "mean_spectral_centroid_hz": 1106.42,
+            "mean_pitch_hz_proxy": 266.493,
+            "mean_pitch_confidence_proxy": 0.15606
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 120.0,
+            "face_count": 0,
+            "smile_detector_candidate_count": 0,
+            "mean_luminance": 15.422,
+            "luminance_std": 14.185,
+            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        }
+      ],
       "validation": {
         "independent_function_review": "pending",
         "independent_recurrence_review": "pending",
@@ -5491,8 +5730,75 @@
           ]
         }
       ],
-      "delivery_evidence_status": "no_aligned_internal_sample_for_this_job",
-      "delivery_observations": [],
+      "delivery_evidence_status": "internal_bounded_review_not_independent",
+      "delivery_observations": [
+        {
+          "evidence_id": "dKe3WbGR7Xs:00080",
+          "video_id": "dKe3WbGR7Xs",
+          "title": "ENGLISH SPEECH | JENNIFER ANISTON: Find Your Voice (English Subtitles)",
+          "pattern_id": "delivery-sample-callback_or_repetition",
+          "sampled_time_seconds": 426.09,
+          "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=417s",
+          "transcript_text": "And that is what every child deserves to knowthat they are seen, they are powerful, and they are loved and that they deserve a seatat the table and that anything they have to say or any question they have to ask is ofvalue even if we don't have all the answers",
+          "frame_observation": "A television/inserted screen image is visible rather than a clearly visible live speaker; the retained wording is not isolated in the frame. Edited media insert; cannot support a live-speaker delivery observation.",
+          "alignment_decision": "indeterminate",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 3.153,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -23.65067,
+            "speech_activity_fraction": 0.95233,
+            "mean_zero_crossing_rate": 0.15827,
+            "mean_spectral_centroid_hz": 887.45933,
+            "mean_pitch_hz_proxy": 247.83,
+            "mean_pitch_confidence_proxy": 0.20945
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 430.0,
+            "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 131.363,
+            "luminance_std": 73.606,
+            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        },
+        {
+          "evidence_id": "ZwMVMbmQBug:00038",
+          "video_id": "ZwMVMbmQBug",
+          "title": "I'm as mad as hell, and I'm not going to take this anymore! Speech from Network (1976)",
+          "pattern_id": "delivery-sample-callback_or_repetition",
+          "sampled_time_seconds": 153.04,
+          "source_url": "https://www.youtube.com/watch?v=ZwMVMbmQBug&t=145s",
+          "transcript_text": "Get up, get up! Get up outta your chairs! stick your head out of the window, open it then stick your head out and keep yelling and yell: \"I'M AS MAD AS HELL, AND I'M NOT GOING TO TAKE THIS ANYMORE!\" Just",
+          "frame_observation": "A woman is visible behind a lectern at a formal event; the frame shows a podium microphone and edited subtitle treatment. Formal conference/podium setting; the frame does not establish repetition timing, audience response or vocal delivery.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 4.04033,
+            "transcript_gap_before_seconds": 2.12667,
+            "transcript_gap_after_seconds": 1.12,
+            "mean_rms_db": -32.72867,
+            "speech_activity_fraction": 0.889,
+            "mean_zero_crossing_rate": 0.20676,
+            "mean_spectral_centroid_hz": 1373.16133,
+            "mean_pitch_hz_proxy": 259.85833,
+            "mean_pitch_confidence_proxy": 0.17504
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 150.0,
+            "face_count": 0,
+            "smile_detector_candidate_count": 0,
+            "mean_luminance": 51.312,
+            "luminance_std": 45.132,
+            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        }
+      ],
       "validation": {
         "independent_function_review": "pending",
         "independent_recurrence_review": "pending",
@@ -5870,8 +6176,75 @@
           ]
         }
       ],
-      "delivery_evidence_status": "no_aligned_internal_sample_for_this_job",
-      "delivery_observations": [],
+      "delivery_evidence_status": "internal_bounded_review_not_independent",
+      "delivery_observations": [
+        {
+          "evidence_id": "6dKimoybmEo:00000",
+          "video_id": "6dKimoybmEo",
+          "title": "ENGLISH SPEECH | MARTIN LUTHER KING: I Have a Dream (English Subtitles)",
+          "pattern_id": "delivery-sample-humor_or_rapport",
+          "sampled_time_seconds": 15.309,
+          "source_url": "https://www.youtube.com/watch?v=6dKimoybmEo&t=13s",
+          "transcript_text": "I am happy to join with you today in whatwill go down in history as the greatest demonstration for freedom in the history of our nation. Five score years ago a great American in whosesymbolic shadow we stand today signed the",
+          "frame_observation": "A male performer/speaker is visible outdoors with a crowd and subtitle overlay. Outdoor public event with edited captions; humor effect is not inferred from the frame.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 13.66667,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -17.373,
+            "speech_activity_fraction": 1.0,
+            "mean_zero_crossing_rate": 0.0717,
+            "mean_spectral_centroid_hz": 616.63467,
+            "mean_pitch_hz_proxy": 234.375,
+            "mean_pitch_confidence_proxy": 0.24887
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 20.0,
+            "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 74.997,
+            "luminance_std": 59.028,
+            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        },
+        {
+          "evidence_id": "C8-twwwTETE:00016",
+          "video_id": "C8-twwwTETE",
+          "title": "ENGLISH SPEECH | EMINEM & 50 CENT: Walk of Fame Speech (English Subtitles)",
+          "pattern_id": "delivery-sample-humor_or_rapport",
+          "sampled_time_seconds": 39.24,
+          "source_url": "https://www.youtube.com/watch?v=C8-twwwTETE&t=32s",
+          "transcript_text": "so check it out of all the things that I don't remember about 2002 I have a very clear memory of the first",
+          "frame_observation": "A monochrome crowd or audience image is visible, with no clearly visible speaker in the midpoint frame. Edited crowd/cutaway composition; it cannot support a speaker nonverbal or humor-delivery observation.",
+          "alignment_decision": "indeterminate",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 1.38267,
+            "transcript_gap_before_seconds": 0.17967,
+            "transcript_gap_after_seconds": 0.17967,
+            "mean_rms_db": -31.067,
+            "speech_activity_fraction": 0.875,
+            "mean_zero_crossing_rate": 0.12043,
+            "mean_spectral_centroid_hz": 762.44733,
+            "mean_pitch_hz_proxy": 184.462,
+            "mean_pitch_confidence_proxy": 0.25649
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 40.0,
+            "face_count": 2,
+            "smile_detector_candidate_count": 0,
+            "mean_luminance": 83.08,
+            "luminance_std": 80.165,
+            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        }
+      ],
       "validation": {
         "independent_function_review": "pending",
         "independent_recurrence_review": "pending",
@@ -6249,8 +6622,75 @@
           ]
         }
       ],
-      "delivery_evidence_status": "no_aligned_internal_sample_for_this_job",
-      "delivery_observations": [],
+      "delivery_evidence_status": "internal_bounded_review_not_independent",
+      "delivery_observations": [
+        {
+          "evidence_id": "dKe3WbGR7Xs:00071",
+          "video_id": "dKe3WbGR7Xs",
+          "title": "ENGLISH SPEECH | JENNIFER ANISTON: Find Your Voice (English Subtitles)",
+          "pattern_id": "delivery-sample-credit_or_acknowledgment",
+          "sampled_time_seconds": 376.364,
+          "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=367s",
+          "transcript_text": "She was just making the absolute best of it,and that's what's unbelievable about these children despite everything that they areup against and as much pain as they are often in they are vibrant, they're joyful they arefearless, and that's part of the magic of",
+          "frame_observation": "A male performer/speaker is visible outdoors addressing a crowd with subtitle text. Outdoor public event; the frame does not establish who is being credited or audience response.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 2.38033,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -24.482,
+            "speech_activity_fraction": 0.95233,
+            "mean_zero_crossing_rate": 0.17329,
+            "mean_spectral_centroid_hz": 904.07567,
+            "mean_pitch_hz_proxy": 226.888,
+            "mean_pitch_confidence_proxy": 0.20618
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 380.0,
+            "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 131.373,
+            "luminance_std": 73.269,
+            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        },
+        {
+          "evidence_id": "C8-twwwTETE:00123",
+          "video_id": "C8-twwwTETE",
+          "title": "ENGLISH SPEECH | EMINEM & 50 CENT: Walk of Fame Speech (English Subtitles)",
+          "pattern_id": "delivery-sample-credit_or_acknowledgment",
+          "sampled_time_seconds": 314.699,
+          "source_url": "https://www.youtube.com/watch?v=C8-twwwTETE&t=309s",
+          "transcript_text": "I'd like to thank uh both M Andre you know I don't think I don't honestly think my career would have been what it",
+          "frame_observation": "A male speaker is visible at a podium with flags and edited subtitle text. Formal political/podium setting; identity and event independence remain open.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 1.64133,
+            "transcript_gap_before_seconds": 0.09333,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -27.48867,
+            "speech_activity_fraction": 0.93333,
+            "mean_zero_crossing_rate": 0.10411,
+            "mean_spectral_centroid_hz": 857.19767,
+            "mean_pitch_hz_proxy": 235.584,
+            "mean_pitch_confidence_proxy": 0.14577
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 310.0,
+            "face_count": 1,
+            "smile_detector_candidate_count": 0,
+            "mean_luminance": 89.607,
+            "luminance_std": 76.994,
+            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        }
+      ],
       "validation": {
         "independent_function_review": "pending",
         "independent_recurrence_review": "pending",
@@ -6631,69 +7071,69 @@
       "delivery_evidence_status": "internal_bounded_review_not_independent",
       "delivery_observations": [
         {
-          "evidence_id": "AwA0Jnfj3ao:00000",
-          "video_id": "AwA0Jnfj3ao",
-          "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
-          "pattern_id": "candidate-call-to-action",
-          "sampled_time_seconds": 7.285,
-          "source_url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=7s",
-          "transcript_text": "Interviewer:Let's introduce the batting master of the",
-          "frame_observation": "The frame is a promotional ‘coming up’ treatment combining a portrait and an interview image; the target caption is not visibly isolated as spoken text in this frame.",
-          "alignment_decision": "setting_visible_caption_not_aligned",
+          "evidence_id": "dKe3WbGR7Xs:00041",
+          "video_id": "dKe3WbGR7Xs",
+          "title": "ENGLISH SPEECH | JENNIFER ANISTON: Find Your Voice (English Subtitles)",
+          "pattern_id": "delivery-sample-call_to_action_or_audience_role",
+          "sampled_time_seconds": 223.15,
+          "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=217s",
+          "transcript_text": "And then enter Marlo Thomas. Marlo Thomas, as some of you might remember,she was my mama on friends, and I remember one day we were on set, and she said to meI'm going to this St. Jude Gala tonight would",
+          "frame_observation": "An older man is visible in a scripted interior scene; the retained action wording is not visibly isolated. Edited fictional scene; not transcript-linked live delivery evidence.",
+          "alignment_decision": "indeterminate",
           "measured_audio_proxy": {
-            "words_per_second_proxy": 0.497,
-            "mean_rms_db": -23.501,
+            "words_per_second_proxy": 3.30667,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -20.73667,
             "speech_activity_fraction": 1.0,
-            "mean_zero_crossing_rate": 0.13415,
-            "mean_spectral_centroid_hz": 887.018,
-            "mean_pitch_hz_proxy": 188.021,
-            "mean_pitch_confidence_proxy": 0.18854,
-            "audio_window_count": 15
+            "mean_zero_crossing_rate": 0.16774,
+            "mean_spectral_centroid_hz": 998.248,
+            "mean_pitch_hz_proxy": 248.698,
+            "mean_pitch_confidence_proxy": 0.21829
           },
           "nearest_frame_measurement": {
-            "time_seconds": 10.0,
-            "width": 640,
-            "height": 360,
-            "mean_luminance": 25.658,
-            "luminance_std": 27.938,
-            "face_count": 2,
-            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+            "time_seconds": 220.0,
+            "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 117.464,
+            "luminance_std": 69.349,
+            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
           },
-          "feature_limit": "Audio values are coarse proxies; scene-pixel/face fields are measurements, not emotion, intent, confidence, authenticity or audience-effect evidence.",
-          "review_status": "internal_bounded_review_not_independent",
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
           "delivery_evidence_status": "internal_bounded_review_not_independent"
         },
         {
-          "evidence_id": "r2kP2Pqdx6w:00001",
-          "video_id": "r2kP2Pqdx6w",
-          "title": "ENGLISH SPEECH | ELON MUSK & JACK MA: Elon Musk & Jack Ma: Billionaires Debate (English Subtitles)",
-          "pattern_id": "candidate-call-to-action",
-          "sampled_time_seconds": 5.8,
-          "source_url": "https://www.youtube.com/watch?v=r2kP2Pqdx6w&t=5s",
-          "transcript_text": "people let's take responsibility for",
-          "frame_observation": "Two speakers are seated on a blue event stage with a moderator table and conference branding. The subtitle ‘Let’s take responsibility for today’ is visibly aligned with the shot.",
-          "alignment_decision": "visible_caption_overlap_multi_speaker",
+          "evidence_id": "ZwMVMbmQBug:00022",
+          "video_id": "ZwMVMbmQBug",
+          "title": "I'm as mad as hell, and I'm not going to take this anymore! Speech from Network (1976)",
+          "pattern_id": "delivery-sample-call_to_action_or_audience_role",
+          "sampled_time_seconds": 84.555,
+          "source_url": "https://www.youtube.com/watch?v=ZwMVMbmQBug&t=78s",
+          "transcript_text": "So, I want you to get up now. I want all of you to getup outta your chairs I want you to get up right now and go to the window",
+          "frame_observation": "An older man is visible seated indoors and gesturing with subtitle text; wall clocks are visible. Interior interview/film-like setting with edited captions; gesture function is not inferred.",
+          "alignment_decision": "partially_aligned",
           "measured_audio_proxy": {
-            "words_per_second_proxy": 0.893,
-            "mean_rms_db": -18.227,
-            "speech_activity_fraction": 1.0,
-            "mean_zero_crossing_rate": 0.15408,
-            "mean_spectral_centroid_hz": 815.163,
-            "mean_pitch_hz_proxy": 278.646,
-            "mean_pitch_confidence_proxy": 0.15177,
-            "audio_window_count": 6
+            "words_per_second_proxy": 2.48733,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.00633,
+            "mean_rms_db": -40.0,
+            "speech_activity_fraction": 0.619,
+            "mean_zero_crossing_rate": 0.20465,
+            "mean_spectral_centroid_hz": 1252.96,
+            "mean_pitch_hz_proxy": 346.78833,
+            "mean_pitch_confidence_proxy": 0.23995
           },
           "nearest_frame_measurement": {
-            "time_seconds": 0.0,
-            "width": 640,
-            "height": 360,
-            "mean_luminance": 56.126,
-            "luminance_std": 60.297,
-            "face_count": null,
-            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+            "time_seconds": 80.0,
+            "face_count": 1,
+            "smile_detector_candidate_count": 0,
+            "mean_luminance": 78.406,
+            "luminance_std": 49.221,
+            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
           },
-          "feature_limit": "Audio values are coarse proxies; scene-pixel/face fields are measurements, not emotion, intent, confidence, authenticity or audience-effect evidence.",
-          "review_status": "internal_bounded_review_not_independent",
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
           "delivery_evidence_status": "internal_bounded_review_not_independent"
         }
       ],
@@ -7074,8 +7514,75 @@
           ]
         }
       ],
-      "delivery_evidence_status": "no_aligned_internal_sample_for_this_job",
-      "delivery_observations": [],
+      "delivery_evidence_status": "internal_bounded_review_not_independent",
+      "delivery_observations": [
+        {
+          "evidence_id": "-54zUwySKCg:00226",
+          "video_id": "-54zUwySKCg",
+          "title": "ENGLISH SPEECH | OPRAH WINFREY: Learn From Every Mistake (English Subtitles)",
+          "pattern_id": "delivery-sample-persuasion_or_advocacy",
+          "sampled_time_seconds": 1141.04,
+          "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg&t=1131s",
+          "transcript_text": "I have to say that the single most importantlesson I learned in 25 years talking every single day to people, was that there is acommon denominator in our human experience. Most of us, I tell you we don’t want tobe divided.",
+          "frame_observation": "A male speaker is visible at a podium with flags and subtitle text. Formal political/podium setting with edited caption overlay.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 2.19433,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -23.867,
+            "speech_activity_fraction": 1.0,
+            "mean_zero_crossing_rate": 0.13649,
+            "mean_spectral_centroid_hz": 612.953,
+            "mean_pitch_hz_proxy": 318.374,
+            "mean_pitch_confidence_proxy": 0.15518
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 1200.0,
+            "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 57.916,
+            "luminance_std": 45.108,
+            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        },
+        {
+          "evidence_id": "6dKimoybmEo:00014",
+          "video_id": "6dKimoybmEo",
+          "title": "ENGLISH SPEECH | MARTIN LUTHER KING: I Have a Dream (English Subtitles)",
+          "pattern_id": "delivery-sample-persuasion_or_advocacy",
+          "sampled_time_seconds": 29.309,
+          "source_url": "https://www.youtube.com/watch?v=6dKimoybmEo&t=27s",
+          "transcript_text": "We all have come to this hallowed spot toremind America of the fierce urgency of now. Now is the time to rise from the dark anddesolate valley of segregation to the sunlit path of racial justice.",
+          "frame_observation": "A woman is visible on a graduation stage with subtitle text. Graduation-stage setting; persuasion or audience effect is not inferred.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 12.0,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -26.202,
+            "speech_activity_fraction": 1.0,
+            "mean_zero_crossing_rate": 0.05718,
+            "mean_spectral_centroid_hz": 449.904,
+            "mean_pitch_hz_proxy": 216.146,
+            "mean_pitch_confidence_proxy": 0.2389
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 30.0,
+            "face_count": null,
+            "smile_detector_candidate_count": null,
+            "mean_luminance": 85.621,
+            "luminance_std": 69.529,
+            "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        }
+      ],
       "validation": {
         "independent_function_review": "pending",
         "independent_recurrence_review": "pending",
@@ -7453,8 +7960,75 @@
           ]
         }
       ],
-      "delivery_evidence_status": "no_aligned_internal_sample_for_this_job",
-      "delivery_observations": [],
+      "delivery_evidence_status": "internal_bounded_review_not_independent",
+      "delivery_observations": [
+        {
+          "evidence_id": "ZwMVMbmQBug:00016",
+          "video_id": "ZwMVMbmQBug",
+          "title": "I'm as mad as hell, and I'm not going to take this anymore! Speech from Network (1976)",
+          "pattern_id": "delivery-sample-reflection_or_value_frame",
+          "sampled_time_seconds": 62.454,
+          "source_url": "https://www.youtube.com/watch?v=ZwMVMbmQBug&t=57s",
+          "transcript_text": "mad! I don't you to protest, I don't want you to riot, I don't want you to write to your congressman because I wouldn't know what to tell you to write I don't know what to do about thedepression and the inflation and the Russians",
+          "frame_observation": "An older man is visible seated indoors and gesturing while subtitle text is overlaid. Interior interview/film-like setting with wall clocks and edited captions.",
+          "alignment_decision": "partially_aligned",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 4.88633,
+            "transcript_gap_before_seconds": 0.01333,
+            "transcript_gap_after_seconds": 0.01333,
+            "mean_rms_db": -31.08567,
+            "speech_activity_fraction": 0.94433,
+            "mean_zero_crossing_rate": 0.17097,
+            "mean_spectral_centroid_hz": 1121.007,
+            "mean_pitch_hz_proxy": 320.39933,
+            "mean_pitch_confidence_proxy": 0.13563
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 60.0,
+            "face_count": 1,
+            "smile_detector_candidate_count": 0,
+            "mean_luminance": 33.223,
+            "luminance_std": 20.91,
+            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        },
+        {
+          "evidence_id": "AwA0Jnfj3ao:00232",
+          "video_id": "AwA0Jnfj3ao",
+          "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
+          "pattern_id": "delivery-sample-reflection_or_value_frame",
+          "sampled_time_seconds": 1012.655,
+          "source_url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=1003s",
+          "transcript_text": "Chris didn't realise that I had also warnedRahul that if I don't know what is coming, I'm going to hold the bat in the middle, sothat is how the story goes. So, it's just, in short, it's just being astep ahead of your opposition.",
+          "frame_observation": "Audience and stage lighting are visible, but the speaker is not clearly visible in the midpoint frame; subtitle text is overlaid. Audience/cutaway composition; cannot support speaker nonverbal observation.",
+          "alignment_decision": "indeterminate",
+          "measured_audio_proxy": {
+            "words_per_second_proxy": 2.54167,
+            "transcript_gap_before_seconds": 0.0,
+            "transcript_gap_after_seconds": 0.0,
+            "mean_rms_db": -15.47967,
+            "speech_activity_fraction": 1.0,
+            "mean_zero_crossing_rate": 0.15663,
+            "mean_spectral_centroid_hz": 935.89833,
+            "mean_pitch_hz_proxy": 225.57067,
+            "mean_pitch_confidence_proxy": 0.1645
+          },
+          "nearest_frame_measurement": {
+            "time_seconds": 1010.0,
+            "face_count": 1,
+            "smile_detector_candidate_count": 0,
+            "mean_luminance": 111.783,
+            "luminance_std": 80.636,
+            "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
+          },
+          "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+          "review_status": "internal_midpoint_frame_observation_not_independent",
+          "delivery_evidence_status": "internal_bounded_review_not_independent"
+        }
+      ],
       "validation": {
         "independent_function_review": "pending",
         "independent_recurrence_review": "pending",

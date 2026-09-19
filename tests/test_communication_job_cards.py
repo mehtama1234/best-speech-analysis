@@ -22,6 +22,7 @@ class CommunicationJobCardTests(unittest.TestCase):
             self.assertTrue(card["non_fit"])
             self.assertEqual(card["validation"]["learner_check"], "not_run")
             self.assertIn("delivery_evidence_status", card)
+            self.assertEqual(len(card["delivery_observations"]), 2)
             for observation in card["delivery_observations"]:
                 self.assertEqual(observation["delivery_evidence_status"], "internal_bounded_review_not_independent")
 

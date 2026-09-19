@@ -171,6 +171,28 @@ DELIVERY_PATTERN_JOBS = {
 
 def load_delivery_items(root: Path) -> dict[str, list[dict]]:
     by_job = defaultdict(list)
+    inventory_path = root / "research/communication-job-delivery-inventory.json"
+    if inventory_path.exists():
+        inventory = json.loads(inventory_path.read_text())
+        for job in inventory["jobs"]:
+            for sample in job["samples"]:
+                by_job[job["canonical_job"]].append({
+                    "evidence_id": sample["evidence_id"],
+                    "video_id": sample["video_id"],
+                    "title": sample["title"],
+                    "pattern_id": f"delivery-sample-{job['canonical_job']}",
+                    "sampled_time_seconds": round((sample["start_seconds"] + sample["end_seconds"]) / 2, 3),
+                    "source_url": sample["source_url"],
+                    "transcript_text": sample["transcript_excerpt"],
+                    "frame_observation": " ".join(filter(None, (sample.get("visual_observation"), sample.get("setting_editing_music_observation")))),
+                    "alignment_decision": sample.get("transcript_alignment"),
+                    "measured_audio_proxy": sample.get("audio_measurements", {}),
+                    "nearest_frame_measurement": sample.get("nearest_sampled_frame") or {},
+                    "feature_limit": "Proxy measurements and a single internal midpoint-frame note are inspection aids, not vocal meaning, nonverbal intent or effectiveness evidence.",
+                    "review_status": "internal_midpoint_frame_observation_not_independent",
+                    "delivery_evidence_status": "internal_bounded_review_not_independent",
+                })
+        return by_job
     for filename in ("research/multimodal-expansion-manual-review.json", "research/multimodal-expansion-manual-review-02.json"):
         report = json.loads((root / filename).read_text())
         for item in report["items"]:

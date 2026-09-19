@@ -139,8 +139,8 @@ listener outcomes remain pending.
 Their example selector now ranks lexical speech above marker-only cues such as
 music or applause and records the quality metadata without repairing the stored
 transcript wording.
-Five of the cards also carry 19 linked internal multimodal observations with
-frame notes and coarse audio/visual proxies; these remain explicitly
+All 18 cards now carry two linked delivery-queue samples each (36 total) with
+bounded frame notes and coarse audio/visual proxies; these remain explicitly
 non-independent and do not establish intent, emotion or effectiveness.
 
 The [18-card learner check](writeups/communication-job-learner-check.md) now

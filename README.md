@@ -41,7 +41,7 @@ turn 18 jobs into bounded practice hypotheses with exact examples, mechanisms,
 self-checks and non-fit warnings; they are not validated best practices.
 Example selection now prefers lexical speech over marker-only music/applause
 cues and exposes the selection metadata while preserving raw transcript text.
-Five cards also expose 19 internally reviewed multimodal samples, clearly
+All 18 cards now expose two delivery-queue samples each (36 total), clearly
 separated from independent delivery evidence and listener outcomes.
 The [18-card learner check](writeups/communication-job-learner-check.html)
 provides 72 fixed teachability tasks; it is an unrun instrument, not learner
