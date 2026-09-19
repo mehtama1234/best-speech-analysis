@@ -1,0 +1,1801 @@
+{
+  "schema_version": "1.0",
+  "payload_id": "communication-job-mobile-lessons",
+  "status": "mobile_payload_provisional_not_validated",
+  "source_index": "research/communication-job-curriculum-index.json",
+  "lesson_count": 18,
+  "claim_boundary": "This payload supports mobile practice navigation and consent-aware capture. It does not make a pattern effective, recurrent, teachable or outcome-producing, and it does not upload or require recordings.",
+  "accessibility": [
+    "typed response",
+    "captioned or written response",
+    "asynchronous use",
+    "no required personal disclosure",
+    "no required recording"
+  ],
+  "lessons": [
+    {
+      "lesson_id": "mobile:provisional-job-opening",
+      "pattern_id": "provisional-job-opening",
+      "canonical_job": "opening",
+      "status": "provisional_not_validated",
+      "claim_level": "practice_hypothesis",
+      "communication_problem": "Give the listener a reason and orientation for the exchange.",
+      "mechanism_hypothesis": "Hypothesis: an opening can reduce orientation cost by naming the situation, relationship or question before detail arrives.",
+      "evidence_links": {
+        "exact_example_ids": [
+          "full-context-20260917-204:1",
+          "full-context-20260917-124:1",
+          "full-context-20260917-088:2"
+        ],
+        "phrase_forms": [],
+        "delivery_sample_ids": [
+          "delivery:opening:01",
+          "delivery:opening:02"
+        ],
+        "counterexample_types": [
+          "absent_but_speech_works",
+          "present_but_speech_fails",
+          "alternate_function",
+          "confound_or_setting",
+          "misuse_or_copying_risk"
+        ]
+      },
+      "steps": [
+        {
+          "step_id": "orient",
+          "type": "read",
+          "prompt": "Name the communication problem before trying the form."
+        },
+        {
+          "step_id": "inspect",
+          "type": "inspect_evidence",
+          "prompt": "Read one exact example and note what the words are doing; delivery measurements are proxies, not meaning."
+        },
+        {
+          "step_id": "rehearse",
+          "type": "practice",
+          "prompt": "Open the same two-minute explanation with context, then without it; ask a listener what they think the talk is for.",
+          "response_mode": [
+            "typed",
+            "spoken",
+            "captioned",
+            "asynchronous"
+          ]
+        },
+        {
+          "step_id": "self_check",
+          "type": "self_check",
+          "prompt": "Can a listener state the situation and purpose without guessing?"
+        },
+        {
+          "step_id": "boundary",
+          "type": "non_fit",
+          "prompt": "Do not force a formal opening into a fast response or an already shared conversation."
+        },
+        {
+          "step_id": "listener",
+          "type": "listener_check",
+          "prompt": "Optional separate listener check: ask the listener to restate the point and identify what remains uncertain. Do not treat one response as effectiveness evidence."
+        }
+      ],
+      "capture_schema": {
+        "participant_code": "pseudonymous_required",
+        "consent": "explicit_required_before_save",
+        "accessibility_or_modality": "optional_text",
+        "practice_response": "text_or_local_recording_reference",
+        "self_check_response": "text_required",
+        "non_fit_response": "text_required",
+        "listener_restatement": "optional_separate_record",
+        "revision_after_feedback": "optional_text"
+      },
+      "safety_boundary": "Do not imitate a speaker's identity, accent, personality or mannerism; do not require personal disclosure or recording; preserve privacy, accessibility and consent.",
+      "validation": {
+        "learner_observations": "not_run",
+        "listener_outcomes": "not_run",
+        "independent_evidence_review": "pending"
+      }
+    },
+    {
+      "lesson_id": "mobile:provisional-job-closing",
+      "pattern_id": "provisional-job-closing",
+      "canonical_job": "closing",
+      "status": "provisional_not_validated",
+      "claim_level": "practice_hypothesis",
+      "communication_problem": "End without leaving the main point or next step diffuse.",
+      "mechanism_hypothesis": "Hypothesis: a bounded close can compress the route and give the listener a retrievable takeaway, but repetition alone is not evidence of understanding.",
+      "evidence_links": {
+        "exact_example_ids": [
+          "full-context-20260917-163:12",
+          "full-context-20260917-141:12",
+          "full-context-20260917-202:6"
+        ],
+        "phrase_forms": [
+          {
+            "phrase_form": "so the",
+            "matched_pattern": "\\bso the\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: summary forms may mark a takeaway; the marker does not prove comprehension or truth."
+          },
+          {
+            "phrase_form": "ultimately",
+            "matched_pattern": "\\bultimately\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: summary forms may mark a takeaway; the marker does not prove comprehension or truth."
+          },
+          {
+            "phrase_form": "the point is",
+            "matched_pattern": "\\bthe point is\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: summary forms may mark a takeaway; the marker does not prove comprehension or truth."
+          },
+          {
+            "phrase_form": "what matters",
+            "matched_pattern": "\\bwhat matters\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: summary forms may mark a takeaway; the marker does not prove comprehension or truth."
+          },
+          {
+            "phrase_form": "in short",
+            "matched_pattern": "\\bin short\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: summary forms may mark a takeaway; the marker does not prove comprehension or truth."
+          },
+          {
+            "phrase_form": "the lesson",
+            "matched_pattern": "\\bthe lesson\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: summary forms may mark a takeaway; the marker does not prove comprehension or truth."
+          },
+          {
+            "phrase_form": "in conclusion",
+            "matched_pattern": "\\bin conclusion\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: summary forms may mark a takeaway; the marker does not prove comprehension or truth."
+          }
+        ],
+        "delivery_sample_ids": [
+          "delivery:closing:01",
+          "delivery:closing:02"
+        ],
+        "counterexample_types": [
+          "absent_but_speech_works",
+          "present_but_speech_fails",
+          "alternate_function",
+          "confound_or_setting",
+          "misuse_or_copying_risk"
+        ]
+      },
+      "steps": [
+        {
+          "step_id": "orient",
+          "type": "read",
+          "prompt": "Name the communication problem before trying the form."
+        },
+        {
+          "step_id": "inspect",
+          "type": "inspect_evidence",
+          "prompt": "Read one exact example and note what the words are doing; delivery measurements are proxies, not meaning."
+        },
+        {
+          "step_id": "rehearse",
+          "type": "practice",
+          "prompt": "Close a short explanation in one sentence, then ask a listener to restate the takeaway and what remains open.",
+          "response_mode": [
+            "typed",
+            "spoken",
+            "captioned",
+            "asynchronous"
+          ]
+        },
+        {
+          "step_id": "self_check",
+          "type": "self_check",
+          "prompt": "Does the close add orientation rather than merely announce that the talk is ending?"
+        },
+        {
+          "step_id": "boundary",
+          "type": "non_fit",
+          "prompt": "Do not close over a live objection that still needs an answer."
+        },
+        {
+          "step_id": "listener",
+          "type": "listener_check",
+          "prompt": "Optional separate listener check: ask the listener to restate the point and identify what remains uncertain. Do not treat one response as effectiveness evidence."
+        }
+      ],
+      "capture_schema": {
+        "participant_code": "pseudonymous_required",
+        "consent": "explicit_required_before_save",
+        "accessibility_or_modality": "optional_text",
+        "practice_response": "text_or_local_recording_reference",
+        "self_check_response": "text_required",
+        "non_fit_response": "text_required",
+        "listener_restatement": "optional_separate_record",
+        "revision_after_feedback": "optional_text"
+      },
+      "safety_boundary": "Do not imitate a speaker's identity, accent, personality or mannerism; do not require personal disclosure or recording; preserve privacy, accessibility and consent.",
+      "validation": {
+        "learner_observations": "not_run",
+        "listener_outcomes": "not_run",
+        "independent_evidence_review": "pending"
+      }
+    },
+    {
+      "lesson_id": "mobile:provisional-job-question",
+      "pattern_id": "provisional-job-question",
+      "canonical_job": "question",
+      "status": "provisional_not_validated",
+      "claim_level": "practice_hypothesis",
+      "communication_problem": "Invite inquiry, reflection or a useful next turn.",
+      "mechanism_hypothesis": "Hypothesis: a question can allocate attention and make the next reasoning step visible, but its usefulness depends on answerability and consent.",
+      "evidence_links": {
+        "exact_example_ids": [
+          "full-context-20260917-175:1",
+          "full-context-20260917-156:14",
+          "full-context-20260917-141:4"
+        ],
+        "phrase_forms": [
+          {
+            "phrase_form": "?",
+            "matched_pattern": "\\?",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: question forms may allocate attention or the next conversational turn; their use must preserve answerability and consent."
+          },
+          {
+            "phrase_form": "how",
+            "matched_pattern": "\\bhow\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: question forms may allocate attention or the next conversational turn; their use must preserve answerability and consent."
+          },
+          {
+            "phrase_form": "why",
+            "matched_pattern": "\\bwhy\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: question forms may allocate attention or the next conversational turn; their use must preserve answerability and consent."
+          },
+          {
+            "phrase_form": "can we",
+            "matched_pattern": "\\bcan we\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: question forms may allocate attention or the next conversational turn; their use must preserve answerability and consent."
+          },
+          {
+            "phrase_form": "what if",
+            "matched_pattern": "\\bwhat if\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: question forms may allocate attention or the next conversational turn; their use must preserve answerability and consent."
+          }
+        ],
+        "delivery_sample_ids": [
+          "delivery:question:01",
+          "delivery:question:02"
+        ],
+        "counterexample_types": [
+          "absent_but_speech_works",
+          "present_but_speech_fails",
+          "alternate_function",
+          "confound_or_setting",
+          "misuse_or_copying_risk"
+        ]
+      },
+      "steps": [
+        {
+          "step_id": "orient",
+          "type": "read",
+          "prompt": "Name the communication problem before trying the form."
+        },
+        {
+          "step_id": "inspect",
+          "type": "inspect_evidence",
+          "prompt": "Read one exact example and note what the words are doing; delivery measurements are proxies, not meaning."
+        },
+        {
+          "step_id": "rehearse",
+          "type": "practice",
+          "prompt": "Replace a broad question with a specific, answerable one and compare the next turn.",
+          "response_mode": [
+            "typed",
+            "spoken",
+            "captioned",
+            "asynchronous"
+          ]
+        },
+        {
+          "step_id": "self_check",
+          "type": "self_check",
+          "prompt": "Could the listener answer, decline or ask for clarification without penalty?"
+        },
+        {
+          "step_id": "boundary",
+          "type": "non_fit",
+          "prompt": "Do not use a rhetorical question to disguise a demand or corner someone."
+        },
+        {
+          "step_id": "listener",
+          "type": "listener_check",
+          "prompt": "Optional separate listener check: ask the listener to restate the point and identify what remains uncertain. Do not treat one response as effectiveness evidence."
+        }
+      ],
+      "capture_schema": {
+        "participant_code": "pseudonymous_required",
+        "consent": "explicit_required_before_save",
+        "accessibility_or_modality": "optional_text",
+        "practice_response": "text_or_local_recording_reference",
+        "self_check_response": "text_required",
+        "non_fit_response": "text_required",
+        "listener_restatement": "optional_separate_record",
+        "revision_after_feedback": "optional_text"
+      },
+      "safety_boundary": "Do not imitate a speaker's identity, accent, personality or mannerism; do not require personal disclosure or recording; preserve privacy, accessibility and consent.",
+      "validation": {
+        "learner_observations": "not_run",
+        "listener_outcomes": "not_run",
+        "independent_evidence_review": "pending"
+      }
+    },
+    {
+      "lesson_id": "mobile:provisional-job-answer_or_response",
+      "pattern_id": "provisional-job-answer_or_response",
+      "canonical_job": "answer_or_response",
+      "status": "provisional_not_validated",
+      "claim_level": "practice_hypothesis",
+      "communication_problem": "Respond to the literal prompt while addressing the underlying need.",
+      "mechanism_hypothesis": "Hypothesis: naming the frame and then answering can reduce mismatch between what was asked and what the listener needs, but reframing can also evade the question.",
+      "evidence_links": {
+        "exact_example_ids": [
+          "full-context-20260917-175:11",
+          "full-context-20260917-041:3",
+          "full-context-20260917-124:11"
+        ],
+        "phrase_forms": [],
+        "delivery_sample_ids": [
+          "delivery:answer_or_response:01",
+          "delivery:answer_or_response:02"
+        ],
+        "counterexample_types": [
+          "absent_but_speech_works",
+          "present_but_speech_fails",
+          "alternate_function",
+          "confound_or_setting",
+          "misuse_or_copying_risk"
+        ]
+      },
+      "steps": [
+        {
+          "step_id": "orient",
+          "type": "read",
+          "prompt": "Name the communication problem before trying the form."
+        },
+        {
+          "step_id": "inspect",
+          "type": "inspect_evidence",
+          "prompt": "Read one exact example and note what the words are doing; delivery measurements are proxies, not meaning."
+        },
+        {
+          "step_id": "rehearse",
+          "type": "practice",
+          "prompt": "Give a direct answer, then a frame-corrected answer; ask which one remains responsive.",
+          "response_mode": [
+            "typed",
+            "spoken",
+            "captioned",
+            "asynchronous"
+          ]
+        },
+        {
+          "step_id": "self_check",
+          "type": "self_check",
+          "prompt": "Can the listener identify both the direct answer and any justified reframing?"
+        },
+        {
+          "step_id": "boundary",
+          "type": "non_fit",
+          "prompt": "Do not reframe merely to avoid an uncomfortable but legitimate question."
+        },
+        {
+          "step_id": "listener",
+          "type": "listener_check",
+          "prompt": "Optional separate listener check: ask the listener to restate the point and identify what remains uncertain. Do not treat one response as effectiveness evidence."
+        }
+      ],
+      "capture_schema": {
+        "participant_code": "pseudonymous_required",
+        "consent": "explicit_required_before_save",
+        "accessibility_or_modality": "optional_text",
+        "practice_response": "text_or_local_recording_reference",
+        "self_check_response": "text_required",
+        "non_fit_response": "text_required",
+        "listener_restatement": "optional_separate_record",
+        "revision_after_feedback": "optional_text"
+      },
+      "safety_boundary": "Do not imitate a speaker's identity, accent, personality or mannerism; do not require personal disclosure or recording; preserve privacy, accessibility and consent.",
+      "validation": {
+        "learner_observations": "not_run",
+        "listener_outcomes": "not_run",
+        "independent_evidence_review": "pending"
+      }
+    },
+    {
+      "lesson_id": "mobile:provisional-job-story_or_personal_experience",
+      "pattern_id": "provisional-job-story_or_personal_experience",
+      "canonical_job": "story_or_personal_experience",
+      "status": "provisional_not_validated",
+      "claim_level": "practice_hypothesis",
+      "communication_problem": "Make an idea concrete without turning one life into universal proof.",
+      "mechanism_hypothesis": "Hypothesis: time, place and action can give an abstract point human and temporal scale; an explicit boundary can prevent overgeneralization.",
+      "evidence_links": {
+        "exact_example_ids": [
+          "full-context-20260917-204:2",
+          "full-context-20260917-159:2",
+          "full-context-20260917-096:2"
+        ],
+        "phrase_forms": [
+          {
+            "phrase_form": "i was",
+            "matched_pattern": "\\bI was\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: story-entry forms may signal a bounded event that gives an idea human and temporal scale; personal detail is optional and not universal proof."
+          },
+          {
+            "phrase_form": "when i",
+            "matched_pattern": "\\bwhen I\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: story-entry forms may signal a bounded event that gives an idea human and temporal scale; personal detail is optional and not universal proof."
+          },
+          {
+            "phrase_form": "years ago",
+            "matched_pattern": "\\byears ago\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: story-entry forms may signal a bounded event that gives an idea human and temporal scale; personal detail is optional and not universal proof."
+          },
+          {
+            "phrase_form": "i remember",
+            "matched_pattern": "\\bI remember\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: story-entry forms may signal a bounded event that gives an idea human and temporal scale; personal detail is optional and not universal proof."
+          },
+          {
+            "phrase_form": "one day",
+            "matched_pattern": "\\bone day\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: story-entry forms may signal a bounded event that gives an idea human and temporal scale; personal detail is optional and not universal proof."
+          },
+          {
+            "phrase_form": "my first",
+            "matched_pattern": "\\bmy first\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: story-entry forms may signal a bounded event that gives an idea human and temporal scale; personal detail is optional and not universal proof."
+          },
+          {
+            "phrase_form": "growing up",
+            "matched_pattern": "\\bgrowing up\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: story-entry forms may signal a bounded event that gives an idea human and temporal scale; personal detail is optional and not universal proof."
+          }
+        ],
+        "delivery_sample_ids": [
+          "delivery:story_or_personal_experience:01",
+          "delivery:story_or_personal_experience:02"
+        ],
+        "counterexample_types": [
+          "absent_but_speech_works",
+          "present_but_speech_fails",
+          "alternate_function",
+          "confound_or_setting",
+          "misuse_or_copying_risk"
+        ]
+      },
+      "steps": [
+        {
+          "step_id": "orient",
+          "type": "read",
+          "prompt": "Name the communication problem before trying the form."
+        },
+        {
+          "step_id": "inspect",
+          "type": "inspect_evidence",
+          "prompt": "Read one exact example and note what the words are doing; delivery measurements are proxies, not meaning."
+        },
+        {
+          "step_id": "rehearse",
+          "type": "practice",
+          "prompt": "Tell a 45-second event, then name the narrow lesson and one limit.",
+          "response_mode": [
+            "typed",
+            "spoken",
+            "captioned",
+            "asynchronous"
+          ]
+        },
+        {
+          "step_id": "self_check",
+          "type": "self_check",
+          "prompt": "Can the listener separate the event, the interpretation and the limit?"
+        },
+        {
+          "step_id": "boundary",
+          "type": "non_fit",
+          "prompt": "Do not disclose another person’s private experience or use trauma as decorative evidence."
+        },
+        {
+          "step_id": "listener",
+          "type": "listener_check",
+          "prompt": "Optional separate listener check: ask the listener to restate the point and identify what remains uncertain. Do not treat one response as effectiveness evidence."
+        }
+      ],
+      "capture_schema": {
+        "participant_code": "pseudonymous_required",
+        "consent": "explicit_required_before_save",
+        "accessibility_or_modality": "optional_text",
+        "practice_response": "text_or_local_recording_reference",
+        "self_check_response": "text_required",
+        "non_fit_response": "text_required",
+        "listener_restatement": "optional_separate_record",
+        "revision_after_feedback": "optional_text"
+      },
+      "safety_boundary": "Do not imitate a speaker's identity, accent, personality or mannerism; do not require personal disclosure or recording; preserve privacy, accessibility and consent.",
+      "validation": {
+        "learner_observations": "not_run",
+        "listener_outcomes": "not_run",
+        "independent_evidence_review": "pending"
+      }
+    },
+    {
+      "lesson_id": "mobile:provisional-job-example_or_case",
+      "pattern_id": "provisional-job-example_or_case",
+      "canonical_job": "example_or_case",
+      "status": "provisional_not_validated",
+      "claim_level": "practice_hypothesis",
+      "communication_problem": "Give a general claim a concrete handle without presenting an illustration as proof.",
+      "mechanism_hypothesis": "Hypothesis: a concrete case can make an abstract claim inspectable; returning to the claim helps distinguish illustration from evidence.",
+      "evidence_links": {
+        "exact_example_ids": [
+          "full-context-20260917-175:5",
+          "full-context-20260917-041:4",
+          "full-context-20260917-120:12"
+        ],
+        "phrase_forms": [
+          {
+            "phrase_form": "for example",
+            "matched_pattern": "\\bfor example\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: example cues may give a general claim a concrete handle; an example is not automatically representative evidence."
+          },
+          {
+            "phrase_form": "such as",
+            "matched_pattern": "\\bsuch as\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: example cues may give a general claim a concrete handle; an example is not automatically representative evidence."
+          },
+          {
+            "phrase_form": "for instance",
+            "matched_pattern": "\\bfor instance\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: example cues may give a general claim a concrete handle; an example is not automatically representative evidence."
+          },
+          {
+            "phrase_form": "one example",
+            "matched_pattern": "\\bone example\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: example cues may give a general claim a concrete handle; an example is not automatically representative evidence."
+          }
+        ],
+        "delivery_sample_ids": [
+          "delivery:example_or_case:01",
+          "delivery:example_or_case:02"
+        ],
+        "counterexample_types": [
+          "absent_but_speech_works",
+          "present_but_speech_fails",
+          "alternate_function",
+          "confound_or_setting",
+          "misuse_or_copying_risk"
+        ]
+      },
+      "steps": [
+        {
+          "step_id": "orient",
+          "type": "read",
+          "prompt": "Name the communication problem before trying the form."
+        },
+        {
+          "step_id": "inspect",
+          "type": "inspect_evidence",
+          "prompt": "Read one exact example and note what the words are doing; delivery measurements are proxies, not meaning."
+        },
+        {
+          "step_id": "rehearse",
+          "type": "practice",
+          "prompt": "Explain a principle with and without a case; ask which detail made the idea more inspectable.",
+          "response_mode": [
+            "typed",
+            "spoken",
+            "captioned",
+            "asynchronous"
+          ]
+        },
+        {
+          "step_id": "self_check",
+          "type": "self_check",
+          "prompt": "Does the case clarify the claim without pretending to establish its prevalence or cause?"
+        },
+        {
+          "step_id": "boundary",
+          "type": "non_fit",
+          "prompt": "Do not select a vivid outlier to imply a typical pattern without denominators."
+        },
+        {
+          "step_id": "listener",
+          "type": "listener_check",
+          "prompt": "Optional separate listener check: ask the listener to restate the point and identify what remains uncertain. Do not treat one response as effectiveness evidence."
+        }
+      ],
+      "capture_schema": {
+        "participant_code": "pseudonymous_required",
+        "consent": "explicit_required_before_save",
+        "accessibility_or_modality": "optional_text",
+        "practice_response": "text_or_local_recording_reference",
+        "self_check_response": "text_required",
+        "non_fit_response": "text_required",
+        "listener_restatement": "optional_separate_record",
+        "revision_after_feedback": "optional_text"
+      },
+      "safety_boundary": "Do not imitate a speaker's identity, accent, personality or mannerism; do not require personal disclosure or recording; preserve privacy, accessibility and consent.",
+      "validation": {
+        "learner_observations": "not_run",
+        "listener_outcomes": "not_run",
+        "independent_evidence_review": "pending"
+      }
+    },
+    {
+      "lesson_id": "mobile:provisional-job-contrast_or_disagreement",
+      "pattern_id": "provisional-job-contrast_or_disagreement",
+      "canonical_job": "contrast_or_disagreement",
+      "status": "provisional_not_validated",
+      "claim_level": "practice_hypothesis",
+      "communication_problem": "Make a distinction or change in reasoning visible without escalating disagreement.",
+      "mechanism_hypothesis": "Hypothesis: naming both sides can reduce the listener’s need to infer the replacement claim, but contrast can oversimplify real alternatives.",
+      "evidence_links": {
+        "exact_example_ids": [
+          "full-context-20260917-007:2",
+          "full-context-20260917-013:3",
+          "full-context-20260917-141:9"
+        ],
+        "phrase_forms": [
+          {
+            "phrase_form": "but",
+            "matched_pattern": "\\bbut\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: contrast markers may make a distinction or change visible; the surrounding content must show what is being contrasted."
+          },
+          {
+            "phrase_form": "used to",
+            "matched_pattern": "\\bused to\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: contrast markers may make a distinction or change visible; the surrounding content must show what is being contrasted."
+          },
+          {
+            "phrase_form": "now i",
+            "matched_pattern": "\\bnow I\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: contrast markers may make a distinction or change visible; the surrounding content must show what is being contrasted."
+          },
+          {
+            "phrase_form": "instead",
+            "matched_pattern": "\\binstead\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: contrast markers may make a distinction or change visible; the surrounding content must show what is being contrasted."
+          },
+          {
+            "phrase_form": "however",
+            "matched_pattern": "\\bhowever\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: contrast markers may make a distinction or change visible; the surrounding content must show what is being contrasted."
+          },
+          {
+            "phrase_form": "rather than",
+            "matched_pattern": "\\brather than\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: contrast markers may make a distinction or change visible; the surrounding content must show what is being contrasted."
+          },
+          {
+            "phrase_form": "on the other hand",
+            "matched_pattern": "\\bon the other hand\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: contrast markers may make a distinction or change visible; the surrounding content must show what is being contrasted."
+          }
+        ],
+        "delivery_sample_ids": [
+          "delivery:contrast_or_disagreement:01",
+          "delivery:contrast_or_disagreement:02"
+        ],
+        "counterexample_types": [
+          "absent_but_speech_works",
+          "present_but_speech_fails",
+          "alternate_function",
+          "confound_or_setting",
+          "misuse_or_copying_risk"
+        ]
+      },
+      "steps": [
+        {
+          "step_id": "orient",
+          "type": "read",
+          "prompt": "Name the communication problem before trying the form."
+        },
+        {
+          "step_id": "inspect",
+          "type": "inspect_evidence",
+          "prompt": "Read one exact example and note what the words are doing; delivery measurements are proxies, not meaning."
+        },
+        {
+          "step_id": "rehearse",
+          "type": "practice",
+          "prompt": "Use ‘I used to think X; Y changed the question; now I think Z,’ then test whether the distinction is fair.",
+          "response_mode": [
+            "typed",
+            "spoken",
+            "captioned",
+            "asynchronous"
+          ]
+        },
+        {
+          "step_id": "self_check",
+          "type": "self_check",
+          "prompt": "Can the listener state what changed without turning the other side into a caricature?"
+        },
+        {
+          "step_id": "boundary",
+          "type": "non_fit",
+          "prompt": "Do not manufacture a false binary or treat a person as an argument to defeat."
+        },
+        {
+          "step_id": "listener",
+          "type": "listener_check",
+          "prompt": "Optional separate listener check: ask the listener to restate the point and identify what remains uncertain. Do not treat one response as effectiveness evidence."
+        }
+      ],
+      "capture_schema": {
+        "participant_code": "pseudonymous_required",
+        "consent": "explicit_required_before_save",
+        "accessibility_or_modality": "optional_text",
+        "practice_response": "text_or_local_recording_reference",
+        "self_check_response": "text_required",
+        "non_fit_response": "text_required",
+        "listener_restatement": "optional_separate_record",
+        "revision_after_feedback": "optional_text"
+      },
+      "safety_boundary": "Do not imitate a speaker's identity, accent, personality or mannerism; do not require personal disclosure or recording; preserve privacy, accessibility and consent.",
+      "validation": {
+        "learner_observations": "not_run",
+        "listener_outcomes": "not_run",
+        "independent_evidence_review": "pending"
+      }
+    },
+    {
+      "lesson_id": "mobile:provisional-job-correction_or_reframe",
+      "pattern_id": "provisional-job-correction_or_reframe",
+      "canonical_job": "correction_or_reframe",
+      "status": "provisional_not_validated",
+      "claim_level": "practice_hypothesis",
+      "communication_problem": "Move from an unhelpful starting frame to a more useful question or category.",
+      "mechanism_hypothesis": "Hypothesis: an explicit frame correction can prevent downstream reasoning from inheriting a false premise, but it can feel evasive if the original concern is ignored.",
+      "evidence_links": {
+        "exact_example_ids": [
+          "full-context-20260917-204:5",
+          "full-context-20260917-076:9",
+          "full-context-20260917-041:2"
+        ],
+        "phrase_forms": [],
+        "delivery_sample_ids": [
+          "delivery:correction_or_reframe:01",
+          "delivery:correction_or_reframe:02"
+        ],
+        "counterexample_types": [
+          "absent_but_speech_works",
+          "present_but_speech_fails",
+          "alternate_function",
+          "confound_or_setting",
+          "misuse_or_copying_risk"
+        ]
+      },
+      "steps": [
+        {
+          "step_id": "orient",
+          "type": "read",
+          "prompt": "Name the communication problem before trying the form."
+        },
+        {
+          "step_id": "inspect",
+          "type": "inspect_evidence",
+          "prompt": "Read one exact example and note what the words are doing; delivery measurements are proxies, not meaning."
+        },
+        {
+          "step_id": "rehearse",
+          "type": "practice",
+          "prompt": "Answer a difficult prompt twice: first literally, then with one transparent frame correction.",
+          "response_mode": [
+            "typed",
+            "spoken",
+            "captioned",
+            "asynchronous"
+          ]
+        },
+        {
+          "step_id": "self_check",
+          "type": "self_check",
+          "prompt": "Did you preserve the valid concern inside the revised frame?"
+        },
+        {
+          "step_id": "boundary",
+          "type": "non_fit",
+          "prompt": "Do not label a challenge a ‘bad question’ simply because it is inconvenient."
+        },
+        {
+          "step_id": "listener",
+          "type": "listener_check",
+          "prompt": "Optional separate listener check: ask the listener to restate the point and identify what remains uncertain. Do not treat one response as effectiveness evidence."
+        }
+      ],
+      "capture_schema": {
+        "participant_code": "pseudonymous_required",
+        "consent": "explicit_required_before_save",
+        "accessibility_or_modality": "optional_text",
+        "practice_response": "text_or_local_recording_reference",
+        "self_check_response": "text_required",
+        "non_fit_response": "text_required",
+        "listener_restatement": "optional_separate_record",
+        "revision_after_feedback": "optional_text"
+      },
+      "safety_boundary": "Do not imitate a speaker's identity, accent, personality or mannerism; do not require personal disclosure or recording; preserve privacy, accessibility and consent.",
+      "validation": {
+        "learner_observations": "not_run",
+        "listener_outcomes": "not_run",
+        "independent_evidence_review": "pending"
+      }
+    },
+    {
+      "lesson_id": "mobile:provisional-job-repair_or_self_correction",
+      "pattern_id": "provisional-job-repair_or_self_correction",
+      "canonical_job": "repair_or_self_correction",
+      "status": "provisional_not_validated",
+      "claim_level": "practice_hypothesis",
+      "communication_problem": "Restore accuracy or shared understanding after an error, interruption or unclear phrase.",
+      "mechanism_hypothesis": "Hypothesis: a visible repair can update the listener’s model and reduce ambiguity, but excessive self-correction can interrupt the thought.",
+      "evidence_links": {
+        "exact_example_ids": [
+          "full-context-20260917-202:1",
+          "full-context-20260917-114:4",
+          "full-context-20260917-155:20"
+        ],
+        "phrase_forms": [],
+        "delivery_sample_ids": [
+          "delivery:repair_or_self_correction:01",
+          "delivery:repair_or_self_correction:02"
+        ],
+        "counterexample_types": [
+          "absent_but_speech_works",
+          "present_but_speech_fails",
+          "alternate_function",
+          "confound_or_setting",
+          "misuse_or_copying_risk"
+        ]
+      },
+      "steps": [
+        {
+          "step_id": "orient",
+          "type": "read",
+          "prompt": "Name the communication problem before trying the form."
+        },
+        {
+          "step_id": "inspect",
+          "type": "inspect_evidence",
+          "prompt": "Read one exact example and note what the words are doing; delivery measurements are proxies, not meaning."
+        },
+        {
+          "step_id": "rehearse",
+          "type": "practice",
+          "prompt": "Record a short answer with one intentional error and repair it in one sentence.",
+          "response_mode": [
+            "typed",
+            "spoken",
+            "captioned",
+            "asynchronous"
+          ]
+        },
+        {
+          "step_id": "self_check",
+          "type": "self_check",
+          "prompt": "Is the corrected version unmistakable, and can the listener continue with you?"
+        },
+        {
+          "step_id": "boundary",
+          "type": "non_fit",
+          "prompt": "Do not use ‘repair’ theatrically to avoid responsibility for a substantive claim."
+        },
+        {
+          "step_id": "listener",
+          "type": "listener_check",
+          "prompt": "Optional separate listener check: ask the listener to restate the point and identify what remains uncertain. Do not treat one response as effectiveness evidence."
+        }
+      ],
+      "capture_schema": {
+        "participant_code": "pseudonymous_required",
+        "consent": "explicit_required_before_save",
+        "accessibility_or_modality": "optional_text",
+        "practice_response": "text_or_local_recording_reference",
+        "self_check_response": "text_required",
+        "non_fit_response": "text_required",
+        "listener_restatement": "optional_separate_record",
+        "revision_after_feedback": "optional_text"
+      },
+      "safety_boundary": "Do not imitate a speaker's identity, accent, personality or mannerism; do not require personal disclosure or recording; preserve privacy, accessibility and consent.",
+      "validation": {
+        "learner_observations": "not_run",
+        "listener_outcomes": "not_run",
+        "independent_evidence_review": "pending"
+      }
+    },
+    {
+      "lesson_id": "mobile:provisional-job-qualification_or_boundary",
+      "pattern_id": "provisional-job-qualification_or_boundary",
+      "canonical_job": "qualification_or_boundary",
+      "status": "provisional_not_validated",
+      "claim_level": "practice_hypothesis",
+      "communication_problem": "State a clear point while marking uncertainty, scope or conditions.",
+      "mechanism_hypothesis": "Hypothesis: an explicit qualifier helps locate certainty and revision conditions, but vague hedging can hide the claim rather than calibrate it.",
+      "evidence_links": {
+        "exact_example_ids": [
+          "full-context-20260917-177:6",
+          "full-context-20260917-006:7",
+          "full-context-20260917-055:4"
+        ],
+        "phrase_forms": [
+          {
+            "phrase_form": "i think",
+            "matched_pattern": "\\bI think\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: qualification forms may locate certainty and revision conditions; vague hedging can obscure rather than calibrate a claim."
+          },
+          {
+            "phrase_form": "maybe",
+            "matched_pattern": "\\bmaybe\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: qualification forms may locate certainty and revision conditions; vague hedging can obscure rather than calibrate a claim."
+          },
+          {
+            "phrase_form": "perhaps",
+            "matched_pattern": "\\bperhaps\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: qualification forms may locate certainty and revision conditions; vague hedging can obscure rather than calibrate a claim."
+          },
+          {
+            "phrase_form": "i'm not sure",
+            "matched_pattern": "\\bI'm not sure\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: qualification forms may locate certainty and revision conditions; vague hedging can obscure rather than calibrate a claim."
+          },
+          {
+            "phrase_form": "it depends",
+            "matched_pattern": "\\bit depends\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: qualification forms may locate certainty and revision conditions; vague hedging can obscure rather than calibrate a claim."
+          },
+          {
+            "phrase_form": "not necessarily",
+            "matched_pattern": "\\bnot necessarily\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: qualification forms may locate certainty and revision conditions; vague hedging can obscure rather than calibrate a claim."
+          },
+          {
+            "phrase_form": "to some extent",
+            "matched_pattern": "\\bto some extent\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: qualification forms may locate certainty and revision conditions; vague hedging can obscure rather than calibrate a claim."
+          }
+        ],
+        "delivery_sample_ids": [
+          "delivery:qualification_or_boundary:01",
+          "delivery:qualification_or_boundary:02"
+        ],
+        "counterexample_types": [
+          "absent_but_speech_works",
+          "present_but_speech_fails",
+          "alternate_function",
+          "confound_or_setting",
+          "misuse_or_copying_risk"
+        ]
+      },
+      "steps": [
+        {
+          "step_id": "orient",
+          "type": "read",
+          "prompt": "Name the communication problem before trying the form."
+        },
+        {
+          "step_id": "inspect",
+          "type": "inspect_evidence",
+          "prompt": "Read one exact example and note what the words are doing; delivery measurements are proxies, not meaning."
+        },
+        {
+          "step_id": "rehearse",
+          "type": "practice",
+          "prompt": "Convert one absolute sentence into a bounded claim with one observable condition.",
+          "response_mode": [
+            "typed",
+            "spoken",
+            "captioned",
+            "asynchronous"
+          ]
+        },
+        {
+          "step_id": "self_check",
+          "type": "self_check",
+          "prompt": "Is the claim clearer and more honest, rather than simply weaker?"
+        },
+        {
+          "step_id": "boundary",
+          "type": "non_fit",
+          "prompt": "Do not add ornamental uncertainty to a claim that should be checked directly."
+        },
+        {
+          "step_id": "listener",
+          "type": "listener_check",
+          "prompt": "Optional separate listener check: ask the listener to restate the point and identify what remains uncertain. Do not treat one response as effectiveness evidence."
+        }
+      ],
+      "capture_schema": {
+        "participant_code": "pseudonymous_required",
+        "consent": "explicit_required_before_save",
+        "accessibility_or_modality": "optional_text",
+        "practice_response": "text_or_local_recording_reference",
+        "self_check_response": "text_required",
+        "non_fit_response": "text_required",
+        "listener_restatement": "optional_separate_record",
+        "revision_after_feedback": "optional_text"
+      },
+      "safety_boundary": "Do not imitate a speaker's identity, accent, personality or mannerism; do not require personal disclosure or recording; preserve privacy, accessibility and consent.",
+      "validation": {
+        "learner_observations": "not_run",
+        "listener_outcomes": "not_run",
+        "independent_evidence_review": "pending"
+      }
+    },
+    {
+      "lesson_id": "mobile:provisional-job-definition_or_explanation",
+      "pattern_id": "provisional-job-definition_or_explanation",
+      "canonical_job": "definition_or_explanation",
+      "status": "provisional_not_validated",
+      "claim_level": "practice_hypothesis",
+      "communication_problem": "Make an unfamiliar idea usable without overextending it.",
+      "mechanism_hypothesis": "Hypothesis: an operational definition reduces ambiguity; naming exclusions can prevent the listener from applying it outside its scope.",
+      "evidence_links": {
+        "exact_example_ids": [
+          "full-context-20260917-175:6",
+          "full-context-20260917-149:2",
+          "full-context-20260917-074:4"
+        ],
+        "phrase_forms": [
+          {
+            "phrase_form": "is when",
+            "matched_pattern": "\\bis when\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: definition forms may reduce ambiguity around a term; the surrounding explanation must state scope and exclusions."
+          },
+          {
+            "phrase_form": "means that",
+            "matched_pattern": "\\bmeans that\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: definition forms may reduce ambiguity around a term; the surrounding explanation must state scope and exclusions."
+          },
+          {
+            "phrase_form": "in other words",
+            "matched_pattern": "\\bin other words\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: definition forms may reduce ambiguity around a term; the surrounding explanation must state scope and exclusions."
+          },
+          {
+            "phrase_form": "what i mean",
+            "matched_pattern": "\\bwhat I mean\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: definition forms may reduce ambiguity around a term; the surrounding explanation must state scope and exclusions."
+          },
+          {
+            "phrase_form": "the definition",
+            "matched_pattern": "\\bthe definition\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: definition forms may reduce ambiguity around a term; the surrounding explanation must state scope and exclusions."
+          },
+          {
+            "phrase_form": "defined as",
+            "matched_pattern": "\\bdefined as\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: definition forms may reduce ambiguity around a term; the surrounding explanation must state scope and exclusions."
+          }
+        ],
+        "delivery_sample_ids": [
+          "delivery:definition_or_explanation:01",
+          "delivery:definition_or_explanation:02"
+        ],
+        "counterexample_types": [
+          "absent_but_speech_works",
+          "present_but_speech_fails",
+          "alternate_function",
+          "confound_or_setting",
+          "misuse_or_copying_risk"
+        ]
+      },
+      "steps": [
+        {
+          "step_id": "orient",
+          "type": "read",
+          "prompt": "Name the communication problem before trying the form."
+        },
+        {
+          "step_id": "inspect",
+          "type": "inspect_evidence",
+          "prompt": "Read one exact example and note what the words are doing; delivery measurements are proxies, not meaning."
+        },
+        {
+          "step_id": "rehearse",
+          "type": "practice",
+          "prompt": "Define a technical term for a newcomer in 20 seconds, then ask them to use it in a new sentence.",
+          "response_mode": [
+            "typed",
+            "spoken",
+            "captioned",
+            "asynchronous"
+          ]
+        },
+        {
+          "step_id": "self_check",
+          "type": "self_check",
+          "prompt": "Can the listener use the term and say what it does not mean?"
+        },
+        {
+          "step_id": "boundary",
+          "type": "non_fit",
+          "prompt": "Do not substitute a slogan, metaphor or credential for a usable definition."
+        },
+        {
+          "step_id": "listener",
+          "type": "listener_check",
+          "prompt": "Optional separate listener check: ask the listener to restate the point and identify what remains uncertain. Do not treat one response as effectiveness evidence."
+        }
+      ],
+      "capture_schema": {
+        "participant_code": "pseudonymous_required",
+        "consent": "explicit_required_before_save",
+        "accessibility_or_modality": "optional_text",
+        "practice_response": "text_or_local_recording_reference",
+        "self_check_response": "text_required",
+        "non_fit_response": "text_required",
+        "listener_restatement": "optional_separate_record",
+        "revision_after_feedback": "optional_text"
+      },
+      "safety_boundary": "Do not imitate a speaker's identity, accent, personality or mannerism; do not require personal disclosure or recording; preserve privacy, accessibility and consent.",
+      "validation": {
+        "learner_observations": "not_run",
+        "listener_outcomes": "not_run",
+        "independent_evidence_review": "pending"
+      }
+    },
+    {
+      "lesson_id": "mobile:provisional-job-transition_or_structure",
+      "pattern_id": "provisional-job-transition_or_structure",
+      "canonical_job": "transition_or_structure",
+      "status": "provisional_not_validated",
+      "claim_level": "practice_hypothesis",
+      "communication_problem": "Help a listener follow a change of topic, scale, speaker or reasoning step.",
+      "mechanism_hypothesis": "Hypothesis: a signposted transition lowers navigation cost by showing how the next section connects, but too many labels can make speech mechanical.",
+      "evidence_links": {
+        "exact_example_ids": [
+          "full-context-20260917-175:10",
+          "full-context-20260917-041:6",
+          "full-context-20260917-177:5"
+        ],
+        "phrase_forms": [],
+        "delivery_sample_ids": [
+          "delivery:transition_or_structure:01",
+          "delivery:transition_or_structure:02"
+        ],
+        "counterexample_types": [
+          "absent_but_speech_works",
+          "present_but_speech_fails",
+          "alternate_function",
+          "confound_or_setting",
+          "misuse_or_copying_risk"
+        ]
+      },
+      "steps": [
+        {
+          "step_id": "orient",
+          "type": "read",
+          "prompt": "Name the communication problem before trying the form."
+        },
+        {
+          "step_id": "inspect",
+          "type": "inspect_evidence",
+          "prompt": "Read one exact example and note what the words are doing; delivery measurements are proxies, not meaning."
+        },
+        {
+          "step_id": "rehearse",
+          "type": "practice",
+          "prompt": "Add one spoken bridge between two unrelated ideas and ask a listener to describe the connection.",
+          "response_mode": [
+            "typed",
+            "spoken",
+            "captioned",
+            "asynchronous"
+          ]
+        },
+        {
+          "step_id": "self_check",
+          "type": "self_check",
+          "prompt": "Can the listener say why the next point arrived here?"
+        },
+        {
+          "step_id": "boundary",
+          "type": "non_fit",
+          "prompt": "Do not use a transition to imply a connection that the evidence does not support."
+        },
+        {
+          "step_id": "listener",
+          "type": "listener_check",
+          "prompt": "Optional separate listener check: ask the listener to restate the point and identify what remains uncertain. Do not treat one response as effectiveness evidence."
+        }
+      ],
+      "capture_schema": {
+        "participant_code": "pseudonymous_required",
+        "consent": "explicit_required_before_save",
+        "accessibility_or_modality": "optional_text",
+        "practice_response": "text_or_local_recording_reference",
+        "self_check_response": "text_required",
+        "non_fit_response": "text_required",
+        "listener_restatement": "optional_separate_record",
+        "revision_after_feedback": "optional_text"
+      },
+      "safety_boundary": "Do not imitate a speaker's identity, accent, personality or mannerism; do not require personal disclosure or recording; preserve privacy, accessibility and consent.",
+      "validation": {
+        "learner_observations": "not_run",
+        "listener_outcomes": "not_run",
+        "independent_evidence_review": "pending"
+      }
+    },
+    {
+      "lesson_id": "mobile:provisional-job-callback_or_repetition",
+      "pattern_id": "provisional-job-callback_or_repetition",
+      "canonical_job": "callback_or_repetition",
+      "status": "provisional_not_validated",
+      "claim_level": "practice_hypothesis",
+      "communication_problem": "Give a long exchange continuity or let an earlier image carry changed meaning.",
+      "mechanism_hypothesis": "Hypothesis: a callback can bind distant parts of a talk and make a shift noticeable, but repetition can become empty emphasis.",
+      "evidence_links": {
+        "exact_example_ids": [
+          "full-context-20260917-149:9",
+          "full-context-20260917-117:10",
+          "full-context-20260917-007:6"
+        ],
+        "phrase_forms": [],
+        "delivery_sample_ids": [
+          "delivery:callback_or_repetition:01",
+          "delivery:callback_or_repetition:02"
+        ],
+        "counterexample_types": [
+          "absent_but_speech_works",
+          "present_but_speech_fails",
+          "alternate_function",
+          "confound_or_setting",
+          "misuse_or_copying_risk"
+        ]
+      },
+      "steps": [
+        {
+          "step_id": "orient",
+          "type": "read",
+          "prompt": "Name the communication problem before trying the form."
+        },
+        {
+          "step_id": "inspect",
+          "type": "inspect_evidence",
+          "prompt": "Read one exact example and note what the words are doing; delivery measurements are proxies, not meaning."
+        },
+        {
+          "step_id": "rehearse",
+          "type": "practice",
+          "prompt": "Use one image at the opening and return to it at the close with a changed implication.",
+          "response_mode": [
+            "typed",
+            "spoken",
+            "captioned",
+            "asynchronous"
+          ]
+        },
+        {
+          "step_id": "self_check",
+          "type": "self_check",
+          "prompt": "What new work does the repeated phrase do the second time?"
+        },
+        {
+          "step_id": "boundary",
+          "type": "non_fit",
+          "prompt": "Do not repeat a slogan to pressure agreement or simulate evidence."
+        },
+        {
+          "step_id": "listener",
+          "type": "listener_check",
+          "prompt": "Optional separate listener check: ask the listener to restate the point and identify what remains uncertain. Do not treat one response as effectiveness evidence."
+        }
+      ],
+      "capture_schema": {
+        "participant_code": "pseudonymous_required",
+        "consent": "explicit_required_before_save",
+        "accessibility_or_modality": "optional_text",
+        "practice_response": "text_or_local_recording_reference",
+        "self_check_response": "text_required",
+        "non_fit_response": "text_required",
+        "listener_restatement": "optional_separate_record",
+        "revision_after_feedback": "optional_text"
+      },
+      "safety_boundary": "Do not imitate a speaker's identity, accent, personality or mannerism; do not require personal disclosure or recording; preserve privacy, accessibility and consent.",
+      "validation": {
+        "learner_observations": "not_run",
+        "listener_outcomes": "not_run",
+        "independent_evidence_review": "pending"
+      }
+    },
+    {
+      "lesson_id": "mobile:provisional-job-humor_or_rapport",
+      "pattern_id": "provisional-job-humor_or_rapport",
+      "canonical_job": "humor_or_rapport",
+      "status": "provisional_not_validated",
+      "claim_level": "practice_hypothesis",
+      "communication_problem": "Create ease or relational room without making affected people the joke.",
+      "mechanism_hypothesis": "Hypothesis: self-directed or situational humor may lower social pressure and make a difficult turn more approachable, but context and power determine risk.",
+      "evidence_links": {
+        "exact_example_ids": [
+          "full-context-20260917-017:1",
+          "full-context-20260917-082:2",
+          "full-context-20260917-107:6"
+        ],
+        "phrase_forms": [],
+        "delivery_sample_ids": [
+          "delivery:humor_or_rapport:01",
+          "delivery:humor_or_rapport:02"
+        ],
+        "counterexample_types": [
+          "absent_but_speech_works",
+          "present_but_speech_fails",
+          "alternate_function",
+          "confound_or_setting",
+          "misuse_or_copying_risk"
+        ]
+      },
+      "steps": [
+        {
+          "step_id": "orient",
+          "type": "read",
+          "prompt": "Name the communication problem before trying the form."
+        },
+        {
+          "step_id": "inspect",
+          "type": "inspect_evidence",
+          "prompt": "Read one exact example and note what the words are doing; delivery measurements are proxies, not meaning."
+        },
+        {
+          "step_id": "rehearse",
+          "type": "practice",
+          "prompt": "Try a self-directed release and a neutral transition after difficult material; check whether either targets someone else.",
+          "response_mode": [
+            "typed",
+            "spoken",
+            "captioned",
+            "asynchronous"
+          ]
+        },
+        {
+          "step_id": "self_check",
+          "type": "self_check",
+          "prompt": "Who bears the cost of the joke, and can the listener opt out of laughing?"
+        },
+        {
+          "step_id": "boundary",
+          "type": "non_fit",
+          "prompt": "Do not use humor to trivialize grief, vulnerability, identity or an unresolved harm."
+        },
+        {
+          "step_id": "listener",
+          "type": "listener_check",
+          "prompt": "Optional separate listener check: ask the listener to restate the point and identify what remains uncertain. Do not treat one response as effectiveness evidence."
+        }
+      ],
+      "capture_schema": {
+        "participant_code": "pseudonymous_required",
+        "consent": "explicit_required_before_save",
+        "accessibility_or_modality": "optional_text",
+        "practice_response": "text_or_local_recording_reference",
+        "self_check_response": "text_required",
+        "non_fit_response": "text_required",
+        "listener_restatement": "optional_separate_record",
+        "revision_after_feedback": "optional_text"
+      },
+      "safety_boundary": "Do not imitate a speaker's identity, accent, personality or mannerism; do not require personal disclosure or recording; preserve privacy, accessibility and consent.",
+      "validation": {
+        "learner_observations": "not_run",
+        "listener_outcomes": "not_run",
+        "independent_evidence_review": "pending"
+      }
+    },
+    {
+      "lesson_id": "mobile:provisional-job-credit_or_acknowledgment",
+      "pattern_id": "provisional-job-credit_or_acknowledgment",
+      "canonical_job": "credit_or_acknowledgment",
+      "status": "provisional_not_validated",
+      "claim_level": "practice_hypothesis",
+      "communication_problem": "Make contribution, support or dependence visible without turning praise into a status performance.",
+      "mechanism_hypothesis": "Hypothesis: specific credit can widen the authorship frame and show the work behind an outcome, but lists can exclude or tokenize people.",
+      "evidence_links": {
+        "exact_example_ids": [
+          "full-context-20260917-107:3",
+          "full-context-20260917-149:8",
+          "full-context-20260917-176:9"
+        ],
+        "phrase_forms": [],
+        "delivery_sample_ids": [
+          "delivery:credit_or_acknowledgment:01",
+          "delivery:credit_or_acknowledgment:02"
+        ],
+        "counterexample_types": [
+          "absent_but_speech_works",
+          "present_but_speech_fails",
+          "alternate_function",
+          "confound_or_setting",
+          "misuse_or_copying_risk"
+        ]
+      },
+      "steps": [
+        {
+          "step_id": "orient",
+          "type": "read",
+          "prompt": "Name the communication problem before trying the form."
+        },
+        {
+          "step_id": "inspect",
+          "type": "inspect_evidence",
+          "prompt": "Read one exact example and note what the words are doing; delivery measurements are proxies, not meaning."
+        },
+        {
+          "step_id": "rehearse",
+          "type": "practice",
+          "prompt": "Replace generic thanks with one observable contribution and its consequence.",
+          "response_mode": [
+            "typed",
+            "spoken",
+            "captioned",
+            "asynchronous"
+          ]
+        },
+        {
+          "step_id": "self_check",
+          "type": "self_check",
+          "prompt": "Could the credited person recognize the description as accurate and specific?"
+        },
+        {
+          "step_id": "boundary",
+          "type": "non_fit",
+          "prompt": "Do not claim to transfer authority through praise while retaining all control."
+        },
+        {
+          "step_id": "listener",
+          "type": "listener_check",
+          "prompt": "Optional separate listener check: ask the listener to restate the point and identify what remains uncertain. Do not treat one response as effectiveness evidence."
+        }
+      ],
+      "capture_schema": {
+        "participant_code": "pseudonymous_required",
+        "consent": "explicit_required_before_save",
+        "accessibility_or_modality": "optional_text",
+        "practice_response": "text_or_local_recording_reference",
+        "self_check_response": "text_required",
+        "non_fit_response": "text_required",
+        "listener_restatement": "optional_separate_record",
+        "revision_after_feedback": "optional_text"
+      },
+      "safety_boundary": "Do not imitate a speaker's identity, accent, personality or mannerism; do not require personal disclosure or recording; preserve privacy, accessibility and consent.",
+      "validation": {
+        "learner_observations": "not_run",
+        "listener_outcomes": "not_run",
+        "independent_evidence_review": "pending"
+      }
+    },
+    {
+      "lesson_id": "mobile:provisional-job-call_to_action_or_audience_role",
+      "pattern_id": "provisional-job-call_to_action_or_audience_role",
+      "canonical_job": "call_to_action_or_audience_role",
+      "status": "provisional_not_validated",
+      "claim_level": "practice_hypothesis",
+      "communication_problem": "Turn a broad aspiration into a voluntary, bounded next role.",
+      "mechanism_hypothesis": "Hypothesis: naming action, owner, time horizon and limit can make a request evaluable, but a request is not proof that the action is feasible or effective.",
+      "evidence_links": {
+        "exact_example_ids": [
+          "full-context-20260917-141:10",
+          "full-context-20260917-202:3",
+          "full-context-20260917-148:5"
+        ],
+        "phrase_forms": [
+          {
+            "phrase_form": "don't",
+            "matched_pattern": "\\bdon't\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: action forms may make a next role visible; a clear request does not prove feasibility or impact."
+          },
+          {
+            "phrase_form": "you can",
+            "matched_pattern": "\\byou can\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: action forms may make a next role visible; a clear request does not prove feasibility or impact."
+          },
+          {
+            "phrase_form": "let's",
+            "matched_pattern": "\\blet's\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: action forms may make a next role visible; a clear request does not prove feasibility or impact."
+          },
+          {
+            "phrase_form": "do not",
+            "matched_pattern": "\\bdo not\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: action forms may make a next role visible; a clear request does not prove feasibility or impact."
+          },
+          {
+            "phrase_form": "we need to",
+            "matched_pattern": "\\bwe need to\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: action forms may make a next role visible; a clear request does not prove feasibility or impact."
+          },
+          {
+            "phrase_form": "join us",
+            "matched_pattern": "\\bjoin us\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: action forms may make a next role visible; a clear request does not prove feasibility or impact."
+          },
+          {
+            "phrase_form": "take action",
+            "matched_pattern": "\\btake action\\b",
+            "status": "bounded_hypothesis_not_outcome_evidence",
+            "mechanism_hypothesis": "Hypothesis: action forms may make a next role visible; a clear request does not prove feasibility or impact."
+          }
+        ],
+        "delivery_sample_ids": [
+          "delivery:call_to_action_or_audience_role:01",
+          "delivery:call_to_action_or_audience_role:02"
+        ],
+        "counterexample_types": [
+          "absent_but_speech_works",
+          "present_but_speech_fails",
+          "alternate_function",
+          "confound_or_setting",
+          "misuse_or_copying_risk"
+        ]
+      },
+      "steps": [
+        {
+          "step_id": "orient",
+          "type": "read",
+          "prompt": "Name the communication problem before trying the form."
+        },
+        {
+          "step_id": "inspect",
+          "type": "inspect_evidence",
+          "prompt": "Read one exact example and note what the words are doing; delivery measurements are proxies, not meaning."
+        },
+        {
+          "step_id": "rehearse",
+          "type": "practice",
+          "prompt": "Rewrite ‘we should care’ as one feasible action with an owner, timeframe and non-fit.",
+          "response_mode": [
+            "typed",
+            "spoken",
+            "captioned",
+            "asynchronous"
+          ]
+        },
+        {
+          "step_id": "self_check",
+          "type": "self_check",
+          "prompt": "Can the listener say what they may do and what the action cannot solve?"
+        },
+        {
+          "step_id": "boundary",
+          "type": "non_fit",
+          "prompt": "Do not assign risk, money or care labor without authority, consent or support."
+        },
+        {
+          "step_id": "listener",
+          "type": "listener_check",
+          "prompt": "Optional separate listener check: ask the listener to restate the point and identify what remains uncertain. Do not treat one response as effectiveness evidence."
+        }
+      ],
+      "capture_schema": {
+        "participant_code": "pseudonymous_required",
+        "consent": "explicit_required_before_save",
+        "accessibility_or_modality": "optional_text",
+        "practice_response": "text_or_local_recording_reference",
+        "self_check_response": "text_required",
+        "non_fit_response": "text_required",
+        "listener_restatement": "optional_separate_record",
+        "revision_after_feedback": "optional_text"
+      },
+      "safety_boundary": "Do not imitate a speaker's identity, accent, personality or mannerism; do not require personal disclosure or recording; preserve privacy, accessibility and consent.",
+      "validation": {
+        "learner_observations": "not_run",
+        "listener_outcomes": "not_run",
+        "independent_evidence_review": "pending"
+      }
+    },
+    {
+      "lesson_id": "mobile:provisional-job-persuasion_or_advocacy",
+      "pattern_id": "provisional-job-persuasion_or_advocacy",
+      "canonical_job": "persuasion_or_advocacy",
+      "status": "provisional_not_validated",
+      "claim_level": "practice_hypothesis",
+      "communication_problem": "Move a room toward judgment or action while showing evidence, tradeoffs and responsibility.",
+      "mechanism_hypothesis": "Hypothesis: a visible chain from problem to mechanism to responsibility can make advocacy inspectable, but rhetorical force does not establish policy truth or outcomes.",
+      "evidence_links": {
+        "exact_example_ids": [
+          "full-context-20260917-175:8",
+          "full-context-20260917-174:4",
+          "full-context-20260917-187:2"
+        ],
+        "phrase_forms": [],
+        "delivery_sample_ids": [
+          "delivery:persuasion_or_advocacy:01",
+          "delivery:persuasion_or_advocacy:02"
+        ],
+        "counterexample_types": [
+          "absent_but_speech_works",
+          "present_but_speech_fails",
+          "alternate_function",
+          "confound_or_setting",
+          "misuse_or_copying_risk"
+        ]
+      },
+      "steps": [
+        {
+          "step_id": "orient",
+          "type": "read",
+          "prompt": "Name the communication problem before trying the form."
+        },
+        {
+          "step_id": "inspect",
+          "type": "inspect_evidence",
+          "prompt": "Read one exact example and note what the words are doing; delivery measurements are proxies, not meaning."
+        },
+        {
+          "step_id": "rehearse",
+          "type": "practice",
+          "prompt": "Make one advocacy claim with evidence status, opposing concern, responsible actor and review point.",
+          "response_mode": [
+            "typed",
+            "spoken",
+            "captioned",
+            "asynchronous"
+          ]
+        },
+        {
+          "step_id": "self_check",
+          "type": "self_check",
+          "prompt": "Can a listener disagree with the proposal while accurately restating it?"
+        },
+        {
+          "step_id": "boundary",
+          "type": "non_fit",
+          "prompt": "Do not use urgency, fear or moral identity to conceal missing evidence or coercion."
+        },
+        {
+          "step_id": "listener",
+          "type": "listener_check",
+          "prompt": "Optional separate listener check: ask the listener to restate the point and identify what remains uncertain. Do not treat one response as effectiveness evidence."
+        }
+      ],
+      "capture_schema": {
+        "participant_code": "pseudonymous_required",
+        "consent": "explicit_required_before_save",
+        "accessibility_or_modality": "optional_text",
+        "practice_response": "text_or_local_recording_reference",
+        "self_check_response": "text_required",
+        "non_fit_response": "text_required",
+        "listener_restatement": "optional_separate_record",
+        "revision_after_feedback": "optional_text"
+      },
+      "safety_boundary": "Do not imitate a speaker's identity, accent, personality or mannerism; do not require personal disclosure or recording; preserve privacy, accessibility and consent.",
+      "validation": {
+        "learner_observations": "not_run",
+        "listener_outcomes": "not_run",
+        "independent_evidence_review": "pending"
+      }
+    },
+    {
+      "lesson_id": "mobile:provisional-job-reflection_or_value_frame",
+      "pattern_id": "provisional-job-reflection_or_value_frame",
+      "canonical_job": "reflection_or_value_frame",
+      "status": "provisional_not_validated",
+      "claim_level": "practice_hypothesis",
+      "communication_problem": "Connect an event or decision to a value without pretending the value settles the facts.",
+      "mechanism_hypothesis": "Hypothesis: an explicit value frame can help a listener understand why a detail matters, but moral language can overrule evidence or disagreement.",
+      "evidence_links": {
+        "exact_example_ids": [
+          "full-context-20260917-174:2",
+          "full-context-20260917-007:3",
+          "full-context-20260917-023:13"
+        ],
+        "phrase_forms": [],
+        "delivery_sample_ids": [
+          "delivery:reflection_or_value_frame:01",
+          "delivery:reflection_or_value_frame:02"
+        ],
+        "counterexample_types": [
+          "absent_but_speech_works",
+          "present_but_speech_fails",
+          "alternate_function",
+          "confound_or_setting",
+          "misuse_or_copying_risk"
+        ]
+      },
+      "steps": [
+        {
+          "step_id": "orient",
+          "type": "read",
+          "prompt": "Name the communication problem before trying the form."
+        },
+        {
+          "step_id": "inspect",
+          "type": "inspect_evidence",
+          "prompt": "Read one exact example and note what the words are doing; delivery measurements are proxies, not meaning."
+        },
+        {
+          "step_id": "rehearse",
+          "type": "practice",
+          "prompt": "Take one personal or public event and state the value interpretation plus one alternative reading.",
+          "response_mode": [
+            "typed",
+            "spoken",
+            "captioned",
+            "asynchronous"
+          ]
+        },
+        {
+          "step_id": "self_check",
+          "type": "self_check",
+          "prompt": "Can the listener tell which part is observation, value judgment and open question?"
+        },
+        {
+          "step_id": "boundary",
+          "type": "non_fit",
+          "prompt": "Do not use a value label to end inquiry or claim moral superiority."
+        },
+        {
+          "step_id": "listener",
+          "type": "listener_check",
+          "prompt": "Optional separate listener check: ask the listener to restate the point and identify what remains uncertain. Do not treat one response as effectiveness evidence."
+        }
+      ],
+      "capture_schema": {
+        "participant_code": "pseudonymous_required",
+        "consent": "explicit_required_before_save",
+        "accessibility_or_modality": "optional_text",
+        "practice_response": "text_or_local_recording_reference",
+        "self_check_response": "text_required",
+        "non_fit_response": "text_required",
+        "listener_restatement": "optional_separate_record",
+        "revision_after_feedback": "optional_text"
+      },
+      "safety_boundary": "Do not imitate a speaker's identity, accent, personality or mannerism; do not require personal disclosure or recording; preserve privacy, accessibility and consent.",
+      "validation": {
+        "learner_observations": "not_run",
+        "listener_outcomes": "not_run",
+        "independent_evidence_review": "pending"
+      }
+    }
+  ]
+}

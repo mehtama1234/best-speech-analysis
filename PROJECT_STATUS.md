@@ -116,6 +116,9 @@ The integrated [18-job curriculum browser](writeups/communication-job-curriculum
 now joins each job's problem, mechanism hypothesis, repeatable form, exact
 examples, delivery queue/measurements, counterexample slots, practice,
 learner tasks and listener protocol in one provisional surface.
+The [mobile lesson payload](writeups/communication-job-mobile-lessons.md)
+provides six consent-aware practice steps per job with typed/captioned/
+asynchronous options and no required recording; it has zero learner records.
 
 The [18-job listener-outcome protocol](writeups/communication-job-listener-outcome-protocol.md)
 defines matched control/pattern-informed stimuli, six comprehension/recall

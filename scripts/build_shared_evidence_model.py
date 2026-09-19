@@ -21,6 +21,7 @@ def build(root: Path | None = None) -> dict:
     learner = read(root, "research/communication-job-learner-check.json")
     listener = read(root, "research/communication-job-listener-outcome-protocol.json")
     counterexamples = read(root, "research/communication-job-counterexample-workbook.json")
+    mobile_lessons = read(root, "research/communication-job-mobile-lessons.json")
     return {
         "schema_version": "1.0",
         "model_id": "shared-communication-evidence-model",
@@ -76,6 +77,7 @@ def build(root: Path | None = None) -> dict:
             "learner": {"source": "research/communication-job-learner-check.json", "card_count": learner["card_count"], "task_count": learner["task_count"], "completed_records": 0, "status": learner["status"]},
             "listener": {"source": "research/communication-job-listener-outcome-protocol.json", "pattern_count": len(listener["patterns"]), "stimulus_pairs_locked": listener["stimulus_pairs_locked"], "completed_records": 0, "status": listener["status"]},
             "counterexamples": {"source": "research/communication-job-counterexample-workbook.json", "job_count": counterexamples["job_count"], "queued_slot_count": counterexamples["item_count"], "completed_records": 0, "status": counterexamples["status"]},
+            "mobile_lessons": {"source": "research/communication-job-mobile-lessons.json", "lesson_count": mobile_lessons["lesson_count"], "status": mobile_lessons["status"]},
         },
     }
 

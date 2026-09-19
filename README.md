@@ -51,6 +51,9 @@ marks the other ten jobs as lacking a direct indexed family.
 The [integrated 18-job curriculum](writeups/communication-job-curriculum.html)
 puts examples, delivery measurements, counterexample queues, practice and
 learner/listener gates together without hiding missing validation.
+The matching [mobile lesson payload](writeups/communication-job-mobile-lessons.md)
+provides a compact six-step practice flow per job with explicit consent and
+accessibility boundaries; it is unrun.
 The [18-job listener protocol](writeups/communication-job-listener-outcome-protocol.md)
 separately defines matched controls, comprehension/recall measures and blinded
 scoring. Its [draft stimulus bank](writeups/communication-job-listener-stimuli-draft.md)

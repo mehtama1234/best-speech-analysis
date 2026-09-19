@@ -37,6 +37,7 @@ def validate(report: dict) -> list[str]:
     identity_review = read("research/corpus-identity-review-workbook.json")
     delivery_measurements = read("research/communication-job-delivery-measurement-preflight.json")
     curriculum_index = read("research/communication-job-curriculum-index.json")
+    mobile_lessons = read("research/communication-job-mobile-lessons.json")
     media = read("research/multimodal-coverage-audit.json")
     functions = read("research/corpus-function-independent-review-workbook.json")
     recurrence = read("research/corpus-recurrence-independent-review-workbook.json")
@@ -91,6 +92,7 @@ def validate(report: dict) -> list[str]:
         ("delivery_measurement_preflight", "matched_sample_count"): delivery_measurements["matched_sample_count"],
         ("delivery_measurement_preflight", "unmatched_sample_count"): delivery_measurements["unmatched_sample_count"],
         ("communication_job_curriculum", "lesson_count"): curriculum_index["lesson_count"],
+        ("communication_job_mobile_lessons", "lesson_count"): mobile_lessons["lesson_count"],
         ("speech_function_candidate_review", "queued_item_count"): functions["item_count"],
         ("recurrence_candidate_review", "queued_item_count"): recurrence["item_count"],
         ("delivery_evidence", "selected_video_count"): media["selected_video_count"],
@@ -109,6 +111,7 @@ def validate(report: dict) -> list[str]:
     if stages.get("counterexample_library", {}).get("completed_independent_reviews") != 0: errors.append("counterexample completion cannot be nonzero without an imported independent export")
     if stages.get("communication_job_delivery_sampling", {}).get("completed_manual_observations") != 0: errors.append("delivery sampling observations cannot be nonzero without completed observation records")
     if stages.get("corpus_identity_review", {}).get("completed_independent_reviews") != 0: errors.append("identity review completion cannot be nonzero without an imported independent export")
+    if stages.get("communication_job_mobile_lessons", {}).get("completed_records") != 0: errors.append("mobile lesson records are not present")
     if stages.get("learner_check", {}).get("completed_records") != 0: errors.append("learner records are not present")
     if stages.get("listener_outcomes", {}).get("completed_records") != 0: errors.append("listener records are not present")
     if stages.get("communication_job_learner_check", {}).get("completed_records") != 0: errors.append("communication-job learner records are not present")

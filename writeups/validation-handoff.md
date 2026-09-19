@@ -38,6 +38,9 @@ The [integrated curriculum browser](communication-job-curriculum.html) is the
 current web learning surface for all 18 jobs. It is provisional and should be
 used to inspect the evidence chain and open the pending gates, not to present
 the cards as proven best practices.
+The [mobile lesson payload](communication-job-mobile-lessons.md) is the native
+practice contract: six steps per job, pseudonymous consent capture and
+captioned/typed/asynchronous response modes. It contains no learner records.
 The [18-job listener protocol](communication-job-listener-outcome-protocol.md)
 remains a separate outcome gate; it cannot start until matched stimuli are
 independently reviewed, pretested and locked. The current [draft stimulus

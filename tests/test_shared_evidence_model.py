@@ -21,6 +21,7 @@ class SharedEvidenceModelTests(unittest.TestCase):
         self.assertIn("listener_outcome_evidence", [item["level"] for item in self.model["claim_levels"]])
         self.assertIn("counterexample_observation", self.model["entity_types"])
         self.assertEqual(self.model["current_manifest"]["counterexamples"]["queued_slot_count"], 90)
+        self.assertEqual(self.model["current_manifest"]["mobile_lessons"]["lesson_count"], 18)
 
     def test_contract_reconciles_with_live_artifacts(self):
         self.assertEqual(validate(self.model), [])
