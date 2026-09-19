@@ -93,8 +93,10 @@ separate gates in the [end-to-end acceptance matrix](end-to-end-acceptance-matri
 
 - [Full learner-card browser](corpus-learner-card-inventory.html)
 - [One starting lesson per video](corpus-video-learning-itinerary.html)
+- [Per-video coverage audit](corpus-learning-coverage-audit.md)
 - [18-job learner field guide](learner-field-guide.md)
 - [Personal speech playbook](my-speech-playbook.md)
 - [Seven-day practice path](learner-7-day-path.md)
 - [Exact phrase-form browser](job-phrase-candidate-inventory.html)
 - [Master speech-learning system](master-speech-learning-system.md)
+- [Validation handoff](validation-handoff.md)
