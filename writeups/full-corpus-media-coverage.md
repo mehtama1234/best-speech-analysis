@@ -10,11 +10,11 @@ Fixed transcript corpus: **395** videos.
 
 | Local media state | Videos |
 |---|---:|
-| `audio_only` | 9 |
-| `derived_features_only` | 6 |
-| `raw_audio_video_present` | 259 |
-| `transcript_only_no_local_media` | 113 |
-| `video_only` | 8 |
+| `audio_only` | 10 |
+| `derived_features_only` | 5 |
+| `raw_audio_video_present` | 266 |
+| `transcript_only_no_local_media` | 105 |
+| `video_only` | 9 |
 
 ## Interpretation
 

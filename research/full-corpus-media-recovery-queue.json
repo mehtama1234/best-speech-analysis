@@ -8,22 +8,22 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 136,
+  "item_count": 129,
   "counts": {
     "by_priority": {
-      "feature_backed_next_candidate": 6,
-      "fixed_corpus_transcript_only": 130
+      "feature_backed_next_candidate": 5,
+      "fixed_corpus_transcript_only": 124
     },
     "by_media_state": {
-      "audio_only": 9,
-      "derived_features_only": 6,
-      "transcript_only_no_local_media": 113,
-      "video_only": 8
+      "audio_only": 10,
+      "derived_features_only": 5,
+      "transcript_only_no_local_media": 105,
+      "video_only": 9
     },
     "by_video_status": {
       "downloaded": 8,
-      "failed:1": 40,
-      "not_attempted": 88
+      "failed:1": 42,
+      "not_attempted": 79
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -56,18 +56,6 @@
       "video_id": "S43F1BZfQKY",
       "title": "ENGLISH SPEECH | PARUL BANSAL: I Shaved My Head (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=S43F1BZfQKY",
-      "media_state": "derived_features_only",
-      "priority": "feature_backed_next_candidate",
-      "video_download_status": "failed:1",
-      "audio_download_status": "failed:1",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "_Mb1-CN3wZs",
-      "title": "Al Pacino as Tony Montana in the opening scene of \"Scarface\" (1983) by Brian De Palma 1080p",
-      "source_url": "https://www.youtube.com/watch?v=_Mb1-CN3wZs",
       "media_state": "derived_features_only",
       "priority": "feature_backed_next_candidate",
       "video_download_status": "failed:1",
@@ -526,22 +514,10 @@
       "source_url": "https://www.youtube.com/watch?v=EPffnjpHdTw",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "EXGUNvIFTQw",
-      "title": "Famous Speeches: Aragorn at the Black Gate",
-      "source_url": "https://www.youtube.com/watch?v=EXGUNvIFTQw",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -812,24 +788,12 @@
       "video_id": "ThsZ8wfhJpk",
       "title": "Doubt - Meryl Streep and Viola Davis",
       "source_url": "https://www.youtube.com/watch?v=ThsZ8wfhJpk",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "audio_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "Tsv6x-4HbGQ",
-      "title": "ENGLISH SPEECH | KEIR STARMER: Rebuilding Britain (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=Tsv6x-4HbGQ",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1028,12 +992,12 @@
       "video_id": "ex52Kj6ogwI",
       "title": "ENGLISH SPEECH | KIARA ADVANI: Behind the Glamour (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=ex52Kj6ogwI",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "video_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1082,18 +1046,6 @@
       "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "ftlHd9Bu530",
-      "title": "ENGLISH SPEECH | RIHANNA: Start Helping One Person (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=ftlHd9Bu530",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1208,18 +1160,6 @@
       "video_id": "lUmWWTMFjZE",
       "title": "ENGLISH SPEECH | ANNE HATHAWAY: Authentic Equality (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=lUmWWTMFjZE",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "lmpOfO30L5g",
-      "title": "ENGLISH SPEECH | WENTWORTH MILLER: Survival Mode (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=lmpOfO30L5g",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -1457,18 +1397,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "svHGvxKhT74",
-      "title": "ENGLISH SPEECH | MATTHIEU RICARD: True Happiness (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=svHGvxKhT74",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "szXreq7f924",
       "title": "ENGLISH SPEECH | KEN JEONG: Find Your Passion (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=szXreq7f924",
@@ -1598,18 +1526,6 @@
       "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "xO60RohuARY",
-      "title": "Jaws: The U.S.S. Indianapolis Speech",
-      "source_url": "https://www.youtube.com/watch?v=xO60RohuARY",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
