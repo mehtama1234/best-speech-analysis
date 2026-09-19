@@ -47,6 +47,9 @@ class CommunicationJobLearnerCheckTests(unittest.TestCase):
                 record["responses"][task_id] = "synthetic response"
             for suffix in ("listener_restatement", "revision", "boundary_note"):
                 record["responses"][f"{card['card_id']}_{suffix}"] = "synthetic note"
+            for dimension in card["scoring_dimensions"]:
+                record["responses"][f"{card['card_id']}_score_{dimension}"] = "2"
+            record["responses"][f"{card['card_id']}_safety_issue"] = "no"
         self.assertEqual(validate(record, self.protocol), [])
         incomplete = copy.deepcopy(record)
         del incomplete["responses"]["opening-recognition-01"]

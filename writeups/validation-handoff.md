@@ -34,6 +34,10 @@ summary is written.
 Its tasks now expose exact phrase forms for eight indexed job families and
 preserve an explicit no-direct-match status for the other ten; this is a
 curriculum link, not evidence that any phrase works.
+Completed learner exports now require facilitator rubric scores (0–2) for
+recognition, explanation, transfer, non-fit, listener restatement and revision,
+plus a safety/privacy/accessibility flag. Use the [non-promotional summarizer](../scripts/summarize_communication_job_learner_records.py)
+to retain per-job failures rather than averaging them away.
 The [integrated curriculum browser](communication-job-curriculum.html) is the
 current web learning surface for all 18 jobs. It is provisional and should be
 used to inspect the evidence chain and open the pending gates, not to present

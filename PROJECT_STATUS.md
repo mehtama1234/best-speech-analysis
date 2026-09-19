@@ -112,6 +112,10 @@ but has zero learner records and cannot be treated as learning evidence.
 Its recognition and explanation tasks now link the 50-form exact inventory
 where an indexed family matches; the other ten jobs explicitly remain without
 a direct exact-form match rather than receiving invented phrases.
+The protocol now also requires facilitator-entered 0–2 rubric scores for six
+teachability dimensions per job plus a separate safety/privacy/accessibility
+flag. The [non-promotional summarizer](scripts/summarize_communication_job_learner_records.py)
+will preserve per-job low scores and safety findings once records exist.
 The integrated [18-job curriculum browser](writeups/communication-job-curriculum.html)
 now joins each job's problem, mechanism hypothesis, repeatable form, exact
 examples, delivery queue/measurements, counterexample slots, practice,

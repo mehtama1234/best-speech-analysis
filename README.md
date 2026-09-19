@@ -48,6 +48,9 @@ provides 72 fixed teachability tasks; it is an unrun instrument, not learner
 evidence.
 It links the 50-form exact phrase inventory to eight matching job families and
 marks the other ten jobs as lacking a direct indexed family.
+It also captures six facilitator-scored teachability dimensions and a separate
+safety flag per job; the [summarizer](scripts/summarize_communication_job_learner_records.py)
+keeps those results non-promotional.
 The [integrated 18-job curriculum](writeups/communication-job-curriculum.html)
 puts examples, delivery measurements, counterexample queues, practice and
 learner/listener gates together without hiding missing validation.

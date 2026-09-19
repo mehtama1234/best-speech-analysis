@@ -32,6 +32,9 @@ def validate(record: dict, protocol: dict | None = None) -> list[str]:
             if not str(responses.get(task_id, "")).strip(): errors.append(f"{task_id} is required")
         for suffix in ("listener_restatement", "revision", "boundary_note"):
             if not str(responses.get(f"{card_id}_{suffix}", "")).strip(): errors.append(f"{card_id}_{suffix} is required")
+        for dimension in card.get("scoring_dimensions", []):
+            if responses.get(f"{card_id}_score_{dimension}") not in {"0", "1", "2"}: errors.append(f"{card_id}_score_{dimension} must be 0, 1 or 2")
+        if responses.get(f"{card_id}_safety_issue") not in {"yes", "no"}: errors.append(f"{card_id}_safety_issue must be yes or no")
     return errors
 
 
