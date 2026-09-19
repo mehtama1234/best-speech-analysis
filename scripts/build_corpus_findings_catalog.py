@@ -31,6 +31,7 @@ def build() -> tuple[dict, str]:
     phrases = load("research/corpus-phrase-form-inventory.json")["forms"]
     evidence = load("research/corpus-evidence-bank.json")["records"]
     delivery = load("research/communication-job-delivery-internal-observations.json")["items"]
+    comparison = load("research/communication-job-cross-comparison.json")
 
     lesson_by_review = {x["review_id"]: x for x in lessons}
     evidence_by_job: dict[str, list[dict]] = defaultdict(list)
@@ -127,6 +128,22 @@ def build() -> tuple[dict, str]:
         ],
         "function_counts": function_counts,
         "relation_counts": relation_counts,
+        "interesting_recurrence_findings": {
+            "status": "same_video_inventory_patterns_not_effectiveness_results",
+            "top_job_pairs": sorted(
+                [
+                    {
+                        "job_a": x.get("left_job"),
+                        "job_b": x.get("right_job"),
+                        "shared_video_count": x.get("shared_video_count", 0),
+                        "holdout_shared_video_count": x.get("shared_holdout_video_count", 0),
+                    }
+                    for x in comparison.get("pair_rows", [])
+                ],
+                key=lambda x: (-x["shared_video_count"], x["job_a"], x["job_b"]),
+            )[:20],
+            "interpretation": "These pairs identify combinations worth reading and testing. Same-video co-occurrence does not show that one move causes another, that the pair is effective, or that either move was independently classified.",
+        },
         "video_findings": rows,
     }
     result["function_counts"] = dict(function_counts.most_common())
@@ -170,6 +187,11 @@ def build() -> tuple[dict, str]:
         m = x.get("audio_measurements") or {}
         metrics = ", ".join(f"{k}={v}" for k, v in list(m.items())[:3]) or "not available"
         lines.append(f"| `{x.get('canonical_job')}` | [{x.get('video_id')} @ {x.get('sampled_midpoint_seconds')}s]({x.get('source_url')}) | {clip(x.get('visual_observation', ''), 190)} | {clip(x.get('vocal_timing_observation', ''), 150)} | {clip(metrics, 160)}; {clip(x.get('missingness_or_accessibility_note', ''), 150)} |")
+
+    findings = result["interesting_recurrence_findings"]
+    lines += ["", "## Most interesting cross-talk combinations", "", "These are the highest same-video job co-occurrences in the comparison inventory. They are reading targets and practice hypotheses, not causal or effectiveness findings.", "", "| Job A | Job B | Shared videos | Shared holdout videos |", "|---|---|---:|---:|"]
+    for x in findings["top_job_pairs"]:
+        lines.append(f"| `{x['job_a']}` | `{x['job_b']}` | {x['shared_video_count']} | {x['holdout_shared_video_count']} |")
 
     lines += ["", "## Video-by-video findings (all 395 reviews)", "", "Every row below is a recorded observation, not an invented summary. Open the linked writeup and evidence IDs for the full context.", "", "| # | Video / writeup | Observed functions | Structural relations | Limits / next test |", "|---:|---|---|---|---|"]
     for i, row in enumerate(rows, 1):

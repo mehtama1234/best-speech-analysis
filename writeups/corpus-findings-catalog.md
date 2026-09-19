@@ -477,6 +477,33 @@ There are **36 bounded internal audiovisual observations**, two per communicatio
 | `reflection_or_value_frame` | [ZwMVMbmQBug @ 62.454s](https://www.youtube.com/watch?v=ZwMVMbmQBug&t=57s) | An older man is visible seated indoors and gesturing while subtitle text is overlaid. | Manual listening was not performed in this pass; retained transcript timing and feature values remain separate from a vocal interpretation. | words_per_second_proxy=4.88633, transcript_gap_before_seconds=0.01333, transcript_gap_after_seconds=0.01333; Single-frame sampling cannot establish continuous gaze, gesture, posture, editing sequence, room acoustics, accessibility or audience response. |
 | `reflection_or_value_frame` | [AwA0Jnfj3ao @ 1012.655s](https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=1003s) | Audience and stage lighting are visible, but the speaker is not clearly visible in the midpoint frame; subtitle text is overlaid. | Manual listening was not performed in this pass; retained transcript timing and feature values remain separate from a vocal interpretation. | words_per_second_proxy=2.54167, transcript_gap_before_seconds=0.0, transcript_gap_after_seconds=0.0; Single-frame sampling cannot establish continuous gaze, gesture, posture, editing sequence, room acoustics, accessibility or audience response. |
 
+## Most interesting cross-talk combinations
+
+These are the highest same-video job co-occurrences in the comparison inventory. They are reading targets and practice hypotheses, not causal or effectiveness findings.
+
+| Job A | Job B | Shared videos | Shared holdout videos |
+|---|---|---:|---:|
+| `closing` | `story_or_personal_experience` | 68 | 12 |
+| `question` | `story_or_personal_experience` | 55 | 8 |
+| `closing` | `opening` | 54 | 10 |
+| `opening` | `story_or_personal_experience` | 52 | 9 |
+| `closing` | `question` | 48 | 7 |
+| `contrast_or_disagreement` | `story_or_personal_experience` | 47 | 5 |
+| `qualification_or_boundary` | `story_or_personal_experience` | 44 | 3 |
+| `call_to_action_or_audience_role` | `story_or_personal_experience` | 42 | 3 |
+| `example_or_case` | `story_or_personal_experience` | 42 | 10 |
+| `reflection_or_value_frame` | `story_or_personal_experience` | 42 | 9 |
+| `story_or_personal_experience` | `transition_or_structure` | 42 | 3 |
+| `closing` | `qualification_or_boundary` | 40 | 6 |
+| `closing` | `transition_or_structure` | 39 | 6 |
+| `correction_or_reframe` | `story_or_personal_experience` | 39 | 7 |
+| `closing` | `example_or_case` | 38 | 8 |
+| `credit_or_acknowledgment` | `story_or_personal_experience` | 38 | 14 |
+| `closing` | `correction_or_reframe` | 37 | 8 |
+| `closing` | `reflection_or_value_frame` | 37 | 6 |
+| `closing` | `contrast_or_disagreement` | 35 | 3 |
+| `opening` | `qualification_or_boundary` | 34 | 5 |
+
 ## Video-by-video findings (all 395 reviews)
 
 Every row below is a recorded observation, not an invented summary. Open the linked writeup and evidence IDs for the full context.
