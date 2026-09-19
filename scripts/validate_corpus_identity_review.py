@@ -16,6 +16,7 @@ def validate(record: dict, workbook: dict | None = None) -> list[str]:
     errors = []
     if record.get("record_type") != "corpus_identity_independent_review": errors.append("record_type is invalid")
     if record.get("workbook_id") != workbook["workbook_id"]: errors.append("workbook_id does not match")
+    if "identity" not in str(record.get("claim_boundary", "")).lower() or "recurrence" not in str(record.get("claim_boundary", "")).lower(): errors.append("claim_boundary must preserve the identity-only and non-recurrence boundary")
     responses = record.get("responses", {})
     for key in ("reviewer_name", "reviewer_role", "review_date", "review_modality", "conflict_statement"):
         if not str(responses.get(key, "")).strip(): errors.append(f"missing reviewer field: {key}")

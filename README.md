@@ -110,6 +110,9 @@ point for running the remaining independent, learner and listener gates.
 The [corpus identity workbook](writeups/corpus-identity-review-workbook.html)
 is the independent speaker/event and duplication gate for all 395 reviewed
 videos; registry metadata is shown as a lead, not treated as proof.
+Its validator enforces the identity-only/non-recurrence boundary, and the
+[summarizer](scripts/summarize_corpus_identity_reviews.py) reports decision
+distributions without promoting metadata to cross-talk evidence.
 
 The separate [speech-function review workbook](writeups/corpus-function-independent-review-workbook.html)
 provides 187 stratified transcript candidates for an independent reviewer to
