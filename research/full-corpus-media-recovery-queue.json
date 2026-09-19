@@ -8,22 +8,22 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 169,
+  "item_count": 162,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 6,
-      "fixed_corpus_transcript_only": 163
+      "fixed_corpus_transcript_only": 156
     },
     "by_media_state": {
       "audio_only": 8,
       "derived_features_only": 6,
-      "transcript_only_no_local_media": 150,
-      "video_only": 5
+      "transcript_only_no_local_media": 140,
+      "video_only": 8
     },
     "by_video_status": {
-      "downloaded": 5,
+      "downloaded": 8,
       "failed:1": 36,
-      "not_attempted": 128
+      "not_attempted": 118
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -149,18 +149,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "0nUDkCgyppM",
-      "title": "ENGLISH SPEECH | RAKUL, SAMANTHA, TAMANNAAH & KAJAL: Heroines Unite (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=0nUDkCgyppM",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "1DXo2fcfleY",
       "title": "ENGLISH SPEECH | SARA ALI KHAN: Be Your Best Self (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=1DXo2fcfleY",
@@ -245,18 +233,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "3Q4sL85cLIQ",
-      "title": "ENGLISH SPEECH | TERRY CREWS: Abuse of Power (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=3Q4sL85cLIQ",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "3TWYqYJqU8U",
       "title": "ENGLISH SPEECH | KATE WINSLET: Believe in Yourself (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=3TWYqYJqU8U",
@@ -284,24 +260,12 @@
       "video_id": "3x4zM7O8pZI",
       "title": "ENGLISH SPEECH | PM NARENDRA MODI: India-Australia Partnership (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=3x4zM7O8pZI",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "video_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "downloaded",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "46yStqMV4eY",
-      "title": "ENGLISH SPEECH | HILLARY CLINTON: Be Resilient (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=46yStqMV4eY",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1097,18 +1061,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "XVHd_UUTK-c",
-      "title": "ENGLISH SPEECH | RO KHANNA: Epstein Files Transparency (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=XVHd_UUTK-c",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "Y4znQWi_V98",
       "title": "ENGLISH SPEECH | PETER DINKLAGE: Are You Afraid Of Change? (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=Y4znQWi_V98",
@@ -1154,18 +1106,6 @@
       "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "_Q0ctJPDdGI",
-      "title": "ENGLISH SPEECH | SAMANTHA: Living with Myositis (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=_Q0ctJPDdGI",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1469,18 +1409,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "kCK3cR3Pz2c",
-      "title": "ENGLISH SPEECH | ELIZABETH OLSEN: The Latitude Project (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=kCK3cR3Pz2c",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "kUDCygomLyo",
       "title": "ENGLISH SPEECH | BENEDICT CUMBERBATCH: Hollywood Walk of Fame (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=kUDCygomLyo",
@@ -1649,18 +1577,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "nkMpdI5sQQM",
-      "title": "ENGLISH SPEECH | DANIEL RADCLIFFE: Courage and Compassion (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=nkMpdI5sQQM",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "o4gEmLpxHHk",
       "title": "ENGLISH SPEECH | WILL SMITH: How to Face Fear (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=o4gEmLpxHHk",
@@ -1748,12 +1664,12 @@
       "video_id": "rZRLLI-_3ME",
       "title": "ENGLISH SPEECH | HUGH JACKMAN: Be Thankful (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=rZRLLI-_3ME",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "video_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "downloaded",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1856,12 +1772,12 @@
       "video_id": "tRbTxgQy7rg",
       "title": "ENGLISH SPEECH | S. JAISHANKAR: India’s Global Vision (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=tRbTxgQy7rg",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "video_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "downloaded",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
