@@ -35,6 +35,9 @@ The [corpus findings catalog](writeups/corpus-findings-catalog.md) is the
 practical reading surface: all 395 video findings, 18 usable speech jobs,
 timestamp-linked examples, exact phrase-form counts, copyable forms, practice
 drills, self-checks and non-fit boundaries in one place.
+Its current heuristic routing sends 207 videos to one or more practice cards;
+188 remain explicitly unclassified while their recorded structural claims stay
+visible for human review.
 Media recovery is now resumable through
 [`scripts/recover_full_corpus_media.py`](scripts/recover_full_corpus_media.py);
 recovered files remain unverified until identity, alignment and delivery review.
