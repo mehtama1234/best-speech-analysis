@@ -52,6 +52,10 @@ is the next manual multimodal collection surface: 36 samples with transcript
 alignment, media state and fields for vocal timing, audio limits, visual
 observations, editing, setting and accessibility. It contains no observations
 yet.
+The [delivery measurement preflight](communication-job-delivery-measurement-preflight.md)
+contains 32 aligned proxy-measurement records and four unmatched samples. Treat
+these as reproducible navigation/measurement aids only; manual observation and
+independent review remain required.
 The [corpus identity workbook](corpus-identity-review-workbook.html) separately
 requires independent verification for all 395 reviewed queue items, including
 speaker, event, upload correspondence and duplicate/compilation status. Do not

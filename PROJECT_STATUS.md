@@ -54,6 +54,11 @@ The [18-job delivery sampling queue](writeups/communication-job-delivery-samplin
 adds two transcript-aligned candidate samples per job (36 total; 32 with raw
 audio/video and four with derived or other media states). Its manual fields are
 blank; no vocal, nonverbal, setting or editing findings are inferred.
+The [measurement preflight](writeups/communication-job-delivery-measurement-preflight.md)
+attaches reproducible proxy values to the queue: 32/36 samples have aligned
+feature rows and four are unmatched. RMS, speech activity, pitch, frame and
+face-count fields remain measurement proxies pending manual and independent
+review.
 The [shared evidence model](writeups/shared-evidence-model.md) formalizes the
 web/mobile contract: entity types, claim levels, status vocabulary, provenance
 links, missing/disagreement handling and separate learner/listener records. Its

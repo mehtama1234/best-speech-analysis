@@ -35,6 +35,7 @@ def validate(report: dict) -> list[str]:
     cross_comparison = read("research/communication-job-cross-comparison.json")
     delivery_sampling = read("research/communication-job-delivery-sampling.json")
     identity_review = read("research/corpus-identity-review-workbook.json")
+    delivery_measurements = read("research/communication-job-delivery-measurement-preflight.json")
     media = read("research/multimodal-coverage-audit.json")
     functions = read("research/corpus-function-independent-review-workbook.json")
     recurrence = read("research/corpus-recurrence-independent-review-workbook.json")
@@ -84,6 +85,9 @@ def validate(report: dict) -> list[str]:
         ("communication_job_delivery_sampling", "raw_audio_video_sample_count"): delivery_sampling["coverage_summary"]["raw_audio_video_items"],
         ("corpus_identity_review", "queued_item_count"): identity_review["item_count"],
         ("corpus_identity_review", "registry_row_count"): identity_review["registry_row_count"],
+        ("delivery_measurement_preflight", "sample_count"): delivery_measurements["item_count"],
+        ("delivery_measurement_preflight", "matched_sample_count"): delivery_measurements["matched_sample_count"],
+        ("delivery_measurement_preflight", "unmatched_sample_count"): delivery_measurements["unmatched_sample_count"],
         ("speech_function_candidate_review", "queued_item_count"): functions["item_count"],
         ("recurrence_candidate_review", "queued_item_count"): recurrence["item_count"],
         ("delivery_evidence", "selected_video_count"): media["selected_video_count"],

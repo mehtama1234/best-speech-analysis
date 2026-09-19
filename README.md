@@ -69,6 +69,9 @@ separate; it currently records 21 internal and zero independent observations.
 The [18-job delivery sampling queue](writeups/communication-job-delivery-sampling.html)
 adds two transcript-aligned candidate samples per job while keeping raw-media
 availability and blank manual observation fields visible.
+The [measurement preflight](writeups/communication-job-delivery-measurement-preflight.md)
+attaches reproducible audio/transcript/frame proxies to 32 of those samples;
+it does not infer emotion, confidence, intent, nonverbal meaning or effect.
 The [shared evidence model](writeups/shared-evidence-model.md) is the common
 web/mobile contract for provenance, modality, hypotheses, practice, learner
 records and listener records, with uncertainty and missing validation visible.
