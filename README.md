@@ -38,6 +38,8 @@ drills, self-checks and non-fit boundaries in one place.
 Media recovery is now resumable through
 [`scripts/recover_full_corpus_media.py`](scripts/recover_full_corpus_media.py);
 recovered files remain unverified until identity, alignment and delivery review.
+The [newly recovered-media observation report](writeups/recovered-media-internal-observations.md)
+records eight directly inspected frames with their caption alignment and limits.
 The [provisional function taxonomy](writeups/corpus-function-taxonomy.md) adds
 shared comparison labels without deleting the original free-text functions;
 2,394 items remain explicitly unclassified for human review.

@@ -65,6 +65,8 @@ ARTIFACTS = [
     ("research/multimodal-pattern-comparison.json", "heuristic multimodal feature comparison"),
     ("writeups/multimodal-pattern-comparison.md", "heuristic multimodal comparison report"),
     ("scripts/compare_multimodal_patterns.py", "multimodal comparison builder"),
+    ("research/recovered-media-internal-observations.json", "newly recovered bounded frame observations"),
+    ("writeups/recovered-media-internal-observations.md", "newly recovered delivery observation report"),
 ]
 
 
