@@ -2,21 +2,21 @@
 
 This report compares directly measured pilot features against heuristic transcript markers. It does not establish general speech principles. Labels must be manually reviewed, and all face measurements are detector outputs rather than emotion judgments.
 
-Pilot videos: **340**
+Pilot videos: **341**
 
 ## Acoustic comparison
 
 | Candidate label | Videos | Segments | Mean RMS dB | Speech activity | Zero-crossing rate | Spectral centroid Hz | Pitch proxy Hz | Pitch confidence |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| `call_to_action` | 211 | 738 | -20.085 | 0.96949 | 0.13748 | 785.2231 | 239.64949 | 0.19321 |
+| `call_to_action` | 212 | 741 | -20.07651 | 0.96964 | 0.13745 | 785.59011 | 239.73946 | 0.19294 |
 | `conclusion_or_summary` | 30 | 35 | -19.5499 | 0.96232 | 0.15553 | 870.1808 | 263.92417 | 0.18252 |
-| `contrast_or_disagreement` | 234 | 751 | -19.98943 | 0.96632 | 0.14096 | 797.97896 | 256.58471 | 0.179 |
-| `definition` | 142 | 342 | -19.80061 | 0.96268 | 0.14093 | 789.29169 | 260.51599 | 0.18281 |
+| `contrast_or_disagreement` | 235 | 753 | -19.9875 | 0.96646 | 0.14094 | 798.6068 | 256.64055 | 0.17904 |
+| `definition` | 143 | 343 | -19.8085 | 0.96295 | 0.14079 | 790.03874 | 260.48473 | 0.18252 |
 | `example` | 121 | 223 | -19.78678 | 0.97021 | 0.1435 | 785.55899 | 250.52638 | 0.18331 |
-| `question` | 323 | 5484 | -20.66195 | 0.95439 | 0.14147 | 808.35384 | 259.08066 | 0.18283 |
-| `story_or_personal_experience` | 234 | 935 | -20.08119 | 0.96772 | 0.14491 | 823.60999 | 259.62101 | 0.18504 |
-| `uncertainty_or_qualification` | 288 | 2961 | -20.14778 | 0.96424 | 0.14106 | 805.34654 | 259.53699 | 0.1814 |
-| `unclassified` | 333 | 79660 | -20.73799 | 0.95765 | 0.14356 | 818.64763 | 256.26634 | 0.18356 |
+| `question` | 324 | 5487 | -20.66503 | 0.95404 | 0.14135 | 808.13867 | 259.11023 | 0.18273 |
+| `story_or_personal_experience` | 235 | 937 | -20.06923 | 0.96786 | 0.14488 | 824.09495 | 259.89316 | 0.18497 |
+| `uncertainty_or_qualification` | 289 | 2968 | -20.14691 | 0.96429 | 0.14103 | 805.65266 | 259.59679 | 0.18136 |
+| `unclassified` | 334 | 79813 | -20.73176 | 0.95776 | 0.14353 | 818.88617 | 256.29081 | 0.18349 |
 
 ## Visual coverage
 
@@ -158,6 +158,7 @@ Visual results currently describe face detection and geometry only. They do not 
 | `MvJSyU_zuLY` | 8 | 0 | 0.0 | None | 0 |
 | `MzYKtA-d7iQ` | 75 | 0 | 0.0 | None | 0 |
 | `N6ROB3Q_iXg` | 26 | 0 | 0.0 | None | 0 |
+| `N_H7qoPLOYU` | 16 | 0 | 0.0 | None | 0 |
 | `O1V1gRCaisY` | 13 | 0 | 0.0 | None | 0 |
 | `O1VdQQkbUOU` | 26 | 0 | 0.0 | None | 0 |
 | `OfwfTN1mEyM` | 50 | 41 | 0.82 | 0.02261 | 0 |
