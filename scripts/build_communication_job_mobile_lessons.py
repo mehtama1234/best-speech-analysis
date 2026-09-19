@@ -16,6 +16,34 @@ def build() -> dict:
     index = json.loads(INDEX.read_text())
     lessons = []
     for lesson in index["lessons"]:
+        exact_examples = []
+        for example in lesson["exact_examples"][:3]:
+            exact_examples.append({
+                "record_id": example["record_id"],
+                "title": example["title"],
+                "source_url": example["source_url"],
+                "segments": [
+                    {"evidence_id": segment["evidence_id"], "start_seconds": segment["start_seconds"], "end_seconds": segment["end_seconds"], "text": segment["text"]}
+                    for segment in example["exact_segments"]
+                ],
+            })
+        delivery_samples = []
+        for sample in lesson["delivery_samples"]:
+            measurement = sample.get("measurement") or {}
+            delivery_samples.append({
+                "sample_id": sample["sample_id"],
+                "video_id": sample["video_id"],
+                "title": sample["title"],
+                "source_url": sample["source_url"],
+                "start_seconds": sample["start_seconds"],
+                "end_seconds": sample["end_seconds"],
+                "transcript_excerpt": sample["transcript_excerpt"],
+                "raw_media_state": sample["raw_media_state"],
+                "measurement_status": measurement.get("measurement_status", "not_available"),
+                "matched_feature_segment_count": len(measurement.get("evidence_ids_matched", [])),
+                "measurement_limits": measurement.get("measurement_limits", ["No aligned feature measurement is available; do not infer delivery or setting meaning."]),
+                "observation_status": "manual_observation_pending",
+            })
         lessons.append({
             "lesson_id": f"mobile:{lesson['pattern_id']}",
             "pattern_id": lesson["pattern_id"],
@@ -24,12 +52,17 @@ def build() -> dict:
             "claim_level": "practice_hypothesis",
             "communication_problem": lesson["communication_problem"],
             "mechanism_hypothesis": lesson["mechanism_hypothesis"],
+            "repeatable_form": lesson["repeatable_form"],
+            "phrase_form_coverage_status": lesson["phrase_form_coverage_status"],
             "evidence_links": {
                 "exact_example_ids": [example["record_id"] for example in lesson["exact_examples"][:3]],
                 "phrase_forms": lesson["phrase_forms"],
                 "delivery_sample_ids": [item["sample_id"] for item in lesson["delivery_samples"]],
                 "counterexample_types": [item["counterexample_type"] for item in lesson["counterexample_slots"]],
             },
+            "exact_examples": exact_examples,
+            "delivery_samples": delivery_samples,
+            "delivery_boundary": "Delivery samples and feature values are navigation/proxy evidence only. Manual observation, speaker/event identity and independent multimodal review remain pending.",
             "steps": [
                 {"step_id": "orient", "type": "read", "prompt": "Name the communication problem before trying the form."},
                 {"step_id": "inspect", "type": "inspect_evidence", "prompt": "Read one exact example and note what the words are doing; delivery measurements are proxies, not meaning."},
