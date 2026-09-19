@@ -9,8 +9,8 @@ Queued missing/derived items: **264**.
 | Priority | Media state | Existing video status | Items |
 |---|---|---|---:|
 | `feature_backed_next_candidate` | `derived_features_only` | `failed:1` | 6 |
-| `fixed_corpus_transcript_only` | `transcript_only_no_local_media` | `failed:1` | 8 |
-| `fixed_corpus_transcript_only` | `transcript_only_no_local_media` | `not_attempted` | 249 |
+| `fixed_corpus_transcript_only` | `transcript_only_no_local_media` | `failed:1` | 9 |
+| `fixed_corpus_transcript_only` | `transcript_only_no_local_media` | `not_attempted` | 248 |
 | `fixed_corpus_transcript_only` | `video_only` | `downloaded` | 1 |
 
 ## Operating rule
