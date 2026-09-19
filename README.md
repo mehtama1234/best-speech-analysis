@@ -68,6 +68,11 @@ defines the evidence chain required before any lesson can be promoted.
 The [learner field guide](writeups/learner-field-guide.md) consolidates the
 18 communication jobs, repeatable forms, indexed phrase families, practice
 boundaries and delivery-inspection questions in one usable guide.
+The [full-corpus media audit](writeups/full-corpus-media-coverage.md) separates
+395-video transcript coverage from local audiovisual availability and makes
+the remaining delivery gap explicit: 31 raw A/V, 6 derived-feature-only and
+358 transcript-only locally; the 36-sample delivery queue includes five
+recovered samples outside the fixed transcript queue.
 The [18-job listener protocol](writeups/communication-job-listener-outcome-protocol.md)
 separately defines matched controls, six comprehension/recall measures and
 controlled blind 0–2 task scoring with an explicit accessibility/missingness

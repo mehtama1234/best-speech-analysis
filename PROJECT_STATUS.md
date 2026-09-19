@@ -240,6 +240,11 @@ are accounted for in a separate raw-media-only queue; they cannot support
 transcript-linked speech-pattern review. No selected item is currently partial.
 The raw-file count is authoritative here; download-ledger status is not treated
 as proof that files still exist.
+The separate [full-corpus media availability audit](writeups/full-corpus-media-coverage.md)
+checks all 395 transcript-reviewed IDs: 31 currently have local raw audio/video,
+6 have derived features only and 358 have no local media. Five additional local
+delivery samples are recovered outside that fixed transcript queue and remain
+separately labeled; none of these counts is audiovisual validation.
 
 The separate [raw-media-only visual audit](research/raw-media-only-visual-audit.json)
 records one internally inspected frame for each of the eight raw-complete,

@@ -41,6 +41,7 @@ ARTIFACTS = [
     ("writeups/communication-job-practice.html", "local 18-job practice surface"),
     ("writeups/end-to-end-goal.md", "end-to-end goal and definition of done"),
     ("writeups/learner-field-guide.md", "learner-facing 18-job field guide"),
+    ("research/full-corpus-media-coverage.json", "full transcript-corpus media availability audit"),
 ]
 
 
