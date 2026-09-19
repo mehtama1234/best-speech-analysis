@@ -8,22 +8,22 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 177,
+  "item_count": 169,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 6,
-      "fixed_corpus_transcript_only": 171
+      "fixed_corpus_transcript_only": 163
     },
     "by_media_state": {
       "audio_only": 8,
       "derived_features_only": 6,
-      "transcript_only_no_local_media": 159,
-      "video_only": 4
+      "transcript_only_no_local_media": 150,
+      "video_only": 5
     },
     "by_video_status": {
-      "downloaded": 4,
-      "failed:1": 35,
-      "not_attempted": 138
+      "downloaded": 5,
+      "failed:1": 36,
+      "not_attempted": 128
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -152,18 +152,6 @@
       "video_id": "0nUDkCgyppM",
       "title": "ENGLISH SPEECH | RAKUL, SAMANTHA, TAMANNAAH & KAJAL: Heroines Unite (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=0nUDkCgyppM",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "1Bc3LkP7dh8",
-      "title": "ENGLISH SPEECH | EMMANUEL MACRON: Sovereignty & Security (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=1Bc3LkP7dh8",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -418,10 +406,10 @@
       "source_url": "https://www.youtube.com/watch?v=99Ptctl5_qQ",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -713,18 +701,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "GTn-2RtfQpk",
-      "title": "ENGLISH SPEECH | JUSTIN TRUDEAU: Resignation Speech (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=GTn-2RtfQpk",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "GxWx22J0vZs",
       "title": "ENGLISH SPEECH | ZUCKERBERG & US SENATOR: Heated Showdown (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=GxWx22J0vZs",
@@ -770,18 +746,6 @@
       "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "IPXwS9j9T1E",
-      "title": "Robin Williams \"make your life spectacular\"",
-      "source_url": "https://www.youtube.com/watch?v=IPXwS9j9T1E",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1049,18 +1013,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "TSaYaEZ4I5s",
-      "title": "ENGLISH SPEECH | HILLARY CLINTON: Truth Must Come Out (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=TSaYaEZ4I5s",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "ThsZ8wfhJpk",
       "title": "Doubt - Meryl Streep and Viola Davis",
       "source_url": "https://www.youtube.com/watch?v=ThsZ8wfhJpk",
@@ -1160,18 +1112,6 @@
       "video_id": "Y4znQWi_V98",
       "title": "ENGLISH SPEECH | PETER DINKLAGE: Are You Afraid Of Change? (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=Y4znQWi_V98",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "Y_uOqhhm_8s",
-      "title": "ENGLISH SPEECH | RATAN TATA: Innovating India's Tomorrow (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=Y_uOqhhm_8s",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -1340,18 +1280,6 @@
       "video_id": "dr7-xoQyDxI",
       "title": "ENGLISH SPEECH | SUBEKSHA KHADKA: Don't Hesitate (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=dr7-xoQyDxI",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "e80Aev-iiFc",
-      "title": "ENGLISH SPEECH | HUDA KATTAN: Embrace Your Weirdness (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=e80Aev-iiFc",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -1556,12 +1484,12 @@
       "video_id": "kUDCygomLyo",
       "title": "ENGLISH SPEECH | BENEDICT CUMBERBATCH: Hollywood Walk of Fame (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=kUDCygomLyo",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "video_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "downloaded",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1784,30 +1712,6 @@
       "video_id": "qHc3FY9il1s",
       "title": "ENGLISH SPEECH | MARTIN LUTHER KING JR.: I Have a Dream! (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=qHc3FY9il1s",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "qdLOhTBZjZ4",
-      "title": "ENGLISH SPEECH | POPE FRANCIS: Faith & Freedom (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=qdLOhTBZjZ4",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "r01DOmPpxjg",
-      "title": "ENGLISH SPEECH | MUNIBA MAZARI: Motivational Words (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=r01DOmPpxjg",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
