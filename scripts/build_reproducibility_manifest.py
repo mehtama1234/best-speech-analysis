@@ -73,6 +73,7 @@ ARTIFACTS = [
     ("scripts/check_vertical_slice_lesson_browser.py", "vertical-slice learner browser smoke test"),
     ("scripts/check_vertical_slice_02_learner_browser.py", "vertical-slice 02 learner browser smoke test"),
     ("writeups/learner-field-guide.md", "learner-facing 18-job field guide"),
+    ("writeups/my-speech-playbook.md", "compact learner speech playbook"),
     ("research/full-corpus-media-coverage.json", "full transcript-corpus media availability audit"),
     ("research/full-corpus-media-recovery-queue.json", "full transcript-corpus media recovery routing queue"),
     ("scripts/recover_full_corpus_media.py", "resumable fixed-queue media recovery tool"),

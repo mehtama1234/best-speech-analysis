@@ -89,6 +89,9 @@ defines the evidence chain required before any lesson can be promoted.
 The [learner field guide](writeups/learner-field-guide.md) consolidates the
 18 communication jobs, repeatable forms, indexed phrase families, practice
 boundaries and delivery-inspection questions in one usable guide.
+The compact [personal speech playbook](writeups/my-speech-playbook.md) turns
+the cross-talk patterns into a situation-to-sentence-to-listener-check card for
+immediate use.
 The [seven-day learner path](writeups/learner-7-day-path.md) turns those jobs
 into a concrete sequence of short exercises, listener-restatement checks and
 revision prompts; it is a practice tool, not validation evidence.
