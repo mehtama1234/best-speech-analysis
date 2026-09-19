@@ -60,6 +60,8 @@ The [blinded review packet](writeups/blinded-review-packet.md) strips internal
 candidate labels from 187 function, 192 recurrence and 50 phrase-form review
 items before an outside reviewer sees them; its key stays separate for later
 adjudication.
+The accompanying [browser form](writeups/blinded-review-packet.html) exports
+reviewer metadata and uncertainty without exposing that key.
 The [practice-log contract](research/local-practice-log-contract.json) and
 [validator](scripts/validate_local_practice_log.py) check returned exports for
 their required fields and boundaries without scoring the learner or listener.

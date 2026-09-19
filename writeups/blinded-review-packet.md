@@ -14,7 +14,8 @@ Send the packet without the key. The reviewer should use the exact source links 
 
 Files:
 
-- Packet to send: `research/blinded-review-packet.json`
+- Browser form to send: `writeups/blinded-review-packet.html`
+- Machine packet: `research/blinded-review-packet.json`
 - Internal key: `research/blinded-review-packet-key.json` (do not send)
 - Source workbooks remain the authoritative response schemas and validators.
 
