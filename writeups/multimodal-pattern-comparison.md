@@ -2,21 +2,21 @@
 
 This report compares directly measured pilot features against heuristic transcript markers. It does not establish general speech principles. Labels must be manually reviewed, and all face measurements are detector outputs rather than emotion judgments.
 
-Pilot videos: **99**
+Pilot videos: **104**
 
 ## Acoustic comparison
 
 | Candidate label | Videos | Segments | Mean RMS dB | Speech activity | Zero-crossing rate | Spectral centroid Hz | Pitch proxy Hz | Pitch confidence |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| `call_to_action` | 51 | 168 | -21.00812 | 0.9613 | 0.13258 | 748.6146 | 227.38248 | 0.19288 |
-| `conclusion_or_summary` | 9 | 9 | -17.61044 | 0.98611 | 0.17995 | 885.27756 | 263.40222 | 0.19002 |
-| `contrast_or_disagreement` | 56 | 165 | -20.57297 | 0.95655 | 0.14471 | 850.8447 | 259.36712 | 0.17563 |
-| `definition` | 38 | 69 | -20.30388 | 0.95052 | 0.145 | 803.13147 | 260.09356 | 0.17385 |
-| `example` | 36 | 79 | -20.13327 | 0.94564 | 0.13484 | 779.59455 | 245.38717 | 0.1789 |
-| `question` | 87 | 1283 | -21.62486 | 0.93771 | 0.14078 | 839.25434 | 257.66275 | 0.18391 |
-| `story_or_personal_experience` | 63 | 266 | -20.3784 | 0.9627 | 0.14378 | 820.44426 | 260.51008 | 0.18038 |
-| `uncertainty_or_qualification` | 70 | 700 | -20.96394 | 0.95093 | 0.13866 | 818.89231 | 258.31992 | 0.1794 |
-| `unclassified` | 92 | 20437 | -22.1078 | 0.93658 | 0.14304 | 833.77832 | 255.98056 | 0.18293 |
+| `call_to_action` | 54 | 188 | -20.89468 | 0.96301 | 0.13396 | 754.81938 | 229.78529 | 0.19216 |
+| `conclusion_or_summary` | 10 | 10 | -17.82 | 0.9875 | 0.1851 | 891.5246 | 263.1037 | 0.19687 |
+| `contrast_or_disagreement` | 59 | 182 | -20.47768 | 0.95735 | 0.14498 | 849.7835 | 260.41342 | 0.17573 |
+| `definition` | 41 | 75 | -20.31662 | 0.95414 | 0.14648 | 818.16518 | 260.24039 | 0.17452 |
+| `example` | 37 | 81 | -20.12099 | 0.94711 | 0.13414 | 774.10948 | 243.39784 | 0.17842 |
+| `question` | 92 | 1386 | -21.46954 | 0.94044 | 0.14188 | 840.34917 | 258.21984 | 0.18306 |
+| `story_or_personal_experience` | 67 | 287 | -20.25317 | 0.96402 | 0.1446 | 820.05736 | 260.42225 | 0.18081 |
+| `uncertainty_or_qualification` | 74 | 734 | -20.82322 | 0.95276 | 0.13931 | 815.70449 | 259.18836 | 0.1786 |
+| `unclassified` | 97 | 22350 | -21.96449 | 0.93891 | 0.1442 | 837.34049 | 256.43208 | 0.18245 |
 
 ## Visual coverage
 
@@ -63,11 +63,13 @@ Visual results currently describe face detection and geometry only. They do not 
 | `LJRs2TnP9H8` | 4 | 0 | 0.0 | None | 0 |
 | `Mo1YPGySiko` | 146 | 0 | 0.0 | None | 0 |
 | `Mt_3yRHYmj4` | 11 | 0 | 0.0 | None | 0 |
+| `MzYKtA-d7iQ` | 75 | 0 | 0.0 | None | 0 |
 | `N6ROB3Q_iXg` | 26 | 0 | 0.0 | None | 0 |
 | `O1VdQQkbUOU` | 26 | 0 | 0.0 | None | 0 |
 | `OfwfTN1mEyM` | 50 | 41 | 0.82 | 0.02261 | 0 |
 | `PvcLdCo03TM` | 47 | 0 | 0.0 | None | 0 |
 | `QTR4l60l910` | 29 | 0 | 0.0 | None | 0 |
+| `RBZkCczK6xg` | 9 | 0 | 0.0 | None | 0 |
 | `RCxgqHqakXc` | 13 | 4 | 0.30769 | 0.0213 | 0 |
 | `RLklwFPNQ_g` | 14 | 0 | 0.0 | None | 0 |
 | `RnIqGFqPwkQ` | 23 | 0 | 0.0 | None | 0 |
@@ -89,6 +91,7 @@ Visual results currently describe face detection and geometry only. They do not 
 | `aHXxveJTJoE` | 25 | 4 | 0.16 | 0.03782 | 0 |
 | `aJxynX6kjUE` | 12 | 0 | 0.0 | None | 0 |
 | `aXmM0VZv810` | 6 | 0 | 0.0 | None | 0 |
+| `bLCoSu2KiEA` | 9 | 0 | 0.0 | None | 0 |
 | `bR4tDSa3O10` | 107 | 101 | 0.94393 | 0.02271 | 0 |
 | `bV5uKHsWQtY` | 11 | 0 | 0.0 | None | 0 |
 | `d4mrO13trBY` | 16 | 0 | 0.0 | None | 0 |
@@ -103,6 +106,7 @@ Visual results currently describe face detection and geometry only. They do not 
 | `h4vlcM-5X1E` | 9 | 0 | 0.0 | None | 0 |
 | `hBYoDp-Zh64` | 12 | 0 | 0.0 | None | 0 |
 | `hZ0YhrgYejI` | 17 | 5 | 0.29412 | 0.02615 | 0 |
+| `hqwGR86zoTI` | 13 | 0 | 0.0 | None | 0 |
 | `jG-4kBIDAzA` | 8 | 0 | 0.0 | None | 0 |
 | `jxY2-YgAgm0` | 2 | 0 | 0.0 | None | 0 |
 | `kHti_4zsQhc` | 8 | 0 | 0.0 | None | 0 |
@@ -118,6 +122,7 @@ Visual results currently describe face detection and geometry only. They do not 
 | `r3aCv8b2OfE` | 21 | 0 | 0.0 | None | 0 |
 | `stxIHzmQw6w` | 17 | 0 | 0.0 | None | 0 |
 | `u1gg_L-syCw` | 18 | 8 | 0.44444 | 0.02543 | 0 |
+| `vi0Lbjs5ECI` | 4 | 0 | 0.0 | None | 0 |
 | `vs5A3ZgBx1k` | 7 | 0 | 0.0 | None | 0 |
 | `xRiwgtdyjQk` | 59 | 49 | 0.83051 | 0.01611 | 0 |
 | `ya7DNE1YZVs` | 9 | 0 | 0.0 | None | 0 |
