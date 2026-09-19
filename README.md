@@ -63,6 +63,8 @@ accessibility boundaries; it is unrun.
 The [local practice surface](writeups/communication-job-practice.html) makes
 the 18 flows runnable with exact examples, self-checks, non-fit boundaries and
 consent-gated local JSON export; it does not upload responses.
+The [end-to-end goal and definition of done](writeups/end-to-end-goal.md)
+defines the evidence chain required before any lesson can be promoted.
 The [18-job listener protocol](writeups/communication-job-listener-outcome-protocol.md)
 separately defines matched controls, six comprehension/recall measures and
 controlled blind 0–2 task scoring with an explicit accessibility/missingness
@@ -94,8 +96,9 @@ The [delivery evidence index](writeups/delivery-evidence-index.md) keeps raw
 media, derived features, internal observations and independent observations
 separate; it currently records 21 internal and zero independent observations.
 The [18-job delivery sampling queue](writeups/communication-job-delivery-sampling.html)
-adds two transcript-aligned candidate samples per job while keeping raw-media
-availability and blank manual observation fields visible.
+adds two transcript-aligned candidate samples per job (36 total, all currently
+with local raw A/V) while keeping raw-media availability and blank manual
+observation fields visible.
 It now includes a typed review schema and [export validator](scripts/validate_communication_job_delivery_review.py)
 for alignment, vocal timing, audio limits, visual observation, setting/editing/music,
 identity and accessibility fields; blank observations remain blank until review.
@@ -103,10 +106,10 @@ The [delivery comparator](scripts/compare_communication_job_delivery_reviews.py)
 preserves disagreements between reviewers and requires adjudication before
 delivery observations are linked to promoted patterns.
 The [measurement preflight](writeups/communication-job-delivery-measurement-preflight.md)
-attaches reproducible audio/transcript/frame proxies to 32 of those samples;
+attaches reproducible audio/transcript/frame proxies to all 36 of those samples;
 it does not infer emotion, confidence, intent, nonverbal meaning or effect.
 The [internal midpoint-frame audit](writeups/communication-job-delivery-internal-observations.md)
-records bounded visual/setting observations for the 32 raw A/V samples while
+records bounded visual/setting observations for the 36 raw A/V samples while
 keeping independent review and manual vocal listening explicitly pending.
 The [shared evidence model](writeups/shared-evidence-model.md) is the common
 web/mobile contract for provenance, modality, hypotheses, practice, learner

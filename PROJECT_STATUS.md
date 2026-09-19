@@ -65,9 +65,10 @@ transcripts, 8 raw items without transcripts, 8 derived-features-only items and
 21 internal multimodal observations. Independent delivery observations remain
 at zero.
 The [18-job delivery sampling queue](writeups/communication-job-delivery-sampling.md)
-adds two transcript-aligned candidate samples per job (36 total; 32 with raw
-audio/video and four with derived or other media states). Its manual fields are
-blank; no vocal, nonverbal, setting or editing findings are inferred.
+adds two transcript-aligned candidate samples per job (36 total; all 36 currently
+have local raw audio/video, including locally recovered items outside the selected
+media-audit expansion). Its manual fields are blank; no vocal, nonverbal, setting
+or editing findings are promoted as independent evidence.
 The queue also includes a typed review schema and
 [export validator](scripts/validate_communication_job_delivery_review.py);
 validation of a form does not make the observation independent evidence.
@@ -75,12 +76,11 @@ The [delivery comparator](scripts/compare_communication_job_delivery_reviews.py)
 retains field-level disagreements and requires adjudication before observations
 can affect a pattern card.
 The [measurement preflight](writeups/communication-job-delivery-measurement-preflight.md)
-attaches reproducible proxy values to the queue: 32/36 samples have aligned
-feature rows and four are unmatched. RMS, speech activity, pitch, frame and
-face-count fields remain measurement proxies pending manual and independent
-review.
+attaches reproducible proxy values to the queue: all 36/36 samples have aligned
+feature rows. RMS, speech activity, pitch, frame and face-count fields remain
+measurement proxies pending manual and independent review.
 The [internal midpoint-frame audit](writeups/communication-job-delivery-internal-observations.md)
-now records bounded visual/setting observations for all 32 raw audio/video
+now records bounded visual/setting observations for all 36 raw audio/video
 samples. It explicitly records edited subtitles, cutaways, staged scenes and
 off-screen speakers where present; it is not independent review, continuous
 video review or manual vocal listening.

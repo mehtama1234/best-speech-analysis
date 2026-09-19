@@ -37,6 +37,7 @@ ARTIFACTS = [
     ("research/communication-job-delivery-internal-observations.json", "internal midpoint-frame delivery observations"),
     ("research/communication-job-counterexample-candidate-queue.json", "counterexample candidate routing queue"),
     ("writeups/communication-job-practice.html", "local 18-job practice surface"),
+    ("writeups/end-to-end-goal.md", "end-to-end goal and definition of done"),
 ]
 
 
