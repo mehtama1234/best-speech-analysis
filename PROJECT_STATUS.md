@@ -13,7 +13,7 @@ repetition and grief-to-handoff. Electoral, public-health, historical, policy,
 family and religious claims remain bounded or unverified; audiovisual delivery
 was not reviewed. Current totals: 395 fully covered videos, 102,816 inspected
 captions and 395 analytic reviews. The transcript queue is complete; the next
-phase is the first validated pattern-card and practice-lesson slice.
+phase is the first validation-targeted pattern-card and practice-lesson slice.
 The [corpus identity review workbook](research/corpus-identity-review-workbook.json)
 covers all 395 reviewed queue items against the 480-row registry. It preserves
 metadata and possible duplicate leads while requiring independent speaker,

@@ -7,7 +7,7 @@ credits a coalition, reframes opponents as citizens, translates a mandate into
 a first mechanism, treats cooperation as a choice with constraints, uses
 inflection-point history, expands repeated values and moves from grief to a
 collective handoff. Claims remain bounded or unverified and audiovisual delivery
-was not reviewed. The next phase is the first validated pattern-card and
+was not reviewed. The next phase is the first validation-targeted pattern-card and
 practice-lesson slice. Its five-pattern scaffold is present but not validated;
 the [validation audit](writeups/vertical-slice-01-validation-audit.md) records
 0/5 packets ready for promotion.
