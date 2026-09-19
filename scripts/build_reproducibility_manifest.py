@@ -132,6 +132,7 @@ ARTIFACTS = [
     ("scripts/validate_blinded_review_packet.py", "label-blinded packet leakage validator"),
     ("scripts/validate_blinded_review_export.py", "blinded reviewer export completeness validator"),
     ("scripts/reduce_blinded_review_export.py", "blinded reviewer adjudication input reducer"),
+    ("scripts/build_blinded_adjudication_form.py", "blinded review adjudication browser builder"),
 ]
 
 

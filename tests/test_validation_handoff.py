@@ -48,7 +48,7 @@ class ValidationHandoffTests(unittest.TestCase):
         self.assertEqual(entry["function_items"], 187)
         self.assertEqual(entry["recurrence_items"], 192)
         self.assertEqual(entry["phrase_form_items"], 50)
-        for field in ("packet", "browser", "private_key", "export_validator", "adjudication_reducer"):
+        for field in ("packet", "browser", "private_key", "export_validator", "adjudication_reducer", "adjudication_form_builder"):
             self.assertTrue((ROOT / entry[field]).is_file())
         self.assertIn("blinded-review-packet.html", self.markdown)
         self.assertIn("reduce_blinded_review_export.py", self.markdown)
