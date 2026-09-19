@@ -36,7 +36,7 @@ def main() -> int:
         "",
         "Status: **395-video transcript synthesis with provisional practice hypotheses; not validated best practice**.",
         "",
-        f"This is the short route into the full corpus: **{coverage['review_count']} videos**, **{coverage['function_observation_count']} recorded function observations**, **{coverage['relation_observation_count']} structural relations** and **{coverage['phrase_form_count']} exact phrase-form hypotheses**. Heuristic routing currently gives {coverage['videos_with_candidate_practice_job']} videos a provisional practice job; {coverage['videos_without_candidate_practice_job']} remain explicitly unclassified and should be read through their evidence, limits and next test rather than forced into a lesson.",
+        f"This is the short route into the full corpus: **{coverage['review_count']} videos**, **{coverage['function_observation_count']} recorded function observations**, **{coverage['relation_observation_count']} structural relations** and **{coverage['phrase_form_count']} exact phrase-form hypotheses**. The primary heuristic route gives {coverage['videos_with_candidate_practice_job']} videos a provisional practice job; a separate named-relation route adds {coverage['videos_with_structural_candidate_practice_job']} candidate routes, leaving {coverage['videos_without_any_candidate_practice_job']} without either route. Those rows should be read through their evidence, limits and next test rather than forced into a lesson.",
         "",
         "The catalog records what captions and full-context writeups contain. It does not prove that a phrase works, that a delivery feature caused an effect, or that a speaker's story is factually true.",
         "",

@@ -2,7 +2,7 @@
 
 Status: **395-video transcript synthesis with provisional practice hypotheses; not validated best practice**.
 
-This is the short route into the full corpus: **395 videos**, **4016 recorded function observations**, **2800 structural relations** and **50 exact phrase-form hypotheses**. Heuristic routing currently gives 207 videos a provisional practice job; 188 remain explicitly unclassified and should be read through their evidence, limits and next test rather than forced into a lesson.
+This is the short route into the full corpus: **395 videos**, **4016 recorded function observations**, **2800 structural relations** and **50 exact phrase-form hypotheses**. The primary heuristic route gives 207 videos a provisional practice job; a separate named-relation route adds 28 candidate routes, leaving 160 without either route. Those rows should be read through their evidence, limits and next test rather than forced into a lesson.
 
 The catalog records what captions and full-context writeups contain. It does not prove that a phrase works, that a delivery feature caused an effect, or that a speaker's story is factually true.
 

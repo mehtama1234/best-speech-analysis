@@ -15,7 +15,7 @@ class CorpusLearningMapTests(unittest.TestCase):
         self.assertIn("Job-to-practice index", text)
         self.assertIn("the point is", text)
         self.assertIn("delivery-learning-guide.md", text)
-        self.assertIn("unclassified", text)
+        self.assertIn("without either route", text)
         self.assertGreaterEqual(text.count("| `"), 18)
 
 

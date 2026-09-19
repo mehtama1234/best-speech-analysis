@@ -11,6 +11,31 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 
 
+# Conservative discovery routing from explicitly named structural relations.
+# These alternate routes are not semantic adjudications or validated labels.
+STRUCTURAL_JOB_MAP = {
+    "closes": {"closing"}, "releases": {"closing"},
+    "returns": {"callback_or_repetition", "closing"},
+    "reuses": {"callback_or_repetition"}, "reconnects": {"callback_or_repetition"},
+    "reframes": {"correction_or_reframe"}, "redirects": {"correction_or_reframe"},
+    "replaces": {"correction_or_reframe"}, "contradicts": {"contrast_or_disagreement"},
+    "contrasts": {"contrast_or_disagreement"}, "grounds": {"example_or_case"},
+    "concretizes": {"example_or_case"}, "humanizes": {"story_or_personal_experience"},
+    "operationalizes": {"call_to_action_or_audience_role"},
+    "commits": {"call_to_action_or_audience_role"},
+    "promises": {"call_to_action_or_audience_role"}, "invites": {"question"},
+    "explains": {"definition_or_explanation"}, "defines": {"definition_or_explanation"},
+    "demystifies": {"definition_or_explanation"}, "translates": {"definition_or_explanation"},
+    "questions": {"question"}, "answers": {"answer_or_response"}, "opens": {"opening"},
+    "organizes": {"transition_or_structure"}, "prepares": {"transition_or_structure"},
+    "bridges": {"transition_or_structure"}, "bounds": {"qualification_or_boundary"},
+    "constrains": {"qualification_or_boundary"}, "calibrates": {"qualification_or_boundary"},
+    "connects": {"transition_or_structure"}, "widens": {"reflection_or_value_frame"},
+    "frames": {"reflection_or_value_frame"}, "makes_visible": {"definition_or_explanation"},
+    "systematizes": {"definition_or_explanation"}, "teaches": {"definition_or_explanation"},
+}
+
+
 def load(name: str):
     return json.loads((ROOT / name).read_text())
 
@@ -52,6 +77,16 @@ def build() -> tuple[dict, str]:
         })
         functions = lesson.get("communication_function_inventory", [])
         relations = lesson.get("structural_relation_inventory", [])
+        structural_route_types = sorted({
+            relation.get("type")
+            for relation in relations
+            if relation.get("type") in STRUCTURAL_JOB_MAP
+        })
+        structural_candidate_jobs = sorted({
+            job
+            for relation_type in structural_route_types
+            for job in STRUCTURAL_JOB_MAP[relation_type]
+        }) if not candidate_jobs else []
         rows.append({
             "review_id": review["review_id"],
             "video_id": review["video_id"],
@@ -68,6 +103,13 @@ def build() -> tuple[dict, str]:
                 for job in candidate_jobs
                 if job in card_by_job
             },
+            "structural_candidate_jobs": structural_candidate_jobs,
+            "structural_candidate_job_forms": {
+                job: card_by_job[job].get("form")
+                for job in structural_candidate_jobs
+                if job in card_by_job
+            },
+            "structural_route_types": structural_route_types,
             "boundary_cases": lesson.get("boundary_cases", review.get("boundary_cases", [])),
             "limits": lesson.get("limits", review.get("limits", [])),
             "next_test": lesson.get("next_test", review.get("next_test")),
@@ -120,6 +162,11 @@ def build() -> tuple[dict, str]:
             "phrase_form_count": len(phrases),
             "videos_with_candidate_practice_job": sum(bool(row["candidate_job_forms"]) for row in rows),
             "videos_without_candidate_practice_job": sum(not row["candidate_job_forms"] for row in rows),
+            "videos_with_structural_candidate_practice_job": sum(bool(row["structural_candidate_job_forms"]) for row in rows),
+            "videos_without_any_candidate_practice_job": sum(
+                not row["candidate_job_forms"] and not row["structural_candidate_job_forms"]
+                for row in rows
+            ),
         },
         "how_to_use": [
             "Start with a job card for a speech task you need tomorrow.",
@@ -178,7 +225,7 @@ def build() -> tuple[dict, str]:
         "",
         result["claim_boundary"],
         "",
-        f"Coverage: **{len(rows)} videos**, **{result['coverage']['function_observation_count']:,} function observations**, **{result['coverage']['relation_observation_count']:,} structural relations**, and **{len(phrases)} exact phrase-form hypotheses**. Existing heuristic taxonomy routes **{result['coverage']['videos_with_candidate_practice_job']} videos** to one or more practice cards; **{result['coverage']['videos_without_candidate_practice_job']} remain unclassified**.",
+        f"Coverage: **{len(rows)} videos**, **{result['coverage']['function_observation_count']:,} function observations**, **{result['coverage']['relation_observation_count']:,} structural relations**, and **{len(phrases)} exact phrase-form hypotheses**. Existing heuristic taxonomy routes **{result['coverage']['videos_with_candidate_practice_job']} videos** to one or more practice cards; a separate named-relation route adds **{result['coverage']['videos_with_structural_candidate_practice_job']} candidate routes**; **{result['coverage']['videos_without_any_candidate_practice_job']} remain without either route**.",
         "",
         "This is the concrete answer to ‘what did the corpus teach us?’ Each job below gives a usable speech form, the reason it may help, a practice drill, exact retained-caption examples, and a boundary. Each video row then exposes the actual functions, relations, limits and next test recorded during its full-context review.",
         "",
@@ -215,7 +262,7 @@ def build() -> tuple[dict, str]:
     for x in findings["top_job_pairs"]:
         lines.append(f"| `{x['job_a']}` | `{x['job_b']}` | {x['shared_video_count']} | {x['holdout_shared_video_count']} |")
 
-    lines += ["", "## Video-by-video findings (all 395 reviews)", "", "Every row below is a recorded observation, not an invented summary. Candidate jobs are heuristic routes into the 18 practice cards; `unclassified` items remain out of that route. Structural claims are shown for reading but are not keyword-mapped into jobs because that shortcut produces misleading matches. Open the linked writeup and evidence IDs for the full context.", "", "| # | Video / writeup | Candidate practice jobs | Observed functions | Structural relations | Limits / next test |", "|---:|---|---|---|---|---|"]
+    lines += ["", "## Video-by-video findings (all 395 reviews)", "", "Every row below is a recorded observation, not an invented summary. Candidate jobs are heuristic routes into the 18 practice cards; structural candidates are a separate conservative route derived only from named relation types and still require review. Rows with neither route remain explicitly unclassified. Open the linked writeup and evidence IDs for the full context.", "", "| # | Video / writeup | Candidate practice jobs | Structural candidate route | Observed functions | Structural relations | Limits / next test |", "|---:|---|---|---|---|---|---|"]
     for i, row in enumerate(rows, 1):
         fs = "; ".join(
             clip(x.get("function") or x.get("label") or ("unlabelled: " + x.get("reason") if x.get("reason") else "unlabelled"), 120)
@@ -226,9 +273,10 @@ def build() -> tuple[dict, str]:
             for x in row["observed_relations"][:4]
         ) or "none recorded"
         jobs = "; ".join(f"`{job}`" for job in row.get("candidate_jobs", []) if job in card_by_job) or "none"
+        structural_jobs = "; ".join(f"`{job}`" for job in row.get("structural_candidate_jobs", []) if job in card_by_job) or "none"
         lim = clip(" ".join(row["limits"][:2]), 180) if row["limits"] else clip(row.get("next_test") or "see writeup", 180)
         title = clip(row["title"], 90)
-        lines.append(f"| {i} | [{title}](../{row['writeup']}) `{row['video_id']}` | {jobs} | {fs} | {rs} | {lim} |")
+        lines.append(f"| {i} | [{title}](../{row['writeup']}) `{row['video_id']}` | {jobs} | {structural_jobs} | {fs} | {rs} | {lim} |")
 
     lines += ["", "## Aggregate recurrence snapshot", "", "The counts below are inventory counts, not denominators of effective speaking:", "", "### Most frequent recorded function labels", ""]
     lines += [f"- `{k}` — {v}" for k, v in function_counts.most_common(30)]

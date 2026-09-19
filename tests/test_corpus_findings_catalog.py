@@ -23,14 +23,17 @@ class CorpusFindingsCatalogTests(unittest.TestCase):
         coverage = self.catalog["coverage"]
         self.assertEqual(coverage["videos_with_candidate_practice_job"], 207)
         self.assertEqual(coverage["videos_without_candidate_practice_job"], 188)
+        self.assertEqual(coverage["videos_with_structural_candidate_practice_job"], 28)
+        self.assertEqual(coverage["videos_without_any_candidate_practice_job"], 160)
         card_jobs = {card["canonical_job"] for card in self.cards["cards"]}
         for row in self.catalog["video_findings"]:
             self.assertTrue(set(row["candidate_job_forms"]).issubset(card_jobs))
+            self.assertTrue(set(row["structural_candidate_job_forms"]).issubset(card_jobs))
 
     def test_unlabelled_structural_claims_are_visible(self):
-        self.assertIn("Structural claims are shown for reading", self.markdown)
+        self.assertIn("structural candidates are a separate conservative route", self.markdown)
         self.assertIn("unlabelled: The responsibility contract", self.markdown)
-        self.assertIn("`unclassified` items remain out of that route", self.markdown)
+        self.assertIn("Rows with neither route remain explicitly unclassified", self.markdown)
 
 
 if __name__ == "__main__":
