@@ -22,6 +22,9 @@ class CommunicationJobPracticeSurfaceTests(unittest.TestCase):
         self.assertIn("the point is", self.page)
         self.assertIn("Inspect exact examples", self.page)
         self.assertIn("<video", self.page)
+        self.assertIn("Optional local rehearsal recording", self.page)
+        self.assertIn("getUserMedia", self.page)
+        self.assertIn("Nothing is uploaded", self.page)
         for lesson in self.payload["lessons"]:
             self.assertIn(lesson["canonical_job"], self.page)
 
