@@ -6,6 +6,8 @@ from pathlib import Path
 
 from playwright.sync_api import Error as PlaywrightError, sync_playwright
 
+from validate_vertical_slice_02_learner_record import validate
+
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGE = ROOT / "writeups/vertical-slice-02-learner-check.html"
@@ -37,6 +39,8 @@ def main() -> int:
         assert exported["protocol_id"] == "vertical-slice-02-learner-check"
         assert exported["responses"]["consent"] is True
         assert len(exported["task_bank_ids"]) == 12
+        errors = validate(Path(download_info.value.path()))
+        assert errors == [], f"slice 02 learner export failed validator: {errors}"
         assert page.evaluate("document.documentElement.scrollWidth <= innerWidth")
         browser.close()
     print("vertical slice 02 learner browser smoke test: 12-task form renders and exports")

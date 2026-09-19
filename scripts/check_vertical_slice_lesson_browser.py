@@ -9,6 +9,8 @@ from pathlib import Path
 import json
 from playwright.sync_api import Error as PlaywrightError, sync_playwright
 
+from score_vertical_slice_learner_records import load_record
+
 
 ROOT = Path(__file__).resolve().parents[1]
 PAGE = ROOT / "writeups/vertical-slice-01-lesson-index.html"
@@ -58,12 +60,19 @@ def main() -> int:
             field.select_option(index=1)
         for index in range(page.locator("textarea[required]").count()):
             page.locator("textarea[required]").nth(index).fill("smoke-test response")
+        for field in page.locator("textarea[name^='p']").all():
+            if not field.input_value():
+                field.fill("smoke-test response")
+        for field in page.locator("input[type='number'][name^='p']").all():
+            field.fill("2")
         with page.expect_download() as download_info:
             page.locator("#download").click()
         exported = json.loads(Path(download_info.value.path()).read_text())
         assert exported["record_type"] == "learner_observation"
         assert exported["responses"]["consent"] is True
         assert "p1_task_bank_ids" in exported["responses"]
+        _, errors, _ = load_record(Path(download_info.value.path()))
+        assert errors == [], f"learner export failed validator: {errors}"
         browser.close()
     print("vertical slice lesson browser smoke test: lesson index and 5-section learner check render")
     return 0
