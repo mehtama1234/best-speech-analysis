@@ -57,6 +57,7 @@ ARTIFACTS = [
     ("writeups/delivery-proxy-candidate-atlas.md", "transcript-linked delivery proxy candidate report"),
     ("writeups/delivery-proxy-candidate-atlas.html", "searchable delivery proxy candidate surface"),
     ("scripts/build_delivery_proxy_candidate_atlas.py", "delivery proxy candidate atlas builder"),
+    ("scripts/validate_delivery_proxy_local_reviews.py", "delivery proxy local review export validator"),
     ("writeups/repeatable-communication-patterns.md", "cross-talk repeatable communication synthesis"),
     ("writeups/vertical-slice-01-reviewer-start-here.md", "vertical-slice reviewer execution handoff"),
     ("scripts/check_communication_job_delivery_browser.py", "delivery-review browser smoke test"),
