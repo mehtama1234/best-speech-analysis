@@ -40,6 +40,11 @@ transcript joins remain retrieval aids requiring manual review.
 All delivery, identity, learner and listener validation gates remain separate
 and no independent records have been received.
 
+The [delivery experiment matrix](writeups/delivery-experiment-matrix.md) gives
+each of the 18 shared jobs one controlled vocal variable, one observable
+body/setting inspection target, an accessible alternate modality and a listener
+self-check. It is constructed rehearsal design, not validated delivery advice.
+
 ## Latest continuation update — multimodal recovery tranche
 
 The transcript corpus remains complete at 395/395 full-context reviews,
