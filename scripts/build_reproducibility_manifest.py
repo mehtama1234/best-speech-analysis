@@ -137,6 +137,9 @@ ARTIFACTS = [
     ("research/corpus-learning-coverage-audit.json", "per-video learner-surface coverage audit"),
     ("writeups/corpus-learning-coverage-audit.md", "per-video learner-surface coverage report"),
     ("writeups/corpus-learning-coverage-audit.html", "searchable per-video learner-surface coverage report"),
+    ("research/corpus-30-day-study-route.json", "full-corpus 30-day learner route"),
+    ("writeups/corpus-30-day-study-route.md", "full-corpus 30-day learner route guide"),
+    ("scripts/build_corpus_30_day_route.py", "full-corpus 30-day learner route builder"),
     ("scripts/build_corpus_learning_coverage_audit.py", "per-video learner-surface coverage builder"),
 ]
 
