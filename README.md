@@ -95,6 +95,9 @@ open their retained-caption examples in context.
 The compact [personal speech playbook](writeups/my-speech-playbook.md) turns
 the cross-talk patterns into a situation-to-sentence-to-listener-check card for
 immediate use.
+Its linked [phrase transfer cards](writeups/job-phrase-transfer-cards.md) give
+each of the 18 jobs source forms, practice, non-fit and transfer instructions
+in one sequence.
 The [seven-day learner path](writeups/learner-7-day-path.md) turns those jobs
 into a concrete sequence of short exercises, listener-restatement checks and
 revision prompts; it is a practice tool, not validation evidence.

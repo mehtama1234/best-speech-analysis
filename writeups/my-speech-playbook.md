@@ -95,6 +95,10 @@ Stop and revise if you are:
 
 This playbook is distilled from the [corpus findings catalog](corpus-findings-catalog.md),
 the [repeatable communication patterns](repeatable-communication-patterns.md),
-and the [learner field guide](learner-field-guide.md). The corpus supports
-practice hypotheses and source retrieval; independent recurrence, delivery,
+and the [learner field guide](learner-field-guide.md). For the next level of
+detail, use the [18 job phrase transfer cards](job-phrase-transfer-cards.md),
+search the [phrase candidate browser](job-phrase-candidate-inventory.html),
+and inspect the [timing review browser](full-corpus-timing-candidate-atlas.html)
+when you want to test pause or density choices. The corpus supports practice
+hypotheses and source retrieval; independent recurrence, delivery,
 teachability and listener-outcome gates remain separate.
