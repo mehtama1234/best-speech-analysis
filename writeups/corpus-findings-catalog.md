@@ -4,7 +4,7 @@ Status: **395 transcript-derived findings, with provisional practice hypotheses*
 
 The per-video rows are actual recorded transcript observations linked to retained evidence and writeups. Candidate jobs and practice forms are heuristic routing aids; copyable forms and mechanism statements are provisional learning hypotheses and do not establish delivery effects, listener outcomes, teachability or best-practice status.
 
-Coverage: **395 videos**, **4,016 function observations**, **2,800 structural relations**, and **50 exact phrase-form hypotheses**.
+Coverage: **395 videos**, **4,016 function observations**, **2,800 structural relations**, and **50 exact phrase-form hypotheses**. Existing heuristic taxonomy routes **207 videos** to one or more practice cards; **188 remain unclassified**.
 
 This is the concrete answer to ‘what did the corpus teach us?’ Each job below gives a usable speech form, the reason it may help, a practice drill, exact retained-caption examples, and a boundary. Each video row then exposes the actual functions, relations, limits and next test recorded during its full-context review.
 
@@ -506,7 +506,7 @@ These are the highest same-video job co-occurrences in the comparison inventory.
 
 ## Video-by-video findings (all 395 reviews)
 
-Every row below is a recorded observation, not an invented summary. Candidate jobs are heuristic routes into the 18 practice cards; `unclassified` items remain out of that route. Open the linked writeup and evidence IDs for the full context.
+Every row below is a recorded observation, not an invented summary. Candidate jobs are heuristic routes into the 18 practice cards; `unclassified` items remain out of that route. Structural claims are shown for reading but are not keyword-mapped into jobs because that shortcut produces misleading matches. Open the linked writeup and evidence IDs for the full context.
 
 | # | Video / writeup | Candidate practice jobs | Observed functions | Structural relations | Limits / next test |
 |---:|---|---|---|---|---|
