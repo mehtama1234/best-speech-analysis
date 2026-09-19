@@ -100,6 +100,7 @@ ARTIFACTS = [
     ("writeups/full-corpus-timing-candidate-atlas.html", "searchable full local timing candidate surface"),
     ("writeups/visual-movement-analysis.md", "full local face and scene movement proxy report"),
     ("writeups/job-phrase-candidate-inventory.md", "provisional multiword phrase candidate report"),
+    ("writeups/job-phrase-candidate-inventory.html", "searchable multiword phrase candidate surface"),
 ]
 
 

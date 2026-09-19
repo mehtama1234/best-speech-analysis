@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import html
 import json
 import re
 from collections import Counter, defaultdict
@@ -13,6 +14,7 @@ BANK = ROOT / "research/corpus-evidence-bank.json"
 ATLAS = ROOT / "research/corpus-pattern-atlas.json"
 OUT = ROOT / "research/job-phrase-candidate-inventory.json"
 MD = ROOT / "writeups/job-phrase-candidate-inventory.md"
+HTML = ROOT / "writeups/job-phrase-candidate-inventory.html"
 
 STOPWORDS = {
     "a", "an", "and", "are", "as", "at", "be", "been", "but", "by", "for", "from", "has", "have", "he", "her", "his", "i", "if", "in", "is", "it", "its", "me", "my", "not", "of", "on", "or", "our", "that", "the", "their", "them", "there", "they", "this", "to", "was", "we", "were", "what", "when", "where", "which", "who", "will", "with", "you", "your",
@@ -92,6 +94,24 @@ def main() -> int:
         lines.append(f"| `{row['canonical_job']}` | `{row['phrase_form']}` | {row['video_count']} | {row['train_video_count']} | {row['holdout_video_count']} | {row['occurrence_count']} | [{example.get('evidence_id', '')}]({example.get('source_url', '')}) |")
     lines += ["", "## How to use", "", "Read the full surrounding caption context before adapting a form. Write the intended meaning in your own words, then add the evidence boundary, condition, consent or next-turn path required by the job. Treat the form as a retrieval handle, not a script.", ""]
     MD.write_text("\n".join(lines))
+    cards = []
+    for row in output_forms:
+        examples = "".join(
+            "<li><a target='_blank' rel='noreferrer' href='{}'>{}</a> <code>{}</code> — {}</li>".format(
+                html.escape(example.get("source_url") or "", quote=True),
+                html.escape(example.get("video_id") or ""),
+                html.escape(example.get("evidence_id") or ""),
+                html.escape(example.get("text") or ""),
+            ) for example in row["examples"]
+        )
+        search = html.escape((row["canonical_job"] + " " + row["phrase_form"] + " " + " ".join(example.get("text", "") for example in row["examples"])).lower(), quote=True)
+        cards.append(
+            "<article class='card' data-job='{}' data-search='{}'><h2><code>{}</code></h2><p><strong>Job:</strong> <code>{}</code> · <strong>Videos:</strong> {} (train {}, holdout {}) · <strong>Occurrences:</strong> {}</p><p>{}</p><details><summary>Exact retained examples ({})</summary><ul>{}</ul></details></article>".format(
+                html.escape(row["canonical_job"]), search, html.escape(row["phrase_form"]), html.escape(row["canonical_job"]), row["video_count"], row["train_video_count"], row["holdout_video_count"], row["occurrence_count"], html.escape(row["mechanism_hypothesis"]), len(row["examples"]), examples
+            )
+        )
+    browser = """<!doctype html><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Job phrase candidate inventory</title><style>body{font:16px/1.45 system-ui,sans-serif;max-width:1120px;margin:2rem auto;padding:0 1rem;color:#17202a}input,select{font:inherit;padding:.65rem;margin:.35rem .5rem .9rem 0}input{width:min(650px,100%)}.notice{background:#fff4ce;border-left:4px solid #b8860b;padding:.9rem}.card{border:1px solid #ccd3da;border-radius:8px;padding:1rem;margin:1rem 0}.card h2{font-size:1.05rem;margin:.1rem 0 .5rem}.card p{margin:.5rem 0}code{overflow-wrap:anywhere}</style><main><h1>Job phrase candidate inventory</h1><div class='notice'><strong>Contextual retrieval surface, not a script library.</strong> These forms are exact retained-caption n-grams grouped by provisional job. Frequency is not effectiveness, intent, delivery or listener evidence.</div><p id='count' aria-live='polite'></p><label>Job <select id='job'><option value=''>All jobs</option></select></label><label>Search <input id='search' type='search' placeholder='job, phrase or example wording'></label><section id='cards'>""" + "\n".join(cards) + """</section></main><script>const cards=[...document.querySelectorAll('.card')],job=document.querySelector('#job'),search=document.querySelector('#search'),count=document.querySelector('#count');[...new Set(cards.map(x=>x.dataset.job))].sort().forEach(x=>{let o=document.createElement('option');o.value=x;o.textContent=x;job.append(o)});function filter(){let q=search.value.toLowerCase(),j=job.value,n=0;cards.forEach(x=>{let ok=(!j||x.dataset.job===j)&&(!q||x.dataset.search.includes(q));x.hidden=!ok;if(ok)n++});count.textContent=`Showing ${n} of ${cards.length} candidate forms`}job.onchange=filter;search.oninput=filter;filter()</script>"""
+    HTML.write_text(browser)
     print(json.dumps({"output": str(OUT.relative_to(ROOT)), "job_count": len(JOBS), "form_count": len(output_forms), "forms_per_job": dict(by_job)}, indent=2))
     return 0
 

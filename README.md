@@ -89,6 +89,9 @@ defines the evidence chain required before any lesson can be promoted.
 The [learner field guide](writeups/learner-field-guide.md) consolidates the
 18 communication jobs, repeatable forms, indexed phrase families, practice
 boundaries and delivery-inspection questions in one usable guide.
+The [job phrase candidate browser](writeups/job-phrase-candidate-inventory.html)
+lets you search the 209 exact multi-word candidates by communication job and
+open their retained-caption examples in context.
 The compact [personal speech playbook](writeups/my-speech-playbook.md) turns
 the cross-talk patterns into a situation-to-sentence-to-listener-check card for
 immediate use.

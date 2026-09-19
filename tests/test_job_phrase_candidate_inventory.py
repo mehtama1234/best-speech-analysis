@@ -13,6 +13,7 @@ class JobPhraseCandidateInventoryTests(unittest.TestCase):
         cls.report = json.loads((ROOT / "research/job-phrase-candidate-inventory.json").read_text())
 
     def test_all_jobs_have_contextual_phrase_candidates(self):
+        self.assertTrue((ROOT / "writeups/job-phrase-candidate-inventory.html").exists())
         self.assertEqual(self.report["status"], "heuristic_multiword_phrase_candidates_not_validated")
         self.assertEqual(self.report["job_count"], 18)
         self.assertEqual(self.report["form_count"], 209)
