@@ -189,6 +189,11 @@ jobs: 0/18 are promotion-ready. Each row reports its exact examples, delivery
 samples, counterexample slots and the specific independent-review, delivery,
 learner and listener blockers; structural completeness is not treated as
 validated teachability or effectiveness.
+The [next validation runbook](writeups/next-validation-runbook.md) orders the
+remaining work for a five-job vertical slice, including dependencies, export
+discipline, acceptance evidence and the exact validators to run. It records
+the current state as 0/5 packets promotion-ready, with no learner records,
+locked listener pairs or listener records.
 
 The atlas also now exposes a separate 187-item [candidate speech-function
 independent-review workbook](research/corpus-function-independent-review-workbook.json)

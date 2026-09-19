@@ -185,6 +185,9 @@ The [per-job promotion readiness audit](writeups/communication-job-promotion-rea
 reports the promotion checkpoint for all 18 provisional communication jobs:
 0/18 are currently promotion-ready, with blockers listed per job rather than
 hidden inside a global status.
+The [next validation runbook](writeups/next-validation-runbook.md) gives the
+dependency-ordered operating sequence for the first five-job vertical slice,
+including export discipline, acceptance evidence and validator commands.
 The [dashboard validator](scripts/validate_end_to_end_status.py) reconciles its
 counts against the underlying artifacts before a checkpoint is trusted.
 The browser also renders exact examples, counterexamples and the validation
