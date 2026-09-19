@@ -8,22 +8,22 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 214,
+  "item_count": 206,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 6,
-      "fixed_corpus_transcript_only": 208
+      "fixed_corpus_transcript_only": 200
     },
     "by_media_state": {
-      "audio_only": 4,
+      "audio_only": 5,
       "derived_features_only": 6,
-      "transcript_only_no_local_media": 201,
+      "transcript_only_no_local_media": 192,
       "video_only": 3
     },
     "by_video_status": {
       "downloaded": 3,
-      "failed:1": 24,
-      "not_attempted": 187
+      "failed:1": 26,
+      "not_attempted": 177
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -341,18 +341,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "4_3qH9QZCz0",
-      "title": "ENGLISH SPEECH | GLENN CLOSE: Be Kind (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=4_3qH9QZCz0",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "4vZCgGnjADQ",
       "title": "ENGLISH SPEECH | MARIA RESSA: Defending Truth (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=4vZCgGnjADQ",
@@ -473,18 +461,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "7zUUV8_CY2M",
-      "title": "ENGLISH SPEECH | TOP 5 SPEECHES of 2025 (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=7zUUV8_CY2M",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "8R4TMmU_Ig0",
       "title": "ENGLISH SPEECH | SIMON SINEK: 5 Rules for Success (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=8R4TMmU_Ig0",
@@ -548,18 +524,6 @@
       "video_id": "9rFsLcVYbWg",
       "title": "ENGLISH SPEECH | DEEPIKA PADUKONE: Mental Health (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=9rFsLcVYbWg",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "9vwK8mLwyTA",
-      "title": "ENGLISH SPEECH | MALALA: Fight for Education (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=9vwK8mLwyTA",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -1169,18 +1133,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "RH58QUkNVis",
-      "title": "ENGLISH SPEECH | CHADWICK BOSEMAN: What You Fight For? (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=RH58QUkNVis",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "RaLXDIJW3_M",
       "title": "ENGLISH SPEECH | MATT DAMON: What We Do Matters (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=RaLXDIJW3_M",
@@ -1450,10 +1402,10 @@
       "source_url": "https://www.youtube.com/watch?v=_POoaOQ2Xuc",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1829,18 +1781,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "jkrrETzYX58",
-      "title": "ENGLISH SPEECH | QUEEN ELIZABETH II: The Spirit Of Democracy (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=jkrrETzYX58",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "kBh--e1sa5o",
       "title": "ENGLISH SPEECH | KOBE BRYANT: Love What You Do! (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=kBh--e1sa5o",
@@ -2021,18 +1961,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "nI0N3Y3TPu0",
-      "title": "ENGLISH SPEECH | TEJASWINI MANOGNA: The Voice of Women (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=nI0N3Y3TPu0",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "nIwU-9ZTTJc",
       "title": "ENGLISH SPEECH | EMMA WATSON: Gender Equality (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=nIwU-9ZTTJc",
@@ -2132,18 +2060,6 @@
       "video_id": "pRIy6xE9ONQ",
       "title": "ENGLISH SPEECH | ANNE HATHAWAY: Don't Make Us Wait (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=pRIy6xE9ONQ",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "pdYwZhCAeB0",
-      "title": "ENGLISH SPEECH | MS DHONI: Be Honest & Take Risks (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=pdYwZhCAeB0",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -2336,12 +2252,12 @@
       "video_id": "szXreq7f924",
       "title": "ENGLISH SPEECH | KEN JEONG: Find Your Passion (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=szXreq7f924",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "audio_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -2564,18 +2480,6 @@
       "video_id": "yizq7R0r7iQ",
       "title": "ENGLISH SPEECH | WILL FERRELL: Trust Your Gut (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=yizq7R0r7iQ",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "yjo8chlSbQE",
-      "title": "ENGLISH SPEECH | JACINDA ARDEN: Will You Join Us? (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=yjo8chlSbQE",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
