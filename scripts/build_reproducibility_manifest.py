@@ -42,6 +42,7 @@ ARTIFACTS = [
     ("writeups/end-to-end-goal.md", "end-to-end goal and definition of done"),
     ("writeups/repeatable-communication-patterns.md", "cross-talk repeatable communication synthesis"),
     ("writeups/vertical-slice-01-reviewer-start-here.md", "vertical-slice reviewer execution handoff"),
+    ("scripts/check_communication_job_delivery_browser.py", "delivery-review browser smoke test"),
     ("writeups/learner-field-guide.md", "learner-facing 18-job field guide"),
     ("research/full-corpus-media-coverage.json", "full transcript-corpus media availability audit"),
     ("research/full-corpus-media-recovery-queue.json", "full transcript-corpus media recovery routing queue"),
