@@ -183,6 +183,12 @@ without changing the incomplete research status.
 The [external review gate index](writeups/external-review-gate-index.md) is the
 single operational routing page for the ten remaining independent-review,
 learner and listener operations.
+The [per-job promotion readiness audit](writeups/communication-job-promotion-readiness.md)
+now makes the promotion boundary explicit for every one of the 18 provisional
+jobs: 0/18 are promotion-ready. Each row reports its exact examples, delivery
+samples, counterexample slots and the specific independent-review, delivery,
+learner and listener blockers; structural completeness is not treated as
+validated teachability or effectiveness.
 
 The atlas also now exposes a separate 187-item [candidate speech-function
 independent-review workbook](research/corpus-function-independent-review-workbook.json)

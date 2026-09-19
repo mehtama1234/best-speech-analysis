@@ -181,6 +181,10 @@ are complete.
 The [external review gate index](writeups/external-review-gate-index.html)
 routes all ten remaining review/data-collection operations to their current
 form, validator, comparator or summarizer, and claim boundary.
+The [per-job promotion readiness audit](writeups/communication-job-promotion-readiness.md)
+reports the promotion checkpoint for all 18 provisional communication jobs:
+0/18 are currently promotion-ready, with blockers listed per job rather than
+hidden inside a global status.
 The [dashboard validator](scripts/validate_end_to_end_status.py) reconciles its
 counts against the underlying artifacts before a checkpoint is trusted.
 The browser also renders exact examples, counterexamples and the validation

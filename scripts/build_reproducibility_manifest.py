@@ -31,6 +31,7 @@ ARTIFACTS = [
     ("research/end-to-end-status.json", "live status dashboard"),
     ("research/end-to-end-acceptance-matrix.json", "requirement acceptance matrix"),
     ("research/external-review-gate-index.json", "external review/data-collection routing index"),
+    ("research/communication-job-promotion-readiness.json", "per-job promotion readiness audit"),
 ]
 
 
