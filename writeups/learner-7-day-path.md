@@ -37,6 +37,10 @@ you are not claiming.
 **Check:** Can the listener state the purpose, takeaway and open question
 without repeating your exact words?
 
+**Phrase cues to inspect:** `what matters`, `in short`, `the point is`,
+`ultimately`. Choose the wording that fits your meaning; these forms are
+retrieval handles, not proven effects.
+
 **Do not use:** a formal opening when the other person has asked a fast,
 narrow question; a closing to avoid a live objection.
 
@@ -54,6 +58,9 @@ reported or imagined.
 
 **Check:** Can the listener separate the event from your interpretation and
 from the general claim?
+
+**Phrase cues to inspect:** `for example`, `such as`, `for instance`, `I
+remember`, `when I`, `years ago`. A cue does not turn an anecdote into evidence.
 
 **Do not use:** another person’s private experience without permission, or a
 vivid outlier as if it established prevalence.
@@ -74,6 +81,10 @@ your current position and one point of overlap.
 
 **Check:** Could the other person recognize their view in your summary?
 
+**Phrase cues to inspect:** `but`, `used to`, `now I`, `instead`, `however`,
+`rather than`. Use the contrast to clarify a change, not to manufacture an
+opponent.
+
 **Do not use:** a false binary, a caricature or “that is the wrong question”
 as a shortcut around a valid concern.
 
@@ -91,6 +102,10 @@ fact, current interpretation and preference. Add one condition under which you
 would revise it.
 
 **Check:** Can the listener tell what you know, infer and prefer?
+
+**Phrase cues to inspect:** `I think`, `maybe`, `perhaps`, `I’m not sure`, `it
+depends`, `not necessarily`, `in other words`. Qualifiers should locate the
+claim, not merely make it sound modest.
 
 **Do not use:** “I think,” “maybe” or “it depends” as decorative softness when
 the claim should instead be checked or answered directly.
@@ -110,6 +125,9 @@ adding any reframe.
 
 **Check:** Can the listener identify the question, the direct answer and the
 reason for the added frame?
+
+**Phrase cues to inspect:** `why`, `how`, `what if`, `can we`, `what I mean`,
+`the definition`. A question mark alone is not an invitation.
 
 **Do not use:** rhetorical questions to corner someone or reframing to evade
 the literal point.
@@ -133,6 +151,10 @@ action that has a named owner.
 **Check:** Is the correction unmistakable? Is the credit observable? Can the
 actor reasonably consent and carry out the action?
 
+**Phrase cues to inspect:** `I said`, `I mean`, `you can`, `let’s`, `we need
+to`, `do not`, `join us`. Name the owner and the limit so an imperative does not
+quietly become an assignment of risk.
+
 **Do not use:** theatrical self-correction, praise that hides control, or an
 urgent request that assigns money, danger or care labor without support.
 
@@ -153,6 +175,10 @@ value judgment and request.
 **Final check:** Ask the listener for (a) the one-sentence takeaway, (b) the
 claim they distrust or need evidence for, (c) the next action, and (d) the
 part that felt pressuring or unclear. Revise once using that feedback.
+
+**Phrase cues to inspect:** `the lesson`, `what matters`, `the point is`, and
+one callback phrase from your opening. The return should do new work rather
+than repeat a slogan.
 
 ## What to record
 
