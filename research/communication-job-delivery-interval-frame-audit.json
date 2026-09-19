@@ -1,0 +1,741 @@
+{
+  "schema_version": "1.0",
+  "report_id": "communication-job-delivery-interval-frame-audit",
+  "status": "internal_three_frame_visual_audit_independent_review_pending",
+  "source_queue": "research/communication-job-delivery-sampling.json",
+  "item_count": 36,
+  "method": {
+    "frame_rule": "start, midpoint and end of each raw A/V queue interval",
+    "inspection": "manual visual inspection of extracted frames",
+    "not_performed": [
+      "continuous video review",
+      "manual vocal listening",
+      "speaker/event identity verification",
+      "gesture or emotion interpretation",
+      "audience outcome measurement"
+    ]
+  },
+  "claim_boundary": "Three-frame visual sequences distinguish speaker visibility and production/cutaway risk for navigation. They do not establish continuous delivery, gesture meaning, emotion, intent, identity, alignment, effectiveness or listener response.",
+  "items": [
+    {
+      "sample_id": "delivery:opening:01",
+      "canonical_job": "opening",
+      "video_id": "dgkxN6RASpg",
+      "evidence_id": "dgkxN6RASpg:00000",
+      "source_video": "data/video/dgkxN6RASpg.mp4",
+      "source_url": "https://www.youtube.com/watch?v=dgkxN6RASpg&t=13s",
+      "sampled_frame_times_seconds": [
+        13.68,
+        22.04,
+        30.4
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_speaker_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "Same male speaker remains at a microphone against the Mitty/TCL backdrop; the crop changes slightly and subtitles persist.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:opening:02",
+      "canonical_job": "opening",
+      "video_id": "AwA0Jnfj3ao",
+      "evidence_id": "AwA0Jnfj3ao:00000",
+      "source_video": "data/video/AwA0Jnfj3ao.mp4",
+      "source_url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=0s",
+      "sampled_frame_times_seconds": [
+        0.24,
+        11.725,
+        23.21
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "multi_shot",
+      "speaker_visibility": "speaker_visible_but_changes",
+      "visual_sequence_observation": "The interval moves from a close speaker view to a bald speaker and then a two-person interview composition.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:closing:01",
+      "canonical_job": "closing",
+      "video_id": "6dKimoybmEo",
+      "evidence_id": "6dKimoybmEo:00067",
+      "source_video": "data/video/6dKimoybmEo.mp4",
+      "source_url": "https://www.youtube.com/watch?v=6dKimoybmEo&t=209s",
+      "sampled_frame_times_seconds": [
+        209.94,
+        211.44,
+        212.94
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "graphic_or_cutaway",
+      "speaker_visibility": "speaker_not_visible",
+      "visual_sequence_observation": "All three frames show a blurred black-and-white graphic with large colored text rather than a live speaker.",
+      "delivery_navigation_status": "not_usable_for_speaker_delivery",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:closing:02",
+      "canonical_job": "closing",
+      "video_id": "dgkxN6RASpg",
+      "evidence_id": "dgkxN6RASpg:00089",
+      "source_video": "data/video/dgkxN6RASpg.mp4",
+      "source_url": "https://www.youtube.com/watch?v=dgkxN6RASpg&t=615s",
+      "sampled_frame_times_seconds": [
+        615.44,
+        625.4,
+        635.36
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_speaker_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same male speaker remains at the Mitty microphone across the three frames, with changing subtitle text.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:question:01",
+      "canonical_job": "question",
+      "video_id": "dKe3WbGR7Xs",
+      "evidence_id": "dKe3WbGR7Xs:00062",
+      "source_video": "data/video/dKe3WbGR7Xs.mp4",
+      "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=321s",
+      "sampled_frame_times_seconds": [
+        321.11,
+        328.029,
+        334.949
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_speaker_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same woman remains behind the lectern; hand position and gaze direction vary slightly.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:question:02",
+      "canonical_job": "question",
+      "video_id": "AwA0Jnfj3ao",
+      "evidence_id": "AwA0Jnfj3ao:00063",
+      "source_video": "data/video/AwA0Jnfj3ao.mp4",
+      "source_url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=283s",
+      "sampled_frame_times_seconds": [
+        283.9,
+        291.255,
+        298.61
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "interview_multi_shot",
+      "speaker_visibility": "speaker_and_listener_visible",
+      "visual_sequence_observation": "Two-person interview framing persists, ending on the older male speaker in a tighter crop.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:answer_or_response:01",
+      "canonical_job": "answer_or_response",
+      "video_id": "AwA0Jnfj3ao",
+      "evidence_id": "AwA0Jnfj3ao:00213",
+      "source_video": "data/video/AwA0Jnfj3ao.mp4",
+      "source_url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=934s",
+      "sampled_frame_times_seconds": [
+        934.11,
+        938.54,
+        942.97
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "multi_shot",
+      "speaker_visibility": "speakers_change",
+      "visual_sequence_observation": "The interval cuts between an older speaker, a standing younger speaker and another two-person composition.",
+      "delivery_navigation_status": "not_usable_for_continuous_speaker_delivery",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:answer_or_response:02",
+      "canonical_job": "answer_or_response",
+      "video_id": "qOwYULOPuPs",
+      "evidence_id": "qOwYULOPuPs:00000",
+      "source_video": "data/video/qOwYULOPuPs.mp4",
+      "source_url": "https://www.youtube.com/watch?v=qOwYULOPuPs&t=0s",
+      "sampled_frame_times_seconds": [
+        0.08,
+        5.24,
+        10.4
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_speaker_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same seated male speaker remains centered in the indoor interview composition.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:story_or_personal_experience:01",
+      "canonical_job": "story_or_personal_experience",
+      "video_id": "dgkxN6RASpg",
+      "evidence_id": "dgkxN6RASpg:00003",
+      "source_video": "data/video/dgkxN6RASpg.mp4",
+      "source_url": "https://www.youtube.com/watch?v=dgkxN6RASpg&t=34s",
+      "sampled_frame_times_seconds": [
+        34.56,
+        44.32,
+        54.08
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_speaker_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same male speaker remains at the Mitty microphone while the subtitle line changes.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:story_or_personal_experience:02",
+      "canonical_job": "story_or_personal_experience",
+      "video_id": "-54zUwySKCg",
+      "evidence_id": "-54zUwySKCg:00033",
+      "source_video": "data/video/-54zUwySKCg.mp4",
+      "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg&t=191s",
+      "sampled_frame_times_seconds": [
+        191.76,
+        199.495,
+        207.23
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_speaker_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same woman remains at the microphone with the event group behind her.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:example_or_case:01",
+      "canonical_job": "example_or_case",
+      "video_id": "-54zUwySKCg",
+      "evidence_id": "-54zUwySKCg:00119",
+      "source_video": "data/video/-54zUwySKCg.mp4",
+      "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg&t=600s",
+      "sampled_frame_times_seconds": [
+        600.6,
+        607.16,
+        613.72
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_speaker_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same woman remains at the event microphone; only caption text and facial orientation change.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:example_or_case:02",
+      "canonical_job": "example_or_case",
+      "video_id": "9fEurt2OZ0I",
+      "evidence_id": "9fEurt2OZ0I:00008",
+      "source_video": "data/video/9fEurt2OZ0I.mp4",
+      "source_url": "https://www.youtube.com/watch?v=9fEurt2OZ0I&t=31s",
+      "sampled_frame_times_seconds": [
+        31.08,
+        38.12,
+        45.16
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_speaker_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same male speaker remains in the public event composition with a crowd behind him.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:contrast_or_disagreement:01",
+      "canonical_job": "contrast_or_disagreement",
+      "video_id": "ZwMVMbmQBug",
+      "evidence_id": "ZwMVMbmQBug:00011",
+      "source_video": "data/video/ZwMVMbmQBug.mp4",
+      "source_url": "https://www.youtube.com/watch?v=ZwMVMbmQBug&t=38s",
+      "sampled_frame_times_seconds": [
+        38.52,
+        44.09,
+        49.66
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_scene_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same seated male actor/speaker remains at the desk with wall clocks; the scene may be scripted.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:contrast_or_disagreement:02",
+      "canonical_job": "contrast_or_disagreement",
+      "video_id": "-54zUwySKCg",
+      "evidence_id": "-54zUwySKCg:00256",
+      "source_video": "data/video/-54zUwySKCg.mp4",
+      "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg&t=1307s",
+      "sampled_frame_times_seconds": [
+        1307.299,
+        1313.679,
+        1320.06
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_speaker_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same woman remains at the microphone with event attendees behind her.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:correction_or_reframe:01",
+      "canonical_job": "correction_or_reframe",
+      "video_id": "dgkxN6RASpg",
+      "evidence_id": "dgkxN6RASpg:00060",
+      "source_video": "data/video/dgkxN6RASpg.mp4",
+      "source_url": "https://www.youtube.com/watch?v=dgkxN6RASpg&t=422s",
+      "sampled_frame_times_seconds": [
+        422.08,
+        430.0,
+        437.92
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_speaker_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same male speaker remains at the Mitty microphone; subtitle text changes across the interval.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:correction_or_reframe:02",
+      "canonical_job": "correction_or_reframe",
+      "video_id": "dKe3WbGR7Xs",
+      "evidence_id": "dKe3WbGR7Xs:00034",
+      "source_video": "data/video/dKe3WbGR7Xs.mp4",
+      "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=184s",
+      "sampled_frame_times_seconds": [
+        184.51,
+        193.345,
+        202.18
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_speaker_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same woman remains behind the lectern in the English Speeches composition.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:repair_or_self_correction:01",
+      "canonical_job": "repair_or_self_correction",
+      "video_id": "C8-twwwTETE",
+      "evidence_id": "C8-twwwTETE:00141",
+      "source_video": "data/video/C8-twwwTETE.mp4",
+      "source_url": "https://www.youtube.com/watch?v=C8-twwwTETE&t=356s",
+      "sampled_frame_times_seconds": [
+        356.58,
+        362.25,
+        367.919
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_speaker_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same male speaker remains in the outdoor crowd composition with a microphone.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:repair_or_self_correction:02",
+      "canonical_job": "repair_or_self_correction",
+      "video_id": "5nN-15CrnGc",
+      "evidence_id": "5nN-15CrnGc:00359",
+      "source_video": "data/video/5nN-15CrnGc.mp4",
+      "source_url": "https://www.youtube.com/watch?v=5nN-15CrnGc&t=1134s",
+      "sampled_frame_times_seconds": [
+        1134.0,
+        1139.2,
+        1144.4
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_speaker_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same male speaker remains on the blue-lit stage; mouth and head position change.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:qualification_or_boundary:01",
+      "canonical_job": "qualification_or_boundary",
+      "video_id": "6dKimoybmEo",
+      "evidence_id": "6dKimoybmEo:00021",
+      "source_video": "data/video/6dKimoybmEo.mp4",
+      "source_url": "https://www.youtube.com/watch?v=6dKimoybmEo&t=34s",
+      "sampled_frame_times_seconds": [
+        34.809,
+        36.309,
+        37.809
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "graphic_or_cutaway",
+      "speaker_visibility": "speaker_not_visible",
+      "visual_sequence_observation": "All three frames show the same blurred crowd graphic and large typography.",
+      "delivery_navigation_status": "not_usable_for_speaker_delivery",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:qualification_or_boundary:02",
+      "canonical_job": "qualification_or_boundary",
+      "video_id": "bR4tDSa3O10",
+      "evidence_id": "bR4tDSa3O10:00067",
+      "source_video": "data/video/bR4tDSa3O10.mp4",
+      "source_url": "https://www.youtube.com/watch?v=bR4tDSa3O10&t=192s",
+      "sampled_frame_times_seconds": [
+        192.8,
+        198.519,
+        204.239
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_speaker_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same woman remains on the purple-lit stage with changing subtitle text.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:definition_or_explanation:01",
+      "canonical_job": "definition_or_explanation",
+      "video_id": "dKe3WbGR7Xs",
+      "evidence_id": "dKe3WbGR7Xs:00008",
+      "source_video": "data/video/dKe3WbGR7Xs.mp4",
+      "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=38s",
+      "sampled_frame_times_seconds": [
+        38.26,
+        49.799,
+        61.339
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_speaker_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same woman remains behind the lectern; the camera stays on the stage composition.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:definition_or_explanation:02",
+      "canonical_job": "definition_or_explanation",
+      "video_id": "AwA0Jnfj3ao",
+      "evidence_id": "AwA0Jnfj3ao:00078",
+      "source_video": "data/video/AwA0Jnfj3ao.mp4",
+      "source_url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=362s",
+      "sampled_frame_times_seconds": [
+        362.169,
+        373.63,
+        385.09
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_speaker_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same young male speaker remains against the BMW backdrop.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:transition_or_structure:01",
+      "canonical_job": "transition_or_structure",
+      "video_id": "6dKimoybmEo",
+      "evidence_id": "6dKimoybmEo:00029",
+      "source_video": "data/video/6dKimoybmEo.mp4",
+      "source_url": "https://www.youtube.com/watch?v=6dKimoybmEo&t=42s",
+      "sampled_frame_times_seconds": [
+        42.809,
+        44.309,
+        45.809
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "graphic_or_cutaway",
+      "speaker_visibility": "speaker_not_visible",
+      "visual_sequence_observation": "All three frames show the same stylized quotation graphic with no visible speaker.",
+      "delivery_navigation_status": "not_usable_for_speaker_delivery",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:transition_or_structure:02",
+      "canonical_job": "transition_or_structure",
+      "video_id": "ZwMVMbmQBug",
+      "evidence_id": "ZwMVMbmQBug:00030",
+      "source_video": "data/video/ZwMVMbmQBug.mp4",
+      "source_url": "https://www.youtube.com/watch?v=ZwMVMbmQBug&t=110s",
+      "sampled_frame_times_seconds": [
+        110.47,
+        115.03,
+        119.59
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "scripted_scene_change",
+      "speaker_visibility": "speaker_not_visible",
+      "visual_sequence_observation": "The frames show a woman in a dark interior scene and then a different action/setting; no live speech delivery is isolated.",
+      "delivery_navigation_status": "not_usable_for_speaker_delivery",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:callback_or_repetition:01",
+      "canonical_job": "callback_or_repetition",
+      "video_id": "dKe3WbGR7Xs",
+      "evidence_id": "dKe3WbGR7Xs:00080",
+      "source_video": "data/video/dKe3WbGR7Xs.mp4",
+      "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=417s",
+      "sampled_frame_times_seconds": [
+        417.819,
+        426.09,
+        434.36
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_speaker_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same woman remains behind the lectern across the three frames.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:callback_or_repetition:02",
+      "canonical_job": "callback_or_repetition",
+      "video_id": "ZwMVMbmQBug",
+      "evidence_id": "ZwMVMbmQBug:00038",
+      "source_video": "data/video/ZwMVMbmQBug.mp4",
+      "source_url": "https://www.youtube.com/watch?v=ZwMVMbmQBug&t=145s",
+      "sampled_frame_times_seconds": [
+        145.92,
+        153.04,
+        160.16
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "insert_to_room_cut",
+      "speaker_visibility": "speaker_not_visible",
+      "visual_sequence_observation": "The interval shows a television insert and then a wider room scene rather than a clearly visible live speaker.",
+      "delivery_navigation_status": "not_usable_for_speaker_delivery",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:humor_or_rapport:01",
+      "canonical_job": "humor_or_rapport",
+      "video_id": "6dKimoybmEo",
+      "evidence_id": "6dKimoybmEo:00000",
+      "source_video": "data/video/6dKimoybmEo.mp4",
+      "source_url": "https://www.youtube.com/watch?v=6dKimoybmEo&t=13s",
+      "sampled_frame_times_seconds": [
+        13.809,
+        15.309,
+        16.809
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "graphic_or_cutaway",
+      "speaker_visibility": "speaker_not_visible",
+      "visual_sequence_observation": "All three frames show a blurred crowd graphic with colored text.",
+      "delivery_navigation_status": "not_usable_for_speaker_delivery",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:humor_or_rapport:02",
+      "canonical_job": "humor_or_rapport",
+      "video_id": "C8-twwwTETE",
+      "evidence_id": "C8-twwwTETE:00016",
+      "source_video": "data/video/C8-twwwTETE.mp4",
+      "source_url": "https://www.youtube.com/watch?v=C8-twwwTETE&t=32s",
+      "sampled_frame_times_seconds": [
+        32.64,
+        39.24,
+        45.84
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_speaker_frame",
+      "speaker_visibility": "speakers_visible_all_three",
+      "visual_sequence_observation": "Two men remain in the outdoor crowd composition; one holds the microphone while the other stands nearby.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:credit_or_acknowledgment:01",
+      "canonical_job": "credit_or_acknowledgment",
+      "video_id": "dKe3WbGR7Xs",
+      "evidence_id": "dKe3WbGR7Xs:00071",
+      "source_video": "data/video/dKe3WbGR7Xs.mp4",
+      "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=367s",
+      "sampled_frame_times_seconds": [
+        367.069,
+        376.364,
+        385.659
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_speaker_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same woman remains behind the lectern with the event branding visible.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:credit_or_acknowledgment:02",
+      "canonical_job": "credit_or_acknowledgment",
+      "video_id": "C8-twwwTETE",
+      "evidence_id": "C8-twwwTETE:00123",
+      "source_video": "data/video/C8-twwwTETE.mp4",
+      "source_url": "https://www.youtube.com/watch?v=C8-twwwTETE&t=309s",
+      "sampled_frame_times_seconds": [
+        309.479,
+        314.699,
+        319.919
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_speaker_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same male speaker remains outdoors with the crowd and microphone.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:call_to_action_or_audience_role:01",
+      "canonical_job": "call_to_action_or_audience_role",
+      "video_id": "dKe3WbGR7Xs",
+      "evidence_id": "dKe3WbGR7Xs:00041",
+      "source_video": "data/video/dKe3WbGR7Xs.mp4",
+      "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=217s",
+      "sampled_frame_times_seconds": [
+        217.29,
+        223.15,
+        229.01
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_speaker_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same woman remains behind the lectern; the visible gesture and subtitle line change.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:call_to_action_or_audience_role:02",
+      "canonical_job": "call_to_action_or_audience_role",
+      "video_id": "ZwMVMbmQBug",
+      "evidence_id": "ZwMVMbmQBug:00022",
+      "source_video": "data/video/ZwMVMbmQBug.mp4",
+      "source_url": "https://www.youtube.com/watch?v=ZwMVMbmQBug&t=78s",
+      "sampled_frame_times_seconds": [
+        78.15,
+        84.555,
+        90.96
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_scene_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same male actor remains at the table with wall clocks and raises both arms across the interval.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:persuasion_or_advocacy:01",
+      "canonical_job": "persuasion_or_advocacy",
+      "video_id": "-54zUwySKCg",
+      "evidence_id": "-54zUwySKCg:00226",
+      "source_video": "data/video/-54zUwySKCg.mp4",
+      "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg&t=1131s",
+      "sampled_frame_times_seconds": [
+        1131.49,
+        1141.04,
+        1150.59
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "audience_to_stage_cut",
+      "speaker_visibility": "speaker_visibility_changes",
+      "visual_sequence_observation": "The interval cuts from a crowd/audience view to the Harvard-branded stage and then holds on the stage group.",
+      "delivery_navigation_status": "not_usable_for_continuous_speaker_delivery",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:persuasion_or_advocacy:02",
+      "canonical_job": "persuasion_or_advocacy",
+      "video_id": "6dKimoybmEo",
+      "evidence_id": "6dKimoybmEo:00014",
+      "source_video": "data/video/6dKimoybmEo.mp4",
+      "source_url": "https://www.youtube.com/watch?v=6dKimoybmEo&t=27s",
+      "sampled_frame_times_seconds": [
+        27.809,
+        29.309,
+        30.809
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "graphic_or_cutaway",
+      "speaker_visibility": "speaker_not_visible",
+      "visual_sequence_observation": "All three frames show a quotation graphic over a blurred crowd; no live speaker is visible.",
+      "delivery_navigation_status": "not_usable_for_speaker_delivery",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:reflection_or_value_frame:01",
+      "canonical_job": "reflection_or_value_frame",
+      "video_id": "ZwMVMbmQBug",
+      "evidence_id": "ZwMVMbmQBug:00016",
+      "source_video": "data/video/ZwMVMbmQBug.mp4",
+      "source_url": "https://www.youtube.com/watch?v=ZwMVMbmQBug&t=57s",
+      "sampled_frame_times_seconds": [
+        57.469,
+        62.454,
+        67.44
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "stable_scene_frame",
+      "speaker_visibility": "speaker_visible_all_three",
+      "visual_sequence_observation": "The same seated male actor/speaker remains at the table; hand position changes across frames.",
+      "delivery_navigation_status": "limited",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:reflection_or_value_frame:02",
+      "canonical_job": "reflection_or_value_frame",
+      "video_id": "AwA0Jnfj3ao",
+      "evidence_id": "AwA0Jnfj3ao:00232",
+      "source_video": "data/video/AwA0Jnfj3ao.mp4",
+      "source_url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=1003s",
+      "sampled_frame_times_seconds": [
+        1003.68,
+        1012.655,
+        1021.63
+      ],
+      "frame_count": 3,
+      "frame_sequence_type": "multi_shot",
+      "speaker_visibility": "speaker_visibility_changes",
+      "visual_sequence_observation": "The interval cuts among a BMW interview, a purple-lit audience and a two-person interview composition.",
+      "delivery_navigation_status": "not_usable_for_continuous_speaker_delivery",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    }
+  ]
+}
