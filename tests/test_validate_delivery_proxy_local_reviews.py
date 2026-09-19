@@ -21,11 +21,13 @@ class ValidateDeliveryProxyLocalReviewsTests(unittest.TestCase):
             "alignment": "indeterminate",
             "identity": "not_reviewed",
             "updated_at": "2026-09-19T00:00:00Z",
+            "job": "humor_or_rapport",
             "vocal": "not reviewed",
             "visual": "not available",
             "setting": "not reviewed",
             "access": "captions available; audio not reviewed",
             "alternate": "not reviewed",
+            "conflict": "No conflict; independent review status not established by this form.",
         }
         self.assertEqual(validate([record], self.atlas), [])
 

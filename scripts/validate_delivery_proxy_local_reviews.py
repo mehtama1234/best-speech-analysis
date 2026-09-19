@@ -12,12 +12,15 @@ ROOT = Path(__file__).resolve().parents[1]
 ATLAS = ROOT / "research/delivery-proxy-candidate-atlas.json"
 ALIGNMENTS = {"indeterminate", "clear", "partial", "misaligned"}
 IDENTITIES = {"not_reviewed", "uncertain", "supported"}
-TEXT_FIELDS = ("vocal", "visual", "setting", "access", "alternate")
+TEXT_FIELDS = ("vocal", "visual", "setting", "access", "alternate", "conflict")
 
 
 def validate(payload: object, atlas: dict | None = None) -> list[str]:
     atlas = atlas or json.loads(ATLAS.read_text())
-    allowed = {row["record_id"] or row["evidence_id"] for row in atlas["candidates"]}
+    allowed = {
+        row["record_id"] or row["evidence_id"]: row["canonical_job"]
+        for row in atlas["candidates"]
+    }
     if not isinstance(payload, list):
         return ["export must be a JSON list"]
     errors: list[str] = []
@@ -30,6 +33,8 @@ def validate(payload: object, atlas: dict | None = None) -> list[str]:
         record_id = str(row.get("record_id", "")).strip()
         if record_id not in allowed:
             errors.append(f"{prefix} references an unknown atlas record_id")
+        elif row.get("job") != allowed[record_id]:
+            errors.append(f"{prefix} job does not match atlas record")
         if record_id in seen:
             errors.append(f"{prefix} duplicates record_id")
         seen.add(record_id)

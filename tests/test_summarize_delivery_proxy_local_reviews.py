@@ -21,6 +21,7 @@ class SummarizeDeliveryProxyLocalReviewsTests(unittest.TestCase):
             "alignment": "clear",
             "identity": "uncertain",
             "updated_at": "2026-09-19T00:00:00Z",
+            "conflict": "No conflict declared; independence requires separate adjudication.",
             "vocal": "pause not reviewed",
             "visual": "speaker visible; gesture not reviewed",
             "setting": "edited subtitles",
