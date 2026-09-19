@@ -4,6 +4,10 @@ This page is the execution handoff for an independent reviewer. It is not a
 research result. The slice is selected but unvalidated, and the reviewer must
 not be the person who created the packets or original interpretations.
 
+For project-wide routing, see the [external review gate index](external-review-gate-index.md).
+This is the narrow first execution target; completing it does not promote the
+other 13 communication jobs.
+
 ## Scope
 
 Review five provisional communication jobs:
@@ -34,6 +38,9 @@ minimum lesson-facing subset.
    — internal notes only; do not treat them as independent observations.
 6. [Independent review workbook](vertical-slice-01-independent-review-workbook.html)
    — complete the 50 item-level records and reviewer metadata.
+7. [Delivery observation queue](communication-job-delivery-sampling.html) —
+   review the two raw-media samples per job and preserve vocal, visual, setting
+   and accessibility missingness separately from the transcript decision.
 
 ## Required decisions
 
