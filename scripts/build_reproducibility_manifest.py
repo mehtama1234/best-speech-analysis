@@ -40,6 +40,7 @@ ARTIFACTS = [
     ("research/communication-job-delivery-timing-candidates.json", "proxy vocal timing candidate report"),
     ("research/full-corpus-timing-candidate-atlas.json", "full local feature timing candidate atlas"),
     ("research/visual-movement-analysis.json", "full local face and scene movement proxy analysis"),
+    ("research/job-phrase-candidate-inventory.json", "provisional multiword phrase candidate inventory"),
     ("research/validation-handoff.json", "human validation gate handoff"),
     ("research/communication-job-counterexample-candidate-queue.json", "counterexample candidate routing queue"),
     ("writeups/communication-job-practice.html", "local 18-job practice surface"),
@@ -92,11 +93,13 @@ ARTIFACTS = [
     ("scripts/build_full_corpus_timing_candidate_atlas.py", "full local feature timing candidate atlas builder"),
     ("scripts/validate_timing_candidate_reviews.py", "full local timing review export validator"),
     ("scripts/analyze_visual_movement.py", "face and scene movement proxy analyzer"),
+    ("scripts/build_job_phrase_candidate_inventory.py", "multiword phrase candidate inventory builder"),
     ("writeups/communication-job-delivery-interval-frame-audit.md", "three-frame delivery interval audit report"),
     ("writeups/communication-job-delivery-timing-candidates.md", "proxy vocal timing candidate report"),
     ("writeups/full-corpus-timing-candidate-atlas.md", "full local feature timing candidate report"),
     ("writeups/full-corpus-timing-candidate-atlas.html", "searchable full local timing candidate surface"),
     ("writeups/visual-movement-analysis.md", "full local face and scene movement proxy report"),
+    ("writeups/job-phrase-candidate-inventory.md", "provisional multiword phrase candidate report"),
 ]
 
 
