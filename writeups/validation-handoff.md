@@ -4,84 +4,20 @@ Status: **instruments ready; no human records received**.
 
 These are operational instruments and instructions, not validation results. No reviewer, learner or listener judgment is included.
 
-Before selecting examples, use the [corpus transcript-derived lesson
-inventory](corpus-lesson-index.html) to search the communication functions and
-structural relations recorded across all 395 completed transcript reviews. It
-is a discovery index only; its entries still require the independent review,
-delivery, learner and listener gates below.
-The [provisional shared function taxonomy](corpus-function-taxonomy.md) is a
-comparison aid for those free-text labels; its unclassified queue must not be
-treated as evidence of absence.
-The [exact phrase-form inventory](corpus-phrase-form-inventory.html) exposes
-the actual matched wording behind the phrase families; every form still needs
-full-context and independent recurrence review.
-The [delivery evidence index](delivery-evidence-index.md) is the accounting
-surface for raw media, derived proxies and internal multimodal notes; the
-independent workbook remains the authoritative review gate.
-The [shared evidence model](shared-evidence-model.md) is the client-facing
-contract; it must not be interpreted as proof that any pending entity has been
-validated.
-Use the [exact-caption evidence bank](corpus-evidence-bank.html) to inspect the
-retained words and timestamped source before reviewing a function or lesson.
-The [communication-job cards](communication-job-cards.html) are a provisional
-practice surface; reviewers should check their mechanism language, examples,
-limits and non-fit warnings rather than treating the cards as findings.
-Their delivery sections contain only bounded internal observations; the blank
-multimodal workbook remains the independent gate.
-The expanded [18-card learner check](communication-job-learner-check.html) is
-also unrun; exported records must pass its validator before any teachability
-summary is written.
-Its tasks now expose exact phrase forms for eight indexed job families and
-preserve an explicit no-direct-match status for the other ten; this is a
-curriculum link, not evidence that any phrase works.
-Completed learner exports now require facilitator rubric scores (0–2) for
-recognition, explanation, transfer, non-fit, listener restatement and revision,
-plus a safety/privacy/accessibility flag. Use the [non-promotional summarizer](../scripts/summarize_communication_job_learner_records.py)
-to retain per-job failures rather than averaging them away.
-The [integrated curriculum browser](communication-job-curriculum.html) is the
-current web learning surface for all 18 jobs. It is provisional and should be
-used to inspect the evidence chain and open the pending gates, not to present
-the cards as proven best practices.
-The [mobile lesson payload](communication-job-mobile-lessons.md) is the native
-practice contract: six steps per job, pseudonymous consent capture and
-captioned/typed/asynchronous response modes. It contains no learner records.
-The [18-job listener protocol](communication-job-listener-outcome-protocol.md)
-remains a separate outcome gate; it cannot start until matched stimuli are
-independently reviewed, pretested and locked. The current [draft stimulus
-bank](communication-job-listener-stimuli-draft.md) is not yet that locked set.
-The [stimulus preflight](communication-job-stimuli-preflight.md) is only an
-automated screen; its 18 pairs still need independent content-equivalence,
-readability, accessibility and safety review.
-The [stimulus review workbook](communication-job-listener-stimulus-review-workbook.html)
-is the manual independent gate for those 18 pairs. It must be completed and
-adjudicated before any listener outcome record is accepted.
-The [stimulus agreement comparator](../scripts/compare_listener_stimulus_reviews.py)
-preserves item-level disagreements across independent exports and never locks a
-pair automatically.
-
-The [communication-job counterexample workbook](communication-job-counterexample-workbook.html)
-requires five explicit checks for every provisional job: absence with speech
-still working, presence with an observable failure or limit, alternate
-function, confound/setting, and misuse or copying risk. It is blank and must
-not be treated as evidence until independently completed.
-The [cross-job comparison](communication-job-cross-comparison.html) is the
-current denominator surface for comparing jobs; verify speaker and event
-identity before promoting its video-level comparisons to recurrence claims.
-The [18-job delivery sampling queue](communication-job-delivery-sampling.html)
-is the next manual multimodal collection surface: 36 samples with transcript
-alignment, media state and fields for vocal timing, audio limits, visual
-observations, editing, setting and accessibility. It contains no observations
-yet.
-The [delivery measurement preflight](communication-job-delivery-measurement-preflight.md)
-contains 32 aligned proxy-measurement records and four unmatched samples. Treat
-these as reproducible navigation/measurement aids only; manual observation and
-independent review remain required.
-The [corpus identity workbook](corpus-identity-review-workbook.html) separately
-requires independent verification for all 395 reviewed queue items, including
-speaker, event, upload correspondence and duplicate/compilation status. Do not
-promote cross-video comparisons until this gate is addressed.
+Before selecting examples, use the [corpus lesson inventory](corpus-lesson-index.html), [exact phrase-form inventory](corpus-phrase-form-inventory.html), [evidence bank](corpus-evidence-bank.html), [provisional cards](communication-job-cards.html), [delivery inventory](communication-job-delivery-inventory.md) and [shared evidence model](shared-evidence-model.md). These are discovery and routing surfaces; none is proof that a pattern works.
 
 ## Independent review gates
+
+### corpus_identity — 395 items
+
+Verify speaker, event, upload correspondence, source provenance and duplication status before recurrence denominators are used.
+
+- Workbook: `research/corpus-identity-review-workbook.json`
+- Browser form: `writeups/corpus-identity-review-workbook.html`
+- Validator: `scripts/validate_corpus_identity_review.py`
+- Summarizer: `scripts/summarize_corpus_identity_reviews.py`
+- Independence: Reviewer must not be the person who created the transcript corpus, labels or identity candidate groups.
+- Does not establish: function, delivery effectiveness, listener outcomes
 
 ### corpus_function — 187 items
 
@@ -107,14 +43,34 @@ Check whether phrase-form hits support the proposed function family in context.
 
 ### exact_phrase_form — 50 items
 
-Check the actual retrieved word forms in sampled train/holdout contexts before
-using exact wording or recurrence counts in a lesson.
+Check retrieved word forms in sampled train/holdout contexts before using exact wording or recurrence counts.
 
 - Workbook: `research/corpus-phrase-form-independent-review-workbook.json`
 - Browser form: `writeups/corpus-phrase-form-independent-review-workbook.html`
 - Validator: `scripts/validate_corpus_phrase_form_review.py`
+- Summarizer: `scripts/summarize_corpus_phrase_form_reviews.py`
 - Independence: Reviewer must not have created the phrase inventory, regex families, candidate mechanisms or workbook.
-- Does not establish: delivery effectiveness, speaker intent, listener outcomes, causality or universal best practice
+- Does not establish: delivery effectiveness, speaker intent, listener outcomes, causality
+
+### delivery — 36 items
+
+Complete manual observations for transcript alignment, vocal timing, visual action, setting, editing, identity and accessibility across the two-sample-per-job queue.
+
+- Workbook: `research/communication-job-delivery-sampling.json`
+- Browser form: `writeups/communication-job-delivery-sampling.html`
+- Validator: `scripts/validate_communication_job_delivery_review.py`
+- Independence: A reviewer code and conflict statement are required; an export is not independent merely because those fields are present.
+- Does not establish: emotion, intent, audience response, effectiveness
+
+### counterexamples — 90 items
+
+Check absence, failure, alternate function, confound/setting and misuse limits for every provisional job.
+
+- Workbook: `research/communication-job-counterexample-workbook.json`
+- Browser form: `writeups/communication-job-counterexample-workbook.html`
+- Validator: `scripts/validate_communication_job_counterexample_review.py`
+- Independence: Reviewer must not be the person who created the original card interpretation or candidate counterexample selection.
+- Does not establish: effectiveness, causality, universal failure
 
 ### multimodal — 21 items
 
@@ -138,28 +94,33 @@ Review the five linked lesson packets and their evidence boundaries.
 
 ## Learning and outcome gates
 
-### learner_teachability — 32 tasks
+### listener_stimulus_review — 18 tasks
 
-Test whether learners can recognize, explain, transfer and safely bound the 18 current provisional communication-job lessons.
+Review proposition equivalence, readability, accessibility, safety and blinding before locking listener pairs.
 
-- Protocol: `research/shared-learner-check.json`
-- Form: `writeups/shared-learner-check.html`
-- Validator: `scripts/validate_shared_learner_record.py`
+- Protocol: `research/communication-job-listener-stimuli-draft.json`
+- Form: `writeups/communication-job-listener-stimulus-review-workbook.html`
+- Validator: `scripts/validate_listener_stimulus_review.py`
+- Status: `manual_equivalence_review_pending`
+- Does not establish: listener comprehension, real-world effectiveness
+
+### learner_teachability — 72 tasks
+
+Test whether learners can recognize, explain, transfer and safely bound all 18 provisional communication-job cards.
+
+- Protocol: `research/communication-job-learner-check.json`
+- Form: `writeups/communication-job-learner-check.html`
+- Validator: `scripts/validate_communication_job_learner_record.py`
 - Status: `protocol_drafted_not_run`
 - Does not establish: original pattern effectiveness, population learning effects
 
 ### listener_outcomes — 6 tasks
 
-Test listener comprehension and immediate recall of matched speech versions,
-with a blind 0–2 score per task and an explicit accessibility/missingness flag,
-separately from learner teachability and from claims about trust, persuasion or
-behavior. Use the non-promotional summarizer only after the stimulus pairs are
-independently reviewed and locked.
+Test comprehension, recall and reported cognitive load for matched control versus pattern-informed versions of the 18 provisional communication-job cards.
 
 - Protocol: `research/communication-job-listener-outcome-protocol.json`
 - Form: `writeups/communication-job-listener-record.html`
 - Validator: `scripts/validate_communication_job_listener_record.py`
-- Summarizer: `scripts/summarize_communication_job_listener_records.py`
 - Status: `design_complete_not_run`
 - Does not establish: universal effectiveness, speaker intent
 
@@ -172,4 +133,4 @@ independently reviewed and locked.
 5. Preserve disagreements; do not silently adjudicate them in the original analysis.
 6. Do not send credentials, raw recordings or identifying participant information through these forms.
 
-No gate may be marked complete merely because its workbook or form exists.
+No gate may be marked complete merely because its workbook or form exists. Independent review records must come from a distinct reviewer; learner and listener records must be consented, pseudonymous and validated.

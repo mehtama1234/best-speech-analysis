@@ -5,6 +5,21 @@
   "claim_boundary": "These are operational instruments and instructions, not validation results. No reviewer, learner or listener judgment is included.",
   "review_gates": [
     {
+      "id": "corpus_identity",
+      "purpose": "Verify speaker, event, upload correspondence, source provenance and duplication status before recurrence denominators are used.",
+      "items": 395,
+      "workbook": "research/corpus-identity-review-workbook.json",
+      "form": "writeups/corpus-identity-review-workbook.html",
+      "validator": "scripts/validate_corpus_identity_review.py",
+      "summarizer": "scripts/summarize_corpus_identity_reviews.py",
+      "independence": "Reviewer must not be the person who created the transcript corpus, labels or identity candidate groups.",
+      "does_not_establish": [
+        "function",
+        "delivery effectiveness",
+        "listener outcomes"
+      ]
+    },
+    {
       "id": "corpus_function",
       "purpose": "Check heuristic speech-function labels in surrounding transcript context.",
       "items": 187,
@@ -32,6 +47,51 @@
         "effectiveness",
         "causality",
         "universal recurrence"
+      ]
+    },
+    {
+      "id": "exact_phrase_form",
+      "purpose": "Check retrieved word forms in sampled train/holdout contexts before using exact wording or recurrence counts.",
+      "items": 50,
+      "workbook": "research/corpus-phrase-form-independent-review-workbook.json",
+      "form": "writeups/corpus-phrase-form-independent-review-workbook.html",
+      "validator": "scripts/validate_corpus_phrase_form_review.py",
+      "summarizer": "scripts/summarize_corpus_phrase_form_reviews.py",
+      "independence": "Reviewer must not have created the phrase inventory, regex families, candidate mechanisms or workbook.",
+      "does_not_establish": [
+        "delivery effectiveness",
+        "speaker intent",
+        "listener outcomes",
+        "causality"
+      ]
+    },
+    {
+      "id": "delivery",
+      "purpose": "Complete manual observations for transcript alignment, vocal timing, visual action, setting, editing, identity and accessibility across the two-sample-per-job queue.",
+      "items": 36,
+      "workbook": "research/communication-job-delivery-sampling.json",
+      "form": "writeups/communication-job-delivery-sampling.html",
+      "validator": "scripts/validate_communication_job_delivery_review.py",
+      "independence": "A reviewer code and conflict statement are required; an export is not independent merely because those fields are present.",
+      "does_not_establish": [
+        "emotion",
+        "intent",
+        "audience response",
+        "effectiveness"
+      ]
+    },
+    {
+      "id": "counterexamples",
+      "purpose": "Check absence, failure, alternate function, confound/setting and misuse limits for every provisional job.",
+      "items": 90,
+      "workbook": "research/communication-job-counterexample-workbook.json",
+      "form": "writeups/communication-job-counterexample-workbook.html",
+      "validator": "scripts/validate_communication_job_counterexample_review.py",
+      "independence": "Reviewer must not be the person who created the original card interpretation or candidate counterexample selection.",
+      "does_not_establish": [
+        "effectiveness",
+        "causality",
+        "universal failure"
       ]
     },
     {
@@ -65,12 +125,25 @@
   ],
   "learning_gates": [
     {
+      "id": "listener_stimulus_review",
+      "purpose": "Review proposition equivalence, readability, accessibility, safety and blinding before locking listener pairs.",
+      "tasks": 18,
+      "protocol": "research/communication-job-listener-stimuli-draft.json",
+      "form": "writeups/communication-job-listener-stimulus-review-workbook.html",
+      "validator": "scripts/validate_listener_stimulus_review.py",
+      "status": "manual_equivalence_review_pending",
+      "does_not_establish": [
+        "listener comprehension",
+        "real-world effectiveness"
+      ]
+    },
+    {
       "id": "learner_teachability",
-      "purpose": "Test whether learners can recognize, explain, transfer and safely bound all eight current draft communication patterns.",
-      "tasks": 32,
-      "protocol": "research/shared-learner-check.json",
-      "form": "writeups/shared-learner-check.html",
-      "validator": "scripts/validate_shared_learner_record.py",
+      "purpose": "Test whether learners can recognize, explain, transfer and safely bound all 18 provisional communication-job cards.",
+      "tasks": 72,
+      "protocol": "research/communication-job-learner-check.json",
+      "form": "writeups/communication-job-learner-check.html",
+      "validator": "scripts/validate_communication_job_learner_record.py",
       "status": "protocol_drafted_not_run",
       "does_not_establish": [
         "original pattern effectiveness",
@@ -79,11 +152,11 @@
     },
     {
       "id": "listener_outcomes",
-      "purpose": "Test listener comprehension and immediate recall of matched speech versions, separately from learner teachability and from claims about trust, persuasion or behavior.",
+      "purpose": "Test comprehension, recall and reported cognitive load for matched control versus pattern-informed versions of the 18 provisional communication-job cards.",
       "tasks": 6,
-      "protocol": "research/listener-outcome-protocol.json",
-      "form": "writeups/listener-outcome-record.html",
-      "validator": "scripts/validate_listener_outcome_record.py",
+      "protocol": "research/communication-job-listener-outcome-protocol.json",
+      "form": "writeups/communication-job-listener-record.html",
+      "validator": "scripts/validate_communication_job_listener_record.py",
       "status": "design_complete_not_run",
       "does_not_establish": [
         "universal effectiveness",

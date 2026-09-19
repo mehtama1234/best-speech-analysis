@@ -36,6 +36,7 @@ ARTIFACTS = [
     ("research/shared-lesson-cards.json", "shared 18-job web/mobile lesson cards"),
     ("research/communication-job-delivery-internal-observations.json", "internal midpoint-frame delivery observations"),
     ("research/communication-job-delivery-inventory.json", "job-level delivery inspection inventory"),
+    ("research/validation-handoff.json", "human validation gate handoff"),
     ("research/communication-job-counterexample-candidate-queue.json", "counterexample candidate routing queue"),
     ("writeups/communication-job-practice.html", "local 18-job practice surface"),
     ("writeups/end-to-end-goal.md", "end-to-end goal and definition of done"),

@@ -14,8 +14,8 @@ class ValidationHandoffTests(unittest.TestCase):
 
     def test_handoff_covers_all_human_gates_without_claiming_results(self):
         self.assertEqual(self.report["status"], "instruments_ready_no_human_records_received")
-        self.assertEqual(len(self.report["review_gates"]), 4)
-        self.assertEqual(len(self.report["learning_gates"]), 2)
+        self.assertEqual(len(self.report["review_gates"]), 8)
+        self.assertEqual(len(self.report["learning_gates"]), 3)
         self.assertIn("No reviewer", self.report["claim_boundary"])
         for gate in self.report["review_gates"] + self.report["learning_gates"]:
             self.assertTrue(gate["validator"])
