@@ -37,6 +37,7 @@ ARTIFACTS = [
     ("research/communication-job-delivery-internal-observations.json", "internal midpoint-frame delivery observations"),
     ("research/communication-job-delivery-inventory.json", "job-level delivery inspection inventory"),
     ("research/communication-job-delivery-interval-frame-audit.json", "three-frame delivery interval audit"),
+    ("research/communication-job-delivery-timing-candidates.json", "proxy vocal timing candidate report"),
     ("research/validation-handoff.json", "human validation gate handoff"),
     ("research/communication-job-counterexample-candidate-queue.json", "counterexample candidate routing queue"),
     ("writeups/communication-job-practice.html", "local 18-job practice surface"),
@@ -85,7 +86,9 @@ ARTIFACTS = [
     ("research/recovered-media-internal-observations.json", "newly recovered bounded frame observations"),
     ("writeups/recovered-media-internal-observations.md", "newly recovered delivery observation report"),
     ("scripts/build_delivery_interval_frame_audit.py", "three-frame delivery interval audit builder"),
+    ("scripts/build_delivery_timing_candidates.py", "proxy vocal timing candidate builder"),
     ("writeups/communication-job-delivery-interval-frame-audit.md", "three-frame delivery interval audit report"),
+    ("writeups/communication-job-delivery-timing-candidates.md", "proxy vocal timing candidate report"),
 ]
 
 

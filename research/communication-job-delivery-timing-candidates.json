@@ -1,0 +1,771 @@
+{
+  "schema_version": "1.0",
+  "report_id": "communication-job-delivery-timing-candidates",
+  "status": "proxy_timing_candidates_manual_listening_pending",
+  "source_preflight": "research/communication-job-delivery-measurement-preflight.json",
+  "source_frame_audit": "research/communication-job-delivery-interval-frame-audit.json",
+  "eligibility_rule": "Only rows with delivery_navigation_status=limited are routed; multi-shot, graphic, insert and speaker-visibility-change rows are excluded.",
+  "thresholds": {
+    "gap_candidate_seconds": 1.0,
+    "lower_density_words_per_second": 1.5,
+    "higher_density_words_per_second": 4.0
+  },
+  "claim_boundary": "These are transcript/audio feature candidates for manual listening. They do not prove an intentional pause, emphasis, pace choice, emotion, confidence, intent, identity, alignment, effectiveness or listener outcome.",
+  "item_count": 26,
+  "candidate_count": 12,
+  "items": [
+    {
+      "sample_id": "delivery:opening:01",
+      "canonical_job": "opening",
+      "video_id": "dgkxN6RASpg",
+      "evidence_ids": [
+        "dgkxN6RASpg:00000",
+        "dgkxN6RASpg:00001",
+        "dgkxN6RASpg:00002"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=dgkxN6RASpg&t=13s",
+      "frame_sequence_type": "stable_speaker_frame",
+      "candidate_tags": [
+        "gap_after_captioned_unit"
+      ],
+      "audio_measurements": {
+        "words_per_second_proxy": 3.35867,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 1.38667,
+        "mean_rms_db": -20.79533,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.19919,
+        "mean_spectral_centroid_hz": 1357.68867,
+        "mean_pitch_hz_proxy": 254.34,
+        "mean_pitch_confidence_proxy": 0.1571
+      },
+      "candidate_interpretation": "Inspect whether the measured boundary or density change is audible and aligned; do not infer intentional pause or delivery effect from the proxy.",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:opening:02",
+      "canonical_job": "opening",
+      "video_id": "AwA0Jnfj3ao",
+      "evidence_ids": [
+        "AwA0Jnfj3ao:00000",
+        "AwA0Jnfj3ao:00001",
+        "AwA0Jnfj3ao:00002"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=0s",
+      "frame_sequence_type": "multi_shot",
+      "candidate_tags": [
+        "lower_caption_density_proxy"
+      ],
+      "audio_measurements": {
+        "words_per_second_proxy": 0.94967,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -20.53833,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.16852,
+        "mean_spectral_centroid_hz": 1122.33267,
+        "mean_pitch_hz_proxy": 248.49967,
+        "mean_pitch_confidence_proxy": 0.15078
+      },
+      "candidate_interpretation": "Inspect whether the measured boundary or density change is audible and aligned; do not infer intentional pause or delivery effect from the proxy.",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:closing:02",
+      "canonical_job": "closing",
+      "video_id": "dgkxN6RASpg",
+      "evidence_ids": [
+        "dgkxN6RASpg:00089",
+        "dgkxN6RASpg:00090",
+        "dgkxN6RASpg:00091"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=dgkxN6RASpg&t=615s",
+      "frame_sequence_type": "stable_speaker_frame",
+      "candidate_tags": [
+        "gap_before_captioned_unit"
+      ],
+      "audio_measurements": {
+        "words_per_second_proxy": 2.547,
+        "transcript_gap_before_seconds": 1.65333,
+        "transcript_gap_after_seconds": 0.26667,
+        "mean_rms_db": -21.00033,
+        "speech_activity_fraction": 0.95833,
+        "mean_zero_crossing_rate": 0.17017,
+        "mean_spectral_centroid_hz": 922.84933,
+        "mean_pitch_hz_proxy": 293.634,
+        "mean_pitch_confidence_proxy": 0.17487
+      },
+      "candidate_interpretation": "Inspect whether the measured boundary or density change is audible and aligned; do not infer intentional pause or delivery effect from the proxy.",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:question:01",
+      "canonical_job": "question",
+      "video_id": "dKe3WbGR7Xs",
+      "evidence_ids": [
+        "dKe3WbGR7Xs:00062",
+        "dKe3WbGR7Xs:00063",
+        "dKe3WbGR7Xs:00064"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=321s",
+      "frame_sequence_type": "stable_speaker_frame",
+      "candidate_tags": [],
+      "audio_measurements": {
+        "words_per_second_proxy": 2.54033,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -29.589,
+        "speech_activity_fraction": 0.86667,
+        "mean_zero_crossing_rate": 0.13751,
+        "mean_spectral_centroid_hz": 787.01867,
+        "mean_pitch_hz_proxy": 283.761,
+        "mean_pitch_confidence_proxy": 0.18535
+      },
+      "candidate_interpretation": "No timing candidate promoted",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:question:02",
+      "canonical_job": "question",
+      "video_id": "AwA0Jnfj3ao",
+      "evidence_ids": [
+        "AwA0Jnfj3ao:00063",
+        "AwA0Jnfj3ao:00064",
+        "AwA0Jnfj3ao:00065"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=283s",
+      "frame_sequence_type": "interview_multi_shot",
+      "candidate_tags": [],
+      "audio_measurements": {
+        "words_per_second_proxy": 1.87367,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -29.42767,
+        "speech_activity_fraction": 0.86667,
+        "mean_zero_crossing_rate": 0.14625,
+        "mean_spectral_centroid_hz": 965.47267,
+        "mean_pitch_hz_proxy": 272.78667,
+        "mean_pitch_confidence_proxy": 0.14695
+      },
+      "candidate_interpretation": "No timing candidate promoted",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:answer_or_response:02",
+      "canonical_job": "answer_or_response",
+      "video_id": "qOwYULOPuPs",
+      "evidence_ids": [
+        "qOwYULOPuPs:00000",
+        "qOwYULOPuPs:00001",
+        "qOwYULOPuPs:00002"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=qOwYULOPuPs&t=0s",
+      "frame_sequence_type": "stable_speaker_frame",
+      "candidate_tags": [
+        "lower_caption_density_proxy"
+      ],
+      "audio_measurements": {
+        "words_per_second_proxy": 1.43533,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -14.46167,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.15393,
+        "mean_spectral_centroid_hz": 471.001,
+        "mean_pitch_hz_proxy": 214.70767,
+        "mean_pitch_confidence_proxy": 0.1563
+      },
+      "candidate_interpretation": "Inspect whether the measured boundary or density change is audible and aligned; do not infer intentional pause or delivery effect from the proxy.",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:story_or_personal_experience:01",
+      "canonical_job": "story_or_personal_experience",
+      "video_id": "dgkxN6RASpg",
+      "evidence_ids": [
+        "dgkxN6RASpg:00003",
+        "dgkxN6RASpg:00004",
+        "dgkxN6RASpg:00005"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=dgkxN6RASpg&t=34s",
+      "frame_sequence_type": "stable_speaker_frame",
+      "candidate_tags": [
+        "gap_before_captioned_unit"
+      ],
+      "audio_measurements": {
+        "words_per_second_proxy": 3.09967,
+        "transcript_gap_before_seconds": 1.38667,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -19.70367,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.20618,
+        "mean_spectral_centroid_hz": 1245.562,
+        "mean_pitch_hz_proxy": 286.02433,
+        "mean_pitch_confidence_proxy": 0.18159
+      },
+      "candidate_interpretation": "Inspect whether the measured boundary or density change is audible and aligned; do not infer intentional pause or delivery effect from the proxy.",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:story_or_personal_experience:02",
+      "canonical_job": "story_or_personal_experience",
+      "video_id": "-54zUwySKCg",
+      "evidence_ids": [
+        "-54zUwySKCg:00033",
+        "-54zUwySKCg:00034",
+        "-54zUwySKCg:00035"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg&t=191s",
+      "frame_sequence_type": "stable_speaker_frame",
+      "candidate_tags": [],
+      "audio_measurements": {
+        "words_per_second_proxy": 2.27633,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -22.298,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.13798,
+        "mean_spectral_centroid_hz": 646.69933,
+        "mean_pitch_hz_proxy": 288.02067,
+        "mean_pitch_confidence_proxy": 0.16832
+      },
+      "candidate_interpretation": "No timing candidate promoted",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:example_or_case:01",
+      "canonical_job": "example_or_case",
+      "video_id": "-54zUwySKCg",
+      "evidence_ids": [
+        "-54zUwySKCg:00119",
+        "-54zUwySKCg:00120",
+        "-54zUwySKCg:00121"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg&t=600s",
+      "frame_sequence_type": "stable_speaker_frame",
+      "candidate_tags": [],
+      "audio_measurements": {
+        "words_per_second_proxy": 3.30667,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -23.237,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.11345,
+        "mean_spectral_centroid_hz": 601.41833,
+        "mean_pitch_hz_proxy": 298.394,
+        "mean_pitch_confidence_proxy": 0.17675
+      },
+      "candidate_interpretation": "No timing candidate promoted",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:example_or_case:02",
+      "canonical_job": "example_or_case",
+      "video_id": "9fEurt2OZ0I",
+      "evidence_ids": [
+        "9fEurt2OZ0I:00008",
+        "9fEurt2OZ0I:00009",
+        "9fEurt2OZ0I:00010"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=9fEurt2OZ0I&t=31s",
+      "frame_sequence_type": "stable_speaker_frame",
+      "candidate_tags": [
+        "lower_caption_density_proxy"
+      ],
+      "audio_measurements": {
+        "words_per_second_proxy": 1.34367,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -21.981,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.12892,
+        "mean_spectral_centroid_hz": 711.82233,
+        "mean_pitch_hz_proxy": 312.07833,
+        "mean_pitch_confidence_proxy": 0.13692
+      },
+      "candidate_interpretation": "Inspect whether the measured boundary or density change is audible and aligned; do not infer intentional pause or delivery effect from the proxy.",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:contrast_or_disagreement:01",
+      "canonical_job": "contrast_or_disagreement",
+      "video_id": "ZwMVMbmQBug",
+      "evidence_ids": [
+        "ZwMVMbmQBug:00011",
+        "ZwMVMbmQBug:00012",
+        "ZwMVMbmQBug:00013"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=ZwMVMbmQBug&t=38s",
+      "frame_sequence_type": "stable_scene_frame",
+      "candidate_tags": [
+        "higher_caption_density_proxy"
+      ],
+      "audio_measurements": {
+        "words_per_second_proxy": 4.03533,
+        "transcript_gap_before_seconds": 0.00667,
+        "transcript_gap_after_seconds": 0.00667,
+        "mean_rms_db": -27.001,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.17339,
+        "mean_spectral_centroid_hz": 962.36733,
+        "mean_pitch_hz_proxy": 327.99533,
+        "mean_pitch_confidence_proxy": 0.17357
+      },
+      "candidate_interpretation": "Inspect whether the measured boundary or density change is audible and aligned; do not infer intentional pause or delivery effect from the proxy.",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:contrast_or_disagreement:02",
+      "canonical_job": "contrast_or_disagreement",
+      "video_id": "-54zUwySKCg",
+      "evidence_ids": [
+        "-54zUwySKCg:00256",
+        "-54zUwySKCg:00257",
+        "-54zUwySKCg:00258"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=-54zUwySKCg&t=1307s",
+      "frame_sequence_type": "stable_speaker_frame",
+      "candidate_tags": [],
+      "audio_measurements": {
+        "words_per_second_proxy": 3.24,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -23.02433,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.10117,
+        "mean_spectral_centroid_hz": 597.40967,
+        "mean_pitch_hz_proxy": 249.479,
+        "mean_pitch_confidence_proxy": 0.19573
+      },
+      "candidate_interpretation": "No timing candidate promoted",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:correction_or_reframe:01",
+      "canonical_job": "correction_or_reframe",
+      "video_id": "dgkxN6RASpg",
+      "evidence_ids": [
+        "dgkxN6RASpg:00060",
+        "dgkxN6RASpg:00061",
+        "dgkxN6RASpg:00062"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=dgkxN6RASpg&t=422s",
+      "frame_sequence_type": "stable_speaker_frame",
+      "candidate_tags": [],
+      "audio_measurements": {
+        "words_per_second_proxy": 3.82133,
+        "transcript_gap_before_seconds": 0.56,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -19.60867,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.16167,
+        "mean_spectral_centroid_hz": 1018.06167,
+        "mean_pitch_hz_proxy": 269.45867,
+        "mean_pitch_confidence_proxy": 0.20411
+      },
+      "candidate_interpretation": "No timing candidate promoted",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:correction_or_reframe:02",
+      "canonical_job": "correction_or_reframe",
+      "video_id": "dKe3WbGR7Xs",
+      "evidence_ids": [
+        "dKe3WbGR7Xs:00034",
+        "dKe3WbGR7Xs:00035",
+        "dKe3WbGR7Xs:00036"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=184s",
+      "frame_sequence_type": "stable_speaker_frame",
+      "candidate_tags": [],
+      "audio_measurements": {
+        "words_per_second_proxy": 2.665,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -22.45567,
+        "speech_activity_fraction": 0.95233,
+        "mean_zero_crossing_rate": 0.1796,
+        "mean_spectral_centroid_hz": 925.23433,
+        "mean_pitch_hz_proxy": 245.551,
+        "mean_pitch_confidence_proxy": 0.17972
+      },
+      "candidate_interpretation": "No timing candidate promoted",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:repair_or_self_correction:01",
+      "canonical_job": "repair_or_self_correction",
+      "video_id": "C8-twwwTETE",
+      "evidence_ids": [
+        "C8-twwwTETE:00141",
+        "C8-twwwTETE:00142",
+        "C8-twwwTETE:00143"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=C8-twwwTETE&t=356s",
+      "frame_sequence_type": "stable_speaker_frame",
+      "candidate_tags": [
+        "lower_caption_density_proxy"
+      ],
+      "audio_measurements": {
+        "words_per_second_proxy": 0.927,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -28.32833,
+        "speech_activity_fraction": 0.89667,
+        "mean_zero_crossing_rate": 0.11481,
+        "mean_spectral_centroid_hz": 949.295,
+        "mean_pitch_hz_proxy": 243.29133,
+        "mean_pitch_confidence_proxy": 0.15959
+      },
+      "candidate_interpretation": "Inspect whether the measured boundary or density change is audible and aligned; do not infer intentional pause or delivery effect from the proxy.",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:repair_or_self_correction:02",
+      "canonical_job": "repair_or_self_correction",
+      "video_id": "5nN-15CrnGc",
+      "evidence_ids": [
+        "5nN-15CrnGc:00359",
+        "5nN-15CrnGc:00360",
+        "5nN-15CrnGc:00361"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=5nN-15CrnGc&t=1134s",
+      "frame_sequence_type": "stable_speaker_frame",
+      "candidate_tags": [
+        "gap_before_captioned_unit",
+        "lower_caption_density_proxy"
+      ],
+      "audio_measurements": {
+        "words_per_second_proxy": 0.695,
+        "transcript_gap_before_seconds": 1.13333,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -25.454,
+        "speech_activity_fraction": 0.72233,
+        "mean_zero_crossing_rate": 0.12769,
+        "mean_spectral_centroid_hz": 564.238,
+        "mean_pitch_hz_proxy": 277.08333,
+        "mean_pitch_confidence_proxy": 0.1996
+      },
+      "candidate_interpretation": "Inspect whether the measured boundary or density change is audible and aligned; do not infer intentional pause or delivery effect from the proxy.",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:qualification_or_boundary:02",
+      "canonical_job": "qualification_or_boundary",
+      "video_id": "bR4tDSa3O10",
+      "evidence_ids": [
+        "bR4tDSa3O10:00067",
+        "bR4tDSa3O10:00068",
+        "bR4tDSa3O10:00069"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=bR4tDSa3O10&t=192s",
+      "frame_sequence_type": "stable_speaker_frame",
+      "candidate_tags": [
+        "lower_caption_density_proxy"
+      ],
+      "audio_measurements": {
+        "words_per_second_proxy": 1.44367,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -24.55767,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.16986,
+        "mean_spectral_centroid_hz": 790.82433,
+        "mean_pitch_hz_proxy": 323.14933,
+        "mean_pitch_confidence_proxy": 0.20495
+      },
+      "candidate_interpretation": "Inspect whether the measured boundary or density change is audible and aligned; do not infer intentional pause or delivery effect from the proxy.",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:definition_or_explanation:01",
+      "canonical_job": "definition_or_explanation",
+      "video_id": "dKe3WbGR7Xs",
+      "evidence_ids": [
+        "dKe3WbGR7Xs:00008",
+        "dKe3WbGR7Xs:00009",
+        "dKe3WbGR7Xs:00010"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=38s",
+      "frame_sequence_type": "stable_speaker_frame",
+      "candidate_tags": [],
+      "audio_measurements": {
+        "words_per_second_proxy": 2.12733,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -22.21167,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.17227,
+        "mean_spectral_centroid_hz": 1069.60967,
+        "mean_pitch_hz_proxy": 278.10333,
+        "mean_pitch_confidence_proxy": 0.15676
+      },
+      "candidate_interpretation": "No timing candidate promoted",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:definition_or_explanation:02",
+      "canonical_job": "definition_or_explanation",
+      "video_id": "AwA0Jnfj3ao",
+      "evidence_ids": [
+        "AwA0Jnfj3ao:00078",
+        "AwA0Jnfj3ao:00079",
+        "AwA0Jnfj3ao:00080"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=362s",
+      "frame_sequence_type": "stable_speaker_frame",
+      "candidate_tags": [],
+      "audio_measurements": {
+        "words_per_second_proxy": 1.91833,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -24.93267,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.14858,
+        "mean_spectral_centroid_hz": 702.55467,
+        "mean_pitch_hz_proxy": 211.47067,
+        "mean_pitch_confidence_proxy": 0.23105
+      },
+      "candidate_interpretation": "No timing candidate promoted",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:callback_or_repetition:01",
+      "canonical_job": "callback_or_repetition",
+      "video_id": "dKe3WbGR7Xs",
+      "evidence_ids": [
+        "dKe3WbGR7Xs:00080",
+        "dKe3WbGR7Xs:00081",
+        "dKe3WbGR7Xs:00082"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=417s",
+      "frame_sequence_type": "stable_speaker_frame",
+      "candidate_tags": [],
+      "audio_measurements": {
+        "words_per_second_proxy": 3.153,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -23.65067,
+        "speech_activity_fraction": 0.95233,
+        "mean_zero_crossing_rate": 0.15827,
+        "mean_spectral_centroid_hz": 887.45933,
+        "mean_pitch_hz_proxy": 247.83,
+        "mean_pitch_confidence_proxy": 0.20945
+      },
+      "candidate_interpretation": "No timing candidate promoted",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:humor_or_rapport:02",
+      "canonical_job": "humor_or_rapport",
+      "video_id": "C8-twwwTETE",
+      "evidence_ids": [
+        "C8-twwwTETE:00016",
+        "C8-twwwTETE:00017",
+        "C8-twwwTETE:00018"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=C8-twwwTETE&t=32s",
+      "frame_sequence_type": "stable_speaker_frame",
+      "candidate_tags": [
+        "lower_caption_density_proxy"
+      ],
+      "audio_measurements": {
+        "words_per_second_proxy": 1.38267,
+        "transcript_gap_before_seconds": 0.17967,
+        "transcript_gap_after_seconds": 0.17967,
+        "mean_rms_db": -31.067,
+        "speech_activity_fraction": 0.875,
+        "mean_zero_crossing_rate": 0.12043,
+        "mean_spectral_centroid_hz": 762.44733,
+        "mean_pitch_hz_proxy": 184.462,
+        "mean_pitch_confidence_proxy": 0.25649
+      },
+      "candidate_interpretation": "Inspect whether the measured boundary or density change is audible and aligned; do not infer intentional pause or delivery effect from the proxy.",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:credit_or_acknowledgment:01",
+      "canonical_job": "credit_or_acknowledgment",
+      "video_id": "dKe3WbGR7Xs",
+      "evidence_ids": [
+        "dKe3WbGR7Xs:00071",
+        "dKe3WbGR7Xs:00072",
+        "dKe3WbGR7Xs:00073"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=367s",
+      "frame_sequence_type": "stable_speaker_frame",
+      "candidate_tags": [],
+      "audio_measurements": {
+        "words_per_second_proxy": 2.38033,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -24.482,
+        "speech_activity_fraction": 0.95233,
+        "mean_zero_crossing_rate": 0.17329,
+        "mean_spectral_centroid_hz": 904.07567,
+        "mean_pitch_hz_proxy": 226.888,
+        "mean_pitch_confidence_proxy": 0.20618
+      },
+      "candidate_interpretation": "No timing candidate promoted",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:credit_or_acknowledgment:02",
+      "canonical_job": "credit_or_acknowledgment",
+      "video_id": "C8-twwwTETE",
+      "evidence_ids": [
+        "C8-twwwTETE:00123",
+        "C8-twwwTETE:00124",
+        "C8-twwwTETE:00125"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=C8-twwwTETE&t=309s",
+      "frame_sequence_type": "stable_speaker_frame",
+      "candidate_tags": [],
+      "audio_measurements": {
+        "words_per_second_proxy": 1.64133,
+        "transcript_gap_before_seconds": 0.09333,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -27.48867,
+        "speech_activity_fraction": 0.93333,
+        "mean_zero_crossing_rate": 0.10411,
+        "mean_spectral_centroid_hz": 857.19767,
+        "mean_pitch_hz_proxy": 235.584,
+        "mean_pitch_confidence_proxy": 0.14577
+      },
+      "candidate_interpretation": "No timing candidate promoted",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:call_to_action_or_audience_role:01",
+      "canonical_job": "call_to_action_or_audience_role",
+      "video_id": "dKe3WbGR7Xs",
+      "evidence_ids": [
+        "dKe3WbGR7Xs:00041",
+        "dKe3WbGR7Xs:00042",
+        "dKe3WbGR7Xs:00043"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=217s",
+      "frame_sequence_type": "stable_speaker_frame",
+      "candidate_tags": [],
+      "audio_measurements": {
+        "words_per_second_proxy": 3.30667,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -20.73667,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.16774,
+        "mean_spectral_centroid_hz": 998.248,
+        "mean_pitch_hz_proxy": 248.698,
+        "mean_pitch_confidence_proxy": 0.21829
+      },
+      "candidate_interpretation": "No timing candidate promoted",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:call_to_action_or_audience_role:02",
+      "canonical_job": "call_to_action_or_audience_role",
+      "video_id": "ZwMVMbmQBug",
+      "evidence_ids": [
+        "ZwMVMbmQBug:00022",
+        "ZwMVMbmQBug:00023",
+        "ZwMVMbmQBug:00024"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=ZwMVMbmQBug&t=78s",
+      "frame_sequence_type": "stable_scene_frame",
+      "candidate_tags": [],
+      "audio_measurements": {
+        "words_per_second_proxy": 2.48733,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.00633,
+        "mean_rms_db": -40.0,
+        "speech_activity_fraction": 0.619,
+        "mean_zero_crossing_rate": 0.20465,
+        "mean_spectral_centroid_hz": 1252.96,
+        "mean_pitch_hz_proxy": 346.78833,
+        "mean_pitch_confidence_proxy": 0.23995
+      },
+      "candidate_interpretation": "No timing candidate promoted",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:reflection_or_value_frame:01",
+      "canonical_job": "reflection_or_value_frame",
+      "video_id": "ZwMVMbmQBug",
+      "evidence_ids": [
+        "ZwMVMbmQBug:00016",
+        "ZwMVMbmQBug:00017",
+        "ZwMVMbmQBug:00018"
+      ],
+      "source_url": "https://www.youtube.com/watch?v=ZwMVMbmQBug&t=57s",
+      "frame_sequence_type": "stable_scene_frame",
+      "candidate_tags": [
+        "higher_caption_density_proxy"
+      ],
+      "audio_measurements": {
+        "words_per_second_proxy": 4.88633,
+        "transcript_gap_before_seconds": 0.01333,
+        "transcript_gap_after_seconds": 0.01333,
+        "mean_rms_db": -31.08567,
+        "speech_activity_fraction": 0.94433,
+        "mean_zero_crossing_rate": 0.17097,
+        "mean_spectral_centroid_hz": 1121.007,
+        "mean_pitch_hz_proxy": 320.39933,
+        "mean_pitch_confidence_proxy": 0.13563
+      },
+      "candidate_interpretation": "Inspect whether the measured boundary or density change is audible and aligned; do not infer intentional pause or delivery effect from the proxy.",
+      "practice_test": "Read the same wording twice: once with the measured boundary/density preserved and once with the timing changed. Ask a consenting listener for the takeaway and unresolved point.",
+      "status": "proxy_candidate_requires_manual_listening",
+      "independence": "not_independent"
+    }
+  ]
+}
