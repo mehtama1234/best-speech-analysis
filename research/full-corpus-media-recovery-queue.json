@@ -8,21 +8,22 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 277,
+  "item_count": 273,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 6,
-      "fixed_corpus_transcript_only": 271
+      "fixed_corpus_transcript_only": 267
     },
     "by_media_state": {
+      "audio_only": 1,
       "derived_features_only": 6,
-      "transcript_only_no_local_media": 270,
+      "transcript_only_no_local_media": 265,
       "video_only": 1
     },
     "by_video_status": {
       "downloaded": 1,
-      "failed:1": 10,
-      "not_attempted": 266
+      "failed:1": 11,
+      "not_attempted": 261
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -196,18 +197,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "1QvLB4yEHsI",
-      "title": "ENGLISH SPEECH | SHRADDHA KAPOOR: You're Beautiful (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=1QvLB4yEHsI",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "1TAuuyvIZjA",
       "title": "ENGLISH SPEECH | TIM MINCHIN: 9 Life Lessons (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=1TAuuyvIZjA",
@@ -352,18 +341,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "42QjAxty_1o",
-      "title": "ENGLISH SPEECH | JIM CARREY: Do What You Love (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=42QjAxty_1o",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "46GwJbrMghQ",
       "title": "Get Busy Living or Get Busy Dying - The Shawshank Redemption HD 720p",
       "source_url": "https://www.youtube.com/watch?v=46GwJbrMghQ",
@@ -415,18 +392,6 @@
       "video_id": "4vZCgGnjADQ",
       "title": "ENGLISH SPEECH | MARIA RESSA: Defending Truth (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=4vZCgGnjADQ",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "5DCevq7fbtQ",
-      "title": "Harrison Ford: Find Your Purpose",
-      "source_url": "https://www.youtube.com/watch?v=5DCevq7fbtQ",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -2011,12 +1976,12 @@
       "video_id": "dX8cybX7dSs",
       "title": "ENGLISH SPEECH | YASMIN YOUNIS: Reclaim Your Name (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=dX8cybX7dSs",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "audio_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -2923,18 +2888,6 @@
       "video_id": "s-i3Z7EZRpA",
       "title": "ENGLISH SPEECH | ANUSHKA SHARMA: Presents Anya Singh (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=s-i3Z7EZRpA",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "s_vZ5lMRkpA",
-      "title": "ENGLISH SPEECH | WARREN BUFFETT: Becoming successful (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=s_vZ5lMRkpA",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",

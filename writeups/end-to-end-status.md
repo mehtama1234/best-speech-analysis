@@ -33,8 +33,8 @@ This dashboard reports artifact and validation status. It does not convert trans
 | Function review | `template_not_completed` | 187 queued / 0 completed |
 | Recurrence review | `template_not_completed` | 192 queued / 0 completed |
 | Delivery evidence | `raw_media_reconciled_manual_review_pending` | 29 raw-complete (8 without transcript) / 21 internal reviewed |
-| Full-corpus media coverage | `full_transcript_corpus_media_availability_audit_not_audiovisual_validation` | 395 videos / 118 raw A/V / 0 audio-only / 1 video-only / 6 derived-only / 270 transcript-only |
-| Full-corpus media recovery | `recovery_routing_not_media_validation` | 277 queued missing/derived items |
+| Full-corpus media coverage | `full_transcript_corpus_media_availability_audit_not_audiovisual_validation` | 395 videos / 122 raw A/V / 1 audio-only / 1 video-only / 6 derived-only / 265 transcript-only |
+| Full-corpus media recovery | `recovery_routing_not_media_validation` | 273 queued missing/derived items |
 | Shared lessons | `18_draft_cards_not_validated` | 18 drafts / 0 promotion-ready |
 | Promotion readiness | `promotion_checkpoint_open` | 18 cards / 0 promotion-ready / 18 blocked |
 | Learner check | `protocol_drafted_not_run` | 32 tasks / 0 records |
