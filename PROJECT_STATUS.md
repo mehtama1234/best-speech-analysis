@@ -24,6 +24,9 @@ retrieval aids for rereading wording, not scripts or effectiveness evidence.
 The cards also carry nearest local audio, face/scene and pose proxy fields for
 6,308 cards; these are aligned navigation measurements where available, not
 nonverbal interpretations or delivery-effectiveness evidence.
+It routes 5,275 nearby timing/delivery candidate windows to 3,329 cards for
+manual inspection, preserving the distinction between a candidate window and
+an interpreted nonverbal pattern.
 The browser inventory now includes a study mode for selecting and advancing
 through filtered practice cards, while keeping evidence, phrase handles and
 non-fit boundaries visible.

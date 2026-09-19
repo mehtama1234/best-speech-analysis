@@ -43,6 +43,9 @@ retrieval aid with a transcript-only boundary.
 The same cards now expose nearest local audio, face/scene and pose inspection
 proxies for 6,308 cards; missing local media remains explicit and the fields do
 not establish intentional delivery, emotion, gesture meaning or effectiveness.
+It also routes 5,275 nearby timing/delivery candidate windows to 3,329 cards
+for manual listening and viewing; these are inspection queues, not interpreted
+nonverbal findings.
 The browser also has a study mode that selects a visible card and advances
 through filtered practice cards.
 It can save a local practice record containing the adapted wording, delivery

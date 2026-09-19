@@ -6,7 +6,7 @@ Every card is a way to learn from and inspect a recorded transcript review. It d
 
 This inventory contains **4016 function cards** and **2800 sequence cards** from **395 full-context reviews**. Each card preserves the original function label and reason, up to five exact caption segments, a provisional shared-job form where available, a drill, self-check, non-fit warning, limits and next test.
 
-Function cards with exact evidence: **4016** · sequence cards with exact evidence: **2795** of 2800 · cards with phrase handles: **2289** · sequence cards with phrase handles: **1812** · phrase handles: **8062** · cards with local delivery proxies: **6308** · cards with pose proxies: **6308** · cards with a shared speech-job template: **1473** · publisher/media boundary cards: **149** · unclassified and requiring review: **2394**.
+Function cards with exact evidence: **4016** · sequence cards with exact evidence: **2795** of 2800 · cards with phrase handles: **2289** · sequence cards with phrase handles: **1812** · phrase handles: **8062** · cards with local delivery proxies: **6308** · cards with pose proxies: **6308** · cards with delivery candidates: **3329** (**5275** windows) · cards with a shared speech-job template: **1473** · publisher/media boundary cards: **149** · unclassified and requiring review: **2394**.
 
 Use the [searchable inventory](corpus-learner-card-inventory.html) to filter by video, raw label, canonical job, relation type or wording. Use the linked full writeup and source context before treating a card as a lesson.
 
