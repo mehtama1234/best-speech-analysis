@@ -8,21 +8,21 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 261,
+  "item_count": 254,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 6,
-      "fixed_corpus_transcript_only": 255
+      "fixed_corpus_transcript_only": 248
     },
     "by_media_state": {
       "derived_features_only": 6,
-      "transcript_only_no_local_media": 254,
-      "video_only": 1
+      "transcript_only_no_local_media": 245,
+      "video_only": 3
     },
     "by_video_status": {
-      "downloaded": 1,
+      "downloaded": 3,
       "failed:1": 15,
-      "not_attempted": 245
+      "not_attempted": 236
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -391,12 +391,12 @@
       "video_id": "4vZCgGnjADQ",
       "title": "ENGLISH SPEECH | MARIA RESSA: Defending Truth (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=4vZCgGnjADQ",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "video_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "downloaded",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -568,18 +568,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "8hcxnuaXDF0",
-      "title": "ENGLISH SPEECH | MERYL STREEP: Viola Davis Tribute (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=8hcxnuaXDF0",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "99Ptctl5_qQ",
       "title": "The Silence of the Lambs (3/12) Movie CLIP - Fava Beans and a Nice Chianti (1991) HD",
       "source_url": "https://www.youtube.com/watch?v=99Ptctl5_qQ",
@@ -643,18 +631,6 @@
       "video_id": "9vwK8mLwyTA",
       "title": "ENGLISH SPEECH | MALALA: Fight for Education (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=9vwK8mLwyTA",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "A1hcbdWEEO8",
-      "title": "ENGLISH SPEECH | RASHIDA JONES: Choose Love (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=A1hcbdWEEO8",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -868,33 +844,9 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "DgTReERU7Bw",
-      "title": "ENGLISH SPEECH | KAMALA HARRIS: Victory Speech (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=DgTReERU7Bw",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "E12NyW7Nlog",
       "title": "ENGLISH SPEECH | ALICIA KEYS: Keep a Child Alive (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=E12NyW7Nlog",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "E7bpYaxgC5o",
-      "title": "ENGLISH SPEECH | TIM COOK: Serve Humanity (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=E7bpYaxgC5o",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -1180,18 +1132,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "KLe7Rxkrj94",
-      "title": "ENGLISH SPEECH | THE ROCK: Be Yourself (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=KLe7Rxkrj94",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "KoFy1t5U4Q4",
       "title": "ENGLISH SPEECH | KAILASH SATYARTHI: Childhood Restored (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=KoFy1t5U4Q4",
@@ -1291,12 +1231,12 @@
       "video_id": "NVS_rFhurgg",
       "title": "ENGLISH SPEECH | ERIKA KIRK: She Forgave (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=NVS_rFhurgg",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "video_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "downloaded",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1939,18 +1879,6 @@
       "video_id": "dr7-xoQyDxI",
       "title": "ENGLISH SPEECH | SUBEKSHA KHADKA: Don't Hesitate (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=dr7-xoQyDxI",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "e6_spMLKR6c",
-      "title": "ENGLISH SPEECH | RITIKA SINGH: Inspiring Message (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=e6_spMLKR6c",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -2983,18 +2911,6 @@
       "video_id": "vPDQOB7pRRM",
       "title": "ENGLISH SPEECH | SWAMI VIVEKANANDA’s 1893 Speech at Chicago (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=vPDQOB7pRRM",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "vacGRuHDtO0",
-      "title": "ENGLISH SPEECH | SUDHA MURTY: Discipline and Success (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=vacGRuHDtO0",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
