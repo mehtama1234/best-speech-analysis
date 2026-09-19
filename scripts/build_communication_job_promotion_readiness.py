@@ -10,6 +10,18 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT_JSON = ROOT / "research/communication-job-promotion-readiness.json"
 OUT_MD = ROOT / "writeups/communication-job-promotion-readiness.md"
 
+ROUTES = {
+    "independent_function_review_pending": {"gate": "function", "form": "writeups/corpus-function-independent-review-workbook.html", "validator": "scripts/validate_corpus_function_review.py", "comparison": "scripts/compare_corpus_function_reviews.py"},
+    "independent_recurrence_review_pending": {"gate": "recurrence", "form": "writeups/corpus-recurrence-independent-review-workbook.html", "validator": "scripts/validate_corpus_recurrence_review.py", "comparison": "scripts/compare_corpus_recurrence_reviews.py"},
+    "independent_phrase_form_review_pending": {"gate": "phrase_forms", "form": "writeups/corpus-phrase-form-independent-review-workbook.html", "validator": "scripts/validate_corpus_phrase_form_review.py", "comparison": "scripts/compare_corpus_phrase_form_reviews.py"},
+    "independent_identity_review_pending": {"gate": "identity", "form": "writeups/corpus-identity-review-workbook.html", "validator": "scripts/validate_corpus_identity_review.py", "comparison": "scripts/compare_corpus_identity_reviews.py"},
+    "delivery_observations_pending": {"gate": "delivery", "form": "writeups/communication-job-delivery-sampling.html", "validator": "scripts/validate_communication_job_delivery_review.py", "comparison": "scripts/compare_communication_job_delivery_reviews.py"},
+    "counterexamples_pending": {"gate": "counterexamples", "form": "writeups/communication-job-counterexample-workbook.html", "validator": "scripts/validate_communication_job_counterexample_review.py", "comparison": "scripts/summarize_communication_job_counterexamples.py"},
+    "independent_multimodal_review_pending": {"gate": "multimodal", "form": "writeups/multimodal-independent-review-workbook.html", "validator": "scripts/validate_multimodal_independent_review.py", "comparison": "scripts/compare_multimodal_independent_reviews.py"},
+    "learner_protocol_not_run": {"gate": "learner", "form": "writeups/communication-job-learner-check.html", "validator": "scripts/validate_communication_job_learner_record.py", "comparison": "scripts/summarize_communication_job_learner_records.py"},
+    "listener_stimuli_not_locked": {"gate": "listener_stimuli", "form": "writeups/communication-job-listener-stimulus-review-workbook.html", "validator": "scripts/validate_listener_stimulus_review.py", "comparison": "scripts/compare_listener_stimulus_reviews.py"},
+}
+
 
 def load(path: str) -> dict:
     return json.loads((ROOT / path).read_text())
@@ -47,8 +59,8 @@ def build() -> dict:
             "listener_stimuli_not_locked" if not listener["stimulus_pairs_locked"] else None,
         ]
         blockers = [blocker for blocker in blockers if blocker]
-        rows.append({"card_id": card["card_id"], "canonical_job": job, "status": "provisional_not_promotion_ready", "exact_example_count": len(card["exact_examples"]), "delivery_sample_count": len(delivery_by_job.get(job, [])), "counterexample_slot_count": len(counter_by_job.get(job, [])), "blockers": blockers, "promotion_eligible": False})
-    return {"schema_version": "1.0", "readiness_id": "communication-job-promotion-readiness", "status": "promotion_checkpoint_open", "claim_boundary": "This audit reports promotion prerequisites; it does not turn structural completeness, protocols or passing tests into independent evidence or effectiveness claims.", "card_count": len(rows), "promotion_ready_count": sum(row["promotion_eligible"] for row in rows), "cards": rows}
+        rows.append({"card_id": card["card_id"], "canonical_job": job, "status": "provisional_not_promotion_ready", "exact_example_count": len(card["exact_examples"]), "delivery_sample_count": len(delivery_by_job.get(job, [])), "counterexample_slot_count": len(counter_by_job.get(job, [])), "blockers": blockers, "blocker_routes": {blocker: ROUTES[blocker] for blocker in blockers}, "promotion_eligible": False})
+    return {"schema_version": "1.0", "readiness_id": "communication-job-promotion-readiness", "status": "promotion_checkpoint_open", "claim_boundary": "This audit reports promotion prerequisites; it does not turn structural completeness, protocols or passing tests into independent evidence or effectiveness claims.", "card_count": len(rows), "promotion_ready_count": sum(row["promotion_eligible"] for row in rows), "cards": rows, "routes": ROUTES}
 
 
 def main() -> int:
@@ -57,6 +69,9 @@ def main() -> int:
     lines = ["# Communication-job promotion readiness", "", "Status: **promotion checkpoint open**.", "", report["claim_boundary"], "", "| Job | Examples | Delivery samples | Counterexample slots | Promotion eligible | Blockers |", "|---|---:|---:|---:|---|---|"]
     for row in report["cards"]:
         lines.append(f"| `{row['canonical_job']}` | {row['exact_example_count']} | {row['delivery_sample_count']} | {row['counterexample_slot_count']} | `{row['promotion_eligible']}` | {', '.join(row['blockers'])} |")
+    lines += ["", "## Action routes", "", "Each route is an instrument, not completed evidence.", "", "| Gate | Form | Validator | Comparison/summary |", "|---|---|---|---|"]
+    for route in ROUTES.values():
+        lines.append(f"| `{route['gate']}` | `{route['form']}` | `{route['validator']}` | `{route['comparison']}` |")
     OUT_MD.write_text("\n".join(lines) + "\n")
     print(json.dumps({"output": str(OUT_JSON.relative_to(ROOT)), "card_count": report["card_count"], "promotion_ready_count": report["promotion_ready_count"]}, indent=2))
     return 0

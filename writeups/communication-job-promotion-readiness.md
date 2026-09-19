@@ -24,3 +24,19 @@ This audit reports promotion prerequisites; it does not turn structural complete
 | `call_to_action_or_audience_role` | 8 | 2 | 5 | `False` | independent_function_review_pending, independent_recurrence_review_pending, independent_phrase_form_review_pending, independent_identity_review_pending, delivery_observations_pending, counterexamples_pending, independent_multimodal_review_pending, learner_protocol_not_run, listener_stimuli_not_locked |
 | `persuasion_or_advocacy` | 8 | 2 | 5 | `False` | independent_function_review_pending, independent_recurrence_review_pending, independent_phrase_form_review_pending, independent_identity_review_pending, delivery_observations_pending, counterexamples_pending, independent_multimodal_review_pending, learner_protocol_not_run, listener_stimuli_not_locked |
 | `reflection_or_value_frame` | 8 | 2 | 5 | `False` | independent_function_review_pending, independent_recurrence_review_pending, independent_phrase_form_review_pending, independent_identity_review_pending, delivery_observations_pending, counterexamples_pending, independent_multimodal_review_pending, learner_protocol_not_run, listener_stimuli_not_locked |
+
+## Action routes
+
+Each route is an instrument, not completed evidence.
+
+| Gate | Form | Validator | Comparison/summary |
+|---|---|---|---|
+| `function` | `writeups/corpus-function-independent-review-workbook.html` | `scripts/validate_corpus_function_review.py` | `scripts/compare_corpus_function_reviews.py` |
+| `recurrence` | `writeups/corpus-recurrence-independent-review-workbook.html` | `scripts/validate_corpus_recurrence_review.py` | `scripts/compare_corpus_recurrence_reviews.py` |
+| `phrase_forms` | `writeups/corpus-phrase-form-independent-review-workbook.html` | `scripts/validate_corpus_phrase_form_review.py` | `scripts/compare_corpus_phrase_form_reviews.py` |
+| `identity` | `writeups/corpus-identity-review-workbook.html` | `scripts/validate_corpus_identity_review.py` | `scripts/compare_corpus_identity_reviews.py` |
+| `delivery` | `writeups/communication-job-delivery-sampling.html` | `scripts/validate_communication_job_delivery_review.py` | `scripts/compare_communication_job_delivery_reviews.py` |
+| `counterexamples` | `writeups/communication-job-counterexample-workbook.html` | `scripts/validate_communication_job_counterexample_review.py` | `scripts/summarize_communication_job_counterexamples.py` |
+| `multimodal` | `writeups/multimodal-independent-review-workbook.html` | `scripts/validate_multimodal_independent_review.py` | `scripts/compare_multimodal_independent_reviews.py` |
+| `learner` | `writeups/communication-job-learner-check.html` | `scripts/validate_communication_job_learner_record.py` | `scripts/summarize_communication_job_learner_records.py` |
+| `listener_stimuli` | `writeups/communication-job-listener-stimulus-review-workbook.html` | `scripts/validate_listener_stimulus_review.py` | `scripts/compare_listener_stimulus_reviews.py` |
