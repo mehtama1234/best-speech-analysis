@@ -71,7 +71,7 @@ def build() -> dict:
         "status": "checkpoint_reproducible_artifacts_hashed_research_incomplete",
         "claim_boundary": "Hashes prove which local artifacts were checked at manifest generation. They do not prove independent review, delivery meaning, teachability, listener outcomes or effectiveness.",
         "coverage_snapshot": {"unique_inventory_videos": queue["video_count"], "full_context_reviews": len(reviews["reviews"]), "inspected_captions": queue["caption_count"]},
-        "verification_commands": ["python3 -m unittest discover -s tests -p 'test_*.py'", "python3 scripts/validate_end_to_end_status.py", "python3 scripts/validate_communication_job_cards.py", "python3 scripts/validate_communication_job_curriculum.py"],
+        "verification_commands": ["python3 -m unittest discover -s tests -p 'test_*.py'", "python3 scripts/validate_end_to_end_status.py", "python3 scripts/validate_cross_artifact_consistency.py", "python3 scripts/validate_communication_job_cards.py", "python3 scripts/validate_communication_job_curriculum.py"],
         "artifacts": artifacts,
     }
 
