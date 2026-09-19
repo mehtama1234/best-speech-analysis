@@ -114,6 +114,7 @@ separate gates in the [end-to-end acceptance matrix](end-to-end-acceptance-matri
 - [One starting lesson per video](corpus-video-learning-itinerary.html)
 - [Per-video coverage audit](corpus-learning-coverage-audit.html) ([Markdown report](corpus-learning-coverage-audit.md))
 - [All-video delivery inspection queue](full-corpus-delivery-inspection.html) ([Markdown guide](full-corpus-delivery-inspection.md))
+- [All-video delivery review workbook](full-corpus-delivery-review-workbook.html)
 - [30-day route through every video](corpus-30-day-study-route.html) ([Markdown route](corpus-30-day-study-route.md))
 - [18-job learner field guide](learner-field-guide.md)
 - [Personal speech playbook](my-speech-playbook.md)

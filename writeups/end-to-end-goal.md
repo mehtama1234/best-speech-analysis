@@ -106,8 +106,10 @@ per-video media audit reports 354 raw A/V learner-route videos, 357 linked
 feature reports and 364 total proxy reports, including 7 proxy records without
 a retained itinerary entry. The [all-video delivery inspection queue](full-corpus-delivery-inspection.html)
 routes 354 raw-media cases, 5 proxy-only cases and 36 locally unavailable
-cases for a manual pass. These are availability and measurement records, not
-manual nonverbal findings.
+cases for a manual pass. The [395-item delivery review workbook](full-corpus-delivery-review-workbook.html)
+provides the observation fields and JSON export; it is blank until a reviewer
+completes it. These are availability and measurement records, not manual
+nonverbal findings.
 
 The remaining work is human evidence: independent source/function/recurrence/
 delivery/counterexample review, learner records, stimulus locking and blinded

@@ -146,6 +146,9 @@ ARTIFACTS = [
     ("writeups/full-corpus-delivery-inspection.md", "all-video delivery inspection guide"),
     ("writeups/full-corpus-delivery-inspection.html", "searchable all-video delivery inspection queue"),
     ("scripts/build_full_corpus_delivery_inspection.py", "all-video delivery inspection queue builder"),
+    ("research/full-corpus-delivery-review-workbook.json", "all-video manual delivery review workbook"),
+    ("writeups/full-corpus-delivery-review-workbook.html", "all-video manual delivery review form"),
+    ("scripts/build_full_corpus_delivery_review_workbook.py", "all-video manual delivery review workbook builder"),
 ]
 
 
