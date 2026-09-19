@@ -142,6 +142,10 @@ ARTIFACTS = [
     ("scripts/build_corpus_30_day_route.py", "full-corpus 30-day learner route builder"),
     ("writeups/corpus-30-day-study-route.html", "searchable full-corpus 30-day learner route"),
     ("scripts/build_corpus_learning_coverage_audit.py", "per-video learner-surface coverage builder"),
+    ("research/full-corpus-delivery-inspection.json", "all-video delivery inspection queue"),
+    ("writeups/full-corpus-delivery-inspection.md", "all-video delivery inspection guide"),
+    ("writeups/full-corpus-delivery-inspection.html", "searchable all-video delivery inspection queue"),
+    ("scripts/build_full_corpus_delivery_inspection.py", "all-video delivery inspection queue builder"),
 ]
 
 
