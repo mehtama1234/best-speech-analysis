@@ -37,6 +37,9 @@ relationships into searchable practice cards with exact caption evidence,
 repeatable forms or sequence bridges, drills, self-checks, non-fit warnings and
 review limits. It is the broad learn-from-the-corpus surface; the 18-job
 curriculum remains the more compressed shared taxonomy.
+The cards now include 8,062 exact phrase handles matched inside retained card
+evidence across 2,289 function cards and 1,812 sequence cards; each remains a
+retrieval aid with a transcript-only boundary.
 The [video-learning itinerary](writeups/corpus-video-learning-itinerary.html)
 selects one bounded starting lesson for each of the 395 reviewed videos, with
 exact evidence, a practice move, self-check and sequence bridge where recorded.

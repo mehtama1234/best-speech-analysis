@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import html
 import json
+import re
 from collections import Counter
 from pathlib import Path
 
@@ -19,6 +20,8 @@ INDEX = ROOT / "research/corpus-lesson-index.json"
 TAXONOMY = ROOT / "research/corpus-function-taxonomy.json"
 EVIDENCE = ROOT / "research/corpus-evidence-bank.json"
 JOBS = ROOT / "research/communication-job-cards.json"
+JOB_PHRASES = ROOT / "research/job-phrase-candidate-inventory.json"
+CORPUS_PHRASES = ROOT / "research/corpus-phrase-form-inventory.json"
 OUT = ROOT / "research/corpus-learner-card-inventory.json"
 MD = ROOT / "writeups/corpus-learner-card-inventory.md"
 HTML = ROOT / "writeups/corpus-learner-card-inventory.html"
@@ -38,6 +41,46 @@ def _taxonomy_lookup() -> dict[tuple[str, int], dict]:
     return lookup
 
 
+def _phrase_handles(video_id: str, canonical_job: str, segments: list[dict], job_forms: list[dict], corpus_forms: list[dict]) -> list[dict]:
+    """Attach exact phrase matches found inside this card's retained evidence."""
+    handles = []
+    seen = set()
+    for form in job_forms:
+        if form.get("canonical_job") != canonical_job:
+            continue
+        phrase = form.get("phrase_form", "")
+        if not phrase or not any(example.get("video_id") == video_id for example in form.get("examples", [])):
+            continue
+        pattern = re.compile(r"(?<!\w)" + re.escape(phrase) + r"(?!\w)", re.IGNORECASE)
+        for segment in segments:
+            if not pattern.search(segment.get("text", "")):
+                continue
+            key = (phrase, segment.get("evidence_id"))
+            if key in seen:
+                continue
+            seen.add(key)
+            handles.append({"phrase_form": phrase, "family": canonical_job, "candidate_kind": form.get("candidate_kind"), "status": form.get("status"), "mechanism_hypothesis": form.get("mechanism_hypothesis"), "evidence_id": segment.get("evidence_id"), "text": segment.get("text"), "source_url": segment.get("source_url"), "retrieval_status": "exact_card_evidence_match_not_validated_best_practice"})
+    for form in corpus_forms:
+        phrase = form.get("phrase_form", "")
+        matched_pattern = form.get("matched_pattern")
+        if not matched_pattern:
+            continue
+        try:
+            pattern = re.compile(matched_pattern, re.IGNORECASE)
+        except re.error:
+            continue
+        for segment in segments:
+            if not pattern.search(segment.get("text", "")):
+                continue
+            key = (phrase, segment.get("evidence_id"))
+            if key in seen:
+                continue
+            seen.add(key)
+            handles.append({"phrase_form": phrase, "family": form.get("family"), "candidate_kind": "exact_form_inventory", "status": form.get("review_status") or form.get("status"), "mechanism_hypothesis": form.get("mechanism_hypothesis"), "evidence_id": segment.get("evidence_id"), "text": segment.get("text"), "source_url": segment.get("source_url"), "retrieval_status": "exact_card_evidence_match_not_validated_best_practice"})
+    handles.sort(key=lambda item: (item["candidate_kind"] != "content_bearing_retrieval_form", item["phrase_form"], item["evidence_id"]))
+    return handles[:12]
+
+
 def build() -> dict:
     index = json.loads(INDEX.read_text())
     evidence = {}
@@ -51,6 +94,8 @@ def build() -> dict:
             }
     taxonomy = _taxonomy_lookup()
     jobs = _job_cards()
+    job_phrase_forms = json.loads(JOB_PHRASES.read_text())["forms"]
+    corpus_phrase_forms = json.loads(CORPUS_PHRASES.read_text())["forms"]
     cards = []
     relation_cards = []
     job_counts = Counter()
@@ -89,6 +134,7 @@ def build() -> dict:
                 practice = "Rewrite the observed move in plain language, then test whether a listener can identify its purpose."
                 self_check = "Can you describe what the speaker is doing without relying on the label alone?"
                 non_fit = "Do not turn an unclassified episode into a recommendation."
+            phrase_handles = _phrase_handles(entry["video_id"], job, segments, job_phrase_forms, corpus_phrase_forms)
             cards.append({
                 "card_id": f"{entry['review_id']}:{item['sequence']}",
                 "review_id": entry["review_id"],
@@ -109,6 +155,8 @@ def build() -> dict:
                 "self_check": self_check,
                 "non_fit": non_fit,
                 "exact_evidence": segments,
+                "phrase_handles": phrase_handles,
+                "phrase_handle_status": "indexed_exact_card_evidence_matches" if phrase_handles else "no_indexed_phrase_match_in_card_evidence",
                 "review_limits": entry.get("limits", []),
                 "next_test": entry.get("next_test", ""),
                 "claim_boundary": "Transcript-derived discovery and practice hypothesis only; not independently reviewed, delivery-validated, learner-validated or listener-outcome evidence.",
@@ -139,6 +187,7 @@ def build() -> dict:
                 "from_evidence_ids": from_ids,
                 "to_evidence_ids": to_ids,
                 "exact_evidence": segments,
+                "phrase_handles": _phrase_handles(entry["video_id"], "", segments, [], corpus_phrase_forms),
                 "why_it_might_help": "Hypothesis: making the bridge between these two moves explicit may reduce the listener's need to infer why the talk changed direction.",
                 "repeatable_approach": "Complete the first move, name the relationship, then make the second move; do not assume the audience will supply the bridge.",
                 "practice": "Give a 30–60 second explanation using the same move-to-move relationship with a new topic. Ask a listener to name the bridge.",
@@ -161,6 +210,9 @@ def build() -> dict:
             "total_card_count": len(cards) + len(relation_cards),
             "cards_with_exact_evidence": sum(bool(card["exact_evidence"]) for card in cards),
             "structural_cards_with_exact_evidence": sum(bool(card["exact_evidence"]) for card in relation_cards),
+            "cards_with_phrase_handles": sum(bool(card["phrase_handles"]) for card in cards),
+            "sequence_cards_with_phrase_handles": sum(bool(card["phrase_handles"]) for card in relation_cards),
+            "phrase_handle_count": sum(len(card["phrase_handles"]) for card in cards + relation_cards),
             "cards_with_shared_job_template": sum(job_counts.values()),
             "non_speech_or_publisher_boundary_cards": boundary_items,
             "unclassified_cards": unclassified,
@@ -177,7 +229,7 @@ def build() -> dict:
         report["claim_boundary"], "",
         f"This inventory contains **{summary['card_count']} function cards** and **{summary['structural_card_count']} sequence cards** from **{summary['review_count']} full-context reviews**. "
         f"Each card preserves the original function label and reason, up to five exact caption segments, a provisional shared-job form where available, a drill, self-check, non-fit warning, limits and next test.", "",
-        f"Function cards with exact evidence: **{summary['cards_with_exact_evidence']}** · sequence cards with exact evidence: **{summary['structural_cards_with_exact_evidence']}** of {summary['structural_card_count']} · cards with a shared speech-job template: **{summary['cards_with_shared_job_template']}** · publisher/media boundary cards: **{summary['non_speech_or_publisher_boundary_cards']}** · unclassified and requiring review: **{summary['unclassified_cards']}**.", "",
+        f"Function cards with exact evidence: **{summary['cards_with_exact_evidence']}** · sequence cards with exact evidence: **{summary['structural_cards_with_exact_evidence']}** of {summary['structural_card_count']} · cards with phrase handles: **{summary['cards_with_phrase_handles']}** · sequence cards with phrase handles: **{summary['sequence_cards_with_phrase_handles']}** · phrase handles: **{summary['phrase_handle_count']}** · cards with a shared speech-job template: **{summary['cards_with_shared_job_template']}** · publisher/media boundary cards: **{summary['non_speech_or_publisher_boundary_cards']}** · unclassified and requiring review: **{summary['unclassified_cards']}**.", "",
         "Use the [searchable inventory](corpus-learner-card-inventory.html) to filter by video, raw label, canonical job, relation type or wording. Use the linked full writeup and source context before treating a card as a lesson.", "",
         "## How to use one card", "",
         "1. Read the exact evidence and the surrounding writeup.",
@@ -198,12 +250,14 @@ def build() -> dict:
             card["title"], card["video_id"], card.get("canonical_job", ""),
             card.get("raw_function_label", ""), card.get("observed_move", ""),
             card.get("relation_type", ""), card.get("sequence_claim", ""),
-        ]).lower()
+        ] + [x["phrase_form"] + " " + x["text"] for x in card.get("phrase_handles", [])]).lower()
         evidence_html = " ".join(
             f"<blockquote><code>{html.escape(row['evidence_id'])}</code> {html.escape(row['text'])}</blockquote>"
             for row in card["exact_evidence"]
         ) or "<p>No exact segment was linked; inspect the full writeup.</p>"
         writeup = f"<a href='../{html.escape(card['writeup'])}'>full writeup</a>" if card.get("writeup") else ""
+        phrase_items = "".join(f"<li><b><code>{html.escape(x['phrase_form'])}</code></b> · {html.escape(x['family'] or '')} · <code>{html.escape(x['evidence_id'])}</code><br>{html.escape(x['text'])}<br><span class='muted'>{html.escape(x['retrieval_status'])}; {html.escape(x['mechanism_hypothesis'] or '')}</span></li>" for x in card.get("phrase_handles", []))
+        phrase_html = f"<h3>Exact phrase handles</h3><ul>{phrase_items}</ul>" if phrase_items else "<h3>Exact phrase handles</h3><p class='muted'>No indexed phrase match in this card's retained evidence.</p>"
         if is_relation:
             heading = f"<p><b>Sequence:</b> <code>{html.escape(card['relation_type'])}</code></p><h3>Sequence claim</h3><p>{html.escape(card['sequence_claim'])}</p>"
             form_heading = "Repeatable approach"
@@ -217,7 +271,7 @@ def build() -> dict:
         articles.append(
             f"<article class='card' data-search='{html.escape(search, quote=True)}' data-job='{html.escape(card.get('canonical_job', ''), quote=True)}' data-relation='{html.escape(card.get('relation_type', ''), quote=True)}' data-kind='{html.escape(card.get('card_type', 'function'), quote=True)}'>"
             f"<h2>{html.escape(card['title'])}</h2><p><code>{html.escape(card['card_id'])}</code> · {writeup}</p>"
-            f"<p><b>Card type:</b> {label}</p>{heading}<h3>Exact evidence</h3>{evidence_html}"
+            f"<p><b>Card type:</b> {label}</p>{heading}<h3>Exact evidence</h3>{evidence_html}{phrase_html}"
             f"<h3>Why it might help</h3><p>{html.escape(card['why_it_might_help'])}</p>"
             f"<h3>{form_heading}</h3><p>{html.escape(form)}</p>"
             f"<h3>Practice</h3><p>{html.escape(card['practice'])}</p>"

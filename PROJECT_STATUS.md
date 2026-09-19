@@ -18,6 +18,9 @@ with shared speech-job templates, 149 publisher/media boundary items and 2,394
 unclassified items requiring canonical-job review. These are transcript-derived
 practice hypotheses, not validated best practices; delivery, learner and
 listener evidence remain separate gates.
+The inventory now adds 8,062 exact phrase handles matched inside retained card
+evidence across 2,289 function cards and 1,812 sequence cards. They are
+retrieval aids for rereading wording, not scripts or effectiveness evidence.
 The [video-learning itinerary](writeups/corpus-video-learning-itinerary.html)
 now gives each of the 395 reviewed videos one selected starting lesson without
 claiming that the selection is the most important, representative or effective
