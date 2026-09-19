@@ -111,6 +111,9 @@ it does not infer emotion, confidence, intent, nonverbal meaning or effect.
 The [internal midpoint-frame audit](writeups/communication-job-delivery-internal-observations.md)
 records bounded visual/setting observations for the 36 raw A/V samples while
 keeping independent review and manual vocal listening explicitly pending.
+The [job-level delivery inventory](writeups/communication-job-delivery-inventory.md)
+joins those 36 clips, proxy measurements and bounded frame notes for all 18
+jobs without turning them into validated delivery advice.
 The [shared evidence model](writeups/shared-evidence-model.md) is the common
 web/mobile contract for provenance, modality, hypotheses, practice, learner
 records and listener records, with uncertainty and missing validation visible.

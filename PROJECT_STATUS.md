@@ -84,6 +84,10 @@ now records bounded visual/setting observations for all 36 raw audio/video
 samples. It explicitly records edited subtitles, cutaways, staged scenes and
 off-screen speakers where present; it is not independent review, continuous
 video review or manual vocal listening.
+The [job-level delivery inventory](writeups/communication-job-delivery-inventory.md)
+joins the queue, reproducible proxy measurements and bounded frame notes for
+all 18 jobs so reviewers and learners can inspect the evidence without it
+being presented as validated delivery advice.
 The [shared evidence model](writeups/shared-evidence-model.md) formalizes the
 web/mobile contract: entity types, claim levels, status vocabulary, provenance
 links, missing/disagreement handling and separate learner/listener records. Its
