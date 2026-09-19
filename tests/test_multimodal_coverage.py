@@ -16,7 +16,7 @@ class MultimodalCoverageTests(unittest.TestCase):
         self.assertEqual(self.report["status"], "raw_media_reconciled_manual_review_pending")
         self.assertEqual(self.report["internal_manual_review_count"], 21)
         self.assertEqual(self.report["raw_audio_video_without_transcript_count"], 8)
-        self.assertEqual(self.report["raw_audio_video_with_transcript_count"], 21)
+        self.assertEqual(self.report["raw_audio_video_with_transcript_count"], 22)
         self.assertEqual(len(self.report["internal_manual_review_reports"]), 2)
         self.assertEqual(self.report["independent_review_status"], "pending")
         self.assertTrue((ROOT / self.report["independent_review_workbook"]).exists())
