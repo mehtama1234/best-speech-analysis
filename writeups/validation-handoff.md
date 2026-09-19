@@ -4,6 +4,8 @@ Status: **instruments ready; no human records received**.
 
 These are operational instruments and instructions, not validation results. No reviewer, learner or listener judgment is included.
 
+Start with the [seven-day learner path](writeups/learner-7-day-path.md) for practical drills. The [corpus findings catalog](writeups/corpus-findings-catalog.md) currently routes 207 of 395 videos to one or more provisional practice jobs; 188 remain explicitly unclassified. This routing is heuristic discovery support, not proof that a pattern works.
+
 Before selecting examples, use the [corpus lesson inventory](corpus-lesson-index.html), [exact phrase-form inventory](corpus-phrase-form-inventory.html), [evidence bank](corpus-evidence-bank.html), [provisional cards](communication-job-cards.html), [delivery inventory](communication-job-delivery-inventory.md) and [shared evidence model](shared-evidence-model.md). These are discovery and routing surfaces; none is proof that a pattern works.
 
 ## Independent review gates

@@ -26,11 +26,19 @@ def main() -> int:
     learner = load("research/communication-job-learner-check.json")
     listener = load("research/communication-job-listener-outcome-protocol.json")
     multimodal_expansion = load("research/multimodal-independent-review-workbook.json")
+    catalog = load("research/corpus-findings-catalog.json")
     report = {
         "schema_version": "1.0",
         "report_id": "validation-handoff",
         "status": "instruments_ready_no_human_records_received",
         "claim_boundary": "These are operational instruments and instructions, not validation results. No reviewer, learner or listener judgment is included.",
+        "learner_entry": {
+            "path": "writeups/learner-7-day-path.md",
+            "catalog": "writeups/corpus-findings-catalog.md",
+            "videos_with_candidate_practice_job": catalog["coverage"]["videos_with_candidate_practice_job"],
+            "videos_without_candidate_practice_job": catalog["coverage"]["videos_without_candidate_practice_job"],
+            "note": "Candidate job routing is heuristic discovery support, not validated evidence that a pattern works.",
+        },
         "review_gates": [
             {"id": "corpus_identity", "purpose": "Verify speaker, event, upload correspondence, source provenance and duplication status before recurrence denominators are used.", "items": identity["item_count"], "workbook": "research/corpus-identity-review-workbook.json", "form": "writeups/corpus-identity-review-workbook.html", "validator": "scripts/validate_corpus_identity_review.py", "summarizer": "scripts/summarize_corpus_identity_reviews.py", "independence": identity["independence_requirement"], "does_not_establish": ["function", "delivery effectiveness", "listener outcomes"]},
             {"id": "corpus_function", "purpose": "Check heuristic speech-function labels in surrounding transcript context.", "items": function["item_count"], "workbook": "research/corpus-function-independent-review-workbook.json", "form": "writeups/corpus-function-independent-review-workbook.html", "validator": "scripts/validate_corpus_function_review.py", "summarizer": "scripts/summarize_corpus_function_review.py", "independence": function["independence_requirement"], "does_not_establish": ["delivery effectiveness", "speaker intent", "listener outcomes"]},
@@ -56,7 +64,8 @@ def main() -> int:
         ],
     }
     (ROOT / "research/validation-handoff.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
-    lines = ["# Validation handoff", "", "Status: **instruments ready; no human records received**.", "", report["claim_boundary"], "", "Before selecting examples, use the [corpus lesson inventory](corpus-lesson-index.html), [exact phrase-form inventory](corpus-phrase-form-inventory.html), [evidence bank](corpus-evidence-bank.html), [provisional cards](communication-job-cards.html), [delivery inventory](communication-job-delivery-inventory.md) and [shared evidence model](shared-evidence-model.md). These are discovery and routing surfaces; none is proof that a pattern works.", "", "## Independent review gates", ""]
+    entry = report["learner_entry"]
+    lines = ["# Validation handoff", "", "Status: **instruments ready; no human records received**.", "", report["claim_boundary"], "", f"Start with the [seven-day learner path]({entry['path']}) for practical drills. The [corpus findings catalog]({entry['catalog']}) currently routes {entry['videos_with_candidate_practice_job']} of 395 videos to one or more provisional practice jobs; {entry['videos_without_candidate_practice_job']} remain explicitly unclassified. This routing is heuristic discovery support, not proof that a pattern works.", "", "Before selecting examples, use the [corpus lesson inventory](corpus-lesson-index.html), [exact phrase-form inventory](corpus-phrase-form-inventory.html), [evidence bank](corpus-evidence-bank.html), [provisional cards](communication-job-cards.html), [delivery inventory](communication-job-delivery-inventory.md) and [shared evidence model](shared-evidence-model.md). These are discovery and routing surfaces; none is proof that a pattern works.", "", "## Independent review gates", ""]
     for gate in report["review_gates"]:
         lines += [f"### {gate['id']} — {gate['items']} items", "", gate["purpose"], "", f"- Workbook: `{gate['workbook']}`", f"- Browser form: `{gate['form']}`", f"- Validator: `{gate['validator']}`"]
         if gate.get("summarizer"): lines.append(f"- Summarizer: `{gate['summarizer']}`")
