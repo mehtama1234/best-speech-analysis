@@ -23,6 +23,8 @@ class CorpusVideoLearningItineraryTests(unittest.TestCase):
         self.assertIn("does not claim", self.data["claim_boundary"])
         self.assertIn("Exact evidence", self.html)
         self.assertIn("Exact phrase handles", self.html)
+        self.assertIn("Learning track", self.html)
+        self.assertIn("structural_bridge_lesson", self.html)
 
 
 if __name__ == "__main__":
