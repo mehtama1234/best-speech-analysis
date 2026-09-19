@@ -60,6 +60,7 @@ ARTIFACTS = [
     ("writeups/learner-field-guide.md", "learner-facing 18-job field guide"),
     ("research/full-corpus-media-coverage.json", "full transcript-corpus media availability audit"),
     ("research/full-corpus-media-recovery-queue.json", "full transcript-corpus media recovery routing queue"),
+    ("scripts/recover_full_corpus_media.py", "resumable fixed-queue media recovery tool"),
 ]
 
 

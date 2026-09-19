@@ -4,20 +4,23 @@
   "status": "recovery_routing_not_media_validation",
   "source_coverage": "research/full-corpus-media-coverage.json",
   "source_delivery_queue": "research/communication-job-delivery-sampling.json",
-  "source_download_ledger": "data/media-status.jsonl",
-  "item_count": 364,
+  "source_download_ledger": [
+    "data/media-status.jsonl",
+    "data/full-corpus-media-recovery.jsonl"
+  ],
+  "item_count": 361,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 6,
-      "fixed_corpus_transcript_only": 358
+      "fixed_corpus_transcript_only": 355
     },
     "by_media_state": {
       "derived_features_only": 6,
-      "transcript_only_no_local_media": 358
+      "transcript_only_no_local_media": 355
     },
     "by_video_status": {
-      "failed:1": 6,
-      "not_attempted": 358
+      "failed:1": 7,
+      "not_attempted": 354
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -170,18 +173,6 @@
       "video_id": "0eNEz2lhyk8",
       "title": "ENGLISH SPEECH | SANDRA BULLOCK: Never Google Yourself (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=0eNEz2lhyk8",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "0kjuI8M3NHk",
-      "title": "ENGLISH SPEECH | OBAMA & MCRAVEN: The Night History Changed (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=0kjuI8M3NHk",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -1199,18 +1190,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "EJz2FXkZb7g",
-      "title": "Yoda teaching Skywalker Knowing",
-      "source_url": "https://www.youtube.com/watch?v=EJz2FXkZb7g",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "EPffnjpHdTw",
       "title": "ENGLISH SPEECH | GENELIA DESHMUKH: Invest in Yourself (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=EPffnjpHdTw",
@@ -1408,10 +1387,10 @@
       "source_url": "https://www.youtube.com/watch?v=H5bSGdZk8pQ",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1718,18 +1697,6 @@
       "video_id": "MgeynGHmA2s",
       "title": "ENGLISH SPEECH | BILL CLINTON: We're Bound (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=MgeynGHmA2s",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "Mo1YPGySiko",
-      "title": "ENGLISH SPEECH | DONALD TRUMP: A New Economic Era (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=Mo1YPGySiko",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
