@@ -36,6 +36,12 @@ def main() -> int:
     parser.add_argument("--video-dir", default="data/video")
     parser.add_argument("--audio-dir", default="data/audio")
     parser.add_argument("--limit", type=int)
+    parser.add_argument(
+        "--offset",
+        type=int,
+        default=0,
+        help="Skip this many sorted candidates before applying --limit.",
+    )
     parser.add_argument("--timeout", type=int, default=180)
     parser.add_argument(
         "--retry-failed",
@@ -82,6 +88,9 @@ def main() -> int:
             item[0],
         )
     )
+    if args.offset < 0:
+        parser.error("--offset must be non-negative")
+    candidates = candidates[args.offset :]
     if args.limit is not None:
         candidates = candidates[: args.limit]
 

@@ -5,13 +5,14 @@ Last corpus checkpoint: 2026-09-18. Provenance/report repair: 2026-09-17.
 ## Latest continuation update — multimodal recovery tranche
 
 The transcript corpus remains complete at 395/395 full-context reviews,
-102,816 inspected captions and 395 analytic reviews. Two recovery tranches
-added 12 complete audio/video sources and corresponding feature records. The
-authoritative fixed-corpus media audit now reports 353 raw audio/video sources,
-5 derived-feature-only records, 36 transcript-only records and 1 video-only
-record. The recovery queue has 42 remaining records. These are availability
+102,816 inspected captions and 395 analytic reviews. Three recovery passes
+added 13 complete audio/video sources and corresponding feature records. The
+authoritative fixed-corpus media audit now reports 354 raw audio/video sources,
+5 derived-feature-only records, 35 transcript-only records and 1 video-only
+record. The recovery queue has 41 remaining records. These are availability
 counts only: identity, alignment, delivery interpretation and listener effects
-remain separate validation gates. Commit `e6a2b57` records the latest tranche.
+remain separate validation gates. The latest recovery/tooling tranche is
+recorded in the current commit.
 
 ## Latest resumption update — Joe Biden victory speech review 395
 
@@ -252,8 +253,8 @@ transcript-linked speech-pattern review. No selected item is currently partial.
 The raw-file count is authoritative here; download-ledger status is not treated
 as proof that files still exist.
 The separate [full-corpus media availability audit](writeups/full-corpus-media-coverage.md)
-checks all 395 transcript-reviewed IDs: 353 currently have local raw audio/video,
-5 have derived features only, 36 have no local media and 1 has video without a
+checks all 395 transcript-reviewed IDs: 354 currently have local raw audio/video,
+5 have derived features only, 35 have no local media and 1 has video without a
 matching local audio file; none of these counts is audiovisual validation.
 
 The separate [raw-media-only visual audit](research/raw-media-only-visual-audit.json)

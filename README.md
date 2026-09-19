@@ -87,12 +87,12 @@ distills the provisional verbal moves, delivery-inspection prompts and practice
 loop across those jobs without presenting them as proven best practices.
 The [full-corpus media audit](writeups/full-corpus-media-coverage.md) separates
 395-video transcript coverage from local audiovisual availability and makes
-the remaining delivery gap explicit: 353 raw A/V, 5 derived-feature-only,
-36 transcript-only and 1 video-only fixed-corpus source. Recovery has been
+the remaining delivery gap explicit: 354 raw A/V, 5 derived-feature-only,
+35 transcript-only and 1 video-only fixed-corpus source. Recovery has been
 attempted against the remaining queue, but local media is still not identity,
 alignment, delivery or effectiveness validation.
 The [media recovery queue](writeups/full-corpus-media-recovery-queue.md)
-routes the remaining 42 non-raw fixed-corpus records while preserving prior
+routes the remaining 41 non-raw fixed-corpus records while preserving prior
 download outcomes and access/licensing boundaries.
 The [18-job listener protocol](writeups/communication-job-listener-outcome-protocol.md)
 separately defines matched controls, six comprehension/recall measures and
