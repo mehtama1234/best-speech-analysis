@@ -94,6 +94,7 @@ ARTIFACTS = [
     ("scripts/build_full_corpus_timing_candidate_atlas.py", "full local feature timing candidate atlas builder"),
     ("scripts/validate_timing_candidate_reviews.py", "full local timing review export validator"),
     ("scripts/analyze_visual_movement.py", "face and scene movement proxy analyzer"),
+    ("scripts/refresh_visual_detectors.py", "optional visual detector refresh for existing frames"),
     ("scripts/build_job_phrase_candidate_inventory.py", "multiword phrase candidate inventory builder"),
     ("scripts/build_job_phrase_transfer_cards.py", "job phrase transfer card builder"),
     ("writeups/communication-job-delivery-interval-frame-audit.md", "three-frame delivery interval audit report"),

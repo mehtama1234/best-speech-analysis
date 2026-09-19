@@ -166,8 +166,11 @@ The [full-corpus timing candidate atlas](writeups/full-corpus-timing-candidate-a
 extends bounded pause/density navigation to 357 locally aligned videos and
 97,743 caption rows, with density extremes capped per video. The [full local
 visual movement report](writeups/visual-movement-analysis.md) extends scene and
-face-presence proxy accounting to 364 feature reports while preserving detector
-missingness; neither artifact is independent delivery evidence.
+face-presence proxy accounting to 364 feature reports. An optional OpenCV 4
+refresh populated detector fields for 6,674 sampled frames; these are geometry
+and candidate-count measurements only, not facial-expression, gaze, emotion,
+intent or effectiveness findings. Neither artifact is independent delivery
+evidence.
 The [internal midpoint-frame audit](writeups/communication-job-delivery-internal-observations.md)
 records bounded visual/setting observations for the 36 raw A/V samples while
 keeping independent review and manual vocal listening explicitly pending.

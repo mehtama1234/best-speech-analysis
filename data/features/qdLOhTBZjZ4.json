@@ -8400,9 +8400,9 @@
       "mean_green": 67.258,
       "mean_blue": 69.593,
       "faces": [],
-      "face_count": null,
-      "smile_detector_candidate_count": null,
-      "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+      "face_count": 0,
+      "smile_detector_candidate_count": 0,
+      "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
     },
     {
       "time_seconds": 60.0,
@@ -8414,9 +8414,9 @@
       "mean_green": 74.079,
       "mean_blue": 75.634,
       "faces": [],
-      "face_count": null,
-      "smile_detector_candidate_count": null,
-      "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+      "face_count": 0,
+      "smile_detector_candidate_count": 0,
+      "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
     },
     {
       "time_seconds": 120.0,
@@ -8428,9 +8428,9 @@
       "mean_green": 85.231,
       "mean_blue": 85.64,
       "faces": [],
-      "face_count": null,
-      "smile_detector_candidate_count": null,
-      "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+      "face_count": 0,
+      "smile_detector_candidate_count": 0,
+      "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
     },
     {
       "time_seconds": 180.0,
@@ -8442,9 +8442,9 @@
       "mean_green": 87.614,
       "mean_blue": 89.271,
       "faces": [],
-      "face_count": null,
-      "smile_detector_candidate_count": null,
-      "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+      "face_count": 0,
+      "smile_detector_candidate_count": 0,
+      "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
     },
     {
       "time_seconds": 240.0,
@@ -8456,9 +8456,9 @@
       "mean_green": 69.572,
       "mean_blue": 70.75,
       "faces": [],
-      "face_count": null,
-      "smile_detector_candidate_count": null,
-      "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+      "face_count": 0,
+      "smile_detector_candidate_count": 0,
+      "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
     },
     {
       "time_seconds": 300.0,
@@ -8470,9 +8470,9 @@
       "mean_green": 84.129,
       "mean_blue": 83.579,
       "faces": [],
-      "face_count": null,
-      "smile_detector_candidate_count": null,
-      "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+      "face_count": 0,
+      "smile_detector_candidate_count": 0,
+      "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
     },
     {
       "time_seconds": 360.0,
@@ -8484,9 +8484,9 @@
       "mean_green": 44.782,
       "mean_blue": 43.479,
       "faces": [],
-      "face_count": null,
-      "smile_detector_candidate_count": null,
-      "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+      "face_count": 0,
+      "smile_detector_candidate_count": 0,
+      "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
     },
     {
       "time_seconds": 420.0,
@@ -8498,9 +8498,9 @@
       "mean_green": 80.389,
       "mean_blue": 79.792,
       "faces": [],
-      "face_count": null,
-      "smile_detector_candidate_count": null,
-      "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+      "face_count": 0,
+      "smile_detector_candidate_count": 0,
+      "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
     },
     {
       "time_seconds": 480.0,
@@ -8512,9 +8512,9 @@
       "mean_green": 75.525,
       "mean_blue": 76.491,
       "faces": [],
-      "face_count": null,
-      "smile_detector_candidate_count": null,
-      "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+      "face_count": 0,
+      "smile_detector_candidate_count": 0,
+      "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
     },
     {
       "time_seconds": 540.0,
@@ -8526,9 +8526,9 @@
       "mean_green": 81.595,
       "mean_blue": 81.536,
       "faces": [],
-      "face_count": null,
-      "smile_detector_candidate_count": null,
-      "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+      "face_count": 0,
+      "smile_detector_candidate_count": 0,
+      "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
     },
     {
       "time_seconds": 600.0,
@@ -8540,11 +8540,17 @@
       "mean_green": 14.91,
       "mean_blue": 16.915,
       "faces": [],
-      "face_count": null,
-      "smile_detector_candidate_count": null,
-      "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+      "face_count": 0,
+      "smile_detector_candidate_count": 0,
+      "face_measurement_status": "haar_face_and_smile_candidates_only; no_emotion_inference"
     }
   ],
-  "visual_measurement_status": "scene_pixel_features_only; face_expression_not_analyzed",
-  "audio_measurement_status": "rms_zcr_spectral_centroid_and_coarse_spectral_pitch_proxy; not_a_validated_pitch_tracker"
+  "visual_measurement_status": "scene_pixels_plus_optional_haar_geometry; no_emotion_or_intent_inference",
+  "audio_measurement_status": "rms_zcr_spectral_centroid_and_coarse_spectral_pitch_proxy; not_a_validated_pitch_tracker",
+  "visual_detector_refresh": {
+    "status": "refreshed_existing_sampled_frames",
+    "detector": "OpenCV Haar frontal-face and smile candidate detectors",
+    "selection_unchanged": true,
+    "claim_boundary": "Detector outputs are observable geometry/candidate counts only; they do not establish emotion, gaze, intent, confidence, delivery meaning or effectiveness."
+  }
 }

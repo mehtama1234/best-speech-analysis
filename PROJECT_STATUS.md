@@ -28,10 +28,13 @@ aligned retained-caption rows. The [full-corpus timing candidate atlas]
 (writeups/full-corpus-timing-candidate-atlas.md) routes 5,557 bounded pause and
 density candidates across those 357 videos; caption gaps and density remain
 proxies requiring manual listening. The [full local visual movement report]
-(writeups/visual-movement-analysis.md) measures sampled face/scene changes while
-preserving detector missingness. The pose extractor remains unavailable in the
-base environment because `torchvision` is not installed and the isolated wheel
-is incompatible with the installed PyTorch build; no pose claims are promoted.
+(writeups/visual-movement-analysis.md) measures sampled face/scene changes
+across 364 feature reports. An optional OpenCV 4 Haar refresh now makes face
+geometry/candidate counts observable for 6,674 sampled frames; these remain
+detector outputs, not expression, gaze, emotion, intent or effectiveness
+evidence. The pose extractor remains unavailable in the base environment
+because `torchvision` is not installed and the isolated wheel is incompatible
+with the installed PyTorch build; no pose claims are promoted.
 All delivery, identity, learner and listener validation gates remain separate
 and no independent records have been received.
 
