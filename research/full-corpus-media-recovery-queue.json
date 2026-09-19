@@ -8,21 +8,22 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 235,
+  "item_count": 229,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 6,
-      "fixed_corpus_transcript_only": 229
+      "fixed_corpus_transcript_only": 223
     },
     "by_media_state": {
+      "audio_only": 1,
       "derived_features_only": 6,
-      "transcript_only_no_local_media": 226,
+      "transcript_only_no_local_media": 219,
       "video_only": 3
     },
     "by_video_status": {
       "downloaded": 3,
-      "failed:1": 16,
-      "not_attempted": 216
+      "failed:1": 20,
+      "not_attempted": 206
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -105,10 +106,10 @@
       "source_url": "https://www.youtube.com/watch?v=-HA8kSdsf_M",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -319,18 +320,6 @@
       "video_id": "3x4zM7O8pZI",
       "title": "ENGLISH SPEECH | PM NARENDRA MODI: India-Australia Partnership (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=3x4zM7O8pZI",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "46GwJbrMghQ",
-      "title": "Get Busy Living or Get Busy Dying - The Shawshank Redemption HD 720p",
-      "source_url": "https://www.youtube.com/watch?v=46GwJbrMghQ",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -1077,10 +1066,10 @@
       "source_url": "https://www.youtube.com/watch?v=MeIBFGyGd6M",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1468,18 +1457,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "XeEXX698kn4",
-      "title": "The Power Of Choice | Hilary Duff",
-      "source_url": "https://www.youtube.com/watch?v=XeEXX698kn4",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "XkZhzc7b4jg",
       "title": "ENGLISH SPEECH | ARNOLD SCHWARZENEGGER: Help Others (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=XkZhzc7b4jg",
@@ -1672,18 +1649,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "c2xqHLIb-d4",
-      "title": "ENGLISH SPEECH | MARISA TOMEI: People's Inauguration (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=c2xqHLIb-d4",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "cLp3pxq7Dj0",
       "title": "ENGLISH SPEECH | JOHN KRASINSKI: Find Your People (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=cLp3pxq7Dj0",
@@ -1809,10 +1774,10 @@
       "source_url": "https://www.youtube.com/watch?v=fHAOWLhrxhQ",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1867,18 +1832,6 @@
       "video_id": "gkr57P0fwbI",
       "title": "ENGLISH SPEECH | ANNE HATHAWAY: Paid Family Leave (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=gkr57P0fwbI",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "gludYD91cGA",
-      "title": "ENGLISH SPEECH | ANANT & RADHIKA: Emotional Pre-Wedding Speech (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=gludYD91cGA",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -2455,12 +2408,12 @@
       "video_id": "rOSqiOyy1tc",
       "title": "ENGLISH SPEECH | PRIYANKA CHOPRA: Power Of Choice (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=rOSqiOyy1tc",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "audio_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -2656,18 +2609,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "uIs3o2eEtUg",
-      "title": "ENGLISH SPEECH | P.V. SINDHU: Just show up (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=uIs3o2eEtUg",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "udi37wMZVQ0",
       "title": "🎧 ENGLISH PODCAST | Indira Gandhi: Resilience, Dialogue, and Legacy",
       "source_url": "https://www.youtube.com/watch?v=udi37wMZVQ0",
@@ -2827,18 +2768,6 @@
       "video_id": "yrwhd4coEAU",
       "title": "ENGLISH SPEECH | ED SHEERAN: Embrace Your Weirdness (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=yrwhd4coEAU",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "zgDnvVaoV98",
-      "title": "ENGLISH SPEECH | CORY BOOKER: Let America Be America Again (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=zgDnvVaoV98",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
