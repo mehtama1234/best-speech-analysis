@@ -59,6 +59,7 @@ def main() -> int:
             segments = record["segments"][:3]
             local_video_files = sorted(path.name for path in (ROOT / "data/video").glob(f"{video_id}.*") if path.is_file())
             local_audio_files = sorted(path.name for path in (ROOT / "data/audio").glob(f"{video_id}.*") if path.is_file())
+            local_feature_files = sorted(path.name for path in (ROOT / "data/features").glob(f"{video_id}.*") if path.is_file())
             media_state = info.get("media_state", "not_in_selected_media_audit")
             if media_state != "raw_audio_video_present" and local_video_files and local_audio_files:
                 media_state = "raw_audio_video_present_local_unselected"
@@ -77,7 +78,7 @@ def main() -> int:
                 "raw_media_state": media_state,
                 "video_file": (info.get("video_files") or local_video_files or [None])[0],
                 "audio_file": (info.get("audio_files") or local_audio_files or [None])[0],
-                "feature_file": (info.get("feature_files") or [None])[0],
+                "feature_file": (info.get("feature_files") or local_feature_files or [None])[0],
                 "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
                 "review": {
                     "transcript_alignment": None,

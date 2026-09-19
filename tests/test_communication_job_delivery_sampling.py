@@ -23,6 +23,8 @@ class CommunicationJobDeliverySamplingTests(unittest.TestCase):
             self.assertIsNone(item["review"]["visual_observation"])
             self.assertIsNone(item["review"]["vocal_timing_observation"])
             self.assertTrue(item["transcript_segment_ids"])
+            if item["raw_media_state"].startswith("raw_audio_video_present"):
+                self.assertIsNotNone(item["feature_file"])
         self.assertEqual(len(by_job), 18)
         self.assertTrue(all(len(items) == 2 for items in by_job.values()))
 
