@@ -8,21 +8,21 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 326,
+  "item_count": 321,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 6,
-      "fixed_corpus_transcript_only": 320
+      "fixed_corpus_transcript_only": 315
     },
     "by_media_state": {
       "derived_features_only": 6,
-      "transcript_only_no_local_media": 318,
-      "video_only": 2
+      "transcript_only_no_local_media": 314,
+      "video_only": 1
     },
     "by_video_status": {
-      "downloaded": 2,
-      "failed:1": 9,
-      "not_attempted": 315
+      "downloaded": 1,
+      "failed:1": 10,
+      "not_attempted": 310
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -139,18 +139,6 @@
       "video_id": "0KFVLWX7eEY",
       "title": "Ferris Bueller's Day Off - Opening Monologue",
       "source_url": "https://www.youtube.com/watch?v=0KFVLWX7eEY",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "0eNEz2lhyk8",
-      "title": "ENGLISH SPEECH | SANDRA BULLOCK: Never Google Yourself (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=0eNEz2lhyk8",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -321,10 +309,10 @@
       "source_url": "https://www.youtube.com/watch?v=3FtDXPHua9o",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1696,18 +1684,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "RLklwFPNQ_g",
-      "title": "ENGLISH SPEECH | KEVIN HART: Be Persistent (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=RLklwFPNQ_g",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "RaLXDIJW3_M",
       "title": "ENGLISH SPEECH | MATT DAMON: What We Do Matters (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=RaLXDIJW3_M",
@@ -2200,18 +2176,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "_nUDuXRh3zM",
-      "title": "ENGLISH SPEECH | IVANKA TRUMP: Think Big Again (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=_nUDuXRh3zM",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "_rWbvNESc4k",
       "title": "Dua Lipa: How Books Change Lives",
       "source_url": "https://www.youtube.com/watch?v=_rWbvNESc4k",
@@ -2656,18 +2620,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "hBYoDp-Zh64",
-      "title": "ENGLISH SPEECH | KERMIT THE FROG: Find Your People (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=hBYoDp-Zh64",
-      "media_state": "video_only",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "downloaded",
-      "audio_download_status": "failed:1",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "hqwGR86zoTI",
       "title": "ENGLISH SPEECH | BORIS JOHNSON: First Speech as Prime Minister (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=hqwGR86zoTI",
@@ -2779,18 +2731,6 @@
       "video_id": "j1TKhGBIKFk",
       "title": "ENGLISH SPEECH | CRISTIANO RONALDO: Motivated by Fans (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=j1TKhGBIKFk",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "jG-4kBIDAzA",
-      "title": "ENGLISH SPEECH | SELENA GOMEZ: Trust Yourself (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=jG-4kBIDAzA",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
