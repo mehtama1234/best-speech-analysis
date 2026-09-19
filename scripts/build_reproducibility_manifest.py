@@ -42,6 +42,7 @@ ARTIFACTS = [
     ("writeups/end-to-end-goal.md", "end-to-end goal and definition of done"),
     ("writeups/learner-field-guide.md", "learner-facing 18-job field guide"),
     ("research/full-corpus-media-coverage.json", "full transcript-corpus media availability audit"),
+    ("research/full-corpus-media-recovery-queue.json", "full transcript-corpus media recovery routing queue"),
 ]
 
 
