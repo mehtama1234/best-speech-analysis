@@ -5,7 +5,9 @@
   "claim_boundary": "This audit proves that local learner artifacts are linked and counts reconcile for the fixed corpus. It is not validation evidence and does not prove source identity, function correctness, delivery meaning, teachability, listener comprehension or effectiveness.",
   "source_artifacts": [
     "research/corpus-learner-card-inventory.json",
-    "research/corpus-video-learning-itinerary.json"
+    "research/corpus-video-learning-itinerary.json",
+    "research/full-corpus-media-coverage.json",
+    "research/full-delivery-proxy-index.json"
   ],
   "video_count": 395,
   "videos_with_transcript_lesson": 395,
@@ -20,7 +22,17 @@
     "cards_with_delivery_candidates": 3329,
     "delivery_candidate_count": 5275,
     "cards_with_movement_candidates": 6308,
-    "movement_candidate_count": 24046
+    "movement_candidate_count": 24046,
+    "raw_audio_video_present": 354,
+    "feature_report_present": 357,
+    "media_state_counts": {
+      "derived_features_only": 5,
+      "raw_audio_video_present": 354,
+      "transcript_only_no_local_media": 35,
+      "video_only": 1
+    },
+    "full_proxy_index_video_count": 364,
+    "proxy_videos_without_itinerary_entry": 7
   },
   "videos": [
     {
@@ -41,6 +53,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/-54zUwySKCg.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -61,6 +77,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 7,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/-6qN3bm2RYo.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -81,6 +101,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/-CXBIAH4Kgo.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -101,6 +125,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -121,6 +149,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -141,6 +173,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/-URn1fARvts.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -161,6 +197,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -181,6 +221,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/-s-h-eebSgw.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -201,6 +245,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -221,6 +269,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/0eNEz2lhyk8.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -241,6 +293,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -261,6 +317,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/0nUDkCgyppM.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -281,6 +341,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/19rhQUB_FQc.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -301,6 +365,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/1Bc3LkP7dh8.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -321,6 +389,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/1DXo2fcfleY.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -341,6 +413,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/1EPechcSwE0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -361,6 +437,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/1QvLB4yEHsI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -381,6 +461,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/1TAuuyvIZjA.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -401,6 +485,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -421,6 +509,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "derived_features_only",
+      "raw_audio_video_present": false,
+      "feature_report_present": true,
+      "feature_report": "data/features/1crhwQPKr7w.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -441,6 +533,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/1gK42jcb_WM.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -461,6 +557,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 4,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/1i9kcBHX2Nw.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -481,6 +581,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 6,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/1qfB9wExiy8.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -501,6 +605,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 7,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/1viYHfNj3Bk.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -521,6 +629,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/2ZTdqh-a0tU.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -541,6 +653,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/2fWJh-_UG5s.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -561,6 +677,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 7,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/2mqQMA7CSLQ.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -581,6 +701,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 6,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/2o14gf4uQac.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -601,6 +725,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 5,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/2u2Sd9MeFUc.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -621,6 +749,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 5,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/2wf1qE7AC8Y.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -641,6 +773,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/3AIoHLr8nTI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -661,6 +797,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 5,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -681,6 +821,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 5,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/3Q4sL85cLIQ.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -701,6 +845,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 4,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/3TWYqYJqU8U.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -721,6 +869,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 4,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/3Z4TsHqyssc.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -741,6 +893,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 4,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/3l0_J20c4dI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -761,6 +917,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 4,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/3x4zM7O8pZI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -781,6 +941,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 5,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/42QjAxty_1o.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -801,6 +965,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/46GwJbrMghQ.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -821,6 +989,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/46yStqMV4eY.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -841,6 +1013,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/4CL9gWgg6l4.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -861,6 +1037,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 4,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/4_3qH9QZCz0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -881,6 +1061,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/4u71aIcrxtQ.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -901,6 +1085,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/4vZCgGnjADQ.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -921,6 +1109,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/5DCevq7fbtQ.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -941,6 +1133,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/5DU16MQYzDw.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -961,6 +1157,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/5i0u4jFmE78.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -981,6 +1181,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/5mXFlne4JB8.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1001,6 +1205,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 5,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/5nN-15CrnGc.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1021,6 +1229,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/5rbyzJf4ZuQ.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1041,6 +1253,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/5xRv-eOuras.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1061,6 +1277,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/65v4EyR774E.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1081,6 +1301,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/69vFAHLkAlI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1101,6 +1325,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/6PNDD5Xy5DU.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1121,6 +1349,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/6dKimoybmEo.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1141,6 +1373,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/6uUblznfrsk.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1161,6 +1397,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 4,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/74ZgwDcjeGc.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1181,6 +1421,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/76ZHvFMtVEw.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1201,6 +1445,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/7Tw-Y_25fV0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1221,6 +1469,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1241,6 +1493,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 6,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/7iHNwOAr-9E.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1261,6 +1517,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/7pLuUedTAWI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1281,6 +1541,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/7zUUV8_CY2M.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1301,6 +1565,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 4,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/8R4TMmU_Ig0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1321,6 +1589,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/8hcxnuaXDF0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1341,6 +1613,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1361,6 +1637,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 6,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1381,6 +1661,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/9FnO3igOkOk.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1401,6 +1685,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 4,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/9MLd7kt2lKQ.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1421,6 +1709,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/9fEurt2OZ0I.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1441,6 +1733,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/9rFsLcVYbWg.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1461,6 +1757,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/9vwK8mLwyTA.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1481,6 +1781,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 5,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/A1hcbdWEEO8.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1501,6 +1805,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1521,6 +1829,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/A9fGG8gvE9U.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1541,6 +1853,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/AFbZYgXCSY4.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1561,6 +1877,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 4,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/APgpWHlzdQ8.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1581,6 +1901,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/AXznQhUA-5o.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1601,6 +1925,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/AYk3v6HV1D0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1621,6 +1949,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 4,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/AjxbqKcPX_4.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1641,6 +1973,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/Amv2iIoXsNw.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1661,6 +1997,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1681,6 +2021,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/AwA0Jnfj3ao.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1701,6 +2045,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/Az2tYNXDcqs.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1721,6 +2069,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/BDIRabVP24o.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1741,6 +2093,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/BRfkJ2tkS94.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1761,6 +2117,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/BVgnIYSKUjY.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1781,6 +2141,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 7,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/BWPIRnS4Gyo.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1801,6 +2165,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1821,6 +2189,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/Bxjzi6Vn-_E.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1841,6 +2213,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/C8-twwwTETE.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1861,6 +2237,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/CFh5FzXIeBg.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1881,6 +2261,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/CZfp0ZUsBdM.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1901,6 +2285,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/CqeyXD5RAWw.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1921,6 +2309,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/Cw-WF2bmojk.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1941,6 +2333,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/DBMYqkuHvew.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1961,6 +2357,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/DFCnootv6Wc.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -1981,6 +2381,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/DQjESgK96Pw.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2001,6 +2405,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/DY2s25yRa3M.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2021,6 +2429,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/DgTReERU7Bw.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2041,6 +2453,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/E12NyW7Nlog.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2061,6 +2477,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/E7bpYaxgC5o.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2081,6 +2501,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/EBVPjuxNflY.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2101,6 +2525,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/EC5L1MSlqtg.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2121,6 +2549,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2141,6 +2573,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/EPffnjpHdTw.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2161,6 +2597,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/EQYWOQ-12c8.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2181,6 +2621,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/EXGUNvIFTQw.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2201,6 +2645,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/Elv-c3ZTkYg.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2221,6 +2669,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 4,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/F1iB6dI8U7c.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2241,6 +2693,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/FfeqcznIew8.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2261,6 +2717,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/FgCI93QGT1g.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2281,6 +2741,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/FvcWRYuGSTg.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2301,6 +2765,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/G6OP-lPF-Mo.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2321,6 +2789,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/G8M9sV6Yya4.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2341,6 +2813,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 4,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2361,6 +2837,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/GQ5ICXMC4xY.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2381,6 +2861,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 6,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/GRiDVoMFxcU.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2401,6 +2885,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/GTn-2RtfQpk.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2421,6 +2909,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/GVc4wTaczdY.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2441,6 +2933,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/GxWx22J0vZs.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2461,6 +2957,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/H5bSGdZk8pQ.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2481,6 +2981,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/HNS6MjiSCZw.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2501,6 +3005,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2521,6 +3029,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/HewtIPiQueU.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2541,6 +3053,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/HpGU95aVckc.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2561,6 +3077,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2581,6 +3101,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/IDANPuXQkpA.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2601,6 +3125,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/IPXwS9j9T1E.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2621,6 +3149,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/I_juMlxA6T8.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2641,6 +3173,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/Iw363WNPReQ.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2661,6 +3197,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/JFd8bnupsQY.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2681,6 +3221,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/JVnsJRMVGHk.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2701,6 +3245,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/JdUq2opPY-Q.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2721,6 +3269,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2741,6 +3293,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/Jye58Lh-UD0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2761,6 +3317,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/K9Ah9seEDFI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2781,6 +3341,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/KLe7Rxkrj94.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2801,6 +3365,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/KMEe2ni92rQ.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2821,6 +3389,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/KoFy1t5U4Q4.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2841,6 +3413,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/KtjaB1SnA7Y.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2861,6 +3437,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/L9lIWfz7Exw.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2881,6 +3461,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/LEtP7HgGTu0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2901,6 +3485,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/LJRs2TnP9H8.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2921,6 +3509,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/LOK1TcrSKDs.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2941,6 +3533,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/LRKodKH456o.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2961,6 +3557,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/MME0I87oiJI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -2981,6 +3581,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3001,6 +3605,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/MgeynGHmA2s.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3021,6 +3629,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/Mo1YPGySiko.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3041,6 +3653,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/MpMtBWwXCLU.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3061,6 +3677,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/Mt_3yRHYmj4.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3081,6 +3701,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/MvJSyU_zuLY.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3101,6 +3725,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/MzYKtA-d7iQ.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3121,6 +3749,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/N6ROB3Q_iXg.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3141,6 +3773,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/NSiR8FKsAnA.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3161,6 +3797,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/NVS_rFhurgg.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3181,6 +3821,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/N_H7qoPLOYU.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3201,6 +3845,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/O1V1gRCaisY.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3221,6 +3869,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/O1VdQQkbUOU.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3241,6 +3893,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/OfwfTN1mEyM.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3261,6 +3917,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/PJofnNqfDJw.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3281,6 +3941,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/PvcLdCo03TM.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3301,6 +3965,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/PwQrtzi8ozc.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3321,6 +3989,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/Q5UG7ISJfP0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3341,6 +4013,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/QTR4l60l910.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3361,6 +4037,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/QwSGn8A-nd0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3381,6 +4061,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/RBZkCczK6xg.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3401,6 +4085,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "derived_features_only",
+      "raw_audio_video_present": false,
+      "feature_report_present": true,
+      "feature_report": "data/features/RCxgqHqakXc.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3421,6 +4109,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/RH58QUkNVis.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3441,6 +4133,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/RLklwFPNQ_g.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3461,6 +4157,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 4,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3481,6 +4181,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/Rj4-heRlMQE.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3501,6 +4205,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 4,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/RnIqGFqPwkQ.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3521,6 +4229,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/RqmAj38t3RI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3541,6 +4253,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/Rr9QjfiyOYM.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3561,6 +4277,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "derived_features_only",
+      "raw_audio_video_present": false,
+      "feature_report_present": true,
+      "feature_report": "data/features/S43F1BZfQKY.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3581,6 +4301,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/S4lTtvlFvyk.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3601,6 +4325,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/SIQnLs6m5VM.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3621,6 +4349,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/SX08ZKy-WY4.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3641,6 +4373,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/SZR2nVKkcuI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3661,6 +4397,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/T-VeozzEv2w.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3681,6 +4421,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/T1g_rLFwSC4.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3701,6 +4445,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/T6cqSxGyomI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3721,6 +4469,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/TJi24wyCaOs.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3741,6 +4493,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/TSaYaEZ4I5s.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3761,6 +4517,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/ThsZ8wfhJpk.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3781,6 +4541,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/Tsv6x-4HbGQ.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3801,6 +4565,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/U8iy5zvXhJc.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3821,6 +4589,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/UCeY5YPd2I0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3841,6 +4613,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/UDzuZhjo1RI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3861,6 +4637,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/UUheH1seQuE.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3881,6 +4661,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/Up6tk1hliIM.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3901,6 +4685,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/VEZ84WM84F0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3921,6 +4709,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/VRMPjm1kG7g.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3941,6 +4733,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/VVxYOQS6ggk.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3961,6 +4757,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/VaOA7RUxOwc.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -3981,6 +4781,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/W-mgdUdOjhs.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4001,6 +4805,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/WRPisaWDGBU.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4021,6 +4829,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/W_dWIXRMbBI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4041,6 +4853,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/XGlh4q3F0lo.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4061,6 +4877,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 8,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/XR8aTbvRhxQ.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4081,6 +4901,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/XVHd_UUTK-c.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4101,6 +4925,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/XZDBBEuP00I.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4121,6 +4949,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/XeEXX698kn4.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4141,6 +4973,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/XkZhzc7b4jg.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4161,6 +4997,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/Xn1adsMTIVU.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4181,6 +5021,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/Y4znQWi_V98.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4201,6 +5045,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/Y_uOqhhm_8s.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4221,6 +5069,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/ZHpyfTC_Ovo.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4241,6 +5093,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/ZKbZMIP4XUE.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4261,6 +5117,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/ZaX_8iKSBsQ.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4281,6 +5141,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/Zw2uMn3KxSE.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4301,6 +5165,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/ZwMVMbmQBug.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4321,6 +5189,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/_D3HIqX1OVk.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4341,6 +5213,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/_Mb1-CN3wZs.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4361,6 +5237,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4381,6 +5261,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/_Q0ctJPDdGI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4401,6 +5285,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/_S955fkSZd8.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4421,6 +5309,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/_i7J1dhbh6w.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4441,6 +5333,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/_jbF_GsMOUE.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4461,6 +5357,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/_nUDuXRh3zM.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4481,6 +5381,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/_rWbvNESc4k.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4501,6 +5405,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/_tnXsK5qwAk.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4521,6 +5429,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/a1nvnY2csUw.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4541,6 +5453,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/aDG1T0kJnd4.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4561,6 +5477,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/aHXxveJTJoE.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4581,6 +5501,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/aJxynX6kjUE.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4601,6 +5525,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/aQyPR3tC9_M.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4621,6 +5549,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/aWo5xbRfY4M.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4641,6 +5573,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/aXmM0VZv810.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4661,6 +5597,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/aj0PTgHnNaI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4681,6 +5621,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/ar1hltV1QzI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4701,6 +5645,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/bDth6cv5raI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4721,6 +5669,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/bLCoSu2KiEA.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4741,6 +5693,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 3,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/bR4tDSa3O10.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4761,6 +5717,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/bV5uKHsWQtY.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4781,6 +5741,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4801,6 +5765,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/bz7yYu_w2HY.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4821,6 +5789,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/c2xqHLIb-d4.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4841,6 +5813,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/cCzoX0pKlew.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4861,6 +5837,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/cLp3pxq7Dj0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4881,6 +5861,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/ckFokCksaXA.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4901,6 +5885,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/d4mrO13trBY.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4921,6 +5909,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/dKe3WbGR7Xs.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4941,6 +5933,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/dPi40lQetew.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4961,6 +5957,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/dTHloCrFB90.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -4981,6 +5981,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/dX8cybX7dSs.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5001,6 +6005,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5021,6 +6029,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/dgkxN6RASpg.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5041,6 +6053,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/dr7-xoQyDxI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5061,6 +6077,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/e6_spMLKR6c.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5081,6 +6101,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/e80Aev-iiFc.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5101,6 +6125,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/eMgKV_XKqNo.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5121,6 +6149,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/eRrhqEYsahw.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5141,6 +6173,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/eW_G2yO0b2w.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5161,6 +6197,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/ex52Kj6ogwI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5181,6 +6221,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/f0uqUzEf3A8.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5201,6 +6245,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5221,6 +6269,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/fBnAMUkNM2k.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5241,6 +6293,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5261,6 +6317,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/fN_AV29Ra74.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5281,6 +6341,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/fnCW1NWngP4.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5301,6 +6365,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5321,6 +6389,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/ftlHd9Bu530.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5341,6 +6413,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/g3xLEDJeU2E.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5361,6 +6437,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/gDadfh0ZdBM.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5381,6 +6461,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/gQzZkTRhp0U.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5401,6 +6485,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/gTNz7ZgSCGU.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5421,6 +6509,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/gVRlg4BXKVo.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5441,6 +6533,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 4,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/gWziScXTR_4.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5461,6 +6557,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/gkr57P0fwbI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5481,6 +6581,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/gludYD91cGA.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5501,6 +6605,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/h4vlcM-5X1E.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5521,6 +6629,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/hBYoDp-Zh64.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5541,6 +6653,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/hZ0YhrgYejI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5561,6 +6677,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/hqwGR86zoTI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5581,6 +6701,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/iBBB-vJZB50.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5601,6 +6725,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/iStBvF0ALUc.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5621,6 +6749,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/iV8Ixm_8aao.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5641,6 +6773,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/iX11qgYyxUU.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5661,6 +6797,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5681,6 +6821,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/ij2-yWgzcX8.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5701,6 +6845,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5721,6 +6869,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/ivpmUTIe6PU.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5741,6 +6893,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/j1TKhGBIKFk.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5761,6 +6917,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/jG-4kBIDAzA.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5781,6 +6941,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 5,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/jiPTSBzAH6o.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5801,6 +6965,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/jkrrETzYX58.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5821,6 +6989,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/jxY2-YgAgm0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5841,6 +7013,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/kBh--e1sa5o.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5861,6 +7037,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/kCK3cR3Pz2c.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5881,6 +7061,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/kHti_4zsQhc.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5901,6 +7085,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/kM8HJPbFnJg.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5921,6 +7109,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/kTw_KyXcHIc.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5941,6 +7133,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/kUDCygomLyo.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5961,6 +7157,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/kaypQCpYuNk.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -5981,6 +7181,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6001,6 +7205,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/ksZpu1s1LV0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6021,6 +7229,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/l2ojUrbq8EM.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6041,6 +7253,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/lJP4b36pTuw.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6061,6 +7277,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/lUmWWTMFjZE.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6081,6 +7301,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "derived_features_only",
+      "raw_audio_video_present": false,
+      "feature_report_present": true,
+      "feature_report": "data/features/lcj1wMZRitI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6101,6 +7325,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/lmpOfO30L5g.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6121,6 +7349,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6141,6 +7373,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/m7-tKX7aZXM.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6161,6 +7397,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/m92yvNscIAo.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6181,6 +7421,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/mK53d6aIG48.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6201,6 +7445,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/mVDQ7Gt0org.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6221,6 +7469,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/m_DL4xytjCo.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6241,6 +7493,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6261,6 +7517,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/mgWv-ezYxgU.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6281,6 +7541,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/mhsa6u6kJQ0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6301,6 +7565,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/mi8N5gDVpeg.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6321,6 +7589,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/mmcJdoKftnM.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6341,6 +7613,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6361,6 +7637,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/n2RrhOO_jW0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6381,6 +7661,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/n5Pv6QTvzos.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6401,6 +7685,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/nI0N3Y3TPu0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6421,6 +7709,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/nIwU-9ZTTJc.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6441,6 +7733,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/nkMpdI5sQQM.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6461,6 +7757,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6481,6 +7781,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/oFyh5YMmB80.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6501,6 +7805,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "video_only",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6521,6 +7829,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/oK2cdUVNsCY.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6541,6 +7853,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/ocfcVuuuMpQ.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6561,6 +7877,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/oe492FoGYng.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6581,6 +7901,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/onix2Uk_d2g.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6601,6 +7925,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/ovFSiwmQq7o.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6621,6 +7949,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/p5XZZfQ9L9c.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6641,6 +7973,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/pRIy6xE9ONQ.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6661,6 +7997,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/pdYwZhCAeB0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6681,6 +8021,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/pmAL79dnvu0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6701,6 +8045,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/pqQBl-cMY84.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6721,6 +8069,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/q7J00zU5yEo.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6741,6 +8093,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/q9VUpHsnGYw.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6761,6 +8117,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/qHc3FY9il1s.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6781,6 +8141,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "derived_features_only",
+      "raw_audio_video_present": false,
+      "feature_report_present": true,
+      "feature_report": "data/features/qM-gZintWDc.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6801,6 +8165,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/qOwYULOPuPs.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6821,6 +8189,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/qdLOhTBZjZ4.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6841,6 +8213,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/r01DOmPpxjg.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6861,6 +8237,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/r2fWl3S7Wmk.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6881,6 +8261,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/r2kP2Pqdx6w.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6901,6 +8285,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/r3aCv8b2OfE.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6921,6 +8309,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/r5-5nFa6oW0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6941,6 +8333,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/rK9DlTZ4fKA.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6961,6 +8357,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/rOSqiOyy1tc.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -6981,6 +8381,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/rZ58eU07Ul4.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7001,6 +8405,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/rZRLLI-_3ME.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7021,6 +8429,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/rljEvDzFNyM.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7041,6 +8453,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/s-i3Z7EZRpA.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7061,6 +8477,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/s_vZ5lMRkpA.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7081,6 +8501,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/scqU8st_wm0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7101,6 +8525,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7121,6 +8549,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/ssc3G5-uAoM.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7141,6 +8573,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 4,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/stxIHzmQw6w.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7161,6 +8597,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/suuoQq8Rfq8.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7181,6 +8621,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/svHGvxKhT74.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7201,6 +8645,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/szXreq7f924.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7221,6 +8669,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/t6P_BxhGINk.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7241,6 +8693,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/tRbTxgQy7rg.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7261,6 +8717,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/tRm1bwWHPkE.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7281,6 +8741,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/tfsfrWxXKFA.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7301,6 +8765,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/tqmYgFGlgAI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7321,6 +8789,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/ttGQj3yCFYA.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7341,6 +8813,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/u1gg_L-syCw.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7361,6 +8837,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/uBiewQrpBBA.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7381,6 +8861,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/uIs3o2eEtUg.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7401,6 +8885,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/udi37wMZVQ0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7421,6 +8909,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/vAn96hY1LGw.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7441,6 +8933,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/vHKn4ZijM1o.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7461,6 +8957,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/vPDQOB7pRRM.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7481,6 +8981,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/vacGRuHDtO0.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7501,6 +9005,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/vi0Lbjs5ECI.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7521,6 +9029,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/vs5A3ZgBx1k.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7541,6 +9053,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/vzLmRomOP4Q.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7561,6 +9077,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/w42rHdvFpVM.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7581,6 +9101,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7601,6 +9125,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/wSzT7aI6lh8.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7621,6 +9149,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/wavykJRJv64.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7641,6 +9173,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/wjTGbS4JqXk.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7661,6 +9197,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/x45lP81Pmq8.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7681,6 +9221,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/xO60RohuARY.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7701,6 +9245,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/xRiwgtdyjQk.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7721,6 +9269,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7741,6 +9293,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 2,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/xpBSZNeYINw.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7761,6 +9317,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/xtT19s0uHhE.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7781,6 +9341,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/xwbI8VOsDTo.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7801,6 +9365,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/yPp-05qC9_U.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7821,6 +9389,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/ya7DNE1YZVs.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7841,6 +9413,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/yizq7R0r7iQ.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7861,6 +9437,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/yjo8chlSbQE.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7881,6 +9461,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 1,
       "selected_lesson_delivery_status": "not_available_no_local_feature_report",
+      "media_state": "transcript_only_no_local_media",
+      "raw_audio_video_present": false,
+      "feature_report_present": false,
+      "feature_report": null,
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7901,6 +9485,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/z5jGGYuep2Q.json",
       "coverage_status": "covered_with_transcript_lesson"
     },
     {
@@ -7921,6 +9509,10 @@
       "selected_lesson_has_exact_evidence": true,
       "selected_lesson_phrase_handle_count": 0,
       "selected_lesson_delivery_status": "local_proxy_nearest_sample_not_manual_delivery_review",
+      "media_state": "raw_audio_video_present",
+      "raw_audio_video_present": true,
+      "feature_report_present": true,
+      "feature_report": "data/features/zgDnvVaoV98.json",
       "coverage_status": "covered_with_transcript_lesson"
     }
   ]

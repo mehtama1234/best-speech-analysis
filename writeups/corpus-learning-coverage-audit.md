@@ -406,4 +406,4 @@ Cards: **4016** function + **2800** sequence · cards with exact evidence: **681
 | `z5jGGYuep2Q` ENGLISH SPEECH \| PRESIDENT KENNEDY: 1961 Inaugural Address (English Subtitles) | 10 | 8 | 18 | 13 | 18 | 18 | `covered_with_transcript_lesson` |
 | `zgDnvVaoV98` ENGLISH SPEECH \| CORY BOOKER: Let America Be America Again (English Subtitles) | 12 | 6 | 18 | 12 | 18 | 18 | `covered_with_transcript_lesson` |
 
-Use the [full learner-card browser](corpus-learner-card-inventory.html) for card-level evidence and the [video itinerary](corpus-video-learning-itinerary.html) for one starting lesson per video. Coverage is not validation.
+Media cross-check: **354** learner-route videos have raw local audio/video; **357** learner-route videos have a linked feature report. The full proxy index contains **364** reports, including **7** records without a retained itinerary entry. These are availability and measurement records, not manual nonverbal findings. Use the [full learner-card browser](corpus-learner-card-inventory.html) for card-level evidence and the [video itinerary](corpus-video-learning-itinerary.html) for one starting lesson per video. Coverage is not validation.
