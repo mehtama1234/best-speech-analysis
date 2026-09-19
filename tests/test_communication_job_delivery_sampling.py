@@ -30,6 +30,9 @@ class CommunicationJobDeliverySamplingTests(unittest.TestCase):
         self.assertGreater(self.queue["coverage_summary"]["raw_audio_video_items"], 0)
         self.assertIn("Derived features are proxies", self.queue["claim_boundary"])
         self.assertTrue((ROOT / "writeups/communication-job-delivery-sampling.html").exists())
+        page = (ROOT / "writeups/communication-job-delivery-sampling.html").read_text()
+        self.assertIn("<video", page)
+        self.assertIn("<audio", page)
 
     def test_validator_accepts_complete_synthetic_export_and_rejects_missing_observation(self):
         responses = {field: "synthetic" for field in self.queue["review_schema"]["required_session_fields"]}
