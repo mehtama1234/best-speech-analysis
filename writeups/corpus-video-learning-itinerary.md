@@ -4,9 +4,9 @@ Status: **one selected starting lesson per reviewed video; transcript-derived an
 
 This itinerary gives one practical starting lesson for each reviewed video. It does not claim that the selected item is the most important, representative, recurrent, effective or independently verified lesson from that video.
 
-Entries: **395 videos** · exact evidence attached: **395** · sequence bridge attached: **395**.
+Entries: **395 videos** · exact evidence attached: **395** · sequence bridge attached: **395** · local delivery proxy attached: **357** · pose proxy attached: **357**.
 
-Use one entry as a short lesson: read the evidence, name the move, adapt the form, practice it in a new situation, then run the self-check. Open the linked card inventory for alternate functions and the full writeup for limits.
+Use one entry as a short lesson: read the evidence, name the move, adapt the form, practice it in a new situation, then run the self-check. Open the linked card inventory for alternate functions and the full writeup for limits. Delivery fields are inspection aids, not recommendations.
 
 ## Selected entries
 

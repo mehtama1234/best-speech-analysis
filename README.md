@@ -40,6 +40,8 @@ curriculum remains the more compressed shared taxonomy.
 The [video-learning itinerary](writeups/corpus-video-learning-itinerary.html)
 selects one bounded starting lesson for each of the 395 reviewed videos, with
 exact evidence, a practice move, self-check and sequence bridge where recorded.
+It also attaches nearest local audio, face/scene and pose proxy fields for 357
+videos; 38 retain explicit no-local-proxy status.
 The [corpus findings catalog](writeups/corpus-findings-catalog.md) is the
 practical reading surface: all 395 video findings, 18 usable speech jobs,
 timestamp-linked examples, exact phrase-form counts, copyable forms, practice

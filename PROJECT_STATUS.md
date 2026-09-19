@@ -22,6 +22,10 @@ The [video-learning itinerary](writeups/corpus-video-learning-itinerary.html)
 now gives each of the 395 reviewed videos one selected starting lesson without
 claiming that the selection is the most important, representative or effective
 lesson from that video.
+The itinerary attaches nearest local audio, face/scene and pose proxy fields
+for 357 videos and preserves explicit no-local-proxy status for the remaining
+38; offsets are visible so a sampled measurement is not mistaken for exact
+delivery alignment.
 
 ## Latest continuation update — full local delivery proxy expansion
 
