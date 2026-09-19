@@ -12,6 +12,8 @@ class EndToEndStatusTests(unittest.TestCase):
         cls.status = json.loads((ROOT / "research/end-to-end-status.json").read_text())
 
     def test_dashboard_preserves_broad_scope_and_incomplete_gates(self):
+        coverage = json.loads((ROOT / "research/full-corpus-media-coverage.json").read_text())
+        recovery_queue = json.loads((ROOT / "research/full-corpus-media-recovery-queue.json").read_text())
         self.assertEqual(self.status["status"], "research_checkpoint_not_complete")
         self.assertEqual(self.status["stages"]["transcript_context"]["video_count"], 395)
         self.assertEqual(self.status["stages"]["transcript_lesson_inventory"]["review_count"], 395)
@@ -53,8 +55,14 @@ class EndToEndStatusTests(unittest.TestCase):
         self.assertEqual(self.status["stages"]["delivery_evidence"]["raw_audio_video_without_transcript"], 8)
         self.assertEqual(self.status["stages"]["delivery_evidence"]["raw_only_visual_audit_items"], 8)
         self.assertEqual(self.status["stages"]["full_corpus_media_coverage"]["video_count"], 395)
-        self.assertEqual(self.status["stages"]["full_corpus_media_coverage"]["raw_audio_video_present"], 31)
-        self.assertEqual(self.status["stages"]["full_corpus_media_recovery"]["queued_item_count"], 364)
+        self.assertEqual(
+            self.status["stages"]["full_corpus_media_coverage"]["raw_audio_video_present"],
+            coverage["counts"]["raw_audio_video_present"],
+        )
+        self.assertEqual(
+            self.status["stages"]["full_corpus_media_recovery"]["queued_item_count"],
+            recovery_queue["item_count"],
+        )
         self.assertGreaterEqual(len(self.status["next_required_gates"]), 5)
         self.assertIn("effectiveness", self.status["claim_boundary"])
 

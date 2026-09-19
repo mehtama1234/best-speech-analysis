@@ -37,6 +37,11 @@ def main() -> int:
     parser.add_argument("--audio-dir", default="data/audio")
     parser.add_argument("--limit", type=int)
     parser.add_argument("--timeout", type=int, default=180)
+    parser.add_argument(
+        "--retry-failed",
+        action="store_true",
+        help="Retry sources with a recorded failed attempt; skipped by default.",
+    )
     args = parser.parse_args()
 
     queue = json.loads(Path(args.queue).read_text())
@@ -61,6 +66,11 @@ def main() -> int:
         if files_for(video_dir, video_id) and files_for(audio_dir, video_id):
             row.update({"video_status": "downloaded", "audio_status": "downloaded", "decision": "cached"})
             prior[video_id] = row
+            continue
+        if not args.retry_failed and (
+            str(row.get("video_status", "")).startswith("failed:")
+            or str(row.get("audio_status", "")).startswith("failed:")
+        ):
             continue
         candidates.append((video_id, url, row))
     if args.limit is not None:

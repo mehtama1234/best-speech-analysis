@@ -13,7 +13,12 @@ class FullCorpusMediaRecoveryQueueTests(unittest.TestCase):
         main()
         report = json.loads((ROOT / "research/full-corpus-media-recovery-queue.json").read_text())
         coverage = json.loads((ROOT / "research/full-corpus-media-coverage.json").read_text())
-        self.assertEqual(report["item_count"], coverage["counts"]["derived_features_only"] + coverage["counts"]["transcript_only_no_local_media"])
+        non_raw_count = sum(
+            count
+            for state, count in coverage["counts"].items()
+            if state != "raw_audio_video_present"
+        )
+        self.assertEqual(report["item_count"], non_raw_count)
         self.assertEqual(sum(report["counts"]["by_priority"].values()), report["item_count"])
         self.assertIn("does not prove", report["claim_boundary"])
 
