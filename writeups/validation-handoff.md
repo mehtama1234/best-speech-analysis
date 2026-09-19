@@ -150,11 +150,16 @@ Test whether learners can recognize, explain, transfer and safely bound all eigh
 
 ### listener_outcomes — 6 tasks
 
-Test listener comprehension and immediate recall of matched speech versions, separately from learner teachability and from claims about trust, persuasion or behavior.
+Test listener comprehension and immediate recall of matched speech versions,
+with a blind 0–2 score per task and an explicit accessibility/missingness flag,
+separately from learner teachability and from claims about trust, persuasion or
+behavior. Use the non-promotional summarizer only after the stimulus pairs are
+independently reviewed and locked.
 
-- Protocol: `research/listener-outcome-protocol.json`
-- Form: `writeups/listener-outcome-record.html`
-- Validator: `scripts/validate_listener_outcome_record.py`
+- Protocol: `research/communication-job-listener-outcome-protocol.json`
+- Form: `writeups/communication-job-listener-record.html`
+- Validator: `scripts/validate_communication_job_listener_record.py`
+- Summarizer: `scripts/summarize_communication_job_listener_records.py`
 - Status: `design_complete_not_run`
 - Does not establish: universal effectiveness, speaker intent
 

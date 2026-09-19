@@ -233,6 +233,18 @@
     "Do not require trauma, medical, political or personal disclosure.",
     "Minimize retention of recordings; obtain separate permission for recording."
   ],
+  "scoring_schema": {
+    "scale": "0-2",
+    "labels": {
+      "0": "not recalled, incorrect or not scorable",
+      "1": "partial or materially incomplete",
+      "2": "accurate and sufficiently complete"
+    },
+    "score_field_prefix": "score_",
+    "missing_value": null,
+    "missing_value_rule": "Use null only when the task was not feasible, not administered or was inaccessible; record the reason separately.",
+    "scorer_instruction": "Score against a pre-registered answer key while blind to condition where practical; do not score agreement, liking or trust."
+  },
   "record_schema": {
     "required": [
       "participant_code",
@@ -255,6 +267,10 @@
       1,
       2,
       null
+    ],
+    "accessibility_issue_values": [
+      "yes",
+      "no"
     ]
   },
   "record_form": "writeups/communication-job-listener-record.html",

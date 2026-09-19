@@ -58,8 +58,10 @@ The matching [mobile lesson payload](writeups/communication-job-mobile-lessons.m
 provides a compact six-step practice flow per job with explicit consent and
 accessibility boundaries; it is unrun.
 The [18-job listener protocol](writeups/communication-job-listener-outcome-protocol.md)
-separately defines matched controls, comprehension/recall measures and blinded
-scoring. Its [draft stimulus bank](writeups/communication-job-listener-stimuli-draft.md)
+separately defines matched controls, six comprehension/recall measures and
+controlled blind 0–2 task scoring with an explicit accessibility/missingness
+flag. Its [non-promotional summarizer](scripts/summarize_communication_job_listener_records.py)
+keeps local task results separate from effectiveness claims. Its [draft stimulus bank](writeups/communication-job-listener-stimuli-draft.md)
 contains one newly authored pair per job, pending independent matching and
 accessibility review; its [automated preflight](writeups/communication-job-stimuli-preflight.md)
 flags all 18 pairs for manual review, and no listener data exist.

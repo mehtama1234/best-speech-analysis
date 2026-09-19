@@ -24,7 +24,9 @@ class CommunicationJobListenerProtocolTests(unittest.TestCase):
         self.assertEqual(self.protocol["patterns"][0]["draft_stimulus_status"], "draft_requires_matching_readability_accessibility_and_safety_review")
         self.assertEqual(len(self.protocol["listener_tasks"]), 6)
         self.assertIn("trust", self.protocol["claim_boundary"])
+        self.assertEqual(self.protocol["scoring_schema"]["scale"], "0-2")
         self.assertIn("Download JSON record", self.html)
+        self.assertIn("score_main_point_recall", self.html)
 
     def test_validator_accepts_complete_synthetic_record_and_rejects_missing(self):
         record = {
@@ -34,10 +36,12 @@ class CommunicationJobListenerProtocolTests(unittest.TestCase):
                 "participant_code": "synthetic", "date": "2026-09-18", "protocol_version": "test",
                 "modality": "text", "stimulus_id": "synthetic-pair-01", "condition": "control",
                 "scorer_id_or_blind_code": "blind-1", "consent": True,
+                "accessibility_issue": "no",
             },
         }
         for task in self.protocol["listener_tasks"]:
             record["responses"][f"task_{task['task_id']}"] = "synthetic response"
+            record["responses"][f"score_{task['task_id']}"] = 2
         self.assertEqual(validate(record, self.protocol), [])
         incomplete = copy.deepcopy(record)
         del incomplete["responses"]["task_main_point_recall"]

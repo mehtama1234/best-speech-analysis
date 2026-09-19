@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate a communication-job listener record without scoring it."""
+"""Validate a communication-job listener record with controlled outcome scores."""
 
 from __future__ import annotations
 
@@ -25,6 +25,13 @@ def validate(record: dict, protocol: dict | None = None) -> list[str]:
     task_responses = {key[5:]: value for key, value in responses.items() if key.startswith("task_")}
     for task in protocol["listener_tasks"]:
         if not str(task_responses.get(task["task_id"], "")).strip(): errors.append(f"missing task response: {task['task_id']}")
+        score_key = f"score_{task['task_id']}"
+        score = responses.get(score_key, "__missing__")
+        if score == "__missing__": errors.append(f"missing task score: {task['task_id']}")
+        elif score not in protocol["record_schema"]["score_values"]:
+            errors.append(f"invalid task score: {task['task_id']}")
+    if responses.get("accessibility_issue") not in protocol["record_schema"]["accessibility_issue_values"]:
+        errors.append("accessibility_issue must be yes or no")
     return errors
 
 
