@@ -82,6 +82,9 @@ defines the evidence chain required before any lesson can be promoted.
 The [learner field guide](writeups/learner-field-guide.md) consolidates the
 18 communication jobs, repeatable forms, indexed phrase families, practice
 boundaries and delivery-inspection questions in one usable guide.
+The [seven-day learner path](writeups/learner-7-day-path.md) turns those jobs
+into a concrete sequence of short exercises, listener-restatement checks and
+revision prompts; it is a practice tool, not validation evidence.
 The [repeatable communication patterns guide](writeups/repeatable-communication-patterns.md)
 distills the provisional verbal moves, delivery-inspection prompts and practice
 loop across those jobs without presenting them as proven best practices.
