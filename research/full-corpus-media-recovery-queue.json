@@ -8,22 +8,22 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 229,
+  "item_count": 222,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 6,
-      "fixed_corpus_transcript_only": 223
+      "fixed_corpus_transcript_only": 216
     },
     "by_media_state": {
-      "audio_only": 1,
+      "audio_only": 3,
       "derived_features_only": 6,
-      "transcript_only_no_local_media": 219,
+      "transcript_only_no_local_media": 210,
       "video_only": 3
     },
     "by_video_status": {
       "downloaded": 3,
-      "failed:1": 20,
-      "not_attempted": 206
+      "failed:1": 23,
+      "not_attempted": 196
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -130,10 +130,10 @@
       "source_url": "https://www.youtube.com/watch?v=-Unkvng_jp8",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1253,18 +1253,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "SIQnLs6m5VM",
-      "title": "ENGLISH SPEECH | SHEREEN SALAMA: The Best Of You (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=SIQnLs6m5VM",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "SZR2nVKkcuI",
       "title": "ENGLISH SPEECH | THERESA MAY: Britain, the Great Meritocracy (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=SZR2nVKkcuI",
@@ -1349,18 +1337,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "U8iy5zvXhJc",
-      "title": "ENGLISH SPEECH | SHAKIRA: Education Changes the World (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=U8iy5zvXhJc",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "UCeY5YPd2I0",
       "title": "ENGLISH SPEECH | J.K. ROWLING: Ripple of Hope (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=UCeY5YPd2I0",
@@ -1412,24 +1388,12 @@
       "video_id": "VRMPjm1kG7g",
       "title": "ENGLISH SPEECH | CAROLINE GLEICH: Democracy Not For Sale (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=VRMPjm1kG7g",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "audio_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "VaOA7RUxOwc",
-      "title": "ENGLISH SPEECH | STAN LEE: Believe In Your Ideas (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=VaOA7RUxOwc",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1448,18 +1412,6 @@
       "video_id": "XVHd_UUTK-c",
       "title": "ENGLISH SPEECH | RO KHANNA: Epstein Files Transparency (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=XVHd_UUTK-c",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "XkZhzc7b4jg",
-      "title": "ENGLISH SPEECH | ARNOLD SCHWARZENEGGER: Help Others (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=XkZhzc7b4jg",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -1841,18 +1793,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "iStBvF0ALUc",
-      "title": "ENGLISH SPEECH | RONALD REAGAN: Tear Down This Wall! (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=iStBvF0ALUc",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "iV8Ixm_8aao",
       "title": "ENGLISH SPEECH | YURONG “LUANNA” JIANG: Shared Humanity (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=iV8Ixm_8aao",
@@ -1988,18 +1928,6 @@
       "video_id": "kesjJp7H5uE",
       "title": "ENGLISH SPEECH | PSY: Be Funny, Be You (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=kesjJp7H5uE",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "ksZpu1s1LV0",
-      "title": "ENGLISH SPEECH | MARK ZUCKERBERG: Find Your Purpose (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=ksZpu1s1LV0",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -2192,18 +2120,6 @@
       "video_id": "o4gEmLpxHHk",
       "title": "ENGLISH SPEECH | WILL SMITH: How to Face Fear (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=o4gEmLpxHHk",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "oFyh5YMmB80",
-      "title": "ENGLISH SPEECH | SCARLETT JOHANSSON: Take Time for Yourself (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=oFyh5YMmB80",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -2672,12 +2588,12 @@
       "video_id": "wjTGbS4JqXk",
       "title": "ENGLISH SPEECH | TIM COOK: Be a Builder (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=wjTGbS4JqXk",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "audio_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
