@@ -8,21 +8,20 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 45,
+  "item_count": 42,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 5,
-      "fixed_corpus_transcript_only": 40
+      "fixed_corpus_transcript_only": 37
     },
     "by_media_state": {
-      "audio_only": 2,
       "derived_features_only": 5,
       "transcript_only_no_local_media": 36,
-      "video_only": 2
+      "video_only": 1
     },
     "by_video_status": {
-      "downloaded": 2,
-      "failed:1": 43
+      "downloaded": 1,
+      "failed:1": 41
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -496,18 +495,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "udi37wMZVQ0",
-      "title": "🎧 ENGLISH PODCAST | Indira Gandhi: Resilience, Dialogue, and Legacy",
-      "source_url": "https://www.youtube.com/watch?v=udi37wMZVQ0",
-      "media_state": "audio_only",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "failed:1",
-      "audio_download_status": "downloaded",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "w7WoqBL57Fk",
       "title": "ENGLISH SPEECH | LAURENCE FISHBURNE: Keanu Reeves (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=w7WoqBL57Fk",
@@ -520,36 +507,12 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "wjTGbS4JqXk",
-      "title": "ENGLISH SPEECH | TIM COOK: Be a Builder (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=wjTGbS4JqXk",
-      "media_state": "audio_only",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "failed:1",
-      "audio_download_status": "downloaded",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "xY8HxfJPmNY",
       "title": "ENGLISH SPEECH | HALSEY: Be inconvenient (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=xY8HxfJPmNY",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "failed:1",
-      "audio_download_status": "failed:1",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "yizq7R0r7iQ",
-      "title": "ENGLISH SPEECH | WILL FERRELL: Trust Your Gut (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=yizq7R0r7iQ",
-      "media_state": "video_only",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "downloaded",
       "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
