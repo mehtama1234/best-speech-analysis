@@ -86,6 +86,8 @@ def main() -> int:
         "",
         "Do not copy a speaker’s identity, accent, personality, status performance or mannerism. Do not treat an emotional image, vocal intensity, proxy measurement, applause, popularity or repeated phrase as proof of truth, comprehension, persuasion or effectiveness. Keep source identity, recurrence, delivery interpretation, learner teachability and listener outcomes as separate gates.",
         "",
+        "For the cross-job synthesis of repeatable verbal moves and delivery-inspection questions, see [Repeatable communication patterns across the corpus](repeatable-communication-patterns.md).",
+        "",
         "For the complete evidence chain and promotion criteria, see [the end-to-end goal](end-to-end-goal.md) and [the validation handoff](validation-handoff.md).",
         "",
     ]
