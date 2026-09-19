@@ -28,6 +28,7 @@ def main() -> int:
     multimodal_expansion = load("research/multimodal-independent-review-workbook.json")
     catalog = load("research/corpus-findings-catalog.json")
     delivery_atlas = load("research/delivery-proxy-candidate-atlas.json")
+    blinded_packet = load("research/blinded-review-packet.json")
     report = {
         "schema_version": "1.0",
         "report_id": "validation-handoff",
@@ -48,6 +49,17 @@ def main() -> int:
             "validator": "scripts/validate_delivery_proxy_local_reviews.py",
             "summarizer": "scripts/summarize_delivery_proxy_local_reviews.py",
             "note": "Proxy-backed clips require human delivery review; measurements are not scores or effectiveness evidence.",
+        },
+        "blinded_review_entry": {
+            "packet": "research/blinded-review-packet.json",
+            "browser": "writeups/blinded-review-packet.html",
+            "private_key": "research/blinded-review-packet-key.json",
+            "export_validator": "scripts/validate_blinded_review_export.py",
+            "adjudication_reducer": "scripts/reduce_blinded_review_export.py",
+            "function_items": blinded_packet["gates"]["function"]["item_count"],
+            "recurrence_items": blinded_packet["gates"]["recurrence"]["item_count"],
+            "phrase_form_items": blinded_packet["gates"]["phrase_form"]["item_count"],
+            "note": "Send the browser form or machine packet without the private key. No human judgments are present.",
         },
         "review_gates": [
             {"id": "corpus_identity", "purpose": "Verify speaker, event, upload correspondence, source provenance and duplication status before recurrence denominators are used.", "items": identity["item_count"], "workbook": "research/corpus-identity-review-workbook.json", "form": "writeups/corpus-identity-review-workbook.html", "validator": "scripts/validate_corpus_identity_review.py", "summarizer": "scripts/summarize_corpus_identity_reviews.py", "independence": identity["independence_requirement"], "does_not_establish": ["function", "delivery effectiveness", "listener outcomes"]},
@@ -80,7 +92,8 @@ def main() -> int:
     catalog_path = Path(entry["catalog"]).name
     delivery_path = Path(delivery_entry["markdown"]).name
     delivery_browser = Path(delivery_entry["browser"]).name
-    lines = ["# Validation handoff", "", "Status: **instruments ready; no human records received**.", "", report["claim_boundary"], "", f"Start with the [seven-day learner path]({learner_path}) for practical drills. The [corpus findings catalog]({catalog_path}) currently routes {entry['videos_with_candidate_practice_job']} of 395 videos to one or more provisional practice jobs; {entry['videos_without_candidate_practice_job']} remain explicitly unclassified. This routing is heuristic discovery support, not proof that a pattern works.", "", f"For multimodal review, use the [delivery proxy candidate atlas]({delivery_path}) or its [searchable browser surface]({delivery_browser}): {delivery_entry['candidate_record_count']} transcript-linked clips across {delivery_entry['candidate_video_count']} videos. These are proxy-backed review candidates, not delivery scores or effectiveness evidence. Validate exports with `{delivery_entry['validator']}` and summarize them with `{delivery_entry['summarizer']}`; neither establishes independence.", "", "Before selecting examples, use the [corpus lesson inventory](corpus-lesson-index.html), [exact phrase-form inventory](corpus-phrase-form-inventory.html), [evidence bank](corpus-evidence-bank.html), [provisional cards](communication-job-cards.html), [delivery inventory](communication-job-delivery-inventory.md) and [shared evidence model](shared-evidence-model.md). These are discovery and routing surfaces; none is proof that a pattern works.", "", "## Independent review gates", ""]
+    blind_entry = report["blinded_review_entry"]
+    lines = ["# Validation handoff", "", "Status: **instruments ready; no human records received**.", "", report["claim_boundary"], "", f"Start with the [seven-day learner path]({learner_path}) for practical drills. The [corpus findings catalog]({catalog_path}) currently routes {entry['videos_with_candidate_practice_job']} of 395 videos to one or more provisional practice jobs; {entry['videos_without_candidate_practice_job']} remain explicitly unclassified. This routing is heuristic discovery support, not proof that a pattern works.", "", f"For multimodal review, use the [delivery proxy candidate atlas]({delivery_path}) or its [searchable browser surface]({delivery_browser}): {delivery_entry['candidate_record_count']} transcript-linked clips across {delivery_entry['candidate_video_count']} videos. These are proxy-backed review candidates, not delivery scores or effectiveness evidence. Validate exports with `{delivery_entry['validator']}` and summarize them with `{delivery_entry['summarizer']}`; neither establishes independence.", "", f"For label-blinded transcript review, send the [browser packet]({Path(blind_entry['browser']).name}) or machine packet `{blind_entry['packet']}` without the private key. It contains {blind_entry['function_items']} function, {blind_entry['recurrence_items']} recurrence and {blind_entry['phrase_form_items']} phrase-form items. Validate a returned export with `{blind_entry['export_validator']}`, then use `{blind_entry['adjudication_reducer']}` for adjudication input; no step promotes a finding automatically.", "", "Before selecting examples, use the [corpus lesson inventory](corpus-lesson-index.html), [exact phrase-form inventory](corpus-phrase-form-inventory.html), [evidence bank](corpus-evidence-bank.html), [provisional cards](communication-job-cards.html), [delivery inventory](communication-job-delivery-inventory.md) and [shared evidence model](shared-evidence-model.md). These are discovery and routing surfaces; none is proof that a pattern works.", "", "## Independent review gates", ""]
     for gate in report["review_gates"]:
         lines += [f"### {gate['id']} — {gate['items']} items", "", gate["purpose"], "", f"- Workbook: `{gate['workbook']}`", f"- Browser form: `{gate['form']}`", f"- Validator: `{gate['validator']}`"]
         if gate.get("summarizer"): lines.append(f"- Summarizer: `{gate['summarizer']}`")

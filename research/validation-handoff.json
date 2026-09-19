@@ -19,6 +19,17 @@
     "summarizer": "scripts/summarize_delivery_proxy_local_reviews.py",
     "note": "Proxy-backed clips require human delivery review; measurements are not scores or effectiveness evidence."
   },
+  "blinded_review_entry": {
+    "packet": "research/blinded-review-packet.json",
+    "browser": "writeups/blinded-review-packet.html",
+    "private_key": "research/blinded-review-packet-key.json",
+    "export_validator": "scripts/validate_blinded_review_export.py",
+    "adjudication_reducer": "scripts/reduce_blinded_review_export.py",
+    "function_items": 187,
+    "recurrence_items": 192,
+    "phrase_form_items": 50,
+    "note": "Send the browser form or machine packet without the private key. No human judgments are present."
+  },
   "review_gates": [
     {
       "id": "corpus_identity",

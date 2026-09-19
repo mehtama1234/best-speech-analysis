@@ -43,6 +43,16 @@ class ValidationHandoffTests(unittest.TestCase):
         self.assertIn("delivery-proxy-candidate-atlas.html", self.markdown)
         self.assertIn("validate_delivery_proxy_local_reviews.py", self.markdown)
 
+    def test_blinded_packet_is_in_handoff(self):
+        entry = self.report["blinded_review_entry"]
+        self.assertEqual(entry["function_items"], 187)
+        self.assertEqual(entry["recurrence_items"], 192)
+        self.assertEqual(entry["phrase_form_items"], 50)
+        for field in ("packet", "browser", "private_key", "export_validator", "adjudication_reducer"):
+            self.assertTrue((ROOT / entry[field]).is_file())
+        self.assertIn("blinded-review-packet.html", self.markdown)
+        self.assertIn("reduce_blinded_review_export.py", self.markdown)
+
 
 if __name__ == "__main__":
     unittest.main()
