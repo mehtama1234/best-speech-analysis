@@ -8,22 +8,22 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 198,
+  "item_count": 191,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 6,
-      "fixed_corpus_transcript_only": 192
+      "fixed_corpus_transcript_only": 185
     },
     "by_media_state": {
-      "audio_only": 6,
+      "audio_only": 8,
       "derived_features_only": 6,
-      "transcript_only_no_local_media": 183,
+      "transcript_only_no_local_media": 174,
       "video_only": 3
     },
     "by_video_status": {
       "downloaded": 3,
-      "failed:1": 28,
-      "not_attempted": 167
+      "failed:1": 31,
+      "not_attempted": 157
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -521,30 +521,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "A9fGG8gvE9U",
-      "title": "ENGLISH SPEECH | MANUSHI CHHILLAR: Women’s Empowerment (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=A9fGG8gvE9U",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "AFbZYgXCSY4",
-      "title": "ENGLISH SPEECH | KATE MIDDLETON: Catherine, Duchess of Cambridge (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=AFbZYgXCSY4",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "AYk3v6HV1D0",
       "title": "ENGLISH SPEECH | THIERRY HENRY: It’s Not Just a Game (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=AYk3v6HV1D0",
@@ -584,12 +560,12 @@
       "video_id": "Az2tYNXDcqs",
       "title": "ENGLISH SPEECH | PALKI SHARMA: Voice of Change (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=Az2tYNXDcqs",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "audio_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -797,18 +773,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "GVc4wTaczdY",
-      "title": "ENGLISH SPEECH | MALALA & TRUDEAU: Women's Empowerment (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=GVc4wTaczdY",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "GxWx22J0vZs",
       "title": "ENGLISH SPEECH | ZUCKERBERG & US SENATOR: Heated Showdown (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=GxWx22J0vZs",
@@ -872,18 +836,6 @@
       "video_id": "Jts9suWIDlU",
       "title": "Apocalypse Now | The Smell Of Napalm In The Morning | Starring Robert Duvall",
       "source_url": "https://www.youtube.com/watch?v=Jts9suWIDlU",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "Jye58Lh-UD0",
-      "title": "ENGLISH SPEECH | CHRIS EVANS: Be Present! (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=Jye58Lh-UD0",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -1625,18 +1577,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "g3xLEDJeU2E",
-      "title": "ENGLISH SPEECH | NICOLE KIDMAN: Be Curious (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=g3xLEDJeU2E",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "gkr57P0fwbI",
       "title": "ENGLISH SPEECH | ANNE HATHAWAY: Paid Family Leave (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=gkr57P0fwbI",
@@ -2045,18 +1985,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "r5-5nFa6oW0",
-      "title": "ENGLISH SPEECH | CHIMAMANDA NGOZI ADICHIE: Be Courageous (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=r5-5nFa6oW0",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "rOSqiOyy1tc",
       "title": "ENGLISH SPEECH | PRIYANKA CHOPRA: Power Of Choice (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=rOSqiOyy1tc",
@@ -2066,18 +1994,6 @@
       "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "rZ58eU07Ul4",
-      "title": "ENGLISH SPEECH | ROBERT DE NIRO: Next! (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=rZ58eU07Ul4",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -2134,10 +2050,10 @@
       "source_url": "https://www.youtube.com/watch?v=sjfKL5vYThs",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -2252,12 +2168,12 @@
       "video_id": "udi37wMZVQ0",
       "title": "🎧 ENGLISH PODCAST | Indira Gandhi: Resilience, Dialogue, and Legacy",
       "source_url": "https://www.youtube.com/watch?v=udi37wMZVQ0",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "audio_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
