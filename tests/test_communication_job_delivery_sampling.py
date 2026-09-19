@@ -35,6 +35,7 @@ class CommunicationJobDeliverySamplingTests(unittest.TestCase):
         page = (ROOT / "writeups/communication-job-delivery-sampling.html").read_text()
         self.assertIn("<video", page)
         self.assertIn("<audio", page)
+        self.assertEqual(page.count("../data/features/"), self.queue["item_count"])
 
     def test_validator_accepts_complete_synthetic_export_and_rejects_missing_observation(self):
         responses = {field: "synthetic" for field in self.queue["review_schema"]["required_session_fields"]}
