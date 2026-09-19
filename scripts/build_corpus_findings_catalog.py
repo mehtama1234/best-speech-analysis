@@ -90,8 +90,8 @@ def build() -> tuple[dict, str]:
     function_counts = Counter()
     relation_counts = Counter()
     for row in rows:
-        function_counts.update(x.get("function", x.get("label", "unlabelled")) for x in row["observed_functions"])
-        relation_counts.update(x.get("type", "unlabelled") for x in row["observed_relations"])
+        function_counts.update(x.get("function") or x.get("label") or "unlabelled" for x in row["observed_functions"])
+        relation_counts.update(x.get("type") or "unlabelled" for x in row["observed_relations"])
 
     result = {
         "schema_version": "1.0",
@@ -195,8 +195,14 @@ def build() -> tuple[dict, str]:
 
     lines += ["", "## Video-by-video findings (all 395 reviews)", "", "Every row below is a recorded observation, not an invented summary. Open the linked writeup and evidence IDs for the full context.", "", "| # | Video / writeup | Observed functions | Structural relations | Limits / next test |", "|---:|---|---|---|---|"]
     for i, row in enumerate(rows, 1):
-        fs = "; ".join(clip(x.get("function", x.get("label", "")), 90) for x in row["observed_functions"][:5]) or "none recorded"
-        rs = "; ".join(clip(x.get("type", ""), 70) for x in row["observed_relations"][:4]) or "none recorded"
+        fs = "; ".join(
+            clip(x.get("function") or x.get("label") or ("unlabelled: " + x.get("reason") if x.get("reason") else "unlabelled"), 120)
+            for x in row["observed_functions"][:5]
+        ) or "none recorded"
+        rs = "; ".join(
+            clip(x.get("type") or ("unlabelled: " + x.get("claim") if x.get("claim") else "unlabelled"), 100)
+            for x in row["observed_relations"][:4]
+        ) or "none recorded"
         lim = clip(" ".join(row["limits"][:2]), 180) if row["limits"] else clip(row.get("next_test") or "see writeup", 180)
         title = clip(row["title"], 90)
         lines.append(f"| {i} | [{title}](../{row['writeup']}) `{row['video_id']}` | {fs} | {rs} | {lim} |")
