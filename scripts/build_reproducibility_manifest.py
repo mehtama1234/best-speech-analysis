@@ -40,6 +40,7 @@ ARTIFACTS = [
     ("research/communication-job-counterexample-candidate-queue.json", "counterexample candidate routing queue"),
     ("writeups/communication-job-practice.html", "local 18-job practice surface"),
     ("writeups/end-to-end-goal.md", "end-to-end goal and definition of done"),
+    ("writeups/master-speech-learning-system.md", "master speech-learning system goal"),
     ("writeups/repeatable-communication-patterns.md", "cross-talk repeatable communication synthesis"),
     ("writeups/vertical-slice-01-reviewer-start-here.md", "vertical-slice reviewer execution handoff"),
     ("scripts/check_communication_job_delivery_browser.py", "delivery-review browser smoke test"),

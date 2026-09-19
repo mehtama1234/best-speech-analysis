@@ -1,5 +1,10 @@
 # Best Speech Analysis
 
+The complete project objective is written in the [master speech-learning system
+goal](writeups/master-speech-learning-system.md). It defines the 18
+communication jobs, repeatable verbal forms, delivery/nonverbal inspection,
+practice loop, validation gates and honest definition of done.
+
 New [Joe Biden victory speech full-context reading](writeups/full-context-address-279.md)
 completes the fixed transcript queue: all 171 retained captions / 1,809 stored
 queue words were reread. It studies how a speaker turns victory into stewardship,

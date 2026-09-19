@@ -2,6 +2,9 @@
 
 ## Objective
 
+For the single consolidated version of the project goal, see the [master
+speech-learning system](master-speech-learning-system.md).
+
 Turn the fixed speech corpus into a usable, evidence-bounded learning system
 that helps a learner choose a communication job, understand the words and
 speech structure that may serve it, inspect relevant vocal and nonverbal
