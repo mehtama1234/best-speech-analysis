@@ -23,6 +23,25 @@ not a ranking of speakers or a completed effectiveness study.
    then use the local practice log to record the wording, delivery mode,
    non-fit or safety issue and next revision.
 
+## Six moves worth trying first
+
+These are the most reusable cross-job hypotheses in the current corpus synthesis.
+They are practice candidates, not proven best practices:
+
+1. **Orient before detail:** situation → stake → route.
+2. **Answer, then frame:** direct answer → useful context → condition or limit.
+3. **Make the abstract inspectable:** claim → bounded example → interpretation → boundary.
+4. **Make change visible fairly:** earlier view → what changed → present view → genuine overlap.
+5. **Turn credit into responsibility:** contribution/problem → accountable actor → bounded action → support and consent.
+6. **Close with a retrievable point:** takeaway → next step or uncertainty → release the turn.
+
+For each move, write one sentence in your own words, deliver it twice while
+changing only one delivery choice, and ask a consenting listener for the
+takeaway, unresolved point and any pressure or burden. The [findings
+catalog](corpus-findings-catalog.md) contains the retained examples and
+boundaries; the [repeatable-patterns guide](repeatable-communication-patterns.md)
+explains the cross-job synthesis.
+
 ## Choose the right job
 
 | If you need to… | Start with… | Basic structure |
