@@ -17,6 +17,7 @@ Files:
 - Browser form to send: `writeups/blinded-review-packet.html`
 - Machine packet: `research/blinded-review-packet.json`
 - Internal key: `research/blinded-review-packet-key.json` (do not send)
+- Returned export validator: `scripts/validate_blinded_review_export.py`
 - Source workbooks remain the authoritative response schemas and validators.
 
 Review boundaries:

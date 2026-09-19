@@ -715,8 +715,8 @@
     {
       "path": "writeups/blinded-review-packet.md",
       "role": "label-blinded independent review instructions",
-      "sha256": "e05932603abe3bb8d0dbd5a4f7bf00a5a293f13d65fa159776144b6b56101ffe",
-      "bytes": 1362
+      "sha256": "7b5e885b5d99bbd9f9759a48840b2cc80914997846a7f6630c287be4e496242d",
+      "bytes": 1435
     },
     {
       "path": "writeups/blinded-review-packet.html",
@@ -727,14 +727,20 @@
     {
       "path": "scripts/build_blinded_review_packets.py",
       "role": "label-blinded independent review packet builder",
-      "sha256": "0b118b6430378f4d0efe93e853e82b8251238a9dcc77eec35318437bf1715821",
-      "bytes": 11493
+      "sha256": "263c320cddc3e2f87f3c5a94db2b1f2ff7132ecb327e95df1dedacd926496105",
+      "bytes": 11569
     },
     {
       "path": "scripts/validate_blinded_review_packet.py",
       "role": "label-blinded packet leakage validator",
       "sha256": "f48be6dcd62a1c1c25a07e3c68fd30d688a32839f07e5dd3be3e93e4c88a9f59",
       "bytes": 1749
+    },
+    {
+      "path": "scripts/validate_blinded_review_export.py",
+      "role": "blinded reviewer export completeness validator",
+      "sha256": "9a50e9e974f32cb8180d8af710f5496126e7769cf916dd23b1282b6fec9aa135",
+      "bytes": 2273
     }
   ]
 }

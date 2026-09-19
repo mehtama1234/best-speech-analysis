@@ -62,6 +62,9 @@ items before an outside reviewer sees them; its key stays separate for later
 adjudication.
 The accompanying [browser form](writeups/blinded-review-packet.html) exports
 reviewer metadata and uncertainty without exposing that key.
+Returned files can be checked with
+[`scripts/validate_blinded_review_export.py`](scripts/validate_blinded_review_export.py)
+before any adjudication occurs.
 The [practice-log contract](research/local-practice-log-contract.json) and
 [validator](scripts/validate_local_practice_log.py) check returned exports for
 their required fields and boundaries without scoring the learner or listener.
