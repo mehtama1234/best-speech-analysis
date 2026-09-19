@@ -13,6 +13,11 @@ library. The learner borrows a choice that may serve a situation; they do not
 borrow a speaker's identity, accent, status, personality, body language,
 trauma, biography or certainty.
 
+The concrete corpus reading surface is the [corpus findings catalog](corpus-findings-catalog.md).
+It contains the actual 395 video-by-video observations, 18 job-level examples,
+exact phrase forms, practice drills and evidence-linked boundaries produced so
+far; this master document defines the system around that material.
+
 ## What the system must preserve
 
 Every claim stays on its own evidence level:

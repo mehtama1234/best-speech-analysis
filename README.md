@@ -31,6 +31,10 @@ that phrase atlas by indexing the communication functions, structural
 relations, limits and next tests recorded in all 395 full-context reviews. It
 is a transcript-derived discovery surface, not a claim that those observations
 are recurring, effective or validated.
+The [corpus findings catalog](writeups/corpus-findings-catalog.md) is the
+practical reading surface: all 395 video findings, 18 usable speech jobs,
+timestamp-linked examples, exact phrase-form counts, copyable forms, practice
+drills, self-checks and non-fit boundaries in one place.
 The [provisional function taxonomy](writeups/corpus-function-taxonomy.md) adds
 shared comparison labels without deleting the original free-text functions;
 2,394 items remain explicitly unclassified for human review.
