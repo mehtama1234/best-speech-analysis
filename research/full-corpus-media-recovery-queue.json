@@ -8,22 +8,22 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 120,
+  "item_count": 111,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 5,
-      "fixed_corpus_transcript_only": 115
+      "fixed_corpus_transcript_only": 106
     },
     "by_media_state": {
       "audio_only": 10,
       "derived_features_only": 5,
-      "transcript_only_no_local_media": 96,
-      "video_only": 9
+      "transcript_only_no_local_media": 86,
+      "video_only": 10
     },
     "by_video_status": {
-      "downloaded": 8,
+      "downloaded": 9,
       "failed:1": 43,
-      "not_attempted": 69
+      "not_attempted": 59
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -137,30 +137,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "1DXo2fcfleY",
-      "title": "ENGLISH SPEECH | SARA ALI KHAN: Be Your Best Self (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=1DXo2fcfleY",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "1EPechcSwE0",
-      "title": "ENGLISH SPEECH | SNEHA DUBEY: India vs Pakistan at the UN (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=1EPechcSwE0",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "1c4QHf5Ul3c",
       "title": "ENGLISH SPEECH | TOM HANKS: Fear or Faith? (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=1c4QHf5Ul3c",
@@ -176,18 +152,6 @@
       "video_id": "1viYHfNj3Bk",
       "title": "ENGLISH SPEECH | AKASH BANERJEE: India’s Path (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=1viYHfNj3Bk",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "2wf1qE7AC8Y",
-      "title": "ENGLISH SPEECH | CARA DELEVINGNE: Battling Depression (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=2wf1qE7AC8Y",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -260,18 +224,6 @@
       "video_id": "74ZgwDcjeGc",
       "title": "ENGLISH SPEECH | LIONEL MESSI: Heartfelt Farewell Speech (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=74ZgwDcjeGc",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "76ZHvFMtVEw",
-      "title": "ENGLISH SPEECH | JESSICA CHASTAIN: Breaking the Cycle (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=76ZHvFMtVEw",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -641,18 +593,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "MvJSyU_zuLY",
-      "title": "ENGLISH SPEECH | BTS: Speak Yourself (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=MvJSyU_zuLY",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "NSiR8FKsAnA",
       "title": "ENGLISH SPEECH | SAMANTHA & SADHGURU: Why is life unfair? (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=NSiR8FKsAnA",
@@ -692,12 +632,12 @@
       "video_id": "PwQrtzi8ozc",
       "title": "ENGLISH SPEECH | MERYL STREEP: Stand Up and Speak Up (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=PwQrtzi8ozc",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "video_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "downloaded",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -818,18 +758,6 @@
       "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "Zw2uMn3KxSE",
-      "title": "ENGLISH SPEECH | ANGELINA & SALMA: Without Blood (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=Zw2uMn3KxSE",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1157,18 +1085,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "n5Pv6QTvzos",
-      "title": "Vacation - Clark's Quest For Fun",
-      "source_url": "https://www.youtube.com/watch?v=n5Pv6QTvzos",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "nIwU-9ZTTJc",
       "title": "ENGLISH SPEECH | EMMA WATSON: Gender Equality (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=nIwU-9ZTTJc",
@@ -1208,18 +1124,6 @@
       "video_id": "pRIy6xE9ONQ",
       "title": "ENGLISH SPEECH | ANNE HATHAWAY: Don't Make Us Wait (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=pRIy6xE9ONQ",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "qHc3FY9il1s",
-      "title": "ENGLISH SPEECH | MARTIN LUTHER KING JR.: I Have a Dream! (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=qHc3FY9il1s",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -1286,18 +1190,6 @@
       "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "suuoQq8Rfq8",
-      "title": "Shashi Tharoor: Choose Purpose Over Convenience",
-      "source_url": "https://www.youtube.com/watch?v=suuoQq8Rfq8",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
