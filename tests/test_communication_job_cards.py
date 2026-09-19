@@ -20,6 +20,8 @@ class CommunicationJobCardTests(unittest.TestCase):
             self.assertTrue(card["mechanism"])
             self.assertTrue(card["practice"])
             self.assertTrue(card["non_fit"])
+            self.assertIn("phrase_forms", card)
+            self.assertIn("phrase_form_coverage_status", card)
             self.assertEqual(card["validation"]["learner_check"], "not_run")
             self.assertIn("delivery_evidence_status", card)
             self.assertEqual(len(card["delivery_observations"]), 2)

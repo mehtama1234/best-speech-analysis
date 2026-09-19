@@ -12,6 +12,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **Repeatable form:** Name the room or question; state why it matters; preview the route.
 
+**Indexed exact forms:** No direct exact-form family match indexed. (`no_direct_family_match`)
+
 **Recurrence inventory:** 90 records across 79 videos.
 
 **Practice:** Open the same two-minute explanation with context, then without it; ask a listener what they think the talk is for.
@@ -29,6 +31,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 **Mechanism hypothesis:** Hypothesis: a bounded close can compress the route and give the listener a retrievable takeaway, but repetition alone is not evidence of understanding.
 
 **Repeatable form:** Return to the point; name the limit or next step; release the turn.
+
+**Indexed exact forms:** so the, ultimately, the point is, what matters, in short, the lesson, in conclusion (`indexed_family_match`)
 
 **Recurrence inventory:** 124 records across 111 videos.
 
@@ -48,6 +52,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **Repeatable form:** Ask one specific question; give context; allow a genuine answer or opt-out.
 
+**Indexed exact forms:** ?, how, why, can we, what if (`indexed_family_match`)
+
 **Recurrence inventory:** 141 records across 82 videos.
 
 **Practice:** Replace a broad question with a specific, answerable one and compare the next turn.
@@ -65,6 +71,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 **Mechanism hypothesis:** Hypothesis: naming the frame and then answering can reduce mismatch between what was asked and what the listener needs, but reframing can also evade the question.
 
 **Repeatable form:** Answer the literal point; state a useful frame if needed; give the bounded answer.
+
+**Indexed exact forms:** No direct exact-form family match indexed. (`no_direct_family_match`)
 
 **Recurrence inventory:** 34 records across 31 videos.
 
@@ -84,6 +92,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **Repeatable form:** Give a bounded scene; say what it changed or illustrates; state what it cannot prove.
 
+**Indexed exact forms:** i was, when i, years ago, i remember, one day, my first, growing up (`indexed_family_match`)
+
 **Recurrence inventory:** 184 records across 121 videos.
 
 **Practice:** Tell a 45-second event, then name the narrow lesson and one limit.
@@ -101,6 +111,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 **Mechanism hypothesis:** Hypothesis: a concrete case can make an abstract claim inspectable; returning to the claim helps distinguish illustration from evidence.
 
 **Repeatable form:** State the claim; give one representative case; return to the claim and its evidence boundary.
+
+**Indexed exact forms:** for example, such as, for instance, one example (`indexed_family_match`)
 
 **Recurrence inventory:** 75 records across 60 videos.
 
@@ -120,6 +132,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **Repeatable form:** Name the earlier view; identify what changed; state the present view and remaining overlap.
 
+**Indexed exact forms:** but, used to, now i, instead, however, rather than, on the other hand (`indexed_family_match`)
+
 **Recurrence inventory:** 87 records across 72 videos.
 
 **Practice:** Use ‘I used to think X; Y changed the question; now I think Z,’ then test whether the distinction is fair.
@@ -137,6 +151,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 **Mechanism hypothesis:** Hypothesis: an explicit frame correction can prevent downstream reasoning from inheriting a false premise, but it can feel evasive if the original concern is ignored.
 
 **Repeatable form:** Acknowledge the starting frame; explain the correction; answer the more useful question.
+
+**Indexed exact forms:** No direct exact-form family match indexed. (`no_direct_family_match`)
 
 **Recurrence inventory:** 74 records across 61 videos.
 
@@ -156,6 +172,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **Repeatable form:** Mark the error; replace it plainly; continue without over-explaining.
 
+**Indexed exact forms:** No direct exact-form family match indexed. (`no_direct_family_match`)
+
 **Recurrence inventory:** 15 records across 14 videos.
 
 **Practice:** Record a short answer with one intentional error and repair it in one sentence.
@@ -173,6 +191,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 **Mechanism hypothesis:** Hypothesis: an explicit qualifier helps locate certainty and revision conditions, but vague hedging can hide the claim rather than calibrate it.
 
 **Repeatable form:** State the main claim; name its evidence status or condition; say what would change it.
+
+**Indexed exact forms:** i think, maybe, perhaps, i'm not sure, it depends, not necessarily, to some extent (`indexed_family_match`)
 
 **Recurrence inventory:** 111 records across 83 videos.
 
@@ -192,6 +212,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **Repeatable form:** Name the term; give its plain meaning; show one example and one boundary.
 
+**Indexed exact forms:** is when, means that, in other words, what i mean, the definition, defined as (`indexed_family_match`)
+
 **Recurrence inventory:** 60 records across 50 videos.
 
 **Practice:** Define a technical term for a newcomer in 20 seconds, then ask them to use it in a new sentence.
@@ -209,6 +231,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 **Mechanism hypothesis:** Hypothesis: a signposted transition lowers navigation cost by showing how the next section connects, but too many labels can make speech mechanical.
 
 **Repeatable form:** Close the current point; name the relationship; enter the next point.
+
+**Indexed exact forms:** No direct exact-form family match indexed. (`no_direct_family_match`)
 
 **Recurrence inventory:** 92 records across 74 videos.
 
@@ -228,6 +252,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **Repeatable form:** Introduce a meaningful anchor; return to it with a new application; avoid merely repeating it.
 
+**Indexed exact forms:** No direct exact-form family match indexed. (`no_direct_family_match`)
+
 **Recurrence inventory:** 34 records across 32 videos.
 
 **Practice:** Use one image at the opening and return to it at the close with a changed implication.
@@ -245,6 +271,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 **Mechanism hypothesis:** Hypothesis: self-directed or situational humor may lower social pressure and make a difficult turn more approachable, but context and power determine risk.
 
 **Repeatable form:** Use lightness about your own situation or the shared setting; return clearly to the point.
+
+**Indexed exact forms:** No direct exact-form family match indexed. (`no_direct_family_match`)
 
 **Recurrence inventory:** 28 records across 23 videos.
 
@@ -264,6 +292,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **Repeatable form:** Name the contribution; connect it to the result; state what remains owed or unfinished.
 
+**Indexed exact forms:** No direct exact-form family match indexed. (`no_direct_family_match`)
+
 **Recurrence inventory:** 81 records across 58 videos.
 
 **Practice:** Replace generic thanks with one observable contribution and its consequence.
@@ -281,6 +311,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 **Mechanism hypothesis:** Hypothesis: naming action, owner, time horizon and limit can make a request evaluable, but a request is not proof that the action is feasible or effective.
 
 **Repeatable form:** Name the problem; offer a specific action and responsible actor; state the limit and consent path.
+
+**Indexed exact forms:** don't, you can, let's, do not, we need to, join us, take action (`indexed_family_match`)
 
 **Recurrence inventory:** 85 records across 69 videos.
 
@@ -300,6 +332,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 
 **Repeatable form:** State the stake; show the mechanism; name tradeoffs and accountable actors; invite a bounded choice.
 
+**Indexed exact forms:** No direct exact-form family match indexed. (`no_direct_family_match`)
+
 **Recurrence inventory:** 66 records across 54 videos.
 
 **Practice:** Make one advocacy claim with evidence status, opposing concern, responsible actor and review point.
@@ -317,6 +351,8 @@ These cards organize transcript-derived observations into practice hypotheses. T
 **Mechanism hypothesis:** Hypothesis: an explicit value frame can help a listener understand why a detail matters, but moral language can overrule evidence or disagreement.
 
 **Repeatable form:** Describe the event; name the value it raises; distinguish interpretation from verified fact.
+
+**Indexed exact forms:** No direct exact-form family match indexed. (`no_direct_family_match`)
 
 **Recurrence inventory:** 92 records across 71 videos.
 

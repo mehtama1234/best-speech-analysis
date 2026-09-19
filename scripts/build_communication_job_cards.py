@@ -233,6 +233,8 @@ def example_quality(record: dict) -> tuple[int, int, int]:
 def build(root: Path | None = None) -> dict:
     root = root or Path(__file__).resolve().parents[1]
     bank = json.loads((root / "research/corpus-evidence-bank.json").read_text())
+    learner = json.loads((root / "research/communication-job-learner-check.json").read_text())
+    learner_by_job = {row["canonical_job"]: row for row in learner["cards"]}
     delivery_by_job = load_delivery_items(root)
     by_job = defaultdict(list)
     for record in bank["records"]:
@@ -279,6 +281,8 @@ def build(root: Path | None = None) -> dict:
                 "denominator_status": "inventory_counts_not_effectiveness_denominators",
             },
             "exact_examples": selected,
+            "phrase_forms": learner_by_job[job]["phrase_forms"],
+            "phrase_form_coverage_status": learner_by_job[job]["phrase_form_coverage_status"],
             "delivery_evidence_status": "internal_bounded_review_not_independent" if delivery_by_job[job] else "no_aligned_internal_sample_for_this_job",
             "delivery_observations": delivery_by_job[job],
             "validation": {
@@ -306,7 +310,8 @@ def write_outputs(root: Path | None = None) -> dict:
     (root / "research/communication-job-cards.json").write_text(json.dumps(result, indent=2, ensure_ascii=False) + "\n")
     lines = ["# Provisional communication-job cards", "", "Status: **transcript-derived practice hypotheses; not validated**.", "", result["claim_boundary"], ""]
     for card in result["cards"]:
-        lines += [f"## `{card['canonical_job']}`", "", f"**Problem:** {card['problem']}", "", f"**Mechanism hypothesis:** {card['mechanism']}", "", f"**Repeatable form:** {card['form']}", "", f"**Recurrence inventory:** {card['recurrence']['function_record_count']} records across {card['recurrence']['video_count']} videos.", "", f"**Practice:** {card['practice']}", "", f"**Self-check:** {card['self_check']}", "", f"**When not to use:** {card['non_fit']}", "", f"**Delivery evidence:** {len(card['delivery_observations'])} internally reviewed sample(s); status `{card['delivery_evidence_status']}`.", ""]
+        forms = ", ".join(form["phrase_form"] for form in card["phrase_forms"]) or "No direct exact-form family match indexed."
+        lines += [f"## `{card['canonical_job']}`", "", f"**Problem:** {card['problem']}", "", f"**Mechanism hypothesis:** {card['mechanism']}", "", f"**Repeatable form:** {card['form']}", "", f"**Indexed exact forms:** {forms} (`{card['phrase_form_coverage_status']}`)", "", f"**Recurrence inventory:** {card['recurrence']['function_record_count']} records across {card['recurrence']['video_count']} videos.", "", f"**Practice:** {card['practice']}", "", f"**Self-check:** {card['self_check']}", "", f"**When not to use:** {card['non_fit']}", "", f"**Delivery evidence:** {len(card['delivery_observations'])} internally reviewed sample(s); status `{card['delivery_evidence_status']}`.", ""]
     (root / "writeups/communication-job-cards.md").write_text("\n".join(lines))
     cards_html = []
     for card in result["cards"]:
@@ -315,7 +320,8 @@ def write_outputs(root: Path | None = None) -> dict:
             for example in card["exact_examples"]
         )
         delivery = "".join(f"<li><a href='{html.escape(item['source_url'], quote=True)}'>{html.escape(item['title'])}</a> — {html.escape(item['transcript_text'])}<br><small>{html.escape(item['frame_observation'])} Alignment: {html.escape(str(item['alignment_decision']))}. Audio/visual fields are bounded proxies; no intent or effect inferred.</small></li>" for item in card['delivery_observations'])
-        cards_html.append(f"<article class='card' data-search='{html.escape((card['canonical_job']+' '+card['problem']).lower(), quote=True)}'><h2>{html.escape(card['canonical_job'])}</h2><p><strong>Problem:</strong> {html.escape(card['problem'])}</p><p><strong>Mechanism hypothesis:</strong> {html.escape(card['mechanism'])}</p><p><strong>Repeatable form:</strong> {html.escape(card['form'])}</p><p><strong>Inventory:</strong> {card['recurrence']['function_record_count']} records / {card['recurrence']['video_count']} videos</p><p><strong>Practice:</strong> {html.escape(card['practice'])}</p><p><strong>Self-check:</strong> {html.escape(card['self_check'])}</p><p><strong>When not to use:</strong> {html.escape(card['non_fit'])}</p><details><summary>Exact examples</summary><ol>{examples}</ol></details><details><summary>Internal delivery observations ({len(card['delivery_observations'])})</summary><ul>{delivery or '<li>No aligned internal sample.</li>'}</ul></details></article>")
+        forms = ", ".join(html.escape(form["phrase_form"]) for form in card["phrase_forms"]) or "No direct exact-form family match indexed."
+        cards_html.append(f"<article class='card' data-search='{html.escape((card['canonical_job']+' '+card['problem']).lower(), quote=True)}'><h2>{html.escape(card['canonical_job'])}</h2><p><strong>Problem:</strong> {html.escape(card['problem'])}</p><p><strong>Mechanism hypothesis:</strong> {html.escape(card['mechanism'])}</p><p><strong>Repeatable form:</strong> {html.escape(card['form'])}</p><p><strong>Indexed exact forms:</strong> {forms} <small>({html.escape(card['phrase_form_coverage_status'])})</small></p><p><strong>Inventory:</strong> {card['recurrence']['function_record_count']} records / {card['recurrence']['video_count']} videos</p><p><strong>Practice:</strong> {html.escape(card['practice'])}</p><p><strong>Self-check:</strong> {html.escape(card['self_check'])}</p><p><strong>When not to use:</strong> {html.escape(card['non_fit'])}</p><details><summary>Exact examples</summary><ol>{examples}</ol></details><details><summary>Internal delivery observations ({len(card['delivery_observations'])})</summary><ul>{delivery or '<li>No aligned internal sample.</li>'}</ul></details></article>")
     browser = """<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Communication job cards</title><style>body{font:16px system-ui,sans-serif;max-width:1050px;margin:2rem auto;padding:0 1rem;color:#17202a}input{width:100%;box-sizing:border-box;padding:.7rem;font:inherit;margin:1rem 0 1.5rem}.notice{background:#fff4ce;padding:1rem;border-left:4px solid #b8860b}.card{border:1px solid #ccd3da;border-radius:8px;padding:1rem;margin:1rem 0}.card h2{margin:.1rem 0}blockquote{background:#f5f7f9;padding:.7rem;margin:.5rem 0}code{overflow-wrap:anywhere}</style><main><h1>Provisional communication-job cards</h1><div class="notice"><strong>Practice hypotheses, not proven best practices.</strong> All examples are transcript-derived; delivery, independent review, learner and listener gates remain visible.</div><label for="search">Search cards</label><input id="search" type="search" placeholder="e.g. question, contrast, story"><p id="count" aria-live="polite"></p>""" + "\n".join(cards_html) + """</main><script>const i=document.querySelector('#search'),c=[...document.querySelectorAll('.card')],n=document.querySelector('#count');function f(){let q=i.value.toLowerCase(),x=0;c.forEach(a=>{let s=!q||a.dataset.search.includes(q);a.hidden=!s;if(s)x++});n.textContent=`Showing ${x} of ${c.length} cards`}i.oninput=f;f()</script>"""
     (root / "writeups/communication-job-cards.html").write_text(browser)
     return result
