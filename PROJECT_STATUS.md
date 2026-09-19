@@ -129,6 +129,9 @@ not locked and no listener records exist.
 The [automated preflight](writeups/communication-job-stimuli-preflight.md)
 checks all 18 pairs for length, token overlap, target markers and safety flags;
 all 18 still require manual review, and these checks do not prove equivalence.
+The [stimulus review workbook](research/communication-job-listener-stimulus-review-workbook.html)
+is now the independent gate for proposition equivalence, readability, target
+isolation, accessibility, safety and blinding; all pairs remain unlocked.
 
 The generated [validation handoff](writeups/validation-handoff.md) consolidates
 the four independent-review gates plus learner and listener protocols, with

@@ -60,6 +60,8 @@ scoring. Its [draft stimulus bank](writeups/communication-job-listener-stimuli-d
 contains one newly authored pair per job, pending independent matching and
 accessibility review; its [automated preflight](writeups/communication-job-stimuli-preflight.md)
 flags all 18 pairs for manual review, and no listener data exist.
+The [stimulus review workbook](writeups/communication-job-listener-stimulus-review-workbook.html)
+provides the independent suitability gate; no pair is locked yet.
 The [corpus atlas browser](writeups/corpus-pattern-atlas.html) makes those
 videos searchable by phrase family, event split, evidence ID and candidate
 speech-function counts; it also filters by the heuristic candidate function

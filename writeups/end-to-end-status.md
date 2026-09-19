@@ -27,6 +27,7 @@ This dashboard reports artifact and validation status. It does not convert trans
 | Delivery measurement preflight | `reproducible_proxy_measurements_attached_manual_review_pending` | 36 samples / 32 aligned / 4 unmatched |
 | Communication-job curriculum | `18_job_provisional_curriculum_not_validated` | 18 integrated provisional lessons |
 | Communication-job mobile lessons | `mobile_payload_provisional_not_validated` | 18 lessons / 0 learner records |
+| Listener stimulus manual review | `manual_equivalence_review_pending` | 18 pairs / 0 completed / 0 locked |
 | Function review | `template_not_completed` | 187 queued / 0 completed |
 | Recurrence review | `template_not_completed` | 192 queued / 0 completed |
 | Delivery evidence | `raw_media_reconciled_manual_review_pending` | 29 raw-complete (8 without transcript) / 21 internal reviewed |

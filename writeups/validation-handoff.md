@@ -48,6 +48,9 @@ bank](communication-job-listener-stimuli-draft.md) is not yet that locked set.
 The [stimulus preflight](communication-job-stimuli-preflight.md) is only an
 automated screen; its 18 pairs still need independent content-equivalence,
 readability, accessibility and safety review.
+The [stimulus review workbook](communication-job-listener-stimulus-review-workbook.html)
+is the manual independent gate for those 18 pairs. It must be completed and
+adjudicated before any listener outcome record is accepted.
 
 The [communication-job counterexample workbook](communication-job-counterexample-workbook.html)
 requires five explicit checks for every provisional job: absence with speech

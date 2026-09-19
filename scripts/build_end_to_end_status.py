@@ -36,6 +36,7 @@ def main() -> int:
     delivery_measurements = load("research/communication-job-delivery-measurement-preflight.json")
     curriculum_index = load("research/communication-job-curriculum-index.json")
     mobile_lessons = load("research/communication-job-mobile-lessons.json")
+    stimulus_review = load("research/communication-job-listener-stimulus-review-workbook.json")
     media = load("research/multimodal-coverage-audit.json")
     media_independent = load("research/multimodal-independent-review-workbook.json")
     recurrence = load("research/corpus-recurrence-independent-review-workbook.json")
@@ -71,6 +72,7 @@ def main() -> int:
             "research/communication-job-delivery-measurement-preflight.json",
             "research/communication-job-curriculum-index.json",
             "research/communication-job-mobile-lessons.json",
+            "research/communication-job-listener-stimulus-review-workbook.json",
             "research/shared-lesson-cards.json", "research/shared-learner-check.json",
             "research/listener-outcome-protocol.json", "research/raw-media-only-visual-audit.json",
         ],
@@ -98,6 +100,7 @@ def main() -> int:
             "delivery_measurement_preflight": {"status": delivery_measurements["status"], "sample_count": delivery_measurements["item_count"], "matched_sample_count": delivery_measurements["matched_sample_count"], "unmatched_sample_count": delivery_measurements["unmatched_sample_count"], "source": "research/communication-job-delivery-measurement-preflight.json"},
             "communication_job_curriculum": {"status": curriculum_index["status"], "lesson_count": curriculum_index["lesson_count"], "source": "research/communication-job-curriculum-index.json"},
             "communication_job_mobile_lessons": {"status": mobile_lessons["status"], "lesson_count": mobile_lessons["lesson_count"], "completed_records": 0, "source": "research/communication-job-mobile-lessons.json"},
+            "listener_stimulus_manual_review": {"status": stimulus_review["status"], "pair_count": stimulus_review["item_count"], "completed_independent_reviews": 0, "locked_pairs": 0, "source": "research/communication-job-listener-stimulus-review-workbook.json"},
             "speech_function_candidate_review": {"status": functions["status"], "queued_item_count": functions["item_count"], "completed_independent_reviews": 0, "source": "research/corpus-function-independent-review-workbook.json"},
             "recurrence_candidate_review": {"status": recurrence["status"], "queued_item_count": recurrence["item_count"], "completed_independent_reviews": 0, "source": "research/corpus-recurrence-independent-review-workbook.json"},
             "delivery_evidence": {"status": media["status"], "selected_video_count": media["selected_video_count"], "raw_audio_video_present": media["raw_audio_video_present_count"], "raw_audio_video_with_transcript": media["raw_audio_video_with_transcript_count"], "raw_audio_video_without_transcript": media["raw_audio_video_without_transcript_count"], "internal_manual_reviews": media["internal_manual_review_count"], "raw_only_visual_audit_items": raw_only_visual["item_count"], "raw_only_visual_audit_status": raw_only_visual["status"], "independent_review_items": media_independent["item_count"], "completed_independent_reviews": 0, "source": "research/multimodal-coverage-audit.json"},
@@ -147,6 +150,7 @@ def main() -> int:
         f"| Delivery measurement preflight | `{delivery_measurements['status']}` | {delivery_measurements['item_count']} samples / {delivery_measurements['matched_sample_count']} aligned / {delivery_measurements['unmatched_sample_count']} unmatched |",
         f"| Communication-job curriculum | `{curriculum_index['status']}` | {curriculum_index['lesson_count']} integrated provisional lessons |",
         f"| Communication-job mobile lessons | `{mobile_lessons['status']}` | {mobile_lessons['lesson_count']} lessons / 0 learner records |",
+        f"| Listener stimulus manual review | `{stimulus_review['status']}` | {stimulus_review['item_count']} pairs / 0 completed / 0 locked |",
         f"| Function review | `{functions['status']}` | {functions['item_count']} queued / 0 completed |",
         f"| Recurrence review | `{recurrence['status']}` | {recurrence['item_count']} queued / 0 completed |",
         f"| Delivery evidence | `{media['status']}` | {media['raw_audio_video_present_count']} raw-complete ({media['raw_audio_video_without_transcript_count']} without transcript) / {media['internal_manual_review_count']} internal reviewed |",
