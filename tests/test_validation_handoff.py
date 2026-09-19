@@ -22,6 +22,15 @@ class ValidationHandoffTests(unittest.TestCase):
             self.assertTrue(gate["does_not_establish"])
         self.assertIn("Do not send credentials", self.markdown)
 
+    def test_learner_entry_links_resolve_from_writeups_directory(self):
+        entry = self.report["learner_entry"]
+        self.assertTrue((ROOT / entry["path"]).is_file())
+        self.assertTrue((ROOT / entry["catalog"]).is_file())
+        self.assertIn("(learner-7-day-path.md)", self.markdown)
+        self.assertIn("(corpus-findings-catalog.md)", self.markdown)
+        self.assertNotIn("(writeups/learner-7-day-path.md)", self.markdown)
+        self.assertNotIn("(writeups/corpus-findings-catalog.md)", self.markdown)
+
 
 if __name__ == "__main__":
     unittest.main()
