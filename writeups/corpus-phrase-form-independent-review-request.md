@@ -6,4 +6,5 @@ This review does not test delivery, speaker intent, audience outcomes, causality
 
 - Workbook: `research/corpus-phrase-form-independent-review-workbook.json`
 - Browser form: `writeups/corpus-phrase-form-independent-review-workbook.html`
-- Required export validator: to be added before any results are promoted.
+- Required export validator: `scripts/validate_corpus_phrase_form_review.py`
+- Disagreement comparator: `scripts/compare_corpus_phrase_form_reviews.py`

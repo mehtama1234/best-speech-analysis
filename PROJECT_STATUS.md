@@ -54,6 +54,10 @@ The separate [exact phrase-form independent-review workbook](research/corpus-phr
 now covers all 50 forms with sampled train/holdout contexts, exact-match,
 function, event-identity, duplication-risk and recurrence decisions. It is
 blank; no independent form judgments have been received.
+Its validator enforces the phrase-form-only boundary, and the
+[phrase-form comparator](scripts/compare_corpus_phrase_form_reviews.py)
+preserves disagreements and requires adjudication before inventory or
+recurrence denominators change.
 
 The [delivery evidence index](writeups/delivery-evidence-index.md) reconciles
 41 selected media items: 29 raw audio/video items, 21 raw items with retained

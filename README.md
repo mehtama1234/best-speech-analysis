@@ -80,6 +80,10 @@ The [exact phrase-form independent-review workbook](writeups/corpus-phrase-form-
 covers all 50 retrieved forms with sampled source contexts and blank
 independent decisions for exactness, function, event identity, duplication
 risk and recurrence eligibility; it is not validation data.
+Its validator preserves the phrase-form-only/non-outcome boundary, and the
+[phrase-form comparator](scripts/compare_corpus_phrase_form_reviews.py)
+retains field-level disagreements and requires adjudication before the phrase
+inventory or recurrence denominators change.
 The [delivery evidence index](writeups/delivery-evidence-index.md) keeps raw
 media, derived features, internal observations and independent observations
 separate; it currently records 21 internal and zero independent observations.
