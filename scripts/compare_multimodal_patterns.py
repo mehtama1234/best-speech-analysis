@@ -32,6 +32,11 @@ def summary(values: list[float]) -> dict:
     }
 
 
+def safe_mean(values: list[float]) -> float | None:
+    """Return no measurement when a segment has no valid values for a metric."""
+    return round(mean(values), 5) if values else None
+
+
 def main() -> int:
     root = Path(__file__).resolve().parents[1]
     per_label_video: dict[str, dict[str, list[dict]]] = defaultdict(lambda: defaultdict(list))
@@ -59,7 +64,7 @@ def main() -> int:
         video_rows = {}
         for video_id, rows in by_video.items():
             video_rows[video_id] = {
-                metric: mean([row[metric] for row in rows if row.get(metric) is not None])
+                metric: safe_mean([row[metric] for row in rows if row.get(metric) is not None])
                 for metric in METRICS
             }
             video_rows[video_id]["segment_count"] = len(rows)
