@@ -39,6 +39,8 @@ class CorpusLearnerCardInventoryTests(unittest.TestCase):
         self.assertIn("Exact phrase handles", self.html)
         self.assertIn("Start a practice card", self.html)
         self.assertIn("Next visible card", self.html)
+        self.assertIn("Save current practice", self.html)
+        self.assertIn("Download practice log", self.html)
 
 
 if __name__ == "__main__":

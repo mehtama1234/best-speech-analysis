@@ -27,6 +27,9 @@ nonverbal interpretations or delivery-effectiveness evidence.
 The browser inventory now includes a study mode for selecting and advancing
 through filtered practice cards, while keeping evidence, phrase handles and
 non-fit boundaries visible.
+It can also export local practice records with the learner's adaptation,
+delivery mode, listener restatement, non-fit note and revision. These records
+are a ready-to-use protocol surface, not completed learner validation.
 The [video-learning itinerary](writeups/corpus-video-learning-itinerary.html)
 now gives each of the 395 reviewed videos one selected starting lesson without
 claiming that the selection is the most important, representative or effective
