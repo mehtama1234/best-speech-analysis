@@ -8,22 +8,22 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 71,
+  "item_count": 65,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 5,
-      "fixed_corpus_transcript_only": 66
+      "fixed_corpus_transcript_only": 60
     },
     "by_media_state": {
-      "audio_only": 11,
+      "audio_only": 12,
       "derived_features_only": 5,
-      "transcript_only_no_local_media": 44,
+      "transcript_only_no_local_media": 37,
       "video_only": 11
     },
     "by_video_status": {
       "downloaded": 10,
-      "failed:1": 51,
-      "not_attempted": 10
+      "failed:1": 54,
+      "not_attempted": 1
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -233,30 +233,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "AYk3v6HV1D0",
-      "title": "ENGLISH SPEECH | THIERRY HENRY: It’s Not Just a Game (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=AYk3v6HV1D0",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "Amv2iIoXsNw",
-      "title": "ENGLISH SPEECH | BERNIE SANDERS & AOC: Stop AI Data Centers (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=Amv2iIoXsNw",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "AvUF24Z8iFA",
       "title": "ENGLISH SPEECH | MARK CUBAN: Entrepreneurship Mindset (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=AvUF24Z8iFA",
@@ -425,18 +401,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "QwSGn8A-nd0",
-      "title": "ENGLISH SPEECH | SELENA GOMEZ: Mental Health Awareness (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=QwSGn8A-nd0",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "RaLXDIJW3_M",
       "title": "ENGLISH SPEECH | MATT DAMON: What We Do Matters (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=RaLXDIJW3_M",
@@ -446,30 +410,6 @@
       "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "SZR2nVKkcuI",
-      "title": "ENGLISH SPEECH | THERESA MAY: Britain, the Great Meritocracy (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=SZR2nVKkcuI",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "T6cqSxGyomI",
-      "title": "ENGLISH SPEECH | JENNIFER LOPEZ: You Can't Stop (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=T6cqSxGyomI",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -524,12 +464,12 @@
       "video_id": "_jbF_GsMOUE",
       "title": "ENGLISH SPEECH | VICKY KAUSHAL: From Engineering to Acting (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=_jbF_GsMOUE",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "audio_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -682,10 +622,10 @@
       "source_url": "https://www.youtube.com/watch?v=m_iKg7nutNY",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -701,27 +641,15 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "n2RrhOO_jW0",
-      "title": "ENGLISH SPEECH | RDJ & HEMSWORTH: Walk of Fame  (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=n2RrhOO_jW0",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "o4gEmLpxHHk",
       "title": "ENGLISH SPEECH | WILL SMITH: How to Face Fear (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=o4gEmLpxHHk",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
