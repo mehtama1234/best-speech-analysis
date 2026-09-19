@@ -197,7 +197,7 @@ maps the definition-of-done requirements to current evidence and reports nine
 open requirements; it does not count a workbook or protocol as completed human
 evidence.
 The [reproducibility manifest](research/reproducibility-manifest.json) hashes
-27 authoritative artifacts and records 395 full-context reviews, 102,816
+34 authoritative artifacts and records 395 full-context reviews, 102,816
 inspected captions and 395 inventory videos; its validator detects stale output
 without changing the incomplete research status.
 The [external review gate index](writeups/external-review-gate-index.md) is the
