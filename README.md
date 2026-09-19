@@ -141,6 +141,9 @@ learner and listener validation statuses explicit. The [end-to-end status
 dashboard](writeups/end-to-end-status.md) consolidates current counts and
 remaining validation gates without treating generated instruments as completed
 studies.
+The [end-to-end acceptance matrix](writeups/end-to-end-acceptance-matrix.md)
+maps each definition-of-done requirement to an authoritative artifact and keeps
+the nine open promotion/testing requirements visible.
 The [dashboard validator](scripts/validate_end_to_end_status.py) reconciles its
 counts against the underlying artifacts before a checkpoint is trusted.
 The browser also renders exact examples, counterexamples and the validation
