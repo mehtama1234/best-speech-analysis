@@ -134,6 +134,9 @@ ARTIFACTS = [
     ("scripts/reduce_blinded_review_export.py", "blinded reviewer adjudication input reducer"),
     ("scripts/build_blinded_adjudication_form.py", "blinded review adjudication browser builder"),
     ("scripts/validate_blinded_adjudication_export.py", "blinded review adjudication export validator"),
+    ("research/corpus-learning-coverage-audit.json", "per-video learner-surface coverage audit"),
+    ("writeups/corpus-learning-coverage-audit.md", "per-video learner-surface coverage report"),
+    ("scripts/build_corpus_learning_coverage_audit.py", "per-video learner-surface coverage builder"),
 ]
 
 

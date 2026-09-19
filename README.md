@@ -80,6 +80,9 @@ their required fields and boundaries without scoring the learner or listener.
 The [video-learning itinerary](writeups/corpus-video-learning-itinerary.html)
 selects one bounded starting lesson for each of the 395 reviewed videos, with
 exact evidence, a practice move, self-check and sequence bridge where recorded.
+The [per-video coverage audit](writeups/corpus-learning-coverage-audit.md)
+reconciles all 395 videos against the 4,016 function cards, 2,800 sequence
+cards, exact evidence, phrase handles and delivery-inspection layers.
 It also attaches nearest local audio, face/scene and pose proxy fields for 357
 videos; 38 retain explicit no-local-proxy status.
 It attaches 555 exact phrase-form retrieval handles across 189 videos where

@@ -21,6 +21,10 @@ listener evidence remain separate gates.
 The inventory now adds 8,062 exact phrase handles matched inside retained card
 evidence across 2,289 function cards and 1,812 sequence cards. They are
 retrieval aids for rereading wording, not scripts or effectiveness evidence.
+The [per-video coverage audit](corpus-learning-coverage-audit.md) reconciles
+all 395 videos to their function/sequence cards, exact evidence, phrase
+handles and delivery-inspection layers; it reports zero coverage gaps while
+preserving the separate validation gates.
 The cards also carry nearest local audio, face/scene and pose proxy fields for
 6,308 cards; these are aligned navigation measurements where available, not
 nonverbal interpretations or delivery-effectiveness evidence.
