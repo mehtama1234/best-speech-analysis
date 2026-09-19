@@ -88,6 +88,11 @@ These are practical problems, not personality types:
 The [learner field guide](learner-field-guide.md) contains the card-level
 examples, phrase families, practice prompts and non-fit warnings.
 
+The [delivery learning guide](delivery-learning-guide.md) provides the bounded
+vocal, visual, setting and accessibility practice layer. It is deliberately
+not a catalog of validated nonverbal meanings: the current delivery evidence
+is partial and independent review is still pending.
+
 ## The recurring cross-talk moves
 
 Across jobs, the provisional synthesis groups the corpus into eight reusable

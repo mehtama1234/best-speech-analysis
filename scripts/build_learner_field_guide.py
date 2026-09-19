@@ -23,6 +23,8 @@ def main() -> int:
         "",
         "Use this guide to choose a communication job, inspect examples, adapt a form and rehearse it. The cards are transcript-derived hypotheses. Exact phrase families show where wording was retrieved; they do not prove that the wording works, that a speaker intended a particular effect, or that repetition equals effectiveness.",
         "",
+        "For vocal, visual, setting and accessibility practice, use the [delivery learning guide](delivery-learning-guide.md). It separates what can be observed from what still requires independent review and listener testing.",
+        "",
         "## The repeatable learning loop",
         "",
         "1. **Name the job.** Are you opening, explaining, asking, disagreeing, repairing, qualifying, closing or doing something else?",
