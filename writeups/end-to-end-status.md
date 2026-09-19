@@ -24,9 +24,9 @@ This dashboard reports artifact and validation status. It does not convert trans
 | Counterexample candidate queue | `candidate_queue_not_independently_reviewed` | 90 routed / 54 source-linked / 0 confirmed |
 | Cross-job comparison | `transcript_video_level_comparison_not_independently_validated` | 18 jobs / 153 pairs / 394 eligible videos |
 | Communication-job delivery sampling | `queue_built_manual_observation_pending` | 18 jobs / 36 samples / 35 raw A/V / 0 observations |
-| Internal midpoint-frame delivery observations | `internal_midpoint_frame_observations_complete_independent_review_pending` | 32 raw A/V frames / not independent / manual vocal listening not performed |
+| Internal midpoint-frame delivery observations | `internal_midpoint_frame_observations_complete_independent_review_pending` | 35 raw A/V frames / not independent / manual vocal listening not performed |
 | Corpus identity review | `metadata_preflight_independent_review_pending` | 395 queue items / 480 registry rows / 0 completed |
-| Delivery measurement preflight | `reproducible_proxy_measurements_attached_manual_review_pending` | 36 samples / 32 aligned / 4 unmatched |
+| Delivery measurement preflight | `reproducible_proxy_measurements_attached_manual_review_pending` | 36 samples / 35 aligned / 1 unmatched |
 | Communication-job curriculum | `18_job_provisional_curriculum_not_validated` | 18 integrated provisional lessons |
 | Communication-job mobile lessons | `mobile_payload_provisional_not_validated` | 18 lessons / 0 learner records |
 | Listener stimulus manual review | `manual_equivalence_review_pending` | 18 pairs / 0 completed / 0 locked |

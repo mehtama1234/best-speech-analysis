@@ -4,8 +4,8 @@
   "status": "reproducible_proxy_measurements_attached_manual_review_pending",
   "source_queue": "research/communication-job-delivery-sampling.json",
   "item_count": 36,
-  "matched_sample_count": 32,
-  "unmatched_sample_count": 4,
+  "matched_sample_count": 35,
+  "unmatched_sample_count": 1,
   "claim_boundary": "This report attaches reproducible transcript/audio/feature measurements to queued samples. It does not convert proxies into vocal or nonverbal meaning, verify speaker/event identity, establish editing or room causes, or establish effectiveness or audience outcomes.",
   "metric_definitions": {
     "words_per_second_proxy": "retained caption word count divided by caption duration",
@@ -670,27 +670,34 @@
         "dgkxN6RASpg:00061",
         "dgkxN6RASpg:00062"
       ],
-      "evidence_ids_matched": [],
-      "missing_evidence_ids": [
+      "evidence_ids_matched": [
         "dgkxN6RASpg:00060",
         "dgkxN6RASpg:00061",
         "dgkxN6RASpg:00062"
       ],
-      "feature_file": null,
-      "feature_schema_version": null,
-      "measurement_status": "no_aligned_feature_measurement",
+      "missing_evidence_ids": [],
+      "feature_file": "data/features/dgkxN6RASpg.json",
+      "feature_schema_version": "0.2",
+      "measurement_status": "aligned_feature_measurement_available",
       "audio_measurements": {
-        "words_per_second_proxy": null,
-        "transcript_gap_before_seconds": null,
-        "transcript_gap_after_seconds": null,
-        "mean_rms_db": null,
-        "speech_activity_fraction": null,
-        "mean_zero_crossing_rate": null,
-        "mean_spectral_centroid_hz": null,
-        "mean_pitch_hz_proxy": null,
-        "mean_pitch_confidence_proxy": null
+        "words_per_second_proxy": 3.82133,
+        "transcript_gap_before_seconds": 0.56,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -19.60867,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.16167,
+        "mean_spectral_centroid_hz": 1018.06167,
+        "mean_pitch_hz_proxy": 269.45867,
+        "mean_pitch_confidence_proxy": 0.20411
       },
-      "nearest_sampled_frame": null,
+      "nearest_sampled_frame": {
+        "time_seconds": 430.0,
+        "face_count": null,
+        "smile_detector_candidate_count": null,
+        "mean_luminance": 89.711,
+        "luminance_std": 87.57,
+        "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+      },
       "measurement_limits": [
         "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
         "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
@@ -1086,27 +1093,34 @@
         "dKe3WbGR7Xs:00081",
         "dKe3WbGR7Xs:00082"
       ],
-      "evidence_ids_matched": [],
-      "missing_evidence_ids": [
+      "evidence_ids_matched": [
         "dKe3WbGR7Xs:00080",
         "dKe3WbGR7Xs:00081",
         "dKe3WbGR7Xs:00082"
       ],
-      "feature_file": null,
-      "feature_schema_version": null,
-      "measurement_status": "no_aligned_feature_measurement",
+      "missing_evidence_ids": [],
+      "feature_file": "data/features/dKe3WbGR7Xs.json",
+      "feature_schema_version": "0.2",
+      "measurement_status": "aligned_feature_measurement_available",
       "audio_measurements": {
-        "words_per_second_proxy": null,
-        "transcript_gap_before_seconds": null,
-        "transcript_gap_after_seconds": null,
-        "mean_rms_db": null,
-        "speech_activity_fraction": null,
-        "mean_zero_crossing_rate": null,
-        "mean_spectral_centroid_hz": null,
-        "mean_pitch_hz_proxy": null,
-        "mean_pitch_confidence_proxy": null
+        "words_per_second_proxy": 3.153,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -23.65067,
+        "speech_activity_fraction": 0.95233,
+        "mean_zero_crossing_rate": 0.15827,
+        "mean_spectral_centroid_hz": 887.45933,
+        "mean_pitch_hz_proxy": 247.83,
+        "mean_pitch_confidence_proxy": 0.20945
       },
-      "nearest_sampled_frame": null,
+      "nearest_sampled_frame": {
+        "time_seconds": 430.0,
+        "face_count": null,
+        "smile_detector_candidate_count": null,
+        "mean_luminance": 131.363,
+        "luminance_std": 73.606,
+        "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+      },
       "measurement_limits": [
         "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
         "Frame face/smile counts are detector candidates, not facial emotion or engagement.",
@@ -1165,27 +1179,34 @@
         "6dKimoybmEo:00001",
         "6dKimoybmEo:00002"
       ],
-      "evidence_ids_matched": [],
-      "missing_evidence_ids": [
+      "evidence_ids_matched": [
         "6dKimoybmEo:00000",
         "6dKimoybmEo:00001",
         "6dKimoybmEo:00002"
       ],
-      "feature_file": null,
-      "feature_schema_version": null,
-      "measurement_status": "no_aligned_feature_measurement",
+      "missing_evidence_ids": [],
+      "feature_file": "data/features/6dKimoybmEo.json",
+      "feature_schema_version": "0.2",
+      "measurement_status": "aligned_feature_measurement_available",
       "audio_measurements": {
-        "words_per_second_proxy": null,
-        "transcript_gap_before_seconds": null,
-        "transcript_gap_after_seconds": null,
-        "mean_rms_db": null,
-        "speech_activity_fraction": null,
-        "mean_zero_crossing_rate": null,
-        "mean_spectral_centroid_hz": null,
-        "mean_pitch_hz_proxy": null,
-        "mean_pitch_confidence_proxy": null
+        "words_per_second_proxy": 13.66667,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -17.373,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.0717,
+        "mean_spectral_centroid_hz": 616.63467,
+        "mean_pitch_hz_proxy": 234.375,
+        "mean_pitch_confidence_proxy": 0.24887
       },
-      "nearest_sampled_frame": null,
+      "nearest_sampled_frame": {
+        "time_seconds": 20.0,
+        "face_count": null,
+        "smile_detector_candidate_count": null,
+        "mean_luminance": 74.997,
+        "luminance_std": 59.028,
+        "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+      },
       "measurement_limits": [
         "RMS, speech activity, spectral and pitch fields are proxies; they do not establish loudness meaning, emotion, confidence, intent or effectiveness.",
         "Frame face/smile counts are detector candidates, not facial emotion or engagement.",

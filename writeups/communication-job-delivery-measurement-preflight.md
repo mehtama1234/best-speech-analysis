@@ -4,7 +4,7 @@ Status: **reproducible proxy measurements attached; manual review pending**.
 
 This report attaches reproducible transcript/audio/feature measurements to queued samples. It does not convert proxies into vocal or nonverbal meaning, verify speaker/event identity, establish editing or room causes, or establish effectiveness or audience outcomes.
 
-Samples: **36** · aligned feature matches: **32** · unmatched: **4**.
+Samples: **36** · aligned feature matches: **35** · unmatched: **1**.
 
 | Sample | Job | Video | Matched segments | W/s proxy | RMS dB | Activity proxy | Frame |
 |---|---|---|---:|---:|---:|---:|---|
@@ -23,7 +23,7 @@ Samples: **36** · aligned feature matches: **32** · unmatched: **4**.
 | `delivery:contrast_or_disagreement:01` | `contrast_or_disagreement` | `ZwMVMbmQBug` | 3 | 4.03533 | -27.001 | 1.0 | 40.0 |
 | `delivery:contrast_or_disagreement:02` | `contrast_or_disagreement` | `bR4tDSa3O10` | 3 | 0.29567 | -25.70633 | 1.0 | 30.0 |
 | `delivery:correction_or_reframe:01` | `correction_or_reframe` | `bR4tDSa3O10` | 3 | 1.13133 | -25.91567 | 0.95233 | 700.0 |
-| `delivery:correction_or_reframe:02` | `correction_or_reframe` | `dgkxN6RASpg` | 0 | None | None | None |  |
+| `delivery:correction_or_reframe:02` | `correction_or_reframe` | `dgkxN6RASpg` | 3 | 3.82133 | -19.60867 | 1.0 | 430.0 |
 | `delivery:repair_or_self_correction:01` | `repair_or_self_correction` | `C8-twwwTETE` | 3 | 0.927 | -28.32833 | 0.89667 | 360.0 |
 | `delivery:repair_or_self_correction:02` | `repair_or_self_correction` | `7XO7kVaEgpM` | 0 | None | None | None |  |
 | `delivery:qualification_or_boundary:01` | `qualification_or_boundary` | `bR4tDSa3O10` | 3 | 1.44367 | -24.55767 | 1.0 | 200.0 |
@@ -33,9 +33,9 @@ Samples: **36** · aligned feature matches: **32** · unmatched: **4**.
 | `delivery:transition_or_structure:01` | `transition_or_structure` | `ZwMVMbmQBug` | 3 | 3.94833 | -26.11667 | 1.0 | 120.0 |
 | `delivery:transition_or_structure:02` | `transition_or_structure` | `xRiwgtdyjQk` | 3 | 1.54433 | -16.40133 | 1.0 | 380.0 |
 | `delivery:callback_or_repetition:01` | `callback_or_repetition` | `ZwMVMbmQBug` | 3 | 4.04033 | -32.72867 | 0.889 | 150.0 |
-| `delivery:callback_or_repetition:02` | `callback_or_repetition` | `dKe3WbGR7Xs` | 0 | None | None | None |  |
+| `delivery:callback_or_repetition:02` | `callback_or_repetition` | `dKe3WbGR7Xs` | 3 | 3.153 | -23.65067 | 0.95233 | 430.0 |
 | `delivery:humor_or_rapport:01` | `humor_or_rapport` | `C8-twwwTETE` | 3 | 1.38267 | -31.067 | 0.875 | 40.0 |
-| `delivery:humor_or_rapport:02` | `humor_or_rapport` | `6dKimoybmEo` | 0 | None | None | None |  |
+| `delivery:humor_or_rapport:02` | `humor_or_rapport` | `6dKimoybmEo` | 3 | 13.66667 | -17.373 | 1.0 | 20.0 |
 | `delivery:credit_or_acknowledgment:01` | `credit_or_acknowledgment` | `C8-twwwTETE` | 3 | 1.64133 | -27.48867 | 0.93333 | 310.0 |
 | `delivery:credit_or_acknowledgment:02` | `credit_or_acknowledgment` | `xRiwgtdyjQk` | 3 | 1.73067 | -16.06833 | 1.0 | 540.0 |
 | `delivery:call_to_action_or_audience_role:01` | `call_to_action_or_audience_role` | `ZwMVMbmQBug` | 3 | 2.48733 | -40.0 | 0.619 | 80.0 |

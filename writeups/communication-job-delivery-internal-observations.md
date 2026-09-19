@@ -4,7 +4,7 @@ Status: **internal observations complete; independent review pending**.
 
 These are bounded internal midpoint-frame observations. They do not establish continuous delivery meaning, vocal effectiveness, speaker intent, audience response, speaker/event identity, teachability or listener outcomes.
 
-Raw audio/video samples inspected: **32**.
+Raw audio/video samples inspected: **35**.
 
 | Sample | Job | Alignment | Visual/setting boundary |
 |---|---|---|---|
@@ -23,6 +23,7 @@ Raw audio/video samples inspected: **32**.
 | `delivery:contrast_or_disagreement:01` | `contrast_or_disagreement` | `partially_aligned` | A seated older man is visible in an interior interview setting with subtitle text; wall clocks are visible. Interview/lecture-like interior; subtitle overlay is edited into the image. |
 | `delivery:contrast_or_disagreement:02` | `contrast_or_disagreement` | `partially_aligned` | A woman is visible on a graduation stage with a subtitle overlay. Graduation-stage setting; no interpersonal disagreement or audience reaction is inferred. |
 | `delivery:correction_or_reframe:01` | `correction_or_reframe` | `partially_aligned` | A woman is visible at a podium/stage with the correction wording overlaid. Formal stage setting with edited subtitles; exact delivery timing remains unverified. |
+| `delivery:correction_or_reframe:02` | `correction_or_reframe` | `partially_aligned` | A male speaker is visible at a microphone against a branded film-event backdrop; a large edited subtitle overlay covers the lower frame. Formal promotional/event stage with visible branding and edited subtitles; one frame cannot establish the correction timing. |
 | `delivery:repair_or_self_correction:01` | `repair_or_self_correction` | `partially_aligned` | A male performer/speaker is visible outdoors addressing a crowd with a microphone and subtitle overlay. Outdoor public event with crowd and edited captions; speaker identity/event independence remains unverified. |
 | `delivery:qualification_or_boundary:01` | `qualification_or_boundary` | `partially_aligned` | A woman is visible on a graduation stage with subtitle text. Graduation-stage setting; the frame cannot establish vocal certainty or listener calibration. |
 | `delivery:qualification_or_boundary:02` | `qualification_or_boundary` | `indeterminate` | Multiple people are visible in a scripted interior film scene; the retained qualification is not isolated by the midpoint frame. Edited fictional scene; visual evidence is limited to scene context. |
@@ -31,7 +32,9 @@ Raw audio/video samples inspected: **32**.
 | `delivery:transition_or_structure:01` | `transition_or_structure` | `indeterminate` | A person is visible moving through a dim scripted interior scene; the retained transition wording is not visibly isolated. Edited fictional scene with limited visual speech evidence. |
 | `delivery:transition_or_structure:02` | `transition_or_structure` | `partially_aligned` | A male speaker is visible at a podium with flags and subtitle text. Formal political/podium setting with edited caption overlay. |
 | `delivery:callback_or_repetition:01` | `callback_or_repetition` | `indeterminate` | A television/inserted screen image is visible rather than a clearly visible live speaker; the retained wording is not isolated in the frame. Edited media insert; cannot support a live-speaker delivery observation. |
+| `delivery:callback_or_repetition:02` | `callback_or_repetition` | `partially_aligned` | A woman is visible behind a lectern at a formal event; the frame shows a podium microphone and edited subtitle treatment. Formal conference/podium setting; the frame does not establish repetition timing, audience response or vocal delivery. |
 | `delivery:humor_or_rapport:01` | `humor_or_rapport` | `partially_aligned` | A male performer/speaker is visible outdoors with a crowd and subtitle overlay. Outdoor public event with edited captions; humor effect is not inferred from the frame. |
+| `delivery:humor_or_rapport:02` | `humor_or_rapport` | `indeterminate` | A monochrome crowd or audience image is visible, with no clearly visible speaker in the midpoint frame. Edited crowd/cutaway composition; it cannot support a speaker nonverbal or humor-delivery observation. |
 | `delivery:credit_or_acknowledgment:01` | `credit_or_acknowledgment` | `partially_aligned` | A male performer/speaker is visible outdoors addressing a crowd with subtitle text. Outdoor public event; the frame does not establish who is being credited or audience response. |
 | `delivery:credit_or_acknowledgment:02` | `credit_or_acknowledgment` | `partially_aligned` | A male speaker is visible at a podium with flags and edited subtitle text. Formal political/podium setting; identity and event independence remain open. |
 | `delivery:call_to_action_or_audience_role:01` | `call_to_action_or_audience_role` | `indeterminate` | An older man is visible in a scripted interior scene; the retained action wording is not visibly isolated. Edited fictional scene; not transcript-linked live delivery evidence. |

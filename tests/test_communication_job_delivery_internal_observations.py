@@ -12,8 +12,8 @@ class CommunicationJobDeliveryInternalObservationTests(unittest.TestCase):
         cls.report = json.loads((ROOT / "research/communication-job-delivery-internal-observations.json").read_text())
 
     def test_raw_media_midpoints_are_bounded_and_non_independent(self):
-        self.assertEqual(self.report["item_count"], 32)
-        self.assertEqual(len(self.report["items"]), 32)
+        self.assertEqual(self.report["item_count"], 35)
+        self.assertEqual(len(self.report["items"]), 35)
         self.assertEqual(self.report["status"], "internal_midpoint_frame_observations_complete_independent_review_pending")
         self.assertIn("manual vocal listening", self.report["method"]["not_performed"])
         self.assertIn("effectiveness", self.report["claim_boundary"])

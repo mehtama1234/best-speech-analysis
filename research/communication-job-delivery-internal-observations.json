@@ -3,7 +3,7 @@
   "report_id": "communication-job-delivery-internal-observations",
   "status": "internal_midpoint_frame_observations_complete_independent_review_pending",
   "source_queue": "research/communication-job-delivery-sampling.json",
-  "item_count": 32,
+  "item_count": 35,
   "claim_boundary": "These are bounded internal midpoint-frame observations. They do not establish continuous delivery meaning, vocal effectiveness, speaker intent, audience response, speaker/event identity, teachability or listener outcomes.",
   "method": {
     "frame_rule": "midpoint of each raw audio/video queue interval",
@@ -677,6 +677,50 @@
       "independence": "not_independent"
     },
     {
+      "sample_id": "delivery:correction_or_reframe:02",
+      "canonical_job": "correction_or_reframe",
+      "video_id": "dgkxN6RASpg",
+      "evidence_id": "dgkxN6RASpg:00060",
+      "source_video": "data/video/dgkxN6RASpg.mp4",
+      "source_url": "https://www.youtube.com/watch?v=dgkxN6RASpg&t=422s",
+      "sampled_midpoint_seconds": 430.0,
+      "frame_method": "single midpoint frame extracted with bundled imageio-ffmpeg and inspected internally",
+      "transcript_alignment": "partially_aligned",
+      "visual_observation": "A male speaker is visible at a microphone against a branded film-event backdrop; a large edited subtitle overlay covers the lower frame.",
+      "setting_editing_music_observation": "Formal promotional/event stage with visible branding and edited subtitles; one frame cannot establish the correction timing.",
+      "vocal_timing_observation": "Manual listening was not performed in this pass; retained transcript timing and feature values remain separate from a vocal interpretation.",
+      "audio_measurements": {
+        "words_per_second_proxy": 3.82133,
+        "transcript_gap_before_seconds": 0.56,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -19.60867,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.16167,
+        "mean_spectral_centroid_hz": 1018.06167,
+        "mean_pitch_hz_proxy": 269.45867,
+        "mean_pitch_confidence_proxy": 0.20411
+      },
+      "audio_measurement_status": "aligned_feature_measurement_available",
+      "audio_measurement_and_limit": "Feature proxy file data/features/None; words-per-second, RMS, speech activity, zero-crossing, spectral centroid and pitch-confidence fields are reproducible proxies, not validated vocal meaning or effectiveness.",
+      "nearest_sampled_frame_measurement": {
+        "time_seconds": 430.0,
+        "face_count": null,
+        "smile_detector_candidate_count": null,
+        "mean_luminance": 89.711,
+        "luminance_std": 87.57,
+        "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+      },
+      "measurement_evidence_ids_matched": [
+        "dgkxN6RASpg:00060",
+        "dgkxN6RASpg:00061",
+        "dgkxN6RASpg:00062"
+      ],
+      "speaker_event_identity": "Not independently verified; source-frame observation only.",
+      "missingness_or_accessibility_note": "Single-frame sampling cannot establish continuous gaze, gesture, posture, editing sequence, room acoustics, accessibility or audience response.",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
       "sample_id": "delivery:repair_or_self_correction:01",
       "canonical_job": "repair_or_self_correction",
       "video_id": "C8-twwwTETE",
@@ -1029,6 +1073,50 @@
       "independence": "not_independent"
     },
     {
+      "sample_id": "delivery:callback_or_repetition:02",
+      "canonical_job": "callback_or_repetition",
+      "video_id": "dKe3WbGR7Xs",
+      "evidence_id": "dKe3WbGR7Xs:00080",
+      "source_video": "data/video/dKe3WbGR7Xs.mp4",
+      "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=417s",
+      "sampled_midpoint_seconds": 426.09,
+      "frame_method": "single midpoint frame extracted with bundled imageio-ffmpeg and inspected internally",
+      "transcript_alignment": "partially_aligned",
+      "visual_observation": "A woman is visible behind a lectern at a formal event; the frame shows a podium microphone and edited subtitle treatment.",
+      "setting_editing_music_observation": "Formal conference/podium setting; the frame does not establish repetition timing, audience response or vocal delivery.",
+      "vocal_timing_observation": "Manual listening was not performed in this pass; retained transcript timing and feature values remain separate from a vocal interpretation.",
+      "audio_measurements": {
+        "words_per_second_proxy": 3.153,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -23.65067,
+        "speech_activity_fraction": 0.95233,
+        "mean_zero_crossing_rate": 0.15827,
+        "mean_spectral_centroid_hz": 887.45933,
+        "mean_pitch_hz_proxy": 247.83,
+        "mean_pitch_confidence_proxy": 0.20945
+      },
+      "audio_measurement_status": "aligned_feature_measurement_available",
+      "audio_measurement_and_limit": "Feature proxy file data/features/None; words-per-second, RMS, speech activity, zero-crossing, spectral centroid and pitch-confidence fields are reproducible proxies, not validated vocal meaning or effectiveness.",
+      "nearest_sampled_frame_measurement": {
+        "time_seconds": 430.0,
+        "face_count": null,
+        "smile_detector_candidate_count": null,
+        "mean_luminance": 131.363,
+        "luminance_std": 73.606,
+        "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+      },
+      "measurement_evidence_ids_matched": [
+        "dKe3WbGR7Xs:00080",
+        "dKe3WbGR7Xs:00081",
+        "dKe3WbGR7Xs:00082"
+      ],
+      "speaker_event_identity": "Not independently verified; source-frame observation only.",
+      "missingness_or_accessibility_note": "Single-frame sampling cannot establish continuous gaze, gesture, posture, editing sequence, room acoustics, accessibility or audience response.",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
       "sample_id": "delivery:humor_or_rapport:01",
       "canonical_job": "humor_or_rapport",
       "video_id": "C8-twwwTETE",
@@ -1066,6 +1154,50 @@
         "C8-twwwTETE:00016",
         "C8-twwwTETE:00017",
         "C8-twwwTETE:00018"
+      ],
+      "speaker_event_identity": "Not independently verified; source-frame observation only.",
+      "missingness_or_accessibility_note": "Single-frame sampling cannot establish continuous gaze, gesture, posture, editing sequence, room acoustics, accessibility or audience response.",
+      "reviewer_code": "internal-project-agent",
+      "independence": "not_independent"
+    },
+    {
+      "sample_id": "delivery:humor_or_rapport:02",
+      "canonical_job": "humor_or_rapport",
+      "video_id": "6dKimoybmEo",
+      "evidence_id": "6dKimoybmEo:00000",
+      "source_video": "data/video/6dKimoybmEo.mp4",
+      "source_url": "https://www.youtube.com/watch?v=6dKimoybmEo&t=13s",
+      "sampled_midpoint_seconds": 15.309,
+      "frame_method": "single midpoint frame extracted with bundled imageio-ffmpeg and inspected internally",
+      "transcript_alignment": "indeterminate",
+      "visual_observation": "A monochrome crowd or audience image is visible, with no clearly visible speaker in the midpoint frame.",
+      "setting_editing_music_observation": "Edited crowd/cutaway composition; it cannot support a speaker nonverbal or humor-delivery observation.",
+      "vocal_timing_observation": "Manual listening was not performed in this pass; retained transcript timing and feature values remain separate from a vocal interpretation.",
+      "audio_measurements": {
+        "words_per_second_proxy": 13.66667,
+        "transcript_gap_before_seconds": 0.0,
+        "transcript_gap_after_seconds": 0.0,
+        "mean_rms_db": -17.373,
+        "speech_activity_fraction": 1.0,
+        "mean_zero_crossing_rate": 0.0717,
+        "mean_spectral_centroid_hz": 616.63467,
+        "mean_pitch_hz_proxy": 234.375,
+        "mean_pitch_confidence_proxy": 0.24887
+      },
+      "audio_measurement_status": "aligned_feature_measurement_available",
+      "audio_measurement_and_limit": "Feature proxy file data/features/None; words-per-second, RMS, speech activity, zero-crossing, spectral centroid and pitch-confidence fields are reproducible proxies, not validated vocal meaning or effectiveness.",
+      "nearest_sampled_frame_measurement": {
+        "time_seconds": 20.0,
+        "face_count": null,
+        "smile_detector_candidate_count": null,
+        "mean_luminance": 74.997,
+        "luminance_std": 59.028,
+        "face_measurement_status": "unavailable_cv2_not_installed; scene_pixels_only"
+      },
+      "measurement_evidence_ids_matched": [
+        "6dKimoybmEo:00000",
+        "6dKimoybmEo:00001",
+        "6dKimoybmEo:00002"
       ],
       "speaker_event_identity": "Not independently verified; source-frame observation only.",
       "missingness_or_accessibility_note": "Single-frame sampling cannot establish continuous gaze, gesture, posture, editing sequence, room acoustics, accessibility or audience response.",
