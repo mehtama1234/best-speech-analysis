@@ -61,6 +61,7 @@ ARTIFACTS = [
     ("research/full-corpus-media-coverage.json", "full transcript-corpus media availability audit"),
     ("research/full-corpus-media-recovery-queue.json", "full transcript-corpus media recovery routing queue"),
     ("scripts/recover_full_corpus_media.py", "resumable fixed-queue media recovery tool"),
+    ("data/full-corpus-media-recovery.jsonl", "fixed-queue media recovery attempt ledger"),
 ]
 
 
