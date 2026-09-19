@@ -8,22 +8,22 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 352,
+  "item_count": 344,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 6,
-      "fixed_corpus_transcript_only": 346
+      "fixed_corpus_transcript_only": 338
     },
     "by_media_state": {
       "audio_only": 1,
       "derived_features_only": 6,
-      "transcript_only_no_local_media": 343,
-      "video_only": 2
+      "transcript_only_no_local_media": 336,
+      "video_only": 1
     },
     "by_video_status": {
-      "downloaded": 2,
-      "failed:1": 9,
-      "not_attempted": 341
+      "downloaded": 1,
+      "failed:1": 7,
+      "not_attempted": 336
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -98,18 +98,6 @@
       "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "-CXBIAH4Kgo",
-      "title": "The Hunger Games: Mockingjay - Part 2 (1/10) Movie CLIP - Turn Your Weapons to Snow (2015) HD",
-      "source_url": "https://www.youtube.com/watch?v=-CXBIAH4Kgo",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -509,18 +497,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "4u71aIcrxtQ",
-      "title": "ENGLISH SPEECH | BRITISH ROYAL FAMILY: The Royal Foundation (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=4u71aIcrxtQ",
-      "media_state": "audio_only",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "failed:1",
-      "audio_download_status": "downloaded",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "4vZCgGnjADQ",
       "title": "ENGLISH SPEECH | MARIA RESSA: Defending Truth (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=4vZCgGnjADQ",
@@ -905,18 +881,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "AjxbqKcPX_4",
-      "title": "ENGLISH SPEECH | NATALIE PORTMAN: Don’t Doubt Yourself (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=AjxbqKcPX_4",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "Amv2iIoXsNw",
       "title": "ENGLISH SPEECH | BERNIE SANDERS & AOC: Stop AI Data Centers (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=Amv2iIoXsNw",
@@ -1196,12 +1160,12 @@
       "video_id": "Elv-c3ZTkYg",
       "title": "ENGLISH SPEECH | GRETA THUNBERG: How Dare You (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=Elv-c3ZTkYg",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "audio_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1301,18 +1265,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "GRiDVoMFxcU",
-      "title": "ENGLISH SPEECH | JOHN CENA: We Made It! (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=GRiDVoMFxcU",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "GTn-2RtfQpk",
       "title": "ENGLISH SPEECH | JUSTIN TRUDEAU: Resignation Speech (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=GTn-2RtfQpk",
@@ -1346,18 +1298,6 @@
       "audio_download_status": "not_attempted",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "H5bSGdZk8pQ",
-      "title": "ENGLISH SPEECH | KEANU REEVES: Be Thankful (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=H5bSGdZk8pQ",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "failed:1",
-      "audio_download_status": "failed:1",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -2213,18 +2153,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "XR8aTbvRhxQ",
-      "title": "ENGLISH SPEECH | OMAR AL OLAMA: Unleashing Ambitions (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=XR8aTbvRhxQ",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "XVHd_UUTK-c",
       "title": "ENGLISH SPEECH | RO KHANNA: Epstein Files Transparency (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=XVHd_UUTK-c",
@@ -2309,18 +2237,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "ZHpyfTC_Ovo",
-      "title": "ENGLISH SPEECH | LADY GAGA: Mental Health & Self-Care (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=ZHpyfTC_Ovo",
-      "media_state": "video_only",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "downloaded",
-      "audio_download_status": "failed:1",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "ZKbZMIP4XUE",
       "title": "The Terminator",
       "source_url": "https://www.youtube.com/watch?v=ZKbZMIP4XUE",
@@ -2330,18 +2246,6 @@
       "audio_download_status": "not_attempted",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "ZaX_8iKSBsQ",
-      "title": "Requiem for a Dream - Ellen Burstyn Monologue.flv",
-      "source_url": "https://www.youtube.com/watch?v=ZaX_8iKSBsQ",
-      "media_state": "video_only",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "downloaded",
-      "audio_download_status": "failed:1",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -3476,9 +3380,9 @@
       "video_id": "oGLKnAvzlg4",
       "title": "Joe vs The Volcano - Joe Quits",
       "source_url": "https://www.youtube.com/watch?v=oGLKnAvzlg4",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "video_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "failed:1",
+      "video_download_status": "downloaded",
       "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
