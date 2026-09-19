@@ -30,6 +30,7 @@ def build() -> tuple[dict, str]:
     cards = load("research/communication-job-cards.json")["cards"]
     phrases = load("research/corpus-phrase-form-inventory.json")["forms"]
     evidence = load("research/corpus-evidence-bank.json")["records"]
+    delivery = load("research/communication-job-delivery-internal-observations.json")["items"]
 
     lesson_by_review = {x["review_id"]: x for x in lessons}
     evidence_by_job: dict[str, list[dict]] = defaultdict(list)
@@ -106,6 +107,24 @@ def build() -> tuple[dict, str]:
         ],
         "job_findings": job_rows,
         "phrase_forms": phrases,
+        "delivery_observations": [
+            {
+                "sample_id": x.get("sample_id"),
+                "job": x.get("canonical_job"),
+                "video_id": x.get("video_id"),
+                "source_url": x.get("source_url"),
+                "sampled_midpoint_seconds": x.get("sampled_midpoint_seconds"),
+                "transcript_alignment": x.get("transcript_alignment"),
+                "visual_observation": x.get("visual_observation"),
+                "setting_editing_music_observation": x.get("setting_editing_music_observation"),
+                "vocal_timing_observation": x.get("vocal_timing_observation"),
+                "audio_measurements": x.get("audio_measurements"),
+                "nearest_sampled_frame_measurement": x.get("nearest_sampled_frame_measurement"),
+                "limits": x.get("missingness_or_accessibility_note"),
+                "independence": x.get("independence"),
+            }
+            for x in delivery
+        ],
         "function_counts": function_counts,
         "relation_counts": relation_counts,
         "video_findings": rows,
@@ -145,6 +164,12 @@ def build() -> tuple[dict, str]:
     lines += ["## Exact phrase forms: frequency is not effectiveness", "", "These are retrieval signals found in retained captions. They help locate examples; they do not prove that a phrase causes trust, clarity or persuasion.", "", "| Form | Family | Occurrences | Videos | Holdout videos |", "|---|---:|---:|---:|---:|"]
     for p in phrases:
         lines.append(f"| `{p.get('phrase_form', p.get('form', ''))}` | {p.get('family', p.get('candidate_label', ''))} | {p.get('occurrence_count', p.get('occurrences', 0)):,} | {p.get('video_count', 0):,} | {p.get('holdout_video_count', 0):,} |" )
+
+    lines += ["", "## Actual delivery observations currently available", "", f"There are **{len(delivery)} bounded internal audiovisual observations**, two per communication job. These are useful inspection evidence, not validated nonverbal or vocal best practices. Manual listening, continuous gesture/gaze review, speaker identity, audience response and independent review remain open.", "", "| Job | Video / time | What was visible | Vocal/audio status | Measurement boundary |", "|---|---|---|---|---|"]
+    for x in delivery:
+        m = x.get("audio_measurements") or {}
+        metrics = ", ".join(f"{k}={v}" for k, v in list(m.items())[:3]) or "not available"
+        lines.append(f"| `{x.get('canonical_job')}` | [{x.get('video_id')} @ {x.get('sampled_midpoint_seconds')}s]({x.get('source_url')}) | {clip(x.get('visual_observation', ''), 190)} | {clip(x.get('vocal_timing_observation', ''), 150)} | {clip(metrics, 160)}; {clip(x.get('missingness_or_accessibility_note', ''), 150)} |")
 
     lines += ["", "## Video-by-video findings (all 395 reviews)", "", "Every row below is a recorded observation, not an invented summary. Open the linked writeup and evidence IDs for the full context.", "", "| # | Video / writeup | Observed functions | Structural relations | Limits / next test |", "|---:|---|---|---|---|"]
     for i, row in enumerate(rows, 1):
