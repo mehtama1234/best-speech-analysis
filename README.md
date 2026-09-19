@@ -4,6 +4,9 @@ The complete project objective is written in the [master speech-learning system
 goal](writeups/master-speech-learning-system.md). It defines the 18
 communication jobs, repeatable verbal forms, delivery/nonverbal inspection,
 practice loop, validation gates and honest definition of done.
+The quickest user-facing route is the [start-here guide](writeups/start-here.md),
+which takes one lesson from evidence through wording, delivery inspection,
+practice, listener restatement and revision.
 
 New [Joe Biden victory speech full-context reading](writeups/full-context-address-279.md)
 completes the fixed transcript queue: all 171 retained captions / 1,809 stored
