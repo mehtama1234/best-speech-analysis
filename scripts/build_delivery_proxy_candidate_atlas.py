@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import html
 import statistics
 from collections import defaultdict
 from pathlib import Path
@@ -14,6 +15,7 @@ EVIDENCE = ROOT / "research/corpus-evidence-bank.json"
 FEATURE_DIR = ROOT / "data/features"
 OUT_JSON = ROOT / "research/delivery-proxy-candidate-atlas.json"
 OUT_MD = ROOT / "writeups/delivery-proxy-candidate-atlas.md"
+OUT_HTML = ROOT / "writeups/delivery-proxy-candidate-atlas.html"
 
 
 def avg(values: list[float]) -> float | None:
@@ -123,7 +125,22 @@ def main() -> int:
         lines.append(f"| `{job}` | {'; '.join(clips)} | {' / '.join(observations)} |")
     lines += ["", "## Review checklist", "", "For each selected clip, verify transcript-to-speaker alignment, listen for timing/turns/emphasis, inspect continuous visible action and editing, record missingness/accessibility, and preserve an alternate-function or non-fit explanation. Use the [delivery learning guide](delivery-learning-guide.md) and [validation handoff](validation-handoff.md).", ""]
     OUT_MD.write_text("\n".join(lines))
-    print(json.dumps({"output": str(OUT_JSON.relative_to(ROOT)), "counts": result["counts"]}, indent=2))
+    cards = []
+    for item in candidates:
+        audio = item["audio_proxy_summary"]
+        text = html.escape(item.get("transcript_excerpt", ""))
+        source = html.escape(item["source_url"], quote=True)
+        cards.append(
+            f"<article class='clip' data-job='{html.escape(item['canonical_job'], quote=True)}' data-search='{html.escape((item['canonical_job'] + ' ' + item['video_id'] + ' ' + item.get('title', '')).lower(), quote=True)}'>"
+            f"<h2><a href='{source}' target='_blank' rel='noreferrer'>{html.escape(item.get('title', item['video_id']))}</a></h2>"
+            f"<p><code>{html.escape(item['canonical_job'])}</code> · <code>{html.escape(item['video_id'])}</code> · {item['start_seconds']:.1f}–{item['end_seconds']:.1f}s · alignment: <code>{html.escape(item['alignment'])}</code></p>"
+            f"<p class='excerpt'>{text}</p>"
+            f"<p class='metrics'>RMS proxy: {audio['mean_rms_db']} · pitch proxy: {audio['mean_pitch_hz_proxy']} · W/s activity: {audio['speech_activity_fraction']} · nearest-frame face count: {item['nearest_sampled_frame_proxy']['face_count']}</p>"
+            f"<p class='notice'>Proxy-backed candidate. Human delivery review required; values are not scores.</p></article>"
+        )
+    html_page = """<!doctype html><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Delivery proxy candidate atlas</title><style>body{font:16px system-ui,sans-serif;max-width:1180px;margin:2rem auto;padding:0 1rem;color:#17202a}input,select{font:inherit;padding:.65rem;margin:.4rem .5rem .8rem 0}input{width:min(650px,100%)}.notice{background:#fff4ce;border-left:4px solid #b8860b;padding:.8rem}.clip{border:1px solid #ccd3da;border-radius:8px;padding:1rem;margin:1rem 0}.clip h2{font-size:1.05rem;margin:.1rem 0 .5rem}.excerpt{color:#36454f}.metrics{font-family:ui-monospace,monospace;font-size:.9rem}.clip .notice{font-size:.9rem;padding:.45rem}code{overflow-wrap:anywhere}</style><main><h1>Delivery proxy candidate atlas</h1><div class='notice'><strong>Navigation queue, not validation.</strong> These clips link heuristic transcript jobs to local acoustic/frame proxies. They do not establish gesture meaning, emotion, intent, quality or effectiveness.</div><p id='count' aria-live='polite'></p><label for='job'>Job</label><select id='job'><option value=''>All jobs</option></select><label for='search'>Search</label><input id='search' type='search' placeholder='video, title or job'><section id='clips'>""" + "\n".join(cards) + """</section></main><script>const cards=[...document.querySelectorAll('.clip')],job=document.querySelector('#job'),search=document.querySelector('#search'),count=document.querySelector('#count');const jobs=[...new Set(cards.map(x=>x.dataset.job))].sort();jobs.forEach(x=>{let o=document.createElement('option');o.value=x;o.textContent=x;job.append(o)});function filter(){let q=search.value.toLowerCase(),j=job.value,n=0;cards.forEach(x=>{let ok=(!j||x.dataset.job===j)&&(!q||x.dataset.search.includes(q));x.hidden=!ok;if(ok)n++});count.textContent=`Showing ${n} of ${cards.length} proxy candidates`}job.onchange=filter;search.oninput=filter;filter()</script>"""
+    OUT_HTML.write_text(html_page)
+    print(json.dumps({"output": str(OUT_JSON.relative_to(ROOT)), "html_output": str(OUT_HTML.relative_to(ROOT)), "counts": result["counts"]}, indent=2))
     return 0
 
 
