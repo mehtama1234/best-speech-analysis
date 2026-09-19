@@ -71,6 +71,9 @@ reviewer decision automatically.
 An adjudicator can use `scripts/build_blinded_adjudication_form.py` on that
 joined input; retain, revise, reject and indeterminate decisions remain
 explicit human judgments.
+The final adjudicator export is checked with
+`scripts/validate_blinded_adjudication_export.py` before any later promotion
+audit.
 The [practice-log contract](research/local-practice-log-contract.json) and
 [validator](scripts/validate_local_practice_log.py) check returned exports for
 their required fields and boundaries without scoring the learner or listener.
