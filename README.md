@@ -98,6 +98,10 @@ records and listener records, with uncertainty and missing validation visible.
 It also carries counterexample observations; the blank [counterexample
 workbook](writeups/communication-job-counterexample-workbook.html) requires
 five limitation checks for each of the 18 provisional jobs.
+The validator requires source fields for confirmed or candidate entries while
+allowing honest `no_candidate_found` decisions; the
+[summarizer](scripts/summarize_communication_job_counterexamples.py) preserves
+status counts without promoting them to outcome evidence.
 The [pattern-admission reconciliation](writeups/pattern-admission-reconciliation.md)
 explains why the older five-pattern count and newer eight-card curriculum are
 different inventories, not conflicting completion claims.
