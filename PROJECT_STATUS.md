@@ -24,6 +24,9 @@ retrieval aids for rereading wording, not scripts or effectiveness evidence.
 The cards also carry nearest local audio, face/scene and pose proxy fields for
 6,308 cards; these are aligned navigation measurements where available, not
 nonverbal interpretations or delivery-effectiveness evidence.
+The browser inventory now includes a study mode for selecting and advancing
+through filtered practice cards, while keeping evidence, phrase handles and
+non-fit boundaries visible.
 The [video-learning itinerary](writeups/corpus-video-learning-itinerary.html)
 now gives each of the 395 reviewed videos one selected starting lesson without
 claiming that the selection is the most important, representative or effective

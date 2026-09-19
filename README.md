@@ -43,6 +43,8 @@ retrieval aid with a transcript-only boundary.
 The same cards now expose nearest local audio, face/scene and pose inspection
 proxies for 6,308 cards; missing local media remains explicit and the fields do
 not establish intentional delivery, emotion, gesture meaning or effectiveness.
+The browser also has a study mode that selects a visible card and advances
+through filtered practice cards.
 The [video-learning itinerary](writeups/corpus-video-learning-itinerary.html)
 selects one bounded starting lesson for each of the 395 reviewed videos, with
 exact evidence, a practice move, self-check and sequence bridge where recorded.
