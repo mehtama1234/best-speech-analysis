@@ -8,21 +8,21 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 64,
+  "item_count": 54,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 5,
-      "fixed_corpus_transcript_only": 59
+      "fixed_corpus_transcript_only": 49
     },
     "by_media_state": {
-      "audio_only": 12,
+      "audio_only": 6,
       "derived_features_only": 5,
       "transcript_only_no_local_media": 36,
-      "video_only": 11
+      "video_only": 7
     },
     "by_video_status": {
-      "downloaded": 10,
-      "failed:1": 54
+      "downloaded": 6,
+      "failed:1": 48
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -160,30 +160,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "3x4zM7O8pZI",
-      "title": "ENGLISH SPEECH | PM NARENDRA MODI: India-Australia Partnership (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=3x4zM7O8pZI",
-      "media_state": "video_only",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "downloaded",
-      "audio_download_status": "failed:1",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "4vZCgGnjADQ",
-      "title": "ENGLISH SPEECH | MARIA RESSA: Defending Truth (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=4vZCgGnjADQ",
-      "media_state": "video_only",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "downloaded",
-      "audio_download_status": "failed:1",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "7XO7kVaEgpM",
       "title": "ENGLISH SPEECH | BENEDICT CUMBERBATCH: Just Do It! (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=7XO7kVaEgpM",
@@ -239,30 +215,6 @@
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "failed:1",
       "audio_download_status": "failed:1",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "Az2tYNXDcqs",
-      "title": "ENGLISH SPEECH | PALKI SHARMA: Voice of Change (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=Az2tYNXDcqs",
-      "media_state": "audio_only",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "failed:1",
-      "audio_download_status": "downloaded",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "BRfkJ2tkS94",
-      "title": "ENGLISH SPEECH | JENNIFER LAWRENCE: Anti-Corruption (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=BRfkJ2tkS94",
-      "media_state": "audio_only",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "failed:1",
-      "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
@@ -352,42 +304,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "NSiR8FKsAnA",
-      "title": "ENGLISH SPEECH | SAMANTHA & SADHGURU: Why is life unfair? (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=NSiR8FKsAnA",
-      "media_state": "audio_only",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "failed:1",
-      "audio_download_status": "downloaded",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "NVS_rFhurgg",
-      "title": "ENGLISH SPEECH | ERIKA KIRK: She Forgave (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=NVS_rFhurgg",
-      "media_state": "video_only",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "downloaded",
-      "audio_download_status": "failed:1",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "PwQrtzi8ozc",
-      "title": "ENGLISH SPEECH | MERYL STREEP: Stand Up and Speak Up (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=PwQrtzi8ozc",
-      "media_state": "video_only",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "downloaded",
-      "audio_download_status": "failed:1",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "RaLXDIJW3_M",
       "title": "ENGLISH SPEECH | MATT DAMON: What We Do Matters (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=RaLXDIJW3_M",
@@ -395,42 +311,6 @@
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "failed:1",
       "audio_download_status": "failed:1",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "ThsZ8wfhJpk",
-      "title": "Doubt - Meryl Streep and Viola Davis",
-      "source_url": "https://www.youtube.com/watch?v=ThsZ8wfhJpk",
-      "media_state": "audio_only",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "failed:1",
-      "audio_download_status": "downloaded",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "Up6tk1hliIM",
-      "title": "ENGLISH SPEECH | TRUMP: First Speech Since Assassination Attempt (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=Up6tk1hliIM",
-      "media_state": "audio_only",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "failed:1",
-      "audio_download_status": "downloaded",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "VRMPjm1kG7g",
-      "title": "ENGLISH SPEECH | CAROLINE GLEICH: Democracy Not For Sale (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=VRMPjm1kG7g",
-      "media_state": "audio_only",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "failed:1",
-      "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."

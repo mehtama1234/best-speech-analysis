@@ -73,6 +73,15 @@ def main() -> int:
         ):
             continue
         candidates.append((video_id, url, row))
+    # Complete partial media first: recovering the missing side converts an
+    # incomplete record into usable A/V coverage, while all-failed records can
+    # remain in the retry pool for later attempts.
+    candidates.sort(
+        key=lambda item: (
+            0 if (files_for(video_dir, item[0]) or files_for(audio_dir, item[0])) else 1,
+            item[0],
+        )
+    )
     if args.limit is not None:
         candidates = candidates[: args.limit]
 
