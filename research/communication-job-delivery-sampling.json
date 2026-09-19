@@ -8,6 +8,33 @@
   "target_samples_per_job": 2,
   "item_count": 36,
   "claim_boundary": "This is a stratified queue for manual delivery and setting observation. It does not itself contain vocal, nonverbal, editing, room, speaker-intent or effectiveness findings. Derived features are proxies and raw-media absence remains visible.",
+  "review_schema": {
+    "record_type": "communication_job_delivery_sampling_review",
+    "required_session_fields": [
+      "reviewer_name",
+      "reviewer_role",
+      "review_date",
+      "review_modality",
+      "conflict_statement"
+    ],
+    "required_item_fields": [
+      "transcript_alignment",
+      "vocal_timing_observation",
+      "audio_measurement_and_limit",
+      "visual_observation",
+      "setting_editing_music_observation",
+      "speaker_event_identity",
+      "missingness_or_accessibility_note",
+      "reviewer_code"
+    ],
+    "transcript_alignment_values": [
+      "aligned",
+      "partially_aligned",
+      "not_aligned",
+      "indeterminate"
+    ],
+    "independence_note": "A reviewer code and conflict statement are required; an export is not independent merely because those fields are present."
+  },
   "coverage_summary": {
     "raw_audio_video_items": 32,
     "derived_or_other_items": 4,
