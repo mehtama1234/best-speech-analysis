@@ -40,14 +40,14 @@ def main() -> int:
         report = json.loads(path.read_text())
         video_id = report["video_id"]
         frames = report.get("sampled_frames", [])
-        face_frames = [frame for frame in frames if frame.get("face_count", 0) > 0]
+        face_frames = [frame for frame in frames if (frame.get("face_count") or 0) > 0]
         areas = [face["area_fraction"] for frame in face_frames for face in frame.get("faces", [])]
         visual[video_id] = {
             "sampled_frame_count": len(frames),
             "face_detected_frame_count": len(face_frames),
             "face_detection_fraction": round(len(face_frames) / len(frames), 5) if frames else None,
             "mean_face_area_fraction": round(mean(areas), 5) if areas else None,
-            "smile_detector_candidate_count": sum(frame.get("smile_detector_candidate_count", 0) for frame in frames),
+            "smile_detector_candidate_count": sum(frame.get("smile_detector_candidate_count") or 0 for frame in frames),
         }
         for row in report.get("aligned_transcript", []):
             labels = candidate_functions(row.get("text", ""))
