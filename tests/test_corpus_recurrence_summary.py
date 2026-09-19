@@ -24,7 +24,7 @@ class CorpusRecurrenceSummaryTests(unittest.TestCase):
             responses[f"item_{number}_alternative_function"] = "synthetic alternative"
             responses[f"item_{number}_reason"] = "synthetic reason"
             responses[f"item_{number}_identity_or_duplicate_note"] = ""
-        summary = summarize({"record_type": "corpus_recurrence_independent_review", "workbook_id": self.workbook["workbook_id"], "responses": responses}, self.workbook)
+        summary = summarize({"record_type": "corpus_recurrence_independent_review", "workbook_id": self.workbook["workbook_id"], "claim_boundary": "Recurrence review only; not phrase effectiveness or audience outcome evidence.", "responses": responses}, self.workbook)
         self.assertEqual(summary["item_count"], 192)
         self.assertEqual(len(summary["by_phrase_family"]), 8)
         self.assertIn("train", summary["by_phrase_family"]["example"]["event_splits"])

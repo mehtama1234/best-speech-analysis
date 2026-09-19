@@ -128,6 +128,10 @@ complete the export path for that future independent review.
 The [agreement comparator](scripts/compare_corpus_function_reviews.py) keeps
 reviewer disagreements visible and never treats agreement as effectiveness
 evidence.
+Function review exports also preserve the function-only/non-outcome boundary.
+The [recurrence comparator](scripts/compare_corpus_recurrence_reviews.py)
+provides the same disagreement-preserving gate for the 192 phrase-family
+candidates and requires adjudication before recurrence denominators change.
 
 The [multimodal coverage audit](research/multimodal-coverage-audit.json)
 tracks the deterministic 41-video audiovisual expansion, separates raw media

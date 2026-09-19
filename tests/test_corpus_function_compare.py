@@ -27,7 +27,7 @@ class CorpusFunctionCompareTests(unittest.TestCase):
             responses[f"item_{number}_alternate_function"] = "synthetic alternative"
             responses[f"item_{number}_reason"] = "synthetic reason"
             responses[f"item_{number}_identity_or_duplicate_note"] = ""
-        return {"record_type": "corpus_function_independent_review", "workbook_id": self.workbook["workbook_id"], "responses": responses}
+        return {"record_type": "corpus_function_independent_review", "workbook_id": self.workbook["workbook_id"], "claim_boundary": "Function review only; not recurrence, effectiveness or listener outcome evidence.", "responses": responses}
 
     def test_compare_preserves_agreement_and_disagreement_without_promotion(self):
         report = compare([self.make_record("r1"), self.make_record("r2", alternate_first=True)], self.workbook)

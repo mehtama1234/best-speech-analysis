@@ -25,7 +25,7 @@ class CorpusFunctionSummaryTests(unittest.TestCase):
             responses[f"item_{number}_alternate_function"] = "synthetic alternative"
             responses[f"item_{number}_reason"] = "synthetic reason"
             responses[f"item_{number}_identity_or_duplicate_note"] = ""
-        summary = summarize({"record_type": "corpus_function_independent_review", "workbook_id": self.workbook["workbook_id"], "responses": responses}, self.workbook)
+        summary = summarize({"record_type": "corpus_function_independent_review", "workbook_id": self.workbook["workbook_id"], "claim_boundary": "Function review only; not recurrence, effectiveness or listener outcome evidence.", "responses": responses}, self.workbook)
         self.assertEqual(summary["item_count"], 187)
         self.assertEqual(len(summary["by_candidate_function"]), 8)
         self.assertIn("train", summary["by_candidate_function"]["question"]["event_splits"])

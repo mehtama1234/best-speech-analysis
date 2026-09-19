@@ -37,6 +37,10 @@ workbook](research/corpus-recurrence-independent-review-workbook.json).
 The [review request](writeups/corpus-recurrence-independent-review-request.md)
 defines the independent procedure, controlled decisions, export validation and
 interpretation boundary; no external review export has been received.
+The recurrence validator preserves the recurrence-only/non-outcome boundary,
+and the [recurrence comparator](scripts/compare_corpus_recurrence_reviews.py)
+retains field-level disagreements and requires adjudication before any
+denominator changes.
 The [corpus atlas browser](writeups/corpus-pattern-atlas.html) exposes the same
 retrieval layer across all 394 eligible videos with search, phrase-family and
 candidate-function and event-split filters, exact candidate intervals and source
