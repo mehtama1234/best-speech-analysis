@@ -24,6 +24,7 @@ class CorpusLearningCoverageAuditTests(unittest.TestCase):
         self.assertIn("covered_with_transcript_lesson", self.markdown)
         self.assertEqual(self.html.count("class='video'"), 395)
         self.assertIn("Search video", self.html)
+        self.assertIn("full-context", self.html)
 
 
 if __name__ == "__main__":
