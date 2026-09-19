@@ -30,6 +30,7 @@ ARTIFACTS = [
     ("research/shared-evidence-model.json", "shared web/mobile evidence contract"),
     ("research/end-to-end-status.json", "live status dashboard"),
     ("research/end-to-end-acceptance-matrix.json", "requirement acceptance matrix"),
+    ("research/external-review-gate-index.json", "external review/data-collection routing index"),
 ]
 
 

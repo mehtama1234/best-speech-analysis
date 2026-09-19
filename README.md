@@ -175,7 +175,7 @@ The [end-to-end acceptance matrix](writeups/end-to-end-acceptance-matrix.md)
 maps each definition-of-done requirement to an authoritative artifact and keeps
 the nine open promotion/testing requirements visible.
 The [reproducibility manifest](research/reproducibility-manifest.json) hashes
-20 authoritative artifacts and records the fixed-corpus coverage snapshot;
+21 authoritative artifacts and records the fixed-corpus coverage snapshot;
 its validator detects stale outputs without implying that pending human gates
 are complete.
 The [external review gate index](writeups/external-review-gate-index.html)
