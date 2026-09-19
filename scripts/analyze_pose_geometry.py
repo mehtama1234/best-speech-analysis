@@ -89,7 +89,7 @@ def main() -> int:
     output = root / "research/pose-geometry-analysis.json"
     report = {
         "schema_version": "0.1",
-        "measurement_policy": "Torchvision COCO keypoint geometry only; no gesture, emotion, confidence, intent, or mental-state inference.",
+        "measurement_policy": "MediaPipe Pose landmark geometry only; no gesture, emotion, confidence, intent, identity, or mental-state inference.",
         "pose_video_count": len(pose_reports),
         "pose_frame_count": sum(item["sampled_frame_count"] for item in per_video.values()),
         "transcript_pose_join_count": aligned_join_count,

@@ -1,333 +1,1683 @@
 {
-  "schema_version": "0.1",
+  "schema_version": "0.2",
   "video_id": "W-mgdUdOjhs",
   "source_feature_file": "data/features/W-mgdUdOjhs.json",
-  "model": "torchvision Keypoint R-CNN ResNet-50 FPN COCO weights",
-  "measurement_policy": "Observable person/keypoint geometry only; no gesture, emotion, confidence, intent, or mental-state inference.",
-  "frame_count": 4,
+  "model": "MediaPipe Pose model_complexity=0",
+  "frame_count": 28,
+  "person_frame_count": 10,
   "frames": [
     {
       "time_seconds": 0.0,
       "person_detected": false,
-      "person_score": null,
-      "image_width": 640,
-      "image_height": 272,
-      "keypoints": {},
-      "visible_keypoint_count": 0,
       "visible_wrist_count": 0,
-      "observable_geometry_status": "no_person_above_score_threshold"
+      "observable_geometry_status": "no_pose_landmarks_above_detector_threshold",
+      "visible_keypoint_count": 0,
+      "keypoints": {}
+    },
+    {
+      "time_seconds": 10.0,
+      "person_detected": false,
+      "visible_wrist_count": 0,
+      "observable_geometry_status": "no_pose_landmarks_above_detector_threshold",
+      "visible_keypoint_count": 0,
+      "keypoints": {}
+    },
+    {
+      "time_seconds": 20.0,
+      "person_detected": true,
+      "visible_wrist_count": 1,
+      "shoulder_width_fraction": 0.0025,
+      "observable_geometry_status": "mediapipe_pose_landmark_geometry_only; no_gesture_or_intent_inference",
+      "visible_keypoint_count": 24,
+      "keypoints": {
+        "nose": {
+          "x_fraction": 0.8707,
+          "y_fraction": 0.92826,
+          "z_relative": 0.04835,
+          "visibility": 0.88943
+        },
+        "left_eye_inner": {
+          "x_fraction": 0.87101,
+          "y_fraction": 0.92628,
+          "z_relative": 0.05036,
+          "visibility": 0.87092
+        },
+        "left_eye": {
+          "x_fraction": 0.87309,
+          "y_fraction": 0.94303,
+          "z_relative": 0.05034,
+          "visibility": 0.85038
+        },
+        "left_eye_outer": {
+          "x_fraction": 0.87337,
+          "y_fraction": 0.94335,
+          "z_relative": 0.05025,
+          "visibility": 0.89432
+        },
+        "right_eye_inner": {
+          "x_fraction": 0.87035,
+          "y_fraction": 0.92682,
+          "z_relative": 0.04054,
+          "visibility": 0.88527
+        },
+        "right_eye": {
+          "x_fraction": 0.87014,
+          "y_fraction": 0.92808,
+          "z_relative": 0.04041,
+          "visibility": 0.87513
+        },
+        "right_eye_outer": {
+          "x_fraction": 0.87009,
+          "y_fraction": 0.93008,
+          "z_relative": 0.04038,
+          "visibility": 0.8968
+        },
+        "left_ear": {
+          "x_fraction": 0.87441,
+          "y_fraction": 0.93713,
+          "z_relative": 0.06808,
+          "visibility": 0.84181
+        },
+        "right_ear": {
+          "x_fraction": 0.87383,
+          "y_fraction": 0.93614,
+          "z_relative": 0.02419,
+          "visibility": 0.83497
+        },
+        "mouth_left": {
+          "x_fraction": 0.86428,
+          "y_fraction": 0.91528,
+          "z_relative": 0.05776,
+          "visibility": 0.7829
+        },
+        "mouth_right": {
+          "x_fraction": 0.86696,
+          "y_fraction": 0.91457,
+          "z_relative": 0.04507,
+          "visibility": 0.7371
+        },
+        "left_shoulder": {
+          "x_fraction": 0.86434,
+          "y_fraction": 0.87715,
+          "z_relative": 0.07499,
+          "visibility": 0.96726
+        },
+        "right_shoulder": {
+          "x_fraction": 0.86684,
+          "y_fraction": 0.87459,
+          "z_relative": -0.01407,
+          "visibility": 0.99048
+        },
+        "right_elbow": {
+          "x_fraction": 0.89777,
+          "y_fraction": 0.88527,
+          "z_relative": -0.03856,
+          "visibility": 0.86032
+        },
+        "right_wrist": {
+          "x_fraction": 0.94553,
+          "y_fraction": 0.92825,
+          "z_relative": -0.0531,
+          "visibility": 0.79422
+        },
+        "right_pinky": {
+          "x_fraction": 0.95997,
+          "y_fraction": 0.94421,
+          "z_relative": -0.06977,
+          "visibility": 0.73778
+        },
+        "right_index": {
+          "x_fraction": 0.96209,
+          "y_fraction": 0.94246,
+          "z_relative": -0.06943,
+          "visibility": 0.73761
+        },
+        "right_thumb": {
+          "x_fraction": 0.95709,
+          "y_fraction": 0.93393,
+          "z_relative": -0.05518,
+          "visibility": 0.72655
+        },
+        "left_hip": {
+          "x_fraction": 0.82923,
+          "y_fraction": 0.5459,
+          "z_relative": 0.03101,
+          "visibility": 0.98689
+        },
+        "right_hip": {
+          "x_fraction": 0.83908,
+          "y_fraction": 0.55032,
+          "z_relative": -0.03114,
+          "visibility": 0.99269
+        },
+        "right_knee": {
+          "x_fraction": 0.84347,
+          "y_fraction": 0.3116,
+          "z_relative": -0.03749,
+          "visibility": 0.72874
+        },
+        "right_ankle": {
+          "x_fraction": 0.85264,
+          "y_fraction": 0.13987,
+          "z_relative": 0.00665,
+          "visibility": 0.66754
+        },
+        "right_heel": {
+          "x_fraction": 0.85471,
+          "y_fraction": 0.12052,
+          "z_relative": 0.00934,
+          "visibility": 0.66116
+        },
+        "right_foot_index": {
+          "x_fraction": 0.85624,
+          "y_fraction": 0.06778,
+          "z_relative": -0.05565,
+          "visibility": 0.62675
+        }
+      }
+    },
+    {
+      "time_seconds": 30.0,
+      "person_detected": false,
+      "visible_wrist_count": 0,
+      "observable_geometry_status": "no_pose_landmarks_above_detector_threshold",
+      "visible_keypoint_count": 0,
+      "keypoints": {}
+    },
+    {
+      "time_seconds": 40.0,
+      "person_detected": true,
+      "visible_wrist_count": 2,
+      "shoulder_width_fraction": 0.01367,
+      "observable_geometry_status": "mediapipe_pose_landmark_geometry_only; no_gesture_or_intent_inference",
+      "visible_keypoint_count": 28,
+      "keypoints": {
+        "nose": {
+          "x_fraction": 0.50235,
+          "y_fraction": 0.81116,
+          "z_relative": -0.27632,
+          "visibility": 0.99692
+        },
+        "left_eye_inner": {
+          "x_fraction": 0.50781,
+          "y_fraction": 0.82978,
+          "z_relative": -0.27791,
+          "visibility": 0.9972
+        },
+        "left_eye": {
+          "x_fraction": 0.50771,
+          "y_fraction": 0.83204,
+          "z_relative": -0.27804,
+          "visibility": 0.99658
+        },
+        "left_eye_outer": {
+          "x_fraction": 0.5075,
+          "y_fraction": 0.84439,
+          "z_relative": -0.27817,
+          "visibility": 0.99797
+        },
+        "right_eye_inner": {
+          "x_fraction": 0.50882,
+          "y_fraction": 0.8248,
+          "z_relative": -0.29387,
+          "visibility": 0.99773
+        },
+        "right_eye": {
+          "x_fraction": 0.50936,
+          "y_fraction": 0.8235,
+          "z_relative": -0.29397,
+          "visibility": 0.99698
+        },
+        "right_eye_outer": {
+          "x_fraction": 0.51577,
+          "y_fraction": 0.81357,
+          "z_relative": -0.294,
+          "visibility": 0.99814
+        },
+        "left_ear": {
+          "x_fraction": 0.51873,
+          "y_fraction": 0.83333,
+          "z_relative": -0.24307,
+          "visibility": 0.99497
+        },
+        "right_ear": {
+          "x_fraction": 0.52547,
+          "y_fraction": 0.80296,
+          "z_relative": -0.31385,
+          "visibility": 0.99599
+        },
+        "mouth_left": {
+          "x_fraction": 0.50636,
+          "y_fraction": 0.79543,
+          "z_relative": -0.25648,
+          "visibility": 0.99755
+        },
+        "mouth_right": {
+          "x_fraction": 0.5084,
+          "y_fraction": 0.78625,
+          "z_relative": -0.2774,
+          "visibility": 0.99787
+        },
+        "left_shoulder": {
+          "x_fraction": 0.52789,
+          "y_fraction": 0.80953,
+          "z_relative": -0.1643,
+          "visibility": 0.99987
+        },
+        "right_shoulder": {
+          "x_fraction": 0.54156,
+          "y_fraction": 0.70809,
+          "z_relative": -0.29191,
+          "visibility": 0.99993
+        },
+        "right_elbow": {
+          "x_fraction": 0.50292,
+          "y_fraction": 0.5752,
+          "z_relative": -0.27716,
+          "visibility": 0.92638
+        },
+        "left_wrist": {
+          "x_fraction": 0.47036,
+          "y_fraction": 0.71175,
+          "z_relative": -0.10517,
+          "visibility": 0.65892
+        },
+        "right_wrist": {
+          "x_fraction": 0.45583,
+          "y_fraction": 0.52565,
+          "z_relative": -0.26141,
+          "visibility": 0.94218
+        },
+        "left_pinky": {
+          "x_fraction": 0.46328,
+          "y_fraction": 0.72492,
+          "z_relative": -0.11559,
+          "visibility": 0.61524
+        },
+        "right_pinky": {
+          "x_fraction": 0.44562,
+          "y_fraction": 0.51279,
+          "z_relative": -0.29038,
+          "visibility": 0.90432
+        },
+        "left_index": {
+          "x_fraction": 0.46081,
+          "y_fraction": 0.72237,
+          "z_relative": -0.13895,
+          "visibility": 0.63429
+        },
+        "right_index": {
+          "x_fraction": 0.44516,
+          "y_fraction": 0.5354,
+          "z_relative": -0.29042,
+          "visibility": 0.90221
+        },
+        "left_thumb": {
+          "x_fraction": 0.46488,
+          "y_fraction": 0.73475,
+          "z_relative": -0.11508,
+          "visibility": 0.61882
+        },
+        "right_thumb": {
+          "x_fraction": 0.44783,
+          "y_fraction": 0.54244,
+          "z_relative": -0.26192,
+          "visibility": 0.85041
+        },
+        "left_hip": {
+          "x_fraction": 0.53815,
+          "y_fraction": 0.6181,
+          "z_relative": 0.04495,
+          "visibility": 0.99959
+        },
+        "right_hip": {
+          "x_fraction": 0.54715,
+          "y_fraction": 0.55396,
+          "z_relative": -0.04482,
+          "visibility": 0.9999
+        },
+        "right_knee": {
+          "x_fraction": 0.50954,
+          "y_fraction": 0.46236,
+          "z_relative": 0.07335,
+          "visibility": 0.71441
+        },
+        "right_ankle": {
+          "x_fraction": 0.47961,
+          "y_fraction": 0.39244,
+          "z_relative": 0.22087,
+          "visibility": 0.76829
+        },
+        "right_heel": {
+          "x_fraction": 0.47827,
+          "y_fraction": 0.37547,
+          "z_relative": 0.23475,
+          "visibility": 0.62865
+        },
+        "right_foot_index": {
+          "x_fraction": 0.45547,
+          "y_fraction": 0.39801,
+          "z_relative": 0.20215,
+          "visibility": 0.77071
+        }
+      }
+    },
+    {
+      "time_seconds": 50.0,
+      "person_detected": false,
+      "visible_wrist_count": 0,
+      "observable_geometry_status": "no_pose_landmarks_above_detector_threshold",
+      "visible_keypoint_count": 0,
+      "keypoints": {}
+    },
+    {
+      "time_seconds": 60.0,
+      "person_detected": true,
+      "visible_wrist_count": 2,
+      "shoulder_width_fraction": 0.00456,
+      "observable_geometry_status": "mediapipe_pose_landmark_geometry_only; no_gesture_or_intent_inference",
+      "visible_keypoint_count": 26,
+      "keypoints": {
+        "nose": {
+          "x_fraction": 0.44872,
+          "y_fraction": 0.79368,
+          "z_relative": -0.1916,
+          "visibility": 0.99873
+        },
+        "left_eye_inner": {
+          "x_fraction": 0.4529,
+          "y_fraction": 0.81657,
+          "z_relative": -0.19183,
+          "visibility": 0.99887
+        },
+        "left_eye": {
+          "x_fraction": 0.45292,
+          "y_fraction": 0.81794,
+          "z_relative": -0.19192,
+          "visibility": 0.99874
+        },
+        "left_eye_outer": {
+          "x_fraction": 0.45299,
+          "y_fraction": 0.81896,
+          "z_relative": -0.19201,
+          "visibility": 0.99899
+        },
+        "right_eye_inner": {
+          "x_fraction": 0.45165,
+          "y_fraction": 0.78984,
+          "z_relative": -0.21161,
+          "visibility": 0.99899
+        },
+        "right_eye": {
+          "x_fraction": 0.45364,
+          "y_fraction": 0.78883,
+          "z_relative": -0.21174,
+          "visibility": 0.99883
+        },
+        "right_eye_outer": {
+          "x_fraction": 0.45578,
+          "y_fraction": 0.78791,
+          "z_relative": -0.21177,
+          "visibility": 0.9992
+        },
+        "left_ear": {
+          "x_fraction": 0.46575,
+          "y_fraction": 0.80626,
+          "z_relative": -0.1585,
+          "visibility": 0.99825
+        },
+        "right_ear": {
+          "x_fraction": 0.47178,
+          "y_fraction": 0.78777,
+          "z_relative": -0.24527,
+          "visibility": 0.99899
+        },
+        "mouth_left": {
+          "x_fraction": 0.45166,
+          "y_fraction": 0.7755,
+          "z_relative": -0.17249,
+          "visibility": 0.99909
+        },
+        "mouth_right": {
+          "x_fraction": 0.45436,
+          "y_fraction": 0.74993,
+          "z_relative": -0.19828,
+          "visibility": 0.99936
+        },
+        "left_shoulder": {
+          "x_fraction": 0.49081,
+          "y_fraction": 0.76827,
+          "z_relative": -0.09192,
+          "visibility": 0.99991
+        },
+        "right_shoulder": {
+          "x_fraction": 0.49537,
+          "y_fraction": 0.66991,
+          "z_relative": -0.23941,
+          "visibility": 0.99996
+        },
+        "left_elbow": {
+          "x_fraction": 0.48431,
+          "y_fraction": 0.71692,
+          "z_relative": -0.02521,
+          "visibility": 0.56892
+        },
+        "right_elbow": {
+          "x_fraction": 0.47398,
+          "y_fraction": 0.44889,
+          "z_relative": -0.23048,
+          "visibility": 0.93148
+        },
+        "left_wrist": {
+          "x_fraction": 0.43672,
+          "y_fraction": 0.69483,
+          "z_relative": -0.02533,
+          "visibility": 0.5396
+        },
+        "right_wrist": {
+          "x_fraction": 0.44074,
+          "y_fraction": 0.28532,
+          "z_relative": -0.19429,
+          "visibility": 0.9253
+        },
+        "right_pinky": {
+          "x_fraction": 0.43453,
+          "y_fraction": 0.23953,
+          "z_relative": -0.21436,
+          "visibility": 0.88678
+        },
+        "right_index": {
+          "x_fraction": 0.43172,
+          "y_fraction": 0.25356,
+          "z_relative": -0.21652,
+          "visibility": 0.88529
+        },
+        "right_thumb": {
+          "x_fraction": 0.43225,
+          "y_fraction": 0.27104,
+          "z_relative": -0.19389,
+          "visibility": 0.8495
+        },
+        "left_hip": {
+          "x_fraction": 0.50469,
+          "y_fraction": 0.46321,
+          "z_relative": 0.03688,
+          "visibility": 0.99944
+        },
+        "right_hip": {
+          "x_fraction": 0.51026,
+          "y_fraction": 0.41007,
+          "z_relative": -0.03685,
+          "visibility": 0.99964
+        },
+        "right_knee": {
+          "x_fraction": 0.46193,
+          "y_fraction": 0.30608,
+          "z_relative": 0.03739,
+          "visibility": 0.66516
+        },
+        "right_ankle": {
+          "x_fraction": 0.40357,
+          "y_fraction": 0.17398,
+          "z_relative": 0.14816,
+          "visibility": 0.63897
+        },
+        "right_heel": {
+          "x_fraction": 0.39729,
+          "y_fraction": 0.14478,
+          "z_relative": 0.15781,
+          "visibility": 0.66024
+        },
+        "right_foot_index": {
+          "x_fraction": 0.38063,
+          "y_fraction": 0.16788,
+          "z_relative": 0.13264,
+          "visibility": 0.70607
+        }
+      }
+    },
+    {
+      "time_seconds": 70.0,
+      "person_detected": true,
+      "visible_wrist_count": 2,
+      "shoulder_width_fraction": 0.01373,
+      "observable_geometry_status": "mediapipe_pose_landmark_geometry_only; no_gesture_or_intent_inference",
+      "visible_keypoint_count": 31,
+      "keypoints": {
+        "nose": {
+          "x_fraction": 0.40805,
+          "y_fraction": 0.69351,
+          "z_relative": -0.15596,
+          "visibility": 0.99626
+        },
+        "left_eye_inner": {
+          "x_fraction": 0.41126,
+          "y_fraction": 0.71761,
+          "z_relative": -0.15128,
+          "visibility": 0.99544
+        },
+        "left_eye": {
+          "x_fraction": 0.41161,
+          "y_fraction": 0.72033,
+          "z_relative": -0.15134,
+          "visibility": 0.99472
+        },
+        "left_eye_outer": {
+          "x_fraction": 0.41188,
+          "y_fraction": 0.72308,
+          "z_relative": -0.15143,
+          "visibility": 0.99574
+        },
+        "right_eye_inner": {
+          "x_fraction": 0.41302,
+          "y_fraction": 0.7123,
+          "z_relative": -0.17368,
+          "visibility": 0.99679
+        },
+        "right_eye": {
+          "x_fraction": 0.41476,
+          "y_fraction": 0.71154,
+          "z_relative": -0.17377,
+          "visibility": 0.99648
+        },
+        "right_eye_outer": {
+          "x_fraction": 0.41667,
+          "y_fraction": 0.71082,
+          "z_relative": -0.17386,
+          "visibility": 0.99775
+        },
+        "left_ear": {
+          "x_fraction": 0.42385,
+          "y_fraction": 0.73089,
+          "z_relative": -0.10853,
+          "visibility": 0.99273
+        },
+        "right_ear": {
+          "x_fraction": 0.42973,
+          "y_fraction": 0.71273,
+          "z_relative": -0.20757,
+          "visibility": 0.99758
+        },
+        "mouth_left": {
+          "x_fraction": 0.41338,
+          "y_fraction": 0.6852,
+          "z_relative": -0.13513,
+          "visibility": 0.99794
+        },
+        "mouth_right": {
+          "x_fraction": 0.4233,
+          "y_fraction": 0.68264,
+          "z_relative": -0.16442,
+          "visibility": 0.99868
+        },
+        "left_shoulder": {
+          "x_fraction": 0.44216,
+          "y_fraction": 0.69633,
+          "z_relative": -0.03935,
+          "visibility": 0.99982
+        },
+        "right_shoulder": {
+          "x_fraction": 0.45589,
+          "y_fraction": 0.61275,
+          "z_relative": -0.22084,
+          "visibility": 0.99991
+        },
+        "left_elbow": {
+          "x_fraction": 0.41928,
+          "y_fraction": 0.65007,
+          "z_relative": 0.0099,
+          "visibility": 0.69509
+        },
+        "right_elbow": {
+          "x_fraction": 0.43182,
+          "y_fraction": 0.40765,
+          "z_relative": -0.22574,
+          "visibility": 0.93397
+        },
+        "left_wrist": {
+          "x_fraction": 0.40625,
+          "y_fraction": 0.69142,
+          "z_relative": -0.01691,
+          "visibility": 0.7089
+        },
+        "right_wrist": {
+          "x_fraction": 0.41992,
+          "y_fraction": 0.25461,
+          "z_relative": -0.19168,
+          "visibility": 0.89783
+        },
+        "left_pinky": {
+          "x_fraction": 0.40525,
+          "y_fraction": 0.70935,
+          "z_relative": -0.02124,
+          "visibility": 0.59559
+        },
+        "right_pinky": {
+          "x_fraction": 0.42048,
+          "y_fraction": 0.20875,
+          "z_relative": -0.21212,
+          "visibility": 0.84763
+        },
+        "left_index": {
+          "x_fraction": 0.40292,
+          "y_fraction": 0.7095,
+          "z_relative": -0.03389,
+          "visibility": 0.60219
+        },
+        "right_index": {
+          "x_fraction": 0.41869,
+          "y_fraction": 0.21551,
+          "z_relative": -0.21713,
+          "visibility": 0.84934
+        },
+        "left_thumb": {
+          "x_fraction": 0.40433,
+          "y_fraction": 0.69701,
+          "z_relative": -0.02359,
+          "visibility": 0.60074
+        },
+        "right_thumb": {
+          "x_fraction": 0.41617,
+          "y_fraction": 0.23383,
+          "z_relative": -0.19217,
+          "visibility": 0.8163
+        },
+        "left_hip": {
+          "x_fraction": 0.45702,
+          "y_fraction": 0.42676,
+          "z_relative": 0.05572,
+          "visibility": 0.99898
+        },
+        "right_hip": {
+          "x_fraction": 0.46793,
+          "y_fraction": 0.38662,
+          "z_relative": -0.05559,
+          "visibility": 0.99891
+        },
+        "left_knee": {
+          "x_fraction": 0.40026,
+          "y_fraction": 0.34802,
+          "z_relative": 0.1063,
+          "visibility": 0.51736
+        },
+        "right_knee": {
+          "x_fraction": 0.4101,
+          "y_fraction": 0.2972,
+          "z_relative": -0.01433,
+          "visibility": 0.77527
+        },
+        "right_ankle": {
+          "x_fraction": 0.37555,
+          "y_fraction": 0.20032,
+          "z_relative": 0.10345,
+          "visibility": 0.6241
+        },
+        "right_heel": {
+          "x_fraction": 0.37405,
+          "y_fraction": 0.18399,
+          "z_relative": 0.11414,
+          "visibility": 0.52299
+        },
+        "left_foot_index": {
+          "x_fraction": 0.33506,
+          "y_fraction": 0.20944,
+          "z_relative": 0.17326,
+          "visibility": 0.51748
+        },
+        "right_foot_index": {
+          "x_fraction": 0.35248,
+          "y_fraction": 0.17824,
+          "z_relative": 0.09179,
+          "visibility": 0.68444
+        }
+      }
+    },
+    {
+      "time_seconds": 80.0,
+      "person_detected": false,
+      "visible_wrist_count": 0,
+      "observable_geometry_status": "no_pose_landmarks_above_detector_threshold",
+      "visible_keypoint_count": 0,
+      "keypoints": {}
     },
     {
       "time_seconds": 90.0,
       "person_detected": true,
-      "person_score": 0.98297,
-      "person_box": {
-        "x_min_fraction": 0.59972,
-        "y_min_fraction": 0.0126,
-        "x_max_fraction": 0.95254,
-        "y_max_fraction": 0.99339
-      },
-      "image_width": 640,
-      "image_height": 272,
+      "visible_wrist_count": 0,
+      "shoulder_width_fraction": 0.32364,
+      "observable_geometry_status": "mediapipe_pose_landmark_geometry_only; no_gesture_or_intent_inference",
+      "visible_keypoint_count": 13,
       "keypoints": {
         "nose": {
-          "x_fraction": 0.80813,
-          "y_fraction": 0.53973,
-          "confidence": 1.0
+          "x_fraction": 0.79099,
+          "y_fraction": 0.53372,
+          "z_relative": -1.25374,
+          "visibility": 0.99892
+        },
+        "left_eye_inner": {
+          "x_fraction": 0.80992,
+          "y_fraction": 0.40028,
+          "z_relative": -1.16623,
+          "visibility": 0.99905
         },
         "left_eye": {
-          "x_fraction": 0.85653,
-          "y_fraction": 0.39647,
-          "confidence": 1.0
+          "x_fraction": 0.82566,
+          "y_fraction": 0.39451,
+          "z_relative": -1.16639,
+          "visibility": 0.99891
+        },
+        "left_eye_outer": {
+          "x_fraction": 0.83916,
+          "y_fraction": 0.38994,
+          "z_relative": -1.16628,
+          "visibility": 0.99881
+        },
+        "right_eye_inner": {
+          "x_fraction": 0.75177,
+          "y_fraction": 0.41349,
+          "z_relative": -1.16821,
+          "visibility": 0.9989
         },
         "right_eye": {
-          "x_fraction": 0.74569,
-          "y_fraction": 0.39647,
-          "confidence": 1.0
+          "x_fraction": 0.72804,
+          "y_fraction": 0.4151,
+          "z_relative": -1.16836,
+          "visibility": 0.99871
+        },
+        "right_eye_outer": {
+          "x_fraction": 0.70782,
+          "y_fraction": 0.41681,
+          "z_relative": -1.16859,
+          "visibility": 0.99858
         },
         "left_ear": {
-          "x_fraction": 0.93303,
-          "y_fraction": 0.47728,
-          "confidence": 1.0
+          "x_fraction": 0.85005,
+          "y_fraction": 0.42084,
+          "z_relative": -0.62735,
+          "visibility": 0.99873
         },
         "right_ear": {
-          "x_fraction": 0.6567,
-          "y_fraction": 0.48463,
-          "confidence": 1.0
+          "x_fraction": 0.68527,
+          "y_fraction": 0.44832,
+          "z_relative": -0.63319,
+          "visibility": 0.99834
+        },
+        "mouth_left": {
+          "x_fraction": 0.82502,
+          "y_fraction": 0.63552,
+          "z_relative": -1.0417,
+          "visibility": 0.99344
+        },
+        "mouth_right": {
+          "x_fraction": 0.75552,
+          "y_fraction": 0.63881,
+          "z_relative": -1.04568,
+          "visibility": 0.99192
         },
         "left_shoulder": {
-          "x_fraction": 0.95176,
-          "y_fraction": 0.94013,
-          "confidence": 1.0
+          "x_fraction": 0.9413,
+          "y_fraction": 0.94066,
+          "z_relative": -0.37523,
+          "visibility": 0.82915
         },
         "right_shoulder": {
-          "x_fraction": 0.62391,
-          "y_fraction": 0.99156,
-          "confidence": 1.0
+          "x_fraction": 0.61766,
+          "y_fraction": 1.02959,
+          "z_relative": -0.32727,
+          "visibility": 0.8037
+        }
+      }
+    },
+    {
+      "time_seconds": 100.0,
+      "person_detected": true,
+      "visible_wrist_count": 2,
+      "shoulder_width_fraction": 0.07443,
+      "observable_geometry_status": "mediapipe_pose_landmark_geometry_only; no_gesture_or_intent_inference",
+      "visible_keypoint_count": 25,
+      "keypoints": {
+        "nose": {
+          "x_fraction": 0.43865,
+          "y_fraction": 0.33096,
+          "z_relative": -0.09409,
+          "visibility": 0.9966
+        },
+        "left_eye_inner": {
+          "x_fraction": 0.44168,
+          "y_fraction": 0.36572,
+          "z_relative": -0.09331,
+          "visibility": 0.99712
+        },
+        "left_eye": {
+          "x_fraction": 0.43838,
+          "y_fraction": 0.37437,
+          "z_relative": -0.09335,
+          "visibility": 0.99633
+        },
+        "left_eye_outer": {
+          "x_fraction": 0.43503,
+          "y_fraction": 0.38301,
+          "z_relative": -0.09342,
+          "visibility": 0.99683
+        },
+        "right_eye_inner": {
+          "x_fraction": 0.45257,
+          "y_fraction": 0.3457,
+          "z_relative": -0.0909,
+          "visibility": 0.99573
+        },
+        "right_eye": {
+          "x_fraction": 0.45654,
+          "y_fraction": 0.34006,
+          "z_relative": -0.091,
+          "visibility": 0.99424
+        },
+        "right_eye_outer": {
+          "x_fraction": 0.46069,
+          "y_fraction": 0.33435,
+          "z_relative": -0.09094,
+          "visibility": 0.99393
+        },
+        "left_ear": {
+          "x_fraction": 0.43065,
+          "y_fraction": 0.40396,
+          "z_relative": -0.06911,
+          "visibility": 0.99631
+        },
+        "right_ear": {
+          "x_fraction": 0.46794,
+          "y_fraction": 0.33499,
+          "z_relative": -0.05579,
+          "visibility": 0.99262
+        },
+        "mouth_left": {
+          "x_fraction": 0.42807,
+          "y_fraction": 0.33202,
+          "z_relative": -0.08116,
+          "visibility": 0.99673
+        },
+        "mouth_right": {
+          "x_fraction": 0.43933,
+          "y_fraction": 0.30922,
+          "z_relative": -0.07736,
+          "visibility": 0.99518
+        },
+        "left_shoulder": {
+          "x_fraction": 0.39751,
+          "y_fraction": 0.4146,
+          "z_relative": -0.05774,
+          "visibility": 0.99964
+        },
+        "right_shoulder": {
+          "x_fraction": 0.47194,
+          "y_fraction": 0.3069,
+          "z_relative": -0.04028,
+          "visibility": 0.99864
         },
         "left_elbow": {
-          "x_fraction": 0.95176,
-          "y_fraction": 0.99156,
-          "confidence": 1.0
+          "x_fraction": 0.36146,
+          "y_fraction": 0.41919,
+          "z_relative": -0.04893,
+          "visibility": 0.86913
         },
         "right_elbow": {
-          "x_fraction": 0.6005,
-          "y_fraction": 0.99156,
-          "confidence": 1.0
+          "x_fraction": 0.48551,
+          "y_fraction": 0.29692,
+          "z_relative": -0.06481,
+          "visibility": 0.58699
         },
         "left_wrist": {
-          "x_fraction": 0.79877,
-          "y_fraction": 0.92544,
-          "confidence": 1.0
+          "x_fraction": 0.34765,
+          "y_fraction": 0.30782,
+          "z_relative": -0.09971,
+          "visibility": 0.94686
         },
         "right_wrist": {
-          "x_fraction": 0.79721,
-          "y_fraction": 0.92911,
-          "confidence": 1.0
+          "x_fraction": 0.48167,
+          "y_fraction": 0.34651,
+          "z_relative": -0.12336,
+          "visibility": 0.8317
+        },
+        "left_pinky": {
+          "x_fraction": 0.33496,
+          "y_fraction": 0.29542,
+          "z_relative": -0.1166,
+          "visibility": 0.91146
+        },
+        "right_pinky": {
+          "x_fraction": 0.48756,
+          "y_fraction": 0.35405,
+          "z_relative": -0.13935,
+          "visibility": 0.80589
+        },
+        "left_index": {
+          "x_fraction": 0.34729,
+          "y_fraction": 0.27986,
+          "z_relative": -0.11739,
+          "visibility": 0.93477
+        },
+        "right_index": {
+          "x_fraction": 0.48581,
+          "y_fraction": 0.37412,
+          "z_relative": -0.13601,
+          "visibility": 0.83476
+        },
+        "left_thumb": {
+          "x_fraction": 0.35485,
+          "y_fraction": 0.27721,
+          "z_relative": -0.10113,
+          "visibility": 0.92587
+        },
+        "right_thumb": {
+          "x_fraction": 0.4804,
+          "y_fraction": 0.37141,
+          "z_relative": -0.12412,
+          "visibility": 0.81423
         },
         "left_hip": {
-          "x_fraction": 0.95176,
-          "y_fraction": 0.99156,
-          "confidence": 1.0
+          "x_fraction": 0.38306,
+          "y_fraction": 0.2449,
+          "z_relative": -0.00101,
+          "visibility": 0.99598
         },
         "right_hip": {
-          "x_fraction": 0.74881,
-          "y_fraction": 0.99156,
-          "confidence": 1.0
+          "x_fraction": 0.42268,
+          "y_fraction": 0.20198,
+          "z_relative": 0.00091,
+          "visibility": 0.99639
+        }
+      }
+    },
+    {
+      "time_seconds": 110.0,
+      "person_detected": false,
+      "visible_wrist_count": 0,
+      "observable_geometry_status": "no_pose_landmarks_above_detector_threshold",
+      "visible_keypoint_count": 0,
+      "keypoints": {}
+    },
+    {
+      "time_seconds": 120.0,
+      "person_detected": true,
+      "visible_wrist_count": 2,
+      "shoulder_width_fraction": 0.02898,
+      "observable_geometry_status": "mediapipe_pose_landmark_geometry_only; no_gesture_or_intent_inference",
+      "visible_keypoint_count": 29,
+      "keypoints": {
+        "nose": {
+          "x_fraction": 0.35905,
+          "y_fraction": 0.20789,
+          "z_relative": -0.16595,
+          "visibility": 0.99893
         },
-        "left_knee": {
-          "x_fraction": 0.78784,
-          "y_fraction": 0.8336,
-          "confidence": 1.0
+        "left_eye_inner": {
+          "x_fraction": 0.35909,
+          "y_fraction": 0.19243,
+          "z_relative": -0.16765,
+          "visibility": 0.99857
+        },
+        "left_eye": {
+          "x_fraction": 0.3609,
+          "y_fraction": 0.18832,
+          "z_relative": -0.1677,
+          "visibility": 0.99865
+        },
+        "left_eye_outer": {
+          "x_fraction": 0.36274,
+          "y_fraction": 0.1842,
+          "z_relative": -0.16775,
+          "visibility": 0.99883
+        },
+        "right_eye_inner": {
+          "x_fraction": 0.35416,
+          "y_fraction": 0.20161,
+          "z_relative": -0.16972,
+          "visibility": 0.9984
+        },
+        "right_eye": {
+          "x_fraction": 0.3523,
+          "y_fraction": 0.20433,
+          "z_relative": -0.1698,
+          "visibility": 0.99825
+        },
+        "right_eye_outer": {
+          "x_fraction": 0.35035,
+          "y_fraction": 0.20716,
+          "z_relative": -0.16978,
+          "visibility": 0.9982
+        },
+        "left_ear": {
+          "x_fraction": 0.36586,
+          "y_fraction": 0.17646,
+          "z_relative": -0.1433,
+          "visibility": 0.99901
+        },
+        "right_ear": {
+          "x_fraction": 0.34836,
+          "y_fraction": 0.20848,
+          "z_relative": -0.15287,
+          "visibility": 0.99883
+        },
+        "mouth_left": {
+          "x_fraction": 0.36384,
+          "y_fraction": 0.20805,
+          "z_relative": -0.15368,
+          "visibility": 0.9989
+        },
+        "mouth_right": {
+          "x_fraction": 0.35794,
+          "y_fraction": 0.21857,
+          "z_relative": -0.15655,
+          "visibility": 0.99884
+        },
+        "left_shoulder": {
+          "x_fraction": 0.37649,
+          "y_fraction": 0.19607,
+          "z_relative": -0.10574,
+          "visibility": 0.99976
+        },
+        "right_shoulder": {
+          "x_fraction": 0.34751,
+          "y_fraction": 0.24528,
+          "z_relative": -0.12238,
+          "visibility": 0.99978
+        },
+        "left_elbow": {
+          "x_fraction": 0.38358,
+          "y_fraction": 0.19588,
+          "z_relative": -0.10024,
+          "visibility": 0.7069
+        },
+        "right_elbow": {
+          "x_fraction": 0.33625,
+          "y_fraction": 0.28668,
+          "z_relative": -0.12484,
+          "visibility": 0.85536
+        },
+        "left_wrist": {
+          "x_fraction": 0.37289,
+          "y_fraction": 0.14663,
+          "z_relative": -0.0944,
+          "visibility": 0.71947
+        },
+        "right_wrist": {
+          "x_fraction": 0.32649,
+          "y_fraction": 0.22831,
+          "z_relative": -0.14217,
+          "visibility": 0.8144
+        },
+        "left_pinky": {
+          "x_fraction": 0.37057,
+          "y_fraction": 0.13091,
+          "z_relative": -0.10075,
+          "visibility": 0.61837
+        },
+        "right_pinky": {
+          "x_fraction": 0.32435,
+          "y_fraction": 0.21774,
+          "z_relative": -0.15269,
+          "visibility": 0.7397
+        },
+        "left_index": {
+          "x_fraction": 0.37116,
+          "y_fraction": 0.12548,
+          "z_relative": -0.10048,
+          "visibility": 0.62087
+        },
+        "right_index": {
+          "x_fraction": 0.32307,
+          "y_fraction": 0.20312,
+          "z_relative": -0.15081,
+          "visibility": 0.72914
+        },
+        "left_thumb": {
+          "x_fraction": 0.37092,
+          "y_fraction": 0.13418,
+          "z_relative": -0.09504,
+          "visibility": 0.62891
+        },
+        "right_thumb": {
+          "x_fraction": 0.32426,
+          "y_fraction": 0.20652,
+          "z_relative": -0.14178,
+          "visibility": 0.70197
+        },
+        "left_hip": {
+          "x_fraction": 0.39798,
+          "y_fraction": 0.39425,
+          "z_relative": 0.00702,
+          "visibility": 0.99989
+        },
+        "right_hip": {
+          "x_fraction": 0.38331,
+          "y_fraction": 0.41565,
+          "z_relative": -0.00697,
+          "visibility": 0.99988
         },
         "right_knee": {
-          "x_fraction": 0.79408,
-          "y_fraction": 0.83727,
-          "confidence": 1.0
-        },
-        "left_ankle": {
-          "x_fraction": 0.84248,
-          "y_fraction": 0.92176,
-          "confidence": 1.0
+          "x_fraction": 0.40525,
+          "y_fraction": 0.51032,
+          "z_relative": -0.00339,
+          "visibility": 0.68417
         },
         "right_ankle": {
-          "x_fraction": 0.73008,
-          "y_fraction": 0.88503,
-          "confidence": 1.0
+          "x_fraction": 0.39701,
+          "y_fraction": 0.47798,
+          "z_relative": 0.08067,
+          "visibility": 0.56934
+        },
+        "right_heel": {
+          "x_fraction": 0.39761,
+          "y_fraction": 0.46761,
+          "z_relative": 0.09042,
+          "visibility": 0.54882
+        },
+        "right_foot_index": {
+          "x_fraction": 0.39398,
+          "y_fraction": 0.49734,
+          "z_relative": 0.10468,
+          "visibility": 0.60245
         }
-      },
-      "visible_keypoint_count": 17,
-      "visible_wrist_count": 2,
-      "shoulder_width_fraction": 0.32785,
-      "observable_geometry_status": "keypoint_geometry_only; no_gesture_or_intent_inference"
+      }
+    },
+    {
+      "time_seconds": 130.0,
+      "person_detected": false,
+      "visible_wrist_count": 0,
+      "observable_geometry_status": "no_pose_landmarks_above_detector_threshold",
+      "visible_keypoint_count": 0,
+      "keypoints": {}
+    },
+    {
+      "time_seconds": 140.0,
+      "person_detected": false,
+      "visible_wrist_count": 0,
+      "observable_geometry_status": "no_pose_landmarks_above_detector_threshold",
+      "visible_keypoint_count": 0,
+      "keypoints": {}
+    },
+    {
+      "time_seconds": 150.0,
+      "person_detected": true,
+      "visible_wrist_count": 1,
+      "shoulder_width_fraction": 0.0033,
+      "observable_geometry_status": "mediapipe_pose_landmark_geometry_only; no_gesture_or_intent_inference",
+      "visible_keypoint_count": 21,
+      "keypoints": {
+        "nose": {
+          "x_fraction": 0.35594,
+          "y_fraction": 0.75128,
+          "z_relative": -0.15827,
+          "visibility": 0.98672
+        },
+        "left_eye_inner": {
+          "x_fraction": 0.35528,
+          "y_fraction": 0.78373,
+          "z_relative": -0.15143,
+          "visibility": 0.98343
+        },
+        "left_eye": {
+          "x_fraction": 0.35667,
+          "y_fraction": 0.78648,
+          "z_relative": -0.15151,
+          "visibility": 0.98295
+        },
+        "left_eye_outer": {
+          "x_fraction": 0.358,
+          "y_fraction": 0.78936,
+          "z_relative": -0.15162,
+          "visibility": 0.9867
+        },
+        "right_eye_inner": {
+          "x_fraction": 0.35494,
+          "y_fraction": 0.78248,
+          "z_relative": -0.18598,
+          "visibility": 0.98504
+        },
+        "right_eye": {
+          "x_fraction": 0.35617,
+          "y_fraction": 0.78523,
+          "z_relative": -0.18606,
+          "visibility": 0.98548
+        },
+        "right_eye_outer": {
+          "x_fraction": 0.35766,
+          "y_fraction": 0.78813,
+          "z_relative": -0.18609,
+          "visibility": 0.98779
+        },
+        "left_ear": {
+          "x_fraction": 0.37551,
+          "y_fraction": 0.81057,
+          "z_relative": -0.10439,
+          "visibility": 0.98491
+        },
+        "right_ear": {
+          "x_fraction": 0.37399,
+          "y_fraction": 0.80796,
+          "z_relative": -0.26001,
+          "visibility": 0.98937
+        },
+        "mouth_left": {
+          "x_fraction": 0.36945,
+          "y_fraction": 0.74326,
+          "z_relative": -0.13565,
+          "visibility": 0.9908
+        },
+        "mouth_right": {
+          "x_fraction": 0.36926,
+          "y_fraction": 0.7442,
+          "z_relative": -0.18094,
+          "visibility": 0.99398
+        },
+        "left_shoulder": {
+          "x_fraction": 0.4244,
+          "y_fraction": 0.73512,
+          "z_relative": -0.00886,
+          "visibility": 0.99931
+        },
+        "right_shoulder": {
+          "x_fraction": 0.4211,
+          "y_fraction": 0.70016,
+          "z_relative": -0.3206,
+          "visibility": 0.99975
+        },
+        "right_elbow": {
+          "x_fraction": 0.41513,
+          "y_fraction": 0.44833,
+          "z_relative": -0.34265,
+          "visibility": 0.91412
+        },
+        "right_wrist": {
+          "x_fraction": 0.40097,
+          "y_fraction": 0.18907,
+          "z_relative": -0.25877,
+          "visibility": 0.87088
+        },
+        "right_pinky": {
+          "x_fraction": 0.40161,
+          "y_fraction": 0.13532,
+          "z_relative": -0.28724,
+          "visibility": 0.79729
+        },
+        "right_index": {
+          "x_fraction": 0.39435,
+          "y_fraction": 0.13767,
+          "z_relative": -0.28183,
+          "visibility": 0.79614
+        },
+        "right_thumb": {
+          "x_fraction": 0.39419,
+          "y_fraction": 0.15566,
+          "z_relative": -0.25472,
+          "visibility": 0.72586
+        },
+        "left_hip": {
+          "x_fraction": 0.47623,
+          "y_fraction": 0.3632,
+          "z_relative": 0.0966,
+          "visibility": 0.99635
+        },
+        "right_hip": {
+          "x_fraction": 0.48223,
+          "y_fraction": 0.32664,
+          "z_relative": -0.09681,
+          "visibility": 0.99574
+        },
+        "right_knee": {
+          "x_fraction": 0.38158,
+          "y_fraction": 0.16079,
+          "z_relative": -0.0859,
+          "visibility": 0.71808
+        }
+      }
+    },
+    {
+      "time_seconds": 160.0,
+      "person_detected": true,
+      "visible_wrist_count": 1,
+      "shoulder_width_fraction": 0.01001,
+      "observable_geometry_status": "mediapipe_pose_landmark_geometry_only; no_gesture_or_intent_inference",
+      "visible_keypoint_count": 21,
+      "keypoints": {
+        "nose": {
+          "x_fraction": 0.35435,
+          "y_fraction": 0.72021,
+          "z_relative": -0.22798,
+          "visibility": 0.99421
+        },
+        "left_eye_inner": {
+          "x_fraction": 0.36316,
+          "y_fraction": 0.78695,
+          "z_relative": -0.22179,
+          "visibility": 0.99498
+        },
+        "left_eye": {
+          "x_fraction": 0.36394,
+          "y_fraction": 0.79052,
+          "z_relative": -0.22184,
+          "visibility": 0.99463
+        },
+        "left_eye_outer": {
+          "x_fraction": 0.36497,
+          "y_fraction": 0.79389,
+          "z_relative": -0.22191,
+          "visibility": 0.99578
+        },
+        "right_eye_inner": {
+          "x_fraction": 0.36344,
+          "y_fraction": 0.78118,
+          "z_relative": -0.25853,
+          "visibility": 0.99714
+        },
+        "right_eye": {
+          "x_fraction": 0.36719,
+          "y_fraction": 0.78404,
+          "z_relative": -0.25866,
+          "visibility": 0.9972
+        },
+        "right_eye_outer": {
+          "x_fraction": 0.36914,
+          "y_fraction": 0.78479,
+          "z_relative": -0.25868,
+          "visibility": 0.99768
+        },
+        "left_ear": {
+          "x_fraction": 0.38309,
+          "y_fraction": 0.81954,
+          "z_relative": -0.17133,
+          "visibility": 0.99721
+        },
+        "right_ear": {
+          "x_fraction": 0.3845,
+          "y_fraction": 0.79126,
+          "z_relative": -0.33594,
+          "visibility": 0.99818
+        },
+        "mouth_left": {
+          "x_fraction": 0.3683,
+          "y_fraction": 0.72058,
+          "z_relative": -0.2038,
+          "visibility": 0.99589
+        },
+        "mouth_right": {
+          "x_fraction": 0.36821,
+          "y_fraction": 0.71525,
+          "z_relative": -0.25199,
+          "visibility": 0.99751
+        },
+        "left_shoulder": {
+          "x_fraction": 0.42937,
+          "y_fraction": 0.77644,
+          "z_relative": -0.06664,
+          "visibility": 0.99946
+        },
+        "right_shoulder": {
+          "x_fraction": 0.41936,
+          "y_fraction": 0.66483,
+          "z_relative": -0.37933,
+          "visibility": 0.99985
+        },
+        "right_elbow": {
+          "x_fraction": 0.42274,
+          "y_fraction": 0.39324,
+          "z_relative": -0.3682,
+          "visibility": 0.97287
+        },
+        "right_wrist": {
+          "x_fraction": 0.4112,
+          "y_fraction": 0.19532,
+          "z_relative": -0.24945,
+          "visibility": 0.87769
+        },
+        "right_pinky": {
+          "x_fraction": 0.41043,
+          "y_fraction": 0.14583,
+          "z_relative": -0.27761,
+          "visibility": 0.817
+        },
+        "right_index": {
+          "x_fraction": 0.40504,
+          "y_fraction": 0.1547,
+          "z_relative": -0.27772,
+          "visibility": 0.81175
+        },
+        "right_thumb": {
+          "x_fraction": 0.40499,
+          "y_fraction": 0.17289,
+          "z_relative": -0.24725,
+          "visibility": 0.76003
+        },
+        "left_hip": {
+          "x_fraction": 0.47872,
+          "y_fraction": 0.38125,
+          "z_relative": 0.11041,
+          "visibility": 0.9987
+        },
+        "right_hip": {
+          "x_fraction": 0.48481,
+          "y_fraction": 0.31639,
+          "z_relative": -0.11054,
+          "visibility": 0.9983
+        },
+        "right_knee": {
+          "x_fraction": 0.35088,
+          "y_fraction": 0.14621,
+          "z_relative": -0.10774,
+          "visibility": 0.95049
+        }
+      }
+    },
+    {
+      "time_seconds": 170.0,
+      "person_detected": false,
+      "visible_wrist_count": 0,
+      "observable_geometry_status": "no_pose_landmarks_above_detector_threshold",
+      "visible_keypoint_count": 0,
+      "keypoints": {}
     },
     {
       "time_seconds": 180.0,
-      "person_detected": true,
-      "person_score": 0.7397,
-      "person_box": {
-        "x_min_fraction": 0.26641,
-        "y_min_fraction": 0.04519,
-        "x_max_fraction": 0.62285,
-        "y_max_fraction": 0.77007
-      },
-      "image_width": 640,
-      "image_height": 272,
-      "keypoints": {
-        "nose": {
-          "x_fraction": 0.46331,
-          "y_fraction": 0.43875,
-          "confidence": 1.0
-        },
-        "left_eye": {
-          "x_fraction": 0.51467,
-          "y_fraction": 0.2374,
-          "confidence": 1.0
-        },
-        "right_eye": {
-          "x_fraction": 0.36058,
-          "y_fraction": 0.27767,
-          "confidence": 1.0
-        },
-        "left_ear": {
-          "x_fraction": 0.57226,
-          "y_fraction": 0.24472,
-          "confidence": 1.0
-        },
-        "right_ear": {
-          "x_fraction": 0.29832,
-          "y_fraction": 0.34723,
-          "confidence": 1.0
-        },
-        "left_shoulder": {
-          "x_fraction": 0.62207,
-          "y_fraction": 0.67306,
-          "confidence": 1.0
-        },
-        "right_shoulder": {
-          "x_fraction": 0.43218,
-          "y_fraction": 0.65841,
-          "confidence": 1.0
-        },
-        "left_elbow": {
-          "x_fraction": 0.56137,
-          "y_fraction": 0.47536,
-          "confidence": 1.0
-        },
-        "right_elbow": {
-          "x_fraction": 0.52245,
-          "y_fraction": 0.76824,
-          "confidence": 1.0
-        },
-        "left_wrist": {
-          "x_fraction": 0.56603,
-          "y_fraction": 0.48634,
-          "confidence": 1.0
-        },
-        "right_wrist": {
-          "x_fraction": 0.56603,
-          "y_fraction": 0.49733,
-          "confidence": 1.0
-        },
-        "left_hip": {
-          "x_fraction": 0.49599,
-          "y_fraction": 0.52296,
-          "confidence": 1.0
-        },
-        "right_hip": {
-          "x_fraction": 0.41661,
-          "y_fraction": 0.54858,
-          "confidence": 1.0
-        },
-        "left_knee": {
-          "x_fraction": 0.55825,
-          "y_fraction": 0.47536,
-          "confidence": 1.0
-        },
-        "right_knee": {
-          "x_fraction": 0.44618,
-          "y_fraction": 0.63645,
-          "confidence": 1.0
-        },
-        "left_ankle": {
-          "x_fraction": 0.62207,
-          "y_fraction": 0.61814,
-          "confidence": 1.0
-        },
-        "right_ankle": {
-          "x_fraction": 0.62207,
-          "y_fraction": 0.65475,
-          "confidence": 1.0
-        }
-      },
-      "visible_keypoint_count": 17,
-      "visible_wrist_count": 2,
-      "shoulder_width_fraction": 0.18989,
-      "observable_geometry_status": "keypoint_geometry_only; no_gesture_or_intent_inference"
+      "person_detected": false,
+      "visible_wrist_count": 0,
+      "observable_geometry_status": "no_pose_landmarks_above_detector_threshold",
+      "visible_keypoint_count": 0,
+      "keypoints": {}
+    },
+    {
+      "time_seconds": 190.0,
+      "person_detected": false,
+      "visible_wrist_count": 0,
+      "observable_geometry_status": "no_pose_landmarks_above_detector_threshold",
+      "visible_keypoint_count": 0,
+      "keypoints": {}
+    },
+    {
+      "time_seconds": 200.0,
+      "person_detected": false,
+      "visible_wrist_count": 0,
+      "observable_geometry_status": "no_pose_landmarks_above_detector_threshold",
+      "visible_keypoint_count": 0,
+      "keypoints": {}
+    },
+    {
+      "time_seconds": 210.0,
+      "person_detected": false,
+      "visible_wrist_count": 0,
+      "observable_geometry_status": "no_pose_landmarks_above_detector_threshold",
+      "visible_keypoint_count": 0,
+      "keypoints": {}
+    },
+    {
+      "time_seconds": 220.0,
+      "person_detected": false,
+      "visible_wrist_count": 0,
+      "observable_geometry_status": "no_pose_landmarks_above_detector_threshold",
+      "visible_keypoint_count": 0,
+      "keypoints": {}
+    },
+    {
+      "time_seconds": 230.0,
+      "person_detected": false,
+      "visible_wrist_count": 0,
+      "observable_geometry_status": "no_pose_landmarks_above_detector_threshold",
+      "visible_keypoint_count": 0,
+      "keypoints": {}
+    },
+    {
+      "time_seconds": 240.0,
+      "person_detected": false,
+      "visible_wrist_count": 0,
+      "observable_geometry_status": "no_pose_landmarks_above_detector_threshold",
+      "visible_keypoint_count": 0,
+      "keypoints": {}
+    },
+    {
+      "time_seconds": 250.0,
+      "person_detected": false,
+      "visible_wrist_count": 0,
+      "observable_geometry_status": "no_pose_landmarks_above_detector_threshold",
+      "visible_keypoint_count": 0,
+      "keypoints": {}
+    },
+    {
+      "time_seconds": 260.0,
+      "person_detected": false,
+      "visible_wrist_count": 0,
+      "observable_geometry_status": "no_pose_landmarks_above_detector_threshold",
+      "visible_keypoint_count": 0,
+      "keypoints": {}
     },
     {
       "time_seconds": 270.0,
       "person_detected": true,
-      "person_score": 0.96806,
-      "person_box": {
-        "x_min_fraction": 0.20077,
-        "y_min_fraction": 0.01117,
-        "x_max_fraction": 0.74455,
-        "y_max_fraction": 0.97428
-      },
-      "image_width": 640,
-      "image_height": 272,
+      "visible_wrist_count": 1,
+      "shoulder_width_fraction": 0.03601,
+      "observable_geometry_status": "mediapipe_pose_landmark_geometry_only; no_gesture_or_intent_inference",
+      "visible_keypoint_count": 20,
       "keypoints": {
         "nose": {
-          "x_fraction": 0.63782,
-          "y_fraction": 0.44678,
-          "confidence": 1.0
+          "x_fraction": 0.64271,
+          "y_fraction": 0.72566,
+          "z_relative": -0.11782,
+          "visibility": 0.77013
+        },
+        "left_eye_inner": {
+          "x_fraction": 0.64315,
+          "y_fraction": 0.74614,
+          "z_relative": -0.11938,
+          "visibility": 0.7128
         },
         "left_eye": {
-          "x_fraction": 0.65807,
-          "y_fraction": 0.21519,
-          "confidence": 1.0
+          "x_fraction": 0.64241,
+          "y_fraction": 0.74735,
+          "z_relative": -0.11946,
+          "visibility": 0.70597
+        },
+        "left_eye_outer": {
+          "x_fraction": 0.6416,
+          "y_fraction": 0.74871,
+          "z_relative": -0.11959,
+          "visibility": 0.77019
+        },
+        "right_eye_inner": {
+          "x_fraction": 0.64604,
+          "y_fraction": 0.7448,
+          "z_relative": -0.12142,
+          "visibility": 0.71103
         },
         "right_eye": {
-          "x_fraction": 0.5381,
-          "y_fraction": 0.30341,
-          "confidence": 1.0
+          "x_fraction": 0.64739,
+          "y_fraction": 0.74509,
+          "z_relative": -0.12148,
+          "visibility": 0.70754
+        },
+        "right_eye_outer": {
+          "x_fraction": 0.649,
+          "y_fraction": 0.74528,
+          "z_relative": -0.12148,
+          "visibility": 0.74683
         },
         "left_ear": {
-          "x_fraction": 0.69703,
-          "y_fraction": 0.14535,
-          "confidence": 1.0
+          "x_fraction": 0.64486,
+          "y_fraction": 0.75126,
+          "z_relative": -0.0918,
+          "visibility": 0.71699
         },
         "right_ear": {
-          "x_fraction": 0.36515,
-          "y_fraction": 0.45045,
-          "confidence": 1.0
+          "x_fraction": 0.65503,
+          "y_fraction": 0.74676,
+          "z_relative": -0.09942,
+          "visibility": 0.61209
+        },
+        "mouth_left": {
+          "x_fraction": 0.64291,
+          "y_fraction": 0.71386,
+          "z_relative": -0.10304,
+          "visibility": 0.77522
+        },
+        "mouth_right": {
+          "x_fraction": 0.64627,
+          "y_fraction": 0.71305,
+          "z_relative": -0.10564,
+          "visibility": 0.72892
         },
         "left_shoulder": {
-          "x_fraction": 0.74221,
-          "y_fraction": 0.78497,
-          "confidence": 1.0
+          "x_fraction": 0.63579,
+          "y_fraction": 0.70585,
+          "z_relative": -0.07855,
+          "visibility": 0.99745
         },
         "right_shoulder": {
-          "x_fraction": 0.2779,
-          "y_fraction": 0.88422,
-          "confidence": 1.0
+          "x_fraction": 0.6718,
+          "y_fraction": 0.66098,
+          "z_relative": -0.06767,
+          "visibility": 0.98741
         },
         "left_elbow": {
-          "x_fraction": 0.60821,
-          "y_fraction": 0.83276,
-          "confidence": 1.0
-        },
-        "right_elbow": {
-          "x_fraction": 0.25764,
-          "y_fraction": 0.89893,
-          "confidence": 1.0
+          "x_fraction": 0.58326,
+          "y_fraction": 0.68114,
+          "z_relative": -0.1313,
+          "visibility": 0.94464
         },
         "left_wrist": {
-          "x_fraction": 0.63626,
-          "y_fraction": 0.92466,
-          "confidence": 1.0
+          "x_fraction": 0.63454,
+          "y_fraction": 0.66861,
+          "z_relative": -0.20041,
+          "visibility": 0.85432
         },
-        "right_wrist": {
-          "x_fraction": 0.61133,
-          "y_fraction": 0.9026,
-          "confidence": 1.0
+        "left_pinky": {
+          "x_fraction": 0.64801,
+          "y_fraction": 0.65979,
+          "z_relative": -0.22607,
+          "visibility": 0.72054
+        },
+        "left_index": {
+          "x_fraction": 0.65806,
+          "y_fraction": 0.6666,
+          "z_relative": -0.20976,
+          "visibility": 0.70356
+        },
+        "left_thumb": {
+          "x_fraction": 0.65305,
+          "y_fraction": 0.66559,
+          "z_relative": -0.1953,
+          "visibility": 0.66474
         },
         "left_hip": {
-          "x_fraction": 0.6347,
-          "y_fraction": 0.93569,
-          "confidence": 1.0
+          "x_fraction": 0.63465,
+          "y_fraction": 0.42212,
+          "z_relative": 0.00227,
+          "visibility": 0.99784
         },
         "right_hip": {
-          "x_fraction": 0.36515,
-          "y_fraction": 0.97245,
-          "confidence": 1.0
-        },
-        "left_knee": {
-          "x_fraction": 0.61601,
-          "y_fraction": 0.84011,
-          "confidence": 1.0
-        },
-        "right_knee": {
-          "x_fraction": 0.6238,
-          "y_fraction": 0.71513,
-          "confidence": 1.0
-        },
-        "left_ankle": {
-          "x_fraction": 0.62847,
-          "y_fraction": 0.90628,
-          "confidence": 1.0
-        },
-        "right_ankle": {
-          "x_fraction": 0.59731,
-          "y_fraction": 0.86952,
-          "confidence": 1.0
+          "x_fraction": 0.65679,
+          "y_fraction": 0.39609,
+          "z_relative": -0.00243,
+          "visibility": 0.9959
         }
-      },
-      "visible_keypoint_count": 17,
-      "visible_wrist_count": 2,
-      "shoulder_width_fraction": 0.46431,
-      "observable_geometry_status": "keypoint_geometry_only; no_gesture_or_intent_inference"
+      }
     }
-  ]
+  ],
+  "measurement_policy": "Observable pose landmark geometry only; no gesture, emotion, confidence, intent, identity or effectiveness inference."
 }

@@ -1,0 +1,111 @@
+{
+  "schema_version": "0.2",
+  "video_id": "65v4EyR774E",
+  "source_feature_file": "data/features/65v4EyR774E.json",
+  "model": "MediaPipe Pose model_complexity=0",
+  "frame_count": 1,
+  "person_frame_count": 1,
+  "frames": [
+    {
+      "time_seconds": 0.0,
+      "person_detected": true,
+      "visible_wrist_count": 0,
+      "shoulder_width_fraction": 0.11626,
+      "observable_geometry_status": "mediapipe_pose_landmark_geometry_only; no_gesture_or_intent_inference",
+      "visible_keypoint_count": 15,
+      "keypoints": {
+        "nose": {
+          "x_fraction": 0.69139,
+          "y_fraction": 0.26286,
+          "z_relative": -0.40183,
+          "visibility": 0.99986
+        },
+        "left_eye_inner": {
+          "x_fraction": 0.70215,
+          "y_fraction": 0.23336,
+          "z_relative": -0.38755,
+          "visibility": 0.99983
+        },
+        "left_eye": {
+          "x_fraction": 0.70829,
+          "y_fraction": 0.23073,
+          "z_relative": -0.38757,
+          "visibility": 0.99976
+        },
+        "left_eye_outer": {
+          "x_fraction": 0.71272,
+          "y_fraction": 0.22829,
+          "z_relative": -0.38766,
+          "visibility": 0.99976
+        },
+        "right_eye_inner": {
+          "x_fraction": 0.68185,
+          "y_fraction": 0.23322,
+          "z_relative": -0.38602,
+          "visibility": 0.99982
+        },
+        "right_eye": {
+          "x_fraction": 0.67723,
+          "y_fraction": 0.23086,
+          "z_relative": -0.38616,
+          "visibility": 0.9997
+        },
+        "right_eye_outer": {
+          "x_fraction": 0.67331,
+          "y_fraction": 0.22884,
+          "z_relative": -0.38614,
+          "visibility": 0.99966
+        },
+        "left_ear": {
+          "x_fraction": 0.721,
+          "y_fraction": 0.22707,
+          "z_relative": -0.27809,
+          "visibility": 0.99947
+        },
+        "right_ear": {
+          "x_fraction": 0.66559,
+          "y_fraction": 0.22783,
+          "z_relative": -0.27209,
+          "visibility": 0.99934
+        },
+        "mouth_left": {
+          "x_fraction": 0.70374,
+          "y_fraction": 0.28188,
+          "z_relative": -0.35615,
+          "visibility": 0.99916
+        },
+        "mouth_right": {
+          "x_fraction": 0.68349,
+          "y_fraction": 0.27831,
+          "z_relative": -0.35451,
+          "visibility": 0.99894
+        },
+        "left_shoulder": {
+          "x_fraction": 0.75479,
+          "y_fraction": 0.31169,
+          "z_relative": -0.20713,
+          "visibility": 0.99858
+        },
+        "right_shoulder": {
+          "x_fraction": 0.63853,
+          "y_fraction": 0.33072,
+          "z_relative": -0.1926,
+          "visibility": 0.99862
+        },
+        "left_hip": {
+          "x_fraction": 0.73464,
+          "y_fraction": 0.51805,
+          "z_relative": 0.00812,
+          "visibility": 0.99775
+        },
+        "right_hip": {
+          "x_fraction": 0.68089,
+          "y_fraction": 0.54296,
+          "z_relative": -0.00818,
+          "visibility": 0.99594
+        }
+      }
+    }
+  ],
+  "measurement_policy": "Observable pose landmark geometry only; no gesture, emotion, confidence, intent, identity or effectiveness inference."
+}

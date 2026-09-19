@@ -32,9 +32,11 @@ proxies requiring manual listening. The [full local visual movement report]
 across 364 feature reports. An optional OpenCV 4 Haar refresh now makes face
 geometry/candidate counts observable for 6,674 sampled frames; these remain
 detector outputs, not expression, gaze, emotion, intent or effectiveness
-evidence. The pose extractor remains unavailable in the base environment
-because `torchvision` is not installed and the isolated wheel is incompatible
-with the installed PyTorch build; no pose claims are promoted.
+evidence. A MediaPipe Pose refresh now covers 364 reports / 6,497 sampled
+frames, with 4,974 person-detected frames and 4,616 bounded movement pairs.
+The pose output is landmark geometry only; it does not identify gestures,
+emotion, confidence, intent, identity or effectiveness, and nearest-time
+transcript joins remain retrieval aids requiring manual review.
 All delivery, identity, learner and listener validation gates remain separate
 and no independent records have been received.
 
