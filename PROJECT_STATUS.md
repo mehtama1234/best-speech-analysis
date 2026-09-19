@@ -194,6 +194,9 @@ remaining work for a five-job vertical slice, including dependencies, export
 discipline, acceptance evidence and the exact validators to run. It records
 the current state as 0/5 packets promotion-ready, with no learner records,
 locked listener pairs or listener records.
+The [vertical-slice reviewer handoff](writeups/vertical-slice-01-reviewer-start-here.md)
+is the single entry point for the five packets, 50-item independent workbook,
+source/media audits and export commands.
 
 The atlas also now exposes a separate 187-item [candidate speech-function
 independent-review workbook](research/corpus-function-independent-review-workbook.json)

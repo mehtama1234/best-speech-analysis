@@ -12,6 +12,10 @@ has completed the record and the export has been validated and compared.
 Start with these five provisional jobs, which already have linked examples,
 practice tasks and delivery samples:
 
+Use the [reviewer start-here handoff](vertical-slice-01-reviewer-start-here.md)
+as the single entry point for the packet files, source/media audits, workbook,
+export commands and current status.
+
 1. `contrast_or_disagreement`
 2. `example_or_case`
 3. `story_or_personal_experience`
