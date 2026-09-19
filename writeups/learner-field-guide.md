@@ -37,6 +37,63 @@ Use this guide to choose a communication job, inspect examples, adapt a form and
 | **persuasion_or_advocacy** | State the stake; show the mechanism; name tradeoffs and accountable actors; invite a bounded choice. | No direct family indexed | Do not use urgency, fear or moral identity to conceal missing evidence or coercion. |
 | **reflection_or_value_frame** | Describe the event; name the value it raises; distinguish interpretation from verified fact. | No direct family indexed | Do not use a value label to end inquiry or claim moral superiority. |
 
+## Exact phrase-form index
+
+These are the exact retrieval forms found in retained captions. Read the surrounding source context before adapting one; a frequent form may serve many functions. The train/holdout split is a corpus-retrieval split, not proof of recurrence or effectiveness.
+
+| Phrase form | Retrieval family | Train videos | Holdout videos | Representative retained wording | Source |
+|---|---|---:|---:|---|---|
+| `don't` | `call_to_action` | 268 | 58 | But then I realized that you don't haveto necessarily go to Harvard to have a driven | [-54zUwySKCg:00028](https://www.youtube.com/watch?v=-54zUwySKCg) |
+| `you can` | `call_to_action` | 196 | 29 | And so what I did was I simply asked our viewers,“Do what you can wherever you are, from | [-54zUwySKCg:00127](https://www.youtube.com/watch?v=-54zUwySKCg) |
+| `let's` | `call_to_action` | 141 | 27 | Let's speak English | [-URn1fARvts:00265](https://www.youtube.com/watch?v=-URn1fARvts) |
+| `do not` | `call_to_action` | 68 | 15 | We do not have to wait until we're older | [-URn1fARvts:00240](https://www.youtube.com/watch?v=-URn1fARvts) |
+| `we need to` | `call_to_action` | 58 | 12 | we need to create a global architecture | [-6qN3bm2RYo:00276](https://www.youtube.com/watch?v=-6qN3bm2RYo) |
+| `join us` | `call_to_action` | 21 | 7 | we ask that you join us. | [5nN-15CrnGc:00606](https://www.youtube.com/watch?v=5nN-15CrnGc) |
+| `take action` | `call_to_action` | 5 | 2 | This should make us all furious. They should make us all want to take action | [5rbyzJf4ZuQ:00031](https://www.youtube.com/watch?v=5rbyzJf4ZuQ) |
+| `so the` | `conclusion_or_summary` | 52 | 11 | So the Angel Network — I have been on theair for a long time — but it was the Angel | [-54zUwySKCg:00134](https://www.youtube.com/watch?v=-54zUwySKCg) |
+| `ultimately` | `conclusion_or_summary` | 34 | 5 | I might pursue would be to make clear thatwhat unites us is ultimately far more redeeming | [-54zUwySKCg:00138](https://www.youtube.com/watch?v=-54zUwySKCg) |
+| `the point is` | `conclusion_or_summary` | 9 | 2 | The point is your generation is charged withthis task of breaking through what the body | [-54zUwySKCg:00196](https://www.youtube.com/watch?v=-54zUwySKCg) |
+| `what matters` | `conclusion_or_summary` | 8 | 3 | What matters is whether you get back up andkeep going. | [46yStqMV4eY:00108](https://www.youtube.com/watch?v=46yStqMV4eY) |
+| `in short` | `conclusion_or_summary` | 7 | 2 | In short, being a young person balancing | [-URn1fARvts:00119](https://www.youtube.com/watch?v=-URn1fARvts) |
+| `the lesson` | `conclusion_or_summary` | 3 | 0 | My point is, the lesson here is sometimesyou're the problem. | [8R4TMmU_Ig0:00059](https://www.youtube.com/watch?v=8R4TMmU_Ig0) |
+| `in conclusion` | `conclusion_or_summary` | 3 | 0 | so finally in conclusion i would like | [LEtP7HgGTu0:00451](https://www.youtube.com/watch?v=LEtP7HgGTu0) |
+| `but` | `contrast_or_disagreement` | 309 | 65 | and doctor degrees but I see you got thatcovered already. | [-54zUwySKCg:00023](https://www.youtube.com/watch?v=-54zUwySKCg) |
+| `used to` | `contrast_or_disagreement` | 87 | 18 | and they used to use them to get into our country. We now have as strong a border as we've ever had. | [-Unkvng_jp8:00100](https://www.youtube.com/watch?v=-Unkvng_jp8) |
+| `now i` | `contrast_or_disagreement` | 87 | 11 | Then I was in Columbia University, now I ampart of the Indian film industry, I feel that | [1DXo2fcfleY:00091](https://www.youtube.com/watch?v=1DXo2fcfleY) |
+| `instead` | `contrast_or_disagreement` | 70 | 16 | instead?" | [-s-h-eebSgw:00109](https://www.youtube.com/watch?v=-s-h-eebSgw) |
+| `however` | `contrast_or_disagreement` | 45 | 9 | motivation and no rhetoric however | [-6qN3bm2RYo:00286](https://www.youtube.com/watch?v=-6qN3bm2RYo) |
+| `rather than` | `contrast_or_disagreement` | 40 | 8 | willingness to learn, rather than | [-URn1fARvts:00116](https://www.youtube.com/watch?v=-URn1fARvts) |
+| `on the other hand` | `contrast_or_disagreement` | 7 | 0 | On the other hand, | [1EPechcSwE0:00095](https://www.youtube.com/watch?v=1EPechcSwE0) |
+| `is when` | `definition` | 22 | 4 | the thing I was going to ask is when I | [5DU16MQYzDw:00397](https://www.youtube.com/watch?v=5DU16MQYzDw) |
+| `means that` | `definition` | 16 | 3 | It means that all of our youthful energy | [-URn1fARvts:00029](https://www.youtube.com/watch?v=-URn1fARvts) |
+| `in other words` | `definition` | 11 | 3 | old enough, in other words your parents. | [2mqQMA7CSLQ:00131](https://www.youtube.com/watch?v=2mqQMA7CSLQ) |
+| `what i mean` | `definition` | 13 | 1 | And that's exactly what I mean by | [-s-h-eebSgw:00230](https://www.youtube.com/watch?v=-s-h-eebSgw) |
+| `the definition` | `definition` | 4 | 2 | well it depends on what the definition | [1QvLB4yEHsI:00230](https://www.youtube.com/watch?v=1QvLB4yEHsI) |
+| `defined as` | `definition` | 1 | 0 | success simply defined as you're just beingonto something, taking an idea farther that | [cLp3pxq7Dj0:00211](https://www.youtube.com/watch?v=cLp3pxq7Dj0) |
+| `for example` | `example` | 37 | 5 | for example, when you were 15.Cara: | [2wf1qE7AC8Y:00007](https://www.youtube.com/watch?v=2wf1qE7AC8Y) |
+| `such as` | `example` | 23 | 3 | together on global issues such as | [-6qN3bm2RYo:00079](https://www.youtube.com/watch?v=-6qN3bm2RYo) |
+| `for instance` | `example` | 12 | 3 | Suicide, for instance, among young men isone of the biggest killers in the country. | [4u71aIcrxtQ:00139](https://www.youtube.com/watch?v=4u71aIcrxtQ) |
+| `one example` | `example` | 3 | 3 | Let me give you one example: | [1i9kcBHX2Nw:00045](https://www.youtube.com/watch?v=1i9kcBHX2Nw) |
+| `?` | `question` | 183 | 36 | you like to be when you grow up?” | [-54zUwySKCg:00040](https://www.youtube.com/watch?v=-54zUwySKCg) |
+| `how` | `question` | 267 | 58 | how they refused to be discouraged. | [-54zUwySKCg:00156](https://www.youtube.com/watch?v=-54zUwySKCg) |
+| `why` | `question` | 207 | 39 | So during the question and answer period thequestion came “Why, young lady, what would | [-54zUwySKCg:00039](https://www.youtube.com/watch?v=-54zUwySKCg) |
+| `can we` | `question` | 38 | 3 | After all, we're only young. What can we | [-URn1fARvts:00019](https://www.youtube.com/watch?v=-URn1fARvts) |
+| `what if` | `question` | 13 | 3 | possible to overcome your fears what if | [3TWYqYJqU8U:00142](https://www.youtube.com/watch?v=3TWYqYJqU8U) |
+| `i was` | `story_or_personal_experience` | 213 | 42 | Actually I was so honored I wanted to do somethingreally special for you. | [-54zUwySKCg:00021](https://www.youtube.com/watch?v=-54zUwySKCg) |
+| `when i` | `story_or_personal_experience` | 203 | 42 | That was when I was 16 years old in Nashville,Tennessee, and you had the requirement of | [-54zUwySKCg:00035](https://www.youtube.com/watch?v=-54zUwySKCg) |
+| `years ago` | `story_or_personal_experience` | 88 | 19 | But a few years ago I decided, as you willat some point, that it was time to recalculate, | [-54zUwySKCg:00059](https://www.youtube.com/watch?v=-54zUwySKCg) |
+| `i remember` | `story_or_personal_experience` | 65 | 12 | I remember feeling uncertain on | [-s-h-eebSgw:00075](https://www.youtube.com/watch?v=-s-h-eebSgw) |
+| `one day` | `story_or_personal_experience` | 56 | 16 | I could one day work in a faraway place | [-s-h-eebSgw:00209](https://www.youtube.com/watch?v=-s-h-eebSgw) |
+| `my first` | `story_or_personal_experience` | 60 | 9 | I gave my first speech on equality in | [-URn1fARvts:00158](https://www.youtube.com/watch?v=-URn1fARvts) |
+| `growing up` | `story_or_personal_experience` | 29 | 3 | scared. What I want to say is through growing up, what I've discovered is that this world is a very | [2wf1qE7AC8Y:00010](https://www.youtube.com/watch?v=2wf1qE7AC8Y) |
+| `i think` | `uncertainty_or_qualification` | 177 | 37 | the threat is —” Are you questioning —” “No, I think masks are OK. | [-Unkvng_jp8:00036](https://www.youtube.com/watch?v=-Unkvng_jp8) |
+| `maybe` | `uncertainty_or_qualification` | 132 | 27 | Maybe you agree with these beliefs. | [-54zUwySKCg:00188](https://www.youtube.com/watch?v=-54zUwySKCg) |
+| `perhaps` | `uncertainty_or_qualification` | 52 | 13 | there is a sense that perhaps there's a | [2fWJh-_UG5s:00055](https://www.youtube.com/watch?v=2fWJh-_UG5s) |
+| `i'm not sure` | `uncertainty_or_qualification` | 15 | 0 | Well, spoiler alert: I've only done oneof those things, and I'm not sure I will | [5mXFlne4JB8:00236](https://www.youtube.com/watch?v=5mXFlne4JB8) |
+| `it depends` | `uncertainty_or_qualification` | 9 | 2 | well it depends on what the definition | [1QvLB4yEHsI:00230](https://www.youtube.com/watch?v=1QvLB4yEHsI) |
+| `not necessarily` | `uncertainty_or_qualification` | 5 | 0 | not necessarily just media, but yeah, | [7zUUV8_CY2M:01740](https://www.youtube.com/watch?v=7zUUV8_CY2M) |
+| `to some extent` | `uncertainty_or_qualification` | 2 | 0 | They spoke about the right kind of thoughts,emotions, attitudes, and to some extent actions. | [Iw363WNPReQ:00009](https://www.youtube.com/watch?v=Iw363WNPReQ) |
+
 ## Detailed practice cards
 
 ### opening

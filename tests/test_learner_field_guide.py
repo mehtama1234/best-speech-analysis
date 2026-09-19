@@ -15,6 +15,9 @@ class LearnerFieldGuideTests(unittest.TestCase):
         self.assertIn("not a validated best-practice library", guide)
         self.assertIn("Do not copy a speaker’s identity", guide)
         self.assertIn("communication jobs", guide.lower())
+        self.assertIn("Exact phrase-form index", guide)
+        phrase_section = guide.split("## Exact phrase-form index", 1)[1]
+        self.assertEqual(phrase_section.count("| `"), 100)
 
 
 if __name__ == "__main__":

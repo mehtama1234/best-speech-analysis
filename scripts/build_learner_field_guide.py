@@ -9,11 +9,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CARDS = ROOT / "research/communication-job-cards.json"
+PHRASES = ROOT / "research/corpus-phrase-form-inventory.json"
 OUT = ROOT / "writeups/learner-field-guide.md"
 
 
 def main() -> int:
     cards = json.loads(CARDS.read_text())["cards"]
+    phrase_inventory = json.loads(PHRASES.read_text())
     lines = [
         "# Learner field guide: communication jobs",
         "",
@@ -39,6 +41,11 @@ def main() -> int:
     for card in cards:
         forms = ", ".join(form["phrase_form"] for form in card["phrase_forms"]) or "No direct family indexed"
         lines.append(f"| **{card['canonical_job']}** | {card['form']} | {forms} | {card['non_fit']} |")
+
+    lines += ["", "## Exact phrase-form index", "", "These are the exact retrieval forms found in retained captions. Read the surrounding source context before adapting one; a frequent form may serve many functions. The train/holdout split is a corpus-retrieval split, not proof of recurrence or effectiveness.", "", "| Phrase form | Retrieval family | Train videos | Holdout videos | Representative retained wording | Source |", "|---|---|---:|---:|---|---|"]
+    for item in phrase_inventory["forms"]:
+        example = (item.get("examples") or [{}])[0]
+        lines.append(f"| `{item['phrase_form']}` | `{item['family']}` | {item['train_video_count']} | {item['holdout_video_count']} | {example.get('text', '')} | [{example.get('evidence_id', 'source')}]({example.get('source_url', '')}) |")
 
     lines += ["", "## Detailed practice cards", ""]
     for card in cards:
