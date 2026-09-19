@@ -65,6 +65,9 @@ reviewer metadata and uncertainty without exposing that key.
 Returned files can be checked with
 [`scripts/validate_blinded_review_export.py`](scripts/validate_blinded_review_export.py)
 before any adjudication occurs.
+After a valid export is returned, [`scripts/reduce_blinded_review_export.py`](scripts/reduce_blinded_review_export.py)
+joins it to the private key for adjudication only; it does not promote any
+reviewer decision automatically.
 The [practice-log contract](research/local-practice-log-contract.json) and
 [validator](scripts/validate_local_practice_log.py) check returned exports for
 their required fields and boundaries without scoring the learner or listener.
