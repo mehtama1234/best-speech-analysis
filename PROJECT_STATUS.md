@@ -188,7 +188,9 @@ The agreement comparator preserves reviewer disagreement and requires explicit
 adjudication before any pair can be considered for locking.
 
 The generated [validation handoff](writeups/validation-handoff.md) consolidates
-the four independent-review gates plus learner and listener protocols, with
+the independent identity, function, recurrence, phrase-form, delivery,
+counterexample, multimodal and vertical-slice gates plus learner, stimulus and
+listener protocols, with
 export validators and explicit non-claims; no human records are present.
 The [end-to-end acceptance matrix](writeups/end-to-end-acceptance-matrix.md)
 maps the definition-of-done requirements to current evidence and reports nine

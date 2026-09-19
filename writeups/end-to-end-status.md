@@ -46,7 +46,7 @@ This dashboard reports artifact and validation status. It does not convert trans
 - independently verify speaker/event identity before treating cross-job or holdout comparisons as recurrence evidence
 - complete manual delivery observations for the 36 two-sample-per-job queue and obtain independent review
 - complete independent speaker/event identity and duplication review for the 395 reviewed queue items
-- manually inspect the 32 aligned delivery measurements and record proxy limits, missingness and nonverbal/setting observations
+- manually inspect the 36 aligned delivery measurements and record proxy limits, missingness and nonverbal/setting observations
 - complete independent multimodal alignment/function/safety review
 - run learner teachability protocol and validate exported records
 - run blinded listener-outcome protocol before making effectiveness claims
