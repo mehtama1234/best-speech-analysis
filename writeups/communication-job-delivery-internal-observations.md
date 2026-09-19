@@ -4,7 +4,7 @@ Status: **internal observations complete; independent review pending**.
 
 These are bounded internal midpoint-frame observations. They do not establish continuous delivery meaning, vocal effectiveness, speaker intent, audience response, speaker/event identity, teachability or listener outcomes.
 
-Raw audio/video samples inspected: **35**.
+Raw audio/video samples inspected: **36**.
 
 | Sample | Job | Alignment | Visual/setting boundary |
 |---|---|---|---|
@@ -25,6 +25,7 @@ Raw audio/video samples inspected: **35**.
 | `delivery:correction_or_reframe:01` | `correction_or_reframe` | `partially_aligned` | A woman is visible at a podium/stage with the correction wording overlaid. Formal stage setting with edited subtitles; exact delivery timing remains unverified. |
 | `delivery:correction_or_reframe:02` | `correction_or_reframe` | `partially_aligned` | A male speaker is visible at a microphone against a branded film-event backdrop; a large edited subtitle overlay covers the lower frame. Formal promotional/event stage with visible branding and edited subtitles; one frame cannot establish the correction timing. |
 | `delivery:repair_or_self_correction:01` | `repair_or_self_correction` | `partially_aligned` | A male performer/speaker is visible outdoors addressing a crowd with a microphone and subtitle overlay. Outdoor public event with crowd and edited captions; speaker identity/event independence remains unverified. |
+| `delivery:repair_or_self_correction:02` | `repair_or_self_correction` | `partially_aligned` | A male speaker is visible at a lectern with a microphone against a dark blue stage backdrop; large edited subtitles and a speaker label are overlaid. Formal stage/podium setting with edited caption and name treatment; one frame cannot establish repair timing, vocal delivery or audience response. |
 | `delivery:qualification_or_boundary:01` | `qualification_or_boundary` | `partially_aligned` | A woman is visible on a graduation stage with subtitle text. Graduation-stage setting; the frame cannot establish vocal certainty or listener calibration. |
 | `delivery:qualification_or_boundary:02` | `qualification_or_boundary` | `indeterminate` | Multiple people are visible in a scripted interior film scene; the retained qualification is not isolated by the midpoint frame. Edited fictional scene; visual evidence is limited to scene context. |
 | `delivery:definition_or_explanation:01` | `definition_or_explanation` | `partially_aligned` | A male speaker is visible seated at a branded formal event with subtitle text. Interview/event set with edited captions; no inference about explanatory success. |

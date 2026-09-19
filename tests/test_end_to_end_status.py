@@ -41,7 +41,7 @@ class EndToEndStatusTests(unittest.TestCase):
         self.assertEqual(self.status["stages"]["corpus_identity_review"]["queued_item_count"], 395)
         self.assertEqual(self.status["stages"]["corpus_identity_review"]["completed_independent_reviews"], 0)
         self.assertEqual(self.status["stages"]["delivery_measurement_preflight"]["sample_count"], 36)
-        self.assertEqual(self.status["stages"]["delivery_measurement_preflight"]["matched_sample_count"], 35)
+        self.assertEqual(self.status["stages"]["delivery_measurement_preflight"]["matched_sample_count"], 36)
         self.assertEqual(self.status["stages"]["communication_job_curriculum"]["lesson_count"], 18)
         self.assertEqual(self.status["stages"]["communication_job_mobile_lessons"]["lesson_count"], 18)
         self.assertEqual(self.status["stages"]["communication_job_mobile_lessons"]["completed_records"], 0)

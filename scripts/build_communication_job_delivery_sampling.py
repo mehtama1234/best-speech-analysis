@@ -44,7 +44,9 @@ def main() -> int:
         if record["canonical_job"] in {card["canonical_job"] for card in cards} and record.get("segments"):
             info = media.get(record["video_id"], {})
             raw = info.get("media_state") == "raw_audio_video_present"
-            by_job[record["canonical_job"]].append((0 if raw else 1, -lexical_words(record), record["video_id"], record, info))
+            local_video = any((ROOT / "data/video").glob(f"{record['video_id']}.*"))
+            local_audio = any((ROOT / "data/audio").glob(f"{record['video_id']}.*"))
+            by_job[record["canonical_job"]].append((0 if raw or (local_video and local_audio) else 1, -lexical_words(record), record["video_id"], record, info))
     items = []
     for card in cards:
         job = card["canonical_job"]
