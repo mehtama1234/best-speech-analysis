@@ -45,6 +45,7 @@ ARTIFACTS = [
     ("scripts/check_communication_job_delivery_browser.py", "delivery-review browser smoke test"),
     ("scripts/check_communication_job_listener_browser.py", "listener-outcome browser smoke test"),
     ("scripts/check_communication_job_learner_browser.py", "18-job learner browser smoke test"),
+    ("scripts/check_communication_job_practice_browser.py", "18-job practice-surface browser smoke test"),
     ("scripts/check_independent_review_forms_browser.py", "independent-review browser smoke test"),
     ("scripts/check_vertical_slice_lesson_browser.py", "vertical-slice learner browser smoke test"),
     ("scripts/check_vertical_slice_02_learner_browser.py", "vertical-slice 02 learner browser smoke test"),
