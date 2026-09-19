@@ -81,7 +81,7 @@ def main() -> int:
             "vocal_timing_observation": "Manual listening was not performed in this pass; retained transcript timing and feature values remain separate from a vocal interpretation.",
             "audio_measurements": measurement["audio_measurements"] if measurement else None,
             "audio_measurement_status": measurement["measurement_status"] if measurement else "unmatched_preflight",
-            "audio_measurement_and_limit": f"Feature proxy file data/features/{item['feature_file']}; words-per-second, RMS, speech activity, zero-crossing, spectral centroid and pitch-confidence fields are reproducible proxies, not validated vocal meaning or effectiveness.",
+            "audio_measurement_and_limit": f"Feature proxy file {measurement['feature_file'] if measurement and measurement.get('feature_file') else 'not available'}; words-per-second, RMS, speech activity, zero-crossing, spectral centroid and pitch-confidence fields are reproducible proxies, not validated vocal meaning or effectiveness.",
             "nearest_sampled_frame_measurement": measurement["nearest_sampled_frame"] if measurement else None,
             "measurement_evidence_ids_matched": measurement["evidence_ids_matched"] if measurement else [],
             "speaker_event_identity": "Not independently verified; source-frame observation only.",

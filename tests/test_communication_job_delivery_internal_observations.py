@@ -23,6 +23,8 @@ class CommunicationJobDeliveryInternalObservationTests(unittest.TestCase):
             self.assertTrue(item["missingness_or_accessibility_note"])
             self.assertTrue(item["audio_measurements"])
             self.assertEqual(item["audio_measurement_status"], "aligned_feature_measurement_available")
+            self.assertNotIn("data/features/None", item["audio_measurement_and_limit"])
+            self.assertIn("data/features/", item["audio_measurement_and_limit"])
 
 
 if __name__ == "__main__":
