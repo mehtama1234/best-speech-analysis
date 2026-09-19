@@ -48,6 +48,7 @@ def validate(report: dict) -> list[str]:
     raw_visual = read("research/raw-media-only-visual-audit.json")
     full_media = read("research/full-corpus-media-coverage.json")
     media_recovery = read("research/full-corpus-media-recovery-queue.json")
+    promotion_readiness = read("research/communication-job-promotion-readiness.json")
     errors = []
     if report.get("status") != "research_checkpoint_not_complete": errors.append("dashboard status must remain research_checkpoint_not_complete")
     stages = report.get("stages", {})
@@ -108,6 +109,9 @@ def validate(report: dict) -> list[str]:
         ("full_corpus_media_coverage", "transcript_only_no_local_media"): full_media["counts"].get("transcript_only_no_local_media", 0),
         ("full_corpus_media_recovery", "queued_item_count"): media_recovery["item_count"],
         ("shared_lessons", "draft_card_count"): cards["card_count"],
+        ("promotion_readiness", "card_count"): promotion_readiness["card_count"],
+        ("promotion_readiness", "promotion_ready_count"): promotion_readiness["promotion_ready_count"],
+        ("promotion_readiness", "blocked_card_count"): sum(bool(row["blockers"]) for row in promotion_readiness["cards"]),
         ("learner_check", "task_count"): learner["task_count"],
         ("listener_outcomes", "task_count"): len(listener["listener_tasks"]),
     }
@@ -128,6 +132,7 @@ def validate(report: dict) -> list[str]:
     if stages.get("communication_job_learner_check", {}).get("completed_records") != 0: errors.append("communication-job learner records are not present")
     if stages.get("communication_job_listener_outcomes", {}).get("completed_records") != 0: errors.append("communication-job listener records are not present")
     if stages.get("communication_job_listener_outcomes", {}).get("stimulus_pairs_locked") is not False: errors.append("communication-job listener stimuli are not locked")
+    if stages.get("promotion_readiness", {}).get("status") != promotion_readiness["status"]: errors.append("promotion readiness status does not match authoritative report")
     return errors
 
 

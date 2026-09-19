@@ -49,6 +49,7 @@ def main() -> int:
     raw_only_visual = load("research/raw-media-only-visual-audit.json")
     full_media = load("research/full-corpus-media-coverage.json")
     media_recovery = load("research/full-corpus-media-recovery-queue.json")
+    promotion_readiness = load("research/communication-job-promotion-readiness.json")
 
     transcript_count = len(reviews["reviews"])
     caption_count = queue["caption_count"]
@@ -82,6 +83,7 @@ def main() -> int:
             "research/shared-lesson-cards.json", "research/shared-learner-check.json",
             "research/communication-job-listener-outcome-protocol.json", "research/raw-media-only-visual-audit.json",
             "research/full-corpus-media-coverage.json", "research/full-corpus-media-recovery-queue.json",
+            "research/communication-job-promotion-readiness.json",
         ],
         "status": "research_checkpoint_not_complete",
         "claim_boundary": "This dashboard reports artifact and validation status. It does not convert transcript coverage, internal review, generated instruments or passing tests into evidence of communication effectiveness.",
@@ -116,6 +118,7 @@ def main() -> int:
             "full_corpus_media_coverage": {"status": full_media["status"], "video_count": full_media["video_count"], "raw_audio_video_present": full_media["counts"].get("raw_audio_video_present", 0), "derived_features_only": full_media["counts"].get("derived_features_only", 0), "transcript_only_no_local_media": full_media["counts"].get("transcript_only_no_local_media", 0), "source": "research/full-corpus-media-coverage.json"},
             "full_corpus_media_recovery": {"status": media_recovery["status"], "queued_item_count": media_recovery["item_count"], "source": "research/full-corpus-media-recovery-queue.json"},
             "shared_lessons": {"status": cards["status"], "draft_card_count": cards["card_count"], "promotion_ready_card_count": 0, "source": "research/shared-lesson-cards.json"},
+            "promotion_readiness": {"status": promotion_readiness["status"], "card_count": promotion_readiness["card_count"], "promotion_ready_count": promotion_readiness["promotion_ready_count"], "blocked_card_count": sum(bool(row["blockers"]) for row in promotion_readiness["cards"]), "source": "research/communication-job-promotion-readiness.json"},
             "learner_check": {"status": learner["status"], "task_count": learner["task_count"], "completed_records": 0, "source": "research/shared-learner-check.json"},
             "listener_outcomes": {"status": listener["status"], "task_count": len(listener["listener_tasks"]), "stimulus_pairs_locked": listener["stimulus_pairs_locked"], "completed_records": 0, "source": "research/communication-job-listener-outcome-protocol.json"},
         },
@@ -170,6 +173,7 @@ def main() -> int:
         f"| Full-corpus media coverage | `{full_media['status']}` | {full_media['video_count']} videos / {full_media['counts'].get('raw_audio_video_present', 0)} raw A/V / {full_media['counts'].get('derived_features_only', 0)} derived-only / {full_media['counts'].get('transcript_only_no_local_media', 0)} transcript-only |",
         f"| Full-corpus media recovery | `{media_recovery['status']}` | {media_recovery['item_count']} queued missing/derived items |",
         f"| Shared lessons | `{cards['status']}` | {cards['card_count']} drafts / 0 promotion-ready |",
+        f"| Promotion readiness | `{promotion_readiness['status']}` | {promotion_readiness['card_count']} cards / {promotion_readiness['promotion_ready_count']} promotion-ready / {sum(bool(row['blockers']) for row in promotion_readiness['cards'])} blocked |",
         f"| Learner check | `{learner['status']}` | {learner['task_count']} tasks / 0 records |",
         f"| Listener outcomes | `{listener['status']}` | {len(listener['listener_tasks'])} tasks / stimuli locked: {listener['stimulus_pairs_locked']} / 0 records |",
         "", "## Required gates", "",

@@ -42,6 +42,9 @@ def validate() -> list[str]:
         errors.append("acceptance matrix open_requirement_count is stale")
     if readiness["promotion_ready_count"] != 0 or len(readiness["cards"]) != readiness["card_count"]:
         errors.append("promotion readiness count or card rows is inconsistent")
+    readiness_stage = status["stages"].get("promotion_readiness", {})
+    if readiness_stage.get("card_count") != readiness["card_count"] or readiness_stage.get("promotion_ready_count") != readiness["promotion_ready_count"]:
+        errors.append("end-to-end promotion readiness stage is stale")
 
     gate_counts = {gate["gate_id"]: gate["item_count"] for gate in gates["gates"]}
     for gate_id, count in {"identity": 395, "delivery": 36, "learner": 72, "listener_stimuli": 18, "listener_outcomes": 18}.items():
