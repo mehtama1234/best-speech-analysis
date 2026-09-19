@@ -1,0 +1,72 @@
+#!/usr/bin/env python3
+"""Build hashes and coverage counts for the authoritative speech-analysis artifacts."""
+
+from __future__ import annotations
+
+import hashlib
+import json
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / "research/reproducibility-manifest.json"
+ARTIFACTS = [
+    ("research/full-reading-queue.json", "fixed source inventory"),
+    ("research/full-context-reviews.json", "full-context transcript reviews"),
+    ("research/corpus-evidence-bank.json", "timestamped evidence bank"),
+    ("research/corpus-pattern-atlas.json", "heuristic retrieval atlas"),
+    ("research/corpus-phrase-form-inventory.json", "heuristic exact phrase forms"),
+    ("research/communication-job-cards.json", "provisional communication-job cards"),
+    ("research/communication-job-curriculum-index.json", "integrated provisional curriculum"),
+    ("research/communication-job-mobile-lessons.json", "mobile lesson payload"),
+    ("research/communication-job-delivery-sampling.json", "delivery observation queue"),
+    ("research/communication-job-counterexample-workbook.json", "counterexample review queue"),
+    ("research/corpus-identity-review-workbook.json", "identity review queue"),
+    ("research/corpus-function-independent-review-workbook.json", "function review queue"),
+    ("research/corpus-recurrence-independent-review-workbook.json", "recurrence review queue"),
+    ("research/corpus-phrase-form-independent-review-workbook.json", "phrase-form review queue"),
+    ("research/multimodal-independent-review-workbook.json", "multimodal review queue"),
+    ("research/communication-job-learner-check.json", "learner protocol"),
+    ("research/communication-job-listener-outcome-protocol.json", "listener protocol"),
+    ("research/shared-evidence-model.json", "shared web/mobile evidence contract"),
+    ("research/end-to-end-status.json", "live status dashboard"),
+    ("research/end-to-end-acceptance-matrix.json", "requirement acceptance matrix"),
+]
+
+
+def sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(1024 * 1024), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def build() -> dict:
+    queue = json.loads((ROOT / "research/full-reading-queue.json").read_text())
+    reviews = json.loads((ROOT / "research/full-context-reviews.json").read_text())
+    artifacts = []
+    for relative, role in ARTIFACTS:
+        path = ROOT / relative
+        if not path.exists():
+            raise FileNotFoundError(relative)
+        artifacts.append({"path": relative, "role": role, "sha256": sha256(path), "bytes": path.stat().st_size})
+    return {
+        "schema_version": "1.0",
+        "manifest_id": "best-speech-analysis-reproducibility",
+        "status": "checkpoint_reproducible_artifacts_hashed_research_incomplete",
+        "claim_boundary": "Hashes prove which local artifacts were checked at manifest generation. They do not prove independent review, delivery meaning, teachability, listener outcomes or effectiveness.",
+        "coverage_snapshot": {"unique_inventory_videos": queue["video_count"], "full_context_reviews": len(reviews["reviews"]), "inspected_captions": queue["caption_count"]},
+        "verification_commands": ["python3 -m unittest discover -s tests -p 'test_*.py'", "python3 scripts/validate_end_to_end_status.py", "python3 scripts/validate_communication_job_cards.py", "python3 scripts/validate_communication_job_curriculum.py"],
+        "artifacts": artifacts,
+    }
+
+
+def main() -> int:
+    result = build()
+    OUT.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n")
+    print(json.dumps({"output": str(OUT.relative_to(ROOT)), "artifact_count": len(result["artifacts"]), "coverage": result["coverage_snapshot"]}, indent=2))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

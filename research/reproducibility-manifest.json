@@ -1,0 +1,139 @@
+{
+  "schema_version": "1.0",
+  "manifest_id": "best-speech-analysis-reproducibility",
+  "status": "checkpoint_reproducible_artifacts_hashed_research_incomplete",
+  "claim_boundary": "Hashes prove which local artifacts were checked at manifest generation. They do not prove independent review, delivery meaning, teachability, listener outcomes or effectiveness.",
+  "coverage_snapshot": {
+    "unique_inventory_videos": 395,
+    "full_context_reviews": 395,
+    "inspected_captions": 102816
+  },
+  "verification_commands": [
+    "python3 -m unittest discover -s tests -p 'test_*.py'",
+    "python3 scripts/validate_end_to_end_status.py",
+    "python3 scripts/validate_communication_job_cards.py",
+    "python3 scripts/validate_communication_job_curriculum.py"
+  ],
+  "artifacts": [
+    {
+      "path": "research/full-reading-queue.json",
+      "role": "fixed source inventory",
+      "sha256": "09b2d437fbd6413fdfbeee7f8dd4ec237ef9e25f4f3461bbabe6dd56ca7bad64",
+      "bytes": 197476
+    },
+    {
+      "path": "research/full-context-reviews.json",
+      "role": "full-context transcript reviews",
+      "sha256": "249943655e338413372cd1616e82e81f68ef7669100b1e61c3e56043f7e2fcfe",
+      "bytes": 15776748
+    },
+    {
+      "path": "research/corpus-evidence-bank.json",
+      "role": "timestamped evidence bank",
+      "sha256": "aa51fe7d327c55c181df085982095989c6abe4db2a9de2123d321d04dfae1dd5",
+      "bytes": 41132700
+    },
+    {
+      "path": "research/corpus-pattern-atlas.json",
+      "role": "heuristic retrieval atlas",
+      "sha256": "3b1f2305936e32ba7dfe6c683f630db479b854ff46583fb20831e865db6da724",
+      "bytes": 5243651
+    },
+    {
+      "path": "research/corpus-phrase-form-inventory.json",
+      "role": "heuristic exact phrase forms",
+      "sha256": "c89bed9c92a2a2d595b5f62127a4d3074db03fb4cb554287b3f37289d3e94e20",
+      "bytes": 262963
+    },
+    {
+      "path": "research/communication-job-cards.json",
+      "role": "provisional communication-job cards",
+      "sha256": "000fbc451bf73ae9259f9db6de19366e27e0e4065dd247b240d041aa4d622d3e",
+      "bytes": 354516
+    },
+    {
+      "path": "research/communication-job-curriculum-index.json",
+      "role": "integrated provisional curriculum",
+      "sha256": "f8036900afd191201548bc5ffba455b97a0113434ff290d255b193ca88f61d22",
+      "bytes": 482568
+    },
+    {
+      "path": "research/communication-job-mobile-lessons.json",
+      "role": "mobile lesson payload",
+      "sha256": "e74d2a873bc12008f556c18871fe8f70143ccd7fb61ea3e90b3b5f23e7856453",
+      "bytes": 187242
+    },
+    {
+      "path": "research/communication-job-delivery-sampling.json",
+      "role": "delivery observation queue",
+      "sha256": "5c38db54b2a9544de02e21b60beb7b65a737a8bc62955fcdc7c83ba0d8979f7e",
+      "bytes": 53898
+    },
+    {
+      "path": "research/communication-job-counterexample-workbook.json",
+      "role": "counterexample review queue",
+      "sha256": "297517aebbb379f6de0a3b6d226629ff9ee4d2f75b385cfc82db3fae4c1b3502",
+      "bytes": 84846
+    },
+    {
+      "path": "research/corpus-identity-review-workbook.json",
+      "role": "identity review queue",
+      "sha256": "92addd27793d7d4c278cc489629aaade32e5c4d0ee09a9d04447f69e607798cd",
+      "bytes": 453380
+    },
+    {
+      "path": "research/corpus-function-independent-review-workbook.json",
+      "role": "function review queue",
+      "sha256": "c95d580d4aa80716d4cc8d90888bd754dd6b0abf4631bd9701b2be4c679a9830",
+      "bytes": 153805
+    },
+    {
+      "path": "research/corpus-recurrence-independent-review-workbook.json",
+      "role": "recurrence review queue",
+      "sha256": "0c68c19e7062e37adb43300f769bd7ed81160b4daf891fa055d0d5cce474a586",
+      "bytes": 174353
+    },
+    {
+      "path": "research/corpus-phrase-form-independent-review-workbook.json",
+      "role": "phrase-form review queue",
+      "sha256": "770d4c36ca5d4085b72c3e18ecb115bec790039e1b6ebf786c98397d22ea548f",
+      "bytes": 76300
+    },
+    {
+      "path": "research/multimodal-independent-review-workbook.json",
+      "role": "multimodal review queue",
+      "sha256": "3326f63d230e6ac39b2d756aec7ff7113f0400396f3572208e229ed38eb6fa0f",
+      "bytes": 23943
+    },
+    {
+      "path": "research/communication-job-learner-check.json",
+      "role": "learner protocol",
+      "sha256": "51d5202ab048dacc093629028311cb8248556f06428e5c1ce250378656989cab",
+      "bytes": 84319
+    },
+    {
+      "path": "research/communication-job-listener-outcome-protocol.json",
+      "role": "listener protocol",
+      "sha256": "6476d9f50341952f41bd84594fdf6a0a06675dab57e766940c7a57eb8560f1d1",
+      "bytes": 17166
+    },
+    {
+      "path": "research/shared-evidence-model.json",
+      "role": "shared web/mobile evidence contract",
+      "sha256": "450a01396c554ef1d18e100763d6a2bda20ad87897e5325c67f0b7b68c39f08a",
+      "bytes": 7339
+    },
+    {
+      "path": "research/end-to-end-status.json",
+      "role": "live status dashboard",
+      "sha256": "ee332532a83e5d97851da683e4817c40d73c04c115170c74274d69def01ceffd",
+      "bytes": 10142
+    },
+    {
+      "path": "research/end-to-end-acceptance-matrix.json",
+      "role": "requirement acceptance matrix",
+      "sha256": "7c2e69fb1b38548016d7230dcfcb99b83c92e96971716ac8529ea059bfe87dde",
+      "bytes": 7067
+    }
+  ]
+}
