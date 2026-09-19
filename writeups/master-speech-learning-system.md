@@ -125,6 +125,74 @@ words,” “the point is,” “what matters,” “rather than,” “I think,
 relationship and situation. Never teach the source phrase without its job,
 conditions and limits.
 
+## Interesting findings to investigate
+
+The current corpus artifacts support provisional observations and testable
+questions, not causal conclusions. Several patterns are especially useful:
+
+### Stories often act as connective tissue
+
+`story_or_personal_experience` is the largest current job cluster: 184
+function records across 121 videos. It co-occurs in the same video with
+`closing` 68 times, `question` 55 times, `opening` 52 times and
+`contrast_or_disagreement` 47 times. A useful hypothesis is that stories often
+move a talk between orientation, inquiry, disagreement and release rather than
+serving only as inspirational decoration. These are same-video counts, not
+independent recurrence or proof that stories improve understanding.
+
+### Frequent words are not techniques by themselves
+
+The form `but` appears in 5,039 caption segments across 374 videos, while the
+more specific contrast candidate has 87 function records across 72 videos. The
+gap is the lesson: do not teach someone to say “but.” Teach them to name an
+earlier frame, explain what changed, state the present view and preserve any
+real overlap.
+
+### A question mark does not guarantee an invitation
+
+The `?` form appears in 2,709 segments across 219 videos, while the indexed
+question function has 141 records across 82 videos. A question may be a real
+invitation, a rhetorical flourish, a challenge, a quotation or a demand. The
+interesting thing to test is whether the listener receives an answer path or a
+genuine opt-out—not how many questions a speaker uses.
+
+### Uncertainty can coexist with direction
+
+`i think` appears in 1,436 segments across 214 videos, including 37 holdout
+videos; `maybe` appears in 382 segments across 159 videos. The usable form is
+not “hedge more.” It is: state the current claim, label its evidence or
+condition, and say what would change it. Testing should distinguish calibrated
+uncertainty from evasive qualification.
+
+### Action language mixes agency and prohibition
+
+The call-to-action inventory includes `you can` (702 segments / 225 videos),
+`let's` (417 / 168), `we need to` (148 / 70), and negative forms such as
+`don't` (2,234 / 326) and `do not` (159 / 83). This suggests that “call to
+action” is not one style: it can invite agency, assign responsibility or
+constrain behavior. Any lesson must name the actor, consent, resources and
+limit.
+
+### Repair is both valuable and underrepresented
+
+The repair candidate has only 15 function records across 14 videos, with two
+holdout videos. That absence is informative: a speech library can easily
+overteach polished openings and closings while lacking enough verified examples
+of public correction. Repair should remain a cautious hypothesis until more
+distinct examples are independently checked.
+
+### Openings and closings form an arc more often than a script
+
+`opening` and `closing` share 54 videos, including 10 holdout videos. The
+interesting question is not whether every talk needs a formulaic beginning and
+end. It is whether the close returns to the initial orientation with a changed
+point, limit or next step. Mere repetition can sound finished without making
+the reasoning more retrievable.
+
+These observations are starting points for inspection, not findings to promote
+as universal rules. Each needs identity review, alternate-function checks,
+delivery inspection and learner/listener testing.
+
 ## What to inspect in delivery
 
 When raw media exists, inspect rather than imitate:
