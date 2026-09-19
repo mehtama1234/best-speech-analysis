@@ -93,6 +93,9 @@ availability and blank manual observation fields visible.
 It now includes a typed review schema and [export validator](scripts/validate_communication_job_delivery_review.py)
 for alignment, vocal timing, audio limits, visual observation, setting/editing/music,
 identity and accessibility fields; blank observations remain blank until review.
+The [delivery comparator](scripts/compare_communication_job_delivery_reviews.py)
+preserves disagreements between reviewers and requires adjudication before
+delivery observations are linked to promoted patterns.
 The [measurement preflight](writeups/communication-job-delivery-measurement-preflight.md)
 attaches reproducible audio/transcript/frame proxies to 32 of those samples;
 it does not infer emotion, confidence, intent, nonverbal meaning or effect.

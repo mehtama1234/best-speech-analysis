@@ -71,6 +71,9 @@ blank; no vocal, nonverbal, setting or editing findings are inferred.
 The queue also includes a typed review schema and
 [export validator](scripts/validate_communication_job_delivery_review.py);
 validation of a form does not make the observation independent evidence.
+The [delivery comparator](scripts/compare_communication_job_delivery_reviews.py)
+retains field-level disagreements and requires adjudication before observations
+can affect a pattern card.
 The [measurement preflight](writeups/communication-job-delivery-measurement-preflight.md)
 attaches reproducible proxy values to the queue: 32/36 samples have aligned
 feature rows and four are unmatched. RMS, speech activity, pitch, frame and
