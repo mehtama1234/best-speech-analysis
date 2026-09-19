@@ -20,6 +20,8 @@ class CorpusLearnerCardInventoryTests(unittest.TestCase):
         self.assertEqual(self.data["summary"]["total_card_count"], 6816)
         self.assertGreater(self.data["summary"]["cards_with_phrase_handles"], 2000)
         self.assertGreater(self.data["summary"]["phrase_handle_count"], 7000)
+        self.assertGreater(self.data["summary"]["cards_with_local_delivery_proxy"], 6000)
+        self.assertGreater(self.data["summary"]["cards_with_pose_proxy"], 6000)
         self.assertEqual(self.data["summary"]["cards_with_shared_job_template"], 1473)
         self.assertEqual(self.data["summary"]["non_speech_or_publisher_boundary_cards"], 149)
         self.assertEqual(self.data["summary"]["unclassified_cards"], 2394)
@@ -31,6 +33,7 @@ class CorpusLearnerCardInventoryTests(unittest.TestCase):
         for card in self.data["cards"]:
             for field in ("raw_function_label", "observed_move", "repeatable_form", "practice", "self_check", "non_fit", "claim_boundary"):
                 self.assertIn(field, card)
+            self.assertIn("delivery_proxy", card)
         self.assertIn("Search, inspect the full context", self.html)
         self.assertIn("Exact evidence", self.html)
         self.assertIn("Exact phrase handles", self.html)

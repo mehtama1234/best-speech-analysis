@@ -21,6 +21,9 @@ listener evidence remain separate gates.
 The inventory now adds 8,062 exact phrase handles matched inside retained card
 evidence across 2,289 function cards and 1,812 sequence cards. They are
 retrieval aids for rereading wording, not scripts or effectiveness evidence.
+The cards also carry nearest local audio, face/scene and pose proxy fields for
+6,308 cards; these are aligned navigation measurements where available, not
+nonverbal interpretations or delivery-effectiveness evidence.
 The [video-learning itinerary](writeups/corpus-video-learning-itinerary.html)
 now gives each of the 395 reviewed videos one selected starting lesson without
 claiming that the selection is the most important, representative or effective

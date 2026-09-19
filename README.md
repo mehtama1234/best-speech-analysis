@@ -40,6 +40,9 @@ curriculum remains the more compressed shared taxonomy.
 The cards now include 8,062 exact phrase handles matched inside retained card
 evidence across 2,289 function cards and 1,812 sequence cards; each remains a
 retrieval aid with a transcript-only boundary.
+The same cards now expose nearest local audio, face/scene and pose inspection
+proxies for 6,308 cards; missing local media remains explicit and the fields do
+not establish intentional delivery, emotion, gesture meaning or effectiveness.
 The [video-learning itinerary](writeups/corpus-video-learning-itinerary.html)
 selects one bounded starting lesson for each of the 395 reviewed videos, with
 exact evidence, a practice move, self-check and sequence bridge where recorded.

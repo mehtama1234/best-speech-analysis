@@ -81,6 +81,45 @@ def _phrase_handles(video_id: str, canonical_job: str, segments: list[dict], job
     return handles[:12]
 
 
+def _nearest(rows: list[dict], target_time: float | None) -> dict | None:
+    if not rows or target_time is None:
+        return None
+    return min(rows, key=lambda row: abs(float(row.get("time_seconds", row.get("start_seconds", 0))) - target_time))
+
+
+def _delivery_proxy(video_id: str, segments: list[dict], cache: dict[str, dict]) -> dict:
+    if video_id in cache:
+        return cache[video_id]
+    feature_path = ROOT / "data/features" / f"{video_id}.json"
+    pose_path = ROOT / "data/pose-features" / f"{video_id}.json"
+    if not feature_path.exists():
+        result = {"status": "not_available_no_local_feature_report", "claim_boundary": "No local audio/visual/pose proxy is available for this video."}
+        cache[video_id] = result
+        return result
+    feature = json.loads(feature_path.read_text())
+    target_time = segments[0].get("start_seconds") if segments else None
+    audio = _nearest(feature.get("audio_windows", []), target_time)
+    frame = _nearest(feature.get("sampled_frames", []), target_time)
+    pose = None
+    if pose_path.exists():
+        pose = _nearest(json.loads(pose_path.read_text()).get("frames", []), target_time)
+    result = {
+        "status": "local_proxy_nearest_sample_not_manual_delivery_review",
+        "feature_file": str(feature_path.relative_to(ROOT)),
+        "pose_file": str(pose_path.relative_to(ROOT)) if pose_path.exists() else None,
+        "target_time_seconds": target_time,
+        "audio_offset_seconds": round(float(audio.get("start_seconds") - target_time), 3) if audio and target_time is not None else None,
+        "frame_offset_seconds": round(float(frame.get("time_seconds") - target_time), 3) if frame and target_time is not None else None,
+        "pose_offset_seconds": round(float(pose.get("time_seconds") - target_time), 3) if pose and target_time is not None else None,
+        "audio_window": {key: audio.get(key) for key in ("start_seconds", "end_seconds", "rms_db", "speech_activity_proxy", "pitch_hz_proxy", "pitch_confidence_proxy")} if audio else None,
+        "sampled_frame": {key: frame.get(key) for key in ("time_seconds", "face_count", "smile_detector_candidate_count", "mean_luminance", "luminance_std", "face_measurement_status")} if frame else None,
+        "pose_frame": {key: pose.get(key) for key in ("time_seconds", "person_detected", "visible_keypoint_count", "visible_wrist_count", "shoulder_width_fraction", "observable_geometry_status")} if pose else None,
+        "claim_boundary": "Audio, face/scene and pose fields are local measurement proxies at a nearest sampled interval. They do not establish intentional delivery, emotion, gesture meaning, identity, comprehension or effectiveness.",
+    }
+    cache[video_id] = result
+    return result
+
+
 def build() -> dict:
     index = json.loads(INDEX.read_text())
     evidence = {}
@@ -96,6 +135,7 @@ def build() -> dict:
     jobs = _job_cards()
     job_phrase_forms = json.loads(JOB_PHRASES.read_text())["forms"]
     corpus_phrase_forms = json.loads(CORPUS_PHRASES.read_text())["forms"]
+    delivery_cache = {}
     cards = []
     relation_cards = []
     job_counts = Counter()
@@ -157,6 +197,7 @@ def build() -> dict:
                 "exact_evidence": segments,
                 "phrase_handles": phrase_handles,
                 "phrase_handle_status": "indexed_exact_card_evidence_matches" if phrase_handles else "no_indexed_phrase_match_in_card_evidence",
+                "delivery_proxy": _delivery_proxy(entry["video_id"], segments, delivery_cache),
                 "review_limits": entry.get("limits", []),
                 "next_test": entry.get("next_test", ""),
                 "claim_boundary": "Transcript-derived discovery and practice hypothesis only; not independently reviewed, delivery-validated, learner-validated or listener-outcome evidence.",
@@ -188,6 +229,7 @@ def build() -> dict:
                 "to_evidence_ids": to_ids,
                 "exact_evidence": segments,
                 "phrase_handles": _phrase_handles(entry["video_id"], "", segments, [], corpus_phrase_forms),
+                "delivery_proxy": _delivery_proxy(entry["video_id"], segments, delivery_cache),
                 "why_it_might_help": "Hypothesis: making the bridge between these two moves explicit may reduce the listener's need to infer why the talk changed direction.",
                 "repeatable_approach": "Complete the first move, name the relationship, then make the second move; do not assume the audience will supply the bridge.",
                 "practice": "Give a 30–60 second explanation using the same move-to-move relationship with a new topic. Ask a listener to name the bridge.",
@@ -213,6 +255,8 @@ def build() -> dict:
             "cards_with_phrase_handles": sum(bool(card["phrase_handles"]) for card in cards),
             "sequence_cards_with_phrase_handles": sum(bool(card["phrase_handles"]) for card in relation_cards),
             "phrase_handle_count": sum(len(card["phrase_handles"]) for card in cards + relation_cards),
+            "cards_with_local_delivery_proxy": sum(card["delivery_proxy"]["status"].startswith("local") for card in cards + relation_cards),
+            "cards_with_pose_proxy": sum(bool(card["delivery_proxy"].get("pose_frame")) for card in cards + relation_cards),
             "cards_with_shared_job_template": sum(job_counts.values()),
             "non_speech_or_publisher_boundary_cards": boundary_items,
             "unclassified_cards": unclassified,
@@ -229,7 +273,7 @@ def build() -> dict:
         report["claim_boundary"], "",
         f"This inventory contains **{summary['card_count']} function cards** and **{summary['structural_card_count']} sequence cards** from **{summary['review_count']} full-context reviews**. "
         f"Each card preserves the original function label and reason, up to five exact caption segments, a provisional shared-job form where available, a drill, self-check, non-fit warning, limits and next test.", "",
-        f"Function cards with exact evidence: **{summary['cards_with_exact_evidence']}** · sequence cards with exact evidence: **{summary['structural_cards_with_exact_evidence']}** of {summary['structural_card_count']} · cards with phrase handles: **{summary['cards_with_phrase_handles']}** · sequence cards with phrase handles: **{summary['sequence_cards_with_phrase_handles']}** · phrase handles: **{summary['phrase_handle_count']}** · cards with a shared speech-job template: **{summary['cards_with_shared_job_template']}** · publisher/media boundary cards: **{summary['non_speech_or_publisher_boundary_cards']}** · unclassified and requiring review: **{summary['unclassified_cards']}**.", "",
+        f"Function cards with exact evidence: **{summary['cards_with_exact_evidence']}** · sequence cards with exact evidence: **{summary['structural_cards_with_exact_evidence']}** of {summary['structural_card_count']} · cards with phrase handles: **{summary['cards_with_phrase_handles']}** · sequence cards with phrase handles: **{summary['sequence_cards_with_phrase_handles']}** · phrase handles: **{summary['phrase_handle_count']}** · cards with local delivery proxies: **{summary['cards_with_local_delivery_proxy']}** · cards with pose proxies: **{summary['cards_with_pose_proxy']}** · cards with a shared speech-job template: **{summary['cards_with_shared_job_template']}** · publisher/media boundary cards: **{summary['non_speech_or_publisher_boundary_cards']}** · unclassified and requiring review: **{summary['unclassified_cards']}**.", "",
         "Use the [searchable inventory](corpus-learner-card-inventory.html) to filter by video, raw label, canonical job, relation type or wording. Use the linked full writeup and source context before treating a card as a lesson.", "",
         "## How to use one card", "",
         "1. Read the exact evidence and the surrounding writeup.",
@@ -258,6 +302,8 @@ def build() -> dict:
         writeup = f"<a href='../{html.escape(card['writeup'])}'>full writeup</a>" if card.get("writeup") else ""
         phrase_items = "".join(f"<li><b><code>{html.escape(x['phrase_form'])}</code></b> · {html.escape(x['family'] or '')} · <code>{html.escape(x['evidence_id'])}</code><br>{html.escape(x['text'])}<br><span class='muted'>{html.escape(x['retrieval_status'])}; {html.escape(x['mechanism_hypothesis'] or '')}</span></li>" for x in card.get("phrase_handles", []))
         phrase_html = f"<h3>Exact phrase handles</h3><ul>{phrase_items}</ul>" if phrase_items else "<h3>Exact phrase handles</h3><p class='muted'>No indexed phrase match in this card's retained evidence.</p>"
+        proxy = card["delivery_proxy"]
+        proxy_html = f"<h3>Delivery inspection proxy</h3><p>{html.escape(proxy['status'])}</p><p><b>Audio:</b> {html.escape(json.dumps(proxy.get('audio_window'), ensure_ascii=False))}</p><p><b>Face/scene:</b> {html.escape(json.dumps(proxy.get('sampled_frame'), ensure_ascii=False))}</p><p><b>Pose:</b> {html.escape(json.dumps(proxy.get('pose_frame'), ensure_ascii=False))}</p><p class='muted'>{html.escape(proxy['claim_boundary'])}</p>"
         if is_relation:
             heading = f"<p><b>Sequence:</b> <code>{html.escape(card['relation_type'])}</code></p><h3>Sequence claim</h3><p>{html.escape(card['sequence_claim'])}</p>"
             form_heading = "Repeatable approach"
@@ -271,7 +317,7 @@ def build() -> dict:
         articles.append(
             f"<article class='card' data-search='{html.escape(search, quote=True)}' data-job='{html.escape(card.get('canonical_job', ''), quote=True)}' data-relation='{html.escape(card.get('relation_type', ''), quote=True)}' data-kind='{html.escape(card.get('card_type', 'function'), quote=True)}'>"
             f"<h2>{html.escape(card['title'])}</h2><p><code>{html.escape(card['card_id'])}</code> · {writeup}</p>"
-            f"<p><b>Card type:</b> {label}</p>{heading}<h3>Exact evidence</h3>{evidence_html}{phrase_html}"
+            f"<p><b>Card type:</b> {label}</p>{heading}<h3>Exact evidence</h3>{evidence_html}{phrase_html}{proxy_html}"
             f"<h3>Why it might help</h3><p>{html.escape(card['why_it_might_help'])}</p>"
             f"<h3>{form_heading}</h3><p>{html.escape(form)}</p>"
             f"<h3>Practice</h3><p>{html.escape(card['practice'])}</p>"
