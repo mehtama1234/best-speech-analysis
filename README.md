@@ -31,6 +31,11 @@ that phrase atlas by indexing the communication functions, structural
 relations, limits and next tests recorded in all 395 full-context reviews. It
 is a transcript-derived discovery surface, not a claim that those observations
 are recurring, effective or validated.
+The [corpus learner-card inventory](writeups/corpus-learner-card-inventory.html)
+turns all 4,016 recorded function items into searchable practice cards with
+exact caption evidence, a provisional repeatable form, a drill, self-check,
+non-fit warning and review limits. It is the broad learn-from-the-corpus
+surface; the 18-job curriculum remains the more compressed shared taxonomy.
 The [corpus findings catalog](writeups/corpus-findings-catalog.md) is the
 practical reading surface: all 395 video findings, 18 usable speech jobs,
 timestamp-linked examples, exact phrase-form counts, copyable forms, practice

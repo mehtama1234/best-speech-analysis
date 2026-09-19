@@ -104,6 +104,10 @@ ARTIFACTS = [
     ("writeups/job-phrase-candidate-inventory.md", "provisional multiword phrase candidate report"),
     ("writeups/job-phrase-transfer-cards.md", "provisional job phrase transfer cards"),
     ("writeups/job-phrase-candidate-inventory.html", "searchable multiword phrase candidate surface"),
+    ("research/corpus-learner-card-inventory.json", "all-review transcript-derived learner card inventory"),
+    ("writeups/corpus-learner-card-inventory.md", "all-review transcript-derived learner card guide"),
+    ("writeups/corpus-learner-card-inventory.html", "searchable all-review learner card surface"),
+    ("scripts/build_corpus_learner_card_inventory.py", "all-review learner card inventory builder"),
 ]
 
 
