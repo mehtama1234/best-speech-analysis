@@ -28,12 +28,15 @@ def build() -> tuple[dict, str]:
     reviews = load("research/full-context-reviews.json")["reviews"]
     lessons = load("research/corpus-lesson-index.json")["entries"]
     cards = load("research/communication-job-cards.json")["cards"]
+    taxonomy = load("research/corpus-function-taxonomy.json")["entries"]
     phrases = load("research/corpus-phrase-form-inventory.json")["forms"]
     evidence = load("research/corpus-evidence-bank.json")["records"]
     delivery = load("research/communication-job-delivery-internal-observations.json")["items"]
     comparison = load("research/communication-job-cross-comparison.json")
 
     lesson_by_review = {x["review_id"]: x for x in lessons}
+    taxonomy_by_review = {x["review_id"]: x for x in taxonomy}
+    card_by_job = {x["canonical_job"]: x for x in cards}
     evidence_by_job: dict[str, list[dict]] = defaultdict(list)
     for row in evidence:
         evidence_by_job[row.get("canonical_job", "unclassified")].append(row)
@@ -41,6 +44,12 @@ def build() -> tuple[dict, str]:
     rows = []
     for review in reviews:
         lesson = lesson_by_review[review["review_id"]]
+        taxonomy_entry = taxonomy_by_review.get(review["review_id"], {})
+        candidate_jobs = sorted({
+            x.get("canonical_job")
+            for x in taxonomy_entry.get("functions", [])
+            if x.get("canonical_job") and x.get("canonical_job") != "unclassified"
+        })
         functions = lesson.get("communication_function_inventory", [])
         relations = lesson.get("structural_relation_inventory", [])
         rows.append({
@@ -53,6 +62,12 @@ def build() -> tuple[dict, str]:
             "coverage": review.get("coverage"),
             "observed_functions": functions,
             "observed_relations": relations,
+            "candidate_jobs": candidate_jobs,
+            "candidate_job_forms": {
+                job: card_by_job[job].get("form")
+                for job in candidate_jobs
+                if job in card_by_job
+            },
             "boundary_cases": lesson.get("boundary_cases", review.get("boundary_cases", [])),
             "limits": lesson.get("limits", review.get("limits", [])),
             "next_test": lesson.get("next_test", review.get("next_test")),
@@ -97,7 +112,7 @@ def build() -> tuple[dict, str]:
         "schema_version": "1.0",
         "catalog_id": "corpus-findings-catalog",
         "status": "transcript_derived_findings_with_provisional_practice_hypotheses",
-        "claim_boundary": "The per-video rows are actual recorded transcript observations linked to retained evidence and writeups. Copyable forms and mechanism statements are provisional learning hypotheses; they do not establish delivery effects, listener outcomes, teachability or best-practice status.",
+        "claim_boundary": "The per-video rows are actual recorded transcript observations linked to retained evidence and writeups. Candidate jobs and practice forms are heuristic routing aids; copyable forms and mechanism statements are provisional learning hypotheses and do not establish delivery effects, listener outcomes, teachability or best-practice status.",
         "coverage": {"review_count": len(rows), "function_observation_count": sum(function_counts.values()), "relation_observation_count": sum(relation_counts.values()), "phrase_form_count": len(phrases)},
         "how_to_use": [
             "Start with a job card for a speech task you need tomorrow.",
@@ -193,7 +208,7 @@ def build() -> tuple[dict, str]:
     for x in findings["top_job_pairs"]:
         lines.append(f"| `{x['job_a']}` | `{x['job_b']}` | {x['shared_video_count']} | {x['holdout_shared_video_count']} |")
 
-    lines += ["", "## Video-by-video findings (all 395 reviews)", "", "Every row below is a recorded observation, not an invented summary. Open the linked writeup and evidence IDs for the full context.", "", "| # | Video / writeup | Observed functions | Structural relations | Limits / next test |", "|---:|---|---|---|---|"]
+    lines += ["", "## Video-by-video findings (all 395 reviews)", "", "Every row below is a recorded observation, not an invented summary. Candidate jobs are heuristic routes into the 18 practice cards; `unclassified` items remain out of that route. Open the linked writeup and evidence IDs for the full context.", "", "| # | Video / writeup | Candidate practice jobs | Observed functions | Structural relations | Limits / next test |", "|---:|---|---|---|---|---|"]
     for i, row in enumerate(rows, 1):
         fs = "; ".join(
             clip(x.get("function") or x.get("label") or ("unlabelled: " + x.get("reason") if x.get("reason") else "unlabelled"), 120)
@@ -203,9 +218,10 @@ def build() -> tuple[dict, str]:
             clip(x.get("type") or ("unlabelled: " + x.get("claim") if x.get("claim") else "unlabelled"), 100)
             for x in row["observed_relations"][:4]
         ) or "none recorded"
+        jobs = "; ".join(f"`{job}`" for job in row.get("candidate_jobs", []) if job in card_by_job) or "none"
         lim = clip(" ".join(row["limits"][:2]), 180) if row["limits"] else clip(row.get("next_test") or "see writeup", 180)
         title = clip(row["title"], 90)
-        lines.append(f"| {i} | [{title}](../{row['writeup']}) `{row['video_id']}` | {fs} | {rs} | {lim} |")
+        lines.append(f"| {i} | [{title}](../{row['writeup']}) `{row['video_id']}` | {jobs} | {fs} | {rs} | {lim} |")
 
     lines += ["", "## Aggregate recurrence snapshot", "", "The counts below are inventory counts, not denominators of effective speaking:", "", "### Most frequent recorded function labels", ""]
     lines += [f"- `{k}` — {v}" for k, v in function_counts.most_common(30)]
