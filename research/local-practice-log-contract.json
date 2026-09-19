@@ -1,0 +1,26 @@
+{
+  "schema_version": "1.0",
+  "contract_id": "corpus-local-learner-practice-log",
+  "record_type": "local_learner_practice_log",
+  "status": "export_contract_not_validation_evidence",
+  "required_log_fields": ["schema_version", "record_type", "claim_boundary", "records"],
+  "required_record_fields": [
+    "record_type",
+    "schema_version",
+    "created_at",
+    "card_id",
+    "video_id",
+    "title",
+    "canonical_job",
+    "source_evidence_ids",
+    "delivery_mode",
+    "adapted_wording",
+    "listener_restatement",
+    "non_fit_or_safety_note",
+    "revision",
+    "claim_boundary"
+  ],
+  "delivery_modes": ["spoken", "typed", "captioned", "asynchronous", "AAC-supported"],
+  "claim_boundary": "A local learner practice record documents an attempt and reflection. It is not independent review, proof of teachability, proof of listener comprehension, or evidence that a communication choice is effective.",
+  "privacy_boundary": "Use a pseudonym or local identifier and do not include sensitive personal or listener information without consent. The browser export does not upload records."
+}

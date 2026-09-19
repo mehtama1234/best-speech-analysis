@@ -56,6 +56,9 @@ through filtered practice cards.
 It can save a local practice record containing the adapted wording, delivery
 mode, listener restatement, non-fit or safety note and next revision; exported
 records remain learner evidence, not independent validation.
+The [practice-log contract](research/local-practice-log-contract.json) and
+[validator](scripts/validate_local_practice_log.py) check returned exports for
+their required fields and boundaries without scoring the learner or listener.
 The [video-learning itinerary](writeups/corpus-video-learning-itinerary.html)
 selects one bounded starting lesson for each of the 395 reviewed videos, with
 exact evidence, a practice move, self-check and sequence bridge where recorded.

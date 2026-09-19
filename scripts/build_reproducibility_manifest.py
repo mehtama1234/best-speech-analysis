@@ -122,6 +122,8 @@ ARTIFACTS = [
     ("writeups/corpus-learner-card-inventory.html", "searchable all-review learner card surface"),
     ("scripts/build_corpus_learner_card_inventory.py", "all-review learner card inventory builder"),
     ("writeups/start-here.md", "user-facing speech-learning entry guide"),
+    ("research/local-practice-log-contract.json", "local learner practice export contract"),
+    ("scripts/validate_local_practice_log.py", "local learner practice export validator"),
 ]
 
 

@@ -35,6 +35,10 @@ non-fit boundaries visible.
 It can also export local practice records with the learner's adaptation,
 delivery mode, listener restatement, non-fit note and revision. These records
 are a ready-to-use protocol surface, not completed learner validation.
+The export format is documented in
+`research/local-practice-log-contract.json` and checked by
+`scripts/validate_local_practice_log.py`; the validator checks structure and
+boundaries only, not learner performance or listener outcomes.
 The [video-learning itinerary](writeups/corpus-video-learning-itinerary.html)
 now gives each of the 395 reviewed videos one selected starting lesson without
 claiming that the selection is the most important, representative or effective
