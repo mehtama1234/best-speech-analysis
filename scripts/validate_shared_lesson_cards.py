@@ -28,7 +28,7 @@ def validate(data: dict) -> list[str]:
     errors = []
     if data.get("model_id") != "shared-lesson-cards": errors.append("model_id is invalid")
     if data.get("card_count") != len(data.get("cards", [])): errors.append("card_count does not match cards")
-    if data.get("status") != "eight_draft_cards_not_validated": errors.append("unexpected promotion status")
+    if data.get("status") != "18_draft_cards_not_validated": errors.append("unexpected promotion status")
     for number, card in enumerate(data.get("cards", []), 1):
         missing = REQUIRED_CARD_FIELDS - set(card)
         if missing: errors.append(f"card {number} missing fields: {sorted(missing)}")

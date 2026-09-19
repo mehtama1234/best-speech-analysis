@@ -177,7 +177,7 @@ maps the definition-of-done requirements to current evidence and reports nine
 open requirements; it does not count a workbook or protocol as completed human
 evidence.
 The [reproducibility manifest](research/reproducibility-manifest.json) hashes
-21 authoritative artifacts and records 395 full-context reviews, 102,816
+24 authoritative artifacts and records 395 full-context reviews, 102,816
 inspected captions and 395 inventory videos; its validator detects stale output
 without changing the incomplete research status.
 The [external review gate index](writeups/external-review-gate-index.md) is the
@@ -244,18 +244,18 @@ preserves field-level disagreements and requires adjudication before any
 delivery or pattern-card status changes.
 
 The [shared provisional curriculum](research/shared-provisional-curriculum.json)
-now joins all eight current draft lessons across slices 01 and 02, with links to
+now joins all 18 current communication-job lessons, with links to
 packets, exact evidence, practice/learner materials and validation status. The
 [HTML index](writeups/shared-provisional-curriculum.html) supports search and
-slice filtering; it does not promote any lesson to a proven best practice.
+curriculum filtering; it does not promote any lesson to a proven best practice.
 The shared lesson-card JSON now exposes an explicit evidence chain for each
 card: communication problem, exact language/function, delivery evidence,
 mechanism hypothesis, recurrence, limits, practice, learner check and listener
 outcome protocol. Missing validation remains represented as status, not inferred
 from the presence of links.
-All eight cards now include explicit self-checks; the three candidate cards use
-bounded checks for question pressure, definition scope, and action
-feasibility/consent rather than implying that the candidate patterns are proven.
+All 18 cards now include explicit practice boundaries and self-check fields;
+the cards remain provisional rather than implying that the candidate patterns
+are proven.
 Card examples and controls are also enriched from the retained segment registry
 with neighboring timestamped captions when packet context was absent; the
 builder does not synthesize missing transcript wording.

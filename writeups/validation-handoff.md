@@ -140,7 +140,7 @@ Review the five linked lesson packets and their evidence boundaries.
 
 ### learner_teachability — 32 tasks
 
-Test whether learners can recognize, explain, transfer and safely bound all eight current draft communication patterns.
+Test whether learners can recognize, explain, transfer and safely bound the 18 current provisional communication-job lessons.
 
 - Protocol: `research/shared-learner-check.json`
 - Form: `writeups/shared-learner-check.html`

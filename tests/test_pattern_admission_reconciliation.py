@@ -11,9 +11,9 @@ class PatternAdmissionReconciliationTests(unittest.TestCase):
     def setUpClass(cls):
         cls.report = json.loads((ROOT / "research/pattern-admission-reconciliation.json").read_text())
 
-    def test_distinguishes_legacy_five_from_shared_eight(self):
+    def test_distinguishes_legacy_five_from_shared_18_job_cards(self):
         self.assertEqual(self.report["legacy_contextual_pattern_count"], 5)
-        self.assertEqual(self.report["shared_draft_card_count"], 8)
+        self.assertEqual(self.report["shared_draft_card_count"], 18)
         self.assertEqual(self.report["status"], "terminology_reconciled_no_pattern_promoted")
         self.assertIn("independent semantic validation", self.report["claim_boundary"])
 

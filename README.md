@@ -113,7 +113,7 @@ allowing honest `no_candidate_found` decisions; the
 [summarizer](scripts/summarize_communication_job_counterexamples.py) preserves
 status counts without promoting them to outcome evidence.
 The [pattern-admission reconciliation](writeups/pattern-admission-reconciliation.md)
-explains why the older five-pattern count and newer eight-card curriculum are
+explains why the older five-pattern count and newer 18-card curriculum are
 different inventories, not conflicting completion claims.
 The [validation handoff](writeups/validation-handoff.md) is the single starting
 point for running the remaining independent, learner and listener gates.
@@ -163,7 +163,7 @@ preserves disagreements across those fields and requires adjudication before
 delivery or pattern-card status changes.
 
 The [shared provisional curriculum](writeups/shared-provisional-curriculum.html)
-joins the eight current draft lessons in one searchable index, while retaining
+joins all 18 current draft lessons in one searchable index, while retaining
 packet, evidence, practice and validation links for each pattern.
 Its [shared lesson-card model](research/shared-lesson-cards.json) also exposes
 the complete evidence chain required by web and mobile clients, while keeping
@@ -175,7 +175,7 @@ The [end-to-end acceptance matrix](writeups/end-to-end-acceptance-matrix.md)
 maps each definition-of-done requirement to an authoritative artifact and keeps
 the nine open promotion/testing requirements visible.
 The [reproducibility manifest](research/reproducibility-manifest.json) hashes
-21 authoritative artifacts and records the fixed-corpus coverage snapshot;
+24 authoritative artifacts and records the fixed-corpus coverage snapshot;
 its validator detects stale outputs without implying that pending human gates
 are complete.
 The [external review gate index](writeups/external-review-gate-index.html)

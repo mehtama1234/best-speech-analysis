@@ -19,17 +19,17 @@ def main() -> int:
             return 2
         page = browser.new_page(viewport={"width": 390, "height": 844})
         page.goto(PAGE.as_uri(), wait_until="load")
-        cards = page.locator("article.card")
-        assert cards.count() == 8, f"expected 8 cards, got {cards.count()}"
+        cards = page.locator("article")
+        assert cards.count() == 18, f"expected 18 cards, got {cards.count()}"
         assert page.locator("#search").count() == 1
         assert page.locator("#slice").count() == 1
-        page.locator("#slice").select_option("vertical-slice-02")
-        assert cards.count() == 3, "slice filter did not isolate three candidate lessons"
-        page.locator("#search").fill("definition")
+        page.locator("#slice").select_option("communication-job-curriculum")
+        assert cards.count() == 18, "curriculum filter changed the complete current lesson set"
+        page.locator("#search").fill("opening")
         assert cards.count() == 1, "search did not isolate definition candidate"
         assert page.evaluate("document.documentElement.scrollWidth <= innerWidth")
         browser.close()
-    print("shared curriculum browser smoke test: 8 cards, filters and mobile layout render")
+    print("shared curriculum browser smoke test: 18 cards, filters and mobile layout render")
     return 0
 
 

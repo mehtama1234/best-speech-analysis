@@ -13,11 +13,11 @@ class SharedCurriculumIndexTests(unittest.TestCase):
         cls.html = (ROOT / "writeups/shared-provisional-curriculum.html").read_text()
 
     def test_index_combines_both_slices_without_promoting_them(self):
-        self.assertEqual(self.index["lesson_count"], 8)
-        self.assertEqual(self.index["status"], "eight_draft_lessons_not_validated")
-        self.assertEqual({row["slice"] for row in self.index["lessons"]}, {"vertical-slice-01", "vertical-slice-02"})
+        self.assertEqual(self.index["lesson_count"], 18)
+        self.assertEqual(self.index["status"], "18_draft_lessons_not_validated")
+        self.assertEqual({row["slice"] for row in self.index["lessons"]}, {"communication-job-curriculum"})
         self.assertIn("listener_outcomes", self.index["validation_gates"])
-        self.assertEqual(self.index["shared_learner_check"], "research/shared-learner-check.json")
+        self.assertEqual(self.index["shared_learner_check"], "research/communication-job-learner-check.json")
         self.assertTrue((ROOT / self.index["shared_learner_check_html"]).exists())
         self.assertEqual(self.index["shared_lesson_cards"], "research/shared-lesson-cards.json")
         self.assertTrue((ROOT / self.index["shared_lesson_cards"]).exists())
@@ -34,8 +34,7 @@ class SharedCurriculumIndexTests(unittest.TestCase):
     def test_html_has_search_slice_filter_and_all_cards(self):
         self.assertIn('id="search"', self.html)
         self.assertIn('id="slice"', self.html)
-        self.assertIn("shared eight-lesson learner check", self.html)
-        self.assertIn("lesson-card learning surface", self.html)
+        self.assertIn("18 draft lessons", self.html)
         for row in self.index["lessons"]:
             self.assertIn(row["pattern_id"], self.html)
 

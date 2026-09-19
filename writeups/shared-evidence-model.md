@@ -10,7 +10,7 @@ This contract lets web and mobile surfaces carry provenance and uncertainty toge
 |---|---|
 | `exact_phrase_forms` | `heuristic_exact_phrase_inventory_not_validated`; form_count=50 |
 | `exact_caption_evidence` | `transcript_evidence_navigation_not_validated`; function_record_count=4016, caption_segment_record_count=102816 |
-| `validated_shared_lesson_cards` | `eight_draft_cards_not_validated`; card_count=8 |
+| `validated_shared_lesson_cards` | `18_draft_cards_not_validated`; card_count=18 |
 | `provisional_job_cards` | `provisional_transcript_cards_not_validated`; card_count=18 |
 | `delivery` | `delivery_evidence_reconciled_independent_review_pending`; internal_observation_count=21, independent_observation_count=0 |
 | `learner` | `protocol_drafted_not_run`; card_count=18, task_count=72, completed_records=0 |
