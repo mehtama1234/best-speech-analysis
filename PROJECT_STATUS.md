@@ -18,6 +18,10 @@ with shared speech-job templates, 149 publisher/media boundary items and 2,394
 unclassified items requiring canonical-job review. These are transcript-derived
 practice hypotheses, not validated best practices; delivery, learner and
 listener evidence remain separate gates.
+The [video-learning itinerary](writeups/corpus-video-learning-itinerary.html)
+now gives each of the 395 reviewed videos one selected starting lesson without
+claiming that the selection is the most important, representative or effective
+lesson from that video.
 
 ## Latest continuation update — full local delivery proxy expansion
 

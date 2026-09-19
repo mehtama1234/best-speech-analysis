@@ -37,6 +37,9 @@ relationships into searchable practice cards with exact caption evidence,
 repeatable forms or sequence bridges, drills, self-checks, non-fit warnings and
 review limits. It is the broad learn-from-the-corpus surface; the 18-job
 curriculum remains the more compressed shared taxonomy.
+The [video-learning itinerary](writeups/corpus-video-learning-itinerary.html)
+selects one bounded starting lesson for each of the 395 reviewed videos, with
+exact evidence, a practice move, self-check and sequence bridge where recorded.
 The [corpus findings catalog](writeups/corpus-findings-catalog.md) is the
 practical reading surface: all 395 video findings, 18 usable speech jobs,
 timestamp-linked examples, exact phrase-form counts, copyable forms, practice
