@@ -33,6 +33,9 @@ def build(root: Path | None = None) -> dict:
     cards = json.loads((root / "research/communication-job-cards.json").read_text())["cards"]
     stimuli = json.loads((root / "research/communication-job-listener-stimuli-draft.json").read_text())
     preflight = json.loads((root / "research/communication-job-stimuli-preflight.json").read_text())
+    lock_path = root / "research/communication-job-listener-stimulus-lock.json"
+    lock = json.loads(lock_path.read_text()) if lock_path.exists() else None
+    stimuli_locked = bool(lock and lock.get("status") == "locked_for_pilot" and lock.get("locked_pair_count") == stimuli["pair_count"])
     stimuli_by_card = {item["card_id"]: item for item in stimuli["records"]}
     patterns = []
     for card in cards:
@@ -48,14 +51,15 @@ def build(root: Path | None = None) -> dict:
     return {
         "schema_version": "1.0",
         "protocol_id": "communication-job-listener-outcome-protocol",
-        "status": "design_complete_not_run",
+        "status": "design_locked_not_run" if stimuli_locked else "design_complete_not_run",
         "purpose": "Test comprehension, recall and reported cognitive load for matched control versus pattern-informed versions of the 18 provisional communication-job cards.",
         "claim_boundary": "A result can show differences in the measured task for the authored stimuli and tested population. It cannot establish that a celebrity's delivery or a speech form causes trust, long-term memory, persuasion, engagement or action generally.",
         "source": "research/communication-job-cards.json",
         "stimulus_bank": "research/communication-job-listener-stimuli-draft.json",
         "stimulus_preflight": "research/communication-job-stimuli-preflight.json",
         "stimulus_preflight_status": preflight["status"],
-        "stimulus_pairs_locked": False,
+        "stimulus_pairs_locked": stimuli_locked,
+        "stimulus_lock_audit": "research/communication-job-listener-stimulus-lock.json" if stimuli_locked else None,
         "stimulus_pair_count": stimuli["pair_count"],
         "patterns": patterns,
         "listener_tasks": [{"task_id": task_id, "prompt": prompt, "measure": measure} for task_id, prompt, measure in TASKS],
@@ -102,7 +106,7 @@ def build(root: Path | None = None) -> dict:
             "Pre-register primary task and exclusions before unblinding.",
             "Treat results as local to the authored stimuli and tested population until replicated.",
         ],
-        "not_run_reason": "No matched stimulus pairs or consented listener observations are present.",
+        "not_run_reason": "Matched stimulus pairs are locked for pilot review, but no consented listener observations are present." if stimuli_locked else "No matched stimulus pairs or consented listener observations are present.",
     }
 
 

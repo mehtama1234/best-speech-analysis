@@ -48,6 +48,7 @@ ARTIFACTS = [
     ("scripts/check_communication_job_practice_browser.py", "18-job practice-surface browser smoke test"),
     ("scripts/check_listener_stimulus_adjudication_browser.py", "listener-stimulus adjudication browser smoke test"),
     ("scripts/validate_listener_stimulus_adjudication.py", "listener-stimulus adjudication validator"),
+    ("scripts/lock_listener_stimuli.py", "listener-stimulus lock reducer"),
     ("writeups/communication-job-listener-stimulus-adjudication.html", "listener-stimulus adjudication form"),
     ("scripts/check_independent_review_forms_browser.py", "independent-review browser smoke test"),
     ("scripts/check_vertical_slice_lesson_browser.py", "vertical-slice learner browser smoke test"),
