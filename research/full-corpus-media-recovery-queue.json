@@ -8,22 +8,22 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 105,
+  "item_count": 98,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 5,
-      "fixed_corpus_transcript_only": 100
+      "fixed_corpus_transcript_only": 93
     },
     "by_media_state": {
       "audio_only": 11,
       "derived_features_only": 5,
-      "transcript_only_no_local_media": 79,
+      "transcript_only_no_local_media": 72,
       "video_only": 10
     },
     "by_video_status": {
       "downloaded": 9,
-      "failed:1": 46,
-      "not_attempted": 50
+      "failed:1": 49,
+      "not_attempted": 40
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -233,18 +233,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "7Tw-Y_25fV0",
-      "title": "ENGLISH SPEECH | JD VANCE: Student's Immigrant Checkmate (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=7Tw-Y_25fV0",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "7XO7kVaEgpM",
       "title": "ENGLISH SPEECH | BENEDICT CUMBERBATCH: Just Do It! (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=7XO7kVaEgpM",
@@ -286,10 +274,10 @@
       "source_url": "https://www.youtube.com/watch?v=9FVVUMTVch8",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -334,10 +322,10 @@
       "source_url": "https://www.youtube.com/watch?v=AvUF24Z8iFA",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -485,18 +473,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "HpGU95aVckc",
-      "title": "ENGLISH SPEECH | QUEEN ELIZABETH: UK's Brexit Commitment (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=HpGU95aVckc",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "Hq7a4qvYQqI",
       "title": "ENGLISH SPEECH | AAMIR KHAN: For a Better India (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=Hq7a4qvYQqI",
@@ -514,22 +490,10 @@
       "source_url": "https://www.youtube.com/watch?v=Jts9suWIDlU",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "KtjaB1SnA7Y",
-      "title": "ENGLISH SPEECH | EMMA WATSON & MALALA: Amazing Interview (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=KtjaB1SnA7Y",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -713,18 +677,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "VEZ84WM84F0",
-      "title": "ENGLISH SPEECH | SNOOP DOGG: Love What You Do! (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=VEZ84WM84F0",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "VRMPjm1kG7g",
       "title": "ENGLISH SPEECH | CAROLINE GLEICH: Democracy Not For Sale (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=VRMPjm1kG7g",
@@ -734,18 +686,6 @@
       "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "_D3HIqX1OVk",
-      "title": "ENGLISH SPEECH | KANE WILLIAMSON: Forever Learning (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=_D3HIqX1OVk",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -854,18 +794,6 @@
       "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "fN_AV29Ra74",
-      "title": "ENGLISH SPEECH | GEORGE W. BUSH: Emotional Eulogy for His Father (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=fN_AV29Ra74",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1058,18 +986,6 @@
       "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "pRIy6xE9ONQ",
-      "title": "ENGLISH SPEECH | ANNE HATHAWAY: Don't Make Us Wait (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=pRIy6xE9ONQ",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
