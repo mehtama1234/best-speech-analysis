@@ -9,6 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 QUEUE = ROOT / "research/communication-job-delivery-sampling.json"
+PREFLIGHT = ROOT / "research/communication-job-delivery-measurement-preflight.json"
 OUT = ROOT / "research/communication-job-delivery-internal-observations.json"
 MD = ROOT / "writeups/communication-job-delivery-internal-observations.md"
 
@@ -55,12 +56,14 @@ NOTES = {
 
 def main() -> int:
     queue = json.loads(QUEUE.read_text())
+    preflight = {item["sample_id"]: item for item in json.loads(PREFLIGHT.read_text())["items"]}
     rows = []
     for item in queue["items"]:
         if item["raw_media_state"] != "raw_audio_video_present":
             continue
         alignment, visual, setting = NOTES[item["sample_id"]]
         midpoint = round((item["start_seconds"] + item["end_seconds"]) / 2, 3)
+        measurement = preflight.get(item["sample_id"])
         rows.append({
             "sample_id": item["sample_id"],
             "canonical_job": item["canonical_job"],
@@ -73,8 +76,12 @@ def main() -> int:
             "transcript_alignment": alignment,
             "visual_observation": visual,
             "setting_editing_music_observation": setting,
-            "vocal_timing_observation": "Manual listening was not performed in this pass; retained transcript timing and any feature proxy remain separate from a vocal interpretation.",
-            "audio_measurement_and_limit": f"Feature proxy file data/features/{item['feature_file']}; proxy values do not establish loudness meaning, pitch meaning, emotion, intent or effectiveness.",
+            "vocal_timing_observation": "Manual listening was not performed in this pass; retained transcript timing and feature values remain separate from a vocal interpretation.",
+            "audio_measurements": measurement["audio_measurements"] if measurement else None,
+            "audio_measurement_status": measurement["measurement_status"] if measurement else "unmatched_preflight",
+            "audio_measurement_and_limit": f"Feature proxy file data/features/{item['feature_file']}; words-per-second, RMS, speech activity, zero-crossing, spectral centroid and pitch-confidence fields are reproducible proxies, not validated vocal meaning or effectiveness.",
+            "nearest_sampled_frame_measurement": measurement["nearest_sampled_frame"] if measurement else None,
+            "measurement_evidence_ids_matched": measurement["evidence_ids_matched"] if measurement else [],
             "speaker_event_identity": "Not independently verified; source-frame observation only.",
             "missingness_or_accessibility_note": "Single-frame sampling cannot establish continuous gaze, gesture, posture, editing sequence, room acoustics, accessibility or audience response.",
             "reviewer_code": "internal-project-agent",

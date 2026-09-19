@@ -21,6 +21,8 @@ class CommunicationJobDeliveryInternalObservationTests(unittest.TestCase):
             self.assertEqual(item["independence"], "not_independent")
             self.assertTrue(item["visual_observation"])
             self.assertTrue(item["missingness_or_accessibility_note"])
+            self.assertTrue(item["audio_measurements"])
+            self.assertEqual(item["audio_measurement_status"], "aligned_feature_measurement_available")
 
 
 if __name__ == "__main__":
