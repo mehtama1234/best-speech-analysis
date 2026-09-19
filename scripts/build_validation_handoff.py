@@ -27,6 +27,7 @@ def main() -> int:
     listener = load("research/communication-job-listener-outcome-protocol.json")
     multimodal_expansion = load("research/multimodal-independent-review-workbook.json")
     catalog = load("research/corpus-findings-catalog.json")
+    delivery_atlas = load("research/delivery-proxy-candidate-atlas.json")
     report = {
         "schema_version": "1.0",
         "report_id": "validation-handoff",
@@ -38,6 +39,13 @@ def main() -> int:
             "videos_with_candidate_practice_job": catalog["coverage"]["videos_with_candidate_practice_job"],
             "videos_without_candidate_practice_job": catalog["coverage"]["videos_without_candidate_practice_job"],
             "note": "Candidate job routing is heuristic discovery support, not validated evidence that a pattern works.",
+        },
+        "delivery_entry": {
+            "markdown": "writeups/delivery-proxy-candidate-atlas.md",
+            "browser": "writeups/delivery-proxy-candidate-atlas.html",
+            "candidate_record_count": delivery_atlas["counts"]["candidate_record_count"],
+            "candidate_video_count": delivery_atlas["counts"]["candidate_video_count"],
+            "note": "Proxy-backed clips require human delivery review; measurements are not scores or effectiveness evidence.",
         },
         "review_gates": [
             {"id": "corpus_identity", "purpose": "Verify speaker, event, upload correspondence, source provenance and duplication status before recurrence denominators are used.", "items": identity["item_count"], "workbook": "research/corpus-identity-review-workbook.json", "form": "writeups/corpus-identity-review-workbook.html", "validator": "scripts/validate_corpus_identity_review.py", "summarizer": "scripts/summarize_corpus_identity_reviews.py", "independence": identity["independence_requirement"], "does_not_establish": ["function", "delivery effectiveness", "listener outcomes"]},
@@ -65,9 +73,12 @@ def main() -> int:
     }
     (ROOT / "research/validation-handoff.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
     entry = report["learner_entry"]
+    delivery_entry = report["delivery_entry"]
     learner_path = Path(entry["path"]).name
     catalog_path = Path(entry["catalog"]).name
-    lines = ["# Validation handoff", "", "Status: **instruments ready; no human records received**.", "", report["claim_boundary"], "", f"Start with the [seven-day learner path]({learner_path}) for practical drills. The [corpus findings catalog]({catalog_path}) currently routes {entry['videos_with_candidate_practice_job']} of 395 videos to one or more provisional practice jobs; {entry['videos_without_candidate_practice_job']} remain explicitly unclassified. This routing is heuristic discovery support, not proof that a pattern works.", "", "Before selecting examples, use the [corpus lesson inventory](corpus-lesson-index.html), [exact phrase-form inventory](corpus-phrase-form-inventory.html), [evidence bank](corpus-evidence-bank.html), [provisional cards](communication-job-cards.html), [delivery inventory](communication-job-delivery-inventory.md) and [shared evidence model](shared-evidence-model.md). These are discovery and routing surfaces; none is proof that a pattern works.", "", "## Independent review gates", ""]
+    delivery_path = Path(delivery_entry["markdown"]).name
+    delivery_browser = Path(delivery_entry["browser"]).name
+    lines = ["# Validation handoff", "", "Status: **instruments ready; no human records received**.", "", report["claim_boundary"], "", f"Start with the [seven-day learner path]({learner_path}) for practical drills. The [corpus findings catalog]({catalog_path}) currently routes {entry['videos_with_candidate_practice_job']} of 395 videos to one or more provisional practice jobs; {entry['videos_without_candidate_practice_job']} remain explicitly unclassified. This routing is heuristic discovery support, not proof that a pattern works.", "", f"For multimodal review, use the [delivery proxy candidate atlas]({delivery_path}) or its [searchable browser surface]({delivery_browser}): {delivery_entry['candidate_record_count']} transcript-linked clips across {delivery_entry['candidate_video_count']} videos. These are proxy-backed review candidates, not delivery scores or effectiveness evidence.", "", "Before selecting examples, use the [corpus lesson inventory](corpus-lesson-index.html), [exact phrase-form inventory](corpus-phrase-form-inventory.html), [evidence bank](corpus-evidence-bank.html), [provisional cards](communication-job-cards.html), [delivery inventory](communication-job-delivery-inventory.md) and [shared evidence model](shared-evidence-model.md). These are discovery and routing surfaces; none is proof that a pattern works.", "", "## Independent review gates", ""]
     for gate in report["review_gates"]:
         lines += [f"### {gate['id']} — {gate['items']} items", "", gate["purpose"], "", f"- Workbook: `{gate['workbook']}`", f"- Browser form: `{gate['form']}`", f"- Validator: `{gate['validator']}`"]
         if gate.get("summarizer"): lines.append(f"- Summarizer: `{gate['summarizer']}`")

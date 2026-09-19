@@ -31,6 +31,15 @@ class ValidationHandoffTests(unittest.TestCase):
         self.assertNotIn("(writeups/learner-7-day-path.md)", self.markdown)
         self.assertNotIn("(writeups/corpus-findings-catalog.md)", self.markdown)
 
+    def test_delivery_atlas_is_in_handoff(self):
+        entry = self.report["delivery_entry"]
+        self.assertEqual(entry["candidate_record_count"], 1505)
+        self.assertEqual(entry["candidate_video_count"], 188)
+        self.assertTrue((ROOT / entry["markdown"]).is_file())
+        self.assertTrue((ROOT / entry["browser"]).is_file())
+        self.assertIn("delivery-proxy-candidate-atlas.md", self.markdown)
+        self.assertIn("delivery-proxy-candidate-atlas.html", self.markdown)
+
 
 if __name__ == "__main__":
     unittest.main()
