@@ -8,19 +8,22 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 357,
+  "item_count": 352,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 6,
-      "fixed_corpus_transcript_only": 351
+      "fixed_corpus_transcript_only": 346
     },
     "by_media_state": {
+      "audio_only": 1,
       "derived_features_only": 6,
-      "transcript_only_no_local_media": 351
+      "transcript_only_no_local_media": 343,
+      "video_only": 2
     },
     "by_video_status": {
-      "failed:1": 7,
-      "not_attempted": 350
+      "downloaded": 2,
+      "failed:1": 9,
+      "not_attempted": 341
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -302,18 +305,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "1qfB9wExiy8",
-      "title": "ENGLISH SPEECH | ROWAN ATKINSON (Mr. Bean): Free Speech (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=1qfB9wExiy8",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "1viYHfNj3Bk",
       "title": "ENGLISH SPEECH | AKASH BANERJEE: India’s Path (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=1viYHfNj3Bk",
@@ -521,12 +512,12 @@
       "video_id": "4u71aIcrxtQ",
       "title": "ENGLISH SPEECH | BRITISH ROYAL FAMILY: The Royal Foundation (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=4u71aIcrxtQ",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "audio_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1166,18 +1157,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "EC5L1MSlqtg",
-      "title": "ENGLISH SPEECH | KAMALA HARRIS: We’re not going back (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=EC5L1MSlqtg",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "EPffnjpHdTw",
       "title": "ENGLISH SPEECH | GENELIA DESHMUKH: Invest in Yourself (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=EPffnjpHdTw",
@@ -1481,18 +1460,6 @@
       "video_id": "Iw363WNPReQ",
       "title": "ENGLISH SPEECH | SADHGURU: Developing an Inclusive Consciousness (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=Iw363WNPReQ",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "JFd8bnupsQY",
-      "title": "ENGLISH SPEECH | YEONMI PARK: In Search of Freedom (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=JFd8bnupsQY",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -2345,12 +2312,12 @@
       "video_id": "ZHpyfTC_Ovo",
       "title": "ENGLISH SPEECH | LADY GAGA: Mental Health & Self-Care (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=ZHpyfTC_Ovo",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "video_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "downloaded",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -2369,12 +2336,12 @@
       "video_id": "ZaX_8iKSBsQ",
       "title": "Requiem for a Dream - Ellen Burstyn Monologue.flv",
       "source_url": "https://www.youtube.com/watch?v=ZaX_8iKSBsQ",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "video_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "downloaded",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -2501,18 +2468,6 @@
       "video_id": "aDG1T0kJnd4",
       "title": "ENGLISH SPEECH | PRIYANKA CHOPRA: Be Fearless (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=aDG1T0kJnd4",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "aJxynX6kjUE",
-      "title": "ENGLISH SPEECH | SUNITA WILLIAMS: Lessons From Space (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=aJxynX6kjUE",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -2933,18 +2888,6 @@
       "video_id": "gVRlg4BXKVo",
       "title": "Shakira: Education Changes Everything",
       "source_url": "https://www.youtube.com/watch?v=gVRlg4BXKVo",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "gWziScXTR_4",
-      "title": "ENGLISH SPEECH | TOM HOLLAND & ZENDAYA: Secret Talents Revealed (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=gWziScXTR_4",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -3535,10 +3478,10 @@
       "source_url": "https://www.youtube.com/watch?v=oGLKnAvzlg4",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {

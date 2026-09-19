@@ -35,7 +35,7 @@ def validate() -> list[str]:
             errors.append(f"{label}: expected {required}, found {actual}")
 
     media = stages["full_corpus_media_coverage"]
-    media_total = sum(media[key] for key in ("raw_audio_video_present", "derived_features_only", "transcript_only_no_local_media"))
+    media_total = sum(media.get(key, 0) for key in ("raw_audio_video_present", "audio_only", "video_only", "derived_features_only", "transcript_only_no_local_media"))
     if media_total != media["video_count"]:
         errors.append(f"full-corpus media states sum to {media_total}, not {media['video_count']}")
     if matrix["open_requirement_count"] != sum(row["status"] not in {"complete_for_fixed_corpus", "contract_and_validators_ready"} for row in matrix["rows"]):
