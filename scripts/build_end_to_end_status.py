@@ -32,6 +32,7 @@ def main() -> int:
     counterexamples = load("research/communication-job-counterexample-workbook.json")
     cross_comparison = load("research/communication-job-cross-comparison.json")
     delivery_sampling = load("research/communication-job-delivery-sampling.json")
+    delivery_internal = load("research/communication-job-delivery-internal-observations.json")
     identity_review = load("research/corpus-identity-review-workbook.json")
     delivery_measurements = load("research/communication-job-delivery-measurement-preflight.json")
     curriculum_index = load("research/communication-job-curriculum-index.json")
@@ -68,6 +69,7 @@ def main() -> int:
             "research/communication-job-counterexample-workbook.json",
             "research/communication-job-cross-comparison.json",
             "research/communication-job-delivery-sampling.json",
+            "research/communication-job-delivery-internal-observations.json",
             "research/corpus-identity-review-workbook.json",
             "research/communication-job-delivery-measurement-preflight.json",
             "research/communication-job-curriculum-index.json",
@@ -96,6 +98,7 @@ def main() -> int:
             "counterexample_library": {"status": counterexamples["status"], "job_count": counterexamples["job_count"], "queued_slot_count": counterexamples["item_count"], "completed_independent_reviews": 0, "source": "research/communication-job-counterexample-workbook.json"},
             "cross_job_comparison": {"status": cross_comparison["status"], "job_count": cross_comparison["job_count"], "pair_count": cross_comparison["pair_count"], "eligible_video_denominator": cross_comparison["video_denominator"], "source": "research/communication-job-cross-comparison.json"},
             "communication_job_delivery_sampling": {"status": delivery_sampling["status"], "job_count": delivery_sampling["job_count"], "queued_sample_count": delivery_sampling["item_count"], "raw_audio_video_sample_count": delivery_sampling["coverage_summary"]["raw_audio_video_items"], "completed_manual_observations": delivery_sampling["coverage_summary"]["manual_observations_completed"], "source": "research/communication-job-delivery-sampling.json"},
+            "communication_job_delivery_internal_observations": {"status": delivery_internal["status"], "raw_audio_video_samples": delivery_internal["item_count"], "independence": "not_independent", "manual_vocal_listening": "not_performed", "source": "research/communication-job-delivery-internal-observations.json"},
             "corpus_identity_review": {"status": identity_review["status"], "queued_item_count": identity_review["item_count"], "registry_row_count": identity_review["registry_row_count"], "completed_independent_reviews": 0, "source": "research/corpus-identity-review-workbook.json"},
             "delivery_measurement_preflight": {"status": delivery_measurements["status"], "sample_count": delivery_measurements["item_count"], "matched_sample_count": delivery_measurements["matched_sample_count"], "unmatched_sample_count": delivery_measurements["unmatched_sample_count"], "source": "research/communication-job-delivery-measurement-preflight.json"},
             "communication_job_curriculum": {"status": curriculum_index["status"], "lesson_count": curriculum_index["lesson_count"], "source": "research/communication-job-curriculum-index.json"},
@@ -146,6 +149,7 @@ def main() -> int:
         f"| Counterexample library | `{counterexamples['status']}` | {counterexamples['job_count']} jobs / {counterexamples['item_count']} required slots / 0 completed |",
         f"| Cross-job comparison | `{cross_comparison['status']}` | {cross_comparison['job_count']} jobs / {cross_comparison['pair_count']} pairs / {cross_comparison['video_denominator']} eligible videos |",
         f"| Communication-job delivery sampling | `{delivery_sampling['status']}` | {delivery_sampling['job_count']} jobs / {delivery_sampling['item_count']} samples / {delivery_sampling['coverage_summary']['raw_audio_video_items']} raw A/V / 0 observations |",
+        f"| Internal midpoint-frame delivery observations | `{delivery_internal['status']}` | {delivery_internal['item_count']} raw A/V frames / not independent / manual vocal listening not performed |",
         f"| Corpus identity review | `{identity_review['status']}` | {identity_review['item_count']} queue items / {identity_review['registry_row_count']} registry rows / 0 completed |",
         f"| Delivery measurement preflight | `{delivery_measurements['status']}` | {delivery_measurements['item_count']} samples / {delivery_measurements['matched_sample_count']} aligned / {delivery_measurements['unmatched_sample_count']} unmatched |",
         f"| Communication-job curriculum | `{curriculum_index['status']}` | {curriculum_index['lesson_count']} integrated provisional lessons |",

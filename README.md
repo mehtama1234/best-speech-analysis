@@ -102,6 +102,9 @@ delivery observations are linked to promoted patterns.
 The [measurement preflight](writeups/communication-job-delivery-measurement-preflight.md)
 attaches reproducible audio/transcript/frame proxies to 32 of those samples;
 it does not infer emotion, confidence, intent, nonverbal meaning or effect.
+The [internal midpoint-frame audit](writeups/communication-job-delivery-internal-observations.md)
+records bounded visual/setting observations for the 32 raw A/V samples while
+keeping independent review and manual vocal listening explicitly pending.
 The [shared evidence model](writeups/shared-evidence-model.md) is the common
 web/mobile contract for provenance, modality, hypotheses, practice, learner
 records and listener records, with uncertainty and missing validation visible.
@@ -175,7 +178,7 @@ The [end-to-end acceptance matrix](writeups/end-to-end-acceptance-matrix.md)
 maps each definition-of-done requirement to an authoritative artifact and keeps
 the nine open promotion/testing requirements visible.
 The [reproducibility manifest](research/reproducibility-manifest.json) hashes
-24 authoritative artifacts and records the fixed-corpus coverage snapshot;
+25 authoritative artifacts and records the fixed-corpus coverage snapshot;
 its validator detects stale outputs without implying that pending human gates
 are complete.
 The [external review gate index](writeups/external-review-gate-index.html)

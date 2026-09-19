@@ -79,6 +79,11 @@ attaches reproducible proxy values to the queue: 32/36 samples have aligned
 feature rows and four are unmatched. RMS, speech activity, pitch, frame and
 face-count fields remain measurement proxies pending manual and independent
 review.
+The [internal midpoint-frame audit](writeups/communication-job-delivery-internal-observations.md)
+now records bounded visual/setting observations for all 32 raw audio/video
+samples. It explicitly records edited subtitles, cutaways, staged scenes and
+off-screen speakers where present; it is not independent review, continuous
+video review or manual vocal listening.
 The [shared evidence model](writeups/shared-evidence-model.md) formalizes the
 web/mobile contract: entity types, claim levels, status vocabulary, provenance
 links, missing/disagreement handling and separate learner/listener records. Its
@@ -177,7 +182,7 @@ maps the definition-of-done requirements to current evidence and reports nine
 open requirements; it does not count a workbook or protocol as completed human
 evidence.
 The [reproducibility manifest](research/reproducibility-manifest.json) hashes
-24 authoritative artifacts and records 395 full-context reviews, 102,816
+25 authoritative artifacts and records 395 full-context reviews, 102,816
 inspected captions and 395 inventory videos; its validator detects stale output
 without changing the incomplete research status.
 The [external review gate index](writeups/external-review-gate-index.md) is the
