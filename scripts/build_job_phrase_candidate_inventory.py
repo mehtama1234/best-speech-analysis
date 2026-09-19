@@ -23,6 +23,16 @@ JOBS = {
     "opening", "closing", "question", "answer_or_response", "story_or_personal_experience", "example_or_case", "contrast_or_disagreement", "correction_or_reframe", "repair_or_self_correction", "qualification_or_boundary", "definition_or_explanation", "transition_or_structure", "callback_or_repetition", "humor_or_rapport", "credit_or_acknowledgment", "call_to_action_or_audience_role", "persuasion_or_advocacy", "reflection_or_value_frame",
 }
 
+MARKER_ONLY_FORMS = {
+    "going to", "i think", "you know", "a lot", "lot of", "want to",
+    "the world", "the first", "the most", "you can", "to make", "to get",
+    "all of", "one of", "thank you", "so much", "very much", "you very",
+    "and then", "i want", "i know", "i had", "you want", "about it",
+    "because it", "all the", "the way", "the other", "i don't", "i would",
+    "out of", "the same", "tell you", "look at", "need to", "i mean",
+    "don't know", "because i", "i said", "be here",
+}
+
 
 def tokens(text: str) -> list[str]:
     return re.findall(r"[a-z][a-z'’-]*", text.lower())
@@ -71,6 +81,7 @@ def main() -> int:
                 "train_video_count": len(item["train"]),
                 "holdout_video_count": len(item["holdout"]),
                 "examples": item["examples"],
+                "candidate_kind": "marker_only_retrieval_form" if " ".join(gram) in MARKER_ONLY_FORMS else "content_bearing_retrieval_form",
                 "status": "heuristic_multiword_form_requires_context_and_independent_review",
                 "mechanism_hypothesis": "This repeated form may help perform the surrounding communication job; the phrase alone does not establish function, intent, delivery or effectiveness.",
             })
