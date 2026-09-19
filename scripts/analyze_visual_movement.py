@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Measure conservative frame-to-frame face and scene movement in the pilot."""
+"""Measure conservative frame-to-frame face and scene movement in local media."""
 
 from __future__ import annotations
 
@@ -62,7 +62,10 @@ def main() -> int:
                 per_label_video[label][report["video_id"]].append(measurement)
         video_summary[report["video_id"]] = {
             "sampled_frame_count": len(frames),
-            "face_present_frames": sum(frame.get("face_count", 0) > 0 for frame in frames),
+            # None means the detector was unavailable, not that no face was
+            # found. Keep the distinction visible in the proxy report.
+            "face_observable_frames": sum(isinstance(frame.get("face_count"), int) for frame in frames),
+            "face_present_frames": sum((frame.get("face_count") or 0) > 0 for frame in frames if isinstance(frame.get("face_count"), int)),
             "movement_pairs": len(movements),
         }
 
@@ -91,9 +94,9 @@ def main() -> int:
     output = root / "research/visual-movement-analysis.json"
     output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n")
     lines = [
-        "# Pilot visual movement analysis",
+        "# Full local visual movement analysis",
         "",
-        "This report measures changes in detected face geometry and scene luminance between sampled frames. It is not facial-expression recognition and does not infer emotion, confidence, or intent. Speech-function labels are heuristic retrieval aids.",
+        "This report measures changes in detected face geometry and scene luminance between sampled frames in locally available feature reports. It is not facial-expression recognition and does not infer emotion, confidence, or intent. Speech-function labels are heuristic retrieval aids.",
         "",
         "| Candidate label | Videos | Face-center movement | Face-area change | Scene luminance change | Face-presence transitions |",
         "|---|---:|---:|---:|---:|---:|",
@@ -105,7 +108,7 @@ def main() -> int:
         "",
         "## Limits",
         "",
-        "A change in detected face position can result from camera movement, cuts, zoom, tracking error, posture, or actual head movement. The current pilot does not measure hands, posture, gaze direction, or facial muscle action units.",
+        "A change in detected face position can result from camera movement, cuts, zoom, tracking error, posture, or actual head movement. The current proxy does not measure hands, posture, gaze direction, or facial muscle action units. A null face count means the detector was unavailable for that frame, not that no face was present.",
         "",
     ]
     (root / "writeups/visual-movement-analysis.md").write_text("\n".join(lines))

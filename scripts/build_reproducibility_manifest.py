@@ -39,6 +39,7 @@ ARTIFACTS = [
     ("research/communication-job-delivery-interval-frame-audit.json", "three-frame delivery interval audit"),
     ("research/communication-job-delivery-timing-candidates.json", "proxy vocal timing candidate report"),
     ("research/full-corpus-timing-candidate-atlas.json", "full local feature timing candidate atlas"),
+    ("research/visual-movement-analysis.json", "full local face and scene movement proxy analysis"),
     ("research/validation-handoff.json", "human validation gate handoff"),
     ("research/communication-job-counterexample-candidate-queue.json", "counterexample candidate routing queue"),
     ("writeups/communication-job-practice.html", "local 18-job practice surface"),
@@ -89,9 +90,11 @@ ARTIFACTS = [
     ("scripts/build_delivery_interval_frame_audit.py", "three-frame delivery interval audit builder"),
     ("scripts/build_delivery_timing_candidates.py", "proxy vocal timing candidate builder"),
     ("scripts/build_full_corpus_timing_candidate_atlas.py", "full local feature timing candidate atlas builder"),
+    ("scripts/analyze_visual_movement.py", "face and scene movement proxy analyzer"),
     ("writeups/communication-job-delivery-interval-frame-audit.md", "three-frame delivery interval audit report"),
     ("writeups/communication-job-delivery-timing-candidates.md", "proxy vocal timing candidate report"),
     ("writeups/full-corpus-timing-candidate-atlas.md", "full local feature timing candidate report"),
+    ("writeups/visual-movement-analysis.md", "full local face and scene movement proxy report"),
 ]
 
 
