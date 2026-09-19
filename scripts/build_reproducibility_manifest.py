@@ -48,6 +48,8 @@ ARTIFACTS = [
     ("scripts/build_corpus_learning_map.py", "compact corpus learner map builder"),
     ("writeups/unclassified-lesson-leads.md", "unclassified corpus lesson-lead index"),
     ("scripts/build_unclassified_lesson_leads.py", "unclassified corpus lesson-lead builder"),
+    ("writeups/phrase-transfer-guide.md", "exact phrase transfer and context guide"),
+    ("scripts/build_phrase_transfer_guide.py", "exact phrase transfer guide builder"),
     ("writeups/repeatable-communication-patterns.md", "cross-talk repeatable communication synthesis"),
     ("writeups/vertical-slice-01-reviewer-start-here.md", "vertical-slice reviewer execution handoff"),
     ("scripts/check_communication_job_delivery_browser.py", "delivery-review browser smoke test"),

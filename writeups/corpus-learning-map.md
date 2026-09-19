@@ -34,7 +34,7 @@ These are same-video inventory combinations, not effectiveness results. The hold
 
 ## Exact phrase handles that are worth testing
 
-These are retrieval handles, not scripts. Read the context before adapting them; identical wording can do different jobs.
+These are retrieval handles, not scripts. Read the context before adapting them; identical wording can do different jobs. The [phrase transfer guide](phrase-transfer-guide.md) gives every form a family-specific rewrite recipe and context check.
 
 | Form | Family | Videos | Occurrences | What to test |
 |---|---|---:|---:|---|

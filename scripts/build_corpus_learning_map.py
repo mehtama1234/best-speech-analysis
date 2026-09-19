@@ -68,7 +68,7 @@ def main() -> int:
         question = questions.get(key, "What does the second move add, and what would count as a non-fit case?")
         lines.append(f"| `{pair['job_a']}` + `{pair['job_b']}` | {pair['shared_video_count']} | {pair['holdout_shared_video_count']} | {question} |")
 
-    lines += ["", "## Exact phrase handles that are worth testing", "", "These are retrieval handles, not scripts. Read the context before adapting them; identical wording can do different jobs.", "", "| Form | Family | Videos | Occurrences | What to test |", "|---|---|---:|---:|---|"]
+    lines += ["", "## Exact phrase handles that are worth testing", "", "These are retrieval handles, not scripts. Read the context before adapting them; identical wording can do different jobs. The [phrase transfer guide](phrase-transfer-guide.md) gives every form a family-specific rewrite recipe and context check.", "", "| Form | Family | Videos | Occurrences | What to test |", "|---|---|---:|---:|---|"]
     phrase_questions = {
         "for example": "Does the case clarify the claim without pretending to prove prevalence?",
         "in other words": "Does the reformulation make the idea usable rather than merely louder?",
