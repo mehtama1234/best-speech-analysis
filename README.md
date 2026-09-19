@@ -113,6 +113,9 @@ videos; registry metadata is shown as a lead, not treated as proof.
 Its validator enforces the identity-only/non-recurrence boundary, and the
 [summarizer](scripts/summarize_corpus_identity_reviews.py) reports decision
 distributions without promoting metadata to cross-talk evidence.
+The [identity comparator](scripts/compare_corpus_identity_reviews.py) preserves
+field-level disagreements between independent exports and never marks
+recurrence eligibility automatically.
 
 The separate [speech-function review workbook](writeups/corpus-function-independent-review-workbook.html)
 provides 187 stratified transcript candidates for an independent reviewer to

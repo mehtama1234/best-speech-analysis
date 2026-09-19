@@ -21,6 +21,9 @@ event, upload-match and duplication decisions; it is blank.
 Its validator enforces the identity/event-only boundary, and the
 [summarizer](scripts/summarize_corpus_identity_reviews.py) preserves decision
 distributions without treating them as recurrence evidence.
+The [identity comparator](scripts/compare_corpus_identity_reviews.py) preserves
+reviewer disagreements and requires adjudication before identity decisions can
+affect recurrence denominators.
 
 The [corpus pattern atlas](research/corpus-pattern-atlas.json) now indexes 394
 eligible videos / 102,351 eligible caption segments with exact phrase-form
