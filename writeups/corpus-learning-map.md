@@ -74,7 +74,7 @@ These are retrieval handles, not scripts. Read the context before adapting them;
 
 ## How to inspect one video
 
-Choose any row in the [full corpus findings catalog](corpus-findings-catalog.md). Follow its linked writeup, exact evidence IDs, observed functions, structural relations, boundary cases, limits and next test. If it has no candidate job, that is an explicit research state—not evidence that the talk has no lesson.
+Choose any row in the [full corpus findings catalog](corpus-findings-catalog.md). Follow its linked writeup, exact evidence IDs, observed functions, structural relations, boundary cases, limits and next test. The [unclassified lesson leads](unclassified-lesson-leads.md) give every remaining video a reviewable claim and next test without assigning a forced practice label.
 
 For vocal, visual and accessibility practice, use the [delivery learning guide](delivery-learning-guide.md). The current delivery layer is partial: raw media availability, derived proxies and internal frame notes are not independent nonverbal findings.
 
