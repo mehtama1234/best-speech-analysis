@@ -56,6 +56,8 @@ def main() -> int:
             "end_seconds": item["end_seconds"],
             "transcript_excerpt": item["transcript_excerpt"],
             "raw_media_state": item["raw_media_state"],
+            "video_file": item.get("video_file"),
+            "audio_file": item.get("audio_file"),
             "feature_file": measurement.get("feature_file"),
             "measurement_status": measurement.get("measurement_status"),
             "audio_measurements": measurement.get("audio_measurements", {}),

@@ -41,6 +41,8 @@ class CommunicationJobCardTests(unittest.TestCase):
         self.assertIn("Practice hypotheses", self.html)
         self.assertIn("Exact examples", self.html)
         self.assertIn("Internal delivery observations", self.html)
+        self.assertIn("<video", self.html)
+        self.assertIn("<audio", self.html)
 
 
 if __name__ == "__main__":
