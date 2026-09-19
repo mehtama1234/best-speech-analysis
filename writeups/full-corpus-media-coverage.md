@@ -12,8 +12,8 @@ Fixed transcript corpus: **395** videos.
 |---|---:|
 | `audio_only` | 10 |
 | `derived_features_only` | 5 |
-| `raw_audio_video_present` | 266 |
-| `transcript_only_no_local_media` | 105 |
+| `raw_audio_video_present` | 275 |
+| `transcript_only_no_local_media` | 96 |
 | `video_only` | 9 |
 
 ## Interpretation
