@@ -11,6 +11,7 @@ class CorpusLearningCoverageAuditTests(unittest.TestCase):
     def setUpClass(cls):
         cls.data = json.loads((ROOT / "research/corpus-learning-coverage-audit.json").read_text())
         cls.markdown = (ROOT / "writeups/corpus-learning-coverage-audit.md").read_text()
+        cls.html = (ROOT / "writeups/corpus-learning-coverage-audit.html").read_text()
 
     def test_all_fixed_corpus_videos_reconcile(self):
         self.assertEqual(self.data["video_count"], 395)
@@ -21,6 +22,8 @@ class CorpusLearningCoverageAuditTests(unittest.TestCase):
         self.assertEqual(self.data["summary"]["sequence_cards"], 2800)
         self.assertIn("not validation evidence", self.data["claim_boundary"])
         self.assertIn("covered_with_transcript_lesson", self.markdown)
+        self.assertEqual(self.html.count("class='video'"), 395)
+        self.assertIn("Search video", self.html)
 
 
 if __name__ == "__main__":

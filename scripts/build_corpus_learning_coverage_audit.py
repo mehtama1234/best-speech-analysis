@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import html
 from collections import defaultdict
 from pathlib import Path
 
@@ -12,6 +13,7 @@ CARDS = ROOT / "research/corpus-learner-card-inventory.json"
 ITINERARY = ROOT / "research/corpus-video-learning-itinerary.json"
 OUT = ROOT / "research/corpus-learning-coverage-audit.json"
 MD = ROOT / "writeups/corpus-learning-coverage-audit.md"
+HTML = ROOT / "writeups/corpus-learning-coverage-audit.html"
 
 
 def build() -> dict:
@@ -79,6 +81,11 @@ def build() -> dict:
         lines.append(f"| `{row['video_id']}` {row['title'].replace('|', '\\|')} | {row['function_card_count']} | {row['sequence_card_count']} | {row['cards_with_exact_evidence']} | {row['cards_with_phrase_handles']} | {row['cards_with_local_delivery_proxy']} | {row['cards_with_movement_candidates']} | `{row['coverage_status']}` |")
     lines += ["", "Use the [full learner-card browser](corpus-learner-card-inventory.html) for card-level evidence and the [video itinerary](corpus-video-learning-itinerary.html) for one starting lesson per video. Coverage is not validation.", ""]
     MD.write_text("\n".join(lines))
+    articles = []
+    for row in rows:
+        search = " ".join(str(value) for value in row.values()).lower()
+        articles.append(f"<article class='video' data-search='{html.escape(search, quote=True)}'><h2>{html.escape(row['title'])}</h2><p><code>{html.escape(row['video_id'])}</code> · <b>{html.escape(row['coverage_status'])}</b></p><p>Function cards: <b>{row['function_card_count']}</b> · sequence cards: <b>{row['sequence_card_count']}</b> · exact evidence: <b>{row['cards_with_exact_evidence']}</b> · phrase-handle cards: <b>{row['cards_with_phrase_handles']}</b> · local delivery proxy cards: <b>{row['cards_with_local_delivery_proxy']}</b> · movement cards: <b>{row['cards_with_movement_candidates']}</b></p><p>Selected lesson phrase handles: <b>{row['selected_lesson_phrase_handle_count']}</b> · selected delivery status: <code>{html.escape(row['selected_lesson_delivery_status'] or '')}</code></p></article>")
+    HTML.write_text("""<!doctype html><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Corpus learning coverage audit</title><style>body{font:15px/1.45 system-ui,sans-serif;max-width:1150px;margin:2rem auto;padding:0 1rem;color:#17202a}input{font:inherit;padding:.7rem;width:min(700px,100%);margin:1rem 0}.notice{background:#fff4ce;border-left:4px solid #b8860b;padding:1rem}.video{border:1px solid #ccd3da;border-radius:8px;padding:1rem;margin:1rem 0}.video h2{margin:.1rem 0}code{overflow-wrap:anywhere}.muted{color:#5c6872}</style><main><h1>Corpus learning coverage audit</h1><div class='notice'><b>Coverage, not validation.</b> Every fixed-corpus video is checked for linked transcript lessons and exact evidence. Phrase and delivery fields preserve their own missingness and claim boundaries.</div><p>395 videos · 4,016 function cards · 2,800 sequence cards · zero video-level lesson gaps.</p><label for='search'>Search video, title, status, job or coverage field</label><input id='search' type='search'><p id='count' aria-live='polite'></p><section id='videos'>__VIDEOS__</section></main><script>const videos=[...document.querySelectorAll('.video')],input=document.querySelector('#search'),count=document.querySelector('#count');function filter(){const q=input.value.toLowerCase();let n=0;videos.forEach(v=>{const ok=!q||v.dataset.search.includes(q);v.hidden=!ok;if(ok)n++});count.textContent=`Showing ${n} of ${videos.length} videos`}input.oninput=filter;filter()</script>""".replace("__VIDEOS__", "\n".join(articles)))
     return report
 
 
