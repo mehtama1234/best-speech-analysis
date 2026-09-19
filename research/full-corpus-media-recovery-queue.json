@@ -8,21 +8,21 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 267,
+  "item_count": 265,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 6,
-      "fixed_corpus_transcript_only": 261
+      "fixed_corpus_transcript_only": 259
     },
     "by_media_state": {
       "derived_features_only": 6,
-      "transcript_only_no_local_media": 260,
+      "transcript_only_no_local_media": 258,
       "video_only": 1
     },
     "by_video_status": {
       "downloaded": 1,
-      "failed:1": 12,
-      "not_attempted": 254
+      "failed:1": 13,
+      "not_attempted": 251
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -213,10 +213,10 @@
       "source_url": "https://www.youtube.com/watch?v=1c4QHf5Ul3c",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -2188,18 +2188,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "ij2-yWgzcX8",
-      "title": "ENGLISH SPEECH | BARACK OBAMA: Power Of Citizenship (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=ij2-yWgzcX8",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "ipGmWHe24Is",
       "title": "ENGLISH SPEECH | ASHTON KUTCHER: The Pursuit of Happiness (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=ipGmWHe24Is",
@@ -3163,18 +3151,6 @@
       "video_id": "xwbI8VOsDTo",
       "title": "ENGLISH SPEECH | MOHAMMED QAHTANI: The Power Of Words (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=xwbI8VOsDTo",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "yPp-05qC9_U",
-      "title": "ENGLISH SPEECH | EMMANUEL MACRON: A Message To Trump (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=yPp-05qC9_U",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
