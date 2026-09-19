@@ -38,6 +38,10 @@ drills, self-checks and non-fit boundaries in one place.
 Its current heuristic routing sends 207 videos to one or more practice cards;
 188 remain explicitly unclassified while their recorded structural claims stay
 visible for human review.
+The shorter [corpus learning map](writeups/corpus-learning-map.md) is the
+recommended starting point for using those findings: it surfaces recurring
+combinations, exact phrase handles, all 18 practice jobs and the route for
+videos that remain unclassified.
 Media recovery is now resumable through
 [`scripts/recover_full_corpus_media.py`](scripts/recover_full_corpus_media.py);
 recovered files remain unverified until identity, alignment and delivery review.

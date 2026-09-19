@@ -44,6 +44,8 @@ ARTIFACTS = [
     ("research/corpus-findings-catalog.json", "evidence-linked corpus findings catalog"),
     ("writeups/corpus-findings-catalog.md", "usable corpus findings and examples"),
     ("scripts/build_corpus_findings_catalog.py", "corpus findings catalog builder"),
+    ("writeups/corpus-learning-map.md", "compact corpus learner entry point"),
+    ("scripts/build_corpus_learning_map.py", "compact corpus learner map builder"),
     ("writeups/repeatable-communication-patterns.md", "cross-talk repeatable communication synthesis"),
     ("writeups/vertical-slice-01-reviewer-start-here.md", "vertical-slice reviewer execution handoff"),
     ("scripts/check_communication_job_delivery_browser.py", "delivery-review browser smoke test"),
