@@ -4,11 +4,11 @@ Status: **transcript-derived practice navigation; not validated curriculum**.
 
 Every card is a way to learn from and inspect a recorded transcript review. It does not establish that the move works, that the speaker intended the inferred function, or that the form should be used universally.
 
-This inventory contains **4016 cards** from **395 full-context reviews**. Each card preserves the original function label and reason, up to five exact caption segments, a provisional shared-job form where available, a drill, self-check, non-fit warning, limits and next test.
+This inventory contains **4016 function cards** and **2800 sequence cards** from **395 full-context reviews**. Each card preserves the original function label and reason, up to five exact caption segments, a provisional shared-job form where available, a drill, self-check, non-fit warning, limits and next test.
 
-Cards with exact evidence: **4016** · cards with a shared speech-job template: **1473** · publisher/media boundary cards: **149** · unclassified and requiring review: **2394**.
+Function cards with exact evidence: **4016** · sequence cards with exact evidence: **2795** of 2800 · cards with a shared speech-job template: **1473** · publisher/media boundary cards: **149** · unclassified and requiring review: **2394**.
 
-Use the [searchable inventory](corpus-learner-card-inventory.html) to filter by video, raw label, canonical job or wording. Use the linked full writeup and source context before treating a card as a lesson.
+Use the [searchable inventory](corpus-learner-card-inventory.html) to filter by video, raw label, canonical job, relation type or wording. Use the linked full writeup and source context before treating a card as a lesson.
 
 ## How to use one card
 

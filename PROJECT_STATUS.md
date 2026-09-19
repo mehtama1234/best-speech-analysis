@@ -4,11 +4,13 @@ Last corpus checkpoint: 2026-09-18. Provenance/report repair: 2026-09-17.
 
 ## Latest continuation update — all-review learner-card inventory
 
-The transcript-derived learner surface now contains 4,016 cards from all 395
-full-context reviews. Every card retains its original function label, observed
-move, exact caption evidence, linked writeup, provisional repeatable form where
-the shared taxonomy has one, practice drill, self-check, non-fit warning,
-limits and next test. The inventory is searchable in
+The transcript-derived learner surface now contains 4,016 function cards and
+2,800 sequence cards from all 395 full-context reviews. Every function card
+retains its original label, observed move, exact caption evidence, linked
+writeup, provisional repeatable form where the shared taxonomy has one,
+practice drill, self-check, non-fit warning, limits and next test. Every
+sequence card preserves the recorded relationship between moves and adds a
+bridge practice prompt. The inventory is searchable in
 [corpus-learner-card-inventory.html](writeups/corpus-learner-card-inventory.html)
 and is intended to make the entire corpus usable for learning rather than
 leaving the 18-job curriculum as the only entry point. It contains 1,473 cards
