@@ -8,22 +8,22 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 111,
+  "item_count": 105,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 5,
-      "fixed_corpus_transcript_only": 106
+      "fixed_corpus_transcript_only": 100
     },
     "by_media_state": {
-      "audio_only": 10,
+      "audio_only": 11,
       "derived_features_only": 5,
-      "transcript_only_no_local_media": 86,
+      "transcript_only_no_local_media": 79,
       "video_only": 10
     },
     "by_video_status": {
       "downloaded": 9,
-      "failed:1": 43,
-      "not_attempted": 59
+      "failed:1": 46,
+      "not_attempted": 50
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -130,10 +130,10 @@
       "source_url": "https://www.youtube.com/watch?v=0KFVLWX7eEY",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -293,18 +293,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "9rFsLcVYbWg",
-      "title": "ENGLISH SPEECH | DEEPIKA PADUKONE: Mental Health (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=9rFsLcVYbWg",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "A8X2SM0ioJ4",
       "title": "Pulp Fiction - the 'Jack Rabbit Slims' restaurant scene",
       "source_url": "https://www.youtube.com/watch?v=A8X2SM0ioJ4",
@@ -365,27 +353,15 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "BDIRabVP24o",
-      "title": "ENGLISH SPEECH | ELON MUSK: Think Big & Dream Even Bigger (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=BDIRabVP24o",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "BRfkJ2tkS94",
       "title": "ENGLISH SPEECH | JENNIFER LAWRENCE: Anti-Corruption (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=BRfkJ2tkS94",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "audio_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -502,10 +478,10 @@
       "source_url": "https://www.youtube.com/watch?v=HOocTXKPVVU",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -917,18 +893,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "iX11qgYyxUU",
-      "title": "ENGLISH SPEECH | STEVEN SPIELBERG: Follow Your Intuition (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=iX11qgYyxUU",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "i_t_vjxZrJQ",
       "title": "ENGLISH SPEECH | MICHELLE OBAMA: Donald Trump's Sexual Behaviour (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=i_t_vjxZrJQ",
@@ -956,18 +920,6 @@
       "video_id": "ivpmUTIe6PU",
       "title": "ENGLISH SPEECH | NEIL DeGRASSE TYSON: Human Motivators (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=ivpmUTIe6PU",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "j1TKhGBIKFk",
-      "title": "ENGLISH SPEECH | CRISTIANO RONALDO: Motivated by Fans (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=j1TKhGBIKFk",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -1085,18 +1037,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "nIwU-9ZTTJc",
-      "title": "ENGLISH SPEECH | EMMA WATSON: Gender Equality (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=nIwU-9ZTTJc",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "o4gEmLpxHHk",
       "title": "ENGLISH SPEECH | WILL SMITH: How to Face Fear (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=o4gEmLpxHHk",
@@ -1202,18 +1142,6 @@
       "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "t6P_BxhGINk",
-      "title": "ENGLISH SPEECH | PHARRELL WILLIAMS: Don’t Be Invisible (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=t6P_BxhGINk",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
