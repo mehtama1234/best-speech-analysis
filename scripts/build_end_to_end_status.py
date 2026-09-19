@@ -32,6 +32,7 @@ def main() -> int:
     counterexamples = load("research/communication-job-counterexample-workbook.json")
     cross_comparison = load("research/communication-job-cross-comparison.json")
     delivery_sampling = load("research/communication-job-delivery-sampling.json")
+    identity_review = load("research/corpus-identity-review-workbook.json")
     media = load("research/multimodal-coverage-audit.json")
     media_independent = load("research/multimodal-independent-review-workbook.json")
     recurrence = load("research/corpus-recurrence-independent-review-workbook.json")
@@ -63,6 +64,7 @@ def main() -> int:
             "research/communication-job-counterexample-workbook.json",
             "research/communication-job-cross-comparison.json",
             "research/communication-job-delivery-sampling.json",
+            "research/corpus-identity-review-workbook.json",
             "research/shared-lesson-cards.json", "research/shared-learner-check.json",
             "research/listener-outcome-protocol.json", "research/raw-media-only-visual-audit.json",
         ],
@@ -86,6 +88,7 @@ def main() -> int:
             "counterexample_library": {"status": counterexamples["status"], "job_count": counterexamples["job_count"], "queued_slot_count": counterexamples["item_count"], "completed_independent_reviews": 0, "source": "research/communication-job-counterexample-workbook.json"},
             "cross_job_comparison": {"status": cross_comparison["status"], "job_count": cross_comparison["job_count"], "pair_count": cross_comparison["pair_count"], "eligible_video_denominator": cross_comparison["video_denominator"], "source": "research/communication-job-cross-comparison.json"},
             "communication_job_delivery_sampling": {"status": delivery_sampling["status"], "job_count": delivery_sampling["job_count"], "queued_sample_count": delivery_sampling["item_count"], "raw_audio_video_sample_count": delivery_sampling["coverage_summary"]["raw_audio_video_items"], "completed_manual_observations": delivery_sampling["coverage_summary"]["manual_observations_completed"], "source": "research/communication-job-delivery-sampling.json"},
+            "corpus_identity_review": {"status": identity_review["status"], "queued_item_count": identity_review["item_count"], "registry_row_count": identity_review["registry_row_count"], "completed_independent_reviews": 0, "source": "research/corpus-identity-review-workbook.json"},
             "speech_function_candidate_review": {"status": functions["status"], "queued_item_count": functions["item_count"], "completed_independent_reviews": 0, "source": "research/corpus-function-independent-review-workbook.json"},
             "recurrence_candidate_review": {"status": recurrence["status"], "queued_item_count": recurrence["item_count"], "completed_independent_reviews": 0, "source": "research/corpus-recurrence-independent-review-workbook.json"},
             "delivery_evidence": {"status": media["status"], "selected_video_count": media["selected_video_count"], "raw_audio_video_present": media["raw_audio_video_present_count"], "raw_audio_video_with_transcript": media["raw_audio_video_with_transcript_count"], "raw_audio_video_without_transcript": media["raw_audio_video_without_transcript_count"], "internal_manual_reviews": media["internal_manual_review_count"], "raw_only_visual_audit_items": raw_only_visual["item_count"], "raw_only_visual_audit_status": raw_only_visual["status"], "independent_review_items": media_independent["item_count"], "completed_independent_reviews": 0, "source": "research/multimodal-coverage-audit.json"},
@@ -100,6 +103,7 @@ def main() -> int:
             "populate and independently review counterexample, alternate-function, confound and misuse-limit records for all 18 jobs",
             "independently verify speaker/event identity before treating cross-job or holdout comparisons as recurrence evidence",
             "complete manual delivery observations for the 36 two-sample-per-job queue and obtain independent review",
+            "complete independent speaker/event identity and duplication review for the 395 reviewed queue items",
             "complete independent multimodal alignment/function/safety review",
             "run learner teachability protocol and validate exported records",
             "run blinded listener-outcome protocol before making effectiveness claims",
@@ -129,6 +133,7 @@ def main() -> int:
         f"| Counterexample library | `{counterexamples['status']}` | {counterexamples['job_count']} jobs / {counterexamples['item_count']} required slots / 0 completed |",
         f"| Cross-job comparison | `{cross_comparison['status']}` | {cross_comparison['job_count']} jobs / {cross_comparison['pair_count']} pairs / {cross_comparison['video_denominator']} eligible videos |",
         f"| Communication-job delivery sampling | `{delivery_sampling['status']}` | {delivery_sampling['job_count']} jobs / {delivery_sampling['item_count']} samples / {delivery_sampling['coverage_summary']['raw_audio_video_items']} raw A/V / 0 observations |",
+        f"| Corpus identity review | `{identity_review['status']}` | {identity_review['item_count']} queue items / {identity_review['registry_row_count']} registry rows / 0 completed |",
         f"| Function review | `{functions['status']}` | {functions['item_count']} queued / 0 completed |",
         f"| Recurrence review | `{recurrence['status']}` | {recurrence['item_count']} queued / 0 completed |",
         f"| Delivery evidence | `{media['status']}` | {media['raw_audio_video_present_count']} raw-complete ({media['raw_audio_video_without_transcript_count']} without transcript) / {media['internal_manual_review_count']} internal reviewed |",

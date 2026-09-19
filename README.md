@@ -80,6 +80,9 @@ explains why the older five-pattern count and newer eight-card curriculum are
 different inventories, not conflicting completion claims.
 The [validation handoff](writeups/validation-handoff.md) is the single starting
 point for running the remaining independent, learner and listener gates.
+The [corpus identity workbook](writeups/corpus-identity-review-workbook.html)
+is the independent speaker/event and duplication gate for all 395 reviewed
+videos; registry metadata is shown as a lead, not treated as proof.
 
 The separate [speech-function review workbook](writeups/corpus-function-independent-review-workbook.html)
 provides 187 stratified transcript candidates for an independent reviewer to

@@ -52,6 +52,10 @@ is the next manual multimodal collection surface: 36 samples with transcript
 alignment, media state and fields for vocal timing, audio limits, visual
 observations, editing, setting and accessibility. It contains no observations
 yet.
+The [corpus identity workbook](corpus-identity-review-workbook.html) separately
+requires independent verification for all 395 reviewed queue items, including
+speaker, event, upload correspondence and duplicate/compilation status. Do not
+promote cross-video comparisons until this gate is addressed.
 
 ## Independent review gates
 

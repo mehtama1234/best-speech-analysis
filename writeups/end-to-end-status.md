@@ -23,6 +23,7 @@ This dashboard reports artifact and validation status. It does not convert trans
 | Counterexample library | `template_not_completed` | 18 jobs / 90 required slots / 0 completed |
 | Cross-job comparison | `transcript_video_level_comparison_not_independently_validated` | 18 jobs / 153 pairs / 394 eligible videos |
 | Communication-job delivery sampling | `queue_built_manual_observation_pending` | 18 jobs / 36 samples / 32 raw A/V / 0 observations |
+| Corpus identity review | `metadata_preflight_independent_review_pending` | 395 queue items / 480 registry rows / 0 completed |
 | Function review | `template_not_completed` | 187 queued / 0 completed |
 | Recurrence review | `template_not_completed` | 192 queued / 0 completed |
 | Delivery evidence | `raw_media_reconciled_manual_review_pending` | 29 raw-complete (8 without transcript) / 21 internal reviewed |
@@ -38,6 +39,7 @@ This dashboard reports artifact and validation status. It does not convert trans
 - populate and independently review counterexample, alternate-function, confound and misuse-limit records for all 18 jobs
 - independently verify speaker/event identity before treating cross-job or holdout comparisons as recurrence evidence
 - complete manual delivery observations for the 36 two-sample-per-job queue and obtain independent review
+- complete independent speaker/event identity and duplication review for the 395 reviewed queue items
 - complete independent multimodal alignment/function/safety review
 - run learner teachability protocol and validate exported records
 - run blinded listener-outcome protocol before making effectiveness claims

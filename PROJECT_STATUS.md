@@ -14,6 +14,10 @@ family and religious claims remain bounded or unverified; audiovisual delivery
 was not reviewed. Current totals: 395 fully covered videos, 102,816 inspected
 captions and 395 analytic reviews. The transcript queue is complete; the next
 phase is the first validated pattern-card and practice-lesson slice.
+The [corpus identity review workbook](research/corpus-identity-review-workbook.json)
+covers all 395 reviewed queue items against the 480-row registry. It preserves
+metadata and possible duplicate leads while requiring independent speaker,
+event, upload-match and duplication decisions; it is blank.
 
 The [corpus pattern atlas](research/corpus-pattern-atlas.json) now indexes 394
 eligible videos / 102,351 eligible caption segments with exact phrase-form
