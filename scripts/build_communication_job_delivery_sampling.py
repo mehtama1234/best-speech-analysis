@@ -55,6 +55,11 @@ def main() -> int:
                 continue
             seen.add(video_id)
             segments = record["segments"][:3]
+            local_video_files = sorted(path.name for path in (ROOT / "data/video").glob(f"{video_id}.*") if path.is_file())
+            local_audio_files = sorted(path.name for path in (ROOT / "data/audio").glob(f"{video_id}.*") if path.is_file())
+            media_state = info.get("media_state", "not_in_selected_media_audit")
+            if media_state != "raw_audio_video_present" and local_video_files and local_audio_files:
+                media_state = "raw_audio_video_present_local_unselected"
             selected.append({
                 "sample_id": f"delivery:{job}:{len(selected)+1:02d}",
                 "card_id": card["card_id"],
@@ -67,9 +72,9 @@ def main() -> int:
                 "source_url": record["source_url"],
                 "transcript_excerpt": " ".join(s["text"] for s in segments),
                 "transcript_segment_ids": [s["evidence_id"] for s in segments],
-                "raw_media_state": info.get("media_state", "not_in_selected_media_audit"),
-                "video_file": (info.get("video_files") or [None])[0],
-                "audio_file": (info.get("audio_files") or [None])[0],
+                "raw_media_state": media_state,
+                "video_file": (info.get("video_files") or local_video_files or [None])[0],
+                "audio_file": (info.get("audio_files") or local_audio_files or [None])[0],
                 "feature_file": (info.get("feature_files") or [None])[0],
                 "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
                 "review": {
@@ -103,7 +108,7 @@ def main() -> int:
             "transcript_alignment_values": ["aligned", "partially_aligned", "not_aligned", "indeterminate"],
             "independence_note": "A reviewer code and conflict statement are required; an export is not independent merely because those fields are present.",
         },
-        "coverage_summary": {"raw_audio_video_items": sum(i["raw_media_state"] == "raw_audio_video_present" for i in items), "derived_or_other_items": sum(i["raw_media_state"] != "raw_audio_video_present" for i in items), "manual_observations_completed": 0},
+        "coverage_summary": {"raw_audio_video_items": sum(i["raw_media_state"].startswith("raw_audio_video_present") for i in items), "raw_audio_video_selected_audit_items": sum(i["raw_media_state"] == "raw_audio_video_present" for i in items), "raw_audio_video_local_unselected_items": sum(i["raw_media_state"] == "raw_audio_video_present_local_unselected" for i in items), "derived_or_other_items": sum(not i["raw_media_state"].startswith("raw_audio_video_present") for i in items), "manual_observations_completed": 0},
         "items": items,
     }
     OUT_JSON.write_text(json.dumps(workbook, ensure_ascii=False, indent=2) + "\n")

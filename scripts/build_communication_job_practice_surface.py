@@ -32,6 +32,7 @@ def main() -> int:
     # Keep the generated browser script valid after the template is rendered.
     document = document.replace("+'</p>}function gather", "+'</p>'}function gather")
     document = document.replace("+'\n'", "+'\\n'")
+    document = document.replace("sample.raw_media_state==='raw_audio_video_present'", "sample.raw_media_state.startsWith('raw_audio_video_present')")
     OUT.write_text(document)
     print(f"wrote {OUT.relative_to(ROOT)} ({len(lessons)} lessons)")
     return 0

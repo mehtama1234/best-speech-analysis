@@ -4,7 +4,7 @@ Status: **queue built; manual observation pending**.
 
 This is a stratified queue for manual delivery and setting observation. It does not itself contain vocal, nonverbal, editing, room, speaker-intent or effectiveness findings. Derived features are proxies and raw-media absence remains visible.
 
-Jobs: **18** · target: **2 samples/job** · queued: **36** · raw audio/video: **32**.
+Jobs: **18** · target: **2 samples/job** · queued: **36** · raw audio/video: **35**.
 
 | Job | Sample | Video | Media state | Transcript window | Manual review |
 |---|---:|---|---|---|---|
@@ -23,7 +23,7 @@ Jobs: **18** · target: **2 samples/job** · queued: **36** · raw audio/video: 
 | `contrast_or_disagreement` | 01 | `ZwMVMbmQBug` | `raw_audio_video_present` | `38.52`–`49.66s` | pending |
 | `contrast_or_disagreement` | 02 | `bR4tDSa3O10` | `raw_audio_video_present` | `30.48`–`38.04s` | pending |
 | `correction_or_reframe` | 01 | `bR4tDSa3O10` | `raw_audio_video_present` | `696.399`–`708.56s` | pending |
-| `correction_or_reframe` | 02 | `dgkxN6RASpg` | `not_in_selected_media_audit` | `422.08`–`437.92s` | pending |
+| `correction_or_reframe` | 02 | `dgkxN6RASpg` | `raw_audio_video_present_local_unselected` | `422.08`–`437.92s` | pending |
 | `repair_or_self_correction` | 01 | `C8-twwwTETE` | `raw_audio_video_present` | `356.58`–`367.919s` | pending |
 | `repair_or_self_correction` | 02 | `7XO7kVaEgpM` | `not_in_selected_media_audit` | `13.67`–`33.38s` | pending |
 | `qualification_or_boundary` | 01 | `bR4tDSa3O10` | `raw_audio_video_present` | `192.8`–`204.239s` | pending |
@@ -33,9 +33,9 @@ Jobs: **18** · target: **2 samples/job** · queued: **36** · raw audio/video: 
 | `transition_or_structure` | 01 | `ZwMVMbmQBug` | `raw_audio_video_present` | `110.47`–`119.59s` | pending |
 | `transition_or_structure` | 02 | `xRiwgtdyjQk` | `raw_audio_video_present` | `373.44`–`384.639s` | pending |
 | `callback_or_repetition` | 01 | `ZwMVMbmQBug` | `raw_audio_video_present` | `145.92`–`160.16s` | pending |
-| `callback_or_repetition` | 02 | `dKe3WbGR7Xs` | `not_in_selected_media_audit` | `417.819`–`434.36s` | pending |
+| `callback_or_repetition` | 02 | `dKe3WbGR7Xs` | `raw_audio_video_present_local_unselected` | `417.819`–`434.36s` | pending |
 | `humor_or_rapport` | 01 | `C8-twwwTETE` | `raw_audio_video_present` | `32.64`–`45.84s` | pending |
-| `humor_or_rapport` | 02 | `6dKimoybmEo` | `not_in_selected_media_audit` | `13.809`–`16.809s` | pending |
+| `humor_or_rapport` | 02 | `6dKimoybmEo` | `raw_audio_video_present_local_unselected` | `13.809`–`16.809s` | pending |
 | `credit_or_acknowledgment` | 01 | `C8-twwwTETE` | `raw_audio_video_present` | `309.479`–`319.919s` | pending |
 | `credit_or_acknowledgment` | 02 | `xRiwgtdyjQk` | `raw_audio_video_present` | `533.959`–`545.2s` | pending |
 | `call_to_action_or_audience_role` | 01 | `ZwMVMbmQBug` | `raw_audio_video_present` | `78.15`–`90.96s` | pending |
