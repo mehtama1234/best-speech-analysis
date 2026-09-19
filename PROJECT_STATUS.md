@@ -132,6 +132,8 @@ all 18 still require manual review, and these checks do not prove equivalence.
 The [stimulus review workbook](research/communication-job-listener-stimulus-review-workbook.html)
 is now the independent gate for proposition equivalence, readability, target
 isolation, accessibility, safety and blinding; all pairs remain unlocked.
+The agreement comparator preserves reviewer disagreement and requires explicit
+adjudication before any pair can be considered for locking.
 
 The generated [validation handoff](writeups/validation-handoff.md) consolidates
 the four independent-review gates plus learner and listener protocols, with

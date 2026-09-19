@@ -51,6 +51,9 @@ readability, accessibility and safety review.
 The [stimulus review workbook](communication-job-listener-stimulus-review-workbook.html)
 is the manual independent gate for those 18 pairs. It must be completed and
 adjudicated before any listener outcome record is accepted.
+The [stimulus agreement comparator](../scripts/compare_listener_stimulus_reviews.py)
+preserves item-level disagreements across independent exports and never locks a
+pair automatically.
 
 The [communication-job counterexample workbook](communication-job-counterexample-workbook.html)
 requires five explicit checks for every provisional job: absence with speech
