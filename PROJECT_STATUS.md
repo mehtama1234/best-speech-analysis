@@ -46,6 +46,10 @@ The [delivery evidence index](writeups/delivery-evidence-index.md) reconciles
 transcripts, 8 raw items without transcripts, 8 derived-features-only items and
 21 internal multimodal observations. Independent delivery observations remain
 at zero.
+The [18-job delivery sampling queue](writeups/communication-job-delivery-sampling.md)
+adds two transcript-aligned candidate samples per job (36 total; 32 with raw
+audio/video and four with derived or other media states). Its manual fields are
+blank; no vocal, nonverbal, setting or editing findings are inferred.
 The [shared evidence model](writeups/shared-evidence-model.md) formalizes the
 web/mobile contract: entity types, claim levels, status vocabulary, provenance
 links, missing/disagreement handling and separate learner/listener records. Its

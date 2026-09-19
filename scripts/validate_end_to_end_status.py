@@ -33,6 +33,7 @@ def validate(report: dict) -> list[str]:
     evidence_model = read("research/shared-evidence-model.json")
     counterexamples = read("research/communication-job-counterexample-workbook.json")
     cross_comparison = read("research/communication-job-cross-comparison.json")
+    delivery_sampling = read("research/communication-job-delivery-sampling.json")
     media = read("research/multimodal-coverage-audit.json")
     functions = read("research/corpus-function-independent-review-workbook.json")
     recurrence = read("research/corpus-recurrence-independent-review-workbook.json")
@@ -77,6 +78,9 @@ def validate(report: dict) -> list[str]:
         ("cross_job_comparison", "job_count"): cross_comparison["job_count"],
         ("cross_job_comparison", "pair_count"): cross_comparison["pair_count"],
         ("cross_job_comparison", "eligible_video_denominator"): cross_comparison["video_denominator"],
+        ("communication_job_delivery_sampling", "job_count"): delivery_sampling["job_count"],
+        ("communication_job_delivery_sampling", "queued_sample_count"): delivery_sampling["item_count"],
+        ("communication_job_delivery_sampling", "raw_audio_video_sample_count"): delivery_sampling["coverage_summary"]["raw_audio_video_items"],
         ("speech_function_candidate_review", "queued_item_count"): functions["item_count"],
         ("recurrence_candidate_review", "queued_item_count"): recurrence["item_count"],
         ("delivery_evidence", "selected_video_count"): media["selected_video_count"],
@@ -93,6 +97,7 @@ def validate(report: dict) -> list[str]:
     if stages.get("recurrence_candidate_review", {}).get("completed_independent_reviews") != 0: errors.append("recurrence review completion cannot be nonzero without an imported independent export")
     if stages.get("exact_phrase_form_independent_review", {}).get("completed_independent_reviews") != 0: errors.append("exact phrase-form review completion cannot be nonzero without an imported independent export")
     if stages.get("counterexample_library", {}).get("completed_independent_reviews") != 0: errors.append("counterexample completion cannot be nonzero without an imported independent export")
+    if stages.get("communication_job_delivery_sampling", {}).get("completed_manual_observations") != 0: errors.append("delivery sampling observations cannot be nonzero without completed observation records")
     if stages.get("learner_check", {}).get("completed_records") != 0: errors.append("learner records are not present")
     if stages.get("listener_outcomes", {}).get("completed_records") != 0: errors.append("listener records are not present")
     if stages.get("communication_job_learner_check", {}).get("completed_records") != 0: errors.append("communication-job learner records are not present")

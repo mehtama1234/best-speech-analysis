@@ -47,6 +47,11 @@ not be treated as evidence until independently completed.
 The [cross-job comparison](communication-job-cross-comparison.html) is the
 current denominator surface for comparing jobs; verify speaker and event
 identity before promoting its video-level comparisons to recurrence claims.
+The [18-job delivery sampling queue](communication-job-delivery-sampling.html)
+is the next manual multimodal collection surface: 36 samples with transcript
+alignment, media state and fields for vocal timing, audio limits, visual
+observations, editing, setting and accessibility. It contains no observations
+yet.
 
 ## Independent review gates
 
