@@ -8,21 +8,22 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 296,
+  "item_count": 292,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 6,
-      "fixed_corpus_transcript_only": 290
+      "fixed_corpus_transcript_only": 286
     },
     "by_media_state": {
+      "audio_only": 1,
       "derived_features_only": 6,
-      "transcript_only_no_local_media": 289,
+      "transcript_only_no_local_media": 284,
       "video_only": 1
     },
     "by_video_status": {
       "downloaded": 1,
-      "failed:1": 10,
-      "not_attempted": 285
+      "failed:1": 11,
+      "not_attempted": 280
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -1084,18 +1085,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "FvcWRYuGSTg",
-      "title": "ENGLISH SPEECH | SIDDHARTHA MUKHERJEE: 3 Forms of Listening (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=FvcWRYuGSTg",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "G6OP-lPF-Mo",
       "title": "ENGLISH SPEECH | SEVERN SUZUKI: I'm Fighting For My Future (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=G6OP-lPF-Mo",
@@ -1267,12 +1256,12 @@
       "video_id": "I_juMlxA6T8",
       "title": "ENGLISH SPEECH | RADHIKA AMBANI: Learn How To Learn (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=I_juMlxA6T8",
-      "media_state": "transcript_only_no_local_media",
+      "media_state": "audio_only",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1387,18 +1376,6 @@
       "video_id": "LOK1TcrSKDs",
       "title": "ENGLISH SPEECH | ANNE HATHAWAY: Gender Equality Progress (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=LOK1TcrSKDs",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "LRKodKH456o",
-      "title": "ENGLISH SPEECH | SHAH RUKH KHAN: Perseverance & Success (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=LRKodKH456o",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -1591,18 +1568,6 @@
       "video_id": "RqmAj38t3RI",
       "title": "ENGLISH SPEECH | ALLU ARJUN: 🇮🇳 Indian Cinema (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=RqmAj38t3RI",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "Rr9QjfiyOYM",
-      "title": "ENGLISH SPEECH | KEIR STARMER: The Cost Of Brexit (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=Rr9QjfiyOYM",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -1807,18 +1772,6 @@
       "video_id": "VRMPjm1kG7g",
       "title": "ENGLISH SPEECH | CAROLINE GLEICH: Democracy Not For Sale (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=VRMPjm1kG7g",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "VVxYOQS6ggk",
-      "title": "Wall Street (4/5) Movie CLIP - Greed Is Good (1987) HD",
-      "source_url": "https://www.youtube.com/watch?v=VVxYOQS6ggk",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
