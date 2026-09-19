@@ -18,6 +18,10 @@ class CommunicationJobPracticeSurfaceTests(unittest.TestCase):
         self.assertIn("Download local practice JSON", self.page)
         self.assertIn("nothing is sent to this repository", self.page)
         self.assertIn("consent", self.page)
+        self.assertIn("Indexed phrase forms", self.page)
+        self.assertIn("the point is", self.page)
+        self.assertIn("Inspect exact examples", self.page)
+        self.assertIn("<video", self.page)
         for lesson in self.payload["lessons"]:
             self.assertIn(lesson["canonical_job"], self.page)
 
