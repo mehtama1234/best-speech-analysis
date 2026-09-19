@@ -108,6 +108,20 @@ meaning, or that a learner/listener outcome improved. Independent function,
 recurrence, counterexample, delivery, learner and listener review remain
 separate gates in the [end-to-end acceptance matrix](end-to-end-acceptance-matrix.md).
 
+## To finish the evidence gates
+
+The repository is ready to receive, but does not invent, the remaining records:
+
+- Independent interpretation: use the [blinded review packet](blinded-review-packet.html), then validate and reduce the export.
+- Delivery/nonverbal review: use the [395-item delivery workbook](full-corpus-delivery-review-workbook.html), preserving `indeterminate` and `not_available`.
+- Counterexamples: use the [counterexample workbook](communication-job-counterexample-workbook.html), including `no_candidate_found` where appropriate.
+- Learner teachability: run the consented [learner protocol](validation-handoff.md) and validate the pseudonymous export.
+- Listener outcomes: independently review and lock the matched stimuli before running the blinded listener protocol.
+
+The [validation handoff](validation-handoff.md) contains the schemas, validators,
+adjudication tools and claim boundaries. Until those records exist, use the
+current materials as transcript-derived learning hypotheses and inspection aids.
+
 ## Useful starting links
 
 - [Full learner-card browser](corpus-learner-card-inventory.html)
