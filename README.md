@@ -152,6 +152,9 @@ items; independent review remains pending.
 The [multimodal independent-review workbook](writeups/multimodal-independent-review-workbook.html)
 provides a blank 21-item form for checking caption alignment, speaker/setting
 observations, candidate function, audio/visual evidence and safety boundaries.
+The [multimodal comparator](scripts/compare_multimodal_independent_reviews.py)
+preserves disagreements across those fields and requires adjudication before
+delivery or pattern-card status changes.
 
 The [shared provisional curriculum](writeups/shared-provisional-curriculum.html)
 joins the eight current draft lessons in one searchable index, while retaining

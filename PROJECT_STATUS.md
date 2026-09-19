@@ -213,6 +213,9 @@ passes, with source links, local media paths, controlled
 alignment/function/safety decisions, disagreement fields and alternative
 explanations. Its export validator accepts completeness and vocabulary only;
 the workbook remains blank and no independent judgment is present.
+The [multimodal comparator](scripts/compare_multimodal_independent_reviews.py)
+preserves field-level disagreements and requires adjudication before any
+delivery or pattern-card status changes.
 
 The [shared provisional curriculum](research/shared-provisional-curriculum.json)
 now joins all eight current draft lessons across slices 01 and 02, with links to
