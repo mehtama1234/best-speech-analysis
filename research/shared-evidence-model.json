@@ -125,6 +125,16 @@
         "scorer_id_or_blind_code",
         "claim_boundary"
       ]
+    },
+    "counterexample_observation": {
+      "required": [
+        "counterexample_id",
+        "pattern_id",
+        "counterexample_type",
+        "evidence_ids",
+        "status",
+        "alternative_explanation"
+      ]
     }
   },
   "status_vocabulary": {
@@ -223,6 +233,13 @@
       "stimulus_pairs_locked": false,
       "completed_records": 0,
       "status": "design_complete_not_run"
+    },
+    "counterexamples": {
+      "source": "research/communication-job-counterexample-workbook.json",
+      "job_count": 18,
+      "queued_slot_count": 90,
+      "completed_records": 0,
+      "status": "template_not_completed"
     }
   }
 }

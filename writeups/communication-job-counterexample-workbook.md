@@ -1,0 +1,100 @@
+# Communication-job counterexample workbook
+
+Status: **template not completed**; no counterexample judgments are present.
+
+This workbook collects counterexamples, alternate functions, confounds and misuse limits for provisional transcript-derived practice hypotheses. Blank slots are not evidence. Completed records do not establish delivery effectiveness, speaker intent, audience outcomes, causality or universal best practice.
+
+Jobs: **18** · required counterexample slots: **90**.
+
+| # | Job | Required counterexample type | Evidence | Decision |
+|---:|---|---|---|---|
+| 1 | `opening` | `absent_but_speech_works` |  |  |
+| 2 | `opening` | `present_but_speech_fails` |  |  |
+| 3 | `opening` | `alternate_function` |  |  |
+| 4 | `opening` | `confound_or_setting` |  |  |
+| 5 | `opening` | `misuse_or_copying_risk` |  |  |
+| 6 | `closing` | `absent_but_speech_works` |  |  |
+| 7 | `closing` | `present_but_speech_fails` |  |  |
+| 8 | `closing` | `alternate_function` |  |  |
+| 9 | `closing` | `confound_or_setting` |  |  |
+| 10 | `closing` | `misuse_or_copying_risk` |  |  |
+| 11 | `question` | `absent_but_speech_works` |  |  |
+| 12 | `question` | `present_but_speech_fails` |  |  |
+| 13 | `question` | `alternate_function` |  |  |
+| 14 | `question` | `confound_or_setting` |  |  |
+| 15 | `question` | `misuse_or_copying_risk` |  |  |
+| 16 | `answer_or_response` | `absent_but_speech_works` |  |  |
+| 17 | `answer_or_response` | `present_but_speech_fails` |  |  |
+| 18 | `answer_or_response` | `alternate_function` |  |  |
+| 19 | `answer_or_response` | `confound_or_setting` |  |  |
+| 20 | `answer_or_response` | `misuse_or_copying_risk` |  |  |
+| 21 | `story_or_personal_experience` | `absent_but_speech_works` |  |  |
+| 22 | `story_or_personal_experience` | `present_but_speech_fails` |  |  |
+| 23 | `story_or_personal_experience` | `alternate_function` |  |  |
+| 24 | `story_or_personal_experience` | `confound_or_setting` |  |  |
+| 25 | `story_or_personal_experience` | `misuse_or_copying_risk` |  |  |
+| 26 | `example_or_case` | `absent_but_speech_works` |  |  |
+| 27 | `example_or_case` | `present_but_speech_fails` |  |  |
+| 28 | `example_or_case` | `alternate_function` |  |  |
+| 29 | `example_or_case` | `confound_or_setting` |  |  |
+| 30 | `example_or_case` | `misuse_or_copying_risk` |  |  |
+| 31 | `contrast_or_disagreement` | `absent_but_speech_works` |  |  |
+| 32 | `contrast_or_disagreement` | `present_but_speech_fails` |  |  |
+| 33 | `contrast_or_disagreement` | `alternate_function` |  |  |
+| 34 | `contrast_or_disagreement` | `confound_or_setting` |  |  |
+| 35 | `contrast_or_disagreement` | `misuse_or_copying_risk` |  |  |
+| 36 | `correction_or_reframe` | `absent_but_speech_works` |  |  |
+| 37 | `correction_or_reframe` | `present_but_speech_fails` |  |  |
+| 38 | `correction_or_reframe` | `alternate_function` |  |  |
+| 39 | `correction_or_reframe` | `confound_or_setting` |  |  |
+| 40 | `correction_or_reframe` | `misuse_or_copying_risk` |  |  |
+| 41 | `repair_or_self_correction` | `absent_but_speech_works` |  |  |
+| 42 | `repair_or_self_correction` | `present_but_speech_fails` |  |  |
+| 43 | `repair_or_self_correction` | `alternate_function` |  |  |
+| 44 | `repair_or_self_correction` | `confound_or_setting` |  |  |
+| 45 | `repair_or_self_correction` | `misuse_or_copying_risk` |  |  |
+| 46 | `qualification_or_boundary` | `absent_but_speech_works` |  |  |
+| 47 | `qualification_or_boundary` | `present_but_speech_fails` |  |  |
+| 48 | `qualification_or_boundary` | `alternate_function` |  |  |
+| 49 | `qualification_or_boundary` | `confound_or_setting` |  |  |
+| 50 | `qualification_or_boundary` | `misuse_or_copying_risk` |  |  |
+| 51 | `definition_or_explanation` | `absent_but_speech_works` |  |  |
+| 52 | `definition_or_explanation` | `present_but_speech_fails` |  |  |
+| 53 | `definition_or_explanation` | `alternate_function` |  |  |
+| 54 | `definition_or_explanation` | `confound_or_setting` |  |  |
+| 55 | `definition_or_explanation` | `misuse_or_copying_risk` |  |  |
+| 56 | `transition_or_structure` | `absent_but_speech_works` |  |  |
+| 57 | `transition_or_structure` | `present_but_speech_fails` |  |  |
+| 58 | `transition_or_structure` | `alternate_function` |  |  |
+| 59 | `transition_or_structure` | `confound_or_setting` |  |  |
+| 60 | `transition_or_structure` | `misuse_or_copying_risk` |  |  |
+| 61 | `callback_or_repetition` | `absent_but_speech_works` |  |  |
+| 62 | `callback_or_repetition` | `present_but_speech_fails` |  |  |
+| 63 | `callback_or_repetition` | `alternate_function` |  |  |
+| 64 | `callback_or_repetition` | `confound_or_setting` |  |  |
+| 65 | `callback_or_repetition` | `misuse_or_copying_risk` |  |  |
+| 66 | `humor_or_rapport` | `absent_but_speech_works` |  |  |
+| 67 | `humor_or_rapport` | `present_but_speech_fails` |  |  |
+| 68 | `humor_or_rapport` | `alternate_function` |  |  |
+| 69 | `humor_or_rapport` | `confound_or_setting` |  |  |
+| 70 | `humor_or_rapport` | `misuse_or_copying_risk` |  |  |
+| 71 | `credit_or_acknowledgment` | `absent_but_speech_works` |  |  |
+| 72 | `credit_or_acknowledgment` | `present_but_speech_fails` |  |  |
+| 73 | `credit_or_acknowledgment` | `alternate_function` |  |  |
+| 74 | `credit_or_acknowledgment` | `confound_or_setting` |  |  |
+| 75 | `credit_or_acknowledgment` | `misuse_or_copying_risk` |  |  |
+| 76 | `call_to_action_or_audience_role` | `absent_but_speech_works` |  |  |
+| 77 | `call_to_action_or_audience_role` | `present_but_speech_fails` |  |  |
+| 78 | `call_to_action_or_audience_role` | `alternate_function` |  |  |
+| 79 | `call_to_action_or_audience_role` | `confound_or_setting` |  |  |
+| 80 | `call_to_action_or_audience_role` | `misuse_or_copying_risk` |  |  |
+| 81 | `persuasion_or_advocacy` | `absent_but_speech_works` |  |  |
+| 82 | `persuasion_or_advocacy` | `present_but_speech_fails` |  |  |
+| 83 | `persuasion_or_advocacy` | `alternate_function` |  |  |
+| 84 | `persuasion_or_advocacy` | `confound_or_setting` |  |  |
+| 85 | `persuasion_or_advocacy` | `misuse_or_copying_risk` |  |  |
+| 86 | `reflection_or_value_frame` | `absent_but_speech_works` |  |  |
+| 87 | `reflection_or_value_frame` | `present_but_speech_fails` |  |  |
+| 88 | `reflection_or_value_frame` | `alternate_function` |  |  |
+| 89 | `reflection_or_value_frame` | `confound_or_setting` |  |  |
+| 90 | `reflection_or_value_frame` | `misuse_or_copying_risk` |  |  |

@@ -51,6 +51,10 @@ web/mobile contract: entity types, claim levels, status vocabulary, provenance
 links, missing/disagreement handling and separate learner/listener records. Its
 manifest is generated from live artifacts; the contract is ready while the
 research gates remain incomplete.
+It now includes a counterexample-observation entity and a blank 90-slot
+[counterexample workbook](research/communication-job-counterexample-workbook.json):
+five required limitation checks for each of the 18 provisional jobs. No slot
+has been independently completed.
 The [pattern-admission reconciliation](writeups/pattern-admission-reconciliation.md)
 now distinguishes the legacy five contextual threshold passes from the eight
 shared draft cards; neither count represents independent validation.

@@ -39,6 +39,12 @@ The [stimulus preflight](communication-job-stimuli-preflight.md) is only an
 automated screen; its 18 pairs still need independent content-equivalence,
 readability, accessibility and safety review.
 
+The [communication-job counterexample workbook](communication-job-counterexample-workbook.html)
+requires five explicit checks for every provisional job: absence with speech
+still working, presence with an observable failure or limit, alternate
+function, confound/setting, and misuse or copying risk. It is blank and must
+not be treated as evidence until independently completed.
+
 ## Independent review gates
 
 ### corpus_function — 187 items

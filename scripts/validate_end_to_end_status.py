@@ -31,6 +31,7 @@ def validate(report: dict) -> list[str]:
     phrase_form_review = read("research/corpus-phrase-form-independent-review-workbook.json")
     delivery_index = read("research/delivery-evidence-index.json")
     evidence_model = read("research/shared-evidence-model.json")
+    counterexamples = read("research/communication-job-counterexample-workbook.json")
     media = read("research/multimodal-coverage-audit.json")
     functions = read("research/corpus-function-independent-review-workbook.json")
     recurrence = read("research/corpus-recurrence-independent-review-workbook.json")
@@ -70,6 +71,8 @@ def validate(report: dict) -> list[str]:
         ("delivery_evidence_index", "internal_observation_count"): delivery_index["coverage"]["internal_manual_observation_count"],
         ("delivery_evidence_index", "independent_observation_count"): delivery_index["coverage"]["independent_review_count"],
         ("shared_evidence_model", "entity_type_count"): len(evidence_model["entity_types"]),
+        ("counterexample_library", "job_count"): counterexamples["job_count"],
+        ("counterexample_library", "queued_slot_count"): counterexamples["item_count"],
         ("speech_function_candidate_review", "queued_item_count"): functions["item_count"],
         ("recurrence_candidate_review", "queued_item_count"): recurrence["item_count"],
         ("delivery_evidence", "selected_video_count"): media["selected_video_count"],
@@ -85,6 +88,7 @@ def validate(report: dict) -> list[str]:
     if stages.get("speech_function_candidate_review", {}).get("completed_independent_reviews") != 0: errors.append("function review completion cannot be nonzero without an imported independent export")
     if stages.get("recurrence_candidate_review", {}).get("completed_independent_reviews") != 0: errors.append("recurrence review completion cannot be nonzero without an imported independent export")
     if stages.get("exact_phrase_form_independent_review", {}).get("completed_independent_reviews") != 0: errors.append("exact phrase-form review completion cannot be nonzero without an imported independent export")
+    if stages.get("counterexample_library", {}).get("completed_independent_reviews") != 0: errors.append("counterexample completion cannot be nonzero without an imported independent export")
     if stages.get("learner_check", {}).get("completed_records") != 0: errors.append("learner records are not present")
     if stages.get("listener_outcomes", {}).get("completed_records") != 0: errors.append("listener records are not present")
     if stages.get("communication_job_learner_check", {}).get("completed_records") != 0: errors.append("communication-job learner records are not present")

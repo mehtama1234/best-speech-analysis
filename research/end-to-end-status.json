@@ -17,6 +17,7 @@
     "research/corpus-phrase-form-independent-review-workbook.json",
     "research/delivery-evidence-index.json",
     "research/shared-evidence-model.json",
+    "research/communication-job-counterexample-workbook.json",
     "research/shared-lesson-cards.json",
     "research/shared-learner-check.json",
     "research/listener-outcome-protocol.json",
@@ -111,8 +112,15 @@
     },
     "shared_evidence_model": {
       "status": "contract_ready_research_evidence_incomplete",
-      "entity_type_count": 10,
+      "entity_type_count": 11,
       "source": "research/shared-evidence-model.json"
+    },
+    "counterexample_library": {
+      "status": "template_not_completed",
+      "job_count": 18,
+      "queued_slot_count": 90,
+      "completed_independent_reviews": 0,
+      "source": "research/communication-job-counterexample-workbook.json"
     },
     "speech_function_candidate_review": {
       "status": "template_not_completed",
@@ -162,6 +170,7 @@
     "obtain independent transcript-function review exports and preserve disagreements",
     "obtain independent recurrence review exports and adjudicate disagreements",
     "obtain independent exact phrase-form review exports and adjudicate form, identity and recurrence disagreements",
+    "populate and independently review counterexample, alternate-function, confound and misuse-limit records for all 18 jobs",
     "complete independent multimodal alignment/function/safety review",
     "run learner teachability protocol and validate exported records",
     "run blinded listener-outcome protocol before making effectiveness claims"

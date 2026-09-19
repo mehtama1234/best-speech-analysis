@@ -15,5 +15,6 @@ This contract lets web and mobile surfaces carry provenance and uncertainty toge
 | `delivery` | `delivery_evidence_reconciled_independent_review_pending`; internal_observation_count=21, independent_observation_count=0 |
 | `learner` | `protocol_drafted_not_run`; card_count=18, task_count=72, completed_records=0 |
 | `listener` | `design_complete_not_run`; pattern_count=18, stimulus_pairs_locked=False, completed_records=0 |
+| `counterexamples` | `template_not_completed`; job_count=18, queued_slot_count=90, completed_records=0 |
 
 The JSON file defines entity requirements, status vocabulary, link rules and web/mobile client constraints. It is an interface contract, not evidence that the pending gates have been completed.

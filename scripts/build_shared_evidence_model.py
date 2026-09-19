@@ -20,6 +20,7 @@ def build(root: Path | None = None) -> dict:
     delivery = read(root, "research/delivery-evidence-index.json")
     learner = read(root, "research/communication-job-learner-check.json")
     listener = read(root, "research/communication-job-listener-outcome-protocol.json")
+    counterexamples = read(root, "research/communication-job-counterexample-workbook.json")
     return {
         "schema_version": "1.0",
         "model_id": "shared-communication-evidence-model",
@@ -45,6 +46,7 @@ def build(root: Path | None = None) -> dict:
             "practice_task": {"required": ["task_id", "pattern_id", "phase", "prompt", "boundary"]},
             "learner_observation": {"required": ["record_id", "participant_code", "task_responses", "consent", "claim_boundary"]},
             "listener_observation": {"required": ["record_id", "stimulus_id", "condition", "task_responses", "scorer_id_or_blind_code", "claim_boundary"]},
+            "counterexample_observation": {"required": ["counterexample_id", "pattern_id", "counterexample_type", "evidence_ids", "status", "alternative_explanation"]},
         },
         "status_vocabulary": {
             "evidence": ["retained", "missing", "restricted", "unrepaired_caption"],
@@ -73,6 +75,7 @@ def build(root: Path | None = None) -> dict:
             "delivery": {"source": "research/delivery-evidence-index.json", "internal_observation_count": delivery["coverage"]["internal_manual_observation_count"], "independent_observation_count": delivery["coverage"]["independent_review_count"], "status": delivery["status"]},
             "learner": {"source": "research/communication-job-learner-check.json", "card_count": learner["card_count"], "task_count": learner["task_count"], "completed_records": 0, "status": learner["status"]},
             "listener": {"source": "research/communication-job-listener-outcome-protocol.json", "pattern_count": len(listener["patterns"]), "stimulus_pairs_locked": listener["stimulus_pairs_locked"], "completed_records": 0, "status": listener["status"]},
+            "counterexamples": {"source": "research/communication-job-counterexample-workbook.json", "job_count": counterexamples["job_count"], "queued_slot_count": counterexamples["item_count"], "completed_records": 0, "status": counterexamples["status"]},
         },
     }
 
