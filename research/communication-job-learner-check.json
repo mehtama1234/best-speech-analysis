@@ -6,6 +6,18 @@
   "claim_boundary": "This protocol tests teachability and usability of draft cards. It does not establish that a speech form improves trust, memory, persuasion, engagement, delivery, listener outcomes or action.",
   "consent_and_accessibility": "Use a pseudonym; allow written, typed, captioned, asynchronous or spoken responses; do not require personal disclosure; do not upload recordings through this form; store no sensitive information.",
   "source": "research/communication-job-cards.json",
+  "phrase_form_inventory": "research/corpus-phrase-form-inventory.json",
+  "phrase_form_family_map": {
+    "closing": "conclusion_or_summary",
+    "question": "question",
+    "story_or_personal_experience": "story_or_personal_experience",
+    "example_or_case": "example",
+    "contrast_or_disagreement": "contrast_or_disagreement",
+    "qualification_or_boundary": "uncertainty_or_qualification",
+    "definition_or_explanation": "definition",
+    "call_to_action_or_audience_role": "call_to_action"
+  },
+  "exact_phrase_form_count": 50,
   "card_count": 18,
   "task_count": 72,
   "cards": [
@@ -13,109 +25,471 @@
       "card_id": "provisional-job-opening",
       "canonical_job": "opening",
       "task_count": 4,
-      "status": "draft_not_validated"
+      "status": "draft_not_validated",
+      "phrase_form_family": null,
+      "phrase_forms": [],
+      "phrase_form_coverage_status": "no_direct_family_match"
     },
     {
       "card_id": "provisional-job-closing",
       "canonical_job": "closing",
       "task_count": 4,
-      "status": "draft_not_validated"
+      "status": "draft_not_validated",
+      "phrase_form_family": "conclusion_or_summary",
+      "phrase_forms": [
+        {
+          "phrase_form": "so the",
+          "matched_pattern": "\\bso the\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: summary forms may mark a takeaway; the marker does not prove comprehension or truth."
+        },
+        {
+          "phrase_form": "ultimately",
+          "matched_pattern": "\\bultimately\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: summary forms may mark a takeaway; the marker does not prove comprehension or truth."
+        },
+        {
+          "phrase_form": "the point is",
+          "matched_pattern": "\\bthe point is\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: summary forms may mark a takeaway; the marker does not prove comprehension or truth."
+        },
+        {
+          "phrase_form": "what matters",
+          "matched_pattern": "\\bwhat matters\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: summary forms may mark a takeaway; the marker does not prove comprehension or truth."
+        },
+        {
+          "phrase_form": "in short",
+          "matched_pattern": "\\bin short\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: summary forms may mark a takeaway; the marker does not prove comprehension or truth."
+        },
+        {
+          "phrase_form": "the lesson",
+          "matched_pattern": "\\bthe lesson\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: summary forms may mark a takeaway; the marker does not prove comprehension or truth."
+        },
+        {
+          "phrase_form": "in conclusion",
+          "matched_pattern": "\\bin conclusion\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: summary forms may mark a takeaway; the marker does not prove comprehension or truth."
+        }
+      ],
+      "phrase_form_coverage_status": "indexed_family_match"
     },
     {
       "card_id": "provisional-job-question",
       "canonical_job": "question",
       "task_count": 4,
-      "status": "draft_not_validated"
+      "status": "draft_not_validated",
+      "phrase_form_family": "question",
+      "phrase_forms": [
+        {
+          "phrase_form": "?",
+          "matched_pattern": "\\?",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: question forms may allocate attention or the next conversational turn; their use must preserve answerability and consent."
+        },
+        {
+          "phrase_form": "how",
+          "matched_pattern": "\\bhow\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: question forms may allocate attention or the next conversational turn; their use must preserve answerability and consent."
+        },
+        {
+          "phrase_form": "why",
+          "matched_pattern": "\\bwhy\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: question forms may allocate attention or the next conversational turn; their use must preserve answerability and consent."
+        },
+        {
+          "phrase_form": "can we",
+          "matched_pattern": "\\bcan we\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: question forms may allocate attention or the next conversational turn; their use must preserve answerability and consent."
+        },
+        {
+          "phrase_form": "what if",
+          "matched_pattern": "\\bwhat if\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: question forms may allocate attention or the next conversational turn; their use must preserve answerability and consent."
+        }
+      ],
+      "phrase_form_coverage_status": "indexed_family_match"
     },
     {
       "card_id": "provisional-job-answer_or_response",
       "canonical_job": "answer_or_response",
       "task_count": 4,
-      "status": "draft_not_validated"
+      "status": "draft_not_validated",
+      "phrase_form_family": null,
+      "phrase_forms": [],
+      "phrase_form_coverage_status": "no_direct_family_match"
     },
     {
       "card_id": "provisional-job-story_or_personal_experience",
       "canonical_job": "story_or_personal_experience",
       "task_count": 4,
-      "status": "draft_not_validated"
+      "status": "draft_not_validated",
+      "phrase_form_family": "story_or_personal_experience",
+      "phrase_forms": [
+        {
+          "phrase_form": "i was",
+          "matched_pattern": "\\bI was\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: story-entry forms may signal a bounded event that gives an idea human and temporal scale; personal detail is optional and not universal proof."
+        },
+        {
+          "phrase_form": "when i",
+          "matched_pattern": "\\bwhen I\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: story-entry forms may signal a bounded event that gives an idea human and temporal scale; personal detail is optional and not universal proof."
+        },
+        {
+          "phrase_form": "years ago",
+          "matched_pattern": "\\byears ago\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: story-entry forms may signal a bounded event that gives an idea human and temporal scale; personal detail is optional and not universal proof."
+        },
+        {
+          "phrase_form": "i remember",
+          "matched_pattern": "\\bI remember\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: story-entry forms may signal a bounded event that gives an idea human and temporal scale; personal detail is optional and not universal proof."
+        },
+        {
+          "phrase_form": "one day",
+          "matched_pattern": "\\bone day\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: story-entry forms may signal a bounded event that gives an idea human and temporal scale; personal detail is optional and not universal proof."
+        },
+        {
+          "phrase_form": "my first",
+          "matched_pattern": "\\bmy first\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: story-entry forms may signal a bounded event that gives an idea human and temporal scale; personal detail is optional and not universal proof."
+        },
+        {
+          "phrase_form": "growing up",
+          "matched_pattern": "\\bgrowing up\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: story-entry forms may signal a bounded event that gives an idea human and temporal scale; personal detail is optional and not universal proof."
+        }
+      ],
+      "phrase_form_coverage_status": "indexed_family_match"
     },
     {
       "card_id": "provisional-job-example_or_case",
       "canonical_job": "example_or_case",
       "task_count": 4,
-      "status": "draft_not_validated"
+      "status": "draft_not_validated",
+      "phrase_form_family": "example",
+      "phrase_forms": [
+        {
+          "phrase_form": "for example",
+          "matched_pattern": "\\bfor example\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: example cues may give a general claim a concrete handle; an example is not automatically representative evidence."
+        },
+        {
+          "phrase_form": "such as",
+          "matched_pattern": "\\bsuch as\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: example cues may give a general claim a concrete handle; an example is not automatically representative evidence."
+        },
+        {
+          "phrase_form": "for instance",
+          "matched_pattern": "\\bfor instance\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: example cues may give a general claim a concrete handle; an example is not automatically representative evidence."
+        },
+        {
+          "phrase_form": "one example",
+          "matched_pattern": "\\bone example\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: example cues may give a general claim a concrete handle; an example is not automatically representative evidence."
+        }
+      ],
+      "phrase_form_coverage_status": "indexed_family_match"
     },
     {
       "card_id": "provisional-job-contrast_or_disagreement",
       "canonical_job": "contrast_or_disagreement",
       "task_count": 4,
-      "status": "draft_not_validated"
+      "status": "draft_not_validated",
+      "phrase_form_family": "contrast_or_disagreement",
+      "phrase_forms": [
+        {
+          "phrase_form": "but",
+          "matched_pattern": "\\bbut\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: contrast markers may make a distinction or change visible; the surrounding content must show what is being contrasted."
+        },
+        {
+          "phrase_form": "used to",
+          "matched_pattern": "\\bused to\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: contrast markers may make a distinction or change visible; the surrounding content must show what is being contrasted."
+        },
+        {
+          "phrase_form": "now i",
+          "matched_pattern": "\\bnow I\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: contrast markers may make a distinction or change visible; the surrounding content must show what is being contrasted."
+        },
+        {
+          "phrase_form": "instead",
+          "matched_pattern": "\\binstead\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: contrast markers may make a distinction or change visible; the surrounding content must show what is being contrasted."
+        },
+        {
+          "phrase_form": "however",
+          "matched_pattern": "\\bhowever\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: contrast markers may make a distinction or change visible; the surrounding content must show what is being contrasted."
+        },
+        {
+          "phrase_form": "rather than",
+          "matched_pattern": "\\brather than\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: contrast markers may make a distinction or change visible; the surrounding content must show what is being contrasted."
+        },
+        {
+          "phrase_form": "on the other hand",
+          "matched_pattern": "\\bon the other hand\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: contrast markers may make a distinction or change visible; the surrounding content must show what is being contrasted."
+        }
+      ],
+      "phrase_form_coverage_status": "indexed_family_match"
     },
     {
       "card_id": "provisional-job-correction_or_reframe",
       "canonical_job": "correction_or_reframe",
       "task_count": 4,
-      "status": "draft_not_validated"
+      "status": "draft_not_validated",
+      "phrase_form_family": null,
+      "phrase_forms": [],
+      "phrase_form_coverage_status": "no_direct_family_match"
     },
     {
       "card_id": "provisional-job-repair_or_self_correction",
       "canonical_job": "repair_or_self_correction",
       "task_count": 4,
-      "status": "draft_not_validated"
+      "status": "draft_not_validated",
+      "phrase_form_family": null,
+      "phrase_forms": [],
+      "phrase_form_coverage_status": "no_direct_family_match"
     },
     {
       "card_id": "provisional-job-qualification_or_boundary",
       "canonical_job": "qualification_or_boundary",
       "task_count": 4,
-      "status": "draft_not_validated"
+      "status": "draft_not_validated",
+      "phrase_form_family": "uncertainty_or_qualification",
+      "phrase_forms": [
+        {
+          "phrase_form": "i think",
+          "matched_pattern": "\\bI think\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: qualification forms may locate certainty and revision conditions; vague hedging can obscure rather than calibrate a claim."
+        },
+        {
+          "phrase_form": "maybe",
+          "matched_pattern": "\\bmaybe\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: qualification forms may locate certainty and revision conditions; vague hedging can obscure rather than calibrate a claim."
+        },
+        {
+          "phrase_form": "perhaps",
+          "matched_pattern": "\\bperhaps\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: qualification forms may locate certainty and revision conditions; vague hedging can obscure rather than calibrate a claim."
+        },
+        {
+          "phrase_form": "i'm not sure",
+          "matched_pattern": "\\bI'm not sure\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: qualification forms may locate certainty and revision conditions; vague hedging can obscure rather than calibrate a claim."
+        },
+        {
+          "phrase_form": "it depends",
+          "matched_pattern": "\\bit depends\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: qualification forms may locate certainty and revision conditions; vague hedging can obscure rather than calibrate a claim."
+        },
+        {
+          "phrase_form": "not necessarily",
+          "matched_pattern": "\\bnot necessarily\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: qualification forms may locate certainty and revision conditions; vague hedging can obscure rather than calibrate a claim."
+        },
+        {
+          "phrase_form": "to some extent",
+          "matched_pattern": "\\bto some extent\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: qualification forms may locate certainty and revision conditions; vague hedging can obscure rather than calibrate a claim."
+        }
+      ],
+      "phrase_form_coverage_status": "indexed_family_match"
     },
     {
       "card_id": "provisional-job-definition_or_explanation",
       "canonical_job": "definition_or_explanation",
       "task_count": 4,
-      "status": "draft_not_validated"
+      "status": "draft_not_validated",
+      "phrase_form_family": "definition",
+      "phrase_forms": [
+        {
+          "phrase_form": "is when",
+          "matched_pattern": "\\bis when\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: definition forms may reduce ambiguity around a term; the surrounding explanation must state scope and exclusions."
+        },
+        {
+          "phrase_form": "means that",
+          "matched_pattern": "\\bmeans that\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: definition forms may reduce ambiguity around a term; the surrounding explanation must state scope and exclusions."
+        },
+        {
+          "phrase_form": "in other words",
+          "matched_pattern": "\\bin other words\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: definition forms may reduce ambiguity around a term; the surrounding explanation must state scope and exclusions."
+        },
+        {
+          "phrase_form": "what i mean",
+          "matched_pattern": "\\bwhat I mean\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: definition forms may reduce ambiguity around a term; the surrounding explanation must state scope and exclusions."
+        },
+        {
+          "phrase_form": "the definition",
+          "matched_pattern": "\\bthe definition\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: definition forms may reduce ambiguity around a term; the surrounding explanation must state scope and exclusions."
+        },
+        {
+          "phrase_form": "defined as",
+          "matched_pattern": "\\bdefined as\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: definition forms may reduce ambiguity around a term; the surrounding explanation must state scope and exclusions."
+        }
+      ],
+      "phrase_form_coverage_status": "indexed_family_match"
     },
     {
       "card_id": "provisional-job-transition_or_structure",
       "canonical_job": "transition_or_structure",
       "task_count": 4,
-      "status": "draft_not_validated"
+      "status": "draft_not_validated",
+      "phrase_form_family": null,
+      "phrase_forms": [],
+      "phrase_form_coverage_status": "no_direct_family_match"
     },
     {
       "card_id": "provisional-job-callback_or_repetition",
       "canonical_job": "callback_or_repetition",
       "task_count": 4,
-      "status": "draft_not_validated"
+      "status": "draft_not_validated",
+      "phrase_form_family": null,
+      "phrase_forms": [],
+      "phrase_form_coverage_status": "no_direct_family_match"
     },
     {
       "card_id": "provisional-job-humor_or_rapport",
       "canonical_job": "humor_or_rapport",
       "task_count": 4,
-      "status": "draft_not_validated"
+      "status": "draft_not_validated",
+      "phrase_form_family": null,
+      "phrase_forms": [],
+      "phrase_form_coverage_status": "no_direct_family_match"
     },
     {
       "card_id": "provisional-job-credit_or_acknowledgment",
       "canonical_job": "credit_or_acknowledgment",
       "task_count": 4,
-      "status": "draft_not_validated"
+      "status": "draft_not_validated",
+      "phrase_form_family": null,
+      "phrase_forms": [],
+      "phrase_form_coverage_status": "no_direct_family_match"
     },
     {
       "card_id": "provisional-job-call_to_action_or_audience_role",
       "canonical_job": "call_to_action_or_audience_role",
       "task_count": 4,
-      "status": "draft_not_validated"
+      "status": "draft_not_validated",
+      "phrase_form_family": "call_to_action",
+      "phrase_forms": [
+        {
+          "phrase_form": "don't",
+          "matched_pattern": "\\bdon't\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: action forms may make a next role visible; a clear request does not prove feasibility or impact."
+        },
+        {
+          "phrase_form": "you can",
+          "matched_pattern": "\\byou can\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: action forms may make a next role visible; a clear request does not prove feasibility or impact."
+        },
+        {
+          "phrase_form": "let's",
+          "matched_pattern": "\\blet's\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: action forms may make a next role visible; a clear request does not prove feasibility or impact."
+        },
+        {
+          "phrase_form": "do not",
+          "matched_pattern": "\\bdo not\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: action forms may make a next role visible; a clear request does not prove feasibility or impact."
+        },
+        {
+          "phrase_form": "we need to",
+          "matched_pattern": "\\bwe need to\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: action forms may make a next role visible; a clear request does not prove feasibility or impact."
+        },
+        {
+          "phrase_form": "join us",
+          "matched_pattern": "\\bjoin us\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: action forms may make a next role visible; a clear request does not prove feasibility or impact."
+        },
+        {
+          "phrase_form": "take action",
+          "matched_pattern": "\\btake action\\b",
+          "status": "bounded_hypothesis_not_outcome_evidence",
+          "mechanism_hypothesis": "Hypothesis: action forms may make a next role visible; a clear request does not prove feasibility or impact."
+        }
+      ],
+      "phrase_form_coverage_status": "indexed_family_match"
     },
     {
       "card_id": "provisional-job-persuasion_or_advocacy",
       "canonical_job": "persuasion_or_advocacy",
       "task_count": 4,
-      "status": "draft_not_validated"
+      "status": "draft_not_validated",
+      "phrase_form_family": null,
+      "phrase_forms": [],
+      "phrase_form_coverage_status": "no_direct_family_match"
     },
     {
       "card_id": "provisional-job-reflection_or_value_frame",
       "canonical_job": "reflection_or_value_frame",
       "task_count": 4,
-      "status": "draft_not_validated"
+      "status": "draft_not_validated",
+      "phrase_form_family": null,
+      "phrase_forms": [],
+      "phrase_form_coverage_status": "no_direct_family_match"
     }
   ],
   "tasks": [
@@ -124,11 +498,12 @@
       "card_id": "provisional-job-opening",
       "canonical_job": "opening",
       "phase": "new_example_recognition",
-      "prompt": "A speaker is trying to do this: Give the listener a reason and orientation for the exchange. Read this response: ‘Name the room or question; state why it matters; preview the route.’ Does it perform the job opening? Identify the words that support your judgment and one alternative explanation.",
+      "prompt": "A speaker is trying to do this: Give the listener a reason and orientation for the exchange. Read this repeatable form: ‘Name the room or question; state why it matters; preview the route.’ and compare it with these indexed exact forms where available: No direct exact-form family match is currently indexed for this job; do not invent one.. Does the response perform the job opening? Identify the words that support your judgment and one alternative explanation.",
       "required_features": [
         "job judgment",
         "textual evidence",
-        "alternative explanation"
+        "alternative explanation",
+        "exact-form boundary"
       ],
       "boundary": "A plausible form is not proof that a listener understood or benefited."
     },
@@ -137,11 +512,12 @@
       "card_id": "provisional-job-opening",
       "canonical_job": "opening",
       "phase": "plain_language_explanation",
-      "prompt": "Explain the underlying communication choice for opening to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "prompt": "Explain the underlying communication choice for opening to a new learner in two or three sentences. If you use one of these exact forms (No direct exact-form family match is currently indexed for this job; do not invent one.), explain what job it is doing rather than treating the words as magic. Do not imitate a celebrity’s accent, personality or mannerism.",
       "required_features": [
         "plain-language explanation",
         "underlying choice separated from persona",
-        "limit or condition"
+        "limit or condition",
+        "form/function distinction"
       ],
       "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
     },
@@ -176,11 +552,12 @@
       "card_id": "provisional-job-closing",
       "canonical_job": "closing",
       "phase": "new_example_recognition",
-      "prompt": "A speaker is trying to do this: End without leaving the main point or next step diffuse. Read this response: ‘Return to the point; name the limit or next step; release the turn.’ Does it perform the job closing? Identify the words that support your judgment and one alternative explanation.",
+      "prompt": "A speaker is trying to do this: End without leaving the main point or next step diffuse. Read this repeatable form: ‘Return to the point; name the limit or next step; release the turn.’ and compare it with these indexed exact forms where available: ‘so the’, ‘ultimately’, ‘the point is’, ‘what matters’, ‘in short’, ‘the lesson’, ‘in conclusion’. Does the response perform the job closing? Identify the words that support your judgment and one alternative explanation.",
       "required_features": [
         "job judgment",
         "textual evidence",
-        "alternative explanation"
+        "alternative explanation",
+        "exact-form boundary"
       ],
       "boundary": "A plausible form is not proof that a listener understood or benefited."
     },
@@ -189,11 +566,12 @@
       "card_id": "provisional-job-closing",
       "canonical_job": "closing",
       "phase": "plain_language_explanation",
-      "prompt": "Explain the underlying communication choice for closing to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "prompt": "Explain the underlying communication choice for closing to a new learner in two or three sentences. If you use one of these exact forms (‘so the’, ‘ultimately’, ‘the point is’, ‘what matters’, ‘in short’, ‘the lesson’, ‘in conclusion’), explain what job it is doing rather than treating the words as magic. Do not imitate a celebrity’s accent, personality or mannerism.",
       "required_features": [
         "plain-language explanation",
         "underlying choice separated from persona",
-        "limit or condition"
+        "limit or condition",
+        "form/function distinction"
       ],
       "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
     },
@@ -228,11 +606,12 @@
       "card_id": "provisional-job-question",
       "canonical_job": "question",
       "phase": "new_example_recognition",
-      "prompt": "A speaker is trying to do this: Invite inquiry, reflection or a useful next turn. Read this response: ‘Ask one specific question; give context; allow a genuine answer or opt-out.’ Does it perform the job question? Identify the words that support your judgment and one alternative explanation.",
+      "prompt": "A speaker is trying to do this: Invite inquiry, reflection or a useful next turn. Read this repeatable form: ‘Ask one specific question; give context; allow a genuine answer or opt-out.’ and compare it with these indexed exact forms where available: ‘?’, ‘how’, ‘why’, ‘can we’, ‘what if’. Does the response perform the job question? Identify the words that support your judgment and one alternative explanation.",
       "required_features": [
         "job judgment",
         "textual evidence",
-        "alternative explanation"
+        "alternative explanation",
+        "exact-form boundary"
       ],
       "boundary": "A plausible form is not proof that a listener understood or benefited."
     },
@@ -241,11 +620,12 @@
       "card_id": "provisional-job-question",
       "canonical_job": "question",
       "phase": "plain_language_explanation",
-      "prompt": "Explain the underlying communication choice for question to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "prompt": "Explain the underlying communication choice for question to a new learner in two or three sentences. If you use one of these exact forms (‘?’, ‘how’, ‘why’, ‘can we’, ‘what if’), explain what job it is doing rather than treating the words as magic. Do not imitate a celebrity’s accent, personality or mannerism.",
       "required_features": [
         "plain-language explanation",
         "underlying choice separated from persona",
-        "limit or condition"
+        "limit or condition",
+        "form/function distinction"
       ],
       "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
     },
@@ -280,11 +660,12 @@
       "card_id": "provisional-job-answer_or_response",
       "canonical_job": "answer_or_response",
       "phase": "new_example_recognition",
-      "prompt": "A speaker is trying to do this: Respond to the literal prompt while addressing the underlying need. Read this response: ‘Answer the literal point; state a useful frame if needed; give the bounded answer.’ Does it perform the job answer_or_response? Identify the words that support your judgment and one alternative explanation.",
+      "prompt": "A speaker is trying to do this: Respond to the literal prompt while addressing the underlying need. Read this repeatable form: ‘Answer the literal point; state a useful frame if needed; give the bounded answer.’ and compare it with these indexed exact forms where available: No direct exact-form family match is currently indexed for this job; do not invent one.. Does the response perform the job answer_or_response? Identify the words that support your judgment and one alternative explanation.",
       "required_features": [
         "job judgment",
         "textual evidence",
-        "alternative explanation"
+        "alternative explanation",
+        "exact-form boundary"
       ],
       "boundary": "A plausible form is not proof that a listener understood or benefited."
     },
@@ -293,11 +674,12 @@
       "card_id": "provisional-job-answer_or_response",
       "canonical_job": "answer_or_response",
       "phase": "plain_language_explanation",
-      "prompt": "Explain the underlying communication choice for answer_or_response to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "prompt": "Explain the underlying communication choice for answer_or_response to a new learner in two or three sentences. If you use one of these exact forms (No direct exact-form family match is currently indexed for this job; do not invent one.), explain what job it is doing rather than treating the words as magic. Do not imitate a celebrity’s accent, personality or mannerism.",
       "required_features": [
         "plain-language explanation",
         "underlying choice separated from persona",
-        "limit or condition"
+        "limit or condition",
+        "form/function distinction"
       ],
       "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
     },
@@ -332,11 +714,12 @@
       "card_id": "provisional-job-story_or_personal_experience",
       "canonical_job": "story_or_personal_experience",
       "phase": "new_example_recognition",
-      "prompt": "A speaker is trying to do this: Make an idea concrete without turning one life into universal proof. Read this response: ‘Give a bounded scene; say what it changed or illustrates; state what it cannot prove.’ Does it perform the job story_or_personal_experience? Identify the words that support your judgment and one alternative explanation.",
+      "prompt": "A speaker is trying to do this: Make an idea concrete without turning one life into universal proof. Read this repeatable form: ‘Give a bounded scene; say what it changed or illustrates; state what it cannot prove.’ and compare it with these indexed exact forms where available: ‘i was’, ‘when i’, ‘years ago’, ‘i remember’, ‘one day’, ‘my first’, ‘growing up’. Does the response perform the job story_or_personal_experience? Identify the words that support your judgment and one alternative explanation.",
       "required_features": [
         "job judgment",
         "textual evidence",
-        "alternative explanation"
+        "alternative explanation",
+        "exact-form boundary"
       ],
       "boundary": "A plausible form is not proof that a listener understood or benefited."
     },
@@ -345,11 +728,12 @@
       "card_id": "provisional-job-story_or_personal_experience",
       "canonical_job": "story_or_personal_experience",
       "phase": "plain_language_explanation",
-      "prompt": "Explain the underlying communication choice for story_or_personal_experience to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "prompt": "Explain the underlying communication choice for story_or_personal_experience to a new learner in two or three sentences. If you use one of these exact forms (‘i was’, ‘when i’, ‘years ago’, ‘i remember’, ‘one day’, ‘my first’, ‘growing up’), explain what job it is doing rather than treating the words as magic. Do not imitate a celebrity’s accent, personality or mannerism.",
       "required_features": [
         "plain-language explanation",
         "underlying choice separated from persona",
-        "limit or condition"
+        "limit or condition",
+        "form/function distinction"
       ],
       "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
     },
@@ -384,11 +768,12 @@
       "card_id": "provisional-job-example_or_case",
       "canonical_job": "example_or_case",
       "phase": "new_example_recognition",
-      "prompt": "A speaker is trying to do this: Give a general claim a concrete handle without presenting an illustration as proof. Read this response: ‘State the claim; give one representative case; return to the claim and its evidence boundary.’ Does it perform the job example_or_case? Identify the words that support your judgment and one alternative explanation.",
+      "prompt": "A speaker is trying to do this: Give a general claim a concrete handle without presenting an illustration as proof. Read this repeatable form: ‘State the claim; give one representative case; return to the claim and its evidence boundary.’ and compare it with these indexed exact forms where available: ‘for example’, ‘such as’, ‘for instance’, ‘one example’. Does the response perform the job example_or_case? Identify the words that support your judgment and one alternative explanation.",
       "required_features": [
         "job judgment",
         "textual evidence",
-        "alternative explanation"
+        "alternative explanation",
+        "exact-form boundary"
       ],
       "boundary": "A plausible form is not proof that a listener understood or benefited."
     },
@@ -397,11 +782,12 @@
       "card_id": "provisional-job-example_or_case",
       "canonical_job": "example_or_case",
       "phase": "plain_language_explanation",
-      "prompt": "Explain the underlying communication choice for example_or_case to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "prompt": "Explain the underlying communication choice for example_or_case to a new learner in two or three sentences. If you use one of these exact forms (‘for example’, ‘such as’, ‘for instance’, ‘one example’), explain what job it is doing rather than treating the words as magic. Do not imitate a celebrity’s accent, personality or mannerism.",
       "required_features": [
         "plain-language explanation",
         "underlying choice separated from persona",
-        "limit or condition"
+        "limit or condition",
+        "form/function distinction"
       ],
       "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
     },
@@ -436,11 +822,12 @@
       "card_id": "provisional-job-contrast_or_disagreement",
       "canonical_job": "contrast_or_disagreement",
       "phase": "new_example_recognition",
-      "prompt": "A speaker is trying to do this: Make a distinction or change in reasoning visible without escalating disagreement. Read this response: ‘Name the earlier view; identify what changed; state the present view and remaining overlap.’ Does it perform the job contrast_or_disagreement? Identify the words that support your judgment and one alternative explanation.",
+      "prompt": "A speaker is trying to do this: Make a distinction or change in reasoning visible without escalating disagreement. Read this repeatable form: ‘Name the earlier view; identify what changed; state the present view and remaining overlap.’ and compare it with these indexed exact forms where available: ‘but’, ‘used to’, ‘now i’, ‘instead’, ‘however’, ‘rather than’, ‘on the other hand’. Does the response perform the job contrast_or_disagreement? Identify the words that support your judgment and one alternative explanation.",
       "required_features": [
         "job judgment",
         "textual evidence",
-        "alternative explanation"
+        "alternative explanation",
+        "exact-form boundary"
       ],
       "boundary": "A plausible form is not proof that a listener understood or benefited."
     },
@@ -449,11 +836,12 @@
       "card_id": "provisional-job-contrast_or_disagreement",
       "canonical_job": "contrast_or_disagreement",
       "phase": "plain_language_explanation",
-      "prompt": "Explain the underlying communication choice for contrast_or_disagreement to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "prompt": "Explain the underlying communication choice for contrast_or_disagreement to a new learner in two or three sentences. If you use one of these exact forms (‘but’, ‘used to’, ‘now i’, ‘instead’, ‘however’, ‘rather than’, ‘on the other hand’), explain what job it is doing rather than treating the words as magic. Do not imitate a celebrity’s accent, personality or mannerism.",
       "required_features": [
         "plain-language explanation",
         "underlying choice separated from persona",
-        "limit or condition"
+        "limit or condition",
+        "form/function distinction"
       ],
       "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
     },
@@ -488,11 +876,12 @@
       "card_id": "provisional-job-correction_or_reframe",
       "canonical_job": "correction_or_reframe",
       "phase": "new_example_recognition",
-      "prompt": "A speaker is trying to do this: Move from an unhelpful starting frame to a more useful question or category. Read this response: ‘Acknowledge the starting frame; explain the correction; answer the more useful question.’ Does it perform the job correction_or_reframe? Identify the words that support your judgment and one alternative explanation.",
+      "prompt": "A speaker is trying to do this: Move from an unhelpful starting frame to a more useful question or category. Read this repeatable form: ‘Acknowledge the starting frame; explain the correction; answer the more useful question.’ and compare it with these indexed exact forms where available: No direct exact-form family match is currently indexed for this job; do not invent one.. Does the response perform the job correction_or_reframe? Identify the words that support your judgment and one alternative explanation.",
       "required_features": [
         "job judgment",
         "textual evidence",
-        "alternative explanation"
+        "alternative explanation",
+        "exact-form boundary"
       ],
       "boundary": "A plausible form is not proof that a listener understood or benefited."
     },
@@ -501,11 +890,12 @@
       "card_id": "provisional-job-correction_or_reframe",
       "canonical_job": "correction_or_reframe",
       "phase": "plain_language_explanation",
-      "prompt": "Explain the underlying communication choice for correction_or_reframe to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "prompt": "Explain the underlying communication choice for correction_or_reframe to a new learner in two or three sentences. If you use one of these exact forms (No direct exact-form family match is currently indexed for this job; do not invent one.), explain what job it is doing rather than treating the words as magic. Do not imitate a celebrity’s accent, personality or mannerism.",
       "required_features": [
         "plain-language explanation",
         "underlying choice separated from persona",
-        "limit or condition"
+        "limit or condition",
+        "form/function distinction"
       ],
       "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
     },
@@ -540,11 +930,12 @@
       "card_id": "provisional-job-repair_or_self_correction",
       "canonical_job": "repair_or_self_correction",
       "phase": "new_example_recognition",
-      "prompt": "A speaker is trying to do this: Restore accuracy or shared understanding after an error, interruption or unclear phrase. Read this response: ‘Mark the error; replace it plainly; continue without over-explaining.’ Does it perform the job repair_or_self_correction? Identify the words that support your judgment and one alternative explanation.",
+      "prompt": "A speaker is trying to do this: Restore accuracy or shared understanding after an error, interruption or unclear phrase. Read this repeatable form: ‘Mark the error; replace it plainly; continue without over-explaining.’ and compare it with these indexed exact forms where available: No direct exact-form family match is currently indexed for this job; do not invent one.. Does the response perform the job repair_or_self_correction? Identify the words that support your judgment and one alternative explanation.",
       "required_features": [
         "job judgment",
         "textual evidence",
-        "alternative explanation"
+        "alternative explanation",
+        "exact-form boundary"
       ],
       "boundary": "A plausible form is not proof that a listener understood or benefited."
     },
@@ -553,11 +944,12 @@
       "card_id": "provisional-job-repair_or_self_correction",
       "canonical_job": "repair_or_self_correction",
       "phase": "plain_language_explanation",
-      "prompt": "Explain the underlying communication choice for repair_or_self_correction to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "prompt": "Explain the underlying communication choice for repair_or_self_correction to a new learner in two or three sentences. If you use one of these exact forms (No direct exact-form family match is currently indexed for this job; do not invent one.), explain what job it is doing rather than treating the words as magic. Do not imitate a celebrity’s accent, personality or mannerism.",
       "required_features": [
         "plain-language explanation",
         "underlying choice separated from persona",
-        "limit or condition"
+        "limit or condition",
+        "form/function distinction"
       ],
       "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
     },
@@ -592,11 +984,12 @@
       "card_id": "provisional-job-qualification_or_boundary",
       "canonical_job": "qualification_or_boundary",
       "phase": "new_example_recognition",
-      "prompt": "A speaker is trying to do this: State a clear point while marking uncertainty, scope or conditions. Read this response: ‘State the main claim; name its evidence status or condition; say what would change it.’ Does it perform the job qualification_or_boundary? Identify the words that support your judgment and one alternative explanation.",
+      "prompt": "A speaker is trying to do this: State a clear point while marking uncertainty, scope or conditions. Read this repeatable form: ‘State the main claim; name its evidence status or condition; say what would change it.’ and compare it with these indexed exact forms where available: ‘i think’, ‘maybe’, ‘perhaps’, ‘i'm not sure’, ‘it depends’, ‘not necessarily’, ‘to some extent’. Does the response perform the job qualification_or_boundary? Identify the words that support your judgment and one alternative explanation.",
       "required_features": [
         "job judgment",
         "textual evidence",
-        "alternative explanation"
+        "alternative explanation",
+        "exact-form boundary"
       ],
       "boundary": "A plausible form is not proof that a listener understood or benefited."
     },
@@ -605,11 +998,12 @@
       "card_id": "provisional-job-qualification_or_boundary",
       "canonical_job": "qualification_or_boundary",
       "phase": "plain_language_explanation",
-      "prompt": "Explain the underlying communication choice for qualification_or_boundary to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "prompt": "Explain the underlying communication choice for qualification_or_boundary to a new learner in two or three sentences. If you use one of these exact forms (‘i think’, ‘maybe’, ‘perhaps’, ‘i'm not sure’, ‘it depends’, ‘not necessarily’, ‘to some extent’), explain what job it is doing rather than treating the words as magic. Do not imitate a celebrity’s accent, personality or mannerism.",
       "required_features": [
         "plain-language explanation",
         "underlying choice separated from persona",
-        "limit or condition"
+        "limit or condition",
+        "form/function distinction"
       ],
       "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
     },
@@ -644,11 +1038,12 @@
       "card_id": "provisional-job-definition_or_explanation",
       "canonical_job": "definition_or_explanation",
       "phase": "new_example_recognition",
-      "prompt": "A speaker is trying to do this: Make an unfamiliar idea usable without overextending it. Read this response: ‘Name the term; give its plain meaning; show one example and one boundary.’ Does it perform the job definition_or_explanation? Identify the words that support your judgment and one alternative explanation.",
+      "prompt": "A speaker is trying to do this: Make an unfamiliar idea usable without overextending it. Read this repeatable form: ‘Name the term; give its plain meaning; show one example and one boundary.’ and compare it with these indexed exact forms where available: ‘is when’, ‘means that’, ‘in other words’, ‘what i mean’, ‘the definition’, ‘defined as’. Does the response perform the job definition_or_explanation? Identify the words that support your judgment and one alternative explanation.",
       "required_features": [
         "job judgment",
         "textual evidence",
-        "alternative explanation"
+        "alternative explanation",
+        "exact-form boundary"
       ],
       "boundary": "A plausible form is not proof that a listener understood or benefited."
     },
@@ -657,11 +1052,12 @@
       "card_id": "provisional-job-definition_or_explanation",
       "canonical_job": "definition_or_explanation",
       "phase": "plain_language_explanation",
-      "prompt": "Explain the underlying communication choice for definition_or_explanation to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "prompt": "Explain the underlying communication choice for definition_or_explanation to a new learner in two or three sentences. If you use one of these exact forms (‘is when’, ‘means that’, ‘in other words’, ‘what i mean’, ‘the definition’, ‘defined as’), explain what job it is doing rather than treating the words as magic. Do not imitate a celebrity’s accent, personality or mannerism.",
       "required_features": [
         "plain-language explanation",
         "underlying choice separated from persona",
-        "limit or condition"
+        "limit or condition",
+        "form/function distinction"
       ],
       "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
     },
@@ -696,11 +1092,12 @@
       "card_id": "provisional-job-transition_or_structure",
       "canonical_job": "transition_or_structure",
       "phase": "new_example_recognition",
-      "prompt": "A speaker is trying to do this: Help a listener follow a change of topic, scale, speaker or reasoning step. Read this response: ‘Close the current point; name the relationship; enter the next point.’ Does it perform the job transition_or_structure? Identify the words that support your judgment and one alternative explanation.",
+      "prompt": "A speaker is trying to do this: Help a listener follow a change of topic, scale, speaker or reasoning step. Read this repeatable form: ‘Close the current point; name the relationship; enter the next point.’ and compare it with these indexed exact forms where available: No direct exact-form family match is currently indexed for this job; do not invent one.. Does the response perform the job transition_or_structure? Identify the words that support your judgment and one alternative explanation.",
       "required_features": [
         "job judgment",
         "textual evidence",
-        "alternative explanation"
+        "alternative explanation",
+        "exact-form boundary"
       ],
       "boundary": "A plausible form is not proof that a listener understood or benefited."
     },
@@ -709,11 +1106,12 @@
       "card_id": "provisional-job-transition_or_structure",
       "canonical_job": "transition_or_structure",
       "phase": "plain_language_explanation",
-      "prompt": "Explain the underlying communication choice for transition_or_structure to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "prompt": "Explain the underlying communication choice for transition_or_structure to a new learner in two or three sentences. If you use one of these exact forms (No direct exact-form family match is currently indexed for this job; do not invent one.), explain what job it is doing rather than treating the words as magic. Do not imitate a celebrity’s accent, personality or mannerism.",
       "required_features": [
         "plain-language explanation",
         "underlying choice separated from persona",
-        "limit or condition"
+        "limit or condition",
+        "form/function distinction"
       ],
       "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
     },
@@ -748,11 +1146,12 @@
       "card_id": "provisional-job-callback_or_repetition",
       "canonical_job": "callback_or_repetition",
       "phase": "new_example_recognition",
-      "prompt": "A speaker is trying to do this: Give a long exchange continuity or let an earlier image carry changed meaning. Read this response: ‘Introduce a meaningful anchor; return to it with a new application; avoid merely repeating it.’ Does it perform the job callback_or_repetition? Identify the words that support your judgment and one alternative explanation.",
+      "prompt": "A speaker is trying to do this: Give a long exchange continuity or let an earlier image carry changed meaning. Read this repeatable form: ‘Introduce a meaningful anchor; return to it with a new application; avoid merely repeating it.’ and compare it with these indexed exact forms where available: No direct exact-form family match is currently indexed for this job; do not invent one.. Does the response perform the job callback_or_repetition? Identify the words that support your judgment and one alternative explanation.",
       "required_features": [
         "job judgment",
         "textual evidence",
-        "alternative explanation"
+        "alternative explanation",
+        "exact-form boundary"
       ],
       "boundary": "A plausible form is not proof that a listener understood or benefited."
     },
@@ -761,11 +1160,12 @@
       "card_id": "provisional-job-callback_or_repetition",
       "canonical_job": "callback_or_repetition",
       "phase": "plain_language_explanation",
-      "prompt": "Explain the underlying communication choice for callback_or_repetition to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "prompt": "Explain the underlying communication choice for callback_or_repetition to a new learner in two or three sentences. If you use one of these exact forms (No direct exact-form family match is currently indexed for this job; do not invent one.), explain what job it is doing rather than treating the words as magic. Do not imitate a celebrity’s accent, personality or mannerism.",
       "required_features": [
         "plain-language explanation",
         "underlying choice separated from persona",
-        "limit or condition"
+        "limit or condition",
+        "form/function distinction"
       ],
       "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
     },
@@ -800,11 +1200,12 @@
       "card_id": "provisional-job-humor_or_rapport",
       "canonical_job": "humor_or_rapport",
       "phase": "new_example_recognition",
-      "prompt": "A speaker is trying to do this: Create ease or relational room without making affected people the joke. Read this response: ‘Use lightness about your own situation or the shared setting; return clearly to the point.’ Does it perform the job humor_or_rapport? Identify the words that support your judgment and one alternative explanation.",
+      "prompt": "A speaker is trying to do this: Create ease or relational room without making affected people the joke. Read this repeatable form: ‘Use lightness about your own situation or the shared setting; return clearly to the point.’ and compare it with these indexed exact forms where available: No direct exact-form family match is currently indexed for this job; do not invent one.. Does the response perform the job humor_or_rapport? Identify the words that support your judgment and one alternative explanation.",
       "required_features": [
         "job judgment",
         "textual evidence",
-        "alternative explanation"
+        "alternative explanation",
+        "exact-form boundary"
       ],
       "boundary": "A plausible form is not proof that a listener understood or benefited."
     },
@@ -813,11 +1214,12 @@
       "card_id": "provisional-job-humor_or_rapport",
       "canonical_job": "humor_or_rapport",
       "phase": "plain_language_explanation",
-      "prompt": "Explain the underlying communication choice for humor_or_rapport to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "prompt": "Explain the underlying communication choice for humor_or_rapport to a new learner in two or three sentences. If you use one of these exact forms (No direct exact-form family match is currently indexed for this job; do not invent one.), explain what job it is doing rather than treating the words as magic. Do not imitate a celebrity’s accent, personality or mannerism.",
       "required_features": [
         "plain-language explanation",
         "underlying choice separated from persona",
-        "limit or condition"
+        "limit or condition",
+        "form/function distinction"
       ],
       "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
     },
@@ -852,11 +1254,12 @@
       "card_id": "provisional-job-credit_or_acknowledgment",
       "canonical_job": "credit_or_acknowledgment",
       "phase": "new_example_recognition",
-      "prompt": "A speaker is trying to do this: Make contribution, support or dependence visible without turning praise into a status performance. Read this response: ‘Name the contribution; connect it to the result; state what remains owed or unfinished.’ Does it perform the job credit_or_acknowledgment? Identify the words that support your judgment and one alternative explanation.",
+      "prompt": "A speaker is trying to do this: Make contribution, support or dependence visible without turning praise into a status performance. Read this repeatable form: ‘Name the contribution; connect it to the result; state what remains owed or unfinished.’ and compare it with these indexed exact forms where available: No direct exact-form family match is currently indexed for this job; do not invent one.. Does the response perform the job credit_or_acknowledgment? Identify the words that support your judgment and one alternative explanation.",
       "required_features": [
         "job judgment",
         "textual evidence",
-        "alternative explanation"
+        "alternative explanation",
+        "exact-form boundary"
       ],
       "boundary": "A plausible form is not proof that a listener understood or benefited."
     },
@@ -865,11 +1268,12 @@
       "card_id": "provisional-job-credit_or_acknowledgment",
       "canonical_job": "credit_or_acknowledgment",
       "phase": "plain_language_explanation",
-      "prompt": "Explain the underlying communication choice for credit_or_acknowledgment to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "prompt": "Explain the underlying communication choice for credit_or_acknowledgment to a new learner in two or three sentences. If you use one of these exact forms (No direct exact-form family match is currently indexed for this job; do not invent one.), explain what job it is doing rather than treating the words as magic. Do not imitate a celebrity’s accent, personality or mannerism.",
       "required_features": [
         "plain-language explanation",
         "underlying choice separated from persona",
-        "limit or condition"
+        "limit or condition",
+        "form/function distinction"
       ],
       "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
     },
@@ -904,11 +1308,12 @@
       "card_id": "provisional-job-call_to_action_or_audience_role",
       "canonical_job": "call_to_action_or_audience_role",
       "phase": "new_example_recognition",
-      "prompt": "A speaker is trying to do this: Turn a broad aspiration into a voluntary, bounded next role. Read this response: ‘Name the problem; offer a specific action and responsible actor; state the limit and consent path.’ Does it perform the job call_to_action_or_audience_role? Identify the words that support your judgment and one alternative explanation.",
+      "prompt": "A speaker is trying to do this: Turn a broad aspiration into a voluntary, bounded next role. Read this repeatable form: ‘Name the problem; offer a specific action and responsible actor; state the limit and consent path.’ and compare it with these indexed exact forms where available: ‘don't’, ‘you can’, ‘let's’, ‘do not’, ‘we need to’, ‘join us’, ‘take action’. Does the response perform the job call_to_action_or_audience_role? Identify the words that support your judgment and one alternative explanation.",
       "required_features": [
         "job judgment",
         "textual evidence",
-        "alternative explanation"
+        "alternative explanation",
+        "exact-form boundary"
       ],
       "boundary": "A plausible form is not proof that a listener understood or benefited."
     },
@@ -917,11 +1322,12 @@
       "card_id": "provisional-job-call_to_action_or_audience_role",
       "canonical_job": "call_to_action_or_audience_role",
       "phase": "plain_language_explanation",
-      "prompt": "Explain the underlying communication choice for call_to_action_or_audience_role to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "prompt": "Explain the underlying communication choice for call_to_action_or_audience_role to a new learner in two or three sentences. If you use one of these exact forms (‘don't’, ‘you can’, ‘let's’, ‘do not’, ‘we need to’, ‘join us’, ‘take action’), explain what job it is doing rather than treating the words as magic. Do not imitate a celebrity’s accent, personality or mannerism.",
       "required_features": [
         "plain-language explanation",
         "underlying choice separated from persona",
-        "limit or condition"
+        "limit or condition",
+        "form/function distinction"
       ],
       "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
     },
@@ -956,11 +1362,12 @@
       "card_id": "provisional-job-persuasion_or_advocacy",
       "canonical_job": "persuasion_or_advocacy",
       "phase": "new_example_recognition",
-      "prompt": "A speaker is trying to do this: Move a room toward judgment or action while showing evidence, tradeoffs and responsibility. Read this response: ‘State the stake; show the mechanism; name tradeoffs and accountable actors; invite a bounded choice.’ Does it perform the job persuasion_or_advocacy? Identify the words that support your judgment and one alternative explanation.",
+      "prompt": "A speaker is trying to do this: Move a room toward judgment or action while showing evidence, tradeoffs and responsibility. Read this repeatable form: ‘State the stake; show the mechanism; name tradeoffs and accountable actors; invite a bounded choice.’ and compare it with these indexed exact forms where available: No direct exact-form family match is currently indexed for this job; do not invent one.. Does the response perform the job persuasion_or_advocacy? Identify the words that support your judgment and one alternative explanation.",
       "required_features": [
         "job judgment",
         "textual evidence",
-        "alternative explanation"
+        "alternative explanation",
+        "exact-form boundary"
       ],
       "boundary": "A plausible form is not proof that a listener understood or benefited."
     },
@@ -969,11 +1376,12 @@
       "card_id": "provisional-job-persuasion_or_advocacy",
       "canonical_job": "persuasion_or_advocacy",
       "phase": "plain_language_explanation",
-      "prompt": "Explain the underlying communication choice for persuasion_or_advocacy to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "prompt": "Explain the underlying communication choice for persuasion_or_advocacy to a new learner in two or three sentences. If you use one of these exact forms (No direct exact-form family match is currently indexed for this job; do not invent one.), explain what job it is doing rather than treating the words as magic. Do not imitate a celebrity’s accent, personality or mannerism.",
       "required_features": [
         "plain-language explanation",
         "underlying choice separated from persona",
-        "limit or condition"
+        "limit or condition",
+        "form/function distinction"
       ],
       "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
     },
@@ -1008,11 +1416,12 @@
       "card_id": "provisional-job-reflection_or_value_frame",
       "canonical_job": "reflection_or_value_frame",
       "phase": "new_example_recognition",
-      "prompt": "A speaker is trying to do this: Connect an event or decision to a value without pretending the value settles the facts. Read this response: ‘Describe the event; name the value it raises; distinguish interpretation from verified fact.’ Does it perform the job reflection_or_value_frame? Identify the words that support your judgment and one alternative explanation.",
+      "prompt": "A speaker is trying to do this: Connect an event or decision to a value without pretending the value settles the facts. Read this repeatable form: ‘Describe the event; name the value it raises; distinguish interpretation from verified fact.’ and compare it with these indexed exact forms where available: No direct exact-form family match is currently indexed for this job; do not invent one.. Does the response perform the job reflection_or_value_frame? Identify the words that support your judgment and one alternative explanation.",
       "required_features": [
         "job judgment",
         "textual evidence",
-        "alternative explanation"
+        "alternative explanation",
+        "exact-form boundary"
       ],
       "boundary": "A plausible form is not proof that a listener understood or benefited."
     },
@@ -1021,11 +1430,12 @@
       "card_id": "provisional-job-reflection_or_value_frame",
       "canonical_job": "reflection_or_value_frame",
       "phase": "plain_language_explanation",
-      "prompt": "Explain the underlying communication choice for reflection_or_value_frame to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
+      "prompt": "Explain the underlying communication choice for reflection_or_value_frame to a new learner in two or three sentences. If you use one of these exact forms (No direct exact-form family match is currently indexed for this job; do not invent one.), explain what job it is doing rather than treating the words as magic. Do not imitate a celebrity’s accent, personality or mannerism.",
       "required_features": [
         "plain-language explanation",
         "underlying choice separated from persona",
-        "limit or condition"
+        "limit or condition",
+        "form/function distinction"
       ],
       "boundary": "Explain a practice hypothesis, not a proven effectiveness claim."
     },

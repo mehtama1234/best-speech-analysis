@@ -23,6 +23,7 @@ class EndToEndStatusTests(unittest.TestCase):
         self.assertEqual(self.status["stages"]["communication_job_cards"]["card_count"], 18)
         self.assertEqual(self.status["stages"]["communication_job_learner_check"]["task_count"], 72)
         self.assertEqual(self.status["stages"]["communication_job_learner_check"]["completed_records"], 0)
+        self.assertEqual(self.status["stages"]["communication_job_learner_check"]["exact_phrase_form_count"], 50)
         self.assertEqual(self.status["stages"]["communication_job_listener_outcomes"]["pattern_count"], 18)
         self.assertFalse(self.status["stages"]["communication_job_listener_outcomes"]["stimulus_pairs_locked"])
         self.assertEqual(self.status["stages"]["listener_stimulus_preflight"]["manual_review_required"], 18)

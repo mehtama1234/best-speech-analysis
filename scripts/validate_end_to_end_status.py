@@ -64,6 +64,7 @@ def validate(report: dict) -> list[str]:
         ("communication_job_cards", "card_count"): job_cards["card_count"],
         ("communication_job_learner_check", "card_count"): job_learner["card_count"],
         ("communication_job_learner_check", "task_count"): job_learner["task_count"],
+        ("communication_job_learner_check", "exact_phrase_form_count"): job_learner["exact_phrase_form_count"],
         ("communication_job_listener_outcomes", "pattern_count"): len(job_listener["patterns"]),
         ("communication_job_listener_outcomes", "listener_task_count"): len(job_listener["listener_tasks"]),
         ("listener_stimulus_preflight", "pair_count"): stimulus_preflight["pair_count"],

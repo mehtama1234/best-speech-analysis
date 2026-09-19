@@ -109,6 +109,9 @@ The [18-card learner check](writeups/communication-job-learner-check.md) now
 provides 72 fixed tasks covering recognition, plain-language explanation,
 transfer, non-fit judgment, listener restatement and revision. It is runnable
 but has zero learner records and cannot be treated as learning evidence.
+Its recognition and explanation tasks now link the 50-form exact inventory
+where an indexed family matches; the other ten jobs explicitly remain without
+a direct exact-form match rather than receiving invented phrases.
 
 The [18-job listener-outcome protocol](writeups/communication-job-listener-outcome-protocol.md)
 defines matched control/pattern-informed stimuli, six comprehension/recall

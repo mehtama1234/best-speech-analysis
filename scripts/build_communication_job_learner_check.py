@@ -12,20 +12,41 @@ def esc(value: object) -> str:
     return html.escape(str(value), quote=True)
 
 
+JOB_TO_PHRASE_FAMILY = {
+    "closing": "conclusion_or_summary",
+    "question": "question",
+    "story_or_personal_experience": "story_or_personal_experience",
+    "example_or_case": "example",
+    "contrast_or_disagreement": "contrast_or_disagreement",
+    "qualification_or_boundary": "uncertainty_or_qualification",
+    "definition_or_explanation": "definition",
+    "call_to_action_or_audience_role": "call_to_action",
+}
+
+
 def build(root: Path | None = None) -> dict:
     root = root or Path(__file__).resolve().parents[1]
     cards = json.loads((root / "research/communication-job-cards.json").read_text())["cards"]
+    phrase_inventory = json.loads((root / "research/corpus-phrase-form-inventory.json").read_text())
+    forms_by_family = {}
+    for form in phrase_inventory["forms"]:
+        forms_by_family.setdefault(form["family"], []).append({"phrase_form": form["phrase_form"], "matched_pattern": form["matched_pattern"], "status": form["status"] if "status" in form else form["mechanism_status"], "mechanism_hypothesis": form["mechanism_hypothesis"]})
     tasks = []
+    card_rows = []
     for card in cards:
         job = card["canonical_job"]
+        family = JOB_TO_PHRASE_FAMILY.get(job)
+        phrase_forms = forms_by_family.get(family, [])
+        form_text = ", ".join(f"‘{form['phrase_form']}’" for form in phrase_forms) if phrase_forms else "No direct exact-form family match is currently indexed for this job; do not invent one."
+        card_rows.append({"card_id": card["card_id"], "canonical_job": job, "task_count": 4, "status": "draft_not_validated", "phrase_form_family": family, "phrase_forms": phrase_forms, "phrase_form_coverage_status": "indexed_family_match" if phrase_forms else "no_direct_family_match"})
         tasks.extend([
             {
                 "task_id": f"{job}-recognition-01",
                 "card_id": card["card_id"],
                 "canonical_job": job,
                 "phase": "new_example_recognition",
-                "prompt": f"A speaker is trying to do this: {card['problem']} Read this response: ‘{card['form']}’ Does it perform the job {job}? Identify the words that support your judgment and one alternative explanation.",
-                "required_features": ["job judgment", "textual evidence", "alternative explanation"],
+                "prompt": f"A speaker is trying to do this: {card['problem']} Read this repeatable form: ‘{card['form']}’ and compare it with these indexed exact forms where available: {form_text}. Does the response perform the job {job}? Identify the words that support your judgment and one alternative explanation.",
+                "required_features": ["job judgment", "textual evidence", "alternative explanation", "exact-form boundary"],
                 "boundary": "A plausible form is not proof that a listener understood or benefited.",
             },
             {
@@ -33,8 +54,8 @@ def build(root: Path | None = None) -> dict:
                 "card_id": card["card_id"],
                 "canonical_job": job,
                 "phase": "plain_language_explanation",
-                "prompt": f"Explain the underlying communication choice for {job} to a new learner in two or three sentences. Do not imitate a celebrity’s accent, personality or mannerism.",
-                "required_features": ["plain-language explanation", "underlying choice separated from persona", "limit or condition"],
+                "prompt": f"Explain the underlying communication choice for {job} to a new learner in two or three sentences. If you use one of these exact forms ({form_text}), explain what job it is doing rather than treating the words as magic. Do not imitate a celebrity’s accent, personality or mannerism.",
+                "required_features": ["plain-language explanation", "underlying choice separated from persona", "limit or condition", "form/function distinction"],
                 "boundary": "Explain a practice hypothesis, not a proven effectiveness claim.",
             },
             {
@@ -64,9 +85,12 @@ def build(root: Path | None = None) -> dict:
         "claim_boundary": "This protocol tests teachability and usability of draft cards. It does not establish that a speech form improves trust, memory, persuasion, engagement, delivery, listener outcomes or action.",
         "consent_and_accessibility": "Use a pseudonym; allow written, typed, captioned, asynchronous or spoken responses; do not require personal disclosure; do not upload recordings through this form; store no sensitive information.",
         "source": "research/communication-job-cards.json",
+        "phrase_form_inventory": "research/corpus-phrase-form-inventory.json",
+        "phrase_form_family_map": JOB_TO_PHRASE_FAMILY,
+        "exact_phrase_form_count": len(phrase_inventory["forms"]),
         "card_count": len(cards),
         "task_count": len(tasks),
-        "cards": [{"card_id": card["card_id"], "canonical_job": card["canonical_job"], "task_count": 4, "status": "draft_not_validated"} for card in cards],
+        "cards": card_rows,
         "tasks": tasks,
         "procedure": ["baseline recognition", "lesson exposure", "new-example recognition", "plain-language explanation", "transfer", "non-fit judgment", "listener restatement", "revision after feedback"],
         "rubric": {

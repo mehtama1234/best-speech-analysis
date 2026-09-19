@@ -23,6 +23,15 @@ class CommunicationJobLearnerCheckTests(unittest.TestCase):
         self.assertIn("participant_code", self.html)
         self.assertIn("Download JSON record", self.html)
 
+    def test_exact_phrase_forms_are_linked_without_forcing_unindexed_jobs(self):
+        self.assertEqual(self.protocol["exact_phrase_form_count"], 50)
+        matched = [card for card in self.protocol["cards"] if card["phrase_form_coverage_status"] == "indexed_family_match"]
+        unmatched = [card for card in self.protocol["cards"] if card["phrase_form_coverage_status"] == "no_direct_family_match"]
+        self.assertEqual(len(matched), 8)
+        self.assertEqual(len(unmatched), 10)
+        self.assertTrue(all(card["phrase_forms"] for card in matched))
+        self.assertTrue(all(not card["phrase_forms"] for card in unmatched))
+
     def test_validator_accepts_complete_synthetic_shape_and_rejects_missing(self):
         record = {
             "record_type": "communication_job_learner_observation",

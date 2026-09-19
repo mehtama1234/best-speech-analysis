@@ -13,7 +13,7 @@ This dashboard reports artifact and validation status. It does not convert trans
 | Canonical function taxonomy | `heuristic_canonicalization_not_independently_validated` | 4016 items / 2394 unclassified |
 | Exact caption evidence bank | `transcript_evidence_navigation_not_validated` | 4016 function records / 102816 caption segments |
 | Communication-job cards | `provisional_transcript_cards_not_validated` | 18 provisional cards / 0 validated |
-| Communication-job learner check | `protocol_drafted_not_run` | 18 cards / 72 tasks / 0 records |
+| Communication-job learner check | `protocol_drafted_not_run` | 18 cards / 72 tasks / 50 exact forms linked / 0 records |
 | Communication-job listener outcomes | `design_complete_not_run` | 18 jobs / 6 tasks / stimuli locked: False |
 | Listener stimulus preflight | `automated_screening_not_independent_review` | 18 pairs / 18 manual reviews required |
 | Exact phrase-form inventory | `heuristic_exact_phrase_inventory_not_validated` | 50 forms / 102351 segments |
