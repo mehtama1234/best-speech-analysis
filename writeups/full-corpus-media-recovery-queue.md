@@ -4,14 +4,14 @@ Status: **recovery routing; not media validation**.
 
 This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.
 
-Queued missing/derived items: **98**.
+Queued missing/derived items: **89**.
 
 | Priority | Media state | Existing video status | Items |
 |---|---|---|---:|
 | `feature_backed_next_candidate` | `derived_features_only` | `failed:1` | 5 |
 | `fixed_corpus_transcript_only` | `audio_only` | `failed:1` | 11 |
-| `fixed_corpus_transcript_only` | `transcript_only_no_local_media` | `failed:1` | 32 |
-| `fixed_corpus_transcript_only` | `transcript_only_no_local_media` | `not_attempted` | 40 |
+| `fixed_corpus_transcript_only` | `transcript_only_no_local_media` | `failed:1` | 33 |
+| `fixed_corpus_transcript_only` | `transcript_only_no_local_media` | `not_attempted` | 30 |
 | `fixed_corpus_transcript_only` | `video_only` | `downloaded` | 9 |
 | `fixed_corpus_transcript_only` | `video_only` | `failed:1` | 1 |
 

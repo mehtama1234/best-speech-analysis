@@ -8,22 +8,22 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 98,
+  "item_count": 89,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 5,
-      "fixed_corpus_transcript_only": 93
+      "fixed_corpus_transcript_only": 84
     },
     "by_media_state": {
       "audio_only": 11,
       "derived_features_only": 5,
-      "transcript_only_no_local_media": 72,
+      "transcript_only_no_local_media": 63,
       "video_only": 10
     },
     "by_video_status": {
       "downloaded": 9,
-      "failed:1": 49,
-      "not_attempted": 40
+      "failed:1": 50,
+      "not_attempted": 30
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -170,18 +170,6 @@
       "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "3TWYqYJqU8U",
-      "title": "ENGLISH SPEECH | KATE WINSLET: Believe in Yourself (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=3TWYqYJqU8U",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -389,18 +377,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "EBVPjuxNflY",
-      "title": "ENGLISH SPEECH | ANGELINA JOLIE: Fighting for Equality (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=EBVPjuxNflY",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "EPffnjpHdTw",
       "title": "ENGLISH SPEECH | GENELIA DESHMUKH: Invest in Yourself (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=EPffnjpHdTw",
@@ -416,18 +392,6 @@
       "video_id": "FgCI93QGT1g",
       "title": "ENGLISH SPEECH | JERRY SEINFELD: Keep Your Humor (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=FgCI93QGT1g",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "G8M9sV6Yya4",
-      "title": "ENGLISH SPEECH | ZOHRAN MAMDANI: A City Reborn (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=G8M9sV6Yya4",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -494,18 +458,6 @@
       "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "LEtP7HgGTu0",
-      "title": "ENGLISH SPEECH | DR. A.P.J ABDUL KALAM: Culture of Excellence (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=LEtP7HgGTu0",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -737,18 +689,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "eMgKV_XKqNo",
-      "title": "ENGLISH SPEECH | AMISH TRIPATHI: Is God a Delusion? (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=eMgKV_XKqNo",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "eRrhqEYsahw",
       "title": "ENGLISH SPEECH | SANA AZEM: Protecting Humanity (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=eRrhqEYsahw",
@@ -809,18 +749,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "iV8Ixm_8aao",
-      "title": "ENGLISH SPEECH | YURONG “LUANNA” JIANG: Shared Humanity (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=iV8Ixm_8aao",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "i_t_vjxZrJQ",
       "title": "ENGLISH SPEECH | MICHELLE OBAMA: Donald Trump's Sexual Behaviour (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=i_t_vjxZrJQ",
@@ -842,18 +770,6 @@
       "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "ivpmUTIe6PU",
-      "title": "ENGLISH SPEECH | NEIL DeGRASSE TYSON: Human Motivators (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=ivpmUTIe6PU",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1073,18 +989,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "tRm1bwWHPkE",
-      "title": "ENGLISH SPEECH | BEYONCE: Make Them See You (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=tRm1bwWHPkE",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "ttGQj3yCFYA",
       "title": "ENGLISH SPEECH | SAINA NEHWAL: Retirement & Future Plans (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=ttGQj3yCFYA",
@@ -1106,18 +1010,6 @@
       "audio_download_status": "downloaded",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "vHKn4ZijM1o",
-      "title": "ENGLISH SPEECH | JUSTIN TRUDEAU - We are Canadian (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=vHKn4ZijM1o",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1162,10 +1054,10 @@
       "source_url": "https://www.youtube.com/watch?v=xY8HxfJPmNY",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
