@@ -27,6 +27,8 @@ nonverbal interpretations or delivery-effectiveness evidence.
 It routes 5,275 nearby timing/delivery candidate windows to 3,329 cards for
 manual inspection, preserving the distinction between a candidate window and
 an interpreted nonverbal pattern.
+They also expose 24,046 bounded pose-geometry and visual-summary inspection
+records across 6,308 cards, with timing offsets and explicit no-intent limits.
 The browser inventory now includes a study mode for selecting and advancing
 through filtered practice cards, while keeping evidence, phrase handles and
 non-fit boundaries visible.

@@ -46,6 +46,8 @@ not establish intentional delivery, emotion, gesture meaning or effectiveness.
 It also routes 5,275 nearby timing/delivery candidate windows to 3,329 cards
 for manual listening and viewing; these are inspection queues, not interpreted
 nonverbal findings.
+The cards also expose 24,046 pose-geometry and visual-summary inspection
+records across 6,308 cards, with time offsets and explicit no-intent limits.
 The browser also has a study mode that selects a visible card and advances
 through filtered practice cards.
 It can save a local practice record containing the adapted wording, delivery

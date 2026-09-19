@@ -24,6 +24,8 @@ JOB_PHRASES = ROOT / "research/job-phrase-candidate-inventory.json"
 CORPUS_PHRASES = ROOT / "research/corpus-phrase-form-inventory.json"
 DELIVERY_ATLAS = ROOT / "research/delivery-proxy-candidate-atlas.json"
 TIMING_ATLAS = ROOT / "research/full-corpus-timing-candidate-atlas.json"
+POSE_MOVEMENT = ROOT / "research/pose-movement-analysis.json"
+VISUAL_MOVEMENT = ROOT / "research/visual-movement-analysis.json"
 OUT = ROOT / "research/corpus-learner-card-inventory.json"
 MD = ROOT / "writeups/corpus-learner-card-inventory.md"
 HTML = ROOT / "writeups/corpus-learner-card-inventory.html"
@@ -153,6 +155,31 @@ def _delivery_candidates(segments: list[dict], delivery_by_evidence: dict[str, l
     return unique[:6]
 
 
+def _movement_candidates(video_id: str, segments: list[dict], pose_summaries: dict[str, dict], visual_summaries: dict[str, dict]) -> list[dict]:
+    target = segments[0].get("start_seconds") if segments else None
+    pose = pose_summaries.get(video_id, {})
+    pairs = pose.get("pairs", [])
+    ranked = sorted(pairs, key=lambda pair: abs(float(pair.get("midpoint_seconds", 0)) - float(target or 0)))
+    output = []
+    for pair in ranked[:3]:
+        output.append({
+            "candidate_kind": "pose_geometry_movement_pair",
+            "start_time_seconds": pair.get("start_time_seconds"), "end_time_seconds": pair.get("end_time_seconds"), "midpoint_seconds": pair.get("midpoint_seconds"),
+            "offset_from_card_seconds": round(float(pair.get("midpoint_seconds", 0)) - float(target), 3) if target is not None else None,
+            "mean_keypoint_displacement": pair.get("mean_keypoint_displacement"), "mean_wrist_displacement": pair.get("mean_wrist_displacement"), "mean_shoulder_displacement": pair.get("mean_shoulder_displacement"),
+            "keypoint_count": pair.get("keypoint_count"),
+            "status": "mediapipe_pose_landmark_geometry_only_requires_manual_video_review",
+        })
+    visual = visual_summaries.get(video_id)
+    if visual:
+        output.append({
+            "candidate_kind": "visual_summary_context",
+            "sampled_frame_count": visual.get("sampled_frame_count"), "face_observable_frames": visual.get("face_observable_frames"), "face_present_frames": visual.get("face_present_frames"), "movement_pairs": visual.get("movement_pairs"),
+            "status": "face_scene_summary_requires_manual_video_review_no_expression_or_intent_inference",
+        })
+    return output
+
+
 def build() -> dict:
     index = json.loads(INDEX.read_text())
     evidence = {}
@@ -175,6 +202,8 @@ def build() -> dict:
     timing_by_evidence = {}
     for item in json.loads(TIMING_ATLAS.read_text()).get("items", []):
         timing_by_evidence.setdefault(item.get("evidence_id"), []).append(item)
+    pose_summaries = json.loads(POSE_MOVEMENT.read_text()).get("video_summary", {})
+    visual_summaries = json.loads(VISUAL_MOVEMENT.read_text()).get("video_summary", {})
     cards = []
     relation_cards = []
     job_counts = Counter()
@@ -238,6 +267,7 @@ def build() -> dict:
                 "phrase_handle_status": "indexed_exact_card_evidence_matches" if phrase_handles else "no_indexed_phrase_match_in_card_evidence",
                 "delivery_proxy": _delivery_proxy(entry["video_id"], segments, delivery_cache),
                 "delivery_candidates": _delivery_candidates(segments, delivery_by_evidence, timing_by_evidence),
+                "movement_candidates": _movement_candidates(entry["video_id"], segments, pose_summaries, visual_summaries),
                 "review_limits": entry.get("limits", []),
                 "next_test": entry.get("next_test", ""),
                 "claim_boundary": "Transcript-derived discovery and practice hypothesis only; not independently reviewed, delivery-validated, learner-validated or listener-outcome evidence.",
@@ -271,6 +301,7 @@ def build() -> dict:
                 "phrase_handles": _phrase_handles(entry["video_id"], "", segments, [], corpus_phrase_forms),
                 "delivery_proxy": _delivery_proxy(entry["video_id"], segments, delivery_cache),
                 "delivery_candidates": _delivery_candidates(segments, delivery_by_evidence, timing_by_evidence),
+                "movement_candidates": _movement_candidates(entry["video_id"], segments, pose_summaries, visual_summaries),
                 "why_it_might_help": "Hypothesis: making the bridge between these two moves explicit may reduce the listener's need to infer why the talk changed direction.",
                 "repeatable_approach": "Complete the first move, name the relationship, then make the second move; do not assume the audience will supply the bridge.",
                 "practice": "Give a 30–60 second explanation using the same move-to-move relationship with a new topic. Ask a listener to name the bridge.",
@@ -300,6 +331,8 @@ def build() -> dict:
             "cards_with_pose_proxy": sum(bool(card["delivery_proxy"].get("pose_frame")) for card in cards + relation_cards),
             "cards_with_delivery_candidates": sum(bool(card["delivery_candidates"]) for card in cards + relation_cards),
             "delivery_candidate_count": sum(len(card["delivery_candidates"]) for card in cards + relation_cards),
+            "cards_with_movement_candidates": sum(bool(card["movement_candidates"]) for card in cards + relation_cards),
+            "movement_candidate_count": sum(len(card["movement_candidates"]) for card in cards + relation_cards),
             "cards_with_shared_job_template": sum(job_counts.values()),
             "non_speech_or_publisher_boundary_cards": boundary_items,
             "unclassified_cards": unclassified,
@@ -349,6 +382,8 @@ def build() -> dict:
         proxy_html = f"<h3>Delivery inspection proxy</h3><p>{html.escape(proxy['status'])}</p><p><b>Audio:</b> {html.escape(json.dumps(proxy.get('audio_window'), ensure_ascii=False))}</p><p><b>Face/scene:</b> {html.escape(json.dumps(proxy.get('sampled_frame'), ensure_ascii=False))}</p><p><b>Pose:</b> {html.escape(json.dumps(proxy.get('pose_frame'), ensure_ascii=False))}</p><p class='muted'>{html.escape(proxy['claim_boundary'])}</p>"
         candidate_items = "".join(f"<li><b>{html.escape(x['candidate_kind'])}</b> · <code>{html.escape(x.get('evidence_id') or '')}</code> · {html.escape(str(x.get('start_seconds')))}–{html.escape(str(x.get('end_seconds')))}s<br>{html.escape(x.get('candidate_reason') or x.get('status') or '')}</li>" for x in card.get("delivery_candidates", []))
         candidates_html = f"<h3>Nearby delivery candidates</h3><p class='muted'>These windows are routing aids for manual listening/viewing, not interpreted nonverbal findings.</p><ul>{candidate_items}</ul>" if candidate_items else "<h3>Nearby delivery candidates</h3><p class='muted'>No indexed timing or delivery candidate matched this card's retained evidence.</p>"
+        movement_items = "".join(f"<li><b>{html.escape(x['candidate_kind'])}</b> · {html.escape(str(x.get('midpoint_seconds', x.get('movement_pairs', ''))))}<br>{html.escape(x.get('status') or '')}</li>" for x in card.get("movement_candidates", []))
+        movement_html = f"<h3>Movement inspection candidates</h3><ul>{movement_items}</ul>" if movement_items else "<h3>Movement inspection candidates</h3><p class='muted'>No pose/visual movement summary is available for this card's video.</p>"
         if is_relation:
             heading = f"<p><b>Sequence:</b> <code>{html.escape(card['relation_type'])}</code></p><h3>Sequence claim</h3><p>{html.escape(card['sequence_claim'])}</p>"
             form_heading = "Repeatable approach"
@@ -362,7 +397,7 @@ def build() -> dict:
         articles.append(
             f"<article id='card-{html.escape(card['card_id'], quote=True)}' class='card' data-card-id='{html.escape(card['card_id'], quote=True)}' data-video-id='{html.escape(card['video_id'], quote=True)}' data-search='{html.escape(search, quote=True)}' data-job='{html.escape(card.get('canonical_job', ''), quote=True)}' data-relation='{html.escape(card.get('relation_type', ''), quote=True)}' data-kind='{html.escape(card.get('card_type', 'function'), quote=True)}'>"
             f"<h2>{html.escape(card['title'])}</h2><p><code>{html.escape(card['card_id'])}</code> · {writeup}</p>"
-            f"<p><b>Card type:</b> {label}</p>{heading}<h3>Exact evidence</h3>{evidence_html}{phrase_html}{proxy_html}{candidates_html}"
+            f"<p><b>Card type:</b> {label}</p>{heading}<h3>Exact evidence</h3>{evidence_html}{phrase_html}{proxy_html}{candidates_html}{movement_html}"
             f"<h3>Why it might help</h3><p>{html.escape(card['why_it_might_help'])}</p>"
             f"<h3>{form_heading}</h3><p>{html.escape(form)}</p>"
             f"<h3>Practice</h3><p>{html.escape(card['practice'])}</p>"
