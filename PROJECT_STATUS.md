@@ -159,6 +159,10 @@ learner tasks and listener protocol in one provisional surface.
 The [mobile lesson payload](writeups/communication-job-mobile-lessons.md)
 provides six consent-aware practice steps per job with typed/captioned/
 asynchronous options and no required recording; it has zero learner records.
+The [local practice surface](writeups/communication-job-practice.html) now
+renders all 18 mobile lessons with exact examples, repeatable forms,
+self-check/non-fit prompts and consent-gated local JSON export. It does not
+upload responses or turn local practice logs into learner-validation evidence.
 
 The [18-job listener-outcome protocol](writeups/communication-job-listener-outcome-protocol.md)
 defines matched control/pattern-informed stimuli, six comprehension/recall

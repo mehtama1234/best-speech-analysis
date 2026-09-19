@@ -60,6 +60,9 @@ learner/listener gates together without hiding missing validation.
 The matching [mobile lesson payload](writeups/communication-job-mobile-lessons.md)
 provides a compact six-step practice flow per job with explicit consent and
 accessibility boundaries; it is unrun.
+The [local practice surface](writeups/communication-job-practice.html) makes
+the 18 flows runnable with exact examples, self-checks, non-fit boundaries and
+consent-gated local JSON export; it does not upload responses.
 The [18-job listener protocol](writeups/communication-job-listener-outcome-protocol.md)
 separately defines matched controls, six comprehension/recall measures and
 controlled blind 0–2 task scoring with an explicit accessibility/missingness
