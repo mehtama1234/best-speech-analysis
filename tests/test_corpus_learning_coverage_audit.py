@@ -20,6 +20,7 @@ class CorpusLearningCoverageAuditTests(unittest.TestCase):
         self.assertEqual(len(self.data["videos"]), 395)
         self.assertEqual(self.data["summary"]["function_cards"], 4016)
         self.assertEqual(self.data["summary"]["sequence_cards"], 2800)
+        self.assertEqual(self.data["summary"]["learning_track_counts"], {"canonical_job_lesson": 207, "structural_bridge_lesson": 31, "transcript_exploration_lead": 157})
         self.assertEqual(self.data["summary"]["raw_audio_video_present"], 354)
         self.assertEqual(self.data["summary"]["feature_report_present"], 357)
         self.assertEqual(self.data["summary"]["full_proxy_index_video_count"], 364)

@@ -18,6 +18,7 @@ class CorpusVideoLearningItineraryTests(unittest.TestCase):
         self.assertGreater(self.data["entries_with_exact_evidence"], 390)
         self.assertGreater(self.data["entries_with_phrase_handles"], 150)
         self.assertGreater(self.data["phrase_handle_count"], 400)
+        self.assertEqual(self.data["learning_track_counts"], {"canonical_job_lesson": 207, "structural_bridge_lesson": 31, "transcript_exploration_lead": 157})
         self.assertTrue(all("phrase_handles" in row and "phrase_handle_status" in row for row in self.data["entries"]))
         self.assertIn("does not claim", self.data["claim_boundary"])
         self.assertIn("Exact evidence", self.html)
