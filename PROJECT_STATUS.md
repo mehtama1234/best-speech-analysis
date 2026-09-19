@@ -244,9 +244,9 @@ preserves item-level disagreements across two or more distinct reviewers and
 always marks its report non-promotional.
 
 The [multimodal coverage audit](research/multimodal-coverage-audit.json)
-reconciles the 41-video expansion: 29 currently have both raw audio and video
-files locally, 8 have derived features without local raw files, 4 have neither,
-and 21 complete transcript-plus-raw-media items are available for manual
+reconciles the 41-video expansion: 30 currently have both raw audio and video
+files locally, 7 have derived features without local raw files, 4 have neither,
+and 22 complete transcript-plus-raw-media items are available for manual
 delivery review. The other 8 raw-complete items have no retained transcript and
 are accounted for in a separate raw-media-only queue; they cannot support
 transcript-linked speech-pattern review. No selected item is currently partial.

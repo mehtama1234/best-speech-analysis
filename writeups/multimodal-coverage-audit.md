@@ -2,7 +2,7 @@
 
 Status: **raw media reconciled; manual review pending**.
 
-The deterministic expansion contains **41** selected videos, of which **29** have both local raw video and audio, **0** have partial raw media, **8** have derived features but no local raw files, and **4** have neither local raw media nor derived features. Derived feature files are present for **37** selected videos.
+The deterministic expansion contains **41** selected videos, of which **30** have both local raw video and audio, **0** have partial raw media, **7** have derived features but no local raw files, and **4** have neither local raw media nor derived features. Derived feature files are present for **37** selected videos.
 
 This is coverage evidence, not a claim that the selected videos have been manually reviewed or that the full corpus has audiovisual coverage. Raw-complete items without retained transcripts are accounted for separately and cannot support transcript-linked speech-function review.
 

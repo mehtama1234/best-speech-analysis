@@ -5,14 +5,14 @@
   "source_manifest": "data/metadata/multimodal-expansion.json",
   "selected_video_count": 41,
   "selected_with_transcripts": 27,
-  "raw_audio_video_present_count": 29,
+  "raw_audio_video_present_count": 30,
   "partial_raw_media_count": 0,
-  "derived_features_only_count": 8,
+  "derived_features_only_count": 7,
   "raw_media_missing_count": 4,
-  "raw_audio_video_with_transcript_count": 21,
+  "raw_audio_video_with_transcript_count": 22,
   "raw_audio_video_without_transcript_count": 8,
   "derived_feature_file_count": 37,
-  "manual_review_queue_count": 21,
+  "manual_review_queue_count": 22,
   "internal_manual_review_count": 21,
   "internal_manual_review_reports": [
     "research/multimodal-expansion-manual-review.json",
@@ -23,8 +23,8 @@
   "independent_review_form": "writeups/multimodal-independent-review-workbook.html",
   "independent_review_validator": "scripts/validate_multimodal_independent_review.py",
   "media_state_counts": {
-    "derived_features_only": 8,
-    "raw_audio_video_present": 29,
+    "derived_features_only": 7,
+    "raw_audio_video_present": 30,
     "raw_media_missing": 4
   },
   "duration_bucket_counts": {
@@ -744,9 +744,13 @@
       "selection_reasons": [
         "playlist-02:medium_3_10m"
       ],
-      "media_state": "derived_features_only",
-      "video_files": [],
-      "audio_files": [],
+      "media_state": "raw_audio_video_present",
+      "video_files": [
+        "_Mb1-CN3wZs.mp4"
+      ],
+      "audio_files": [
+        "_Mb1-CN3wZs.m4a"
+      ],
       "feature_files": [
         "_Mb1-CN3wZs.json"
       ],
@@ -1730,6 +1734,25 @@
       "transcript_segments": 52,
       "candidate_function_counts": {
         "unclassified": 52
+      },
+      "selection_reasons": [
+        "playlist-02:medium_3_10m"
+      ],
+      "review_status": "not_manually_reviewed"
+    },
+    {
+      "video_id": "_Mb1-CN3wZs",
+      "title": "Al Pacino as Tony Montana in the opening scene of \"Scarface\" (1983) by Brian De Palma 1080p",
+      "duration_bucket": "medium_3_10m",
+      "media_state": "raw_audio_video_present",
+      "transcript_segments": 94,
+      "candidate_function_counts": {
+        "call_to_action": 1,
+        "contrast_or_disagreement": 1,
+        "definition": 1,
+        "question": 5,
+        "story_or_personal_experience": 3,
+        "unclassified": 84
       },
       "selection_reasons": [
         "playlist-02:medium_3_10m"
