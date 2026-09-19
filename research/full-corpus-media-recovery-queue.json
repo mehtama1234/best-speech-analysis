@@ -8,22 +8,22 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 80,
+  "item_count": 71,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 5,
-      "fixed_corpus_transcript_only": 75
+      "fixed_corpus_transcript_only": 66
     },
     "by_media_state": {
       "audio_only": 11,
       "derived_features_only": 5,
-      "transcript_only_no_local_media": 53,
+      "transcript_only_no_local_media": 44,
       "video_only": 11
     },
     "by_video_status": {
       "downloaded": 10,
-      "failed:1": 50,
-      "not_attempted": 20
+      "failed:1": 51,
+      "not_attempted": 10
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -149,18 +149,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "1viYHfNj3Bk",
-      "title": "ENGLISH SPEECH | AKASH BANERJEE: India’s Path (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=1viYHfNj3Bk",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "3FtDXPHua9o",
       "title": "ENGLISH SPEECH | BOB PROCTOR: The Billion Dollar Practice (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=3FtDXPHua9o",
@@ -197,30 +185,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "5xRv-eOuras",
-      "title": "ENGLISH SPEECH | JORDAN PETERSON: Freedom to Be Yourself (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=5xRv-eOuras",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "74ZgwDcjeGc",
-      "title": "ENGLISH SPEECH | LIONEL MESSI: Heartfelt Farewell Speech (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=74ZgwDcjeGc",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "7XO7kVaEgpM",
       "title": "ENGLISH SPEECH | BENEDICT CUMBERBATCH: Just Do It! (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=7XO7kVaEgpM",
@@ -230,18 +194,6 @@
       "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "8R4TMmU_Ig0",
-      "title": "ENGLISH SPEECH | SIMON SINEK: 5 Rules for Success (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=8R4TMmU_Ig0",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -353,18 +305,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "DQjESgK96Pw",
-      "title": "ENGLISH SPEECH | KIM AND KRIS: The Kardashian Empire (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=DQjESgK96Pw",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "EPffnjpHdTw",
       "title": "ENGLISH SPEECH | GENELIA DESHMUKH: Invest in Yourself (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=EPffnjpHdTw",
@@ -374,18 +314,6 @@
       "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "FgCI93QGT1g",
-      "title": "ENGLISH SPEECH | JERRY SEINFELD: Keep Your Humor (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=FgCI93QGT1g",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -557,18 +485,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "UCeY5YPd2I0",
-      "title": "ENGLISH SPEECH | J.K. ROWLING: Ripple of Hope (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=UCeY5YPd2I0",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "Up6tk1hliIM",
       "title": "ENGLISH SPEECH | TRUMP: First Speech Since Assassination Attempt (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=Up6tk1hliIM",
@@ -694,10 +610,10 @@
       "source_url": "https://www.youtube.com/watch?v=i_t_vjxZrJQ",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -746,18 +662,6 @@
       "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "lUmWWTMFjZE",
-      "title": "ENGLISH SPEECH | ANNE HATHAWAY: Authentic Equality (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=lUmWWTMFjZE",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -926,18 +830,6 @@
       "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "wSzT7aI6lh8",
-      "title": "ENGLISH SPEECH | SUNDAR PICHAI & SRK: Indian Personalities Talks at Google (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=wSzT7aI6lh8",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
