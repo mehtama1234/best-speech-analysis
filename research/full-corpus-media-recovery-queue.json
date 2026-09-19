@@ -8,22 +8,22 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 144,
+  "item_count": 136,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 6,
-      "fixed_corpus_transcript_only": 138
+      "fixed_corpus_transcript_only": 130
     },
     "by_media_state": {
       "audio_only": 9,
       "derived_features_only": 6,
-      "transcript_only_no_local_media": 121,
+      "transcript_only_no_local_media": 113,
       "video_only": 8
     },
     "by_video_status": {
       "downloaded": 8,
-      "failed:1": 38,
-      "not_attempted": 98
+      "failed:1": 40,
+      "not_attempted": 88
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -118,10 +118,10 @@
       "source_url": "https://www.youtube.com/watch?v=-QWL-FwX4t4",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -236,18 +236,6 @@
       "video_id": "3TWYqYJqU8U",
       "title": "ENGLISH SPEECH | KATE WINSLET: Believe in Yourself (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=3TWYqYJqU8U",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "3Z4TsHqyssc",
-      "title": "ENGLISH SPEECH | NITA AMBANI: Women's empowerment (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=3Z4TsHqyssc",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -512,18 +500,6 @@
       "video_id": "DQjESgK96Pw",
       "title": "ENGLISH SPEECH | KIM AND KRIS: The Kardashian Empire (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=DQjESgK96Pw",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "E12NyW7Nlog",
-      "title": "ENGLISH SPEECH | ALICIA KEYS: Keep a Child Alive (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=E12NyW7Nlog",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -869,18 +845,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "UDzuZhjo1RI",
-      "title": "ENGLISH SPEECH | R. MADHAVAN: Break the Clutter (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=UDzuZhjo1RI",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "Up6tk1hliIM",
       "title": "ENGLISH SPEECH | TRUMP: First Speech Since Assassination Attempt (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=Up6tk1hliIM",
@@ -1013,18 +977,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "bDth6cv5raI",
-      "title": "ENGLISH SPEECH | ELLEN DEGENERES: Be True To Yourself (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=bDth6cv5raI",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "bv20ZoBcdO8",
       "title": "star wars original 1980 i am your father HD",
       "source_url": "https://www.youtube.com/watch?v=bv20ZoBcdO8",
@@ -1034,18 +986,6 @@
       "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "review_existing_attempt_or_retry_safely",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "bz7yYu_w2HY",
-      "title": "ENGLISH SPEECH | ELON MUSK: Future, A.I. and Mars (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=bz7yYu_w2HY",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -1148,18 +1088,6 @@
       "video_id": "ftlHd9Bu530",
       "title": "ENGLISH SPEECH | RIHANNA: Start Helping One Person (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=ftlHd9Bu530",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "gkr57P0fwbI",
-      "title": "ENGLISH SPEECH | ANNE HATHAWAY: Paid Family Leave (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=gkr57P0fwbI",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -1637,18 +1565,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "w42rHdvFpVM",
-      "title": "ENGLISH SPEECH | NELSON MANDELA: Freedom and Justice (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=w42rHdvFpVM",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "w7WoqBL57Fk",
       "title": "ENGLISH SPEECH | LAURENCE FISHBURNE: Keanu Reeves (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=w7WoqBL57Fk",
@@ -1709,18 +1625,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "xtT19s0uHhE",
-      "title": "ENGLISH SPEECH | PRESIDENT BIDEN: Humorous Speech (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=xtT19s0uHhE",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "xwbI8VOsDTo",
       "title": "ENGLISH SPEECH | MOHAMMED QAHTANI: The Power Of Words (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=xwbI8VOsDTo",
@@ -1750,10 +1654,10 @@
       "source_url": "https://www.youtube.com/watch?v=yrwhd4coEAU",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     }
   ]
