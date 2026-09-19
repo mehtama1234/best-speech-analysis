@@ -178,6 +178,9 @@ The [reproducibility manifest](research/reproducibility-manifest.json) hashes
 20 authoritative artifacts and records the fixed-corpus coverage snapshot;
 its validator detects stale outputs without implying that pending human gates
 are complete.
+The [external review gate index](writeups/external-review-gate-index.html)
+routes all ten remaining review/data-collection operations to their current
+form, validator, comparator or summarizer, and claim boundary.
 The [dashboard validator](scripts/validate_end_to_end_status.py) reconciles its
 counts against the underlying artifacts before a checkpoint is trusted.
 The browser also renders exact examples, counterexamples and the validation

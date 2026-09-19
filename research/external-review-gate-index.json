@@ -1,0 +1,128 @@
+{
+  "schema_version": "1.0",
+  "index_id": "external-review-gate-index",
+  "status": "review_operations_ready_research_evidence_incomplete",
+  "claim_boundary": "This index routes independent review and participant-data collection. The presence of a form, validator or comparator is not evidence that a gate has been completed.",
+  "gates": [
+    {
+      "gate_id": "identity",
+      "title": "Corpus speaker/event identity and duplication",
+      "status": "metadata_preflight_independent_review_pending",
+      "item_count": 395,
+      "source": "research/corpus-identity-review-workbook.json",
+      "form": "writeups/corpus-identity-review-workbook.html",
+      "validator": "scripts/validate_corpus_identity_review.py",
+      "comparator_or_summarizer": "scripts/compare_corpus_identity_reviews.py",
+      "action": "Review all 395 queue items; do not treat title matches as proof of distinct events.",
+      "claim_boundary": "This workbook records source metadata and requests independent verification of speaker, event, upload correspondence and duplication status. Registry metadata and title matches are leads, not proof. It does not establish communication effectiveness, speaker intent, delivery meaning or recurrence across independent events."
+    },
+    {
+      "gate_id": "function",
+      "title": "Transcript function labels",
+      "status": "template_not_completed",
+      "item_count": 187,
+      "source": "research/corpus-function-independent-review-workbook.json",
+      "form": "writeups/corpus-function-independent-review-workbook.html",
+      "validator": "scripts/validate_corpus_function_review.py",
+      "comparator_or_summarizer": "scripts/compare_corpus_function_reviews.py",
+      "action": "Review 187 candidate function items in full context.",
+      "claim_boundary": "This review tests transcript speech-function labels in surrounding context. It does not establish delivery effectiveness, audience outcomes, speaker intent or causal effects."
+    },
+    {
+      "gate_id": "recurrence",
+      "title": "Phrase recurrence and event-level eligibility",
+      "status": "template_not_completed",
+      "item_count": 192,
+      "source": "research/corpus-recurrence-independent-review-workbook.json",
+      "form": "writeups/corpus-recurrence-independent-review-workbook.html",
+      "validator": "scripts/validate_corpus_recurrence_review.py",
+      "comparator_or_summarizer": "scripts/compare_corpus_recurrence_reviews.py",
+      "action": "Review 192 train/holdout phrase candidates; preserve indeterminate decisions.",
+      "claim_boundary": "This review tests whether exact transcript phrase hits support a proposed speech-function label in context. It does not establish delivery effectiveness, audience outcomes, speaker intent or causal effects."
+    },
+    {
+      "gate_id": "phrase_forms",
+      "title": "Exact phrase-form exactness and recurrence",
+      "status": "template_not_completed",
+      "item_count": 50,
+      "source": "research/corpus-phrase-form-independent-review-workbook.json",
+      "form": "writeups/corpus-phrase-form-independent-review-workbook.html",
+      "validator": "scripts/validate_corpus_phrase_form_review.py",
+      "comparator_or_summarizer": "scripts/compare_corpus_phrase_form_reviews.py",
+      "action": "Review all 50 retrieved forms before changing the inventory.",
+      "claim_boundary": "This review tests whether the listed exact transcript form is actually present and whether the sampled contexts support a proposed communication-function and recurrence interpretation. It does not establish delivery effectiveness, speaker intent, audience outcomes, causality or universal best practice."
+    },
+    {
+      "gate_id": "multimodal",
+      "title": "Independent audio/visual evidence boundaries",
+      "status": "template_not_completed",
+      "item_count": 21,
+      "source": "research/multimodal-independent-review-workbook.json",
+      "form": "writeups/multimodal-independent-review-workbook.html",
+      "validator": "scripts/validate_multimodal_independent_review.py",
+      "comparator_or_summarizer": "scripts/compare_multimodal_independent_reviews.py",
+      "action": "Review 21 bounded internal media observations; proxies are not meaning or outcomes.",
+      "claim_boundary": "A completed review evaluates alignment and interpretation boundaries; it does not establish delivery effectiveness, audience outcomes or learner outcomes."
+    },
+    {
+      "gate_id": "delivery",
+      "title": "Communication-job delivery observations",
+      "status": "queue_built_manual_observation_pending",
+      "item_count": 36,
+      "source": "research/communication-job-delivery-sampling.json",
+      "form": "writeups/communication-job-delivery-sampling.html",
+      "validator": "scripts/validate_communication_job_delivery_review.py",
+      "comparator_or_summarizer": "scripts/compare_communication_job_delivery_reviews.py",
+      "action": "Review 36 queued samples; record missingness and identity limits.",
+      "claim_boundary": "This is a stratified queue for manual delivery and setting observation. It does not itself contain vocal, nonverbal, editing, room, speaker-intent or effectiveness findings. Derived features are proxies and raw-media absence remains visible."
+    },
+    {
+      "gate_id": "counterexamples",
+      "title": "Counterexamples, confounds and misuse limits",
+      "status": "template_not_completed",
+      "item_count": 90,
+      "source": "research/communication-job-counterexample-workbook.json",
+      "form": "writeups/communication-job-counterexample-workbook.html",
+      "validator": "scripts/validate_communication_job_counterexample_review.py",
+      "comparator_or_summarizer": "scripts/summarize_communication_job_counterexamples.py",
+      "action": "Review 90 slots; no candidate is preferable to a forced example.",
+      "claim_boundary": "This workbook collects counterexamples, alternate functions, confounds and misuse limits for provisional transcript-derived practice hypotheses. Blank slots are not evidence. Completed records do not establish delivery effectiveness, speaker intent, audience outcomes, causality or universal best practice."
+    },
+    {
+      "gate_id": "learner",
+      "title": "Learner teachability observations",
+      "status": "protocol_drafted_not_run",
+      "item_count": 72,
+      "source": "research/communication-job-learner-check.json",
+      "form": "writeups/communication-job-learner-check.html",
+      "validator": "scripts/validate_communication_job_learner_record.py",
+      "comparator_or_summarizer": "scripts/summarize_communication_job_learner_records.py",
+      "action": "Run the consented 18-job learner protocol; do not call it effectiveness evidence.",
+      "claim_boundary": "This protocol tests teachability and usability of draft cards. It does not establish that a speech form improves trust, memory, persuasion, engagement, delivery, listener outcomes or action."
+    },
+    {
+      "gate_id": "listener_stimuli",
+      "title": "Matched listener stimulus suitability",
+      "status": "manual_equivalence_review_pending",
+      "item_count": 18,
+      "source": "research/communication-job-listener-stimulus-review-workbook.json",
+      "form": "writeups/communication-job-listener-stimulus-review-workbook.html",
+      "validator": "scripts/validate_listener_stimulus_review.py",
+      "comparator_or_summarizer": "scripts/compare_listener_stimulus_reviews.py",
+      "action": "Review 18 matched pairs for equivalence, accessibility, safety and blinding before locking.",
+      "claim_boundary": "This workbook checks whether newly authored matched stimulus pairs are suitable for a blinded listener study. It does not establish that a communication pattern works, improves understanding, or causes any listener outcome."
+    },
+    {
+      "gate_id": "listener_outcomes",
+      "title": "Blinded listener comprehension/recall",
+      "status": "design_complete_not_run",
+      "item_count": 18,
+      "source": "research/communication-job-listener-outcome-protocol.json",
+      "form": "writeups/communication-job-listener-record.html",
+      "validator": "scripts/validate_communication_job_listener_record.py",
+      "comparator_or_summarizer": "scripts/summarize_communication_job_listener_records.py",
+      "action": "Run only after stimuli are independently reviewed and locked.",
+      "claim_boundary": "A result can show differences in the measured task for the authored stimuli and tested population. It cannot establish that a celebrity's delivery or a speech form causes trust, long-term memory, persuasion, engagement or action generally."
+    }
+  ]
+}

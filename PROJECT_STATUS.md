@@ -180,6 +180,9 @@ The [reproducibility manifest](research/reproducibility-manifest.json) hashes
 20 authoritative artifacts and records 395 full-context reviews, 102,816
 inspected captions and 395 inventory videos; its validator detects stale output
 without changing the incomplete research status.
+The [external review gate index](writeups/external-review-gate-index.md) is the
+single operational routing page for the ten remaining independent-review,
+learner and listener operations.
 
 The atlas also now exposes a separate 187-item [candidate speech-function
 independent-review workbook](research/corpus-function-independent-review-workbook.json)
