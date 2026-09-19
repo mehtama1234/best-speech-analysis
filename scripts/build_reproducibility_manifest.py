@@ -90,10 +90,12 @@ ARTIFACTS = [
     ("scripts/build_delivery_interval_frame_audit.py", "three-frame delivery interval audit builder"),
     ("scripts/build_delivery_timing_candidates.py", "proxy vocal timing candidate builder"),
     ("scripts/build_full_corpus_timing_candidate_atlas.py", "full local feature timing candidate atlas builder"),
+    ("scripts/validate_timing_candidate_reviews.py", "full local timing review export validator"),
     ("scripts/analyze_visual_movement.py", "face and scene movement proxy analyzer"),
     ("writeups/communication-job-delivery-interval-frame-audit.md", "three-frame delivery interval audit report"),
     ("writeups/communication-job-delivery-timing-candidates.md", "proxy vocal timing candidate report"),
     ("writeups/full-corpus-timing-candidate-atlas.md", "full local feature timing candidate report"),
+    ("writeups/full-corpus-timing-candidate-atlas.html", "searchable full local timing candidate surface"),
     ("writeups/visual-movement-analysis.md", "full local face and scene movement proxy report"),
 ]
 

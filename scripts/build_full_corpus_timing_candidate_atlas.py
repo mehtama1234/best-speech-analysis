@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import json
+import html
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -12,6 +13,7 @@ QUEUE = ROOT / "research/full-reading-queue.json"
 FEATURE_DIR = ROOT / "data/features"
 OUT = ROOT / "research/full-corpus-timing-candidate-atlas.json"
 MD = ROOT / "writeups/full-corpus-timing-candidate-atlas.md"
+HTML = ROOT / "writeups/full-corpus-timing-candidate-atlas.html"
 
 
 def main() -> int:
@@ -103,6 +105,23 @@ def main() -> int:
         lines.append(f"| `{reason}` | {reasons[reason]} | {raw_counts[raw_key]} |")
     lines += ["", "## Review rule", "", "Open the linked source interval and inspect the complete captioned unit. Decide whether the boundary or density comes from speech, silence, an edit, music, a turn change, caption segmentation or missing data. Preserve `indeterminate` when the source cannot establish the cause. The atlas is a navigation surface, not a best-practice ranking.", ""]
     MD.write_text("\n".join(lines))
+    cards = []
+    for row in candidates:
+        cards.append(
+            "<article class='card' data-reason='{}' data-video='{}' data-search='{}'>"
+            "<h2>{}</h2><p><a target='_blank' rel='noreferrer' href='{}'>Open source at timestamp</a> · <code>{}</code></p>"
+            "<p class='excerpt'>{}</p><p class='metrics'>reason: <code>{}</code> · W/s: {} · gap before: {} · gap after: {} · RMS: {}</p>"
+            "<button type='button' class='review-button'>Review locally</button></article>".format(
+                html.escape(row["candidate_reason"]), html.escape(row["video_id"]),
+                html.escape((row["title"] + " " + row["video_id"] + " " + row["candidate_reason"] + " " + row["text"]).lower()),
+                html.escape(row["title"]), html.escape(row["source_url"]), html.escape(row["evidence_id"]),
+                html.escape(row["text"]), html.escape(row["candidate_reason"]), row["words_per_second_proxy"],
+                row["transcript_gap_before_seconds"], row["transcript_gap_after_seconds"], row["mean_rms_db"],
+            )
+        )
+    jobs = sorted({row["candidate_reason"] for row in candidates})
+    html_page = """<!doctype html><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>Full-corpus timing candidate atlas</title><style>body{font:15px/1.45 system-ui,sans-serif;max-width:1180px;margin:2rem auto;padding:0 1rem;color:#17202a}input,select,textarea,button{font:inherit;padding:.6rem;margin:.3rem .5rem .7rem 0}input{width:min(620px,100%)}textarea{width:min(800px,100%);min-height:4rem;display:block}.notice{background:#fff4ce;border-left:4px solid #b8860b;padding:.8rem}.review{border:2px solid #426b8a;border-radius:8px;padding:1rem;margin:1rem 0;background:#f4f8fb}.card{border:1px solid #ccd3da;border-radius:8px;padding:1rem;margin:1rem 0}.card h2{font-size:1rem;margin:.1rem 0 .4rem}.excerpt{color:#36454f}.metrics{font-family:ui-monospace,monospace;font-size:.86rem}code{overflow-wrap:anywhere}</style><main><h1>Full-corpus timing candidate atlas</h1><div class='notice'><strong>Review queue, not a score.</strong> These records are transcript/audio proxy candidates across locally aligned videos. A gap may be speech, editing, music, a turn, caption segmentation or missing data. Reviews stay in this browser's local storage until exported; nothing is uploaded. Validate exports with <code>scripts/validate_timing_candidate_reviews.py</code>.</div><p id='count' aria-live='polite'></p><label>Reason <select id='reason'><option value=''>All reasons</option></select></label><label>Search <input id='search' type='search' placeholder='video, title, evidence or wording'></label><section id='review' class='review' hidden><h2>Local timing review</h2><p id='selected'></p><label>Reviewer code <input id='reviewer' autocomplete='off'></label><label>Transcript/audio alignment <select id='alignment'><option value='not_reviewed'>not reviewed</option><option value='clear'>clear</option><option value='partial'>partial</option><option value='misaligned'>misaligned</option></select></label><label>Observed cause <select id='cause'><option value='not_reviewed'>not reviewed</option><option value='speech_pause_or_boundary'>speech pause or boundary</option><option value='editing_or_cut'>editing or cut</option><option value='music_or_ambience'>music or ambience</option><option value='turn_or_response'>turn or response</option><option value='caption_segmentation'>caption segmentation</option><option value='missing_or_unclear'>missing or unclear</option></select></label><label>Observation / uncertainty<textarea id='observation'></textarea></label><label>Accessibility or modality note<textarea id='accessibility'></textarea></label><button id='save' type='button'>Save local review</button> <button id='export' type='button'>Export local reviews</button> <span id='saved' aria-live='polite'></span></section><section id='cards'>""" + "\n".join(cards) + """</section></main><script>const cards=[...document.querySelectorAll('.card')],reason=document.querySelector('#reason'),search=document.querySelector('#search'),count=document.querySelector('#count'),review=document.querySelector('#review'),selected=document.querySelector('#selected'),saved=document.querySelector('#saved');let current=null;const fields=['reviewer','alignment','cause','observation','accessibility'];let reviews=JSON.parse(localStorage.getItem('full_corpus_timing_reviews')||'{}');const reasons=[...new Set(cards.map(x=>x.dataset.reason))].sort();reasons.forEach(x=>{let o=document.createElement('option');o.value=x;o.textContent=x;reason.append(o)});function filter(){let q=search.value.toLowerCase(),r=reason.value,n=0;cards.forEach(x=>{let ok=(!r||x.dataset.reason===r)&&(!q||x.dataset.search.includes(q));x.hidden=!ok;if(ok)n++});count.textContent=`Showing ${n} of ${cards.length} timing candidates`}function openReview(card){current=card;review.hidden=false;selected.textContent=card.querySelector('h2').innerText+' — '+card.dataset.video+' — '+card.querySelector('code').innerText;let old=reviews[card.querySelector('code').innerText]||{};fields.forEach(id=>{document.querySelector('#'+id).value=old[id]||document.querySelector('#'+id).value});saved.textContent=reviews[card.querySelector('code').innerText]?'Existing local review loaded.':'';review.scrollIntoView({behavior:'smooth',block:'start'})}cards.forEach(card=>card.querySelector('.review-button').onclick=()=>openReview(card));document.querySelector('#save').onclick=()=>{if(!current)return;let id=current.querySelector('code').innerText,row={candidate_id:id,updated_at:new Date().toISOString()};fields.forEach(x=>row[x]=document.querySelector('#'+x).value);reviews[id]=row;localStorage.setItem('full_corpus_timing_reviews',JSON.stringify(reviews));saved.textContent=`Saved ${Object.keys(reviews).length} local review(s).`};document.querySelector('#export').onclick=()=>{let blob=new Blob([JSON.stringify(Object.values(reviews),null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='full-corpus-timing-reviews.json';a.click();URL.revokeObjectURL(a.href)};reason.onchange=filter;search.oninput=filter;filter()</script>"""
+    HTML.write_text(html_page)
     print(json.dumps({"output": str(OUT.relative_to(ROOT)), "aligned_videos": aligned_video_count, "aligned_segments": aligned_segment_count, "candidate_records": len(candidates), "candidate_videos": report["coverage"]["candidate_video_count"]}, indent=2))
     return 0
 
