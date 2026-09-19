@@ -111,6 +111,9 @@ records and listener records, with uncertainty and missing validation visible.
 It also carries counterexample observations; the blank [counterexample
 workbook](writeups/communication-job-counterexample-workbook.html) requires
 five limitation checks for each of the 18 provisional jobs.
+The [counterexample candidate queue](writeups/communication-job-counterexample-candidate-queue.md)
+routes all 90 checks, including 54 source-linked candidates, while keeping
+confirmed counterexamples at zero until independent review.
 The validator requires source fields for confirmed or candidate entries while
 allowing honest `no_candidate_found` decisions; the
 [summarizer](scripts/summarize_communication_job_counterexamples.py) preserves

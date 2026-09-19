@@ -35,6 +35,7 @@ ARTIFACTS = [
     ("research/shared-provisional-curriculum.json", "shared 18-job web curriculum index"),
     ("research/shared-lesson-cards.json", "shared 18-job web/mobile lesson cards"),
     ("research/communication-job-delivery-internal-observations.json", "internal midpoint-frame delivery observations"),
+    ("research/communication-job-counterexample-candidate-queue.json", "counterexample candidate routing queue"),
 ]
 
 

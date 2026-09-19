@@ -93,12 +93,17 @@ It now includes a counterexample-observation entity and a blank 90-slot
 [counterexample workbook](research/communication-job-counterexample-workbook.json):
 five required limitation checks for each of the 18 provisional jobs. No slot
 has been independently completed.
+The [counterexample candidate queue](writeups/communication-job-counterexample-candidate-queue.md)
+routes all 90 checks, including 54 source-linked inspection targets, while
+keeping confirmed counterexamples at 0. Candidate routing is not evidence and
+must be accepted, rejected, replaced or marked `no_candidate_found` by an
+independent reviewer.
 Its validator now requires source fields for confirmed or candidate entries,
 while the [summarizer](scripts/summarize_communication_job_counterexamples.py)
 preserves `no_candidate_found` decisions and status counts without promoting
 them to outcome evidence.
 The [pattern-admission reconciliation](writeups/pattern-admission-reconciliation.md)
-now distinguishes the legacy five contextual threshold passes from the eight
+now distinguishes the legacy five contextual threshold passes from the 18
 shared draft cards; neither count represents independent validation.
 
 The [corpus transcript-derived lesson inventory](writeups/corpus-lesson-index.md)

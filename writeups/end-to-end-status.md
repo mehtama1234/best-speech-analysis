@@ -21,6 +21,7 @@ This dashboard reports artifact and validation status. It does not convert trans
 | Delivery evidence index | `delivery_evidence_reconciled_independent_review_pending` | 21 internal / 0 independent observations |
 | Shared evidence model | `contract_ready_research_evidence_incomplete` | 11 entity types / web-mobile contract |
 | Counterexample library | `template_not_completed` | 18 jobs / 90 required slots / 0 completed |
+| Counterexample candidate queue | `candidate_queue_not_independently_reviewed` | 90 routed / 54 source-linked / 0 confirmed |
 | Cross-job comparison | `transcript_video_level_comparison_not_independently_validated` | 18 jobs / 153 pairs / 394 eligible videos |
 | Communication-job delivery sampling | `queue_built_manual_observation_pending` | 18 jobs / 36 samples / 32 raw A/V / 0 observations |
 | Internal midpoint-frame delivery observations | `internal_midpoint_frame_observations_complete_independent_review_pending` | 32 raw A/V frames / not independent / manual vocal listening not performed |

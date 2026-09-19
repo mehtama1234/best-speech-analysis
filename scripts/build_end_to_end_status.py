@@ -30,6 +30,7 @@ def main() -> int:
     delivery_index = load("research/delivery-evidence-index.json")
     evidence_model = load("research/shared-evidence-model.json")
     counterexamples = load("research/communication-job-counterexample-workbook.json")
+    counterexample_candidates = load("research/communication-job-counterexample-candidate-queue.json")
     cross_comparison = load("research/communication-job-cross-comparison.json")
     delivery_sampling = load("research/communication-job-delivery-sampling.json")
     delivery_internal = load("research/communication-job-delivery-internal-observations.json")
@@ -67,6 +68,7 @@ def main() -> int:
             "research/delivery-evidence-index.json",
             "research/shared-evidence-model.json",
             "research/communication-job-counterexample-workbook.json",
+            "research/communication-job-counterexample-candidate-queue.json",
             "research/communication-job-cross-comparison.json",
             "research/communication-job-delivery-sampling.json",
             "research/communication-job-delivery-internal-observations.json",
@@ -96,6 +98,7 @@ def main() -> int:
             "delivery_evidence_index": {"status": delivery_index["status"], "selected_video_count": delivery_index["coverage"]["selected_video_count"], "internal_observation_count": delivery_index["coverage"]["internal_manual_observation_count"], "independent_observation_count": delivery_index["coverage"]["independent_review_count"], "source": "research/delivery-evidence-index.json"},
             "shared_evidence_model": {"status": evidence_model["status"], "entity_type_count": len(evidence_model["entity_types"]), "source": "research/shared-evidence-model.json"},
             "counterexample_library": {"status": counterexamples["status"], "job_count": counterexamples["job_count"], "queued_slot_count": counterexamples["item_count"], "completed_independent_reviews": 0, "source": "research/communication-job-counterexample-workbook.json"},
+            "counterexample_candidate_queue": {"status": counterexample_candidates["status"], "candidate_count": counterexample_candidates["candidate_count"], "source_linked_candidate_count": counterexample_candidates["source_linked_candidate_count"], "confirmed_counterexample_count": counterexample_candidates["confirmed_counterexample_count"], "source": "research/communication-job-counterexample-candidate-queue.json"},
             "cross_job_comparison": {"status": cross_comparison["status"], "job_count": cross_comparison["job_count"], "pair_count": cross_comparison["pair_count"], "eligible_video_denominator": cross_comparison["video_denominator"], "source": "research/communication-job-cross-comparison.json"},
             "communication_job_delivery_sampling": {"status": delivery_sampling["status"], "job_count": delivery_sampling["job_count"], "queued_sample_count": delivery_sampling["item_count"], "raw_audio_video_sample_count": delivery_sampling["coverage_summary"]["raw_audio_video_items"], "completed_manual_observations": delivery_sampling["coverage_summary"]["manual_observations_completed"], "source": "research/communication-job-delivery-sampling.json"},
             "communication_job_delivery_internal_observations": {"status": delivery_internal["status"], "raw_audio_video_samples": delivery_internal["item_count"], "independence": "not_independent", "manual_vocal_listening": "not_performed", "source": "research/communication-job-delivery-internal-observations.json"},
@@ -147,6 +150,7 @@ def main() -> int:
         f"| Delivery evidence index | `{delivery_index['status']}` | {delivery_index['coverage']['internal_manual_observation_count']} internal / {delivery_index['coverage']['independent_review_count']} independent observations |",
         f"| Shared evidence model | `{evidence_model['status']}` | {len(evidence_model['entity_types'])} entity types / web-mobile contract |",
         f"| Counterexample library | `{counterexamples['status']}` | {counterexamples['job_count']} jobs / {counterexamples['item_count']} required slots / 0 completed |",
+        f"| Counterexample candidate queue | `{counterexample_candidates['status']}` | {counterexample_candidates['candidate_count']} routed / {counterexample_candidates['source_linked_candidate_count']} source-linked / 0 confirmed |",
         f"| Cross-job comparison | `{cross_comparison['status']}` | {cross_comparison['job_count']} jobs / {cross_comparison['pair_count']} pairs / {cross_comparison['video_denominator']} eligible videos |",
         f"| Communication-job delivery sampling | `{delivery_sampling['status']}` | {delivery_sampling['job_count']} jobs / {delivery_sampling['item_count']} samples / {delivery_sampling['coverage_summary']['raw_audio_video_items']} raw A/V / 0 observations |",
         f"| Internal midpoint-frame delivery observations | `{delivery_internal['status']}` | {delivery_internal['item_count']} raw A/V frames / not independent / manual vocal listening not performed |",
