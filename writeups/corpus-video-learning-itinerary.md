@@ -4,7 +4,7 @@ Status: **one selected starting lesson per reviewed video; transcript-derived an
 
 This itinerary gives one practical starting lesson for each reviewed video. It does not claim that the selected item is the most important, representative, recurrent, effective or independently verified lesson from that video.
 
-Phrase handles: **555** across **189** entries. Learning tracks: **207** canonical-job lessons · **31** structural-bridge lessons · **157** transcript-exploration leads. These are exact inventory retrieval candidates, not scripts or proof of effectiveness.
+Phrase handles: **555** across **189** entries. Learning tracks: **207** canonical-job lessons · **31** structural-bridge lessons · **157** transcript-exploration leads. Note sources: **207** canonical cards · **31** structural cards · **157** corpus relations · **0** fallback prompts. These are exact inventory retrieval candidates, not scripts or proof of effectiveness.
 Entries: **395 videos** · exact evidence attached: **395** · sequence bridge attached: **395** · local delivery proxy attached: **357** · pose proxy attached: **357**.
 
 Use one entry as a short lesson: read the evidence, name the move, inspect any exact phrase handle, adapt the form, practice it in a new situation, then run the self-check. Phrase handles are retrieval candidates, not scripts or proof of effectiveness. Open the linked card inventory for alternate functions and the full writeup for limits. Delivery fields are inspection aids, not recommendations.
