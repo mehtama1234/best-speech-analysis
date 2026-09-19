@@ -212,10 +212,11 @@ When raw media exists, inspect rather than imitate:
 RMS, pitch, speech activity, spectral values and frame detectors are navigation
 proxies. A midpoint frame cannot prove emotion, confidence, intention, gesture
 meaning, audience response or effectiveness. The fixed corpus currently has
-395 transcript reviews, while local media availability is separate: 31 raw
-A/V items, 6 derived-feature-only items and 358 transcript-only items. The
-36-sample delivery queue is an inspection route, not a validated nonverbal
-library.
+395 transcript reviews, while local media availability is separate: 353 raw
+A/V items, 5 derived-feature-only items, 36 transcript-only items and 1
+video-only item. The recovery queue is an inspection route, not a validated
+nonverbal library; local files and derived proxies do not prove identity,
+alignment, delivery meaning or effectiveness.
 
 ## The learner practice loop
 
