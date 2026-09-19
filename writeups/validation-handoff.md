@@ -34,6 +34,10 @@ summary is written.
 Its tasks now expose exact phrase forms for eight indexed job families and
 preserve an explicit no-direct-match status for the other ten; this is a
 curriculum link, not evidence that any phrase works.
+The [integrated curriculum browser](communication-job-curriculum.html) is the
+current web learning surface for all 18 jobs. It is provisional and should be
+used to inspect the evidence chain and open the pending gates, not to present
+the cards as proven best practices.
 The [18-job listener protocol](communication-job-listener-outcome-protocol.md)
 remains a separate outcome gate; it cannot start until matched stimuli are
 independently reviewed, pretested and locked. The current [draft stimulus

@@ -36,6 +36,7 @@ def validate(report: dict) -> list[str]:
     delivery_sampling = read("research/communication-job-delivery-sampling.json")
     identity_review = read("research/corpus-identity-review-workbook.json")
     delivery_measurements = read("research/communication-job-delivery-measurement-preflight.json")
+    curriculum_index = read("research/communication-job-curriculum-index.json")
     media = read("research/multimodal-coverage-audit.json")
     functions = read("research/corpus-function-independent-review-workbook.json")
     recurrence = read("research/corpus-recurrence-independent-review-workbook.json")
@@ -89,6 +90,7 @@ def validate(report: dict) -> list[str]:
         ("delivery_measurement_preflight", "sample_count"): delivery_measurements["item_count"],
         ("delivery_measurement_preflight", "matched_sample_count"): delivery_measurements["matched_sample_count"],
         ("delivery_measurement_preflight", "unmatched_sample_count"): delivery_measurements["unmatched_sample_count"],
+        ("communication_job_curriculum", "lesson_count"): curriculum_index["lesson_count"],
         ("speech_function_candidate_review", "queued_item_count"): functions["item_count"],
         ("recurrence_candidate_review", "queued_item_count"): recurrence["item_count"],
         ("delivery_evidence", "selected_video_count"): media["selected_video_count"],

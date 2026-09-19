@@ -112,6 +112,10 @@ but has zero learner records and cannot be treated as learning evidence.
 Its recognition and explanation tasks now link the 50-form exact inventory
 where an indexed family matches; the other ten jobs explicitly remain without
 a direct exact-form match rather than receiving invented phrases.
+The integrated [18-job curriculum browser](writeups/communication-job-curriculum.html)
+now joins each job's problem, mechanism hypothesis, repeatable form, exact
+examples, delivery queue/measurements, counterexample slots, practice,
+learner tasks and listener protocol in one provisional surface.
 
 The [18-job listener-outcome protocol](writeups/communication-job-listener-outcome-protocol.md)
 defines matched control/pattern-informed stimuli, six comprehension/recall

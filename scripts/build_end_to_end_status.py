@@ -34,6 +34,7 @@ def main() -> int:
     delivery_sampling = load("research/communication-job-delivery-sampling.json")
     identity_review = load("research/corpus-identity-review-workbook.json")
     delivery_measurements = load("research/communication-job-delivery-measurement-preflight.json")
+    curriculum_index = load("research/communication-job-curriculum-index.json")
     media = load("research/multimodal-coverage-audit.json")
     media_independent = load("research/multimodal-independent-review-workbook.json")
     recurrence = load("research/corpus-recurrence-independent-review-workbook.json")
@@ -67,6 +68,7 @@ def main() -> int:
             "research/communication-job-delivery-sampling.json",
             "research/corpus-identity-review-workbook.json",
             "research/communication-job-delivery-measurement-preflight.json",
+            "research/communication-job-curriculum-index.json",
             "research/shared-lesson-cards.json", "research/shared-learner-check.json",
             "research/listener-outcome-protocol.json", "research/raw-media-only-visual-audit.json",
         ],
@@ -92,6 +94,7 @@ def main() -> int:
             "communication_job_delivery_sampling": {"status": delivery_sampling["status"], "job_count": delivery_sampling["job_count"], "queued_sample_count": delivery_sampling["item_count"], "raw_audio_video_sample_count": delivery_sampling["coverage_summary"]["raw_audio_video_items"], "completed_manual_observations": delivery_sampling["coverage_summary"]["manual_observations_completed"], "source": "research/communication-job-delivery-sampling.json"},
             "corpus_identity_review": {"status": identity_review["status"], "queued_item_count": identity_review["item_count"], "registry_row_count": identity_review["registry_row_count"], "completed_independent_reviews": 0, "source": "research/corpus-identity-review-workbook.json"},
             "delivery_measurement_preflight": {"status": delivery_measurements["status"], "sample_count": delivery_measurements["item_count"], "matched_sample_count": delivery_measurements["matched_sample_count"], "unmatched_sample_count": delivery_measurements["unmatched_sample_count"], "source": "research/communication-job-delivery-measurement-preflight.json"},
+            "communication_job_curriculum": {"status": curriculum_index["status"], "lesson_count": curriculum_index["lesson_count"], "source": "research/communication-job-curriculum-index.json"},
             "speech_function_candidate_review": {"status": functions["status"], "queued_item_count": functions["item_count"], "completed_independent_reviews": 0, "source": "research/corpus-function-independent-review-workbook.json"},
             "recurrence_candidate_review": {"status": recurrence["status"], "queued_item_count": recurrence["item_count"], "completed_independent_reviews": 0, "source": "research/corpus-recurrence-independent-review-workbook.json"},
             "delivery_evidence": {"status": media["status"], "selected_video_count": media["selected_video_count"], "raw_audio_video_present": media["raw_audio_video_present_count"], "raw_audio_video_with_transcript": media["raw_audio_video_with_transcript_count"], "raw_audio_video_without_transcript": media["raw_audio_video_without_transcript_count"], "internal_manual_reviews": media["internal_manual_review_count"], "raw_only_visual_audit_items": raw_only_visual["item_count"], "raw_only_visual_audit_status": raw_only_visual["status"], "independent_review_items": media_independent["item_count"], "completed_independent_reviews": 0, "source": "research/multimodal-coverage-audit.json"},
@@ -139,6 +142,7 @@ def main() -> int:
         f"| Communication-job delivery sampling | `{delivery_sampling['status']}` | {delivery_sampling['job_count']} jobs / {delivery_sampling['item_count']} samples / {delivery_sampling['coverage_summary']['raw_audio_video_items']} raw A/V / 0 observations |",
         f"| Corpus identity review | `{identity_review['status']}` | {identity_review['item_count']} queue items / {identity_review['registry_row_count']} registry rows / 0 completed |",
         f"| Delivery measurement preflight | `{delivery_measurements['status']}` | {delivery_measurements['item_count']} samples / {delivery_measurements['matched_sample_count']} aligned / {delivery_measurements['unmatched_sample_count']} unmatched |",
+        f"| Communication-job curriculum | `{curriculum_index['status']}` | {curriculum_index['lesson_count']} integrated provisional lessons |",
         f"| Function review | `{functions['status']}` | {functions['item_count']} queued / 0 completed |",
         f"| Recurrence review | `{recurrence['status']}` | {recurrence['item_count']} queued / 0 completed |",
         f"| Delivery evidence | `{media['status']}` | {media['raw_audio_video_present_count']} raw-complete ({media['raw_audio_video_without_transcript_count']} without transcript) / {media['internal_manual_review_count']} internal reviewed |",

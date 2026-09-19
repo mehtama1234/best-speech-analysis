@@ -48,6 +48,9 @@ provides 72 fixed teachability tasks; it is an unrun instrument, not learner
 evidence.
 It links the 50-form exact phrase inventory to eight matching job families and
 marks the other ten jobs as lacking a direct indexed family.
+The [integrated 18-job curriculum](writeups/communication-job-curriculum.html)
+puts examples, delivery measurements, counterexample queues, practice and
+learner/listener gates together without hiding missing validation.
 The [18-job listener protocol](writeups/communication-job-listener-outcome-protocol.md)
 separately defines matched controls, comprehension/recall measures and blinded
 scoring. Its [draft stimulus bank](writeups/communication-job-listener-stimuli-draft.md)

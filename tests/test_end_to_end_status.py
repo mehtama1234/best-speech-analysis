@@ -42,6 +42,7 @@ class EndToEndStatusTests(unittest.TestCase):
         self.assertEqual(self.status["stages"]["corpus_identity_review"]["completed_independent_reviews"], 0)
         self.assertEqual(self.status["stages"]["delivery_measurement_preflight"]["sample_count"], 36)
         self.assertEqual(self.status["stages"]["delivery_measurement_preflight"]["matched_sample_count"], 32)
+        self.assertEqual(self.status["stages"]["communication_job_curriculum"]["lesson_count"], 18)
         self.assertEqual(self.status["stages"]["speech_function_candidate_review"]["completed_independent_reviews"], 0)
         self.assertEqual(self.status["stages"]["learner_check"]["completed_records"], 0)
         self.assertEqual(self.status["stages"]["listener_outcomes"]["completed_records"], 0)
