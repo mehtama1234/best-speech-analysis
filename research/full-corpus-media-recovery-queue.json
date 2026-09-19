@@ -8,21 +8,21 @@
     "data/media-status.jsonl",
     "data/full-corpus-media-recovery.jsonl"
   ],
-  "item_count": 337,
+  "item_count": 331,
   "counts": {
     "by_priority": {
       "feature_backed_next_candidate": 6,
-      "fixed_corpus_transcript_only": 331
+      "fixed_corpus_transcript_only": 325
     },
     "by_media_state": {
       "derived_features_only": 6,
-      "transcript_only_no_local_media": 329,
-      "video_only": 2
+      "transcript_only_no_local_media": 324,
+      "video_only": 1
     },
     "by_video_status": {
-      "downloaded": 2,
-      "failed:1": 7,
-      "not_attempted": 328
+      "downloaded": 1,
+      "failed:1": 9,
+      "not_attempted": 321
     }
   },
   "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
@@ -304,18 +304,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "2ZTdqh-a0tU",
-      "title": "The Jerk - This is all I need",
-      "source_url": "https://www.youtube.com/watch?v=2ZTdqh-a0tU",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "2mqQMA7CSLQ",
       "title": "Donald Trump’s Never Give Up Message",
       "source_url": "https://www.youtube.com/watch?v=2mqQMA7CSLQ",
@@ -583,18 +571,6 @@
       "video_id": "69vFAHLkAlI",
       "title": "ENGLISH SPEECH | MOTHER TERESA: Nobel Peace Prize Speech (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=69vFAHLkAlI",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "6PNDD5Xy5DU",
-      "title": "ENGLISH SPEECH | AYRTON SENNA: The Unstoppable Legend (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=6PNDD5Xy5DU",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -2476,18 +2452,6 @@
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
-      "video_id": "d4mrO13trBY",
-      "title": "ENGLISH SPEECH | PREITY ZINTA: Women's Empowerment (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=d4mrO13trBY",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
       "video_id": "dTHloCrFB90",
       "title": "ENGLISH SPEECH | IVANKA TRUMP: What Do We Stand For? (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=dTHloCrFB90",
@@ -2673,10 +2637,10 @@
       "source_url": "https://www.youtube.com/watch?v=fpK36FZmTFY",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -2695,18 +2659,6 @@
       "video_id": "g3xLEDJeU2E",
       "title": "ENGLISH SPEECH | NICOLE KIDMAN: Be Curious (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=g3xLEDJeU2E",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "gQzZkTRhp0U",
-      "title": "ENGLISH SPEECH | NARAYANA MURTHY: Transforming India (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=gQzZkTRhp0U",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -2755,18 +2707,6 @@
       "video_id": "gludYD91cGA",
       "title": "ENGLISH SPEECH | ANANT & RADHIKA: Emotional Pre-Wedding Speech (English Subtitles)",
       "source_url": "https://www.youtube.com/watch?v=gludYD91cGA",
-      "media_state": "transcript_only_no_local_media",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "h4vlcM-5X1E",
-      "title": "ENGLISH SPEECH | JACQUELINE FERNANDEZ: Jacqueline Builds (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=h4vlcM-5X1E",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
       "video_download_status": "not_attempted",
@@ -2877,10 +2817,10 @@
       "source_url": "https://www.youtube.com/watch?v=ipGmWHe24Is",
       "media_state": "transcript_only_no_local_media",
       "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "not_attempted",
-      "audio_download_status": "not_attempted",
+      "video_download_status": "failed:1",
+      "audio_download_status": "failed:1",
       "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "not_attempted",
+      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
@@ -2965,18 +2905,6 @@
       "audio_download_status": "not_attempted",
       "transcript_review_status": "full_context_reviewed",
       "recovery_decision": "not_attempted",
-      "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
-    },
-    {
-      "video_id": "kM8HJPbFnJg",
-      "title": "ENGLISH SPEECH | JK ROWLING: The Benefits Of Failure (English Subtitles)",
-      "source_url": "https://www.youtube.com/watch?v=kM8HJPbFnJg",
-      "media_state": "video_only",
-      "priority": "fixed_corpus_transcript_only",
-      "video_download_status": "downloaded",
-      "audio_download_status": "failed:1",
-      "transcript_review_status": "full_context_reviewed",
-      "recovery_decision": "review_existing_attempt_or_retry_safely",
       "claim_boundary": "Recovery routing only; a downloaded file requires identity, alignment, delivery and safety review before use as evidence."
     },
     {
