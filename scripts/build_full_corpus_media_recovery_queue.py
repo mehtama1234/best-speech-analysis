@@ -12,6 +12,7 @@ ROOT = Path(__file__).resolve().parents[1]
 COVERAGE = ROOT / "research/full-corpus-media-coverage.json"
 DELIVERY = ROOT / "research/communication-job-delivery-sampling.json"
 LEDGER = ROOT / "data/media-status.jsonl"
+RECOVERY_LEDGER = ROOT / "data/full-corpus-media-recovery.jsonl"
 OUT = ROOT / "research/full-corpus-media-recovery-queue.json"
 MD = ROOT / "writeups/full-corpus-media-recovery-queue.md"
 
@@ -20,11 +21,12 @@ def main() -> int:
     coverage = json.loads(COVERAGE.read_text())
     delivery = json.loads(DELIVERY.read_text())
     ledger = {}
-    if LEDGER.exists():
-        for line in LEDGER.read_text().splitlines():
-            if line.strip():
-                row = json.loads(line)
-                ledger[row["video_id"]] = row
+    for ledger_path in (LEDGER, RECOVERY_LEDGER):
+        if ledger_path.exists():
+            for line in ledger_path.read_text().splitlines():
+                if line.strip():
+                    row = json.loads(line)
+                    ledger[row["video_id"]] = row
     delivery_ids = {item["video_id"] for item in delivery["items"]}
     rows = []
     for video in coverage["videos"]:
@@ -58,7 +60,7 @@ def main() -> int:
         "status": "recovery_routing_not_media_validation",
         "source_coverage": str(COVERAGE.relative_to(ROOT)),
         "source_delivery_queue": str(DELIVERY.relative_to(ROOT)),
-        "source_download_ledger": str(LEDGER.relative_to(ROOT)),
+        "source_download_ledger": [str(LEDGER.relative_to(ROOT)), str(RECOVERY_LEDGER.relative_to(ROOT))],
         "item_count": len(rows),
         "counts": {"by_priority": dict(sorted(Counter(row["priority"] for row in rows).items())), "by_media_state": dict(sorted(Counter(row["media_state"] for row in rows).items())), "by_video_status": dict(sorted(Counter(row["video_download_status"] for row in rows).items()))},
         "claim_boundary": "This queue identifies fixed-corpus videos without local raw A/V and preserves prior download outcomes. It does not prove availability, identity, alignment, delivery meaning or effectiveness, and it does not authorize bypassing access, licensing or platform restrictions.",
