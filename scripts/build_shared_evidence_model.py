@@ -46,7 +46,7 @@ def build(root: Path | None = None) -> dict:
             "mechanism_hypothesis": {"required": ["hypothesis_id", "text", "status", "alternative_explanations"]},
             "practice_task": {"required": ["task_id", "pattern_id", "phase", "prompt", "boundary"]},
             "learner_observation": {"required": ["record_id", "participant_code", "task_responses", "consent", "claim_boundary"]},
-            "listener_observation": {"required": ["record_id", "stimulus_id", "condition", "task_responses", "scorer_id_or_blind_code", "claim_boundary"]},
+            "listener_observation": {"required": ["record_id", "stimulus_id", "condition", "task_responses", "task_scores", "accessibility_issue", "scorer_id_or_blind_code", "claim_boundary"]},
             "counterexample_observation": {"required": ["counterexample_id", "pattern_id", "counterexample_type", "evidence_ids", "status", "alternative_explanation"]},
         },
         "status_vocabulary": {
@@ -62,6 +62,7 @@ def build(root: Path | None = None) -> dict:
             "Every mechanism hypothesis is marked as a hypothesis until an outcome protocol supports a narrower claim.",
             "Every practice task links to a pattern and carries a non-fit or safety boundary.",
             "Learner observations and listener observations remain separate entity types and separate claim levels.",
+            "Listener task scores remain separate from raw responses, agreement, liking and trust; missingness and accessibility issues are retained.",
             "Missing, disagreement and indeterminate statuses remain visible to clients.",
         ],
         "client_contract": {

@@ -43,7 +43,7 @@ def main() -> int:
     functions = load("research/corpus-function-independent-review-workbook.json")
     cards = load("research/shared-lesson-cards.json")
     learner = load("research/shared-learner-check.json")
-    listener = load("research/listener-outcome-protocol.json")
+    listener = load("research/communication-job-listener-outcome-protocol.json")
     raw_only_visual = load("research/raw-media-only-visual-audit.json")
 
     transcript_count = len(reviews["reviews"])
@@ -74,7 +74,7 @@ def main() -> int:
             "research/communication-job-mobile-lessons.json",
             "research/communication-job-listener-stimulus-review-workbook.json",
             "research/shared-lesson-cards.json", "research/shared-learner-check.json",
-            "research/listener-outcome-protocol.json", "research/raw-media-only-visual-audit.json",
+            "research/communication-job-listener-outcome-protocol.json", "research/raw-media-only-visual-audit.json",
         ],
         "status": "research_checkpoint_not_complete",
         "claim_boundary": "This dashboard reports artifact and validation status. It does not convert transcript coverage, internal review, generated instruments or passing tests into evidence of communication effectiveness.",
@@ -106,7 +106,7 @@ def main() -> int:
             "delivery_evidence": {"status": media["status"], "selected_video_count": media["selected_video_count"], "raw_audio_video_present": media["raw_audio_video_present_count"], "raw_audio_video_with_transcript": media["raw_audio_video_with_transcript_count"], "raw_audio_video_without_transcript": media["raw_audio_video_without_transcript_count"], "internal_manual_reviews": media["internal_manual_review_count"], "raw_only_visual_audit_items": raw_only_visual["item_count"], "raw_only_visual_audit_status": raw_only_visual["status"], "independent_review_items": media_independent["item_count"], "completed_independent_reviews": 0, "source": "research/multimodal-coverage-audit.json"},
             "shared_lessons": {"status": cards["status"], "draft_card_count": cards["card_count"], "promotion_ready_card_count": 0, "source": "research/shared-lesson-cards.json"},
             "learner_check": {"status": learner["status"], "task_count": learner["task_count"], "completed_records": 0, "source": "research/shared-learner-check.json"},
-            "listener_outcomes": {"status": listener["status"], "task_count": len(listener["listener_tasks"]), "completed_records": 0, "source": "research/listener-outcome-protocol.json"},
+            "listener_outcomes": {"status": listener["status"], "task_count": len(listener["listener_tasks"]), "stimulus_pairs_locked": listener["stimulus_pairs_locked"], "completed_records": 0, "source": "research/communication-job-listener-outcome-protocol.json"},
         },
         "next_required_gates": [
             "obtain independent transcript-function review exports and preserve disagreements",
@@ -156,7 +156,7 @@ def main() -> int:
         f"| Delivery evidence | `{media['status']}` | {media['raw_audio_video_present_count']} raw-complete ({media['raw_audio_video_without_transcript_count']} without transcript) / {media['internal_manual_review_count']} internal reviewed |",
         f"| Shared lessons | `{cards['status']}` | {cards['card_count']} drafts / 0 promotion-ready |",
         f"| Learner check | `{learner['status']}` | {learner['task_count']} tasks / 0 records |",
-        f"| Listener outcomes | `{listener['status']}` | {len(listener['listener_tasks'])} tasks / 0 records |",
+        f"| Listener outcomes | `{listener['status']}` | {len(listener['listener_tasks'])} tasks / stimuli locked: {listener['stimulus_pairs_locked']} / 0 records |",
         "", "## Required gates", "",
     ]
     lines.extend(f"- {gate}" for gate in report["next_required_gates"])

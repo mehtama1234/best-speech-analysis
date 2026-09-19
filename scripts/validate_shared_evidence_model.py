@@ -21,9 +21,9 @@ def validate(model: dict, current: dict | None = None) -> list[str]:
     errors = []
     if model.get("model_id") != "shared-communication-evidence-model": errors.append("model_id is invalid")
     if model.get("status") != "contract_ready_research_evidence_incomplete": errors.append("model must remain incomplete")
-    for name in ("source", "transcript_segment", "phrase_form", "function_observation", "delivery_observation", "pattern_card", "mechanism_hypothesis", "practice_task", "learner_observation", "listener_observation"):
+    for name in ("source", "transcript_segment", "phrase_form", "function_observation", "delivery_observation", "pattern_card", "mechanism_hypothesis", "practice_task", "learner_observation", "listener_observation", "counterexample_observation"):
         if name not in model.get("entity_types", {}): errors.append(f"missing entity type: {name}")
-    for rule in ("Every pattern example links", "Every delivery observation links", "Every mechanism hypothesis", "Every practice task links", "Learner observations and listener observations", "Missing, disagreement"):
+    for rule in ("Every pattern example links", "Every delivery observation links", "Every mechanism hypothesis", "Every practice task links", "Learner observations and listener observations", "Listener task scores", "Missing, disagreement"):
         if not any(rule in item for item in model.get("link_rules", [])): errors.append(f"missing link rule beginning: {rule}")
     if model.get("current_manifest") != current.get("current_manifest"): errors.append("current manifest is stale")
     return errors
