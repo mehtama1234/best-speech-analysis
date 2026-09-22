@@ -1,0 +1,114 @@
+{
+  "schema_version": "1.0",
+  "receipt_id": "autonomous-browser-smoke",
+  "status": "core_browser_smoke_passed",
+  "check_count": 17,
+  "passed_check_count": 17,
+  "failed_checks": [],
+  "checks": [
+    {
+      "script": "scripts/check_shared_curriculum_browser.py",
+      "return_code": 0,
+      "stdout": "shared curriculum browser smoke test: 18 cards, filters and mobile layout render",
+      "stderr": ""
+    },
+    {
+      "script": "scripts/check_communication_job_practice_browser.py",
+      "return_code": 0,
+      "stdout": "communication-job practice browser smoke test: 18-job selector, evidence/delivery view and local export render",
+      "stderr": ""
+    },
+    {
+      "script": "scripts/check_communication_job_learner_browser.py",
+      "return_code": 0,
+      "stdout": "communication-job learner browser smoke test: 18-card, 72-task form renders, exports and validates",
+      "stderr": ""
+    },
+    {
+      "script": "scripts/check_communication_job_listener_browser.py",
+      "return_code": 0,
+      "stdout": "communication-job listener browser smoke test: 6-task form renders, exports, blocks unlocked outcomes and validates synthetic override",
+      "stderr": ""
+    },
+    {
+      "script": "scripts/check_vertical_slice_lesson_browser.py",
+      "return_code": 0,
+      "stdout": "vertical slice lesson browser smoke test: lesson index and 5-section learner check render",
+      "stderr": ""
+    },
+    {
+      "script": "scripts/check_vertical_slice_02_learner_browser.py",
+      "return_code": 0,
+      "stdout": "vertical slice 02 learner browser smoke test: 12-task form renders and exports",
+      "stderr": ""
+    },
+    {
+      "script": "scripts/check_independent_review_forms_browser.py",
+      "return_code": 0,
+      "stdout": "checking blinded transcript review form\nchecking identity review form\nchecking function review form\nchecking phrase form review form\nchecking recurrence review form\nchecking counterexample review form\nchecking listener stimulus review form\nchecking multimodal review form\nindependent-review browser smoke test: 8 review forms render, export and validate",
+      "stderr": ""
+    },
+    {
+      "script": "scripts/check_communication_job_delivery_browser.py",
+      "return_code": 0,
+      "stdout": "communication-job delivery browser smoke test: 36-item form renders, exports and validates",
+      "stderr": ""
+    },
+    {
+      "script": "scripts/check_multimodal_independent_review_browser.py",
+      "return_code": 0,
+      "stdout": "multimodal independent-review browser smoke test: 21-item form renders and exports",
+      "stderr": ""
+    },
+    {
+      "script": "scripts/check_listener_stimulus_adjudication_browser.py",
+      "return_code": 0,
+      "stdout": "listener stimulus adjudication browser smoke test: 18-pair decision form renders, exports and validates",
+      "stderr": ""
+    },
+    {
+      "script": "scripts/check_listener_stimulus_review_browser.py",
+      "return_code": 0,
+      "stdout": "listener stimulus review browser smoke test: 18-pair form, export and validator",
+      "stderr": ""
+    },
+    {
+      "script": "scripts/check_vertical_slice_02_review_browser.py",
+      "return_code": 0,
+      "stdout": "vertical slice 02 review browser smoke test: 15-item form renders and exports",
+      "stderr": ""
+    },
+    {
+      "script": "scripts/check_practice_pwa_browser.py",
+      "return_code": 0,
+      "stdout": "practice PWA browser smoke: manifest and service worker registered over HTTP",
+      "stderr": "127.0.0.1 - - [22/Sep/2026 07:38:55] \"GET /communication-job-practice.html HTTP/1.1\" 200 -\n127.0.0.1 - - [22/Sep/2026 07:38:55] code 404, message File not found\n127.0.0.1 - - [22/Sep/2026 07:38:55] \"GET /data/video/AwA0Jnfj3ao.mp4 HTTP/1.1\" 404 -\n127.0.0.1 - - [22/Sep/2026 07:38:55] code 404, message File not found\n127.0.0.1 - - [22/Sep/2026 07:38:55] \"GET /data/video/jxY2-YgAgm0.mp4 HTTP/1.1\" 404 -\n127.0.0.1 - - [22/Sep/2026 07:38:55] \"GET /communication-patterns-lab-sw.js HTTP/1.1\" 200 -\n127.0.0.1 - - [22/Sep/2026 07:38:55] \"GET /communication-patterns-lab.webmanifest HTTP/1.1\" 200 -"
+    },
+    {
+      "script": "scripts/check_recovered_pattern_priority_review_browser.py",
+      "return_code": 0,
+      "stdout": "{\"status\": \"priority_review_browser_passed\", \"item_count\": 162, \"checks\": 8, \"export_validator\": \"passed_on_synthetic_partial_and_complete_exports\"}",
+      "stderr": ""
+    },
+    {
+      "script": "scripts/check_unified_pattern_library_browser.py",
+      "return_code": 0,
+      "stdout": "unified pattern library browser smoke: 74 cards, layer filters and search passed",
+      "stderr": ""
+    },
+    {
+      "script": "scripts/check_presentation_builder_browser.py",
+      "return_code": 0,
+      "stdout": "presentation builder browser smoke: architecture, pattern selection, preview and Markdown export passed",
+      "stderr": ""
+    },
+    {
+      "script": "scripts/check_professional_pattern_fieldbook_browser.py",
+      "return_code": 0,
+      "stdout": "professional fieldbook browser smoke: featured cases, 55-card catalog, filtering and search passed",
+      "stderr": ""
+    }
+  ],
+  "claim_boundary": "This receipt verifies local rendering, navigation, export and bounded browser interactions. It does not establish learner outcomes, listener outcomes, evidence validity or communication effectiveness.",
+  "environment_note": "Uses Playwright Chromium; when present, /tmp/best-speech-libs supplies user-space shared libraries and is not a repository artifact."
+}

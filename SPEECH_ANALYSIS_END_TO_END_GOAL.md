@@ -213,6 +213,14 @@ communication problem -> plain-language pattern -> real example
 
 Users must filter by function, modality, setting, difficulty, source quality, and confidence. Missing evidence and disagreement must remain visible.
 
+The current presenter-facing implementation is indexed in the [presentation
+pattern atlas](writeups/presentation-pattern-atlas.html). It links the
+395-review exhaustive pattern inventory, 33 source-linked candidate cards, 136
+recurring compound pairings, six sequence architectures, and the local
+expanded-pattern and compound-bundle practice surfaces. These remain
+transcript-derived practice hypotheses until the independent evidence gates
+below are completed.
+
 ### Stage 11: test learning separately
 
 Test whether learners can identify a pattern, explain it, use it in a new situation, recognize when it does not fit, and improve a recording after feedback. A listener can restate the intended point. This tests whether teaching is usable; it does not prove that the pattern increases trust, memory, or action. Those need later outcome studies.
@@ -324,9 +332,12 @@ delivery effects, listener outcomes or universal communication rules. Audio,
 video, recurrence, independent-speaker validation and learner testing remain
 unfinished.
 
-The next meaty goal is the first validated evidence-to-practice vertical slice.
-Do not expand the transcript queue before proving that current evidence can
-become a useful lesson. The slice should:
+The next goal is the first internally reconciled evidence-to-practice vertical
+slice. No external reviewer or learner study is available in this project, so
+the autonomous path must complete every repository-checkable gate and label the
+remaining human-outcome questions explicitly instead of leaving the work
+blocked on an absent participant. Do not expand the transcript queue before
+proving that current evidence can become a useful lesson. The slice should:
 
 1. select five communication jobs and five candidate patterns from the completed
    reviews;
@@ -337,20 +348,30 @@ become a useful lesson. The slice should:
    with reliability and failure notes;
 4. add denominators, counterexamples and alternative explanations to each
    pattern card;
-5. obtain independent review of the evidence, interpretation, limits and safety
-   boundary;
+5. run autonomous adversarial checks over the evidence, interpretation, limits
+   and safety boundary, while recording independent-review status as unavailable;
 6. create five linked web lessons and mobile practice flows; and
-7. run a separate learner check for recognition, explanation, transfer, misuse
-   detection and improvement after feedback.
+7. provide a runnable learner check for recognition, explanation, transfer and
+   misuse detection, while recording improvement and listener outcomes as
+   unmeasured until participants exist.
 
-The slice is currently structurally assembled but not validated. The
-[validation audit](writeups/vertical-slice-01-validation-audit.md) reports
-0/5 packets ready for promotion. This is an explicit gate: independent review,
-verified speaker/event identity, manual multimodal alignment and actual learner
-observations must be recorded before any pattern is called teachable.
+The autonomous end-to-end audit (writeups/autonomous-end-to-end-audit.md) now
+joins the autonomous curriculum, vertical-slice packet, delivery
+reconciliation, full-media reconciliation, language reconciliation,
+counterexample screening, learner/listener instrument dry runs, full curriculum
+surface, identity metadata preflight, recurrence split validation, review-gate readiness, recovered-pattern priority review readiness, evidence-to-practice, multimodal traceability, web-surface integrity, browser runtime smoke, accessibility/privacy checks, claim-boundary integrity, media recovery integrity, practice-record integrity, local practice ingestion and metadata summarization into one twenty-seven-check release-candidate
+audit. These
+artifacts cover the repository-checkable portion of this slice. The
+[autonomous curriculum audit](writeups/autonomous-curriculum-audit.md) is the
+current corpus-level control document, and the [vertical-slice packet audit](writeups/autonomous-vertical-slice-01.md) is the five-packet control document.
+The older
+[validation audit](writeups/vertical-slice-01-validation-audit.md) remains a
+record of unavailable external and participant evidence; its 0/5 promotion
+count must not be mistaken for a failure of the autonomous reconciliation.
 
-Only after that slice is tested should the project expand the corpus or claim a
-pattern is teachable. Listener trust, memory and action still require separate
-outcome studies.
+The project may use the internally reconciled materials as provisional lessons
+and practice prompts, with their claim boundaries visible. It must not call a
+pattern universally effective or claim learner improvement, listener trust,
+memory or action without a separate outcome study.
 
 The end state is a living evidence system: a person can start with a real communication problem, find a clearly explained pattern, inspect exact examples and limits, practise the underlying choice, and return new observations to the research corpus.

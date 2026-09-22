@@ -10,6 +10,7 @@
     "research/communication-job-delivery-sampling.json",
     "research/communication-job-delivery-measurement-preflight.json",
     "research/communication-job-counterexample-workbook.json",
+    "research/communication-job-counterexample-candidate-queue.json",
     "research/communication-job-learner-check.json",
     "research/communication-job-listener-outcome-protocol.json"
   ],
@@ -402,7 +403,7 @@
           "raw_media_state": "raw_audio_video_present_local_unselected",
           "video_file": "dgkxN6RASpg.mp4",
           "audio_file": "dgkxN6RASpg.m4a",
-          "feature_file": null,
+          "feature_file": "dgkxN6RASpg.json",
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -556,6 +557,43 @@
           "status": "pending"
         }
       ],
+      "counterexample_candidates": [
+        {
+          "counterexample_type": "absent_but_speech_works",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "present_but_speech_fails",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "dgkxN6RASpg:00000",
+          "transcript_excerpt": "Hi, everybody. You know, I love these ceremonies. I remember as a little kid, I used to look at pictures of Man's Chinese and the premieres they had here in these kinds of events. So, it's a real honor for me to be here today. As today, we're going to celebrate a great artist, Ben Stiller.",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "alternate_function",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "dgkxN6RASpg:00000",
+          "transcript_excerpt": "Hi, everybody. You know, I love these ceremonies. I remember as a little kid, I used to look at pictures of Man's Chinese and the premieres they had here in these kinds of events. So, it's a real honor for me to be here today. As today, we're going to celebrate a great artist, Ben Stiller.",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "confound_or_setting",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "AwA0Jnfj3ao:00000",
+          "transcript_excerpt": "Interviewer:Let's introduce the batting master of the world, Sachin Tendulkar. Well, let's share a few stories, I reckon.",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "misuse_or_copying_risk",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        }
+      ],
       "practice": "Open the same two-minute explanation with context, then without it; ask a listener what they think the talk is for.",
       "self_check": "Can a listener state the situation and purpose without guessing?",
       "non_fit": "Do not force a formal opening into a fast response or an already shared conversation.",
@@ -574,6 +612,26 @@
         "delivery_review": "pending_or_not_available_for_most_records",
         "learner_check": "not_run",
         "listener_outcome": "not_run"
+      },
+      "facets": {
+        "function": [
+          "opening"
+        ],
+        "modality": [
+          "audio_video"
+        ],
+        "setting": [
+          "unclassified"
+        ],
+        "difficulty": [
+          "guided"
+        ],
+        "source_quality": [
+          "transcript_plus_raw_av"
+        ],
+        "confidence": [
+          "provisional"
+        ]
       }
     },
     {
@@ -1007,7 +1065,7 @@
           "raw_media_state": "raw_audio_video_present_local_unselected",
           "video_file": "6dKimoybmEo.mp4",
           "audio_file": "6dKimoybmEo.m4a",
-          "feature_file": null,
+          "feature_file": "6dKimoybmEo.json",
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -1082,7 +1140,7 @@
           "raw_media_state": "raw_audio_video_present_local_unselected",
           "video_file": "dgkxN6RASpg.mp4",
           "audio_file": "dgkxN6RASpg.m4a",
-          "feature_file": null,
+          "feature_file": "dgkxN6RASpg.json",
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -1161,6 +1219,43 @@
           "status": "pending"
         }
       ],
+      "counterexample_candidates": [
+        {
+          "counterexample_type": "absent_but_speech_works",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "present_but_speech_fails",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "zgDnvVaoV98:00367",
+          "transcript_excerpt": "And so I will end, and I'm looking forwardto our panel with a poem that I've begun to say more and more, that my parents would readto me as a child, as they would tell me the stories of how lucky I was to be born whereI was, how lucky I was to have the opportunities",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "alternate_function",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "zgDnvVaoV98:00367",
+          "transcript_excerpt": "And so I will end, and I'm looking forwardto our panel with a poem that I've begun to say more and more, that my parents would readto me as a child, as they would tell me the stories of how lucky I was to be born whereI was, how lucky I was to have the opportunities",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "confound_or_setting",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "9fEurt2OZ0I:00030",
+          "transcript_excerpt": "successful I find one per people when they finish the job if they make the mistake if they fail if they always",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "misuse_or_copying_risk",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        }
+      ],
       "practice": "Close a short explanation in one sentence, then ask a listener to restate the takeaway and what remains open.",
       "self_check": "Does the close add orientation rather than merely announce that the talk is ending?",
       "non_fit": "Do not close over a live objection that still needs an answer.",
@@ -1179,6 +1274,26 @@
         "delivery_review": "pending_or_not_available_for_most_records",
         "learner_check": "not_run",
         "listener_outcome": "not_run"
+      },
+      "facets": {
+        "function": [
+          "closing"
+        ],
+        "modality": [
+          "audio_video"
+        ],
+        "setting": [
+          "unclassified"
+        ],
+        "difficulty": [
+          "guided"
+        ],
+        "source_quality": [
+          "transcript_plus_raw_av"
+        ],
+        "confidence": [
+          "provisional"
+        ]
       }
     },
     {
@@ -1600,7 +1715,7 @@
           "raw_media_state": "raw_audio_video_present_local_unselected",
           "video_file": "dKe3WbGR7Xs.mp4",
           "audio_file": "dKe3WbGR7Xs.m4a",
-          "feature_file": null,
+          "feature_file": "dKe3WbGR7Xs.json",
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -1754,6 +1869,43 @@
           "status": "pending"
         }
       ],
+      "counterexample_candidates": [
+        {
+          "counterexample_type": "absent_but_speech_works",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "present_but_speech_fails",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "-Unkvng_jp8:00000",
+          "transcript_excerpt": "“The last four years, you have promised to repeal and replace Obamacare, but you have never in these four years come up with a plan, a comprehensive plan —” “Yes, I have.” “— to replace Obamacare.” “Of course I have.” “Well, I’ll give you —” “We got rid of the individual mandate.” “I’m going to",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "alternate_function",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "-Unkvng_jp8:00000",
+          "transcript_excerpt": "“The last four years, you have promised to repeal and replace Obamacare, but you have never in these four years come up with a plan, a comprehensive plan —” “Yes, I have.” “— to replace Obamacare.” “Of course I have.” “Well, I’ll give you —” “We got rid of the individual mandate.” “I’m going to",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "confound_or_setting",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "AwA0Jnfj3ao:00063",
+          "transcript_excerpt": "Interviewer:I've asked around the room and we will have a chance to ask some questions after we haveour conversation here. Many people have said simple, easy question.",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "misuse_or_copying_risk",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        }
+      ],
       "practice": "Replace a broad question with a specific, answerable one and compare the next turn.",
       "self_check": "Could the listener answer, decline or ask for clarification without penalty?",
       "non_fit": "Do not use a rhetorical question to disguise a demand or corner someone.",
@@ -1772,6 +1924,26 @@
         "delivery_review": "pending_or_not_available_for_most_records",
         "learner_check": "not_run",
         "listener_outcome": "not_run"
+      },
+      "facets": {
+        "function": [
+          "question"
+        ],
+        "modality": [
+          "audio_video"
+        ],
+        "setting": [
+          "unclassified"
+        ],
+        "difficulty": [
+          "guided"
+        ],
+        "source_quality": [
+          "transcript_plus_raw_av"
+        ],
+        "confidence": [
+          "provisional"
+        ]
       }
     },
     {
@@ -2316,6 +2488,43 @@
           "status": "pending"
         }
       ],
+      "counterexample_candidates": [
+        {
+          "counterexample_type": "absent_but_speech_works",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "present_but_speech_fails",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "-Unkvng_jp8:00127",
+          "transcript_excerpt": "this is your inauguration day. What will you say in your address to America, to Americans who did not vote for you?” “We have to make our country totally successful as it was prior to the plague coming in from China. Success is going to bring us together. We are on the road to success.",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "alternate_function",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "-Unkvng_jp8:00127",
+          "transcript_excerpt": "this is your inauguration day. What will you say in your address to America, to Americans who did not vote for you?” “We have to make our country totally successful as it was prior to the plague coming in from China. Success is going to bring us together. We are on the road to success.",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "confound_or_setting",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "AwA0Jnfj3ao:00213",
+          "transcript_excerpt": "So, that's the only time in my career whenthe batsman is ready to face the ball. He's not watching the bowler; he's watchingthe bat in my hand. So, he is...",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "misuse_or_copying_risk",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        }
+      ],
       "practice": "Give a direct answer, then a frame-corrected answer; ask which one remains responsive.",
       "self_check": "Can the listener identify both the direct answer and any justified reframing?",
       "non_fit": "Do not reframe merely to avoid an uncomfortable but legitimate question.",
@@ -2334,6 +2543,26 @@
         "delivery_review": "pending_or_not_available_for_most_records",
         "learner_check": "not_run",
         "listener_outcome": "not_run"
+      },
+      "facets": {
+        "function": [
+          "answer_or_response"
+        ],
+        "modality": [
+          "audio_video"
+        ],
+        "setting": [
+          "unclassified"
+        ],
+        "difficulty": [
+          "guided"
+        ],
+        "source_quality": [
+          "transcript_plus_raw_av"
+        ],
+        "confidence": [
+          "provisional"
+        ]
       }
     },
     {
@@ -2767,7 +2996,7 @@
           "raw_media_state": "raw_audio_video_present_local_unselected",
           "video_file": "dgkxN6RASpg.mp4",
           "audio_file": "dgkxN6RASpg.m4a",
-          "feature_file": null,
+          "feature_file": "dgkxN6RASpg.json",
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -2842,7 +3071,7 @@
           "raw_media_state": "raw_audio_video_present_local_unselected",
           "video_file": "-54zUwySKCg.mp4",
           "audio_file": "-54zUwySKCg.m4a",
-          "feature_file": null,
+          "feature_file": "-54zUwySKCg.json",
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -2921,6 +3150,43 @@
           "status": "pending"
         }
       ],
+      "counterexample_candidates": [
+        {
+          "counterexample_type": "absent_but_speech_works",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "present_but_speech_fails",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "dgkxN6RASpg:00003",
+          "transcript_excerpt": "Now I've, you know, Ben and I grew up together. I really, first time I saw him was actually, he was doing theater in circle in the square. And then over the years, you know, he and I became very close friends and I was, you know, he's very, he's so generous because when I was doing Mission",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "alternate_function",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "dgkxN6RASpg:00003",
+          "transcript_excerpt": "Now I've, you know, Ben and I grew up together. I really, first time I saw him was actually, he was doing theater in circle in the square. And then over the years, you know, he and I became very close friends and I was, you know, he's very, he's so generous because when I was doing Mission",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "confound_or_setting",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "AwA0Jnfj3ao:00004",
+          "transcript_excerpt": "Sachin Tendulkar:Well, school cricket was exciting and the reason to start playing cricket was a strangeone. I mean, I was a notorious child, difficultto manage and I took a lot of pride in that.",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "misuse_or_copying_risk",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        }
+      ],
       "practice": "Tell a 45-second event, then name the narrow lesson and one limit.",
       "self_check": "Can the listener separate the event, the interpretation and the limit?",
       "non_fit": "Do not disclose another person’s private experience or use trauma as decorative evidence.",
@@ -2939,6 +3205,26 @@
         "delivery_review": "pending_or_not_available_for_most_records",
         "learner_check": "not_run",
         "listener_outcome": "not_run"
+      },
+      "facets": {
+        "function": [
+          "story_or_personal_experience"
+        ],
+        "modality": [
+          "audio_video"
+        ],
+        "setting": [
+          "unclassified"
+        ],
+        "difficulty": [
+          "guided"
+        ],
+        "source_quality": [
+          "transcript_plus_raw_av"
+        ],
+        "confidence": [
+          "provisional"
+        ]
       }
     },
     {
@@ -3354,7 +3640,7 @@
           "raw_media_state": "raw_audio_video_present_local_unselected",
           "video_file": "-54zUwySKCg.mp4",
           "audio_file": "-54zUwySKCg.m4a",
-          "feature_file": null,
+          "feature_file": "-54zUwySKCg.json",
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -3508,6 +3794,43 @@
           "status": "pending"
         }
       ],
+      "counterexample_candidates": [
+        {
+          "counterexample_type": "absent_but_speech_works",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "present_but_speech_fails",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "-Unkvng_jp8:00037",
+          "transcript_excerpt": "You have to understand, if you look, I mean, I have a mask right here. I put a mask on, you know, when I think I need it. Tonight as an example, everybody’s had a test, and you’ve had social distancing and all of the things that you have to — but I wear masks when needed.",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "alternate_function",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "-Unkvng_jp8:00037",
+          "transcript_excerpt": "You have to understand, if you look, I mean, I have a mask right here. I put a mask on, you know, when I think I need it. Tonight as an example, everybody’s had a test, and you’ve had social distancing and all of the things that you have to — but I wear masks when needed.",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "confound_or_setting",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "9fEurt2OZ0I:00008",
+          "transcript_excerpt": "I went for a police they said no you're not good I went to even the uh KFC when KFC came to China come to my",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "misuse_or_copying_risk",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        }
+      ],
       "practice": "Explain a principle with and without a case; ask which detail made the idea more inspectable.",
       "self_check": "Does the case clarify the claim without pretending to establish its prevalence or cause?",
       "non_fit": "Do not select a vivid outlier to imply a typical pattern without denominators.",
@@ -3526,6 +3849,26 @@
         "delivery_review": "pending_or_not_available_for_most_records",
         "learner_check": "not_run",
         "listener_outcome": "not_run"
+      },
+      "facets": {
+        "function": [
+          "example_or_case"
+        ],
+        "modality": [
+          "audio_video"
+        ],
+        "setting": [
+          "unclassified"
+        ],
+        "difficulty": [
+          "guided"
+        ],
+        "source_quality": [
+          "transcript_plus_raw_av"
+        ],
+        "confidence": [
+          "provisional"
+        ]
       }
     },
     {
@@ -4034,7 +4377,7 @@
           "raw_media_state": "raw_audio_video_present_local_unselected",
           "video_file": "-54zUwySKCg.mp4",
           "audio_file": "-54zUwySKCg.m4a",
-          "feature_file": null,
+          "feature_file": "-54zUwySKCg.json",
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -4113,6 +4456,43 @@
           "status": "pending"
         }
       ],
+      "counterexample_candidates": [
+        {
+          "counterexample_type": "absent_but_speech_works",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "present_but_speech_fails",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "ZwMVMbmQBug:00011",
+          "transcript_excerpt": "It's like everything everywhere is goingcrazy so we don't go out anymore. We sit in the house and slowly the world we're living in is getting smaller and all we say is \"Please at least leave usalone in our living rooms. Let me have my",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "alternate_function",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "ZwMVMbmQBug:00011",
+          "transcript_excerpt": "It's like everything everywhere is goingcrazy so we don't go out anymore. We sit in the house and slowly the world we're living in is getting smaller and all we say is \"Please at least leave usalone in our living rooms. Let me have my",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "confound_or_setting",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "ZwMVMbmQBug:00011",
+          "transcript_excerpt": "It's like everything everywhere is goingcrazy so we don't go out anymore. We sit in the house and slowly the world we're living in is getting smaller and all we say is \"Please at least leave usalone in our living rooms. Let me have my",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "misuse_or_copying_risk",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        }
+      ],
       "practice": "Use ‘I used to think X; Y changed the question; now I think Z,’ then test whether the distinction is fair.",
       "self_check": "Can the listener state what changed without turning the other side into a caricature?",
       "non_fit": "Do not manufacture a false binary or treat a person as an argument to defeat.",
@@ -4131,6 +4511,26 @@
         "delivery_review": "pending_or_not_available_for_most_records",
         "learner_check": "not_run",
         "listener_outcome": "not_run"
+      },
+      "facets": {
+        "function": [
+          "contrast_or_disagreement"
+        ],
+        "modality": [
+          "audio_video"
+        ],
+        "setting": [
+          "unclassified"
+        ],
+        "difficulty": [
+          "guided"
+        ],
+        "source_quality": [
+          "transcript_plus_raw_av"
+        ],
+        "confidence": [
+          "provisional"
+        ]
       }
     },
     {
@@ -4521,7 +4921,7 @@
           "raw_media_state": "raw_audio_video_present_local_unselected",
           "video_file": "dgkxN6RASpg.mp4",
           "audio_file": "dgkxN6RASpg.m4a",
-          "feature_file": null,
+          "feature_file": "dgkxN6RASpg.json",
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -4596,7 +4996,7 @@
           "raw_media_state": "raw_audio_video_present_local_unselected",
           "video_file": "dKe3WbGR7Xs.mp4",
           "audio_file": "dKe3WbGR7Xs.m4a",
-          "feature_file": null,
+          "feature_file": "dKe3WbGR7Xs.json",
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -4675,6 +5075,43 @@
           "status": "pending"
         }
       ],
+      "counterexample_candidates": [
+        {
+          "counterexample_type": "absent_but_speech_works",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "present_but_speech_fails",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "dgkxN6RASpg:00060",
+          "transcript_excerpt": "I want to thank all the people who've given me a chance over the years, all the agents and managers and casting directors who took a chance on me, even when I didn't even really know what the hell I was doing. And that you had faith in me that I would somehow get it",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "alternate_function",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "dgkxN6RASpg:00060",
+          "transcript_excerpt": "I want to thank all the people who've given me a chance over the years, all the agents and managers and casting directors who took a chance on me, even when I didn't even really know what the hell I was doing. And that you had faith in me that I would somehow get it",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "confound_or_setting",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "bR4tDSa3O10:00238",
+          "transcript_excerpt": "this is my advice and that really was my advice, the main part of my advice. But uh I do want to",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "misuse_or_copying_risk",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        }
+      ],
       "practice": "Answer a difficult prompt twice: first literally, then with one transparent frame correction.",
       "self_check": "Did you preserve the valid concern inside the revised frame?",
       "non_fit": "Do not label a challenge a ‘bad question’ simply because it is inconvenient.",
@@ -4693,6 +5130,26 @@
         "delivery_review": "pending_or_not_available_for_most_records",
         "learner_check": "not_run",
         "listener_outcome": "not_run"
+      },
+      "facets": {
+        "function": [
+          "correction_or_reframe"
+        ],
+        "modality": [
+          "audio_video"
+        ],
+        "setting": [
+          "unclassified"
+        ],
+        "difficulty": [
+          "guided"
+        ],
+        "source_quality": [
+          "transcript_plus_raw_av"
+        ],
+        "confidence": [
+          "provisional"
+        ]
       }
     },
     {
@@ -5158,7 +5615,7 @@
           "raw_media_state": "raw_audio_video_present_local_unselected",
           "video_file": "5nN-15CrnGc.mp4",
           "audio_file": "5nN-15CrnGc.m4a",
-          "feature_file": null,
+          "feature_file": "5nN-15CrnGc.json",
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -5237,6 +5694,43 @@
           "status": "pending"
         }
       ],
+      "counterexample_candidates": [
+        {
+          "counterexample_type": "absent_but_speech_works",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "present_but_speech_fails",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "7XO7kVaEgpM:00000",
+          "transcript_excerpt": "Dear Eva,It will be almost a month since you wrote to me and you have possibly forgotten yourstate of mind (I doubt it though). You seem the same as always, and being you, hate everyminute of it. Don’t! Learn to say “F*ck",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "alternate_function",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "7XO7kVaEgpM:00000",
+          "transcript_excerpt": "Dear Eva,It will be almost a month since you wrote to me and you have possibly forgotten yourstate of mind (I doubt it though). You seem the same as always, and being you, hate everyminute of it. Don’t! Learn to say “F*ck",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "confound_or_setting",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "C8-twwwTETE:00141",
+          "transcript_excerpt": "I um I didn't invite Jimmy Alvin and he should be here we needed the money",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "misuse_or_copying_risk",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        }
+      ],
       "practice": "Record a short answer with one intentional error and repair it in one sentence.",
       "self_check": "Is the corrected version unmistakable, and can the listener continue with you?",
       "non_fit": "Do not use ‘repair’ theatrically to avoid responsibility for a substantive claim.",
@@ -5255,6 +5749,26 @@
         "delivery_review": "pending_or_not_available_for_most_records",
         "learner_check": "not_run",
         "listener_outcome": "not_run"
+      },
+      "facets": {
+        "function": [
+          "repair_or_self_correction"
+        ],
+        "modality": [
+          "audio_video"
+        ],
+        "setting": [
+          "unclassified"
+        ],
+        "difficulty": [
+          "guided"
+        ],
+        "source_quality": [
+          "transcript_plus_raw_av"
+        ],
+        "confidence": [
+          "provisional"
+        ]
       }
     },
     {
@@ -5688,7 +6202,7 @@
           "raw_media_state": "raw_audio_video_present_local_unselected",
           "video_file": "6dKimoybmEo.mp4",
           "audio_file": "6dKimoybmEo.m4a",
-          "feature_file": null,
+          "feature_file": "6dKimoybmEo.json",
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -5842,6 +6356,43 @@
           "status": "pending"
         }
       ],
+      "counterexample_candidates": [
+        {
+          "counterexample_type": "absent_but_speech_works",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "present_but_speech_fails",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "oFyh5YMmB80:00058",
+          "transcript_excerpt": "I think if we, there is a responsible wayI think to live our lives with technology where we also take care of ourselves, takecare of our mental state, give ourselves time and space to be clear in our mind so thatwe can focus on our own empowerment and focus",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "alternate_function",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "oFyh5YMmB80:00058",
+          "transcript_excerpt": "I think if we, there is a responsible wayI think to live our lives with technology where we also take care of ourselves, takecare of our mental state, give ourselves time and space to be clear in our mind so thatwe can focus on our own empowerment and focus",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "confound_or_setting",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "bR4tDSa3O10:00067",
+          "transcript_excerpt": "And I say that because when I was in the first grade, the last day of school was called field day. And field day was a",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "misuse_or_copying_risk",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        }
+      ],
       "practice": "Convert one absolute sentence into a bounded claim with one observable condition.",
       "self_check": "Is the claim clearer and more honest, rather than simply weaker?",
       "non_fit": "Do not add ornamental uncertainty to a claim that should be checked directly.",
@@ -5860,6 +6411,26 @@
         "delivery_review": "pending_or_not_available_for_most_records",
         "learner_check": "not_run",
         "listener_outcome": "not_run"
+      },
+      "facets": {
+        "function": [
+          "qualification_or_boundary"
+        ],
+        "modality": [
+          "audio_video"
+        ],
+        "setting": [
+          "unclassified"
+        ],
+        "difficulty": [
+          "guided"
+        ],
+        "source_quality": [
+          "transcript_plus_raw_av"
+        ],
+        "confidence": [
+          "provisional"
+        ]
       }
     },
     {
@@ -6287,7 +6858,7 @@
           "raw_media_state": "raw_audio_video_present_local_unselected",
           "video_file": "dKe3WbGR7Xs.mp4",
           "audio_file": "dKe3WbGR7Xs.m4a",
-          "feature_file": null,
+          "feature_file": "dKe3WbGR7Xs.json",
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -6441,6 +7012,43 @@
           "status": "pending"
         }
       ],
+      "counterexample_candidates": [
+        {
+          "counterexample_type": "absent_but_speech_works",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "present_but_speech_fails",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "-Unkvng_jp8:00046",
+          "transcript_excerpt": "millions of people because of Covid that are going to be voting by mail-in ballots, like he does by the way. And this is all about trying to dissuade people from voting, because he’s trying to scare people into thinking that it’s not going to be legitimate.” “As far as the ballots are concerned,",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "alternate_function",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "-Unkvng_jp8:00046",
+          "transcript_excerpt": "millions of people because of Covid that are going to be voting by mail-in ballots, like he does by the way. And this is all about trying to dissuade people from voting, because he’s trying to scare people into thinking that it’s not going to be legitimate.” “As far as the ballots are concerned,",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "confound_or_setting",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "AwA0Jnfj3ao:00078",
+          "transcript_excerpt": "But the most meaningful innings and somethingwhich has stayed with me now and it'll stay with me forever, has to be the one that Iplayed against England in Chennai in 2008. That was a time when Mumbai was hit by thatterrible terrorist attack.",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "misuse_or_copying_risk",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        }
+      ],
       "practice": "Define a technical term for a newcomer in 20 seconds, then ask them to use it in a new sentence.",
       "self_check": "Can the listener use the term and say what it does not mean?",
       "non_fit": "Do not substitute a slogan, metaphor or credential for a usable definition.",
@@ -6459,6 +7067,26 @@
         "delivery_review": "pending_or_not_available_for_most_records",
         "learner_check": "not_run",
         "listener_outcome": "not_run"
+      },
+      "facets": {
+        "function": [
+          "definition_or_explanation"
+        ],
+        "modality": [
+          "audio_video"
+        ],
+        "setting": [
+          "unclassified"
+        ],
+        "difficulty": [
+          "guided"
+        ],
+        "source_quality": [
+          "transcript_plus_raw_av"
+        ],
+        "confidence": [
+          "provisional"
+        ]
       }
     },
     {
@@ -6849,7 +7477,7 @@
           "raw_media_state": "raw_audio_video_present_local_unselected",
           "video_file": "6dKimoybmEo.mp4",
           "audio_file": "6dKimoybmEo.m4a",
-          "feature_file": null,
+          "feature_file": "6dKimoybmEo.json",
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -7003,6 +7631,43 @@
           "status": "pending"
         }
       ],
+      "counterexample_candidates": [
+        {
+          "counterexample_type": "absent_but_speech_works",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "present_but_speech_fails",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "-Unkvng_jp8:00119",
+          "transcript_excerpt": "close down the oil industry? Would you close down the oil industry?” “By the way, I would transition from the oil industry, yes.” “Oh, that’s a big statement!” “I would transition — it is a big statement.” “That’s a big statement!” “Because I would stop —” “Why would you do that?” “Because",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "alternate_function",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "-Unkvng_jp8:00119",
+          "transcript_excerpt": "close down the oil industry? Would you close down the oil industry?” “By the way, I would transition from the oil industry, yes.” “Oh, that’s a big statement!” “I would transition — it is a big statement.” “That’s a big statement!” “Because I would stop —” “Why would you do that?” “Because",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "confound_or_setting",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "ZwMVMbmQBug:00030",
+          "transcript_excerpt": "But first, you've got to get mad. You've got to say \"I'M AS MAD AS HELL, AND I'M NOT GOING TO TAKE THIS ANYMORE!\" Then we'll figure out what to do about the depression and the inflation",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "misuse_or_copying_risk",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        }
+      ],
       "practice": "Add one spoken bridge between two unrelated ideas and ask a listener to describe the connection.",
       "self_check": "Can the listener say why the next point arrived here?",
       "non_fit": "Do not use a transition to imply a connection that the evidence does not support.",
@@ -7021,6 +7686,26 @@
         "delivery_review": "pending_or_not_available_for_most_records",
         "learner_check": "not_run",
         "listener_outcome": "not_run"
+      },
+      "facets": {
+        "function": [
+          "transition_or_structure"
+        ],
+        "modality": [
+          "audio_video"
+        ],
+        "setting": [
+          "unclassified"
+        ],
+        "difficulty": [
+          "guided"
+        ],
+        "source_quality": [
+          "transcript_plus_raw_av"
+        ],
+        "confidence": [
+          "provisional"
+        ]
       }
     },
     {
@@ -7411,7 +8096,7 @@
           "raw_media_state": "raw_audio_video_present_local_unselected",
           "video_file": "dKe3WbGR7Xs.mp4",
           "audio_file": "dKe3WbGR7Xs.m4a",
-          "feature_file": null,
+          "feature_file": "dKe3WbGR7Xs.json",
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -7565,6 +8250,43 @@
           "status": "pending"
         }
       ],
+      "counterexample_candidates": [
+        {
+          "counterexample_type": "absent_but_speech_works",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "present_but_speech_fails",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "dKe3WbGR7Xs:00080",
+          "transcript_excerpt": "And that is what every child deserves to knowthat they are seen, they are powerful, and they are loved and that they deserve a seatat the table and that anything they have to say or any question they have to ask is ofvalue even if we don't have all the answers",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "alternate_function",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "dKe3WbGR7Xs:00080",
+          "transcript_excerpt": "And that is what every child deserves to knowthat they are seen, they are powerful, and they are loved and that they deserve a seatat the table and that anything they have to say or any question they have to ask is ofvalue even if we don't have all the answers",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "confound_or_setting",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "ZwMVMbmQBug:00038",
+          "transcript_excerpt": "Get up, get up! Get up outta your chairs! stick your head out of the window, open it then stick your head out and keep yelling and yell: \"I'M AS MAD AS HELL, AND I'M NOT GOING TO TAKE THIS ANYMORE!\" Just",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "misuse_or_copying_risk",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        }
+      ],
       "practice": "Use one image at the opening and return to it at the close with a changed implication.",
       "self_check": "What new work does the repeated phrase do the second time?",
       "non_fit": "Do not repeat a slogan to pressure agreement or simulate evidence.",
@@ -7583,6 +8305,26 @@
         "delivery_review": "pending_or_not_available_for_most_records",
         "learner_check": "not_run",
         "listener_outcome": "not_run"
+      },
+      "facets": {
+        "function": [
+          "callback_or_repetition"
+        ],
+        "modality": [
+          "audio_video"
+        ],
+        "setting": [
+          "unclassified"
+        ],
+        "difficulty": [
+          "guided"
+        ],
+        "source_quality": [
+          "transcript_plus_raw_av"
+        ],
+        "confidence": [
+          "provisional"
+        ]
       }
     },
     {
@@ -7973,7 +8715,7 @@
           "raw_media_state": "raw_audio_video_present_local_unselected",
           "video_file": "6dKimoybmEo.mp4",
           "audio_file": "6dKimoybmEo.m4a",
-          "feature_file": null,
+          "feature_file": "6dKimoybmEo.json",
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -8127,6 +8869,43 @@
           "status": "pending"
         }
       ],
+      "counterexample_candidates": [
+        {
+          "counterexample_type": "absent_but_speech_works",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "present_but_speech_fails",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "6dKimoybmEo:00000",
+          "transcript_excerpt": "I am happy to join with you today in whatwill go down in history as the greatest demonstration for freedom in the history of our nation. Five score years ago a great American in whosesymbolic shadow we stand today signed the",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "alternate_function",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "6dKimoybmEo:00000",
+          "transcript_excerpt": "I am happy to join with you today in whatwill go down in history as the greatest demonstration for freedom in the history of our nation. Five score years ago a great American in whosesymbolic shadow we stand today signed the",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "confound_or_setting",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "C8-twwwTETE:00016",
+          "transcript_excerpt": "so check it out of all the things that I don't remember about 2002 I have a very clear memory of the first",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "misuse_or_copying_risk",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        }
+      ],
       "practice": "Try a self-directed release and a neutral transition after difficult material; check whether either targets someone else.",
       "self_check": "Who bears the cost of the joke, and can the listener opt out of laughing?",
       "non_fit": "Do not use humor to trivialize grief, vulnerability, identity or an unresolved harm.",
@@ -8145,6 +8924,26 @@
         "delivery_review": "pending_or_not_available_for_most_records",
         "learner_check": "not_run",
         "listener_outcome": "not_run"
+      },
+      "facets": {
+        "function": [
+          "humor_or_rapport"
+        ],
+        "modality": [
+          "audio_video"
+        ],
+        "setting": [
+          "unclassified"
+        ],
+        "difficulty": [
+          "guided"
+        ],
+        "source_quality": [
+          "transcript_plus_raw_av"
+        ],
+        "confidence": [
+          "provisional"
+        ]
       }
     },
     {
@@ -8535,7 +9334,7 @@
           "raw_media_state": "raw_audio_video_present_local_unselected",
           "video_file": "dKe3WbGR7Xs.mp4",
           "audio_file": "dKe3WbGR7Xs.m4a",
-          "feature_file": null,
+          "feature_file": "dKe3WbGR7Xs.json",
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -8689,6 +9488,43 @@
           "status": "pending"
         }
       ],
+      "counterexample_candidates": [
+        {
+          "counterexample_type": "absent_but_speech_works",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "present_but_speech_fails",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "42QjAxty_1o:00051",
+          "transcript_excerpt": "I used to believe that who I was ended atthe edge of my skin, that I had been given this little vehicle called a body from whichto experience creation, and though I couldn’t have asked for a sportier model, (laughter)it was after all a loaner and would have to",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "alternate_function",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "42QjAxty_1o:00051",
+          "transcript_excerpt": "I used to believe that who I was ended atthe edge of my skin, that I had been given this little vehicle called a body from whichto experience creation, and though I couldn’t have asked for a sportier model, (laughter)it was after all a loaner and would have to",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "confound_or_setting",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "C8-twwwTETE:00123",
+          "transcript_excerpt": "I'd like to thank uh both M Andre you know I don't think I don't honestly think my career would have been what it",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "misuse_or_copying_risk",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        }
+      ],
       "practice": "Replace generic thanks with one observable contribution and its consequence.",
       "self_check": "Could the credited person recognize the description as accurate and specific?",
       "non_fit": "Do not claim to transfer authority through praise while retaining all control.",
@@ -8707,6 +9543,26 @@
         "delivery_review": "pending_or_not_available_for_most_records",
         "learner_check": "not_run",
         "listener_outcome": "not_run"
+      },
+      "facets": {
+        "function": [
+          "credit_or_acknowledgment"
+        ],
+        "modality": [
+          "audio_video"
+        ],
+        "setting": [
+          "unclassified"
+        ],
+        "difficulty": [
+          "guided"
+        ],
+        "source_quality": [
+          "transcript_plus_raw_av"
+        ],
+        "confidence": [
+          "provisional"
+        ]
       }
     },
     {
@@ -9140,7 +9996,7 @@
           "raw_media_state": "raw_audio_video_present_local_unselected",
           "video_file": "dKe3WbGR7Xs.mp4",
           "audio_file": "dKe3WbGR7Xs.m4a",
-          "feature_file": null,
+          "feature_file": "dKe3WbGR7Xs.json",
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -9294,6 +10150,43 @@
           "status": "pending"
         }
       ],
+      "counterexample_candidates": [
+        {
+          "counterexample_type": "absent_but_speech_works",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "present_but_speech_fails",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "5rbyzJf4ZuQ:00074",
+          "transcript_excerpt": "We have to push governments to invest more, honestly. We have to invest in campaigns for public awareness. We have to make access to pre-K education free and we have to create a fund for education just like AIDS and Malaria and Tuberculosis have their own fund.",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "alternate_function",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "5rbyzJf4ZuQ:00074",
+          "transcript_excerpt": "We have to push governments to invest more, honestly. We have to invest in campaigns for public awareness. We have to make access to pre-K education free and we have to create a fund for education just like AIDS and Malaria and Tuberculosis have their own fund.",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "confound_or_setting",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "ZwMVMbmQBug:00022",
+          "transcript_excerpt": "So, I want you to get up now. I want all of you to getup outta your chairs I want you to get up right now and go to the window",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "misuse_or_copying_risk",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        }
+      ],
       "practice": "Rewrite ‘we should care’ as one feasible action with an owner, timeframe and non-fit.",
       "self_check": "Can the listener say what they may do and what the action cannot solve?",
       "non_fit": "Do not assign risk, money or care labor without authority, consent or support.",
@@ -9312,6 +10205,26 @@
         "delivery_review": "pending_or_not_available_for_most_records",
         "learner_check": "not_run",
         "listener_outcome": "not_run"
+      },
+      "facets": {
+        "function": [
+          "call_to_action_or_audience_role"
+        ],
+        "modality": [
+          "audio_video"
+        ],
+        "setting": [
+          "unclassified"
+        ],
+        "difficulty": [
+          "guided"
+        ],
+        "source_quality": [
+          "transcript_plus_raw_av"
+        ],
+        "confidence": [
+          "provisional"
+        ]
       }
     },
     {
@@ -9702,7 +10615,7 @@
           "raw_media_state": "raw_audio_video_present_local_unselected",
           "video_file": "-54zUwySKCg.mp4",
           "audio_file": "-54zUwySKCg.m4a",
-          "feature_file": null,
+          "feature_file": "-54zUwySKCg.json",
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -9777,7 +10690,7 @@
           "raw_media_state": "raw_audio_video_present_local_unselected",
           "video_file": "6dKimoybmEo.mp4",
           "audio_file": "6dKimoybmEo.m4a",
-          "feature_file": null,
+          "feature_file": "6dKimoybmEo.json",
           "selection_note": "ranked for raw audio/video when available, then lexical transcript context; this is a sampling queue, not an observation",
           "review": {
             "transcript_alignment": null,
@@ -9856,6 +10769,43 @@
           "status": "pending"
         }
       ],
+      "counterexample_candidates": [
+        {
+          "counterexample_type": "absent_but_speech_works",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "present_but_speech_fails",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "-Unkvng_jp8:00079",
+          "transcript_excerpt": "you have no plan.” “I don’t think we’re going to have a dark winter at all. We’re opening up our country. We’ve learned and studied and understand the disease.” “He says that we’re, you know, we’re learning to live with it. People are learning to die with it. You folks home who have an empty",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "alternate_function",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "-Unkvng_jp8:00079",
+          "transcript_excerpt": "you have no plan.” “I don’t think we’re going to have a dark winter at all. We’re opening up our country. We’ve learned and studied and understand the disease.” “He says that we’re, you know, we’re learning to live with it. People are learning to die with it. You folks home who have an empty",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "confound_or_setting",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "xRiwgtdyjQk:00111",
+          "transcript_excerpt": "we're the party of Common Sense we want to have borders we want to have security we want to have things be good safe we",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "misuse_or_copying_risk",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        }
+      ],
       "practice": "Make one advocacy claim with evidence status, opposing concern, responsible actor and review point.",
       "self_check": "Can a listener disagree with the proposal while accurately restating it?",
       "non_fit": "Do not use urgency, fear or moral identity to conceal missing evidence or coercion.",
@@ -9874,6 +10824,26 @@
         "delivery_review": "pending_or_not_available_for_most_records",
         "learner_check": "not_run",
         "listener_outcome": "not_run"
+      },
+      "facets": {
+        "function": [
+          "persuasion_or_advocacy"
+        ],
+        "modality": [
+          "audio_video"
+        ],
+        "setting": [
+          "unclassified"
+        ],
+        "difficulty": [
+          "guided"
+        ],
+        "source_quality": [
+          "transcript_plus_raw_av"
+        ],
+        "confidence": [
+          "provisional"
+        ]
       }
     },
     {
@@ -10418,6 +11388,43 @@
           "status": "pending"
         }
       ],
+      "counterexample_candidates": [
+        {
+          "counterexample_type": "absent_but_speech_works",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "present_but_speech_fails",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "U8iy5zvXhJc:00007",
+          "transcript_excerpt": "Most of you may know me as an artist, as anentertainer, and that's indeed my calling and what I've been doing since I was 13 yearsold, but I never would have imagined when I started out that my work as an artist wouldend up being the vehicle for me to serve my",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "alternate_function",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "U8iy5zvXhJc:00007",
+          "transcript_excerpt": "Most of you may know me as an artist, as anentertainer, and that's indeed my calling and what I've been doing since I was 13 yearsold, but I never would have imagined when I started out that my work as an artist wouldend up being the vehicle for me to serve my",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "confound_or_setting",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": "ZwMVMbmQBug:00016",
+          "transcript_excerpt": "mad! I don't you to protest, I don't want you to riot, I don't want you to write to your congressman because I wouldn't know what to tell you to write I don't know what to do about thedepression and the inflation and the Russians",
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        },
+        {
+          "counterexample_type": "misuse_or_copying_risk",
+          "candidate_status": "candidate_requires_check",
+          "evidence_id": null,
+          "transcript_excerpt": null,
+          "claim_boundary": "Candidate routing is not a counterexample judgment and does not establish speech success, failure, listener outcome, causality or effectiveness."
+        }
+      ],
       "practice": "Take one personal or public event and state the value interpretation plus one alternative reading.",
       "self_check": "Can the listener tell which part is observation, value judgment and open question?",
       "non_fit": "Do not use a value label to end inquiry or claim moral superiority.",
@@ -10436,6 +11443,26 @@
         "delivery_review": "pending_or_not_available_for_most_records",
         "learner_check": "not_run",
         "listener_outcome": "not_run"
+      },
+      "facets": {
+        "function": [
+          "reflection_or_value_frame"
+        ],
+        "modality": [
+          "audio_video"
+        ],
+        "setting": [
+          "unclassified"
+        ],
+        "difficulty": [
+          "guided"
+        ],
+        "source_quality": [
+          "transcript_plus_raw_av"
+        ],
+        "confidence": [
+          "provisional"
+        ]
       }
     }
   ],

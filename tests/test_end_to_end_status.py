@@ -33,7 +33,7 @@ class EndToEndStatusTests(unittest.TestCase):
         self.assertEqual(self.status["stages"]["exact_phrase_form_independent_review"]["queued_form_count"], 50)
         self.assertEqual(self.status["stages"]["exact_phrase_form_independent_review"]["completed_independent_reviews"], 0)
         self.assertEqual(self.status["stages"]["delivery_evidence_index"]["independent_observation_count"], 0)
-        self.assertEqual(self.status["stages"]["shared_evidence_model"]["entity_type_count"], 11)
+        self.assertEqual(self.status["stages"]["shared_evidence_model"]["entity_type_count"], 13)
         self.assertEqual(self.status["stages"]["counterexample_library"]["queued_slot_count"], 90)
         self.assertEqual(self.status["stages"]["counterexample_library"]["completed_independent_reviews"], 0)
         self.assertEqual(self.status["stages"]["cross_job_comparison"]["job_count"], 18)
@@ -55,6 +55,8 @@ class EndToEndStatusTests(unittest.TestCase):
         self.assertEqual(self.status["stages"]["delivery_evidence"]["raw_audio_video_without_transcript"], 8)
         self.assertEqual(self.status["stages"]["delivery_evidence"]["raw_only_visual_audit_items"], 8)
         self.assertEqual(self.status["stages"]["full_corpus_media_coverage"]["video_count"], 395)
+        self.assertEqual(self.status["stages"]["external_source_candidates"]["candidate_count"], 19)
+        self.assertFalse(self.status["stages"]["external_source_candidates"]["fixed_corpus_inclusion"])
         self.assertEqual(
             self.status["stages"]["full_corpus_media_coverage"]["raw_audio_video_present"],
             coverage["counts"]["raw_audio_video_present"],

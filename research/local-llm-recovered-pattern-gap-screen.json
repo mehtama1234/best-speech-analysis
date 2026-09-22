@@ -1,0 +1,99 @@
+{
+  "schema_version": "1.0",
+  "status": "local_model_recovered_pattern_gap_screen_not_validation",
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "model_snapshot": "/home/mehta/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775",
+  "requested_pattern_ids": [
+    "metrics_and_revaluation",
+    "orientation_and_roadmap",
+    "premise_correction",
+    "sorrow_and_continuation",
+    "story_memory_and_scene"
+  ],
+  "parsed_pattern_ids": [
+    "metrics_and_revaluation",
+    "orientation_and_roadmap",
+    "premise_correction",
+    "sorrow_and_continuation",
+    "story_memory_and_scene"
+  ],
+  "batch_reports": [
+    {
+      "pattern_id": "metrics_and_revaluation",
+      "parsed_judgment": {
+        "pattern_id": "metrics_and_revaluation",
+        "clarity": "clear",
+        "concerns": [
+          {
+            "type": "loss_of_identity",
+            "description": "The candidate is missing information about the Queen's role as head of state."
+          },
+          {
+            "type": "snow_coverage",
+            "description": "The candidate is missing information about the extent of snow cover in certain regions."
+          }
+        ],
+        "recommended_review_priority": "high"
+      },
+      "raw_output": "{\n  \"pattern_id\": \"metrics_and_revaluation\",\n  \"clarity\": \"clear\",\n  \"concerns\": [\n    {\n      \"type\": \"loss_of_identity\",\n      \"description\": \"The candidate is missing information about the Queen's role as head of state.\"\n    },\n    {\n      \"type\": \"snow_coverage\",\n      \"description\": \"The candidate is missing information about the extent of snow cover in certain regions.\"\n    }\n  ],\n  \"recommended_review_priority\": \"high\"\n}"
+    },
+    {
+      "pattern_id": "orientation_and_roadmap",
+      "parsed_judgment": {
+        "pattern_id": "orientation_and_roadmap",
+        "clarity": "clear",
+        "concerns": [
+          "beginning"
+        ],
+        "recommended_review_priority": "high"
+      },
+      "raw_output": "{\n  \"pattern_id\": \"orientation_and_roadmap\",\n  \"clarity\": \"clear\",\n  \"concerns\": [\"beginning\"],\n  \"recommended_review_priority\": \"high\"\n}"
+    },
+    {
+      "pattern_id": "premise_correction",
+      "parsed_judgment": {
+        "pattern_id": "premise_correction",
+        "clarification": {
+          "clear": true,
+          "mixed": false,
+          "unclear": false
+        },
+        "correction": [
+          {
+            "type": "correcting_the_question",
+            "answer": "Yes, you do see that artists like you are a bit."
+          }
+        ]
+      },
+      "raw_output": "{\n  \"pattern_id\": \"premise_correction\",\n  \"clarification\": {\n    \"clear\": true,\n    \"mixed\": false,\n    \"unclear\": false\n  },\n  \"correction\": [\n    {\n      \"type\": \"correcting_the_question\",\n      \"answer\": \"Yes, you do see that artists like you are a bit.\"\n    }\n  ]\n}"
+    },
+    {
+      "pattern_id": "sorrow_and_continuation",
+      "parsed_judgment": {
+        "pattern_id": "sorrow_and_continuation",
+        "clarity": "clear",
+        "concerns": [
+          "unpleasant trees",
+          "artistic future"
+        ],
+        "recommended_review_priority": "high"
+      },
+      "raw_output": "{\n  \"pattern_id\": \"sorrow_and_continuation\",\n  \"clarity\": \"clear\",\n  \"concerns\": [\"unpleasant trees\", \"artistic future\"],\n  \"recommended_review_priority\": \"high\"\n}"
+    },
+    {
+      "pattern_id": "story_memory_and_scene",
+      "parsed_judgment": {
+        "pattern_id": "story_memory_and_scene",
+        "clarity": "clear",
+        "concerns": [
+          "music",
+          "discipline"
+        ],
+        "recommended_review_priority": "high"
+      },
+      "raw_output": "{\n  \"pattern_id\": \"story_memory_and_scene\",\n  \"clarity\": \"clear\",\n  \"concerns\": [\"music\", \"discipline\"],\n  \"recommended_review_priority\": \"high\"\n}"
+    }
+  ],
+  "promotion_eligible": false,
+  "claim_boundary": "This is a bounded local-model screen of previously unresolved pattern IDs. It is not human semantic validation, recurrence evidence, source identity review, delivery evidence, learner evidence, listener outcomes, causal evidence or effectiveness."
+}

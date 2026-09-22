@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0",
+  "dry_run_id": "autonomous-learner-instrument-dry-run",
+  "status": "instrument_export_validation_and_scoring_passed",
+  "record_type": "learner_observation",
+  "pattern_count": 5,
+  "validation_errors": [],
+  "summary": {
+    "schema_version": "1.0",
+    "report_type": "vertical_slice_01_learner_observation_summary",
+    "status": "observations_available",
+    "claim_boundary": "Teachability observations only; this report does not measure trust, memory, persuasion, engagement or action.",
+    "valid_record_count": 1,
+    "rejected_record_count": 0,
+    "rejected_records": [],
+    "patterns": [
+      {
+        "pattern_number": 1,
+        "valid_records": 1,
+        "mean_transfer_score": 2.0,
+        "mean_listener_restatement_score": 2.0,
+        "boundary_failures": 0,
+        "promotion_eligible": true
+      },
+      {
+        "pattern_number": 2,
+        "valid_records": 1,
+        "mean_transfer_score": 2.0,
+        "mean_listener_restatement_score": 2.0,
+        "boundary_failures": 0,
+        "promotion_eligible": true
+      },
+      {
+        "pattern_number": 3,
+        "valid_records": 1,
+        "mean_transfer_score": 2.0,
+        "mean_listener_restatement_score": 2.0,
+        "boundary_failures": 0,
+        "promotion_eligible": true
+      },
+      {
+        "pattern_number": 4,
+        "valid_records": 1,
+        "mean_transfer_score": 2.0,
+        "mean_listener_restatement_score": 2.0,
+        "boundary_failures": 0,
+        "promotion_eligible": true
+      },
+      {
+        "pattern_number": 5,
+        "valid_records": 1,
+        "mean_transfer_score": 2.0,
+        "mean_listener_restatement_score": 2.0,
+        "boundary_failures": 0,
+        "promotion_eligible": true
+      }
+    ],
+    "promotion_rule": "No pattern is promotion-eligible if any valid record has a boundary score of 0; external review and packet validation remain required."
+  },
+  "full_curriculum": {
+    "status": "full_18_job_synthetic_export_validated",
+    "job_count": 18,
+    "task_count": 72,
+    "record_count": 1,
+    "validation_errors": [],
+    "claim_boundary": "Synthetic instrument dry run only; this is not a learner observation and does not measure teachability, listener outcomes or effectiveness."
+  },
+  "claim_boundary": "Synthetic instrument dry run only; this is not a learner observation and does not measure trust, memory, persuasion or action.",
+  "what_this_proves": "The fixed learner form shape, task-bank linkage, consent field, score bounds, validator and summary path work together on a synthetic record.",
+  "what_this_does_not_prove": "No human completed the form. This does not establish learner teachability, listener comprehension, improvement or effectiveness."
+}

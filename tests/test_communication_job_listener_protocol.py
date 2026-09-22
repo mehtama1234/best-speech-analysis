@@ -14,6 +14,7 @@ class CommunicationJobListenerProtocolTests(unittest.TestCase):
     def setUpClass(cls):
         cls.protocol = json.loads((ROOT / "research/communication-job-listener-outcome-protocol.json").read_text())
         cls.html = (ROOT / "writeups/communication-job-listener-record.html").read_text()
+        cls.markdown = (ROOT / "writeups/communication-job-listener-outcome-protocol.md").read_text()
 
     def test_design_covers_all_jobs_and_is_not_run(self):
         self.assertEqual(self.protocol["status"], "design_complete_not_run")
@@ -27,6 +28,11 @@ class CommunicationJobListenerProtocolTests(unittest.TestCase):
         self.assertEqual(self.protocol["scoring_schema"]["scale"], "0-2")
         self.assertIn("Download JSON record", self.html)
         self.assertIn("score_main_point_recall", self.html)
+        self.assertIn("save-draft", self.html)
+        self.assertIn("restore-draft", self.html)
+        self.assertIn("clear-draft", self.html)
+        self.assertIn("stimulus pairs locked: **no**", self.markdown)
+        self.assertIn("Status: **design complete, not run**", self.markdown)
 
     def test_validator_accepts_complete_synthetic_record_and_rejects_missing(self):
         record = {
@@ -42,10 +48,11 @@ class CommunicationJobListenerProtocolTests(unittest.TestCase):
         for task in self.protocol["listener_tasks"]:
             record["responses"][f"task_{task['task_id']}"] = "synthetic response"
             record["responses"][f"score_{task['task_id']}"] = 2
-        self.assertEqual(validate(record, self.protocol), [])
+        self.assertTrue(any("stimulus pairs" in error for error in validate(record, self.protocol)))
+        self.assertEqual(validate(record, self.protocol, allow_unlocked_synthetic=True), [])
         incomplete = copy.deepcopy(record)
         del incomplete["responses"]["task_main_point_recall"]
-        self.assertTrue(any("main_point_recall" in error for error in validate(incomplete, self.protocol)))
+        self.assertTrue(any("main_point_recall" in error for error in validate(incomplete, self.protocol, allow_unlocked_synthetic=True)))
 
 
 if __name__ == "__main__":

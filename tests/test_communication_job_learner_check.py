@@ -22,6 +22,9 @@ class CommunicationJobLearnerCheckTests(unittest.TestCase):
         self.assertIn("listener outcomes", self.protocol["claim_boundary"])
         self.assertIn("participant_code", self.html)
         self.assertIn("Download JSON record", self.html)
+        self.assertIn("save-draft", self.html)
+        self.assertIn("restore-draft", self.html)
+        self.assertIn("clear-draft", self.html)
 
     def test_exact_phrase_forms_are_linked_without_forcing_unindexed_jobs(self):
         self.assertEqual(self.protocol["exact_phrase_form_count"], 50)

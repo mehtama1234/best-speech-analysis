@@ -14,12 +14,12 @@ ROOT = Path(__file__).resolve().parents[1]
 PROTOCOL = ROOT / "research/communication-job-listener-outcome-protocol.json"
 
 
-def summarize(records: list[dict], protocol: dict | None = None) -> dict:
+def summarize(records: list[dict], protocol: dict | None = None, *, allow_unlocked_synthetic: bool = False) -> dict:
     protocol = protocol or json.loads(PROTOCOL.read_text())
     if not records:
         raise ValueError("at least one listener record is required")
     for record in records:
-        errors = validate(record, protocol)
+        errors = validate(record, protocol, allow_unlocked_synthetic=allow_unlocked_synthetic)
         if errors:
             raise ValueError("invalid listener record: " + "; ".join(errors[:8]))
     pattern_by_stimulus = {pattern["draft_stimulus_id"]: pattern for pattern in protocol["patterns"]}

@@ -9,12 +9,30 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
+import shutil
 import subprocess
 from pathlib import Path
 
 
+MEDIA_SUFFIXES = {".mp4", ".webm", ".mkv", ".mov", ".m4a", ".mp3", ".opus", ".ogg", ".wav"}
+
+
+def resolve_yt_dlp(explicit: str | None = None) -> str:
+    """Resolve an explicit, PATH, or standard user-local yt-dlp install."""
+    candidates = [explicit, shutil.which("yt-dlp"), str(Path.home() / ".local/bin/yt-dlp")]
+    for candidate in candidates:
+        if candidate and os.access(candidate, os.X_OK):
+            return candidate
+    return "yt-dlp"
+
+
 def files_for(directory: Path, video_id: str) -> list[Path]:
-    return sorted(p for p in directory.glob(f"{video_id}.*") if p.is_file())
+    """Return only non-empty media files; ignore temporary downloader artifacts."""
+    return sorted(
+        p for p in directory.glob(f"{video_id}.*")
+        if p.is_file() and p.suffix.lower() in MEDIA_SUFFIXES and p.stat().st_size > 1024
+    )
 
 
 def attempt(command: list[str], timeout: int) -> str:
@@ -43,12 +61,14 @@ def main() -> int:
         help="Skip this many sorted candidates before applying --limit.",
     )
     parser.add_argument("--timeout", type=int, default=180)
+    parser.add_argument("--yt-dlp", help="Downloader executable; defaults to PATH then ~/.local/bin/yt-dlp")
     parser.add_argument(
         "--retry-failed",
         action="store_true",
         help="Retry sources with a recorded failed attempt; skipped by default.",
     )
     args = parser.parse_args()
+    yt_dlp = resolve_yt_dlp(args.yt_dlp)
 
     queue = json.loads(Path(args.queue).read_text())
     videos = queue.get("videos", queue.get("items", []))
@@ -100,18 +120,22 @@ def main() -> int:
         audio_pattern = str(audio_dir / f"{video_id}.%(ext)s")
         if not files_for(video_dir, video_id):
             row["video_status"] = attempt([
-                "yt-dlp", "--no-playlist", "--no-part", "--retries", "1",
+                yt_dlp, "--no-playlist", "--no-part", "--retries", "1",
                 "--format", "worstvideo[protocol=https]/worstvideo/worst",
                 "--output", video_pattern, url,
             ], args.timeout)
+            if row["video_status"] == "downloaded" and not files_for(video_dir, video_id):
+                row["video_status"] = "failed:no_output"
         else:
             row["video_status"] = "downloaded"
         if not files_for(audio_dir, video_id):
             row["audio_status"] = attempt([
-                "yt-dlp", "--no-playlist", "--no-part", "--retries", "1",
+                yt_dlp, "--no-playlist", "--no-part", "--retries", "1",
                 "--format", "worstaudio[protocol=https]/worstaudio",
                 "--output", audio_pattern, url,
             ], args.timeout)
+            if row["audio_status"] == "downloaded" and not files_for(audio_dir, video_id):
+                row["audio_status"] = "failed:no_output"
         else:
             row["audio_status"] = "downloaded"
         row["decision"] = "attempted"

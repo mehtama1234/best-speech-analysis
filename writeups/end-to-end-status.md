@@ -19,7 +19,7 @@ This dashboard reports artifact and validation status. It does not convert trans
 | Exact phrase-form inventory | `heuristic_exact_phrase_inventory_not_validated` | 50 forms / 102351 segments |
 | Exact phrase-form independent review | `template_not_completed` | 50 forms queued / 0 completed |
 | Delivery evidence index | `delivery_evidence_reconciled_independent_review_pending` | 21 internal / 0 independent observations |
-| Shared evidence model | `contract_ready_research_evidence_incomplete` | 11 entity types / web-mobile contract |
+| Shared evidence model | `contract_ready_research_evidence_incomplete` | 13 entity types / web-mobile contract |
 | Counterexample library | `template_not_completed` | 18 jobs / 90 required slots / 0 completed |
 | Counterexample candidate queue | `candidate_queue_not_independently_reviewed` | 90 routed / 54 source-linked / 0 confirmed |
 | Cross-job comparison | `transcript_video_level_comparison_not_independently_validated` | 18 jobs / 153 pairs / 394 eligible videos |
@@ -37,6 +37,7 @@ This dashboard reports artifact and validation status. It does not convert trans
 | Full-corpus media recovery | `recovery_routing_not_media_validation` | 41 queued missing/derived items |
 | Shared lessons | `18_draft_cards_not_validated` | 18 drafts / 0 promotion-ready |
 | Promotion readiness | `promotion_checkpoint_open` | 18 cards / 0 promotion-ready / 18 blocked |
+| External source candidates | `candidate_sources_visible_not_in_fixed_corpus` | 2 sources / 239/243 transcripts / 13 candidates / fixed-corpus inclusion: False |
 | Learner check | `protocol_drafted_not_run` | 32 tasks / 0 records |
 | Listener outcomes | `design_complete_not_run` | 6 tasks / stimuli locked: False / 0 records |
 

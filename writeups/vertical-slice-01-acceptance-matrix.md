@@ -17,10 +17,10 @@ consent.
 | Human-readable audiovisual alignment | `research/vertical-slice-01-manual-multimodal-review.json`: 13 sampled intervals across all five jobs, including counterexamples and cutaways | Internal, not independent | Independent reviewer must inspect the 50-item packet |
 | Cross-speaker/event recurrence | [Cluster recurrence report](vertical-slice-01-cluster-recurrence.md): 25 representatives across 13 IDs; all 50 packet roles span 16 IDs, with raw-media denominators and counterexample counts | Provisional | Verify speaker/event independence and preserve holdout analysis |
 | Failure, non-fit and safety limits | Packet counterexamples, alternate-function controls, accessibility/privacy warnings and practice boundaries | Provisional complete | Reviewer may add or reject limits |
-| Practice lessons | Five linked lesson drafts, shared practice flows, self-checks, non-fit checks and listener checks | Runnable draft | Revise after learner failures |
+| Practice lessons | Five linked lesson drafts, shared practice flows, self-checks, non-fit checks and listener checks; [autonomous packet audit](autonomous-vertical-slice-01.md) reconciles all five packets | Internally reconciled runnable draft | Revise after learner failures |
 | Independent review | 50-item browser workbook and review-record validator | Pending; no external record | One or more independent validated exports |
 | Learner teachability | Fixed 20-task bank, consent-aware learner instrument and scorer | Pending; protocol not run | Consented learner records and rubric results |
-| Browser delivery | Lesson-index and five-section learner-check Playwright smoke test passes with required browser libraries | Verified runnable | Keep passing after UI changes |
+| Browser delivery | Lesson-index and five-section learner-check Playwright smoke test passes with required browser libraries; 18-job practice, shared curriculum and slice-02 learner smoke checks also pass | Verified runnable in the current environment | Keep passing after UI changes |
 | Promotion decision | `research/vertical-slice-01-validation-audit.json` reports `0/5` packets ready | Not promoted | All required review and learner gates must pass |
 | Next pattern expansion | [Vertical slice 02 candidate plan](vertical-slice-02-candidate-plan.md) now has draft packets and lessons for questions, definitions/reformulations and calls to action | Drafts only | Independently review and learner-test new packets after slice 01 review |
 
@@ -50,8 +50,11 @@ judgments or learner observations, so it must remain provisional.
 python3 scripts/validate_vertical_slice.py
 python3 -m unittest discover -s tests -p 'test_*.py'
 python3 scripts/check_vertical_slice_lesson_browser.py
+python3 scripts/check_communication_job_practice_browser.py
+python3 scripts/check_shared_curriculum_browser.py
+python3 scripts/check_vertical_slice_02_learner_browser.py
 ```
 
-The browser command requires a runnable Chromium and its shared libraries. Its
-failure in a base environment missing `libnspr4.so` is an environment issue;
-the same smoke test passes when those libraries are supplied in user space.
+The browser commands require a runnable Chromium and its shared libraries. In
+this environment they pass with Chromium's cached binary and the Ubuntu
+runtime libraries supplied through a user-space `LD_LIBRARY_PATH`.

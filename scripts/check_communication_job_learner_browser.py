@@ -47,11 +47,20 @@ def main() -> int:
         )
         for field in page.locator("input[type='date']").all():
             field.fill("2026-09-18")
+        draft_field = page.locator("textarea[name='opening-recognition-01']")
+        draft_field.fill("Synthetic saved learner response.")
+        page.locator("#save-draft").click()
+        draft_field.fill("Mutated after save.")
+        page.locator("#restore-draft").click()
+        assert draft_field.input_value() == "Synthetic saved learner response."
+        page.locator("#clear-draft").click()
+        assert "cleared" in page.locator("#draft-status").inner_text()
         assert page.evaluate("document.documentElement.scrollWidth <= innerWidth")
         with page.expect_download() as download_info:
             page.locator("#download").click()
         exported_path = Path(download_info.value.path())
         exported = json.loads(exported_path.read_text())
+        assert "downloaded locally" in page.locator("#export-status").inner_text()
         errors = validate(exported)
         assert errors == [], f"learner export failed validator: {errors[:8]}"
         assert len(exported["task_bank_ids"]) == 72

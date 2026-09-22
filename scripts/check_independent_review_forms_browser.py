@@ -17,6 +17,7 @@ from playwright.sync_api import Error as PlaywrightError, sync_playwright
 
 ROOT = Path(__file__).resolve().parents[1]
 FORMS = (
+    ("blinded transcript", "writeups/blinded-review-packet.html", "validate_blinded_review_export"),
     ("identity", "writeups/corpus-identity-review-workbook.html", "validate_corpus_identity_review"),
     ("function", "writeups/corpus-function-independent-review-workbook.html", "validate_corpus_function_review"),
     ("phrase form", "writeups/corpus-phrase-form-independent-review-workbook.html", "validate_corpus_phrase_form_review"),
@@ -58,7 +59,31 @@ def main() -> int:
             page.goto((ROOT / relative_page).as_uri(), wait_until="load")
             assert page.locator("#review").count() == 1, f"{label}: review form missing"
             assert page.locator("#download").count() == 1, f"{label}: download control missing"
+            if label == "counterexample":
+                # The routed candidate is convenience context; the reviewer
+                # must still make every judgment from a blank decision state.
+                assert page.locator("input[name='item_2_evidence_id']").input_value(), "counterexample: candidate evidence was not prefilled"
+                assert page.locator("select[name='item_2_evidence_status']").input_value() == "", "counterexample: evidence decision was prefilled"
+                assert page.locator("textarea[name='item_2_context_note']").input_value() == "", "counterexample: context judgment was prefilled"
             populate(page)
+            if label == "counterexample":
+                draft_field = page.locator("textarea[name='item_2_context_note']")
+                draft_field.fill("Synthetic saved reviewer context.")
+                page.locator("#save-draft").click()
+                draft_field.fill("Mutated after save.")
+                page.locator("#restore-draft").click()
+                assert draft_field.input_value() == "Synthetic saved reviewer context."
+                page.locator("#clear-draft").click()
+                assert "cleared" in page.locator("#draft-status").inner_text()
+            if label == "blinded transcript":
+                draft_field = page.locator("textarea[name='item_2_reason']")
+                draft_field.fill("Synthetic saved reviewer context.")
+                page.locator("#save-draft").click()
+                draft_field.fill("Mutated after save.")
+                page.locator("#restore-draft").click()
+                assert draft_field.input_value() == "Synthetic saved reviewer context."
+                page.locator("#clear-draft").click()
+                assert "cleared" in page.locator("#draft-status").inner_text()
             for field in page.locator("input[type='date']").all():
                 field.fill("2026-09-18")
             assert page.evaluate("document.documentElement.scrollWidth <= innerWidth"), f"{label}: mobile overflow"
@@ -71,7 +96,7 @@ def main() -> int:
             assert errors == [], f"{label}: exported record failed validator: {errors[:8]}"
             page.close()
         browser.close()
-    print("independent-review browser smoke test: 7 review forms render, export and validate")
+    print("independent-review browser smoke test: 8 review forms render, export and validate")
     return 0
 
 

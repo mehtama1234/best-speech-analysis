@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "audit_id": "end-to-end-completion-audit",
+  "status": "internal_release_candidate_complete_external_validation_open",
+  "requirement_count": 7,
+  "internally_complete_count": 7,
+  "external_validation_complete": false,
+  "promotion_ready_count": 0,
+  "requirements": [
+    {
+      "id": "select_five_jobs_and_patterns",
+      "requirement": "Select five communication jobs and five candidate patterns.",
+      "status": "complete_for_internal_slice",
+      "internal_complete": true,
+      "evidence": [
+        "research/autonomous-vertical-slice-01.json",
+        "writeups/autonomous-vertical-slice-01.md"
+      ],
+      "detail": "5/5 packets reconcile; promotion remains closed."
+    },
+    {
+      "id": "reaudit_labels_provenance_independence",
+      "requirement": "Re-audit speech-function labels, source provenance, and speaker/event independence.",
+      "status": "complete_internal_reaudit_independent_review_open",
+      "internal_complete": true,
+      "evidence": [
+        "research/autonomous-identity-reconciliation.json",
+        "research/vertical-slice-01-source-event-independence.json",
+        "research/external-review-gate-index.json"
+      ],
+      "detail": "Metadata and linkage re-audit passes; independent identity/function decisions are explicitly absent."
+    },
+    {
+      "id": "synchronized_delivery_sample",
+      "requirement": "Select synchronized audio/video samples and record delivery observations with failure notes.",
+      "status": "complete_internal_observation_manual_listening_and_independent_review_open",
+      "internal_complete": true,
+      "evidence": [
+        "research/communication-job-delivery-internal-observations.json",
+        "research/vertical-slice-01-manual-multimodal-review.json",
+        "research/autonomous-delivery-reconciliation.json",
+        "writeups/communication-job-delivery-sampling.html"
+      ],
+      "detail": "36 rows and 13 slice multimodal records contain internal observations and limits; manual vocal listening and independent review remain open."
+    },
+    {
+      "id": "denominators_counterexamples_alternatives",
+      "requirement": "Add denominators, counterexamples, and alternative explanations to each pattern card.",
+      "status": "complete_internal_controls_confirmation_and_independent_review_open",
+      "internal_complete": true,
+      "evidence": [
+        "research/autonomous-counterexample-screening.json",
+        "research/communication-job-counterexample-candidate-queue.json",
+        "research/end-to-end-acceptance-matrix.json"
+      ],
+      "detail": "90 bounded candidates and alternative-explanation slots are routed; independent confirmation remains open."
+    },
+    {
+      "id": "adversarial_claim_safety_checks",
+      "requirement": "Run adversarial checks over evidence, interpretation, limits, and safety boundaries.",
+      "status": "complete_as_repository_check",
+      "internal_complete": true,
+      "evidence": [
+        "research/autonomous-end-to-end-audit.json",
+        "scripts/validate_autonomous_claim_boundaries.py"
+      ],
+      "detail": "Autonomous release audit passes 27/27; this is not independent validation."
+    },
+    {
+      "id": "five_lessons_mobile_practice",
+      "requirement": "Create five linked web lessons and mobile practice flows.",
+      "status": "complete_for_internal_slice",
+      "internal_complete": true,
+      "evidence": [
+        "research/autonomous-vertical-slice-01.json",
+        "research/communication-job-mobile-lessons.json",
+        "writeups/communication-job-practice.html"
+      ],
+      "detail": "Five packet lessons and shared practice flows are linked and browser-tested."
+    },
+    {
+      "id": "runnable_learner_check",
+      "requirement": "Provide a runnable learner check for recognition, explanation, transfer, and misuse detection.",
+      "status": "complete_runnable_instrument_participants_missing",
+      "internal_complete": true,
+      "evidence": [
+        "research/autonomous-learner-instrument-dry-run.json",
+        "research/communication-job-learner-check.json",
+        "writeups/communication-job-learner-check.html"
+      ],
+      "detail": "Synthetic dry run passes; learner records remain 0 and listener outcomes remain unmeasured, as required by the boundary."
+    }
+  ],
+  "claim_boundary": "This audit maps the explicit seven-part end-to-end objective to current repository evidence. All seven repository-checkable requirements are internally complete, but independent review, learner records, listener outcomes and communication effectiveness are not established."
+}

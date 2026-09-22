@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0",
+  "status": "second_model_comparison_quality_warning_not_validation",
+  "source_report": "research/second-model-recovered-pattern-comparison.json",
+  "requested_pattern_count": 55,
+  "parsed_output_count": 53,
+  "complete_schema_count": 47,
+  "malformed_output_count": 4,
+  "missing_output_count": 2,
+  "malformed_outputs": [
+    {
+      "requested_pattern_id": "identity_status_and_belonging",
+      "keys": [
+        "assessment",
+        "concerns",
+        "pattern_id"
+      ]
+    },
+    {
+      "requested_pattern_id": "metric_revaluation",
+      "keys": [
+        "assessment",
+        "concerns",
+        "pattern_id"
+      ]
+    },
+    {
+      "requested_pattern_id": "metrics_and_revaluation",
+      "keys": [
+        "assessment",
+        "concerns",
+        "pattern_id"
+      ]
+    },
+    {
+      "requested_pattern_id": "value_and_moral_frame",
+      "keys": [
+        "assessment",
+        "concerns",
+        "pattern_id"
+      ]
+    }
+  ],
+  "missing_pattern_ids": [
+    "authenticity_vs_performance",
+    "technical_explanation_and_interruption"
+  ],
+  "assessment_counts": {
+    "supports": 51,
+    "null": 2
+  },
+  "priority_counts": {
+    "high": 47,
+    "null": 6
+  },
+  "promotion_eligible": false,
+  "use_for_corroboration": false,
+  "claim_boundary": "The second local model is not independent human evidence. This audit records schema and output-concentration risk only. Agreement or apparent support from these small local models must not be treated as semantic validation, recurrence, delivery, learner, listener, causal or effectiveness evidence."
+}

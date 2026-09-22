@@ -8,6 +8,11 @@ import json
 import subprocess
 from pathlib import Path
 
+try:
+    from scripts.recover_full_corpus_media import resolve_yt_dlp
+except ModuleNotFoundError:  # direct ``python scripts/...`` invocation
+    from recover_full_corpus_media import resolve_yt_dlp
+
 
 def existing_media(directory: Path, video_id: str) -> list[Path]:
     """Return real output files; ledger status alone is never a cache hit."""
@@ -31,9 +36,11 @@ def main() -> int:
     parser.add_argument("--video-dir", default="data/video")
     parser.add_argument("--status-file", default="data/media-status.jsonl")
     parser.add_argument("--limit", type=int)
+    parser.add_argument("--yt-dlp", help="Downloader executable; defaults to PATH then ~/.local/bin/yt-dlp")
     parser.add_argument("--video-id", action="append", dest="video_ids",
                         help="Download only these manifest video IDs; repeatable.")
     args = parser.parse_args()
+    yt_dlp = resolve_yt_dlp(args.yt_dlp)
 
     manifest = json.loads(Path(args.manifest).read_text())
     audio_dir = Path(args.audio_dir)
@@ -72,11 +79,11 @@ def main() -> int:
         video_pattern = str(video_dir / f"{video_id}.%(ext)s")
         audio_pattern = str(audio_dir / f"{video_id}.%(ext)s")
         row["video_status"] = run_download([
-            "yt-dlp", "--no-playlist", "--no-part", "--format", "bestvideo[height<=360][ext=mp4]/bestvideo[height<=360]/worstvideo",
+            yt_dlp, "--no-playlist", "--no-part", "--format", "bestvideo[height<=360][ext=mp4]/bestvideo[height<=360]/worstvideo",
             "--output", video_pattern, url,
         ], video_dir, video_id)
         row["audio_status"] = run_download([
-            "yt-dlp", "--no-playlist", "--no-part", "--format", "bestaudio[ext=m4a]/bestaudio",
+            yt_dlp, "--no-playlist", "--no-part", "--format", "bestaudio[ext=m4a]/bestaudio",
             "--output", audio_pattern, url,
         ], audio_dir, video_id)
         print(json.dumps(row), flush=True)

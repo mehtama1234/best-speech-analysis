@@ -1,0 +1,524 @@
+{
+  "schema_version": "1.0",
+  "status": "local_model_recovered_pattern_triage_not_validation",
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "model_snapshot": "/home/mehta/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775",
+  "pattern_count": 55,
+  "candidate_card_count": 2431,
+  "batch_count": 11,
+  "parsed_judgment_count": 38,
+  "batch_reports": [
+    {
+      "batch_number": 1,
+      "pattern_ids": [
+        "access_obstacle_to_support",
+        "analogy_metaphor_and_callback",
+        "analogy_transfer",
+        "audience_invitation_and_next_turn",
+        "audience_shift"
+      ],
+      "parsed_judgment": {
+        "patterns": [
+          {
+            "pattern_id": "access_obstacle_to_support",
+            "clarity": "clear",
+            "concerns": [
+              "The excerpt does not clearly define what the access barrier is or how to find support"
+            ],
+            "recommended_review_priority": "medium"
+          },
+          {
+            "pattern_id": "analogy_metaphor_and_callback",
+            "clarity": "clear",
+            "concerns": [],
+            "recommended_review_priority": "low"
+          },
+          {
+            "pattern_id": "analogy_transfer",
+            "clarity": "clear",
+            "concerns": [],
+            "recommended_review_priority": "high"
+          },
+          {
+            "pattern_id": "audience_invitation_and_next_turn",
+            "clarity": "clear",
+            "concerns": [],
+            "recommended_review_priority": "medium"
+          },
+          {
+            "pattern_id": "audience_shift",
+            "clarity": "clear",
+            "concerns": [],
+            "recommended_review_priority": "medium"
+          }
+        ],
+        "array": [
+          "Access obstacle to support",
+          "Analogy metaphor and callback",
+          "Analogy transfer",
+          "Audience invitation and next turn",
+          "Audience shift"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"patterns\": [\n    {\n      \"pattern_id\": \"access_obstacle_to_support\",\n      \"clarity\": \"clear\",\n      \"concerns\": [\"The excerpt does not clearly define what the access barrier is or how to find support\"],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"analogy_metaphor_and_callback\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"low\"\n    },\n    {\n      \"pattern_id\": \"analogy_transfer\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"high\"\n    },\n    {\n      \"pattern_id\": \"audience_invitation_and_next_turn\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"audience_shift\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"medium\"\n    }\n  ],\n  \"array\": [\n    \"Access obstacle to support\",\n    \"Analogy metaphor and callback\",\n    \"Analogy transfer\",\n    \"Audience invitation and next turn\",\n    \"Audience shift\"\n  ]\n}\n```"
+    },
+    {
+      "batch_number": 2,
+      "pattern_ids": [
+        "authenticity_vs_performance",
+        "authority_to_service",
+        "cause_and_mechanism",
+        "choice_and_responsibility",
+        "contrast_and_reversal"
+      ],
+      "parsed_judgment": {
+        "patterns": [
+          {
+            "pattern_id": "authenticity_vs_performance",
+            "clarity": "clear",
+            "concerns": [
+              "the authenticity of the content"
+            ],
+            "recommended_review_priority": "medium"
+          },
+          {
+            "pattern_id": "authority_to_service",
+            "clarity": "clear",
+            "concerns": [],
+            "recommended_review_priority": "low"
+          },
+          {
+            "pattern_id": "cause_and_mechanism",
+            "clarity": "clear",
+            "concerns": [
+              "the cause of the claim"
+            ],
+            "recommended_review_priority": "high"
+          },
+          {
+            "pattern_id": "choice_and_responsibility",
+            "clarity": "clear",
+            "concerns": [
+              "who chooses the subject matter",
+              "what support is required"
+            ],
+            "recommended_review_priority": "high"
+          },
+          {
+            "pattern_id": "contrast_and_reversal",
+            "clarity": "clear",
+            "concerns": [
+              "make the earlier frame and the changed frame visible without a false binary"
+            ],
+            "recommended_review_priority": "high"
+          }
+        ],
+        "array": [
+          [
+            "separate performed form from lived claim → explain the choice → mark what remains constructed"
+          ]
+        ]
+      },
+      "raw_output": "```json\n{\n  \"patterns\": [\n    {\n      \"pattern_id\": \"authenticity_vs_performance\",\n      \"clarity\": \"clear\",\n      \"concerns\": [\"the authenticity of the content\"],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"authority_to_service\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"low\"\n    },\n    {\n      \"pattern_id\": \"cause_and_mechanism\",\n      \"clarity\": \"clear\",\n      \"concerns\": [\"the cause of the claim\"],\n      \"recommended_review_priority\": \"high\"\n    },\n    {\n      \"pattern_id\": \"choice_and_responsibility\",\n      \"clarity\": \"clear\",\n      \"concerns\": [\"who chooses the subject matter\", \"what support is required\"],\n      \"recommended_review_priority\": \"high\"\n    },\n    {\n      \"pattern_id\": \"contrast_and_reversal\",\n      \"clarity\": \"clear\",\n      \"concerns\": [\"make the earlier frame and the changed frame visible without a false binary\"],\n      \"recommended_review_priority\": \"high\"\n    }\n  ],\n  \"array\": [\n    [\"separate performed form from lived claim → explain the choice → mark what remains constructed\"]\n  ]\n}\n```"
+    },
+    {
+      "batch_number": 3,
+      "pattern_ids": [
+        "craft_process_over_outcome",
+        "credit_and_collective_agency",
+        "credit_redirection",
+        "definition_and_explanation",
+        "despair_to_hope"
+      ],
+      "parsed_judgment": {
+        "patterns": [
+          {
+            "pattern_id": "craft_process_over_outcome",
+            "clarity": "clear",
+            "concerns": [
+              "The excerpt discusses crafting songs and drawing images, but does not clearly define the process or outcomes"
+            ],
+            "recommended_review_priority": "medium"
+          },
+          {
+            "pattern_id": "credit_and_collective_agency",
+            "clarity": "clear",
+            "concerns": [],
+            "recommended_review_priority": "low"
+          },
+          {
+            "pattern_id": "credit_redirection",
+            "clarity": "clear",
+            "concerns": [],
+            "recommended_review_priority": "low"
+          },
+          {
+            "pattern_id": "definition_and_explanation",
+            "clarity": "clear",
+            "concerns": [],
+            "recommended_review_priority": "low"
+          },
+          {
+            "pattern_id": "despair_to_hope",
+            "clarity": "clear",
+            "concerns": [],
+            "recommended_review_priority": "low"
+          }
+        ],
+        "array": [
+          "craft_process_over_outcome",
+          "credit_and_collective_agency",
+          "credit_redirection",
+          "definition_and_explanation",
+          "despair_to_hope"
+        ]
+      },
+      "raw_output": "```json\n{\n  \"patterns\": [\n    {\n      \"pattern_id\": \"craft_process_over_outcome\",\n      \"clarity\": \"clear\",\n      \"concerns\": [\"The excerpt discusses crafting songs and drawing images, but does not clearly define the process or outcomes\"],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"credit_and_collective_agency\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"low\"\n    },\n    {\n      \"pattern_id\": \"credit_redirection\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"low\"\n    },\n    {\n      \"pattern_id\": \"definition_and_explanation\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"low\"\n    },\n    {\n      \"pattern_id\": \"despair_to_hope\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"low\"\n    }\n  ],\n  \"array\": [\n    \"craft_process_over_outcome\",\n    \"credit_and_collective_agency\",\n    \"credit_redirection\",\n    \"definition_and_explanation\",\n    \"despair_to_hope\"\n  ]\n}\n```"
+    },
+    {
+      "batch_number": 4,
+      "pattern_ids": [
+        "difficulty_to_capability",
+        "emotion_to_composure",
+        "evidence_gap",
+        "expectation_reversal",
+        "failure_to_reframe"
+      ],
+      "parsed_judgment": {
+        "patterns": [
+          {
+            "pattern_id": "difficulty_to_capability",
+            "clarity": "clear",
+            "concerns": [
+              "obstacles in the obstacle course"
+            ],
+            "recommended_review_priority": "medium"
+          },
+          {
+            "pattern_id": "emotion_to_composure",
+            "clarity": "clear",
+            "concerns": [],
+            "recommended_review_priority": "low"
+          },
+          {
+            "pattern_id": "evidence_gap",
+            "clarity": "clear",
+            "concerns": [],
+            "recommended_review_priority": "medium"
+          },
+          {
+            "pattern_id": "expectation_reversal",
+            "clarity": "clear",
+            "concerns": [],
+            "recommended_review_priority": "medium"
+          },
+          {
+            "pattern_id": "failure_to_reframe",
+            "clarity": "clear",
+            "concerns": [],
+            "recommended_review_priority": "medium"
+          }
+        ],
+        "array": [
+          [
+            "obstacles in the obstacle course"
+          ]
+        ]
+      },
+      "raw_output": "```json\n{\n  \"patterns\": [\n    {\n      \"pattern_id\": \"difficulty_to_capability\",\n      \"clarity\": \"clear\",\n      \"concerns\": [\"obstacles in the obstacle course\"],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"emotion_to_composure\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"low\"\n    },\n    {\n      \"pattern_id\": \"evidence_gap\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"expectation_reversal\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"failure_to_reframe\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"medium\"\n    }\n  ],\n  \"array\": [\n    [\"obstacles in the obstacle course\"]\n  ]\n}\n```"
+    },
+    {
+      "batch_number": 5,
+      "pattern_ids": [
+        "familiarity_to_scope",
+        "future_hope_and_action",
+        "grief_loss_and_continuation",
+        "hands_off",
+        "humor_rapport_and_self_undercut"
+      ],
+      "parsed_judgment": {
+        "patterns": [
+          {
+            "pattern_id": "familiarity_to_scope",
+            "clarity": "clear",
+            "concerns": [
+              "The excerpt does not mention any specific topic or context related to the given themes"
+            ],
+            "recommended_review_priority": "medium"
+          },
+          {
+            "pattern_id": "future_hope_and_action",
+            "clarity": "clear",
+            "concerns": [],
+            "recommended_review_priority": "low"
+          },
+          {
+            "pattern_id": "grief_loss_and_continuation",
+            "clarity": "clear",
+            "concerns": [],
+            "recommended_review_priority": "high"
+          },
+          {
+            "pattern_id": "hands_off",
+            "clarity": "clear",
+            "concerns": [],
+            "recommended_review_priority": "medium"
+          },
+          {
+            "pattern_id": "humor_rapport_and_self_undercut",
+            "clarity": "clear",
+            "concerns": [],
+            "recommended_review_priority": "low"
+          }
+        ],
+        "array": [
+          [
+            "familiarity_to_scope"
+          ],
+          [
+            "future_hope_and_action"
+          ],
+          [
+            "grief_loss_and_continuation"
+          ],
+          [
+            "hands_off"
+          ],
+          [
+            "humor_rapport_and_self_undercut"
+          ]
+        ]
+      },
+      "raw_output": "```json\n{\n  \"patterns\": [\n    {\n      \"pattern_id\": \"familiarity_to_scope\",\n      \"clarity\": \"clear\",\n      \"concerns\": [\"The excerpt does not mention any specific topic or context related to the given themes\"],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"future_hope_and_action\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"low\"\n    },\n    {\n      \"pattern_id\": \"grief_loss_and_continuation\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"high\"\n    },\n    {\n      \"pattern_id\": \"hands_off\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"humor_rapport_and_self_undercut\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"low\"\n    }\n  ],\n  \"array\": [\n    [\"familiarity_to_scope\"],\n    [\"future_hope_and_action\"],\n    [\"grief_loss_and_continuation\"],\n    [\"hands_off\"],\n    [\"humor_rapport_and_self_undercut\"]\n  ]\n}\n```"
+    },
+    {
+      "batch_number": 6,
+      "pattern_ids": [
+        "identity_status_and_belonging",
+        "institution_system_and_policy",
+        "invitation_to_low_barrier_entry",
+        "metric_revaluation",
+        "metrics_and_revaluation"
+      ],
+      "parsed_judgment": {
+        "pattern_id": "identity_status_and_belonging",
+        "clarity": "clear",
+        "concerns": [],
+        "recommended_review_priority": "medium"
+      },
+      "raw_output": "```json\n{\n  \"patterns\": [\n    {\n      \"pattern_id\": \"identity_status_and_belonging\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"institution_system_and_policy\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"low\"\n    },\n    {\n      \"pattern_id\": \"invitation_to_low_barrier_entry\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"metric_revaluation\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"high\"\n    }\n  ],\n  \"array\": [\n    {\n      \"id\": \"2rmRzAdLgWk\",\n      \"text\": \"particular role, but that's when I realized, oh, We have a very beautiful time where we focus on equal pay, gender equality and a lot of things.\"\n    },\n    {\n      \"id\": \"EIzpPoRFF08\",\n      \"text\": \"fearless embrace of progress which makes us great as nations. The role and the duties of monarchy also remain\"\n    },\n    {\n      \"id\": \"-Z9b_v612QQ\",\n      \"text\": \"but if I want to be on a holiday where no one recognizes us, then definitely somewhere in Europe or one"
+    },
+    {
+      "batch_number": 7,
+      "pattern_ids": [
+        "moral_to_memorial",
+        "objection_and_response",
+        "optional_support",
+        "orientation_and_roadmap",
+        "premise_correction"
+      ],
+      "parsed_judgment": {
+        "pattern_id": "moral_to_memorial",
+        "clarity": "clear",
+        "concerns": [
+          "the contradiction between the speaker's desire to be like Paramore and their own personal history"
+        ],
+        "recommended_review_priority": "medium"
+      },
+      "raw_output": "```json\n{\n  \"patterns\": [\n    {\n      \"pattern_id\": \"moral_to_memorial\",\n      \"clarity\": \"clear\",\n      \"concerns\": [\"the contradiction between the speaker's desire to be like Paramore and their own personal history\"],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"objection_and_response\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"low\"\n    },\n    {\n      \"pattern_id\": \"optional_support\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"medium\"\n    }\n  ],\n  \"array\": [\n    {\n      \"id\": \"2D6qaZTOAXs\",\n      \"text\": \"for me. I remember I wanted to be like Paramore at one point. I thought this is my lane. I feel it be okay.\",\n      \"quality_flags\": []\n    },\n    {\n      \"id\": \"EIzpPoRFF08\",\n      \"text\": \"And I don't really know how other than all the work that I did, meaning\",\n      \"quality_flags\": []\n    },\n    {\n      \"id\": \"2rmRzAdLgWk\",\n      \"text\": \"I don't know if you remember, but one of the persons\",\n      \"quality_flags\": []\n    },\n    {\n      \"id\": \"3_IVurj2Od0\",\n      \"text\": \"I don"
+    },
+    {
+      "batch_number": 8,
+      "pattern_ids": [
+        "purpose_attention_example",
+        "qualification_and_boundary",
+        "question_and_reframe",
+        "question_redefinition",
+        "reciprocal_learning"
+      ],
+      "parsed_judgment": {
+        "patterns": [
+          {
+            "pattern_id": "purpose_attention_example",
+            "clarification": "the purpose is to highlight how the exchange matters and provide examples.",
+            "concerns": [
+              "Clarity"
+            ],
+            "recommended_review_priority": "medium"
+          },
+          {
+            "pattern_id": "qualification_and_boundary",
+            "clarification": "the purpose is to define the boundaries and conditions under which the exchange can occur.",
+            "concerns": [
+              "Clarity"
+            ],
+            "recommended_review_priority": "low"
+          },
+          {
+            "pattern_id": "question_and_reframe",
+            "clarification": "the purpose is to rephrase the original question to focus on the specific aspects of the exchange.",
+            "concerns": [
+              "Clarity"
+            ],
+            "recommended_review_priority": "medium"
+          },
+          {
+            "pattern_id": "question_redefinition",
+            "clarification": "the purpose is to redefine the question to clarify its meaning and implications.",
+            "concerns": [
+              "Clarity"
+            ],
+            "recommended_review_priority": "medium"
+          },
+          {
+            "pattern_id": "reciprocal_learning",
+            "clarification": "the purpose is to share observations and encourage others to correct them.",
+            "concerns": [
+              "Clarity"
+            ],
+            "recommended_review_priority": "medium"
+          }
+        ],
+        "array": [],
+        "recommendation": "Medium"
+      },
+      "raw_output": "```json\n{\n  \"patterns\": [\n    {\n      \"pattern_id\": \"purpose_attention_example\",\n      \"clarification\": \"the purpose is to highlight how the exchange matters and provide examples.\",\n      \"concerns\": [\"Clarity\"],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"qualification_and_boundary\",\n      \"clarification\": \"the purpose is to define the boundaries and conditions under which the exchange can occur.\",\n      \"concerns\": [\"Clarity\"],\n      \"recommended_review_priority\": \"low\"\n    },\n    {\n      \"pattern_id\": \"question_and_reframe\",\n      \"clarification\": \"the purpose is to rephrase the original question to focus on the specific aspects of the exchange.\",\n      \"concerns\": [\"Clarity\"],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"question_redefinition\",\n      \"clarification\": \"the purpose is to redefine the question to clarify its meaning and implications.\",\n      \"concerns\": [\"Clarity\"],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"reciprocal_learning\",\n      \"clarification\": \"the purpose is to share observations and encourage others to correct them.\",\n      \"concerns\": [\"Clarity\"],\n      \"recommended_review_priority\": \"medium\"\n    }\n  ],\n  \"array\": [],\n  \"recommendation\": \"Medium\"\n}\n```"
+    },
+    {
+      "batch_number": 9,
+      "pattern_ids": [
+        "recognition_to_specific_credit",
+        "register_shift",
+        "repair_and_self_correction",
+        "risk_safety_and_limit",
+        "scale_shift"
+      ],
+      "parsed_judgment": {
+        "patterns": [
+          {
+            "pattern_id": "recognition_to_specific_credit",
+            "clarity": "clear",
+            "concerns": [
+              "The excerpt discusses recognizing contributions without turning praise into proof"
+            ],
+            "recommended_review_priority": "medium"
+          },
+          {
+            "pattern_id": "register_shift",
+            "clarity": "clear",
+            "concerns": [],
+            "recommended_review_priority": "low"
+          },
+          {
+            "pattern_id": "repair_and_self_correction",
+            "clarity": "clear",
+            "concerns": [
+              "The excerpt mentions correcting mistakes but does not provide clear instructions on what to do next"
+            ],
+            "recommended_review_priority": "medium"
+          },
+          {
+            "pattern_id": "risk_safety_and_limit",
+            "clarity": "clear",
+            "concerns": [
+              "The excerpt describes risks but does not provide specific steps to address them"
+            ],
+            "recommended_review_priority": "medium"
+          },
+          {
+            "pattern_id": "scale_shift",
+            "clarity": "clear",
+            "concerns": [
+              "The excerpt shifts between different scales but does not clearly indicate what to do next"
+            ],
+            "recommended_review_priority": "medium"
+          }
+        ],
+        "array": [
+          [
+            "recognition_to_specific_credit"
+          ],
+          [
+            "register_shift"
+          ],
+          [
+            "repair_and_self_correction"
+          ],
+          [
+            "risk_safety_and_limit"
+          ],
+          [
+            "scale_shift"
+          ]
+        ]
+      },
+      "raw_output": "```json\n{\n  \"patterns\": [\n    {\n      \"pattern_id\": \"recognition_to_specific_credit\",\n      \"clarity\": \"clear\",\n      \"concerns\": [\"The excerpt discusses recognizing contributions without turning praise into proof\"],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"register_shift\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"low\"\n    },\n    {\n      \"pattern_id\": \"repair_and_self_correction\",\n      \"clarity\": \"clear\",\n      \"concerns\": [\"The excerpt mentions correcting mistakes but does not provide clear instructions on what to do next\"],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"risk_safety_and_limit\",\n      \"clarity\": \"clear\",\n      \"concerns\": [\"The excerpt describes risks but does not provide specific steps to address them\"],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"scale_shift\",\n      \"clarity\": \"clear\",\n      \"concerns\": [\"The excerpt shifts between different scales but does not clearly indicate what to do next\"],\n      \"recommended_review_priority\": \"medium\"\n    }\n  ],\n  \"array\": [\n    [\"recognition_to_specific_credit\"],\n    [\"register_shift\"],\n    [\"repair_and_self_correction\"],\n    [\"risk_safety_and_limit\"],\n    [\"scale_shift\"]\n  ]\n}\n```"
+    },
+    {
+      "batch_number": 10,
+      "pattern_ids": [
+        "scope_repair",
+        "selection_and_incentive",
+        "self_undercut",
+        "sorrow_and_continuation",
+        "story_memory_and_scene"
+      ],
+      "parsed_judgment": {
+        "patterns": [
+          {
+            "pattern_id": "scope_repair",
+            "clarity": "clear",
+            "concerns": [],
+            "recommended_review_priority": "medium"
+          },
+          {
+            "pattern_id": "selection_and_incentive",
+            "clarity": "clear",
+            "concerns": [],
+            "recommended_review_priority": "low"
+          },
+          {
+            "pattern_id": "self_undercut",
+            "clarity": "clear",
+            "concerns": [],
+            "recommended_review_priority": "high"
+          }
+        ],
+        "array": [
+          {
+            "id": "2D6qaZTOAXs",
+            "text": "it's not that I'm trying to make it specifically about just one subject in my life. It's more just"
+          },
+          {
+            "id": "E4Q7-CGO9Ik",
+            "text": "lasted for however long you lasted for. This cancel culture or this instant rush to judgment I'm a couple with them, sure the best of intentions, however."
+          },
+          {
+            "id": "BnRMUaYgJPs",
+            "text": "to the limits. full on service members by pushing his body mind and spirit to its limits as a reflection"
+          }
+        ]
+      },
+      "raw_output": "```json\n{\n  \"patterns\": [\n    {\n      \"pattern_id\": \"scope_repair\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"selection_and_incentive\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"low\"\n    },\n    {\n      \"pattern_id\": \"self_undercut\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"high\"\n    }\n  ],\n  \"array\": [\n    {\n      \"id\": \"2D6qaZTOAXs\",\n      \"text\": \"it's not that I'm trying to make it specifically about just one subject in my life. It's more just\"\n    },\n    {\n      \"id\": \"E4Q7-CGO9Ik\",\n      \"text\": \"lasted for however long you lasted for. This cancel culture or this instant rush to judgment I'm a couple with them, sure the best of intentions, however.\"\n    },\n    {\n      \"id\": \"BnRMUaYgJPs\",\n      \"text\": \"to the limits. full on service members by pushing his body mind and spirit to its limits as a reflection\"\n    }\n  ]\n}\n```"
+    },
+    {
+      "batch_number": 11,
+      "pattern_ids": [
+        "story_to_thesis",
+        "technical_explanation_and_interruption",
+        "unfinished_work_to_commitment",
+        "unity_across_scale",
+        "value_and_moral_frame"
+      ],
+      "parsed_judgment": {
+        "pattern_id": "story_to_thesis",
+        "clarity": "clear",
+        "concerns": [],
+        "recommended_review_priority": "medium"
+      },
+      "raw_output": "```json\n{\n  \"patterns\": [\n    {\n      \"pattern_id\": \"story_to_thesis\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"technical_explanation_and_interruption\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"low\"\n    },\n    {\n      \"pattern_id\": \"unfinished_work_to_commitment\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"unity_across_scale\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"value_and_moral_frame\",\n      \"clarity\": \"clear\",\n      \"concerns\": [],\n      \"recommended_review_priority\": \"medium\"\n    }\n  ],\n  \"array\": [\n    {\n      \"pattern_id\": \"story_to_thesis\",\n      \"clarification\": \"The excerpt mentions 'bounded scene' and 'explicit lesson', which suggests a narrative structure.\",\n      \"issues\": [],\n      \"priority\": \"medium\"\n    },\n    {\n      \"pattern_id\": \"technical_explanation_and_interruption\",\n      \"clarification\": \"The excerpt does not explicitly mention a technical explanation or interruption.\",\n      \"issues\": [],\n      \"priority\": \"low\"\n    },\n    {"
+    }
+  ],
+  "promotion_eligible": false,
+  "claim_boundary": "This is a local language-model triage of representative recovered transcript excerpts. It is not human semantic validation, source identity review, recurrence evidence, delivery evidence, learner evidence, listener outcomes, causal evidence or effectiveness."
+}

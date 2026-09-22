@@ -1,7 +1,77 @@
 # Start here: use the speech-learning system
 
+If you want a complete, reader-friendly guide to writing and delivering a talk,
+open [The Speaking Patterns Fieldbook](speaking-patterns-fieldbook.html). Start
+with one of its seven speaking problems: opening clearly, explaining an idea,
+telling a story, answering a hard question, giving credit, asking for action or
+ending a talk. Each of its 55 entries has a real source summary, a separate
+made-up rewrite, a short exercise and a check for your draft. The downloadable
+edition includes its [PDF](../deliverables/speaking-patterns-fieldbook/speaking-patterns-fieldbook.pdf)
+and a companion [27-chapter speaking guide](companion/speaking-practice.html)
+covering ten YouTube channels, including Charisma on Command.
+
+The fieldbook draws on 17 selected transcript analyses from a larger inventory
+of 480 videos, 395 of which have full transcript reviews. It does not recheck
+all 395, and its advice has not been independently reviewed or tested with
+audiences. Use it to draft and revise a talk, not as proof that a pattern works.
+
+For a stakeholder-facing overview, read the [Speech Learning System tutorial](stakeholder-tutorial.md) or open its [standalone web page](stakeholder-tutorial.html).
+For one presenter-facing index of the corpus, pattern layers, compound bundles,
+sequences and practice browsers, use the [presentation pattern atlas](presentation-pattern-atlas.md).
+For the single fixed-corpus plus expansion-source synthesis, use the
+[unified pattern synthesis](unified-pattern-synthesis.md); it preserves exact
+evidence anchors and keeps the 19 Ali/Dry Bar/TED candidates provisional.
+For one searchable surface containing all 55 fixed candidates and 19 expansion
+candidates, use the [unified pattern library browser](unified-pattern-library.html).
+For the direct “find a pattern and draft a presentation” workflow, use the
+[amazing presentation pattern browser](amazing-presentation-patterns.html) or
+the [written pattern guide](amazing-presentation-patterns.md).
+For the full 55-pattern evidence layer, open the [all-55 evidence matrix](all-55-pattern-evidence.md),
+the [recovered candidate cards](recovered-pattern-candidate-cards.md), or the
+[blinded recovered-pattern review browser](recovered-pattern-independent-review.html).
+The [lexical-rule audit](recovered-pattern-rule-audit.md) marks broad retrieval
+matches that require especially careful context review.
+Use the [pattern review-priority map](presentation-pattern-review-priorities.md)
+to decide which of the 55 candidates should receive human context review first;
+the ordering is workload guidance, not a quality or effectiveness score.
+For the current fixed-inventory boundary, see the [corpus coverage audit](corpus-coverage-audit.md)
+and the [full-inventory pattern candidates](full-inventory-pattern-candidates.md);
+the recovered machine-transcript layer is explicitly not human-validated evidence.
+For the current internal completion boundary, see the [autonomous curriculum audit](autonomous-curriculum-audit.md).
+The [autonomous counterexample screening](autonomous-counterexample-screening.md)
+lists five bounded limit candidates per communication job; these are candidates,
+not confirmed failures or effectiveness findings.
+The [autonomous delivery reconciliation](autonomous-delivery-reconciliation.md)
+joins the 36 bounded frame observations to local timing/audio proxies without
+turning them into claims about emotion, intent or persuasion.
+The [full-media reconciliation](autonomous-full-media-reconciliation.md)
+records explicit media/proxy availability for all 395 videos.
+The [language reconciliation](autonomous-language-reconciliation.md)
+consolidates all 50 exact forms and 192 recurrence candidates with train/holdout
+counts and context checks.
+The [autonomous vertical-slice audit](autonomous-vertical-slice-01.md)
+checks the five linked lesson packets, controls, media proxies, practice flows
+and safety boundaries as one internally reconciled slice.
+The [autonomous end-to-end audit](autonomous-end-to-end-audit.md) joins the
+corpus, curriculum, packet, delivery, media, language and counterexample layers
+into one machine-checked release-candidate audit.
+The [seven-requirement completion audit](end-to-end-completion-audit.md) maps
+the goal document's explicit slice requirements to evidence and distinguishes
+internal completion from missing independent/manual records.
+To reproduce the current repository checkpoint, run
+`python3 scripts/run_autonomous_release_audit.py`; add `--full-tests` to run the
+complete unittest suite before rebuilding and validating the final manifest.
+The latest release audit reports **27/27** aggregate checks. The current core
+browser smoke receipt reports **17/17** browser paths. These are repository
+checks only; they do not establish independent review, learner outcomes,
+listener outcomes or communication effectiveness.
+To verify that the checkpoint cannot be mistaken for promotion, run
+`python3 scripts/check_promotion_readiness.py`; it exits nonzero while any
+human requirement remains open.
+
 This is the shortest route from the 395-video corpus to a practice attempt.
-The corpus has been read at the retained-caption level. Its lessons, phrases
+The corpus has been read at the retained-caption level by this analysis process;
+this is not independent human validation. Its lessons, phrases
 and delivery measurements are still hypotheses and inspection aids; they are
 not a ranking of speakers or a completed effectiveness study.
 
@@ -41,6 +111,47 @@ takeaway, unresolved point and any pressure or burden. The [findings
 catalog](corpus-findings-catalog.md) contains the retained examples and
 boundaries; the [repeatable-patterns guide](repeatable-communication-patterns.md)
 explains the cross-job synthesis.
+
+For the exhaustive mining pass across all 395 reviews, use the
+[candidate pattern inventory](exhaustive-pattern-inventory.md). It keeps
+source-linked examples for 22 recurring theme leads, 18 structural relation
+architectures, and 15 additional clusters mined from previously unmatched
+labels; these are leads for review, not validated effects.
+The [compound pattern bundles](compound-pattern-bundles.md) retain 136 recurring
+co-occurrences among those leads, each appearing in at least three distinct
+full-context reviews; the browser foregrounds the top 24 for practice. They are
+candidate pairings, not evidence that the moves work better together or belong
+in that order. Rehearse them in
+the [compound-pattern browser](compound-pattern-bundles.html), which keeps the
+two-move draft, retained source excerpts and source evidence local.
+The triad report also retains 160 recurring three-move candidates, with the
+strongest 24 surfaced for later practice design.
+Rehearse those three-move candidates in the [triad practice browser](compound-pattern-triads.html),
+which keeps the three bridges, source excerpts, boundary warning and local JSON
+practice record together.
+Validate a returned compound record with
+`python3 scripts/validate_compound_pattern_practice_record.py PATH`.
+Validate a returned triad record with
+`python3 scripts/validate_compound_triad_practice_record.py PATH`.
+The [expanded candidate cards](expanded-pattern-candidate-cards.md) turn those
+33 leads into practice prompts while preserving their source boundaries.
+Use the [expanded pattern practice browser](expanded-pattern-candidate-cards.html)
+to search and rehearse them locally.
+The [LLM shortlist](expanded-pattern-llm-shortlist.md) prioritizes two cards for
+the next practice pass while retaining the non-promotion boundary.
+Expanded practice exports use a separate validator at
+`python3 scripts/validate_expanded_pattern_practice_record.py`; they remain
+local practice records, not learner-validation or effectiveness evidence.
+The [presentation sequence library](presentation-sequence-library.md) combines
+the candidate moves into six complete talk architectures. Each architecture
+now includes sentence stems, listener checks and boundary checks, and the
+browser's **Generate outline** action uses those stems when a sequence preset
+is selected. The browser also creates one response field per sequence move;
+those responses survive local save/reload and are included in the practice JSON.
+The local Qwen draft screen can review a completed worksheet with
+`python3 scripts/run_local_llm_draft_judge.py DRAFT --sequence SEQUENCE`; it
+only checks visible structure and revision prompts and cannot establish
+effectiveness.
 
 ## Choose the right job
 
@@ -97,7 +208,8 @@ clarification possible.
 
 ## What the system can and cannot currently prove
 
-It can provide full-context transcript evidence for all 395 reviewed videos,
+It can provide full-context transcript evidence for all 395 project-generated,
+single-pass full-context reviewed videos,
 exact retained wording, provisional communication jobs, repeatable forms,
 practice prompts, phrase retrieval, local delivery proxies and manual-review
 queues.
@@ -121,6 +233,9 @@ The repository is ready to receive, but does not invent, the remaining records:
 The [validation handoff](validation-handoff.md) contains the schemas, validators,
 adjudication tools and claim boundaries. Until those records exist, use the
 current materials as transcript-derived learning hypotheses and inspection aids.
+The [external-review launch manifest](external-review-launch-manifest.md) gives
+the ordered eight-operation handoff, dependencies and validators for collecting
+the missing records without changing their claim status.
 
 ## Useful starting links
 

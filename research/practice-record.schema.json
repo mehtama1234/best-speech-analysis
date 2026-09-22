@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://best-speech-analysis.local/practice-record.schema.json",
+  "title": "Communication Patterns Lab local practice record",
+  "description": "A consent-gated local practice attempt. This is not learner-validation or effectiveness evidence.",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "record_type",
+    "schema_version",
+    "lesson_id",
+    "pattern_id",
+    "canonical_job",
+    "source_evidence_ids",
+    "delivery_sample_ids",
+    "participant_code",
+    "consent",
+    "accessibility_or_modality",
+    "step_responses",
+    "claim_boundary",
+    "saved_at"
+  ],
+  "properties": {
+    "record_type": {"const": "local_communication_practice_record"},
+    "schema_version": {"const": "1.0"},
+    "lesson_id": {"type": "string", "minLength": 1},
+    "pattern_id": {"type": "string", "minLength": 1},
+    "canonical_job": {"type": "string", "minLength": 1},
+    "source_evidence_ids": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "delivery_sample_ids": {"type": "array", "items": {"type": "string", "minLength": 1}},
+    "participant_code": {"type": "string", "minLength": 1},
+    "consent": {"const": true},
+    "accessibility_or_modality": {"type": "string"},
+    "step_responses": {"type": "object", "additionalProperties": {"type": "string"}},
+    "claim_boundary": {"type": "string", "minLength": 1},
+    "saved_at": {"type": "string", "format": "date-time"}
+  }
+}

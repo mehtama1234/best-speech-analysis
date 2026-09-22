@@ -9,10 +9,15 @@ import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 
+try:
+    from scripts.recover_full_corpus_media import resolve_yt_dlp
+except ModuleNotFoundError:  # direct ``python scripts/...`` invocation
+    from recover_full_corpus_media import resolve_yt_dlp
 
-def enumerate_playlist(url: str) -> dict:
+
+def enumerate_playlist(url: str, yt_dlp: str = "yt-dlp") -> dict:
     command = [
-        "yt-dlp",
+        yt_dlp,
         "--flat-playlist",
         "--dump-single-json",
         url,
@@ -25,7 +30,9 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", default="config/playlists.json")
     parser.add_argument("--output-dir", default="data/metadata")
+    parser.add_argument("--yt-dlp", help="Downloader executable; defaults to PATH then ~/.local/bin/yt-dlp")
     args = parser.parse_args()
+    yt_dlp = resolve_yt_dlp(args.yt_dlp)
 
     config = json.loads(Path(args.config).read_text())
     output_dir = Path(args.output_dir)
@@ -36,7 +43,7 @@ def main() -> int:
     fetched_at = datetime.now(timezone.utc).isoformat()
 
     for source in config["sources"]:
-        snapshot = enumerate_playlist(source["url"])
+        snapshot = enumerate_playlist(source["url"], yt_dlp)
         source_id = source["source_id"]
         (snapshots / f"{source_id}.json").write_text(
             json.dumps(snapshot, ensure_ascii=False, indent=2) + "\n"
@@ -95,4 +102,3 @@ def main() -> int:
 
 if __name__ == "__main__":
     raise SystemExit(main())
-

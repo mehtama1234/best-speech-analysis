@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.0",
+  "report_id": "local-llm-gate-judge",
+  "status": "local_model_gate_prioritization_recorded_human_gates_open",
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "model_snapshot": "/home/mehta/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775",
+  "gate_count": 10,
+  "judgment_scope": "10_open_evidence_gate_prioritization_screen",
+  "parsed_judgment_count": 1,
+  "raw_model_output": "{\n  \"overall\": \"completed\",\n  \"priority_gates\": [\n    \"identity\",\n    \"function\",\n    \"recurrence\",\n    \"phrase_forms\",\n    \"multimodal\",\n    \"delivery\",\n    \"counterexamples\",\n    \"learner\",\n    \"listener_stimuli\"\n  ],\n  \"concerns\": [\n    \"The review of transcript function labels may lead to incorrect interpretations.\",\n    \"The review of phrase recurrence and event-level eligibility may fail to establish delivery effectiveness.\"\n  ],\n  \"next_action\": \"Review remaining transcripts and refine criteria based on feedback from learners and reviewers.\"\n}",
+  "judgment": {
+    "overall": "prioritized_not_completed",
+    "priority_gates": [
+      "identity",
+      "function",
+      "recurrence",
+      "phrase_forms",
+      "multimodal",
+      "delivery",
+      "counterexamples",
+      "learner",
+      "listener_stimuli"
+    ],
+    "concerns": [
+      "The review of transcript function labels may lead to incorrect interpretations.",
+      "The review of phrase recurrence and event-level eligibility may fail to establish delivery effectiveness."
+    ],
+    "next_action": "Review remaining transcripts and refine criteria based on feedback from learners and reviewers."
+  },
+  "promotion_eligible": false,
+  "claim_boundary": "This local-model judgment prioritizes validation operations from gate metadata. It is not independent human review, learner observation, listener outcome evidence, causal evidence or a promotion decision. All human gates remain open."
+}

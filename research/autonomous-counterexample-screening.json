@@ -1,0 +1,1633 @@
+{
+  "schema_version": "1.0",
+  "screening_id": "autonomous-counterexample-screening",
+  "status": "internal_candidate_screening_complete_not_validation",
+  "item_count": 90,
+  "job_count": 18,
+  "items_per_job": 5,
+  "unique_source_videos_per_job": 5,
+  "claim_boundary": "The project agent selected bounded candidates from existing transcript cards for internal adversarial review. Candidates are not independent or confirmed counterexamples and do not establish effectiveness or failure.",
+  "selection_method": "Deterministic use of absent phrase handles, explicit non-fit/next-test fields, proxy/missing delivery status, cross-job phrase reuse and safety/accessibility limit text.",
+  "items": [
+    {
+      "screening_item_id": "autonomous-counterexample:opening:absent_but_speech_works",
+      "canonical_job": "opening",
+      "counterexample_type": "absent_but_speech_works",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "FvcWRYuGSTg:00017",
+        "video_id": "FvcWRYuGSTg",
+        "title": "ENGLISH SPEECH | SIDDHARTHA MUKHERJEE: 3 Forms of Listening (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=FvcWRYuGSTg&t=121s",
+        "transcript_excerpt": "I traded a pawn for a pawn, and a knight fora knight, and I saw her easing into the rhythm"
+      },
+      "source_card_id": "full-context-20260917-088:2",
+      "observed_move": "Daughter's reported win interpreted as inhabiting opponent's mind; observed moves and inferred mental process differ.",
+      "rationale": "Same provisional job has a transcript card without an indexed phrase handle; this tests whether the phrase is necessary or merely a retrieval aid.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:opening:present_but_limit_visible",
+      "canonical_job": "opening",
+      "counterexample_type": "present_but_limit_visible",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "DBMYqkuHvew:00057",
+        "video_id": "DBMYqkuHvew",
+        "title": "ENGLISH SPEECH | KANGANA RANAUT: The New Face of India (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=DBMYqkuHvew&t=309s",
+        "transcript_excerpt": "was quite harsh. And you know, I was nothing like I am today. I couldn't speak a word of English."
+      },
+      "source_card_id": "full-context-20260917-124:5",
+      "observed_move": "No fairy tale; language barrier and hardship, lesson question reversed toward father.",
+      "rationale": "The card carries an explicit non-fit or next-test boundary; this tests whether the proposed form needs a condition.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:opening:alternate_function_or_phrase",
+      "canonical_job": "opening",
+      "counterexample_type": "alternate_function_or_phrase",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "mmcJdoKftnM:00002",
+        "video_id": "mmcJdoKftnM",
+        "title": "ENGLISH SPEECH | DEEPAK CHOPRA: 7 Steps to Success (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=mmcJdoKftnM&t=12s",
+        "transcript_excerpt": "and trustees. It's a great honor for me to be speaking just now. In the next few minutes, I want"
+      },
+      "source_card_id": "full-context-20260917-187:1",
+      "observed_move": "Audience is named and a seven-step map is promised.",
+      "rationale": "A repeated phrase or nearby form may serve another function; context prevents treating wording as a universal technique.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:opening:setting_or_delivery_confound",
+      "canonical_job": "opening",
+      "counterexample_type": "setting_or_delivery_confound",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "dgkxN6RASpg:00001",
+        "video_id": "dgkxN6RASpg",
+        "title": "ENGLISH SPEECH | TOM CRUISE & BEN STILLER: Footprint Ceremony (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=dgkxN6RASpg&t=13s",
+        "transcript_excerpt": "pictures of Man's Chinese and the premieres they had here in these kinds of events. So, it's a real"
+      },
+      "source_card_id": "full-context-20260917-204:1",
+      "observed_move": "Tom connects the setting to a childhood memory and names the artist being celebrated.",
+      "rationale": "The available delivery layer is proxy-only or missing/manual-review pending; this blocks a delivery interpretation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:opening:safety_accessibility_screen",
+      "canonical_job": "opening",
+      "counterexample_type": "safety_accessibility_screen",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "yjo8chlSbQE:00003",
+        "video_id": "yjo8chlSbQE",
+        "title": "ENGLISH SPEECH | JACINDA ARDEN: Will You Join Us? (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=yjo8chlSbQE&t=11s",
+        "transcript_excerpt": "I greet you in te reo Māori, language ofthe tangata whenua, or first people, of Aotearoa"
+      },
+      "source_card_id": "full-context-20260917-197:1",
+      "observed_move": "The speaker opens in te reo Māori, translates guardianship and explains why the local idea belongs in a global address.",
+      "rationale": "The source or job may involve privacy, consent, vulnerability or access concerns; the candidate requires bounded adaptation rather than imitation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:closing:absent_but_speech_works",
+      "canonical_job": "closing",
+      "counterexample_type": "absent_but_speech_works",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "TJi24wyCaOs:00096",
+        "video_id": "TJi24wyCaOs",
+        "title": "ENGLISH SPEECH | MICHAEL JORDAN: Tribute to Kobe Bryant (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=TJi24wyCaOs&t=571s",
+        "transcript_excerpt": "And as I look in this arena and across theglobe, a piece of you died, or else you wouldn't"
+      },
+      "source_card_id": "full-context-20260917-112:9",
+      "observed_move": "Metaphorical loss, asserted audience identification and personal promise return to little brother.",
+      "rationale": "Same provisional job has a transcript card without an indexed phrase handle; this tests whether the phrase is necessary or merely a retrieval aid.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:closing:present_but_limit_visible",
+      "canonical_job": "closing",
+      "counterexample_type": "present_but_limit_visible",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "5rbyzJf4ZuQ:00084",
+        "video_id": "5rbyzJf4ZuQ",
+        "title": "ENGLISH SPEECH | SHAKIRA: The Power of Education (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=5rbyzJf4ZuQ&t=582s",
+        "transcript_excerpt": "We can't press pass and ask those kids to wait to grow up until we have it all figured out."
+      },
+      "source_card_id": "full-context-20260917-141:12",
+      "observed_move": "Corrupt press-pass wording unresolved; waiting rejected and investment framed as smart, strategic and just.",
+      "rationale": "The card carries an explicit non-fit or next-test boundary; this tests whether the proposed form needs a condition.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:closing:alternate_function_or_phrase",
+      "canonical_job": "closing",
+      "counterexample_type": "alternate_function_or_phrase",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "oFyh5YMmB80:00108",
+        "video_id": "oFyh5YMmB80",
+        "title": "ENGLISH SPEECH | SCARLETT JOHANSSON: Take Time for Yourself (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=oFyh5YMmB80&t=475s",
+        "transcript_excerpt": "I do wish you had more time, but I just wantto thank you so much for being not just a"
+      },
+      "source_card_id": "full-context-20260917-177:10",
+      "observed_move": "The host names the guest's contribution and both close with thanks.",
+      "rationale": "A repeated phrase or nearby form may serve another function; context prevents treating wording as a universal technique.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:closing:setting_or_delivery_confound",
+      "canonical_job": "closing",
+      "counterexample_type": "setting_or_delivery_confound",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "DBMYqkuHvew:00182",
+        "video_id": "DBMYqkuHvew",
+        "title": "ENGLISH SPEECH | KANGANA RANAUT: The New Face of India (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=DBMYqkuHvew&t=1029s",
+        "transcript_excerpt": "being here. I love being here. Thank you so much. It was something so unusual for me. Thank you."
+      },
+      "source_card_id": "full-context-20260917-124:15",
+      "observed_move": "Beyond-acting question answered largely with film projects, source-relative future.",
+      "rationale": "The available delivery layer is proxy-only or missing/manual-review pending; this blocks a delivery interpretation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:closing:safety_accessibility_screen",
+      "canonical_job": "closing",
+      "counterexample_type": "safety_accessibility_screen",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "ZHpyfTC_Ovo:00094",
+        "video_id": "ZHpyfTC_Ovo",
+        "title": "ENGLISH SPEECH | LADY GAGA: Mental Health & Self-Care (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=ZHpyfTC_Ovo&t=356s",
+        "transcript_excerpt": "Because as I was sharing with you on the phone,I have a girls' school with girls who have"
+      },
+      "source_card_id": "full-context-20260917-020:5",
+      "observed_move": "Interviewer expands context through a school account; respondent reports trauma and symptoms with follow-up questions.",
+      "rationale": "The source or job may involve privacy, consent, vulnerability or access concerns; the candidate requires bounded adaptation rather than imitation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:question:absent_but_speech_works",
+      "canonical_job": "question",
+      "counterexample_type": "absent_but_speech_works",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "RaLXDIJW3_M:00229",
+        "video_id": "RaLXDIJW3_M",
+        "title": "ENGLISH SPEECH | MATT DAMON: What We Do Matters (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=RaLXDIJW3_M&t=892s",
+        "transcript_excerpt": "get on a bus, we show up in New York, we’dwait for our turn, we’d cry our hearts out"
+      },
+      "source_card_id": "full-context-20260917-037:9",
+      "observed_move": "Audition rejection leads through imagined audience objection to a warning about excessive praise and an invitation to ask questions.",
+      "rationale": "Same provisional job has a transcript card without an indexed phrase handle; this tests whether the phrase is necessary or merely a retrieval aid.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:question:present_but_limit_visible",
+      "canonical_job": "question",
+      "counterexample_type": "present_but_limit_visible",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "DBMYqkuHvew:00075",
+        "video_id": "DBMYqkuHvew",
+        "title": "ENGLISH SPEECH | KANGANA RANAUT: The New Face of India (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=DBMYqkuHvew&t=410s",
+        "transcript_excerpt": "Well, honestly, I really don't know how to be any other way. I mean, I find a lot of pride in being"
+      },
+      "source_card_id": "full-context-20260917-124:6",
+      "observed_move": "Host praise met with unchanged self-understanding despite external labels; differing reactions retained.",
+      "rationale": "The card carries an explicit non-fit or next-test boundary; this tests whether the proposed form needs a condition.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:question:alternate_function_or_phrase",
+      "canonical_job": "question",
+      "counterexample_type": "alternate_function_or_phrase",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "A1hcbdWEEO8:00404",
+        "video_id": "A1hcbdWEEO8",
+        "title": "ENGLISH SPEECH | RASHIDA JONES: Choose Love (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=A1hcbdWEEO8&t=1406s",
+        "transcript_excerpt": "He has told me you can't get an A if you areafraid of getting an F. He has told me to"
+      },
+      "source_card_id": "full-context-20260917-128:11",
+      "observed_move": "Father advice made into questions; risky personal path neither easy nor uniform.",
+      "rationale": "A repeated phrase or nearby form may serve another function; context prevents treating wording as a universal technique.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:question:setting_or_delivery_confound",
+      "canonical_job": "question",
+      "counterexample_type": "setting_or_delivery_confound",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "RLklwFPNQ_g:00201",
+        "video_id": "RLklwFPNQ_g",
+        "title": "ENGLISH SPEECH | KEVIN HART: Be Persistent (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=RLklwFPNQ_g&t=670s",
+        "transcript_excerpt": "in a fast food job\" or \"I'm working this jobwhich I hate and I really want to be a comedian\""
+      },
+      "source_card_id": "full-context-20260917-058:10",
+      "observed_move": "Host offers discouragement alternative; answer rejects dream-killing and contrasts talk with follow-through.",
+      "rationale": "The available delivery layer is proxy-only or missing/manual-review pending; this blocks a delivery interpretation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:question:safety_accessibility_screen",
+      "canonical_job": "question",
+      "counterexample_type": "safety_accessibility_screen",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "5mXFlne4JB8:00265",
+        "video_id": "5mXFlne4JB8",
+        "title": "ENGLISH SPEECH | MINDY KALING: Why Not Me? (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=5mXFlne4JB8&t=980s",
+        "transcript_excerpt": "you with this: I was not someone who shouldhave the life I have now, and yet I do."
+      },
+      "source_card_id": "full-context-20260917-156:14",
+      "observed_move": "Not-all-serious disclaimer, why-not-me transferred to why-not-you; achievement not proof of universal access.",
+      "rationale": "The source or job may involve privacy, consent, vulnerability or access concerns; the candidate requires bounded adaptation rather than imitation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:answer_or_response:absent_but_speech_works",
+      "canonical_job": "answer_or_response",
+      "counterexample_type": "absent_but_speech_works",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "2u2Sd9MeFUc:00029",
+        "video_id": "2u2Sd9MeFUc",
+        "title": "ENGLISH SPEECH | JEFF BEZOS: What Will You Be? (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=2u2Sd9MeFUc&t=170s",
+        "transcript_excerpt": "You had to have made some tricky estimates,figure out the number of minutes in a year"
+      },
+      "source_card_id": "full-context-20260917-157:3",
+      "observed_move": "Expected praise becomes narrated tears and uncertain consequences; grandfather's reported silence/calm not observed.",
+      "rationale": "Same provisional job has a transcript card without an indexed phrase handle; this tests whether the phrase is necessary or merely a retrieval aid.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:answer_or_response:present_but_limit_visible",
+      "canonical_job": "answer_or_response",
+      "counterexample_type": "present_but_limit_visible",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "ipGmWHe24Is:00021",
+        "video_id": "ipGmWHe24Is",
+        "title": "ENGLISH SPEECH | ASHTON KUTCHER: The Pursuit of Happiness (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=ipGmWHe24Is&t=134s",
+        "transcript_excerpt": "tell me to stick to my day job. So I’d liketo talk about my day job. My day job is as"
+      },
+      "source_card_id": "full-context-20260917-041:3",
+      "observed_move": "Day-job objection becomes an explanation of anti-trafficking work and parenthood; request for unavailable help introduces an unresolved case.",
+      "rationale": "The card carries an explicit non-fit or next-test boundary; this tests whether the proposed form needs a condition.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:answer_or_response:alternate_function_or_phrase",
+      "canonical_job": "answer_or_response",
+      "counterexample_type": "alternate_function_or_phrase",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "-Unkvng_jp8:00128",
+        "video_id": "-Unkvng_jp8",
+        "title": "ENGLISH SPEECH | US PRESIDENTIAL DEBATES 2020: Highlights (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=-Unkvng_jp8&t=677s",
+        "transcript_excerpt": "who did not vote for you?” “We have to make our country totally successful as it was prior to the"
+      },
+      "source_card_id": "full-context-20260917-175:11",
+      "observed_move": "A unity question receives an answer about success and another about decency, dignity and equal chance.",
+      "rationale": "A repeated phrase or nearby form may serve another function; context prevents treating wording as a universal technique.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:answer_or_response:setting_or_delivery_confound",
+      "canonical_job": "answer_or_response",
+      "counterexample_type": "setting_or_delivery_confound",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "BWPIRnS4Gyo:00056",
+        "video_id": "BWPIRnS4Gyo",
+        "title": "ENGLISH SPEECH | JEFF BEZOS and SRK: Amazon in India (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=BWPIRnS4Gyo&t=234s",
+        "transcript_excerpt": "Shah Rukh Khan: Most of the people here Jeffare from lots of them I see are from the film"
+      },
+      "source_card_id": "full-context-20260917-094:4",
+      "observed_move": "Khan's contrast receives claim best work combines both; platform praise not independent validation.",
+      "rationale": "The available delivery layer is proxy-only or missing/manual-review pending; this blocks a delivery interpretation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:answer_or_response:safety_accessibility_screen",
+      "canonical_job": "answer_or_response",
+      "counterexample_type": "safety_accessibility_screen",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "DBMYqkuHvew:00136",
+        "video_id": "DBMYqkuHvew",
+        "title": "ENGLISH SPEECH | KANGANA RANAUT: The New Face of India (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=DBMYqkuHvew&t=764s",
+        "transcript_excerpt": "Well, the thing is a lot has been spoken about that. And a criminal is a criminal, a criminal"
+      },
+      "source_card_id": "full-context-20260917-124:11",
+      "observed_move": "Rejects demographic blame but uses dehumanizing labels and calls for laws; attributed rhetoric only.",
+      "rationale": "The source or job may involve privacy, consent, vulnerability or access concerns; the candidate requires bounded adaptation rather than imitation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:story_or_personal_experience:absent_but_speech_works",
+      "canonical_job": "story_or_personal_experience",
+      "counterexample_type": "absent_but_speech_works",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "42QjAxty_1o:00240",
+        "video_id": "42QjAxty_1o",
+        "title": "ENGLISH SPEECH | JIM CARREY: Do What You Love (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=42QjAxty_1o&t=1292s",
+        "transcript_excerpt": "so I went home and I prayed for one, and promisedI would recite the rosary every night in exchange."
+      },
+      "source_card_id": "full-context-20260917-107:11",
+      "observed_move": "Teacher's promise story, broken vow, raffle mechanism and universe interpretation distinguished; effort retained.",
+      "rationale": "Same provisional job has a transcript card without an indexed phrase handle; this tests whether the phrase is necessary or merely a retrieval aid.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:story_or_personal_experience:present_but_limit_visible",
+      "canonical_job": "story_or_personal_experience",
+      "counterexample_type": "present_but_limit_visible",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "DBMYqkuHvew:00010",
+        "video_id": "DBMYqkuHvew",
+        "title": "ENGLISH SPEECH | KANGANA RANAUT: The New Face of India (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=DBMYqkuHvew&t=50s",
+        "transcript_excerpt": "that you grow up to be a presentable young woman who can get a decent spouse. That's not a much of"
+      },
+      "source_card_id": "full-context-20260917-124:2",
+      "observed_move": "Broad gender expectation claims answered with personal self-definition and rebellion.",
+      "rationale": "The card carries an explicit non-fit or next-test boundary; this tests whether the proposed form needs a condition.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:story_or_personal_experience:alternate_function_or_phrase",
+      "canonical_job": "story_or_personal_experience",
+      "counterexample_type": "alternate_function_or_phrase",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "dgkxN6RASpg:00004",
+        "video_id": "dgkxN6RASpg",
+        "title": "ENGLISH SPEECH | TOM CRUISE & BEN STILLER: Footprint Ceremony (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=dgkxN6RASpg&t=34s",
+        "transcript_excerpt": "he was doing theater in circle in the square. And then over the years, you know, he and I became"
+      },
+      "source_card_id": "full-context-20260917-204:2",
+      "observed_move": "Tom traces the friendship and gives a specific collaboration that shows Ben’s generosity and skill.",
+      "rationale": "A repeated phrase or nearby form may serve another function; context prevents treating wording as a universal technique.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:story_or_personal_experience:setting_or_delivery_confound",
+      "canonical_job": "story_or_personal_experience",
+      "counterexample_type": "setting_or_delivery_confound",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "vAn96hY1LGw:00013",
+        "video_id": "vAn96hY1LGw",
+        "title": "ENGLISH SPEECH | TREVOR NOAH: The Power of Information (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=vAn96hY1LGw&t=34s",
+        "transcript_excerpt": "I do not have a fridge that can change lives,I do not have a plan to eradicate HIV in South"
+      },
+      "source_card_id": "full-context-20260917-109:2",
+      "observed_move": "Contrasts other contributions with own stories, then accepts role of sharing perspective.",
+      "rationale": "The available delivery layer is proxy-only or missing/manual-review pending; this blocks a delivery interpretation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:story_or_personal_experience:safety_accessibility_screen",
+      "canonical_job": "story_or_personal_experience",
+      "counterexample_type": "safety_accessibility_screen",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "fnCW1NWngP4:00003",
+        "video_id": "fnCW1NWngP4",
+        "title": "ENGLISH SPEECH | TAAPSEE PANNU: Explore your Opportunities (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=fnCW1NWngP4&t=0s",
+        "transcript_excerpt": "Well, I can only say I can stand as an examplefor the fact that in India, we only become"
+      },
+      "source_card_id": "full-context-20260917-093:1",
+      "observed_move": "Former-student identity, mathematics interest and admission setback; broad gender/national generalizations not endorsed.",
+      "rationale": "The source or job may involve privacy, consent, vulnerability or access concerns; the candidate requires bounded adaptation rather than imitation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:example_or_case:absent_but_speech_works",
+      "canonical_job": "example_or_case",
+      "counterexample_type": "absent_but_speech_works",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "zgDnvVaoV98:00171",
+        "video_id": "zgDnvVaoV98",
+        "title": "ENGLISH SPEECH | CORY BOOKER: Let America Be America Again (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=zgDnvVaoV98&t=589s",
+        "transcript_excerpt": "To me, this is what keeps my fired up in Newark,is that I live in a city with the most stubbornly"
+      },
+      "source_card_id": "full-context-20260917-163:6",
+      "observed_move": "Newark's determined residents become evidence in the speaker's argument that capacity exists but collective will is lacking.",
+      "rationale": "Same provisional job has a transcript card without an indexed phrase handle; this tests whether the phrase is necessary or merely a retrieval aid.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:example_or_case:present_but_limit_visible",
+      "canonical_job": "example_or_case",
+      "counterexample_type": "present_but_limit_visible",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "-Unkvng_jp8:00041",
+        "video_id": "-Unkvng_jp8",
+        "title": "ENGLISH SPEECH | US PRESIDENTIAL DEBATES 2020: Highlights (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=-Unkvng_jp8&t=202s",
+        "transcript_excerpt": "see him, he’s got a mask. He could be speaking 200 feet away from — he shows up with the biggest mask"
+      },
+      "source_card_id": "full-context-20260917-175:5",
+      "observed_move": "Mask use is argued through personal practice, public-health authority and competing claims.",
+      "rationale": "The card carries an explicit non-fit or next-test boundary; this tests whether the proposed form needs a condition.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:example_or_case:alternate_function_or_phrase",
+      "canonical_job": "example_or_case",
+      "counterexample_type": "alternate_function_or_phrase",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "Hq7a4qvYQqI:00258",
+        "video_id": "Hq7a4qvYQqI",
+        "title": "ENGLISH SPEECH | AAMIR KHAN: For a Better India (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=Hq7a4qvYQqI&t=1118s",
+        "transcript_excerpt": "we go, we get to a point where me and Satyaand Swati and all of us get so disheartened."
+      },
+      "source_card_id": "full-context-20260917-120:12",
+      "observed_move": "Research despair countered by resilient participants; rural women's legal struggle challenges urban superiority assumption.",
+      "rationale": "A repeated phrase or nearby form may serve another function; context prevents treating wording as a universal technique.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:example_or_case:setting_or_delivery_confound",
+      "canonical_job": "example_or_case",
+      "counterexample_type": "setting_or_delivery_confound",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "AjxbqKcPX_4:00161",
+        "video_id": "AjxbqKcPX_4",
+        "title": "ENGLISH SPEECH | NATALIE PORTMAN: Don’t Doubt Yourself (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=AjxbqKcPX_4&t=605s",
+        "transcript_excerpt": "A couple of years ago, I went to Tokyo withmy husband and I ate at the most remarkable"
+      },
+      "source_card_id": "full-context-20260917-024:7",
+      "observed_move": "Small-restaurant account illustrates attention to the particular and reverses the earlier completion/quality phrase.",
+      "rationale": "The available delivery layer is proxy-only or missing/manual-review pending; this blocks a delivery interpretation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:example_or_case:safety_accessibility_screen",
+      "canonical_job": "example_or_case",
+      "counterexample_type": "safety_accessibility_screen",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "aDG1T0kJnd4:00096",
+        "video_id": "aDG1T0kJnd4",
+        "title": "ENGLISH SPEECH | PRIYANKA CHOPRA: Be Fearless (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=aDG1T0kJnd4&t=351s",
+        "transcript_excerpt": "Now for all of you guys who like everythingin life, I don't think there's anything wrong"
+      },
+      "source_card_id": "full-context-20260917-073:5",
+      "observed_move": "Nonharm caveat precedes rapid travel anecdote with sleep cost; no universal feasibility or safety evidence.",
+      "rationale": "The source or job may involve privacy, consent, vulnerability or access concerns; the candidate requires bounded adaptation rather than imitation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:contrast_or_disagreement:absent_but_speech_works",
+      "canonical_job": "contrast_or_disagreement",
+      "counterexample_type": "absent_but_speech_works",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "Iw363WNPReQ:00589",
+        "video_id": "Iw363WNPReQ",
+        "title": "ENGLISH SPEECH | SADHGURU: Developing an Inclusive Consciousness (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=Iw363WNPReQ&t=2215s",
+        "transcript_excerpt": "So I’d love to hear from you any adviceon what we should do or what we should avoid"
+      },
+      "source_card_id": "full-context-20260917-140:15",
+      "observed_move": "Excluding politicians rejected; powerful participants in a nonpolitical atmosphere recommended, not blanket no-conferences rule.",
+      "rationale": "Same provisional job has a transcript card without an indexed phrase handle; this tests whether the phrase is necessary or merely a retrieval aid.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:contrast_or_disagreement:present_but_limit_visible",
+      "canonical_job": "contrast_or_disagreement",
+      "counterexample_type": "present_but_limit_visible",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "-Unkvng_jp8:00072",
+        "video_id": "-Unkvng_jp8",
+        "title": "ENGLISH SPEECH | US PRESIDENTIAL DEBATES 2020: Highlights (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=-Unkvng_jp8&t=370s",
+        "transcript_excerpt": "“Yes.” “Is that a guarantee? Is —” “No, it’s not a guarantee, but it will be by the end of the year."
+      },
+      "source_card_id": "full-context-20260917-175:7",
+      "observed_move": "A vaccine and winter question separates certainty, confidence, timing and prior predictions.",
+      "rationale": "The card carries an explicit non-fit or next-test boundary; this tests whether the proposed form needs a condition.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:contrast_or_disagreement:alternate_function_or_phrase",
+      "canonical_job": "contrast_or_disagreement",
+      "counterexample_type": "alternate_function_or_phrase",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "lJP4b36pTuw:00101",
+        "video_id": "lJP4b36pTuw",
+        "title": "ENGLISH SPEECH | ADMIRAL WILLIAM H. MCRAVEN: Change the World (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=lJP4b36pTuw&t=451s",
+        "transcript_excerpt": "I was in the boat with the tall guys, butthe best boat crew we had was made up of the"
+      },
+      "source_card_id": "full-context-20260917-148:7",
+      "observed_move": "Smaller crew outperforms others;35 students versus six crews of seven inconsistent; heart/flippers contrast.",
+      "rationale": "A repeated phrase or nearby form may serve another function; context prevents treating wording as a universal technique.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:contrast_or_disagreement:setting_or_delivery_confound",
+      "canonical_job": "contrast_or_disagreement",
+      "counterexample_type": "setting_or_delivery_confound",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "ya7DNE1YZVs:00025",
+        "video_id": "ya7DNE1YZVs",
+        "title": "ENGLISH SPEECH | EMILY BLUNT: Women's Education (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=ya7DNE1YZVs&t=113s",
+        "transcript_excerpt": "But to learn from her and I just sort of adorethe look of delight in her eyes when she realizes"
+      },
+      "source_card_id": "full-context-20260917-070:3",
+      "observed_move": "Speaker explains curiosity and learning from daughter, then explicitly identifies supportive opportunity as luck.",
+      "rationale": "The available delivery layer is proxy-only or missing/manual-review pending; this blocks a delivery interpretation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:contrast_or_disagreement:safety_accessibility_screen",
+      "canonical_job": "contrast_or_disagreement",
+      "counterexample_type": "safety_accessibility_screen",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "aDG1T0kJnd4:00002",
+        "video_id": "aDG1T0kJnd4",
+        "title": "ENGLISH SPEECH | PRIYANKA CHOPRA: Be Fearless (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=aDG1T0kJnd4&t=1s",
+        "transcript_excerpt": "So, my father used to always tell me somethingwhich I want to share with you, that why do"
+      },
+      "source_card_id": "full-context-20260917-073:1",
+      "observed_move": "Father's slipper/ceiling contrast is followed by rejection of ceiling as personal goal, not denial of barrier.",
+      "rationale": "The source or job may involve privacy, consent, vulnerability or access concerns; the candidate requires bounded adaptation rather than imitation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:correction_or_reframe:absent_but_speech_works",
+      "canonical_job": "correction_or_reframe",
+      "counterexample_type": "absent_but_speech_works",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "5rbyzJf4ZuQ:00013",
+        "video_id": "5rbyzJf4ZuQ",
+        "title": "ENGLISH SPEECH | SHAKIRA: The Power of Education (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=5rbyzJf4ZuQ&t=106s",
+        "transcript_excerpt": "Thank you so much. Thank you for the honor of this award and for the opportunity to speak to you all."
+      },
+      "source_card_id": "full-context-20260917-141:2",
+      "observed_move": "Speaker thanks host and invokes proven early-development benefits without identifying research.",
+      "rationale": "Same provisional job has a transcript card without an indexed phrase handle; this tests whether the phrase is necessary or merely a retrieval aid.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:correction_or_reframe:present_but_limit_visible",
+      "canonical_job": "correction_or_reframe",
+      "counterexample_type": "present_but_limit_visible",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "dgkxN6RASpg:00062",
+        "video_id": "dgkxN6RASpg",
+        "title": "ENGLISH SPEECH | TOM CRUISE & BEN STILLER: Footprint Ceremony (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=dgkxN6RASpg&t=422s",
+        "transcript_excerpt": "really know what the hell I was doing. And that you had faith in me that I would somehow get it"
+      },
+      "source_card_id": "full-context-20260917-204:5",
+      "observed_move": "Ben thanks professional, personal and family contributors, using humor and then correcting a potentially false impression.",
+      "rationale": "The card carries an explicit non-fit or next-test boundary; this tests whether the proposed form needs a condition.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:correction_or_reframe:alternate_function_or_phrase",
+      "canonical_job": "correction_or_reframe",
+      "counterexample_type": "alternate_function_or_phrase",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "l2ojUrbq8EM:00287",
+        "video_id": "l2ojUrbq8EM",
+        "title": "ENGLISH SPEECH | TAYLOR SWIFT: YouTube Presents Interview (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=l2ojUrbq8EM&t=975s",
+        "transcript_excerpt": "So I know a lot of your songs are very personalsongs, and a lot of your fans are very interested"
+      },
+      "source_card_id": "full-context-20260917-155:10",
+      "observed_move": "Date question answered not at that stage; plural generalized to him, known characters rationale and school-story example.",
+      "rationale": "A repeated phrase or nearby form may serve another function; context prevents treating wording as a universal technique.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:correction_or_reframe:setting_or_delivery_confound",
+      "canonical_job": "correction_or_reframe",
+      "counterexample_type": "setting_or_delivery_confound",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "DBMYqkuHvew:00109",
+        "video_id": "DBMYqkuHvew",
+        "title": "ENGLISH SPEECH | KANGANA RANAUT: The New Face of India (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=DBMYqkuHvew&t=597s",
+        "transcript_excerpt": "do a objectify women, Bollywood films do objectify women. And not all of them, some of them at least."
+      },
+      "source_card_id": "full-context-20260917-124:8",
+      "observed_move": "Objectification allegation explicitly narrowed from films generally to some films.",
+      "rationale": "The available delivery layer is proxy-only or missing/manual-review pending; this blocks a delivery interpretation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:correction_or_reframe:safety_accessibility_screen",
+      "canonical_job": "correction_or_reframe",
+      "counterexample_type": "safety_accessibility_screen",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "bLCoSu2KiEA:00091",
+        "video_id": "bLCoSu2KiEA",
+        "title": "ENGLISH SPEECH | MARIAH CAREY: Full Power of Women (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=bLCoSu2KiEA&t=395s",
+        "transcript_excerpt": "So, on behalf of her, Ms. Monroe, Roro aswe call her, on behalf of her, I want to thank"
+      },
+      "source_card_id": "full-context-20260917-076:9",
+      "observed_move": "Different anticipated struggles lead to gratitude, explicit correction from no barriers to fewer and ongoing mutual support.",
+      "rationale": "The source or job may involve privacy, consent, vulnerability or access concerns; the candidate requires bounded adaptation rather than imitation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:repair_or_self_correction:absent_but_speech_works",
+      "canonical_job": "repair_or_self_correction",
+      "counterexample_type": "absent_but_speech_works",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "7XO7kVaEgpM:00001",
+        "video_id": "7XO7kVaEgpM",
+        "title": "ENGLISH SPEECH | BENEDICT CUMBERBATCH: Just Do It! (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=7XO7kVaEgpM&t=13s",
+        "transcript_excerpt": "to me and you have possibly forgotten yourstate of mind (I doubt it though). You seem"
+      },
+      "source_card_id": "full-context-20260917-202:1",
+      "observed_move": "A forceful permission and a long accumulation of stuck states end in a direct call to act.",
+      "rationale": "Same provisional job has a transcript card without an indexed phrase handle; this tests whether the phrase is necessary or merely a retrieval aid.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:repair_or_self_correction:present_but_limit_visible",
+      "canonical_job": "repair_or_self_correction",
+      "counterexample_type": "present_but_limit_visible",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "s_vZ5lMRkpA:00045",
+        "video_id": "s_vZ5lMRkpA",
+        "title": "ENGLISH SPEECH | WARREN BUFFETT: Becoming successful (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=s_vZ5lMRkpA&t=220s",
+        "transcript_excerpt": "Well, they try, they just don't realize that all you have to do is just buy across a cross-section"
+      },
+      "source_card_id": "full-context-20260917-106:4",
+      "observed_move": "Liquidity contrasted with obligation to act via property comparison; source advice not adopted.",
+      "rationale": "The card carries an explicit non-fit or next-test boundary; this tests whether the proposed form needs a condition.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:repair_or_self_correction:alternate_function_or_phrase",
+      "canonical_job": "repair_or_self_correction",
+      "counterexample_type": "alternate_function_or_phrase",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "m_DL4xytjCo:00030",
+        "video_id": "m_DL4xytjCo",
+        "title": "ENGLISH SPEECH | AMANDA GORMAN: The Hill We Climb (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=m_DL4xytjCo&t=160s",
+        "transcript_excerpt": "If we're to live up to our own time, thenvictory won't lie in the blade, but in all"
+      },
+      "source_card_id": "full-context-20260917-114:4",
+      "observed_move": "Safety vision, weapon/bridge contrast and inherited identity framed as repair; caption 32 corrupt.",
+      "rationale": "A repeated phrase or nearby form may serve another function; context prevents treating wording as a universal technique.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:repair_or_self_correction:setting_or_delivery_confound",
+      "canonical_job": "repair_or_self_correction",
+      "counterexample_type": "setting_or_delivery_confound",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "l2ojUrbq8EM:00580",
+        "video_id": "l2ojUrbq8EM",
+        "title": "ENGLISH SPEECH | TAYLOR SWIFT: YouTube Presents Interview (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=l2ojUrbq8EM&t=2019s",
+        "transcript_excerpt": "One of the other questions that we got, actually,from one of the future Googlers in the audience"
+      },
+      "source_card_id": "full-context-20260917-155:20",
+      "observed_move": "Host11→guest14→tentative13; writing/editing thread recurs, no definitive biography correction.",
+      "rationale": "The available delivery layer is proxy-only or missing/manual-review pending; this blocks a delivery interpretation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:repair_or_self_correction:safety_accessibility_screen",
+      "canonical_job": "repair_or_self_correction",
+      "counterexample_type": "safety_accessibility_screen",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "MpMtBWwXCLU:00336",
+        "video_id": "MpMtBWwXCLU",
+        "title": "ENGLISH SPEECH | DR. KIRAN BEDI: Road Safety (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=MpMtBWwXCLU&t=950s",
+        "transcript_excerpt": "Safety so I would take I would hope that"
+      },
+      "source_card_id": "full-context-20260917-081:13",
+      "observed_move": "Speaker corrects hope to make sure; existing camera enforcement acknowledged and strengthening proposed.",
+      "rationale": "The source or job may involve privacy, consent, vulnerability or access concerns; the candidate requires bounded adaptation rather than imitation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:qualification_or_boundary:absent_but_speech_works",
+      "canonical_job": "qualification_or_boundary",
+      "counterexample_type": "absent_but_speech_works",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "2mqQMA7CSLQ:00347",
+        "video_id": "2mqQMA7CSLQ",
+        "title": "Donald Trump’s Never Give Up Message",
+        "source_url": "https://www.youtube.com/watch?v=2mqQMA7CSLQ&t=1742s",
+        "transcript_excerpt": "Now it falls on the shoulders of each of youhere today to protect the freedom that patriots"
+      },
+      "source_card_id": "full-context-20260917-060:12",
+      "observed_move": "Sacrifice becomes graduate duty, plural roles and shared identity; stated conditions culminate in no-failure/best-days assurances.",
+      "rationale": "Same provisional job has a transcript card without an indexed phrase handle; this tests whether the phrase is necessary or merely a retrieval aid.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:qualification_or_boundary:present_but_limit_visible",
+      "canonical_job": "qualification_or_boundary",
+      "counterexample_type": "present_but_limit_visible",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "DBMYqkuHvew:00088",
+        "video_id": "DBMYqkuHvew",
+        "title": "ENGLISH SPEECH | KANGANA RANAUT: The New Face of India (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=DBMYqkuHvew&t=472s",
+        "transcript_excerpt": "But I would say in India, we have a lot of work to do, and we need a lot more"
+      },
+      "source_card_id": "full-context-20260917-124:7",
+      "observed_move": "Partial social improvement qualified by continuing barriers and examples from work/marriage.",
+      "rationale": "The card carries an explicit non-fit or next-test boundary; this tests whether the proposed form needs a condition.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:qualification_or_boundary:alternate_function_or_phrase",
+      "canonical_job": "qualification_or_boundary",
+      "counterexample_type": "alternate_function_or_phrase",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "3FtDXPHua9o:00002",
+        "video_id": "3FtDXPHua9o",
+        "title": "ENGLISH SPEECH | BOB PROCTOR: The Billion Dollar Practice (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=3FtDXPHua9o&t=10s",
+        "transcript_excerpt": "Now, you have the ability to take a very honestlook at your life and see how you've got there."
+      },
+      "source_card_id": "full-context-20260917-057:1",
+      "observed_move": "Retrospective path contrasts with desired future whose route is unknown; X reference alone is not inspected visual evidence.",
+      "rationale": "A repeated phrase or nearby form may serve another function; context prevents treating wording as a universal technique.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:qualification_or_boundary:setting_or_delivery_confound",
+      "canonical_job": "qualification_or_boundary",
+      "counterexample_type": "setting_or_delivery_confound",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "42QjAxty_1o:00251",
+        "video_id": "42QjAxty_1o",
+        "title": "ENGLISH SPEECH | JIM CARREY: Do What You Love (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=42QjAxty_1o&t=1364s",
+        "transcript_excerpt": "Your job is not to figure out how it’s goingto happen for you, but to open the door in"
+      },
+      "source_card_id": "full-context-20260917-107:12",
+      "observed_move": "Always-another-door claim followed by life-for-you as chosen perspective, not known truth.",
+      "rationale": "The available delivery layer is proxy-only or missing/manual-review pending; this blocks a delivery interpretation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:qualification_or_boundary:safety_accessibility_screen",
+      "canonical_job": "qualification_or_boundary",
+      "counterexample_type": "safety_accessibility_screen",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "5mXFlne4JB8:00183",
+        "video_id": "5mXFlne4JB8",
+        "title": "ENGLISH SPEECH | MINDY KALING: Why Not Me? (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=5mXFlne4JB8&t=679s",
+        "transcript_excerpt": "I’ll tell you my secret, the one thing thathas kept me going through the years, my superpower:"
+      },
+      "source_card_id": "full-context-20260917-156:8",
+      "observed_move": "Delusion metaphor and political comparison lead to cheering oneself and others; no clinical endorsement.",
+      "rationale": "The source or job may involve privacy, consent, vulnerability or access concerns; the candidate requires bounded adaptation rather than imitation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:definition_or_explanation:absent_but_speech_works",
+      "canonical_job": "definition_or_explanation",
+      "counterexample_type": "absent_but_speech_works",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "lJP4b36pTuw:00016",
+        "video_id": "lJP4b36pTuw",
+        "title": "ENGLISH SPEECH | ADMIRAL WILLIAM H. MCRAVEN: Change the World (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=lJP4b36pTuw&t=78s",
+        "transcript_excerpt": "That great paragon of analytical rigor, Ask.Com,says that the average American will meet 10,000"
+      },
+      "source_card_id": "full-context-20260917-148:2",
+      "observed_move": "8000 times ten to fifth gives800million, but propagation assumptions untested.",
+      "rationale": "Same provisional job has a transcript card without an indexed phrase handle; this tests whether the phrase is necessary or merely a retrieval aid.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:definition_or_explanation:present_but_limit_visible",
+      "canonical_job": "definition_or_explanation",
+      "counterexample_type": "present_but_limit_visible",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "-Unkvng_jp8:00050",
+        "video_id": "-Unkvng_jp8",
+        "title": "ENGLISH SPEECH | US PRESIDENTIAL DEBATES 2020: Highlights (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=-Unkvng_jp8&t=244s",
+        "transcript_excerpt": "it back. You send it back. I did that. This is going to be a fraud like you’ve never seen."
+      },
+      "source_card_id": "full-context-20260917-175:6",
+      "observed_move": "Mail ballots, fraud, counting time, poll watching and acceptance of the declared result are contested.",
+      "rationale": "The card carries an explicit non-fit or next-test boundary; this tests whether the proposed form needs a condition.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:definition_or_explanation:alternate_function_or_phrase",
+      "canonical_job": "definition_or_explanation",
+      "counterexample_type": "alternate_function_or_phrase",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "AwA0Jnfj3ao:00134",
+        "video_id": "AwA0Jnfj3ao",
+        "title": "ENGLISH SPEECH | SACHIN TENDULKAR: Be the Best (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=AwA0Jnfj3ao&t=609s",
+        "transcript_excerpt": "So, I ended up speaking to a lot of, the seniorplayers in the team, the coach, and they all"
+      },
+      "source_card_id": "full-context-20260917-023:8",
+      "observed_move": "Reported advice precedes a time-based goal rather than run score, followed by claimed improvement.",
+      "rationale": "A repeated phrase or nearby form may serve another function; context prevents treating wording as a universal technique.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:definition_or_explanation:setting_or_delivery_confound",
+      "canonical_job": "definition_or_explanation",
+      "counterexample_type": "setting_or_delivery_confound",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "XkZhzc7b4jg:00216",
+        "video_id": "XkZhzc7b4jg",
+        "title": "ENGLISH SPEECH | ARNOLD SCHWARZENEGGER: Help Others (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=XkZhzc7b4jg&t=879s",
+        "transcript_excerpt": "Yes, I took over and yes, I won the governorship,but if it wouldn’t have been for Jay Leno,"
+      },
+      "source_card_id": "full-context-20260917-176:10",
+      "observed_move": "A campaign announcement, organizers, fundraising, communication and legislators explain a governorship and laws.",
+      "rationale": "The available delivery layer is proxy-only or missing/manual-review pending; this blocks a delivery interpretation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:definition_or_explanation:safety_accessibility_screen",
+      "canonical_job": "definition_or_explanation",
+      "counterexample_type": "safety_accessibility_screen",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "yjo8chlSbQE:00134",
+        "video_id": "yjo8chlSbQE",
+        "title": "ENGLISH SPEECH | JACINDA ARDEN: Will You Join Us? (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=yjo8chlSbQE&t=694s",
+        "transcript_excerpt": "interconnection, and our reliance on one anotherif we are to respond to the challenges we"
+      },
+      "source_card_id": "full-context-20260917-197:5",
+      "observed_move": "Pacific climate exposure and New Zealand measures move the argument from a specific place to mechanisms, tradeoffs and multiple levers.",
+      "rationale": "The source or job may involve privacy, consent, vulnerability or access concerns; the candidate requires bounded adaptation rather than imitation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:transition_or_structure:absent_but_speech_works",
+      "canonical_job": "transition_or_structure",
+      "counterexample_type": "absent_but_speech_works",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "ipGmWHe24Is:00064",
+        "video_id": "ipGmWHe24Is",
+        "title": "ENGLISH SPEECH | ASHTON KUTCHER: The Pursuit of Happiness (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=ipGmWHe24Is&t=396s",
+        "transcript_excerpt": "the dark web was created in the mid-90s. Itwas a tool that was created by the naval research"
+      },
+      "source_card_id": "full-context-20260917-041:6",
+      "observed_move": "Earlier request is revisited through a no-then/yes-now narrative; beta adoption and projected investigation-time improvement remain distinct.",
+      "rationale": "Same provisional job has a transcript card without an indexed phrase handle; this tests whether the phrase is necessary or merely a retrieval aid.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:transition_or_structure:present_but_limit_visible",
+      "canonical_job": "transition_or_structure",
+      "counterexample_type": "present_but_limit_visible",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "ZwMVMbmQBug:00034",
+        "video_id": "ZwMVMbmQBug",
+        "title": "I'm as mad as hell, and I'm not going to take this anymore! Speech from Network (1976)",
+        "source_url": "https://www.youtube.com/watch?v=ZwMVMbmQBug&t=110s",
+        "transcript_excerpt": "But first get up out of your chairs, open the window, stick your head out, and yell, and say it: \"I'M AS MAD"
+      },
+      "source_card_id": "full-context-20260917-007:5",
+      "observed_move": "First/then language prioritizes expression and defers figuring out the substantive response.",
+      "rationale": "The card carries an explicit non-fit or next-test boundary; this tests whether the proposed form needs a condition.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:transition_or_structure:alternate_function_or_phrase",
+      "canonical_job": "transition_or_structure",
+      "counterexample_type": "alternate_function_or_phrase",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "6dKimoybmEo:00031",
+        "video_id": "6dKimoybmEo",
+        "title": "ENGLISH SPEECH | MARTIN LUTHER KING: I Have a Dream (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=6dKimoybmEo&t=42s",
+        "transcript_excerpt": "I have a dream that one day this nation willrise up and live out the true meaning of its"
+      },
+      "source_card_id": "full-context-20260917-017:5",
+      "observed_move": "Recurring dream formulation introduces changing national, geographic and interpersonal scenes.",
+      "rationale": "A repeated phrase or nearby form may serve another function; context prevents treating wording as a universal technique.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:transition_or_structure:setting_or_delivery_confound",
+      "canonical_job": "transition_or_structure",
+      "counterexample_type": "setting_or_delivery_confound",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "ZHpyfTC_Ovo:00138",
+        "video_id": "ZHpyfTC_Ovo",
+        "title": "ENGLISH SPEECH | LADY GAGA: Mental Health & Self-Care (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=ZHpyfTC_Ovo&t=521s",
+        "transcript_excerpt": "there had been so much work put into gettingto the point where we then knew you and you"
+      },
+      "source_card_id": "full-context-20260917-020:7",
+      "observed_move": "Interviewer names fame/impact contrast; respondent describes mission and spiritual meaning, with mutual language shaping.",
+      "rationale": "The available delivery layer is proxy-only or missing/manual-review pending; this blocks a delivery interpretation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:transition_or_structure:safety_accessibility_screen",
+      "canonical_job": "transition_or_structure",
+      "counterexample_type": "safety_accessibility_screen",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "szXreq7f924:00081",
+        "video_id": "szXreq7f924",
+        "title": "ENGLISH SPEECH | KEN JEONG: Find Your Passion (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=szXreq7f924&t=324s",
+        "transcript_excerpt": "And I swear it is an honor for me to acknowledgemy own parents in supporting my passion, because"
+      },
+      "source_card_id": "full-context-20260917-196:3",
+      "observed_move": "The speaker names age, stable work, fear, family support and the decision to pursue comedy and acting.",
+      "rationale": "The source or job may involve privacy, consent, vulnerability or access concerns; the candidate requires bounded adaptation rather than imitation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:callback_or_repetition:absent_but_speech_works",
+      "canonical_job": "callback_or_repetition",
+      "counterexample_type": "absent_but_speech_works",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "kTw_KyXcHIc:00092",
+        "video_id": "kTw_KyXcHIc",
+        "title": "ENGLISH SPEECH | AISHWARYA RAI BACHCHAN: Bring a Smile (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=kTw_KyXcHIc&t=546s",
+        "transcript_excerpt": "We're all here to continue doing what we cando, and at the same time in all humility,"
+      },
+      "source_card_id": "full-context-20260917-159:9",
+      "observed_move": "Collective continuation and thanks, no audience outcome observed.",
+      "rationale": "Same provisional job has a transcript card without an indexed phrase handle; this tests whether the phrase is necessary or merely a retrieval aid.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:callback_or_repetition:present_but_limit_visible",
+      "canonical_job": "callback_or_repetition",
+      "counterexample_type": "present_but_limit_visible",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "ZwMVMbmQBug:00041",
+        "video_id": "ZwMVMbmQBug",
+        "title": "I'm as mad as hell, and I'm not going to take this anymore! Speech from Network (1976)",
+        "source_url": "https://www.youtube.com/watch?v=ZwMVMbmQBug&t=145s",
+        "transcript_excerpt": "get up from your chairs. Right now! Go to a window! Everybody, just go to a window! Open it, and stick your head out"
+      },
+      "source_card_id": "full-context-20260917-007:6",
+      "observed_move": "Instruction and refrain continue; text alone does not establish changing speakers or actual compliance.",
+      "rationale": "The card carries an explicit non-fit or next-test boundary; this tests whether the proposed form needs a condition.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:callback_or_repetition:alternate_function_or_phrase",
+      "canonical_job": "callback_or_repetition",
+      "counterexample_type": "alternate_function_or_phrase",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "A1hcbdWEEO8:00426",
+        "video_id": "A1hcbdWEEO8",
+        "title": "ENGLISH SPEECH | RASHIDA JONES: Choose Love (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=A1hcbdWEEO8&t=1514s",
+        "transcript_excerpt": "So just to review, because I think maybe someof you are hung over or maybe have been asleep"
+      },
+      "source_card_id": "full-context-20260917-128:12",
+      "observed_move": "All three principles restated; progress claims retain work to do, Froyo lever returns after action appeal.",
+      "rationale": "A repeated phrase or nearby form may serve another function; context prevents treating wording as a universal technique.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:callback_or_repetition:setting_or_delivery_confound",
+      "canonical_job": "callback_or_repetition",
+      "counterexample_type": "setting_or_delivery_confound",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "EQYWOQ-12c8:00079",
+        "video_id": "EQYWOQ-12c8",
+        "title": "ENGLISH SPEECH | RASHMIKA MANDANNA: Dream BIG! (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=EQYWOQ-12c8&t=291s",
+        "transcript_excerpt": "And why I started saying this is if I, a girlfrom Kodagu, can do this then imagine you"
+      },
+      "source_card_id": "full-context-20260917-189:6",
+      "observed_move": "A local origin becomes an invitation to dream big and continue through ridicule.",
+      "rationale": "The available delivery layer is proxy-only or missing/manual-review pending; this blocks a delivery interpretation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:callback_or_repetition:safety_accessibility_screen",
+      "canonical_job": "callback_or_repetition",
+      "counterexample_type": "safety_accessibility_screen",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "-HA8kSdsf_M:00070",
+        "video_id": "-HA8kSdsf_M",
+        "title": "The Great Dictator Speech (by- Charlie Chaplin ) with Subtitles HD",
+        "source_url": "https://www.youtube.com/watch?v=-HA8kSdsf_M&t=192s",
+        "transcript_excerpt": "then in the name of democracy let us use"
+      },
+      "source_card_id": "full-context-20260917-167:5",
+      "observed_move": "Work, youth, old age, liberty and progress define the desired world before repeated collective action.",
+      "rationale": "The source or job may involve privacy, consent, vulnerability or access concerns; the candidate requires bounded adaptation rather than imitation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:humor_or_rapport:absent_but_speech_works",
+      "canonical_job": "humor_or_rapport",
+      "counterexample_type": "absent_but_speech_works",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "42QjAxty_1o:00123",
+        "video_id": "42QjAxty_1o",
+        "title": "ENGLISH SPEECH | JIM CARREY: Do What You Love (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=42QjAxty_1o&t=661s",
+        "transcript_excerpt": "People would come over to my house and theywould be greeted by a 7 yr old throwing himself"
+      },
+      "source_card_id": "full-context-20260917-107:6",
+      "observed_move": "Childhood performance recollection leads to purpose and audience questions about service.",
+      "rationale": "Same provisional job has a transcript card without an indexed phrase handle; this tests whether the phrase is necessary or merely a retrieval aid.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:humor_or_rapport:present_but_limit_visible",
+      "canonical_job": "humor_or_rapport",
+      "counterexample_type": "present_but_limit_visible",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "vAn96hY1LGw:00082",
+        "video_id": "vAn96hY1LGw",
+        "title": "ENGLISH SPEECH | TREVOR NOAH: The Power of Information (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=vAn96hY1LGw&t=364s",
+        "transcript_excerpt": "People always come up to me and they go, Trevor,as the host of The Daily Show how do you feel"
+      },
+      "source_card_id": "full-context-20260917-109:7",
+      "observed_move": "Threat/comedy coexist; mother's saying leads to explicit reality-preserving function of laughter.",
+      "rationale": "The card carries an explicit non-fit or next-test boundary; this tests whether the proposed form needs a condition.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:humor_or_rapport:alternate_function_or_phrase",
+      "canonical_job": "humor_or_rapport",
+      "counterexample_type": "alternate_function_or_phrase",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "6dKimoybmEo:00000",
+        "video_id": "6dKimoybmEo",
+        "title": "ENGLISH SPEECH | MARTIN LUTHER KING: I Have a Dream (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=6dKimoybmEo&t=13s",
+        "transcript_excerpt": "I am happy to join with you today in whatwill go down in history as the greatest demonstration"
+      },
+      "source_card_id": "full-context-20260917-017:1",
+      "observed_move": "Opening occasion and historical claim introduce liberation imagery.",
+      "rationale": "A repeated phrase or nearby form may serve another function; context prevents treating wording as a universal technique.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:humor_or_rapport:setting_or_delivery_confound",
+      "canonical_job": "humor_or_rapport",
+      "counterexample_type": "setting_or_delivery_confound",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "GRiDVoMFxcU:00009",
+        "video_id": "GRiDVoMFxcU",
+        "title": "ENGLISH SPEECH | JOHN CENA: We Made It! (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=GRiDVoMFxcU&t=47s",
+        "transcript_excerpt": "Just the fact that he could make coach Dowlingsmile, I think the only other time coach Dowling"
+      },
+      "source_card_id": "full-context-20260917-025:2",
+      "observed_move": "Professional description and graduation obstacle become a mock wrestling challenge, then an explicit joke/briefness reset.",
+      "rationale": "The available delivery layer is proxy-only or missing/manual-review pending; this blocks a delivery interpretation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:humor_or_rapport:safety_accessibility_screen",
+      "canonical_job": "humor_or_rapport",
+      "counterexample_type": "safety_accessibility_screen",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "iBBB-vJZB50:00014",
+        "video_id": "iBBB-vJZB50",
+        "title": "ENGLISH SPEECH | MALALA YOUSAFZAI - Nobel Peace Prize (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=iBBB-vJZB50&t=122s",
+        "transcript_excerpt": "I am proud, well, in fact, I am very proudto be the first Pashtun, the first Pakistani,"
+      },
+      "source_card_id": "full-context-20260917-082:2",
+      "observed_move": "Award-first claims are qualified by sibling joke; co-recipient cooperation and name/happiness contrast broaden identity.",
+      "rationale": "The source or job may involve privacy, consent, vulnerability or access concerns; the candidate requires bounded adaptation rather than imitation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:credit_or_acknowledgment:absent_but_speech_works",
+      "canonical_job": "credit_or_acknowledgment",
+      "counterexample_type": "absent_but_speech_works",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "XkZhzc7b4jg:00010",
+        "video_id": "XkZhzc7b4jg",
+        "title": "ENGLISH SPEECH | ARNOLD SCHWARZENEGGER: Help Others (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=XkZhzc7b4jg&t=42s",
+        "transcript_excerpt": "It is a wonderful day to be here at the Universityand thank you also for the great work that"
+      },
+      "source_card_id": "full-context-20260917-176:2",
+      "observed_move": "President, faculty, parents and families receive distinct credit and applause prompts.",
+      "rationale": "Same provisional job has a transcript card without an indexed phrase handle; this tests whether the phrase is necessary or merely a retrieval aid.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:credit_or_acknowledgment:present_but_limit_visible",
+      "canonical_job": "credit_or_acknowledgment",
+      "counterexample_type": "present_but_limit_visible",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "S43F1BZfQKY:00038",
+        "video_id": "S43F1BZfQKY",
+        "title": "ENGLISH SPEECH | PARUL BANSAL: I Shaved My Head (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=S43F1BZfQKY&t=189s",
+        "transcript_excerpt": "Ladies came up to me on the streets and pickedup their wig just a little bit for me to see"
+      },
+      "source_card_id": "full-context-20260917-133:4",
+      "observed_move": "Self-question leads to shaving and reported supportive encounters; apparent breakthrough.",
+      "rationale": "The card carries an explicit non-fit or next-test boundary; this tests whether the proposed form needs a condition.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:credit_or_acknowledgment:alternate_function_or_phrase",
+      "canonical_job": "credit_or_acknowledgment",
+      "counterexample_type": "alternate_function_or_phrase",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "42QjAxty_1o:00051",
+        "video_id": "42QjAxty_1o",
+        "title": "ENGLISH SPEECH | JIM CARREY: Do What You Love (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=42QjAxty_1o&t=336s",
+        "transcript_excerpt": "I used to believe that who I was ended atthe edge of my skin, that I had been given"
+      },
+      "source_card_id": "full-context-20260917-107:3",
+      "observed_move": "Body-as-vehicle becomes convertible; imagined/actual threat distinction attributed to institution's practices.",
+      "rationale": "A repeated phrase or nearby form may serve another function; context prevents treating wording as a universal technique.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:credit_or_acknowledgment:setting_or_delivery_confound",
+      "canonical_job": "credit_or_acknowledgment",
+      "counterexample_type": "setting_or_delivery_confound",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "4_3qH9QZCz0:00012",
+        "video_id": "4_3qH9QZCz0",
+        "title": "ENGLISH SPEECH | GLENN CLOSE: Be Kind (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=4_3qH9QZCz0&t=57s",
+        "transcript_excerpt": "time I saw this campus was in the late 60’swhen I sprinted off the girls’ bus, in my"
+      },
+      "source_card_id": "full-context-20260917-195:2",
+      "observed_move": "A campus encounter leads from a controlled group to education, mentorship and a new self.",
+      "rationale": "The available delivery layer is proxy-only or missing/manual-review pending; this blocks a delivery interpretation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:credit_or_acknowledgment:safety_accessibility_screen",
+      "canonical_job": "credit_or_acknowledgment",
+      "counterexample_type": "safety_accessibility_screen",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "bLCoSu2KiEA:00066",
+        "video_id": "bLCoSu2KiEA",
+        "title": "ENGLISH SPEECH | MARIAH CAREY: Full Power of Women (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=bLCoSu2KiEA&t=288s",
+        "transcript_excerpt": "to prima Ballerina, Misty Copeland joiningme at camp just a few months ago to the many"
+      },
+      "source_card_id": "full-context-20260917-076:7",
+      "observed_move": "Fundraiser, visitor, daily staff and Fresh Air Fund are credited; 15000-child claim is not independently audited.",
+      "rationale": "The source or job may involve privacy, consent, vulnerability or access concerns; the candidate requires bounded adaptation rather than imitation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:call_to_action_or_audience_role:absent_but_speech_works",
+      "canonical_job": "call_to_action_or_audience_role",
+      "counterexample_type": "absent_but_speech_works",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "iBBB-vJZB50:00150",
+        "video_id": "iBBB-vJZB50",
+        "title": "ENGLISH SPEECH | MALALA YOUSAFZAI - Nobel Peace Prize (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=iBBB-vJZB50&t=1116s",
+        "transcript_excerpt": "My great hope is that this will be the lasttime, this will be the last time we must fight"
+      },
+      "source_card_id": "full-context-20260917-082:9",
+      "observed_move": "Hope for lasting change follows historical figures; leaders urged to act rather than merely recognize importance.",
+      "rationale": "Same provisional job has a transcript card without an indexed phrase handle; this tests whether the phrase is necessary or merely a retrieval aid.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:call_to_action_or_audience_role:present_but_limit_visible",
+      "canonical_job": "call_to_action_or_audience_role",
+      "counterexample_type": "present_but_limit_visible",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "dKe3WbGR7Xs:00045",
+        "video_id": "dKe3WbGR7Xs",
+        "title": "ENGLISH SPEECH | JENNIFER ANISTON: Find Your Voice (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=dKe3WbGR7Xs&t=217s",
+        "transcript_excerpt": "I said yeah, I'd love to be your date andgo to that so there we are at this big elaborate"
+      },
+      "source_card_id": "full-context-20260917-149:5",
+      "observed_move": "Marlo Thomas invitation, gala film and desire to participate;25year chronology unverified.",
+      "rationale": "The card carries an explicit non-fit or next-test boundary; this tests whether the proposed form needs a condition.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:call_to_action_or_audience_role:alternate_function_or_phrase",
+      "canonical_job": "call_to_action_or_audience_role",
+      "counterexample_type": "alternate_function_or_phrase",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "7XO7kVaEgpM:00022",
+        "video_id": "7XO7kVaEgpM",
+        "title": "ENGLISH SPEECH | BENEDICT CUMBERBATCH: Just Do It! (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=7XO7kVaEgpM&t=175s",
+        "transcript_excerpt": "do is very good. Try to do some BAD work — theworst you can think of and see what happens"
+      },
+      "source_card_id": "full-context-20260917-202:3",
+      "observed_move": "Grand purpose is set aside, bad work is permitted and stopping is explicitly allowed if life would be easier.",
+      "rationale": "A repeated phrase or nearby form may serve another function; context prevents treating wording as a universal technique.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:call_to_action_or_audience_role:setting_or_delivery_confound",
+      "canonical_job": "call_to_action_or_audience_role",
+      "counterexample_type": "setting_or_delivery_confound",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "ya7DNE1YZVs:00083",
+        "video_id": "ya7DNE1YZVs",
+        "title": "ENGLISH SPEECH | EMILY BLUNT: Women's Education (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=ya7DNE1YZVs&t=399s",
+        "transcript_excerpt": "John and I both feel we want to do as muchas we can to help ensure that that statement"
+      },
+      "source_card_id": "full-context-20260917-070:8",
+      "observed_move": "Father-attributed statement supports stated wish to help, followed by exceptional-individual praise.",
+      "rationale": "The available delivery layer is proxy-only or missing/manual-review pending; this blocks a delivery interpretation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:call_to_action_or_audience_role:safety_accessibility_screen",
+      "canonical_job": "call_to_action_or_audience_role",
+      "counterexample_type": "safety_accessibility_screen",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "kTw_KyXcHIc:00042",
+        "video_id": "kTw_KyXcHIc",
+        "title": "ENGLISH SPEECH | AISHWARYA RAI BACHCHAN: Bring a Smile (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=kTw_KyXcHIc&t=245s",
+        "transcript_excerpt": "My parents and my daughter also recently orbe it very early in her life has gotten introduced"
+      },
+      "source_card_id": "full-context-20260917-159:4",
+      "observed_move": "Parents/daughter involvement, father's birthday observance and private giving practice claimed.",
+      "rationale": "The source or job may involve privacy, consent, vulnerability or access concerns; the candidate requires bounded adaptation rather than imitation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:persuasion_or_advocacy:absent_but_speech_works",
+      "canonical_job": "persuasion_or_advocacy",
+      "counterexample_type": "absent_but_speech_works",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "-Unkvng_jp8:00079",
+        "video_id": "-Unkvng_jp8",
+        "title": "ENGLISH SPEECH | US PRESIDENTIAL DEBATES 2020: Highlights (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=-Unkvng_jp8&t=420s",
+        "transcript_excerpt": "you have no plan.” “I don’t think we’re going to have a dark winter at all. We’re opening up our"
+      },
+      "source_card_id": "full-context-20260917-175:8",
+      "observed_move": "An empty-chair image makes stakes personal before the exchange returns to plans and health-care claims.",
+      "rationale": "Same provisional job has a transcript card without an indexed phrase handle; this tests whether the phrase is necessary or merely a retrieval aid.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:persuasion_or_advocacy:present_but_limit_visible",
+      "canonical_job": "persuasion_or_advocacy",
+      "counterexample_type": "present_but_limit_visible",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "U8iy5zvXhJc:00031",
+        "video_id": "U8iy5zvXhJc",
+        "title": "ENGLISH SPEECH | SHAKIRA: Education Changes the World (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=U8iy5zvXhJc&t=168s",
+        "transcript_excerpt": "So I set out to find a team, a team of peoplewho dream big and worked hard and thought"
+      },
+      "source_card_id": "full-context-20260917-174:4",
+      "observed_move": "Personal success leads to investment in children, team-building and the foundation.",
+      "rationale": "The card carries an explicit non-fit or next-test boundary; this tests whether the proposed form needs a condition.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:persuasion_or_advocacy:alternate_function_or_phrase",
+      "canonical_job": "persuasion_or_advocacy",
+      "counterexample_type": "alternate_function_or_phrase",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "XkZhzc7b4jg:00092",
+        "video_id": "XkZhzc7b4jg",
+        "title": "ENGLISH SPEECH | ARNOLD SCHWARZENEGGER: Help Others (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=XkZhzc7b4jg&t=405s",
+        "transcript_excerpt": "So, you also read so many times that I decidedfrom one day to the next to become a bodybuilding"
+      },
+      "source_card_id": "full-context-20260917-176:6",
+      "observed_move": "Bodybuilding success is retold through examples, methods, inspiration and sustained training.",
+      "rationale": "A repeated phrase or nearby form may serve another function; context prevents treating wording as a universal technique.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:persuasion_or_advocacy:setting_or_delivery_confound",
+      "canonical_job": "persuasion_or_advocacy",
+      "counterexample_type": "setting_or_delivery_confound",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "2mqQMA7CSLQ:00112",
+        "video_id": "2mqQMA7CSLQ",
+        "title": "Donald Trump’s Never Give Up Message",
+        "source_url": "https://www.youtube.com/watch?v=2mqQMA7CSLQ&t=618s",
+        "transcript_excerpt": "Senior, I can only imagine how excited hewould be if he could see all of this and all"
+      },
+      "source_card_id": "full-context-20260917-060:5",
+      "observed_move": "Founder tribute, campus growth and election aside lead to universalized contrast between dreamers and critics.",
+      "rationale": "The available delivery layer is proxy-only or missing/manual-review pending; this blocks a delivery interpretation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:persuasion_or_advocacy:safety_accessibility_screen",
+      "canonical_job": "persuasion_or_advocacy",
+      "counterexample_type": "safety_accessibility_screen",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "fnCW1NWngP4:00118",
+        "video_id": "fnCW1NWngP4",
+        "title": "ENGLISH SPEECH | TAAPSEE PANNU: Explore your Opportunities (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=fnCW1NWngP4&t=395s",
+        "transcript_excerpt": "my CAT exam after my fourth year exams, endedup getting like not so good, but good for"
+      },
+      "source_card_id": "full-context-20260917-093:5",
+      "observed_move": "Job offer as option, intended exam retry and award-film entry; speaker explicitly did not win cited awards.",
+      "rationale": "The source or job may involve privacy, consent, vulnerability or access concerns; the candidate requires bounded adaptation rather than imitation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:reflection_or_value_frame:absent_but_speech_works",
+      "canonical_job": "reflection_or_value_frame",
+      "counterexample_type": "absent_but_speech_works",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "-Unkvng_jp8:00008",
+        "video_id": "-Unkvng_jp8",
+        "title": "ENGLISH SPEECH | US PRESIDENTIAL DEBATES 2020: Highlights (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=-Unkvng_jp8&t=60s",
+        "transcript_excerpt": "“One of the big debates we had with 23 of my colleagues trying to win the nomination that I won"
+      },
+      "source_card_id": "full-context-20260917-175:2",
+      "observed_move": "Private-insurance and party-platform claims are answered by separating candidate identity from party labels before a tax question.",
+      "rationale": "Same provisional job has a transcript card without an indexed phrase handle; this tests whether the phrase is necessary or merely a retrieval aid.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:reflection_or_value_frame:present_but_limit_visible",
+      "canonical_job": "reflection_or_value_frame",
+      "counterexample_type": "present_but_limit_visible",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "uBiewQrpBBA:00021",
+        "video_id": "uBiewQrpBBA",
+        "title": "I Coulda Been a Contender - On the Waterfront (6/8) Movie CLIP (1954) HD",
+        "source_url": "https://www.youtube.com/watch?v=uBiewQrpBBA&t=69s",
+        "transcript_excerpt": "You should've taken care of me just a little bit so I didn't have to take a dive for a short amount of money"
+      },
+      "source_card_id": "full-context-20260917-203:4",
+      "observed_move": "Brotherly obligation, money, a dive and repeated “could’ve” language connect event to present identity and direct blame.",
+      "rationale": "The card carries an explicit non-fit or next-test boundary; this tests whether the proposed form needs a condition.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:reflection_or_value_frame:alternate_function_or_phrase",
+      "canonical_job": "reflection_or_value_frame",
+      "counterexample_type": "alternate_function_or_phrase",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "ZwMVMbmQBug:00016",
+        "video_id": "ZwMVMbmQBug",
+        "title": "I'm as mad as hell, and I'm not going to take this anymore! Speech from Network (1976)",
+        "source_url": "https://www.youtube.com/watch?v=ZwMVMbmQBug&t=57s",
+        "transcript_excerpt": "mad! I don't you to protest, I don't want you to riot, I don't want you to write to your congressman"
+      },
+      "source_card_id": "full-context-20260917-007:3",
+      "observed_move": "Several possible civic actions are excluded, lack of a solution acknowledged, and a value statement prescribed.",
+      "rationale": "A repeated phrase or nearby form may serve another function; context prevents treating wording as a universal technique.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:reflection_or_value_frame:setting_or_delivery_confound",
+      "canonical_job": "reflection_or_value_frame",
+      "counterexample_type": "setting_or_delivery_confound",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "EQYWOQ-12c8:00024",
+        "video_id": "EQYWOQ-12c8",
+        "title": "ENGLISH SPEECH | RASHMIKA MANDANNA: Dream BIG! (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=EQYWOQ-12c8&t=65s",
+        "transcript_excerpt": "For all the love I get for all the appreciationI get from all of you who watch my films."
+      },
+      "source_card_id": "full-context-20260917-189:3",
+      "observed_move": "A public smiling image is linked to hidden sadness, frustration and gendered experience.",
+      "rationale": "The available delivery layer is proxy-only or missing/manual-review pending; this blocks a delivery interpretation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    },
+    {
+      "screening_item_id": "autonomous-counterexample:reflection_or_value_frame:safety_accessibility_screen",
+      "canonical_job": "reflection_or_value_frame",
+      "counterexample_type": "safety_accessibility_screen",
+      "status": "internal_screening_candidate_not_validated",
+      "candidate": {
+        "evidence_id": "wjTGbS4JqXk:00154",
+        "video_id": "wjTGbS4JqXk",
+        "title": "ENGLISH SPEECH | TIM COOK: Be a Builder (English Subtitles)",
+        "source_url": "https://www.youtube.com/watch?v=wjTGbS4JqXk&t=877s",
+        "transcript_excerpt": "I knew that if you got out of bed every morningand set your watch by what other people expect"
+      },
+      "source_card_id": "full-context-20260917-179:10",
+      "observed_move": "Graduates are told to become themselves rather than contort into a predecessor's shape.",
+      "rationale": "The source or job may involve privacy, consent, vulnerability or access concerns; the candidate requires bounded adaptation rather than imitation.",
+      "internal_decision": "retain_for_limit_review",
+      "claim_boundary": "This is an internally selected candidate for a limit or alternate explanation. It does not establish failure, ineffectiveness, causality, speaker intent or generalization."
+    }
+  ]
+}

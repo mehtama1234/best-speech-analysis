@@ -16,15 +16,20 @@ Use the [reviewer start-here handoff](vertical-slice-01-reviewer-start-here.md)
 as the single entry point for the packet files, source/media audits, workbook,
 export commands and current status.
 
-1. `contrast_or_disagreement`
-2. `example_or_case`
-3. `story_or_personal_experience`
-4. `qualification_or_boundary`
-5. `closing`
+1. `contrast_or_disagreement` — packet `provisional-contrast_or_disagreement`
+2. `example_or_case` — packet `provisional-example`
+3. `story_or_personal_experience` — packet `provisional-story_or_personal_experience`
+4. `uncertainty_or_qualification` — packet `provisional-uncertainty_or_qualification`
+5. `conclusion_or_summary` — packet `provisional-conclusion_or_summary`
 
-The first four correspond to the existing vertical-slice packet; `closing` is
-the fifth job in the shared 18-job curriculum. Keep the remaining 13 jobs
-provisional while this slice is tested.
+These names intentionally match the five entries in
+`research/vertical-slice-01.json`. The broader curriculum uses the canonical
+communication-job names `admit_uncertainty_or_set_a_boundary` and
+`close_with_a_clear_takeaway`; those are the jobs being tested by the fourth
+and fifth slice packets, respectively.
+
+All five correspond to the existing vertical-slice packet. Keep the remaining
+13 jobs provisional while this slice is tested.
 
 ## Dependency order
 
@@ -58,6 +63,124 @@ For every independent operation:
 Do not send credentials, raw recordings or identifying participant information
 through repository forms. Store only the minimum pseudonymous learner/listener
 fields needed for the protocol.
+
+## First presentation-pattern review pass
+
+Use the [162-item priority browser](recovered-pattern-priority-review.html),
+which covers all 55 proposed moves. Each item states the move to check in plain
+words, while hiding the internal pattern name, category and card ID. The batch uses all 83 linked source videos in the
+candidate pool, with no more than three items per linked source or original
+catalog video. A source may still appear under multiple candidate patterns, so
+162 items are not 162 independent video-level replications. The source layers
+are also not sampled in their original proportions: all 26 external-transcript
+candidates come from one video and the capped batch includes only one of them.
+Keep the internal key private.
+
+For a portable handoff, build and send
+`deliverables/recovered-pattern-priority-reviewer-pack.zip`. It contains only
+the reviewer instructions, blinded packet and browser; the packager verifies
+that the private key and internal label fields are absent and checks the
+archive checksums. Rebuild it with
+`python3 scripts/package_recovered_pattern_priority_review.py` after changing
+the packet or browser.
+
+Each export must contain valid reviewer metadata and at least one item decision.
+Every decided item must also include the requested function, alternate
+explanation, context, identity/accessibility and uncertainty notes. Undecided
+items may remain missing rather than being forced into “indeterminate.” The
+validator checks record shape and coverage; it does not validate reviewer
+independence or any pattern claim. Validate each return:
+
+```text
+python3 scripts/validate_recovered_pattern_priority_review_export.py <reviewer-a.json>
+```
+
+Obtain a second independent return and compare them:
+
+```text
+python3 scripts/compare_recovered_pattern_priority_reviews.py reviewer-a.json reviewer-b.json --output priority-comparison.json
+```
+
+If disagreements exist, route the comparison to adjudication:
+
+```text
+python3 scripts/build_recovered_pattern_priority_adjudication.py priority-comparison.json --output priority-adjudication.json
+```
+
+The comparison preserves every reviewer response, missing decision, blank note
+and reviewer explanation. Agreement is calculated only where at least two
+reviewers supplied a nonblank value; missing values are never counted as
+agreement, disagreement or negative findings. Adjudication receives all
+reviewer responses for disputed items, while missing coverage stays explicit
+and unresolved. These steps do not promote a pattern, establish recurrence, or
+measure learner/listener outcomes.
+
+## First bounded human session
+
+The first session is a two-reviewer, label-blinded review of the 162-item
+presentation-pattern packet. It gives every one of the 55 candidate patterns
+one to three reviewed examples. Because source videos recur across patterns,
+do not interpret those items as 162 independent replications or use this pass
+to estimate corpus prevalence or recurrence.
+
+### Before the session
+
+1. Give each reviewer a different reviewer code. Neither reviewer may have
+   created the recovered cards, candidate labels or private key.
+2. Give each reviewer the [browser form](recovered-pattern-priority-review.html)
+   and [packet instructions](recovered-pattern-priority-review.md), or the
+   [portable reviewer ZIP](../deliverables/recovered-pattern-priority-reviewer-pack.zip).
+   Do **not** distribute `research/recovered-pattern-priority-review-key.json`.
+3. Ask each reviewer to save a separate JSON export, for example
+   `reviewer-a.json` and `reviewer-b.json`. Do not merge or edit the judgment
+   fields by hand.
+
+### After the session
+
+Run these commands from the repository root:
+
+```text
+python3 scripts/validate_recovered_pattern_priority_review_export.py reviewer-a.json
+python3 scripts/validate_recovered_pattern_priority_review_export.py reviewer-b.json
+python3 scripts/compare_recovered_pattern_priority_reviews.py reviewer-a.json reviewer-b.json --output priority-comparison.json
+python3 scripts/build_recovered_pattern_priority_adjudication.py priority-comparison.json --output priority-adjudication.json
+```
+
+Preserve all reviewer exports, the comparison, and the adjudication packet as
+separate records. A disagreement is a result, not a validator failure. The
+adjudicator may retain, revise, reject or mark a candidate indeterminate, but
+may not promote a pattern on recurrence or effectiveness grounds that were not
+reviewed.
+
+The review-processing pass is complete when both exports validate and a
+comparison record preserves their coverage. Full item-level agreement review
+is **not complete** while either reviewer has missing decisions; follow up or
+keep those items explicitly unresolved. The comparison/adjudication files do
+not close the broader
+identity, function, delivery, counterexample, learner or listener gates.
+
+## Nineteen newer crosswalk candidates
+
+Keep the 19 newer candidates separate from the 55-pattern review. There are
+seven Ali Siddiq candidates, six Dry Bar Comedy candidates and six TED
+candidates. They are still unconfirmed. Read the [review request](https://github.com/mehtama1234/speaking-humor-and-communication-concepts-research/blob/main/analysis/wave-2-context-review-request.md)
+and use the [focused 19-item review page](https://github.com/mehtama1234/speaking-humor-and-communication-concepts-research/blob/main/site/pattern-review-wave-2.html)
+or [portable review pack](https://github.com/mehtama1234/speaking-humor-and-communication-concepts-research/blob/main/deliverables/wave-2-full-context-reviewer-pack.zip).
+The focused page links to 56 source passages, 43 full transcripts and cue
+files, and the original videos. Review the full transcript and video, not only
+the short excerpts.
+
+The focused page can export only completed items. A return containing the 19 target
+decisions is a valid partial 19/107 queue export; the other 88 IDs are listed
+as unreviewed, not imputed or silently dropped. Validate it with
+`python3 scripts/validate_source_pattern_review_export.py <reviewer.json>`;
+the report must show wave-2 coverage 19/19 before the contextual pass is
+considered covered. The browser’s local runtime smoke test passed, including
+this partial-export path, but it used disposable synthetic decisions and is
+not human evidence. Preserve actual reviewer exports separately. A contextual
+pass does not itself establish recurrence, transfer, learner benefit, listener
+outcomes or effectiveness; do not merge the 19 candidates into the 55-pattern
+fieldbook or validated release before the remaining gates.
 
 ## Slice completion rule
 

@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "report_id": "local-llm-draft-judge",
+  "status": "local_model_draft_screen_recorded_not_effectiveness_evidence",
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "model_snapshot": "/home/mehta/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775",
+  "sequence_id": "make_a_proposal",
+  "draft_character_count": 1184,
+  "parsed_judgment_count": 1,
+  "raw_model_output": "```json\n{\n  \"overall\": \"draft_screen_complete\",\n  \"strengths\": [\n    {\n      \"name\": \"Reducing launch surprises\",\n      \"value\": \"1\"\n    },\n    {\n      \"name\": \"Ensuring minimal risks\",\n      \"value\": \"1\"\n    }\n  ],\n  \"missing_moves\": [],\n  \"boundary_concerns\": [\"audience\", \"team\"],\n  \"listener_check\": \"Yes\",\n  \"revision_priority\": \"High\"\n}\n```",
+  "judgment": {
+    "overall": "draft_screen_revise",
+    "strengths": [
+      {
+        "name": "Reducing launch surprises",
+        "value": "1"
+      },
+      {
+        "name": "Ensuring minimal risks",
+        "value": "1"
+      }
+    ],
+    "missing_moves": [],
+    "boundary_concerns": [
+      "audience",
+      "team"
+    ],
+    "listener_check": "Yes",
+    "revision_priority": "High"
+  },
+  "promotion_eligible": false,
+  "claim_boundary": "This local-model screen evaluates visible worksheet structure and revision prompts. It is not learner evidence, listener outcome evidence, causal evidence, independent review, speaker-intent evidence or proof of effectiveness.",
+  "draft_sha256": "8311d17db6d2697b119977642d82a3ae9d12481cbc51c742cefb7a240635454e",
+  "input_artifact": "research/example-speech-draft.md"
+}

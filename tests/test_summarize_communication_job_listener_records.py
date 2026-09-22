@@ -25,7 +25,7 @@ class SummarizeCommunicationJobListenerRecordsTests(unittest.TestCase):
         return {"record_type": "communication_job_listener_outcome_observation", "protocol_id": self.protocol["protocol_id"], "responses": responses}
 
     def test_summary_preserves_task_scores_and_boundary(self):
-        report = summarize([self.synthetic("p1"), self.synthetic("p2", 1)], self.protocol)
+        report = summarize([self.synthetic("p1"), self.synthetic("p2", 1)], self.protocol, allow_unlocked_synthetic=True)
         self.assertEqual(report["record_count"], 2)
         self.assertEqual(report["by_job_and_condition"][0]["task_scores"]["main_point_recall"]["mean"], 1.5)
         self.assertFalse(report["promotion_eligible"])

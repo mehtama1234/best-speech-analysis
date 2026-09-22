@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "audit_id": "autonomous-full-curriculum-audit",
+  "status": "full_18_job_surface_reconciled_not_validated",
+  "job_count": 18,
+  "passed_check_count": 5,
+  "check_count": 5,
+  "failed_layers": [],
+  "checks": [
+    {
+      "layer": "canonical job index",
+      "status": "pass",
+      "detail": "18 canonical jobs have curriculum records.",
+      "evidence": [
+        "research/communication-job-curriculum-index.json"
+      ]
+    },
+    {
+      "layer": "mobile lesson payload",
+      "status": "pass",
+      "detail": "Every job has a six-step mobile lesson with explicit consent and safety fields.",
+      "evidence": [
+        "research/communication-job-mobile-lessons.json",
+        "writeups/communication-job-mobile-lessons.md"
+      ]
+    },
+    {
+      "layer": "shared lesson cards",
+      "status": "pass",
+      "detail": "Every job has an evidence-linked shared card with examples, practice and limits.",
+      "evidence": [
+        "research/shared-lesson-cards.json"
+      ]
+    },
+    {
+      "layer": "learner protocol",
+      "status": "pass",
+      "detail": "Every job has four fixed learner tasks in the protocol.",
+      "evidence": [
+        "research/communication-job-learner-check.json"
+      ]
+    },
+    {
+      "layer": "web surfaces",
+      "status": "pass",
+      "detail": "The five shared web surfaces exist for the browser clients.",
+      "evidence": [
+        "writeups/communication-job-curriculum.html",
+        "writeups/communication-job-practice.html",
+        "writeups/communication-job-learner-check.html",
+        "writeups/shared-provisional-curriculum.html",
+        "writeups/shared-lesson-cards.html"
+      ]
+    }
+  ],
+  "claim_boundary": "This audit verifies that the 18-job web/mobile curriculum surfaces join to the same job set and retain bounded evidence fields. It does not establish learner teachability, listener outcomes, effectiveness or independent review."
+}

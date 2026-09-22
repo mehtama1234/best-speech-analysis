@@ -20,7 +20,12 @@ class SharedEvidenceModelTests(unittest.TestCase):
         self.assertEqual(self.model["current_manifest"]["listener"]["completed_records"], 0)
         self.assertIn("listener_outcome_evidence", [item["level"] for item in self.model["claim_levels"]])
         self.assertIn("counterexample_observation", self.model["entity_types"])
+        self.assertIn("practice_record", self.model["entity_types"])
+        self.assertIn("mobile_lesson", self.model["entity_types"])
+        self.assertTrue(any("Every mobile lesson carries" in rule for rule in self.model["link_rules"]))
         self.assertEqual(self.model["current_manifest"]["counterexamples"]["queued_slot_count"], 90)
+        self.assertEqual(self.model["current_manifest"]["counterexample_candidates"]["candidate_count"], 90)
+        self.assertEqual(self.model["current_manifest"]["counterexample_candidates"]["confirmed_counterexample_count"], 0)
         self.assertEqual(self.model["current_manifest"]["mobile_lessons"]["lesson_count"], 18)
 
     def test_contract_reconciles_with_live_artifacts(self):

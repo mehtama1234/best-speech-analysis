@@ -49,6 +49,9 @@ def validate(report: dict) -> list[str]:
     full_media = read("research/full-corpus-media-coverage.json")
     media_recovery = read("research/full-corpus-media-recovery-queue.json")
     promotion_readiness = read("research/communication-job-promotion-readiness.json")
+    external_handoff = read("research/external-source-candidate-handoff.json")
+    dry_bar_external_handoff = read("research/external-source-candidate-handoff-dry-bar.json")
+    ted_external_handoff = read("research/external-source-candidate-handoff-ted.json")
     errors = []
     if report.get("status") != "research_checkpoint_not_complete": errors.append("dashboard status must remain research_checkpoint_not_complete")
     stages = report.get("stages", {})
@@ -112,12 +115,19 @@ def validate(report: dict) -> list[str]:
         ("promotion_readiness", "card_count"): promotion_readiness["card_count"],
         ("promotion_readiness", "promotion_ready_count"): promotion_readiness["promotion_ready_count"],
         ("promotion_readiness", "blocked_card_count"): sum(bool(row["blockers"]) for row in promotion_readiness["cards"]),
+        ("external_source_candidates", "videos_attempted"): external_handoff["source"]["videos_attempted"] + dry_bar_external_handoff["source"]["starter_videos_attempted"] + ted_external_handoff["source"]["starter_videos_attempted"],
+        ("external_source_candidates", "transcripts_available"): external_handoff["source"]["transcripts_available"] + dry_bar_external_handoff["source"]["transcripts_available"] + ted_external_handoff["source"]["transcripts_available"],
+        ("external_source_candidates", "candidate_count"): external_handoff["candidate_count"] + dry_bar_external_handoff["candidate_count"] + ted_external_handoff["candidate_count"],
         ("learner_check", "task_count"): learner["task_count"],
         ("listener_outcomes", "task_count"): len(listener["listener_tasks"]),
     }
     for (stage, field), expected in checks.items():
         if stages.get(stage, {}).get(field) != expected:
             errors.append(f"{stage}.{field} does not match authoritative value {expected}")
+    if stages.get("external_source_candidates", {}).get("status") != "candidate_sources_visible_not_in_fixed_corpus":
+        errors.append("external source candidate status does not match handoff")
+    if stages.get("external_source_candidates", {}).get("fixed_corpus_inclusion") is not False:
+        errors.append("external source candidates must remain outside fixed corpus")
     if stages.get("speech_function_candidate_review", {}).get("completed_independent_reviews") != 0: errors.append("function review completion cannot be nonzero without an imported independent export")
     if stages.get("recurrence_candidate_review", {}).get("completed_independent_reviews") != 0: errors.append("recurrence review completion cannot be nonzero without an imported independent export")
     if stages.get("exact_phrase_form_independent_review", {}).get("completed_independent_reviews") != 0: errors.append("exact phrase-form review completion cannot be nonzero without an imported independent export")

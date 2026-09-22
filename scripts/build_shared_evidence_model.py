@@ -21,6 +21,7 @@ def build(root: Path | None = None) -> dict:
     learner = read(root, "research/communication-job-learner-check.json")
     listener = read(root, "research/communication-job-listener-outcome-protocol.json")
     counterexamples = read(root, "research/communication-job-counterexample-workbook.json")
+    counterexample_candidates = read(root, "research/communication-job-counterexample-candidate-queue.json")
     mobile_lessons = read(root, "research/communication-job-mobile-lessons.json")
     return {
         "schema_version": "1.0",
@@ -48,6 +49,8 @@ def build(root: Path | None = None) -> dict:
             "learner_observation": {"required": ["record_id", "participant_code", "task_responses", "consent", "claim_boundary"]},
             "listener_observation": {"required": ["record_id", "stimulus_id", "condition", "task_responses", "task_scores", "accessibility_issue", "scorer_id_or_blind_code", "claim_boundary"]},
             "counterexample_observation": {"required": ["counterexample_id", "pattern_id", "counterexample_type", "evidence_ids", "status", "alternative_explanation"]},
+            "practice_record": {"required": ["record_type", "schema_version", "lesson_id", "pattern_id", "canonical_job", "source_evidence_ids", "delivery_sample_ids", "participant_code", "consent", "accessibility_or_modality", "step_responses", "claim_boundary", "saved_at"]},
+            "mobile_lesson": {"required": ["lesson_id", "pattern_id", "canonical_job", "status", "claim_level", "communication_problem", "evidence_links", "steps", "safety_boundary", "validation"]},
         },
         "status_vocabulary": {
             "evidence": ["retained", "missing", "restricted", "unrepaired_caption"],
@@ -63,11 +66,13 @@ def build(root: Path | None = None) -> dict:
             "Every practice task links to a pattern and carries a non-fit or safety boundary.",
             "Learner observations and listener observations remain separate entity types and separate claim levels.",
             "Listener task scores remain separate from raw responses, agreement, liking and trust; missingness and accessibility issues are retained.",
+            "Local practice records carry consent, accessibility and claim boundaries across web and native clients; they are not learner-validation evidence.",
+            "Every mobile lesson carries a pattern ID, exact evidence links, bounded steps and a safety boundary across web and native clients.",
             "Missing, disagreement and indeterminate statuses remain visible to clients.",
         ],
         "client_contract": {
             "web": ["search by communication problem, job, phrase, modality and status", "show exact context before interpretation", "show limits, counterexamples and disagreement", "never hide missing validation"],
-            "mobile": ["load the same pattern ID and evidence links", "show one bounded practice task and self-check", "support text, captioned and asynchronous use", "store learner records only with consent and claim boundary"],
+            "mobile": ["load the same pattern ID and evidence links", "show one bounded practice task and self-check", "support text, captioned and asynchronous use", "store practice records only with consent and claim boundary", "keep practice records separate from learner-validation observations"],
         },
         "current_manifest": {
             "exact_phrase_forms": {"source": "research/corpus-phrase-form-inventory.json", "form_count": phrase["form_count"], "status": phrase["status"]},
@@ -78,6 +83,7 @@ def build(root: Path | None = None) -> dict:
             "learner": {"source": "research/communication-job-learner-check.json", "card_count": learner["card_count"], "task_count": learner["task_count"], "completed_records": 0, "status": learner["status"]},
             "listener": {"source": "research/communication-job-listener-outcome-protocol.json", "pattern_count": len(listener["patterns"]), "stimulus_pairs_locked": listener["stimulus_pairs_locked"], "completed_records": 0, "status": listener["status"]},
             "counterexamples": {"source": "research/communication-job-counterexample-workbook.json", "job_count": counterexamples["job_count"], "queued_slot_count": counterexamples["item_count"], "completed_records": 0, "status": counterexamples["status"]},
+            "counterexample_candidates": {"source": "research/communication-job-counterexample-candidate-queue.json", "candidate_count": counterexample_candidates["candidate_count"], "source_linked_candidate_count": counterexample_candidates["source_linked_candidate_count"], "confirmed_counterexample_count": counterexample_candidates["confirmed_counterexample_count"], "status": counterexample_candidates["status"]},
             "mobile_lessons": {"source": "research/communication-job-mobile-lessons.json", "lesson_count": mobile_lessons["lesson_count"], "status": mobile_lessons["status"]},
         },
     }
@@ -92,7 +98,7 @@ def write_outputs(root: Path | None = None) -> dict:
     for key, value in manifest.items():
         details = ", ".join(f"{field}={item}" for field, item in value.items() if field not in {"source", "status"})
         lines.append(f"| `{key}` | `{value['status']}`; {details} |")
-    lines += ["", "The JSON file defines entity requirements, status vocabulary, link rules and web/mobile client constraints. It is an interface contract, not evidence that the pending gates have been completed.", ""]
+    lines += ["", "The JSON file defines entity requirements, status vocabulary, link rules and web/mobile client constraints. Generated TypeScript, Kotlin and Swift types live under `clients/generated/` and are rebuilt by `scripts/build_native_client_contracts.py`. The contract is not evidence that the pending research gates have been completed.", ""]
     (root / "writeups/shared-evidence-model.md").write_text("\n".join(lines))
     return result
 

@@ -1,0 +1,325 @@
+{
+  "schema_version": "1.0",
+  "audit_id": "autonomous-end-to-end-audit",
+  "status": "autonomous_release_candidate_reconciled_not_promotion_validated",
+  "check_count": 27,
+  "passed_check_count": 27,
+  "failed_layers": [],
+  "checks": [
+    {
+      "layer": "fixed corpus and curriculum",
+      "status": "pass",
+      "evidence": [
+        "research/autonomous-curriculum-audit.json",
+        "writeups/autonomous-curriculum-audit.md"
+      ],
+      "detail": "395 fixed-corpus videos, 395 full-context reviews and 18 communication jobs reconcile."
+    },
+    {
+      "layer": "five-packet vertical slice",
+      "status": "pass",
+      "evidence": [
+        "research/autonomous-vertical-slice-01.json",
+        "writeups/autonomous-vertical-slice-01.md"
+      ],
+      "detail": "Five lesson packets have examples, controls, media-proxy caveats, lesson links and safety fields."
+    },
+    {
+      "layer": "delivery proxy layer",
+      "status": "pass",
+      "evidence": [
+        "research/autonomous-delivery-reconciliation.json",
+        "writeups/autonomous-delivery-reconciliation.md"
+      ],
+      "detail": "36 job-linked delivery rows reconcile to local timing/audio proxies without semantic or effectiveness claims."
+    },
+    {
+      "layer": "full media coverage",
+      "status": "pass",
+      "evidence": [
+        "research/autonomous-full-media-reconciliation.json",
+        "writeups/autonomous-full-media-reconciliation.md"
+      ],
+      "detail": "Every fixed-corpus video has an explicit local media/proxy availability state."
+    },
+    {
+      "layer": "language and recurrence layer",
+      "status": "pass",
+      "evidence": [
+        "research/autonomous-language-reconciliation.json",
+        "writeups/autonomous-language-reconciliation.md"
+      ],
+      "detail": "Exact forms and recurrence candidates reconcile while remaining provisional."
+    },
+    {
+      "layer": "counterexample screening",
+      "status": "pass",
+      "evidence": [
+        "research/autonomous-counterexample-screening.json",
+        "scripts/validate_autonomous_counterexample_screening.py"
+      ],
+      "detail": "90 bounded candidates cover 18 jobs at five types per job; none is promoted."
+    },
+    {
+      "layer": "acceptance-matrix integration",
+      "status": "pass",
+      "evidence": [
+        "research/end-to-end-acceptance-matrix.json",
+        "scripts/build_end_to_end_acceptance_matrix.py"
+      ],
+      "detail": "The project-level acceptance matrix links the autonomous vertical slice."
+    },
+    {
+      "layer": "learner instrument dry run",
+      "status": "pass",
+      "evidence": [
+        "research/autonomous-learner-instrument-dry-run.json",
+        "writeups/autonomous-learner-instrument-dry-run.md",
+        "scripts/run_autonomous_learner_dry_run.py"
+      ],
+      "detail": "The five-section slice and full 18-job/72-task learner export paths validate on synthetic records explicitly excluded from learner evidence."
+    },
+    {
+      "layer": "full 18-job curriculum surface",
+      "status": "pass",
+      "evidence": [
+        "research/autonomous-full-curriculum-audit.json",
+        "writeups/autonomous-full-curriculum-audit.md",
+        "scripts/build_autonomous_full_curriculum_audit.py"
+      ],
+      "detail": "All 18 jobs join across canonical cards, mobile lessons, learner protocol and web surfaces."
+    },
+    {
+      "layer": "listener instrument dry run",
+      "status": "pass",
+      "evidence": [
+        "research/autonomous-listener-instrument-dry-run.json",
+        "writeups/autonomous-listener-instrument-dry-run.md",
+        "scripts/run_autonomous_listener_dry_run.py"
+      ],
+      "detail": "The listener record validator and summary path pass on slice fixtures plus 36 synthetic records covering both conditions across all 18 jobs, without promotion."
+    },
+    {
+      "layer": "identity metadata preflight",
+      "status": "pass",
+      "evidence": [
+        "research/autonomous-identity-reconciliation.json",
+        "writeups/autonomous-identity-reconciliation.md",
+        "scripts/build_autonomous_identity_reconciliation.py"
+      ],
+      "detail": "All 395 fixed-corpus rows have consistent metadata, URL linkage, review linkage and identity-workbook coverage; identity decisions remain blank."
+    },
+    {
+      "layer": "delivery lineage validator",
+      "status": "pass",
+      "evidence": [
+        "research/autonomous-delivery-reconciliation.json",
+        "research/communication-job-delivery-measurement-preflight.json",
+        "scripts/validate_autonomous_delivery_reconciliation.py"
+      ],
+      "detail": "The 36 delivery rows have local feature, frame, transcript and bounded observation lineage checks."
+    },
+    {
+      "layer": "language recurrence validator",
+      "status": "pass",
+      "evidence": [
+        "research/autonomous-language-reconciliation.json",
+        "research/corpus-recurrence-independent-review-workbook.json",
+        "scripts/validate_autonomous_language_reconciliation.py"
+      ],
+      "detail": "The 50 phrase forms and 192 recurrence candidates preserve a 96/96 split, event-level separation and explicit non-independence boundaries."
+    },
+    {
+      "layer": "external review gate readiness",
+      "status": "pass",
+      "evidence": [
+        "research/external-review-gate-index.json",
+        "research/blinded-review-packet.json",
+        "scripts/validate_autonomous_review_gate_readiness.py"
+      ],
+      "detail": "All 10 independent-review and participant-data gates have runnable forms, validators and boundaries; 429 blinded items remain unanswered."
+    },
+    {
+      "layer": "recovered pattern priority review readiness",
+      "status": "pass",
+      "evidence": [
+        "research/recovered-pattern-priority-review.json",
+        "research/recovered-pattern-priority-review-key.json",
+        "writeups/recovered-pattern-priority-review.html",
+        "scripts/validate_recovered_pattern_priority_review_export.py",
+        "scripts/check_recovered_pattern_priority_review_browser.py",
+        "scripts/compare_recovered_pattern_priority_reviews.py",
+        "scripts/build_recovered_pattern_priority_adjudication.py"
+      ],
+      "detail": "The 162-item label-blinded launch packet spans all 55 recovered presentation patterns, has a separate internal key, a runtime browser path and a fail-closed export validator; no human review is implied."
+    },
+    {
+      "layer": "evidence-to-practice traceability",
+      "status": "pass",
+      "evidence": [
+        "research/shared-lesson-cards.json",
+        "research/communication-job-mobile-lessons.json",
+        "research/communication-job-learner-check.json",
+        "research/expanded-pattern-candidate-cards.json",
+        "research/presentation-sequence-library.json",
+        "scripts/validate_autonomous_evidence_to_practice.py"
+      ],
+      "detail": "All 18 production jobs trace eight distinct-video examples, exact transcript evidence, counterexample slots, delivery links and four learner task phases; six expanded candidate talk architectures retain links to their source cards."
+    },
+    {
+      "layer": "multimodal traceability",
+      "status": "pass",
+      "evidence": [
+        "research/communication-job-delivery-sampling.json",
+        "research/communication-job-delivery-measurement-preflight.json",
+        "scripts/validate_autonomous_multimodal_traceability.py"
+      ],
+      "detail": "All 36 delivery samples trace to matched transcript intervals, local feature files, aligned IDs, nearest frames and proxy limits."
+    },
+    {
+      "layer": "web surface integrity",
+      "status": "pass",
+      "evidence": [
+        "writeups/communication-job-curriculum.html",
+        "writeups/communication-job-practice.html",
+        "writeups/communication-job-learner-check.html",
+        "writeups/shared-provisional-curriculum.html",
+        "writeups/shared-lesson-cards.html",
+        "scripts/validate_autonomous_web_surface_integrity.py"
+      ],
+      "detail": "The five local web surfaces expose all 18 jobs, resolve local links and retain provisional boundaries and task/card payloads."
+    },
+    {
+      "layer": "browser runtime smoke",
+      "status": "pass",
+      "evidence": [
+        "research/autonomous-browser-smoke.json",
+        "writeups/autonomous-browser-smoke.md",
+        "scripts/run_autonomous_browser_smoke.py",
+        "scripts/check_practice_pwa_browser.py",
+        "scripts/check_recovered_pattern_priority_review_browser.py",
+        "scripts/check_unified_pattern_library_browser.py",
+        "research/unified-pattern-library-browser-smoke.json",
+        "writeups/unified-pattern-library.html",
+        "writeups/recovered-pattern-priority-review.html"
+      ],
+      "detail": "17 browser paths render, navigate, export and validate locally, including the blinded recovered-pattern priority review; the receipt remains a runtime check rather than outcome evidence."
+    },
+    {
+      "layer": "accessibility and privacy boundary",
+      "status": "pass",
+      "evidence": [
+        "writeups/communication-job-practice.html",
+        "writeups/communication-job-learner-check.html",
+        "writeups/communication-job-listener-record.html",
+        "writeups/blinded-review-packet.html",
+        "scripts/validate_autonomous_accessibility_privacy.py"
+      ],
+      "detail": "Seven user surfaces declare responsive structure, labelled controls, consent/local-data boundaries and no network submission primitive."
+    },
+    {
+      "layer": "claim-boundary integrity",
+      "status": "pass",
+      "evidence": [
+        "research/shared-lesson-cards.json",
+        "research/communication-job-mobile-lessons.json",
+        "research/communication-job-learner-check.json",
+        "research/communication-job-listener-outcome-protocol.json",
+        "research/local-llm-lesson-judge.json",
+        "research/expanded-pattern-candidate-cards.json",
+        "research/local-llm-expanded-pattern-judge.json",
+        "research/local-llm-gate-judge.json",
+        "research/local-llm-draft-judge.json",
+        "research/expanded-pattern-practice-record.example.json",
+        "research/expanded-pattern-browser-smoke.json",
+        "research/compound-pattern-triads.json",
+        "research/compound-triad-browser-smoke.json",
+        "scripts/validate_autonomous_claim_boundaries.py",
+        "scripts/run_local_llm_lesson_judge.py",
+        "scripts/run_local_llm_expanded_pattern_judge.py",
+        "scripts/run_local_llm_gate_judge.py",
+        "scripts/run_local_llm_draft_judge.py",
+        "scripts/validate_expanded_pattern_practice_record.py",
+        "scripts/validate_compound_triad_practice_record.py",
+        "scripts/check_expanded_pattern_browser.py",
+        "scripts/check_compound_triad_browser.py"
+      ],
+      "detail": "All 18 production cards, 33 expanded candidate cards and 24 triad practice candidates remain explicitly provisional; local LLM screens, browser smoke, and both practice-record validators remain non-promotional."
+    },
+    {
+      "layer": "media recovery integrity",
+      "status": "pass",
+      "evidence": [
+        "research/full-corpus-media-coverage.json",
+        "research/full-corpus-media-recovery-queue.json",
+        "data/full-corpus-media-recovery.jsonl",
+        "scripts/validate_autonomous_media_recovery.py"
+      ],
+      "detail": "The 41 unavailable or partial media records remain routed with file-state consistency; a partial download cannot silently become raw A/V coverage."
+    },
+    {
+      "layer": "shared web/mobile evidence contract",
+      "status": "pass",
+      "evidence": [
+        "research/shared-evidence-model.json",
+        "research/shared-lesson-cards.json",
+        "research/communication-job-mobile-lessons.json",
+        "scripts/validate_shared_evidence_model.py"
+      ],
+      "detail": "The shared evidence contract, current manifest and web/mobile lesson payload remain synchronized with explicit missingness and claim-level rules."
+    },
+    {
+      "layer": "native client contract outputs",
+      "status": "pass",
+      "evidence": [
+        "clients/generated/shared_evidence_contract.ts",
+        "clients/generated/SharedEvidenceContract.kt",
+        "clients/generated/SharedEvidenceContract.swift",
+        "clients/examples/mobile_lesson_helpers.ts",
+        "clients/examples/MobileLessonHelpers.kt",
+        "clients/examples/MobileLessonHelpers.swift",
+        "clients/examples/practice_record_fixture.json",
+        "scripts/validate_native_client_contracts.py"
+      ],
+      "detail": "Generated TypeScript, Kotlin and Swift types plus matching lesson helpers enforce the shared evidence boundary, and a synthetic practice record crosses the same validator; these artifacts carry the schema and client guardrails, not research validation claims."
+    },
+    {
+      "layer": "practice record contract",
+      "status": "pass",
+      "evidence": [
+        "research/shared-evidence-model.json",
+        "research/practice-record.schema.json",
+        "scripts/validate_practice_record.py",
+        "tests/test_practice_record_contract.py"
+      ],
+      "detail": "Synthetic browser/native records for the 18 lessons validate consent, exact evidence links and the non-effectiveness boundary; no participant evidence is inferred."
+    },
+    {
+      "layer": "practice record ingestion",
+      "status": "pass",
+      "evidence": [
+        "scripts/ingest_local_practice_records.py",
+        "scripts/validate_practice_record.py",
+        "tests/test_ingest_local_practice_records.py"
+      ],
+      "detail": "A validated practice record can enter a local append-only ledger with deduplication and an explicit non-evidence boundary; no participant data is written by the audit."
+    },
+    {
+      "layer": "practice ledger summary",
+      "status": "pass",
+      "evidence": [
+        "scripts/summarize_local_practice_ledger.py",
+        "scripts/validate_practice_record.py",
+        "tests/test_summarize_local_practice_ledger.py"
+      ],
+      "detail": "A bounded metadata summary returns job, modality and response-count metadata, detects tampered ingested rows, and never scores outcomes or effectiveness."
+    }
+  ],
+  "claim_boundary": "This audit proves that local autonomous artifacts join into a reproducible end-to-end release candidate. It does not establish independent agreement, speaker identity or intent, learner observations or teachability, listener outcomes, communication effectiveness or universal best practice.",
+  "open_outcome_gates": [
+    "independent review",
+    "learner observations",
+    "listener outcomes",
+    "effectiveness and causal evidence"
+  ]
+}

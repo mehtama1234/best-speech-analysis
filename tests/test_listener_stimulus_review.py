@@ -21,6 +21,9 @@ class ListenerStimulusReviewTests(unittest.TestCase):
         self.assertIn("does not establish", self.workbook["claim_boundary"])
         self.assertTrue((ROOT / "writeups/communication-job-listener-stimulus-review-workbook.html").exists())
 
+    def test_browser_smoke_script_covers_export_path(self):
+        self.assertTrue((ROOT / "scripts/check_listener_stimulus_review_browser.py").exists())
+
 
 if __name__ == "__main__":
     unittest.main()

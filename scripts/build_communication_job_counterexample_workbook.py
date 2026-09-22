@@ -9,6 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CARDS = ROOT / "research/communication-job-cards.json"
+CANDIDATE_QUEUE = ROOT / "research/communication-job-counterexample-candidate-queue.json"
 OUT_JSON = ROOT / "research/communication-job-counterexample-workbook.json"
 OUT_MD = ROOT / "writeups/communication-job-counterexample-workbook.md"
 OUT_HTML = ROOT / "writeups/communication-job-counterexample-workbook.html"
@@ -29,6 +30,8 @@ def esc(value: object) -> str:
 
 def main() -> int:
     cards = json.loads(CARDS.read_text())["cards"]
+    candidate_items = json.loads(CANDIDATE_QUEUE.read_text())["items"]
+    candidates_by_review_item = {item["review_item_id"]: item for item in candidate_items}
     items = []
     for card in cards:
         for kind, requirement in COUNTEREXAMPLE_TYPES:
@@ -68,7 +71,41 @@ def main() -> int:
     for n, item in enumerate(items, 1):
         vocab = workbook["decision_vocabulary"]
         fieldsets.append(f'''<fieldset><legend>{n}. {esc(item['canonical_job'])} · {esc(item['counterexample_type'])}</legend><p>{esc(item['requirement'])}</p><label>Evidence ID (or blank if no candidate)<input name="item_{n}_evidence_id"></label><label>Video ID<input name="item_{n}_video_id"></label><label>Title<input name="item_{n}_title"></label><label>Start/end seconds<input name="item_{n}_time"></label><label>Source URL<input name="item_{n}_source_url" type="url"></label><label>Transcript excerpt<textarea name="item_{n}_transcript_excerpt" rows="2"></textarea></label><label>Evidence status<select required name="item_{n}_evidence_status"><option value="">Choose</option>{''.join(f'<option>{esc(v)}</option>' for v in vocab['evidence_status'])}</select></label><label>Function decision<select required name="item_{n}_function_decision"><option value="">Choose</option>{''.join(f'<option>{esc(v)}</option>' for v in vocab['function_decision'])}</select></label><label>Identity status<select required name="item_{n}_identity_status"><option value="">Choose</option>{''.join(f'<option>{esc(v)}</option>' for v in vocab['identity_status'])}</select></label><label>Context note<textarea required name="item_{n}_context_note" rows="2"></textarea></label><label>Alternative explanation<textarea required name="item_{n}_alternative_explanation" rows="2"></textarea></label><label>Safety/accessibility note<textarea required name="item_{n}_safety_or_accessibility_note" rows="2"></textarea></label><label>Reviewer code<input required name="item_{n}_reviewer_code"></label></fieldset>''')
+    for n, item in enumerate(items, 1):
+        routed = candidates_by_review_item.get(item["review_item_id"], {})
+        candidate = routed.get("candidate", {})
+        routed_status = routed.get("candidate_status", "no routed candidate")
+        fieldset = fieldsets[n - 1]
+        fieldset = fieldset.replace(
+            f"<p>{esc(item['requirement'])}</p>",
+            f"<p>{esc(item['requirement'])}</p><p class=\"candidate-note\"><b>Routed candidate:</b> {esc(routed_status)}. Candidate fields are convenience prefill only; independent review fields remain blank.</p>",
+        )
+        values = {
+            "evidence_id": candidate.get("evidence_id") or "",
+            "video_id": candidate.get("video_id") or "",
+            "title": candidate.get("title") or "",
+            "time": "" if candidate.get("start_seconds") is None else f"{candidate.get('start_seconds')}–{candidate.get('end_seconds')}",
+            "source_url": candidate.get("source_url") or "",
+        }
+        for field, value in values.items():
+            fieldset = fieldset.replace(
+                f'name="item_{n}_{field}"',
+                f'name="item_{n}_{field}" value="{esc(value)}"',
+            )
+        fieldset = fieldset.replace(
+            f'name="item_{n}_transcript_excerpt" rows="2"></textarea>',
+            f'name="item_{n}_transcript_excerpt" rows="2">{esc(candidate.get("transcript_excerpt") or "")}</textarea>',
+        )
+        fieldsets[n - 1] = fieldset
     html_doc = f'''<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Communication-job counterexample review</title><style>body{{font:15px/1.45 system-ui,sans-serif;max-width:1000px;margin:2rem auto;padding:0 1rem}}fieldset{{margin:1rem 0;padding:1rem;border:1px solid #9aa7b2;border-radius:.5rem}}label{{display:block;margin:.5rem 0}}textarea{{width:100%;box-sizing:border-box}}.notice{{background:#fff6d6;padding:.8rem}}</style></head><body><h1>Communication-job counterexample review</h1><div class="notice"><strong>Boundary:</strong> Counterexample and limitation review only. Do not infer effectiveness, intent or audience outcomes. A blank or “no candidate found” slot is an honest result.</div><form id="review"><fieldset><legend>Reviewer identity</legend><label>Name/code<input required name="reviewer_name"></label><label>Role<input required name="reviewer_role"></label><label>Date<input required type="date" name="review_date"></label><label>Modality<input required name="review_modality"></label><label>Conflict statement<textarea required name="conflict_statement"></textarea></label><label><input required type="checkbox" name="independent_attestation"> I am independent of the original card interpretation and candidate selection.</label></fieldset>{''.join(fieldsets)}<button type="button" id="download">Download review JSON</button></form><script>document.querySelector('#download').onclick=()=>{{const f=document.querySelector('#review');if(!f.reportValidity())return;const r={{}};for(const e of f.elements)if(e.name)r[e.name]=e.type==='checkbox'?e.checked:e.value;const blob=new Blob([JSON.stringify({{schema_version:'1.0',record_type:'communication_job_counterexample_review',workbook_id:'communication-job-counterexample-workbook',claim_boundary:'Counterexample and limitation review only; not delivery effectiveness or audience outcomes.',responses:r}},null,2)+'\\n'],{{type:'application/json'}}),u=URL.createObjectURL(blob),a=document.createElement('a');a.href=u;a.download='communication-job-counterexample-review.json';a.click();URL.revokeObjectURL(u)}};</script></body></html>'''
+    html_doc = html_doc.replace(
+        'A blank or “no candidate found” slot is an honest result.',
+        'A blank or “no candidate found” slot is an honest result. Machine-routed candidate fields are convenience prefill only; they are not decisions.',
+    )
+    draft_controls = '<section class="draft-controls"><p><b>Local draft:</b> reviewer work can be saved in this browser only; it is not evidence until exported, independently checked and adjudicated.</p><button type="button" id="save-draft">Save local draft</button><button type="button" id="restore-draft">Restore local draft</button><button type="button" id="clear-draft">Clear local draft</button><span id="draft-status" aria-live="polite"></span></section>'
+    draft_script = "const draftKey='communication_job_counterexample_review_draft_v1',draftStatus=document.querySelector('#draft-status'),draftFields=()=>[...document.querySelectorAll('#review input[name],#review textarea[name],#review select[name]')],readDraft=()=>{try{return JSON.parse(localStorage.getItem(draftKey)||'null')}catch(_){return null}},collectDraft=()=>Object.fromEntries(draftFields().map(e=>[e.name,e.type==='checkbox'?e.checked:e.value])),applyDraft=d=>{if(!d)return;for(const e of draftFields())if(Object.hasOwn(d,e.name)){if(e.type==='checkbox')e.checked=Boolean(d[e.name]);else e.value=d[e.name]}};document.querySelector('#save-draft').onclick=()=>{localStorage.setItem(draftKey,JSON.stringify(collectDraft()));draftStatus.textContent='Saved in this browser only.'};document.querySelector('#restore-draft').onclick=()=>{const d=readDraft();if(!d){draftStatus.textContent='No local draft found.';return}applyDraft(d);draftStatus.textContent='Restored from this browser only.'};document.querySelector('#clear-draft').onclick=()=>{localStorage.removeItem(draftKey);draftStatus.textContent='Local draft cleared.'};if(readDraft())draftStatus.textContent='A local draft is available; restore it when ready.';"
+    html_doc = html_doc.replace('<button type="button" id="download">', draft_controls + '<button type="button" id="download">')
+    html_doc = html_doc.replace('</script></body></html>', draft_script + '</script></body></html>')
     OUT_HTML.write_text(html_doc)
     OUT_REQUEST.write_text("""# Communication-job counterexample review request\n\nReview all 90 slots independently: five required counterexample types for each of the 18 provisional communication jobs. Preserve `no_candidate_found`, `insufficient_context` and disagreement decisions; do not force a counterexample.\n\n- Workbook: `research/communication-job-counterexample-workbook.json`\n- Browser form: `writeups/communication-job-counterexample-workbook.html`\n- Validator: `scripts/validate_communication_job_counterexample_review.py`\n\nThis review does not establish delivery effectiveness, speaker intent, audience outcomes, causality or universal best practice.\n""")
     print(f"wrote counterexample workbook and views ({len(items)} slots)")
