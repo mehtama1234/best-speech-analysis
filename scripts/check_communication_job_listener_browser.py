@@ -43,16 +43,27 @@ def main() -> int:
             field.fill("smoke listener response")
         for field in page.locator("select[name^='score_']").all():
             field.select_option("2")
+        draft_field = page.locator("textarea[name='task_main_point_recall']")
+        draft_field.fill("Synthetic saved listener response.")
+        page.locator("#save-draft").click()
+        draft_field.fill("Mutated after save.")
+        page.locator("#restore-draft").click()
+        assert draft_field.input_value() == "Synthetic saved listener response."
+        page.locator("#clear-draft").click()
+        assert "cleared" in page.locator("#draft-status").inner_text()
         with page.expect_download() as download_info:
             page.locator("#download").click()
         exported_path = Path(download_info.value.path())
         exported = json.loads(exported_path.read_text())
+        assert "downloaded locally" in page.locator("#export-status").inner_text()
         assert exported["record_type"] == "communication_job_listener_outcome_observation"
         errors = validate(exported)
-        assert errors == [], f"listener export failed validator: {errors}"
+        assert any("stimulus pairs" in error for error in errors), "listener export must remain blocked before stimulus lock"
+        synthetic_errors = validate(exported, allow_unlocked_synthetic=True)
+        assert synthetic_errors == [], f"synthetic listener export failed schema validator: {synthetic_errors}"
         assert page.evaluate("document.documentElement.scrollWidth <= innerWidth")
         browser.close()
-    print("communication-job listener browser smoke test: 6-task form renders, exports and validates")
+    print("communication-job listener browser smoke test: 6-task form renders, exports, blocks unlocked outcomes and validates synthetic override")
     return 0
 
 

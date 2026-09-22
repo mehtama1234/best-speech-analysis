@@ -4,7 +4,8 @@
   "status": "checkpoint_reproducible_artifacts_hashed_research_incomplete",
   "claim_boundary": "Hashes prove which local artifacts were checked at manifest generation. They do not prove independent review, delivery meaning, teachability, listener outcomes or effectiveness.",
   "coverage_snapshot": {
-    "unique_inventory_videos": 395,
+    "unique_inventory_videos": 480,
+    "nonempty_transcript_videos": 395,
     "full_context_reviews": 395,
     "inspected_captions": 102816
   },
@@ -55,8 +56,8 @@
     {
       "path": "research/communication-job-curriculum-index.json",
       "role": "integrated provisional curriculum",
-      "sha256": "7d6ce305889d41e5626844201f588018d3b8f703b5a888ea149401e372dd7910",
-      "bytes": 486110
+      "sha256": "696186c28b4c3974f6fc34655590ba67400a855ec5402e8be01c0ab29e012c88",
+      "bytes": 541941
     },
     {
       "path": "research/communication-job-mobile-lessons.json",
@@ -121,20 +122,98 @@
     {
       "path": "research/shared-evidence-model.json",
       "role": "shared web/mobile evidence contract",
-      "sha256": "d9cb61bfb611b1d0e6da12442001610c284e96b24a8b5291740c1c108c8c9bd9",
-      "bytes": 7337
+      "sha256": "31fd07196741785c1654800de5104e91ef4c09042c4e2d0c5c030ad1b49a2c46",
+      "bytes": 8691
+    },
+    {
+      "path": "clients/generated/shared_evidence_contract.ts",
+      "role": "generated TypeScript shared evidence contract",
+      "sha256": "f32ba91ca51c8b42f67e626e59021a71c6d4c9bc38b0eca6d60e70541a2c0153",
+      "bytes": 3628
+    },
+    {
+      "path": "clients/generated/SharedEvidenceContract.kt",
+      "role": "generated Kotlin shared evidence contract",
+      "sha256": "00134a14c99da5f3152c57f81c1dfd1b6d52936e20e71389486e881419072b6f",
+      "bytes": 3488
+    },
+    {
+      "path": "clients/generated/SharedEvidenceContract.swift",
+      "role": "generated Swift shared evidence contract",
+      "sha256": "b7dc316bef99424259d586a7ab2900dc5b9e266db4231917eac1b963f819edb9",
+      "bytes": 5355
+    },
+    {
+      "path": "clients/README.md",
+      "role": "native client contract handoff",
+      "sha256": "e37d831a4a7937df97abd872cf557235500bf83c836bcbb9218c0c02a704cca1",
+      "bytes": 3163
+    },
+    {
+      "path": "clients/examples/practice_record_helpers.ts",
+      "role": "shared client practice-record builder and diff helper",
+      "sha256": "a19c56e9c4ce1bffd5d8f75b2416d6d19504c4ece003a2525ccb1ed425af01fe",
+      "bytes": 2054
+    },
+    {
+      "path": "clients/examples/mobile_lesson_helpers.ts",
+      "role": "shared client mobile-lesson step and evidence helper",
+      "sha256": "4cf7cf209aecc3de44c2ed81c0b62d5bbf39bcca8595cffbaaef72901ef026f8",
+      "bytes": 1286
+    },
+    {
+      "path": "clients/examples/MobileLessonHelpers.kt",
+      "role": "generated Android mobile-lesson boundary helper",
+      "sha256": "6916497a05411618702c3a98f33af4a556262d3afab2f34414244b9189e7aacb",
+      "bytes": 2875
+    },
+    {
+      "path": "clients/examples/MobileLessonHelpers.swift",
+      "role": "generated iOS mobile-lesson boundary helper",
+      "sha256": "192780ab0f88bf1622ac047ae9d10269246d3a5abddb0e6b5f1e24bda3945e35",
+      "bytes": 3179
+    },
+    {
+      "path": "clients/examples/mobile_lesson_fixture.json",
+      "role": "native mobile-lesson contract fixture",
+      "sha256": "b3ddf13cda9b4d9825273458dc426ef82477a080a8511248a0dc0c2f36293a32",
+      "bytes": 2354
+    },
+    {
+      "path": "clients/examples/mobile_lesson_fixtures.json",
+      "role": "all 18 native mobile-lesson contract fixtures",
+      "sha256": "9a7faba835a8878462017b1980ac419798839882d388b8c0d7e327a146e52196",
+      "bytes": 62623
+    },
+    {
+      "path": "scripts/build_native_client_contracts.py",
+      "role": "native client contract generator",
+      "sha256": "bbfda61ae5a390ca540d45845ff855874174ae14d7f7893655102259f3839d49",
+      "bytes": 11454
+    },
+    {
+      "path": "scripts/build_native_lesson_fixture.py",
+      "role": "native mobile-lesson fixture builder",
+      "sha256": "b316a75bcb1840fd8bdf64b14dac112b0826ca29f09eb4ef4740a90293865950",
+      "bytes": 1370
+    },
+    {
+      "path": "scripts/validate_native_client_contracts.py",
+      "role": "native client contract validator",
+      "sha256": "ad2e2b633915f36721855411f0b79ec04a9e8adb25547b0eafe5e597ea22578a",
+      "bytes": 3226
     },
     {
       "path": "research/end-to-end-status.json",
       "role": "live status dashboard",
-      "sha256": "f699b020f667ac4bba8ce68d010917c7352ce67daad49fb30da29ccee4088edb",
-      "bytes": 11932
+      "sha256": "728de90c900ed12f3e5b6e7e8780e95242944b7161daece32ad89f447231035e",
+      "bytes": 12685
     },
     {
       "path": "research/end-to-end-acceptance-matrix.json",
       "role": "requirement acceptance matrix",
-      "sha256": "1ba12e03219a7aae4f246dd189ac2e321206c4d262b1db4a34471a99e292d8b2",
-      "bytes": 7992
+      "sha256": "b7d41eaa3b6195b436069aa50df7dac1084d7a1e3ff7af8d837a3b999e54fec2",
+      "bytes": 8400
     },
     {
       "path": "research/external-review-gate-index.json",
@@ -211,8 +290,8 @@
     {
       "path": "research/validation-handoff.json",
       "role": "human validation gate handoff",
-      "sha256": "1aef4d1a393d1debf8988602114fd0ee19bfa0fa320be0eb790f9eea6ab5d321",
-      "bytes": 9851
+      "sha256": "56306676b7b1b8567c182473c147b92dd544d39e5071f15f216ef9e90e36303a",
+      "bytes": 11721
     },
     {
       "path": "research/communication-job-counterexample-candidate-queue.json",
@@ -223,14 +302,26 @@
     {
       "path": "writeups/communication-job-practice.html",
       "role": "local 18-job practice surface",
-      "sha256": "ec72b5ed126d21e0beab2825f04b59100b6d6bd8e36eeaac85094a6dae4afcf3",
-      "bytes": 157061
+      "sha256": "11e70d8f2d7059e121789afa52e90a2e3f035dc4fe54d6f96b8e46bb51cc6372",
+      "bytes": 163983
+    },
+    {
+      "path": "writeups/communication-patterns-lab.webmanifest",
+      "role": "installable practice surface manifest",
+      "sha256": "bba97cf378a906c52a63404596ea427c11d4dd10cf7b8905deb608a454201e74",
+      "bytes": 411
+    },
+    {
+      "path": "writeups/communication-patterns-lab-sw.js",
+      "role": "offline practice surface service worker",
+      "sha256": "4079077881cbb53217ca20794dddb493f910846c24f85bc2e70d065c0818b522",
+      "bytes": 835
     },
     {
       "path": "writeups/end-to-end-goal.md",
       "role": "end-to-end goal and definition of done",
-      "sha256": "e9c89d72a2f7e56d1eca1691ced453f1858a9a4cb8df94e44040ef2a41fe2a19",
-      "bytes": 6165
+      "sha256": "afc88291a3727f911db62a0de7b2eea4f195787a8ecb649bcda92cac7e037bde",
+      "bytes": 9851
     },
     {
       "path": "writeups/master-speech-learning-system.md",
@@ -367,26 +458,32 @@
     {
       "path": "scripts/check_communication_job_listener_browser.py",
       "role": "listener-outcome browser smoke test",
-      "sha256": "75c1ac5c024ecb84f081930ef121304df2b19d3cc6c8a1d7851025d853af9afe",
-      "bytes": 2674
+      "sha256": "97c71980e6fbb3758efef36b45e692eafc8b7c69510380646af3ca2c9ec7fabc",
+      "bytes": 3519
     },
     {
       "path": "scripts/check_communication_job_learner_browser.py",
       "role": "18-job learner browser smoke test",
-      "sha256": "648c9ae02e5686def723237d39fa52679a467af9ad65b2c663d97ef4275d2328",
-      "bytes": 2629
+      "sha256": "e654a0a79e422735312da2d06b5a7ddc6c58186ad188bd8e49b9a0392daea102",
+      "bytes": 3187
     },
     {
       "path": "scripts/check_communication_job_practice_browser.py",
       "role": "18-job practice-surface browser smoke test",
-      "sha256": "d5ff1c03c26a7d654db99a656cbc8e1a6ec9f8956116c8f7e97f31745b954956",
-      "bytes": 2401
+      "sha256": "71bfb3ab060f1b4a4cbc25453f4b9569b8b9e8511bbfc1dae2ef49c5becde8a9",
+      "bytes": 5094
     },
     {
       "path": "scripts/check_listener_stimulus_adjudication_browser.py",
       "role": "listener-stimulus adjudication browser smoke test",
       "sha256": "09d4f07d50f9a0bc0e5afc7fa1648b8300884fc125756f6c5947251c9d2238e9",
       "bytes": 2221
+    },
+    {
+      "path": "scripts/check_listener_stimulus_review_browser.py",
+      "role": "listener-stimulus independent-review browser smoke test",
+      "sha256": "d1653c7d14e2b4404dc796818c99e4135a2fed5ddd671e5a4296e7866230940b",
+      "bytes": 2070
     },
     {
       "path": "scripts/validate_listener_stimulus_adjudication.py",
@@ -403,14 +500,14 @@
     {
       "path": "writeups/communication-job-listener-stimulus-adjudication.html",
       "role": "listener-stimulus adjudication form",
-      "sha256": "b09af6aeab5606bb064a1db5ceb773ba908bc203a67b6f09ca04ac6cdfc4a0a2",
-      "bytes": 22673
+      "sha256": "3f6b65e12bd093abd6865935eb4c5d63e1a654360dec2a229f22546b5a1cc6dc",
+      "bytes": 22811
     },
     {
       "path": "scripts/check_independent_review_forms_browser.py",
       "role": "independent-review browser smoke test",
-      "sha256": "9507ee4b1f134dd401cad441ea1c05d5af663e1597ed7029930a0a91be38c8a0",
-      "bytes": 3825
+      "sha256": "297630f4a883f4159dd9daaa48da27bd69d51d317e652cb91b16be55cfe90fb4",
+      "bytes": 5712
     },
     {
       "path": "scripts/check_vertical_slice_lesson_browser.py",
@@ -451,8 +548,8 @@
     {
       "path": "scripts/recover_full_corpus_media.py",
       "role": "resumable fixed-queue media recovery tool",
-      "sha256": "c298b8f2e9c77beaf90e98acc6b4771e2ccd55a2b660f0c3de9010915939447b",
-      "bytes": 5272
+      "sha256": "9e07848cff16684fa702d509e516a0b055c9b237b2d3edb65a31146146a53929",
+      "bytes": 6369
     },
     {
       "path": "data/full-corpus-media-recovery.jsonl",
@@ -685,8 +782,8 @@
     {
       "path": "writeups/start-here.md",
       "role": "user-facing speech-learning entry guide",
-      "sha256": "5686cf925350ef82297d797c0ff69f88a624d387c73f1a3858094a3392da4057",
-      "bytes": 8050
+      "sha256": "637dba87b76e003cc57350302178adb9962170259215370252feb8965e10adbc",
+      "bytes": 16127
     },
     {
       "path": "research/local-practice-log-contract.json",
@@ -699,6 +796,18 @@
       "role": "local learner practice export validator",
       "sha256": "8f941ced679ec2ce09419176d235b2c01d74dce257a62f46dc3730d46f8cd392",
       "bytes": 2413
+    },
+    {
+      "path": "scripts/validate_practice_record.py",
+      "role": "shared web/native practice record validator",
+      "sha256": "d3243d7bf946f255fa1ec9f1e2dc3a03ec7a4fc0552b1a6ae31ac2acc9949256",
+      "bytes": 5782
+    },
+    {
+      "path": "research/practice-record.schema.json",
+      "role": "shared web/native practice record JSON schema",
+      "sha256": "a43dca14d8244600131f283bf09f7dda9eb7ca310499fe4b94b6dfc2e247e51b",
+      "bytes": 1500
     },
     {
       "path": "research/blinded-review-packet.json",
@@ -721,14 +830,14 @@
     {
       "path": "writeups/blinded-review-packet.html",
       "role": "browser label-blinded independent review form",
-      "sha256": "162b77433ecd68933f23a836cb445dc56fb094dbd1f2855f138a790affbd86a4",
-      "bytes": 528257
+      "sha256": "4f2e93ea98401997511a8a559fcf10477db853160a35495ced1a42eea251c4c6",
+      "bytes": 529848
     },
     {
       "path": "scripts/build_blinded_review_packets.py",
       "role": "label-blinded independent review packet builder",
-      "sha256": "263c320cddc3e2f87f3c5a94db2b1f2ff7132ecb327e95df1dedacd926496105",
-      "bytes": 11569
+      "sha256": "7754b0d5713ab40187aa4ea2fb7556a6a256aeeda0fe1ed97b0e6520ec8ce794",
+      "bytes": 13160
     },
     {
       "path": "scripts/validate_blinded_review_packet.py",
@@ -793,14 +902,14 @@
     {
       "path": "scripts/build_corpus_30_day_route.py",
       "role": "full-corpus 30-day learner route builder",
-      "sha256": "d5ee38bf2c576ee648a41f9dc5502b2547cfda309559e0ddd9f8ba9b69a94d6f",
-      "bytes": 7264
+      "sha256": "7e681865911c46a123ce897f939bc4ba7ced1d2a610feb4adb3242acbef2a701",
+      "bytes": 7353
     },
     {
       "path": "writeups/corpus-30-day-study-route.html",
       "role": "searchable full-corpus 30-day learner route",
-      "sha256": "4a1b73f56af5d9f7ad99a7ef5edaa678c99176042d363e6b391e3d74a81b29c2",
-      "bytes": 298822
+      "sha256": "2c85333bd96c949d768be788043070c24c969ad51402d03ee34b9732b3825d23",
+      "bytes": 298911
     },
     {
       "path": "scripts/build_corpus_learning_coverage_audit.py",
@@ -849,6 +958,1386 @@
       "role": "all-video manual delivery review workbook builder",
       "sha256": "b4022e5f65906dc737d6ce9c8b43de1d9ba802d1eeb9c68d520a590f9b3edfa5",
       "bytes": 8485
+    },
+    {
+      "path": "research/autonomous-vertical-slice-01.json",
+      "role": "autonomous five-packet vertical-slice reconciliation",
+      "sha256": "a1a9eaf6944215064b80d2222e48a631d8bcd4e1b3c3bd6c2f476fd640a07f0c",
+      "bytes": 5200
+    },
+    {
+      "path": "writeups/autonomous-vertical-slice-01.md",
+      "role": "autonomous five-packet vertical-slice audit",
+      "sha256": "3c688bed679f8c09b291eb945c960c474afe67973928753fdf29254138725a06",
+      "bytes": 1548
+    },
+    {
+      "path": "scripts/build_autonomous_vertical_slice_audit.py",
+      "role": "autonomous vertical-slice audit builder",
+      "sha256": "4e57e5ff2f145a4439f529cf1fa1a987ea9f4e4722c4573f08a1c95e46b8d351",
+      "bytes": 6371
+    },
+    {
+      "path": "scripts/validate_autonomous_counterexample_screening.py",
+      "role": "autonomous counterexample screening validator",
+      "sha256": "34623562ee1342f27c174fa0258432bf6e9622afa88ec1d0aa82e0adc5a955a2",
+      "bytes": 3855
+    },
+    {
+      "path": "research/autonomous-end-to-end-audit.json",
+      "role": "autonomous end-to-end release-candidate audit",
+      "sha256": "9362e3ec152ff2855af054b1f850e0a5a25c00af400a2545888a821822fd2ede",
+      "bytes": 14714
+    },
+    {
+      "path": "writeups/autonomous-end-to-end-audit.md",
+      "role": "autonomous end-to-end release-candidate report",
+      "sha256": "60157d2ada2ac81389c063c79206849ab03e7e21aea85ea1faf3d16e8fa80def",
+      "bytes": 11632
+    },
+    {
+      "path": "scripts/build_autonomous_end_to_end_audit.py",
+      "role": "autonomous end-to-end audit builder",
+      "sha256": "b1a40fe2ee8225f73f44bd99b5e432c36ff24c876a2d02e0942a40c0c863aab2",
+      "bytes": 26821
+    },
+    {
+      "path": "research/autonomous-learner-instrument-dry-run.json",
+      "role": "synthetic learner instrument dry-run receipt",
+      "sha256": "340cc93dc8cd83ddb1650e669bb7cb3e387906bbd3e4f7303fe902d392f2b31d",
+      "bytes": 2750
+    },
+    {
+      "path": "writeups/autonomous-learner-instrument-dry-run.md",
+      "role": "synthetic learner instrument dry-run report",
+      "sha256": "b77bd7e0d96c5a29f6b3123db3959a2b275c230146176cad7d5dc50396c1e47b",
+      "bytes": 606
+    },
+    {
+      "path": "scripts/run_autonomous_learner_dry_run.py",
+      "role": "autonomous learner instrument dry-run runner",
+      "sha256": "4594a56dc4061cd7b77c8b2307c5b42356c9057bd931f8a604ac9f5890b67922",
+      "bytes": 6764
+    },
+    {
+      "path": "research/autonomous-full-curriculum-audit.json",
+      "role": "autonomous 18-job curriculum surface audit",
+      "sha256": "b91dedeb7fee3e5e37eee01e494a90911161a2e0476bc7f3cfe2638bebb29237",
+      "bytes": 1954
+    },
+    {
+      "path": "writeups/autonomous-full-curriculum-audit.md",
+      "role": "autonomous 18-job curriculum surface report",
+      "sha256": "85b533f654d93dc3bc379e2593c9a0d9b00c79e26e7b7c9abf09bfe02b3c8393",
+      "bytes": 1035
+    },
+    {
+      "path": "scripts/build_autonomous_full_curriculum_audit.py",
+      "role": "autonomous full curriculum audit builder",
+      "sha256": "5d8d8d672c2da705770a46bc1f51eeb7f0fc1f9a68993a09270c593412fdbfd0",
+      "bytes": 4490
+    },
+    {
+      "path": "research/autonomous-listener-instrument-dry-run.json",
+      "role": "synthetic listener instrument dry-run receipt",
+      "sha256": "474cb95518a529f3efe5b716e4f514c9fee62ad5a5ce46749e0992e80563bf30",
+      "bytes": 5469
+    },
+    {
+      "path": "writeups/autonomous-listener-instrument-dry-run.md",
+      "role": "synthetic listener instrument dry-run report",
+      "sha256": "0f3da8bfc8b9544a9e65ed254f816df1236cb2f2b845fcf842dbee96bc57fc56",
+      "bytes": 499
+    },
+    {
+      "path": "scripts/run_autonomous_listener_dry_run.py",
+      "role": "autonomous listener instrument dry-run runner",
+      "sha256": "2b6a835e124f1ffe9da7ade8b39c2dcf19ae0883cf3656733dfe4e4205150412",
+      "bytes": 5377
+    },
+    {
+      "path": "research/autonomous-identity-reconciliation.json",
+      "role": "autonomous fixed-corpus identity metadata reconciliation",
+      "sha256": "4eff118cdd11a9f987beb0230e269de545c1445210782c84efc54443e7ba1508",
+      "bytes": 121388
+    },
+    {
+      "path": "writeups/autonomous-identity-reconciliation.md",
+      "role": "autonomous fixed-corpus identity metadata report",
+      "sha256": "0848ee28194d8c851c03823b16009b06fb1d66660bfae3941394a5555f897439",
+      "bytes": 733
+    },
+    {
+      "path": "scripts/build_autonomous_identity_reconciliation.py",
+      "role": "autonomous identity reconciliation builder",
+      "sha256": "ae4e0760f01864b2ab1d04a15d59b976c085835e0108215c656edd3f4de684a4",
+      "bytes": 4623
+    },
+    {
+      "path": "scripts/validate_autonomous_delivery_reconciliation.py",
+      "role": "autonomous delivery lineage validator",
+      "sha256": "7c1c85944cc6802a0cf3216c38f438a6e198f94700dce3fde492651d6f5d1c1c",
+      "bytes": 2691
+    },
+    {
+      "path": "scripts/validate_autonomous_language_reconciliation.py",
+      "role": "autonomous recurrence split and independence-boundary validator",
+      "sha256": "c5394b69678ce4a9d3452bf59d8b870be77460c9ad339f298612b516abf9620d",
+      "bytes": 4277
+    },
+    {
+      "path": "scripts/validate_autonomous_review_gate_readiness.py",
+      "role": "autonomous external review-gate readiness validator",
+      "sha256": "b18ab51afc42906a44c9ba88f8b889ff299d1e4de511b5db333d93b28176bec6",
+      "bytes": 2535
+    },
+    {
+      "path": "scripts/validate_autonomous_evidence_to_practice.py",
+      "role": "autonomous evidence-to-practice traceability validator",
+      "sha256": "71de6c59e9a41e67e1ed632e4e043a066d20fb6f56382c016d374e11068dabcc",
+      "bytes": 6809
+    },
+    {
+      "path": "scripts/validate_autonomous_multimodal_traceability.py",
+      "role": "autonomous multimodal traceability validator",
+      "sha256": "faefbd10dda0e0a6c5945088e0e0d073d53bad3f59e7c15611ec4ef21f580ab5",
+      "bytes": 4238
+    },
+    {
+      "path": "scripts/validate_autonomous_web_surface_integrity.py",
+      "role": "autonomous web-surface integrity validator",
+      "sha256": "729c589d073383d00a01ee1d2cf6b5ba647bf75acbc6316aaa0b4de948a14418",
+      "bytes": 5047
+    },
+    {
+      "path": "research/autonomous-browser-smoke.json",
+      "role": "autonomous core browser smoke receipt",
+      "sha256": "2daf92eca0abfb219a937d1ea74f690ef2fb576ce2751a6b3e57967b91254f77",
+      "bytes": 5565
+    },
+    {
+      "path": "writeups/autonomous-browser-smoke.md",
+      "role": "autonomous core browser smoke report",
+      "sha256": "3fd0e26e0d52f27dc76ce4237006c66576661424dad72ecf28efc32a92d6f817",
+      "bytes": 3472
+    },
+    {
+      "path": "scripts/run_autonomous_browser_smoke.py",
+      "role": "autonomous core browser smoke runner",
+      "sha256": "7f9493aa0060526e1632dbe759261b1e19c7d6b658c55cf653f2b73027bf7045",
+      "bytes": 3605
+    },
+    {
+      "path": "scripts/check_practice_pwa_browser.py",
+      "role": "practice PWA browser smoke test",
+      "sha256": "4f00465e1bc4577220183bd712b7fa2c15fff7ab2e66022faf60ded4f9edc4c3",
+      "bytes": 2105
+    },
+    {
+      "path": "scripts/ingest_local_practice_records.py",
+      "role": "validated local practice ledger ingester",
+      "sha256": "8c941e92cd8f53acaf245a58d20c444acc185ce0cce909b6e4a65b3ab2696f88",
+      "bytes": 5337
+    },
+    {
+      "path": "scripts/summarize_local_practice_ledger.py",
+      "role": "local practice metadata summary builder",
+      "sha256": "3833aec89e36be09532158c91965e80783daa7106ebae867630eb50ed535e440",
+      "bytes": 2783
+    },
+    {
+      "path": "scripts/validate_autonomous_accessibility_privacy.py",
+      "role": "autonomous accessibility and privacy boundary validator",
+      "sha256": "af9155894bf53513d430f8006be7a8668c31749e6d156832bb53b29ea3f65f35",
+      "bytes": 2364
+    },
+    {
+      "path": "scripts/validate_autonomous_claim_boundaries.py",
+      "role": "autonomous claim-boundary integrity validator",
+      "sha256": "592da337e3d6953f615b2bfc9e9d993b8d445ef086d3a17d842447e7a6aeabe7",
+      "bytes": 4229
+    },
+    {
+      "path": "scripts/validate_autonomous_media_recovery.py",
+      "role": "autonomous media recovery integrity validator",
+      "sha256": "5a4d62b2ee7be5c68e06a0e884b5bddb10e86434aa121b48d6db99ad6e4f66eb",
+      "bytes": 3557
+    },
+    {
+      "path": "scripts/run_autonomous_release_audit.py",
+      "role": "one-command autonomous release audit runner",
+      "sha256": "d1867e96fe33edac0c91052ff4061e26ea64df1d048e2316ed5c07f71401749c",
+      "bytes": 5148
+    },
+    {
+      "path": "scripts/check_promotion_readiness.py",
+      "role": "fail-closed promotion readiness checker",
+      "sha256": "98a11a36942b534b46a71abe72378cba29cab5a908c13ae704bd706cb4f1adb8",
+      "bytes": 2885
+    },
+    {
+      "path": "scripts/run_model_assisted_gate_judge.py",
+      "role": "model-assisted human-gate readiness preflight",
+      "sha256": "04e33db9c214ca716c076bbd28d40a42cc9ebe174e9961a346f9a54ecda4baa4",
+      "bytes": 3762
+    },
+    {
+      "path": "research/model-assisted-gate-judge.json",
+      "role": "model-assisted gate readiness receipt",
+      "sha256": "c3529494cdd4ef3eb374a097c0c484bddbf42c24c4c70e08f37890330b789de2",
+      "bytes": 5778
+    },
+    {
+      "path": "writeups/model-assisted-gate-judge.md",
+      "role": "model-assisted gate readiness report",
+      "sha256": "0f1b139a64de8063c6ffa959d0d1f433748c8a32c1e3a3eb0df99db3b3e44906",
+      "bytes": 2034
+    },
+    {
+      "path": "scripts/run_local_llm_lesson_judge.py",
+      "role": "local Qwen lesson readiness judge",
+      "sha256": "a57dbbda005a3bd15b40f526ac1647e100b1922868cbb87c1e49486cefb05b14",
+      "bytes": 6026
+    },
+    {
+      "path": "research/local-llm-lesson-judge.json",
+      "role": "local LLM lesson judgment receipt",
+      "sha256": "1761ee510094a908a2c4df5f1c7b303b1f217ae86031a009524e01555fb21cae",
+      "bytes": 11699
+    },
+    {
+      "path": "writeups/local-llm-lesson-judge.md",
+      "role": "local LLM lesson judgment report",
+      "sha256": "aea43ba79eab4119e38319e67d24141abc1533befe570ae71023b810474c6e4a",
+      "bytes": 617
+    },
+    {
+      "path": "scripts/build_exhaustive_pattern_inventory.py",
+      "role": "all-review candidate pattern discovery builder",
+      "sha256": "d0a68cf9f68beee7091e27ac9ca8668c0ad95a0eac42443b65b59c064ad8c6e6",
+      "bytes": 21873
+    },
+    {
+      "path": "research/exhaustive-pattern-inventory.json",
+      "role": "all-review source-linked candidate pattern inventory",
+      "sha256": "16aaac42ae14fe9a86f7cb3553b8a612f4dcc64314312d0000c3e826cee2304f",
+      "bytes": 328957
+    },
+    {
+      "path": "writeups/exhaustive-pattern-inventory.md",
+      "role": "all-review candidate pattern discovery report",
+      "sha256": "89ea3b109e7c830051db3eeaaeca813201ce19fc1c7eed8142665cde6255df05",
+      "bytes": 63796
+    },
+    {
+      "path": "scripts/build_compound_pattern_bundles.py",
+      "role": "recurring compound pattern bundle builder",
+      "sha256": "7da8bb352acbf77ad7184d08c911b9bfabadf68078042dda2bfad23fcce752b1",
+      "bytes": 6973
+    },
+    {
+      "path": "research/compound-pattern-bundles.json",
+      "role": "source-linked recurring compound pattern bundles",
+      "sha256": "cc517247a73d097e310b15676113804046da4777e64719fb099775a810118544",
+      "bytes": 589736
+    },
+    {
+      "path": "writeups/compound-pattern-bundles.md",
+      "role": "recurring compound pattern bundle report",
+      "sha256": "1992f6f7873a170accff941a15e6cb8fbee6a6adaf528d42e9319c199eca207a",
+      "bytes": 44742
+    },
+    {
+      "path": "scripts/build_compound_pattern_triads.py",
+      "role": "recurring three-move pattern triad builder",
+      "sha256": "99e66b83ec815e0568a0294faaaf9ca2276b292594fdf3499f6c6017593e07a3",
+      "bytes": 5772
+    },
+    {
+      "path": "research/compound-pattern-triads.json",
+      "role": "source-linked recurring three-move pattern triads",
+      "sha256": "6caf5a2266caf58792edf0b0e35c1d90c4033afc2cbf68480ce301ddf67649cc",
+      "bytes": 772661
+    },
+    {
+      "path": "writeups/compound-pattern-triads.md",
+      "role": "recurring three-move pattern triad report",
+      "sha256": "cd74aba8e76bc2628664d55f0b497e51ab4bb7ab4a7f01cff54a9696b634b27c",
+      "bytes": 53926
+    },
+    {
+      "path": "scripts/build_compound_triad_browser.py",
+      "role": "three-move triad local practice browser builder",
+      "sha256": "184d1025170aee1a50641f2d8c9301246b0bfc486f30901b82a4b412345a294c",
+      "bytes": 6441
+    },
+    {
+      "path": "writeups/compound-pattern-triads.html",
+      "role": "three-move triad local practice browser",
+      "sha256": "60b1746a3dc22508e92127c70a26b2867a316dbdf1b3fbbbb07286cfcae1bac6",
+      "bytes": 118501
+    },
+    {
+      "path": "scripts/check_compound_triad_browser.py",
+      "role": "three-move triad browser smoke test",
+      "sha256": "b2a218871cfb22d8903a6ceebf7d4698307005c492f7b7c5f41d3610fcf8f72e",
+      "bytes": 3238
+    },
+    {
+      "path": "research/compound-triad-browser-smoke.json",
+      "role": "three-move triad browser runtime smoke receipt",
+      "sha256": "9d6a76bdaf70a75462c728dc215ffe902e5a3b33e0d4106dbc14c4e67d62cb1d",
+      "bytes": 452
+    },
+    {
+      "path": "scripts/validate_compound_triad_practice_record.py",
+      "role": "three-move triad practice record validator",
+      "sha256": "5b2f4240392cbdc4501084a4dc69012ddedb6c082012fae8354e57f0f30df953",
+      "bytes": 2403
+    },
+    {
+      "path": "scripts/build_presentation_pattern_atlas.py",
+      "role": "presenter-facing pattern system index builder",
+      "sha256": "9b7af725d128fdf7844b6682d68f14fab00818eed230eb9a28ca078aeb2b7073",
+      "bytes": 10127
+    },
+    {
+      "path": "research/presentation-pattern-atlas.json",
+      "role": "presenter-facing pattern system index",
+      "sha256": "cd7dd9ba7d4e750128c5290c0e8bd9670fb2491e43b7fae7cf253e8b46b0ce3c",
+      "bytes": 2199
+    },
+    {
+      "path": "writeups/presentation-pattern-atlas.md",
+      "role": "presenter-facing pattern system atlas",
+      "sha256": "59831b956c6100caea005d2058719c0b6e6131e8cd079909b99c3848204de847",
+      "bytes": 2812
+    },
+    {
+      "path": "writeups/presentation-pattern-atlas.html",
+      "role": "presenter-facing pattern system browser atlas",
+      "sha256": "40bff8cee54fd920ac63f8fc8598420d74c027580d07ffa55c23e919b91fa089",
+      "bytes": 3223
+    },
+    {
+      "path": "scripts/build_compound_pattern_browser.py",
+      "role": "compound pattern local practice browser builder",
+      "sha256": "cdf4d8173ea2b83e225bf2a1c25f141d47c81f652d1d13304a0ba949755ae1c1",
+      "bytes": 10448
+    },
+    {
+      "path": "writeups/compound-pattern-bundles.html",
+      "role": "compound pattern local practice browser",
+      "sha256": "ff87239037ab9419ab2ff372dcdee961c41c83c8c6d4664e873059334734087b",
+      "bytes": 131705
+    },
+    {
+      "path": "scripts/check_compound_pattern_browser.py",
+      "role": "compound pattern browser smoke test",
+      "sha256": "5f1ad09e2863359da50fd18579e74caceb0e88f489a5617b6370e92db4671ec7",
+      "bytes": 3771
+    },
+    {
+      "path": "research/compound-pattern-browser-smoke.json",
+      "role": "compound pattern browser runtime smoke receipt",
+      "sha256": "a36da739a771da836d1035e9d3f03a5bf6d8cc6dcbcb5b8fe4ed1555d3a24363",
+      "bytes": 486
+    },
+    {
+      "path": "scripts/validate_compound_pattern_practice_record.py",
+      "role": "compound pattern practice record validator",
+      "sha256": "1fc4b38d968ffa86bfb53ed3e55a50ed817adbcded767005dc9fce01972b34bd",
+      "bytes": 3483
+    },
+    {
+      "path": "research/compound-pattern-practice-record.example.json",
+      "role": "compound pattern practice record example",
+      "sha256": "799b15fdf11494473078314ad7d51c507e01b1fdce134fabbff5090f06cc4f45",
+      "bytes": 1028
+    },
+    {
+      "path": "scripts/build_expanded_pattern_candidate_cards.py",
+      "role": "expanded candidate pattern card builder",
+      "sha256": "8d5b54303c4ff177bdb13da1fe5ffc5adf4fb30fd9e68eb22acf3020f20abed0",
+      "bytes": 18780
+    },
+    {
+      "path": "research/expanded-pattern-candidate-cards.json",
+      "role": "expanded source-linked candidate pattern cards",
+      "sha256": "457855919d1848006f03c1576d2d0f03e470be94267490a1a52feea9a9b45588",
+      "bytes": 175645
+    },
+    {
+      "path": "writeups/expanded-pattern-candidate-cards.md",
+      "role": "expanded candidate pattern card report",
+      "sha256": "67379f6e37ac71719dfa6b7a6c47f80892f9b15c963cabe2239d80f8d096a2c8",
+      "bytes": 79068
+    },
+    {
+      "path": "writeups/expanded-pattern-candidate-cards.html",
+      "role": "expanded candidate pattern practice surface",
+      "sha256": "a174a684d480d9693a42c95b846ea39839aa0a361b0ea0629e451e7c84fa6377",
+      "bytes": 141227
+    },
+    {
+      "path": "scripts/check_expanded_pattern_browser.py",
+      "role": "expanded pattern browser smoke test",
+      "sha256": "f834d8f729b2c2b874b884a59c6bfcb4d5b1cfdc3df39a084d4313f6361e895a",
+      "bytes": 4667
+    },
+    {
+      "path": "research/expanded-pattern-browser-smoke.json",
+      "role": "expanded pattern browser runtime smoke receipt",
+      "sha256": "0534fba131d1b48f90e6c73d5f5b1ee4879a77f9818791296365b5e47c65ce8b",
+      "bytes": 661
+    },
+    {
+      "path": "scripts/validate_expanded_pattern_practice_record.py",
+      "role": "expanded pattern practice record validator",
+      "sha256": "d0b5686fb96af2462a1cc6f68cf1891c90131d0b0edbd16e6ea3ab59038c6d19",
+      "bytes": 2998
+    },
+    {
+      "path": "research/expanded-pattern-practice-record.example.json",
+      "role": "expanded pattern practice record example",
+      "sha256": "ab2c23f1f090aab014ea4c8f5cb7f0107292b79ea441b0cdeed484cd780b37c5",
+      "bytes": 997
+    },
+    {
+      "path": "scripts/build_presentation_sequence_library.py",
+      "role": "presentation sequence library builder",
+      "sha256": "fc92c521e8e8eb1bde95dfb4a498f29f2a7346d9d7dbe48d516cfc7e2d2e0046",
+      "bytes": 11013
+    },
+    {
+      "path": "research/presentation-sequence-library.json",
+      "role": "source-linked candidate presentation sequence library",
+      "sha256": "599a05fa7fcf983fd0ad1ef4e5e154afde5682eeef0d283af4c5ab5fd9a16d70",
+      "bytes": 80793
+    },
+    {
+      "path": "writeups/presentation-sequence-library.md",
+      "role": "candidate presentation sequence library report",
+      "sha256": "fffbb60c4e5c9dafb2fe20bf19c8be3a306f0d0b668b73fdf650bcfdd98b16b9",
+      "bytes": 25872
+    },
+    {
+      "path": "scripts/build_speech_draft.py",
+      "role": "CLI corpus-derived speech worksheet builder",
+      "sha256": "a514d2e820384a0af933f7c398c93b5f73ce83762f9fd5f3185847df31d253b9",
+      "bytes": 3238
+    },
+    {
+      "path": "scripts/run_local_llm_expanded_pattern_judge.py",
+      "role": "local LLM expanded-pattern judge",
+      "sha256": "2bc7b62f276fcd849b7cbf46adef9e7da3fe6c15fbbde16f4552d39dfe2c96af",
+      "bytes": 5023
+    },
+    {
+      "path": "research/local-llm-expanded-pattern-judge.json",
+      "role": "local LLM expanded-pattern judgment receipt",
+      "sha256": "edb279d9a1fdf77a3c7a85f9fc32bb892fa341394f709fe6d196febaaa1cde5c",
+      "bytes": 2348
+    },
+    {
+      "path": "writeups/local-llm-expanded-pattern-judge.md",
+      "role": "local LLM expanded-pattern judgment report",
+      "sha256": "25f801a11f298c57d7ff97336a8000b877440085b531dc9ac7259feb6003ad3e",
+      "bytes": 703
+    },
+    {
+      "path": "scripts/run_local_llm_gate_judge.py",
+      "role": "local LLM open-gate prioritization judge",
+      "sha256": "26d638f7c8cae22c69f00dfb2e5ef10a61651941bd7bebe3ec6616bb5308b92d",
+      "bytes": 4289
+    },
+    {
+      "path": "research/local-llm-gate-judge.json",
+      "role": "local LLM open-gate prioritization receipt",
+      "sha256": "d75fa99758c8522f75a438bd546d69b9a5bf06ba13ede065cb65dec442084405",
+      "bytes": 1994
+    },
+    {
+      "path": "writeups/local-llm-gate-judge.md",
+      "role": "local LLM open-gate prioritization report",
+      "sha256": "3a9044331b2f2ce27ec84dabe8f81f24674975bdd20207b2264bc577e7844484",
+      "bytes": 441
+    },
+    {
+      "path": "scripts/run_local_llm_draft_judge.py",
+      "role": "local LLM speech worksheet judge",
+      "sha256": "4697b6264da6322b37e3ce7976a118693b4673dc263fcf3cff0fc1c0e237d3fd",
+      "bytes": 4009
+    },
+    {
+      "path": "research/local-llm-draft-judge.json",
+      "role": "local LLM speech worksheet judgment receipt",
+      "sha256": "d50fb6397e538e41dc4503785e7e7ac2843bbbe4fff2b8f19a0a9d53517d1321",
+      "bytes": 1683
+    },
+    {
+      "path": "writeups/local-llm-draft-judge.md",
+      "role": "local LLM speech worksheet judgment report",
+      "sha256": "e7004397947c04b009cda7229235413e0dc010cc147412307b211bff788cc236",
+      "bytes": 560
+    },
+    {
+      "path": "research/example-speech-draft.md",
+      "role": "checked-in input worksheet for local LLM draft judgment",
+      "sha256": "8311d17db6d2697b119977642d82a3ae9d12481cbc51c742cefb7a240635454e",
+      "bytes": 1184
+    },
+    {
+      "path": "scripts/build_expanded_pattern_llm_shortlist.py",
+      "role": "expanded-pattern LLM shortlist builder",
+      "sha256": "2b2bec2323786e41cb993c0783dddc2265414164f84e94557b12a3d716225b86",
+      "bytes": 3587
+    },
+    {
+      "path": "research/expanded-pattern-llm-shortlist.json",
+      "role": "expanded-pattern LLM shortlist receipt",
+      "sha256": "8daeef891102869c004ba47cdacd18ffcbcd73412e0ffec64a98618071173b57",
+      "bytes": 10577
+    },
+    {
+      "path": "writeups/expanded-pattern-llm-shortlist.md",
+      "role": "expanded-pattern LLM shortlist report",
+      "sha256": "a16c87f5fc5bfd32f508b45492ae6d723f8fce22f3a1e6ed407c312ff6e7b9b6",
+      "bytes": 4807
+    },
+    {
+      "path": "research/corpus-coverage-audit.json",
+      "role": "fixed inventory recovery coverage audit",
+      "sha256": "eba87f2128251f71461326c32a8ba121a37b9634f76a2bba4db861c1d0efa3a0",
+      "bytes": 15065
+    },
+    {
+      "path": "writeups/corpus-coverage-audit.md",
+      "role": "fixed inventory recovery coverage report",
+      "sha256": "d498d44e9aef458b419c5e7b3eb9251fda346d05210af0f07e822024bde97576",
+      "bytes": 1848
+    },
+    {
+      "path": "research/recovered-audio-transcripts.jsonl",
+      "role": "direct recovered machine transcript candidates",
+      "sha256": "ee1842d703b6b625a8e97034604332150d5b8b9a60b97848690fefa67e01cc4b",
+      "bytes": 1744048
+    },
+    {
+      "path": "research/recovered-transcript-quality-audit.json",
+      "role": "structural quality audit for recovered transcript candidates",
+      "sha256": "41afa7809e65a5d34e0b9b9722f97c2eeeac1e44c85a390c72d6a01de4d3a4fb",
+      "bytes": 62309
+    },
+    {
+      "path": "writeups/recovered-transcript-quality-audit.md",
+      "role": "structural quality audit report for recovered transcript candidates",
+      "sha256": "f004d2f7a490b6b348b129f3a1fc007b8670899b17674d191c936b2c5e9e2c16",
+      "bytes": 1044
+    },
+    {
+      "path": "scripts/build_recovered_transcript_quality_audit.py",
+      "role": "recovered transcript structural quality audit builder",
+      "sha256": "512d791248cdeb0eef81a7bf9f5c41248f7b9c0fc00c7ce39af3c248dd0e7059",
+      "bytes": 7298
+    },
+    {
+      "path": "research/recovered-pattern-candidate-cards.json",
+      "role": "per-video recovered pattern candidate cards",
+      "sha256": "53c2bd15cf13198cd07651b1ab104a0e22c29333cdb45c708a8062c759b7015d",
+      "bytes": 3952754
+    },
+    {
+      "path": "writeups/recovered-pattern-candidate-cards.md",
+      "role": "per-video recovered pattern candidate card report",
+      "sha256": "f2cc96413bef1370ebba6ed45a3fe2953572b038f08090e19188cf4c84d5b5ab",
+      "bytes": 1170
+    },
+    {
+      "path": "scripts/build_recovered_pattern_candidate_cards.py",
+      "role": "recovered pattern candidate card builder",
+      "sha256": "59aee6abafee3d6942b2635357f1b707c2010201c5f3ae1a7a04340b88b3c60e",
+      "bytes": 6868
+    },
+    {
+      "path": "scripts/build_recovered_pattern_review_workbook.py",
+      "role": "recovered pattern blinded review workbook builder",
+      "sha256": "2b98fd6d74e8ca90780ca2dad2643dcad405eb678734c604d01afac3a9e3873f",
+      "bytes": 11831
+    },
+    {
+      "path": "scripts/build_recovered_pattern_priority_review.py",
+      "role": "recovered pattern priority review packet builder",
+      "sha256": "91c7beadcf79f4e0a086c19ab4aa1b719663982f07651cb496f07748d862951c",
+      "bytes": 12944
+    },
+    {
+      "path": "scripts/package_recovered_pattern_priority_review.py",
+      "role": "recovered pattern priority reviewer packager",
+      "sha256": "2f15f887397612768fb46412b61baa7c9cbda4bad1c752d678e145d77d899459",
+      "bytes": 6697
+    },
+    {
+      "path": "tests/test_package_recovered_pattern_priority_review.py",
+      "role": "recovered pattern priority reviewer package test",
+      "sha256": "6db240d11e381be213c849178c1d2420aa4fd8d27bb51c81d3a521f76476f899",
+      "bytes": 1339
+    },
+    {
+      "path": "deliverables/recovered-pattern-priority-reviewer-pack.zip",
+      "role": "portable blinded first-batch reviewer package",
+      "sha256": "cfb3870ad25646c7463f1dad9da51fad8c5d10c90ad0f90b6c8741e88c66198f",
+      "bytes": 71632
+    },
+    {
+      "path": "research/recovered-pattern-priority-review.json",
+      "role": "recovered pattern priority review packet",
+      "sha256": "c23211b41c09169b1e557e51889d8d08f73b0cc382f492df087cd8f09e823ff5",
+      "bytes": 203052
+    },
+    {
+      "path": "research/recovered-pattern-priority-review-key.json",
+      "role": "recovered pattern priority review internal key",
+      "sha256": "b4c25742ceac714dffaa6ed84b9fe5c4504ce79250a5731fea783bc3e68782cc",
+      "bytes": 76799
+    },
+    {
+      "path": "writeups/recovered-pattern-priority-review.md",
+      "role": "recovered pattern priority review report",
+      "sha256": "35bf5cfae17b2f10ac5bce0b241e600393e9c9442a4e50a1e3f436e6a91e3daf",
+      "bytes": 2992
+    },
+    {
+      "path": "scripts/build_recovered_pattern_priority_review_browser.py",
+      "role": "recovered pattern priority review browser builder",
+      "sha256": "a90a6087e430b57ac2e8efefdaeabf1217753be7ae9040bae108f547ad8b9b9a",
+      "bytes": 9295
+    },
+    {
+      "path": "scripts/check_recovered_pattern_priority_review_browser.py",
+      "role": "recovered pattern priority review browser runtime checker",
+      "sha256": "3f63b833582941b7bfe5a209b6766b3a5f9382ced0d815badb6f2353cda430fd",
+      "bytes": 3979
+    },
+    {
+      "path": "scripts/validate_recovered_pattern_priority_review_export.py",
+      "role": "recovered pattern priority review export validator",
+      "sha256": "e1562c4919299602fcbf8864a5ca7c36eee25b492b6e10fa61f846a923885a0b",
+      "bytes": 4819
+    },
+    {
+      "path": "scripts/compare_recovered_pattern_priority_reviews.py",
+      "role": "recovered pattern priority review comparator",
+      "sha256": "ad4657fa64580cc4a520a13a2c7883e76e0ca36f90d86d22292af8f0c7c49421",
+      "bytes": 8527
+    },
+    {
+      "path": "tests/test_compare_recovered_pattern_priority_reviews.py",
+      "role": "recovered pattern priority review comparator tests",
+      "sha256": "85851a17c1983ed63d412b50415aa623afdbdb9af6c18354e2f7f74aa912b0e6",
+      "bytes": 4987
+    },
+    {
+      "path": "scripts/build_recovered_pattern_priority_adjudication.py",
+      "role": "recovered pattern priority adjudication builder",
+      "sha256": "f200db01ac2ff62df14decb6d9566fd68bf4b6cd148e1d5096112ecef29974eb",
+      "bytes": 5073
+    },
+    {
+      "path": "tests/test_build_recovered_pattern_priority_adjudication.py",
+      "role": "recovered pattern priority adjudication tests",
+      "sha256": "c1881584b5b22931b417bb0a4678a167ed56501213d1f99ff5e457f07a67ecc4",
+      "bytes": 3047
+    },
+    {
+      "path": "writeups/recovered-pattern-priority-review.html",
+      "role": "recovered pattern priority review browser",
+      "sha256": "2a2e238dfefaa7df97c2e72412145870f5afcf1813e3635d21d45cddeb9ad1aa",
+      "bytes": 173226
+    },
+    {
+      "path": "scripts/fieldbook_book_sections.py",
+      "role": "fieldbook introduction, integrated presentation and conclusion source",
+      "sha256": "33d776919cde6dd4ca9b8343de6fba74000b636345fcd18c4ad9834205350cf3",
+      "bytes": 21306
+    },
+    {
+      "path": "scripts/fieldbook_core_chapters.py",
+      "role": "seven practical speaking-job chapters covering the 55-label index",
+      "sha256": "e7f810fc8527c1be0835020be25e8d0a07e92ae5d7cdcedc4540d7da643f53b0",
+      "bytes": 17866
+    },
+    {
+      "path": "scripts/fieldbook_public_source_readings.py",
+      "role": "plain-language transcript summaries used in the public chapters",
+      "sha256": "6e4f5b8a1bac24ce5fbda46824360350915deef20da381537adec890a73cf2df",
+      "bytes": 24367
+    },
+    {
+      "path": "scripts/fieldbook_editorial_lessons.py",
+      "role": "55-pattern source notes, draft checks and research metadata",
+      "sha256": "3272912a2803f2631ceed57ba0aed2bb3e825f8adca05a9e68bb67e107ad7ed7",
+      "bytes": 264416
+    },
+    {
+      "path": "scripts/fieldbook_companion_crosswalk.py",
+      "role": "27-approach to 55-pattern editorial map",
+      "sha256": "03b4c80123235bc5dd4346766c773144e79771bdc97b8a7bb17eda2c8ad1995c",
+      "bytes": 7164
+    },
+    {
+      "path": "scripts/build_professional_pattern_fieldbook.py",
+      "role": "professional fieldbook HTML and manuscript builder",
+      "sha256": "2568db32b65e1c0e77d0eb550f04babf76ae726e4e378d841fc481ff2ce91d2c",
+      "bytes": 59524
+    },
+    {
+      "path": "scripts/export_speaking_fieldbook.py",
+      "role": "fieldbook PDF and portable archive exporter",
+      "sha256": "c6370b0c58ccfa3da899fc63c45f3277165f1a9c13864e43cd0e21a87d3dc2ac",
+      "bytes": 10370
+    },
+    {
+      "path": "scripts/check_professional_pattern_fieldbook_browser.py",
+      "role": "fieldbook browser, filter, print and responsive-layout check",
+      "sha256": "1da26ef94be425e367b756ae6e8e3a765daac5f4b50c1b56fbfcfe75055d38a3",
+      "bytes": 6361
+    },
+    {
+      "path": "scripts/check_fieldbook_delivery.py",
+      "role": "fieldbook extracted archive and rendering delivery checker",
+      "sha256": "f4975fb4296f944480accd62915aa66f0e68ee08ca7e36ce02146f53923aa38d",
+      "bytes": 9917
+    },
+    {
+      "path": "tests/test_professional_pattern_fieldbook.py",
+      "role": "fieldbook editorial content and coverage tests",
+      "sha256": "a976051d6c4ee35ed29c6b5288eba0cfa45839bb9c55928963bac7c8c23c6eb6",
+      "bytes": 14272
+    },
+    {
+      "path": "tests/test_professional_pattern_fieldbook_browser.py",
+      "role": "fieldbook browser receipt test",
+      "sha256": "60ea406b79f69ac7d94be036979bd5a34f0ffc68e3c5bed2ebb3efa6e78e2299",
+      "bytes": 905
+    },
+    {
+      "path": "writeups/speaking-patterns-fieldbook.html",
+      "role": "seven-chapter fieldbook and interactive 55-pattern index with companion guide links",
+      "sha256": "785408da62426b4d2441df188f3a26fada7ad54271ae8d9c3d68f4cf66541ea4",
+      "bytes": 653412
+    },
+    {
+      "path": "writeups/speaking-patterns-fieldbook.md",
+      "role": "editable fieldbook manuscript with 27-approach crosswalk",
+      "sha256": "783b24a182ec9dae1661ee0387d2d52ab1107f7c86ae48d6745e4e6e8c68f46f",
+      "bytes": 335808
+    },
+    {
+      "path": "writeups/companion/speaking-practice.html",
+      "role": "portable 27-approach companion guide included with fieldbook",
+      "sha256": "3651c9643e0055865668e2544536785d4297b9b6698870e6c098c595aa996912",
+      "bytes": 465372
+    },
+    {
+      "path": "writeups/companion/speaking-practice.css",
+      "role": "styles for the 27-approach companion guide",
+      "sha256": "004fc2120220d299b49828ee9c430f24e207670d39c3fbb5d02c924a1f0239f7",
+      "bytes": 4127
+    },
+    {
+      "path": "writeups/companion/speaking-practice.pdf",
+      "role": "paginated 27-approach companion guide included with fieldbook",
+      "sha256": "37bfe243721b51e5b5a09ed2a725f9ea34b2284dc3c3f124c06f93857ef30db3",
+      "bytes": 1475893
+    },
+    {
+      "path": "writeups/fieldbook-editorial-brief.md",
+      "role": "fieldbook editorial and validation scope",
+      "sha256": "b63b6c3850ca0a3c9413c906ebd948a01e715f631673484f818d2e70167a070b",
+      "bytes": 3125
+    },
+    {
+      "path": "writeups/fieldbook-editorial-handoff.md",
+      "role": "fieldbook requirement and evidence handoff",
+      "sha256": "f9bfb2262a17a98715be5b3867062d000bbe5402276e6a363d37c36b643267d1",
+      "bytes": 4502
+    },
+    {
+      "path": "deliverables/speaking-patterns-fieldbook/speaking-patterns-fieldbook.pdf",
+      "role": "paginated fieldbook edition",
+      "sha256": "56f3d8e9adf2122ce8c46f29a85b1bd84d76c69a4e5002de29a3bbad8d5c4929",
+      "bytes": 978489
+    },
+    {
+      "path": "deliverables/speaking-patterns-fieldbook/speaking-patterns-fieldbook.zip",
+      "role": "offline fieldbook and source-analysis package",
+      "sha256": "c958dde0c7e527b93762ce1150b4fdc5c1fd93a19bb3b387687554e7bc1963c5",
+      "bytes": 2055312
+    },
+    {
+      "path": "deliverables/speaking-patterns-fieldbook/delivery-check.json",
+      "role": "verified fieldbook package delivery receipt",
+      "sha256": "e1c9a8edd88084f9f67e089ddf4669613b2214362532b586f29b3d1254cdfc10",
+      "bytes": 871
+    },
+    {
+      "path": "deliverables/speaking-patterns-fieldbook/export-check.json",
+      "role": "fieldbook PDF and archive export receipt",
+      "sha256": "a6381dcff7ea9e451fb9c1e7072166154874302ccd6e1417869a8247fcd0b1d7",
+      "bytes": 468
+    },
+    {
+      "path": "research/professional-pattern-fieldbook-browser-smoke.json",
+      "role": "fieldbook browser smoke receipt",
+      "sha256": "aa9307af27076b9887eedc41eb866aed8b5e90fde870b2ea22ca64234a5e7abe",
+      "bytes": 636
+    },
+    {
+      "path": "scripts/run_second_model_recovered_pattern_comparison.py",
+      "role": "second local-model recovered pattern comparison runner",
+      "sha256": "23873f96147e2e50c02aadb7d5040b04e03aea70989cc9bb8970ff516bdceaf2",
+      "bytes": 4750
+    },
+    {
+      "path": "research/second-model-recovered-pattern-comparison.json",
+      "role": "second local-model recovered pattern comparison receipt",
+      "sha256": "f40aa6c1f75b48a2ac950a9881006a0bb8952015cbef93b379affd3d0bfc0ea6",
+      "bytes": 45924
+    },
+    {
+      "path": "writeups/second-model-recovered-pattern-comparison.md",
+      "role": "second local-model recovered pattern comparison report",
+      "sha256": "3ea5afd0ff49c2a23394beff3f6105bf1319f3d88fb89d5c02bab2fa2873b33c",
+      "bytes": 531
+    },
+    {
+      "path": "scripts/audit_second_model_recovered_pattern_comparison.py",
+      "role": "second local-model comparison quality audit builder",
+      "sha256": "6fc3f164029fad0781029bce46ff69e0c446e4cac33b88b65ec051e24e45f4dc",
+      "bytes": 3562
+    },
+    {
+      "path": "research/second-model-recovered-pattern-comparison-audit.json",
+      "role": "second local-model comparison quality audit",
+      "sha256": "95bbe5f4ccc968f34f5b11d77ea57c9ec307a5b397b6cf546621ecd1a13fccc5",
+      "bytes": 1608
+    },
+    {
+      "path": "writeups/second-model-recovered-pattern-comparison-audit.md",
+      "role": "second local-model comparison quality audit report",
+      "sha256": "d23499548a2358cf0a3ce787b21a9db9f4d79e99e08e32db62cd7cd0b82e0f60",
+      "bytes": 704
+    },
+    {
+      "path": "scripts/build_presentation_pattern_review_priorities.py",
+      "role": "presentation pattern review-priority map builder",
+      "sha256": "80368b8806aaf8b32323ca129a5c8588c16006c87a64624841521fca217578a7",
+      "bytes": 4320
+    },
+    {
+      "path": "research/presentation-pattern-review-priorities.json",
+      "role": "presentation pattern review-priority map",
+      "sha256": "8b7554fd7ae40fffbf1429946e9f3ec227fdbf53718145573ee3f23b9749ee9c",
+      "bytes": 33938
+    },
+    {
+      "path": "scripts/build_unified_pattern_synthesis.py",
+      "role": "unified fixed-corpus and expansion pattern synthesis builder",
+      "sha256": "202d454d7131c20054bae20f782e8dbd1af410c9ffabaca202bbbc7dcbc9e3e0",
+      "bytes": 4547
+    },
+    {
+      "path": "writeups/unified-pattern-synthesis.md",
+      "role": "unified fixed-corpus and expansion pattern synthesis",
+      "sha256": "7769f2a416de56af31e091a95b580a4231d5b052ba467a170d30cd9c25d9f675",
+      "bytes": 25662
+    },
+    {
+      "path": "scripts/build_unified_pattern_library_browser.py",
+      "role": "unified fixed and expansion pattern browser builder",
+      "sha256": "1f5db30b1110eaeb8bdbce98fe430c41bd91809c053f6d76d908d7fbb85799ff",
+      "bytes": 6645
+    },
+    {
+      "path": "writeups/unified-pattern-library.html",
+      "role": "unified fixed and expansion pattern browser",
+      "sha256": "12f2a2cff614896569fed7aa9a3a3935cfe32ffc5255eeb98c6b737e565e6bfe",
+      "bytes": 35754
+    },
+    {
+      "path": "scripts/sync_wave2_crosswalk_snapshot.py",
+      "role": "wave-2 cross-repository crosswalk snapshot builder",
+      "sha256": "b703c429665110494aa01d7acb2bfd2e1a258037a526cec12021876a06c9126a",
+      "bytes": 1365
+    },
+    {
+      "path": "research/wave-2-unified-candidate-crosswalk.json",
+      "role": "local wave-2 crosswalk navigation snapshot",
+      "sha256": "14fc779593361f17f17e991372ffca43bb173939288a22d983350868abc95a65",
+      "bytes": 9879
+    },
+    {
+      "path": "scripts/validate_wave2_crosswalk_snapshot.py",
+      "role": "wave-2 crosswalk snapshot validator",
+      "sha256": "ba546bd5a271e6d3ad1b03de387cb650dc0ad0840d91d23eff6f8e67dbbcad57",
+      "bytes": 1830
+    },
+    {
+      "path": "scripts/check_unified_pattern_library_browser.py",
+      "role": "unified pattern browser runtime smoke test",
+      "sha256": "ff2401e430d0cbc81300f81ca475416193bed9427f226b757f1c729e741d15aa",
+      "bytes": 3088
+    },
+    {
+      "path": "research/unified-pattern-library-browser-smoke.json",
+      "role": "unified pattern browser runtime smoke receipt",
+      "sha256": "a2460b042d523b1386b0eb5445092a39715512af12536121e12c5786ca05026c",
+      "bytes": 453
+    },
+    {
+      "path": "scripts/build_end_to_end_completion_audit.py",
+      "role": "seven-requirement end-to-end completion audit builder",
+      "sha256": "91db503d4564442cb1aef0374871cac7f769e368895380c34f8fe8b7dac37859",
+      "bytes": 6667
+    },
+    {
+      "path": "research/end-to-end-completion-audit.json",
+      "role": "seven-requirement end-to-end completion audit",
+      "sha256": "78d74d6a1d99075f9c4f78bd4257947f051c59dde30eb1eb8fd7c8a4cfcaa1e1",
+      "bytes": 4629
+    },
+    {
+      "path": "writeups/end-to-end-completion-audit.md",
+      "role": "seven-requirement end-to-end completion audit report",
+      "sha256": "8cc12892632d5eb5a069ddcb7d4f196f1f38003be66e8502004830dd7a79283a",
+      "bytes": 3200
+    },
+    {
+      "path": "scripts/build_external_review_launch_manifest.py",
+      "role": "external review launch manifest builder",
+      "sha256": "d65de01e7432bf10083fe8116ec6ead42bce4574f865cb3ecf883f2114ef631c",
+      "bytes": 7156
+    },
+    {
+      "path": "scripts/validate_external_review_launch_manifest.py",
+      "role": "external review launch manifest validator",
+      "sha256": "c1deec24c25a762c79549cafc6724655b85ddae7ecf4550e15d069a913f3c6bb",
+      "bytes": 4521
+    },
+    {
+      "path": "research/external-review-launch-manifest.json",
+      "role": "external review launch manifest",
+      "sha256": "0a4fffdc1b37c252cff6615ec54d75eb11b049e7393ad07b27e497f63e4c92af",
+      "bytes": 5431
+    },
+    {
+      "path": "writeups/external-review-launch-manifest.md",
+      "role": "external review launch manifest report",
+      "sha256": "7e1a26502ce00f3ad8805b46ce61cc455360ca1b2897707284d5c14660024b11",
+      "bytes": 2156
+    },
+    {
+      "path": "writeups/presentation-pattern-review-priorities.md",
+      "role": "presentation pattern review-priority report",
+      "sha256": "a59e28352eb25ad66be42c123cbf48013577f8c2b72056ede085932712701112",
+      "bytes": 9718
+    },
+    {
+      "path": "research/recovered-pattern-independent-review-workbook.json",
+      "role": "recovered pattern blinded review workbook",
+      "sha256": "69ed165ed1d1a868ff682ff2554f21ae82846fb1ed40ac6d01b089629925b10d",
+      "bytes": 3315338
+    },
+    {
+      "path": "research/recovered-pattern-independent-review-key.json",
+      "role": "recovered pattern internal review key",
+      "sha256": "0e9d983fda325f884c9f0acdc65a8db9c976d91f58ddfb9ce792fa8287efbf89",
+      "bytes": 1190485
+    },
+    {
+      "path": "writeups/recovered-pattern-independent-review.md",
+      "role": "recovered pattern independent review report",
+      "sha256": "ebfc1c92e419fd7992b0f0f1054f53fba3e1cff096a7f92963bbc8e4e545df6a",
+      "bytes": 1135
+    },
+    {
+      "path": "writeups/recovered-pattern-independent-review.html",
+      "role": "recovered pattern local blinded review surface",
+      "sha256": "eaa56251f1cbdefd53a21e1a84e6ab4416a32b4375a66b4d9e40e81ca7fef05a",
+      "bytes": 2632873
+    },
+    {
+      "path": "scripts/validate_recovered_pattern_review_export.py",
+      "role": "recovered pattern review export validator",
+      "sha256": "9d0697366901c33a54e9564bfb43348f8562d30a90db35757841361f294675c9",
+      "bytes": 3479
+    },
+    {
+      "path": "tests/test_recovered_pattern_review_export.py",
+      "role": "recovered pattern review export contract tests",
+      "sha256": "85f20436cec493ae47ae57ff30fdaa6912b2416eb7ae92bd3cd935e9543bf437",
+      "bytes": 1887
+    },
+    {
+      "path": "scripts/compare_recovered_pattern_reviews.py",
+      "role": "recovered pattern independent-review comparison tool",
+      "sha256": "e5ffe3811fa1f16b60a92b3f81894c6088b2aa32f8a5bd135be67b38b392b1e7",
+      "bytes": 4066
+    },
+    {
+      "path": "tests/test_compare_recovered_pattern_reviews.py",
+      "role": "recovered pattern independent-review comparison tests",
+      "sha256": "d63c7c86923e246d2a9e4dd79aeb0e9d26a9991f5d9c84b6d2d02f2620dd834f",
+      "bytes": 1942
+    },
+    {
+      "path": "scripts/build_recovered_pattern_adjudication.py",
+      "role": "recovered pattern adjudication packet builder",
+      "sha256": "ed2ed1a96387cacb142f4815278d3a6248c7b7199feeb8d3224193b98f03e7cc",
+      "bytes": 3453
+    },
+    {
+      "path": "tests/test_build_recovered_pattern_adjudication.py",
+      "role": "recovered pattern adjudication packet tests",
+      "sha256": "e517e5cf3398f650b27988403e54983bb6b10b3bcae9e463794896b7ed45f1a1",
+      "bytes": 2104
+    },
+    {
+      "path": "scripts/recovered_pattern_rules.py",
+      "role": "conservative recovered-layer lexical retrieval rules",
+      "sha256": "468c1570ea07a8606e566f6dda42d425356193b6c5782a35a115c32cc29306b1",
+      "bytes": 2126
+    },
+    {
+      "path": "scripts/build_recovered_pattern_rule_audit.py",
+      "role": "recovered pattern lexical retrieval density audit builder",
+      "sha256": "86ecb9dd9af44a60e35e36e99c722791391261b1dd718b4fd0a1e13436d2a579",
+      "bytes": 4657
+    },
+    {
+      "path": "research/recovered-pattern-rule-audit.json",
+      "role": "recovered pattern lexical retrieval density audit",
+      "sha256": "5e284ad13546b91a0a157798c738071a3b3522609946423f99fd6d224025ec89",
+      "bytes": 71599
+    },
+    {
+      "path": "writeups/recovered-pattern-rule-audit.md",
+      "role": "recovered pattern lexical retrieval density report",
+      "sha256": "a2b7889f6ede4927cb776e557833817d36448eb3e3ec609c053bf953f332ac92",
+      "bytes": 5286
+    },
+    {
+      "path": "scripts/run_local_llm_recovered_pattern_screen.py",
+      "role": "local-model recovered pattern triage runner",
+      "sha256": "21da4edc86717f1ea44481d83be2e378d00acfd61749fa1eef7fa410cba832bf",
+      "bytes": 6323
+    },
+    {
+      "path": "research/local-llm-recovered-pattern-screen.json",
+      "role": "local-model recovered pattern triage receipt",
+      "sha256": "a2f1ad22c35c27870db923b6155741a15f80aed2da02ee0fc6ca24ff719459e6",
+      "bytes": 29557
+    },
+    {
+      "path": "writeups/local-llm-recovered-pattern-screen.md",
+      "role": "local-model recovered pattern triage report",
+      "sha256": "a946a4425b9b51938ddc83e013ed8f0e4db978efd11370ae5d93cba381e36562",
+      "bytes": 643
+    },
+    {
+      "path": "scripts/reconcile_local_llm_recovered_pattern_screen.py",
+      "role": "local-model recovered pattern structural reconciliation builder",
+      "sha256": "15d701d9fe77b2822b5ca779be675c5bbb52636bbd04e4e1e7aa9b60378f6fc7",
+      "bytes": 3970
+    },
+    {
+      "path": "research/local-llm-recovered-pattern-screen-reconciled.json",
+      "role": "structurally reconciled local-model recovered pattern triage receipt",
+      "sha256": "2f10f012e48410d4763eadd7a3ed4adf54a3ee5a4c836f405a7e41fdbfbfbfd1",
+      "bytes": 30136
+    },
+    {
+      "path": "writeups/local-llm-recovered-pattern-screen-reconciled.md",
+      "role": "structurally reconciled local-model recovered pattern triage report",
+      "sha256": "e22b0fa54944d20d5e9b765089ae6f75309144d3146fa4427b84042cbdbb9de2",
+      "bytes": 808
+    },
+    {
+      "path": "scripts/run_local_llm_recovered_pattern_gap_screen.py",
+      "role": "local-model recovered pattern gap screen runner",
+      "sha256": "117cf4649265c693e50ae3743d436f9e510535bfe940894fed55e2f364d208f3",
+      "bytes": 5121
+    },
+    {
+      "path": "research/local-llm-recovered-pattern-gap-screen.json",
+      "role": "local-model recovered pattern gap screen receipt",
+      "sha256": "0a9df3bf4ec62d6ba88ebd2f1367acdeb68c43fee1aa00d629cb65c918c0fd8a",
+      "bytes": 4291
+    },
+    {
+      "path": "writeups/local-llm-recovered-pattern-gap-screen.md",
+      "role": "local-model recovered pattern gap screen report",
+      "sha256": "ceffd8f7f1ee7a748e751cd4b53ce98a7f2d3fe7664e6279a7f4834f775d2405",
+      "bytes": 426
+    },
+    {
+      "path": "scripts/merge_local_llm_recovered_pattern_gap_screen.py",
+      "role": "local-model recovered pattern gap merge builder",
+      "sha256": "23e9ca1400093fd40f40fafae9ffd5abc883b1dee738ac3af6e926cf824f73e4",
+      "bytes": 2939
+    },
+    {
+      "path": "research/local-llm-recovered-pattern-screen-complete.json",
+      "role": "complete local-model recovered pattern triage receipt",
+      "sha256": "55ac8448b02de0d56730d343575df606b7d04c653c4c0897211c61a8521a9830",
+      "bytes": 34677
+    },
+    {
+      "path": "writeups/local-llm-recovered-pattern-screen-complete.md",
+      "role": "complete local-model recovered pattern triage report",
+      "sha256": "c88e9b5a46cd35d2519fdd3f8d6dc7b0b2e78c4f2d92dfc2e4cb337db5ff565d",
+      "bytes": 618
+    },
+    {
+      "path": "scripts/audit_local_llm_recovered_pattern_screen.py",
+      "role": "local-model recovered pattern triage schema audit builder",
+      "sha256": "e523c90756d384f100fe94e818197a307a979a6080dfcfbff20043258c6a2a78",
+      "bytes": 3597
+    },
+    {
+      "path": "research/local-llm-recovered-pattern-screen-audit.json",
+      "role": "local-model recovered pattern triage schema audit",
+      "sha256": "ba630664f439665c310344cd65d218fa61efccd5e18081f02e16a800763c5bd2",
+      "bytes": 1151
+    },
+    {
+      "path": "writeups/local-llm-recovered-pattern-screen-audit.md",
+      "role": "local-model recovered pattern triage schema audit report",
+      "sha256": "f4b00fd22ab96047c6a17dfaee2dae9d3f4792b4f79777e807510e3245bbad18",
+      "bytes": 507
+    },
+    {
+      "path": "scripts/build_recovered_transcript_candidates.py",
+      "role": "alternate-language recovered transcript candidate builder",
+      "sha256": "e071bc526312c2bd936b50244d507c63bd665e3f88a64883e22c15016796d31e",
+      "bytes": 6627
+    },
+    {
+      "path": "research/recovered-transcript-review-candidates.json",
+      "role": "alternate-language recovered transcript review candidates",
+      "sha256": "250073b15f4ed13f9bd9617e23e07513a8dd4353bacefc3228da522acd94736e",
+      "bytes": 2158148
+    },
+    {
+      "path": "research/recovered-transcript-pattern-candidates.json",
+      "role": "alternate-language recovered transcript pattern candidates",
+      "sha256": "122214d828855a772a3a894c111cbd3f5125f8e7d7aadde46ac685ea7aaac6d2",
+      "bytes": 11381
+    },
+    {
+      "path": "writeups/recovered-transcript-pattern-candidates.md",
+      "role": "alternate-language recovered transcript pattern report",
+      "sha256": "624338ae2d73059c1f9fb8f023a269f9c23c150c5bbe2dc83a091cd9e812b4b8",
+      "bytes": 1802
+    },
+    {
+      "path": "research/recovered-audio-pattern-candidates.json",
+      "role": "direct recovered audio pattern candidates",
+      "sha256": "c7cf49659308371f05419b0897606ae4b4ad3f1a3701c89d4f4238e66a0346d9",
+      "bytes": 101099
+    },
+    {
+      "path": "writeups/recovered-audio-pattern-candidates.md",
+      "role": "direct recovered audio pattern report",
+      "sha256": "51e9c8e541ec4d8aab88bbb7fea3fbd1555f086e39829d28bab30808f5867425",
+      "bytes": 12850
+    },
+    {
+      "path": "research/alternate-source-transcripts.jsonl",
+      "role": "alternate source machine transcript candidates",
+      "sha256": "37fdab0697504fbe374730b06839d2ccc0867ddb9206afbe7eed022bcbfc7e47",
+      "bytes": 149678
+    },
+    {
+      "path": "research/alternate-source-pattern-candidates.json",
+      "role": "alternate source pattern candidates",
+      "sha256": "a57383481f70e475661873f785edafc71b09884d9ec31bab3bf0c12f436e5f86",
+      "bytes": 28865
+    },
+    {
+      "path": "research/alternate-source-identity-review.json",
+      "role": "alternate source identity review queue",
+      "sha256": "f581a542c167f0311a5cc2f5a982e1c298a823daa0f41998cbb956cd251c9ee0",
+      "bytes": 7893
+    },
+    {
+      "path": "writeups/alternate-source-identity-review.md",
+      "role": "alternate source identity review report",
+      "sha256": "498fe8b997cabe9631e140d84e424b3cc9c8af5ed77dcdef6a68891c283eddb1",
+      "bytes": 2148
+    },
+    {
+      "path": "research/full-inventory-pattern-candidates.json",
+      "role": "full inventory pattern candidate map",
+      "sha256": "1061f95d6f3c8429719af44a92d25c5a7cc8243c003538346ce889d6f3bf60de",
+      "bytes": 131449
+    },
+    {
+      "path": "writeups/full-inventory-pattern-candidates.md",
+      "role": "full inventory pattern candidate report",
+      "sha256": "52813551546c450bde652a1aa4d572dc3f7568e0f1de34e981bb4b2b1d471d11",
+      "bytes": 4352
+    },
+    {
+      "path": "research/all-55-pattern-evidence.json",
+      "role": "all 55 presentation-pattern evidence matrix",
+      "sha256": "2255142416424f9db081b6c6175a063cfb648287b74f1a005691dfd16ac2ebdd",
+      "bytes": 67609
+    },
+    {
+      "path": "writeups/all-55-pattern-evidence.md",
+      "role": "all 55 presentation-pattern evidence report",
+      "sha256": "f3aeee1b2b17643a056dff876d00a9820b55eac4b7cfeb9120c25ac1fa998ab6",
+      "bytes": 11422
+    },
+    {
+      "path": "scripts/build_all_55_pattern_evidence.py",
+      "role": "all 55 presentation-pattern evidence builder",
+      "sha256": "aa058d42f7b8f297b66646356a3a099929de6d969ed8d98ff541294ee9503ddf",
+      "bytes": 7545
+    },
+    {
+      "path": "research/unresolved-source-search-candidates.json",
+      "role": "unresolved source search leads",
+      "sha256": "d931ae351cebab0a318809c58ced9fb30042a56ee88d2f97cf358c76b07a7bba",
+      "bytes": 18384
+    },
+    {
+      "path": "research/unresolved-source-mirror-candidates.json",
+      "role": "selected unresolved source mirror leads",
+      "sha256": "36ab2e885cffdd640ab50907152fe032467785bb5d29b319fd02907c40dcf17d",
+      "bytes": 2372
+    },
+    {
+      "path": "research/external-source-leads.json",
+      "role": "external source leads for final unresolved IDs",
+      "sha256": "702ac5e5b9c791adf575832929a58ddbb8f56f4e9ad23435720c96e8c51da709",
+      "bytes": 1948
+    },
+    {
+      "path": "research/external-source-candidate-handoff.json",
+      "role": "external source candidate handoff from speaking atlas",
+      "sha256": "6c5e1c5e4f2e14e088669a700ce8ad041701d35762bf5a5cad9e32fd9bbe60cc",
+      "bytes": 1285
+    },
+    {
+      "path": "research/external-source-candidate-handoff-dry-bar.json",
+      "role": "Dry Bar external source candidate handoff from speaking atlas",
+      "sha256": "5e5485e242736c3e20d4df6b7cbdb9da3a1b2a24737b08f6f054084405d08870",
+      "bytes": 1476
+    },
+    {
+      "path": "research/external-source-candidate-handoff-ted.json",
+      "role": "TED external source candidate handoff from speaking atlas",
+      "sha256": "39334b3e69ab3e40580defd95b7622267cce96b1f6f191ffa3475a8a1259b586",
+      "bytes": 1396
+    },
+    {
+      "path": "research/external-source-transcripts.jsonl",
+      "role": "external transcript candidate with provenance",
+      "sha256": "e73f0d0d32674f37ed67d591ee83cff92fbb21f5cdd251fd58631a47188dcb38",
+      "bytes": 11038
+    },
+    {
+      "path": "research/external-transcript-pattern-candidates.json",
+      "role": "external transcript pattern candidates",
+      "sha256": "aafe7321a38a89263bb4ed6a1fafc17d74ebde0ea5e3176fb1b8223369a87d49",
+      "bytes": 11067
+    },
+    {
+      "path": "data/external-source-recovery/tWhHf7IeFmo-justin-timberlake-transcript.pdf",
+      "role": "preserved external transcript source PDF",
+      "sha256": "eda9be2a8ba4da0372c77cb16f9e55513657fdaf3666d0a717b7b288b2878ea5",
+      "bytes": 650026
+    },
+    {
+      "path": "scripts/import_external_transcript_leads.py",
+      "role": "external transcript importer",
+      "sha256": "01c0d09e4e933e74d40edb5b429533bbe6e9289005a5b5892cb614b465ea02e2",
+      "bytes": 1977
+    },
+    {
+      "path": "scripts/build_external_transcript_pattern_candidates.py",
+      "role": "external transcript pattern builder",
+      "sha256": "2a4591ebe86ad887ee4713088749c80b9c73381bbe700c2b26127aa3a3c054ab",
+      "bytes": 2040
+    },
+    {
+      "path": "research/alternate-source-recovery.json",
+      "role": "alternate source media recovery ledger",
+      "sha256": "6aa4cf33000ccf283c29ec7585b4af681ec8e43316b735ba6ae8d613ff9ce2e5",
+      "bytes": 4217
+    },
+    {
+      "path": "scripts/build_corpus_coverage_report.py",
+      "role": "fixed inventory recovery coverage builder",
+      "sha256": "d82be26352cda9dc20d52a499e038467d95e2ab2b0b2687b66611518baf3117a",
+      "bytes": 6994
+    },
+    {
+      "path": "scripts/transcribe_recovered_audio.py",
+      "role": "resumable direct recovered audio transcription tool",
+      "sha256": "67b7d4f82dd655f2605d65977c7ce9c32041c6bb44bb754e3e4efbd193ae0efd",
+      "bytes": 5432
+    },
+    {
+      "path": "scripts/build_recovered_audio_pattern_candidates.py",
+      "role": "direct recovered audio pattern builder",
+      "sha256": "4c4785352e72cefdba3e3da00348cecde49cdf25b2b3ae8bf2396fc6df779892",
+      "bytes": 3589
+    },
+    {
+      "path": "scripts/build_alternate_source_pattern_candidates.py",
+      "role": "alternate source pattern builder",
+      "sha256": "9b64c04063c375470fb6403108aa999c8b2ef3e4faddb32b2be167fba43cbb16",
+      "bytes": 2215
+    },
+    {
+      "path": "scripts/build_alternate_source_identity_review.py",
+      "role": "alternate source identity review builder",
+      "sha256": "fcbbc88ef69ee32676c7360dde23672f06fe766331893a837d1ea5c512cb1504",
+      "bytes": 3655
+    },
+    {
+      "path": "scripts/search_unresolved_source_candidates.py",
+      "role": "unresolved source search tool",
+      "sha256": "7007c183c34026f39452b8278ed937a0771d49f5701368b78292af7fbf7da316",
+      "bytes": 2971
+    },
+    {
+      "path": "scripts/download_alternate_source_candidates.py",
+      "role": "alternate source recovery tool",
+      "sha256": "4b42998157298ad7e68cc2c53154fe04f968f27198c52f3ea9c8ec34f9ea9d4a",
+      "bytes": 2248
+    },
+    {
+      "path": "scripts/transcribe_alternate_source_candidates.py",
+      "role": "alternate source transcription tool",
+      "sha256": "f7b76f0951d84b9862b8b919f4e0484fa63b938a3794f8514bd48a5ed2d5803c",
+      "bytes": 2960
+    },
+    {
+      "path": "scripts/merge_alternate_source_transcripts.py",
+      "role": "alternate source transcript merger",
+      "sha256": "e0f8d4201fcb24c005009a2022a18aedd6961ce18c6c0559f69699f1ea6db340",
+      "bytes": 821
+    },
+    {
+      "path": "tests/test_full_inventory_recovery.py",
+      "role": "fixed inventory recovery integrity tests",
+      "sha256": "2cf4b4e228c9985d701ddc7a4b658025315294dcfca554468b85e511f8707b8e",
+      "bytes": 15010
     }
   ]
 }

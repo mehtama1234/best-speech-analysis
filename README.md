@@ -4,9 +4,130 @@ The complete project objective is written in the [master speech-learning system
 goal](writeups/master-speech-learning-system.md). It defines the 18
 communication jobs, repeatable verbal forms, delivery/nonverbal inspection,
 practice loop, validation gates and honest definition of done.
+
+The broader YouTube channel and curriculum atlas is being joined through the
+[unified integration plan](../speaking-humor-and-communication-concepts-research/analysis/unified-integration-plan.md)
+and its [machine-readable integration manifest](../speaking-humor-and-communication-concepts-research/analysis/unified-integration-manifest.json).
+That bridge keeps this repository's stricter evidence and validation boundary
+separate from transcript-derived channel findings.
+The current Ali Siddiq and Dry Bar wave-2 handoffs are recorded in
+[external-source-candidate-handoff.json](research/external-source-candidate-handoff.json).
+The companion [Dry Bar handoff](research/external-source-candidate-handoff-dry-bar.json)
+makes both sources reviewable while explicitly keeping their 13 candidates
+outside the fixed 480-video corpus and promotion count.
+Important boundary: **395 videos have project-generated, single-pass
+full-context transcript reviews; that is not the same as 395 independently
+human-validated videos.**
+Independent identity, function, delivery, counterexample, learner, listener and
+effectiveness gates remain open.
 The quickest user-facing route is the [start-here guide](writeups/start-here.md),
 which takes one lesson from evidence through wording, delivery inspection,
 practice, listener restatement and revision.
+For the current corpus-to-presentation synthesis in one place, open the
+[presentation pattern atlas](writeups/presentation-pattern-atlas.html) (or its
+[Markdown version](writeups/presentation-pattern-atlas.md)).
+For the practical list of corpus themes, subthemes and presentation uses, open
+the [interactive pattern browser](writeups/amazing-presentation-patterns.html)
+or read the [amazing presentation patterns guide](writeups/amazing-presentation-patterns.md).
+The [55-card presenter playbook](writeups/presentation-pattern-playbook.html)
+turns every candidate into draft moves, source anchors, practice checks and
+non-imitation boundaries.
+The [presentation builder](writeups/presentation-builder.html) combines one of
+six talk architectures with up to three selected pattern moves and exports a
+local Markdown outline.
+The [Speaking Patterns Fieldbook](writeups/speaking-patterns-fieldbook.html)
+offers seven practical chapters, 22 main themes, 18 smaller speaking moves,
+15 more ideas to explore, source examples, exercises and a full sample talk.
+It draws on 17 selected transcript analyses; the larger project reviewed the
+full transcripts of 395 videos in a 480-video inventory. The companion
+[27-chapter speaking guide](writeups/companion/speaking-practice.html)
+covers ten YouTube channels, including Charisma on Command. The fieldbook's
+download includes both guides and an editor-written map connecting each of the
+27 approaches to related patterns from the 55. The map is a reading aid, not
+proof that the approaches are the same or that they work. Independent review
+and audience testing remain outstanding.
+For the fixed-inventory recovery boundary and separate machine-transcript
+pattern layer, read the [corpus coverage audit](writeups/corpus-coverage-audit.md)
+and [full-inventory pattern candidates](writeups/full-inventory-pattern-candidates.md).
+The [all-55 evidence matrix](writeups/all-55-pattern-evidence.md) reconciles
+every core theme, structural subtheme, and additional subtheme by evidence layer.
+The [unified pattern synthesis](writeups/unified-pattern-synthesis.md) joins
+those 55 fixed-corpus candidates to the 19 provisional Ali Siddiq, Dry Bar and
+TED expansion candidates and routes them into the communication-job curriculum.
+The [unified pattern library browser](writeups/unified-pattern-library.html)
+puts all 74 candidates in one searchable surface while keeping fixed-corpus and
+expansion-source statuses visibly separate.
+The [recovered-transcript quality audit](writeups/recovered-transcript-quality-audit.md)
+checks all 83 recovered/external candidate rows for structural issues while
+keeping them separate from human-validated findings.
+The [recovered pattern candidate cards](writeups/recovered-pattern-candidate-cards.md)
+then connect 2,431 exact transcript-card candidates to all 55 patterns,
+with source and quality metadata retained on every card.
+The [lexical-rule audit](writeups/recovered-pattern-rule-audit.md) marks broad
+retrieval density so high-volume lexical matches remain review leads.
+The [55-pattern review-priority map](writeups/presentation-pattern-review-priorities.md)
+orders the first human review pass by corpus coverage and recovery flags; it is
+not an effectiveness ranking.
+The [local-model triage](writeups/local-llm-recovered-pattern-screen.md) screens
+representative excerpts for review priority only; it cannot validate patterns.
+Its [schema audit](writeups/local-llm-recovered-pattern-screen-audit.md) records
+55 structurally parseable pattern entries, 6 field variants and 0 unresolved
+entries without semantically repairing or promoting the model output. The raw,
+reconciled and gap receipts remain preserved separately.
+The [recovered independent-review workbook](writeups/recovered-pattern-independent-review.md)
+provides 2,431 blinded review items; the candidate pattern labels are kept in a
+separate internal key. Its [local browser review surface](writeups/recovered-pattern-independent-review.html)
+supports one-item-at-a-time review, local drafts, and JSON export.
+Exports are checked by `scripts/validate_recovered_pattern_review_export.py`
+before they can enter later comparison or adjudication steps.
+Two validated returns can be compared with
+`scripts/compare_recovered_pattern_reviews.py`; disagreement remains visible and
+promotion stays disabled until adjudication.
+Disputed items can be routed to a bounded adjudication packet with
+`scripts/build_recovered_pattern_adjudication.py`; final decisions remain
+non-effectiveness evidence.
+The [alternate-source identity queue](writeups/alternate-source-identity-review.md)
+lists 11 mirror candidates that still require source-alignment review.
+The three final unresolved IDs have separate [external source leads](research/external-source-leads.json)
+that remain outside the canonical counts until alignment is verified; one now
+has a preserved external transcript candidate.
+For an external-stakeholder overview, use the [Speech Learning System tutorial](writeups/stakeholder-tutorial.md)
+or its [standalone web page](writeups/stakeholder-tutorial.html).
+The [autonomous curriculum audit](writeups/autonomous-curriculum-audit.md)
+shows what is internally reconciled and what remains a queue or hypothesis;
+it does not pretend to be independent human validation.
+The [autonomous counterexample screening](writeups/autonomous-counterexample-screening.md)
+adds five bounded adversarial candidates per job without promoting them to proof.
+Its [validator](scripts/validate_autonomous_counterexample_screening.py) checks
+lineage and prevents candidate rows from being promoted silently.
+The [autonomous delivery reconciliation](writeups/autonomous-delivery-reconciliation.md)
+joins the 36 bounded frame observations to local timing/audio proxies while
+keeping delivery meaning and effectiveness explicitly unclaimed.
+The [full-media reconciliation](writeups/autonomous-full-media-reconciliation.md)
+records explicit local media and feature-proxy availability for all 395 videos.
+The [language reconciliation](writeups/autonomous-language-reconciliation.md)
+consolidates all 50 exact forms and 192 recurrence candidates without promoting
+them to best-practice evidence.
+The [autonomous vertical-slice audit](writeups/autonomous-vertical-slice-01.md)
+reconciles all five linked lesson packets, their controls, media proxies,
+practice flows and safety boundaries.
+The [autonomous end-to-end audit](writeups/autonomous-end-to-end-audit.md)
+joins those layers into one twenty-seven-check release-candidate audit, including
+the shared web/mobile evidence contract.
+The one-command runner is `python3 scripts/run_autonomous_release_audit.py`; add
+`--full-tests` when a complete repository test run is desired.
+The latest autonomous release audit passed **17/17** steps, including
+**27/27** aggregate checks. The current core browser smoke passed **17/17**
+paths. These are repository checks only and do not establish independent
+review, learner outcomes, listener outcomes or communication effectiveness.
+The fail-closed promotion check is `python3 scripts/check_promotion_readiness.py`;
+it exits nonzero while any human requirement remains open.
+The optional local model screen is recorded in
+[local-llm-lesson-judge.json](research/local-llm-lesson-judge.json); it is a
+model-assisted readiness note over the 18 provisional cards, not independent
+human evidence.
+The [identity metadata reconciliation](writeups/autonomous-identity-reconciliation.md)
+preflights all 395 source/review links without treating metadata as speaker proof.
 
 New [Joe Biden victory speech full-context reading](writeups/full-context-address-279.md)
 completes the fixed transcript queue: all 171 retained captions / 1,809 stored
@@ -15,10 +136,12 @@ credits a coalition, reframes opponents as citizens, translates a mandate into
 a first mechanism, treats cooperation as a choice with constraints, uses
 inflection-point history, expands repeated values and moves from grief to a
 collective handoff. Claims remain bounded or unverified and audiovisual delivery
-was not reviewed. The next phase is the first validation-targeted pattern-card and
-practice-lesson slice. Its five-pattern scaffold is present but not validated;
-the [validation audit](writeups/vertical-slice-01-validation-audit.md) records
-0/5 packets ready for promotion.
+was not reviewed. The autonomous reconciliation pass now covers the
+repository-checkable pattern-card and practice-lesson slice. The older
+[validation audit](writeups/vertical-slice-01-validation-audit.md) records
+unavailable external-review and participant gates, while the
+[autonomous curriculum audit](writeups/autonomous-curriculum-audit.md) records
+the internally completed coverage and its remaining claim boundaries.
 
 The slice includes a browser-based [independent-review form](writeups/vertical-slice-01-independent-review-workbook.html)
 and a fixed [20-task learner bank](research/vertical-slice-01-learner-task-bank.json).
@@ -56,6 +179,14 @@ through filtered practice cards.
 It can save a local practice record containing the adapted wording, delivery
 mode, listener restatement, non-fit or safety note and next revision; exported
 records remain learner evidence, not independent validation.
+The practice page is also installable as a mobile web app when served over HTTP;
+its service worker caches the practice shell for offline reopening. Exported
+records can be imported back into local history after the browser validates their
+lesson, exact transcript links, delivery links, consent and claim boundary.
+Validated records can be appended to a local JSONL ledger with
+`python3 scripts/ingest_local_practice_records.py INPUT --ledger PATH`; use
+`--forget-hash HASH` to honor withdrawal of one local record. The ledger remains
+practice data and never promotes a learner attempt to research evidence.
 The [blinded review packet](writeups/blinded-review-packet.md) strips internal
 candidate labels from 187 function, 192 recurrence and 50 phrase-form review
 items before an outside reviewer sees them; its key stays separate for later
@@ -78,10 +209,11 @@ The [practice-log contract](research/local-practice-log-contract.json) and
 [validator](scripts/validate_local_practice_log.py) check returned exports for
 their required fields and boundaries without scoring the learner or listener.
 The [video-learning itinerary](writeups/corpus-video-learning-itinerary.html)
-selects one bounded starting lesson for each of the 395 reviewed videos, with
+selects one bounded starting lesson for each of the 395 project-generated
+single-pass full-context reviews, with
 exact evidence, a practice move, self-check and sequence bridge where recorded.
 The [per-video coverage audit](writeups/corpus-learning-coverage-audit.md)
-reconciles all 395 videos against the 4,016 function cards, 2,800 sequence
+reconciles all 395 project-generated single-pass full-context reviews against the 4,016 function cards, 2,800 sequence
 cards, exact evidence, phrase handles and delivery-inspection layers.
 The [30-day study route](writeups/corpus-30-day-study-route.md) schedules all
 395 videos exactly once, rotates communication jobs, and gives each day a
@@ -146,6 +278,9 @@ the 18 flows runnable with exact examples, self-checks, non-fit boundaries and
 consent-gated local JSON export; it does not upload responses.
 The [end-to-end goal and definition of done](writeups/end-to-end-goal.md)
 defines the evidence chain required before any lesson can be promoted.
+The [end-to-end completion audit](writeups/end-to-end-completion-audit.md)
+maps that definition to current evidence and keeps unresolved human gates
+visible.
 The [learner field guide](writeups/learner-field-guide.md) consolidates the
 18 communication jobs, repeatable forms, indexed phrase families, practice
 boundaries and delivery-inspection questions in one usable guide.
@@ -238,6 +373,11 @@ jobs without turning them into validated delivery advice.
 The [shared evidence model](writeups/shared-evidence-model.md) is the common
 web/mobile contract for provenance, modality, hypotheses, practice, learner
 records and listener records, with uncertainty and missing validation visible.
+Its generated client types are [TypeScript](clients/generated/shared_evidence_contract.ts),
+[Kotlin](clients/generated/SharedEvidenceContract.kt) and
+[Swift](clients/generated/SharedEvidenceContract.swift); regenerate and check
+them with `python3 scripts/build_native_client_contracts.py` and
+`python3 scripts/validate_native_client_contracts.py`.
 It also carries counterexample observations; the blank [counterexample
 workbook](writeups/communication-job-counterexample-workbook.html) requires
 five limitation checks for each of the 18 provisional jobs.
@@ -253,6 +393,9 @@ explains why the older five-pattern count and newer 18-card curriculum are
 different inventories, not conflicting completion claims.
 The [validation handoff](writeups/validation-handoff.md) is the single starting
 point for running the remaining independent, learner and listener gates.
+The [external-review launch manifest](writeups/external-review-launch-manifest.md)
+provides the ordered eight-operation execution handoff and preserves the
+no-human-records boundary.
 The [corpus identity workbook](writeups/corpus-identity-review-workbook.html)
 is the independent speaker/event and duplication gate for all 395 reviewed
 videos; registry metadata is shown as a lead, not treated as proof.
@@ -311,11 +454,11 @@ The [end-to-end acceptance matrix](writeups/end-to-end-acceptance-matrix.md)
 maps each definition-of-done requirement to an authoritative artifact and keeps
 the nine open promotion/testing requirements visible.
 The [reproducibility manifest](research/reproducibility-manifest.json) hashes
-34 authoritative artifacts and records the fixed-corpus coverage snapshot;
+171 authoritative artifacts and records the fixed-corpus coverage snapshot;
 its validator detects stale outputs without implying that pending human gates
 are complete.
 The [external review gate index](writeups/external-review-gate-index.html)
-routes all ten remaining review/data-collection operations to their current
+routes all ten remaining evidence gates into eight executable review/data-collection operations with their current
 form, validator, comparator or summarizer, and claim boundary.
 The [per-job promotion readiness audit](writeups/communication-job-promotion-readiness.md)
 reports the promotion checkpoint for all 18 provisional communication jobs:

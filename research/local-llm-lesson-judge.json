@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.1",
+  "report_id": "local-llm-lesson-judge",
+  "status": "local_model_judgment_recorded_human_validation_open",
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "model_snapshot": "/home/mehta/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775",
+  "card_count": 18,
+  "judgment_scope": "18_card_per_card_and_aggregate_metadata_screen",
+  "parsed_judgment_count": 1,
+  "per_card_judgment_count": 4,
+  "raw_model_output": "```json\n{\n    \"overall\": \"provisional\",\n    \"concerns\": [\n        \"Learner outcomes\",\n        \"Speaker intent\"\n    ],\n    \"next_action\": \"Review learner outcomes and speaker intent for each question to ensure they align with the objectives.\"\n}\n```",
+  "judgments": [
+    {
+      "overall": "provisional",
+      "concerns": [
+        "Learner outcomes",
+        "Speaker intent"
+      ],
+      "next_action": "Review learner outcomes and speaker intent for each question to ensure they align with the objectives."
+    }
+  ],
+  "per_card_judgments": [
+    {
+      "card_id": "opening",
+      "canonical_job": "opening",
+      "raw_model_output": "```json\n{\n  \"card_id\": \"12345\",\n  \"overall\": \"provisional_not_validated\",\n  \"concerns\": [\n    \"The lesson does not provide clear evidence of causal effectiveness.\",\n    \"There is no indication that it will lead to listener outcomes.\"\n  ],\n  \"next_action\": \"Further investigation into the lesson's impact on listener outcomes",
+      "judgment": null
+    },
+    {
+      "card_id": "closing",
+      "canonical_job": "closing",
+      "raw_model_output": "```json\n{\n  \"card_id\": \"12345\",\n  \"overall\": \"provisional_not_validated\",\n  \"concerns\": [\n    \"The lesson does not provide clear evidence of causal effectiveness.\",\n    \"There is no indication that it will lead to listener outcomes.\"\n  ],\n  \"next_action\": \"Further investigation into the lesson's impact on listener outcomes",
+      "judgment": null
+    },
+    {
+      "card_id": "question",
+      "canonical_job": "question",
+      "raw_model_output": "```json\n{\n  \"card_id\": \"12345\",\n  \"overall\": \"provisional_not_validated\",\n  \"concerns\": [\n    \"The lesson does not provide clear evidence of causal effectiveness.\",\n    \"There is no indication that it will lead to listener outcomes.\"\n  ],\n  \"next_action\": \"Further investigation into the lesson's impact on listener outcomes",
+      "judgment": null
+    },
+    {
+      "card_id": "answer_or_response",
+      "canonical_job": "answer_or_response",
+      "raw_model_output": "```json\n{\n  \"card_id\": \"12345\",\n  \"overall\": \"provisional_not_validated\",\n  \"concerns\": [\n    \"The lesson does not provide clear evidence of its causal effectiveness.\",\n    \"There is no indication that it will lead to listener outcomes.\"\n  ],\n  \"next_action\": \"Further investigation into the lesson's impact on listener",
+      "judgment": null
+    },
+    {
+      "card_id": "story_or_personal_experience",
+      "canonical_job": "story_or_personal_experience",
+      "raw_model_output": "```json\n{\n  \"card_id\": \"12345\",\n  \"overall\": \"provisional\",\n  \"concerns\": [\n    \"The lesson does not provide clear evidence of causal effectiveness.\",\n    \"There is no indication that it will lead to listener outcomes.\"\n  ],\n  \"next_action\": \"Review the lesson for potential limitations in its effectiveness and consider whether it",
+      "judgment": null
+    },
+    {
+      "card_id": "example_or_case",
+      "canonical_job": "example_or_case",
+      "raw_model_output": "```json\n{\n  \"card_id\": \"12345\",\n  \"overall\": \"provisional_not_validated\",\n  \"concerns\": [\n    \"The lesson does not provide clear evidence of causal effectiveness.\",\n    \"There is no indication that it will lead to listener outcomes.\"\n  ],\n  \"next_action\": \"Further investigation into the lesson's impact on listener outcomes",
+      "judgment": null
+    },
+    {
+      "card_id": "contrast_or_disagreement",
+      "canonical_job": "contrast_or_disagreement",
+      "raw_model_output": "```json\n{\n  \"card_id\": \"lesson_1\",\n  \"overall\": \"provisional_not_validated\",\n  \"concerns\": [\n    \"The lesson does not provide clear evidence of causal effectiveness.\",\n    \"It lacks listener outcomes to assess its impact on participants.\"\n  ],\n  \"next_action\": \"Review the lesson for clarity in terms of causality and listener outcomes",
+      "judgment": null
+    },
+    {
+      "card_id": "correction_or_reframe",
+      "canonical_job": "correction_or_reframe",
+      "raw_model_output": "```json\n{\n  \"card_id\": \"lesson_metadata\",\n  \"overall\": \"provisional_not_validated\",\n  \"concerns\": [\n    \"The metadata suggests that the lesson may not have been thoroughly vetted for causal effectiveness, listener outcomes, speaker intent, and universal best practices.\",\n    \"The mechanism status indicates that it is bounded by hypothesis, but further validation is needed",
+      "judgment": null
+    },
+    {
+      "card_id": "repair_or_self_correction",
+      "canonical_job": "repair_or_self_correction",
+      "raw_model_output": "```json\n{\n  \"card_id\": \"unspecified\",\n  \"overall\": \"unspecified\",\n  \"concerns\": [\n    \"The lesson does not provide clear evidence of its causal effectiveness.\",\n    \"There is no indication that it will lead to listener outcomes.\"\n  ],\n  \"next_action\": \"Further investigation into the lesson's impact on listener outcomes\"\n}\n```",
+      "judgment": {
+        "card_id": "unspecified",
+        "overall": "unspecified",
+        "concerns": [
+          "The lesson does not provide clear evidence of its causal effectiveness.",
+          "There is no indication that it will lead to listener outcomes."
+        ],
+        "next_action": "Further investigation into the lesson's impact on listener outcomes"
+      }
+    },
+    {
+      "card_id": "qualification_or_boundary",
+      "canonical_job": "qualification_or_boundary",
+      "raw_model_output": "```json\n{\n  \"card_id\": \"12345\",\n  \"overall\": \"unspecified\",\n  \"concerns\": [\n    {\n      \"type\": \"misleading\",\n      \"description\": \"The lesson does not clearly define its purpose or expected outcome.\"\n    },\n    {\n      \"type\": \"unclear\",\n      \"description\": \"The lesson lacks clear boundaries",
+      "judgment": {
+        "type": "misleading",
+        "description": "The lesson does not clearly define its purpose or expected outcome."
+      }
+    },
+    {
+      "card_id": "definition_or_explanation",
+      "canonical_job": "definition_or_explanation",
+      "raw_model_output": "```json\n{\n  \"card_id\": \"lesson_metadata\",\n  \"overall\": \"provisional_not_validated\",\n  \"concerns\": [\n    \"The metadata does not provide clear evidence of causal effectiveness.\",\n    \"It lacks information on listener outcomes and speaker intent.\"\n  ],\n  \"next_action\": {\n    \"action\": \"Review the data for more specific metrics to assess effectiveness",
+      "judgment": null
+    },
+    {
+      "card_id": "transition_or_structure",
+      "canonical_job": "transition_or_structure",
+      "raw_model_output": "```json\n{\n  \"card_id\": \"12345\",\n  \"overall\": \"provisional_not_validated\",\n  \"concerns\": [\n    \"The lesson does not provide clear evidence of causal effectiveness.\",\n    \"There is no indication that it will lead to listener outcomes.\"\n  ],\n  \"next_action\": \"Further investigation into the lesson's impact on listener outcomes",
+      "judgment": null
+    },
+    {
+      "card_id": "callback_or_repetition",
+      "canonical_job": "callback_or_repetition",
+      "raw_model_output": "```json\n{\n  \"card_id\": \"12345\",\n  \"overall\": \"provisional_not_validated\",\n  \"concerns\": [\n    \"The lesson does not provide clear evidence of causal effectiveness.\",\n    \"There is no indication that it will lead to listener outcomes.\"\n  ],\n  \"next_action\": \"Further investigation into the lesson's impact on listener outcomes",
+      "judgment": null
+    },
+    {
+      "card_id": "humor_or_rapport",
+      "canonical_job": "humor_or_rapport",
+      "raw_model_output": "```json\n{\n  \"card_id\": \"12345\",\n  \"overall\": \"provisional\",\n  \"concerns\": [\n    \"The lesson does not provide clear evidence of its effectiveness in terms of causal impact on participants.\",\n    \"There is no indication that it has been tested for listener outcomes or speaker intent.\"\n  ],\n  \"next_action\": \"Further investigation",
+      "judgment": null
+    },
+    {
+      "card_id": "credit_or_acknowledgment",
+      "canonical_job": "credit_or_acknowledgment",
+      "raw_model_output": "```json\n{\n  \"card_id\": \"lesson_metadata\",\n  \"overall\": \"provisional_not_validated\",\n  \"concerns\": [\n    \"The metadata does not provide clear evidence of causal effectiveness.\",\n    \"The limits for listener outcomes and speaker intent are unclear.\"\n  ],\n  \"next_action\": \"Further investigation into these limitations\"\n}\n```",
+      "judgment": {
+        "card_id": "lesson_metadata",
+        "overall": "provisional_not_validated",
+        "concerns": [
+          "The metadata does not provide clear evidence of causal effectiveness.",
+          "The limits for listener outcomes and speaker intent are unclear."
+        ],
+        "next_action": "Further investigation into these limitations"
+      }
+    },
+    {
+      "card_id": "call_to_action_or_audience_role",
+      "canonical_job": "call_to_action_or_audience_role",
+      "raw_model_output": "```json\n{\n  \"card_id\": \"12345\",\n  \"overall\": \"provisional\",\n  \"concerns\": [\n    \"The lesson does not provide clear evidence of its causal effectiveness.\",\n    \"It may lack listener outcomes due to its internal nature as a call-to-action.\"\n  ],\n  \"next_action\": \"Further investigation into the impact on listener outcomes",
+      "judgment": null
+    },
+    {
+      "card_id": "persuasion_or_advocacy",
+      "canonical_job": "persuasion_or_advocacy",
+      "raw_model_output": "```json\n{\n  \"card_id\": \"12345\",\n  \"overall\": \"provisional\",\n  \"concerns\": [\n    \"The lesson does not provide clear evidence of causal effectiveness.\",\n    \"It lacks listener outcomes to assess its impact on participants.\"\n  ],\n  \"next_action\": \"Further investigation into these areas is required\"\n}\n```",
+      "judgment": {
+        "card_id": "12345",
+        "overall": "provisional",
+        "concerns": [
+          "The lesson does not provide clear evidence of causal effectiveness.",
+          "It lacks listener outcomes to assess its impact on participants."
+        ],
+        "next_action": "Further investigation into these areas is required"
+      }
+    },
+    {
+      "card_id": "reflection_or_value_frame",
+      "canonical_job": "reflection_or_value_frame",
+      "raw_model_output": "```json\n{\n  \"card_id\": \"12345\",\n  \"overall\": \"provisional_not_validated\",\n  \"concerns\": [\n    \"The lesson does not provide clear evidence of causal effectiveness.\",\n    \"It lacks listener outcomes to assess its impact on participants.\"\n  ],\n  \"next_action\": \"Further investigation into these areas is required before making any conclusions",
+      "judgment": null
+    }
+  ],
+  "promotion_eligible": false,
+  "claim_boundary": "This is a local language-model readiness screen over provisional metadata. It is not independent human review, learner evidence, listener outcome evidence, causal evidence or proof of effectiveness. Promotion is forced false while human gates remain open."
+}

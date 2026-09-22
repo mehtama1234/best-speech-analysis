@@ -16,6 +16,7 @@ This contract lets web and mobile surfaces carry provenance and uncertainty toge
 | `learner` | `protocol_drafted_not_run`; card_count=18, task_count=72, completed_records=0 |
 | `listener` | `design_complete_not_run`; pattern_count=18, stimulus_pairs_locked=False, completed_records=0 |
 | `counterexamples` | `template_not_completed`; job_count=18, queued_slot_count=90, completed_records=0 |
+| `counterexample_candidates` | `candidate_queue_not_independently_reviewed`; candidate_count=90, source_linked_candidate_count=54, confirmed_counterexample_count=0 |
 | `mobile_lessons` | `mobile_payload_provisional_not_validated`; lesson_count=18 |
 
-The JSON file defines entity requirements, status vocabulary, link rules and web/mobile client constraints. It is an interface contract, not evidence that the pending gates have been completed.
+The JSON file defines entity requirements, status vocabulary, link rules and web/mobile client constraints. Generated TypeScript, Kotlin and Swift types live under `clients/generated/` and are rebuilt by `scripts/build_native_client_contracts.py`. The contract is not evidence that the pending research gates have been completed.

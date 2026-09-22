@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0",
+  "report_id": "model-assisted-gate-judge",
+  "status": "model_assisted_readiness_complete_human_evidence_open",
+  "judge_type": "language_model_assisted_readiness_preflight",
+  "judge_identity": "codex-llm-judge",
+  "gate_count": 10,
+  "instrument_ready_gate_count": 10,
+  "human_gate_closed_count": 0,
+  "open_requirement_count": 9,
+  "open_requirements": [
+    "exact_language_and_forms",
+    "function_and_mechanism",
+    "verbal_vocal_nonverbal_setting",
+    "cross_talk_recurrence",
+    "counterexamples_and_limits",
+    "practice_and_shared_curriculum",
+    "independent_review",
+    "learner_validation",
+    "listener_outcome_separation"
+  ],
+  "gates": [
+    {
+      "gate_id": "identity",
+      "status": "metadata_preflight_independent_review_pending",
+      "item_count": 395,
+      "instrument_ready": true,
+      "human_gate_closed": false,
+      "judgment": "instrument_ready_human_evidence_missing",
+      "next_action": "Review all 395 queue items; do not treat title matches as proof of distinct events.",
+      "form": "writeups/corpus-identity-review-workbook.html",
+      "validator": "scripts/validate_corpus_identity_review.py"
+    },
+    {
+      "gate_id": "function",
+      "status": "template_not_completed",
+      "item_count": 187,
+      "instrument_ready": true,
+      "human_gate_closed": false,
+      "judgment": "instrument_ready_human_evidence_missing",
+      "next_action": "Review 187 candidate function items in full context.",
+      "form": "writeups/corpus-function-independent-review-workbook.html",
+      "validator": "scripts/validate_corpus_function_review.py"
+    },
+    {
+      "gate_id": "recurrence",
+      "status": "template_not_completed",
+      "item_count": 192,
+      "instrument_ready": true,
+      "human_gate_closed": false,
+      "judgment": "instrument_ready_human_evidence_missing",
+      "next_action": "Review 192 train/holdout phrase candidates; preserve indeterminate decisions.",
+      "form": "writeups/corpus-recurrence-independent-review-workbook.html",
+      "validator": "scripts/validate_corpus_recurrence_review.py"
+    },
+    {
+      "gate_id": "phrase_forms",
+      "status": "template_not_completed",
+      "item_count": 50,
+      "instrument_ready": true,
+      "human_gate_closed": false,
+      "judgment": "instrument_ready_human_evidence_missing",
+      "next_action": "Review all 50 retrieved forms before changing the inventory.",
+      "form": "writeups/corpus-phrase-form-independent-review-workbook.html",
+      "validator": "scripts/validate_corpus_phrase_form_review.py"
+    },
+    {
+      "gate_id": "multimodal",
+      "status": "template_not_completed",
+      "item_count": 21,
+      "instrument_ready": true,
+      "human_gate_closed": false,
+      "judgment": "instrument_ready_human_evidence_missing",
+      "next_action": "Review 21 bounded internal media observations; proxies are not meaning or outcomes.",
+      "form": "writeups/multimodal-independent-review-workbook.html",
+      "validator": "scripts/validate_multimodal_independent_review.py"
+    },
+    {
+      "gate_id": "delivery",
+      "status": "queue_built_manual_observation_pending",
+      "item_count": 36,
+      "instrument_ready": true,
+      "human_gate_closed": false,
+      "judgment": "instrument_ready_human_evidence_missing",
+      "next_action": "Review 36 queued samples; record missingness and identity limits.",
+      "form": "writeups/communication-job-delivery-sampling.html",
+      "validator": "scripts/validate_communication_job_delivery_review.py"
+    },
+    {
+      "gate_id": "counterexamples",
+      "status": "template_not_completed",
+      "item_count": 90,
+      "instrument_ready": true,
+      "human_gate_closed": false,
+      "judgment": "instrument_ready_human_evidence_missing",
+      "next_action": "Review 90 slots; no candidate is preferable to a forced example.",
+      "form": "writeups/communication-job-counterexample-workbook.html",
+      "validator": "scripts/validate_communication_job_counterexample_review.py"
+    },
+    {
+      "gate_id": "learner",
+      "status": "protocol_drafted_not_run",
+      "item_count": 72,
+      "instrument_ready": true,
+      "human_gate_closed": false,
+      "judgment": "instrument_ready_human_evidence_missing",
+      "next_action": "Run the consented 18-job learner protocol; do not call it effectiveness evidence.",
+      "form": "writeups/communication-job-learner-check.html",
+      "validator": "scripts/validate_communication_job_learner_record.py"
+    },
+    {
+      "gate_id": "listener_stimuli",
+      "status": "manual_equivalence_review_pending",
+      "item_count": 18,
+      "instrument_ready": true,
+      "human_gate_closed": false,
+      "judgment": "instrument_ready_human_evidence_missing",
+      "next_action": "Review 18 matched pairs for equivalence, accessibility, safety and blinding before locking.",
+      "form": "writeups/communication-job-listener-stimulus-review-workbook.html",
+      "validator": "scripts/validate_listener_stimulus_review.py"
+    },
+    {
+      "gate_id": "listener_outcomes",
+      "status": "design_complete_not_run",
+      "item_count": 18,
+      "instrument_ready": true,
+      "human_gate_closed": false,
+      "judgment": "instrument_ready_human_evidence_missing",
+      "next_action": "Run only after stimuli are independently reviewed and locked.",
+      "form": "writeups/communication-job-listener-record.html",
+      "validator": "scripts/validate_communication_job_listener_record.py"
+    }
+  ],
+  "claim_boundary": "This model-assisted judgment evaluates instrument readiness and current status metadata. It is not an independent human review, learner observation, listener outcome, causal result or promotion decision.",
+  "promotion_eligible": false
+}

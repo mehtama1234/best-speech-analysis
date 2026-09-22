@@ -33,7 +33,10 @@
     "research/raw-media-only-visual-audit.json",
     "research/full-corpus-media-coverage.json",
     "research/full-corpus-media-recovery-queue.json",
-    "research/communication-job-promotion-readiness.json"
+    "research/communication-job-promotion-readiness.json",
+    "research/external-source-candidate-handoff.json",
+    "research/external-source-candidate-handoff-dry-bar.json",
+    "research/external-source-candidate-handoff-ted.json"
   ],
   "status": "research_checkpoint_not_complete",
   "claim_boundary": "This dashboard reports artifact and validation status. It does not convert transcript coverage, internal review, generated instruments or passing tests into evidence of communication effectiveness.",
@@ -125,7 +128,7 @@
     },
     "shared_evidence_model": {
       "status": "contract_ready_research_evidence_incomplete",
-      "entity_type_count": 11,
+      "entity_type_count": 13,
       "source": "research/shared-evidence-model.json"
     },
     "counterexample_library": {
@@ -248,6 +251,20 @@
       "promotion_ready_count": 0,
       "blocked_card_count": 18,
       "source": "research/communication-job-promotion-readiness.json"
+    },
+    "external_source_candidates": {
+      "status": "candidate_sources_visible_not_in_fixed_corpus",
+      "source_count": 3,
+      "source_slugs": [
+        "ali-siddiq-wave-2",
+        "dry-bar-comedy-wave-2-starter",
+        "ted-wave-2-starter"
+      ],
+      "videos_attempted": 283,
+      "transcripts_available": 277,
+      "candidate_count": 19,
+      "fixed_corpus_inclusion": false,
+      "source": "research/external-source-candidate-handoff.json; research/external-source-candidate-handoff-dry-bar.json; research/external-source-candidate-handoff-ted.json"
     },
     "learner_check": {
       "status": "protocol_drafted_not_run",

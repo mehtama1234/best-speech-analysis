@@ -15,6 +15,8 @@ class CommunicationJobPracticeSurfaceTests(unittest.TestCase):
     def test_surface_is_backed_by_all_18_mobile_lessons(self):
         self.assertEqual(self.payload["lesson_count"], 18)
         self.assertIn("local_communication_practice_record", self.page)
+        self.assertIn("source_evidence_ids", self.page)
+        self.assertIn("delivery_sample_ids", self.page)
         self.assertIn("Download local practice JSON", self.page)
         self.assertIn("nothing is sent to this repository", self.page)
         self.assertIn("consent", self.page)
@@ -25,9 +27,23 @@ class CommunicationJobPracticeSurfaceTests(unittest.TestCase):
         self.assertIn("Optional local rehearsal recording", self.page)
         self.assertIn("getUserMedia", self.page)
         self.assertIn("Nothing is uploaded", self.page)
+        self.assertIn("Save version in this browser", self.page)
+        self.assertIn("Compare latest two versions", self.page)
+        self.assertIn("Import selected version", self.page)
+        self.assertIn("FileReader", self.page)
+        self.assertIn('communication-patterns-lab.webmanifest', self.page)
+        self.assertIn('serviceWorker.register', self.page)
+        self.assertIn("communication_patterns_lab_records_v1", self.page)
+        self.assertIn("not a performance score", self.page)
         self.assertIn("learner-field-guide.md", self.page)
+        self.assertIn("requireLessonBoundary", self.page)
+        self.assertIn("lesson boundary is not eligible for local practice", self.page)
         for lesson in self.payload["lessons"]:
             self.assertIn(lesson["canonical_job"], self.page)
+
+    def test_capture_and_practice_controls_have_associated_labels(self):
+        for control_id in ("lesson", "participant", "accessibility", "consent", "capture-mode", "import-file"):
+            self.assertIn(f'<label for="{control_id}">', self.page)
 
 
 if __name__ == "__main__":

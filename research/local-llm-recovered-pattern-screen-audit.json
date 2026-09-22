@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "status": "local_model_triage_schema_audit_not_validation",
+  "source_report": "research/local-llm-recovered-pattern-screen-complete.json",
+  "raw_source_report": "research/local-llm-recovered-pattern-screen.json",
+  "source_receipts": [
+    "research/local-llm-recovered-pattern-screen-reconciled.json",
+    "research/local-llm-recovered-pattern-gap-screen.json"
+  ],
+  "expected_pattern_count": 55,
+  "model_entry_count": 55,
+  "unique_model_pattern_count": 55,
+  "complete_schema_count": 49,
+  "field_variant_count": 6,
+  "invalid_entry_count": 0,
+  "unresolved_pattern_count": 0,
+  "field_variant_pattern_ids": [
+    "premise_correction",
+    "purpose_attention_example",
+    "qualification_and_boundary",
+    "question_and_reframe",
+    "question_redefinition",
+    "reciprocal_learning"
+  ],
+  "invalid_entries": [],
+  "unresolved_pattern_ids": [],
+  "promotion_eligible": false,
+  "claim_boundary": "This is a schema-completeness audit of a local-model triage receipt. It does not validate semantic accuracy, source identity, recurrence, delivery meaning, learner transfer, listener outcomes or effectiveness."
+}

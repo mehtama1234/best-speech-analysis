@@ -50,6 +50,9 @@ def main() -> int:
     full_media = load("research/full-corpus-media-coverage.json")
     media_recovery = load("research/full-corpus-media-recovery-queue.json")
     promotion_readiness = load("research/communication-job-promotion-readiness.json")
+    external_handoff = load("research/external-source-candidate-handoff.json")
+    dry_bar_external_handoff = load("research/external-source-candidate-handoff-dry-bar.json")
+    ted_external_handoff = load("research/external-source-candidate-handoff-ted.json")
 
     transcript_count = len(reviews["reviews"])
     caption_count = queue["caption_count"]
@@ -84,6 +87,9 @@ def main() -> int:
             "research/communication-job-listener-outcome-protocol.json", "research/raw-media-only-visual-audit.json",
             "research/full-corpus-media-coverage.json", "research/full-corpus-media-recovery-queue.json",
             "research/communication-job-promotion-readiness.json",
+            "research/external-source-candidate-handoff.json",
+            "research/external-source-candidate-handoff-dry-bar.json",
+            "research/external-source-candidate-handoff-ted.json",
         ],
         "status": "research_checkpoint_not_complete",
         "claim_boundary": "This dashboard reports artifact and validation status. It does not convert transcript coverage, internal review, generated instruments or passing tests into evidence of communication effectiveness.",
@@ -119,6 +125,7 @@ def main() -> int:
             "full_corpus_media_recovery": {"status": media_recovery["status"], "queued_item_count": media_recovery["item_count"], "source": "research/full-corpus-media-recovery-queue.json"},
             "shared_lessons": {"status": cards["status"], "draft_card_count": cards["card_count"], "promotion_ready_card_count": 0, "source": "research/shared-lesson-cards.json"},
             "promotion_readiness": {"status": promotion_readiness["status"], "card_count": promotion_readiness["card_count"], "promotion_ready_count": promotion_readiness["promotion_ready_count"], "blocked_card_count": sum(bool(row["blockers"]) for row in promotion_readiness["cards"]), "source": "research/communication-job-promotion-readiness.json"},
+            "external_source_candidates": {"status": "candidate_sources_visible_not_in_fixed_corpus", "source_count": 3, "source_slugs": [external_handoff["source"]["slug"], dry_bar_external_handoff["source"]["slug"], ted_external_handoff["source"]["slug"]], "videos_attempted": external_handoff["source"]["videos_attempted"] + dry_bar_external_handoff["source"]["starter_videos_attempted"] + ted_external_handoff["source"]["starter_videos_attempted"], "transcripts_available": external_handoff["source"]["transcripts_available"] + dry_bar_external_handoff["source"]["transcripts_available"] + ted_external_handoff["source"]["transcripts_available"], "candidate_count": external_handoff["candidate_count"] + dry_bar_external_handoff["candidate_count"] + ted_external_handoff["candidate_count"], "fixed_corpus_inclusion": False, "source": "research/external-source-candidate-handoff.json; research/external-source-candidate-handoff-dry-bar.json; research/external-source-candidate-handoff-ted.json"},
             "learner_check": {"status": learner["status"], "task_count": learner["task_count"], "completed_records": 0, "source": "research/shared-learner-check.json"},
             "listener_outcomes": {"status": listener["status"], "task_count": len(listener["listener_tasks"]), "stimulus_pairs_locked": listener["stimulus_pairs_locked"], "completed_records": 0, "source": "research/communication-job-listener-outcome-protocol.json"},
         },
@@ -174,6 +181,7 @@ def main() -> int:
         f"| Full-corpus media recovery | `{media_recovery['status']}` | {media_recovery['item_count']} queued missing/derived items |",
         f"| Shared lessons | `{cards['status']}` | {cards['card_count']} drafts / 0 promotion-ready |",
         f"| Promotion readiness | `{promotion_readiness['status']}` | {promotion_readiness['card_count']} cards / {promotion_readiness['promotion_ready_count']} promotion-ready / {sum(bool(row['blockers']) for row in promotion_readiness['cards'])} blocked |",
+        f"| External source candidates | `candidate_sources_visible_not_in_fixed_corpus` | 2 sources / {external_handoff['source']['transcripts_available'] + dry_bar_external_handoff['source']['transcripts_available']}/{external_handoff['source']['videos_attempted'] + dry_bar_external_handoff['source']['starter_videos_attempted']} transcripts / {external_handoff['candidate_count'] + dry_bar_external_handoff['candidate_count']} candidates / fixed-corpus inclusion: False |",
         f"| Learner check | `{learner['status']}` | {learner['task_count']} tasks / 0 records |",
         f"| Listener outcomes | `{listener['status']}` | {len(listener['listener_tasks'])} tasks / stimuli locked: {listener['stimulus_pairs_locked']} / 0 records |",
         "", "## Required gates", "",

@@ -137,6 +137,37 @@
         "status",
         "alternative_explanation"
       ]
+    },
+    "practice_record": {
+      "required": [
+        "record_type",
+        "schema_version",
+        "lesson_id",
+        "pattern_id",
+        "canonical_job",
+        "source_evidence_ids",
+        "delivery_sample_ids",
+        "participant_code",
+        "consent",
+        "accessibility_or_modality",
+        "step_responses",
+        "claim_boundary",
+        "saved_at"
+      ]
+    },
+    "mobile_lesson": {
+      "required": [
+        "lesson_id",
+        "pattern_id",
+        "canonical_job",
+        "status",
+        "claim_level",
+        "communication_problem",
+        "evidence_links",
+        "steps",
+        "safety_boundary",
+        "validation"
+      ]
     }
   },
   "status_vocabulary": {
@@ -179,6 +210,8 @@
     "Every practice task links to a pattern and carries a non-fit or safety boundary.",
     "Learner observations and listener observations remain separate entity types and separate claim levels.",
     "Listener task scores remain separate from raw responses, agreement, liking and trust; missingness and accessibility issues are retained.",
+    "Local practice records carry consent, accessibility and claim boundaries across web and native clients; they are not learner-validation evidence.",
+    "Every mobile lesson carries a pattern ID, exact evidence links, bounded steps and a safety boundary across web and native clients.",
     "Missing, disagreement and indeterminate statuses remain visible to clients."
   ],
   "client_contract": {
@@ -192,7 +225,8 @@
       "load the same pattern ID and evidence links",
       "show one bounded practice task and self-check",
       "support text, captioned and asynchronous use",
-      "store learner records only with consent and claim boundary"
+      "store practice records only with consent and claim boundary",
+      "keep practice records separate from learner-validation observations"
     ]
   },
   "current_manifest": {
@@ -243,6 +277,13 @@
       "queued_slot_count": 90,
       "completed_records": 0,
       "status": "template_not_completed"
+    },
+    "counterexample_candidates": {
+      "source": "research/communication-job-counterexample-candidate-queue.json",
+      "candidate_count": 90,
+      "source_linked_candidate_count": 54,
+      "confirmed_counterexample_count": 0,
+      "status": "candidate_queue_not_independently_reviewed"
     },
     "mobile_lessons": {
       "source": "research/communication-job-mobile-lessons.json",

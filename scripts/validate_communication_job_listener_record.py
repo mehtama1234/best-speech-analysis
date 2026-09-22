@@ -12,9 +12,11 @@ ROOT = Path(__file__).resolve().parents[1]
 PROTOCOL = ROOT / "research/communication-job-listener-outcome-protocol.json"
 
 
-def validate(record: dict, protocol: dict | None = None) -> list[str]:
+def validate(record: dict, protocol: dict | None = None, *, allow_unlocked_synthetic: bool = False) -> list[str]:
     protocol = protocol or json.loads(PROTOCOL.read_text())
     errors = []
+    if not protocol.get("stimulus_pairs_locked") and not allow_unlocked_synthetic:
+        errors.append("listener outcome records are blocked until stimulus pairs are independently locked")
     if record.get("record_type") != "communication_job_listener_outcome_observation": errors.append("record_type is invalid")
     if record.get("protocol_id") != protocol["protocol_id"]: errors.append("protocol_id does not match")
     responses = record.get("responses", {})

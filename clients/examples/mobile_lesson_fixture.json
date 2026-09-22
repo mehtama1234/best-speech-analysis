@@ -1,0 +1,71 @@
+{
+  "lesson_id": "mobile:provisional-job-opening",
+  "pattern_id": "provisional-job-opening",
+  "canonical_job": "opening",
+  "status": "provisional_not_validated",
+  "claim_level": "practice_hypothesis",
+  "communication_problem": "Give the listener a reason and orientation for the exchange.",
+  "evidence_links": {
+    "exact_example_ids": [
+      "full-context-20260917-204:1",
+      "full-context-20260917-124:1",
+      "full-context-20260917-088:2"
+    ],
+    "phrase_forms": [],
+    "delivery_sample_ids": [
+      "delivery:opening:01",
+      "delivery:opening:02"
+    ],
+    "counterexample_types": [
+      "absent_but_speech_works",
+      "present_but_speech_fails",
+      "alternate_function",
+      "confound_or_setting",
+      "misuse_or_copying_risk"
+    ]
+  },
+  "steps": [
+    {
+      "step_id": "orient",
+      "type": "read",
+      "prompt": "Name the communication problem before trying the form."
+    },
+    {
+      "step_id": "inspect",
+      "type": "inspect_evidence",
+      "prompt": "Read one exact example and note what the words are doing; delivery measurements are proxies, not meaning."
+    },
+    {
+      "step_id": "rehearse",
+      "type": "practice",
+      "prompt": "Open the same two-minute explanation with context, then without it; ask a listener what they think the talk is for.",
+      "response_mode": [
+        "typed",
+        "spoken",
+        "captioned",
+        "asynchronous"
+      ]
+    },
+    {
+      "step_id": "self_check",
+      "type": "self_check",
+      "prompt": "Can a listener state the situation and purpose without guessing?"
+    },
+    {
+      "step_id": "boundary",
+      "type": "non_fit",
+      "prompt": "Do not force a formal opening into a fast response or an already shared conversation."
+    },
+    {
+      "step_id": "listener",
+      "type": "listener_check",
+      "prompt": "Optional separate listener check: ask the listener to restate the point and identify what remains uncertain. Do not treat one response as effectiveness evidence."
+    }
+  ],
+  "safety_boundary": "Do not imitate a speaker's identity, accent, personality or mannerism; do not require personal disclosure or recording; preserve privacy, accessibility and consent.",
+  "validation": {
+    "learner_observations": "not_run",
+    "listener_outcomes": "not_run",
+    "independent_evidence_review": "pending"
+  }
+}

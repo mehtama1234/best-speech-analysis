@@ -29,6 +29,25 @@ def main() -> int:
     catalog = load("research/corpus-findings-catalog.json")
     delivery_atlas = load("research/delivery-proxy-candidate-atlas.json")
     blinded_packet = load("research/blinded-review-packet.json")
+    priority_review = load("research/recovered-pattern-priority-review.json")
+    fieldbook_cards = load("research/recovered-pattern-candidate-cards.json")
+    fieldbook_pattern_ids = {card["pattern_id"] for card in fieldbook_cards["cards"]}
+    learner_card_ids = {card["card_id"] for card in learner["cards"]}
+    listener_pattern_ids = {pattern["pattern_id"] for pattern in listener["patterns"]}
+    fieldbook_learning_scope = {
+        "fieldbook_pattern_count": len(fieldbook_pattern_ids),
+        "learner_card_count": len(learner_card_ids),
+        "listener_pattern_count": len(listener_pattern_ids),
+        "learner_exact_id_overlap": len(fieldbook_pattern_ids & learner_card_ids),
+        "listener_exact_id_overlap": len(fieldbook_pattern_ids & listener_pattern_ids),
+        "status": "separate_unmapped_id_spaces",
+        "evidence": [
+            "research/recovered-pattern-candidate-cards.json",
+            "research/communication-job-learner-check.json",
+            "research/communication-job-listener-outcome-protocol.json",
+        ],
+        "note": "The current learner and listener protocols cover provisional communication-job cards, not the 55 fieldbook lessons. No exact pattern IDs overlap. Do not attribute their results to fieldbook patterns without a separately recorded, justified mapping; otherwise create pattern-specific tasks and stimuli for surviving lessons.",
+    }
     report = {
         "schema_version": "1.0",
         "report_id": "validation-handoff",
@@ -41,6 +60,7 @@ def main() -> int:
             "videos_without_candidate_practice_job": catalog["coverage"]["videos_without_candidate_practice_job"],
             "note": "Candidate job routing is heuristic discovery support, not validated evidence that a pattern works.",
         },
+        "fieldbook_learning_scope": fieldbook_learning_scope,
         "delivery_entry": {
             "markdown": "writeups/delivery-proxy-candidate-atlas.md",
             "browser": "writeups/delivery-proxy-candidate-atlas.html",
@@ -72,6 +92,7 @@ def main() -> int:
             {"id": "counterexamples", "purpose": "Check absence, failure, alternate function, confound/setting and misuse limits for every provisional job.", "items": counterexamples["item_count"], "workbook": "research/communication-job-counterexample-workbook.json", "form": "writeups/communication-job-counterexample-workbook.html", "validator": "scripts/validate_communication_job_counterexample_review.py", "independence": counterexamples["independence_requirement"], "does_not_establish": ["effectiveness", "causality", "universal failure"]},
             {"id": "multimodal", "purpose": "Check transcript alignment, speaker/setting observations, modality limits and safety boundaries.", "items": multimodal_expansion["item_count"], "workbook": "research/multimodal-independent-review-workbook.json", "form": "writeups/multimodal-independent-review-workbook.html", "validator": "scripts/validate_multimodal_independent_review.py", "independence": multimodal_expansion["independence_requirement"], "does_not_establish": ["emotion", "intent", "audience response", "effectiveness"]},
             {"id": "vertical_slice", "purpose": "Review the five linked lesson packets and their evidence boundaries.", "items": slice_one["item_count"], "workbook": "research/vertical-slice-01-independent-review-workbook.json", "form": "writeups/vertical-slice-01-independent-review-workbook.html", "validator": "scripts/validate_vertical_slice_review_record.py", "independence": slice_one["independence_requirement"], "does_not_establish": ["listener outcomes", "causal communication effects"]},
+            {"id": "recovered_pattern_priority", "purpose": "Run a bounded label-blinded first review over representative recovered-pattern cards spanning every 55 presentation candidates.", "items": priority_review["item_count"], "workbook": "research/recovered-pattern-priority-review.json", "form": "writeups/recovered-pattern-priority-review.html", "reviewer_pack": "deliverables/recovered-pattern-priority-reviewer-pack.zip", "validator": "scripts/validate_recovered_pattern_priority_review_export.py", "comparator": "scripts/compare_recovered_pattern_priority_reviews.py", "adjudicator": "scripts/build_recovered_pattern_priority_adjudication.py", "independence": "Reviewer must not have created the candidate cards or labels, must not have seen the internal key or another reviewer's decisions, and must attest to independent review.", "does_not_establish": ["semantic validation", "recurrence", "delivery meaning", "learner transfer", "listener outcomes", "effectiveness"]},
         ],
         "learning_gates": [
             {"id": "listener_stimulus_review", "purpose": "Review proposition equivalence, readability, accessibility, safety and blinding before locking listener pairs; then preserve an explicit adjudicator decision.", "tasks": stimulus["item_count"], "protocol": "research/communication-job-listener-stimuli-draft.json", "form": "writeups/communication-job-listener-stimulus-review-workbook.html", "validator": "scripts/validate_listener_stimulus_review.py", "adjudication_form": "writeups/communication-job-listener-stimulus-adjudication.html", "adjudication_validator": "scripts/validate_listener_stimulus_adjudication.py", "status": stimulus["status"], "does_not_establish": ["listener comprehension", "real-world effectiveness"]},
@@ -95,10 +116,23 @@ def main() -> int:
     delivery_path = Path(delivery_entry["markdown"]).name
     delivery_browser = Path(delivery_entry["browser"]).name
     blind_entry = report["blinded_review_entry"]
-    lines = ["# Validation handoff", "", "Status: **instruments ready; no human records received**.", "", report["claim_boundary"], "", f"Start with the [seven-day learner path]({learner_path}) for practical drills. The [corpus findings catalog]({catalog_path}) currently routes {entry['videos_with_candidate_practice_job']} of 395 videos to one or more provisional practice jobs; {entry['videos_without_candidate_practice_job']} remain explicitly unclassified. This routing is heuristic discovery support, not proof that a pattern works.", "", f"For multimodal review, use the [delivery proxy candidate atlas]({delivery_path}) or its [searchable browser surface]({delivery_browser}): {delivery_entry['candidate_record_count']} transcript-linked clips across {delivery_entry['candidate_video_count']} videos. These are proxy-backed review candidates, not delivery scores or effectiveness evidence. Validate exports with `{delivery_entry['validator']}` and summarize them with `{delivery_entry['summarizer']}`; neither establishes independence.", "", f"For label-blinded transcript review, send the [browser packet]({Path(blind_entry['browser']).name}) or machine packet `{blind_entry['packet']}` without the private key. It contains {blind_entry['function_items']} function, {blind_entry['recurrence_items']} recurrence and {blind_entry['phrase_form_items']} phrase-form items. Validate a returned export with `{blind_entry['export_validator']}`, then use `{blind_entry['adjudication_reducer']}` for adjudication input and `{blind_entry['adjudication_form_builder']}` for the adjudicator browser; validate the final adjudicator export with `{blind_entry['adjudication_export_validator']}`. No step promotes a finding automatically.", "", "Before selecting examples, use the [corpus lesson inventory](corpus-lesson-index.html), [exact phrase-form inventory](corpus-phrase-form-inventory.html), [evidence bank](corpus-evidence-bank.html), [provisional cards](communication-job-cards.html), [delivery inventory](communication-job-delivery-inventory.md) and [shared evidence model](shared-evidence-model.md). These are discovery and routing surfaces; none is proof that a pattern works.", "", "## Independent review gates", ""]
+    browser_smoke = json.loads((ROOT / "research/autonomous-browser-smoke.json").read_text(encoding="utf-8"))
+    browser_count = f"{browser_smoke['passed_check_count']}/{browser_smoke['check_count']}"
+    lines = ["# Validation handoff", "", "Status: **instruments ready; no human records received**.", "", report["claim_boundary"], "", f"Reproduce the repository checkpoint with `python3 scripts/run_autonomous_release_audit.py --full-tests`; the current receipt joins **27/27** aggregate checks and **{browser_count}** browser paths.", "", "Run `python3 scripts/check_promotion_readiness.py` before any promotion decision; it fails closed while human requirements remain open.", "", f"Start with the [seven-day learner path]({learner_path}) for practical drills. The [corpus findings catalog]({catalog_path}) currently routes {entry['videos_with_candidate_practice_job']} of 395 videos to one or more provisional practice jobs; {entry['videos_without_candidate_practice_job']} remain explicitly unclassified. This routing is heuristic discovery support, not proof that a pattern works.", "", f"For multimodal review, use the [delivery proxy candidate atlas]({delivery_path}) or its [searchable browser surface]({delivery_browser}): {delivery_entry['candidate_record_count']} transcript-linked clips across {delivery_entry['candidate_video_count']} videos. These are proxy-backed review candidates, not delivery scores or effectiveness evidence. Validate exports with `{delivery_entry['validator']}` and summarize them with `{delivery_entry['summarizer']}`; neither establishes independence.", "", f"For label-blinded transcript review, send the [browser packet]({Path(blind_entry['browser']).name}) or machine packet `{blind_entry['packet']}` without the private key. It contains {blind_entry['function_items']} function, {blind_entry['recurrence_items']} recurrence and {blind_entry['phrase_form_items']} phrase-form items. Validate a returned export with `{blind_entry['export_validator']}`, then use `{blind_entry['adjudication_reducer']}` for adjudication input and `{blind_entry['adjudication_form_builder']}` for the adjudicator browser; validate the final adjudicator export with `{blind_entry['adjudication_export_validator']}`. No step promotes a finding automatically.", "", f"For the first presentation-pattern review pass, use the [162-item priority browser](recovered-pattern-priority-review.html) or send the portable [reviewer pack](../deliverables/recovered-pattern-priority-reviewer-pack.zip). The blinded batch spans all 55 patterns; validate any return with `scripts/validate_recovered_pattern_priority_review_export.py`. Keep the internal key private; this packet is a review instrument, not pattern validation.", "", "Before selecting examples, use the [corpus lesson inventory](corpus-lesson-index.html), [exact phrase-form inventory](corpus-phrase-form-inventory.html), [evidence bank](corpus-evidence-bank.html), [provisional cards](communication-job-cards.html), [delivery inventory](communication-job-delivery-inventory.md) and [shared evidence model](shared-evidence-model.md). These are discovery and routing surfaces; none is proof that a pattern works.", "", "## Independent review gates", ""]
+    lines[lines.index("## Independent review gates") - 1:lines.index("## Independent review gates")] = [
+        "",
+        "## Fieldbook-to-learning boundary",
+        "",
+        fieldbook_learning_scope["note"],
+        "",
+        f"Verified IDs: {fieldbook_learning_scope['fieldbook_pattern_count']} fieldbook patterns, {fieldbook_learning_scope['learner_card_count']} learner cards, {fieldbook_learning_scope['listener_pattern_count']} listener patterns; exact ID overlap is {fieldbook_learning_scope['learner_exact_id_overlap']} for learner and {fieldbook_learning_scope['listener_exact_id_overlap']} for listener.",
+        "",
+    ]
     for gate in report["review_gates"]:
         lines += [f"### {gate['id']} — {gate['items']} items", "", gate["purpose"], "", f"- Workbook: `{gate['workbook']}`", f"- Browser form: `{gate['form']}`", f"- Validator: `{gate['validator']}`"]
         if gate.get("summarizer"): lines.append(f"- Summarizer: `{gate['summarizer']}`")
+        if gate.get("comparator"): lines.append(f"- Comparator: `{gate['comparator']}`")
+        if gate.get("adjudicator"): lines.append(f"- Adjudicator packet builder: `{gate['adjudicator']}`")
         lines += [f"- Independence: {gate['independence']}", f"- Does not establish: {', '.join(gate['does_not_establish'])}", ""]
     lines += ["## Learning and outcome gates", ""]
     for gate in report["learning_gates"]:

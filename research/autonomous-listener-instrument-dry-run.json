@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0",
+  "dry_run_id": "autonomous-listener-instrument-dry-run",
+  "status": "instrument_export_validation_and_summary_passed",
+  "record_count": 2,
+  "validation_errors": [],
+  "summary": {
+    "schema_version": "1.0",
+    "record_type": "communication_job_listener_outcome_summary",
+    "status": "validated_local_listener_task_summary_non_promotional",
+    "protocol_id": "communication-job-listener-outcome-protocol",
+    "record_count": 2,
+    "participant_codes": [
+      "synthetic-listener-control",
+      "synthetic-listener-pattern"
+    ],
+    "by_job_and_condition": [
+      {
+        "canonical_job": "opening",
+        "condition": "control",
+        "record_count": 1,
+        "accessibility_issue_count": 0,
+        "task_scores": {
+          "main_point_recall": {
+            "count": 1,
+            "observed_count": 1,
+            "missing_count": 0,
+            "mean": 2.0,
+            "distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 1
+            }
+          },
+          "evidence_or_example_identification": {
+            "count": 1,
+            "observed_count": 1,
+            "missing_count": 0,
+            "mean": 2.0,
+            "distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 1
+            }
+          },
+          "limit_or_condition_identification": {
+            "count": 1,
+            "observed_count": 1,
+            "missing_count": 0,
+            "mean": 2.0,
+            "distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 1
+            }
+          },
+          "requested_action_or_role": {
+            "count": 1,
+            "observed_count": 1,
+            "missing_count": 0,
+            "mean": 2.0,
+            "distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 1
+            }
+          },
+          "confusion_and_load": {
+            "count": 1,
+            "observed_count": 1,
+            "missing_count": 0,
+            "mean": 2.0,
+            "distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 1
+            }
+          },
+          "delayed_recall": {
+            "count": 1,
+            "observed_count": 1,
+            "missing_count": 0,
+            "mean": 2.0,
+            "distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 1
+            }
+          }
+        }
+      },
+      {
+        "canonical_job": "opening",
+        "condition": "pattern_informed",
+        "record_count": 1,
+        "accessibility_issue_count": 0,
+        "task_scores": {
+          "main_point_recall": {
+            "count": 1,
+            "observed_count": 1,
+            "missing_count": 0,
+            "mean": 2.0,
+            "distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 1
+            }
+          },
+          "evidence_or_example_identification": {
+            "count": 1,
+            "observed_count": 1,
+            "missing_count": 0,
+            "mean": 2.0,
+            "distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 1
+            }
+          },
+          "limit_or_condition_identification": {
+            "count": 1,
+            "observed_count": 1,
+            "missing_count": 0,
+            "mean": 2.0,
+            "distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 1
+            }
+          },
+          "requested_action_or_role": {
+            "count": 1,
+            "observed_count": 1,
+            "missing_count": 0,
+            "mean": 2.0,
+            "distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 1
+            }
+          },
+          "confusion_and_load": {
+            "count": 1,
+            "observed_count": 1,
+            "missing_count": 0,
+            "mean": 2.0,
+            "distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 1
+            }
+          },
+          "delayed_recall": {
+            "count": 1,
+            "observed_count": 1,
+            "missing_count": 0,
+            "mean": 2.0,
+            "distribution": {
+              "0": 0,
+              "1": 0,
+              "2": 1
+            }
+          }
+        }
+      }
+    ],
+    "promotion_eligible": false,
+    "claim_boundary": "This summarizes blind rubric scores and reported accessibility flags for the authored stimuli and observed listeners. It does not establish that a speech pattern causes trust, persuasion, retention, behavior or general effectiveness.",
+    "next_step": "Inspect missingness, accessibility failures, condition balance, scorer agreement and item-level reversals before any replication or broader claim."
+  },
+  "full_curriculum": {
+    "status": "full_18_job_synthetic_export_validated",
+    "job_count": 18,
+    "record_count": 36,
+    "validation_errors": [],
+    "promotion_eligible": false,
+    "claim_boundary": "Synthetic instrument dry run only; no listener participated and no outcome claim is made."
+  },
+  "claim_boundary": "Synthetic instrument dry run only; no listener participated and no outcome claim is made.",
+  "what_this_proves": "The listener form record shape, consent field, task scoring, validator and summary path work together on synthetic records.",
+  "what_this_does_not_prove": "No listener comprehension, recall, cognitive-load, trust, persuasion, behavior or general effectiveness result."
+}

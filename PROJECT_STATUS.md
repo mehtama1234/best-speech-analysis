@@ -1,6 +1,105 @@
 # Best Speech Analysis — Project Goal and Resumption Status
 
+Run `python3 scripts/run_autonomous_release_audit.py --full-tests` to reproduce
+the repository checkpoint; the latest release receipt is **17/17** steps
+passed, including **27/27** aggregate checks. The current core browser smoke is
+**17/17** paths; promotion validation remains open.
+
 Last corpus checkpoint: 2026-09-18. Provenance/report repair: 2026-09-17.
+
+## Latest continuation update — full-inventory recovery boundary
+
+The fixed inventory is **480 videos**. The canonical transcript corpus contains
+**395 project-generated, single-pass full-context reviews**; these are not
+independently human-validated findings. A recovery pass now adds complete
+media for 62 previously uncovered items and timestamped machine-transcript
+candidates for **71** recovered audio files plus 11 alternate-source transcript
+candidates plus one externally hosted transcript candidate, bringing unique
+text-bearing coverage to **478** inventory videos.
+The remaining **14** inventory videos have no complete direct recovered A/V;
+two have no imported text-bearing layer, although external source leads now
+identify both for alignment review. The [coverage
+audit](writeups/corpus-coverage-audit.md) and [full-inventory pattern
+candidates](writeups/full-inventory-pattern-candidates.md) keep these layers
+separate. The [alternate-source identity queue](writeups/alternate-source-identity-review.md)
+tracks mirror metadata and transcript availability without promoting them.
+Machine-transcript rows are retrieval candidates, not human-validated semantic
+findings; they are not silently promoted into the canonical 395.
+The [recovered-transcript quality audit](writeups/recovered-transcript-quality-audit.md)
+now checks all 83 recovered/external candidate rows for timestamp integrity,
+duplicate segments and publisher boilerplate. It improves triage only; it does
+not establish semantic accuracy, source identity or effectiveness.
+The [recovered pattern candidate cards](writeups/recovered-pattern-candidate-cards.md)
+now expose 2,431 exact excerpt candidates across the recovered layers for all
+55 patterns; every card remains explicitly unvalidated.
+The [lexical-rule audit](writeups/recovered-pattern-rule-audit.md) separately
+marks retrieval-density risk; lexical hit volume is never treated as semantic
+pattern strength. A local-model triage screened all 55 patterns. Structural
+reconciliation plus a bounded five-pattern gap pass yields 55 parseable entries,
+6 field variants and 0 unresolved entries; promotion remains disabled and all
+semantic judgments remain machine-triage candidates for human review.
+The [triage schema audit](writeups/local-llm-recovered-pattern-screen-audit.md)
+also records 6 field variants and no missing pattern entry; it does not
+repair model content or establish semantic validation.
+The [recovered independent-review workbook](writeups/recovered-pattern-independent-review.md)
+turns those cards into 2,431 blinded review items with the internal candidate
+labels withheld from the reviewer; no human records have been received yet.
+The local [review browser](writeups/recovered-pattern-independent-review.html)
+supports one-item-at-a-time decisions, local drafts and export without exposing
+the internal candidate-pattern key.
+The [priority launch packet](writeups/recovered-pattern-priority-review.md)
+reduces the first pass to 162 blinded items spanning all 55 patterns, with its
+own [browser](writeups/recovered-pattern-priority-review.html) and fail-closed
+export validator; it also has zero human records so far.
+The [review-priority map](writeups/presentation-pattern-review-priorities.md)
+orders those patterns by workload risk and canonical coverage only; it is not
+an effectiveness ranking.
+Exports are fail-closed through `scripts/validate_recovered_pattern_review_export.py`:
+all 2,431 item IDs, reviewer independence, decision fields and non-effectiveness
+boundaries must be present.
+
+## Latest continuation update — presentation pattern product
+
+The corpus-mined presentation layer is now exposed as a practical pattern
+catalog rather than only research JSON. The [written pattern guide](writeups/amazing-presentation-patterns.md)
+organizes all 22 core themes, 18 structural subthemes and 15 additional
+subthemes, with source-linked examples and instructions for adapting each move
+to a presentation. The [interactive pattern browser](writeups/amazing-presentation-patterns.html)
+contains all 55 pattern candidates, supports search and category filtering, and
+downloads a local Markdown worksheet for a chosen topic, audience and outcome.
+The generator is `scripts/build_amazing_presentation_patterns.py` and its
+coverage test is `tests/test_amazing_presentation_patterns.py`. These patterns
+remain source-linked drafting candidates, not claims of universal effectiveness.
+
+## Latest continuation update — local revision comparison
+
+The communication-job practice surface now supports an explicit, consent-gated
+browser-local history. A learner can save up to 20 pseudonymous typed practice
+versions and compare the latest two responses side by side. Nothing is
+uploaded, recordings remain separate local downloads, and the comparison is
+labelled as a reflection aid rather than a performance score or learner-
+validation result. The generated page passes the 15-check browser smoke,
+including the save-and-compare path, and the full release audit remains
+17/17.
+
+The shared evidence model now includes a first-class `practice_record` entity
+for that flow. Its consent, accessibility, response, provenance and claim
+boundary fields generate matching TypeScript, Kotlin and Swift contracts, so
+web and native clients can carry local practice attempts without confusing
+them with learner-validation observations.
+
+The dedicated `scripts/validate_practice_record.py` validator now checks that
+same record shape directly. It is included in the autonomous end-to-end audit,
+which currently passes 27/27 checks, and in the reproducibility manifest.
+
+Saved records now also retain the exact transcript evidence IDs and delivery
+sample IDs used by the selected lesson, preserving traceability when a learner
+reviews or compares a local revision.
+
+The client handoff includes a strict TypeScript record builder/diff helper,
+the shared practice-record JSON Schema, and a local JSONL ingestion tool with
+deduplication and hash-based withdrawal. These are integration and privacy
+paths only; they do not create learner or listener outcome evidence.
 
 ## Latest continuation update — all-review learner-card inventory
 
@@ -21,7 +120,7 @@ listener evidence remain separate gates.
 The inventory now adds 8,062 exact phrase handles matched inside retained card
 evidence across 2,289 function cards and 1,812 sequence cards. They are
 retrieval aids for rereading wording, not scripts or effectiveness evidence.
-The [per-video coverage audit](corpus-learning-coverage-audit.md) reconciles
+The [per-video coverage audit](writeups/corpus-learning-coverage-audit.md) reconciles
 all 395 videos to their function/sequence cards, exact evidence, phrase
 handles and delivery-inspection layers; it reports zero coverage gaps while
 preserving the separate validation gates.
@@ -43,7 +142,7 @@ The export format is documented in
 `research/local-practice-log-contract.json` and checked by
 `scripts/validate_local_practice_log.py`; the validator checks structure and
 boundaries only, not learner performance or listener outcomes.
-The [blinded review packet](blinded-review-packet.md) makes the function,
+The [blinded review packet](writeups/blinded-review-packet.md) makes the function,
 recurrence and phrase-form gates executable without exposing internal
 candidate labels to the reviewer; no human judgments have been received yet.
 The [video-learning itinerary](writeups/corpus-video-learning-itinerary.html)
@@ -251,6 +350,9 @@ flag. The [non-promotional summarizer](scripts/summarize_communication_job_learn
 will preserve per-job low scores and safety findings once records exist.
 Exports also require facilitator identity/role and a scoring disagreement or
 uncertainty note; no facilitator or learner records exist yet.
+The browser instrument supports explicit local draft save, restore and clear
+controls; drafts remain on-device and are not learner records until exported
+and validated.
 The integrated [18-job curriculum browser](writeups/communication-job-curriculum.html)
 now joins each job's problem, mechanism hypothesis, repeatable form, exact
 examples, delivery queue/measurements, counterexample slots, practice,
@@ -270,13 +372,16 @@ reporting. The listener record validator rejects unscored task responses, and
 the [non-promotional summarizer](scripts/summarize_communication_job_listener_records.py)
 reports task distributions by job and condition without promoting them to
 general effectiveness evidence.
+The listener form also supports explicit browser-local draft save, restore and
+clear controls; drafts remain non-evidence until stimuli are locked and an
+exported record is validated.
 The [draft stimulus bank](writeups/communication-job-listener-stimuli-draft.md)
 now supplies one newly authored pair per job with word-count audits; pairs are
 not locked and no listener records exist.
 The [automated preflight](writeups/communication-job-stimuli-preflight.md)
 checks all 18 pairs for length, token overlap, target markers and safety flags;
 all 18 still require manual review, and these checks do not prove equivalence.
-The [stimulus review workbook](research/communication-job-listener-stimulus-review-workbook.html)
+The [stimulus review workbook](writeups/communication-job-listener-stimulus-review-workbook.html)
 is now the independent gate for proposition equivalence, readability, target
 isolation, accessibility, safety and blinding; all pairs remain unlocked.
 The agreement comparator preserves reviewer disagreement and requires explicit
@@ -292,12 +397,12 @@ maps the definition-of-done requirements to current evidence and reports nine
 open requirements; it does not count a workbook or protocol as completed human
 evidence.
 The [reproducibility manifest](research/reproducibility-manifest.json) hashes
-34 authoritative artifacts and records 395 full-context reviews, 102,816
+361 authoritative artifacts and records 395 full-context reviews, 102,816
 inspected captions and 395 inventory videos; its validator detects stale output
 without changing the incomplete research status.
 The [external review gate index](writeups/external-review-gate-index.md) is the
-single operational routing page for the ten remaining independent-review,
-learner and listener operations.
+single operational routing page for the ten remaining evidence gates, grouped
+into eight executable independent-review and participant-data operations.
 The [per-job promotion readiness audit](writeups/communication-job-promotion-readiness.md)
 now makes the promotion boundary explicit for every one of the 18 provisional
 jobs: 0/18 are promotion-ready. Each row reports its exact examples, delivery
@@ -7972,9 +8077,10 @@ one repeated behavior as a universal best practice.
   current pose implementation uses the pinned torchvision approach documented
   in `requirements-vision.txt`.
 
-### Human-reviewed evidence layer
+### Legacy reviewed-annotation evidence layer (reviewer provenance unknown)
 
-- `research/annotation-ledger.jsonl` contains 87 reviewed annotations.
+- `research/annotation-ledger.jsonl` contains 87 legacy reviewed annotations;
+  these are not counted as independent human validation.
 - The latest audit identifies 62 supported annotation rows; some rows carry
   more than one candidate label.
 - Current reviewed support rates are:

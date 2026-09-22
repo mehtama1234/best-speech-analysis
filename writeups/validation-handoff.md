@@ -4,13 +4,25 @@ Status: **instruments ready; no human records received**.
 
 These are operational instruments and instructions, not validation results. No reviewer, learner or listener judgment is included.
 
+Reproduce the repository checkpoint with `python3 scripts/run_autonomous_release_audit.py --full-tests`. The latest release audit passed **17/17** steps and **27/27** aggregate checks; the current core browser smoke passed **17/17** paths.
+
+Run `python3 scripts/check_promotion_readiness.py` before any promotion decision; it fails closed while human requirements remain open.
+
 Start with the [seven-day learner path](learner-7-day-path.md) for practical drills. The [corpus findings catalog](corpus-findings-catalog.md) currently routes 207 of 395 videos to one or more provisional practice jobs; 188 remain explicitly unclassified. This routing is heuristic discovery support, not proof that a pattern works.
 
 For multimodal review, use the [delivery proxy candidate atlas](delivery-proxy-candidate-atlas.md) or its [searchable browser surface](delivery-proxy-candidate-atlas.html): 1505 transcript-linked clips across 188 videos. These are proxy-backed review candidates, not delivery scores or effectiveness evidence. Validate exports with `scripts/validate_delivery_proxy_local_reviews.py` and summarize them with `scripts/summarize_delivery_proxy_local_reviews.py`; neither establishes independence.
 
 For label-blinded transcript review, send the [browser packet](blinded-review-packet.html) or machine packet `research/blinded-review-packet.json` without the private key. It contains 187 function, 192 recurrence and 50 phrase-form items. Validate a returned export with `scripts/validate_blinded_review_export.py`, then use `scripts/reduce_blinded_review_export.py` for adjudication input and `scripts/build_blinded_adjudication_form.py` for the adjudicator browser; validate the final adjudicator export with `scripts/validate_blinded_adjudication_export.py`. No step promotes a finding automatically.
 
+For the first presentation-pattern review pass, use the [162-item priority browser](recovered-pattern-priority-review.html) or send the portable [reviewer pack](../deliverables/recovered-pattern-priority-reviewer-pack.zip). The blinded batch spans all 55 patterns; validate any return with `scripts/validate_recovered_pattern_priority_review_export.py`. Keep the internal key private; this packet is a review instrument, not pattern validation.
+
 Before selecting examples, use the [corpus lesson inventory](corpus-lesson-index.html), [exact phrase-form inventory](corpus-phrase-form-inventory.html), [evidence bank](corpus-evidence-bank.html), [provisional cards](communication-job-cards.html), [delivery inventory](communication-job-delivery-inventory.md) and [shared evidence model](shared-evidence-model.md). These are discovery and routing surfaces; none is proof that a pattern works.
+
+## Fieldbook-to-learning boundary
+
+The current learner and listener protocols cover provisional communication-job cards, not the 55 fieldbook lessons. No exact pattern IDs overlap. Do not attribute their results to fieldbook patterns without a separately recorded, justified mapping; otherwise create pattern-specific tasks and stimuli for surviving lessons.
+
+Verified IDs: 55 fieldbook patterns, 18 learner cards, 18 listener patterns; exact ID overlap is 0 for learner and 0 for listener.
 
 ## Independent review gates
 
@@ -97,6 +109,18 @@ Review the five linked lesson packets and their evidence boundaries.
 - Validator: `scripts/validate_vertical_slice_review_record.py`
 - Independence: Reviewer must not be the packet creator or original interpreter.
 - Does not establish: listener outcomes, causal communication effects
+
+### recovered_pattern_priority — 162 items
+
+Run a bounded label-blinded first review over representative recovered-pattern cards spanning every 55 presentation candidates.
+
+- Workbook: `research/recovered-pattern-priority-review.json`
+- Browser form: `writeups/recovered-pattern-priority-review.html`
+- Validator: `scripts/validate_recovered_pattern_priority_review_export.py`
+- Comparator: `scripts/compare_recovered_pattern_priority_reviews.py`
+- Adjudicator packet builder: `scripts/build_recovered_pattern_priority_adjudication.py`
+- Independence: Reviewer must not have created the candidate cards or labels, must not have seen the internal key or another reviewer's decisions, and must attest to independent review.
+- Does not establish: semantic validation, recurrence, delivery meaning, learner transfer, listener outcomes, effectiveness
 
 ## Learning and outcome gates
 

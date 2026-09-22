@@ -95,6 +95,60 @@ not completed their records, the project remains incomplete.
 
 ## Current checkpoint
 
+## Latest implementation update — exhaustive pattern-to-presentation path
+
+The fixed transcript corpus has now been mined into an additional source-linked
+pattern layer: 22 broad candidate themes, 18 structural relation architectures,
+15 unmatched-label clusters, and 33 expanded candidate cards. The
+[exhaustive pattern inventory](exhaustive-pattern-inventory.md) preserves the
+395-review scope, 50,380 episode records, 33,330 relation records, exact
+evidence IDs and linked writeups. A local Qwen model screened the 33 candidates
+using retained caption excerpts; its shortlist prioritizes scope repair and
+analogy transfer while forcing promotion to remain false.
+
+The [compound pattern bundle report](compound-pattern-bundles.md) retains 136
+recurring pairings among those candidate leads and foregrounds the top 24 for
+practice. Each pairing appears in at least three distinct full-context reviews
+and retains source evidence for practice design; co-occurrence is kept separate
+from an ordered or effective recipe claim. The [compound-pattern browser](compound-pattern-bundles.html)
+turns each pairing into a local two-move draft with retained source excerpts,
+source-linked JSON export and Markdown rehearsal output. The exported compound
+record has a validator for bundle lineage, evidence IDs, reflections, timestamp
+and the non-effectiveness boundary.
+The triad layer retains 160 recurring three-move candidates under the same
+boundary, with 24 foregrounded for practice. The [triad practice browser](compound-pattern-triads.html)
+creates a three-move scaffold, stores listener/uncertainty/non-fit/revision
+reflections, and exports records checked by
+`scripts/validate_compound_triad_practice_record.py`.
+
+The [expanded practice browser](expanded-pattern-candidate-cards.html) turns
+those cards into a local drafting workflow. It supports six sequence presets,
+outline generation, listener restatement and non-fit reflection, local
+save/reload, Markdown export, and a separate expanded-pattern JSON practice
+record. The record validator checks selected pattern IDs, source evidence links,
+timestamps and the non-effectiveness boundary. These records are local practice
+artifacts, not learner-validation or listener-outcome evidence.
+
+The [presentation sequence library](presentation-sequence-library.md) combines
+the candidate cards into complete architectures for explanation, proposals,
+incident reports, room leadership, hard questions and story-led talks. Each
+architecture now also carries sentence-level drafting stems, listener checks
+and boundary checks; the browser inserts those scaffolds into a draft when a
+sequence preset is selected and creates a separate response field for every
+move. Those per-step responses persist through local save/reload and enter the
+practice JSON alongside the outline. The local draft judge can screen a
+completed worksheet for visible sequence moves, boundary checks and
+listener-checkability while retaining a non-effectiveness boundary. The
+authoritative release receipt currently reports 14/14 core release steps,
+17/17 full-test release steps, 27/27 aggregate checks and 15/15 browser paths.
+The current reproducibility manifest contains 361 artifacts. The latest full
+test release receipt and focused checks pass; the audit records the exact test
+and browser receipts. A manifest-freshness coupling remains an explicit
+maintenance concern because tests regenerate authoritative artifacts; rebuilding
+the manifest and rerunning the targeted check is part of the release path. The
+independent identity, function, recurrence, delivery, counterexample, learner
+and listener gates remain open as required by the definition of done.
+
 The fixed transcript layer is complete: 395 reviews and 102,816 inspected
 captions. The repository has 18 provisional communication-job cards, 4,016
 function cards, 2,800 structural cards, 50 exact phrase-form hypotheses and

@@ -10,6 +10,20 @@
     "videos_without_candidate_practice_job": 188,
     "note": "Candidate job routing is heuristic discovery support, not validated evidence that a pattern works."
   },
+  "fieldbook_learning_scope": {
+    "fieldbook_pattern_count": 55,
+    "learner_card_count": 18,
+    "listener_pattern_count": 18,
+    "learner_exact_id_overlap": 0,
+    "listener_exact_id_overlap": 0,
+    "status": "separate_unmapped_id_spaces",
+    "evidence": [
+      "research/recovered-pattern-candidate-cards.json",
+      "research/communication-job-learner-check.json",
+      "research/communication-job-listener-outcome-protocol.json"
+    ],
+    "note": "The current learner and listener protocols cover provisional communication-job cards, not the 55 fieldbook lessons. No exact pattern IDs overlap. Do not attribute their results to fieldbook patterns without a separately recorded, justified mapping; otherwise create pattern-specific tasks and stimuli for surviving lessons."
+  },
   "delivery_entry": {
     "markdown": "writeups/delivery-proxy-candidate-atlas.md",
     "browser": "writeups/delivery-proxy-candidate-atlas.html",
@@ -149,6 +163,26 @@
       "does_not_establish": [
         "listener outcomes",
         "causal communication effects"
+      ]
+    },
+    {
+      "id": "recovered_pattern_priority",
+      "purpose": "Run a bounded label-blinded first review over representative recovered-pattern cards spanning every 55 presentation candidates.",
+      "items": 162,
+      "workbook": "research/recovered-pattern-priority-review.json",
+      "form": "writeups/recovered-pattern-priority-review.html",
+      "reviewer_pack": "deliverables/recovered-pattern-priority-reviewer-pack.zip",
+      "validator": "scripts/validate_recovered_pattern_priority_review_export.py",
+      "comparator": "scripts/compare_recovered_pattern_priority_reviews.py",
+      "adjudicator": "scripts/build_recovered_pattern_priority_adjudication.py",
+      "independence": "Reviewer must not have created the candidate cards or labels, must not have seen the internal key or another reviewer's decisions, and must attest to independent review.",
+      "does_not_establish": [
+        "semantic validation",
+        "recurrence",
+        "delivery meaning",
+        "learner transfer",
+        "listener outcomes",
+        "effectiveness"
       ]
     }
   ],

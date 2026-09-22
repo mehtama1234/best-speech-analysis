@@ -86,9 +86,10 @@
       "status": "queued_not_completed",
       "evidence": [
         "research/communication-job-counterexample-workbook.json",
+        "research/communication-job-counterexample-candidate-queue.json",
         "writeups/communication-job-counterexample-workbook.html"
       ],
-      "basis": "18 jobs and 90 blank slots are queued.",
+      "basis": "18 jobs and 90 blank decision slots are queued; 90 machine-routed candidates (54 source-linked) are available as review context, with zero confirmed.",
       "remaining": "Populate, independently review and adjudicate the slots; do not force candidates."
     },
     {
@@ -99,9 +100,11 @@
         "research/communication-job-curriculum-index.json",
         "research/communication-job-mobile-lessons.json",
         "writeups/repeatable-communication-patterns.md",
+        "research/autonomous-vertical-slice-01.json",
+        "writeups/autonomous-vertical-slice-01.md",
         "scripts/validate_communication_job_curriculum.py"
       ],
-      "basis": "18 lessons and mobile payloads pass join validation; the cross-job guide adds adaptation and delivery-inspection prompts.",
+      "basis": "18 lessons and mobile payloads pass join validation; the five-packet autonomous slice audit reconciles examples, controls, media proxies, lesson links and safety fields; the cross-job guide adds adaptation and delivery-inspection prompts.",
       "remaining": "Promotion depends on independent evidence and learner observations."
     },
     {

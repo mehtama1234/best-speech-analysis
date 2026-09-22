@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "atlas_id": "presentation-pattern-atlas",
+  "status": "corpus_mined_candidate_system_indexed_for_practice",
+  "coverage": {
+    "unique_inventory_videos": 480,
+    "nonempty_transcript_videos": 395,
+    "full_context_reviews": 395,
+    "inspected_captions": 102816,
+    "episode_records": 50380,
+    "relation_records": 33330
+  },
+  "discovery_layers": {
+    "broad_themes": 22,
+    "relation_architectures": 18,
+    "unmatched_clusters": 15,
+    "expanded_cards": 33,
+    "all_compound_bundles": 136,
+    "practice_compound_bundles": 24,
+    "all_compound_triads": 160,
+    "practice_compound_triads": 24,
+    "presentation_sequences": 6,
+    "llm_shortlist_cards": 2
+  },
+  "practice_surfaces": [
+    {
+      "id": "expanded_pattern_browser",
+      "path": "writeups/expanded-pattern-candidate-cards.html",
+      "smoke_status": "expanded_pattern_browser_smoke_passed"
+    },
+    {
+      "id": "compound_pattern_browser",
+      "path": "writeups/compound-pattern-bundles.html",
+      "smoke_status": "compound_pattern_browser_smoke_passed"
+    },
+    {
+      "id": "compound_triad_browser",
+      "path": "writeups/compound-pattern-triads.html",
+      "smoke_status": "compound_triad_browser_smoke_passed"
+    },
+    {
+      "id": "sequence_library",
+      "path": "writeups/presentation-sequence-library.md",
+      "smoke_status": "source_linked_library_generated"
+    },
+    {
+      "id": "cli_speech_worksheet",
+      "path": "scripts/build_speech_draft.py",
+      "smoke_status": "sequence_stems_and_boundaries_tested"
+    },
+    {
+      "id": "local_llm_draft_judge",
+      "path": "writeups/local-llm-draft-judge.md",
+      "smoke_status": "local_model_draft_screen_recorded_not_effectiveness_evidence"
+    }
+  ],
+  "sequence_ids": [
+    "explain_an_unfamiliar_idea",
+    "make_a_proposal",
+    "report_an_incident",
+    "lead_a_room",
+    "answer_a_hard_question",
+    "tell_a_story_with_a_point"
+  ],
+  "claim_boundary": "This atlas indexes transcript-derived candidate patterns and local practice surfaces. It does not establish speaker intent, universal effectiveness, learner improvement, listener outcomes, causality, or independent human validation."
+}

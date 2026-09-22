@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "report_id": "local-llm-expanded-pattern-judge",
+  "status": "local_model_candidate_screen_recorded_review_open",
+  "model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+  "model_snapshot": "/home/mehta/.cache/huggingface/hub/models--Qwen--Qwen2.5-0.5B-Instruct/snapshots/7ae557604adf67be50417f59c2c2f167def9a775",
+  "candidate_card_count": 33,
+  "judgment_scope": "33_expanded_candidate_pattern_aggregate_screen",
+  "parsed_judgment_count": 1,
+  "raw_model_output": "```json\n{\n  \"overall\": \"Clear\",\n  \"strongest_candidates\": [\n    {\n      \"card_id\": \"expanded-relation-scope_repair\",\n      \"source_kind\": \"structural_relation\",\n      \"source_record_count\": 4,\n      \"source_video_count\": 4,\n      \"candidate_form\": \"identify where the claim was too broad → narrow it → preserve the valid core\"\n    },\n    {\n      \"card_id\": \"expanded-relation-analogy_transfer\",\n      \"source_kind\": \"structural_relation\",\n      \"source_record_count\": 3,\n      \"source_video_count\": 3,\n      \"candidate_form\": \"name the source image → map the relevant relation → state where the analogy stops\"\n    }\n  ],\n  \"concerns\": [],\n  \"next_action\": \"\"\n}\n```",
+  "judgment": {
+    "overall": "Clear",
+    "strongest_candidates": [
+      {
+        "card_id": "expanded-relation-scope_repair",
+        "source_kind": "structural_relation",
+        "source_record_count": 4,
+        "source_video_count": 4,
+        "candidate_form": "identify where the claim was too broad → narrow it → preserve the valid core"
+      },
+      {
+        "card_id": "expanded-relation-analogy_transfer",
+        "source_kind": "structural_relation",
+        "source_record_count": 3,
+        "source_video_count": 3,
+        "candidate_form": "name the source image → map the relevant relation → state where the analogy stops"
+      }
+    ],
+    "concerns": [],
+    "next_action": ""
+  },
+  "promotion_eligible": false,
+  "claim_boundary": "This is a local language-model screen of corpus-mined candidate patterns. It is not contextual semantic validation, independent review, learner evidence, listener outcome evidence, causal evidence or proof of effectiveness. Promotion is forced false.",
+  "input_scope": "candidate_metadata_plus_two_retained_caption_excerpts_per_card_when_available"
+}

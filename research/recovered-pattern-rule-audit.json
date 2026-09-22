@@ -1,0 +1,2081 @@
+{
+  "schema_version": "1.0",
+  "status": "recovered_pattern_lexical_rule_audit",
+  "pattern_count": 55,
+  "source_segment_totals": {
+    "direct_audio": 10858,
+    "alternate_source": 1064,
+    "external_transcript": 82
+  },
+  "broad_density_pattern_count": 1,
+  "patterns": [
+    {
+      "pattern_id": "audience_invitation_and_next_turn",
+      "category": "core_theme",
+      "matching_rule": "audience|invite|join|question|ask|particip|call|hands.off|release|respond",
+      "candidate_form": "Make the next turn specific, answerable, and safe to decline.",
+      "total_segment_hit_count": 379,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 64,
+          "segment_hit_count": 359,
+          "segment_hit_rate": 0.033063,
+          "video_coverage_rate": 0.901408
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 5,
+          "segment_hit_count": 19,
+          "segment_hit_rate": 0.017857,
+          "video_coverage_rate": 0.454545
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 1,
+          "segment_hit_rate": 0.012195,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "future_hope_and_action",
+      "category": "core_theme",
+      "matching_rule": "future|hope|possib|tomorrow|next|mission|action|change|build|create",
+      "candidate_form": "Turn aspiration into a bounded next action and name its limit.",
+      "total_segment_hit_count": 545,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 62,
+          "segment_hit_count": 508,
+          "segment_hit_rate": 0.046786,
+          "video_coverage_rate": 0.873239
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 8,
+          "segment_hit_count": 31,
+          "segment_hit_rate": 0.029135,
+          "video_coverage_rate": 0.727273
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 6,
+          "segment_hit_rate": 0.073171,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "story_memory_and_scene",
+      "category": "core_theme",
+      "matching_rule": "story|memory|remember|childhood|personal|experience|scene|encounter|recollection|origin",
+      "candidate_form": "Use a bounded scene, then say what it illustrates and cannot establish.",
+      "total_segment_hit_count": 292,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 61,
+          "segment_hit_count": 281,
+          "segment_hit_rate": 0.02588,
+          "video_coverage_rate": 0.859155
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 4,
+          "segment_hit_count": 10,
+          "segment_hit_rate": 0.009398,
+          "video_coverage_rate": 0.363636
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 1,
+          "segment_hit_rate": 0.012195,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "analogy_metaphor_and_callback",
+      "category": "core_theme",
+      "matching_rule": "analogy|metaphor|image|symbol|callback|return|motif|repetition|echo",
+      "candidate_form": "Introduce an anchor, develop the reasoning, and return with changed application.",
+      "total_segment_hit_count": 32,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 17,
+          "segment_hit_count": 31,
+          "segment_hit_rate": 0.002855,
+          "video_coverage_rate": 0.239437
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 1,
+          "segment_hit_count": 1,
+          "segment_hit_rate": 0.00094,
+          "video_coverage_rate": 0.090909
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "contrast_and_reversal",
+      "category": "core_theme",
+      "matching_rule": "contrast|reversal|reverse|rather than|instead|however|but|opposition|turnaround",
+      "candidate_form": "Make the earlier frame and the changed frame visible without a false binary.",
+      "total_segment_hit_count": 791,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 69,
+          "segment_hit_count": 735,
+          "segment_hit_rate": 0.067692,
+          "video_coverage_rate": 0.971831
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 7,
+          "segment_hit_count": 45,
+          "segment_hit_rate": 0.042293,
+          "video_coverage_rate": 0.636364
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 11,
+          "segment_hit_rate": 0.134146,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "broad_lexical_retrieval_density",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "scale_shift",
+      "category": "core_theme",
+      "matching_rule": "scale|collective|individual|community|global|universal|wider|narrow|audience",
+      "candidate_form": "Move between personal, institutional, and collective scale with an explicit bridge.",
+      "total_segment_hit_count": 190,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 45,
+          "segment_hit_count": 182,
+          "segment_hit_rate": 0.016762,
+          "video_coverage_rate": 0.633803
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 3,
+          "segment_hit_count": 7,
+          "segment_hit_rate": 0.006579,
+          "video_coverage_rate": 0.272727
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 1,
+          "segment_hit_rate": 0.012195,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "qualification_and_boundary",
+      "category": "core_theme",
+      "matching_rule": "qualif|limit|bound|scope|condition|caveat|uncertain|calendar|exception|not literal",
+      "candidate_form": "State the point, then its condition, scope, or evidence limit.",
+      "total_segment_hit_count": 48,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 20,
+          "segment_hit_count": 46,
+          "segment_hit_rate": 0.004237,
+          "video_coverage_rate": 0.28169
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 2,
+          "segment_hit_count": 2,
+          "segment_hit_rate": 0.00188,
+          "video_coverage_rate": 0.181818
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "credit_and_collective_agency",
+      "category": "core_theme",
+      "matching_rule": "credit|acknow|contribution|partner|team|collective|support|family|community|distributed",
+      "candidate_form": "Name contributors, connect credit to the result, and assign agency precisely.",
+      "total_segment_hit_count": 270,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 58,
+          "segment_hit_count": 252,
+          "segment_hit_rate": 0.023209,
+          "video_coverage_rate": 0.816901
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 4,
+          "segment_hit_count": 18,
+          "segment_hit_rate": 0.016917,
+          "video_coverage_rate": 0.363636
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "choice_and_responsibility",
+      "category": "core_theme",
+      "matching_rule": "choice|decision|responsib|account|agency|option|voluntary|duty|obligation",
+      "candidate_form": "Show who can choose, what support is required, and what remains their responsibility.",
+      "total_segment_hit_count": 130,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 38,
+          "segment_hit_count": 128,
+          "segment_hit_rate": 0.011789,
+          "video_coverage_rate": 0.535211
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 2,
+          "segment_hit_count": 2,
+          "segment_hit_rate": 0.00188,
+          "video_coverage_rate": 0.181818
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "metrics_and_revaluation",
+      "category": "core_theme",
+      "matching_rule": "metric|measure|number|count|success|revalu|worth|checklist|benchmark|percent",
+      "candidate_form": "Show what the metric captures, what it misses, and why the measure matters.",
+      "total_segment_hit_count": 288,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 52,
+          "segment_hit_count": 279,
+          "segment_hit_rate": 0.025695,
+          "video_coverage_rate": 0.732394
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 2,
+          "segment_hit_count": 7,
+          "segment_hit_rate": 0.006579,
+          "video_coverage_rate": 0.181818
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 2,
+          "segment_hit_rate": 0.02439,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "question_and_reframe",
+      "category": "core_theme",
+      "matching_rule": "question|ask|prompt|reframe|redefine|more useful|what matters",
+      "candidate_form": "Name the question, answer its useful version, and show what changed.",
+      "total_segment_hit_count": 145,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 51,
+          "segment_hit_count": 137,
+          "segment_hit_rate": 0.012617,
+          "video_coverage_rate": 0.71831
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 4,
+          "segment_hit_count": 8,
+          "segment_hit_rate": 0.007519,
+          "video_coverage_rate": 0.363636
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "objection_and_response",
+      "category": "core_theme",
+      "matching_rule": "objection|challenge|dismiss|skeptic|criticism|response|answer|defen[cs]|counter",
+      "candidate_form": "State the objection fairly, answer it, and preserve the remaining uncertainty.",
+      "total_segment_hit_count": 104,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 40,
+          "segment_hit_count": 100,
+          "segment_hit_rate": 0.00921,
+          "video_coverage_rate": 0.56338
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 3,
+          "segment_hit_count": 4,
+          "segment_hit_rate": 0.003759,
+          "video_coverage_rate": 0.272727
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "orientation_and_roadmap",
+      "category": "core_theme",
+      "matching_rule": "opening|introduction|welcome|preview|roadmap|route|agenda|structure|transition|beginning",
+      "candidate_form": "Orient the listener before detail: situation → stake → route.",
+      "total_segment_hit_count": 74,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 34,
+          "segment_hit_count": 69,
+          "segment_hit_rate": 0.006355,
+          "video_coverage_rate": 0.478873
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 3,
+          "segment_hit_count": 5,
+          "segment_hit_rate": 0.004699,
+          "video_coverage_rate": 0.272727
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "identity_status_and_belonging",
+      "category": "core_theme",
+      "matching_rule": "identity|status|belong|outsider|insider|class|gender|race|citizen|role|name",
+      "candidate_form": "Make identity or status relevant to the claim without using it as proof.",
+      "total_segment_hit_count": 245,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 50,
+          "segment_hit_count": 232,
+          "segment_hit_rate": 0.021367,
+          "video_coverage_rate": 0.704225
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 2,
+          "segment_hit_count": 11,
+          "segment_hit_rate": 0.010338,
+          "video_coverage_rate": 0.181818
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 2,
+          "segment_hit_rate": 0.02439,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "value_and_moral_frame",
+      "category": "core_theme",
+      "matching_rule": "moral|value|ethic|honor|justice|fair|dignity|meaning|principle|belief",
+      "candidate_form": "Separate the value interpretation from the factual claim it accompanies.",
+      "total_segment_hit_count": 205,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 46,
+          "segment_hit_count": 195,
+          "segment_hit_rate": 0.017959,
+          "video_coverage_rate": 0.647887
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 4,
+          "segment_hit_count": 5,
+          "segment_hit_rate": 0.004699,
+          "video_coverage_rate": 0.363636
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 5,
+          "segment_hit_rate": 0.060976,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "definition_and_explanation",
+      "category": "core_theme",
+      "matching_rule": "definition|define|explain|meaning|term|category|distinction|clarif|demyst",
+      "candidate_form": "Give a plain definition, example, and boundary.",
+      "total_segment_hit_count": 93,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 36,
+          "segment_hit_count": 88,
+          "segment_hit_rate": 0.008105,
+          "video_coverage_rate": 0.507042
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 3,
+          "segment_hit_count": 3,
+          "segment_hit_rate": 0.00282,
+          "video_coverage_rate": 0.272727
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 2,
+          "segment_hit_rate": 0.02439,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "risk_safety_and_limit",
+      "category": "core_theme",
+      "matching_rule": "risk|safety|danger|harm|failure|blocked|threat|burden|cost|loss",
+      "candidate_form": "Name the risk or failure mode before asking for trust or action.",
+      "total_segment_hit_count": 100,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 38,
+          "segment_hit_count": 93,
+          "segment_hit_rate": 0.008565,
+          "video_coverage_rate": 0.535211
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 3,
+          "segment_hit_count": 3,
+          "segment_hit_rate": 0.00282,
+          "video_coverage_rate": 0.272727
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 4,
+          "segment_hit_rate": 0.04878,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "cause_and_mechanism",
+      "category": "core_theme",
+      "matching_rule": "caus|mechan|because|reason|why|process|pathway|how",
+      "candidate_form": "Connect claim to mechanism, and distinguish explanation from proof.",
+      "total_segment_hit_count": 1081,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 68,
+          "segment_hit_count": 982,
+          "segment_hit_rate": 0.09044,
+          "video_coverage_rate": 0.957746
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 10,
+          "segment_hit_count": 92,
+          "segment_hit_rate": 0.086466,
+          "video_coverage_rate": 0.909091
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 7,
+          "segment_hit_rate": 0.085366,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "institution_system_and_policy",
+      "category": "core_theme",
+      "matching_rule": "institution|system|policy|government|organization|architecture|infrastructure|law|program",
+      "candidate_form": "Move from individual experience to the system that shapes the option set.",
+      "total_segment_hit_count": 183,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 36,
+          "segment_hit_count": 178,
+          "segment_hit_rate": 0.016393,
+          "video_coverage_rate": 0.507042
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 3,
+          "segment_hit_count": 5,
+          "segment_hit_rate": 0.004699,
+          "video_coverage_rate": 0.272727
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "repair_and_self_correction",
+      "category": "core_theme",
+      "matching_rule": "repair|correct|mistake|error|wrong|incomplete|clarif|apolog|retract",
+      "candidate_form": "Mark the error, replace it plainly, and continue.",
+      "total_segment_hit_count": 82,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 28,
+          "segment_hit_count": 78,
+          "segment_hit_rate": 0.007184,
+          "video_coverage_rate": 0.394366
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 4,
+          "segment_hit_count": 4,
+          "segment_hit_rate": 0.003759,
+          "video_coverage_rate": 0.363636
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "grief_loss_and_continuation",
+      "category": "core_theme",
+      "matching_rule": "grief|sorrow|loss|memorial|mourning|death|continu|surviv|farewell",
+      "candidate_form": "Acknowledge loss, then name what continues without pretending loss is resolved.",
+      "total_segment_hit_count": 86,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 35,
+          "segment_hit_count": 78,
+          "segment_hit_rate": 0.007184,
+          "video_coverage_rate": 0.492958
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 4,
+          "segment_hit_count": 7,
+          "segment_hit_rate": 0.006579,
+          "video_coverage_rate": 0.363636
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 1,
+          "segment_hit_rate": 0.012195,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "humor_rapport_and_self_undercut",
+      "category": "core_theme",
+      "matching_rule": "humor|joke|laugh|comic|rapport|self.direct|self.undercut|satire",
+      "candidate_form": "Use lightness to open room, then return clearly to the substantive point.",
+      "total_segment_hit_count": 42,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 20,
+          "segment_hit_count": 32,
+          "segment_hit_rate": 0.002947,
+          "video_coverage_rate": 0.28169
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 3,
+          "segment_hit_count": 9,
+          "segment_hit_rate": 0.008459,
+          "video_coverage_rate": 0.272727
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 1,
+          "segment_hit_rate": 0.012195,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "premise_correction",
+      "category": "structural_subtheme",
+      "matching_rule": "premise|assum|starting point|frame|question|actually|rather|more useful",
+      "candidate_form": "acknowledge the starting premise → identify the missing distinction → answer the corrected question",
+      "total_segment_hit_count": 206,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 49,
+          "segment_hit_count": 190,
+          "segment_hit_rate": 0.017499,
+          "video_coverage_rate": 0.690141
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 5,
+          "segment_hit_count": 16,
+          "segment_hit_rate": 0.015038,
+          "video_coverage_rate": 0.454545
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "scope_repair",
+      "category": "structural_subtheme",
+      "matching_rule": "too broad|overgeneral|not always|not necessarily|in this case|specifically|in particular|however|limit|scope",
+      "candidate_form": "identify where the claim was too broad → narrow it → preserve the valid core",
+      "total_segment_hit_count": 44,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 19,
+          "segment_hit_count": 41,
+          "segment_hit_rate": 0.003776,
+          "video_coverage_rate": 0.267606
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 1,
+          "segment_hit_count": 3,
+          "segment_hit_rate": 0.00282,
+          "video_coverage_rate": 0.090909
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "analogy_transfer",
+      "category": "structural_subtheme",
+      "matching_rule": "analogy|metaphor|as if|similar|imagine|think of|compare",
+      "candidate_form": "name the source image → map the relevant relation → state where the analogy stops",
+      "total_segment_hit_count": 89,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 34,
+          "segment_hit_count": 80,
+          "segment_hit_rate": 0.007368,
+          "video_coverage_rate": 0.478873
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 2,
+          "segment_hit_count": 8,
+          "segment_hit_rate": 0.007519,
+          "video_coverage_rate": 0.181818
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 1,
+          "segment_hit_rate": 0.012195,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "evidence_gap",
+      "category": "structural_subtheme",
+      "matching_rule": "evidence|data|proof|test|research|uncertain|don't know|do not know",
+      "candidate_form": "state the claim → name the missing evidence → specify the next test",
+      "total_segment_hit_count": 210,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 60,
+          "segment_hit_count": 197,
+          "segment_hit_rate": 0.018143,
+          "video_coverage_rate": 0.84507
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 6,
+          "segment_hit_count": 13,
+          "segment_hit_rate": 0.012218,
+          "video_coverage_rate": 0.545455
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "expectation_reversal",
+      "category": "structural_subtheme",
+      "matching_rule": "expect|thought|surpris|instead|but then|turns out|actually",
+      "candidate_form": "name what the audience expects → show the observed turn → explain the consequence",
+      "total_segment_hit_count": 275,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 50,
+          "segment_hit_count": 248,
+          "segment_hit_rate": 0.02284,
+          "video_coverage_rate": 0.704225
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 4,
+          "segment_hit_count": 24,
+          "segment_hit_rate": 0.022556,
+          "video_coverage_rate": 0.363636
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 3,
+          "segment_hit_rate": 0.036585,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "register_shift",
+      "category": "structural_subtheme",
+      "matching_rule": "technical|simple|in other words|let me|for those|audience|language",
+      "candidate_form": "signal the shift in audience or tone → keep the underlying point stable → return to the shared frame",
+      "total_segment_hit_count": 144,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 45,
+          "segment_hit_count": 133,
+          "segment_hit_rate": 0.012249,
+          "video_coverage_rate": 0.633803
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 5,
+          "segment_hit_count": 10,
+          "segment_hit_rate": 0.009398,
+          "video_coverage_rate": 0.454545
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 1,
+          "segment_hit_rate": 0.012195,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "audience_shift",
+      "category": "structural_subtheme",
+      "matching_rule": "audience|listeners?|students?|leaders?|community|public|people|address|explain|understand|level|role",
+      "candidate_form": "locate who is being addressed → change the level of explanation → make the new role explicit",
+      "total_segment_hit_count": 832,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 65,
+          "segment_hit_count": 782,
+          "segment_hit_rate": 0.072021,
+          "video_coverage_rate": 0.915493
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 5,
+          "segment_hit_count": 43,
+          "segment_hit_rate": 0.040414,
+          "video_coverage_rate": 0.454545
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 7,
+          "segment_hit_rate": 0.085366,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "credit_redirection",
+      "category": "structural_subtheme",
+      "matching_rule": "team|thank|credit|because of|together|helped|contribut|partner|family",
+      "candidate_form": "receive or name praise → widen the causal chain → identify the people and conditions that made it possible",
+      "total_segment_hit_count": 637,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 62,
+          "segment_hit_count": 587,
+          "segment_hit_rate": 0.054062,
+          "video_coverage_rate": 0.873239
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 8,
+          "segment_hit_count": 42,
+          "segment_hit_rate": 0.039474,
+          "video_coverage_rate": 0.727273
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 8,
+          "segment_hit_rate": 0.097561,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "hands_off",
+      "category": "structural_subtheme",
+      "matching_rule": "not my|cannot control|can't control|decision|responsib|up to|support|role",
+      "candidate_form": "state what you cannot control → identify the decision owner → offer the information or support you can provide",
+      "total_segment_hit_count": 245,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 58,
+          "segment_hit_count": 234,
+          "segment_hit_rate": 0.021551,
+          "video_coverage_rate": 0.816901
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 4,
+          "segment_hit_count": 11,
+          "segment_hit_rate": 0.010338,
+          "video_coverage_rate": 0.363636
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "reciprocal_learning",
+      "category": "structural_subtheme",
+      "matching_rule": "learn|teach|correct|feedback|listen|what do you think|together|update",
+      "candidate_form": "share an observation → invite the other person’s correction → update the shared account",
+      "total_segment_hit_count": 292,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 53,
+          "segment_hit_count": 265,
+          "segment_hit_rate": 0.024406,
+          "video_coverage_rate": 0.746479
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 4,
+          "segment_hit_count": 22,
+          "segment_hit_rate": 0.020677,
+          "video_coverage_rate": 0.363636
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 5,
+          "segment_hit_rate": 0.060976,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "self_undercut",
+      "category": "structural_subtheme",
+      "matching_rule": "biased|admit|honest|not an expert|my own|limitation|stake|check",
+      "candidate_form": "acknowledge your own stake or limitation → state the claim anyway → give the listener a way to check it",
+      "total_segment_hit_count": 82,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 32,
+          "segment_hit_count": 77,
+          "segment_hit_rate": 0.007092,
+          "video_coverage_rate": 0.450704
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 3,
+          "segment_hit_count": 5,
+          "segment_hit_rate": 0.004699,
+          "video_coverage_rate": 0.272727
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "despair_to_hope",
+      "category": "structural_subtheme",
+      "matching_rule": "difficult|hard|despair|hope|possible|possibility|future|change|action|continue",
+      "candidate_form": "let the difficulty remain visible → identify a live possibility → name the next bounded action",
+      "total_segment_hit_count": 497,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 61,
+          "segment_hit_count": 462,
+          "segment_hit_rate": 0.042549,
+          "video_coverage_rate": 0.859155
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 6,
+          "segment_hit_count": 29,
+          "segment_hit_rate": 0.027256,
+          "video_coverage_rate": 0.545455
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 6,
+          "segment_hit_rate": 0.073171,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "metric_revaluation",
+      "category": "structural_subtheme",
+      "matching_rule": "number|metric|measure|success|count|value|quality|score",
+      "candidate_form": "show the familiar measure → expose what it misses → propose the human-relevant measure",
+      "total_segment_hit_count": 358,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 54,
+          "segment_hit_count": 343,
+          "segment_hit_rate": 0.03159,
+          "video_coverage_rate": 0.760563
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 4,
+          "segment_hit_count": 13,
+          "segment_hit_rate": 0.012218,
+          "video_coverage_rate": 0.363636
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 2,
+          "segment_hit_rate": 0.02439,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "moral_to_memorial",
+      "category": "structural_subtheme",
+      "matching_rule": "remember|loss|legacy|honor|honour|tribute|moral|meaning",
+      "candidate_form": "move from a disputed judgment → mark the human significance → avoid treating tribute as proof",
+      "total_segment_hit_count": 167,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 51,
+          "segment_hit_count": 156,
+          "segment_hit_rate": 0.014367,
+          "video_coverage_rate": 0.71831
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 3,
+          "segment_hit_count": 6,
+          "segment_hit_rate": 0.005639,
+          "video_coverage_rate": 0.272727
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 5,
+          "segment_hit_rate": 0.060976,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "optional_support",
+      "category": "structural_subtheme",
+      "matching_rule": "support|choice|option|if you|when you're ready|available|opt.?out",
+      "candidate_form": "name the need → offer a support choice → preserve agency and an opt-out",
+      "total_segment_hit_count": 242,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 61,
+          "segment_hit_count": 225,
+          "segment_hit_rate": 0.020722,
+          "video_coverage_rate": 0.859155
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 3,
+          "segment_hit_count": 15,
+          "segment_hit_rate": 0.014098,
+          "video_coverage_rate": 0.272727
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 2,
+          "segment_hit_rate": 0.02439,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "question_redefinition",
+      "category": "structural_subtheme",
+      "matching_rule": "question|ask|what matters|more important|real question|useful question",
+      "candidate_form": "repeat the surface question → explain why it is insufficient → ask the decision-relevant question",
+      "total_segment_hit_count": 153,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 54,
+          "segment_hit_count": 145,
+          "segment_hit_rate": 0.013354,
+          "video_coverage_rate": 0.760563
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 4,
+          "segment_hit_count": 8,
+          "segment_hit_rate": 0.007519,
+          "video_coverage_rate": 0.363636
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "sorrow_and_continuation",
+      "category": "structural_subtheme",
+      "matching_rule": "loss|grief|sad|miss|remember|continue|carry on|care|mourning|future",
+      "candidate_form": "name the loss → refuse false resolution → identify what care or work continues",
+      "total_segment_hit_count": 387,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 66,
+          "segment_hit_count": 345,
+          "segment_hit_rate": 0.031774,
+          "video_coverage_rate": 0.929577
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 8,
+          "segment_hit_count": 37,
+          "segment_hit_rate": 0.034774,
+          "video_coverage_rate": 0.727273
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 5,
+          "segment_hit_rate": 0.060976,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "story_to_thesis",
+      "category": "structural_subtheme",
+      "matching_rule": "story|experience|example|lesson|means|shows|illustrat",
+      "candidate_form": "bounded scene → explicit lesson → what the scene cannot prove",
+      "total_segment_hit_count": 301,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 57,
+          "segment_hit_count": 293,
+          "segment_hit_rate": 0.026985,
+          "video_coverage_rate": 0.802817
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 4,
+          "segment_hit_count": 8,
+          "segment_hit_rate": 0.007519,
+          "video_coverage_rate": 0.363636
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "purpose_attention_example",
+      "category": "additional_subtheme",
+      "matching_rule": "purpose|attention|examples selection|purpose over",
+      "candidate_form": "state why the exchange matters → select one concrete example → return to the purpose",
+      "total_segment_hit_count": 25,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 14,
+          "segment_hit_count": 22,
+          "segment_hit_rate": 0.002026,
+          "video_coverage_rate": 0.197183
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 2,
+          "segment_hit_count": 3,
+          "segment_hit_rate": 0.00282,
+          "video_coverage_rate": 0.181818
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "recognition_to_specific_credit",
+      "category": "additional_subtheme",
+      "matching_rule": "host praise|host endorsement|repeated gratitude|recognition|gratitude",
+      "candidate_form": "receive or give recognition → name the specific contribution → avoid turning praise into proof",
+      "total_segment_hit_count": 24,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 14,
+          "segment_hit_count": 22,
+          "segment_hit_rate": 0.002026,
+          "video_coverage_rate": 0.197183
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 1,
+          "segment_hit_count": 2,
+          "segment_hit_rate": 0.00188,
+          "video_coverage_rate": 0.090909
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "unfinished_work_to_commitment",
+      "category": "additional_subtheme",
+      "matching_rule": "unfinished work|remaining|still|promise|commitment|renewed offer",
+      "candidate_form": "acknowledge what is unfinished → name the commitment → state the next accountable step",
+      "total_segment_hit_count": 136,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 49,
+          "segment_hit_count": 120,
+          "segment_hit_rate": 0.011052,
+          "video_coverage_rate": 0.690141
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 3,
+          "segment_hit_count": 16,
+          "segment_hit_rate": 0.015038,
+          "video_coverage_rate": 0.272727
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "familiarity_to_scope",
+      "category": "additional_subtheme",
+      "matching_rule": "pervasiveness|familiar settings|local connection|shared",
+      "candidate_form": "start with a familiar setting → widen the scope carefully → state where the analogy stops",
+      "total_segment_hit_count": 17,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 13,
+          "segment_hit_count": 17,
+          "segment_hit_rate": 0.001566,
+          "video_coverage_rate": 0.183099
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "unity_across_scale",
+      "category": "additional_subtheme",
+      "matching_rule": "unity|national|collective|community|global",
+      "candidate_form": "name the shared value → bridge personal and collective scale → preserve disagreement within the unity",
+      "total_segment_hit_count": 218,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 45,
+          "segment_hit_count": 214,
+          "segment_hit_rate": 0.019709,
+          "video_coverage_rate": 0.633803
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 1,
+          "segment_hit_count": 4,
+          "segment_hit_rate": 0.003759,
+          "video_coverage_rate": 0.090909
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "authority_to_service",
+      "category": "additional_subtheme",
+      "matching_rule": "authority|captaincy|leadership|status|role",
+      "candidate_form": "name the authority or role → show its responsibility → return agency to the people affected",
+      "total_segment_hit_count": 76,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 35,
+          "segment_hit_count": 74,
+          "segment_hit_rate": 0.006815,
+          "video_coverage_rate": 0.492958
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 1,
+          "segment_hit_count": 2,
+          "segment_hit_rate": 0.00188,
+          "video_coverage_rate": 0.090909
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "difficulty_to_capability",
+      "category": "additional_subtheme",
+      "matching_rule": "difficulty|obstacle|under difficulty|captaincy difficulty|pressure resistance",
+      "candidate_form": "name the difficulty → show the response or support → identify the capability being built",
+      "total_segment_hit_count": 3,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 1,
+          "segment_hit_count": 3,
+          "segment_hit_rate": 0.000276,
+          "video_coverage_rate": 0.014085
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "invitation_to_low_barrier_entry",
+      "category": "additional_subtheme",
+      "matching_rule": "invitation|philanthropic entry|join|involvement",
+      "candidate_form": "make the invitation concrete → offer a low-barrier entry → state the role and limit",
+      "total_segment_hit_count": 37,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 22,
+          "segment_hit_count": 36,
+          "segment_hit_rate": 0.003316,
+          "video_coverage_rate": 0.309859
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 1,
+          "segment_hit_count": 1,
+          "segment_hit_rate": 0.00094,
+          "video_coverage_rate": 0.090909
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "access_obstacle_to_support",
+      "category": "additional_subtheme",
+      "matching_rule": "helper access|obstacle|unknown helper|support|opportunity",
+      "candidate_form": "name the access barrier → identify available support → preserve the recipient's choice",
+      "total_segment_hit_count": 137,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 50,
+          "segment_hit_count": 133,
+          "segment_hit_rate": 0.012249,
+          "video_coverage_rate": 0.704225
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 2,
+          "segment_hit_count": 4,
+          "segment_hit_rate": 0.003759,
+          "video_coverage_rate": 0.181818
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "technical_explanation_and_interruption",
+      "category": "additional_subtheme",
+      "matching_rule": "technical explanation|interrupted|diagnosis",
+      "candidate_form": "pause the technical thread → translate the key point → answer the interruption before continuing",
+      "total_segment_hit_count": 2,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 2,
+          "segment_hit_count": 2,
+          "segment_hit_rate": 0.000184,
+          "video_coverage_rate": 0.028169
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "emotion_to_composure",
+      "category": "additional_subtheme",
+      "matching_rule": "emotion|composure|stage|evolving craft",
+      "candidate_form": "name the felt difficulty → choose a controllable response → continue without pretending the feeling vanished",
+      "total_segment_hit_count": 75,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 28,
+          "segment_hit_count": 69,
+          "segment_hit_rate": 0.006355,
+          "video_coverage_rate": 0.394366
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 3,
+          "segment_hit_count": 6,
+          "segment_hit_rate": 0.005639,
+          "video_coverage_rate": 0.272727
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "selection_and_incentive",
+      "category": "additional_subtheme",
+      "matching_rule": "selection|fan selection|incentive|choice|ranking",
+      "candidate_form": "state the selection criterion → show the choice → name what the incentive changes",
+      "total_segment_hit_count": 30,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 14,
+          "segment_hit_count": 29,
+          "segment_hit_rate": 0.002671,
+          "video_coverage_rate": 0.197183
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 1,
+          "segment_hit_count": 1,
+          "segment_hit_rate": 0.00094,
+          "video_coverage_rate": 0.090909
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "failure_to_reframe",
+      "category": "additional_subtheme",
+      "matching_rule": "outcome fails|rejection|alternative career|loss|refusal quit",
+      "candidate_form": "state the failed outcome → distinguish it from identity → choose the next experiment",
+      "total_segment_hit_count": 17,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 11,
+          "segment_hit_count": 17,
+          "segment_hit_rate": 0.001566,
+          "video_coverage_rate": 0.15493
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 0,
+          "segment_hit_count": 0,
+          "segment_hit_rate": 0.0,
+          "video_coverage_rate": 0.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "authenticity_vs_performance",
+      "category": "additional_subtheme",
+      "matching_rule": "authenticity|script versus|performance|fictional inspiration",
+      "candidate_form": "separate performed form from lived claim → explain the choice → mark what remains constructed",
+      "total_segment_hit_count": 14,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 7,
+          "segment_hit_count": 10,
+          "segment_hit_rate": 0.000921,
+          "video_coverage_rate": 0.098592
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 2,
+          "segment_hit_count": 3,
+          "segment_hit_rate": 0.00282,
+          "video_coverage_rate": 0.181818
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 1,
+          "segment_hit_rate": 0.012195,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    },
+    {
+      "pattern_id": "craft_process_over_outcome",
+      "category": "additional_subtheme",
+      "matching_rule": "writing|production|craft|script versus production|adaptable",
+      "candidate_form": "show the process and choices → explain the constraint → separate craft from the final outcome",
+      "total_segment_hit_count": 39,
+      "layers": [
+        {
+          "evidence_layer": "direct_audio",
+          "source_video_count": 71,
+          "matching_video_count": 19,
+          "segment_hit_count": 31,
+          "segment_hit_rate": 0.002855,
+          "video_coverage_rate": 0.267606
+        },
+        {
+          "evidence_layer": "alternate_source",
+          "source_video_count": 11,
+          "matching_video_count": 2,
+          "segment_hit_count": 3,
+          "segment_hit_rate": 0.00282,
+          "video_coverage_rate": 0.181818
+        },
+        {
+          "evidence_layer": "external_transcript",
+          "source_video_count": 1,
+          "matching_video_count": 1,
+          "segment_hit_count": 5,
+          "segment_hit_rate": 0.060976,
+          "video_coverage_rate": 1.0
+        }
+      ],
+      "risk_flags": [
+        "human_context_review_required",
+        "high_candidate_video_coverage"
+      ],
+      "status": "lexical_retrieval_audit_not_semantic_validation"
+    }
+  ],
+  "claim_boundary": "This audit measures lexical retrieval density only. A hit is not a semantic match, a speech function, a recurrence finding, a source identity decision, or evidence of effectiveness. Every card remains a contextual-review candidate."
+}

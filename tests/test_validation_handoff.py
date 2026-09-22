@@ -13,14 +13,22 @@ class ValidationHandoffTests(unittest.TestCase):
         cls.markdown = (ROOT / "writeups/validation-handoff.md").read_text()
 
     def test_handoff_covers_all_human_gates_without_claiming_results(self):
+        browser_smoke = json.loads((ROOT / "research/autonomous-browser-smoke.json").read_text())
+        browser_count = f"{browser_smoke['passed_check_count']}/{browser_smoke['check_count']}"
         self.assertEqual(self.report["status"], "instruments_ready_no_human_records_received")
-        self.assertEqual(len(self.report["review_gates"]), 8)
+        self.assertEqual(len(self.report["review_gates"]), 9)
         self.assertEqual(len(self.report["learning_gates"]), 3)
         self.assertIn("No reviewer", self.report["claim_boundary"])
         for gate in self.report["review_gates"] + self.report["learning_gates"]:
             self.assertTrue(gate["validator"])
             self.assertTrue(gate["does_not_establish"])
         self.assertIn("Do not send credentials", self.markdown)
+        self.assertIn("python3 scripts/run_autonomous_release_audit.py --full-tests", self.markdown)
+        self.assertIn("27/27", self.markdown)
+        self.assertIn(browser_count, self.markdown)
+        self.assertIn("python3 scripts/check_promotion_readiness.py", self.markdown)
+        self.assertIn("recovered-pattern-priority-review.html", self.markdown)
+        self.assertIn("validate_recovered_pattern_priority_review_export.py", self.markdown)
 
     def test_learner_entry_links_resolve_from_writeups_directory(self):
         entry = self.report["learner_entry"]
@@ -52,6 +60,17 @@ class ValidationHandoffTests(unittest.TestCase):
             self.assertTrue((ROOT / entry[field]).is_file())
         self.assertIn("blinded-review-packet.html", self.markdown)
         self.assertIn("reduce_blinded_review_export.py", self.markdown)
+
+    def test_existing_learner_and_listener_gates_are_not_misattributed_to_fieldbook(self):
+        scope = self.report["fieldbook_learning_scope"]
+        self.assertEqual(scope["fieldbook_pattern_count"], 55)
+        self.assertEqual(scope["learner_card_count"], 18)
+        self.assertEqual(scope["listener_pattern_count"], 18)
+        self.assertEqual(scope["learner_exact_id_overlap"], 0)
+        self.assertEqual(scope["listener_exact_id_overlap"], 0)
+        self.assertEqual(scope["status"], "separate_unmapped_id_spaces")
+        self.assertIn("Do not attribute their results to fieldbook patterns", scope["note"])
+        self.assertIn("Fieldbook-to-learning boundary", self.markdown)
 
 
 if __name__ == "__main__":
