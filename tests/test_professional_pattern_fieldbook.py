@@ -35,6 +35,7 @@ class ProfessionalPatternFieldbookTest(unittest.TestCase):
         self.assertEqual(self.catalog["card_count"], 55)
         self.assertIn("Seven common presentation problems", self.page)
         self.assertIn("55 speaking patterns—not 55 proven rules", self.page)
+        self.assertIn('href="cross-repo-communication-source-map.md"', self.page)
         self.assertIn("55 speaking patterns to try", self.manuscript)
         payload = self.index_payload()
         for chapter in CORE.JOB_CHAPTERS:

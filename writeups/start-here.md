@@ -15,6 +15,11 @@ of 480 videos, 395 of which have full transcript reviews. It does not recheck
 all 395, and its advice has not been independently reviewed or tested with
 audiences. Use it to draft and revise a talk, not as proof that a pattern works.
 
+To see the full picture across both repositories, open the [speech, humor and
+communication source map](cross-repo-communication-source-map.md). It shows
+which sources are already used in the fieldbook and companion guide, which are
+only provisional candidates, and which do not yet have enough usable text.
+
 For a stakeholder-facing overview, read the [Speech Learning System tutorial](stakeholder-tutorial.md) or open its [standalone web page](stakeholder-tutorial.html).
 For one presenter-facing index of the corpus, pattern layers, compound bundles,
 sequences and practice browsers, use the [presentation pattern atlas](presentation-pattern-atlas.md).
