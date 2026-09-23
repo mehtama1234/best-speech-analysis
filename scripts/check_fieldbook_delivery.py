@@ -48,6 +48,33 @@ def main():
         readme_text = ' '.join((folder / 'README.md').read_text().split())
         for phrase in ['22 main themes', '18 smaller speaking moves', '15 more ideas', '395 videos', '480-video inventory', 'does not recheck all 395']:
             assert phrase in readme_text, phrase
+        source_map = folder / 'writeups/cross-repo-communication-source-map.md'
+        assert source_map.is_file()
+        source_map_text = source_map.read_text()
+        assert 'direct source trails for 10 of the ten core' in source_map_text
+        assert 'Chad Littlefield Videos' in source_map_text
+        assert 'companion/speaking-practice.html#chapter-08' in source_map_text
+        source_map_json = folder / 'research/cross-repo-communication-source-map.json'
+        assert source_map_json.is_file()
+        source_map_data = json.loads(source_map_json.read_text())
+        companion_sources = json.loads((folder / 'writeups/companion/sources.json').read_text())['sources']
+        chad_sources = [row for row in companion_sources if row['channel'] == 'Chad Littlefield']
+        assert len(chad_sources) == 1 and chad_sources[0]['chapters'] == ['25']
+        companion_chapters = {}
+        for row in companion_sources:
+            companion_chapters.setdefault(row['channel'], set()).update(row['chapters'])
+        source_channel_aliases = {
+            'Communication Coach Alexander Lyon Videos': 'Alexander Lyon Communication Coach',
+        }
+        for row in source_map_data['sources']:
+            if not row['corpus_id'].endswith('wave-1'):
+                continue
+            channel = source_channel_aliases.get(row['source'], row['source'].removesuffix(' Videos'))
+            expected = {chapter['number'] for chapter in row['companion_chapters']}
+            assert expected, f"Missing published guide trail for {row['source']}"
+            assert expected <= companion_chapters.get(channel, set()), (
+                f"Bundled source index does not match map for {row['source']}"
+            )
         for name, digest in manifest.items():
             assert sha256((folder / name).read_bytes()).hexdigest() == digest
             assert (folder / name).read_bytes() == (ROOT / name).read_bytes(), f'Stale bundle: {name}'
@@ -144,6 +171,8 @@ def main():
             assert companion.locator('article.learning-path').count() == 11
             for number in range(1, 28):
                 assert companion.locator(f'#chapter-{number:02d}').count() == 1
+            assert 'Chad Littlefield' in companion.locator('#chapter-25').inner_text()
+            assert companion.locator('#source-zChjPuhdgHs').count() == 1
             assert not companion_errors, companion_errors
             context = browser.new_context(java_script_enabled=False)
             static = context.new_page()

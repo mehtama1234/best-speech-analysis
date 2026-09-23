@@ -40,7 +40,7 @@ def main():
     subtheme_groups = read_subtheme_tables(catalog)
     source_video_links = read_video_passage_links()
     COMPANION_COPY.mkdir(parents=True, exist_ok=True)
-    for name in ('speaking-practice.html', 'speaking-practice.css', 'speaking-practice.pdf'):
+    for name in ('speaking-practice.html', 'speaking-practice.css', 'speaking-practice.pdf', 'sources.json', 'README.txt'):
         source = COMPANION_SOURCE / name
         if not source.is_file():
             raise FileNotFoundError(f'Required companion edition is missing: {source}')
@@ -49,7 +49,13 @@ def main():
     with sync_playwright() as playwright:
         browser = playwright.chromium.launch(headless=True, args=['--no-sandbox'])
         page = browser.new_page()
-        page.goto((ROOT / 'writeups/speaking-patterns-fieldbook.html').as_uri())
+        # The reading edition is self-contained. Waiting for DOM construction is
+        # sufficient for printing and avoids a flaky full-load wait on local
+        # file URLs in the bundled Chromium build.
+        page.goto(
+            (ROOT / 'writeups/speaking-patterns-fieldbook.html').as_uri(),
+            wait_until='domcontentloaded', timeout=120_000,
+        )
         assert page.locator('.job-chapter').count() == len(JOB_CHAPTERS)
         # Local documents travel in the bundle but cannot be opened as local
         # paths from the PDF. Keep page anchors and public HTTPS source links.
@@ -131,10 +137,12 @@ def main():
     files = [ROOT / 'writeups/speaking-patterns-fieldbook.html',
              ROOT / 'writeups/speaking-patterns-fieldbook.md',
              ROOT / 'writeups/fieldbook-editorial-brief.md',
-             ROOT / 'writeups/fieldbook-editorial-handoff.md']
+             ROOT / 'writeups/fieldbook-editorial-handoff.md',
+             ROOT / 'writeups/cross-repo-communication-source-map.md',
+             ROOT / 'research/cross-repo-communication-source-map.json']
     source_paths = sorted({lesson['source_writeup'] for lesson in LESSONS.values()})
     files += [ROOT / path for path in source_paths]
-    files += [COMPANION_COPY / name for name in ('speaking-practice.html', 'speaking-practice.css', 'speaking-practice.pdf')]
+    files += [COMPANION_COPY / name for name in ('speaking-practice.html', 'speaking-practice.css', 'speaking-practice.pdf', 'sources.json', 'README.txt')]
     manifest = {str(path.relative_to(ROOT)): sha256(path.read_bytes()).hexdigest() for path in files}
     readme = '''# The Speaking Patterns Fieldbook
 
@@ -151,7 +159,10 @@ transcript analyses from a larger project that has reviewed the full transcripts
 of 395 videos in a 480-video inventory; it does not recheck all 395. The companion book
 has 27 practice chapters and 11 learning paths. Open the
 companion HTML from `writeups/companion/speaking-practice.html`; keep its CSS
-file beside it. The package does not include audio, video or photographs.
+file beside it. `writeups/cross-repo-communication-source-map.md` shows which
+speech, coaching, storytelling, comedy and polished-talk sources are connected
+to which companion chapters. `writeups/companion/sources.json` is the
+companion's portable source index. The package does not include audio, video or photographs.
 
 The 55 patterns are ideas noticed in transcript searches. Other reviewers have
 not checked them, and no audience study has tested them. A 162-item review set

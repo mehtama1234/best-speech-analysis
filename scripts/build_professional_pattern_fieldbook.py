@@ -405,7 +405,7 @@ def main() -> int:
     data = json.dumps(payload, ensure_ascii=False).replace("<", "\\u003c")
     document = render(data)
     e = html.escape
-    chapters = '<section class="chapters" id="core-jobs"><h2>Seven common presentation problems</h2><p>Start with the problem your talk needs to solve. Each chapter explains one, reads a real transcript example, says what that example cannot tell us, and gives you an exercise.</p><p><a href="speaking-patterns-fieldbook.md">Read the manuscript</a> · <a href="#pattern-catalog">Browse the 55 speaking patterns</a> · <a href="fieldbook-editorial-brief.md">How this book was prepared</a></p><nav aria-label="Presentation problems" id="job-contents"><ol>'
+    chapters = '<section class="chapters" id="core-jobs"><h2>Seven common presentation problems</h2><p>Start with the problem your talk needs to solve. Each chapter explains one, reads a real transcript example, says what that example cannot tell us, and gives you an exercise.</p><p><a href="speaking-patterns-fieldbook.md">Read the manuscript</a> · <a href="#pattern-catalog">Browse the 55 speaking patterns</a> · <a href="cross-repo-communication-source-map.md">See all speech, humor and communication sources</a> · <a href="fieldbook-editorial-brief.md">How this book was prepared</a></p><nav aria-label="Presentation problems" id="job-contents"><ol>'
     chapters += "".join(f'<li><a href="#job-{e(chapter["id"])}">{e(chapter["title"])}</a></li>' for chapter in JOB_CHAPTERS)
     chapters += "</ol></nav>"
     for chapter in JOB_CHAPTERS:

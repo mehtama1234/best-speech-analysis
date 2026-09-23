@@ -1,0 +1,467 @@
+{
+  "schema_version": "1.0",
+  "purpose": "One navigation map for the fixed speech corpus and the separate speaking, humor, and communication atlas.",
+  "claim_boundary": "A transcript count shows what text is available, not that a source has been independently reviewed, that a pattern recurs, or that advice works. Comedy, coaching, and polished talks stay separate from the fixed speech corpus.",
+  "summary": {
+    "fixed_corpus_inventory_videos": 480,
+    "fixed_corpus_full_context_reviews": 395,
+    "external_source_corpora": 14,
+    "external_channel_inventory_videos": 3856,
+    "external_starter_videos": 503,
+    "external_transcripts_available": 476,
+    "external_provisional_candidates": 19,
+    "core_companion_corpora": 10,
+    "core_corpora_with_published_companion_chapters": 10,
+    "usable_expansion_corpora": 3,
+    "deferred_corpora": 1
+  },
+  "sources": [
+    {
+      "corpus_id": "fixed-speech-corpus",
+      "source": "Best Speech Analysis fixed corpus",
+      "kind": "addresses, interviews, memorials, and scripted scenes",
+      "channel_videos_seen": 480,
+      "starter_videos": 395,
+      "transcripts_available": 395,
+      "transcript_words": null,
+      "jobs": [
+        "seven presentation problems and 55 detailed pattern entries"
+      ],
+      "best_for": "the main fieldbook and full-context source readings",
+      "source_status": "fixed inventory; 395 full-context transcript reviews",
+      "integration_state": "The fieldbook's main evidence layer.",
+      "provisional_candidate_count": 55,
+      "companion_chapters": []
+    },
+    {
+      "corpus_id": "ultraspeaking-wave-1",
+      "source": "Ultraspeaking Videos",
+      "kind": "coaching and drills",
+      "channel_videos_seen": 108,
+      "starter_videos": 20,
+      "transcripts_available": 20,
+      "transcript_words": 28777,
+      "jobs": [
+        "opening",
+        "answer_or_response",
+        "repair_or_self_correction",
+        "transition_or_structure"
+      ],
+      "best_for": "spontaneous speaking and visible recovery",
+      "source_status": "ingested-as-ultraspeaking-wave-1",
+      "integration_state": "Used directly in the companion guide.",
+      "provisional_candidate_count": 0,
+      "companion_chapters": [
+        {
+          "number": "01",
+          "title": "Know the route, not every sentence",
+          "href": "companion/speaking-practice.html#chapter-01"
+        },
+        {
+          "number": "06",
+          "title": "Give the short answer a complete job",
+          "href": "companion/speaking-practice.html#chapter-06"
+        },
+        {
+          "number": "10",
+          "title": "Let the voice reveal the meaning",
+          "href": "companion/speaking-practice.html#chapter-10"
+        },
+        {
+          "number": "21",
+          "title": "Give the idea enough time",
+          "href": "companion/speaking-practice.html#chapter-21"
+        }
+      ]
+    },
+    {
+      "corpus_id": "vinh-giang-wave-1",
+      "source": "Vinh Giang Videos",
+      "kind": "coaching and drills",
+      "channel_videos_seen": 388,
+      "starter_videos": 20,
+      "transcripts_available": 20,
+      "transcript_words": 60322,
+      "jobs": [
+        "opening",
+        "definition_or_explanation",
+        "transition_or_structure",
+        "closing",
+        "humor_or_rapport"
+      ],
+      "best_for": "vocal delivery and audience engagement",
+      "source_status": "ingested-as-vinh-giang-wave-1",
+      "integration_state": "Used directly in the companion guide.",
+      "provisional_candidate_count": 0,
+      "companion_chapters": [
+        {
+          "number": "02",
+          "title": "Let the pause do its job",
+          "href": "companion/speaking-practice.html#chapter-02"
+        },
+        {
+          "number": "07",
+          "title": "Make your contribution clear",
+          "href": "companion/speaking-practice.html#chapter-07"
+        },
+        {
+          "number": "13",
+          "title": "Put the difficult part on the table",
+          "href": "companion/speaking-practice.html#chapter-13"
+        },
+        {
+          "number": "14",
+          "title": "Build the explanation one useful layer at a time",
+          "href": "companion/speaking-practice.html#chapter-14"
+        },
+        {
+          "number": "15",
+          "title": "Rehearse the return, not only the run-through",
+          "href": "companion/speaking-practice.html#chapter-15"
+        },
+        {
+          "number": "16",
+          "title": "Show why this belongs in their day",
+          "href": "companion/speaking-practice.html#chapter-16"
+        },
+        {
+          "number": "19",
+          "title": "Have a view, and give it somewhere to go",
+          "href": "companion/speaking-practice.html#chapter-19"
+        },
+        {
+          "number": "24",
+          "title": "Turn the late answer into a useful rehearsal",
+          "href": "companion/speaking-practice.html#chapter-24"
+        }
+      ]
+    },
+    {
+      "corpus_id": "think-fast-talk-smart-wave-1",
+      "source": "Think Fast Talk Smart Videos",
+      "kind": "coaching and drills",
+      "channel_videos_seen": 346,
+      "starter_videos": 17,
+      "transcripts_available": 17,
+      "transcript_words": 72944,
+      "jobs": [
+        "answer_or_response",
+        "correction_or_reframe",
+        "qualification_or_boundary",
+        "persuasion_or_advocacy",
+        "transition_or_structure"
+      ],
+      "best_for": "structured answers under pressure",
+      "source_status": "ingested-as-think-fast-talk-smart-wave-1",
+      "integration_state": "Used directly in the companion guide.",
+      "provisional_candidate_count": 0,
+      "companion_chapters": [
+        {
+          "number": "04",
+          "title": "Give the room somewhere to go",
+          "href": "companion/speaking-practice.html#chapter-04"
+        },
+        {
+          "number": "05",
+          "title": "Prepare for a listener, not an empty page",
+          "href": "companion/speaking-practice.html#chapter-05"
+        },
+        {
+          "number": "22",
+          "title": "Ask for the decision this conversation can support",
+          "href": "companion/speaking-practice.html#chapter-22"
+        },
+        {
+          "number": "23",
+          "title": "Make the message clear without replacing your voice",
+          "href": "companion/speaking-practice.html#chapter-23"
+        }
+      ]
+    },
+    {
+      "corpus_id": "charisma-on-command-wave-1",
+      "source": "Charisma on Command Videos",
+      "kind": "social communication coaching",
+      "channel_videos_seen": 477,
+      "starter_videos": 16,
+      "transcripts_available": 16,
+      "transcript_words": 55388,
+      "jobs": [
+        "humor_or_rapport",
+        "question",
+        "credit_or_acknowledgment",
+        "repair_or_self_correction",
+        "answer_or_response"
+      ],
+      "best_for": "social presence and awkwardness recovery",
+      "source_status": "ingested-as-charisma-on-command-wave-1",
+      "integration_state": "Used directly in the companion guide.",
+      "provisional_candidate_count": 0,
+      "companion_chapters": [
+        {
+          "number": "08",
+          "title": "Follow the person, not your list of questions",
+          "href": "companion/speaking-practice.html#chapter-08"
+        },
+        {
+          "number": "09",
+          "title": "Repair the exchange, not your image",
+          "href": "companion/speaking-practice.html#chapter-09"
+        },
+        {
+          "number": "12",
+          "title": "Answer the challenge without auditioning for respect",
+          "href": "companion/speaking-practice.html#chapter-12"
+        }
+      ]
+    },
+    {
+      "corpus_id": "matthew-dicks-wave-1",
+      "source": "Matthew Dicks Videos",
+      "kind": "storytelling coaching",
+      "channel_videos_seen": 232,
+      "starter_videos": 14,
+      "transcripts_available": 14,
+      "transcript_words": 17101,
+      "jobs": [
+        "story_or_personal_experience",
+        "opening",
+        "callback_or_repetition",
+        "reflection_or_value_frame",
+        "closing"
+      ],
+      "best_for": "story selection, specificity, and narrative payoff",
+      "source_status": "ingested-as-matthew-dicks-wave-1",
+      "integration_state": "Used directly in the companion guide.",
+      "provisional_candidate_count": 0,
+      "companion_chapters": [
+        {
+          "number": "18",
+          "title": "Find the moment when something changes",
+          "href": "companion/speaking-practice.html#chapter-18"
+        }
+      ]
+    },
+    {
+      "corpus_id": "jefferson-fisher-wave-1",
+      "source": "Jefferson Fisher Videos",
+      "kind": "conflict coaching",
+      "channel_videos_seen": 560,
+      "starter_videos": 20,
+      "transcripts_available": 20,
+      "transcript_words": 197547,
+      "jobs": [
+        "contrast_or_disagreement",
+        "qualification_or_boundary",
+        "answer_or_response",
+        "correction_or_reframe",
+        "closing"
+      ],
+      "best_for": "calm authority and boundary language",
+      "source_status": "ingested-as-jefferson-fisher-wave-1",
+      "integration_state": "Used directly in the companion guide.",
+      "provisional_candidate_count": 0,
+      "companion_chapters": [
+        {
+          "number": "19",
+          "title": "Have a view, and give it somewhere to go",
+          "href": "companion/speaking-practice.html#chapter-19"
+        }
+      ]
+    },
+    {
+      "corpus_id": "chad-littlefield-wave-1",
+      "source": "Chad Littlefield Videos",
+      "kind": "conversation coaching",
+      "channel_videos_seen": 453,
+      "starter_videos": 28,
+      "transcripts_available": 28,
+      "transcript_words": 46030,
+      "jobs": [
+        "question",
+        "credit_or_acknowledgment",
+        "humor_or_rapport",
+        "repair_or_self_correction",
+        "transition_or_structure"
+      ],
+      "best_for": "conversation design and reflective listening",
+      "source_status": "ingested-as-chad-littlefield-wave-1",
+      "integration_state": "Used directly in the companion guide.",
+      "provisional_candidate_count": 0,
+      "companion_chapters": [
+        {
+          "number": "25",
+          "title": "Show what you heard before adding what you think",
+          "href": "companion/speaking-practice.html#chapter-25"
+        }
+      ]
+    },
+    {
+      "corpus_id": "alexander-lyon-wave-1",
+      "source": "Communication Coach Alexander Lyon Videos",
+      "kind": "workplace communication coaching",
+      "channel_videos_seen": 462,
+      "starter_videos": 23,
+      "transcripts_available": 23,
+      "transcript_words": 47737,
+      "jobs": [
+        "opening",
+        "definition_or_explanation",
+        "answer_or_response",
+        "transition_or_structure",
+        "closing"
+      ],
+      "best_for": "concise workplace and executive communication",
+      "source_status": "ingested-as-alexander-lyon-wave-1",
+      "integration_state": "Used directly in the companion guide.",
+      "provisional_candidate_count": 0,
+      "companion_chapters": [
+        {
+          "number": "03",
+          "title": "Give the answer you can stand behind",
+          "href": "companion/speaking-practice.html#chapter-03"
+        },
+        {
+          "number": "20",
+          "title": "Make it possible to approach you",
+          "href": "companion/speaking-practice.html#chapter-20"
+        },
+        {
+          "number": "25",
+          "title": "Show what you heard before adding what you think",
+          "href": "companion/speaking-practice.html#chapter-25"
+        },
+        {
+          "number": "26",
+          "title": "Tell them what kind of conversation this is",
+          "href": "companion/speaking-practice.html#chapter-26"
+        }
+      ]
+    },
+    {
+      "corpus_id": "toastmasters-wave-1",
+      "source": "Toastmasters International Videos",
+      "kind": "speech examples and coaching",
+      "channel_videos_seen": 476,
+      "starter_videos": 20,
+      "transcripts_available": 20,
+      "transcript_words": 61723,
+      "jobs": [
+        "opening",
+        "story_or_personal_experience",
+        "example_or_case",
+        "humor_or_rapport",
+        "callback_or_repetition",
+        "closing"
+      ],
+      "best_for": "speech exemplars and contest-style structure",
+      "source_status": "ingested-as-toastmasters-wave-1",
+      "integration_state": "Used directly in the companion guide.",
+      "provisional_candidate_count": 0,
+      "companion_chapters": [
+        {
+          "number": "27",
+          "title": "Give the unexpected answer a beginning and an end",
+          "href": "companion/speaking-practice.html#chapter-27"
+        }
+      ]
+    },
+    {
+      "corpus_id": "andrew-tarvin-wave-1",
+      "source": "Andrew Tarvin Videos",
+      "kind": "humor coaching",
+      "channel_videos_seen": 49,
+      "starter_videos": 20,
+      "transcripts_available": 20,
+      "transcript_words": 49287,
+      "jobs": [
+        "humor_or_rapport",
+        "example_or_case",
+        "story_or_personal_experience",
+        "callback_or_repetition",
+        "call_to_action_or_audience_role"
+      ],
+      "best_for": "humor mechanics and workplace transfer",
+      "source_status": "ingested-as-andrew-tarvin-wave-1",
+      "integration_state": "Used directly in the companion guide.",
+      "provisional_candidate_count": 0,
+      "companion_chapters": [
+        {
+          "number": "11",
+          "title": "Make room for a shared smile",
+          "href": "companion/speaking-practice.html#chapter-11"
+        },
+        {
+          "number": "17",
+          "title": "Let the surprise finish the sentence",
+          "href": "companion/speaking-practice.html#chapter-17"
+        },
+        {
+          "number": "24",
+          "title": "Turn the late answer into a useful rehearsal",
+          "href": "companion/speaking-practice.html#chapter-24"
+        }
+      ]
+    },
+    {
+      "corpus_id": "ali-siddiq-wave-2",
+      "source": "Ali Siddiq",
+      "kind": "stand-up storytelling",
+      "channel_videos_seen": 203,
+      "starter_videos": 203,
+      "transcripts_available": 202,
+      "transcript_words": 148482,
+      "jobs": "Use as the long-form storytelling, escalation, callback, and performance-exemplar corpus.",
+      "best_for": "long stories, escalation, callbacks, and point of view",
+      "source_status": "captured-and-indexed-wave-2-not-yet-promoted-to-unified-wave-1",
+      "integration_state": "Shown as 7 provisional expansion candidates.",
+      "provisional_candidate_count": 7,
+      "companion_chapters": []
+    },
+    {
+      "corpus_id": "dry-bar-comedy-wave-2-starter",
+      "source": "Dry Bar Comedy Wave 2 Starter",
+      "kind": "stand-up examples",
+      "channel_videos_seen": 40,
+      "starter_videos": 40,
+      "transcripts_available": 37,
+      "transcript_words": 178691,
+      "jobs": "Use as a multi-performer humor-exemplar and contrast corpus for premise, payoff, room awareness, and safety review.",
+      "best_for": "premise, payoff, performer contrast, and audience awareness",
+      "source_status": "captured-and-indexed-wave-2-not-yet-promoted-to-unified-wave-1",
+      "integration_state": "Shown as 6 provisional expansion candidates.",
+      "provisional_candidate_count": 6,
+      "companion_chapters": []
+    },
+    {
+      "corpus_id": "ted-wave-2-starter",
+      "source": "TED Wave 2 Starter",
+      "kind": "polished public talks",
+      "channel_videos_seen": 40,
+      "starter_videos": 40,
+      "transcripts_available": 38,
+      "transcript_words": 81429,
+      "jobs": "Use as a bounded polished-talk comparison corpus for openings, explanation, story-to-principle transitions, and audience-oriented closes.",
+      "best_for": "clear openings, explanations, story-to-point transitions, and endings",
+      "source_status": "captured-and-indexed-wave-2-not-yet-promoted-to-unified-wave-1",
+      "integration_state": "Shown as 6 provisional expansion candidates.",
+      "provisional_candidate_count": 6,
+      "companion_chapters": []
+    },
+    {
+      "corpus_id": "stand-up-studios-wave-3-starter",
+      "source": "Stand-Up Studios Wave 3 Starter",
+      "kind": "stand-up examples",
+      "channel_videos_seen": 22,
+      "starter_videos": 22,
+      "transcripts_available": 1,
+      "transcript_words": 334,
+      "jobs": "Defer pattern extraction until transcript/media coverage is repaired; preserve as a source-recovery target.",
+      "best_for": "future humor comparison after more transcripts are available",
+      "source_status": "captured-but-insufficient-transcript-coverage-not-in-unified-crosswalk",
+      "integration_state": "Not included: too little transcript material.",
+      "provisional_candidate_count": 0,
+      "companion_chapters": []
+    }
+  ]
+}
