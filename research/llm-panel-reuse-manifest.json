@@ -1,0 +1,12 @@
+{
+  "schema_version": "1.0",
+  "purpose": "Reuse contract for the LLM panel beyond the five-job slice.",
+  "queues": [
+    {"id": "fixed-fieldbook", "count": 55, "source": "research/llm-panel-fixed-fieldbook-packets.json", "status": "packetized; 55 require counterexample packets before promotion"},
+    {"id": "humor-ted-expansion", "count": 19, "source": "research/llm-panel-expansion-packets.json", "status": "packetized; 17 ready for model review and 2 held for insufficient distinct excerpts"}
+  ],
+  "required_packet_fields": ["blind_packet_id", "claim", "five_or_more_contextual_examples", "controls", "lesson", "media_limit", "required_boundary"],
+  "required_rubrics": ["source_context", "counterexample_scope", "lesson_transfer_safety", "adversarial"],
+  "adjudication_rule": "Any model disagreement, indeterminate response, missing citation, or malformed response yields model_panel_revision_or_more_evidence_needed.",
+  "claim_boundary": "A reusable LLM-panel protocol, not learner, listener, or effectiveness evidence."
+}

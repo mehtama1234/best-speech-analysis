@@ -1,0 +1,482 @@
+{
+  "schema_version": "1.0",
+  "packet_set_id": "llm-panel-vertical-slice-01",
+  "status": "ready_for_model_panel",
+  "packet_count": 5,
+  "packets": [
+    {
+      "blind_packet_id": "BLIND-01",
+      "claim": "When correcting or distinguishing ideas, state the contrast directly (for example, expected outcome versus observed outcome) and then supply the replacement claim or evidence.",
+      "examples": [
+        {
+          "evidence_ref": "E1",
+          "excerpt": "But then I realized that you don\u2019t haveto necessarily go to Harvard to have a driven",
+          "context": [
+            "share with you that you hadn\u2019t heard beforebecause after all you all went to Harvard,",
+            "I did not.",
+            "But then I realized that you don\u2019t haveto necessarily go to Harvard to have a driven",
+            "obsessive Type A personality.",
+            "But it helps."
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        },
+        {
+          "evidence_ref": "E2",
+          "excerpt": "But a few years ago I decided, as you willat some point, that it was time to recalculate,",
+          "context": [
+            "The \u201cOprah Winfrey Show\u201d was number onein our time slot for 21 years and I have to",
+            "tell you I became pretty comfortable withthat level of success.",
+            "But a few years ago I decided, as you willat some point, that it was time to recalculate,",
+            "find new territory, break new ground.",
+            "So I ended the show and launched OWN, theOprah Winfrey Network."
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        },
+        {
+          "evidence_ref": "E3",
+          "excerpt": "genital mutilation is wrong, no matter how many generations have practiced it.",
+          "context": [
+            "Let me be very clear: this is not an endorsement of",
+            "moral relativism or a declaration that all points of view are valid. Female",
+            "genital mutilation is wrong, no matter how many generations have practiced it.",
+            "Anthropogenic climate change is real, no matter how much some folks want to deny it.",
+            "But here\u2019s the question: do you want to win an argument and feel good about how superior"
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        },
+        {
+          "evidence_ref": "E4",
+          "excerpt": "But and I said, oh, this is a wrong place.",
+          "context": [
+            "And I could actually see the ball, but whileI was reacting, the ball was more towards",
+            "the keeper and not closer to the keeper, ratherthan it should be closer to me.",
+            "But and I said, oh, this is a wrong place.",
+            "And, you know, you got in the wrong placeat the wrong time.",
+            "And I got out, I got out on 15."
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        },
+        {
+          "evidence_ref": "E5",
+          "excerpt": "often not quite understood but but the",
+          "context": [
+            "distributed um but the sheer magnitude",
+            "of solar power that is available is",
+            "often not quite understood but but the",
+            "math of it is very clear so I'd really",
+            "would strongly recommend sort of a solar"
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        }
+      ],
+      "controls": [],
+      "counterexample_status": {
+        "status": "partial_controls_and_failure_candidate",
+        "existing_candidate_counterexamples": 0,
+        "remaining_cases": [
+          "contrast present but speech fails",
+          "editing/topic/microphone/setting alternative",
+          "copying pattern sounds unnatural or unsafe"
+        ],
+        "interpretation": "These controls are not matched outcome tests. They show that other reviewed communication jobs work without explicit contrast and that a contrast marker can serve story transition rather than interpersonal disagreement."
+      },
+      "lesson": {
+        "draft_task": "State an expected outcome and observed outcome in two sentences, then explain what changed without claiming that the contrast proves a personal or interpersonal motive.",
+        "self_check": [
+          "Did I name both sides?",
+          "Did I distinguish observation from interpretation?",
+          "Did I avoid treating disagreement as a personality trait?",
+          "Did I state when the contrast is not enough evidence?"
+        ],
+        "status": "draft_not_validated"
+      },
+      "media_limit": "Existing features are coarse RMS, ZCR, spectral centroid and pitch proxy; the pitch proxy is not a validated pitch tracker.",
+      "required_boundary": "Judge only the supplied text/context and lesson. Do not infer speaker intent, audience response, learning, or effectiveness."
+    },
+    {
+      "blind_packet_id": "BLIND-02",
+      "claim": "After an abstract claim, announce or signal a specific case, statistic, named example, or imagined scene, and connect it back to the claim.",
+      "examples": [
+        {
+          "evidence_ref": "E1",
+          "excerpt": "together on global issues such as",
+          "context": [
+            "greater unity and",
+            "solidarity this expresses a coming",
+            "together on global issues such as",
+            "terrorism pandemics or the environment",
+            "and five we will instill Consciousness"
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        },
+        {
+          "evidence_ref": "E2",
+          "excerpt": "this earlier radiology for example has",
+          "context": [
+            "give you give you some evidence is that",
+            "uh and I was just telling Elon about",
+            "this earlier radiology for example has",
+            "largely been uh converted to AIdriven",
+            "radiology and there's some really great"
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        },
+        {
+          "evidence_ref": "E3",
+          "excerpt": ">> Just imagine how tiny that little",
+          "context": [
+            ">> right?",
+            ">> Oh, yeah.",
+            ">> Just imagine how tiny that little",
+            "supercomputer is, right? Each one of",
+            "these GB300 racks will just be a little"
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        },
+        {
+          "evidence_ref": "E4",
+          "excerpt": "some over 20 years. Let me give you one",
+          "context": [
+            "moving to accelerated computing for some",
+            "time. We've been pushing this now for",
+            "some over 20 years. Let me give you one",
+            "statistic. I was just at supercomputing",
+            "six years ago. Uh"
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        },
+        {
+          "evidence_ref": "E5",
+          "excerpt": "such as Daily Beast, James Carville, and",
+          "context": [
+            "apologize and retract their lies about",
+            "me,",
+            "such as Daily Beast, James Carville, and",
+            "HarperCollins UK.",
+            "Now is the time for Congress to act."
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        }
+      ],
+      "controls": [],
+      "counterexample_status": {
+        "status": "controls_recorded",
+        "existing_pattern_counterexamples": 2,
+        "job_controls_recorded": 4,
+        "remaining_cases": [
+          "example present but misleading or unsupported",
+          "example absent but equivalent explanation succeeds",
+          "editing/topic/microphone/setting alternative",
+          "copying specificity becomes invasive or unsafe"
+        ]
+      },
+      "lesson": {
+        "draft_task": "State one general claim, give one concrete case or imagined scene, explain what the case illustrates, and state what it does not prove.",
+        "self_check": [
+          "Did I label the case as example, evidence or hypothesis?",
+          "Did I connect it back to the claim?",
+          "Did I avoid using a vivid detail as proof?",
+          "Did I protect privacy and avoid unnecessary identifying detail?"
+        ],
+        "status": "draft_not_validated"
+      },
+      "media_limit": "Existing audio features are coarse proxies; no listener or audience outcome is inferred.",
+      "required_boundary": "Judge only the supplied text/context and lesson. Do not infer speaker intent, audience response, learning, or effectiveness."
+    },
+    {
+      "blind_packet_id": "BLIND-03",
+      "claim": "A short first-person event, setting, action, or quoted line can make an abstract point concrete; mark the transition back to the broader point.",
+      "examples": [
+        {
+          "evidence_ref": "E1",
+          "excerpt": "That was when I was 16 years old in Nashville,Tennessee, and you had the requirement of",
+          "context": [
+            "You know my television career began unexpectedly.",
+            "As you heard this morning I was in the MissFire Prevention contest.",
+            "That was when I was 16 years old in Nashville,Tennessee, and you had the requirement of",
+            "having to have red hair in order to win upuntil the year that I entered.",
+            "So they were doing the question and answerperiod because I knew I wasn\u2019t going to"
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        },
+        {
+          "evidence_ref": "E2",
+          "excerpt": "But a few years ago I decided, as you willat some point, that it was time to recalculate,",
+          "context": [
+            "The \u201cOprah Winfrey Show\u201d was number onein our time slot for 21 years and I have to",
+            "tell you I became pretty comfortable withthat level of success.",
+            "But a few years ago I decided, as you willat some point, that it was time to recalculate,",
+            "find new territory, break new ground.",
+            "So I ended the show and launched OWN, theOprah Winfrey Network."
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        },
+        {
+          "evidence_ref": "E3",
+          "excerpt": "I went for a police they said no you're",
+          "context": [
+            "to fail in the universities so appli",
+            "jobs for 30 times got rejected",
+            "I went for a police they said no you're",
+            "not good I went to even the uh KFC when",
+            "KFC came to China come to my"
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        },
+        {
+          "evidence_ref": "E4",
+          "excerpt": "I went to the bathroom and I cried.",
+          "context": [
+            "While walking back, I somehow controlled mytears.",
+            "I was only 16 then, so I was allowed to doall that.",
+            "I went to the bathroom and I cried.",
+            "And I looked at myself in the mirror, said,this level of cricket is not for you.",
+            "You know, you're not good enough to do allthis."
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        },
+        {
+          "evidence_ref": "E5",
+          "excerpt": "I remember that day.",
+          "context": [
+            "I used to",
+            "love taking showers until October 20, 2017.",
+            "I remember that day.",
+            "Because on that day, as I was washing my hairand pulled my hand away from my head, there",
+            "was a massive clump of hair tangled in myhand."
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        }
+      ],
+      "controls": [],
+      "counterexample_status": {
+        "status": "controls_recorded",
+        "existing_pattern_counterexamples": 3,
+        "remaining_cases": [
+          "personal story present but irrelevant or confusing",
+          "generalized or hypothetical story that works without personal experience",
+          "privacy/safety alternative",
+          "survivorship-bias or access alternative"
+        ]
+      },
+      "lesson": {
+        "draft_task": "Choose one communication point, tell one short personal event with time/place/action, explain what it illustrates, and name what your experience cannot establish.",
+        "self_check": [
+          "Did I share only what is safe to share?",
+          "Did I give the event a clear boundary?",
+          "Did I connect it to the point?",
+          "Did I avoid presenting my path as universal?"
+        ],
+        "status": "draft_not_validated"
+      },
+      "media_limit": "Existing audio features are coarse proxies; no emotion, authenticity or listener effect is inferred.",
+      "required_boundary": "Judge only the supplied text/context and lesson. Do not infer speaker intent, audience response, learning, or effectiveness."
+    },
+    {
+      "blind_packet_id": "BLIND-04",
+      "claim": "Use explicit qualifiers such as 'I think', 'might', or 'probably' when a claim is a view, prediction, or interpretation rather than an established fact.",
+      "examples": [
+        {
+          "evidence_ref": "E1",
+          "excerpt": "maybe that would make",
+          "context": [
+            "aletheia's heart with us and said if we",
+            "could share it that somehow",
+            "maybe that would make",
+            "aletha smile in heaven they told us that",
+            "showing someone else a lethia's art"
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        },
+        {
+          "evidence_ref": "E2",
+          "excerpt": "This group is truly diverse in every possible way. And I think that is an extraordinarily",
+          "context": [
+            "Among the many things I admire about NYU, is that about a fifth of the students are international.",
+            "And a similar proportion are the very first in their families to go to college.",
+            "This group is truly diverse in every possible way. And I think that is an extraordinarily",
+            "valuable and important thing. When I graduated in the early 1990s, I went on a trip around the world",
+            "with a few good friends \u2014 who actually remain good friends to this day, which is sort of a miracle."
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        },
+        {
+          "evidence_ref": "E3",
+          "excerpt": "from their leaders today and tomorrow? Now, I think you need to be brave.",
+          "context": [
+            "past few hours, days, weeks and years. Leaders of tomorrow. Leaders of today. But what does it mean?",
+            "What attributes does a 21st century leader need to have? What do people need most",
+            "from their leaders today and tomorrow? Now, I think you need to be brave.",
+            "Really brave. And I know, when you think of courageous leaders,",
+            "you think of those folks who stood implacably and fearlessly, anchored in their sense of rightness,"
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        },
+        {
+          "evidence_ref": "E4",
+          "excerpt": "sorry now I think we have to get used to",
+          "context": [
+            "Harvard for 10 times",
+            "rejected I know be rejected I that's",
+            "sorry now I think we have to get used to",
+            "it we're not that good even today we",
+            "still have a lot of people reject us I I"
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        },
+        {
+          "evidence_ref": "E5",
+          "excerpt": "how into him I was right but I think I",
+          "context": [
+            "uh",
+            "I kind of was trying to show him like",
+            "how into him I was right but I think I",
+            "might have probably overdid it",
+            "um"
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        }
+      ],
+      "controls": [],
+      "counterexample_status": {
+        "status": "controls_recorded",
+        "existing_pattern_counterexamples": 1,
+        "firm_claim_controls_recorded": 3,
+        "remaining_cases": [
+          "hedge that obscures rather than calibrates",
+          "strong evidence stated too weakly",
+          "uncertainty marker used to evade accountability",
+          "nonverbal delivery changing perceived certainty"
+        ]
+      },
+      "lesson": {
+        "draft_task": "State one claim, label whether it is observed, predicted, interpreted or recommended, add the smallest uncertainty needed, and name what evidence would change your mind.",
+        "self_check": [
+          "Is the main point still clear?",
+          "Does the qualifier attach to the right claim?",
+          "Did I avoid both false certainty and empty vagueness?",
+          "Did I name a revision condition?"
+        ],
+        "status": "draft_not_validated"
+      },
+      "media_limit": "Existing audio features are coarse proxies; transcript hedges do not directly measure vocal confidence or listener calibration.",
+      "required_boundary": "Judge only the supplied text/context and lesson. Do not infer speaker intent, audience response, learning, or effectiveness."
+    },
+    {
+      "blind_packet_id": "BLIND-05",
+      "claim": "Use a clear summary or conclusion marker when compressing a preceding explanation, story, or comparison into the point the audience should retain.",
+      "examples": [
+        {
+          "evidence_ref": "E1",
+          "excerpt": "The point is your generation is charged withthis task of breaking through what the body",
+          "context": [
+            "Or maybe you simply want to collect some change.",
+            "Your parents would appreciate that about now.",
+            "The point is your generation is charged withthis task of breaking through what the body",
+            "politic has thus far made impervious to change.",
+            "Each of you has been blessed with this enormousopportunity of attending this prestigious"
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        },
+        {
+          "evidence_ref": "E2",
+          "excerpt": "In short, being a young person balancing",
+          "context": [
+            "sheltering a friend when it's familiar",
+            "to me.",
+            "In short, being a young person balancing",
+            "school and sport encouraged me to be",
+            "critically curious and that allowed me"
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        },
+        {
+          "evidence_ref": "E3",
+          "excerpt": "So, it's just, in short, it's just being astep ahead of your opposition.",
+          "context": [
+            "Chris didn't realise that I had also warnedRahul that if I don't know what is coming,",
+            "I'm going to hold the bat in the middle, sothat is how the story goes.",
+            "So, it's just, in short, it's just being astep ahead of your opposition.",
+            "Interviewer:Sachin, thank you so much.",
+            "Ladies and gentlemen, it has been an outstandingnight."
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        },
+        {
+          "evidence_ref": "E4",
+          "excerpt": "overwhelmingly what matters",
+          "context": [
+            "turning into useful work um then you",
+            "then it becomes obvious that space is",
+            "overwhelmingly what matters",
+            "overwhelmingly the the sun only receives",
+            "one roughly 1/2 billionth of the earth"
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        },
+        {
+          "evidence_ref": "E5",
+          "excerpt": "In short, they were asking far too much",
+          "context": [
+            "industries in our country including",
+            "automobiles, steel and forest products.",
+            "In short, they were asking far too much",
+            "and offering far too little.",
+            "We worked in good faith to reach a fair"
+          ],
+          "existing_label_hidden": true,
+          "source_type": "retained_caption_context"
+        }
+      ],
+      "controls": [],
+      "counterexample_status": {
+        "status": "controls_recorded",
+        "existing_pattern_counterexamples": 1,
+        "non_conclusion_controls_recorded": 4,
+        "remaining_cases": [
+          "marker that appears before rather than after developed reasoning",
+          "summary that is inaccurate or too compressed",
+          "clear takeaway without marker",
+          "delivery/format alternative such as visual recap"
+        ]
+      },
+      "lesson": {
+        "draft_task": "Explain a small topic, then state the takeaway in one sentence, name the evidence supporting it, and state one limit. Ask a listener to repeat the takeaway without seeing your notes.",
+        "self_check": [
+          "Did I mark the takeaway clearly?",
+          "Does it follow from what I explained?",
+          "Did I preserve the essential qualification?",
+          "Can a listener restate it accurately?"
+        ],
+        "status": "draft_not_validated"
+      },
+      "media_limit": "Existing audio features are coarse proxies; a conclusion marker is not a measure of listener comprehension.",
+      "required_boundary": "Judge only the supplied text/context and lesson. Do not infer speaker intent, audience response, learning, or effectiveness."
+    }
+  ],
+  "claim_boundary": "These packets blind original pattern labels and source identity from model judges. They are for model review of retained text, controls and lesson wording; they do not supply human, learner, listener or effectiveness evidence."
+}

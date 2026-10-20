@@ -1,0 +1,618 @@
+{
+  "schema_version": "1.0",
+  "report_id": "llm-panel-vertical-slice-results",
+  "status": "two_model_four_rubric_panel_complete",
+  "packet_set": "llm-panel-vertical-slice-01",
+  "judgments": [
+    {
+      "blind_packet_id": "BLIND-01",
+      "rubric": "source_context",
+      "model": "qwen-0.5b",
+      "raw_output": "{\"decision\":\"no|revise|indeterminate\",\"citations\":[],\"reason\":\"max 35 words\",\"confidence\":\"medium\"}",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "Model output was malformed or noncommittal.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-01",
+      "rubric": "counterexample_scope",
+      "model": "qwen-0.5b",
+      "raw_output": "{\"decision\":\"no|revise|indeterminate\",\"citations\":[],\"reason\":\"max 35 words\",\"confidence\":\"medium\"}",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "Model output was malformed or noncommittal.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-01",
+      "rubric": "lesson_transfer_safety",
+      "model": "qwen-0.5b",
+      "raw_output": "{\"decision\":\"no|revise|indeterminate\",\"citations\":[],\"reason\":\"max 35 words\",\"confidence\":\"medium\"}",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "Model output was malformed or noncommittal.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-01",
+      "rubric": "adversarial",
+      "model": "qwen-0.5b",
+      "raw_output": "{\"decision\":\"indeterminate\",\"citations\":[],\"reason\":\"max 35 words\",\"confidence\":\"medium\"}",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "max 35 words",
+        "confidence": "medium"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-02",
+      "rubric": "source_context",
+      "model": "qwen-0.5b",
+      "raw_output": "{\"decision\":\"no|revise|indeterminate\",\"citations\":[],\"reason\":\"max 35 words\",\"confidence\":\"medium\"}",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "Model output was malformed or noncommittal.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-02",
+      "rubric": "counterexample_scope",
+      "model": "qwen-0.5b",
+      "raw_output": "{\"decision\":\"indeterminate\",\"citations\":[],\"reason\":\"max 35 words\",\"confidence\":\"medium\"}",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "max 35 words",
+        "confidence": "medium"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-02",
+      "rubric": "lesson_transfer_safety",
+      "model": "qwen-0.5b",
+      "raw_output": "{\"decision\":\"indeterminate\",\"citations\":[],\"reason\":\"max 35 words\",\"confidence\":\"medium\"}",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "max 35 words",
+        "confidence": "medium"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-02",
+      "rubric": "adversarial",
+      "model": "qwen-0.5b",
+      "raw_output": "{\"decision\":\"indeterminate\",\"citations\":[],\"reason\":\"no clear claims or examples provided\",\"confidence\":\"medium\"}",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "no clear claims or examples provided",
+        "confidence": "medium"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-03",
+      "rubric": "source_context",
+      "model": "qwen-0.5b",
+      "raw_output": "{\"decision\":\"no|revise|indeterminate\",\"citations\":[],\"reason\":\"max 35 words\",\"confidence\":\"medium\"}",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "Model output was malformed or noncommittal.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-03",
+      "rubric": "counterexample_scope",
+      "model": "qwen-0.5b",
+      "raw_output": "{\"decision\":\"no|revise|indeterminate\",\"citations\":[],\"reason\":\"max 35 words\",\"confidence\":\"medium\"}",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "Model output was malformed or noncommittal.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-03",
+      "rubric": "lesson_transfer_safety",
+      "model": "qwen-0.5b",
+      "raw_output": "{\"decision\":\"revise|indeterminate\",\"citations\":[],\"reason\":\"max 35 words\",\"confidence\":\"medium\"}",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "Model output was malformed or noncommittal.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-03",
+      "rubric": "adversarial",
+      "model": "qwen-0.5b",
+      "raw_output": "{\"decision\":\"indeterminate\",\"citations\":[],\"reason\":\"max 35 words\",\"confidence\":\"medium\"}",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "max 35 words",
+        "confidence": "medium"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-04",
+      "rubric": "source_context",
+      "model": "qwen-0.5b",
+      "raw_output": "{\"decision\":\"no|revise|indeterminate\",\"citations\":[],\"reason\":\"max 35 words\",\"confidence\":\"medium\"}",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "Model output was malformed or noncommittal.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-04",
+      "rubric": "counterexample_scope",
+      "model": "qwen-0.5b",
+      "raw_output": "{\"decision\":\"revise|indeterminate\",\"citations\":[],\"reason\":\"max 35 words\",\"confidence\":\"medium\"}",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "Model output was malformed or noncommittal.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-04",
+      "rubric": "lesson_transfer_safety",
+      "model": "qwen-0.5b",
+      "raw_output": "{\"decision\":\"revise|indeterminate\",\"citations\":[],\"reason\":\"max 35 words\",\"confidence\":\"medium\"}",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "Model output was malformed or noncommittal.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-04",
+      "rubric": "adversarial",
+      "model": "qwen-0.5b",
+      "raw_output": "{\"decision\":\"indeterminate\",\"citations\":[],\"reason\":\"no examples provided\",\"confidence\":\"medium\"}",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "no examples provided",
+        "confidence": "medium"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-05",
+      "rubric": "source_context",
+      "model": "qwen-0.5b",
+      "raw_output": "{\"decision\":\"no|revise|indeterminate\",\"citations\":[],\"reason\":\"max 35 words\",\"confidence\":\"medium\"}",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "Model output was malformed or noncommittal.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-05",
+      "rubric": "counterexample_scope",
+      "model": "qwen-0.5b",
+      "raw_output": "{\"decision\":\"revise|indeterminate\",\"citations\":[],\"reason\":\"max 35 words\",\"confidence\":\"medium\"}",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "Model output was malformed or noncommittal.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-05",
+      "rubric": "lesson_transfer_safety",
+      "model": "qwen-0.5b",
+      "raw_output": "{\"decision\":\"revise|indeterminate\",\"citations\":[],\"reason\":\"max 35 words\",\"confidence\":\"medium\"}",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "Model output was malformed or noncommittal.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-05",
+      "rubric": "adversarial",
+      "model": "qwen-0.5b",
+      "raw_output": "{\"decision\":\"indeterminate\",\"citations\":[],\"reason\":\"no relevant evidence provided\",\"confidence\":\"medium\"}",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "no relevant evidence provided",
+        "confidence": "medium"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-01",
+      "rubric": "source_context",
+      "model": "smollm-360m",
+      "raw_output": "The provided context supports the stated claim.",
+      "judgment": {
+        "decision": "support",
+        "citations": [],
+        "reason": "The provided context supports the stated claim.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-01",
+      "rubric": "counterexample_scope",
+      "model": "smollm-360m",
+      "raw_output": "The controls and listed gaps prevent an overbroad lesson.",
+      "judgment": {
+        "decision": "revise",
+        "citations": [],
+        "reason": "The controls and listed gaps prevent an overbroad lesson.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-01",
+      "rubric": "lesson_transfer_safety",
+      "model": "smollm-360m",
+      "raw_output": "Yes, the lesson task is adaptable, specific, and safe without copying a speaker. The task requires the learner to identify the expected outcome and observed outcome in two sentences, followed by a discussion of what changed without claiming that the contrast proves a personal or interpersonal motive.",
+      "judgment": {
+        "decision": "support",
+        "citations": [],
+        "reason": "Yes, the lesson task is adaptable, specific, and safe without copying a speaker. The task requires the learner to identify the expected outcome and observed outcome in two sentences, followed by a discussion of what changed without claiming that the contrast proves a personal or ",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-01",
+      "rubric": "adversarial",
+      "model": "smollm-360m",
+      "raw_output": "The claim from this packet is that when correcting or distinguishing ideas, state the contrast directly (for example, expected outcome versus observed outcome) and then supply the replacement claim or evidence.",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "Model output was malformed or noncommittal.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-02",
+      "rubric": "source_context",
+      "model": "smollm-360m",
+      "raw_output": "The provided context supports the stated claim.",
+      "judgment": {
+        "decision": "support",
+        "citations": [],
+        "reason": "The provided context supports the stated claim.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-02",
+      "rubric": "counterexample_scope",
+      "model": "smollm-360m",
+      "raw_output": "Yes, the controls and listed gaps prevent an overbroad lesson.",
+      "judgment": {
+        "decision": "revise",
+        "citations": [],
+        "reason": "Yes, the controls and listed gaps prevent an overbroad lesson.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-02",
+      "rubric": "lesson_transfer_safety",
+      "model": "smollm-360m",
+      "raw_output": "Yes, the lesson task is adaptable, specific, and safe without copying a speaker.",
+      "judgment": {
+        "decision": "support",
+        "citations": [],
+        "reason": "Yes, the lesson task is adaptable, specific, and safe without copying a speaker.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-02",
+      "rubric": "adversarial",
+      "model": "smollm-360m",
+      "raw_output": "The claim is that after an abstract claim, announce or signal a specific case, statistic, named example, or imagined scene, and connect it back to the claim, the evidence is thin.",
+      "judgment": {
+        "decision": "revise",
+        "citations": [],
+        "reason": "The claim is that after an abstract claim, announce or signal a specific case, statistic, named example, or imagined scene, and connect it back to the claim, the evidence is thin.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-03",
+      "rubric": "source_context",
+      "model": "smollm-360m",
+      "raw_output": "The provided context supports the stated claim. The example of a short first-person event, setting, action, or quoted line can make an abstract point concrete, marking the transition back to the broader point. This is evident in the example of a short first-person event, setting, action, or quoted line, which can make an abstract point concrete and connect it to the broader point.",
+      "judgment": {
+        "decision": "support",
+        "citations": [],
+        "reason": "The provided context supports the stated claim. The example of a short first-person event, setting, action, or quoted line can make an abstract point concrete, marking the transition back to the broader point. This is evident in the example of a short first-person event, setting,",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-03",
+      "rubric": "counterexample_scope",
+      "model": "smollm-360m",
+      "raw_output": "Yes, the controls and listed gaps prevent an overbroad lesson.",
+      "judgment": {
+        "decision": "revise",
+        "citations": [],
+        "reason": "Yes, the controls and listed gaps prevent an overbroad lesson.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-03",
+      "rubric": "lesson_transfer_safety",
+      "model": "smollm-360m",
+      "raw_output": "Yes, the lesson task is adaptable, specific, and safe without copying a speaker.",
+      "judgment": {
+        "decision": "support",
+        "citations": [],
+        "reason": "Yes, the lesson task is adaptable, specific, and safe without copying a speaker.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-03",
+      "rubric": "adversarial",
+      "model": "smollm-360m",
+      "raw_output": "The claim is that a short first-person event, setting, action, or quoted line can make an abstract point concrete, and that the transition back to the broader point is marked by a change in the context.",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "Model output was malformed or noncommittal.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-04",
+      "rubric": "source_context",
+      "model": "smollm-360m",
+      "raw_output": "The provided context supports the stated claim.",
+      "judgment": {
+        "decision": "support",
+        "citations": [],
+        "reason": "The provided context supports the stated claim.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-04",
+      "rubric": "counterexample_scope",
+      "model": "smollm-360m",
+      "raw_output": "The controls and listed gaps prevent an overbroad lesson.",
+      "judgment": {
+        "decision": "revise",
+        "citations": [],
+        "reason": "The controls and listed gaps prevent an overbroad lesson.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-04",
+      "rubric": "lesson_transfer_safety",
+      "model": "smollm-360m",
+      "raw_output": "Yes, the lesson task is adaptable, specific, and safe without copying a speaker.",
+      "judgment": {
+        "decision": "support",
+        "citations": [],
+        "reason": "Yes, the lesson task is adaptable, specific, and safe without copying a speaker.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-04",
+      "rubric": "adversarial",
+      "model": "smollm-360m",
+      "raw_output": "The claim is that using explicit qualifiers such as \"I think\", \"might\", or \"probably\" when a claim is a view, prediction, or interpretation rather than an established fact is necessary to avoid false certainty and empty vagueness.",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "Model output was malformed or noncommittal.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-05",
+      "rubric": "source_context",
+      "model": "smollm-360m",
+      "raw_output": "The provided context supports the stated claim.",
+      "judgment": {
+        "decision": "support",
+        "citations": [],
+        "reason": "The provided context supports the stated claim.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-05",
+      "rubric": "counterexample_scope",
+      "model": "smollm-360m",
+      "raw_output": "The controls and listed gaps prevent an overbroad lesson.",
+      "judgment": {
+        "decision": "revise",
+        "citations": [],
+        "reason": "The controls and listed gaps prevent an overbroad lesson.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-05",
+      "rubric": "lesson_transfer_safety",
+      "model": "smollm-360m",
+      "raw_output": "Yes, the lesson task is adaptable, specific, and safe without copying a speaker.",
+      "judgment": {
+        "decision": "support",
+        "citations": [],
+        "reason": "Yes, the lesson task is adaptable, specific, and safe without copying a speaker.",
+        "confidence": "low"
+      }
+    },
+    {
+      "blind_packet_id": "BLIND-05",
+      "rubric": "adversarial",
+      "model": "smollm-360m",
+      "raw_output": "The claim from this packet is that a clear summary or conclusion marker should be used when compressing a preceding explanation, story, or comparison into the point the audience should retain.",
+      "judgment": {
+        "decision": "indeterminate",
+        "citations": [],
+        "reason": "Model output was malformed or noncommittal.",
+        "confidence": "low"
+      }
+    }
+  ],
+  "adjudications": [
+    {
+      "blind_packet_id": "BLIND-01",
+      "rubric_decisions": {
+        "source_context": [
+          "indeterminate",
+          "support"
+        ],
+        "counterexample_scope": [
+          "indeterminate",
+          "revise"
+        ],
+        "lesson_transfer_safety": [
+          "indeterminate",
+          "support"
+        ],
+        "adversarial": [
+          "indeterminate",
+          "indeterminate"
+        ]
+      },
+      "model_disagreement": true,
+      "citation_complete": false,
+      "decision": "model_panel_revision_or_more_evidence_needed",
+      "promotion_eligible": false
+    },
+    {
+      "blind_packet_id": "BLIND-02",
+      "rubric_decisions": {
+        "source_context": [
+          "indeterminate",
+          "support"
+        ],
+        "counterexample_scope": [
+          "indeterminate",
+          "revise"
+        ],
+        "lesson_transfer_safety": [
+          "indeterminate",
+          "support"
+        ],
+        "adversarial": [
+          "indeterminate",
+          "revise"
+        ]
+      },
+      "model_disagreement": true,
+      "citation_complete": false,
+      "decision": "model_panel_revision_or_more_evidence_needed",
+      "promotion_eligible": false
+    },
+    {
+      "blind_packet_id": "BLIND-03",
+      "rubric_decisions": {
+        "source_context": [
+          "indeterminate",
+          "support"
+        ],
+        "counterexample_scope": [
+          "indeterminate",
+          "revise"
+        ],
+        "lesson_transfer_safety": [
+          "indeterminate",
+          "support"
+        ],
+        "adversarial": [
+          "indeterminate",
+          "indeterminate"
+        ]
+      },
+      "model_disagreement": true,
+      "citation_complete": false,
+      "decision": "model_panel_revision_or_more_evidence_needed",
+      "promotion_eligible": false
+    },
+    {
+      "blind_packet_id": "BLIND-04",
+      "rubric_decisions": {
+        "source_context": [
+          "indeterminate",
+          "support"
+        ],
+        "counterexample_scope": [
+          "indeterminate",
+          "revise"
+        ],
+        "lesson_transfer_safety": [
+          "indeterminate",
+          "support"
+        ],
+        "adversarial": [
+          "indeterminate",
+          "indeterminate"
+        ]
+      },
+      "model_disagreement": true,
+      "citation_complete": false,
+      "decision": "model_panel_revision_or_more_evidence_needed",
+      "promotion_eligible": false
+    },
+    {
+      "blind_packet_id": "BLIND-05",
+      "rubric_decisions": {
+        "source_context": [
+          "indeterminate",
+          "support"
+        ],
+        "counterexample_scope": [
+          "indeterminate",
+          "revise"
+        ],
+        "lesson_transfer_safety": [
+          "indeterminate",
+          "support"
+        ],
+        "adversarial": [
+          "indeterminate",
+          "indeterminate"
+        ]
+      },
+      "model_disagreement": true,
+      "citation_complete": false,
+      "decision": "model_panel_revision_or_more_evidence_needed",
+      "promotion_eligible": false
+    }
+  ],
+  "promotion_eligible": false,
+  "claim_boundary": "Model-panel judgments assess supplied text, controls and lesson wording. They are not human review, learner evidence, listener evidence, or proof of effectiveness.",
+  "parser_status": "plain_language_recovery_with_fail_closed_fallback"
+}
